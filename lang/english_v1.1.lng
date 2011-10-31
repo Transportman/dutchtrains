@@ -1,0 +1,119 @@
+##grflangid 0x01
+STR_GRF_NAME                                                                    :Dutch Trainset Alpha 1.1
+STR_GRF_DESC                                                                    :Dutch Trainset Team: Hyronymus, Purno and Bastiaan.{}Graphics by: bastiaan, DanMacK, Purno, Snail, Wile E. Coyote and others.{}Coded by Purno and BlueEagle with GRF Maker.{}Thanks to AndersI and jvassie.{}(c)2007-2008 Dutch Trainset Team
+STR_item_FEAT_TRAINS_0                                                          :NS 3700 (Steam)
+STR_item_FEAT_TRAINS_100                                                        :Spherecar "Bollenwagen"
+STR_item_FEAT_TRAINS_101                                                        :Compost Car
+STR_item_FEAT_TRAINS_102                                                        :[disabled]
+STR_item_FEAT_TRAINS_103                                                        :[disabled]
+STR_item_FEAT_TRAINS_104                                                        :[disabled]
+STR_item_FEAT_TRAINS_105                                                        :[disabled]
+STR_item_FEAT_TRAINS_106                                                        :[disabled]
+STR_item_FEAT_TRAINS_107                                                        :[disabled]
+STR_item_FEAT_TRAINS_108                                                        :[disabled]
+STR_item_FEAT_TRAINS_109                                                        :[disabled]
+STR_item_FEAT_TRAINS_10                                                         :NS 1200 (Electric)
+STR_item_FEAT_TRAINS_110                                                        :[disabled]
+STR_item_FEAT_TRAINS_111                                                        :[disabled]
+STR_item_FEAT_TRAINS_112                                                        :[disabled]
+STR_item_FEAT_TRAINS_113                                                        :[disabled]
+STR_item_FEAT_TRAINS_114                                                        :[disabled]
+STR_item_FEAT_TRAINS_115                                                        :[disabled]
+STR_item_FEAT_TRAINS_11                                                         :NS 1300 (Electric)
+STR_item_FEAT_TRAINS_12                                                         :NS 2600 "Beelen" (Diesel)
+STR_item_FEAT_TRAINS_13                                                         :NS 2400 (Diesel)
+STR_item_FEAT_TRAINS_14                                                         :NS 2200 (Diesel)
+STR_item_FEAT_TRAINS_15                                                         :mP (Electric)
+STR_item_FEAT_TRAINS_16                                                         :NS 1500 (Electric)
+STR_item_FEAT_TRAINS_17                                                         :NMBS 25.5 (Electric)
+STR_item_FEAT_TRAINS_18                                                         :NS 1600 (Electric)
+STR_item_FEAT_TRAINS_19                                                         :NMBS 11.8 (Electric)
+STR_item_FEAT_TRAINS_1                                                          :NS 6200 (Steam)
+STR_item_FEAT_TRAINS_20                                                         :NS 6400 (Diesel)
+STR_item_FEAT_TRAINS_21                                                         :mDDm (Electric)
+STR_item_FEAT_TRAINS_22                                                         :Class 67 (Diesel)
+STR_item_FEAT_TRAINS_23                                                         :Class 66 (Diesel)
+STR_item_FEAT_TRAINS_24                                                         :BR232 (Diesel)
+STR_item_FEAT_TRAINS_25                                                         :Class 58
+STR_item_FEAT_TRAINS_26                                                         :Local passenger coach
+STR_item_FEAT_TRAINS_27                                                         :Express passenger coach
+STR_item_FEAT_TRAINS_28                                                         :Local mail van
+STR_item_FEAT_TRAINS_29                                                         :Express mail van
+STR_item_FEAT_TRAINS_2                                                          :NS 2100 (Steam)
+STR_item_FEAT_TRAINS_30                                                         :Double Deck Coach
+STR_item_FEAT_TRAINS_31                                                         :[disabled]
+STR_item_FEAT_TRAINS_32                                                         :[disabled]
+STR_item_FEAT_TRAINS_33                                                         :[disabled]
+STR_item_FEAT_TRAINS_34                                                         :[disabled]
+STR_item_FEAT_TRAINS_35                                                         :[disabled]
+STR_item_FEAT_TRAINS_36                                                         :[disabled]
+STR_item_FEAT_TRAINS_37                                                         :[disabled]
+STR_item_FEAT_TRAINS_38                                                         :[disabled]
+STR_item_FEAT_TRAINS_39                                                         :[disabled]
+STR_item_FEAT_TRAINS_3                                                          :NS 4600 (Steam)
+STR_item_FEAT_TRAINS_40                                                         :[disabled]
+STR_item_FEAT_TRAINS_41                                                         :[disabled]
+STR_item_FEAT_TRAINS_42                                                         :[disabled]
+STR_item_FEAT_TRAINS_43                                                         :[disabled]
+STR_item_FEAT_TRAINS_44                                                         :G1206 (Diesel)
+STR_item_FEAT_TRAINS_45                                                         :Mat '24 "Blokkedoos" (Electric)
+STR_item_FEAT_TRAINS_46                                                         :Mat '34 "Vlieg. Holl." (Diesel)
+STR_item_FEAT_TRAINS_47                                                         :Mat '36/'40/'46 (Electric)
+STR_item_FEAT_TRAINS_48                                                         :Mat '41 (Diesel)
+STR_item_FEAT_TRAINS_49                                                         :Plan X (Diesel)
+STR_item_FEAT_TRAINS_4                                                          :NS 3900 (Steam)
+STR_item_FEAT_TRAINS_50                                                         :Mat '54 "Hondekop" (Electric)
+STR_item_FEAT_TRAINS_51                                                         :NS/SBB DE-IV TEE (Diesel)
+STR_item_FEAT_TRAINS_52                                                         :Plan U "Diesel Drie" (Diesel)
+STR_item_FEAT_TRAINS_53                                                         :Mat '64 (Electric)
+STR_item_FEAT_TRAINS_54                                                         :Plan Y "Sprinter" (Electric)
+STR_item_FEAT_TRAINS_55                                                         :ICM "Koploper" (Electric)
+STR_item_FEAT_TRAINS_56                                                         :DH-I "Wadloper" (Diesel)
+STR_item_FEAT_TRAINS_57                                                         :SM '90 "Railhopper" (Electric)
+STR_item_FEAT_TRAINS_58                                                         :DM '90 "Buffel" (Diesel)
+STR_item_FEAT_TRAINS_59                                                         :IRM "RegioRunner" (Electric)
+STR_item_FEAT_TRAINS_5                                                          :NS 6300 (Steam)
+STR_item_FEAT_TRAINS_60                                                         :TGV Thalys (Electric)
+STR_item_FEAT_TRAINS_61                                                         :ICE-3 (Electric)
+STR_item_FEAT_TRAINS_62                                                         :Lint 41-H (Diesel)
+STR_item_FEAT_TRAINS_63                                                         :NS "LighTTrain" (Electric)
+STR_item_FEAT_TRAINS_64                                                         :GTW (Diesel)
+STR_item_FEAT_TRAINS_65                                                         :HSA (Electric)
+STR_item_FEAT_TRAINS_66                                                         :NS 1600P (Electric)
+STR_item_FEAT_TRAINS_67                                                         :G2000 (Diesel)
+STR_item_FEAT_TRAINS_68                                                         :[disabled]
+STR_item_FEAT_TRAINS_69                                                         :[disabled]
+STR_item_FEAT_TRAINS_6                                                          :NS 4700 (Steam)
+STR_item_FEAT_TRAINS_70                                                         :[disabled]
+STR_item_FEAT_TRAINS_71                                                         :NS 100 "Oersik" (Petrol)
+STR_item_FEAT_TRAINS_72                                                         :NS 200 "Sik" (Diesel)
+STR_item_FEAT_TRAINS_73                                                         :TRAXX (Electric)
+STR_item_FEAT_TRAINS_74                                                         :[disabled]
+STR_item_FEAT_TRAINS_75                                                         :[disabled]
+STR_item_FEAT_TRAINS_76                                                         :[disabled]
+STR_item_FEAT_TRAINS_77                                                         :[disabled]
+STR_item_FEAT_TRAINS_78                                                         :[disabled]
+STR_item_FEAT_TRAINS_79                                                         :[disabled]
+STR_item_FEAT_TRAINS_7                                                          :NS 5000-II (Steam)
+STR_item_FEAT_TRAINS_80                                                         :Goods Van
+STR_item_FEAT_TRAINS_81                                                         :Small Grain Silo
+STR_item_FEAT_TRAINS_82                                                         :Tanker
+STR_item_FEAT_TRAINS_83                                                         :Stake Wagon
+STR_item_FEAT_TRAINS_84                                                         :Refridgerator Van
+STR_item_FEAT_TRAINS_85                                                         :Large Grain Silo
+STR_item_FEAT_TRAINS_86                                                         :[disabled]
+STR_item_FEAT_TRAINS_87                                                         :[disabled]
+STR_item_FEAT_TRAINS_88                                                         :[disabled]
+STR_item_FEAT_TRAINS_89                                                         :Selfdischarger
+STR_item_FEAT_TRAINS_8                                                          :NS 1000 (Electric)
+STR_item_FEAT_TRAINS_90                                                         :Sliding-door Van
+STR_item_FEAT_TRAINS_91                                                         :Refridgerator Van
+STR_item_FEAT_TRAINS_92                                                         :Stake wagon
+STR_item_FEAT_TRAINS_93                                                         :Large Tanker
+STR_item_FEAT_TRAINS_94                                                         :Coil Wagon
+STR_item_FEAT_TRAINS_95                                                         :Large Goods Van
+STR_item_FEAT_TRAINS_96                                                         :Stake Wagon
+STR_item_FEAT_TRAINS_97                                                         :Selfdischarger
+STR_item_FEAT_TRAINS_98                                                         :[disabled]
+STR_item_FEAT_TRAINS_99                                                         :Container Carrier
+STR_item_FEAT_TRAINS_9                                                          :NS 1100 (Electric)
