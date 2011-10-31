@@ -1,0 +1,159 @@
+List of Dutch Trains
+Compiled by FooBar
+Source: Wikipedia.org, unless stated otherwise
+License: CC BY-SA, unless stated otherwise
+Version: 3
+
+
+Electric engines
+series          years       weight  speed       power   TE      axles
+1001-1010       1948-1982   100 t   135 km/h    2796 kW 177 kN  (1A)' Bo (A1)'
+1101-1160       1950-1999   80 t[1] 130 km/h    2030 kW 155 kN  Bo' Bo'
+1201-1225       1951-       108 t   130 km/h    2220 kW 195 kN  Co' Co'
+1301-1316       1952-2000   111 t   130 km/h    3159 kW 241 kN  Co' Co'
+1501-1506 [2]   1970-1986   100 t   130 km/h    2185 kW 200 kN  Co' Co'
+1601-1658 [3]   1981-       84 t    180 km/h    4600 kW 260 kN  B' B'
+1700            1991-       86 t    180 km/h    4600 kW 260 kN  B' B'
+
+BR 189          2002-       87 t    140 km/h    4500 kW 300 kN  Bo' Bo'
+BR 232          1999-2008   125 t   140 km/h    2200 kW 333 kN  Co' Co'
+TRAXX  	        2008-       85 t    160 km/h    5600 kW 300 kN  Bo' Bo'
+HLE 11          1985-2009   85 t    140 km/h    3130 kW 234 kN  Bo' Bo'
+
+mDDM            1997-       84 t    140 km/h    2400 kW ?       Bo' Bo'  Bo'
+
+[1] 83 t with crashnose since 1981
+[2] British Rail Class EM2
+[3] 1601-1622, 1823-1824, 1625, 1826-1855, 1656, 1857-1858 since 1999
+
+
+Steam engines
+series          years       weight      speed       axles   TE
+Arend           1839-1857   19,3 t      30 km/h     1A1     905 kg (broad gauge)
+HSM Argus-Vesta 1866-1916   29,4+20 t               1B      2675 kg
+HSM Castor-Maas 1861-1909   30,8+22,5 t             1A1     1530 kg
+NS 4300 [6]     1945-1957   79,6+56,4 t 65 km/h     1'D     9700 kg
+NS 5000 [6]     1945-1950   79,6+56,4 t 65 km/h     1'E     9700 kg
+HSM Nestor      1880-1935   38,8+25,1t  90 km/h     1'B     3560 kg
+NRS 101-109     1889-1949   49+32,5 t   90 km/h     2'B     4950 kg
+NS 2100         1914-1954   61+44 t     110 km/h    2'B     7660 kg
+NS 3100         1879-1932   40,1+24,6 t 45 km/h     C       6560 kg
+NS 3200         1895-1947   44,5+28,7   75 km/h     C       7280 kg
+NS 3300         1912-1952   48,8+32,5 t 75 km/h     C       7370 kg
+NS 3500         1908-1946   62+37,9 t   100 km/h    2'C     8130 kg
+NS 3600         1910-1953   70+48,3 t   ?           2'C     9250 kg
+NS 3700         1910-1958   72+43 t     110 km/h    2'C     9590 kg
+NS 3900         1929-1957   84+63 t     110 km/h    2'C     9590 kg
+NS 4000         1945-1956   83,6+53 t   120 km/h    2'C     11000 kg
+NS 4700         1944-1958   74,8+53 t   70 km/h     D       16680 kg
+NS 6300         1930-1957   127+102 t   90 km/h     2'D 2'  14720 kg
+NS 6900         1884-1937   24 t        50 km/h     B       3650 kg
+NS 8100         1901-1955   33,3 t      45 km/h     B       4890 kg
+NS 700 (SS13)   1864-1933   28,8+20,5 t 80 km/h     1'B     3450 kg
+NS 1300 (SS326) 1881-1940   42+33 t     90 km/h     1'B     4620 kg
+
+[6] BWD Austerity
+
+
+Diesel engines
+series          years       weight  speed       power   TE         axles
+NS 6400         1988-       80 t    120 km/h    1180 kW 305 kN     Bo' Bo'
+1206            1997-       90 t    100 km/h    1570 kW 291 kN     B' B'
+NS 200 (Sik)    1934        21 t    60 km/h     72 hp   4000 kg    Bo
+NS 160          1941-1957   21 t    28 km/h     153 hp  ?          B
+NS 400          1947-1961   18,5 t  75 km/h     250 hp  ?          Bo
+NS 450          1956-1972   38 t    60 km/h     330 hp  ?          C
+NS 500/600      1946-1989   47 t    32 km/h     400 hp  ?          C
+NS 700          1947-1973   48,5 t  32 km/h     355 hp  ?          C
+NS 2000         1946-1960   63 t    75 km/h     600 hp  ?          Bo' Bo'
+NS 2200         1955-2003   72 t    106 km/h    662 kW  185 kN     Bo' Bo'
+NS 2400         1954-1991   60 t    80 km/h     620 kW  ?          Bo' Bo'
+NS 2600 (Beel)  1953-1960   108 t   100 km/h    1350 hp ?          (A1A)'(A1A)'
+NS 2801         1962-1968   66 t    105 km/h    1400 hp ?          Bo' Bo'
+NS 2900         1956-1975   74 t    80 km/h     1065 kW ?          Bo' Bo'
+G2000           ?-          90 t    140 km/h    2700 kW 283 kN     B'B'
+G400            2003-       40 t    40 km/h     390 kW  ?          B
+HLD 62          ?-          80 t    120 km/h    1030 kW 212 kN     Bo' Bo'
+Class 58        2002-       130 t   129 km/h    2460 kW 267 kN     Co' Co'
+Class 66        ?-          130 t   120 km/h    2268 kW 409 kN     Co' Co'
+
+
+DMU (TE unknown)
+series              years       weight  speed       power       axles           consist
+LINT                2001-       63 t    120 km/h    630 kW      B'2'B'
+DH1                 1983-2008   37 t    100 km/h    210 kW      B'2'
+DH2                 1981-2008   69 t    100 km/h    420 kW      2'B' + B'2'
+DE1 "Blauwe Engel"  1953-1998   57 t    105 km/h    180 kW      Bo'Bo'          ABDk
+DE2 "Blauwe Engel"  1953-1998   85 t    105 km/h    310 kW  	Bo'2'Bo'        ABk+BDk
+Breng GTW 2/8       2012-       91 t    140 km/h    600 kW  	2' Bo' 2' 2'    Bk-m-B-ABk
+Mat'34 "Dieseldrie" 1934-1964   101 t   125 km/h    410 hp      2'A1A'A1A'2'
+Plan U (DE3)        1960-2003   136 t   125 km/h    1000 hp     Bo'Bo' + 2'2' + 2'2'
+DM'90 "Buffel"      1996-       95,2 t  140 km/h    640 kW      2'B' + B'2'
+DE5 "Dieselvijf"    1945-1974   239 t   160 km/h    1950 hp     Bo'2' + (A1A)'3' + 2'2'2'Bo'    ABk + mD + Co + Coo + Ck
+Spurt GTW 2/6       2006-2012   68 t    140 km/h    600 kW      2' Bo' 2'       Bk-m-ABk
+Spurt GTW 2/8       2006-2012   87 t    140 km/h    600 kW      2' Bo' 2' 2'    Bk-m-B-ABk
+Velios GTW 2/6      2007-       68 t    140 km/h    600 kW      2' Bo' 2'       Bk-m-ABk
+Velios GTW 2/8      2007-       87 t    140 km/h    600 kW      2' Bo' 2' 2'    Bk-m-B-ABk
+DE4 (TEE)           1957-1977   228,8 t 140 km/h    1350 kW     (A1A)(A1A)+2'2'+2'2'+2'2'
+
+
+
+EMU (TE unknown)
+series          years       weight  speed       power       axles and/or consist
+IRM-III         1994-       183,4 t 160 km/h    1608 kW     mBvk1+ ABv3+ mBvk2
+IRM-IV          1994-       234 t   160 km/h    1608 kW     mBvk1+ ABv4+ ABv5+ mBvk2
+VIRM-IV         2002-       236,8 t 160 km/h    1608 kW     mBvk1+ ABv3/4+ ABv6+ mBvk2
+VIRM-VI         2002-       352,3 t 160 km/h    2312 kW     mBvk1+ ABv3/4+ ABv6+ mBv7+ ABv5+ mBvk2
+Mat'24          1924-1959   61 t    100 km/h    900 hp      http://www.seinarm.nl/Mat24.aspx   (NMMD, http://www.nmld.nl/index.php?page=object&id=2175)
+mP 3001-3035    1965-1997   55t     140 km/h    610 hp
+SGM-0           1975-       106 t   120 km/h    1280 kW     Bo'Bo'+Bo'Bo        ABk+Bk
+SGM-1           1978-       106 t   120 km/h    1280 kW	    Bo'Bo'+Bo'Bo        ABk+Bk
+SGM-2           1978-       142 t   120 km/h    1280 kW     Bo'Bo'+2'2'+Bo'Bo   Bk+AB+Bk
+SGM-3           1983-       142 t   120 km/h    1280 kW     Bo'Bo'+2'2'+Bo'Bo   Bk+AB+Bk
+Spurt GTW 2/6   2006-2012   64,5 t  140 km/h    750 kW      2' Bo' 2'           Bk-m-ABk
+Spurt GTW 2/8   2006-2012   83 t    140 km/h    750 kW      2' Bo' 2' 2'        Bk-m-B-ABk
+Velios GTW 2/6  2008-       68 t    140 km/h    750 kW      2' Bo' 2'           Bk-m-ABk
+Velios GTW 2/8  2008-       87 t    140 km/h    750 kW      2' Bo' 2' 2'        Bk-m-B-ABk
+ICE3            2006-       409 t   220 km/h    4300 kW     Bo'Bo'+2'2'+Bo'Bo'+2'2' +2'2'+Bo'Bo'+2'2'+Bo'Bo'
+ICM-0/1/2       1977-       144 t   160 km/h    1260 kW     Bo'Bo' + 2'2' + 2'2'
+ICM-3/4         1990-       192 t   160 km/h    1890 kW     Bo'Bo' + Bo'2' + 2'2' + 2'2'
+Mat'35          1935-'60s   78 t    125 km/h    732 kW      Bo'2'Bo'            mBC + mC
+Mat'36 El2      1938-1970   79 t    110 km/h    662 kW      CDk + BCk (Gerard van de Weerd, http://www.seinarm.nl/Stroomlijn/elektrisch/mat362.aspx)
+Mat'36 ElD3     1938-1970   143 t   110 km/h    1324 kW     CDk + Ce + Bk (Gerard van de Weerd, http://www.seinarm.nl/Stroomlijn/elektrisch/mat364.aspx)
+Mat'36 ElD3     1942-1970   106 t   110 km/h    662 kW      CDk + CDo + BCk (Gerard van de Weerd, http://www.seinarm.nl/Stroomlijn/elektrisch/mat362.aspx)
+Mat'36 ElD4     1942-1970   181 t   110 km/h    1324 kW     CDk + C + Ce + Bk (Gerard van de Weerd, http://www.seinarm.nl/Stroomlijn/elektrisch/mat364.aspx)
+Mat'36 El3      1950-1970   106 t   110 km/h    662 kW      CDk + Co + BCk (Gerard van de Weerd, http://www.seinarm.nl/Stroomlijn/elektrisch/mat362.aspx)
+Mat'40 EID5     1942-1972   214 t   125 km/h    1592 kW     Bo'2' + 2'Bo' + Bo'2'2'Bo'  ABk + Cr + Co + Coo + CDk
+Mat'40 EID2     1944-1970   101 t   125 km/h    796 kW      Bo'2' + 2'Bo'               BCk + CDk
+Mat'46 ELD2     1949-1983   89 t    125 km/h    796 kW      Bo'2'Bo'                    BCDk + Ck
+Mat'46 ELD4     1948-1983   169 t   125 km/h    1592 kW     Bo'2'Bo' + Bo'2'Bo'         CDk + C + B + Ck
+Mat'54 F/G/M/Q  1956-1993   110 t   140 km/h    680 kW      Bo'2' + 2'Bo                Bk + ABDk
+Mat'54 F/G/P    1956-1993   210 t   140 km/h    1360 kW     Bo'Bo' + 2'2 + 2'2' + Bo'Bo'    Bk + A + B + BDk
+Mat'64 Plan T   1964-2010   163 t   140 km/h    1400 kW     2'2'-Bo'Bo'-Bo'Bo'-2'2'
+Mat'64 Plan V   1966-2012   86 t    140 km/h    508 kW      2'Bo'-Bo'2'
+Protos          2007-       108 t   160 km/h    4x335 kW    2'Bo' + Bo'2'
+SLT-IV          2009-       129 t   160 km/h    1260 kW     Bo' Bo' 2' 2' Bo'           mABk-mB-B-mABk
+SLT-VI          2009-       176 t   160 km/h    1680 kW     Bo' Bo' 2' 2' 2' Bo' Bo'    mABk-mB-AB-B-mB-mABk
+SM'90           1994-2005   98,5 t  160 km/h    1112 kW     2'Bo' + Bo'2'
+TGV Thalys PBA  1996-       380 t   300 km/h    3680 kW [7] Bo'Bo'-9*2'-Bo'Bo'          m-8*A/B-m
+TGV Thalys PBKA 1996-       385 t   300 km/h    3680 kW [7] Bo'Bo'-9*2'-Bo'Bo'          m-8*A/B-m
+V250 Albatros   2011-       423 t   250 km/h    5500 kW [8] mAk+AD+mAB+B+B+mB+B+mBk1
+
+[7] 8800 kW on 25 kV
+[8] 25 kV
+
+
+Battery (TE unknown)
+series      years       weight  speed       power       axles
+NS 81-82    1908-1936   21 t    14 km/h[4]  ?           Bo
+NS 83-84    1926-1977   27,5 t  40 km/h[5]  80 hp[5]    Bo
+
+[4] 40 km/h from 1928
+[5] 60 km/h / 144 hp from 1931
+
+
+Petrol (TE unknown)
+series          years       weight  speed       power       axles
+NS 91-93        1911-1952   10 t    10 km/h     23 hp       Bo
+NS 100 (Oersik) 1927        12,5 t  30 km/h     50 hp       A A
+
