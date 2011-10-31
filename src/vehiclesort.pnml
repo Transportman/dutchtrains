@@ -1,0 +1,3 @@
+//this file set the sort order of vehicles
+//convention: steamers, diesels, diesel mus, electric, electric mus, wagons
+//each group sorted by introduction date

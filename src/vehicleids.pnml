@@ -1,0 +1,19 @@
+//this file set the vehicle ids
+//this is because we need all articulated vehicles in the first 128 ids
+//all non-articulated vehicles will get a higher id from the start
+
+//steam
+
+//diesel
+
+//electric
+
+//dmu
+item(FEAT_TRAINS, item_dmu_DH1, 128) {}
+item(FEAT_TRAINS, item_dmu_DH2, 0) {}
+
+//emu
+
+//wagons
+
+

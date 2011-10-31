@@ -1,0 +1,20 @@
+// define the newgrf
+grf {
+	grfid:	"\4D\4C\05\03";
+	name:	string(STR_GRF_NAME);
+	desc:	string(STR_GRF_DESCRIPTION);
+	version:		REPO_REVISION;
+	min_compatible_version:	1;
+}
+
+basecost {
+	PR_BUILD_VEHICLE_TRAIN: -1;
+	PR_BUILD_VEHICLE_WAGON: 1;
+	PR_RUNNING_TRAIN_STEAM: 2;
+	PR_RUNNING_TRAIN_DIESEL: 2;
+	PR_RUNNING_TRAIN_ELECTRIC: 2;
+}
+
+train_width_32_px = 1;
+
+disable(FEAT_TRAINS, 0, 115);

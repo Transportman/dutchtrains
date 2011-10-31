@@ -1,0 +1,29 @@
+/*
+* GRF HEADER
+*/
+
+//define grf
+#include "src/header.pnml"
+//include sprite templates
+#include "src/templates.pnml"
+//give vehicle a specific ID
+#include "src/vehicleids.pnml"
+//sort vehicles in purchase list
+#include "src/vehiclesort.pnml"
+
+/*
+* VEHICLES
+*/
+
+//steam
+
+//diesel
+
+//electric
+
+//dmu
+
+//emu
+
+//wagons
+

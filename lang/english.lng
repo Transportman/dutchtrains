@@ -1,0 +1,18 @@
+﻿##grflangid 0x01
+
+#Main grf title and description
+STR_GRF_NAME			:{TITLE}
+STR_GRF_DESCRIPTION		:Dutch Trains for OpenTTD {}(c)Dutch Trainset Team {}License: GPLv2 or higher. {}See readme for details.
+
+#steam
+
+#diesel
+
+#electric
+
+#dmu
+str_dmu_DH1             :DH1 "Wadloper"
+
+#emu
+
+#wagons
