@@ -17,4 +17,4 @@ basecost {
 
 train_width_32_px = 1;
 
-disable(FEAT_TRAINS, 0, 115);
+disable_item(FEAT_TRAINS);
