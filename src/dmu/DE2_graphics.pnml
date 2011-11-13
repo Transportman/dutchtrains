@@ -1,0 +1,129 @@
+/*
+* PURCHASE
+*/
+/* already defined in DE1, to be replaced in DE1 with single engine image
+spriteset(spriteset_905, "gfx/dutchtrainsw.png") {
+	[722, 1144, 50, 12, -25, -6]
+}
+
+spriteset(spriteset_908, "gfx/dutchtrainsw.png") {
+	[18, 1192, 50, 12, -25, -6]
+}
+*/
+spriteset(spriteset_911, "gfx/dutchtrainsw.png") {
+	[114, 1192, 50, 13, -25, -7]
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_livery_purchase, current_year) {
+	0..1994: spriteset_905;
+    1995..1996: spriteset_908;
+    spriteset_911;
+}
+
+/*
+* VEHICLE
+*/
+
+//blue
+spriteset(spriteset_835, "gfx/dutchtrainsw.png") {
+	[290, 1048, 8, 23, -3, -11]
+	[306, 1048, 21, 17, -10, -10]
+	[338, 1048, 32, 12, -16, -7]
+	[386, 1048, 19, 17, -10, -12]
+	[418, 1048, 8, 23, -3, -11]
+	[434, 1048, 19, 17, -7, -12]
+	[466, 1048, 31, 12, -15, -7]
+	[514, 1048, 21, 17, -9, -10]
+}
+
+spriteset(spriteset_845, "gfx/dutchtrainsw.png") {
+	[578, 1048, 8, 23, -3, -11]
+	[594, 1048, 19, 17, -7, -12]
+	[626, 1048, 31, 12, -15, -7]
+	[674, 1048, 21, 17, -9, -10]
+	[706, 1048, 8, 23, -3, -11]
+	[722, 1048, 21, 17, -10, -10]
+	[754, 1048, 32, 12, -16, -7]
+	[2, 1096, 19, 17, -10, -12]
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_blue, position_in_vehid_chain) {
+	1: spriteset_845;
+    spriteset_835;
+}
+
+//red
+spriteset(spriteset_865, "gfx/dutchtrainsw.png") {
+	[354, 1096, 8, 23, -3, -11]
+	[370, 1096, 21, 17, -10, -10]
+	[402, 1096, 32, 12, -16, -7]
+	[450, 1096, 19, 17, -10, -12]
+	[482, 1096, 8, 23, -3, -11]
+	[498, 1096, 19, 17, -7, -12]
+	[530, 1096, 31, 12, -15, -7]
+	[578, 1096, 21, 17, -9, -10]
+}
+
+spriteset(spriteset_875, "gfx/dutchtrainsw.png") {
+	[642, 1096, 8, 23, -3, -11]
+	[658, 1096, 19, 17, -7, -12]
+	[690, 1096, 31, 12, -15, -7]
+	[738, 1096, 21, 17, -9, -10]
+	[770, 1096, 8, 23, -3, -11]
+	[2, 1144, 21, 17, -10, -10]
+	[34, 1144, 32, 12, -16, -7]
+	[82, 1144, 19, 17, -10, -12]
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_red, position_in_vehid_chain) {
+	1: spriteset_875;
+    spriteset_865;
+}
+
+//yellow
+spriteset(spriteset_885, "gfx/dutchtrainsw.png") {
+	[146, 1144, 8, 23, -3, -11]
+	[162, 1144, 21, 17, -10, -10]
+	[194, 1144, 32, 13, -16, -8]
+	[242, 1144, 19, 17, -10, -12]
+	[274, 1144, 8, 23, -3, -11]
+	[290, 1144, 19, 17, -7, -12]
+	[322, 1144, 31, 13, -15, -8]
+	[370, 1144, 21, 17, -9, -10]
+}
+
+spriteset(spriteset_895, "gfx/dutchtrainsw.png") {
+	[434, 1144, 8, 23, -3, -11]
+	[450, 1144, 19, 17, -7, -12]
+	[482, 1144, 31, 13, -15, -8]
+	[530, 1144, 21, 17, -9, -10]
+	[562, 1144, 8, 23, -3, -11]
+	[578, 1144, 21, 17, -10, -10]
+	[610, 1144, 32, 13, -16, -8]
+	[658, 1144, 19, 17, -10, -12]
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_yellow, position_in_vehid_chain) {
+	1: spriteset_895;
+    spriteset_885;
+}
+
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_livery_1, (date_of_last_service >= date(1997,1,1))) {
+	1: switch_dmu_DE2_position_yellow;
+    switch_dmu_DE2_position_red;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_livery, (date_of_last_service >= date(1995,1,1))) {
+	1: switch_dmu_DE2_livery_1;
+    switch_dmu_DE2_position_blue;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_articulated, extra_callback_info1) {
+    1: return item_dmu_DE2;
+    return 0xFF;
+}

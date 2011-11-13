@@ -24,6 +24,8 @@
 //dmu
 #include "src/dmu/DE1_graphics.pnml"
 #include "src/dmu/DE1_item.pnml"
+#include "src/dmu/DE2_graphics.pnml"
+#include "src/dmu/DE2_item.pnml"
 #include "src/dmu/DH1_graphics.pnml"
 #include "src/dmu/DH1_item.pnml"
 #include "src/dmu/DH2_graphics.pnml"

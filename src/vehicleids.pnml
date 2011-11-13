@@ -4,6 +4,7 @@
 
 //articulated
 item(FEAT_TRAINS, item_dmu_DH2, 0) {}
+item(FEAT_TRAINS, item_dmu_DE2, 1) {}
 
 //non-articulated
 item(FEAT_TRAINS, item_dmu_DH1, 128) {}
