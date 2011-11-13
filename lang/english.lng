@@ -11,15 +11,15 @@ STR_GRF_DESCRIPTION		:Dutch Trains for OpenTTD {}(c)Dutch Trainset Team {}Licens
 #electric
 
 #dmu
-str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diesel)
-str_dmu_DE5             :DE5 "Dieselvijf" (Diesel)
-str_dmu_DE1             :DE1 (Plan X) "Blauwe Engel" (Diesel)
-str_dmu_DE2             :DE2 (Plan X) "Blauwe Engel" (Diesel)
+str_dmu_Mat34           :Mat '34 "Dieselthree" (Diesel)
+str_dmu_DE5             :DE5 "Dieselfive" (Diesel)
+str_dmu_DE1             :DE1 (Plan X) "Blue Angel" (Diesel)
+str_dmu_DE2             :DE2 (Plan X) "Blue Angel" (Diesel)
 str_dmu_DE4             :DE4 "Trans Europ Express" (Diesel)
-str_dmu_DE3             :DE3 (Plan U) "Rode Duivel" (Diesel)
-str_dmu_DH1             :DH1 "Wadloper" (Diesel)
-str_dmu_DH2             :DH2 "Wadloper" (Diesel)
-str_dmu_DM90            :DM '90 "Buffel" (Diesel)
+str_dmu_DE3             :DE3 (Plan U) "Red Devil" (Diesel)
+str_dmu_DH1             :DH1 "Mudflat Walker" (Diesel)
+str_dmu_DH2             :DH2 "Mudflat Walker" (Diesel)
+str_dmu_DM90            :DM '90 "Buffalo" (Diesel)
 str_dmu_Lint41H         :Lint 41/H (Diesel)
 str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)

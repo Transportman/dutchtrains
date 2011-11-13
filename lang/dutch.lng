@@ -2,3 +2,23 @@
 
 #Main grf title en description
 STR_GRF_DESCRIPTION		:Nederlandse Treinen voor OpenTTD {}(c)Dutch Trainset Team {}Licentie: GPLv2 of hoger. {}Lees de readme voor details.
+
+#steam
+
+#diesel
+
+#electric
+
+#dmu
+str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diesel)
+str_dmu_DE5             :DE5 "Dieselvijf" (Diesel)
+str_dmu_DE1             :DE1 (Plan X) "Blauwe Engel" (Diesel)
+str_dmu_DE2             :DE2 (Plan X) "Blauwe Engel" (Diesel)
+str_dmu_DE3             :DE3 (Plan U) "Rode Duivel" (Diesel)
+str_dmu_DH1             :DH1 "Wadloper" (Diesel)
+str_dmu_DH2             :DH2 "Wadloper" (Diesel)
+str_dmu_DM90            :DM '90 "Buffel" (Diesel)
+
+#emu
+
+#wagons
