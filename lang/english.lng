@@ -11,10 +11,11 @@ STR_GRF_DESCRIPTION		:Dutch Trains for OpenTTD {}(c)Dutch Trainset Team {}Licens
 #electric
 
 #dmu
-str_dmu_DE1             :DE1 (Plan X) "Blauwe Engel"
-str_dmu_DE2             :DE2 (Plan X) "Blauwe Engel"
-str_dmu_DH1             :DH1 "Wadloper"
-str_dmu_DH2             :DH2 "Wadloper"
+str_dmu_DE1             :DE1 (Plan X) "Blauwe Engel" (Diesel)
+str_dmu_DE2             :DE2 (Plan X) "Blauwe Engel" (Diesel)
+str_dmu_DE3             :DE3 (Plan U) "Rode Duivel" (Diesel)
+str_dmu_DH1             :DH1 "Wadloper" (Diesel)
+str_dmu_DH2             :DH2 "Wadloper" (Diesel)
 
 #emu
 
