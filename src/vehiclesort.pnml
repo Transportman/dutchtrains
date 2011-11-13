@@ -14,6 +14,7 @@ sort(FEAT_TRAINS, [
     item_dmu_DE5,
     item_dmu_DE1,
     item_dmu_DE2,
+    item_dmu_DE4,
     item_dmu_DE3,
     item_dmu_DH1,
     item_dmu_DH2,

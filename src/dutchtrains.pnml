@@ -30,6 +30,8 @@
 #include "src/dmu/DE1_item.pnml"
 #include "src/dmu/DE2_graphics.pnml"
 #include "src/dmu/DE2_item.pnml"
+#include "src/dmu/DE4_graphics.pnml"
+#include "src/dmu/DE4_item.pnml"
 #include "src/dmu/DE3_graphics.pnml"
 #include "src/dmu/DE3_item.pnml"
 #include "src/dmu/DH1_graphics.pnml"
