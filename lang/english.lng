@@ -19,6 +19,7 @@ str_dmu_DE4             :DE4 "Trans Europ Express" (Diesel)
 str_dmu_DE3             :DE3 (Plan U) "Rode Duivel" (Diesel)
 str_dmu_DH1             :DH1 "Wadloper" (Diesel)
 str_dmu_DH2             :DH2 "Wadloper" (Diesel)
+str_dmu_DM90            :DM '90 "Buffel" (Diesel)
 
 #emu
 

@@ -9,6 +9,7 @@ item(FEAT_TRAINS, item_dmu_DE3, 2) {}
 item(FEAT_TRAINS, item_dmu_Mat34, 3) {}
 item(FEAT_TRAINS, item_dmu_DE5, 4) {}
 item(FEAT_TRAINS, item_dmu_DE4, 5) {}
+item(FEAT_TRAINS, item_dmu_DM90, 6) {}
 
 //non-articulated
 item(FEAT_TRAINS, item_dmu_DH1, 128) {}

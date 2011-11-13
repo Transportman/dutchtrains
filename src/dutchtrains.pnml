@@ -38,6 +38,8 @@
 #include "src/dmu/DH1_item.pnml"
 #include "src/dmu/DH2_graphics.pnml"
 #include "src/dmu/DH2_item.pnml"
+#include "src/dmu/DM90_graphics.pnml"
+#include "src/dmu/DM90_item.pnml"
 
 //emu
 
