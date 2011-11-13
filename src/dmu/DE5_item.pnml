@@ -43,6 +43,7 @@ item(FEAT_TRAINS, item_dmu_DE5) {
     graphics {
         purchase: spriteset_807;
         articulated_part: switch_dmu_DE5_articulated;
+        shorten_vehicle: switch_dmu_DE5_length;
         switch_dmu_DE5_position_red;
     }
 }
