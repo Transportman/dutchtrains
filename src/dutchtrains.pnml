@@ -42,6 +42,8 @@
 #include "src/dmu/DM90_item.pnml"
 #include "src/dmu/Lint41H_graphics.pnml"
 #include "src/dmu/Lint41H_item.pnml"
+#include "src/dmu/GTW28_graphics.pnml"
+#include "src/dmu/GTW28_item.pnml"
 
 //emu
 

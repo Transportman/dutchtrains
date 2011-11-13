@@ -21,6 +21,7 @@ str_dmu_DH1             :DH1 "Wadloper" (Diesel)
 str_dmu_DH2             :DH2 "Wadloper" (Diesel)
 str_dmu_DM90            :DM '90 "Buffel" (Diesel)
 str_dmu_Lint41H         :Lint 41/H (Diesel)
+str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
 

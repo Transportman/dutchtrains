@@ -11,6 +11,7 @@ item(FEAT_TRAINS, item_dmu_DE5, 4) {}
 item(FEAT_TRAINS, item_dmu_DE4, 5) {}
 item(FEAT_TRAINS, item_dmu_DM90, 6) {}
 item(FEAT_TRAINS, item_dmu_Lint41H, 7) {}
+item(FEAT_TRAINS, item_dmu_GTW28, 8) {}
 
 //non-articulated
 item(FEAT_TRAINS, item_dmu_DH1, 128) {}
