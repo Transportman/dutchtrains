@@ -19,6 +19,7 @@ sort(FEAT_TRAINS, [
     item_dmu_DH1,
     item_dmu_DH2,
     item_dmu_DM90,
+    item_dmu_Lint41H,
 
     //emu
 

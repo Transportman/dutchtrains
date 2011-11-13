@@ -1,0 +1,48 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_2381, "gfx/dutchtrainsw.png") {
+	[402, 3048, 50, 12, -25, -6]
+}
+
+/*
+* VEHICLE
+*/
+
+//syntus
+spriteset(spriteset_2361, "gfx/dutchtrainsw.png") {
+	[594, 3000, 8, 22, -3, -11]
+	[610, 3000, 22, 15, -11, -8]
+	[642, 3000, 32, 12, -17, -7]
+	[690, 3000, 22, 17, -11, -11]
+	[722, 3000, 8, 23, -3, -11]
+	[738, 3000, 22, 17, -11, -10]
+	[2, 3048, 32, 12, -16, -7]
+	[50, 3048, 22, 15, -11, -9]
+}
+
+spriteset(spriteset_2371, "gfx/dutchtrainsw.png") {
+	[114, 3048, 8, 23, -3, -11]
+	[130, 3048, 22, 17, -11, -10]
+	[162, 3048, 32, 12, -16, -7]
+	[210, 3048, 22, 15, -11, -9]
+	[242, 3048, 8, 22, -3, -11]
+	[258, 3048, 22, 15, -11, -8]
+	[290, 3048, 32, 12, -17, -7]
+	[338, 3048, 22, 17, -11, -11]
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, position_in_vehid_chain) {
+	1: spriteset_2371;
+    spriteset_2361;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_articulated, extra_callback_info1) {
+    1: return item_dmu_Lint41H;
+    return 0xFF;
+}
