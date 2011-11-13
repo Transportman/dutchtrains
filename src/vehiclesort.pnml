@@ -10,6 +10,7 @@ sort(FEAT_TRAINS, [
     //electric
 
     //dmu
+    item_dmu_DE1,
     item_dmu_DH1,
     item_dmu_DH2,
 
