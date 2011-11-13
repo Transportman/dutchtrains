@@ -12,6 +12,7 @@ STR_GRF_DESCRIPTION		:Dutch Trains for OpenTTD {}(c)Dutch Trainset Team {}Licens
 
 #dmu
 str_dmu_DH1             :DH1 "Wadloper"
+str_dmu_DH2             :DH2 "Wadloper"
 
 #emu
 

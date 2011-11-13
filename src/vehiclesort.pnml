@@ -1,3 +1,20 @@
 //this file set the sort order of vehicles
 //convention: steamers, diesels, diesel mus, electric, electric mus, wagons
 //each group sorted by introduction date
+
+sort(FEAT_TRAINS, [
+    //steam
+
+    //diesel
+
+    //electric
+
+    //dmu
+    item_dmu_DH1,
+    item_dmu_DH2,
+
+    //emu
+
+    //wagons
+     
+]);
