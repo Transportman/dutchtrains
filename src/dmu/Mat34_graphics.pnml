@@ -1,0 +1,165 @@
+/*
+* PURCHASE
+*/
+
+//grey
+spriteset(spriteset_461, "gfx/dutchtrainsw.png") {
+	[354, 440, 50, 12, -25, -6]
+}
+/*
+I don't know where these green and blue liveries came from. I think they
+never existed, but surely they weren't imagined when they were drawn...
+to be figured out
+//green
+spriteset(spriteset_464, "gfx/dutchtrainsw.png") {
+	[450, 440, 50, 12, -25, -6]
+}
+//blue
+spriteset(spriteset_467, "gfx/dutchtrainsw.png") {
+	[546, 440, 50, 12, -25, -6]
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_livery_purchase, current_year) {
+	0..1994: spriteset_1258;
+    spriteset_1292;
+}
+*/
+
+/*
+* VEHICLE
+*/
+
+//grey
+spriteset(spriteset_371, "gfx/dutchtrainsw.png") {
+	[130, 296, 8, 21, -3, -10]
+	[146, 296, 21, 15, -12, -8]
+	[178, 296, 31, 12, -15, -7]
+	[226, 296, 19, 15, -9, -9]
+	[258, 296, 8, 23, -3, -11]
+	[274, 296, 19, 15, -7, -10]
+	[306, 296, 31, 12, -15, -7]
+	[354, 296, 21, 15, -10, -9]
+}
+
+spriteset(spriteset_381, "gfx/dutchtrainsw.png") {
+	[418, 296, 8, 21, -3, -12]
+	[434, 296, 20, 15, -10, -9]
+	[466, 296, 28, 12, -11, -7]
+	[514, 296, 20, 15, -7, -8]
+	[546, 296, 8, 21, -3, -9]
+	[562, 296, 20, 15, -10, -9]
+	[594, 296, 28, 12, -16, -7]
+	[642, 296, 20, 15, -11, -10]
+}
+
+spriteset(spriteset_391, "gfx/dutchtrainsw.png") {
+	[706, 296, 8, 23, -3, -12]
+	[722, 296, 19, 15, -9, -9]
+	[754, 296, 31, 12, -14, -7]
+	[2, 344, 21, 15, -8, -8]
+	[34, 344, 8, 21, -3, -9]
+	[50, 344, 21, 15, -10, -9]
+	[82, 344, 31, 12, -16, -7]
+	[130, 344, 19, 15, -11, -10]
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_grey, position_in_vehid_chain) {
+	1: spriteset_381;
+    2: spriteset_391;
+    spriteset_371;
+}
+/*
+//green
+spriteset(spriteset_401, "gfx/dutchtrainsw.png") {
+	[194, 344, 8, 21, -3, -10]
+	[210, 344, 21, 15, -12, -8]
+	[242, 344, 31, 12, -15, -7]
+	[290, 344, 19, 15, -9, -9]
+	[322, 344, 8, 23, -3, -11]
+	[338, 344, 19, 15, -7, -10]
+	[370, 344, 31, 12, -15, -7]
+	[418, 344, 21, 15, -10, -9]
+}
+
+spriteset(spriteset_411, "gfx/dutchtrainsw.png") {
+	[482, 344, 8, 21, -3, -12]
+	[498, 344, 20, 15, -10, -9]
+	[530, 344, 28, 12, -11, -7]
+	[578, 344, 20, 15, -7, -8]
+	[610, 344, 8, 21, -3, -9]
+	[626, 344, 20, 15, -10, -9]
+	[658, 344, 28, 12, -16, -7]
+	[706, 344, 20, 15, -11, -10]
+}
+
+spriteset(spriteset_421, "gfx/dutchtrainsw.png") {
+	[770, 344, 8, 23, -3, -12]
+	[2, 392, 19, 15, -9, -9]
+	[34, 392, 31, 12, -14, -7]
+	[82, 392, 21, 15, -8, -8]
+	[114, 392, 8, 21, -3, -9]
+	[130, 392, 21, 15, -10, -9]
+	[162, 392, 31, 12, -16, -7]
+	[210, 392, 19, 15, -11, -10]
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_green, position_in_vehid_chain) {
+	1: spriteset_411;
+    2: spriteset_421;
+    spriteset_401;
+}
+
+//blue
+spriteset(spriteset_431, "gfx/dutchtrainsw.png") {
+	[274, 392, 8, 21, -3, -10]
+	[290, 392, 21, 15, -12, -8]
+	[322, 392, 31, 12, -15, -7]
+	[370, 392, 19, 15, -9, -9]
+	[402, 392, 8, 23, -3, -11]
+	[418, 392, 19, 15, -7, -10]
+	[450, 392, 31, 12, -15, -7]
+	[498, 392, 21, 15, -10, -9]
+}
+
+spriteset(spriteset_441, "gfx/dutchtrainsw.png") {
+	[562, 392, 8, 21, -3, -12]
+	[578, 392, 20, 15, -10, -9]
+	[610, 392, 28, 12, -11, -7]
+	[658, 392, 20, 15, -7, -8]
+	[690, 392, 8, 21, -3, -9]
+	[706, 392, 20, 15, -10, -9]
+	[738, 392, 28, 12, -16, -7]
+	[2, 440, 20, 15, -11, -10]
+}
+
+spriteset(spriteset_451, "gfx/dutchtrainsw.png") {
+	[66, 440, 8, 23, -3, -12]
+	[82, 440, 19, 15, -9, -9]
+	[114, 440, 31, 12, -14, -7]
+	[162, 440, 21, 15, -8, -8]
+	[194, 440, 8, 21, -3, -9]
+	[210, 440, 21, 15, -10, -9]
+	[242, 440, 31, 12, -16, -7]
+	[290, 440, 19, 15, -11, -10]
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_blue, position_in_vehid_chain) {
+	1: spriteset_441;
+    2: spriteset_451;
+    spriteset_431;
+}
+
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_livery, (date_of_last_service >= date(1995,1,1))) {
+	1: switch_dmu_Mat34_position_green;
+    switch_dmu_Mat34_position_blue;
+}
+*/
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_articulated, extra_callback_info1) {
+    1..2: return item_dmu_Mat34;
+    return 0xFF;
+}

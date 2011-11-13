@@ -22,6 +22,8 @@
 //electric
 
 //dmu
+#include "src/dmu/Mat34_graphics.pnml"
+#include "src/dmu/Mat34_item.pnml"
 #include "src/dmu/DE1_graphics.pnml"
 #include "src/dmu/DE1_item.pnml"
 #include "src/dmu/DE2_graphics.pnml"
