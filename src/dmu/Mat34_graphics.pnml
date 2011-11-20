@@ -145,7 +145,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_blue, position_in_vehid_chai
 }
 
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_livery, (date_of_last_service >= date(1995,1,1))) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_livery, date_of_last_service) {
 	0..date(1938,1,1): switch_dmu_Mat34_position_grey;
     date(1938,1,1)..date(1954,1,1): switch_dmu_Mat34_position_green;
     switch_dmu_Mat34_position_blue;
