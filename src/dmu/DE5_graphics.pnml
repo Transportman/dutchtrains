@@ -6,10 +6,6 @@
 spriteset(spriteset_807, "gfx/dutchtrainsw.png") {
 	[466, 1016, 50, 12, -25, -6]
 }
-/*
-I don't know where these green and blue liveries came from. I think they
-never existed, but surely they weren't imagined when they were drawn...
-to be figured out
 //green
 spriteset(spriteset_801, "gfx/dutchtrainsw.png") {
 	[274, 1016, 50, 12, -25, -6]
@@ -20,10 +16,10 @@ spriteset(spriteset_804, "gfx/dutchtrainsw.png") {
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE5_livery_purchase, current_year) {
-	0..1994: spriteset_1258;
-    spriteset_1292;
+	0..1953: spriteset_807;
+    1954..1964: spriteset_801;
+    spriteset_804;
 }
-*/
 
 /*
 * VEHICLE
@@ -91,7 +87,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_red, position_in_vehid_chain) 
     4: spriteset_791;
     spriteset_751;
 }
-/*
+
 //green
 spriteset(spriteset_651, "gfx/dutchtrainsw.png") {
 	[674, 728, 8, 21, -3, -8]
@@ -221,11 +217,12 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_blue, position_in_vehid_chain)
 }
 
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_livery, (date_of_last_service >= date(1995,1,1))) {
-	1: switch_dmu_DE5_position_green;
-    switch_dmu_DE5_position_blue;
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_livery, date_of_last_service) {
+	0..date(1954,1,1): switch_dmu_DE5_position_green;
+    date(1954,1,1)..date(1965,1,1): switch_dmu_DE5_position_blue;
+    switch_dmu_DE5_position_red;
 }
-*/
+
 
 /*
 * ARTICULATED VEHICLE CALLBACK
