@@ -41,9 +41,9 @@ item(FEAT_TRAINS, item_dmu_Mat34) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_461;
+        purchase: switch_dmu_Mat34_livery_purchase;
         articulated_part: switch_dmu_Mat34_articulated;
         shorten_vehicle: switch_dmu_Mat34_length;
-        switch_dmu_Mat34_position_grey;
+        switch_dmu_Mat34_livery;
     }
 }
