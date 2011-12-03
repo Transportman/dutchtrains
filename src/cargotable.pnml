@@ -1,0 +1,7 @@
+//cargo translation table
+
+cargotable {
+	COAL, IORE, CORE, AORE, CLAY, CMNT, FERT, GRVL, LIME, POTA, SAND, SCRP, SULP, WDPR, WSTE, 
+    GRAI, WHEA, MAIZ, SUGR, TOFF, CTCD, CERE, FICR, RSGR,
+    LVST, ENSP, FMSP, MNSP
+}

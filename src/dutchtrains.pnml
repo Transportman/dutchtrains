@@ -10,6 +10,10 @@
 #include "src/vehicleids.pnml"
 //sort vehicles in purchase list
 #include "src/vehiclesort.pnml"
+//cargo translation table
+#include "src/cargotable.pnml"
+//recolour sprites for cargo
+#include "src/recoloursprites.pnml"
 
 /*
 * VEHICLES
@@ -50,4 +54,6 @@
 //emu
 
 //wagons
+#include "src/wagons/gen0hopper_graphics.pnml"
+#include "src/wagons/gen0hopper_item.pnml"
 

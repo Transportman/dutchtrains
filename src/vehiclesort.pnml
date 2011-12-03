@@ -26,5 +26,6 @@ sort(FEAT_TRAINS, [
     //emu
 
     //wagons
+    item_wagons_gen0hopper,
      
 ]);

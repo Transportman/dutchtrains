@@ -27,3 +27,4 @@ str_dmu_GTW28           :GTW 2/8 (Diesel)
 #emu
 
 #wagons
+str_wagons_gen0hopper   :Hopper
