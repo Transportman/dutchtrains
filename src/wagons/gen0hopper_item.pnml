@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_wagons_gen0hopper) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_gen0hopper_purchase;
+        purchase: spriteset_wagons_gen0hopper_purchase;
         colour_mapping: switch_generic_recolour;
         switch_wagons_gen0hopper_livery;
     }

@@ -2,7 +2,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_gen0hopper_purchase, "gfx/wagons/gen0_hopper.png") {
+spriteset(spriteset_wagons_gen0hopper_purchase, "gfx/wagons/gen0_hopper.png") {
 	template_purchase(1, 192)
 }
 
@@ -11,36 +11,36 @@ spriteset(spriteset_gen0hopper_purchase, "gfx/wagons/gen0_hopper.png") {
 * VEHICLE
 */
 
-spriteset(spriteset_gen0hopper_empty_1, "gfx/wagons/gen0_hopper.png") {
+spriteset(spriteset_wagons_gen0hopper_empty_1, "gfx/wagons/gen0_hopper.png") {
 	template_2cc_58(1, 1)
 }
-spriteset(spriteset_gen0hopper_half_1, "gfx/wagons/gen0_hopper.png") {
+spriteset(spriteset_wagons_gen0hopper_half_1, "gfx/wagons/gen0_hopper.png") {
 	template_2cc_58(1, 32)
 }
-spriteset(spriteset_gen0hopper_full_1, "gfx/wagons/gen0_hopper.png") {
+spriteset(spriteset_wagons_gen0hopper_full_1, "gfx/wagons/gen0_hopper.png") {
 	template_2cc_58(1, 64)
 }
-spriteset(spriteset_gen0hopper_empty_2, "gfx/wagons/gen0_hopper.png") {
+spriteset(spriteset_wagons_gen0hopper_empty_2, "gfx/wagons/gen0_hopper.png") {
 	template_2cc_58(1, 96)
 }
-spriteset(spriteset_gen0hopper_half_2, "gfx/wagons/gen0_hopper.png") {
+spriteset(spriteset_wagons_gen0hopper_half_2, "gfx/wagons/gen0_hopper.png") {
 	template_2cc_58(1, 128)
 }
-spriteset(spriteset_gen0hopper_full_2, "gfx/wagons/gen0_hopper.png") {
+spriteset(spriteset_wagons_gen0hopper_full_2, "gfx/wagons/gen0_hopper.png") {
 	template_2cc_58(1, 160)
 }
 
-spritegroup spritegroup_gen0hopper_1 {
-    loading: [spriteset_gen0hopper_empty_1, spriteset_gen0hopper_half_1, spriteset_gen0hopper_full_1];
-    loaded:  [spriteset_gen0hopper_empty_1, spriteset_gen0hopper_half_1, spriteset_gen0hopper_full_1];
+spritegroup spritegroup_wagons_gen0hopper_1 {
+    loading: [spriteset_wagons_gen0hopper_empty_1, spriteset_wagons_gen0hopper_half_1, spriteset_wagons_gen0hopper_full_1];
+    loaded:  [spriteset_wagons_gen0hopper_empty_1, spriteset_wagons_gen0hopper_half_1, spriteset_wagons_gen0hopper_full_1];
 }
 
-spritegroup spritegroup_gen0hopper_2 {
-    loading: [spriteset_gen0hopper_empty_2, spriteset_gen0hopper_half_2, spriteset_gen0hopper_full_2];
-    loaded:  [spriteset_gen0hopper_empty_2, spriteset_gen0hopper_half_2, spriteset_gen0hopper_full_2];
+spritegroup spritegroup_wagons_gen0hopper_2 {
+    loading: [spriteset_wagons_gen0hopper_empty_2, spriteset_wagons_gen0hopper_half_2, spriteset_wagons_gen0hopper_full_2];
+    loaded:  [spriteset_wagons_gen0hopper_empty_2, spriteset_wagons_gen0hopper_half_2, spriteset_wagons_gen0hopper_full_2];
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0hopper_livery) {
-	1: spritegroup_gen0hopper_1;
-    1: spritegroup_gen0hopper_2;
+	1: spritegroup_wagons_gen0hopper_1;
+    1: spritegroup_wagons_gen0hopper_2;
 }
