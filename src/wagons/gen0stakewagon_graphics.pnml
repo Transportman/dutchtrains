@@ -1,0 +1,66 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen0stakewagon_purchase, "gfx/wagons/gen0_stakewagon.png") {
+	template_purchase(1, 96)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen0stakewagon_empty, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(1, 1)
+}
+spriteset(spriteset_wagons_gen0stakewagon_half_wood, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(1, 32)
+}
+spriteset(spriteset_wagons_gen0stakewagon_full_wood, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(1, 64)
+}
+spriteset(spriteset_wagons_gen0stakewagon_half_stel, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(186, 32)
+}
+spriteset(spriteset_wagons_gen0stakewagon_full_stel, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(186, 64)
+}
+spriteset(spriteset_wagons_gen0stakewagon_half_wdpr, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(371, 32)
+}
+spriteset(spriteset_wagons_gen0stakewagon_full_wdpr, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(371, 64)
+}
+spriteset(spriteset_wagons_gen0stakewagon_half_crates, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(556, 32)
+}
+spriteset(spriteset_wagons_gen0stakewagon_full_crates, "gfx/wagons/gen0_stakewagon.png") {
+	template_2cc_48(556, 64)
+}
+
+spritegroup spritegroup_wagons_gen0stakewagon_wood {
+    loading: [spriteset_wagons_gen0stakewagon_empty, spriteset_wagons_gen0stakewagon_half_wood, spriteset_wagons_gen0stakewagon_full_wood];
+    loaded:  [spriteset_wagons_gen0stakewagon_empty, spriteset_wagons_gen0stakewagon_half_wood, spriteset_wagons_gen0stakewagon_full_wood];
+}
+
+spritegroup spritegroup_wagons_gen0stakewagon_stel {
+    loading: [spriteset_wagons_gen0stakewagon_empty, spriteset_wagons_gen0stakewagon_half_stel, spriteset_wagons_gen0stakewagon_full_stel];
+    loaded:  [spriteset_wagons_gen0stakewagon_empty, spriteset_wagons_gen0stakewagon_half_stel, spriteset_wagons_gen0stakewagon_full_stel];
+}
+
+spritegroup spritegroup_wagons_gen0stakewagon_wdpr {
+    loading: [spriteset_wagons_gen0stakewagon_empty, spriteset_wagons_gen0stakewagon_half_wdpr, spriteset_wagons_gen0stakewagon_full_wdpr];
+    loaded:  [spriteset_wagons_gen0stakewagon_empty, spriteset_wagons_gen0stakewagon_half_wdpr, spriteset_wagons_gen0stakewagon_full_wdpr];
+}
+
+spritegroup spritegroup_wagons_gen0stakewagon_crates {
+    loading: [spriteset_wagons_gen0stakewagon_empty, spriteset_wagons_gen0stakewagon_half_crates, spriteset_wagons_gen0stakewagon_full_crates];
+    loaded:  [spriteset_wagons_gen0stakewagon_empty, spriteset_wagons_gen0stakewagon_half_crates, spriteset_wagons_gen0stakewagon_full_crates];
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0stakewagon_livery, cargo_type_in_veh) {
+    WOOD: spritegroup_wagons_gen0stakewagon_wood;
+    STEL: spritegroup_wagons_gen0stakewagon_stel;
+    WDPR: spritegroup_wagons_gen0stakewagon_wdpr;
+    spritegroup_wagons_gen0stakewagon_crates;
+}

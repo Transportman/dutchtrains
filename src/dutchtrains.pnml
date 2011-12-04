@@ -64,3 +64,5 @@
 #include "src/wagons/gen0openwagonmedium_item.pnml"
 #include "src/wagons/gen0openwagonsmall_graphics.pnml"
 #include "src/wagons/gen0openwagonsmall_item.pnml"
+#include "src/wagons/gen0stakewagon_graphics.pnml"
+#include "src/wagons/gen0stakewagon_item.pnml"
