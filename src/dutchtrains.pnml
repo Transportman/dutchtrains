@@ -62,3 +62,5 @@
 #include "src/wagons/gen0tanker_item.pnml"
 #include "src/wagons/gen0openwagonmedium_graphics.pnml"
 #include "src/wagons/gen0openwagonmedium_item.pnml"
+#include "src/wagons/gen0openwagonsmall_graphics.pnml"
+#include "src/wagons/gen0openwagonsmall_item.pnml"

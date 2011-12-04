@@ -31,3 +31,4 @@ str_wagons_gen0hopper   :Hopper
 str_wagons_gen0boxcar   :Boxcar
 str_wagons_gen0tanker   :Tanker
 str_wagons_gen0openwagonmedium   :Open Wagon (medium)
+str_wagons_gen0openwagonsmall    :Open Wagon (small)
