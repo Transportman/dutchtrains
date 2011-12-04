@@ -60,3 +60,5 @@
 #include "src/wagons/gen0boxcar_item.pnml"
 #include "src/wagons/gen0tanker_graphics.pnml"
 #include "src/wagons/gen0tanker_item.pnml"
+#include "src/wagons/gen0openwagonmedium_graphics.pnml"
+#include "src/wagons/gen0openwagonmedium_item.pnml"

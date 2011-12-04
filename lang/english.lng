@@ -30,3 +30,4 @@ str_dmu_GTW28           :GTW 2/8 (Diesel)
 str_wagons_gen0hopper   :Hopper
 str_wagons_gen0boxcar   :Boxcar
 str_wagons_gen0tanker   :Tanker
+str_wagons_gen0openwagonmedium   :Open Wagon (medium)

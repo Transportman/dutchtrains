@@ -1,0 +1,46 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen0openwagonmedium_purchase, "gfx/wagons/gen0_openwagonmedium.png") {
+	template_purchase(1, 192)
+}
+
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen0openwagonmedium_empty_1, "gfx/wagons/gen0_openwagonmedium.png") {
+	template_2cc_58(1, 1)
+}
+spriteset(spriteset_wagons_gen0openwagonmedium_half_1, "gfx/wagons/gen0_openwagonmedium.png") {
+	template_2cc_58(1, 32)
+}
+spriteset(spriteset_wagons_gen0openwagonmedium_full_1, "gfx/wagons/gen0_openwagonmedium.png") {
+	template_2cc_58(1, 64)
+}
+spriteset(spriteset_wagons_gen0openwagonmedium_empty_2, "gfx/wagons/gen0_openwagonmedium.png") {
+	template_2cc_58(1, 96)
+}
+spriteset(spriteset_wagons_gen0openwagonmedium_half_2, "gfx/wagons/gen0_openwagonmedium.png") {
+	template_2cc_58(1, 128)
+}
+spriteset(spriteset_wagons_gen0openwagonmedium_full_2, "gfx/wagons/gen0_openwagonmedium.png") {
+	template_2cc_58(1, 160)
+}
+
+spritegroup spritegroup_wagons_gen0openwagonmedium_1 {
+    loading: [spriteset_wagons_gen0openwagonmedium_empty_1, spriteset_wagons_gen0openwagonmedium_half_1, spriteset_wagons_gen0openwagonmedium_full_1];
+    loaded:  [spriteset_wagons_gen0openwagonmedium_empty_1, spriteset_wagons_gen0openwagonmedium_half_1, spriteset_wagons_gen0openwagonmedium_full_1];
+}
+
+spritegroup spritegroup_wagons_gen0openwagonmedium_2 {
+    loading: [spriteset_wagons_gen0openwagonmedium_empty_2, spriteset_wagons_gen0openwagonmedium_half_2, spriteset_wagons_gen0openwagonmedium_full_2];
+    loaded:  [spriteset_wagons_gen0openwagonmedium_empty_2, spriteset_wagons_gen0openwagonmedium_half_2, spriteset_wagons_gen0openwagonmedium_full_2];
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonmedium_livery) {
+	1: spritegroup_wagons_gen0openwagonmedium_1;
+    1: spritegroup_wagons_gen0openwagonmedium_2;
+}
