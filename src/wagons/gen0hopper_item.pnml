@@ -42,7 +42,7 @@ item(FEAT_TRAINS, item_wagons_gen0hopper) {
 	}
     graphics {
         purchase: spriteset_gen0hopper_purchase;
-        colour_mapping: switch_gen0hopper_recolour;
+        colour_mapping: switch_generic_recolour;
         switch_wagons_gen0hopper_livery;
     }
 }

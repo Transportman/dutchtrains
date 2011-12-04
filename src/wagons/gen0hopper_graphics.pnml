@@ -44,14 +44,3 @@ random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0hopper_livery) {
 	1: spritegroup_gen0hopper_1;
     1: spritegroup_gen0hopper_2;
 }
-
-/*
-* CALLBACKS
-*/
-
-switch(FEAT_TRAINS, SELF, switch_gen0hopper_recolour, cargo_type_in_veh) {
-	GRAI: recolour_grain;
-    COAL: recolour_coal;
-    IORE: recolour_iore;
-    CB_FAILED;
-}
