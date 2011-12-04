@@ -56,4 +56,5 @@
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"
 #include "src/wagons/gen0hopper_item.pnml"
-
+#include "src/wagons/gen0boxcar_graphics.pnml"
+#include "src/wagons/gen0boxcar_item.pnml"

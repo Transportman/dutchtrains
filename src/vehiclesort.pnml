@@ -27,5 +27,6 @@ sort(FEAT_TRAINS, [
 
     //wagons
     item_wagons_gen0hopper,
+    item_wagons_gen0boxcar,
      
 ]);

@@ -18,3 +18,4 @@ item(FEAT_TRAINS, item_dmu_GTW26, 9) {}
 item(FEAT_TRAINS, item_dmu_DH1, 128) {}
 item(FEAT_TRAINS, item_dmu_DE1, 129) {}
 item(FEAT_TRAINS, item_wagons_gen0hopper, 130) {}
+item(FEAT_TRAINS, item_wagons_gen0boxcar, 131) {}
