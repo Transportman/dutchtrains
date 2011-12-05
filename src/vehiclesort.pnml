@@ -35,6 +35,7 @@ sort(FEAT_TRAINS, [
     
     //metros
     item_metro_GVB_M1M2,
+    item_metro_GVB_S1S2,
     item_metro_GVB_M4S3,
      
 ]);

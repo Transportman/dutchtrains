@@ -74,3 +74,5 @@
 #include "src/metro/GVB_M1M2_item.pnml"
 #include "src/metro/GVB_M4S3_graphics.pnml"
 #include "src/metro/GVB_M4S3_item.pnml"
+#include "src/metro/GVB_S1S2_graphics.pnml"
+#include "src/metro/GVB_S1S2_item.pnml"
