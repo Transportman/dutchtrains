@@ -1,0 +1,36 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_metro_GVB_M5M6_purchase, "gfx/metro/GVB_M5M6.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_metro_GVB_M5M6_front, "gfx/metro/GVB_M5M6.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_metro_GVB_M5M6_middle, "gfx/metro/GVB_M5M6.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_metro_GVB_M5M6_back, "gfx/metro/GVB_M5M6.png") {
+	template_2cc_88(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_GVB_M5M6_livery, position_in_vehid_chain) {
+	1: spriteset_metro_GVB_M5M6_middle;
+    2: spriteset_metro_GVB_M5M6_back;
+    spriteset_metro_GVB_M5M6_front;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_metro_GVB_M5M6_articulated, extra_callback_info1) {
+    1..2: return item_metro_GVB_M5M6;
+    return 0xFF;
+}
