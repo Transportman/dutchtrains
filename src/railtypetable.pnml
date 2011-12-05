@@ -1,0 +1,7 @@
+//railtype translation table
+
+railtypetable {
+    RAIL,
+    ELRL,
+    MTRO: ["3RDR"]
+}
