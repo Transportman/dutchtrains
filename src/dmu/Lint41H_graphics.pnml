@@ -33,7 +33,7 @@ spriteset(spriteset_2371, "gfx/dutchtrainsw.png") {
 	[338, 3048, 22, 17, -11, -11]
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_vehid_chain % 2)) {
 	1: spriteset_2371;
     spriteset_2361;
 }

@@ -42,7 +42,7 @@ spriteset(spriteset_1906, "gfx/dutchtrainsw.png") {
 	[290, 2360, 22, 15, -10, -10]
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen1, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen1, (position_in_vehid_chain % 2)) {
 	1: spriteset_1906;
     spriteset_1896;
 }
@@ -70,7 +70,7 @@ spriteset(spriteset_1936, "gfx/dutchtrainsw.png") {
 	[370, 2408, 22, 16, -10, -10]
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen2, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen2, (position_in_vehid_chain % 2)) {
 	1: spriteset_1936;
     spriteset_1926;
 }

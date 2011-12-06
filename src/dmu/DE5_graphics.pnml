@@ -80,7 +80,7 @@ spriteset(spriteset_791, "gfx/dutchtrainsw.png") {
 	[162, 1016, 31, 12, -17, -7]
 	[210, 1016, 19, 15, -9, -9]
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_red, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_red, (position_in_vehid_chain % 5)) {
 	1: spriteset_761;
     2: spriteset_771;
     3: spriteset_781;
@@ -144,7 +144,7 @@ spriteset(spriteset_691, "gfx/dutchtrainsw.png") {
 	[466, 824, 19, 15, -10, -10]
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_green, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_green, (position_in_vehid_chain % 5)) {
 	1: spriteset_661;
     2: spriteset_671;
     3: spriteset_681;
@@ -208,7 +208,7 @@ spriteset(spriteset_741, "gfx/dutchtrainsw.png") {
 	[338, 920, 19, 15, -9, -9]
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_blue, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_blue, (position_in_vehid_chain % 5)) {
 	1: spriteset_711;
     2: spriteset_721;
     3: spriteset_731;
@@ -237,7 +237,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_articulated, extra_callback_info1) {
 * SHORTEN VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_length, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_length, (position_in_vehid_chain % 5)) {
     1..2: SHORTEN_TO_7_8;
     return SHORTEN_TO_8_8;
 }

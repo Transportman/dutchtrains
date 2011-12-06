@@ -45,7 +45,7 @@ spriteset(spriteset_1206, "gfx/dutchtrainsw.png") {
 	[370, 1480, 22, 17, -10, -11]
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE4_position_red, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE4_position_red, (position_in_vehid_chain % 4)) {
 	1..2: spriteset_1196;
     3: spriteset_1206;
     spriteset_1186;
