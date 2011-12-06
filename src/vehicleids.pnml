@@ -20,6 +20,7 @@ item(FEAT_TRAINS, item_metro_GVB_M5M6, 13) {}
 item(FEAT_TRAINS, item_metro_RET_typeT, 14) {}
 item(FEAT_TRAINS, item_metro_RET_typeM, 15) {}
 item(FEAT_TRAINS, item_metro_RET_typeB, 16) {}
+item(FEAT_TRAINS, item_metro_RET_typeR, 17) {}
 
 //non-articulated
 item(FEAT_TRAINS, item_dmu_DH1, 128) {}

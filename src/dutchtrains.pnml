@@ -84,3 +84,5 @@
 #include "src/metro/RET_typeM_item.pnml"
 #include "src/metro/RET_typeB_graphics.pnml"
 #include "src/metro/RET_typeB_item.pnml"
+#include "src/metro/RET_typeR_graphics.pnml"
+#include "src/metro/RET_typeR_item.pnml"

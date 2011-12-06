@@ -41,5 +41,6 @@ sort(FEAT_TRAINS, [
     item_metro_RET_typeM,
     item_metro_RET_typeT,
     item_metro_RET_typeB,
+    item_metro_RET_typeR,
      
 ]);
