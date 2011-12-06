@@ -166,6 +166,6 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_articulated, extra_callback_info1) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_length, (position_in_vehid_chain % 3)) {
-    1: SHORTEN_TO_7_8;
+    1: return SHORTEN_TO_7_8;
     return SHORTEN_TO_8_8;
 }

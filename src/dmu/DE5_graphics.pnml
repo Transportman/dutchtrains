@@ -238,6 +238,6 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_articulated, extra_callback_info1) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE5_length, (position_in_vehid_chain % 5)) {
-    1..2: SHORTEN_TO_7_8;
+    1..2: return SHORTEN_TO_7_8;
     return SHORTEN_TO_8_8;
 }
