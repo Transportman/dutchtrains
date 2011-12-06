@@ -35,7 +35,8 @@ str_wagons_gen0openwagonsmall    :Open Wagon (small)
 str_wagons_gen0stakewagon        :Stake Wagon
 
 #metro
-str_metro_GVB_M1M2      :GVB M1-M2 "Herring Gull" (Metro, Electric)
-str_metro_GVB_M4S3      :GVB M4/S3 (Metro, Electric)
-str_metro_GVB_S1S2      :GVB S1-S2 (Metro, Electric)
-str_metro_GVB_M5M6      :GVB M5-M6 (Metro, Electric)
+str_metro_GVB_M1M2      :GVB M1-M2 "Herring Gull" (Metro, third rail)
+str_metro_GVB_M4S3      :GVB M4/S3 (Metro, third rail)
+str_metro_GVB_S1S2      :GVB S1-S2 (Metro, third rail)
+str_metro_GVB_M5M6      :GVB M5-M6 (Metro, third rail)
+str_metro_RET_typeT     :RET Type T (SG2) (Metro, third rail)

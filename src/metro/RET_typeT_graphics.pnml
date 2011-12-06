@@ -1,0 +1,49 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_metro_RET_typeT_blue_purchase, "gfx/metro/RET_typeT.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_metro_RET_typeT_blue_front, "gfx/metro/RET_typeT.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_metro_RET_typeT_blue_back, "gfx/metro/RET_typeT.png") {
+	template_2cc_88(1, 32)
+}
+
+spriteset(spriteset_metro_RET_typeT_red_front, "gfx/metro/RET_typeT.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_metro_RET_typeT_red_back, "gfx/metro/RET_typeT.png") {
+	template_2cc_88(1, 96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeT_position_blue, (position_in_vehid_chain % 2)) {
+	1: spriteset_metro_RET_typeT_blue_back;
+    spriteset_metro_RET_typeT_blue_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeT_position_red, (position_in_vehid_chain % 2)) {
+	1: spriteset_metro_RET_typeT_red_back;
+    spriteset_metro_RET_typeT_red_front;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeT_livery, (date_of_last_service >= date(1995,1,1))) {
+	1: switch_metro_RET_typeT_position_red;
+    switch_metro_RET_typeT_position_blue;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeT_articulated, extra_callback_info1) {
+    1: return item_metro_RET_typeT;
+    return 0xFF;
+}
