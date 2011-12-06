@@ -1,0 +1,32 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_metro_RET_typeB_purchase, "gfx/metro/RET_typeB.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_metro_RET_typeB_front, "gfx/metro/RET_typeB.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_metro_RET_typeB_back, "gfx/metro/RET_typeB.png") {
+	template_2cc_88(1, 32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_metro_RET_typeB_back;
+    spriteset_metro_RET_typeB_front;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_articulated, extra_callback_info1) {
+    1: return item_metro_RET_typeB;
+    return 0xFF;
+}
