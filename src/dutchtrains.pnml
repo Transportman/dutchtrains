@@ -80,3 +80,5 @@
 #include "src/metro/GVB_M5M6_item.pnml"
 #include "src/metro/RET_typeT_graphics.pnml"
 #include "src/metro/RET_typeT_item.pnml"
+#include "src/metro/RET_typeM_graphics.pnml"
+#include "src/metro/RET_typeM_item.pnml"
