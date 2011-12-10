@@ -1,0 +1,76 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen0livestockwagon_purchase, "gfx/wagons/gen0_livestockwagon.png") {
+	template_purchase(1, 192)
+}
+
+/*
+* VEHICLE
+*/
+
+//pigs
+spriteset(spriteset_wagons_gen0livestockwagon_pigs_1_empty, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(1, 1)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_pigs_1_half, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(1, 32)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_pigs_1_full, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(1, 64)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_pigs_2_empty, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(1, 96)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_pigs_2_half, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(1, 128)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_pigs_2_full, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(1, 160)
+}
+//cows
+spriteset(spriteset_wagons_gen0livestockwagon_cows_1_empty, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(186, 1)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_cows_1_half, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(186, 32)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_cows_1_full, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(186, 64)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_cows_2_empty, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(186, 96)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_cows_2_half, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(186, 128)
+}
+spriteset(spriteset_wagons_gen0livestockwagon_cows_2_full, "gfx/wagons/gen0_livestockwagon.png") {
+	template_2cc_58(186, 160)
+}
+
+//pigs
+spritegroup spritegroup_wagons_gen0livestockwagon_pigs_1 {
+    loading: [spriteset_wagons_gen0livestockwagon_pigs_1_empty, spriteset_wagons_gen0livestockwagon_pigs_1_half, spriteset_wagons_gen0livestockwagon_pigs_1_full];
+    loaded:  [spriteset_wagons_gen0livestockwagon_pigs_1_empty, spriteset_wagons_gen0livestockwagon_pigs_1_half, spriteset_wagons_gen0livestockwagon_pigs_1_full];
+}
+spritegroup spritegroup_wagons_gen0livestockwagon_pigs_2 {
+    loading: [spriteset_wagons_gen0livestockwagon_pigs_2_empty, spriteset_wagons_gen0livestockwagon_pigs_2_half, spriteset_wagons_gen0livestockwagon_pigs_2_full];
+    loaded:  [spriteset_wagons_gen0livestockwagon_pigs_2_empty, spriteset_wagons_gen0livestockwagon_pigs_2_half, spriteset_wagons_gen0livestockwagon_pigs_2_full];
+}
+//cows
+spritegroup spritegroup_wagons_gen0livestockwagon_cows_1 {
+    loading: [spriteset_wagons_gen0livestockwagon_cows_1_empty, spriteset_wagons_gen0livestockwagon_cows_1_half, spriteset_wagons_gen0livestockwagon_cows_1_full];
+    loaded:  [spriteset_wagons_gen0livestockwagon_cows_1_empty, spriteset_wagons_gen0livestockwagon_cows_1_half, spriteset_wagons_gen0livestockwagon_cows_1_full];
+}
+spritegroup spritegroup_wagons_gen0livestockwagon_cows_2 {
+    loading: [spriteset_wagons_gen0livestockwagon_cows_2_empty, spriteset_wagons_gen0livestockwagon_cows_2_half, spriteset_wagons_gen0livestockwagon_cows_2_full];
+    loaded:  [spriteset_wagons_gen0livestockwagon_cows_2_empty, spriteset_wagons_gen0livestockwagon_cows_2_half, spriteset_wagons_gen0livestockwagon_cows_2_full];
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0livestockwagon_livery) {
+	1: spritegroup_wagons_gen0livestockwagon_cows_1;
+    1: spritegroup_wagons_gen0livestockwagon_cows_2;
+    1: spritegroup_wagons_gen0livestockwagon_pigs_1;
+    1: spritegroup_wagons_gen0livestockwagon_pigs_2; 
+}

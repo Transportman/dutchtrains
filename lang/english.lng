@@ -33,6 +33,7 @@ str_wagons_gen0tanker   :Tanker
 str_wagons_gen0openwagonmedium   :Open Wagon (medium)
 str_wagons_gen0openwagonsmall    :Open Wagon (small)
 str_wagons_gen0stakewagon        :Stake Wagon
+str_wagons_gen0livestockwagon    :Livestock Wagon
 
 #metro
 str_metro_GVB_M1M2      :GVB M1-M2 "Herring Gull" (Metro, third rail)

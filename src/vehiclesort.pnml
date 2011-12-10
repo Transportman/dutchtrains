@@ -32,6 +32,7 @@ sort(FEAT_TRAINS, [
     item_wagons_gen0openwagonsmall,
     item_wagons_gen0openwagonmedium,
     item_wagons_gen0stakewagon,
+    item_wagons_gen0livestockwagon,
     
     //metros
     item_metro_GVB_M1M2,
