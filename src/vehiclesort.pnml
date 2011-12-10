@@ -8,6 +8,7 @@ sort(FEAT_TRAINS, [
     item_steam_HSM126,
     
     //diesel
+    item_diesel_NS100,
     item_diesel_NS2200,
     item_diesel_NS2400,
     item_diesel_NS2600,

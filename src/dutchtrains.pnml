@@ -28,6 +28,8 @@
 #include "src/steam/HSM126_item.pnml"
 
 //diesel
+#include "src/diesel/NS100_graphics.pnml"
+#include "src/diesel/NS100_item.pnml"
 #include "src/diesel/NS2200_graphics.pnml"
 #include "src/diesel/NS2200_item.pnml"
 #include "src/diesel/NS2400_graphics.pnml"
