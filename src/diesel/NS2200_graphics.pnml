@@ -1,0 +1,66 @@
+/*
+* PURCHASE
+*/
+
+//brown
+spriteset(spriteset_3312, "gfx/dutchtrainsw.png") {
+	[18, 4344, 50, 12, -25, -6]
+}
+//grey
+spriteset(spriteset_3315, "gfx/dutchtrainsw.png") {
+	[114, 4344, 50, 12, -25, -6]
+}
+//yellow
+spriteset(spriteset_3318, "gfx/dutchtrainsw.png") {
+	[210, 4344, 50, 12, -25, -6]
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_livery_purchase, current_year) {
+	0..1970: spriteset_3312;
+    1971..2003: spriteset_3315;
+    spriteset_3318;
+}
+
+/*
+* VEHICLE
+*/
+
+//brown
+spriteset(spriteset_3282, "gfx/dutchtrainsw.png") {
+	[738, 4280, 8, 21, -3, -10]
+	[754, 4280, 20, 16, -10, -9]
+	[2, 4312, 28, 12, -14, -7]
+	[50, 4312, 20, 15, -10, -9]
+	[82, 4312, 8, 21, -3, -10]
+	[98, 4312, 20, 15, -10, -8]
+	[130, 4312, 28, 12, -14, -7]
+	[178, 4312, 20, 16, -10, -10]
+}
+//grey
+spriteset(spriteset_3292, "gfx/dutchtrainsw.png") {
+	[242, 4312, 8, 21, -3, -10]
+	[258, 4312, 20, 16, -10, -9]
+	[290, 4312, 28, 12, -14, -7]
+	[338, 4312, 20, 15, -10, -9]
+	[370, 4312, 8, 21, -3, -10]
+	[386, 4312, 20, 15, -10, -8]
+	[418, 4312, 28, 12, -14, -7]
+	[466, 4312, 20, 16, -10, -10]
+}
+//yellow
+spriteset(spriteset_3302, "gfx/dutchtrainsw.png") {
+	[530, 4312, 8, 21, -3, -10]
+	[546, 4312, 20, 16, -10, -9]
+	[578, 4312, 28, 12, -14, -7]
+	[626, 4312, 20, 15, -10, -9]
+	[658, 4312, 8, 21, -3, -10]
+	[674, 4312, 20, 15, -10, -8]
+	[706, 4312, 28, 12, -14, -7]
+	[754, 4312, 20, 16, -10, -10]
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_3282;
+    date(1971,1,1)..date(2003,12,31): spriteset_3292;
+    spriteset_3302;
+}

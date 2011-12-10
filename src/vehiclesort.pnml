@@ -8,8 +8,7 @@ sort(FEAT_TRAINS, [
     item_steam_HSM126,
     
     //diesel
-
-    //electric
+    item_diesel_NS2200,
 
     //dmu
     item_dmu_Mat34,
@@ -24,6 +23,8 @@ sort(FEAT_TRAINS, [
     item_dmu_Lint41H,
     item_dmu_GTW26,
     item_dmu_GTW28,
+    
+    //electric
 
     //emu
 

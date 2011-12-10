@@ -34,3 +34,4 @@ item(FEAT_TRAINS, item_wagons_gen0openwagonmedium, 133) {}
 item(FEAT_TRAINS, item_wagons_gen0openwagonsmall, 134) {}
 item(FEAT_TRAINS, item_wagons_gen0stakewagon, 135) {}
 item(FEAT_TRAINS, item_wagons_gen0livestockwagon, 136) {}
+item(FEAT_TRAINS, item_diesel_NS2200, 137) {}
