@@ -39,3 +39,4 @@ item(FEAT_TRAINS, item_diesel_NS2400, 138) {}
 item(FEAT_TRAINS, item_diesel_NS2600, 139) {}
 item(FEAT_TRAINS, item_diesel_NS6400, 140) {}
 item(FEAT_TRAINS, item_diesel_ACTS5800, 141) {}
+item(FEAT_TRAINS, item_diesel_ACTS6700, 142) {}

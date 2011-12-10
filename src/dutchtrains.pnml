@@ -38,6 +38,8 @@
 #include "src/diesel/NS6400_item.pnml"
 #include "src/diesel/ACTS5800_graphics.pnml"
 #include "src/diesel/ACTS5800_item.pnml"
+#include "src/diesel/ACTS6700_graphics.pnml"
+#include "src/diesel/ACTS6700_item.pnml"
 
 //electric
 
