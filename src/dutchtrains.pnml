@@ -84,6 +84,8 @@
 #include "src/dmu/GTW28_item.pnml"
 #include "src/dmu/GTW26_graphics.pnml"
 #include "src/dmu/GTW26_item.pnml"
+#include "src/dmu/NS20_graphics.pnml"
+#include "src/dmu/NS20_item.pnml"
 
 //emu
 
