@@ -11,6 +11,7 @@ spriteset(spriteset_wagons_gen0openwagonmedium_purchase, "gfx/wagons/gen0_openwa
 * VEHICLE
 */
 
+//open
 spriteset(spriteset_wagons_gen0openwagonmedium_empty_1, "gfx/wagons/gen0_openwagonmedium.png") {
 	template_2cc_58(1, 1)
 }
@@ -29,18 +30,62 @@ spriteset(spriteset_wagons_gen0openwagonmedium_half_2, "gfx/wagons/gen0_openwago
 spriteset(spriteset_wagons_gen0openwagonmedium_full_2, "gfx/wagons/gen0_openwagonmedium.png") {
 	template_2cc_58(1, 160)
 }
+//with tarpaulin
+spriteset(spriteset_wagons_gen0openwagonmedium_half_tarp_1, "gfx/wagons/gen0_openwagonmediumtarp.png") {
+	template_2cc_58(1, 32)
+}
+spriteset(spriteset_wagons_gen0openwagonmedium_full_tarp_1, "gfx/wagons/gen0_openwagonmediumtarp.png") {
+	template_2cc_58(1, 64)
+}
+spriteset(spriteset_wagons_gen0openwagonmedium_half_tarp_2, "gfx/wagons/gen0_openwagonmediumtarp.png") {
+	template_2cc_58(1, 128)
+}
+spriteset(spriteset_wagons_gen0openwagonmedium_full_tarp_2, "gfx/wagons/gen0_openwagonmediumtarp.png") {
+	template_2cc_58(1, 160)
+}
 
+//open
 spritegroup spritegroup_wagons_gen0openwagonmedium_1 {
     loading: [spriteset_wagons_gen0openwagonmedium_empty_1, spriteset_wagons_gen0openwagonmedium_half_1, spriteset_wagons_gen0openwagonmedium_full_1];
     loaded:  [spriteset_wagons_gen0openwagonmedium_empty_1, spriteset_wagons_gen0openwagonmedium_half_1, spriteset_wagons_gen0openwagonmedium_full_1];
 }
-
 spritegroup spritegroup_wagons_gen0openwagonmedium_2 {
     loading: [spriteset_wagons_gen0openwagonmedium_empty_2, spriteset_wagons_gen0openwagonmedium_half_2, spriteset_wagons_gen0openwagonmedium_full_2];
     loaded:  [spriteset_wagons_gen0openwagonmedium_empty_2, spriteset_wagons_gen0openwagonmedium_half_2, spriteset_wagons_gen0openwagonmedium_full_2];
 }
+//with tarpaulin
+spritegroup spritegroup_wagons_gen0openwagonmedium_tarp_1 {
+    loading: [spriteset_wagons_gen0openwagonmedium_empty_1, spriteset_wagons_gen0openwagonmedium_half_1, spriteset_wagons_gen0openwagonmedium_full_1, spriteset_wagons_gen0openwagonmedium_full_tarp_1];
+    loaded:  [spriteset_wagons_gen0openwagonmedium_empty_1, spriteset_wagons_gen0openwagonmedium_half_tarp_1, spriteset_wagons_gen0openwagonmedium_full_tarp_1];
+}
+spritegroup spritegroup_wagons_gen0openwagonmedium_tarp_2 {
+    loading: [spriteset_wagons_gen0openwagonmedium_empty_2, spriteset_wagons_gen0openwagonmedium_half_2, spriteset_wagons_gen0openwagonmedium_full_2, spriteset_wagons_gen0openwagonmedium_full_tarp_2];
+    loaded:  [spriteset_wagons_gen0openwagonmedium_empty_2, spriteset_wagons_gen0openwagonmedium_half_tarp_2, spriteset_wagons_gen0openwagonmedium_full_tarp_2];
+}
+
+//usage of tarpaulin depends on cargo loaded
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonmedium_tarp_1, cargo_type_in_veh) {
+    GRAI: spritegroup_wagons_gen0openwagonmedium_tarp_1;
+    SULP: spritegroup_wagons_gen0openwagonmedium_tarp_1;
+    FERT: spritegroup_wagons_gen0openwagonmedium_tarp_1;
+    OLSD: spritegroup_wagons_gen0openwagonmedium_tarp_1;
+    LIME: spritegroup_wagons_gen0openwagonmedium_tarp_1;
+    POTA: spritegroup_wagons_gen0openwagonmedium_tarp_1;
+    FRUT: spritegroup_wagons_gen0openwagonmedium_tarp_1;
+    spritegroup_wagons_gen0openwagonmedium_1;
+}
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonmedium_tarp_2, cargo_type_in_veh) {
+    GRAI: spritegroup_wagons_gen0openwagonmedium_tarp_2;
+    SULP: spritegroup_wagons_gen0openwagonmedium_tarp_2;
+    FERT: spritegroup_wagons_gen0openwagonmedium_tarp_2;
+    OLSD: spritegroup_wagons_gen0openwagonmedium_tarp_2;
+    LIME: spritegroup_wagons_gen0openwagonmedium_tarp_2;
+    POTA: spritegroup_wagons_gen0openwagonmedium_tarp_2;
+    FRUT: spritegroup_wagons_gen0openwagonmedium_tarp_2;
+    spritegroup_wagons_gen0openwagonmedium_2;
+}
 
 random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonmedium_livery) {
-	1: spritegroup_wagons_gen0openwagonmedium_1;
-    1: spritegroup_wagons_gen0openwagonmedium_2;
+	1: switch_wagons_gen0openwagonmedium_tarp_1;
+    1: switch_wagons_gen0openwagonmedium_tarp_2;
 }
