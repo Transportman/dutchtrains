@@ -47,3 +47,4 @@ item(FEAT_TRAINS, item_diesel_G2000, 146) {}
 item(FEAT_TRAINS, item_diesel_NS100, 147) {}
 item(FEAT_TRAINS, item_diesel_NS200, 148) {}
 item(FEAT_TRAINS, item_diesel_NS600, 149) {}
+item(FEAT_TRAINS, item_diesel_HLR77, 150) {}

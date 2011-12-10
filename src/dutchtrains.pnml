@@ -54,6 +54,8 @@
 #include "src/diesel/G1206_item.pnml"
 #include "src/diesel/G2000_graphics.pnml"
 #include "src/diesel/G2000_item.pnml"
+#include "src/diesel/HLR77_graphics.pnml"
+#include "src/diesel/HLR77_item.pnml"
 
 //electric
 
