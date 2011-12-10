@@ -10,6 +10,7 @@ sort(FEAT_TRAINS, [
     //diesel
     item_diesel_NS2200,
     item_diesel_NS2400,
+    item_diesel_NS2600,
 
     //dmu
     item_dmu_Mat34,

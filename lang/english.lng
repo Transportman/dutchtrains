@@ -11,6 +11,7 @@ str_steam_Arend         :HSM "Eagle" (Steam)
 #diesel
 str_diesel_NS2200       :NS 2200 (Diesel)
 str_diesel_NS2400       :NS 2400 (Diesel)
+str_diesel_NS2600       :NS 2600 "Beelen" (Diesel)
 
 #electric
 
