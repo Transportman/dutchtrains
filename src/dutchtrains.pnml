@@ -44,6 +44,8 @@
 #include "src/diesel/RN232_item.pnml"
 #include "src/diesel/Class66_graphics.pnml"
 #include "src/diesel/Class66_item.pnml"
+#include "src/diesel/G1206_graphics.pnml"
+#include "src/diesel/G1206_item.pnml"
 
 //electric
 
