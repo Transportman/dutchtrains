@@ -2,7 +2,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_HLR77_purchase, "gfx/diesel/HLR77.png") {
+spriteset(spriteset_diesel_HLR77_purchase, "gfx/diesel/HLR77.png") {
 	template_purchase(1, 32)
 }
 
@@ -10,6 +10,6 @@ spriteset(spriteset_HLR77_purchase, "gfx/diesel/HLR77.png") {
 * VEHICLE
 */
 
-spriteset(spriteset_HLR77, "gfx/diesel/HLR77.png") {
+spriteset(spriteset_diesel_HLR77, "gfx/diesel/HLR77.png") {
 	template_2cc_88(1, 1)
 }

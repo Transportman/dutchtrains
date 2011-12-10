@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_NS600) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_NS600_purchase;
+        purchase: spriteset_diesel_NS600_purchase;
         switch_diesel_NS600_livery;
     }
 }

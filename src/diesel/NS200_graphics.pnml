@@ -2,7 +2,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_NS200_purchase, "gfx/diesel/NS200.png") {
+spriteset(spriteset_diesel_NS200_purchase, "gfx/diesel/NS200.png") {
 	template_purchase(1, 128)
 }
 
@@ -10,19 +10,19 @@ spriteset(spriteset_NS200_purchase, "gfx/diesel/NS200.png") {
 * VEHICLE
 */
 
-spriteset(spriteset_NS200_green, "gfx/diesel/NS200.png") {
+spriteset(spriteset_diesel_NS200_green, "gfx/diesel/NS200.png") {
 	template_2cc_48(1, 1)
 }
-spriteset(spriteset_NS200_yellow, "gfx/diesel/NS200.png") {
+spriteset(spriteset_diesel_NS200_yellow, "gfx/diesel/NS200.png") {
 	template_2cc_48(1, 32)
 }
-spriteset(spriteset_NS200_red, "gfx/diesel/NS200.png") {
+spriteset(spriteset_diesel_NS200_red, "gfx/diesel/NS200.png") {
 	template_2cc_48(1, 64)
 }
 
 
 switch(FEAT_TRAINS, SELF, switch_diesel_NS200_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_NS200_green;
-    date(1971,1,1)..date(2003,12,31): spriteset_NS200_yellow;
-    spriteset_NS200_red;
+	0..date(1970,12,31):              spriteset_diesel_NS200_green;
+    date(1971,1,1)..date(2003,12,31): spriteset_diesel_NS200_yellow;
+    spriteset_diesel_NS200_red;
 }

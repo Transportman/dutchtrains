@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_HLR77) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_HLR77_purchase;
-        spriteset_HLR77;
+        purchase: spriteset_diesel_HLR77_purchase;
+        spriteset_diesel_HLR77;
     }
 }
