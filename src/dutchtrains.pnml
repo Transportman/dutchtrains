@@ -46,6 +46,8 @@
 #include "src/diesel/Class66_item.pnml"
 #include "src/diesel/G1206_graphics.pnml"
 #include "src/diesel/G1206_item.pnml"
+#include "src/diesel/G2000_graphics.pnml"
+#include "src/diesel/G2000_item.pnml"
 
 //electric
 

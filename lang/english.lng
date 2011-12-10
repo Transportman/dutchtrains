@@ -18,6 +18,7 @@ str_diesel_ACTS6700     :ACTS 6700 (HLD 62) (Diesel)
 str_diesel_RN232        :RN 232 (BR 130) (Diesel)
 str_diesel_Class66      :Class 66 (Diesel)
 str_diesel_G1206        :MaK G 1206 (Diesel)
+str_diesel_G2000        :Vossloh G 2000 (Diesel)
 
 #electric
 
