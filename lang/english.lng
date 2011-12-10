@@ -13,6 +13,7 @@ str_diesel_NS2200       :NS 2200 (Diesel)
 str_diesel_NS2400       :NS 2400 (Diesel)
 str_diesel_NS2600       :NS 2600 "Beelen" (Diesel)
 str_diesel_NS6400       :NS 6400 (Diesel)
+str_diesel_ACTS5800     :ACTS 5800 (BREL Class 58) (Diesel)
 
 #electric
 
