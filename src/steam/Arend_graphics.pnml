@@ -1,0 +1,44 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_steam_Arend_purchase, "gfx/steam/arend.png") {
+	template_purchase(1, 224)
+}
+
+/*
+* VEHICLE
+*/
+
+//engine
+spriteset(spriteset_steam_Arend, "gfx/steam/arend.png") {
+	template_2cc_38(1, 1)
+}
+//tender
+spriteset(spriteset_steam_Arend_tender, "gfx/steam/arend.png") {
+	template_2cc_28(1, 192)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_Arend_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_Arend_tender;
+    spriteset_steam_Arend;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_Arend_articulated, extra_callback_info1) {
+    1: return item_steam_Arend;
+    return 0xFF;
+}
+
+/*
+* VEHICLE LENGTH CALLBACK
+*/
+
+
+switch(FEAT_TRAINS, SELF, switch_steam_Arend_length, (position_in_vehid_chain % 2)) {
+    1: return SHORTEN_TO_2_8;
+    return SHORTEN_TO_3_8;
+}

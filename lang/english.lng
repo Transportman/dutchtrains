@@ -6,6 +6,7 @@ STR_GRF_DESCRIPTION		:Dutch Trains for OpenTTD {}(c)Dutch Trainset Team {}Licens
 
 #steam
 str_steam_HSM126        :HSM 126-135 (NS 1100 series) (Steam)
+str_steam_Arend         :HSM "Eagle" (Steam)
 #diesel
 
 #electric
