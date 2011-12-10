@@ -34,6 +34,8 @@
 #include "src/diesel/NS2400_item.pnml"
 #include "src/diesel/NS2600_graphics.pnml"
 #include "src/diesel/NS2600_item.pnml"
+#include "src/diesel/NS6400_graphics.pnml"
+#include "src/diesel/NS6400_item.pnml"
 
 //electric
 
