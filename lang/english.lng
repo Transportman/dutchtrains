@@ -5,7 +5,7 @@ STR_GRF_NAME			:{TITLE}
 STR_GRF_DESCRIPTION		:Dutch Trains for OpenTTD {}(c)Dutch Trainset Team {}License: GPLv2 or higher. {}See readme for details.
 
 #steam
-
+str_steam_HSM126        :HSM 126-135 (NS 1100 series) (Steam)
 #diesel
 
 #electric
