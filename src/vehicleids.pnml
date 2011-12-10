@@ -45,3 +45,4 @@ item(FEAT_TRAINS, item_diesel_Class66, 144) {}
 item(FEAT_TRAINS, item_diesel_G1206, 145) {}
 item(FEAT_TRAINS, item_diesel_G2000, 146) {}
 item(FEAT_TRAINS, item_diesel_NS100, 147) {}
+item(FEAT_TRAINS, item_diesel_NS200, 148) {}
