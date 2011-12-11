@@ -1,0 +1,100 @@
+/*
+* PURCHASE
+*/
+
+//turquoise
+spriteset(spriteset_3048, "gfx/dutchtrainsw.png") {
+	[578, 3960, 50, 15, -25, -9]
+}
+//blue
+spriteset(spriteset_3051, "gfx/dutchtrainsw.png") {
+	[674, 3960, 50, 15, -25, -9]
+}
+//grey
+spriteset(spriteset_3054, "gfx/dutchtrainsw.png") {
+	[2, 3992, 50, 15, -25, -9]
+}
+//blue w/ crashnose
+spriteset(spriteset_3057, "gfx/dutchtrainsw.png") {
+	[98, 3992, 50, 15, -25, -9]
+}
+//grey w/crashnose
+spriteset(spriteset_3060, "gfx/dutchtrainsw.png") {
+	[194, 3992, 50, 15, -25, -9]
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_purchase, current_year) {
+	0..1970: spriteset_3048;
+    1971..1972: spriteset_3051;
+    1973..1974: spriteset_3054;
+    1975..1976: spriteset_3057;
+    spriteset_3060;
+}
+
+/*
+* VEHICLE
+*/
+
+//turquoise
+spriteset(spriteset_2998, "gfx/dutchtrainsw.png") {
+	[82, 3928, 8, 19, -3, -9]
+	[98, 3928, 18, 15, -9, -10]
+	[130, 3928, 23, 15, -11, -10]
+	[162, 3928, 18, 17, -9, -12]
+	[194, 3928, 8, 19, -3, -9]
+	[210, 3928, 18, 17, -9, -11]
+	[242, 3928, 23, 15, -12, -10]
+	[274, 3928, 18, 15, -9, -10]
+}
+//blue
+spriteset(spriteset_3008, "gfx/dutchtrainsw.png") {
+	[338, 3928, 8, 19, -3, -9]
+	[354, 3928, 18, 15, -9, -9]
+	[386, 3928, 23, 15, -11, -10]
+	[418, 3928, 18, 17, -9, -12]
+	[450, 3928, 8, 19, -3, -9]
+	[466, 3928, 18, 17, -9, -11]
+	[498, 3928, 23, 15, -11, -10]
+	[530, 3928, 18, 15, -9, -10]
+}
+//grey
+spriteset(spriteset_3018, "gfx/dutchtrainsw.png") {
+	[594, 3928, 8, 19, -3, -9]
+	[610, 3928, 18, 15, -9, -9]
+	[642, 3928, 23, 15, -11, -10]
+	[674, 3928, 18, 17, -9, -12]
+	[706, 3928, 8, 19, -3, -9]
+	[722, 3928, 18, 17, -9, -11]
+	[754, 3928, 23, 15, -11, -10]
+	[2, 3960, 18, 15, -9, -10]
+}
+//blue w/ crashnose
+spriteset(spriteset_3028, "gfx/dutchtrainsw.png") {
+	[66, 3960, 8, 19, -3, -9]
+	[82, 3960, 20, 15, -10, -9]
+	[114, 3960, 27, 15, -13, -10]
+	[146, 3960, 20, 17, -10, -12]
+	[178, 3960, 8, 19, -3, -9]
+	[194, 3960, 20, 17, -10, -11]
+	[226, 3960, 27, 15, -13, -10]
+	[258, 3960, 20, 15, -10, -10]
+}
+//grey w/ crashnose
+spriteset(spriteset_3038, "gfx/dutchtrainsw.png") {
+	[322, 3960, 8, 19, -3, -9]
+	[338, 3960, 20, 15, -10, -9]
+	[370, 3960, 27, 15, -13, -10]
+	[402, 3960, 20, 17, -10, -12]
+	[434, 3960, 8, 19, -3, -9]
+	[450, 3960, 20, 17, -10, -11]
+	[482, 3960, 27, 15, -13, -10]
+	[514, 3960, 20, 15, -10, -10]
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_2998;
+    date(1971,1,1)..date(1972,12,31): spriteset_3008;
+    date(1973,1,1)..date(1974,12,31): spriteset_3018;
+    date(1975,1,1)..date(1976,12,31): spriteset_3028;
+    spriteset_3038;
+}
