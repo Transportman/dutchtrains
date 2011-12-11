@@ -54,6 +54,7 @@ str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
+str_emu_V250            :Fyra V250 "Albatross"
 
 #wagons
 str_wagons_gen0hopper   :Hopper

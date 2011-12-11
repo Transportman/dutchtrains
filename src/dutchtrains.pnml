@@ -112,6 +112,8 @@
 #include "src/dmu/NS20_item.pnml"
 
 //emu
+#include "src/emu/V250_graphics.pnml"
+#include "src/emu/V250_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

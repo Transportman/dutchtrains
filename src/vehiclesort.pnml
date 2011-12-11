@@ -53,6 +53,7 @@ sort(FEAT_TRAINS, [
     item_electric_ES64F4,
     
     //emu
+    item_emu_V250,
 
     //wagons
     item_wagons_gen0hopper,

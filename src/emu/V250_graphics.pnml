@@ -1,0 +1,56 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_V250_purchase, "gfx/emu/V250.png") {
+	template_purchase(1, 256)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_emu_V250_front, "gfx/emu/V250.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_V250_middle_1, "gfx/emu/V250.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_V250_middle_2, "gfx/emu/V250.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_V250_middle_3, "gfx/emu/V250.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_V250_middle_4, "gfx/emu/V250.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_V250_middle_5, "gfx/emu/V250.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_V250_middle_6, "gfx/emu/V250.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_V250_back, "gfx/emu/V250.png") {
+	template_2cc_88(1, 224)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_V250_position, (position_in_vehid_chain % 8)) {
+	1: spriteset_emu_V250_middle_1;
+    2: spriteset_emu_V250_middle_2;
+    3: spriteset_emu_V250_middle_3;
+    4: spriteset_emu_V250_middle_4;
+    5: spriteset_emu_V250_middle_5;
+    6: spriteset_emu_V250_middle_6;
+    7: spriteset_emu_V250_back;
+    spriteset_emu_V250_front;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_V250_articulated, extra_callback_info1) {
+    1..7: return item_emu_V250;
+    return 0xFF;
+}

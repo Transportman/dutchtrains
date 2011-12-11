@@ -23,6 +23,7 @@ item(FEAT_TRAINS, item_metro_RET_typeB, 16) {}
 item(FEAT_TRAINS, item_metro_RET_typeR, 17) {}
 item(FEAT_TRAINS, item_steam_HSM126, 18) {}
 item(FEAT_TRAINS, item_steam_Arend, 19) {}
+item(FEAT_TRAINS, item_emu_V250, 20) {}
 
 //non-articulated
 item(FEAT_TRAINS, item_dmu_DH1, 128) {}
