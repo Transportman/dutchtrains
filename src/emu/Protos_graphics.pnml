@@ -1,0 +1,32 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_Protos_purchase, "gfx/emu/Protos.png") {
+	template_purchase(1, 64)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_emu_Protos_front, "gfx/emu/Protos.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Protos_back, "gfx/emu/Protos.png") {
+	template_2cc_88(1, 32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Protos_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_emu_Protos_back;
+    spriteset_emu_Protos_front;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Protos_articulated, extra_callback_info1) {
+    1: return item_emu_Protos;
+    return 0xFF;
+}

@@ -120,6 +120,8 @@
 #include "src/emu/SLTVI_item.pnml"
 #include "src/emu/ICE3M_graphics.pnml"
 #include "src/emu/ICE3M_item.pnml"
+#include "src/emu/Protos_graphics.pnml"
+#include "src/emu/Protos_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

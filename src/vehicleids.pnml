@@ -27,6 +27,7 @@ item(FEAT_TRAINS, item_emu_V250, 20) {}
 item(FEAT_TRAINS, item_emu_SLTIV, 21) {}
 item(FEAT_TRAINS, item_emu_SLTVI, 22) {}
 item(FEAT_TRAINS, item_emu_ICE3M, 23) {}
+item(FEAT_TRAINS, item_emu_Protos, 24) {}
 
 //non-articulated
 item(FEAT_TRAINS, item_dmu_DH1, 128) {}
