@@ -59,3 +59,4 @@ item(FEAT_TRAINS, item_electric_NS1700, 158) {}
 item(FEAT_TRAINS, item_electric_HLE11, 159) {}
 item(FEAT_TRAINS, item_electric_HLE25, 160) {}
 item(FEAT_TRAINS, item_electric_NS1600P, 161) {}
+item(FEAT_TRAINS, item_electric_TRAXXF140MS2, 162) {}

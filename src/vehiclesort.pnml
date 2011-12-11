@@ -49,6 +49,7 @@ sort(FEAT_TRAINS, [
     item_electric_NS1600P,
     item_electric_HLE25,
     item_electric_HLE11,
+    item_electric_TRAXXF140MS2,
     
     //emu
 

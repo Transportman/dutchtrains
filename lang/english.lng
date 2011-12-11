@@ -35,6 +35,7 @@ str_electric_NS1700     :NS 1700 (Electric)
 str_electric_NS1600P    :NS 1600P (Electric)
 str_electric_HLE11      :HLE 11 (NMBS series 11.8) (Electric)
 str_electric_HLE25      :HLE 25.5 (NMBS series 25.5) (Electric)
+str_electric_TRAXXF140MS2   :TRAXX F140 MS2 (Electric)
 
 #dmu
 str_dmu_Mat34           :Mat '34 "Dieselthree" (Diesel)

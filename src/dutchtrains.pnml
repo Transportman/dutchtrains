@@ -78,6 +78,8 @@
 #include "src/electric/HLE25_item.pnml"
 #include "src/electric/NS1600P_graphics.pnml"
 #include "src/electric/NS1600P_item.pnml"
+#include "src/electric/TRAXXF140MS2_graphics.pnml"
+#include "src/electric/TRAXXF140MS2_item.pnml"
 
 //dmu
 #include "src/dmu/Mat34_graphics.pnml"
