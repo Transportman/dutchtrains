@@ -27,6 +27,7 @@ str_diesel_HLR77        :HLR 77 (NMBS 7700/7800) (Diesel)
 #electric
 str_electric_NS1000     :NS 1000 (Electric)
 str_electric_NS1100     :NS 1100 (Electric)
+str_electric_NS1200     :NS 1200 (Electric)
 
 #dmu
 str_dmu_Mat34           :Mat '34 "Dieselthree" (Diesel)

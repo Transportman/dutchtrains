@@ -62,6 +62,8 @@
 #include "src/electric/NS1000_item.pnml"
 #include "src/electric/NS1100_graphics.pnml"
 #include "src/electric/NS1100_item.pnml"
+#include "src/electric/NS1200_graphics.pnml"
+#include "src/electric/NS1200_item.pnml"
 
 
 //dmu
