@@ -31,6 +31,7 @@ str_electric_NS1200     :NS 1200 (Electric)
 str_electric_NS1300     :NS 1300 (Electric)
 str_electric_NS1500     :NS 1500 (BR Class EM2) (Electric)
 str_electric_NS1600     :NS 1600/1800 (Electric)
+str_electric_NS1700     :NS 1700 (Electric)
 
 #dmu
 str_dmu_Mat34           :Mat '34 "Dieselthree" (Diesel)
