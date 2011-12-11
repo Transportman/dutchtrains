@@ -76,6 +76,8 @@
 #include "src/electric/HLE11_item.pnml"
 #include "src/electric/HLE25_graphics.pnml"
 #include "src/electric/HLE25_item.pnml"
+#include "src/electric/NS1600P_graphics.pnml"
+#include "src/electric/NS1600P_item.pnml"
 
 //dmu
 #include "src/dmu/Mat34_graphics.pnml"
