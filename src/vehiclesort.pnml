@@ -46,6 +46,7 @@ sort(FEAT_TRAINS, [
     item_electric_NS1500,
     item_electric_NS1600,
     item_electric_NS1700,
+    item_electric_HLE25,
     item_electric_HLE11,
     
     //emu
