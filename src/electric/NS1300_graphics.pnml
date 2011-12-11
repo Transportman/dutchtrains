@@ -1,0 +1,83 @@
+/*
+* PURCHASE
+*/
+
+//turquoise
+spriteset(spriteset_3187, "gfx/dutchtrainsw.png") {
+	[482, 4168, 50, 15, -25, -9]
+}
+//blue
+spriteset(spriteset_3190, "gfx/dutchtrainsw.png") {
+	[578, 4168, 50, 15, -25, -9]
+}
+//grey
+spriteset(spriteset_3193, "gfx/dutchtrainsw.png") {
+	[674, 4168, 50, 15, -25, -9]
+}
+//yellow
+spriteset(spriteset_3196, "gfx/dutchtrainsw.png") {
+	[2, 4200, 50, 15, -25, -9]
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_livery_purchase, current_year) {
+	0..1970: spriteset_3187;
+    1971..1972: spriteset_3190;
+    1973..1974: spriteset_3193;
+    spriteset_3196;
+}
+
+/*
+* VEHICLE
+*/
+
+//turquoise
+spriteset(spriteset_3147, "gfx/dutchtrainsw.png") {
+	[130, 4136, 8, 22, -3, -11]
+	[146, 4136, 22, 17, -11, -10]
+	[178, 4136, 30, 15, -15, -10]
+	[226, 4136, 22, 19, -11, -13]
+	[258, 4136, 8, 22, -3, -11]
+	[274, 4136, 22, 19, -11, -12]
+	[306, 4136, 30, 15, -15, -10]
+	[354, 4136, 22, 17, -11, -11]
+}
+//blue
+spriteset(spriteset_3157, "gfx/dutchtrainsw.png") {
+	[418, 4136, 8, 22, -3, -11]
+	[434, 4136, 22, 17, -11, -10]
+	[466, 4136, 30, 15, -15, -10]
+	[514, 4136, 22, 19, -11, -13]
+	[546, 4136, 8, 22, -3, -11]
+	[562, 4136, 22, 19, -11, -12]
+	[594, 4136, 30, 15, -15, -10]
+	[642, 4136, 22, 17, -11, -11]
+}
+//grey
+spriteset(spriteset_3167, "gfx/dutchtrainsw.png") {
+	[706, 4136, 8, 22, -3, -11]
+	[722, 4136, 22, 17, -11, -10]
+	[754, 4136, 30, 16, -15, -10]
+	[2, 4168, 22, 19, -11, -13]
+	[34, 4168, 8, 22, -3, -11]
+	[50, 4168, 22, 19, -11, -12]
+	[82, 4168, 30, 15, -15, -10]
+	[130, 4168, 22, 17, -11, -11]
+}
+//yellow
+spriteset(spriteset_3177, "gfx/dutchtrainsw.png") {
+	[194, 4168, 8, 22, -3, -11]
+	[210, 4168, 22, 17, -11, -10]
+	[242, 4168, 30, 16, -15, -11]
+	[290, 4168, 22, 19, -11, -13]
+	[322, 4168, 8, 22, -3, -11]
+	[338, 4168, 22, 19, -11, -12]
+	[370, 4168, 30, 15, -15, -10]
+	[418, 4168, 22, 17, -11, -11]
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_3147;
+    date(1971,1,1)..date(1972,12,31): spriteset_3157;
+    date(1973,1,1)..date(1974,12,31): spriteset_3167;
+    spriteset_3177;
+}
