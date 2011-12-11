@@ -68,6 +68,8 @@
 #include "src/electric/NS1300_item.pnml"
 #include "src/electric/NS1500_graphics.pnml"
 #include "src/electric/NS1500_item.pnml"
+#include "src/electric/NS1600_graphics.pnml"
+#include "src/electric/NS1600_item.pnml"
 
 //dmu
 #include "src/dmu/Mat34_graphics.pnml"
