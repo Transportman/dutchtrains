@@ -1,0 +1,30 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_electric_ES64F4_purchase, "gfx/electric/ES64F4.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+//husa
+spriteset(spriteset_electric_ES64F4_husa, "gfx/electric/ES64F4.png") {
+	template_2cc_58(1, 1)
+}
+//ers
+spriteset(spriteset_electric_ES64F4_ers, "gfx/electric/ES64F4.png") {
+	template_2cc_58(1, 32)
+}
+//db schenker
+spriteset(spriteset_electric_ES64F4_dbs, "gfx/electric/ES64F4.png") {
+	template_2cc_58(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_electric_ES64F4_husa;
+    date(1971,1,1)..date(1972,12,31): spriteset_electric_ES64F4_ers;
+    spriteset_electric_ES64F4_dbs;
+}
