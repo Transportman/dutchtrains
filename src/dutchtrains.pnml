@@ -114,6 +114,10 @@
 //emu
 #include "src/emu/V250_graphics.pnml"
 #include "src/emu/V250_item.pnml"
+#include "src/emu/SLTIV_graphics.pnml"
+#include "src/emu/SLTIV_item.pnml"
+#include "src/emu/SLTVI_graphics.pnml"
+#include "src/emu/SLTVI_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

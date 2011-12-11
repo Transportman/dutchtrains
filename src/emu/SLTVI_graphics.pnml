@@ -1,0 +1,37 @@
+/*
+* PURCHASE
+*/
+
+//already defined for IV
+
+/*
+* VEHICLE
+*/
+
+//already defined for IV
+
+switch(FEAT_TRAINS, SELF, switch_emu_SLTVI_position, (position_in_vehid_chain % 6)) {
+	0: spriteset_2393;
+    2: spriteset_2413;
+    5: spriteset_2423;
+    spriteset_2403;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SLTVI_articulated, extra_callback_info1) {
+    1..5: return item_emu_SLTVI;
+    return 0xFF;
+}
+
+/*
+* SHORTEN VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SLTVI_length, (position_in_vehid_chain % 6)) {
+    0: return SHORTEN_TO_6_8;
+    5: return SHORTEN_TO_6_8;
+    return SHORTEN_TO_5_8;
+}
