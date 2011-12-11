@@ -7,6 +7,20 @@ grf {
 	min_compatible_version:	1;
 }
 
+//check for OpenTTD and version
+if (ttd_platform != PLATFORM_OPENTTD) {
+    //requires OpenTTD
+    error(FATAL, USED_WITH, "OpenTTD");
+}
+else {
+    //check for OpenTTD version
+    if (openttd_version < version_openttd(1, 2, 0, 23291)) {
+        //requires OpenTTD version
+        error(FATAL, REQUIRES_OPENTTD, "1.2.0 / r23291");
+    }
+}
+
+//set base cost multiplier for this set
 basecost {
 	PR_BUILD_VEHICLE_TRAIN: -1;
 	PR_BUILD_VEHICLE_WAGON: 1;
@@ -15,6 +29,8 @@ basecost {
 	PR_RUNNING_TRAIN_ELECTRIC: 2;
 }
 
+//set depot vehicle width to 32px to avoid overlap
 train_width_32_px = 1;
 
+//disable all existing trains, including monorail and maglev
 disable_item(FEAT_TRAINS);
