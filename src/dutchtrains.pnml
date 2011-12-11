@@ -58,6 +58,8 @@
 #include "src/diesel/HLR77_item.pnml"
 
 //electric
+#include "src/electric/NS1000_graphics.pnml"
+#include "src/electric/NS1000_item.pnml"
 
 //dmu
 #include "src/dmu/Mat34_graphics.pnml"

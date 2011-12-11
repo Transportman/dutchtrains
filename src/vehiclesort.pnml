@@ -39,7 +39,8 @@ sort(FEAT_TRAINS, [
     item_dmu_GTW28,
     
     //electric
-
+    item_electric_NS1000,
+    
     //emu
 
     //wagons
