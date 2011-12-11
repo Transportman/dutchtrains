@@ -55,6 +55,7 @@ sort(FEAT_TRAINS, [
     //emu
     item_emu_SLTIV,
     item_emu_SLTVI,
+    item_emu_ICE3M,
     item_emu_V250,
 
     //wagons

@@ -1,0 +1,72 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_2350, "gfx/dutchtrainsw.png") {
+	[370, 3000, 50, 11, -25, -5]
+}
+
+/*
+* VEHICLE
+*/
+
+//front
+spriteset(spriteset_2309, "gfx/dutchtrainsw.png") {
+	[786, 2920, 8, 22, -3, -10]
+	[2, 2952, 20, 13, -11, -6]
+	[34, 2952, 32, 11, -16, -7]
+	[82, 2952, 19, 15, -10, -10]
+	[114, 2952, 8, 23, -3, -11]
+	[130, 2952, 19, 15, -8, -9]
+	[162, 2952, 33, 11, -16, -7]
+	[210, 2952, 20, 13, -8, -7]
+}
+//middle, first 3
+spriteset(spriteset_2319, "gfx/dutchtrainsw.png") {
+	[274, 2952, 8, 23, -3, -11]
+	[290, 2952, 22, 16, -11, -9]
+	[322, 2952, 33, 13, -16, -9]
+	[370, 2952, 22, 18, -10, -12]
+	[402, 2952, 8, 25, -3, -12]
+	[418, 2952, 22, 18, -11, -11]
+	[450, 2952, 33, 13, -16, -9]
+	[498, 2952, 22, 16, -10, -10]
+}
+//middle, last 3
+spriteset(spriteset_2329, "gfx/dutchtrainsw.png") {
+	[562, 2952, 8, 23, -3, -11]
+	[578, 2952, 22, 16, -11, -9]
+	[610, 2952, 33, 12, -16, -8]
+	[658, 2952, 22, 16, -10, -10]
+	[690, 2952, 8, 23, -3, -11]
+	[706, 2952, 22, 16, -11, -9]
+	[738, 2952, 33, 12, -16, -8]
+	[2, 3000, 22, 16, -10, -10]
+}
+//back
+spriteset(spriteset_2339, "gfx/dutchtrainsw.png") {
+	[66, 3000, 8, 23, -3, -11]
+	[82, 3000, 19, 15, -8, -9]
+	[114, 3000, 32, 11, -16, -7]
+	[162, 3000, 20, 13, -8, -7]
+	[194, 3000, 8, 22, -3, -10]
+	[210, 3000, 20, 13, -11, -6]
+	[242, 3000, 32, 11, -15, -7]
+	[290, 3000, 19, 15, -10, -10]
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_position, (position_in_vehid_chain % 8)) {
+	1..3: spriteset_2319;
+    4..6: spriteset_2329;
+    7: spriteset_2339;
+    spriteset_2309;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_articulated, extra_callback_info1) {
+    1..7: return item_emu_ICE3M;
+    return 0xFF;
+}

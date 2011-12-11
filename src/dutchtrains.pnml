@@ -118,6 +118,8 @@
 #include "src/emu/SLTIV_item.pnml"
 #include "src/emu/SLTVI_graphics.pnml"
 #include "src/emu/SLTVI_item.pnml"
+#include "src/emu/ICE3M_graphics.pnml"
+#include "src/emu/ICE3M_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"
