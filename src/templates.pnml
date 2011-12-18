@@ -22,9 +22,21 @@ template template_2cc_88(x, y) {
     [x+153, y, 22, 20,  -6, -12]
 }
 
+template template_2cc_78(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y]
+    [x    , y,  8, 24,  -3, -14]
+    [x+9  , y, 22, 20, -14, -13]
+    [x+32 , y, 32, 16, -16, -12]
+    [x+65 , y, 22, 20,  -6, -12]
+    [x+88 , y,  8, 24,  -3, -12]
+    [x+97 , y, 22, 20, -14, -12]
+    [x+120, y, 32, 16, -16, -12]
+    [x+153, y, 22, 20,  -6, -13]
+}
+
 template template_2cc_68(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
-    [x    , y,  8, 24,  -3, -18]
+    [x    , y,  8, 24,  -3, -16]
     [x+9  , y, 22, 20, -14, -14]
     [x+32 , y, 32, 16, -16, -12]
     [x+65 , y, 22, 20,  -6, -12]
@@ -36,7 +48,7 @@ template template_2cc_68(x, y) {
 
 template template_2cc_58(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
-    [x    , y,  8, 24,  -3, -21]
+    [x    , y,  8, 24,  -3, -18]
     [x+9  , y, 22, 20, -14, -15]
     [x+32 , y, 32, 16, -16, -12]
     [x+65 , y, 22, 20,  -6, -12]
@@ -48,7 +60,7 @@ template template_2cc_58(x, y) {
 
 template template_2cc_48(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
-    [x    , y,  8, 24,  -3, -24]
+    [x    , y,  8, 24,  -3, -20]
     [x+9  , y, 22, 20, -14, -16]
     [x+32 , y, 32, 16, -16, -12]
     [x+65 , y, 22, 20,  -6, -12]
@@ -60,7 +72,7 @@ template template_2cc_48(x, y) {
 
 template template_2cc_38(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
-    [x    , y,  8, 24,  -3, -27]
+    [x    , y,  8, 24,  -3, -22]
     [x+9  , y, 22, 20, -14, -17]
     [x+32 , y, 32, 16, -16, -12]
     [x+65 , y, 22, 20,  -6, -12]
@@ -72,7 +84,7 @@ template template_2cc_38(x, y) {
 
 template template_2cc_28(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
-    [x    , y,  8, 24,  -3, -30]
+    [x    , y,  8, 24,  -3, -24]
     [x+9  , y, 22, 20, -14, -18]
     [x+32 , y, 32, 16, -16, -12]
     [x+65 , y, 22, 20,  -6, -12]
@@ -80,4 +92,16 @@ template template_2cc_28(x, y) {
     [x+97 , y, 22, 20, -14, -12]
     [x+120, y, 32, 16, -16, -12]
     [x+153, y, 22, 20,  -6, -18]
+}
+
+template template_2cc_18(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y]
+    [x    , y,  8, 24,  -3, -26]
+    [x+9  , y, 22, 20, -14, -19]
+    [x+32 , y, 32, 16, -16, -12]
+    [x+65 , y, 22, 20,  -6, -12]
+    [x+88 , y,  8, 24,  -3, -12]
+    [x+97 , y, 22, 20, -14, -12]
+    [x+120, y, 32, 16, -16, -12]
+    [x+153, y, 22, 20,  -6, -19]
 }
