@@ -59,6 +59,7 @@ str_emu_V250            :Fyra V250 "Albatross" (Electric)
 str_emu_Protos          :Protos (Electric)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)
+str_emu_templatetest    :2cc Template test engine (Electric)
 
 #wagons
 str_wagons_gen0hopper   :Hopper

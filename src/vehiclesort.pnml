@@ -53,6 +53,7 @@ sort(FEAT_TRAINS, [
     item_electric_ES64F4,
     
     //emu
+    item_emu_templatetest,
     item_emu_Protos,
     item_emu_SLTIV,
     item_emu_SLTVI,
