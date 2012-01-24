@@ -20,5 +20,6 @@ str_dmu_DH2             :DH2 "Wadloper" (Diesel)
 str_dmu_DM90            :DM '90 "Buffel" (Diesel)
 
 #emu
+str_emu_V250            :Fyra V250 "Albatros" (Elektrisch)
 
 #wagons
