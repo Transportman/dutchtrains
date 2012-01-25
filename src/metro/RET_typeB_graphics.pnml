@@ -28,5 +28,5 @@ switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_position, (position_in_vehid_ch
 
 switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_articulated, extra_callback_info1) {
     1: return item_metro_RET_typeB;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

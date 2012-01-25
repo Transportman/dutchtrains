@@ -34,7 +34,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios, (position_in_vehid_c
 
 switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_articulated, extra_callback_info1) {
     1..2: return item_dmu_GTW26;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 /*

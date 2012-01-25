@@ -57,5 +57,5 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE4_position_red, (position_in_vehid_chain 
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE4_articulated, extra_callback_info1) {
     1..3: return item_dmu_DE4;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

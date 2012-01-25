@@ -23,7 +23,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_SLTVI_position, (position_in_vehid_chain % 
 
 switch(FEAT_TRAINS, SELF, switch_emu_SLTVI_articulated, extra_callback_info1) {
     1..5: return item_emu_SLTVI;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 /*

@@ -52,7 +52,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_templatetest_position, (position_in_vehid_c
 
 switch(FEAT_TRAINS, SELF, switch_emu_templatetest_articulated, extra_callback_info1) {
     1..7: return item_emu_templatetest;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 

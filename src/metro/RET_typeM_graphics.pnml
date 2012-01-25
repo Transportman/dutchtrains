@@ -28,5 +28,5 @@ switch(FEAT_TRAINS, SELF, switch_metro_RET_typeM_position_blue, (position_in_veh
 
 switch(FEAT_TRAINS, SELF, switch_metro_RET_typeM_articulated, extra_callback_info1) {
     1: return item_metro_RET_typeM;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

@@ -44,5 +44,5 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_vehid
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_articulated, extra_callback_info1) {
     1: return item_dmu_Lint41H;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

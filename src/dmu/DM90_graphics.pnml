@@ -79,5 +79,5 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_livery, (date_of_last_service >= dat
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DM90_articulated, extra_callback_info1) {
     1: return item_dmu_DM90;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

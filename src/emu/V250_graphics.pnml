@@ -52,5 +52,5 @@ switch(FEAT_TRAINS, SELF, switch_emu_V250_position, (position_in_vehid_chain % 8
 
 switch(FEAT_TRAINS, SELF, switch_emu_V250_articulated, extra_callback_info1) {
     1..7: return item_emu_V250;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

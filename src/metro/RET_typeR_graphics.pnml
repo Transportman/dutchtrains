@@ -48,7 +48,7 @@ switch(FEAT_TRAINS, SELF, switch_metro_RET_typeR_position_silver, (position_in_v
 
 switch(FEAT_TRAINS, SELF, switch_metro_RET_typeR_articulated, extra_callback_info1) {
     1..2: return item_metro_RET_typeR;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 /*

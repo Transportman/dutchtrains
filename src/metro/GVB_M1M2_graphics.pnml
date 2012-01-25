@@ -45,5 +45,5 @@ switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_livery, (date_of_last_service 
 
 switch(FEAT_TRAINS, SELF, switch_metro_GVB_M1M2_articulated, extra_callback_info1) {
     1: return item_metro_GVB_M1M2;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

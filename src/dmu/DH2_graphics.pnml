@@ -132,5 +132,5 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_livery, (date_of_last_service >= date
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_articulated, extra_callback_info1) {
     1: return item_dmu_DH2;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

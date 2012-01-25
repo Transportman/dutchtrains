@@ -32,5 +32,5 @@ switch(FEAT_TRAINS, SELF, switch_metro_GVB_M5M6_livery, (position_in_vehid_chain
 
 switch(FEAT_TRAINS, SELF, switch_metro_GVB_M5M6_articulated, extra_callback_info1) {
     1..2: return item_metro_GVB_M5M6;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }

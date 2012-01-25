@@ -158,7 +158,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_livery, date_of_last_service) {
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_articulated, extra_callback_info1) {
     1..2: return item_dmu_Mat34;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 /*

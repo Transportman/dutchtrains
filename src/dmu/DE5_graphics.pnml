@@ -230,7 +230,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_livery, date_of_last_service) {
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE5_articulated, extra_callback_info1) {
     1..4: return item_dmu_DE5;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 /*
