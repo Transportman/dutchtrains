@@ -1,6 +1,6 @@
 //this file set the vehicle ids
-//this is because we need all articulated vehicles in the first 128 ids
-//all non-articulated vehicles will get a higher id from the start
+//since GRFv8 we can use the first 16384 IDs for articulated vehicles
+//however, we keep defining IDs for compatibility reasons
 
 //articulated
 item(FEAT_TRAINS, item_dmu_DH2, 0) {}
