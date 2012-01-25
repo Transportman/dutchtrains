@@ -14,9 +14,9 @@ if (ttd_platform != PLATFORM_OPENTTD) {
 }
 else {
     //check for OpenTTD version
-    if (openttd_version < version_openttd(1, 2, 0, 23291)) {
+    if (openttd_version < version_openttd(1, 2, 0, 23836)) {
         //requires OpenTTD version
-        error(FATAL, REQUIRES_OPENTTD, "1.2.0 / r23291");
+        error(FATAL, REQUIRES_OPENTTD, "1.2.0-beta4 / r23836");
     }
 }
 
