@@ -12,15 +12,15 @@ spriteset(spriteset_electric_ES64F4_purchase, "gfx/electric/ES64F4.png") {
 
 //husa
 spriteset(spriteset_electric_ES64F4_husa, "gfx/electric/ES64F4.png") {
-	template_2cc_58(1, 1)
+	template_2cc_88(1, 1)
 }
 //ers
 spriteset(spriteset_electric_ES64F4_ers, "gfx/electric/ES64F4.png") {
-	template_2cc_58(1, 32)
+	template_2cc_88(1, 32)
 }
 //db schenker
 spriteset(spriteset_electric_ES64F4_dbs, "gfx/electric/ES64F4.png") {
-	template_2cc_58(1, 64)
+	template_2cc_88(1, 64)
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_livery, date_of_last_service) {

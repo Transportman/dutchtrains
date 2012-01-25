@@ -12,15 +12,15 @@ spriteset(spriteset_electric_TRAXXF140MS2_purchase, "gfx/electric/TRAXXF140MS2.p
 
 //red
 spriteset(spriteset_electric_TRAXXF140MS2_red, "gfx/electric/TRAXXF140MS2.png") {
-	template_2cc_58(1, 1)
+	template_2cc_88(1, 1)
 }
 //silver
 spriteset(spriteset_electric_TRAXXF140MS2_silver, "gfx/electric/TRAXXF140MS2.png") {
-	template_2cc_58(1, 32)
+	template_2cc_88(1, 32)
 }
 //green/silver
 spriteset(spriteset_electric_TRAXXF140MS2_green, "gfx/electric/TRAXXF140MS2.png") {
-	template_2cc_58(1, 64)
+	template_2cc_88(1, 64)
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_livery, date_of_last_service) {
