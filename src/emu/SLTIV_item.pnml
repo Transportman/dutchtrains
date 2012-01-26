@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_emu_SLTIV) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_2437;
+        purchase: spriteset_emu_SLTIV_purchase;
         articulated_part: switch_emu_SLTIV_articulated;
         shorten_vehicle: switch_emu_SLTIV_length;
         switch_emu_SLTIV_position;

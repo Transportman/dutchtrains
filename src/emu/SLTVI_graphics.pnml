@@ -2,7 +2,9 @@
 * PURCHASE
 */
 
-//already defined for IV
+spriteset(spriteset_emu_SLTVI_purchase, "gfx/emu/SLT.png") {
+	template_purchase(1, 147)
+}
 
 /*
 * VEHICLE
@@ -11,10 +13,10 @@
 //already defined for IV
 
 switch(FEAT_TRAINS, SELF, switch_emu_SLTVI_position, (position_in_vehid_chain % 6)) {
-	0: spriteset_2393;
-    2: spriteset_2413;
-    5: spriteset_2423;
-    spriteset_2403;
+	0: spriteset_emu_SLTIV_front;
+    2: spriteset_emu_SLTIV_panto;
+    5: spriteset_emu_SLTIV_back;
+    spriteset_emu_SLTIV_middle;
 }
 
 /*

@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_2437, "gfx/dutchtrainsw.png") {
-	[130, 3128, 50, 14, -25, -8]
+spriteset(spriteset_emu_SLTIV_purchase, "gfx/emu/SLT.png") {
+	template_purchase(1, 128)
 }
 
 /*
@@ -11,55 +11,27 @@ spriteset(spriteset_2437, "gfx/dutchtrainsw.png") {
 */
 
 //front
-spriteset(spriteset_2393, "gfx/dutchtrainsw.png") {
-	[642, 3048, 8, 18, -3, -9]
-	[658, 3048, 18, 14, -8, -8]
-	[690, 3048, 21, 12, -10, -7]
-	[722, 3048, 18, 15, -7, -9]
-	[754, 3048, 8, 20, -3, -10]
-	[770, 3048, 18, 15, -10, -8]
-	[2, 3096, 21, 12, -10, -7]
-	[34, 3096, 18, 14, -9, -9]
+spriteset(spriteset_emu_SLTIV_front, "gfx/emu/SLT.png") {
+	template_2cc_68(1, 1)
 }
 //middle
-spriteset(spriteset_2403, "gfx/dutchtrainsw.png") {
-	[98, 3096, 8, 17, -3, -8]
-	[114, 3096, 16, 14, -8, -8]
-	[146, 3096, 21, 12, -10, -7]
-	[178, 3096, 16, 14, -7, -9]
-	[210, 3096, 8, 17, -3, -8]
-	[226, 3096, 16, 14, -8, -8]
-	[258, 3096, 21, 12, -10, -7]
-	[290, 3096, 16, 14, -7, -9]
+spriteset(spriteset_emu_SLTIV_middle, "gfx/emu/SLT.png") {
+	template_2cc_58(1, 32)
 }
 //middle+panto
-spriteset(spriteset_2413, "gfx/dutchtrainsw.png") {
-	[354, 3096, 8, 19, -3, -9]
-	[370, 3096, 16, 16, -8, -10]
-	[402, 3096, 21, 14, -10, -9]
-	[434, 3096, 16, 14, -7, -9]
-	[466, 3096, 8, 17, -3, -8]
-	[482, 3096, 16, 14, -8, -8]
-	[514, 3096, 21, 14, -10, -9]
-	[546, 3096, 16, 16, -7, -11]
+spriteset(spriteset_emu_SLTIV_panto, "gfx/emu/SLT.png") {
+	template_2cc_58(1, 64)
 }
 //back
-spriteset(spriteset_2423, "gfx/dutchtrainsw.png") {
-	[610, 3096, 8, 20, -3, -10]
-	[626, 3096, 18, 15, -10, -8]
-	[658, 3096, 21, 12, -10, -7]
-	[690, 3096, 18, 14, -9, -9]
-	[722, 3096, 8, 18, -3, -9]
-	[738, 3096, 18, 14, -8, -8]
-	[770, 3096, 21, 12, -10, -7]
-	[2, 3128, 18, 15, -7, -9]
+spriteset(spriteset_emu_SLTIV_back, "gfx/emu/SLT.png") {
+	template_2cc_68(1, 96)
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_position, (position_in_vehid_chain % 4)) {
-	0: spriteset_2393;
-    2: spriteset_2413;
-    3: spriteset_2423;
-    spriteset_2403;
+	0: spriteset_emu_SLTIV_front;
+    2: spriteset_emu_SLTIV_panto;
+    3: spriteset_emu_SLTIV_back;
+    spriteset_emu_SLTIV_middle;
 }
 
 /*
