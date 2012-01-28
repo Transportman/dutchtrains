@@ -2,21 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_3383, "gfx/dutchtrainsw.png") {
-	[354, 4408, 50, 14, -25, -8]
+spriteset(spriteset_electric_NS1500_purchase, "gfx/electric/NS1500.png") {
+	template_purchase(1, 128)
 }
 
 /*
 * VEHICLE
 */
 
-spriteset(spriteset_3373, "gfx/dutchtrainsw.png") {
-	[66, 4408, 8, 24, -3, -12]
-	[82, 4408, 22, 17, -11, -9]
-	[114, 4408, 32, 14, -16, -9]
-	[162, 4408, 22, 18, -11, -11]
-	[194, 4408, 8, 25, -3, -12]
-	[210, 4408, 22, 18, -11, -10]
-	[242, 4408, 32, 14, -16, -9]
-	[290, 4408, 22, 17, -11, -10]
+//there's also a black livery in the spritesheet
+
+spriteset(spriteset_electric_NS1500_yellow, "gfx/electric/NS1500.png") {
+	template_2cc_88(1, 32)
 }
