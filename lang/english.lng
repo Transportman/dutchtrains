@@ -17,6 +17,7 @@ str_steam_NCS71         :NCS 71-78 (SS 971-978, NS 3600 series) "Zeppelin" (Stea
 #diesel
 str_diesel_NS100        :NS 100 "Buck" (Petrol)
 str_diesel_NS200        :NS 200 "Billy" (Diesel)
+str_diesel_NS400        :NS 400 "Big Billy" (Diesel)
 str_diesel_NS450        :NS 450 (Diesel)
 str_diesel_NS600        :NS 600 "Boxie" (Diesel)
 str_diesel_NS2000       :NS 2000 (Whitcomb 65-DE-19A) (Diesel)

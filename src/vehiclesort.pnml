@@ -16,6 +16,7 @@ sort(FEAT_TRAINS, [
     //diesel
     item_diesel_NS100,
     item_diesel_NS200,
+    item_diesel_NS400,
     item_diesel_NS450,
     item_diesel_NS600,
     item_diesel_NS2000,
