@@ -1,0 +1,27 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_mP_purchase, "gfx/emu/mP.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_emu_mP_brown, "gfx/emu/mP.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_mP_yellow, "gfx/emu/mP.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_mP_red, "gfx/emu/mP.png") {
+	template_2cc_88(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_mP_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_emu_mP_brown;
+    date(1971,1,1)..date(1972,12,31): spriteset_emu_mP_yellow;
+    spriteset_emu_mP_red;
+}

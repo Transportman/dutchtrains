@@ -138,6 +138,8 @@
 //emu
 #include "src/emu/templatetest_graphics.pnml"
 #include "src/emu/templatetest_item.pnml"
+#include "src/emu/mP_graphics.pnml"
+#include "src/emu/mP_item.pnml"
 #include "src/emu/V250_graphics.pnml"
 #include "src/emu/V250_item.pnml"
 #include "src/emu/SLTIV_graphics.pnml"

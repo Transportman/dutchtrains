@@ -33,6 +33,11 @@ str_dmu_DH2             :DH2 "Wadloper" (Diesel)
 str_dmu_DM90            :DM '90 "Buffel" (Diesel)
 
 #emu
+str_emu_mP              :Plan mP "motorpost" (Elektrisch)
+str_emu_ICE3M           :ICE 3M (DB BR 406) (Elektrisch)
 str_emu_V250            :Fyra V250 "Albatros" (Elektrisch)
+str_emu_Protos          :Protos (Elektrisch)
+str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
+str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Elektrisch)
 
 #wagons
