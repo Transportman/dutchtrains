@@ -4,6 +4,9 @@
 STR_GRF_DESCRIPTION		:Nederlandse Treinen voor OpenTTD {}(c)Dutch Trainset Team {}Licentie: GPLv2 of hoger. {}Lees de readme voor details.
 
 #steam
+str_steam_Arend         :HSM "Arend" (Stoom)
+str_steam_HSM126        :HSM 126-135 (NS 1100 serie) (Stoom)
+str_steam_HSM500        :HSM 501-535 (NS 2100 serie) "Blikken Tinus" (Stoom)
 
 #diesel
 

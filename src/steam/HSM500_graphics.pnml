@@ -1,0 +1,121 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_steam_HSM500_purchase, "gfx/steam/HSM500.png") {
+	template_purchase(1, 224)
+}
+
+spriteset(spriteset_steam_NS2100_purchase, "gfx/steam/NS2100.png") {
+	template_purchase(1, 224)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_HSM500_livery_purchase, current_year) {
+	0..1970: spriteset_steam_HSM500_purchase;
+    spriteset_steam_NS2100_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+//6x engine animation
+spriteset(spriteset_steam_HSM500_ani_1, "gfx/steam/HSM500.png") {
+	template_2cc_58(1, 1)
+}
+spriteset(spriteset_steam_HSM500_ani_2, "gfx/steam/HSM500.png") {
+	template_2cc_58(1, 32)
+}
+spriteset(spriteset_steam_HSM500_ani_3, "gfx/steam/HSM500.png") {
+	template_2cc_58(1, 64)
+}
+spriteset(spriteset_steam_HSM500_ani_4, "gfx/steam/HSM500.png") {
+	template_2cc_58(1, 96)
+}
+spriteset(spriteset_steam_HSM500_ani_5, "gfx/steam/HSM500.png") {
+	template_2cc_58(1, 128)
+}
+spriteset(spriteset_steam_HSM500_ani_6, "gfx/steam/HSM500.png") {
+	template_2cc_58(1, 160)
+}
+//tender
+spriteset(spriteset_steam_HSM500_tender, "gfx/steam/HSM500.png") {
+	template_2cc_48(1, 192)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_HSM500_animation, (motion_counter)) {
+    3..4:   spriteset_steam_HSM500_ani_2;
+    5..7:   spriteset_steam_HSM500_ani_3;
+    8..10:  spriteset_steam_HSM500_ani_4;
+    11..12: spriteset_steam_HSM500_ani_5;
+    13..15: spriteset_steam_HSM500_ani_6;
+    spriteset_steam_HSM500_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_HSM500_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_HSM500_tender;
+    switch_steam_HSM500_animation;
+}
+
+//6x engine animation
+spriteset(spriteset_steam_NS2100_ani_1, "gfx/steam/NS2100.png") {
+	template_2cc_58(1, 1)
+}
+spriteset(spriteset_steam_NS2100_ani_2, "gfx/steam/NS2100.png") {
+	template_2cc_58(1, 32)
+}
+spriteset(spriteset_steam_NS2100_ani_3, "gfx/steam/NS2100.png") {
+	template_2cc_58(1, 64)
+}
+spriteset(spriteset_steam_NS2100_ani_4, "gfx/steam/NS2100.png") {
+	template_2cc_58(1, 96)
+}
+spriteset(spriteset_steam_NS2100_ani_5, "gfx/steam/NS2100.png") {
+	template_2cc_58(1, 128)
+}
+spriteset(spriteset_steam_NS2100_ani_6, "gfx/steam/NS2100.png") {
+	template_2cc_58(1, 160)
+}
+//tender
+spriteset(spriteset_steam_NS2100_tender, "gfx/steam/NS2100.png") {
+	template_2cc_48(1, 192)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS2100_animation, (motion_counter)) {
+    3..4:   spriteset_steam_NS2100_ani_2;
+    5..7:   spriteset_steam_NS2100_ani_3;
+    8..10:  spriteset_steam_NS2100_ani_4;
+    11..12: spriteset_steam_NS2100_ani_5;
+    13..15: spriteset_steam_NS2100_ani_6;
+    spriteset_steam_NS2100_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS2100_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_NS2100_tender;
+    switch_steam_NS2100_animation;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_HSM500_livery, date_of_last_service) {
+	0..date(1970,12,31):              switch_steam_HSM500_position;
+    switch_steam_NS2100_position;
+}
+
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_HSM500_articulated, extra_callback_info1) {
+    1: return item_steam_HSM500;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VEHICLE LENGTH CALLBACK
+*/
+
+
+switch(FEAT_TRAINS, SELF, switch_steam_HSM500_length, (position_in_vehid_chain % 2)) {
+    1: return SHORTEN_TO_4_8;
+    return SHORTEN_TO_5_8;
+}
