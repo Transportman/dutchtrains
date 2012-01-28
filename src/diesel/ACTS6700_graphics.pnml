@@ -2,23 +2,22 @@
 * PURCHASE
 */
 
-//acts
-spriteset(spriteset_3593, "gfx/dutchtrainsw.png") {
-	[242, 4728, 50, 12, -25, -6]
+spriteset(spriteset_diesel_ACTS6700_purchase, "gfx/diesel/ACTS6700.png") {
+	template_purchase(1, 128)
 }
 
 /*
 * VEHICLE
 */
 
-//acts
-spriteset(spriteset_3583, "gfx/dutchtrainsw.png") {
-	[738, 4680, 8, 22, -3, -11]
-	[754, 4680, 22, 15, -11, -8]
-	[2, 4728, 30, 12, -15, -7]
-	[50, 4728, 22, 15, -11, -9]
-	[82, 4728, 8, 22, -3, -11]
-	[98, 4728, 22, 15, -11, -8]
-	[130, 4728, 30, 12, -15, -7]
-	[178, 4728, 22, 15, -11, -9]
+spriteset(spriteset_diesel_ACTS6700_blue, "gfx/diesel/ACTS6700.png") {
+	template_2cc_78(1, 1)
+}
+spriteset(spriteset_diesel_ACTS6700_black, "gfx/diesel/ACTS6700.png") {
+	template_2cc_78(1, 32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_ACTS6700_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_diesel_ACTS6700_blue;
+    spriteset_diesel_ACTS6700_black;
 }
