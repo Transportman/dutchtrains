@@ -77,3 +77,5 @@ item(FEAT_TRAINS, item_electric_TRAXXF140MS2, 162) {}
 item(FEAT_TRAINS, item_electric_ES64F4, 163) {}
 item(FEAT_TRAINS, item_electric_NS2000, 164) {}
 item(FEAT_TRAINS, item_electric_NS2801, 165) {}
+item(FEAT_TRAINS, item_electric_SM151, 166) {}
+item(FEAT_TRAINS, item_electric_G400B, 167) {}

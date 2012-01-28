@@ -1,0 +1,24 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_diesel_SM151_purchase, "gfx/diesel/SM151.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+//rail4chem
+spriteset(spriteset_diesel_SM151_ns, "gfx/diesel/SM151.png") {
+	template_2cc_68(1, 1)
+}
+spriteset(spriteset_diesel_SM151_sm, "gfx/diesel/SM151.png") {
+	template_2cc_68(1, 32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_SM151_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_diesel_SM151_sm;
+    spriteset_diesel_SM151_ns;
+}
