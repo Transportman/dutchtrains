@@ -36,12 +36,12 @@ item(FEAT_TRAINS, item_diesel_NS100) {
 		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
-        shorten_vehicle: 0;
+        shorten_vehicle: SHORTEN_TO_4_8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_3921;
-        spriteset_3911;
+        purchase: spriteset_diesel_NS100_purchase;
+        spriteset_diesel_NS100;
     }
 }
