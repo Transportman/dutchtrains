@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_ACTS5800) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_3695;
+        purchase: spriteset_diesel_ACTS5800_purchase;
         switch_diesel_ACTS5800_livery;
     }
 }
