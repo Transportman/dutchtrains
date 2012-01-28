@@ -26,7 +26,7 @@ item(FEAT_TRAINS, item_electric_NS1000) {
         //cargo_age_period: 0;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: ELRL;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -36,12 +36,12 @@ item(FEAT_TRAINS, item_electric_NS1000) {
 		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
-        shorten_vehicle: 0;
+        shorten_vehicle: SHORTEN_TO_7_8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: switch_electric_NS1000_livery_purchase;
+        purchase: spriteset_electric_NS1000_purchase;
         switch_electric_NS1000_livery;
     }
 }

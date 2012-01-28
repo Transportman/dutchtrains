@@ -2,48 +2,22 @@
 * PURCHASE
 */
 
-//green
-spriteset(spriteset_2987, "gfx/dutchtrainsw.png") {
-	[610, 3880, 50, 14, -25, -8]
-}
-//blue
-spriteset(spriteset_2990, "gfx/dutchtrainsw.png") {
-	[706, 3880, 50, 14, -25, -8]
-}
-
-switch(FEAT_TRAINS, SELF, switch_electric_NS1000_livery_purchase, current_year) {
-	0..1970: spriteset_2987;
-    spriteset_2990;
+spriteset(spriteset_electric_NS1000_purchase, "gfx/electric/NS1000.png") {
+	template_purchase(1, 128)
 }
 
 /*
 * VEHICLE
 */
 
-//green
-spriteset(spriteset_2966, "gfx/dutchtrainsw.png") {
-	[18, 3880, 8, 23, -3, -11]
-	[34, 3880, 21, 18, -10, -11]
-	[66, 3880, 30, 13, -15, -8]
-	[114, 3880, 21, 17, -10, -11]
-	[146, 3880, 8, 22, -3, -11]
-	[162, 3880, 21, 17, -10, -10]
-	[194, 3880, 30, 14, -15, -9]
-	[242, 3880, 21, 18, -10, -12]
+spriteset(spriteset_electric_NS1000_green, "gfx/electric/NS1000.png") {
+	template_2cc_78(1, 1)
 }
-//blue
-spriteset(spriteset_2976, "gfx/dutchtrainsw.png") {
-	[306, 3880, 8, 23, -3, -11]
-	[322, 3880, 21, 18, -10, -11]
-	[354, 3880, 30, 13, -15, -8]
-	[402, 3880, 21, 17, -10, -11]
-	[434, 3880, 8, 22, -3, -11]
-	[450, 3880, 21, 17, -10, -10]
-	[482, 3880, 30, 14, -15, -9]
-	[530, 3880, 21, 18, -10, -12]
+spriteset(spriteset_electric_NS1000_blue, "gfx/electric/NS1000.png") {
+	template_2cc_78(1, 32)
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1000_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_2966;
-    spriteset_2976;
+	0..date(1970,12,31):              spriteset_electric_NS1000_green;
+    spriteset_electric_NS1000_blue;
 }
