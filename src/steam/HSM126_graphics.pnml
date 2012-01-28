@@ -107,7 +107,7 @@ switch(FEAT_TRAINS, SELF, switch_steam_HSM126_livery, date_of_last_service) {
 
 switch(FEAT_TRAINS, SELF, switch_steam_HSM126_articulated, extra_callback_info1) {
     1: return item_steam_HSM126;
-    return 0xFF;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 /*
