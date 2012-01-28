@@ -2,9 +2,8 @@
 * PURCHASE
 */
 
-//rail4chem
-spriteset(spriteset_3902, "gfx/dutchtrainsw.png") {
-	[2, 5160, 50, 13, -25, -7]
+spriteset(spriteset_diesel_G2000_purchase, "gfx/diesel/G2000.png") {
+	template_purchase(1, 128)
 }
 
 /*
@@ -12,13 +11,18 @@ spriteset(spriteset_3902, "gfx/dutchtrainsw.png") {
 */
 
 //rail4chem
-spriteset(spriteset_3892, "gfx/dutchtrainsw.png") {
-	[466, 5112, 8, 24, -3, -12]
-	[482, 5112, 22, 17, -11, -10]
-	[514, 5112, 32, 13, -16, -8]
-	[562, 5112, 22, 17, -11, -11]
-	[594, 5112, 8, 24, -3, -12]
-	[610, 5112, 22, 17, -11, -10]
-	[642, 5112, 32, 13, -16, -8]
-	[690, 5112, 22, 17, -11, -11]
+spriteset(spriteset_diesel_G2000_Rail4Chem, "gfx/diesel/G2000.png") {
+	template_2cc_78(1, 1)
+}
+spriteset(spriteset_diesel_G2000_Railion, "gfx/diesel/G2000.png") {
+	template_2cc_78(1, 32)
+}
+spriteset(spriteset_diesel_G2000_ERS, "gfx/diesel/G2000.png") {
+	template_2cc_78(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_diesel_G2000_Rail4Chem;
+    date(1971,1,1)..date(2003,12,31): spriteset_diesel_G2000_Railion;
+    spriteset_diesel_G2000_ERS;
 }
