@@ -6,6 +6,15 @@ spriteset(spriteset_steam_HSM126_purchase, "gfx/steam/HSM126.png") {
 	template_purchase(1, 224)
 }
 
+spriteset(spriteset_steam_NS1100_purchase, "gfx/steam/NS1100.png") {
+	template_purchase(1, 224)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_HSM126_livery_purchase, current_year) {
+	0..1970: spriteset_steam_HSM126_purchase;
+    spriteset_steam_NS1100_purchase;
+}
+
 /*
 * VEHICLE
 */
@@ -47,6 +56,50 @@ switch(FEAT_TRAINS, SELF, switch_steam_HSM126_position, (position_in_vehid_chain
 	1: spriteset_steam_HSM126_tender;
     switch_steam_HSM126_animation;
 }
+
+//6x engine animation
+spriteset(spriteset_steam_NS1100_ani_1, "gfx/steam/NS1100.png") {
+	template_2cc_48(1, 1)
+}
+spriteset(spriteset_steam_NS1100_ani_2, "gfx/steam/NS1100.png") {
+	template_2cc_48(1, 32)
+}
+spriteset(spriteset_steam_NS1100_ani_3, "gfx/steam/NS1100.png") {
+	template_2cc_48(1, 64)
+}
+spriteset(spriteset_steam_NS1100_ani_4, "gfx/steam/NS1100.png") {
+	template_2cc_48(1, 96)
+}
+spriteset(spriteset_steam_NS1100_ani_5, "gfx/steam/NS1100.png") {
+	template_2cc_48(1, 128)
+}
+spriteset(spriteset_steam_NS1100_ani_6, "gfx/steam/NS1100.png") {
+	template_2cc_48(1, 160)
+}
+//tender
+spriteset(spriteset_steam_NS1100_tender, "gfx/steam/NS1100.png") {
+	template_2cc_38(1, 192)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS1100_animation, (motion_counter)) {
+    3..4:   spriteset_steam_NS1100_ani_2;
+    5..7:   spriteset_steam_NS1100_ani_3;
+    8..10:  spriteset_steam_NS1100_ani_4;
+    11..12: spriteset_steam_NS1100_ani_5;
+    13..15: spriteset_steam_NS1100_ani_6;
+    spriteset_steam_NS1100_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS1100_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_NS1100_tender;
+    switch_steam_NS1100_animation;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_HSM126_livery, date_of_last_service) {
+	0..date(1970,12,31):              switch_steam_HSM126_position;
+    switch_steam_NS1100_position;
+}
+
 
 /*
 * ARTICULATED VEHICLE CALLBACK
