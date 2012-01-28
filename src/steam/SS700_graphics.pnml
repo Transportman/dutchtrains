@@ -95,7 +95,7 @@ switch(FEAT_TRAINS, SELF, switch_steam_NS3700_position, (position_in_vehid_chain
     switch_steam_NS3700_animation;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_SS700_livery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_steam_SS700_livery, date_of_last_service) {
 	0..date(1970,12,31):              switch_steam_SS700_position;
     switch_steam_NS3700_position;
 }

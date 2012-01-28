@@ -95,7 +95,7 @@ switch(FEAT_TRAINS, SELF, switch_steam_NS1100_position, (position_in_vehid_chain
     switch_steam_NS1100_animation;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_HSM126_livery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_steam_HSM126_livery, date_of_last_service) {
 	0..date(1970,12,31):              switch_steam_HSM126_position;
     switch_steam_NS1100_position;
 }
