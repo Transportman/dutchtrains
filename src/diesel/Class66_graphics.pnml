@@ -2,74 +2,54 @@
 * PURCHASE
 */
 
-spriteset(spriteset_3650, "gfx/dutchtrainsw.png") {
-	[274, 4824, 50, 10, -25, -4]
+spriteset(spriteset_diesel_Class66_purchase, "gfx/diesel/Class66.png") {
+	template_purchase(1, 352)
 }
 
 /*
 * VEHICLE
 */
 
-//acts
-spriteset(spriteset_3600, "gfx/dutchtrainsw.png") {
-	[402, 4728, 8, 24, -3, -12]
-	[418, 4728, 22, 16, -11, -9]
-	[450, 4728, 32, 10, -16, -5]
-	[498, 4728, 22, 16, -11, -9]
-	[530, 4728, 8, 24, -3, -12]
-	[546, 4728, 22, 16, -11, -9]
-	[578, 4728, 32, 10, -16, -5]
-	[626, 4728, 22, 16, -11, -9]
+spriteset(spriteset_diesel_Class66_Veolia, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 1)
 }
-//black
-spriteset(spriteset_3610, "gfx/dutchtrainsw.png") {
-	[690, 4728, 8, 24, -3, -12]
-	[706, 4728, 22, 16, -11, -9]
-	[738, 4728, 32, 10, -16, -5]
-	[2, 4776, 22, 16, -11, -9]
-	[34, 4776, 8, 24, -3, -12]
-	[50, 4776, 22, 16, -11, -9]
-	[82, 4776, 32, 10, -16, -5]
-	[130, 4776, 22, 16, -11, -9]
+spriteset(spriteset_diesel_Class66_ACTS, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 32)
 }
-//white
-spriteset(spriteset_3620, "gfx/dutchtrainsw.png") {
-	[194, 4776, 8, 24, -3, -12]
-	[210, 4776, 22, 16, -11, -9]
-	[242, 4776, 32, 10, -16, -5]
-	[290, 4776, 22, 16, -11, -9]
-	[322, 4776, 8, 24, -3, -12]
-	[338, 4776, 22, 16, -11, -9]
-	[370, 4776, 32, 10, -16, -5]
-	[418, 4776, 22, 16, -11, -9]
+spriteset(spriteset_diesel_Class66_ACTS_2, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 64)
 }
-//grey
-spriteset(spriteset_3630, "gfx/dutchtrainsw.png") {
-	[482, 4776, 8, 24, -3, -12]
-	[498, 4776, 22, 16, -11, -9]
-	[530, 4776, 32, 10, -16, -5]
-	[578, 4776, 22, 16, -11, -9]
-	[610, 4776, 8, 24, -3, -12]
-	[626, 4776, 22, 16, -11, -9]
-	[658, 4776, 32, 10, -16, -5]
-	[706, 4776, 22, 16, -11, -9]
+spriteset(spriteset_diesel_Class66_DLC, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 96)
 }
-//green/grey
-spriteset(spriteset_3640, "gfx/dutchtrainsw.png") {
-	[770, 4776, 8, 24, -3, -12]
-	[2, 4824, 22, 16, -11, -9]
-	[34, 4824, 32, 10, -16, -5]
-	[82, 4824, 22, 16, -11, -9]
-	[114, 4824, 8, 24, -3, -12]
-	[130, 4824, 22, 16, -11, -9]
-	[162, 4824, 32, 10, -16, -5]
-	[210, 4824, 22, 16, -11, -9]
+spriteset(spriteset_diesel_Class66_Rail4Chem, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_diesel_Class66_Rail4Chem_2, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_diesel_Class66_ERS, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_diesel_Class66_Captrain, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 224)
+}
+spriteset(spriteset_diesel_Class66_Crossrail, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_diesel_Class66_HGK, "gfx/diesel/Class66.png") {
+	template_2cc_88(1, 288)
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_Class66_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_3600;
-    date(1971,1,1)..date(2003,12,31): spriteset_3610;
-    date(2004,1,1)..date(2004,12,31): spriteset_3620;
-    date(2005,1,1)..date(2005,12,31): spriteset_3630;
-    spriteset_3640;
+	0..date(1970,12,31):              spriteset_diesel_Class66_Veolia;
+    date(1971,1,1)..date(2003,12,31): spriteset_diesel_Class66_ACTS;
+    date(2004,1,1)..date(2004,12,31): spriteset_diesel_Class66_ACTS_2;
+    date(2005,1,1)..date(2005,12,31): spriteset_diesel_Class66_DLC;
+    date(2006,1,1)..date(2006,12,31): spriteset_diesel_Class66_Rail4Chem;
+    date(2007,1,1)..date(2007,12,31): spriteset_diesel_Class66_Rail4Chem_2;
+    date(2008,1,1)..date(2008,12,31): spriteset_diesel_Class66_ERS;
+    date(2009,1,1)..date(2009,12,31): spriteset_diesel_Class66_Captrain;
+    date(2010,1,1)..date(2010,12,31): spriteset_diesel_Class66_Crossrail;
+    spriteset_diesel_Class66_HGK;
 }

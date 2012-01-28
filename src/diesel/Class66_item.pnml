@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_Class66) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_3650;
+        purchase: spriteset_diesel_Class66_purchase;
         switch_diesel_Class66_livery;
     }
 }
