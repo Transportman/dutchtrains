@@ -21,6 +21,7 @@ sort(FEAT_TRAINS, [
     item_diesel_NS2200,
     item_diesel_NS2400,
     item_diesel_NS2600,
+    item_diesel_NS2801,
     item_diesel_NS6400,
     item_diesel_HLR77,
     item_diesel_ACTS5800,

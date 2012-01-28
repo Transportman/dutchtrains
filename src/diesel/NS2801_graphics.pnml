@@ -1,0 +1,15 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_diesel_NS2801_purchase, "gfx/diesel/NS2801.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_diesel_NS2801, "gfx/diesel/NS2801.png") {
+	template_2cc_78(1, 1)
+}

@@ -14,6 +14,7 @@ str_steam_NBDS30        :NBDS 30-36 (NS 3501-3508) "Blauwe Brabanders" (Stoom)
 str_steam_NCS71         :NCS 71-78 (SS 971-978, NS 3600 serie) "Zeppelin" (Stoom)
 
 #diesel
+str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diesel)
 
 #electric
 

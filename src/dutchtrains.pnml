@@ -54,6 +54,8 @@
 #include "src/diesel/NS2400_item.pnml"
 #include "src/diesel/NS2600_graphics.pnml"
 #include "src/diesel/NS2600_item.pnml"
+#include "src/diesel/NS2801_graphics.pnml"
+#include "src/diesel/NS2801_item.pnml"
 #include "src/diesel/NS6400_graphics.pnml"
 #include "src/diesel/NS6400_item.pnml"
 #include "src/diesel/ACTS5800_graphics.pnml"
