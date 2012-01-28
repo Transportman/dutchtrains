@@ -32,6 +32,7 @@ item(FEAT_TRAINS, item_steam_HSM500, 25) {}
 item(FEAT_TRAINS, item_steam_SS700, 26) {}
 item(FEAT_TRAINS, item_steam_NS3800, 27) {}
 item(FEAT_TRAINS, item_steam_NS3900, 28) {}
+item(FEAT_TRAINS, item_steam_NBDS30, 29) {}
 
 item(FEAT_TRAINS, item_emu_templatetest, 127) {}
 

@@ -34,6 +34,8 @@
 #include "src/steam/NS3800_item.pnml"
 #include "src/steam/NS3900_graphics.pnml"
 #include "src/steam/NS3900_item.pnml"
+#include "src/steam/NBDS30_graphics.pnml"
+#include "src/steam/NBDS30_item.pnml"
 
 //diesel
 #include "src/diesel/NS100_graphics.pnml"
