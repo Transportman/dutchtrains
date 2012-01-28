@@ -30,6 +30,8 @@
 #include "src/steam/HSM500_item.pnml"
 #include "src/steam/SS700_graphics.pnml"
 #include "src/steam/SS700_item.pnml"
+#include "src/steam/NS3800_graphics.pnml"
+#include "src/steam/NS3800_item.pnml"
 
 //diesel
 #include "src/diesel/NS100_graphics.pnml"

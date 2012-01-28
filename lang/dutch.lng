@@ -8,6 +8,7 @@ str_steam_Arend         :HSM "Arend" (Stoom)
 str_steam_HSM126        :HSM 126-135 (NS 1100 serie) (Stoom)
 str_steam_HSM500        :HSM 501-535 (NS 2100 serie) "Blikken Tinus" (Stoom)
 str_steam_SS700         :SS 685-778, 785-799 (NS 3700 series) "Jumbo" (Stoom)
+str_steam_NS3800        :NS 3851-3855 (Stoom)
 
 #diesel
 
