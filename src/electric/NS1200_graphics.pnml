@@ -2,99 +2,42 @@
 * PURCHASE
 */
 
-//turquoise
-spriteset(spriteset_3126, "gfx/dutchtrainsw.png") {
-	[354, 4088, 50, 15, -25, -9]
-}
-//brown
-spriteset(spriteset_3129, "gfx/dutchtrainsw.png") {
-	[450, 4088, 50, 15, -25, -9]
-}
-//blue (or so it should be)
-spriteset(spriteset_3132, "gfx/dutchtrainsw.png") {
-	[546, 4088, 50, 15, -25, -9]
-}
-//grey
-spriteset(spriteset_3135, "gfx/dutchtrainsw.png") {
-	[642, 4088, 50, 15, -25, -9]
-}
-//acts
-spriteset(spriteset_3138, "gfx/dutchtrainsw.png") {
-	[738, 4088, 50, 15, -25, -9]
-}
-
-switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery_purchase, current_year) {
-	0..1970: spriteset_3126;
-    1971..1972: spriteset_3129;
-    1973..1974: spriteset_3132;
-    1975..1976: spriteset_3135;
-    spriteset_3138;
+spriteset(spriteset_electric_NS1200_purchase, "gfx/electric/NS1200.png") {
+	template_purchase(1, 224)
 }
 
 /*
 * VEHICLE
 */
 
-//turquoise
-spriteset(spriteset_3076, "gfx/dutchtrainsw.png") {
-	[498, 3992, 8, 25, -3, -12]
-	[514, 3992, 23, 21, -11, -13]
-	[546, 3992, 32, 15, -16, -10]
-	[594, 3992, 23, 21, -11, -13]
-	[626, 3992, 8, 25, -3, -12]
-	[642, 3992, 23, 21, -11, -13]
-	[674, 3992, 32, 15, -16, -10]
-	[722, 3992, 23, 21, -11, -14]
+spriteset(spriteset_electric_NS1200_turqoise, "gfx/electric/NS1200.png") {
+	template_2cc_88(1, 1)
 }
-//brown
-spriteset(spriteset_3086, "gfx/dutchtrainsw.png") {
-	[786, 3992, 8, 25, -3, -12]
-	[2, 4040, 23, 21, -11, -13]
-	[34, 4040, 32, 15, -16, -10]
-	[82, 4040, 23, 21, -11, -13]
-	[114, 4040, 8, 25, -3, -12]
-	[130, 4040, 23, 21, -11, -13]
-	[162, 4040, 32, 15, -16, -10]
-	[210, 4040, 23, 21, -11, -14]
+spriteset(spriteset_electric_NS1200_brown, "gfx/electric/NS1200.png") {
+	template_2cc_88(1, 32)
 }
-//blue
-spriteset(spriteset_3096, "gfx/dutchtrainsw.png") {
-	[274, 4040, 8, 24, -3, -12]
-	[290, 4040, 23, 21, -11, -13]
-	[322, 4040, 32, 15, -16, -10]
-	[370, 4040, 23, 21, -11, -13]
-	[402, 4040, 8, 25, -3, -12]
-	[418, 4040, 23, 21, -11, -13]
-	[450, 4040, 32, 15, -16, -10]
-	[498, 4040, 23, 21, -11, -14]
+spriteset(spriteset_electric_NS1200_blue, "gfx/electric/NS1200.png") {
+	template_2cc_88(1, 64)
 }
-//grey
-spriteset(spriteset_3106, "gfx/dutchtrainsw.png") {
-	[562, 4040, 8, 24, -3, -12]
-	[578, 4040, 23, 21, -11, -13]
-	[610, 4040, 32, 15, -16, -10]
-	[658, 4040, 23, 21, -11, -13]
-	[690, 4040, 8, 25, -3, -12]
-	[706, 4040, 23, 21, -11, -13]
-	[738, 4040, 32, 15, -16, -10]
-	[2, 4088, 23, 21, -11, -14]
+spriteset(spriteset_electric_NS1200_grey, "gfx/electric/NS1200.png") {
+	template_2cc_88(1, 96)
 }
-//acts
-spriteset(spriteset_3116, "gfx/dutchtrainsw.png") {
-	[66, 4088, 8, 25, -3, -12]
-	[82, 4088, 23, 21, -11, -13]
-	[114, 4088, 32, 15, -16, -10]
-	[162, 4088, 23, 21, -11, -13]
-	[194, 4088, 8, 25, -3, -12]
-	[210, 4088, 23, 21, -11, -13]
-	[242, 4088, 32, 15, -16, -10]
-	[290, 4088, 23, 21, -11, -14]
+spriteset(spriteset_electric_NS1200_ACTS, "gfx/electric/NS1200.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_electric_NS1200_VOSlogistics, "gfx/electric/NS1200.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_electric_NS1200_EETC, "gfx/electric/NS1200.png") {
+	template_2cc_88(1, 192)
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_3076;
-    date(1971,1,1)..date(1972,12,31): spriteset_3086;
-    date(1973,1,1)..date(1974,12,31): spriteset_3096;
-    date(1975,1,1)..date(1976,12,31): spriteset_3106;
-    spriteset_3116;
+	0..date(1970,12,31):              spriteset_electric_NS1200_turqoise;
+    date(1971,1,1)..date(1972,12,31): spriteset_electric_NS1200_brown;
+    date(1973,1,1)..date(1974,12,31): spriteset_electric_NS1200_blue;
+    date(1975,1,1)..date(1976,12,31): spriteset_electric_NS1200_grey;
+    date(1977,1,1)..date(1978,12,31): spriteset_electric_NS1200_ACTS;
+    date(1979,1,1)..date(1980,12,31): spriteset_electric_NS1200_VOSlogistics;
+    spriteset_electric_NS1200_EETC;
 }
