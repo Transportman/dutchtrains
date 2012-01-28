@@ -46,6 +46,8 @@
 #include "src/diesel/NS200_item.pnml"
 #include "src/diesel/NS600_graphics.pnml"
 #include "src/diesel/NS600_item.pnml"
+#include "src/diesel/NS2000_graphics.pnml"
+#include "src/diesel/NS2000_item.pnml"
 #include "src/diesel/NS2200_graphics.pnml"
 #include "src/diesel/NS2200_item.pnml"
 #include "src/diesel/NS2400_graphics.pnml"
