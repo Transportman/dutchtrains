@@ -2,23 +2,14 @@
 * PURCHASE
 */
 
-//red
-spriteset(spriteset_3668, "gfx/dutchtrainsw.png") {
-	[738, 4824, 50, 12, -25, -6]
+spriteset(spriteset_diesel_RN232_purchase, "gfx/diesel/RN232.png") {
+	template_purchase(1, 128)
 }
 
 /*
 * VEHICLE
 */
 
-//red
-spriteset(spriteset_3658, "gfx/dutchtrainsw.png") {
-	[450, 4824, 8, 25, -3, -12]
-	[466, 4824, 22, 17, -11, -9]
-	[498, 4824, 32, 12, -16, -7]
-	[546, 4824, 22, 17, -11, -10]
-	[578, 4824, 8, 25, -3, -12]
-	[594, 4824, 22, 17, -11, -9]
-	[626, 4824, 32, 12, -16, -7]
-	[674, 4824, 22, 17, -11, -10]
+spriteset(spriteset_diesel_RN232, "gfx/diesel/RN232.png") {
+	template_2cc_88(1, 1)
 }
