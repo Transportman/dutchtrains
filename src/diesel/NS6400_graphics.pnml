@@ -2,65 +2,30 @@
 * PURCHASE
 */
 
-//grey/yellow
-spriteset(spriteset_3519, "gfx/dutchtrainsw.png") {
-	[738, 4600, 50, 12, -25, -6]
-}
-//grey/yellow/red
-spriteset(spriteset_3522, "gfx/dutchtrainsw.png") {
-	[34, 4632, 50, 12, -25, -6]
-}
-//red
-spriteset(spriteset_3525, "gfx/dutchtrainsw.png") {
-	[130, 4632, 50, 12, -25, -6]
-}
-
-switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_livery_purchase, current_year) {
-	0..1970: spriteset_3519;
-    1971..2003: spriteset_3522;
-    spriteset_3525;
+spriteset(spriteset_diesel_NS6400_purchase, "gfx/diesel/NS6400.png") {
+	template_purchase(1, 128)
 }
 
 /*
 * VEHICLE
 */
 
-//grey/yellow
-spriteset(spriteset_3489, "gfx/dutchtrainsw.png") {
-	[674, 4552, 8, 22, -3, -11]
-	[690, 4552, 22, 15, -11, -8]
-	[722, 4552, 32, 12, -16, -7]
-	[770, 4552, 22, 15, -11, -9]
-	[2, 4600, 8, 22, -3, -11]
-	[18, 4600, 22, 15, -11, -8]
-	[50, 4600, 32, 12, -16, -7]
-	[98, 4600, 22, 15, -11, -9]
+spriteset(spriteset_diesel_NS6400_ns, "gfx/diesel/NS6400.png") {
+	template_2cc_68(1, 1)
 }
-//grey/yellow/red
-spriteset(spriteset_3499, "gfx/dutchtrainsw.png") {
-	[162, 4600, 8, 22, -3, -11]
-	[178, 4600, 22, 15, -11, -8]
-	[210, 4600, 32, 12, -16, -7]
-	[258, 4600, 22, 15, -11, -9]
-	[290, 4600, 8, 22, -3, -11]
-	[306, 4600, 22, 15, -11, -8]
-	[338, 4600, 32, 12, -16, -7]
-	[386, 4600, 22, 15, -11, -9]
+spriteset(spriteset_diesel_NS6400_railion, "gfx/diesel/NS6400.png") {
+	template_2cc_68(1, 32)
 }
-//red
-spriteset(spriteset_3509, "gfx/dutchtrainsw.png") {
-	[450, 4600, 8, 22, -3, -11]
-	[466, 4600, 22, 15, -11, -8]
-	[498, 4600, 32, 12, -16, -7]
-	[546, 4600, 22, 15, -11, -9]
-	[578, 4600, 8, 22, -3, -11]
-	[594, 4600, 22, 15, -11, -8]
-	[626, 4600, 32, 12, -16, -7]
-	[674, 4600, 22, 15, -11, -9]
+spriteset(spriteset_diesel_NS6400_railion_red, "gfx/diesel/NS6400.png") {
+	template_2cc_68(1, 64)
+}
+spriteset(spriteset_diesel_NS6400_railpro, "gfx/diesel/NS6400.png") {
+	template_2cc_68(1, 96)
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_3489;
-    date(1971,1,1)..date(2003,12,31): spriteset_3499;
-    spriteset_3509;
+	0..date(1970,12,31):              spriteset_diesel_NS6400_ns;
+    date(1971,1,1)..date(2003,12,31): spriteset_diesel_NS6400_railion;
+    date(2004,1,1)..date(2005,12,31): spriteset_diesel_NS6400_railion_red;
+    spriteset_diesel_NS6400_railpro;
 }
