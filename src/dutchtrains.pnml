@@ -154,6 +154,8 @@
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"
 #include "src/coaches/SS_C_218_item.pnml"
+#include "src/coaches/SS_C_723_graphics.pnml"
+#include "src/coaches/SS_C_723_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

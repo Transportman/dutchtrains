@@ -83,3 +83,4 @@ item(FEAT_TRAINS, item_diesel_NS450, 168) {}
 item(FEAT_TRAINS, item_diesel_NS400, 169) {}
 item(FEAT_TRAINS, item_emu_mP, 170) {}
 item(FEAT_TRAINS, item_coaches_SS_C_218, 171) {}
+item(FEAT_TRAINS, item_coaches_SS_C_723, 172) {}

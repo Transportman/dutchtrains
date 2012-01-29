@@ -1,0 +1,15 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_SS_C_723_purchase, "gfx/coaches/SS_C_723.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_SS_C_723, "gfx/coaches/SS_C_723.png") {
+	template_2cc_88(1, 1)
+}
