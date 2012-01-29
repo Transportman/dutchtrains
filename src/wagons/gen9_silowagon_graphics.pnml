@@ -1,0 +1,27 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen9_silowagon_purchase, "gfx/wagons/gen9_silowagon.png") {
+	template_purchase(1, 96)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen9_silowagon_blue, "gfx/wagons/gen9_silowagon.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_wagons_gen9_silowagon_red, "gfx/wagons/gen9_silowagon.png") {
+	template_2cc_88(186, 1)
+}
+spriteset(spriteset_wagons_gen9_silowagon_pink, "gfx/wagons/gen9_silowagon.png") {
+	template_2cc_88(371, 1)
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen9_silowagon_livery) {
+    1: spriteset_wagons_gen9_silowagon_blue;
+    1: spriteset_wagons_gen9_silowagon_red;
+    1: spriteset_wagons_gen9_silowagon_pink;
+}

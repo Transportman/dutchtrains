@@ -196,6 +196,8 @@
 #include "src/wagons/gen0livestockwagon_item.pnml"
 #include "src/wagons/gen9_superheavy_flatcar_graphics.pnml"
 #include "src/wagons/gen9_superheavy_flatcar_item.pnml"
+#include "src/wagons/gen9_silowagon_graphics.pnml"
+#include "src/wagons/gen9_silowagon_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"

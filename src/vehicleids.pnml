@@ -95,3 +95,4 @@ item(FEAT_TRAINS, item_coaches_HSM_D_1916, 178) {}
 item(FEAT_TRAINS, item_coaches_HIJSM_4_8_10, 179) {}
 item(FEAT_TRAINS, item_coaches_gen9_IC_DD, 180) {}
 item(FEAT_TRAINS, item_electric_gen9_HS001, 181) {}
+item(FEAT_TRAINS, item_wagons_gen9_silowagon, 182) {}
