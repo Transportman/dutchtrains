@@ -168,6 +168,8 @@
 //baggage wagons
 #include "src/coaches/SS_E_129_graphics.pnml"
 #include "src/coaches/SS_E_129_item.pnml"
+#include "src/coaches/HSM_D_1916_graphics.pnml"
+#include "src/coaches/HSM_D_1916_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

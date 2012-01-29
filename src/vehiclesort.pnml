@@ -93,6 +93,7 @@ sort(FEAT_TRAINS, [
     
     //baggage wagons
     item_coaches_SS_E_129,
+    item_coaches_HSM_D_1916,
 
     //wagons
     item_wagons_gen0hopper,

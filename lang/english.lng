@@ -93,6 +93,7 @@ str_coaches_RTM_BD_438  :Passenger Carriage RTM BD 438
 
 #baggage wagons
 str_coaches_SS_E_129    :Baggage Carriage SS E 129
+str_coaches_HSM_D_1916  :Baggage Carriage HSM D 1916
 
 #metro
 str_metro_GVB_M1M2      :GVB M1-M2 "Herring Gull" (Metro, third rail)
