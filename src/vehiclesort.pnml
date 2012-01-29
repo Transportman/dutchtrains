@@ -84,6 +84,7 @@ sort(FEAT_TRAINS, [
     item_emu_V250,
     
     //coaches
+    item_coaches_HSM_C_755,
     item_coaches_SS_C_218,
     item_coaches_SS_C_723,
 
