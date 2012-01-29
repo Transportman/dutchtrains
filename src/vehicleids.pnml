@@ -87,3 +87,4 @@ item(FEAT_TRAINS, item_coaches_SS_C_723, 172) {}
 item(FEAT_TRAINS, item_coaches_HSM_C_755, 173) {}
 item(FEAT_TRAINS, item_coaches_NCS_B_119, 174) {}
 item(FEAT_TRAINS, item_coaches_SS_ABd_7516, 175) {}
+item(FEAT_TRAINS, item_coaches_RTM_BD_438, 176) {}

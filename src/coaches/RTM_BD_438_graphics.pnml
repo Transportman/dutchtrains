@@ -1,0 +1,15 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_RTM_BD_438_purchase, "gfx/coaches/RTM_BD_438.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_RTM_BD_438, "gfx/coaches/RTM_BD_438.png") {
+	template_2cc_78(1, 1)
+}

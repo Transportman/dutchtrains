@@ -162,6 +162,8 @@
 #include "src/coaches/HSM_C_755_item.pnml"
 #include "src/coaches/NCS_B_119_graphics.pnml"
 #include "src/coaches/NCS_B_119_item.pnml"
+#include "src/coaches/RTM_BD_438_graphics.pnml"
+#include "src/coaches/RTM_BD_438_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"
