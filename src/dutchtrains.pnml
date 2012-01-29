@@ -200,6 +200,8 @@
 #include "src/wagons/gen9_silowagon_item.pnml"
 #include "src/wagons/gen7_cartransporter_graphics.pnml"
 #include "src/wagons/gen7_cartransporter_item.pnml"
+#include "src/wagons/gen7_containercarrier_graphics.pnml"
+#include "src/wagons/gen7_containercarrier_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"
