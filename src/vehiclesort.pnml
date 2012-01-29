@@ -107,5 +107,6 @@ sort(FEAT_TRAINS, [
     item_wagons_gen0openwagonmedium,
     item_wagons_gen0stakewagon,
     item_wagons_gen0livestockwagon,
+    item_wagons_gen9_superheavy_flatcar,
     
 ]);

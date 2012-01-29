@@ -35,6 +35,7 @@ item(FEAT_TRAINS, item_steam_NS3900, 28) {}
 item(FEAT_TRAINS, item_steam_NBDS30, 29) {}
 item(FEAT_TRAINS, item_steam_NCS71, 30) {}
 item(FEAT_TRAINS, item_electric_gen9_HS002, 31) {}
+item(FEAT_TRAINS, item_wagons_gen9_superheavy_flatcar, 32) {}
 
 item(FEAT_TRAINS, item_emu_templatetest, 127) {}
 
