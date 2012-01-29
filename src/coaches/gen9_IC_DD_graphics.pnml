@@ -1,0 +1,23 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_gen9_IC_DD_purchase, "gfx/coaches/gen9_IC_DD.png") {
+	template_purchase(1, 128)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_gen9_IC_DD_fyra, "gfx/coaches/gen9_IC_DD.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_gen9_IC_DD_ns, "gfx/coaches/gen9_IC_DD.png") {
+	template_2cc_88(1, 32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_gen9_IC_DD_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_coaches_gen9_IC_DD_ns;
+    spriteset_coaches_gen9_IC_DD_fyra;
+}

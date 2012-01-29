@@ -166,6 +166,8 @@
 #include "src/coaches/RTM_BD_438_item.pnml"
 #include "src/coaches/HIJSM_4_8_10_graphics.pnml"
 #include "src/coaches/HIJSM_4_8_10_item.pnml"
+#include "src/coaches/gen9_IC_DD_graphics.pnml"
+#include "src/coaches/gen9_IC_DD_item.pnml"
 
 //baggage wagons
 #include "src/coaches/SS_E_129_graphics.pnml"
