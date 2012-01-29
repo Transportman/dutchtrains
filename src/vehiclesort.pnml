@@ -73,6 +73,7 @@ sort(FEAT_TRAINS, [
     item_electric_HLE11,
     item_electric_TRAXXF140MS2,
     item_electric_ES64F4,
+    item_electric_gen9_HS001,
     
     //emu
     item_emu_templatetest,

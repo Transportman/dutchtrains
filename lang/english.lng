@@ -49,6 +49,7 @@ str_electric_HLE11      :HLE 11 (NMBS series 11.8) (Electric)
 str_electric_HLE25      :HLE 25.5 (NMBS series 25.5) (Electric)
 str_electric_TRAXXF140MS2   :TRAXX F140 MS2 (Electric)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Electric)
+str_electric_gen9_HS001 :HS-1 (Electric)
 
 #dmu
 str_dmu_Mat34           :Mat '34 "Dieselthree" (Diesel)

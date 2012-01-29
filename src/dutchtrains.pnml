@@ -106,6 +106,8 @@
 #include "src/electric/TRAXXF140MS2_item.pnml"
 #include "src/electric/ES64F4_graphics.pnml"
 #include "src/electric/ES64F4_item.pnml"
+#include "src/electric/gen9_HS001_graphics.pnml"
+#include "src/electric/gen9_HS001_item.pnml"
 
 //dmu
 #include "src/dmu/Mat34_graphics.pnml"
