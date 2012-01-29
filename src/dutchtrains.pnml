@@ -151,6 +151,10 @@
 #include "src/emu/Protos_graphics.pnml"
 #include "src/emu/Protos_item.pnml"
 
+//coaches
+#include "src/coaches/SS_C_218_graphics.pnml"
+#include "src/coaches/SS_C_218_item.pnml"
+
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"
 #include "src/wagons/gen0hopper_item.pnml"

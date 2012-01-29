@@ -82,6 +82,9 @@ sort(FEAT_TRAINS, [
     item_emu_SLTVI,
     item_emu_ICE3M,
     item_emu_V250,
+    
+    //coaches
+    item_coaches_SS_C_218,
 
     //wagons
     item_wagons_gen0hopper,

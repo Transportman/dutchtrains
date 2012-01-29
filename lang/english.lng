@@ -29,7 +29,7 @@ str_diesel_SM151        :SM 151-155 (NS 2900) (Diesel)
 str_diesel_NS6400       :NS 6400 (Diesel)
 str_diesel_ACTS5800     :ACTS 5800 (BR Class 58) (Diesel)
 str_diesel_ACTS6700     :ACTS 6700 (HLD 62) (Diesel)
-str_diesel_RN232        :RN 232 (DB BR 130) (Diesel)
+str_diesel_RN232        :RN 232 (DR BR 130) (Diesel)
 str_diesel_Class66      :Class 66 (Diesel)
 str_diesel_G1206        :MaK G 1206 (Diesel)
 str_diesel_G400B        :Vossloh G 400 B (Diesel)
@@ -82,6 +82,9 @@ str_wagons_gen0openwagonmedium   :Open Wagon (medium)
 str_wagons_gen0openwagonsmall    :Open Wagon (small)
 str_wagons_gen0stakewagon        :Stake Wagon
 str_wagons_gen0livestockwagon    :Livestock Wagon
+
+#coaches
+str_coaches_SS_C_218    :Passenger Carriage SS C 1-339
 
 #metro
 str_metro_GVB_M1M2      :GVB M1-M2 "Herring Gull" (Metro, third rail)
