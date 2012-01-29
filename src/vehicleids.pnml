@@ -90,3 +90,4 @@ item(FEAT_TRAINS, item_coaches_SS_ABd_7516, 175) {}
 item(FEAT_TRAINS, item_coaches_RTM_BD_438, 176) {}
 item(FEAT_TRAINS, item_coaches_SS_E_129, 177) {}
 item(FEAT_TRAINS, item_coaches_HSM_D_1916, 178) {}
+item(FEAT_TRAINS, item_coaches_HIJSM_4_8_10, 179) {}

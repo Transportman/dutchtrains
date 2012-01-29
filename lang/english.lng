@@ -84,6 +84,7 @@ str_wagons_gen0stakewagon        :Stake Wagon
 str_wagons_gen0livestockwagon    :Livestock Wagon
 
 #coaches
+str_coaches_HIJSM_4_8_10:Passenger Carriage HIJSM 4, 8, 10
 str_coaches_HSM_C_755   :Passenger Carriage HSM C 707-766
 str_coaches_NCS_B_119   :Passenger Carriage NCS B 111-126
 str_coaches_SS_C_218    :Passenger Carriage SS C 1-339
