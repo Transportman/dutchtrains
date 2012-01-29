@@ -1,0 +1,69 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_electric_gen9_HS002_purchase, "gfx/electric/gen9_HS002.png") {
+	template_purchase(1, 256)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_electric_gen9_HS002_ic_front, "gfx/electric/gen9_HS002.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_electric_gen9_HS002_ic_back, "gfx/electric/gen9_HS002.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_electric_gen9_HS002_black_front, "gfx/electric/gen9_HS002.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_electric_gen9_HS002_black_back, "gfx/electric/gen9_HS002.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_electric_gen9_HS002_fyra_red_front, "gfx/electric/gen9_HS002.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_electric_gen9_HS002_fyra_red_back, "gfx/electric/gen9_HS002.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_electric_gen9_HS002_fyra_white_front, "gfx/electric/gen9_HS002.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_electric_gen9_HS002_fyra_white_back, "gfx/electric/gen9_HS002.png") {
+	template_2cc_88(1, 224)
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_ic, (position_in_vehid_chain % 2)) {
+	1: spriteset_electric_gen9_HS002_ic_back;
+    spriteset_electric_gen9_HS002_ic_front;
+}
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_black, (position_in_vehid_chain % 2)) {
+	1: spriteset_electric_gen9_HS002_black_back;
+    spriteset_electric_gen9_HS002_black_front;
+}
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_fyra_red, (position_in_vehid_chain % 2)) {
+	1: spriteset_electric_gen9_HS002_fyra_red_back;
+    spriteset_electric_gen9_HS002_fyra_red_front;
+}
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_fyra_white, (position_in_vehid_chain % 2)) {
+	1: spriteset_electric_gen9_HS002_fyra_white_back;
+    spriteset_electric_gen9_HS002_fyra_white_front;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_electric_gen9_HS002_livery, date_of_last_service) {
+	0..date(1970,12,31):              switch_electric_gen9_HS002_position_ic;
+    date(1971,1,1)..date(1972,12,31): switch_electric_gen9_HS002_position_black;
+    date(1973,1,1)..date(1974,12,31): switch_electric_gen9_HS002_position_fyra_red;
+    switch_electric_gen9_HS002_position_fyra_white;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_articulated, extra_callback_info1) {
+    1: return item_electric_gen9_HS002;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
