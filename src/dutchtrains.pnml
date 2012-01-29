@@ -165,6 +165,10 @@
 #include "src/coaches/RTM_BD_438_graphics.pnml"
 #include "src/coaches/RTM_BD_438_item.pnml"
 
+//baggage wagons
+#include "src/coaches/SS_E_129_graphics.pnml"
+#include "src/coaches/SS_E_129_item.pnml"
+
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"
 #include "src/wagons/gen0hopper_item.pnml"
