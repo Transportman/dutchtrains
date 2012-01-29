@@ -156,6 +156,8 @@
 #include "src/coaches/SS_C_218_item.pnml"
 #include "src/coaches/SS_C_723_graphics.pnml"
 #include "src/coaches/SS_C_723_item.pnml"
+#include "src/coaches/SS_ABd_7516_graphics.pnml"
+#include "src/coaches/SS_ABd_7516_item.pnml"
 #include "src/coaches/HSM_C_755_graphics.pnml"
 #include "src/coaches/HSM_C_755_item.pnml"
 #include "src/coaches/NCS_B_119_graphics.pnml"
