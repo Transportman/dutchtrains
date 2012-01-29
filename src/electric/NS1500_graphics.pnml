@@ -10,8 +10,14 @@ spriteset(spriteset_electric_NS1500_purchase, "gfx/electric/NS1500.png") {
 * VEHICLE
 */
 
-//there's also a black livery in the spritesheet
-
+spriteset(spriteset_electric_NS1500_black, "gfx/electric/NS1500.png") {
+	template_2cc_88(1, 1)
+}
 spriteset(spriteset_electric_NS1500_yellow, "gfx/electric/NS1500.png") {
 	template_2cc_88(1, 32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1500_livery, date_of_last_service) {
+	0..date(1970,12,31):              spriteset_electric_NS1500_black;
+    spriteset_electric_NS1500_yellow;
 }
