@@ -19,6 +19,26 @@ grf {
             };
         }
     }
+    param {
+        param_disable_original {
+            type:   int;
+            name:   string(STR_PARAM_DISABLE_ORIGINAL);
+            desc:   string(STR_PARAM_DISABLE_ORIGINAL_DESC);
+            min_value: 0;
+            max_value: 7;
+            def_value: 0;
+            names: {
+                        0: string(STR_PARAM_DISABLE_ORIGINAL_000);
+                        1: string(STR_PARAM_DISABLE_ORIGINAL_100);
+                        2: string(STR_PARAM_DISABLE_ORIGINAL_010);
+                        3: string(STR_PARAM_DISABLE_ORIGINAL_110);
+                        4: string(STR_PARAM_DISABLE_ORIGINAL_001);
+                        5: string(STR_PARAM_DISABLE_ORIGINAL_101);
+                        6: string(STR_PARAM_DISABLE_ORIGINAL_011);
+                        7: string(STR_PARAM_DISABLE_ORIGINAL_111);
+            };
+        }
+    }
 }
 
 //check for OpenTTD and version
@@ -47,6 +67,3 @@ basecost {
 train_width_32_px = 1;
 //align train properly in depot window
 traininfo_y_offset = 2;
-
-//disable all existing trains, including monorail and maglev
-disable_item(FEAT_TRAINS);

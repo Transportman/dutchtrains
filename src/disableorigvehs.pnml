@@ -1,0 +1,16 @@
+//disable original vehicles depending on parameter
+
+if (!hasbit(param_disable_original, 0) ) {
+    //disable rail vehicles
+    disable_item(FEAT_TRAINS, 0, 53);
+}
+
+if (!hasbit(param_disable_original, 1) ) {
+    //disable monorail vehicles
+    disable_item(FEAT_TRAINS, 54, 83);
+}
+
+if (!hasbit(param_disable_original, 2) ) {
+    //disable maglev vehicles
+    disable_item(FEAT_TRAINS, 84, 115);
+}
