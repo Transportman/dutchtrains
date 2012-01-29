@@ -5,6 +5,20 @@ grf {
 	desc:	string(STR_GRF_DESCRIPTION);
 	version:		REPO_REVISION;
 	min_compatible_version:	126;
+    param {
+        param_vehicle_names {
+            type:   int;
+            name:   string(STR_PARAM_VEHICLE_NAMES);
+            desc:   string(STR_PARAM_VEHICLE_NAMES_DESC);
+            min_value: 0;
+            max_value: 1;
+            def_value: 0;
+            names: {
+                        0: string(STR_PARAM_VEHICLE_NAMES_TRANSLATED);
+                        1: string(STR_PARAM_VEHICLE_NAMES_ORIGINAL);
+            };
+        }
+    }
 }
 
 //check for OpenTTD and version

@@ -4,27 +4,41 @@
 STR_GRF_NAME			:{TITLE}
 STR_GRF_DESCRIPTION		:Dutch Trains for OpenTTD {}(c)Dutch Trainset Team {}License: GPLv2 or higher. {}See readme for details.
 
+#parameter strings
+STR_PARAM_VEHICLE_NAMES             :Vehicle nicknames
+STR_PARAM_VEHICLE_NAMES_DESC        :Change the vehicle nicknames between translated English and original Dutch.
+STR_PARAM_VEHICLE_NAMES_TRANSLATED  :translated to English
+STR_PARAM_VEHICLE_NAMES_ORIGINAL    :original Dutch
+
 #steam
 str_steam_Arend         :HSM "Eagle" (Steam)
+str_steam_Arend_nl      :HSM "Arend" (Steam)
 str_steam_HSM126        :HSM 126-135 (NS 1100 series) (Steam)
 str_steam_HSM500        :HSM 501-535 (NS 2100 series) "Tin Tinus" (Steam)
+str_steam_HSM500_nl     :HSM 501-535 (NS 2100 series) "Blikken Tinus" (Steam)
 str_steam_SS700         :SS 685-778, 785-799 (NS 3700 series) "Jumbo" (Steam)
 str_steam_NS3800        :NS 3851-3855 (Steam)
 str_steam_NS3900        :NS 3900 series (Steam)
 str_steam_NBDS30        :NBDS 30-36 (NS 3501-3508) "Blue Brabanders" (Steam)
+str_steam_NBDS30_nl     :NBDS 30-36 (NS 3501-3508) "Blauwe Brabanders" (Steam)
 str_steam_NCS71         :NCS 71-78 (SS 971-978, NS 3600 series) "Zeppelin" (Steam)
 
 #diesel
 str_diesel_NS100        :NS 100 "Buck" (Petrol)
+str_diesel_NS100_nl     :NS 100 "Oersik" (Petrol)
 str_diesel_NS200        :NS 200 "Billy" (Diesel)
+str_diesel_NS200_nl     :NS 200 "Sik" (Diesel)
 str_diesel_NS400        :NS 400 "Big Billy" (Diesel)
+str_diesel_NS400_nl     :NS 400 "Grote Sik" (Diesel)
 str_diesel_NS450        :NS 450 (Diesel)
 str_diesel_NS600        :NS 600 "Boxie" (Diesel)
+str_diesel_NS600_nl     :NS 600 "Bakkie" (Diesel)
 str_diesel_NS2000       :NS 2000 (Whitcomb 65-DE-19A) (Diesel)
 str_diesel_NS2200       :NS 2200 (Diesel)
 str_diesel_NS2400       :NS 2400 (Diesel)
 str_diesel_NS2600       :NS 2600 "Beelen" (Diesel)
 str_diesel_NS2801       :NS 2801 "Little Cripple Mary" (Diesel)
+str_diesel_NS2801_nl    :NS 2801 "Kreupele Marietje" (Diesel)
 str_diesel_SM151        :SM 151-155 (NS 2900) (Diesel)
 str_diesel_NS6400       :NS 6400 (Diesel)
 str_diesel_ACTS5800     :ACTS 5800 (BR Class 58) (Diesel)
@@ -54,15 +68,24 @@ str_electric_gen9_HS002 :HS-2 (Electric)
 
 #dmu
 str_dmu_Mat34           :Mat '34 "Dieselthree" (Diesel)
+str_dmu_Mat34_nl        :Mat '34 "Dieseldrie" (Diesel)
 str_dmu_DE5             :DE5 "Dieselfive" (Diesel)
+str_dmu_DE5_nl          :DE5 "Dieselvijf" (Diesel)
 str_dmu_DE1             :DE1 (Plan X) "Blue Angel" (Diesel)
+str_dmu_DE1_nl          :DE1 (Plan X) "Blauwe Engel" (Diesel)
 str_dmu_DE2             :DE2 (Plan X) "Blue Angel" (Diesel)
+str_dmu_DE2_nl          :DE2 (Plan X) "Blauwe Engel" (Diesel)
 str_dmu_NS20            :NS20 "Camel" (Diesel)
+str_dmu_NS20_nl         :NS20 "Kameel" (Diesel)
 str_dmu_DE4             :DE4 "Trans Europ Express" (Diesel)
 str_dmu_DE3             :DE3 (Plan U) "Red Devil" (Diesel)
+str_dmu_DE3_nl          :DE3 (Plan U) "Rode Duivel" (Diesel)
 str_dmu_DH1             :DH1 "Mudflat Walker" (Diesel)
+str_dmu_DH1_nl          :DH1 "Wadloper" (Diesel)
 str_dmu_DH2             :DH2 "Mudflat Walker" (Diesel)
+str_dmu_DH2_nl          :DH2 "Wadloper" (Diesel)
 str_dmu_DM90            :DM '90 "Buffalo" (Diesel)
+str_dmu_DM90_nl         :DM '90 "Buffel" (Diesel)
 str_dmu_Lint41H         :Lint 41/H (Diesel)
 str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
@@ -71,6 +94,7 @@ str_dmu_GTW28           :GTW 2/8 (Diesel)
 str_emu_mP              :Plan mP (Electric)
 str_emu_ICE3M           :ICE 3M (DB BR 406) (Electric)
 str_emu_V250            :Fyra V250 "Albatross" (Electric)
+str_emu_V250_nl         :Fyra V250 "Albatros" (Electric)
 str_emu_Protos          :Protos (Electric)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)
@@ -105,6 +129,7 @@ str_coaches_HSM_D_1916  :Baggage Carriage HSM D 1916
 
 #metro
 str_metro_GVB_M1M2      :GVB M1-M2 "Herring Gull" (Metro, third rail)
+str_metro_GVB_M1M2_nl   :GVB M1-M2 "Zilvermeeuw" (Metro, third rail)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro, third rail)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro, third rail)
 str_metro_GVB_M5M6      :GVB M5-M6 (Metro, third rail)
