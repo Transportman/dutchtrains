@@ -14,16 +14,16 @@ item(FEAT_TRAINS, item_steam_NCS71) {
         running_cost_factor: 10;
         speed: 100 km/h;
         power: 210 kW;
-        cargo_capacity: 48;
+        cargo_capacity: 0;
         weight: 36 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes: 0;
-        refittable_cargo_types: 0;
-        cargo_age_period: 185;
+        //refittable_cargo_classes: 0;
+        //non_refittable_cargo_classes: 0;
+        //refittable_cargo_types: 0;
+        //cargo_age_period: 185;
         misc_flags: 0;
         refit_cost: 0;
         track_type: RAIL;
