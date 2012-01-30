@@ -52,11 +52,32 @@ switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_fyra_white, (posit
     spriteset_electric_gen9_HS002_fyra_white_front;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_electric_gen9_HS002_livery, date_of_last_service) {
-	0..date(1970,12,31):              switch_electric_gen9_HS002_position_ic;
-    date(1971,1,1)..date(1972,12,31): switch_electric_gen9_HS002_position_black;
-    date(1973,1,1)..date(1974,12,31): switch_electric_gen9_HS002_position_fyra_red;
-    switch_electric_gen9_HS002_position_fyra_white;
+random_switch(FEAT_TRAINS, PARENT, switch_electric_gen9_HS002_random) {
+	1: switch_electric_gen9_HS002_position_black;
+    1: switch_electric_gen9_HS002_position_ic;
+    1: switch_electric_gen9_HS002_position_fyra_red;
+    1: switch_electric_gen9_HS002_position_fyra_white;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_electric_gen9_HS002_livery, cargo_subtype) {
+	1: switch_electric_gen9_HS002_position_black;
+    2: switch_electric_gen9_HS002_position_ic;
+    3: switch_electric_gen9_HS002_position_fyra_red;
+    4: switch_electric_gen9_HS002_position_fyra_white;
+    switch_electric_gen9_HS002_random;
+}
+
+/*
+* CARGO SUBTYPE CALLBACK
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_electric_gen9_HS002_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+	1: return string(str_cargo_subtype_black);
+    2: return string(str_cargo_subtype_ns_ic);
+    3: return string(str_cargo_subtype_fyra_red);
+    4: return string(str_cargo_subtype_fyra_white);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*

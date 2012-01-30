@@ -25,6 +25,7 @@ STR_PARAM_DISABLE_ORIGINAL_111      :rail, monoral and maglev (all)
 str_cargo_subtype_random            :> Random livery
 str_cargo_subtype_yellow            :> Yellow
 str_cargo_subtype_green             :> Green
+str_cargo_subtype_black             :> Black
 str_cargo_subtype_ns_ic             :> NS InterCity
 str_cargo_subtype_fyra_red          :> Fyra (red)
 str_cargo_subtype_fyra_white        :> Fyra (white)
