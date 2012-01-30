@@ -10,6 +10,29 @@ spriteset(spriteset_diesel_G400B_purchase, "gfx/diesel/G400B.png") {
 * VEHICLE
 */
 
-spriteset(spriteset_diesel_G400B, "gfx/diesel/G400B.png") {
+spriteset(spriteset_diesel_G400B_NedTrain, "gfx/diesel/G400B.png") {
 	template_2cc_58(1, 1)
+}
+spriteset(spriteset_diesel_G400B_green, "gfx/diesel/G400B.png") {
+	template_2cc_58(1, 32)
+}
+spriteset(spriteset_diesel_G400B_yellow, "gfx/diesel/G400B.png") {
+	template_2cc_58(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_G400B_livery, cargo_subtype) {
+	1: spriteset_diesel_G400B_green;
+    2: spriteset_diesel_G400B_yellow;
+    spriteset_diesel_G400B_NedTrain;
+}
+
+/*
+* CARGO SUBTYPE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_diesel_G400B_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_nedtrain);
+    1: return string(str_cargo_subtype_green);
+	2: return string(str_cargo_subtype_yellow);
+    return CB_RESULT_NO_TEXT;
 }

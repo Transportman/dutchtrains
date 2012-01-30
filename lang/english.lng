@@ -24,9 +24,11 @@ STR_PARAM_DISABLE_ORIGINAL_111      :rail, monoral and maglev (all)
 #cargo subtype strings
 str_cargo_subtype_random            :> Random livery
 str_cargo_subtype_yellow            :> Yellow
+str_cargo_subtype_green             :> Green
 str_cargo_subtype_ns_ic             :> NS InterCity
 str_cargo_subtype_fyra_red          :> Fyra (red)
 str_cargo_subtype_fyra_white        :> Fyra (white)
+str_cargo_subtype_nedtrain          :> NedTrain
 
 #steam
 str_steam_Arend         :HSM "Eagle" (Steam)
