@@ -3,8 +3,8 @@
 cargotable {
     //first 32 for refit mask
     //1   2     3     4     5     6     7     8     9     10    11    12    13    14    15
-	COAL, IORE, CORE, AORE, CLAY, CMNT, FERT, GRVL, LIME, POTA, SAND, SCRP, SULP, WDPR, WSTE, 
+	PASS, COAL, IORE, CORE, AORE, CLAY, CMNT, FERT, GRVL, LIME, POTA, SAND, SCRP, SULP, WDPR, WSTE, 
     GRAI, WHEA, MAIZ, SUGR, TOFF, CTCD, CERE, FICR, RSGR,  
     LVST, ENSP, FMSP, MNSP,
-    SCMT, OLSD, FRUT, FICR, SGCN, SGBT, WOOD, STEL
+    SCMT, OLSD, FRUT, FICR, SGCN, SGBT, WOOD, STEL,
 }

@@ -21,6 +21,13 @@ STR_PARAM_DISABLE_ORIGINAL_101      :rail and maglev
 STR_PARAM_DISABLE_ORIGINAL_011      :monorail and maglev
 STR_PARAM_DISABLE_ORIGINAL_111      :rail, monoral and maglev (all)
 
+#cargo subtype strings
+str_cargo_subtype_random            :> Random livery
+str_cargo_subtype_yellow            :> Yellow
+str_cargo_subtype_ns_ic             :> NS InterCity
+str_cargo_subtype_fyra_red          :> Fyra (red)
+str_cargo_subtype_fyra_white        :> Fyra (white)
+
 #steam
 str_steam_Arend         :HSM "Eagle" (Steam)
 str_steam_Arend_nl      :HSM "Arend" (Steam)
