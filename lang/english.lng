@@ -7,19 +7,19 @@ STR_GRF_DESCRIPTION		:Dutch Trains for OpenTTD {}(c)Dutch Trainset Team {}Licens
 #parameter strings
 STR_PARAM_VEHICLE_NAMES             :Vehicle nicknames
 STR_PARAM_VEHICLE_NAMES_DESC        :Change the vehicle nicknames between translated English and original Dutch.
-STR_PARAM_VEHICLE_NAMES_TRANSLATED  :translated to English
+STR_PARAM_VEHICLE_NAMES_TRANSLATED  :translated to English (default)
 STR_PARAM_VEHICLE_NAMES_ORIGINAL    :original Dutch
 
-STR_PARAM_DISABLE_ORIGINAL          :Do not disable original vehicles
-STR_PARAM_DISABLE_ORIGINAL_DESC     :With this parameter you can enable the original vehicles for rail, monorail and maglev separately, or any combination. Please note that this parameter may not work if you load more than just this train set. If a different NewGRF disables the original vehicles, then this one can not re-enable them.
-STR_PARAM_DISABLE_ORIGINAL_000      :none
-STR_PARAM_DISABLE_ORIGINAL_100      :rail
-STR_PARAM_DISABLE_ORIGINAL_010      :monorail
+STR_PARAM_DISABLE_ORIGINAL          :Keep original engines and wagons
+STR_PARAM_DISABLE_ORIGINAL_DESC     :By default this set disables all original rail, monorail and maglev enignes and wagons. You can use this parameter to keep any combination of original rail, monorail and/or maglev. However, if a different NewGRF disables the original vehicles, then this setting can not re-enable them.
+STR_PARAM_DISABLE_ORIGINAL_000      :none (default)
+STR_PARAM_DISABLE_ORIGINAL_100      :rail only
+STR_PARAM_DISABLE_ORIGINAL_010      :monorail only
 STR_PARAM_DISABLE_ORIGINAL_110      :rail and monorail
-STR_PARAM_DISABLE_ORIGINAL_001      :maglev
+STR_PARAM_DISABLE_ORIGINAL_001      :maglev only
 STR_PARAM_DISABLE_ORIGINAL_101      :rail and maglev
 STR_PARAM_DISABLE_ORIGINAL_011      :monorail and maglev
-STR_PARAM_DISABLE_ORIGINAL_111      :rail, monoral and maglev (all)
+STR_PARAM_DISABLE_ORIGINAL_111      :all
 
 #cargo subtype strings
 str_cargo_subtype_random            :> Random livery
