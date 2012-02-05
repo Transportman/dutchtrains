@@ -23,9 +23,40 @@ spriteset(spriteset_electric_NS1300_yellow, "gfx/electric/NS1300.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1300_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_electric_NS1300_turqoise;
-    date(1971,1,1)..date(1972,12,31): spriteset_electric_NS1300_blue;
-    date(1973,1,1)..date(1974,12,31): spriteset_electric_NS1300_grey;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_autolivery, date_of_last_service) {
+	0..date(1955,12,31): spriteset_electric_NS1300_turqoise;
+    date(1956,1,1)..date(1971,12,31): spriteset_electric_NS1300_blue;
+    date(1972,1,1)..date(1984,12,31): spriteset_electric_NS1300_grey;
     spriteset_electric_NS1300_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_purchaselivery, build_year) {
+	0..1955: spriteset_electric_NS1300_turqoise;
+    1956..1971: spriteset_electric_NS1300_blue;
+    1972..1984: spriteset_electric_NS1300_grey;
+    spriteset_electric_NS1300_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_livery, cargo_subtype) {
+	1: switch_electric_NS1300_purchaselivery;
+    2: spriteset_electric_NS1300_turqoise;
+    3: spriteset_electric_NS1300_blue;
+    4: spriteset_electric_NS1300_grey;
+    5: spriteset_electric_NS1300_yellow;
+    switch_electric_NS1300_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_turquoise);
+    3: return string(str_cargo_subtype_blue);
+    4: return string(str_cargo_subtype_grey);
+    5: return string(str_cargo_subtype_yellow);
+    return CB_RESULT_NO_TEXT;
 }
