@@ -68,11 +68,11 @@ sort(FEAT_TRAINS, [
     item_electric_NS1500,
     item_electric_NS1600,
     item_electric_NS1700,
-    item_electric_NS1600P,
     item_electric_HLE25,
     item_electric_HLE11,
-    item_electric_TRAXXF140MS2,
     item_electric_ES64F4,
+    item_electric_TRAXXF140MS2,
+    item_electric_NS1600P,
     item_electric_gen9_HS001,
     item_electric_gen9_HS002,
     
