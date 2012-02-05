@@ -13,11 +13,36 @@ spriteset(spriteset_electric_NS1500_purchase, "gfx/electric/NS1500.png") {
 spriteset(spriteset_electric_NS1500_black, "gfx/electric/NS1500.png") {
 	template_2cc_88(1, 1)
 }
-spriteset(spriteset_electric_NS1500_yellow, "gfx/electric/NS1500.png") {
+spriteset(spriteset_electric_NS1500_grey, "gfx/electric/NS1500.png") {
 	template_2cc_88(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1500_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_electric_NS1500_black;
-    spriteset_electric_NS1500_yellow;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1500_autolivery, date_of_last_service) {
+	0..date(1971,12,31): spriteset_electric_NS1500_black;
+    spriteset_electric_NS1500_grey;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1500_purchaselivery, build_year) {
+	0..1971: spriteset_electric_NS1500_black;
+    spriteset_electric_NS1500_grey;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1500_livery, cargo_subtype) {
+	1: switch_electric_NS1500_purchaselivery;
+    2: spriteset_electric_NS1500_black;
+    3: spriteset_electric_NS1500_grey;
+    switch_electric_NS1500_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_electric_NS1500_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_black);
+    3: return string(str_cargo_subtype_grey);
+    return CB_RESULT_NO_TEXT;
 }
