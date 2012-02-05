@@ -29,7 +29,12 @@ str_cargo_subtype_random            :> Random livery
 str_cargo_subtype_black             :> Black livery
 str_cargo_subtype_blue              :> Blue livery
 str_cargo_subtype_green             :> Green livery
+str_cargo_subtype_grey              :> Grey livery
+str_cargo_subtype_turquoise         :> Turquoise livery
 str_cargo_subtype_yellow            :> Yellow livery
+
+str_cargo_subtype_blue_crashnose    :> Blue livery (with crashnose)
+str_cargo_subtype_grey_crashnose    :> Grey livery (with crashnose)
 
 str_cargo_subtype_ns_ic             :> NS InterCity livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery

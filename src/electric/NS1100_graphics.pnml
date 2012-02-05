@@ -26,19 +26,108 @@ spriteset(spriteset_electric_NS1100_grey_crashnose, "gfx/electric/NS1100.png") {
 	template_2cc_78(1, 128)
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_electric_NS1100_turqoise;
-    date(1971,1,1)..date(1972,12,31): spriteset_electric_NS1100_blue;
-    date(1973,1,1)..date(1974,12,31): spriteset_electric_NS1100_grey;
-    date(1975,1,1)..date(1976,12,31): spriteset_electric_NS1100_blue_crashnose;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_grey, date_of_last_service) {
+	0..date(1978,12,31): spriteset_electric_NS1100_grey;
     spriteset_electric_NS1100_grey_crashnose;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_blue, date_of_last_service) {
+	0..date(1978,12,31): spriteset_electric_NS1100_blue;
+    spriteset_electric_NS1100_blue_crashnose;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_NS1100_randomlivery_bluegrey) {
+	1: switch_electric_NS1100_livery_blue;
+    3: switch_electric_NS1100_livery_grey;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_purchaselivery_bluegrey, build_year) {
+	0..1974: switch_electric_NS1100_randomlivery_bluegrey;
+    switch_electric_NS1100_livery_grey;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_autolivery, date_of_last_service) {
+	0..date(1956,12,31): spriteset_electric_NS1100_turqoise;
+    date(1957,1,1)..date(1974,12,31): spriteset_electric_NS1100_blue;
+    switch_electric_NS1100_purchaselivery_bluegrey;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_purchaselivery, build_year) {
+	0..1956: spriteset_electric_NS1100_turqoise;
+    1957..1974: spriteset_electric_NS1100_blue;
+    1975-1978: spriteset_electric_NS1100_grey;
+    spriteset_electric_NS1100_grey_crashnose;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery, cargo_subtype) {
+	1: switch_electric_NS1100_purchaselivery;
+    2: spriteset_electric_NS1100_turqoise;
+    3: spriteset_electric_NS1100_blue;
+    4: spriteset_electric_NS1100_grey;
+    5: spriteset_electric_NS1100_blue_crashnose;
+    6: spriteset_electric_NS1100_grey_crashnose;
+    switch_electric_NS1100_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_turquoise);
+    3: return string(str_cargo_subtype_blue);
+    4: return string(str_cargo_subtype_grey);
+    5: return string(str_cargo_subtype_blue_crashnose);
+    6: return string(str_cargo_subtype_grey_crashnose);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*
 * SHORTEN VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1100_length, date_of_last_service) {
-	0..date(1974,12,31): return SHORTEN_TO_6_8;
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_grey_length, date_of_last_service) {
+	0..date(1978,12,31): return SHORTEN_TO_6_8;
     return SHORTEN_TO_7_8;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_blue_length, date_of_last_service) {
+	0..date(1978,12,31): return SHORTEN_TO_6_8;
+    return SHORTEN_TO_7_8;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_NS1100_randomlivery_bluegrey_length) {
+	1: switch_electric_NS1100_livery_blue_length;
+    3: switch_electric_NS1100_livery_grey_length;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_purchaselivery_bluegrey_length, build_year) {
+	0..1974: switch_electric_NS1100_randomlivery_bluegrey_length;
+    switch_electric_NS1100_livery_grey_length;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_autolivery_length, date_of_last_service) {
+	0..date(1956,12,31): return SHORTEN_TO_6_8;
+    date(1957,1,1)..date(1974,12,31): return SHORTEN_TO_6_8;
+    switch_electric_NS1100_purchaselivery_bluegrey_length;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_purchaselivery_length, build_year) {
+	0..1956: return SHORTEN_TO_6_8;
+    1957..1974: return SHORTEN_TO_6_8;
+    1975-1978: return SHORTEN_TO_6_8;
+    return SHORTEN_TO_7_8;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_length, cargo_subtype) {
+	1: switch_electric_NS1100_purchaselivery_length;
+    2: return SHORTEN_TO_6_8;
+    3: return SHORTEN_TO_6_8;
+    4: return SHORTEN_TO_6_8;
+    5: return SHORTEN_TO_7_8;
+    6: return SHORTEN_TO_7_8;
+    switch_electric_NS1100_autolivery_length;
 }
