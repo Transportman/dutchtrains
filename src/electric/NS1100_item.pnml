@@ -45,6 +45,7 @@ item(FEAT_TRAINS, item_electric_NS1100) {
         cargo_subtype_text: switch_electric_NS1100_subtype_text;
         cargo_capacity: return 0;
         shorten_vehicle: switch_electric_NS1100_length;
+        weight: switch_electric_NS1100_weight;
         switch_electric_NS1100_livery;
     }
 }

@@ -131,3 +131,50 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1100_length, cargo_subtype) {
     6: return SHORTEN_TO_7_8;
     switch_electric_NS1100_autolivery_length;
 }
+
+/*
+* VEHICLE WEIGHT CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_grey_weight, date_of_last_service) {
+	0..date(1978,12,31): return 80;
+    return 83;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_blue_weight, date_of_last_service) {
+	0..date(1978,12,31): return 80;
+    return 83;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_NS1100_randomlivery_bluegrey_weight) {
+	1: switch_electric_NS1100_livery_blue_weight;
+    3: switch_electric_NS1100_livery_grey_weight;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_purchaselivery_bluegrey_weight, build_year) {
+	0..1974: switch_electric_NS1100_randomlivery_bluegrey_weight;
+    switch_electric_NS1100_livery_grey_weight;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_autolivery_weight, date_of_last_service) {
+	0..date(1956,12,31): return 80;
+    date(1957,1,1)..date(1974,12,31): return 80;
+    switch_electric_NS1100_purchaselivery_bluegrey_weight;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_purchaselivery_weight, build_year) {
+	0..1956: return 80;
+    1957..1974: return 80;
+    1975-1978: return 80;
+    return 83;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1100_weight, cargo_subtype) {
+	1: switch_electric_NS1100_purchaselivery_weight;
+    2: return 80;
+    3: return 80;
+    4: return 80;
+    5: return 83;
+    6: return 83;
+    switch_electric_NS1100_autolivery_weight;
+}
