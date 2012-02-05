@@ -15,16 +15,46 @@ spriteset(spriteset_electric_NS1600_yellow, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 1)
 }
 //red
-spriteset(spriteset_electric_NS1600_red, "gfx/electric/NS1600.png") {
+spriteset(spriteset_electric_NS1600_NSCargo, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 32)
 }
 //husa
-spriteset(spriteset_electric_NS1600_husa, "gfx/electric/NS1600.png") {
+spriteset(spriteset_electric_NS1600_HUSA, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_electric_NS1600_yellow;
-    date(1971,1,1)..date(1972,12,31): spriteset_electric_NS1600_red;
-    spriteset_electric_NS1600_husa;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_autolivery, date_of_last_service) {
+	0..date(1998,12,31): spriteset_electric_NS1600_yellow;
+    date(1999,1,1)..date(2003,12,31): spriteset_electric_NS1600_NSCargo;
+    date(2004,1,1)..date(2010,12,31): spriteset_electric_NS1600_yellow;
+    spriteset_electric_NS1600_HUSA;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_purchaselivery, build_year) {
+	0..1998: spriteset_electric_NS1600_yellow;
+    1999..2003: spriteset_electric_NS1600_NSCargo;
+    2004..2010: spriteset_electric_NS1600_yellow;
+    spriteset_electric_NS1600_HUSA;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, cargo_subtype) {
+	1: switch_electric_NS1600_purchaselivery;
+    2: spriteset_electric_NS1600_yellow;
+    3: spriteset_electric_NS1600_NSCargo;
+    4: spriteset_electric_NS1600_HUSA;
+    switch_electric_NS1600_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_yellow);
+    3: return string(str_cargo_subtype_NSCargo);
+    4: return string(str_cargo_subtype_HUSA);
+    return CB_RESULT_NO_TEXT;
 }
