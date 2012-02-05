@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_electric_NS1700) {
     property {
         name: string(str_electric_NS1700);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1991,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
-        power: 210 kW;
+        cost_factor: 63;
+        running_cost_factor: 57;
+        speed: 180 km/h;
+        power: 5100 kW;
         cargo_capacity: 0;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        weight: 86 ton;
+        tractive_effort_coefficient: 0.308;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -26,8 +26,8 @@ item(FEAT_TRAINS, item_electric_NS1700) {
         //cargo_age_period: 0;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: RAIL;
-		ai_special_flag: AI_FLAG_PASSENGER;
+        track_type: ELRL;
+		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
