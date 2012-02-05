@@ -23,8 +23,47 @@ spriteset(spriteset_electric_ES64F4_dbs, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_electric_ES64F4_husa;
-    date(1971,1,1)..date(1972,12,31): spriteset_electric_ES64F4_ers;
-    spriteset_electric_ES64F4_dbs;
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_random_all) {
+	1: spriteset_electric_ES64F4_dbs;
+    1: spriteset_electric_ES64F4_ers;
+    1: spriteset_electric_ES64F4_husa;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_random_dbsers) {
+	1: spriteset_electric_ES64F4_dbs;
+    1: spriteset_electric_ES64F4_ers;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_randomlivery, build_year) {
+	0..2005: spriteset_electric_ES64F4_dbs;
+    2006-2010: switch_electric_ES64F4_random_dbsers;
+    switch_electric_ES64F4_random_all;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_purchaselivery, build_year) {
+	0..2005: spriteset_electric_ES64F4_dbs;
+    2006-2010: spriteset_electric_ES64F4_ers;
+    spriteset_electric_ES64F4_husa;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_livery, cargo_subtype) {
+	1: switch_electric_ES64F4_purchaselivery;
+    2: spriteset_electric_ES64F4_dbs;
+    3: spriteset_electric_ES64F4_ers;
+    4: spriteset_electric_ES64F4_husa;
+    switch_electric_ES64F4_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_DBSchenker);
+    3: return string(str_cargo_subtype_ERS);
+    4: return string(str_cargo_subtype_HUSA);
+    return CB_RESULT_NO_TEXT;
 }
