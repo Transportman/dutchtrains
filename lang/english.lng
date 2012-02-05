@@ -28,6 +28,7 @@ str_cargo_subtype_random            :> Random livery
 
 str_cargo_subtype_black             :> Black livery
 str_cargo_subtype_blue              :> Blue livery
+str_cargo_subtype_brown             :> Brown livery
 str_cargo_subtype_green             :> Green livery
 str_cargo_subtype_grey              :> Grey livery
 str_cargo_subtype_turquoise         :> Turquoise livery
@@ -41,6 +42,9 @@ str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
 
 str_cargo_subtype_nedtrain          :> NedTrain livery
+str_cargo_subtype_ACTS              :> ACTS livery
+str_cargo_subtype_VOSlogistics      :> VOS Logistics livery
+str_cargo_subtype_EETC              :> Euro Express Treincharter Livery
 
 #steam
 str_steam_Arend         :HSM "Eagle" (Steam)

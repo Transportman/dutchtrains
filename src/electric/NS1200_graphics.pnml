@@ -32,12 +32,73 @@ spriteset(spriteset_electric_NS1200_EETC, "gfx/electric/NS1200.png") {
 	template_2cc_88(1, 192)
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_electric_NS1200_turqoise;
-    date(1971,1,1)..date(1972,12,31): spriteset_electric_NS1200_brown;
-    date(1973,1,1)..date(1974,12,31): spriteset_electric_NS1200_blue;
-    date(1975,1,1)..date(1976,12,31): spriteset_electric_NS1200_grey;
-    date(1977,1,1)..date(1978,12,31): spriteset_electric_NS1200_ACTS;
-    date(1979,1,1)..date(1980,12,31): spriteset_electric_NS1200_VOSlogistics;
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_NS1200_randomlivery_actsvos) {
+	1: spriteset_electric_NS1200_VOSlogistics;
+    4: spriteset_electric_NS1200_ACTS;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery_cargopassenger, build_year) { //service 2011+
+	0..2002: switch_electric_NS1200_randomlivery_actsvos; //cargo, or EETC depending on next wagon (not yet implemented)
+    2003..2010: spriteset_electric_NS1200_ACTS; //ACTS, or EETC depending on next wagon (not yet implemented)
+    spriteset_electric_NS1200_EETC ;//eetc
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery_passengercargo, build_year) { //service 1999-2010
+	0..1998: spriteset_electric_NS1200_grey; //ns-grey, or cargo depending on next wagon (not yet implemented)
+    1999..2002: switch_electric_NS1200_randomlivery_actsvos; //cargo, randomized
+    spriteset_electric_NS1200_ACTS; //ACTS
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_NS1200_randomlivery_turqoisebrown) {
+	14: spriteset_electric_NS1200_turqoise;
+    11: spriteset_electric_NS1200_brown;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_autolivery, date_of_last_service) {
+	0..date(1952,12,31): spriteset_electric_NS1200_turqoise;
+    date(1953,1,1)..date(1954,12,31): switch_electric_NS1200_randomlivery_turqoisebrown;
+    date(1955,1,1)..date(1969,12,31): spriteset_electric_NS1200_blue;
+    date(1970,1,1)..date(1998,12,31): spriteset_electric_NS1200_grey;
+    date(1999,1,1)..date(2010,12,31): switch_electric_NS1200_livery_passengercargo;
+    switch_electric_NS1200_livery_cargopassenger;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_purchaselivery, build_year) {
+	0..1952: spriteset_electric_NS1200_turqoise;
+    1953..1954: switch_electric_NS1200_randomlivery_turqoisebrown;
+    1955..1969: spriteset_electric_NS1200_blue;
+    1970..1998: spriteset_electric_NS1200_grey;
+    1999..2002: switch_electric_NS1200_randomlivery_actsvos;
+    2003..2010: spriteset_electric_NS1200_ACTS;
     spriteset_electric_NS1200_EETC;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery, cargo_subtype) {
+	1: switch_electric_NS1200_purchaselivery;
+    2: spriteset_electric_NS1200_turqoise;
+    3: spriteset_electric_NS1200_brown;
+    4: spriteset_electric_NS1200_blue;
+    5: spriteset_electric_NS1200_grey;
+    6: spriteset_electric_NS1200_ACTS;
+    7: spriteset_electric_NS1200_VOSlogistics;
+    8: spriteset_electric_NS1200_EETC;
+    switch_electric_NS1200_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_turquoise);
+    3: return string(str_cargo_subtype_brown);
+    4: return string(str_cargo_subtype_blue);
+    5: return string(str_cargo_subtype_grey);
+    6: return string(str_cargo_subtype_ACTS);
+    7: return string(str_cargo_subtype_VOSlogistics);
+    8: return string(str_cargo_subtype_EETC);
+    return CB_RESULT_NO_TEXT;
 }
