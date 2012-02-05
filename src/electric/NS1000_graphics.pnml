@@ -31,16 +31,10 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1000_purchaselivery, build_year) {
     spriteset_electric_NS1000_blue;
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_electric_NS1000_randomlivery) {
-	1: spriteset_electric_NS1000_green;
-    1: spriteset_electric_NS1000_blue;
-}
-
 switch(FEAT_TRAINS, SELF, switch_electric_NS1000_livery, cargo_subtype) {
 	1: switch_electric_NS1000_purchaselivery;
-    2: switch_electric_NS1000_randomlivery;
-    3: spriteset_electric_NS1000_green;
-    4: spriteset_electric_NS1000_blue;
+    2: spriteset_electric_NS1000_green;
+    3: spriteset_electric_NS1000_blue;
     switch_electric_NS1000_autolivery;
 }
 
@@ -48,8 +42,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1000_livery, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_electric_NS1000_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
-    2: return string(str_cargo_subtype_random);
-    3: return string(str_cargo_subtype_green);
-    4: return string(str_cargo_subtype_blue);
+    2: return string(str_cargo_subtype_green);
+    3: return string(str_cargo_subtype_blue);
     return CB_RESULT_NO_TEXT;
 }
