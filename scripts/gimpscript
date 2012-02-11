@@ -37,7 +37,7 @@
 ;------------------------------------------------------
 (define
 	(
-		save-layers 
+		save-layers
 
 		inImageName
 		outImageName
@@ -54,15 +54,15 @@
 			(thisNumLayers 0)
 			(theseLayers layers)
 			(thisLayerName 0)
-			
+
 			(layerNames inLayerNames)
 		)
-		
+
 		; First make everything invisble
 		(script-fu-set-all-layers-invisible image image)
-		
+
 		; Now make those layers visible which were asked to become visible
-		
+
 		; iterate through all layers of the image
 		(while (> num-layers 0)
 			(set! num-layers (- num-layers 1))
@@ -80,7 +80,7 @@
 				(set! layerNames (cdr layerNames))
 			)
 		)
-		
+
 		; Merge all visible layers into one layer which we then save to the given filename
 		(set! visibleStuff (car (gimp-image-merge-visible-layers image CLIP-TO-IMAGE)))
 		(file-png-save RUN-NONINTERACTIVE image visibleStuff outImageName outImageName 0 9 0 0 0 0 0)
@@ -95,7 +95,3 @@
 ; // Example:
 ; // (save-layers "source-file-name" "target-file-name" '(layername1 layername2 layername3 ...))
 ; // ===================================================================
-
-GRAPHICS_LINE
-
-(gimp-quit 0)
