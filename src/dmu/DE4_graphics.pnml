@@ -2,53 +2,32 @@
 * PURCHASE
 */
 
-//red
-spriteset(spriteset_1217, "gfx/dutchtrainsw.png") {
-	[450, 1480, 50, 11, -25, -5]
+spriteset(spriteset_dmu_DE4_purchase, "gfx/dmu/DE4.png") {
+	template_purchase(1, 128)
 }
 
 /*
 * VEHICLE
 */
 
-//red
-spriteset(spriteset_1186, "gfx/dutchtrainsw.png") {
-	[354, 1432, 8, 22, -3, -10]
-	[370, 1432, 23, 16, -11, -9]
-	[402, 1432, 33, 11, -16, -7]
-	[450, 1432, 22, 17, -10, -11]
-	[482, 1432, 8, 23, -3, -11]
-	[498, 1432, 22, 17, -11, -10]
-	[530, 1432, 32, 11, -16, -7]
-	[578, 1432, 23, 16, -11, -10]
+spriteset(spriteset_dmu_DE4_front, "gfx/dmu/DE4.png") {
+	template_2cc_88(1, 1)
 }
-
-spriteset(spriteset_1196, "gfx/dutchtrainsw.png") {
-	[642, 1432, 8, 23, -3, -11]
-	[658, 1432, 22, 17, -11, -10]
-	[690, 1432, 33, 11, -16, -7]
-	[738, 1432, 22, 17, -10, -11]
-	[770, 1432, 8, 23, -3, -11]
-	[2, 1480, 22, 21, -11, -14]
-	[34, 1480, 33, 11, -16, -7]
-	[82, 1480, 22, 17, -10, -11]
+spriteset(spriteset_dmu_DE4_middle_1, "gfx/dmu/DE4.png") {
+	template_2cc_88(1, 32)
 }
-
-spriteset(spriteset_1206, "gfx/dutchtrainsw.png") {
-	[146, 1480, 8, 23, -3, -11]
-	[162, 1480, 22, 17, -11, -10]
-	[194, 1480, 32, 11, -16, -7]
-	[242, 1480, 23, 16, -11, -10]
-	[274, 1480, 8, 22, -3, -10]
-	[290, 1480, 23, 16, -11, -9]
-	[322, 1480, 33, 11, -15, -7]
-	[370, 1480, 22, 17, -10, -11]
+spriteset(spriteset_dmu_DE4_middle_2, "gfx/dmu/DE4.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_dmu_DE4_back, "gfx/dmu/DE4.png") {
+	template_2cc_88(1, 96)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE4_position_red, (position_in_vehid_chain % 4)) {
-	1..2: spriteset_1196;
-    3: spriteset_1206;
-    spriteset_1186;
+	1: spriteset_dmu_DE4_middle_1;
+    2: spriteset_dmu_DE4_middle_2;
+    3: spriteset_dmu_DE4_back;
+    spriteset_dmu_DE4_front;
 }
 
 /*
