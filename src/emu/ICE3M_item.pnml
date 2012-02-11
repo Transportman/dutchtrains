@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_2350;
+        purchase: spriteset_emu_ICE3M_purchase;
         articulated_part: switch_emu_ICE3M_articulated;
         switch_emu_ICE3M_position;
     }
