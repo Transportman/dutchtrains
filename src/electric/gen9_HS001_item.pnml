@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_electric_gen9_HS001) {
     property {
         name: string(str_electric_gen9_HS001);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(2028,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
-        power: 210 kW;
+        cost_factor: 72;
+        running_cost_factor: 78;
+        speed: 300 km/h;
+        power: 10000 hpM;
         cargo_capacity: 1;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        weight: 100 ton;
+        tractive_effort_coefficient: 0.387;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -27,7 +27,7 @@ item(FEAT_TRAINS, item_electric_gen9_HS001) {
         misc_flags: 0;
         refit_cost: 0;
         track_type: ELRL;
-		ai_special_flag: AI_FLAG_PASSENGER;
+		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
