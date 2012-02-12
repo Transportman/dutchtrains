@@ -18,7 +18,32 @@ spriteset(spriteset_diesel_SM151_sm, "gfx/diesel/SM151.png") {
 	template_2cc_68(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_diesel_SM151_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_diesel_SM151_sm;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_diesel_SM151_autolivery, date_of_last_service) {
+	0..date(1969,12,31): spriteset_diesel_SM151_sm;
     spriteset_diesel_SM151_ns;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_SM151_purchaselivery, build_year) {
+	0..1969: spriteset_diesel_SM151_sm;
+    spriteset_diesel_SM151_ns;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_SM151_livery, cargo_subtype) {
+	1: switch_diesel_SM151_purchaselivery;
+    2: spriteset_diesel_SM151_sm;
+    3: spriteset_diesel_SM151_ns;
+    switch_diesel_SM151_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_diesel_SM151_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_staatsmijnen);
+    3: return string(str_cargo_subtype_yellow);
+    return CB_RESULT_NO_TEXT;
 }

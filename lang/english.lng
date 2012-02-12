@@ -51,7 +51,8 @@ str_cargo_subtype_NSCargo           :> NS Cargo livery
 str_cargo_subtype_HUSA              :> HUSA livery
 str_cargo_subtype_ERS               :> ERS livery
 str_cargo_subtype_DBSchenker        :> DB Schenker livery
-str_cargo_subtype_Strukton          :> Strukton
+str_cargo_subtype_Strukton          :> Strukton livery
+str_cargo_subtype_staatsmijnen      :> Staatsmijnen livery
 
 #steam
 str_steam_Arend         :HSM "Eagle" (Steam)
