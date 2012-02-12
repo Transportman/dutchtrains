@@ -20,9 +20,41 @@ spriteset(spriteset_diesel_NS200_red, "gfx/diesel/NS200.png") {
 	template_2cc_48(1, 64)
 }
 
+/*
+* LIVERY SELECTION
+*/
 
-switch(FEAT_TRAINS, SELF, switch_diesel_NS200_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_diesel_NS200_green;
-    date(1971,1,1)..date(2003,12,31): spriteset_diesel_NS200_yellow;
-    spriteset_diesel_NS200_red;
+random_switch(FEAT_TRAINS, SELF, switch_diesel_NS200_randomlivery_yellow_red) {
+	14: spriteset_diesel_NS200_yellow;
+    2: spriteset_diesel_NS200_red;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS200_autolivery, date_of_last_service) {
+	0..date(1970,12,31): spriteset_diesel_NS200_green;
+    date(1971,1,1)..date(1998,12,31): spriteset_diesel_NS200_yellow;
+    switch_diesel_NS200_randomlivery_yellow_red;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS200_purchaselivery, build_year) {
+	0..1970: spriteset_diesel_NS200_green;
+    1971..1998: spriteset_diesel_NS200_yellow;
+    switch_diesel_NS200_randomlivery_yellow_red;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS200_livery, cargo_subtype) {
+	1: switch_diesel_NS200_purchaselivery;
+    2: spriteset_diesel_NS200_green;
+    3: spriteset_diesel_NS200_yellow;
+    4: spriteset_diesel_NS200_red;
+    switch_diesel_NS200_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_diesel_NS200_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green);
+    3: return string(str_cargo_subtype_yellow);
+    4: return string(str_cargo_subtype_red);
+    return CB_RESULT_NO_TEXT;
 }
