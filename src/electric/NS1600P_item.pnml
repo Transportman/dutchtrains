@@ -13,7 +13,7 @@ item(FEAT_TRAINS, item_electric_NS1600P) {
         cost_factor: 69;
         running_cost_factor: 70;
         speed: 220 km/h;
-        power: 7500 kW;
+        power: 6800 kW;
         cargo_capacity: 0;
         weight: 82 ton;
         tractive_effort_coefficient: 0.398;
