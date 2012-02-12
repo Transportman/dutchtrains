@@ -40,6 +40,7 @@ str_cargo_subtype_grey_crashnose    :> Grey livery (with crashnose)
 str_cargo_subtype_ns_ic             :> NS InterCity livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
+str_cargo_subtype_benelux           :> Benelux livery
 
 str_cargo_subtype_nedtrain          :> NedTrain livery
 str_cargo_subtype_ACTS              :> ACTS livery
