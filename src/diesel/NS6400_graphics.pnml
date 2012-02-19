@@ -23,9 +23,52 @@ spriteset(spriteset_diesel_NS6400_railpro, "gfx/diesel/NS6400.png") {
 	template_2cc_68(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_diesel_NS6400_ns;
-    date(1971,1,1)..date(2003,12,31): spriteset_diesel_NS6400_railion;
-    date(2004,1,1)..date(2005,12,31): spriteset_diesel_NS6400_railion_red;
-    spriteset_diesel_NS6400_railpro;
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_randomlivery_railion) {
+	16: spriteset_diesel_NS6400_railion;
+    8: spriteset_diesel_NS6400_railion_red;
+    96: spriteset_diesel_NS6400_ns;
 }
+
+random_switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_randomlivery_railpro) {
+	16: spriteset_diesel_NS6400_railion;
+    8: spriteset_diesel_NS6400_railion_red;
+    4: spriteset_diesel_NS6400_railpro;
+    92: spriteset_diesel_NS6400_ns;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_autolivery, date_of_last_service) {
+	0..date(1998,12,31): spriteset_diesel_NS6400_ns;
+    date(2006,1,1)..date(2009,12,31): switch_diesel_NS6400_randomlivery_railpro;
+    switch_diesel_NS6400_randomlivery_railion;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_purchaselivery, build_year) {
+	0..1998: spriteset_diesel_NS6400_ns;
+    2006..2009: switch_diesel_NS6400_randomlivery_railpro;
+    switch_diesel_NS6400_randomlivery_railion;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_livery, cargo_subtype) {
+	1: switch_diesel_NS6400_purchaselivery;
+    2: spriteset_diesel_NS6400_ns;
+    3: spriteset_diesel_NS6400_railion;
+    4: spriteset_diesel_NS6400_railion_red;
+    5: spriteset_diesel_NS6400_railpro;
+    switch_diesel_NS6400_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_diesel_NS6400_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_NS);
+    3: return string(str_cargo_subtype_Railion);
+    4: return string(str_cargo_subtype_Railion_red);
+    5: return string(str_cargo_subtype_Railpro);
+    return CB_RESULT_NO_TEXT;
+}
+
