@@ -8,38 +8,17 @@
 #include "src/disableorigvehs.pnml"
 //include sprite templates
 #include "src/templates.pnml"
-//give vehicle a specific ID
-#include "src/vehicleids.pnml"
-//sort vehicles in purchase list
-#include "src/vehiclesort.pnml"
+
 //cargo translation table
 #include "src/cargotable.pnml"
 //railtype translation table
 #include "src/railtypetable.pnml"
-//recolour sprites for cargo
-#include "src/recoloursprites.pnml"
 
 /*
 * VEHICLES
 */
 
-//steam
-#include "src/steam/Arend_graphics.pnml"
-#include "src/steam/Arend_item.pnml"
-#include "src/steam/HSM126_graphics.pnml"
-#include "src/steam/HSM126_item.pnml"
-#include "src/steam/HSM500_graphics.pnml"
-#include "src/steam/HSM500_item.pnml"
-#include "src/steam/SS700_graphics.pnml"
-#include "src/steam/SS700_item.pnml"
-#include "src/steam/NS3800_graphics.pnml"
-#include "src/steam/NS3800_item.pnml"
-#include "src/steam/NS3900_graphics.pnml"
-#include "src/steam/NS3900_item.pnml"
-#include "src/steam/NBDS30_graphics.pnml"
-#include "src/steam/NBDS30_item.pnml"
-#include "src/steam/NCS71_graphics.pnml"
-#include "src/steam/NCS71_item.pnml"
+
 
 //diesel
 #include "src/diesel/NS100_graphics.pnml"
@@ -113,115 +92,7 @@
 #include "src/electric/gen9_HS002_graphics.pnml"
 #include "src/electric/gen9_HS002_item.pnml"
 
-//dmu
-#include "src/dmu/Mat34_graphics.pnml"
-#include "src/dmu/Mat34_item.pnml"
-#include "src/dmu/DE5_graphics.pnml"
-#include "src/dmu/DE5_item.pnml"
-#include "src/dmu/DE1_graphics.pnml"
-#include "src/dmu/DE1_item.pnml"
-#include "src/dmu/DE2_graphics.pnml"
-#include "src/dmu/DE2_item.pnml"
-#include "src/dmu/DE4_graphics.pnml"
-#include "src/dmu/DE4_item.pnml"
-#include "src/dmu/DE3_graphics.pnml"
-#include "src/dmu/DE3_item.pnml"
-#include "src/dmu/DH1_graphics.pnml"
-#include "src/dmu/DH1_item.pnml"
-#include "src/dmu/DH2_graphics.pnml"
-#include "src/dmu/DH2_item.pnml"
-#include "src/dmu/DM90_graphics.pnml"
-#include "src/dmu/DM90_item.pnml"
-#include "src/dmu/Lint41H_graphics.pnml"
-#include "src/dmu/Lint41H_item.pnml"
-#include "src/dmu/GTW28_graphics.pnml"
-#include "src/dmu/GTW28_item.pnml"
-#include "src/dmu/GTW26_graphics.pnml"
-#include "src/dmu/GTW26_item.pnml"
-#include "src/dmu/NS20_graphics.pnml"
-#include "src/dmu/NS20_item.pnml"
 
-//emu
-#include "src/emu/templatetest_graphics.pnml"
-#include "src/emu/templatetest_item.pnml"
-#include "src/emu/mP_graphics.pnml"
-#include "src/emu/mP_item.pnml"
-#include "src/emu/V250_graphics.pnml"
-#include "src/emu/V250_item.pnml"
-#include "src/emu/SLTIV_graphics.pnml"
-#include "src/emu/SLTIV_item.pnml"
-#include "src/emu/SLTVI_graphics.pnml"
-#include "src/emu/SLTVI_item.pnml"
-#include "src/emu/ICE3M_graphics.pnml"
-#include "src/emu/ICE3M_item.pnml"
-#include "src/emu/Protos_graphics.pnml"
-#include "src/emu/Protos_item.pnml"
-
-//coaches
-#include "src/coaches/SS_C_218_graphics.pnml"
-#include "src/coaches/SS_C_218_item.pnml"
-#include "src/coaches/SS_C_723_graphics.pnml"
-#include "src/coaches/SS_C_723_item.pnml"
-#include "src/coaches/SS_ABd_7516_graphics.pnml"
-#include "src/coaches/SS_ABd_7516_item.pnml"
-#include "src/coaches/HSM_C_755_graphics.pnml"
-#include "src/coaches/HSM_C_755_item.pnml"
-#include "src/coaches/NCS_B_119_graphics.pnml"
-#include "src/coaches/NCS_B_119_item.pnml"
-#include "src/coaches/RTM_BD_438_graphics.pnml"
-#include "src/coaches/RTM_BD_438_item.pnml"
-#include "src/coaches/HIJSM_4_8_10_graphics.pnml"
-#include "src/coaches/HIJSM_4_8_10_item.pnml"
-#include "src/coaches/gen9_IC_DD_graphics.pnml"
-#include "src/coaches/gen9_IC_DD_item.pnml"
-
-//baggage wagons
-#include "src/coaches/SS_E_129_graphics.pnml"
-#include "src/coaches/SS_E_129_item.pnml"
-#include "src/coaches/HSM_D_1916_graphics.pnml"
-#include "src/coaches/HSM_D_1916_item.pnml"
-
-//wagons
-#include "src/wagons/gen0hopper_graphics.pnml"
-#include "src/wagons/gen0hopper_item.pnml"
-#include "src/wagons/gen0boxcar_graphics.pnml"
-#include "src/wagons/gen0boxcar_item.pnml"
-#include "src/wagons/gen0tanker_graphics.pnml"
-#include "src/wagons/gen0tanker_item.pnml"
-#include "src/wagons/gen0openwagonmedium_graphics.pnml"
-#include "src/wagons/gen0openwagonmedium_item.pnml"
-#include "src/wagons/gen0openwagonsmall_graphics.pnml"
-#include "src/wagons/gen0openwagonsmall_item.pnml"
-#include "src/wagons/gen0stakewagon_graphics.pnml"
-#include "src/wagons/gen0stakewagon_item.pnml"
-#include "src/wagons/gen0livestockwagon_graphics.pnml"
-#include "src/wagons/gen0livestockwagon_item.pnml"
-#include "src/wagons/gen9_superheavy_flatcar_graphics.pnml"
-#include "src/wagons/gen9_superheavy_flatcar_item.pnml"
-#include "src/wagons/gen9_silowagon_graphics.pnml"
-#include "src/wagons/gen9_silowagon_item.pnml"
-#include "src/wagons/gen7_cartransporter_graphics.pnml"
-#include "src/wagons/gen7_cartransporter_item.pnml"
-#include "src/wagons/gen7_containercarrier_graphics.pnml"
-#include "src/wagons/gen7_containercarrier_item.pnml"
-
-//metro
-#include "src/metro/GVB_M1M2_graphics.pnml"
-#include "src/metro/GVB_M1M2_item.pnml"
-#include "src/metro/GVB_M4S3_graphics.pnml"
-#include "src/metro/GVB_M4S3_item.pnml"
-#include "src/metro/GVB_S1S2_graphics.pnml"
-#include "src/metro/GVB_S1S2_item.pnml"
-#include "src/metro/GVB_M5M6_graphics.pnml"
-#include "src/metro/GVB_M5M6_item.pnml"
-#include "src/metro/RET_typeT_graphics.pnml"
-#include "src/metro/RET_typeT_item.pnml"
-#include "src/metro/RET_typeM_graphics.pnml"
-#include "src/metro/RET_typeM_item.pnml"
-#include "src/metro/RET_typeB_graphics.pnml"
-#include "src/metro/RET_typeB_item.pnml"
-#include "src/metro/RET_typeR_graphics.pnml"
-#include "src/metro/RET_typeR_item.pnml"
 
 //original Dutch vehicle names
 #include "src/vehiclenames.pnml"

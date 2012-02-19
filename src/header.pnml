@@ -1,10 +1,10 @@
 // define the newgrf
 grf {
-	grfid:	"\4D\4C\05\03";
+	grfid:	"\FB\FB\06\01";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESCRIPTION);
 	version:		REPO_REVISION;
-	min_compatible_version:	155;
+	min_compatible_version:	208;
     param {
         param_vehicle_names {
             type:   int;
@@ -57,8 +57,8 @@ else {
 //set base cost multiplier for this set
 basecost {
 	PR_BUILD_VEHICLE_TRAIN: -1;
-	PR_BUILD_VEHICLE_WAGON: 1;
-	PR_RUNNING_TRAIN_STEAM: 2;
+	//PR_BUILD_VEHICLE_WAGON: 1;
+	//PR_RUNNING_TRAIN_STEAM: 2;
 	PR_RUNNING_TRAIN_DIESEL: 2;
 	PR_RUNNING_TRAIN_ELECTRIC: 2;
 }
