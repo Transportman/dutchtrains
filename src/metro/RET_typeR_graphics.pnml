@@ -25,7 +25,7 @@ switch(FEAT_TRAINS, SELF, switch_metro_RET_typeR_position_blue, (position_in_veh
     2: spriteset_metro_RET_typeR_back_blue;
     spriteset_metro_RET_typeR_front_blue;
 }
-/*
+
 spriteset(spriteset_metro_RET_typeR_front_silver, "gfx/metro/RET_typeR.png") {
 	template_2cc_68(1, 96)
 }
@@ -41,7 +41,35 @@ switch(FEAT_TRAINS, SELF, switch_metro_RET_typeR_position_silver, (position_in_v
     2: spriteset_metro_RET_typeR_back_silver;
     spriteset_metro_RET_typeR_front_silver;
 }
+
+/*
+* LIVERY SELECTION
 */
+
+random_switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeR_random_ret_randstadrail) {
+	1: switch_metro_RET_typeR_position_blue;
+    1: switch_metro_RET_typeR_position_silver;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeR_randomlivery, build_year) {
+	0..2008: switch_metro_RET_typeR_position_blue;
+    switch_metro_RET_typeR_random_ret_randstadrail;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeR_livery, cargo_subtype) {
+    1: switch_metro_RET_typeR_position_blue;
+    2: switch_metro_RET_typeR_position_silver;
+    switch_metro_RET_typeR_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeR_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_randstadrail);
+    2: return string(str_cargo_subtype_silver_green);
+    return CB_RESULT_NO_TEXT;
+}
+
 /*
 * ARTICULATED VEHICLE CALLBACK
 */
