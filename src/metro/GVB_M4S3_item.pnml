@@ -6,16 +6,16 @@ item(FEAT_TRAINS, item_metro_GVB_M4S3) {
     property {
         name: string(str_metro_GVB_M4S3);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1996,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
+        cost_factor: 40;
+        running_cost_factor: 33;
         speed: 100 km/h;
-        power: 210 kW;
-        cargo_capacity: 48;
-        weight: 36 ton;
+        power: 563 hpM;
+        cargo_capacity: 123;
+        weight: 47 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
         
@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_metro_GVB_M4S3) {
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
-        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
         
         climates_available: ALL_CLIMATES;
 		retire_early: 0;
@@ -43,6 +43,7 @@ item(FEAT_TRAINS, item_metro_GVB_M4S3) {
     graphics {
         purchase: spriteset_metro_GVB_M4S3_blue_purchase;
         articulated_part: switch_metro_GVB_M4S3_articulated;
+        cargo_subtype_text: switch_metro_GVB_M4S3_subtype_text;
         switch_metro_GVB_M4S3_livery;
     }
 }
