@@ -41,15 +41,49 @@ spriteset(spriteset_diesel_Class66_HGK, "gfx/diesel/Class66.png") {
 	template_2cc_88(1, 288)
 }
 
-switch(FEAT_TRAINS, SELF, switch_diesel_Class66_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_diesel_Class66_Veolia;
-    date(1971,1,1)..date(2003,12,31): spriteset_diesel_Class66_ACTS;
-    date(2004,1,1)..date(2004,12,31): spriteset_diesel_Class66_ACTS_2;
-    date(2005,1,1)..date(2005,12,31): spriteset_diesel_Class66_DLC;
-    date(2006,1,1)..date(2006,12,31): spriteset_diesel_Class66_Rail4Chem;
-    date(2007,1,1)..date(2007,12,31): spriteset_diesel_Class66_Rail4Chem_2;
-    date(2008,1,1)..date(2008,12,31): spriteset_diesel_Class66_ERS;
-    date(2009,1,1)..date(2009,12,31): spriteset_diesel_Class66_Captrain;
-    date(2010,1,1)..date(2010,12,31): spriteset_diesel_Class66_Crossrail;
-    spriteset_diesel_Class66_HGK;
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_diesel_Class66_random) {
+	1: spriteset_diesel_Class66_ACTS;
+    1: spriteset_diesel_Class66_ACTS_2;
+    1: spriteset_diesel_Class66_Captrain;
+    1: spriteset_diesel_Class66_Crossrail;
+    1: spriteset_diesel_Class66_DLC;
+    1: spriteset_diesel_Class66_ERS;
+    1: spriteset_diesel_Class66_HGK;
+    1: spriteset_diesel_Class66_Rail4Chem;
+    1: spriteset_diesel_Class66_Rail4Chem_2;
+    1: spriteset_diesel_Class66_Veolia;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_livery, cargo_subtype) {
+	1: spriteset_diesel_Class66_ACTS;
+    2: spriteset_diesel_Class66_ACTS_2;
+    3: spriteset_diesel_Class66_Captrain;
+    4: spriteset_diesel_Class66_Crossrail;
+    5: spriteset_diesel_Class66_DLC;
+    6: spriteset_diesel_Class66_ERS;
+    7: spriteset_diesel_Class66_HGK;
+    8: spriteset_diesel_Class66_Rail4Chem;
+    9: spriteset_diesel_Class66_Rail4Chem_2;
+    10: spriteset_diesel_Class66_Veolia;
+    switch_diesel_Class66_random;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+	1: return string(str_cargo_subtype_ACTS_blue_yellow);
+    2: return string(str_cargo_subtype_ACTS_grey_green);
+    3: return string(str_cargo_subtype_Captrain);
+    4: return string(str_cargo_subtype_Crossrail);
+    5: return string(str_cargo_subtype_DLC);
+    6: return string(str_cargo_subtype_ERS);
+    7: return string(str_cargo_subtype_HGK);
+    8: return string(str_cargo_subtype_Rail4Chem_green);
+    9: return string(str_cargo_subtype_Rail4Chem_grey_yellow);
+    10: return string(str_cargo_subtype_Veolia_black);
+    return CB_RESULT_NO_TEXT;
 }
