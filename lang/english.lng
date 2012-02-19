@@ -34,6 +34,7 @@ str_cargo_subtype_grey              :> Grey livery
 str_cargo_subtype_red               :> Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery
 str_cargo_subtype_silver_blue       :> Silver/blue livery
+str_cargo_subtype_silver_green      :> Silver/green livery
 str_cargo_subtype_silver_red        :> Silver/red livery
 str_cargo_subtype_turquoise         :> Turquoise livery
 str_cargo_subtype_yellow            :> Yellow livery
@@ -45,6 +46,7 @@ str_cargo_subtype_ns_ic             :> NS InterCity livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
 str_cargo_subtype_benelux           :> Benelux livery
+str_cargo_subtype_randstadrail      :> RandstadRail livery
 
 str_cargo_subtype_nedtrain          :> NedTrain livery
 str_cargo_subtype_ACTS              :> ACTS livery

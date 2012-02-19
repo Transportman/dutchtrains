@@ -46,10 +46,38 @@ switch(FEAT_TRAINS, SELF, switch_metro_RET_typeT_position_blue, (position_in_veh
     spriteset_metro_RET_typeT_blue_front;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeT_livery, date_of_last_service) {
-	0..date(1994,12,31): switch_metro_RET_typeT_position_red;
-    date(1995,1,1)..date(1999,12,31): switch_metro_RET_typeT_position_green;
-    switch_metro_RET_typeT_position_blue;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeT_autolivery, date_of_last_service) {
+	0..date(1997,12,31): switch_metro_RET_typeT_position_red;
+    date(2006,1,1)..date(2009,12,31): switch_metro_RET_typeT_position_blue;
+    switch_metro_RET_typeT_position_green;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeT_purchaselivery, build_year) {
+	0..1997: switch_metro_RET_typeT_position_red;
+    2006..2009: switch_metro_RET_typeT_position_blue;
+    switch_metro_RET_typeT_position_green;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeT_livery, cargo_subtype) {
+	1: switch_metro_RET_typeT_purchaselivery;
+    2: switch_metro_RET_typeT_position_red;
+    3: switch_metro_RET_typeT_position_green;
+    4: switch_metro_RET_typeT_position_blue;
+    switch_metro_RET_typeT_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeT_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_red_blue);
+    3: return string(str_cargo_subtype_silver_green);
+    4: return string(str_cargo_subtype_randstadrail);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*
