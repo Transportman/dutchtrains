@@ -17,7 +17,37 @@ spriteset(spriteset_diesel_ACTS6700_black, "gfx/diesel/ACTS6700.png") {
 	template_2cc_78(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_diesel_ACTS6700_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_diesel_ACTS6700_blue;
-    spriteset_diesel_ACTS6700_black;
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_diesel_ACTS6700_randomlivery) {
+	4: spriteset_diesel_ACTS6700_blue;
+    1: spriteset_diesel_ACTS6700_black;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_ACTS6700_autolivery, date_of_last_service) {
+	0..date(2011,12,31): switch_diesel_ACTS6700_randomlivery;
+    spriteset_diesel_ACTS6700_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_ACTS6700_purchaselivery, build_year) {
+	0..2011: switch_diesel_ACTS6700_randomlivery;
+    spriteset_diesel_ACTS6700_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_ACTS6700_livery, cargo_subtype) {
+	1: switch_diesel_ACTS6700_purchaselivery;
+    2: spriteset_diesel_ACTS6700_blue;
+    3: spriteset_diesel_ACTS6700_black;
+    switch_diesel_ACTS6700_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_diesel_ACTS6700_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_ACTS);
+    3: return string(str_cargo_subtype_VOSlogistics);
+    return CB_RESULT_NO_TEXT;
 }
