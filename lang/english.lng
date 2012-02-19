@@ -32,6 +32,9 @@ str_cargo_subtype_brown             :> Brown livery
 str_cargo_subtype_green             :> Green livery
 str_cargo_subtype_grey              :> Grey livery
 str_cargo_subtype_red               :> Red livery
+str_cargo_subtype_red_blue          :> Red/blue livery
+str_cargo_subtype_silver_blue       :> Silver/blue livery
+str_cargo_subtype_silver_red        :> Silver/red livery
 str_cargo_subtype_turquoise         :> Turquoise livery
 str_cargo_subtype_yellow            :> Yellow livery
 

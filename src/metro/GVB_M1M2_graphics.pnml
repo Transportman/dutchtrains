@@ -34,9 +34,34 @@ switch(FEAT_TRAINS, SELF, switch_metro_GVB_M1M2_position_red, (position_in_vehid
     spriteset_metro_GVB_M1M2_red_front;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_livery, (date_of_last_service >= date(1995,1,1))) {
-	1: switch_metro_GVB_M1M2_position_red;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_autolivery, date_of_last_service) {
+	0..date(2007,12,31): switch_metro_GVB_M1M2_position_red;
     switch_metro_GVB_M1M2_position_blue;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_purchaselivery, build_year) {
+	0..2007: switch_metro_GVB_M1M2_position_red;
+    switch_metro_GVB_M1M2_position_blue;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_livery, cargo_subtype) {
+	1: switch_metro_GVB_M1M2_purchaselivery;
+    2: switch_metro_GVB_M1M2_position_red;
+    3: switch_metro_GVB_M1M2_position_blue;
+    switch_metro_GVB_M1M2_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_silver_red);
+    3: return string(str_cargo_subtype_silver_blue);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*
