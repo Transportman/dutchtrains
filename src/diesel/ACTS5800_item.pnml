@@ -13,7 +13,7 @@ item(FEAT_TRAINS, item_diesel_ACTS5800) {
         cost_factor: 38;
         running_cost_factor: 29;
         speed: 128 km/h;
-        power: 1780 hpM;
+        power: 1780 kW;
         cargo_capacity: 1;
         weight: 130 ton;
         tractive_effort_coefficient: 0.216;
