@@ -22,6 +22,10 @@ spriteset(spriteset_electric_NS1600_NSCargo, "gfx/electric/NS1600.png") {
 spriteset(spriteset_electric_NS1600_HUSA, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 64)
 }
+//db schenker
+spriteset(spriteset_electric_NS1600_DBSchenker, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 96)
+}
 
 /*
 * LIVERY SELECTION
@@ -46,6 +50,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, cargo_subtype) {
     2: spriteset_electric_NS1600_yellow;
     3: spriteset_electric_NS1600_NSCargo;
     4: spriteset_electric_NS1600_HUSA;
+    5: spriteset_electric_NS1600_DBSchenker;
     switch_electric_NS1600_autolivery;
 }
 
@@ -56,5 +61,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1600_subtype_text, cargo_subtype) {
     2: return string(str_cargo_subtype_yellow);
     3: return string(str_cargo_subtype_NSCargo);
     4: return string(str_cargo_subtype_HUSA);
+    5: return string(str_cargo_subtype_DBSchenker);
     return CB_RESULT_NO_TEXT;
 }
