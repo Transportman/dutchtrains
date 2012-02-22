@@ -60,6 +60,7 @@ str_cargo_subtype_ERS               :> ERS livery
 str_cargo_subtype_EETC              :> Euro Express Treincharter Livery
 str_cargo_subtype_HGK               :> HGK livery
 str_cargo_subtype_HUSA              :> HUSA livery
+str_cargo_subtype_Locon             :> Locon livery
 str_cargo_subtype_NS                :> NS livery
 str_cargo_subtype_NSCargo           :> NS Cargo livery
 str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (green) livery
