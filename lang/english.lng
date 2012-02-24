@@ -47,6 +47,10 @@ str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
 str_cargo_subtype_benelux           :> Benelux livery
 str_cargo_subtype_randstadrail      :> RandstadRail livery
+str_cargo_subtype_original          :> Original livery
+str_cargo_subtype_renewal           :> Renewal livery
+str_cargo_subtype_wadkikker         :> Wadkikker livery
+str_cargo_subtype_maashopper        :> Maashopper livery
 
 str_cargo_subtype_ACTS              :> ACTS livery
 str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blue/yellow) livery
@@ -72,6 +76,7 @@ str_cargo_subtype_Railion_red       :> Railion (red) livery
 str_cargo_subtype_Railpro           :> Railpro livery
 str_cargo_subtype_staatsmijnen      :> Staatsmijnen livery
 str_cargo_subtype_Strukton          :> Strukton livery
+str_cargo_subtype_Syntus            :> Syntus livery
 str_cargo_subtype_Veolia            :> Veolia livery
 str_cargo_subtype_Veolia_white_red  :> Veolia (white/red) livery
 str_cargo_subtype_Veolia_black      :> Veolia (black) livery

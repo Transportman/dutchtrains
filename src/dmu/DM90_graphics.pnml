@@ -38,7 +38,6 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns, (position_in_vehid_chain 
     spriteset_2083;
 }
 
-/*
 //syntus
 spriteset(spriteset_2104, "gfx/dutchtrainsw.png") {
 	[306, 2648, 10, 24, -4, -12]
@@ -67,11 +66,33 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_syntus, (position_in_vehid_ch
     spriteset_2104;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_livery, (date_of_last_service >= date(1995,1,1))) {
-	1: switch_dmu_DM90_position_gen2;
-    switch_dmu_DM90_position_gen1;
-}
+/*
+* LIVERY SELECTION
 */
+
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_randomlivery_ns_syntus) {
+	1: switch_dmu_DM90_position_ns;
+    1: switch_dmu_DM90_position_syntus;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_randomlivery, build_year) {
+	0..1998: switch_dmu_DM90_position_ns;
+    switch_dmu_DM90_randomlivery_ns_syntus;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_livery, cargo_subtype) {
+    1: switch_dmu_DM90_position_ns;
+    2: switch_dmu_DM90_position_syntus;
+    switch_dmu_DM90_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_NS);
+    2: return string(str_cargo_subtype_Syntus);
+    return CB_RESULT_NO_TEXT;
+}
 
 /*
 * ARTICULATED VEHICLE CALLBACK
