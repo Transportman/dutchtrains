@@ -69,7 +69,6 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_spurt, (position_in_vehid_ch
     spriteset_2448;
 }
 
-/*
 //velios
 spriteset(spriteset_2501, "gfx/dutchtrainsw.png") {
 	[194, 3192, 8, 22, -3, -11]
@@ -121,7 +120,34 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_velios, (position_in_vehid_c
     3: spriteset_2522;
     spriteset_2501;
 }
+
+/*
+* LIVERY SELECTION
 */
+
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_arriva_veolia) {
+	1: switch_dmu_GTW28_position_spurt;
+    1: switch_dmu_GTW28_position_velios;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery, build_year) {
+	0..2006: switch_dmu_GTW28_position_spurt;
+    switch_dmu_GTW28_randomlivery_arriva_veolia;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_livery, cargo_subtype) {
+    1: switch_dmu_GTW28_position_spurt;
+    2: switch_dmu_GTW28_position_velios;
+    switch_dmu_GTW28_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_Arriva);
+    2: return string(str_cargo_subtype_Veolia);
+    return CB_RESULT_NO_TEXT;
+}
 
 /*
 * ARTICULATED VEHICLE CALLBACK
