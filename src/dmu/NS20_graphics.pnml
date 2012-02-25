@@ -19,7 +19,32 @@ spriteset(spriteset_dmu_NS20_yellow, "gfx/dmu/NS20.png") {
 	template_2cc_88(1, 1)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_NS20_livery, date_of_last_service) {
-	0..date(1995,1,1): spriteset_dmu_NS20_blue;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_NS20_autolivery, date_of_last_service) {
+	0..date(1972,12,31): spriteset_dmu_NS20_blue;
     spriteset_dmu_NS20_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_NS20_purchaselivery, build_year) {
+	0..1972: spriteset_dmu_NS20_blue;
+    spriteset_dmu_NS20_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_NS20_livery, cargo_subtype) {
+	1: switch_dmu_NS20_purchaselivery;
+    2: spriteset_dmu_NS20_blue;
+    3: spriteset_dmu_NS20_yellow;
+    switch_dmu_NS20_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_dmu_NS20_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_blue);
+    3: return string(str_cargo_subtype_yellow);
+    return CB_RESULT_NO_TEXT;
 }
