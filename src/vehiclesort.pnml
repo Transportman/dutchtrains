@@ -47,6 +47,7 @@ sort(FEAT_TRAINS, [
 
     //dmu
     item_dmu_Mat34,
+    item_dmu_omBC2901,
     item_dmu_DE5,
     item_dmu_DE1,
     item_dmu_DE2,

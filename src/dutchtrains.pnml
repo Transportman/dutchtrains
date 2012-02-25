@@ -140,6 +140,8 @@
 #include "src/dmu/GTW26_item.pnml"
 #include "src/dmu/NS20_graphics.pnml"
 #include "src/dmu/NS20_item.pnml"
+#include "src/dmu/omBC2901_graphics.pnml"
+#include "src/dmu/omBC2901_item.pnml"
 
 //emu
 #include "src/emu/templatetest_graphics.pnml"

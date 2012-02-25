@@ -30,6 +30,8 @@ str_cargo_subtype_black             :> Black livery
 str_cargo_subtype_blue              :> Blue livery
 str_cargo_subtype_brown             :> Brown livery
 str_cargo_subtype_green             :> Green livery
+str_cargo_subtype_green_lightroof   :> Green livery w/ light roof
+str_cargo_subtype_green_darkroof    :> Green livery w/ dark roof
 str_cargo_subtype_grey              :> Grey livery
 str_cargo_subtype_red               :> Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery
@@ -139,6 +141,7 @@ str_electric_gen9_HS001 :HS-1 (Electric)
 str_electric_gen9_HS002 :HS-2 (Electric)
 
 #dmu
+str_dmu_omBC2901        :omBC 2901-2908 (Diesel)
 str_dmu_Mat34           :Mat '34 "Dieselthree" (Diesel)
 str_dmu_Mat34_nl        :Mat '34 "Dieseldrie" (Diesel)
 str_dmu_DE5             :DE5 "Dieselfive" (Diesel)
