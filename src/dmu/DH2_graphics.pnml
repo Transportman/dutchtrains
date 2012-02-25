@@ -11,7 +11,7 @@ spriteset(spriteset_1999, "gfx/dutchtrainsw.png") {
 }
 */
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_livery_purchase, current_year) {
-	0..1994: spriteset_1999;
+	0..1996: spriteset_1999;
     spriteset_1996;
 }
 
