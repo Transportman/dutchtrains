@@ -17,7 +17,7 @@ spriteset(spriteset_467, "gfx/dutchtrainsw.png") {
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_livery_purchase, current_year) {
 	0..1937: spriteset_461;
-    1938..1954: spriteset_464;
+    1938..1953: spriteset_464;
     spriteset_467;
 }
 
@@ -144,13 +144,39 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_blue, (position_in_vehid_cha
     spriteset_431;
 }
 
+/*
+* LIVERY SELECTION
+*/
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_livery, date_of_last_service) {
-	0..date(1938,1,1): switch_dmu_Mat34_position_grey;
-    date(1938,1,1)..date(1954,1,1): switch_dmu_Mat34_position_green;
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_autolivery, date_of_last_service) {
+	0..date(1937,12,31): switch_dmu_Mat34_position_grey;
+    date(1938,1,1)..date(1953,12,31): switch_dmu_Mat34_position_green;
     switch_dmu_Mat34_position_blue;
 }
 
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_purchaselivery, build_year) {
+	0..1937: switch_dmu_Mat34_position_grey;
+    1938..1953: switch_dmu_Mat34_position_green;
+    switch_dmu_Mat34_position_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_livery, cargo_subtype) {
+	1: switch_dmu_Mat34_purchaselivery;
+    2: switch_dmu_Mat34_position_grey;
+    3: switch_dmu_Mat34_position_green;
+    4: switch_dmu_Mat34_position_blue;
+    switch_dmu_Mat34_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_grey);
+    3: return string(str_cargo_subtype_green);
+    4: return string(str_cargo_subtype_blue);
+    return CB_RESULT_NO_TEXT;
+}
 
 /*
 * ARTICULATED VEHICLE CALLBACK

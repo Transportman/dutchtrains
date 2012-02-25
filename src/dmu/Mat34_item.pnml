@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_dmu_Mat34) {
     property {
         name: string(str_dmu_Mat34);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1934,1,1);
+        model_life: 30;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
-        power: 210 kW;
-        cargo_capacity: 48;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        cost_factor: 36;
+        running_cost_factor: 22;
+        speed: 125 km/h;
+        power: 410 hpM;
+        cargo_capacity: 53;
+        weight: 101 ton;
+        tractive_effort_coefficient: 0.12;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -44,6 +44,7 @@ item(FEAT_TRAINS, item_dmu_Mat34) {
         purchase: switch_dmu_Mat34_livery_purchase;
         articulated_part: switch_dmu_Mat34_articulated;
         shorten_vehicle: switch_dmu_Mat34_length;
+        cargo_subtype_text: switch_dmu_Mat34_subtype_text;
         switch_dmu_Mat34_livery;
     }
 }
