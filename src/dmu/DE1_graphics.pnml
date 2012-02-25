@@ -43,7 +43,32 @@ spriteset(spriteset_855, "gfx/dutchtrainsw.png") {
 	[290, 1096, 22, 17, -10, -11]
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE1_livery, (date_of_last_service >= date(1995,1,1))) {
-	1: spriteset_855;
-    spriteset_825;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery, date_of_last_service) {
+	0..date(1964,12,31): spriteset_825;
+    spriteset_855;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_purchaselivery, build_year) {
+	0..1964: spriteset_825;
+    spriteset_855;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_livery, cargo_subtype) {
+	1: switch_dmu_DE1_purchaselivery;
+    2: spriteset_825;
+    3: spriteset_855;
+    switch_dmu_DE1_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_blue);
+    3: return string(str_cargo_subtype_red);
+    return CB_RESULT_NO_TEXT;
 }

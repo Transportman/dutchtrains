@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_dmu_DE2) {
     property {
         name: string(str_dmu_DE2);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1953,1,1);
+        model_life: 45;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
-        power: 210 kW;
-        cargo_capacity: 48;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        cost_factor: 32;
+        running_cost_factor: 20;
+        speed: 105 km/h;
+        power: 415 hpM;
+        cargo_capacity: 67;
+        weight: 85 ton;
+        tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -43,6 +43,7 @@ item(FEAT_TRAINS, item_dmu_DE2) {
     graphics {
         purchase: switch_dmu_DE2_livery_purchase;
         articulated_part: switch_dmu_DE2_articulated;
+        cargo_subtype_text: switch_dmu_DE2_subtype_text;
         switch_dmu_DE2_livery;
     }
 }
