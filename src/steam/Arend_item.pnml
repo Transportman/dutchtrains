@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_steam_Arend) {
     property {
         name: string(str_steam_Arend);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1839,1,1);
+        model_life: 18;
+        vehicle_life: 18;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
-        power: 210 kW;
+        cost_factor: 7;
+        running_cost_factor: 6;
+        speed: 30 km/h;
+        power: 51 hpM;
         cargo_capacity: 0;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        weight: 19.3 ton;
+        tractive_effort_coefficient: 0.063;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -27,7 +27,7 @@ item(FEAT_TRAINS, item_steam_Arend) {
         misc_flags: 0;
         refit_cost: 0;
         track_type: RAIL;
-		ai_special_flag: AI_FLAG_PASSENGER;
+		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);
