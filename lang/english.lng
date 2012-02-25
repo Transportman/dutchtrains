@@ -69,6 +69,7 @@ str_cargo_subtype_HGK               :> HGK livery
 str_cargo_subtype_HSM               :> Hollandsche IJzeren Spoorweg-Maatschappij livery
 str_cargo_subtype_HUSA              :> HUSA livery
 str_cargo_subtype_Locon             :> Locon livery
+str_cargo_subtype_NBDS              :> Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livery
 str_cargo_subtype_nedtrain          :> NedTrain livery
 str_cargo_subtype_NS                :> NS livery
 str_cargo_subtype_NSCargo           :> NS Cargo livery

@@ -95,11 +95,35 @@ switch(FEAT_TRAINS, SELF, switch_steam_NS3500_position, (position_in_vehid_chain
     switch_steam_NS3500_animation;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_livery, date_of_last_service) {
-	0..date(1970,12,31):              switch_steam_NBDS30_position;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_autolivery, date_of_last_service) {
+	0..date(1919,12,31): switch_steam_NBDS30_position;
     switch_steam_NS3500_position;
 }
 
+switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_purchaselivery, build_year) {
+	0..1919: switch_steam_NBDS30_position;
+    switch_steam_NS3500_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_livery, cargo_subtype) {
+	1: switch_steam_NBDS30_purchaselivery;
+    2: switch_steam_NBDS30_position;
+    3: switch_steam_NS3500_position;
+    switch_steam_NBDS30_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_NBDS);
+    3: return string(str_cargo_subtype_NS);
+    return CB_RESULT_NO_TEXT;
+}
 
 /*
 * ARTICULATED VEHICLE CALLBACK
@@ -114,8 +138,16 @@ switch(FEAT_TRAINS, SELF, switch_steam_NBDS30_articulated, extra_callback_info1)
 * VEHICLE LENGTH CALLBACK
 */
 
-
 switch(FEAT_TRAINS, SELF, switch_steam_NBDS30_length, (position_in_vehid_chain % 2)) {
     1: return SHORTEN_TO_4_8;
     return SHORTEN_TO_6_8;
+}
+
+/*
+* VEHICLE SPEED CALLBACK
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_speed, date_of_last_service) {
+	0..date(1939,12,31): return 101;
+    return 51;
 }
