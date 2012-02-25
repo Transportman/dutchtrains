@@ -95,11 +95,35 @@ switch(FEAT_TRAINS, SELF, switch_steam_NS1100_position, (position_in_vehid_chain
     switch_steam_NS1100_animation;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_HSM126_livery, date_of_last_service) {
-	0..date(1970,12,31):              switch_steam_HSM126_position;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_steam_HSM126_autolivery, date_of_last_service) {
+	0..date(1919,12,31): switch_steam_HSM126_position;
     switch_steam_NS1100_position;
 }
 
+switch(FEAT_TRAINS, PARENT, switch_steam_HSM126_purchaselivery, build_year) {
+	0..1919: switch_steam_HSM126_position;
+    switch_steam_NS1100_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_HSM126_livery, cargo_subtype) {
+	1: switch_steam_HSM126_purchaselivery;
+    2: switch_steam_HSM126_position;
+    3: switch_steam_NS1100_position;
+    switch_steam_HSM126_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_steam_HSM126_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_HSM);
+    3: return string(str_cargo_subtype_NS);
+    return CB_RESULT_NO_TEXT;
+}
 
 /*
 * ARTICULATED VEHICLE CALLBACK
