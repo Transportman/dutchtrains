@@ -138,10 +138,38 @@ switch(FEAT_TRAINS, SELF, switch_steam_NS3600_position, (position_in_vehid_chain
     switch_steam_NS3600_animation;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_livery, date_of_last_service) {
-	0..date(1970,12,31):              switch_steam_NCS71_position;
-    date(1971,1,1)..date(1980,12,31): switch_steam_NCS72_position;
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_autolivery, date_of_last_service) {
+	0..date(1924,12,31): switch_steam_NCS71_position;
+	date(1925,1,1)..date(1934,12,31): switch_steam_NCS72_position;
     switch_steam_NS3600_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_purchaselivery, build_year) {
+	0..1924: switch_steam_NCS71_position;
+	1925..1934: switch_steam_NCS72_position;
+    switch_steam_NS3600_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_livery, cargo_subtype) {
+	1: switch_steam_NCS71_purchaselivery;
+    2: switch_steam_NCS71_position;
+    3: switch_steam_NCS72_position;
+    4: switch_steam_NS3600_position;
+    switch_steam_NCS71_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_NCS);
+    3: return string(str_cargo_subtype_SS);
+    4: return string(str_cargo_subtype_NS);
+    return CB_RESULT_NO_TEXT;
 }
 
 
@@ -162,4 +190,25 @@ switch(FEAT_TRAINS, SELF, switch_steam_NCS71_articulated, extra_callback_info1) 
 switch(FEAT_TRAINS, SELF, switch_steam_NCS71_length, (position_in_vehid_chain % 2)) {
     1: return SHORTEN_TO_4_8;
     return SHORTEN_TO_6_8;
+}
+
+/*
+* VEHICLE PROPERTY CALLBACKS
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_speed, date_of_last_service) {
+	0..date(1934,12,31): return 91;
+    return 110;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_weight, date_of_last_service) {
+	0..date(1924,12,31): return 118;
+	date(1925,1,1)..date(1934,12,31): return 124;
+    return 139;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_te, date_of_last_service) {
+	0..date(1924,12,31): return 20; //0.078*255;
+	date(1925,1,1)..date(1934,12,31): return 19; //0.073*255;
+    return 17; //0.065*255;
 }
