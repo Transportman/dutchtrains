@@ -11,7 +11,7 @@ spriteset(spriteset_steam_NS3700_purchase, "gfx/steam/NS3700.png") {
 }
 
 switch(FEAT_TRAINS, SELF, switch_steam_SS700_livery_purchase, current_year) {
-	0..1970: spriteset_steam_SS700_purchase;
+	0..1919: spriteset_steam_SS700_purchase;
     spriteset_steam_NS3700_purchase;
 }
 

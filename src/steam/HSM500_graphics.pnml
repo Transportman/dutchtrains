@@ -11,7 +11,7 @@ spriteset(spriteset_steam_NS2100_purchase, "gfx/steam/NS2100.png") {
 }
 
 switch(FEAT_TRAINS, SELF, switch_steam_HSM500_livery_purchase, current_year) {
-	0..1970: spriteset_steam_HSM500_purchase;
+	0..1919: spriteset_steam_HSM500_purchase;
     spriteset_steam_NS2100_purchase;
 }
 

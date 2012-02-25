@@ -15,8 +15,8 @@ spriteset(spriteset_steam_NS3600_purchase, "gfx/steam/NS3600.png") {
 }
 
 switch(FEAT_TRAINS, SELF, switch_steam_NCS71_livery_purchase, current_year) {
-	0..1970: spriteset_steam_NCS71_purchase;
-    1971..1980: spriteset_steam_NCS72_purchase;
+	0..1924: spriteset_steam_NCS71_purchase;
+    1925..1934: spriteset_steam_NCS72_purchase;
     spriteset_steam_NS3600_purchase;
 }
 
