@@ -40,6 +40,7 @@ str_cargo_subtype_silver_green      :> Silver/green livery
 str_cargo_subtype_silver_red        :> Silver/red livery
 str_cargo_subtype_turquoise         :> Turquoise livery
 str_cargo_subtype_yellow            :> Yellow livery
+str_cargo_subtype_yellow_red        :> Yellow/red livery
 
 str_cargo_subtype_blue_crashnose    :> Blue livery (with crashnose)
 str_cargo_subtype_grey_crashnose    :> Grey livery (with crashnose)
