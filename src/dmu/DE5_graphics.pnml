@@ -220,19 +220,19 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_blue, (position_in_vehid_chain
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_autolivery, date_of_last_service) {
 	0..date(1953,12,31): switch_dmu_DE5_position_green;
     date(1954,1,1)..date(1964,12,31): switch_dmu_DE5_position_blue;
     switch_dmu_DE5_position_red;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_purchaselivery, build_year) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_purchaselivery, build_year) {
 	0..1953: switch_dmu_DE5_position_green;
     1954..1964: switch_dmu_DE5_position_blue;
     switch_dmu_DE5_position_red;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_livery, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_livery, cargo_subtype) {
 	1: switch_dmu_DE5_purchaselivery;
     2: switch_dmu_DE5_position_green;
     3: switch_dmu_DE5_position_blue;
@@ -241,7 +241,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green);
