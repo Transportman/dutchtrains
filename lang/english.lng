@@ -66,6 +66,7 @@ str_cargo_subtype_DLC               :> DLC livery
 str_cargo_subtype_ERS               :> ERS livery
 str_cargo_subtype_EETC              :> Euro Express Treincharter Livery
 str_cargo_subtype_HGK               :> HGK livery
+str_cargo_subtype_HSM               :> HSM livery
 str_cargo_subtype_HUSA              :> HUSA livery
 str_cargo_subtype_Locon             :> Locon livery
 str_cargo_subtype_nedtrain          :> NedTrain livery
