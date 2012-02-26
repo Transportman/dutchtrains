@@ -17,7 +17,25 @@ spriteset(spriteset_coaches_gen9_IC_DD_ns, "gfx/coaches/gen9_IC_DD.png") {
 	template_2cc_88(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_coaches_gen9_IC_DD_livery, date_of_last_service) {
-	0..date(1970,12,31):              spriteset_coaches_gen9_IC_DD_ns;
-    spriteset_coaches_gen9_IC_DD_fyra;
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_coaches_gen9_IC_DD_randomlivery) {
+	1: spriteset_coaches_gen9_IC_DD_ns;
+    1: spriteset_coaches_gen9_IC_DD_fyra;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_gen9_IC_DD_livery, cargo_subtype) {
+	1: spriteset_coaches_gen9_IC_DD_ns;
+    2: spriteset_coaches_gen9_IC_DD_fyra;
+    switch_coaches_gen9_IC_DD_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_gen9_IC_DD_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_ns_ic);
+    2: return string(str_cargo_subtype_fyra);
+    return CB_RESULT_NO_TEXT;
 }
