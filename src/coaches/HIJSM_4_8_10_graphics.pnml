@@ -20,8 +20,28 @@ spriteset(spriteset_coaches_HIJSM_4_8_10_10, "gfx/coaches/HIJSM_4_8_10.png") {
 	template_2cc_48(1, 64)
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_coaches_HIJSM_4_8_10_livery) {
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_coaches_HIJSM_4_8_10_randomlivery) {
 	1: spriteset_coaches_HIJSM_4_8_10_4;
     1: spriteset_coaches_HIJSM_4_8_10_8;
     1: spriteset_coaches_HIJSM_4_8_10_10;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_HIJSM_4_8_10_livery, cargo_subtype) {
+	1: spriteset_coaches_HIJSM_4_8_10_4;
+    2: spriteset_coaches_HIJSM_4_8_10_8;
+    3: spriteset_coaches_HIJSM_4_8_10_10;
+    switch_coaches_HIJSM_4_8_10_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_HIJSM_4_8_10_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_green);
+    2: return string(str_cargo_subtype_yellow);
+    3: return string(str_cargo_subtype_brown);
+    return CB_RESULT_NO_TEXT;
 }
