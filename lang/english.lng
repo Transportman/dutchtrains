@@ -90,6 +90,11 @@ str_cargo_subtype_Veolia_white_red  :> Veolia (white/red) livery
 str_cargo_subtype_Veolia_black      :> Veolia (black) livery
 str_cargo_subtype_VOSlogistics      :> VOS Logistics livery
 
+str_cargo_subtype_brown_cows        :> Brown (Cows) livery
+str_cargo_subtype_brown_pigs        :> Brown (Pigs) livery
+str_cargo_subtype_grey_cows         :> Grey (Cows) livery
+str_cargo_subtype_grey_pigs         :> Grey (Pigs) livery
+
 #steam
 str_steam_Arend         :HSM "Eagle" (Steam)
 str_steam_Arend_nl      :HSM "Arend" (Steam)

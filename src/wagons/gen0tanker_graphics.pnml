@@ -17,7 +17,25 @@ spriteset(spriteset_wagons_gen0tanker_default_2, "gfx/wagons/gen0_tanker.png") {
 	template_2cc_48(1, 32)
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0tanker_livery) {
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0tanker_randomlivery) {
 	1: spriteset_wagons_gen0tanker_default_1;
     1: spriteset_wagons_gen0tanker_default_2;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0tanker_livery, cargo_subtype) {
+	1: spriteset_wagons_gen0tanker_default_1;
+    2: spriteset_wagons_gen0tanker_default_2;
+    switch_wagons_gen0tanker_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0tanker_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_grey);
+    2: return string(str_cargo_subtype_green);
+    return CB_RESULT_NO_TEXT;
 }

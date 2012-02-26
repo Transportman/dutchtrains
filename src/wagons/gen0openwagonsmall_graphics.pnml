@@ -85,7 +85,25 @@ switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonsmall_tarp_2, cargo_type_in
     spritegroup_wagons_gen0openwagonsmall_2;
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonsmall_livery) {
-	1: switch_wagons_gen0openwagonsmall_tarp_1;
-    1: switch_wagons_gen0openwagonsmall_tarp_2;
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonsmall_randomlivery) {
+	1: switch_wagons_gen0openwagonsmall_tarp_2;
+    1: switch_wagons_gen0openwagonsmall_tarp_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonsmall_livery, cargo_subtype) {
+	1: switch_wagons_gen0openwagonsmall_tarp_2;
+    2: switch_wagons_gen0openwagonsmall_tarp_1;
+    switch_wagons_gen0openwagonsmall_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0openwagonsmall_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_grey);
+    2: return string(str_cargo_subtype_brown);
+    return CB_RESULT_NO_TEXT;
 }

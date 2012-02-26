@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_wagons_gen0hopper) {
     property {
         name: string(str_wagons_gen0hopper);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1838,1,1);
+        model_life: 87;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
+        cost_factor: 15;
+        running_cost_factor: 1;
+        speed: 50 km/h;
         power: 0;
-        cargo_capacity: 48;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        cargo_capacity: 10;
+        weight: 6 ton;
+        tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -43,6 +43,7 @@ item(FEAT_TRAINS, item_wagons_gen0hopper) {
     graphics {
         purchase: spriteset_wagons_gen0hopper_purchase;
         colour_mapping: switch_generic_recolour;
+        cargo_subtype_text: switch_wagons_gen0hopper_subtype_text;
         switch_wagons_gen0hopper_livery;
     }
 }

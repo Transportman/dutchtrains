@@ -68,9 +68,31 @@ spritegroup spritegroup_wagons_gen0livestockwagon_cows_2 {
     loaded:  [spriteset_wagons_gen0livestockwagon_cows_2_empty, spriteset_wagons_gen0livestockwagon_cows_2_half, spriteset_wagons_gen0livestockwagon_cows_2_full];
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0livestockwagon_livery) {
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen0livestockwagon_randomlivery) {
 	1: spritegroup_wagons_gen0livestockwagon_cows_1;
     1: spritegroup_wagons_gen0livestockwagon_cows_2;
     1: spritegroup_wagons_gen0livestockwagon_pigs_1;
     1: spritegroup_wagons_gen0livestockwagon_pigs_2; 
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0livestockwagon_livery, cargo_subtype) {
+	1: spritegroup_wagons_gen0livestockwagon_cows_1;
+    2: spritegroup_wagons_gen0livestockwagon_cows_2;
+    3: spritegroup_wagons_gen0livestockwagon_pigs_1;
+    4: spritegroup_wagons_gen0livestockwagon_pigs_2;
+    switch_wagons_gen0livestockwagon_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_gen0livestockwagon_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_grey_cows);
+    2: return string(str_cargo_subtype_brown_cows);
+    3: return string(str_cargo_subtype_grey_pigs);
+    4: return string(str_cargo_subtype_brown_pigs);
+    return CB_RESULT_NO_TEXT;
 }
