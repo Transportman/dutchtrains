@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_coaches_HSM_C_755) {
     property {
         name: string(str_coaches_HSM_C_755);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1907,1,1);
+        model_life: 45;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
+        cost_factor: 126;
+        running_cost_factor: 3;
+        speed: 80 km/h;
         power: 0;
-        cargo_capacity: 48;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        cargo_capacity: 110;
+        weight: 32 ton;
+        tractive_effort_coefficient: 0.0;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;

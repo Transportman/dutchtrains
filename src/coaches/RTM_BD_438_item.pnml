@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
     property {
         name: string(str_coaches_RTM_BD_438);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1898,1,1);
+        model_life: 42;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
+        cost_factor: 62;
+        running_cost_factor: 2;
+        speed: 80 km/h;
         power: 0;
-        cargo_capacity: 48;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        cargo_capacity: 40;
+        weight: 25 ton;
+        tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;

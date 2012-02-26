@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_coaches_SS_C_218) {
     property {
         name: string(str_coaches_SS_C_218);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1874,1,1);
+        model_life: 59;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
+        cost_factor: 64;
+        running_cost_factor: 2;
+        speed: 75 km/h;
         power: 0;
-        cargo_capacity: 48;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        cargo_capacity: 50;
+        weight: 20 ton;
+        tractive_effort_coefficient: 0.0;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
