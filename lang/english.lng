@@ -33,6 +33,7 @@ str_cargo_subtype_green             :> Green livery
 str_cargo_subtype_green_lightroof   :> Green livery w/ light roof
 str_cargo_subtype_green_darkroof    :> Green livery w/ dark roof
 str_cargo_subtype_grey              :> Grey livery
+str_cargo_subtype_purple            :> Purple livery
 str_cargo_subtype_red               :> Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery
 str_cargo_subtype_silver_blue       :> Silver/blue livery
@@ -94,6 +95,11 @@ str_cargo_subtype_brown_cows        :> Brown (Cows) livery
 str_cargo_subtype_brown_pigs        :> Brown (Pigs) livery
 str_cargo_subtype_grey_cows         :> Grey (Cows) livery
 str_cargo_subtype_grey_pigs         :> Grey (Pigs) livery
+
+str_cargo_subtype_transformer:      :> Transformer cargo livery
+str_cargo_subtype_house             :> House cargo livery
+str_cargo_subtype_train             :> Train cargo livery
+str_cargo_subtype_tractor           :> Tractor cargo livery
 
 #steam
 str_steam_Arend         :HSM "Eagle" (Steam)

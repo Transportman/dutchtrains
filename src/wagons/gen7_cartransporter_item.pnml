@@ -6,17 +6,17 @@ item(FEAT_TRAINS, item_wagons_gen7_cartransporter) {
     property {
         name: string(str_wagons_gen7_cartransporter);
         
-        introduction_date: date(1983,1,1);
-        model_life: 50;
-        vehicle_life: 25;
+        introduction_date: date(1980,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 9;
-        running_cost_factor: 10;
-        speed: 100 km/h;
+        cost_factor: 45;
+        running_cost_factor: 3;
+        speed: 160 km/h;
         power: 0;
-        cargo_capacity: 48;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        cargo_capacity: 32;
+        weight: 16 ton;
+        tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;

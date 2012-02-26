@@ -52,17 +52,41 @@ spritegroup spritegroup_wagons_gen9_superheavy_flatcar_tractor {
     loaded:  [spriteset_wagons_gen9_superheavy_flatcar_empty, spriteset_wagons_gen9_superheavy_flatcar_tractor];
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_wagons_gen9_superheavy_flatcar_middle) {
-    1: spritegroup_wagons_gen9_superheavy_flatcar_transformer;
+
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen9_superheavy_flatcar_randomlivery) {
+	1: spritegroup_wagons_gen9_superheavy_flatcar_transformer;
     1: spritegroup_wagons_gen9_superheavy_flatcar_house;
     1: spritegroup_wagons_gen9_superheavy_flatcar_train;
     1: spritegroup_wagons_gen9_superheavy_flatcar_tractor;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen9_superheavy_flatcar_middle, cargo_subtype) {
+	1: spritegroup_wagons_gen9_superheavy_flatcar_transformer;
+    2: spritegroup_wagons_gen9_superheavy_flatcar_house;
+    3: spritegroup_wagons_gen9_superheavy_flatcar_train;
+    4: spritegroup_wagons_gen9_superheavy_flatcar_tractor;
+    switch_wagons_gen9_superheavy_flatcar_randomlivery;
 }
 
 switch(FEAT_TRAINS, SELF, switch_wagons_gen9_superheavy_flatcar_livery, (position_in_vehid_chain % 3)) {
     0: spriteset_wagons_gen9_superheavy_flatcar_front;
     2: spriteset_wagons_gen9_superheavy_flatcar_back;
     switch_wagons_gen9_superheavy_flatcar_middle;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_gen9_superheavy_flatcar_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_transformer);
+    2: return string(str_cargo_subtype_house);
+    3: return string(str_cargo_subtype_train);
+    4: return string(str_cargo_subtype_tractor);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*
