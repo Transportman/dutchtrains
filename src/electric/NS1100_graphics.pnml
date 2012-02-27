@@ -90,13 +90,13 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1100_subtype_text, cargo_subtype) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_grey_length, date_of_last_service) {
-	0..date(1978,12,31): return SHORTEN_TO_6_8;
-    return SHORTEN_TO_7_8;
+	0..date(1978,12,31): return 6;
+    return 7;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery_blue_length, date_of_last_service) {
-	0..date(1978,12,31): return SHORTEN_TO_6_8;
-    return SHORTEN_TO_7_8;
+	0..date(1978,12,31): return 6;
+    return 7;
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_NS1100_randomlivery_bluegrey_length) {
@@ -110,25 +110,25 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1100_purchaselivery_bluegrey_length,
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1100_autolivery_length, date_of_last_service) {
-	0..date(1956,12,31): return SHORTEN_TO_6_8;
-    date(1957,1,1)..date(1974,12,31): return SHORTEN_TO_6_8;
+	0..date(1956,12,31): return 6;
+    date(1957,1,1)..date(1974,12,31): return 6;
     switch_electric_NS1100_purchaselivery_bluegrey_length;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1100_purchaselivery_length, build_year) {
-	0..1956: return SHORTEN_TO_6_8;
-    1957..1974: return SHORTEN_TO_6_8;
-    1975-1978: return SHORTEN_TO_6_8;
-    return SHORTEN_TO_7_8;
+	0..1956: return 6;
+    1957..1974: return 6;
+    1975-1978: return 6;
+    return 7;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1100_length, cargo_subtype) {
 	1: switch_electric_NS1100_purchaselivery_length;
-    2: return SHORTEN_TO_6_8;
-    3: return SHORTEN_TO_6_8;
-    4: return SHORTEN_TO_6_8;
-    5: return SHORTEN_TO_7_8;
-    6: return SHORTEN_TO_7_8;
+    2: return 6;
+    3: return 6;
+    4: return 6;
+    5: return 7;
+    6: return 7;
     switch_electric_NS1100_autolivery_length;
 }
 

@@ -33,7 +33,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_SLTVI_articulated, extra_callback_info1) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_SLTVI_length, (position_in_vehid_chain % 6)) {
-    0: return SHORTEN_TO_6_8;
-    5: return SHORTEN_TO_6_8;
-    return SHORTEN_TO_5_8;
+    0: return 6;
+    5: return 6;
+    return 5;
 }

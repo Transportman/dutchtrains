@@ -84,6 +84,6 @@ switch(FEAT_TRAINS, SELF, switch_metro_RET_typeR_articulated, extra_callback_inf
 */
 
 switch(FEAT_TRAINS, SELF, switch_metro_RET_typeR_length, (position_in_vehid_chain % 3)) {
-    1: return SHORTEN_TO_4_8;
-    return SHORTEN_TO_6_8;
+    1: return 4;
+    return 6;
 }

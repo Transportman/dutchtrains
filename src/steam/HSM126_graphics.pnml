@@ -140,6 +140,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_HSM126_articulated, extra_callback_info1)
 
 
 switch(FEAT_TRAINS, SELF, switch_steam_HSM126_length, (position_in_vehid_chain % 2)) {
-    1: return SHORTEN_TO_3_8;
-    return SHORTEN_TO_4_8;
+    1: return 3;
+    return 4;
 }
