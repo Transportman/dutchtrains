@@ -22,7 +22,7 @@ item(FEAT_TRAINS, item_wagons_gen0livestockwagon) {
         reliability_decay: 20;
         refittable_cargo_classes: 0;
         non_refittable_cargo_classes: 0;
-        refittable_cargo_types: bitmask(LVST);
+        cargo_allow_refit: [LVST];
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
