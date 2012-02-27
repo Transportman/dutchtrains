@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_dmu_DE5) {
     graphics {
         purchase: switch_dmu_DE5_livery_purchase;
         articulated_part: switch_dmu_DE5_articulated;
-        shorten_vehicle: switch_dmu_DE5_length;
+        length: switch_dmu_DE5_length;
         cargo_subtype_text: switch_dmu_DE5_subtype_text;
         switch_dmu_DE5_livery;
     }

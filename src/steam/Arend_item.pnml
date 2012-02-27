@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_Arend) {
     graphics {
         purchase: spriteset_steam_Arend_purchase;
         articulated_part: switch_steam_Arend_articulated;
-        shorten_vehicle: switch_steam_Arend_length;
+        length: switch_steam_Arend_length;
         switch_steam_Arend_position;
     }
 }

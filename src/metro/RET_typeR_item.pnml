@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_metro_RET_typeR) {
     graphics {
         purchase: spriteset_metro_RET_typeR_purchase;
         articulated_part: switch_metro_RET_typeR_articulated;
-        shorten_vehicle: switch_metro_RET_typeR_length;
+        length: switch_metro_RET_typeR_length;
         cargo_subtype_text: switch_metro_RET_typeR_subtype_text;
         switch_metro_RET_typeR_livery;
     }

@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_NS3900) {
     graphics {
         purchase: spriteset_steam_NS3900_purchase;
         articulated_part: switch_steam_NS3900_articulated;
-        shorten_vehicle: switch_steam_NS3900_length;
+        length: switch_steam_NS3900_length;
         switch_steam_NS3900_position;
     }
 }

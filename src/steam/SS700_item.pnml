@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_SS700) {
     graphics {
         purchase: switch_steam_SS700_livery_purchase;
         articulated_part: switch_steam_SS700_articulated;
-        shorten_vehicle: switch_steam_SS700_length;
+        length: switch_steam_SS700_length;
         cargo_subtype_text: switch_steam_SS700_subtype_text;
         cargo_capacity: return 0;
         switch_steam_SS700_livery;

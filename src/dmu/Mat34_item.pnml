@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_dmu_Mat34) {
     graphics {
         purchase: switch_dmu_Mat34_livery_purchase;
         articulated_part: switch_dmu_Mat34_articulated;
-        shorten_vehicle: switch_dmu_Mat34_length;
+        length: switch_dmu_Mat34_length;
         cargo_subtype_text: switch_dmu_Mat34_subtype_text;
         switch_dmu_Mat34_livery;
     }

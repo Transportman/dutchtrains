@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_dmu_GTW28) {
     graphics {
         purchase: spriteset_2572;
         articulated_part: switch_dmu_GTW28_articulated;
-        shorten_vehicle: switch_dmu_GTW28_length;
+        length: switch_dmu_GTW28_length;
         cargo_subtype_text: switch_dmu_GTW28_subtype_text;
         switch_dmu_GTW28_livery;
     }

@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_emu_templatetest) {
     graphics {
         purchase: spriteset_emu_templatetest_purchase;
         articulated_part: switch_emu_templatetest_articulated;
-        shorten_vehicle: switch_emu_templatetest_length;
+        length: switch_emu_templatetest_length;
         switch_emu_templatetest_position;
     }
 }

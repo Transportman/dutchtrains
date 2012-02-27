@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_NBDS30) {
     graphics {
         purchase: switch_steam_NBDS30_livery_purchase;
         articulated_part: switch_steam_NBDS30_articulated;
-        shorten_vehicle: switch_steam_NBDS30_length;
+        length: switch_steam_NBDS30_length;
         cargo_subtype_text: switch_steam_NBDS30_subtype_text;
         cargo_capacity: return 0;
         speed: switch_steam_NBDS30_speed;
