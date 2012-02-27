@@ -2,6 +2,5 @@
 
 railtypetable {
     RAIL,
-    ELRL,
-    metro: [MTRO, "3RDR"]
+    ELRL
 }
