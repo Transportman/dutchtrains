@@ -25,6 +25,7 @@ STR_PARAM_DISABLE_ORIGINAL_111      :all
 str_cargo_subtype_auto              :> Year-dependent livery
 str_cargo_subtype_purchase          :> Construction year livery
 str_cargo_subtype_random            :> Random livery
+str_cargo_subtype_matching          :> Engine-matching livery
 
 str_cargo_subtype_black             :> Black livery
 str_cargo_subtype_blue              :> Blue livery
@@ -46,16 +47,18 @@ str_cargo_subtype_yellow_red        :> Yellow/red livery
 str_cargo_subtype_blue_crashnose    :> Blue livery (with crashnose)
 str_cargo_subtype_grey_crashnose    :> Grey livery (with crashnose)
 
-str_cargo_subtype_ns_ic             :> NS InterCity livery
+str_cargo_subtype_benelux           :> Benelux livery
+str_cargo_subtype_ddar              :> DD-AR livery
 str_cargo_subtype_fyra              :> Fyra (red) livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
-str_cargo_subtype_benelux           :> Benelux livery
-str_cargo_subtype_randstadrail      :> RandstadRail livery
+str_cargo_subtype_maashopper        :> Maashopper livery
+str_cargo_subtype_nid               :> NID livery
+str_cargo_subtype_ns_ic             :> NS InterCity livery
 str_cargo_subtype_original          :> Original livery
+str_cargo_subtype_randstadrail      :> RandstadRail livery
 str_cargo_subtype_renewal           :> Renewal livery
 str_cargo_subtype_wadkikker         :> Wadkikker livery
-str_cargo_subtype_maashopper        :> Maashopper livery
 
 str_cargo_subtype_ACTS              :> ACTS livery
 str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blue/yellow) livery
@@ -215,6 +218,7 @@ str_coaches_SS_C_218    :Passenger Carriage SS C 1-339
 str_coaches_SS_C_723    :Passenger Carriage SS C 651-760
 str_coaches_SS_ABd_7516 :Passenger Carriage SS ABd 7516
 str_coaches_RTM_BD_438  :Passenger Carriage RTM BD 438
+str_coaches_DDAR        :Double-decker Passenger Carriage DD-AR/NID
 str_coaches_gen9_IC_DD  :Double-decker Passenger Carriage HS-DD
 
 #baggage wagons
