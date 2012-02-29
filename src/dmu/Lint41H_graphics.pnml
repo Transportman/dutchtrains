@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_2381, "gfx/dutchtrainsw.png") {
-	[402, 3048, 50, 12, -25, -6]
+spriteset(spriteset_dmu_Lint41H_purchase, "gfx/dmu/Lint41H.png") {
+	template_purchase(1, 128)
 }
 
 /*
@@ -11,31 +11,56 @@ spriteset(spriteset_2381, "gfx/dutchtrainsw.png") {
 */
 
 //syntus
-spriteset(spriteset_2361, "gfx/dutchtrainsw.png") {
-	[594, 3000, 8, 22, -3, -11]
-	[610, 3000, 22, 15, -11, -8]
-	[642, 3000, 32, 12, -17, -7]
-	[690, 3000, 22, 17, -11, -11]
-	[722, 3000, 8, 23, -3, -11]
-	[738, 3000, 22, 17, -11, -10]
-	[2, 3048, 32, 12, -16, -7]
-	[50, 3048, 22, 15, -11, -9]
+spriteset(spriteset_dmu_Lint41H_Syntus_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 1)
 }
-
-spriteset(spriteset_2371, "gfx/dutchtrainsw.png") {
-	[114, 3048, 8, 23, -3, -11]
-	[130, 3048, 22, 17, -11, -10]
-	[162, 3048, 32, 12, -16, -7]
-	[210, 3048, 22, 15, -11, -9]
-	[242, 3048, 8, 22, -3, -11]
-	[258, 3048, 22, 15, -11, -8]
-	[290, 3048, 32, 12, -17, -7]
-	[338, 3048, 22, 17, -11, -11]
+spriteset(spriteset_dmu_Lint41H_Syntus_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 32)
+}
+//Twents
+spriteset(spriteset_dmu_Lint41H_Twents_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_dmu_Lint41H_Twents_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 96)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_vehid_chain % 2)) {
-	1: spriteset_2371;
-    spriteset_2361;
+	1: spriteset_dmu_Lint41H_Syntus_back;
+    spriteset_dmu_Lint41H_Syntus_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Twents, (position_in_vehid_chain % 2)) {
+	1: spriteset_dmu_Lint41H_Twents_back;
+    spriteset_dmu_Lint41H_Twents_front;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_syntus_twents) {
+	1: switch_dmu_Lint41H_position_syntus;
+    1: switch_dmu_Lint41H_position_Twents;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery, build_year) {
+	0..2006: switch_dmu_Lint41H_position_syntus;
+    switch_dmu_Lint41H_randomlivery_syntus_twents;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_livery, cargo_subtype) {
+    1: switch_dmu_Lint41H_position_syntus;
+    2: switch_dmu_Lint41H_position_Twents;
+    switch_dmu_Lint41H_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_Syntus);
+    2: return string(str_cargo_subtype_Twents);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*

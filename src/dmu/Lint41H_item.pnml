@@ -41,8 +41,9 @@ item(FEAT_TRAINS, item_dmu_Lint41H) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_2381;
+        purchase: spriteset_dmu_Lint41H_purchase;
         articulated_part: switch_dmu_Lint41H_articulated;
-        switch_dmu_Lint41H_position_syntus;
+        cargo_subtype_text: switch_dmu_Lint41H_subtype_text;
+        switch_dmu_Lint41H_livery;
     }
 }
