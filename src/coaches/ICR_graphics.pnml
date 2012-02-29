@@ -1,0 +1,66 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_ICR_purchase, "gfx/coaches/ICR.png") {
+	template_purchase(1, 672)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_ICR_blue, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_ICR_blue_cab, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_ICR_benelux, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_coaches_ICR_benelux_cab, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_blue_cab_position, position_in_consist_from_end) {
+	0: spriteset_coaches_ICR_blue_cab;
+    spriteset_coaches_ICR_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_benelux_cab_position, position_in_consist_from_end) {
+	0: spriteset_coaches_ICR_benelux_cab;
+    spriteset_coaches_ICR_benelux;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_blue_cab_availability, date_of_last_service) {
+    0..2005: spriteset_coaches_ICR_blue;
+    switch_coaches_ICR_blue_cab_position;
+}
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_benelux_cab_availability, date_of_last_service) {
+    0..1986: spriteset_coaches_ICR_benelux;
+    switch_coaches_ICR_benelux_cab_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_matchinglivery, vehicle_type_id) {
+    item_electric_HLE11: switch_coaches_ICR_benelux_cab_availability;
+    switch_coaches_ICR_blue_cab_availability;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_livery, cargo_subtype) {
+	1: switch_coaches_ICR_blue_cab_availability;
+    2: switch_coaches_ICR_benelux_cab_availability;
+    switch_coaches_ICR_matchinglivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_matching);
+    1: return string(str_cargo_subtype_ns_ic);
+    2: return string(str_cargo_subtype_benelux);
+    return CB_RESULT_NO_TEXT;
+}

@@ -180,6 +180,8 @@
 #include "src/coaches/gen9_IC_DD_item.pnml"
 #include "src/coaches/DDAR_graphics.pnml"
 #include "src/coaches/DDAR_item.pnml"
+#include "src/coaches/ICR_graphics.pnml"
+#include "src/coaches/ICR_item.pnml"
 
 //baggage wagons
 #include "src/coaches/SS_E_129_graphics.pnml"
