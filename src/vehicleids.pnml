@@ -93,3 +93,4 @@ item(FEAT_TRAINS, item_wagons_gen9_silowagon, 203) {}
 item(FEAT_TRAINS, item_wagons_gen7_cartransporter, 204) {}
 item(FEAT_TRAINS, item_wagons_gen7_containercarrier, 205) {}
 item(FEAT_TRAINS, item_dmu_omBC2901, 206) {}
+item(FEAT_TRAINS, item_electric_NID, 207) {}

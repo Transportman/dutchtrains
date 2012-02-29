@@ -86,6 +86,7 @@ str_cargo_subtype_staatsmijnen      :> Staatsmijnen livery
 str_cargo_subtype_SS                :> Staatsspoorwegen livery
 str_cargo_subtype_Strukton          :> Strukton livery
 str_cargo_subtype_Syntus            :> Syntus livery
+str_cargo_subtype_Twents            :> Twents livery
 str_cargo_subtype_Veolia            :> Veolia livery
 str_cargo_subtype_Veolia_white_red  :> Veolia (white/red) livery
 str_cargo_subtype_Veolia_black      :> Veolia (black) livery
@@ -149,6 +150,7 @@ str_electric_NS1300     :NS 1300 (Electric)
 str_electric_NS1500     :NS 1500 (BR Class EM2) (Electric)
 str_electric_NS1600     :NS 1600/1800 (Electric)
 str_electric_NS1700     :NS 1700 (Electric)
+str_electric_NID        :Nieuwe Intercity Dubbeldekker (Electric)
 str_electric_NS1600P    :NS 1600P (Electric)
 str_electric_HLE11      :HLE 11 (NMBS series 11.8) (Electric)
 str_electric_HLE25      :HLE 25.5 (NMBS series 25.5) (Electric)
