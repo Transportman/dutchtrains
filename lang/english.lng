@@ -37,6 +37,8 @@ str_cargo_subtype_grey              :> Grey livery
 str_cargo_subtype_purple            :> Purple livery
 str_cargo_subtype_red               :> Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery
+str_cargo_subtype_olive_silverroof  :> Olive livery w/ light roof
+str_cargo_subtype_olive_greyroof    :> Olive livery w/ dark roof
 str_cargo_subtype_silver_blue       :> Silver/blue livery
 str_cargo_subtype_silver_green      :> Silver/green livery
 str_cargo_subtype_silver_red        :> Silver/red livery
@@ -189,6 +191,7 @@ str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
+str_emu_Mat35ELD2       :Mat '35 ElD2
 str_emu_mP              :Plan mP (Electric)
 str_emu_ICE3M           :ICE 3M (DB BR 406) (Electric)
 str_emu_V250            :Fyra V250 "Albatross" (Electric)
