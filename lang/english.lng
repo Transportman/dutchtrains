@@ -191,6 +191,7 @@ str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
+str_emu_Mat35EL2        :Mat '35 El2
 str_emu_Mat35ELD2       :Mat '35 ElD2
 str_emu_mP              :Plan mP (Electric)
 str_emu_ICE3M           :ICE 3M (DB BR 406) (Electric)
