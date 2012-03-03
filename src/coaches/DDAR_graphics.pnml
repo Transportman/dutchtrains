@@ -17,11 +17,11 @@ spriteset(spriteset_coaches_DDAR_NID_cab, "gfx/electric/NID.png") {
 	template_2cc_88(1, 64)
 }
 
-spriteset(spriteset_coaches_DDAR_DDAR, "gfx/coaches/DDAR.png") {
-	template_2cc_88(1, 1)
-}
-spriteset(spriteset_coaches_DDAR_DDAR_cab, "gfx/coaches/DDAR.png") {
+spriteset(spriteset_coaches_DDAR_DDAR, "gfx/electric/mDDM.png") {
 	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_DDAR_DDAR_cab, "gfx/electric/mDDM.png") {
+	template_2cc_88(1, 64)
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_NID_position, position_in_consist_from_end) {
