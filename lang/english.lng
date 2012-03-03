@@ -154,6 +154,7 @@ str_electric_NS1500     :NS 1500 (BR Class EM2) (Electric)
 str_electric_NS1600     :NS 1600/1800 (Electric)
 str_electric_NS1700     :NS 1700 (Electric)
 str_electric_NID        :Nieuwe Intercity Dubbeldekker (Electric)
+str_electric_mDDM       :mDDM (Electric)
 str_electric_NS1600P    :NS 1600P (Electric)
 str_electric_HLE11      :HLE 11 (NMBS series 11.8) (Electric)
 str_electric_HLE25      :HLE 25.5 (NMBS series 25.5) (Electric)
@@ -219,7 +220,7 @@ str_coaches_SS_C_723    :Passenger Carriage SS C 651-760
 str_coaches_SS_ABd_7516 :Passenger Carriage SS ABd 7516
 str_coaches_RTM_BD_438  :Passenger Carriage RTM BD 438
 str_coaches_ICR         :Passenger Carriage ICR
-str_coaches_DDAR        :Double-decker Passenger Carriage DD-AR/NID
+str_coaches_DDAR        :Double-decker Passenger Carriage DDM/NID
 str_coaches_gen9_IC_DD  :Double-decker Passenger Carriage HS-DD
 
 #baggage wagons

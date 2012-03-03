@@ -114,6 +114,8 @@
 #include "src/electric/gen9_HS002_item.pnml"
 #include "src/electric/NID_graphics.pnml"
 #include "src/electric/NID_item.pnml"
+#include "src/electric/mDDM_graphics.pnml"
+#include "src/electric/mDDM_item.pnml"
 
 //dmu
 #include "src/dmu/Mat34_graphics.pnml"
