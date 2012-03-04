@@ -352,7 +352,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_te, build_year) {
     return 38;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_length_pos, (position_in_consist % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_length_pos, (position_in_consist % 3)) {
     1: return 7;
     return 8;
 }
