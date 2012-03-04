@@ -18,11 +18,6 @@ spriteset(spriteset_emu_Mat35ELD2_silverroof_back, "gfx/emu/Mat35ELD2.png") {
 	template_2cc_88(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat35ELD2_position_silverroof, (position_in_vehid_chain % 2)) {
-	1: spriteset_emu_Mat35ELD2_silverroof_back;
-    spriteset_emu_Mat35ELD2_silverroof_front;
-}
-
 //grey roof
 spriteset(spriteset_emu_Mat35ELD2_greyroof_front, "gfx/emu/Mat35ELD2.png") {
 	template_2cc_88(1, 64)
@@ -31,30 +26,44 @@ spriteset(spriteset_emu_Mat35ELD2_greyroof_back, "gfx/emu/Mat35ELD2.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat35ELD2_position_greyroof, (position_in_vehid_chain % 2)) {
-	1: spriteset_emu_Mat35ELD2_greyroof_back;
-    spriteset_emu_Mat35ELD2_greyroof_front;
-}
-
 /*
 * LIVERY SELECTION
 */
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat35ELD2_autolivery, date_of_last_service) {
-	0..date(1938,12,31): switch_emu_Mat35ELD2_position_silverroof;
-    switch_emu_Mat35ELD2_position_greyroof;
+	0..date(1938,12,31): spriteset_emu_Mat35ELD2_silverroof_front;
+    spriteset_emu_Mat35ELD2_greyroof_front;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat35ELD2_purchaselivery, build_year) {
-	0..1938: switch_emu_Mat35ELD2_position_silverroof;
-    switch_emu_Mat35ELD2_position_greyroof;
+	0..1938: spriteset_emu_Mat35ELD2_silverroof_front;
+    spriteset_emu_Mat35ELD2_greyroof_front;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat35ELD2_livery, cargo_subtype) {
 	1: switch_emu_Mat35ELD2_purchaselivery;
-    2: switch_emu_Mat35ELD2_position_silverroof;
-    3: switch_emu_Mat35ELD2_position_greyroof;
+    2: spriteset_emu_Mat35ELD2_silverroof_front;
+    3: spriteset_emu_Mat35ELD2_greyroof_front;
     switch_emu_Mat35ELD2_autolivery;
+}
+
+// LIVERY SELECTION D-part
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat35ELD2D_autolivery, date_of_last_service) {
+	0..date(1938,12,31): spriteset_emu_Mat35ELD2_silverroof_back;
+    spriteset_emu_Mat35ELD2_greyroof_back;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat35ELD2D_purchaselivery, build_year) {
+	0..1938: spriteset_emu_Mat35ELD2_silverroof_back;
+    spriteset_emu_Mat35ELD2_greyroof_back;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat35ELD2D_livery, cargo_subtype) {
+	1: switch_emu_Mat35ELD2D_purchaselivery;
+    2: spriteset_emu_Mat35ELD2_silverroof_back;
+    3: spriteset_emu_Mat35ELD2_greyroof_back;
+    switch_emu_Mat35ELD2D_autolivery;
 }
 
 // CARGO SUBTYPE CALLBACK
@@ -71,6 +80,15 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat35ELD2_subtype_text, cargo_subtype) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_Mat35ELD2_articulated, extra_callback_info1) {
-    1: return item_emu_Mat35ELD2;
+    1: return item_emu_Mat35ELD2D;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* CARGO CAPACITY CALLBACK for D-part
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat35ELD2D_capacity, cargo_classes) {
+    bitmask(CC_PASSENGERS): return 0;
+    return 24;
 }
