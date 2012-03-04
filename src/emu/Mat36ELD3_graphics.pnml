@@ -1,0 +1,363 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_Mat36ELD3_purchase, "gfx/emu/Mat36ELD3_600.png") {
+	template_purchase(1, 192)
+}
+
+/*
+* VEHICLE
+*/
+
+//silver roof ELD3 600
+spriteset(spriteset_emu_Mat36ELD3_600_silverroof_front, "gfx/emu/Mat36ELD3_600.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Mat36ELD3_600_silverroof_middle, "gfx/emu/Mat36ELD3_600.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_Mat36ELD3_600_silverroof_back, "gfx/emu/Mat36ELD3_600.png") {
+	template_2cc_88(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_600_silverroof, (position_in_consist % 3)) {
+	1: spriteset_emu_Mat36ELD3_600_silverroof_middle;
+    spriteset_emu_Mat36ELD3_600_silverroof_front;
+}
+
+//grey roof ELD3 600
+spriteset(spriteset_emu_Mat36ELD3_600_greyroof_front, "gfx/emu/Mat36ELD3_600.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_Mat36ELD3_600_greyroof_middle, "gfx/emu/Mat36ELD3_600.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_Mat36ELD3_600_greyroof_back, "gfx/emu/Mat36ELD3_600.png") {
+	template_2cc_88(1, 160)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_600_greyroof, (position_in_consist % 3)) {
+	1: spriteset_emu_Mat36ELD3_600_greyroof_middle;
+    spriteset_emu_Mat36ELD3_600_greyroof_front;
+}
+
+//grey roof ELD3 400
+spriteset(spriteset_emu_Mat36ELD3_400_greyroof_front, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Mat36ELD3_400_greyroof_middle, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_78(1, 32)
+}
+spriteset(spriteset_emu_Mat36ELD3_400_greyroof_back, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_88(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_400_greyroof, (position_in_consist % 3)) {
+	1: spriteset_emu_Mat36ELD3_400_greyroof_middle;
+    spriteset_emu_Mat36ELD3_400_greyroof_front;
+}
+
+//green ELD3 400
+spriteset(spriteset_emu_Mat36ELD3_400_green_front, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_Mat36ELD3_400_green_middle, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_78(1, 128)
+}
+spriteset(spriteset_emu_Mat36ELD3_400_green_back, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_88(1, 160)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_400_green, (position_in_consist % 3)) {
+	1: spriteset_emu_Mat36ELD3_400_green_middle;
+    spriteset_emu_Mat36ELD3_400_green_front;
+}
+
+//green with moustache ELD3 400
+spriteset(spriteset_emu_Mat36ELD3_400_moustache_front, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_Mat36ELD3_400_moustache_middle, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_78(1, 224)
+}
+spriteset(spriteset_emu_Mat36ELD3_400_moustache_back, "gfx/emu/Mat36ELD3.png") {
+	template_2cc_88(1, 256)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_400_moustache, (position_in_consist % 3)) {
+	1: spriteset_emu_Mat36ELD3_400_moustache_middle;
+    spriteset_emu_Mat36ELD3_400_moustache_front;
+}
+
+//grey roof EL3 400
+spriteset(spriteset_emu_Mat36EL3_400_greyroof_front, "gfx/emu/Mat36EL3.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Mat36EL3_400_greyroof_middle, "gfx/emu/Mat36EL3.png") {
+	template_2cc_78(1, 32)
+}
+spriteset(spriteset_emu_Mat36EL3_400_greyroof_back, "gfx/emu/Mat36EL3.png") {
+	template_2cc_88(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL3_400_greyroof, (position_in_consist % 3)) {
+	1: spriteset_emu_Mat36EL3_400_greyroof_middle;
+    spriteset_emu_Mat36EL3_400_greyroof_front;
+}
+
+//green EL3 400
+spriteset(spriteset_emu_Mat36EL3_400_green_front, "gfx/emu/Mat36EL3.png") {
+	template_2cc_88(1, 97)
+}
+spriteset(spriteset_emu_Mat36EL3_400_green_middle, "gfx/emu/Mat36EL3.png") {
+	template_2cc_78(1, 129)
+}
+spriteset(spriteset_emu_Mat36EL3_400_green_back, "gfx/emu/Mat36EL3.png") {
+	template_2cc_88(1, 161)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL3_400_green, (position_in_consist % 3)) {
+	1: spriteset_emu_Mat36EL3_400_green_middle;
+    spriteset_emu_Mat36EL3_400_green_front;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_autolivery_600D, date_of_last_service) {
+	0..date(1938,12,31): switch_emu_Mat36ELD3_600_silverroof;
+    switch_emu_Mat36ELD3_600_greyroof;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_purchaselivery_600D, build_year) {
+	0..1938: switch_emu_Mat36ELD3_600_silverroof;
+    switch_emu_Mat36ELD3_600_greyroof;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_livery_600D, cargo_subtype) {
+	1: switch_emu_Mat36ELD3_purchaselivery_600D;
+    2: switch_emu_Mat36ELD3_600_silverroof;
+    3: switch_emu_Mat36ELD3_600_greyroof;
+    switch_emu_Mat36ELD3_autolivery_600D;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_autolivery_400D, date_of_last_service) {
+	0..date(1955,12,31): switch_emu_Mat36ELD3_400_greyroof;
+	date(1956,12,31)..date(1957,12,31): switch_emu_Mat36ELD3_400_green;
+    switch_emu_Mat36ELD3_400_moustache;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_purchaselivery_400D, build_year) {
+	0..1955: switch_emu_Mat36ELD3_400_greyroof;
+	1956..1957: switch_emu_Mat36ELD3_400_green;
+    switch_emu_Mat36ELD3_400_moustache;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_livery_400D, cargo_subtype) {
+	1: switch_emu_Mat36ELD3_purchaselivery_400D;
+    2: switch_emu_Mat36ELD3_400_greyroof;
+    3: switch_emu_Mat36ELD3_400_green;
+    4: switch_emu_Mat36ELD3_400_moustache;
+    switch_emu_Mat36ELD3_autolivery_400D;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_autolivery_400, date_of_last_service) {
+	0..date(1955,12,31): switch_emu_Mat36EL3_400_greyroof;
+    switch_emu_Mat36EL3_400_green;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_purchaselivery_400, build_year) {
+	0..1955: switch_emu_Mat36EL3_400_greyroof;
+    switch_emu_Mat36EL3_400_green;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_livery_400, cargo_subtype) {
+	1: switch_emu_Mat36ELD3_purchaselivery_400;
+    2: switch_emu_Mat36EL3_400_greyroof;
+    3: switch_emu_Mat36EL3_400_green;
+    switch_emu_Mat36ELD3_autolivery_400;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_livery_400_cargo, cargo_classes_in_consist) {
+    bitmask(CC_PASSENGERS,CC_MAIL): switch_emu_Mat36ELD3_livery_400D;
+    bitmask(CC_PASSENGERS,CC_EXPRESS): switch_emu_Mat36ELD3_livery_400D;
+    switch_emu_Mat36ELD3_livery_400;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_livery, build_year) {
+    0..1941: switch_emu_Mat36ELD3_livery_600D;
+    1942..1949: switch_emu_Mat36ELD3_livery_400D;
+    switch_emu_Mat36ELD3_livery_400_cargo;
+}
+
+// LIVERY SELECTION D-part
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_autolivery_600D, date_of_last_service) {
+	0..date(1938,12,31): spriteset_emu_Mat36ELD3_600_silverroof_back;
+    spriteset_emu_Mat36ELD3_600_greyroof_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_purchaselivery_600D, build_year) {
+	0..1938: spriteset_emu_Mat36ELD3_600_silverroof_back;
+    spriteset_emu_Mat36ELD3_600_greyroof_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_livery_600D, cargo_subtype) {
+	1: switch_emu_Mat36ELD3D_purchaselivery_600D;
+    2: spriteset_emu_Mat36ELD3_600_silverroof_back;
+    3: spriteset_emu_Mat36ELD3_600_greyroof_back;
+    switch_emu_Mat36ELD3D_autolivery_600D;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_autolivery_400D, date_of_last_service) {
+	0..date(1955,12,31): spriteset_emu_Mat36ELD3_400_greyroof_back;
+	date(1956,12,31)..date(1957,12,31): spriteset_emu_Mat36ELD3_400_green_back;
+    spriteset_emu_Mat36ELD3_400_moustache_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_purchaselivery_400D, build_year) {
+	0..1955: spriteset_emu_Mat36ELD3_400_greyroof_back;
+	1956..1957: spriteset_emu_Mat36ELD3_400_green_back;
+    spriteset_emu_Mat36ELD3_400_moustache_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_livery_400D, cargo_subtype) {
+	1: switch_emu_Mat36ELD3D_purchaselivery_400D;
+    2: spriteset_emu_Mat36ELD3_400_greyroof_back;
+    3: spriteset_emu_Mat36ELD3_400_green_back;
+    4: spriteset_emu_Mat36ELD3_400_moustache_back;
+    switch_emu_Mat36ELD3D_autolivery_400D;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_autolivery_400, date_of_last_service) {
+	0..date(1955,12,31): spriteset_emu_Mat36EL3_400_greyroof_back;
+    spriteset_emu_Mat36EL3_400_green_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_purchaselivery_400, build_year) {
+	0..1955: spriteset_emu_Mat36EL3_400_greyroof_back;
+    spriteset_emu_Mat36EL3_400_green_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_livery_400, cargo_subtype) {
+	1: switch_emu_Mat36ELD3D_purchaselivery_400;
+    2: spriteset_emu_Mat36EL3_400_greyroof_back;
+    3: spriteset_emu_Mat36EL3_400_green_back;
+    switch_emu_Mat36ELD3D_autolivery_400;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_livery_400_cargo, cargo_classes_in_consist) {
+    bitmask(CC_PASSENGERS,CC_MAIL): switch_emu_Mat36ELD3D_livery_400D;
+    bitmask(CC_PASSENGERS,CC_EXPRESS): switch_emu_Mat36ELD3D_livery_400D;
+    switch_emu_Mat36ELD3D_livery_400;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_livery, build_year) {
+    0..1941: switch_emu_Mat36ELD3D_livery_600D;
+    1942..1949: switch_emu_Mat36ELD3D_livery_400D;
+    switch_emu_Mat36ELD3D_livery_400_cargo;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_subtype_text_600D, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_olive_silverroof);
+    3: return string(str_cargo_subtype_olive_greyroof);
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_subtype_text_400D, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_olive_greyroof);
+    3: return string(str_cargo_subtype_green_darkroof);
+    4: return string(str_cargo_subtype_green_moustache);
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_subtype_text_400, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_olive_greyroof);
+    3: return string(str_cargo_subtype_green_darkroof);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_subtype_text, build_year) {
+    0..1941: switch_emu_Mat36ELD3_subtype_text_600D;
+    1942..1949: switch_emu_Mat36ELD3_subtype_text_400D;
+    switch_emu_Mat36ELD3_subtype_text_400;
+}
+
+//D-part
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3D_subtype_text_ELD3, cargo_subtype) {
+    0: return string(str_cargo_subtype_ELD3);
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3D_subtype_text_EL3, cargo_subtype) {
+    0: return string(str_cargo_subtype_EL3);
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_subtype_text_year, build_year) {
+    0..1949: switch_emu_Mat36ELD3D_subtype_text_ELD3;
+    switch_emu_Mat36ELD3D_subtype_text_EL3;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3D_subtype_text, cargo_classes) {
+    bitmask(CC_PASSENGERS): switch_emu_Mat36ELD3D_subtype_text_year;
+    switch_emu_Mat36ELD3D_subtype_text_ELD3;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_articulated, extra_callback_info1) {
+    1: return item_emu_Mat36ELD3;
+    2: return item_emu_Mat36ELD3D;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* D-part CAPACITY CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3D_capacity_ELD, cargo_classes) {
+    bitmask(CC_PASSENGERS): return 0;
+    bitmask(CC_MAIL): return 24;
+    return 12;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3D_capacity_EL, cargo_classes) {
+    bitmask(CC_PASSENGERS): return 24;
+    bitmask(CC_MAIL): return 24;
+    return 12;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_capacity, build_year) {
+    0..1949: switch_emu_Mat36ELD3D_capacity_ELD;
+    switch_emu_Mat36ELD3D_capacity_EL;
+}
+
+/*
+* PROPERTY CALLBACKS
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_running_cost, build_year) {
+    0..1941: return 36;
+    return 29;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_power, build_year) {
+    0..1941: return 1775;
+    return 887;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_capacity, build_year) {
+    0..1941: return 96;
+    return 76;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_weight, build_year) {
+    0..1941: return 143;
+    return 106;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_te, build_year) {
+    0..1941: return 51;
+    return 38;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_length_pos, (position_in_consist % 2)) {
+    1: return 7;
+    return 8;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_length, build_year) {
+    0..1941: return 8;
+    switch_emu_Mat36ELD3_length_pos;
+}
