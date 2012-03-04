@@ -49,6 +49,9 @@ str_cargo_subtype_yellow_red        :> Yellow/red livery
 str_cargo_subtype_blue_crashnose    :> Blue livery (with crashnose)
 str_cargo_subtype_grey_crashnose    :> Grey livery (with crashnose)
 
+str_cargo_subtype_EL2               :(El2)
+str_cargo_subtype_ELD2              :(ElD2)
+
 str_cargo_subtype_benelux           :> Benelux livery
 str_cargo_subtype_ddar              :> DD-AR livery
 str_cargo_subtype_fyra              :> Fyra (red) livery
@@ -191,8 +194,7 @@ str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
-str_emu_Mat35EL2        :Mat '35 El2
-str_emu_Mat35ELD2       :Mat '35 ElD2
+str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Electric)
 str_emu_mP              :Plan mP (Electric)
 str_emu_ICE3M           :ICE 3M (DB BR 406) (Electric)
 str_emu_V250            :Fyra V250 "Albatross" (Electric)
