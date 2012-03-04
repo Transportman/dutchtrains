@@ -1,7 +1,5 @@
 //this file sets the vehicle ids for compatibility reasons
 
-item(FEAT_TRAINS, item_emu_templatetest, 115) {}
-
 item(FEAT_TRAINS, item_dmu_DH2, 116) {}
 item(FEAT_TRAINS, item_dmu_DE2, 117) {}
 item(FEAT_TRAINS, item_dmu_DE3, 118) {}
