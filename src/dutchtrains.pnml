@@ -162,6 +162,8 @@
 #include "src/emu/Protos_item.pnml"
 #include "src/emu/Mat35ELD2_graphics.pnml"
 #include "src/emu/Mat35ELD2_item.pnml"
+#include "src/emu/Mat36EL2_graphics.pnml"
+#include "src/emu/Mat36EL2_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"

@@ -97,3 +97,4 @@ item(FEAT_TRAINS, item_coaches_ICR, 209) {}
 item(FEAT_TRAINS, item_electric_mDDM, 210) {}
 item(FEAT_TRAINS, item_emu_Mat35ELD2, 211) {}
 item(FEAT_TRAINS, item_emu_Mat35ELD2D, 212) {}
+item(FEAT_TRAINS, item_emu_Mat36EL2, 213) {}
