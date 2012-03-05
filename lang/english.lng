@@ -34,6 +34,7 @@ str_cargo_subtype_green             :> Green livery
 str_cargo_subtype_green_lightroof   :> Green livery w/ light roof
 str_cargo_subtype_green_darkroof    :> Green livery w/ dark roof
 str_cargo_subtype_green_moustache   :> Green livery w/ moustache
+str_cargo_subtype_green_yellow      :> Green livery w/ yellow stripes
 str_cargo_subtype_grey              :> Grey livery
 str_cargo_subtype_purple            :> Purple livery
 str_cargo_subtype_red               :> Red livery
@@ -54,6 +55,7 @@ str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_ELD2              :(ElD2)
 str_cargo_subtype_EL3               :(El3)
 str_cargo_subtype_ELD3              :(ElD3)
+str_cargo_subtype_ELD4              :(ElD4)
 
 str_cargo_subtype_benelux           :> Benelux livery
 str_cargo_subtype_ddar              :> DD-AR livery
@@ -200,6 +202,7 @@ str_dmu_GTW28           :GTW 2/8 (Diesel)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Electric)
 str_emu_Mat36EL2        :Mat '36 El2 (Electric)
 str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (Electric)
+str_emu_Mat36ELD4       :Mat '36 ElD4 (Electric)
 str_emu_mP              :Plan mP (Electric)
 str_emu_ICE3M           :ICE 3M (DB BR 406) (Electric)
 str_emu_V250            :Fyra V250 "Albatross" (Electric)

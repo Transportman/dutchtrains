@@ -166,6 +166,8 @@
 #include "src/emu/Mat36EL2_item.pnml"
 #include "src/emu/Mat36ELD3_graphics.pnml"
 #include "src/emu/Mat36ELD3_item.pnml"
+#include "src/emu/Mat36ELD4_graphics.pnml"
+#include "src/emu/Mat36ELD4_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"
