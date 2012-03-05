@@ -15,10 +15,10 @@ spriteset(spriteset_emu_Mat40ELD5_greyroof_front, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 1)
 }
 spriteset(spriteset_emu_Mat40ELD5_greyroof_middle_1, "gfx/emu/Mat40ELD5.png") {
-	template_2cc_88(1, 32)
+	template_2cc_78(1, 32)
 }
 spriteset(spriteset_emu_Mat40ELD5_greyroof_middle_2, "gfx/emu/Mat40ELD5.png") {
-	template_2cc_88(1, 64)
+	template_2cc_78(1, 64)
 }
 spriteset(spriteset_emu_Mat40ELD5_greyroof_middle_3, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 96)
@@ -39,10 +39,10 @@ spriteset(spriteset_emu_Mat40ELD5_green_front, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 160)
 }
 spriteset(spriteset_emu_Mat40ELD5_green_middle_1, "gfx/emu/Mat40ELD5.png") {
-	template_2cc_88(1, 192)
+	template_2cc_78(1, 192)
 }
 spriteset(spriteset_emu_Mat40ELD5_green_middle_2, "gfx/emu/Mat40ELD5.png") {
-	template_2cc_88(1, 224)
+	template_2cc_78(1, 224)
 }
 spriteset(spriteset_emu_Mat40ELD5_green_middle_3, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 256)
@@ -63,10 +63,10 @@ spriteset(spriteset_emu_Mat40ELD5_greenmoustache_front, "gfx/emu/Mat40ELD5.png")
 	template_2cc_88(1, 320)
 }
 spriteset(spriteset_emu_Mat40ELD5_greenmoustache_middle_1, "gfx/emu/Mat40ELD5.png") {
-	template_2cc_88(1, 352)
+	template_2cc_78(1, 352)
 }
 spriteset(spriteset_emu_Mat40ELD5_greenmoustache_middle_2, "gfx/emu/Mat40ELD5.png") {
-	template_2cc_88(1, 384)
+	template_2cc_78(1, 384)
 }
 spriteset(spriteset_emu_Mat40ELD5_greenmoustache_middle_3, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 416)
@@ -87,10 +87,10 @@ spriteset(spriteset_emu_Mat40ELD5_greenyellow_front, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 480)
 }
 spriteset(spriteset_emu_Mat40ELD5_greenyellow_middle_1, "gfx/emu/Mat40ELD5.png") {
-	template_2cc_88(1, 512)
+	template_2cc_78(1, 512)
 }
 spriteset(spriteset_emu_Mat40ELD5_greenyellow_middle_2, "gfx/emu/Mat40ELD5.png") {
-	template_2cc_88(1, 544)
+	template_2cc_78(1, 544)
 }
 spriteset(spriteset_emu_Mat40ELD5_greenyellow_middle_3, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 576)
