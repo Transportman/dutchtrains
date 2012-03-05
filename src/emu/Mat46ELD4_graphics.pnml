@@ -1,0 +1,179 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_Mat46ELD4_purchase, "gfx/emu/Mat46ELD4.png") {
+	template_purchase(1, 512)
+}
+
+/*
+* VEHICLE
+*/
+
+//grey roof
+spriteset(spriteset_emu_Mat46ELD4_greyroof_front, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Mat46ELD4_greyroof_middle_1, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_Mat46ELD4_greyroof_middle_2, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_Mat46ELD4_greyroof_back, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greyroof, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_Mat46ELD4_greyroof_middle_1;
+	2: spriteset_emu_Mat46ELD4_greyroof_middle_2;
+    spriteset_emu_Mat46ELD4_greyroof_front;
+}
+
+//grass green
+spriteset(spriteset_emu_Mat46ELD4_green_front, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_Mat46ELD4_green_middle_1, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_Mat46ELD4_green_middle_2, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_Mat46ELD4_green_back, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 224)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_green, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_Mat46ELD4_green_middle_1;
+	2: spriteset_emu_Mat46ELD4_green_middle_2;
+    spriteset_emu_Mat46ELD4_green_front;
+}
+
+//grass green with yellow
+spriteset(spriteset_emu_Mat46ELD4_greenyellow_front, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_emu_Mat46ELD4_greenyellow_middle_1, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_emu_Mat46ELD4_greenyellow_middle_2, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 320)
+}
+spriteset(spriteset_emu_Mat46ELD4_greenyellow_back, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 352)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greenyellow, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_Mat46ELD4_greenyellow_middle_1;
+	2: spriteset_emu_Mat46ELD4_greenyellow_middle_2;
+    spriteset_emu_Mat46ELD4_greenyellow_front;
+}
+
+//grass green with yellow and blue banners
+spriteset(spriteset_emu_Mat46ELD4_greenyellowblue_front, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 384)
+}
+spriteset(spriteset_emu_Mat46ELD4_greenyellowblue_middle_1, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 416)
+}
+spriteset(spriteset_emu_Mat46ELD4_greenyellowblue_middle_2, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 448)
+}
+spriteset(spriteset_emu_Mat46ELD4_greenyellowblue_back, "gfx/emu/Mat46ELD4.png") {
+	template_2cc_88(1, 480)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greenyellowblue, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_Mat46ELD4_greenyellowblue_middle_1;
+	2: spriteset_emu_Mat46ELD4_greenyellowblue_middle_2;
+    spriteset_emu_Mat46ELD4_greenyellowblue_front;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat46ELD4_autolivery, date_of_last_service) {
+	0..date(1955,12,31): switch_emu_Mat46ELD4_greyroof;
+	date(1956,1,1)..date(1958,12,31): switch_emu_Mat46ELD4_green;
+	date(1959,1,1)..date(1963,12,31): switch_emu_Mat46ELD4_greenyellow;
+    switch_emu_Mat46ELD4_greenyellowblue;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat46ELD4_purchaselivery, build_year) {
+	0..1955: switch_emu_Mat46ELD4_greyroof;
+	1956..1958: switch_emu_Mat46ELD4_green;
+	1959..1963: switch_emu_Mat46ELD4_greenyellow;
+    switch_emu_Mat46ELD4_greenyellowblue;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat46ELD4_livery, cargo_subtype) {
+	1: switch_emu_Mat46ELD4_purchaselivery;
+    2: switch_emu_Mat46ELD4_greyroof;
+    3: switch_emu_Mat46ELD4_green;
+    4: switch_emu_Mat46ELD4_greenyellow;
+    5: switch_emu_Mat46ELD4_greenyellowblue;
+    switch_emu_Mat46ELD4_autolivery;
+}
+
+//D-part
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat46ELD4D_autolivery, date_of_last_service) {
+	0..date(1955,12,31): spriteset_emu_Mat46ELD4_greyroof_back;
+	date(1956,1,1)..date(1958,12,31): spriteset_emu_Mat46ELD4_green_back;
+	date(1959,1,1)..date(1963,12,31): spriteset_emu_Mat46ELD4_greenyellow_back;
+    spriteset_emu_Mat46ELD4_greenyellowblue_back;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat46ELD4D_purchaselivery, build_year) {
+	0..1955: spriteset_emu_Mat46ELD4_greyroof_back;
+	1956..1958: spriteset_emu_Mat46ELD4_green_back;
+	1959..1963: spriteset_emu_Mat46ELD4_greenyellow_back;
+    spriteset_emu_Mat46ELD4_greenyellowblue_back;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat46ELD4D_livery, cargo_subtype) {
+	1: switch_emu_Mat46ELD4D_purchaselivery;
+    2: spriteset_emu_Mat46ELD4_greyroof_back;
+    3: spriteset_emu_Mat46ELD4_green_back;
+    4: spriteset_emu_Mat46ELD4_greenyellow_back;
+    5: spriteset_emu_Mat46ELD4_greenyellowblue_back;
+    switch_emu_Mat46ELD4D_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_olive_silverroof);
+    3: return string(str_cargo_subtype_green);
+    4: return string(str_cargo_subtype_green_yellow);
+    5: return string(str_cargo_subtype_green_yellow_blue);
+    return CB_RESULT_NO_TEXT;
+}
+
+//D-part
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4D_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_ELD5);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_articulated, extra_callback_info1) {
+    1..2: return item_emu_Mat46ELD4;
+    3: return item_emu_Mat46ELD4D;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* D-part CAPACITY CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4D_capacity, cargo_classes) {
+    bitmask(CC_PASSENGERS): return 0;
+    bitmask(CC_MAIL): return 24;
+    return 12;
+}
