@@ -1,0 +1,94 @@
+/*
+* ITEM
+*/
+
+item(FEAT_TRAINS, item_emu_Mat40ELD5) {
+    property {
+        name: string(str_emu_Mat40ELD5);
+        
+        introduction_date: date(1942,1,1);
+        model_life: 30;
+        vehicle_life: 20;
+        loading_speed: 5;
+        cost_factor: 96;
+        running_cost_factor: 44;
+        speed: 125 km/h;
+        power: 2128 hpM;
+        cargo_capacity: 77;
+        weight: 214 ton;
+        tractive_effort_coefficient: 0.15;
+        air_drag_coefficient: 0;
+        
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: 0;
+        cargo_allow_refit: [];
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        refit_cost: 0;
+        track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER;
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+        
+        climates_available: ALL_CLIMATES;
+		retire_early: 0;
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+	}
+    graphics {
+        purchase: spriteset_emu_Mat40ELD5_purchase;
+        articulated_part: switch_emu_Mat40ELD5_articulated;
+        cargo_subtype_text: switch_emu_Mat40ELD5_subtype_text;
+        length: switch_emu_Mat40ELD5_length;
+        switch_emu_Mat40ELD5_livery;
+    }
+}
+
+item(FEAT_TRAINS, item_emu_Mat40ELD5D) {
+    property {
+        
+        introduction_date: date(1,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 255;
+        loading_speed: 5;
+        cost_factor: 0;
+        running_cost_factor: 0;
+        speed: 0 km/h;
+        power: 0 hpM;
+        cargo_capacity: 24;
+        weight: 0 ton;
+        tractive_effort_coefficient: 0;
+        air_drag_coefficient: 0;
+        
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS);
+        non_refittable_cargo_classes: 0;
+        cargo_allow_refit: [];
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
+        refit_cost: 0;
+        track_type: ELRL;
+		ai_special_flag: 0;
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+        
+        climates_available: NO_CLIMATE;
+		retire_early: 0;
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+	}
+    graphics {
+        cargo_subtype_text: switch_emu_Mat40ELD5D_subtype_text;
+        cargo_capacity: switch_emu_Mat40ELD5D_capacity;
+        switch_emu_Mat40ELD5D_livery;
+    }
+}
