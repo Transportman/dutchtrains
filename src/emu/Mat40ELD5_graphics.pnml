@@ -27,7 +27,7 @@ spriteset(spriteset_emu_Mat40ELD5_greyroof_back, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 128)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_greyroof, (position_in_consist % 5)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_greyroof, (position_in_vehid_chain % 5)) {
 	1: spriteset_emu_Mat40ELD5_greyroof_middle_1;
 	2: spriteset_emu_Mat40ELD5_greyroof_middle_2;
 	3: spriteset_emu_Mat40ELD5_greyroof_middle_3;
@@ -51,7 +51,7 @@ spriteset(spriteset_emu_Mat40ELD5_green_back, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 288)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_green, (position_in_consist % 5)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_green, (position_in_vehid_chain % 5)) {
 	1: spriteset_emu_Mat40ELD5_green_middle_1;
 	2: spriteset_emu_Mat40ELD5_green_middle_2;
 	3: spriteset_emu_Mat40ELD5_green_middle_3;
@@ -75,7 +75,7 @@ spriteset(spriteset_emu_Mat40ELD5_greenmoustache_back, "gfx/emu/Mat40ELD5.png") 
 	template_2cc_88(1, 448)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_greenmoustache, (position_in_consist % 5)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_greenmoustache, (position_in_vehid_chain % 5)) {
 	1: spriteset_emu_Mat40ELD5_greenmoustache_middle_1;
 	2: spriteset_emu_Mat40ELD5_greenmoustache_middle_2;
 	3: spriteset_emu_Mat40ELD5_greenmoustache_middle_3;
@@ -99,7 +99,7 @@ spriteset(spriteset_emu_Mat40ELD5_greenyellow_back, "gfx/emu/Mat40ELD5.png") {
 	template_2cc_88(1, 608)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_greenyellow, (position_in_consist % 5)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_greenyellow, (position_in_vehid_chain % 5)) {
 	1: spriteset_emu_Mat40ELD5_greenyellow_middle_1;
 	2: spriteset_emu_Mat40ELD5_greenyellow_middle_2;
 	3: spriteset_emu_Mat40ELD5_greenyellow_middle_3;
@@ -188,7 +188,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_articulated, extra_callback_info1
 * VEHICLE LENGTH CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_length, (position_in_consist % 5)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_length, (position_in_vehid_chain % 5)) {
     1..2: return 7;
     return 8;
 }
