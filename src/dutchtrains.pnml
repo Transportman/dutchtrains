@@ -170,6 +170,8 @@
 #include "src/emu/Mat36ELD4_item.pnml"
 #include "src/emu/Mat40ELD5_graphics.pnml"
 #include "src/emu/Mat40ELD5_item.pnml"
+#include "src/emu/Mat40ELD2_graphics.pnml"
+#include "src/emu/Mat40ELD2_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"
