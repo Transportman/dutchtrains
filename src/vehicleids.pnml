@@ -108,3 +108,5 @@ item(FEAT_TRAINS, item_emu_Mat40ELD2, 220) {}
 item(FEAT_TRAINS, item_emu_Mat40ELD2D, 221) {}
 item(FEAT_TRAINS, item_emu_Mat46ELD4, 222) {}
 item(FEAT_TRAINS, item_emu_Mat46ELD4D, 223) {}
+item(FEAT_TRAINS, item_emu_Mat46ELD2, 224) {}
+item(FEAT_TRAINS, item_emu_Mat46ELD2D, 225) {}
