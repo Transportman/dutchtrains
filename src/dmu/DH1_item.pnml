@@ -8,7 +8,7 @@ item(FEAT_TRAINS, item_dmu_DH1) {
         
         introduction_date: date(1983,1,1);
         model_life: 52;
-        retire_early: 25;
+        retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
         cost_factor: 19;
@@ -34,7 +34,6 @@ item(FEAT_TRAINS, item_dmu_DH1) {
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
         
         climates_available: ALL_CLIMATES;
-		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 8;
