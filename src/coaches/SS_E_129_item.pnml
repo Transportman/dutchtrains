@@ -7,7 +7,8 @@ item(FEAT_TRAINS, item_coaches_SS_E_129) {
         name: string(str_coaches_SS_E_129);
         
         introduction_date: date(1916,1,1);
-        model_life: 14;
+        model_life: 35;
+        retire_early: 14;
         vehicle_life: 14;
         loading_speed: 5;
         cost_factor: 43;
@@ -33,7 +34,6 @@ item(FEAT_TRAINS, item_coaches_SS_E_129) {
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
         
         climates_available: ALL_CLIMATES;
-		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 5;
