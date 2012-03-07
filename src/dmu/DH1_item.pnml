@@ -7,7 +7,8 @@ item(FEAT_TRAINS, item_dmu_DH1) {
         name: string(str_dmu_DH1);
         
         introduction_date: date(1983,1,1);
-        model_life: 25;
+        model_life: 52;
+        retire_early: 25;
         vehicle_life: 20;
         loading_speed: 5;
         cost_factor: 19;
