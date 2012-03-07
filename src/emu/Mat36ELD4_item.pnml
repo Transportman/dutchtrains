@@ -7,7 +7,8 @@ item(FEAT_TRAINS, item_emu_Mat36ELD4) {
         name: string(str_emu_Mat36ELD4);
         
         introduction_date: date(1942,1,1);
-        model_life: 28;
+        model_life: 55;
+        retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
         cost_factor: 84;
@@ -33,7 +34,6 @@ item(FEAT_TRAINS, item_emu_Mat36ELD4) {
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
         
         climates_available: ALL_CLIMATES;
-		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 8;
