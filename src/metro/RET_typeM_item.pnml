@@ -7,7 +7,8 @@ item(FEAT_TRAINS, item_metro_RET_typeM) {
         name: string(str_metro_RET_typeM);
         
         introduction_date: date(1968,1,1);
-        model_life: 34;
+        model_life: 61;
+        retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
         cost_factor: 37;
@@ -33,7 +34,6 @@ item(FEAT_TRAINS, item_metro_RET_typeM) {
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
         
         climates_available: ALL_CLIMATES;
-		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 8;
