@@ -7,8 +7,8 @@ item(FEAT_TRAINS, item_diesel_G400B) {
         name: string(str_diesel_G400B);
         
         introduction_date: date(2003,1,1);
-        model_life: 20;
-        vehicle_life: 25;
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 20;
         loading_speed: 5;
         cost_factor: 23;
         running_cost_factor: 13;
@@ -33,7 +33,6 @@ item(FEAT_TRAINS, item_diesel_G400B) {
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
         
         climates_available: ALL_CLIMATES;
-		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 5;

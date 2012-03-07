@@ -7,7 +7,8 @@ item(FEAT_TRAINS, item_diesel_SM151) {
         name: string(str_diesel_SM151);
         
         introduction_date: date(1956,1,1);
-        model_life: 19;
+        model_life: 45;
+        retire_early: 19;
         vehicle_life: 19;
         loading_speed: 5;
         cost_factor: 31;
@@ -33,7 +34,6 @@ item(FEAT_TRAINS, item_diesel_SM151) {
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
         
         climates_available: ALL_CLIMATES;
-		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 6;
