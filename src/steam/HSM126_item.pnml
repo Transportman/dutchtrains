@@ -8,7 +8,7 @@ item(FEAT_TRAINS, item_steam_HSM126) {
         
         introduction_date: date(1883,1,1);
         model_life: 67;
-        retire_early" 20;
+        retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
         cost_factor: 17;
