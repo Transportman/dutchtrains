@@ -7,7 +7,8 @@ item(FEAT_TRAINS, item_steam_Arend) {
         name: string(str_steam_Arend);
         
         introduction_date: date(1839,1,1);
-        model_life: 18;
+        model_life: 43;
+        retire_early 18;
         vehicle_life: 18;
         loading_speed: 5;
         cost_factor: 7;
@@ -16,7 +17,7 @@ item(FEAT_TRAINS, item_steam_Arend) {
         power: 51 hpM;
         cargo_capacity: 0;
         weight: 19.3 ton;
-        tractive_effort_coefficient: 0.063;
+        tractive_effort_coefficient: 0.047;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -33,7 +34,6 @@ item(FEAT_TRAINS, item_steam_Arend) {
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);
         
         climates_available: ALL_CLIMATES;
-		retire_early: 0;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 8;
