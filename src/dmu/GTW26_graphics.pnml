@@ -12,18 +12,18 @@
 //graphics from GTW 2/8
 
 switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_spurt, (position_in_vehid_chain % 3)) {
-	1: spriteset_2458;
-    2: spriteset_2469;
-    spriteset_2448;
+	1: spriteset_dmu_GTW_spurt_powerpack_dmu;
+    2: spriteset_dmu_GTW_spurt_back;
+    spriteset_dmu_GTW_spurt_front;
 }
 
 //velios
 //graphics from GTW 2/8
 
 switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios, (position_in_vehid_chain % 3)) {
-	1: spriteset_2511;
-    2: spriteset_2522;
-    spriteset_2501;
+	1: spriteset_dmu_GTW_velios_powerpack_dmu;
+    2: spriteset_dmu_GTW_velios_back;
+    spriteset_dmu_GTW_velios_front;
 }
 
 /*

@@ -76,6 +76,7 @@ str_cargo_subtype_ACTS              :> ACTS livery
 str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blue/yellow) livery
 str_cargo_subtype_ACTS_grey_green   :> ACTS (grey/green) livery
 str_cargo_subtype_Arriva            :> Arriva livery
+str_cargo_subtype_Breng             :> Breng livery
 str_cargo_subtype_Captrain          :> Captrain livery
 str_cargo_subtype_Crossrail         :> Crossrail livery
 str_cargo_subtype_DBSchenker        :> DB Schenker livery
