@@ -180,6 +180,8 @@
 #include "src/emu/Mat64PlanV_item.pnml"
 #include "src/emu/Mat64PlanT_graphics.pnml"
 #include "src/emu/Mat64PlanT_item.pnml"
+#include "src/emu/SGM2_graphics.pnml"
+#include "src/emu/SGM2_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"

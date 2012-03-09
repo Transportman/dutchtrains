@@ -1,0 +1,94 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_SGM2_purchase, "gfx/emu/SGM.png") {
+	template_purchase(1, 384)
+}
+
+/*
+* VEHICLE
+*/
+
+//original sgm
+spriteset(spriteset_emu_SGM2_sgm_front, "gfx/emu/SGM.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_SGM2_sgm_back, "gfx/emu/SGM.png") {
+	template_2cc_88(1, 32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_sgm, (position_in_vehid_chain % 2)) {
+	1: spriteset_emu_SGM2_sgm_back;
+    spriteset_emu_SGM2_sgm_front;
+}
+
+// sgmm
+spriteset(spriteset_emu_SGM2_sgmm_front, "gfx/emu/SGM.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_SGM2_sgmm_back, "gfx/emu/SGM.png") {
+	template_2cc_88(1, 128)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_sgmm, (position_in_vehid_chain % 2)) {
+	1: spriteset_emu_SGM2_sgmm_back;
+    spriteset_emu_SGM2_sgmm_front;
+}
+
+// citypendel
+spriteset(spriteset_emu_SGM2_citypendel_front, "gfx/emu/SGM.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_SGM2_citypendel_back, "gfx/emu/SGM.png") {
+	template_2cc_88(1, 224)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_citypendel, (position_in_vehid_chain % 2)) {
+	1: spriteset_emu_SGM2_citypendel_back;
+    spriteset_emu_SGM2_citypendel_front;
+}
+
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_autolivery, date_of_last_service) {
+	0..date(1997,12,31): switch_emu_SGM2_sgm;
+	date(1998,1,1)..date(2007,12,31): switch_emu_SGM2_citypendel;
+    switch_emu_SGM2_sgmm;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_purchaselivery, build_year) {
+	0..1997: switch_emu_SGM2_sgm;
+	1998..2007: switch_emu_SGM2_citypendel;
+    switch_emu_SGM2_sgmm;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_livery, cargo_subtype) {
+	1: switch_emu_SGM2_purchaselivery;
+    2: switch_emu_SGM2_sgm;
+    3: switch_emu_SGM2_citypendel;
+    4: switch_emu_SGM2_sgmm;
+    switch_emu_SGM2_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_yellow_blue);
+    3: return string(str_cargo_subtype_citypendel);
+    4: return string(str_cargo_subtype_white_yellow);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_articulated, extra_callback_info1) {
+    1: return item_emu_SGM2;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

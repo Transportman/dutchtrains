@@ -90,6 +90,7 @@ sort(FEAT_TRAINS, [
     item_emu_Mat46ELD4,
     item_emu_Mat64PlanT,
     item_emu_Mat64PlanV,
+    item_emu_SGM2,
     item_emu_mP,
     item_emu_Protos,
     item_emu_SLTIV,

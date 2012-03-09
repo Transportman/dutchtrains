@@ -49,6 +49,7 @@ str_cargo_subtype_turquoise         :> Turquoise livery
 str_cargo_subtype_yellow            :> Yellow livery
 str_cargo_subtype_yellow_blue       :> Yellow livery w/ blue banners
 str_cargo_subtype_yellow_red        :> Yellow/red livery
+str_cargo_subtype_white_yellow      :> White/yellow livery
 
 str_cargo_subtype_blue_crashnose    :> Blue livery (with crashnose)
 str_cargo_subtype_grey_crashnose    :> Grey livery (with crashnose)
@@ -72,6 +73,7 @@ str_cargo_subtype_original          :> Original livery
 str_cargo_subtype_randstadrail      :> RandstadRail livery
 str_cargo_subtype_renewal           :> Renewal livery
 str_cargo_subtype_wadkikker         :> Wadkikker livery
+str_cargo_subtype_citypendel        :> Citypendel livery
 
 str_cargo_subtype_ACTS              :> ACTS livery
 str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blue/yellow) livery
@@ -213,6 +215,7 @@ str_emu_Mat46ELD2       :Mat '46 ElD2 (Electric)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Electric)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Electric)
 str_emu_Mat64PlanT      :Mat '64 Plan T (Electric)
+str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Electric)
 str_emu_mP              :Plan mP (Electric)
 str_emu_ICE3M           :ICE 3M (DB BR 406) (Electric)
 str_emu_V250            :Fyra V250 "Albatross" (Electric)
