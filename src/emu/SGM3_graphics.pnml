@@ -1,0 +1,73 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_SGM3_purchase, "gfx/emu/SGM.png") {
+	template_purchase(1, 384)
+}
+
+/*
+* VEHICLE
+*/
+
+//original sgm
+spriteset(spriteset_emu_SGM3_sgm_middle, "gfx/emu/SGM.png") {
+	template_2cc_88(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_sgm, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_SGM3_sgm_middle;
+	2: spriteset_emu_SGM2_sgm_back;
+    spriteset_emu_SGM2_sgm_front;
+}
+
+// sgmm
+spriteset(spriteset_emu_SGM3_sgmm_middle, "gfx/emu/SGM.png") {
+	template_2cc_88(1, 160)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_sgmm, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_SGM3_sgmm_middle;
+	2: spriteset_emu_SGM2_sgmm_back;
+    spriteset_emu_SGM2_sgmm_front;
+}
+
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_autolivery, date_of_last_service) {
+	0..date(2003,12,31): switch_emu_SGM3_sgm;
+    switch_emu_SGM3_sgmm;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_purchaselivery, build_year) {
+	0..2003: switch_emu_SGM3_sgm;
+    switch_emu_SGM3_sgmm;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_livery, cargo_subtype) {
+	1: switch_emu_SGM3_purchaselivery;
+    2: switch_emu_SGM3_sgm;
+    3: switch_emu_SGM3_sgmm;
+    switch_emu_SGM3_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_yellow_blue);
+    3: return string(str_cargo_subtype_white_yellow);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_articulated, extra_callback_info1) {
+    1..2: return item_emu_SGM3;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

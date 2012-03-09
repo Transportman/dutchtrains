@@ -115,3 +115,4 @@ item(FEAT_TRAINS, item_emu_Mat64PlanVD, 227) {}
 item(FEAT_TRAINS, item_emu_Mat64PlanT, 228) {}
 item(FEAT_TRAINS, item_emu_Mat64PlanTD, 229) {}
 item(FEAT_TRAINS, item_emu_SGM2, 230) {}
+item(FEAT_TRAINS, item_emu_SGM3, 231) {}
