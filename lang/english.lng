@@ -47,6 +47,7 @@ str_cargo_subtype_silver_green      :> Silver/green livery
 str_cargo_subtype_silver_red        :> Silver/red livery
 str_cargo_subtype_turquoise         :> Turquoise livery
 str_cargo_subtype_yellow            :> Yellow livery
+str_cargo_subtype_yellow_blue       :> Yellow livery w/ blue banners
 str_cargo_subtype_yellow_red        :> Yellow/red livery
 
 str_cargo_subtype_blue_crashnose    :> Blue livery (with crashnose)
@@ -210,6 +211,7 @@ str_emu_Mat40ELD2       :Mat '40 ElD2 (Electric)
 str_emu_Mat40ELD5       :Mat '40 ElD5 (Electric)
 str_emu_Mat46ELD2       :Mat '46 ElD2 (Electric)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Electric)
+str_emu_Mat64PlanV      :Mat '64 Plan V (Electric)
 str_emu_mP              :Plan mP (Electric)
 str_emu_ICE3M           :ICE 3M (DB BR 406) (Electric)
 str_emu_V250            :Fyra V250 "Albatross" (Electric)

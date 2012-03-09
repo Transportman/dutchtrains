@@ -1,0 +1,95 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_Mat64PlanV_purchase, "gfx/emu/Mat64.png") {
+	template_purchase(1, 256)
+}
+
+/*
+* VEHICLE
+*/
+
+//green
+spriteset(spriteset_emu_Mat64PlanV_green_front, "gfx/emu/Mat64.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Mat64PlanV_green_back, "gfx/emu/Mat64.png") {
+	template_2cc_88(1, 32)
+}
+
+//yellow
+spriteset(spriteset_emu_Mat64PlanV_yellow_front, "gfx/emu/Mat64.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_Mat64PlanV_yellow_back, "gfx/emu/Mat64.png") {
+	template_2cc_88(1, 160)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanV_autolivery, date_of_last_service) {
+	0..date(1967,12,31): spriteset_emu_Mat64PlanV_green_front;
+    spriteset_emu_Mat64PlanV_yellow_front;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanV_purchaselivery, build_year) {
+	0..1967: spriteset_emu_Mat64PlanV_green_front;
+    spriteset_emu_Mat64PlanV_yellow_front;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanV_livery, cargo_subtype) {
+	1: switch_emu_Mat64PlanV_purchaselivery;
+    2: spriteset_emu_Mat64PlanV_green_front;
+    3: spriteset_emu_Mat64PlanV_yellow_front;
+    switch_emu_Mat64PlanV_autolivery;
+}
+
+//D-part
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_autolivery, date_of_last_service) {
+	0..date(1967,12,31): spriteset_emu_Mat64PlanV_green_back;
+    spriteset_emu_Mat64PlanV_yellow_back;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_purchaselivery, build_year) {
+	0..1967: spriteset_emu_Mat64PlanV_green_back;
+    spriteset_emu_Mat64PlanV_yellow_back;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_livery, cargo_subtype) {
+	1: switch_emu_Mat64PlanVD_purchaselivery;
+    2: spriteset_emu_Mat64PlanV_green_back;
+    3: spriteset_emu_Mat64PlanV_yellow_back;
+    switch_emu_Mat64PlanVD_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanV_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_yellow);
+    3: return string(str_cargo_subtype_yellow_blue);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanV_articulated, extra_callback_info1) {
+    1: return item_emu_Mat64PlanVD;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* D-part CAPACITY CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanVD_capacity, cargo_classes) {
+    bitmask(CC_PASSENGERS): return 16;
+    bitmask(CC_MAIL): return 16;
+    return 8;
+}

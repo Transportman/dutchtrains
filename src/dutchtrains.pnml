@@ -176,6 +176,8 @@
 #include "src/emu/Mat46ELD4_item.pnml"
 #include "src/emu/Mat46ELD2_graphics.pnml"
 #include "src/emu/Mat46ELD2_item.pnml"
+#include "src/emu/Mat64PlanV_graphics.pnml"
+#include "src/emu/Mat64PlanV_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"
