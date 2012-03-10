@@ -118,3 +118,4 @@ item(FEAT_TRAINS, item_emu_SGM2, 230) {}
 item(FEAT_TRAINS, item_emu_SGM3, 231) {}
 item(FEAT_TRAINS, item_emu_IRMVI, 232) {}
 item(FEAT_TRAINS, item_emu_IRMIII, 233) {}
+item(FEAT_TRAINS, item_emu_IRMIV, 234) {}

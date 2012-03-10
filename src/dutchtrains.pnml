@@ -188,6 +188,8 @@
 #include "src/emu/IRMVI_item.pnml"
 #include "src/emu/IRMIII_graphics.pnml"
 #include "src/emu/IRMIII_item.pnml"
+#include "src/emu/IRMIV_graphics.pnml"
+#include "src/emu/IRMIV_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"

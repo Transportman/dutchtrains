@@ -1,0 +1,59 @@
+/*
+* PURCHASE
+*/
+
+//graphics defined in IRMVI
+
+/*
+* VEHICLE
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_1, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_middle_pdown;
+	3: spriteset_emu_IRM_back_pdown;
+    spriteset_emu_IRM_front_pup;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_2, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_middle_pup;
+	3: spriteset_emu_IRM_back_pdown;
+    spriteset_emu_IRM_front_pdown;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_3, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_middle_pdown;
+	3: spriteset_emu_IRM_back_pup;
+    spriteset_emu_IRM_front_pdown;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_livery) {
+	1: switch_emu_IRMIV_position_1;
+	1: switch_emu_IRMIV_position_2;
+	1: switch_emu_IRMIV_position_3;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_articulated, extra_callback_info1) {
+    1..3: return item_emu_IRMIV;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VEHICLE PROPERTY CALLBACKS
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_capacity, build_year) {
+    0..2001: return 97;
+    return 102;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_weight, build_year) {
+    0..2001: return 234;
+    return 237;
+}
