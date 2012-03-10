@@ -1,0 +1,92 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_IRMVI_purchase, "gfx/purchase/emu/IRM.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//IRM
+spriteset(spriteset_emu_IRM_front_pup, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_IRM_front_pdown, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_IRM_front_pno, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_IRM_back_pup, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_IRM_back_pdown, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_IRM_back_pno, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_IRM_middle_pup, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_IRM_middle_pdown, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 224)
+}
+spriteset(spriteset_emu_IRM_middle_pno, "gfx/emu/IRM.png") {
+	template_2cc_88(1, 256)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_1, (position_in_vehid_chain % 6)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_middle_pdown;
+	3: spriteset_emu_IRM_middle_pno;
+	4: spriteset_emu_IRM_middle_pup;
+	5: spriteset_emu_IRM_back_pno;
+    spriteset_emu_IRM_front_pup;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_2, (position_in_vehid_chain % 6)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_middle_pup;
+	3: spriteset_emu_IRM_middle_pno;
+	4: spriteset_emu_IRM_middle_pup;
+	5: spriteset_emu_IRM_back_pno;
+    spriteset_emu_IRM_front_pdown;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_3, (position_in_vehid_chain % 6)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_middle_pup;
+	3: spriteset_emu_IRM_middle_pno;
+	4: spriteset_emu_IRM_middle_pdown;
+	5: spriteset_emu_IRM_back_pup;
+    spriteset_emu_IRM_front_pno;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_4, (position_in_vehid_chain % 6)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_middle_pdown;
+	3: spriteset_emu_IRM_middle_pno;
+	4: spriteset_emu_IRM_middle_pup;
+	5: spriteset_emu_IRM_back_pup;
+    spriteset_emu_IRM_front_pno;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_livery) {
+	1: switch_emu_IRMVI_position_1;
+	1: switch_emu_IRMVI_position_2;
+	1: switch_emu_IRMVI_position_3;
+	1: switch_emu_IRMVI_position_4;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_articulated, extra_callback_info1) {
+    1..5: return item_emu_IRMVI;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
