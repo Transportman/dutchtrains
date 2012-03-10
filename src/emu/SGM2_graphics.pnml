@@ -69,8 +69,8 @@ switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_purchaselivery, build_year) {
 switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_livery, cargo_subtype) {
 	1: switch_emu_SGM2_purchaselivery;
     2: switch_emu_SGM2_sgm;
-    3: switch_emu_SGM2_citypendel;
-    4: switch_emu_SGM2_sgmm;
+    3: switch_emu_SGM2_sgmm;
+    4: switch_emu_SGM2_citypendel;
     switch_emu_SGM2_autolivery;
 }
 
@@ -79,8 +79,8 @@ switch(FEAT_TRAINS, SELF, switch_emu_SGM2_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_yellow_blue);
-    3: return string(str_cargo_subtype_citypendel);
-    4: return string(str_cargo_subtype_white_yellow);
+    3: return string(str_cargo_subtype_white_yellow);
+    4: return string(str_cargo_subtype_citypendel);
     return CB_RESULT_NO_TEXT;
 }
 
@@ -91,4 +91,28 @@ switch(FEAT_TRAINS, SELF, switch_emu_SGM2_subtype_text, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_emu_SGM2_articulated, extra_callback_info1) {
     1: return item_emu_SGM2;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* CARGO CAPACITY CALLBACK
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_autocapacity, date_of_last_service) {
+	0..date(1997,12,31): return 79;
+	date(1998,1,1)..date(2007,12,31): return 66;
+    return 74;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_purchasecapacity, build_year) {
+	0..1997: return 79;
+	1998..2007: return 66;
+    return 74;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_capacity, cargo_subtype) {
+	1: switch_emu_SGM2_purchasecapacity;
+    2: return 79;
+    3: return 74;
+    4: return 66;
+    switch_emu_SGM2_autocapacity;
 }
