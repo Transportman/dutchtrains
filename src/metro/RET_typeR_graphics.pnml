@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_metro_RET_typeR_purchase, "gfx/metro/RET_typeR.png") {
-	template_purchase(1, 192)
+spriteset(spriteset_metro_RET_typeR_silvergreen_purchase, "gfx/purchase/metro/RET_TypeR_silvergreen.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_metro_RET_typeR_randstadrail_purchase, "gfx/purchase/metro/RET_TypeR_randstadrail.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeR_purchase, current_year) {
+	0..2008: spriteset_metro_RET_typeR_randstadrail_purchase;
+    spriteset_metro_RET_typeR_silvergreen_purchase;
 }
 
 /*

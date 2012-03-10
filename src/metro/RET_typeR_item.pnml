@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_metro_RET_typeR) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_metro_RET_typeR_purchase;
+        purchase: switch_metro_RET_typeR_purchase;
         articulated_part: switch_metro_RET_typeR_articulated;
         length: switch_metro_RET_typeR_length;
         cargo_subtype_text: switch_metro_RET_typeR_subtype_text;
