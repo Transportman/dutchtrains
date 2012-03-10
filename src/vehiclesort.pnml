@@ -92,6 +92,7 @@ sort(FEAT_TRAINS, [
     item_emu_Mat64PlanV,
     item_emu_SGM2,
     item_emu_SGM3,
+    item_emu_IRMIII,
     item_emu_IRMVI,
     item_emu_mP,
     item_emu_Protos,

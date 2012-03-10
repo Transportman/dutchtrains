@@ -1,0 +1,35 @@
+/*
+* PURCHASE
+*/
+
+//graphics defined in IRMVI
+
+/*
+* VEHICLE
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_1, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_back_pdown;
+    spriteset_emu_IRM_front_pup;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_2, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_IRM_middle_pno;
+	2: spriteset_emu_IRM_back_pup;
+    spriteset_emu_IRM_front_pdown;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_livery) {
+	1: switch_emu_IRMIII_position_1;
+	1: switch_emu_IRMIII_position_2;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_articulated, extra_callback_info1) {
+    1..2: return item_emu_IRMIII;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
