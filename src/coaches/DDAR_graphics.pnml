@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_coaches_DDAR_purchase, "gfx/electric/NID.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_coaches_DDAR_NID_purchase, "gfx/purchase/coaches/DDAR_NID.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_DDAR_DDM_purchase, "gfx/purchase/coaches/DDAR_DDM.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_purchase, current_year) {
+	0..2011: spriteset_coaches_DDAR_DDM_purchase;
+    spriteset_coaches_DDAR_NID_purchase;
 }
 
 /*
@@ -24,6 +32,10 @@ spriteset(spriteset_coaches_DDAR_DDAR_cab, "gfx/electric/mDDM.png") {
 	template_2cc_88(1, 64)
 }
 
+spriteset(spriteset_coaches_DDAR_DDM1_cab, "gfx/coaches/DDM1.png") {
+	template_2cc_88(1, 64)
+}
+
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_NID_position, position_in_consist_from_end) {
 	0: spriteset_coaches_DDAR_NID_cab;
     spriteset_coaches_DDAR_NID;
@@ -34,26 +46,34 @@ switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_DDAR_position, position_in_consist
     spriteset_coaches_DDAR_DDAR;
 }
 
+switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_DDM1_position, position_in_consist_from_end) {
+	0: spriteset_coaches_DDAR_DDM1_cab;
+    spriteset_coaches_DDAR_DDAR;
+}
+
 /*
 * LIVERY SELECTION
 */
 
 switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchinglivery, vehicle_type_id) {
     item_electric_NID: switch_coaches_DDAR_NID_position;
+    item_electric_NS1600: switch_coaches_DDAR_DDM1_position;
     switch_coaches_DDAR_DDAR_position;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_livery, cargo_subtype) {
-	1: switch_coaches_DDAR_DDAR_position;
-    2: switch_coaches_DDAR_NID_position;
+	1: switch_coaches_DDAR_DDM1_position;
+	2: switch_coaches_DDAR_DDAR_position;
+    3: switch_coaches_DDAR_NID_position;
     switch_coaches_DDAR_matchinglivery;
 }
 
 // CARGO SUBTYPE CALLBACK
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_matching);
-    1: return string(str_cargo_subtype_ddar);
-    2: return string(str_cargo_subtype_nid);
+    1: return string(str_cargo_subtype_ddm1);
+    2: return string(str_cargo_subtype_ddar);
+    3: return string(str_cargo_subtype_nid);
     return CB_RESULT_NO_TEXT;
 }
 
@@ -63,11 +83,13 @@ switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_subtype_text, cargo_subtype) {
 
 switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchingcapacity, vehicle_type_id) {
     item_electric_NID: return 113;
+    item_electric_NS1600: return 166;
     return 150;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_capacity, cargo_subtype) {
-	1: return 150;
-    2: return 113;
+	1: return 166;
+    2: return 150;
+    3: return 113;
     switch_coaches_DDAR_matchingcapacity;
 }

@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_coaches_DDAR) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_coaches_DDAR_purchase;
+        purchase: switch_coaches_DDAR_purchase;
         cargo_subtype_text: switch_coaches_DDAR_subtype_text;
         cargo_capacity: switch_coaches_DDAR_capacity;
         switch_coaches_DDAR_livery;

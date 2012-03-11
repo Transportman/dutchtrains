@@ -65,6 +65,7 @@ str_cargo_subtype_ELD5              :(ElD5)
 
 str_cargo_subtype_benelux           :> Benelux livery
 str_cargo_subtype_ddar              :> DD-AR livery
+str_cargo_subtype_ddm1              :> DDM-1 livery
 str_cargo_subtype_fyra              :> Fyra (red) livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
