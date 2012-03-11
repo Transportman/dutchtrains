@@ -1,0 +1,15 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_PlanK_purchase, "gfx/purchase/coaches/PlanK.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_PlanK, "gfx/coaches/PlanK.png") {
+	template_2cc_88(1, 1)
+}

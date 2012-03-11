@@ -214,6 +214,8 @@
 #include "src/coaches/ICR_item.pnml"
 #include "src/coaches/Avmz_graphics.pnml"
 #include "src/coaches/Avmz_item.pnml"
+#include "src/coaches/PlanK_graphics.pnml"
+#include "src/coaches/PlanK_item.pnml"
 
 //baggage wagons
 #include "src/coaches/SS_E_129_graphics.pnml"
