@@ -220,6 +220,8 @@
 #include "src/coaches/PlanN_item.pnml"
 #include "src/coaches/Ovaleramen_graphics.pnml"
 #include "src/coaches/Ovaleramen_item.pnml"
+#include "src/coaches/Bolkoprijtuigen_graphics.pnml"
+#include "src/coaches/Bolkoprijtuigen_item.pnml"
 
 //baggage wagons
 #include "src/coaches/SS_E_129_graphics.pnml"

@@ -1,0 +1,67 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_Bolkoprijtuigen_lightroof_purchase, "gfx/purchase/coaches/Bolkoprijtuigen_lightroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Bolkoprijtuigen_darkroof_purchase, "gfx/purchase/coaches/Bolkoprijtuigen_darkroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Bolkoprijtuigen_blue_purchase, "gfx/purchase/coaches/Bolkoprijtuigen_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Bolkoprijtuigen_purchase, current_year) {
+	0..1938: spriteset_coaches_Bolkoprijtuigen_lightroof_purchase;
+	1939..1955: spriteset_coaches_Bolkoprijtuigen_darkroof_purchase;
+    spriteset_coaches_Bolkoprijtuigen_blue_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_Bolkoprijtuigen_lightroof, "gfx/coaches/Bolkoprijtuigen.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Bolkoprijtuigen_darkroof, "gfx/coaches/Bolkoprijtuigen.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_Bolkoprijtuigen_blue, "gfx/coaches/Bolkoprijtuigen.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Bolkoprijtuigen_autolivery, date_of_last_service) {
+	0..date(1938,12,31): spriteset_coaches_Bolkoprijtuigen_lightroof;
+	date(1939,1,1)..date(1955,12,31): spriteset_coaches_Bolkoprijtuigen_darkroof;
+    spriteset_coaches_Bolkoprijtuigen_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Bolkoprijtuigen_purchaselivery, build_year) {
+	0..1938: spriteset_coaches_Bolkoprijtuigen_lightroof;
+	1939..1955: spriteset_coaches_Bolkoprijtuigen_darkroof;
+    spriteset_coaches_Bolkoprijtuigen_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Bolkoprijtuigen_livery, cargo_subtype) {
+	1: switch_coaches_Bolkoprijtuigen_purchaselivery;
+    2: spriteset_coaches_Bolkoprijtuigen_lightroof;
+    3: spriteset_coaches_Bolkoprijtuigen_darkroof;
+    4: spriteset_coaches_Bolkoprijtuigen_blue;
+    switch_coaches_Bolkoprijtuigen_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Bolkoprijtuigen_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_lightroof);
+    3: return string(str_cargo_subtype_green_darkroof);
+    4: return string(str_cargo_subtype_blue);
+    return CB_RESULT_NO_TEXT;
+}
