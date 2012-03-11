@@ -121,3 +121,4 @@ item(FEAT_TRAINS, item_emu_IRMIII, 233) {}
 item(FEAT_TRAINS, item_emu_IRMIV, 234) {}
 item(FEAT_TRAINS, item_coaches_Avmz, 235) {}
 item(FEAT_TRAINS, item_coaches_PlanK, 236) {}
+item(FEAT_TRAINS, item_coaches_PlanN, 237) {}

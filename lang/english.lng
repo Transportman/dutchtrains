@@ -253,6 +253,7 @@ str_coaches_SS_C_723    :Passenger Carriage SS C 651-760
 str_coaches_SS_ABd_7516 :Passenger Carriage SS ABd 7516
 str_coaches_RTM_BD_438  :Passenger Carriage RTM BD 438
 str_coaches_PlanK       :Passenger Carriage Plan K
+str_coaches_PlanN       :Passenger Carriage Plan N (sleeper)
 str_coaches_ICR         :Passenger Carriage ICR
 str_coaches_Avmz        :Passenger Carriage Avmz
 str_coaches_DDAR        :Double-decker Passenger Carriage DDM/NID
