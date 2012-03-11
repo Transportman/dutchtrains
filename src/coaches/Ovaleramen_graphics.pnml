@@ -1,0 +1,67 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_Ovaleramen_lightroof_purchase, "gfx/purchase/coaches/Ovaleramen_lightroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Ovaleramen_darkroof_purchase, "gfx/purchase/coaches/Ovaleramen_darkroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Ovaleramen_blue_purchase, "gfx/purchase/coaches/Ovaleramen_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Ovaleramen_purchase, current_year) {
+	0..1938: spriteset_coaches_Ovaleramen_lightroof_purchase;
+	1939..1955: spriteset_coaches_Ovaleramen_darkroof_purchase;
+    spriteset_coaches_Ovaleramen_blue_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_Ovaleramen_lightroof, "gfx/coaches/Ovaleramen.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Ovaleramen_darkroof, "gfx/coaches/Ovaleramen.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_Ovaleramen_blue, "gfx/coaches/Ovaleramen.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Ovaleramen_autolivery, date_of_last_service) {
+	0..date(1938,12,31): spriteset_coaches_Ovaleramen_lightroof;
+	date(1939,1,1)..date(1955,12,31): spriteset_coaches_Ovaleramen_darkroof;
+    spriteset_coaches_Ovaleramen_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Ovaleramen_purchaselivery, build_year) {
+	0..1938: spriteset_coaches_Ovaleramen_lightroof;
+	1939..1955: spriteset_coaches_Ovaleramen_darkroof;
+    spriteset_coaches_Ovaleramen_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Ovaleramen_livery, cargo_subtype) {
+	1: switch_coaches_Ovaleramen_purchaselivery;
+    2: spriteset_coaches_Ovaleramen_lightroof;
+    3: spriteset_coaches_Ovaleramen_darkroof;
+    4: spriteset_coaches_Ovaleramen_blue;
+    switch_coaches_Ovaleramen_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Ovaleramen_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_lightroof);
+    3: return string(str_cargo_subtype_green_darkroof);
+    4: return string(str_cargo_subtype_blue);
+    return CB_RESULT_NO_TEXT;
+}
