@@ -51,6 +51,8 @@ str_cargo_subtype_yellow            :> Yellow livery
 str_cargo_subtype_yellow_blue       :> Yellow livery w/ blue banners
 str_cargo_subtype_yellow_blue_ic    :> Yellow/blue InterCity livery
 str_cargo_subtype_yellow_red        :> Yellow/red livery
+str_cargo_subtype_white_blue        :> White/blue livery
+str_cargo_subtype_white_red         :> White/red livery
 str_cargo_subtype_white_yellow      :> White/yellow livery
 
 str_cargo_subtype_blue_crashnose    :> Blue livery (with crashnose)
@@ -258,6 +260,7 @@ str_coaches_PlanK       :Passenger Carriage Plan K
 str_coaches_PlanN       :Passenger Carriage Plan N (sleeper)
 str_coaches_ICR         :Passenger Carriage ICR
 str_coaches_Avmz        :Passenger Carriage Avmz
+str_coaches_ICL         :Passenger Carriage ICL
 str_coaches_DDAR        :Double-decker Passenger Carriage DDM/NID
 str_coaches_gen9_IC_DD  :Double-decker Passenger Carriage HS-DD
 

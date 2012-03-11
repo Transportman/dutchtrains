@@ -124,3 +124,4 @@ item(FEAT_TRAINS, item_coaches_PlanK, 236) {}
 item(FEAT_TRAINS, item_coaches_PlanN, 237) {}
 item(FEAT_TRAINS, item_coaches_Ovaleramen, 238) {}
 item(FEAT_TRAINS, item_coaches_Bolkoprijtuigen, 239) {}
+item(FEAT_TRAINS, item_coaches_ICL, 240) {}

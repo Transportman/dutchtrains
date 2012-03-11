@@ -1,0 +1,59 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_ICL_yellow_blue_purchase, "gfx/purchase/coaches/ICL_yellow_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_ICL_white_blue_purchase, "gfx/purchase/coaches/ICL_white_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_ICL_white_red_purchase, "gfx/purchase/coaches/ICL_white_red.png") {
+	template_purchase(0, 0)
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_coaches_ICL_purchase) {
+	1: spriteset_coaches_ICL_yellow_blue_purchase;
+	1: spriteset_coaches_ICL_white_blue_purchase;
+    1: spriteset_coaches_ICL_white_red_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_ICL_yellow_blue, "gfx/coaches/ICL.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_ICL_white_blue, "gfx/coaches/ICL.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_ICL_white_red, "gfx/coaches/ICL.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_coaches_ICL_randomlivery) {
+	1: spriteset_coaches_ICL_yellow_blue;
+	1: spriteset_coaches_ICL_white_blue;
+    1: spriteset_coaches_ICL_white_red;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_ICL_livery, cargo_subtype) {
+    1: spriteset_coaches_ICL_yellow_blue;
+    2: spriteset_coaches_ICL_white_blue;
+    3: spriteset_coaches_ICL_white_red;
+    switch_coaches_ICL_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_ICL_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_yellow_blue_ic);
+    2: return string(str_cargo_subtype_white_blue);
+    3: return string(str_cargo_subtype_white_red);
+    return CB_RESULT_NO_TEXT;
+}
