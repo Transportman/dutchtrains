@@ -112,6 +112,7 @@ sort(FEAT_TRAINS, [
     item_coaches_RTM_BD_438,
     item_coaches_ICR,
     item_coaches_DDAR,
+    item_coaches_Avmz,
     item_coaches_gen9_IC_DD,
     
     //baggage wagons

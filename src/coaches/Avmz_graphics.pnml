@@ -1,0 +1,67 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_Avmz_blue_purchase, "gfx/purchase/coaches/Avmz_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Avmz_blue_yellow_purchase, "gfx/purchase/coaches/Avmz_blue_yellow.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Avmz_yellow_blue_purchase, "gfx/purchase/coaches/Avmz_yellow_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Avmz_purchase, current_year) {
+	0..2002: spriteset_coaches_Avmz_blue_purchase;
+	2003..2006: spriteset_coaches_Avmz_blue_yellow_purchase;
+    spriteset_coaches_Avmz_yellow_blue_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_Avmz_blue, "gfx/coaches/Avmz.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Avmz_blue_yellow, "gfx/coaches/Avmz.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_Avmz_yellow_blue, "gfx/coaches/Avmz.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Avmz_autolivery, date_of_last_service) {
+	0..date(2002,12,31): spriteset_coaches_Avmz_blue;
+	date(2003,1,1)..date(2006,12,31): spriteset_coaches_Avmz_blue_yellow;
+    spriteset_coaches_Avmz_yellow_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Avmz_purchaselivery, build_year) {
+	0..2002: spriteset_coaches_Avmz_blue;
+	2003..2006: spriteset_coaches_Avmz_blue_yellow;
+    spriteset_coaches_Avmz_yellow_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Avmz_livery, cargo_subtype) {
+	1: switch_coaches_Avmz_purchaselivery;
+    2: spriteset_coaches_Avmz_blue;
+    3: spriteset_coaches_Avmz_blue_yellow;
+    4: spriteset_coaches_Avmz_yellow_blue;
+    switch_coaches_Avmz_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Avmz_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_blue);
+    3: return string(str_cargo_subtype_blue_yellow);
+    4: return string(str_cargo_subtype_yellow_blue_ic);
+    return CB_RESULT_NO_TEXT;
+}

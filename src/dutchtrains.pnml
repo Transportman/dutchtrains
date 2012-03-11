@@ -212,6 +212,8 @@
 #include "src/coaches/DDAR_item.pnml"
 #include "src/coaches/ICR_graphics.pnml"
 #include "src/coaches/ICR_item.pnml"
+#include "src/coaches/Avmz_graphics.pnml"
+#include "src/coaches/Avmz_item.pnml"
 
 //baggage wagons
 #include "src/coaches/SS_E_129_graphics.pnml"
