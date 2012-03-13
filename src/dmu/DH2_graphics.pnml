@@ -1,18 +1,15 @@
 /*
 * PURCHASE
 */
-/* already defined in DH1, to be replaced in DH2 with single engine image
-spriteset(spriteset_1996, "gfx/dutchtrainsw.png") {
-	[306, 2504, 50, 12, -25, -6]
+spriteset(spriteset_dmu_DH2_orig_purchase, "gfx/purchase/dmu/DH2_orig.png") {
+	template_purchase(0, 0)
 }
-
-spriteset(spriteset_1999, "gfx/dutchtrainsw.png") {
-	[402, 2504, 50, 12, -25, -6]
+spriteset(spriteset_dmu_DH2_renew_purchase, "gfx/purchase/dmu/DH2_renew.png") {
+	template_purchase(0, 0)
 }
-*/
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_livery_purchase, current_year) {
-	0..1996: spriteset_1999;
-    spriteset_1996;
+	0..1996: spriteset_dmu_DH2_orig_purchase;
+    spriteset_dmu_DH2_renew_purchase;
 }
 
 /*
@@ -20,114 +17,54 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_livery_purchase, current_year) {
 */
 
 //gen1
-spriteset(spriteset_1896, "gfx/dutchtrainsw.png") {
-	[562, 2312, 8, 24, -3, -12]
-	[578, 2312, 22, 16, -11, -9]
-	[610, 2312, 31, 12, -15, -7]
-	[658, 2312, 22, 15, -10, -10]
-	[690, 2312, 8, 23, -3, -11]
-	[706, 2312, 22, 15, -11, -9]
-	[738, 2312, 32, 12, -16, -7]
-	[2, 2360, 22, 16, -10, -10]
+spriteset(spriteset_dmu_DH2_orig_front, "gfx/dmu/DH2.png") {
+	template_2cc_88(0, 0)
 }
-
-spriteset(spriteset_1906, "gfx/dutchtrainsw.png") {
-	[66, 2360, 8, 23, -3, -11]
-	[82, 2360, 22, 15, -11, -9]
-	[114, 2360, 32, 12, -15, -7]
-	[162, 2360, 22, 16, -10, -10]
-	[194, 2360, 8, 24, -3, -11]
-	[210, 2360, 22, 16, -11, -9]
-	[242, 2360, 31, 12, -16, -7]
-	[290, 2360, 22, 15, -10, -10]
+spriteset(spriteset_dmu_DH2_orig_back, "gfx/dmu/DH2.png") {
+	template_2cc_88(0, 30)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen1, (position_in_vehid_chain % 2)) {
-	1: spriteset_1906;
-    spriteset_1896;
+	1: spriteset_dmu_DH2_orig_back;
+    spriteset_dmu_DH2_orig_front;
 }
 
 //gen2
-spriteset(spriteset_1926, "gfx/dutchtrainsw.png") {
-	[642, 2360, 8, 24, -3, -12]
-	[658, 2360, 22, 16, -11, -9]
-	[690, 2360, 31, 12, -15, -7]
-	[738, 2360, 22, 16, -10, -10]
-	[770, 2360, 8, 24, -3, -12]
-	[2, 2408, 22, 16, -11, -9]
-	[34, 2408, 32, 12, -16, -7]
-	[82, 2408, 22, 16, -10, -10]
+spriteset(spriteset_dmu_DH2_renew_front, "gfx/dmu/DH2.png") {
+	template_2cc_88(0, 60)
 }
-
-spriteset(spriteset_1936, "gfx/dutchtrainsw.png") {
-	[146, 2408, 8, 24, -3, -12]
-	[162, 2408, 22, 16, -11, -9]
-	[194, 2408, 32, 12, -15, -7]
-	[242, 2408, 22, 16, -10, -10]
-	[274, 2408, 8, 24, -3, -12]
-	[290, 2408, 22, 16, -11, -9]
-	[322, 2408, 31, 12, -16, -7]
-	[370, 2408, 22, 16, -10, -10]
+spriteset(spriteset_dmu_DH2_renew_back, "gfx/dmu/DH2.png") {
+	template_2cc_88(0, 90)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen2, (position_in_vehid_chain % 2)) {
-	1: spriteset_1936;
-    spriteset_1926;
+	1: spriteset_dmu_DH2_renew_back;
+    spriteset_dmu_DH2_renew_front;
 }
 //wadkikker
-spriteset(spriteset_1956, "gfx/dutchtrainsw.png") {
-	[722, 2408, 8, 24, -3, -12]
-	[738, 2408, 22, 16, -11, -9]
-	[2, 2456, 31, 12, -15, -7]
-	[50, 2456, 22, 16, -10, -10]
-	[82, 2456, 8, 24, -3, -12]
-	[98, 2456, 22, 16, -11, -9]
-	[130, 2456, 32, 12, -16, -7]
-	[178, 2456, 22, 16, -10, -10]
+spriteset(spriteset_dmu_DH2_wadkikker_front, "gfx/dmu/DH2.png") {
+	template_2cc_88(0, 120)
 }
-
-spriteset(spriteset_1966, "gfx/dutchtrainsw.png") {
-	[242, 2456, 8, 24, -3, -12]
-	[258, 2456, 22, 16, -11, -9]
-	[290, 2456, 32, 12, -15, -7]
-	[338, 2456, 22, 16, -10, -10]
-	[370, 2456, 8, 24, -3, -12]
-	[386, 2456, 22, 16, -11, -9]
-	[418, 2456, 31, 12, -16, -7]
-	[466, 2456, 22, 16, -10, -10]
+spriteset(spriteset_dmu_DH2_wadkikker_back, "gfx/dmu/DH2.png") {
+	template_2cc_88(0, 150)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_wadkikker, (position_in_vehid_chain % 2)) {
-	1: spriteset_1966;
-    spriteset_1956;
+	1: spriteset_dmu_DH2_wadkikker_back;
+    spriteset_dmu_DH2_wadkikker_front;
 }
 
 //maashopper
-spriteset(spriteset_1976, "gfx/dutchtrainsw.png") {
-	[530, 2456, 8, 24, -3, -12]
-	[546, 2456, 22, 16, -11, -9]
-	[578, 2456, 31, 12, -15, -7]
-	[626, 2456, 22, 16, -10, -10]
-	[658, 2456, 8, 24, -3, -12]
-	[674, 2456, 22, 16, -11, -9]
-	[706, 2456, 32, 12, -16, -7]
-	[754, 2456, 22, 16, -10, -10]
+spriteset(spriteset_dmu_DH2_maashopper_front, "gfx/dmu/DH2.png") {
+	template_2cc_88(0, 180)
 }
-
-spriteset(spriteset_1986, "gfx/dutchtrainsw.png") {
-	[18, 2504, 8, 24, -3, -12]
-	[34, 2504, 22, 16, -11, -9]
-	[66, 2504, 32, 12, -15, -7]
-	[114, 2504, 22, 16, -10, -10]
-	[146, 2504, 8, 24, -3, -12]
-	[162, 2504, 22, 16, -11, -9]
-	[194, 2504, 31, 12, -16, -7]
-	[242, 2504, 22, 16, -10, -10]
+spriteset(spriteset_dmu_DH2_maashopper_back, "gfx/dmu/DH2.png") {
+	template_2cc_88(0, 210)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_maashopper, (position_in_vehid_chain % 2)) {
-	1: spriteset_1986;
-    spriteset_1976;
+	1: spriteset_dmu_DH2_maashopper_back;
+    spriteset_dmu_DH2_maashopper_front;
 }
 
 /*

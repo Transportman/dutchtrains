@@ -2,17 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_1996, "gfx/dutchtrainsw.png") {
-	[306, 2504, 50, 12, -25, -6]
+spriteset(spriteset_dmu_DH1_orig_purchase, "gfx/purchase/dmu/DH1_orig.png") {
+	template_purchase(0, 0)
 }
-
-spriteset(spriteset_1999, "gfx/dutchtrainsw.png") {
-	[402, 2504, 50, 12, -25, -6]
+spriteset(spriteset_dmu_DH1_renew_purchase, "gfx/purchase/dmu/DH1_renew.png") {
+	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH1_livery_purchase, current_year) {
-	0..1995: spriteset_1999;
-    spriteset_1996;
+	0..1995: spriteset_dmu_DH1_orig_purchase;
+    spriteset_dmu_DH1_renew_purchase;
 }
 
 /*
@@ -20,26 +19,12 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH1_livery_purchase, current_year) {
 */
 
 //original
-spriteset(spriteset_1916, "gfx/dutchtrainsw.png") {
-	[354, 2360, 8, 25, -3, -12]
-	[370, 2360, 22, 15, -11, -9]
-	[402, 2360, 31, 12, -15, -7]
-	[450, 2360, 22, 15, -10, -10]
-	[482, 2360, 8, 25, -3, -12]
-	[498, 2360, 22, 15, -11, -9]
-	[530, 2360, 31, 12, -15, -7]
-	[578, 2360, 22, 15, -10, -10]
+spriteset(spriteset_dmu_DH1_orig, "gfx/dmu/DH1.png") {
+	template_2cc_88(0, 0)
 }
 //renewal
-spriteset(spriteset_1946, "gfx/dutchtrainsw.png") {
-	[434, 2408, 8, 24, -3, -12]
-	[450, 2408, 22, 16, -11, -9]
-	[482, 2408, 31, 12, -15, -7]
-	[530, 2408, 22, 16, -10, -10]
-	[562, 2408, 8, 24, -3, -12]
-	[578, 2408, 22, 16, -11, -9]
-	[610, 2408, 31, 12, -15, -7]
-	[658, 2408, 22, 16, -10, -10]
+spriteset(spriteset_dmu_DH1_renew, "gfx/dmu/DH1.png") {
+	template_2cc_88(0, 30)
 }
 
 /*
@@ -47,19 +32,19 @@ spriteset(spriteset_1946, "gfx/dutchtrainsw.png") {
 */
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH1_autolivery, date_of_last_service) {
-	0..date(1995,12,31): spriteset_1916;
-    spriteset_1946;
+	0..date(1995,12,31): spriteset_dmu_DH1_orig;
+    spriteset_dmu_DH1_renew;
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH1_purchaselivery, build_year) {
-	0..1995: spriteset_1916;
-    spriteset_1946;
+	0..1995: spriteset_dmu_DH1_orig;
+    spriteset_dmu_DH1_renew;
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH1_livery, cargo_subtype) {
 	1: switch_dmu_DH1_purchaselivery;
-    2: spriteset_1916;
-    3: spriteset_1946;
+    2: spriteset_dmu_DH1_orig;
+    3: spriteset_dmu_DH1_renew;
     switch_dmu_DH1_autolivery;
 }
 
