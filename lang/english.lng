@@ -66,19 +66,23 @@ str_cargo_subtype_ELD4              :(ElD4)
 str_cargo_subtype_ELD5              :(ElD5)
 
 str_cargo_subtype_benelux           :> Benelux livery
+str_cargo_subtype_citypendel        :> Citypendel livery
 str_cargo_subtype_ddar              :> DD-AR livery
 str_cargo_subtype_ddm1              :> DDM-1 livery
-str_cargo_subtype_fyra              :> Fyra (red) livery
+str_cargo_subtype_fyra              :> Fyra livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
+str_cargo_subtype_icplus            :> IC+ livery (May 28, 1995 - June 2002)
+str_cargo_subtype_hispeed           :> NS Hispeed livery
 str_cargo_subtype_maashopper        :> Maashopper livery
 str_cargo_subtype_nid               :> NID livery
 str_cargo_subtype_ns_ic             :> NS InterCity livery
 str_cargo_subtype_original          :> Original livery
 str_cargo_subtype_randstadrail      :> RandstadRail livery
 str_cargo_subtype_renewal           :> Renewal livery
+str_cargo_subtype_sr10              :> Sr10 Royal ICR livery (Dec 22, 1993 - current)
 str_cargo_subtype_wadkikker         :> Wadkikker livery
-str_cargo_subtype_citypendel        :> Citypendel livery
+str_cargo_subtype_zilverrail        :> Zilverrail livery (Oct 24-27, 2005)
 
 str_cargo_subtype_ACTS              :> ACTS livery
 str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blue/yellow) livery

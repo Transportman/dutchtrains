@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_coaches_ICR) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_coaches_ICR_purchase;
+        purchase: switch_coaches_ICR_purchase;
         cargo_subtype_text: switch_coaches_ICR_subtype_text;
         switch_coaches_ICR_livery;
     }

@@ -2,8 +2,28 @@
 * PURCHASE
 */
 
-spriteset(spriteset_coaches_ICR_purchase, "gfx/coaches/ICR.png") {
-	template_purchase(1, 672)
+spriteset(spriteset_coaches_ICR_blue_purchase, "gfx/purchase/coaches/ICR_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_ICR_benelux_purchase, "gfx/purchase/coaches/ICR_benelux.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_ICR_blue_cab_purchase, "gfx/purchase/coaches/ICR_blue_cab.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_ICR_fyra_purchase, "gfx/purchase/coaches/ICR_fyra.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_ICR_fyra_cab_purchase, "gfx/purchase/coaches/ICR_fyra_cab.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_purchase, build_year) {
+    0..1986: spriteset_coaches_ICR_blue_purchase;
+    1987..2005: spriteset_coaches_ICR_benelux_purchase;
+    2006..2006: spriteset_coaches_ICR_blue_cab_purchase;
+    2009..2012: spriteset_coaches_ICR_fyra_cab_purchase;
+    spriteset_coaches_ICR_fyra_purchase;
 }
 
 /*
@@ -16,44 +36,129 @@ spriteset(spriteset_coaches_ICR_blue, "gfx/coaches/ICR.png") {
 spriteset(spriteset_coaches_ICR_blue_cab, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 32)
 }
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_blue_cab_position, position_in_consist_from_end) {
+	0: spriteset_coaches_ICR_blue_cab;
+    spriteset_coaches_ICR_blue;
+}
+
 spriteset(spriteset_coaches_ICR_benelux, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 64)
 }
 spriteset(spriteset_coaches_ICR_benelux_cab, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 96)
 }
-
-switch(FEAT_TRAINS, SELF, switch_coaches_ICR_blue_cab_position, position_in_consist_from_end) {
-	0: spriteset_coaches_ICR_blue_cab;
-    spriteset_coaches_ICR_blue;
-}
-
 switch(FEAT_TRAINS, SELF, switch_coaches_ICR_benelux_cab_position, position_in_consist_from_end) {
 	0: spriteset_coaches_ICR_benelux_cab;
     spriteset_coaches_ICR_benelux;
+}
+
+spriteset(spriteset_coaches_ICR_hispeed_1, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_coaches_ICR_hispeed_2, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_coaches_ICR_hispeed_3, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_coaches_ICR_hispeed_4, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 224)
+}
+spriteset(spriteset_coaches_ICR_hispeed_5, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_coaches_ICR_hispeed_6, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_coaches_ICR_hispeed_7, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 320)
+}
+spriteset(spriteset_coaches_ICR_hispeed_cab, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 352)
+}
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_position, (position_in_consist_from_end % 7)) {
+	1: spriteset_coaches_ICR_hispeed_6;
+	2: spriteset_coaches_ICR_hispeed_5;
+	3: spriteset_coaches_ICR_hispeed_4;
+	4: spriteset_coaches_ICR_hispeed_3;
+	5: spriteset_coaches_ICR_hispeed_2;
+	6: spriteset_coaches_ICR_hispeed_1;
+	spriteset_coaches_ICR_hispeed_7;
+}
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_cab_position, position_in_consist_from_end) {
+	0: spriteset_coaches_ICR_hispeed_cab;
+    switch_coaches_ICR_hispeed_position;
+}
+
+spriteset(spriteset_coaches_ICR_fyra_3, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 448)
+}
+spriteset(spriteset_coaches_ICR_fyra_5, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 512)
+}
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_fyra_position, (position_in_consist_from_end % 7)) {
+	1: spriteset_coaches_ICR_hispeed_6;
+	2: spriteset_coaches_ICR_fyra_5;
+	3: spriteset_coaches_ICR_hispeed_4;
+	4: spriteset_coaches_ICR_fyra_3;
+	5: spriteset_coaches_ICR_hispeed_2;
+	6: spriteset_coaches_ICR_hispeed_1;
+	spriteset_coaches_ICR_hispeed_7;
+}
+
+spriteset(spriteset_coaches_ICR_Sr10, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 608)
+}
+
+spriteset(spriteset_coaches_ICR_zilverrail, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 640)
+}
+
+spriteset(spriteset_coaches_ICR_icplus, "gfx/coaches/ICR.png") {
+	template_2cc_88(1, 672)
 }
 
 /*
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_blue_cab_availability, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_blue_cab_availability, build_year) {
     0..2005: spriteset_coaches_ICR_blue;
     switch_coaches_ICR_blue_cab_position;
 }
-switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_benelux_cab_availability, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_benelux_cab_availability, build_year) {
     0..1986: spriteset_coaches_ICR_benelux;
     switch_coaches_ICR_benelux_cab_position;
+}
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_hispeed_cab_availability, build_year) {
+    2009..2012: switch_coaches_ICR_hispeed_cab_position;
+    switch_coaches_ICR_hispeed_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_traxx_buildyear, build_year) {
+    0..2010: switch_coaches_ICR_hispeed_cab_availability;
+    switch_coaches_ICR_fyra_position;
+}
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_traxx_matchinglivery, cargo_subtype) {
+    1: switch_coaches_ICR_traxx_buildyear;
+    2: switch_coaches_ICR_hispeed_cab_availability;
+    switch_coaches_ICR_fyra_position;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_matchinglivery, vehicle_type_id) {
     item_electric_HLE11: switch_coaches_ICR_benelux_cab_availability;
+    item_electric_TRAXXF140MS2: switch_coaches_ICR_traxx_matchinglivery;
     switch_coaches_ICR_blue_cab_availability;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_ICR_livery, cargo_subtype) {
 	1: switch_coaches_ICR_blue_cab_availability;
     2: switch_coaches_ICR_benelux_cab_availability;
+    3: switch_coaches_ICR_hispeed_cab_availability;
+    4: switch_coaches_ICR_fyra_position;
+    5: spriteset_coaches_ICR_Sr10;
+    6: spriteset_coaches_ICR_zilverrail;
+    7: spriteset_coaches_ICR_icplus;
     switch_coaches_ICR_matchinglivery;
 }
 
@@ -62,5 +167,10 @@ switch(FEAT_TRAINS, SELF, switch_coaches_ICR_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_matching);
     1: return string(str_cargo_subtype_ns_ic);
     2: return string(str_cargo_subtype_benelux);
+    3: return string(str_cargo_subtype_hispeed);
+    4: return string(str_cargo_subtype_fyra);
+    5: return string(str_cargo_subtype_sr10);
+    6: return string(str_cargo_subtype_zilverrail);
+    7: return string(str_cargo_subtype_icplus);
     return CB_RESULT_NO_TEXT;
 }
