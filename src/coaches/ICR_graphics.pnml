@@ -122,15 +122,15 @@ spriteset(spriteset_coaches_ICR_icplus, "gfx/coaches/ICR.png") {
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_blue_cab_availability, build_year) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_blue_cab_availability, build_year) {
     0..2005: spriteset_coaches_ICR_blue;
     switch_coaches_ICR_blue_cab_position;
 }
-switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_benelux_cab_availability, build_year) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_benelux_cab_availability, build_year) {
     0..1986: spriteset_coaches_ICR_benelux;
     switch_coaches_ICR_benelux_cab_position;
 }
-switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_hispeed_cab_availability, build_year) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_cab_availability, build_year) {
     2009..2012: switch_coaches_ICR_hispeed_cab_position;
     switch_coaches_ICR_hispeed_position;
 }
