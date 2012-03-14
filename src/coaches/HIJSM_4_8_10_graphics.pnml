@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_coaches_HIJSM_4_8_10_purchase, "gfx/coaches/HIJSM_4_8_10.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_coaches_HIJSM_4_8_10_purchase, "gfx/purchase/coaches/HIJSM_4_8_10_yellow.png") {
+	template_purchase(0, 0)
 }
 
 /*
