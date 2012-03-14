@@ -29,6 +29,7 @@ str_cargo_subtype_matching          :> Engine-matching livery
 
 str_cargo_subtype_black             :> Black livery
 str_cargo_subtype_blue              :> Blue livery
+str_cargo_subtype_blue_banners      :> Blue livery w/ banners
 str_cargo_subtype_blue_yellow       :> Blue livery w/ yellow stripes
 str_cargo_subtype_brown             :> Brown livery
 str_cargo_subtype_green             :> Green livery
@@ -66,6 +67,7 @@ str_cargo_subtype_ELD4              :(ElD4)
 str_cargo_subtype_ELD5              :(ElD5)
 
 str_cargo_subtype_benelux           :> Benelux livery
+str_cargo_subtype_benelux_plandcab  :> Benelux livery w/ Plan D cab
 str_cargo_subtype_citypendel        :> Citypendel livery
 str_cargo_subtype_ddar              :> DD-AR livery
 str_cargo_subtype_ddm1              :> DDM-1 livery
@@ -263,6 +265,7 @@ str_coaches_Bolkoprijtuigen :Passenger Carriage "Bolkoprijtuigen"
 str_coaches_PlanD       :Passenger Carriage Plan D
 str_coaches_PlanK       :Passenger Carriage Plan K
 str_coaches_PlanN       :Passenger Carriage Plan N (sleeper)
+str_coaches_PlanW       :Passenger Carriage Plan W
 str_coaches_ICR         :Passenger Carriage ICR
 str_coaches_Avmz        :Passenger Carriage Avmz
 str_coaches_ICL         :Passenger Carriage ICL

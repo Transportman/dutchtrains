@@ -1,0 +1,86 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_PlanW_blue_purchase, "gfx/purchase/coaches/PlanW_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_PlanW_blue_banners_purchase, "gfx/purchase/coaches/PlanW_blue_banners.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_PlanW_benelux_purchase, "gfx/purchase/coaches/PlanW_benelux.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_PlanW_yellow_blue_purchase, "gfx/purchase/coaches/PlanW_yellow_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanW_purchase, current_year) {
+	0..1969: spriteset_coaches_PlanW_blue_purchase;
+	1970..1972: spriteset_coaches_PlanW_blue_banners_purchase;
+	1973..1981: spriteset_coaches_PlanW_benelux_purchase;
+    spriteset_coaches_PlanW_yellow_blue_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_PlanW_blue, "gfx/coaches/PlanW.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_PlanW_blue_banners, "gfx/coaches/PlanW.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_PlanW_benelux, "gfx/coaches/PlanW.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_coaches_PlanW_yellow_blue, "gfx/coaches/PlanW.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_coaches_PlanD_benelux_cab, "gfx/coaches/PlanD.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_beneluxcab, position_in_consist_from_end) {
+	0: spriteset_coaches_PlanD_benelux_cab;
+	spriteset_coaches_PlanW_benelux;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanW_autolivery, date_of_last_service) {
+	0..date(1969,12,31): spriteset_coaches_PlanW_blue;
+	date(1970,1,1)..date(1981,12,31): spriteset_coaches_PlanW_blue_banners;
+    spriteset_coaches_PlanW_yellow_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_purchaselivery, build_year) {
+	0..1969: spriteset_coaches_PlanW_blue;
+	1970..1981: spriteset_coaches_PlanW_blue_banners;
+    spriteset_coaches_PlanW_yellow_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_livery, cargo_subtype) {
+	1: switch_coaches_PlanW_purchaselivery;
+    2: spriteset_coaches_PlanW_blue;
+    3: spriteset_coaches_PlanW_blue_banners;
+    4: spriteset_coaches_PlanW_benelux;
+    5: switch_coaches_PlanW_beneluxcab;
+    6: spriteset_coaches_PlanW_yellow_blue;
+    switch_coaches_PlanW_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_blue);
+    3: return string(str_cargo_subtype_blue_banners);
+    4: return string(str_cargo_subtype_benelux);
+    5: return string(str_cargo_subtype_benelux_plandcab);
+    6: return string(str_cargo_subtype_yellow_blue_ic);
+    return CB_RESULT_NO_TEXT;
+}

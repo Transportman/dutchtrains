@@ -115,6 +115,7 @@ sort(FEAT_TRAINS, [
     item_coaches_PlanD,
     item_coaches_PlanK,
     item_coaches_PlanN,
+    item_coaches_PlanW,
     item_coaches_ICR,
     item_coaches_DDAR,
     item_coaches_ICL,
