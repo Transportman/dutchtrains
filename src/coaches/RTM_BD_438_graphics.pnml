@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_coaches_RTM_BD_438_purchase, "gfx/coaches/RTM_BD_438.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_coaches_RTM_BD_438_purchase, "gfx/purchase/coaches/RTM_BD_438.png") {
+	template_purchase(0, 0)
 }
 
 /*
