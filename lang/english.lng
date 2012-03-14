@@ -27,6 +27,9 @@ str_cargo_subtype_purchase          :> Construction year livery
 str_cargo_subtype_random            :> Random livery
 str_cargo_subtype_matching          :> Engine-matching livery
 
+str_cargo_subtype_bordeaux_white            :> Bordeaux livery w/ white
+str_cargo_subtype_bordeaux_white_blue       :> Bordeaux livery w/ white/blue
+str_cargo_subtype_bordeaux_white_yellow     :> Bordeaux livery w/ white/yellow
 str_cargo_subtype_black             :> Black livery
 str_cargo_subtype_blue              :> Blue livery
 str_cargo_subtype_blue_banners      :> Blue livery w/ banners
@@ -269,6 +272,7 @@ str_coaches_PlanW       :Passenger Carriage Plan W
 str_coaches_ICR         :Passenger Carriage ICR
 str_coaches_Avmz        :Passenger Carriage Avmz
 str_coaches_ICL         :Passenger Carriage ICL
+str_coaches_K4          :Passenger Carriage NMBS K4
 str_coaches_DDAR        :Double-decker Passenger Carriage DDM/NID
 str_coaches_gen9_IC_DD  :Double-decker Passenger Carriage HS-DD
 

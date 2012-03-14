@@ -1,0 +1,47 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_K4_purchase, "gfx/purchase/coaches/K4_bordeaux_white.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_K4_white, "gfx/coaches/K4.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_K4_yellow, "gfx/coaches/K4.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_K4_blue, "gfx/coaches/K4.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_coaches_K4_randomlivery) {
+	1: spriteset_coaches_K4_white;
+	1: spriteset_coaches_K4_yellow;
+    1: spriteset_coaches_K4_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_K4_livery, cargo_subtype) {
+	1: spriteset_coaches_K4_white;
+    2: spriteset_coaches_K4_yellow;
+    3: spriteset_coaches_K4_blue;
+    switch_coaches_K4_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_K4_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_bordeaux_white);
+    2: return string(str_cargo_subtype_bordeaux_white_yellow);
+    3: return string(str_cargo_subtype_bordeaux_white_blue);
+    return CB_RESULT_NO_TEXT;
+}
