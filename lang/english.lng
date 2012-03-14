@@ -260,6 +260,7 @@ str_coaches_SS_ABd_7516 :Passenger Carriage SS ABd 7516
 str_coaches_RTM_BD_438  :Passenger Carriage RTM BD 438
 str_coaches_Ovaleramen  :Passenger Carriage "Ovaleramen"
 str_coaches_Bolkoprijtuigen :Passenger Carriage "Bolkoprijtuigen"
+str_coaches_PlanD       :Passenger Carriage Plan D
 str_coaches_PlanK       :Passenger Carriage Plan K
 str_coaches_PlanN       :Passenger Carriage Plan N (sleeper)
 str_coaches_ICR         :Passenger Carriage ICR

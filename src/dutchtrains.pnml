@@ -224,6 +224,8 @@
 #include "src/coaches/Bolkoprijtuigen_item.pnml"
 #include "src/coaches/ICL_graphics.pnml"
 #include "src/coaches/ICL_item.pnml"
+#include "src/coaches/PlanD_graphics.pnml"
+#include "src/coaches/PlanD_item.pnml"
 
 //baggage wagons
 #include "src/coaches/SS_E_129_graphics.pnml"
