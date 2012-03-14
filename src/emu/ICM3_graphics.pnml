@@ -1,0 +1,103 @@
+/*
+* PURCHASE
+*/
+
+//defined for ICM4
+
+/*
+* VEHICLE
+*/
+
+//defined for ICM4
+
+//original
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position_front, position_in_vehid_chain) {
+	0: spriteset_emu_ICM_original_front;
+    spriteset_emu_ICM_original_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position_back, position_in_vehid_chain_from_end) {
+	0: spriteset_emu_ICM_original_back;
+    spriteset_emu_ICM_original_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_original_middle;
+    2: switch_emu_ICM3_original_position_back;
+    switch_emu_ICM3_original_position_front;
+}
+
+//whitedoors
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position_front, position_in_vehid_chain) {
+	0: spriteset_emu_ICM_whitedoors_front;
+    spriteset_emu_ICM_whitedoors_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position_back, position_in_vehid_chain_from_end) {
+	0: spriteset_emu_ICM_whitedoors_back;
+    spriteset_emu_ICM_whitedoors_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_whitedoors_middle;
+    2: switch_emu_ICM3_whitedoors_position_back;
+    switch_emu_ICM3_whitedoors_position_front;
+}
+
+//renewal
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_renewal_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_renewal_middle;
+    2: spriteset_emu_ICM_renewal_back;
+    spriteset_emu_ICM_renewal_front;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery_random_whitedoors_original) {
+	47: switch_emu_ICM3_original_position;
+    3: switch_emu_ICM3_whitedoors_position;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery_random_whitedoors_renewal) {
+	47: switch_emu_ICM3_renewal_position;
+    3: switch_emu_ICM3_whitedoors_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery, date_of_last_service) {
+	0..date(1998,12,31): switch_emu_ICM3_original_position;
+	date(1999,1,1)..date(2006,12,31): switch_emu_ICM3_autolivery_random_whitedoors_original;
+	date(2007,1,1)..date(2007,12,31): switch_emu_ICM3_autolivery_random_whitedoors_renewal;
+    switch_emu_ICM3_renewal_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_purchaselivery, build_year) {
+	0..1998: switch_emu_ICM3_original_position;
+	1999..2006: switch_emu_ICM3_autolivery_random_whitedoors_original;
+	2007..2007: switch_emu_ICM3_autolivery_random_whitedoors_renewal;
+    switch_emu_ICM3_renewal_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_livery, cargo_subtype) {
+	1: switch_emu_ICM3_purchaselivery;
+    2: switch_emu_ICM3_original_position;
+    3: switch_emu_ICM3_renewal_position;
+    4: switch_emu_ICM3_whitedoors_position;
+    switch_emu_ICM3_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_original);
+    3: return string(str_cargo_subtype_renewal);
+    4: return string(str_cargo_subtype_groningermuseum);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_articulated, extra_callback_info1) {
+    1..2: return item_emu_ICM3;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

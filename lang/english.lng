@@ -77,11 +77,13 @@ str_cargo_subtype_ddm1              :> DDM-1 livery
 str_cargo_subtype_fyra              :> Fyra livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
+str_cargo_subtype_groningermuseum   :> Groninger Museum livery
 str_cargo_subtype_icplus            :> IC+ livery (May 28, 1995 - June 2002)
 str_cargo_subtype_hispeed           :> NS Hispeed livery
 str_cargo_subtype_maashopper        :> Veolia white/red "Maashopper" livery
 str_cargo_subtype_nid               :> NID livery
 str_cargo_subtype_ns_ic             :> NS InterCity livery
+str_cargo_subtype_olympic           :> Olympic livery
 str_cargo_subtype_original          :> Original livery
 str_cargo_subtype_randstadrail      :> RandstadRail livery
 str_cargo_subtype_renewal           :> Renewal livery
@@ -231,6 +233,8 @@ str_emu_Mat64PlanV      :Mat '64 Plan V (Electric)
 str_emu_Mat64PlanT      :Mat '64 Plan T (Electric)
 str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Electric)
 str_emu_SGM3            :SGM-III Plan Y "Sprinter" (Electric)
+str_emu_ICM3            :ICM-0/1/2 Plan Z "Koploper" (Electric)
+str_emu_ICM4            :ICM-3/4 Plan Z "Koploper" (Electric)
 str_emu_IRMIII          :IRM-III "Bizon" (Electric)
 str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Electric)
 str_emu_IRMVI           :VIRM-VI "Bizon" (Electric)
