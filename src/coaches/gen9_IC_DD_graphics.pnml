@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_coaches_gen9_IC_DD_purchase, "gfx/coaches/gen9_IC_DD.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_coaches_gen9_IC_DD_purchase, "gfx/purchase/coaches/gen9_IC_DD_yellow_blue.png") {
+	template_purchase(0, 0)
 }
 
 /*
