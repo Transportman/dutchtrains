@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_coaches_NCS_B_119_purchase, "gfx/coaches/NCS_B_119.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_coaches_NCS_B_119_purchase, "gfx/purchase/coaches/NCS_B_119.png") {
+	template_purchase(0, 0)
 }
 
 /*
