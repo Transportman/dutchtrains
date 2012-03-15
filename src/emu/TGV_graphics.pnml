@@ -1,0 +1,84 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_TGV_purchase, "gfx/purchase/emu/TGV.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_emu_TGV_PBKA_front, "gfx/emu/TGV.png") {
+	template_2cc_88(0, 0)
+}
+spriteset(spriteset_emu_TGV_PBKA_back, "gfx/emu/TGV.png") {
+	template_2cc_88(0, 30)
+}
+spriteset(spriteset_emu_TGV_firstcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(0, 60)
+}
+spriteset(spriteset_emu_TGV_lastcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(0, 90)
+}
+spriteset(spriteset_emu_TGV_middlecoach, "gfx/emu/TGV.png") {
+	template_2cc_88(0, 120)
+}
+spriteset(spriteset_emu_TGV_PBA_front, "gfx/emu/TGV.png") {
+	template_2cc_88(0, 180)
+}
+spriteset(spriteset_emu_TGV_PBA_back, "gfx/emu/TGV.png") {
+	template_2cc_88(0, 210)
+}
+
+//PBKA
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_firstcoach;
+    2..7: spriteset_emu_TGV_middlecoach;
+    8: spriteset_emu_TGV_lastcoach; 
+    9: spriteset_emu_TGV_PBKA_back;
+    spriteset_emu_TGV_PBKA_front;
+}
+
+//PBA
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_firstcoach;
+    2..7: spriteset_emu_TGV_middlecoach;
+    8: spriteset_emu_TGV_lastcoach; 
+    9: spriteset_emu_TGV_PBA_back;
+    spriteset_emu_TGV_PBA_front;
+}
+
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_TGV_randomlivery) {
+	17: switch_emu_TGV_PBKA_position;
+    10: switch_emu_TGV_PBA_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_TGV_livery, cargo_subtype) {
+	1: switch_emu_TGV_PBKA_position;
+    2: switch_emu_TGV_PBA_position;
+    switch_emu_TGV_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+	1: return string(str_cargo_subtype_TGV_PBKA);
+    2: return string(str_cargo_subtype_TGV_PBA);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_articulated, extra_callback_info1) {
+    1..9: return item_emu_TGV;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
