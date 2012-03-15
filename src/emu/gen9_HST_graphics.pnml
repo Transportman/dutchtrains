@@ -1,0 +1,44 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_gen9_HST_purchase, "gfx/purchase/emu/gen9_HST.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_emu_gen9_HST_front, "gfx/emu/gen9_HST.png") {
+	template_2cc_88(0, 0)
+}
+spriteset(spriteset_emu_gen9_HST_middle_1, "gfx/emu/gen9_HST.png") {
+	template_2cc_88(0, 30)
+}
+spriteset(spriteset_emu_gen9_HST_middle_2, "gfx/emu/gen9_HST.png") {
+	template_2cc_88(0, 60)
+}
+spriteset(spriteset_emu_gen9_HST_middle_3, "gfx/emu/gen9_HST.png") {
+	template_2cc_88(0, 90)
+}
+spriteset(spriteset_emu_gen9_HST_back, "gfx/emu/gen9_HST.png") {
+	template_2cc_88(0, 120)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_position, (position_in_vehid_chain % 8)) {
+	1: spriteset_emu_gen9_HST_middle_2;
+    2..5: spriteset_emu_gen9_HST_middle_1;
+    6: spriteset_emu_gen9_HST_middle_3;
+    7: spriteset_emu_gen9_HST_back;
+    spriteset_emu_gen9_HST_front;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_articulated, extra_callback_info1) {
+    1..7: return item_emu_gen9_HST;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

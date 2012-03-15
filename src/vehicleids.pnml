@@ -130,3 +130,4 @@ item(FEAT_TRAINS, item_coaches_PlanW, 242) {}
 item(FEAT_TRAINS, item_coaches_K4, 243) {}
 item(FEAT_TRAINS, item_emu_ICM4, 244) {}
 item(FEAT_TRAINS, item_emu_ICM3, 245) {}
+item(FEAT_TRAINS, item_emu_gen9_HST, 246) {}

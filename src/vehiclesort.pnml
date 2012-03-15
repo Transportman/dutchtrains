@@ -103,6 +103,7 @@ sort(FEAT_TRAINS, [
     item_emu_SLTVI,
     item_emu_ICE3M,
     item_emu_V250,
+    item_emu_gen9_HST,
     
     //coaches
     item_coaches_HIJSM_4_8_10,
