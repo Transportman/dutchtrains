@@ -1,0 +1,112 @@
+/*
+* PURCHASE
+*/
+
+//graphics defined in ELD4
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_purchase, current_year) {
+	0..1961: spriteset_emu_Mat54ELD4_green_red_purchase;
+	1962..1967: spriteset_emu_Mat54ELD4_green_yellow_yellow_purchase;
+	spriteset_emu_Mat54ELD4_yellow_blue_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+//front part graphics in ELD4
+
+//green red
+spriteset(spriteset_emu_Mat54ELD2_green_red_back, "gfx/emu/Mat54.png") {
+	template_2cc_88(0, 60)
+}
+
+//green_yellow
+spriteset(spriteset_emu_Mat54ELD2_green_yellow_back, "gfx/emu/Mat54.png") {
+	template_2cc_88(0, 180)
+}
+
+//stoppertrain
+spriteset(spriteset_emu_Mat54ELD2_blue_yellow_back, "gfx/emu/Mat54.png") {
+	template_2cc_88(0, 300)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery, date_of_last_service) {
+	0..date(1961,12,31): spriteset_emu_Mat54ELD4_green_red_front;
+	date(1962,1,1)..date(1967,12,31): spriteset_emu_Mat54ELD4_green_yellow_front;
+	spriteset_emu_Mat54ELD4_blue_yellow_front;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_purchaselivery, build_year) {
+	0..1961: spriteset_emu_Mat54ELD4_green_red_front;
+	1962..1967: spriteset_emu_Mat54ELD4_green_yellow_front;
+	spriteset_emu_Mat54ELD4_blue_yellow_front;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_livery, cargo_subtype) {
+	1: switch_emu_Mat54ELD2_purchaselivery;
+    2: spriteset_emu_Mat54ELD4_green_red_front;
+    3: spriteset_emu_Mat54ELD4_green_yellow_front;
+    4: spriteset_emu_Mat54ELD4_blue_yellow_front;
+    switch_emu_Mat54ELD2_autolivery;
+}
+
+//D-part
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery, date_of_last_service) {
+	0..date(1961,12,31): spriteset_emu_Mat54ELD2_green_red_back;
+	date(1962,1,1)..date(1967,12,31): spriteset_emu_Mat54ELD2_green_yellow_back;
+	spriteset_emu_Mat54ELD2_blue_yellow_back;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_purchaselivery, build_year) {
+	0..1961: spriteset_emu_Mat54ELD2_green_red_back;
+	1962..1967: spriteset_emu_Mat54ELD2_green_yellow_back;
+	spriteset_emu_Mat54ELD2_blue_yellow_back;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_livery, cargo_subtype) {
+	1: switch_emu_Mat54ELD2D_purchaselivery;
+    2: spriteset_emu_Mat54ELD2_green_red_back;
+    3: spriteset_emu_Mat54ELD2_green_yellow_back;
+    4: spriteset_emu_Mat54ELD2_blue_yellow_back;
+    switch_emu_Mat54ELD2D_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_red);
+    3: return string(str_cargo_subtype_green_yellow);
+    4: return string(str_cargo_subtype_yellow_blue);
+    return CB_RESULT_NO_TEXT;
+}
+
+//D-part
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2D_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_ELD2);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2_articulated, extra_callback_info1) {
+    1: return item_emu_Mat54ELD2D;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* D-part CAPACITY CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2D_capacity, cargo_classes) {
+    bitmask(CC_PASSENGERS): return 0;
+    bitmask(CC_MAIL): return 24;
+    return 12;
+}
