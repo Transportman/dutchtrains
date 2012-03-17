@@ -15,7 +15,7 @@ item(FEAT_TRAINS, item_emu_Mat54ELD4) {
         running_cost_factor: 41;
         speed: 140 km/h;
         power: 1824 hpM;
-        cargo_capacity: 62;
+        cargo_capacity: 83;
         weight: 210 ton;
         tractive_effort_coefficient: 0.15;
         air_drag_coefficient: 0;
