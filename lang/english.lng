@@ -79,6 +79,8 @@ str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
 str_cargo_subtype_groningermuseum   :> Groninger Museum livery
 str_cargo_subtype_icplus            :> IC+ livery (May 28, 1995 - June 2002)
+str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Expres"
+str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_hispeed           :> NS Hispeed livery
 str_cargo_subtype_maashopper        :> Veolia white/red "Maashopper" livery
 str_cargo_subtype_nid               :> NID livery
@@ -280,6 +282,7 @@ str_coaches_PlanW       :Passenger Carriage Plan W
 str_coaches_ICR         :Passenger Carriage ICR
 str_coaches_Avmz        :Passenger Carriage Avmz
 str_coaches_ICL         :Passenger Carriage ICL
+str_coaches_M2          :Passenger Carriage NMBS M2
 str_coaches_K4          :Passenger Carriage NMBS K4
 str_coaches_DDAR        :Double-decker Passenger Carriage DDM/NID
 str_coaches_gen9_IC_DD  :Double-decker Passenger Carriage HS-DD

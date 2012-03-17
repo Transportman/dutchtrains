@@ -1,0 +1,77 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_M2_bordeaux_purchase, "gfx/purchase/coaches/M2_bordeaux_white.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_M2_turqoise_purchase, "gfx/purchase/coaches/M2_turqoise.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_M2_blue_purchase, "gfx/purchase/coaches/M2_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_M2_purchase, current_year) {
+	0..1995: spriteset_coaches_M2_bordeaux_purchase;
+	1996..1997: spriteset_coaches_M2_turqoise_purchase;
+    spriteset_coaches_M2_blue_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_M2_bordeaux_white, "gfx/coaches/M2.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_M2_bordeaux_whiteyellow, "gfx/coaches/M2.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_M2_turqoise, "gfx/coaches/M2.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_coaches_M2_blue, "gfx/coaches/M2.png") {
+	template_2cc_88(1, 96)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_coaches_M2_bordeaux) {
+	1: spriteset_coaches_M2_bordeaux_white;
+    1: spriteset_coaches_M2_bordeaux_whiteyellow;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_M2_autolivery, date_of_last_service) {
+	0..date(1995,12,31): switch_coaches_M2_bordeaux;
+	date(1996,1,1)..date(1997,12,31): spriteset_coaches_M2_turqoise;
+    spriteset_coaches_M2_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_M2_purchaselivery, build_year) {
+	0..1995: switch_coaches_M2_bordeaux;
+	1996..1997: spriteset_coaches_M2_turqoise;
+    spriteset_coaches_M2_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_M2_livery, cargo_subtype) {
+	1: switch_coaches_M2_purchaselivery;
+    2: spriteset_coaches_M2_bordeaux_white;
+    3: spriteset_coaches_M2_bordeaux_whiteyellow;
+    4: spriteset_coaches_M2_turqoise;
+    5: spriteset_coaches_M2_blue;
+    switch_coaches_M2_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_M2_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_bordeaux_white);
+    3: return string(str_cargo_subtype_bordeaux_white_yellow);
+    4: return string(str_cargo_subtype_kennemerstrand);
+    5: return string(str_cargo_subtype_keukenhof);
+    return CB_RESULT_NO_TEXT;
+}
