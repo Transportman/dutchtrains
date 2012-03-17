@@ -39,6 +39,7 @@ str_cargo_subtype_green             :> Green livery
 str_cargo_subtype_green_lightroof   :> Green livery w/ light roof
 str_cargo_subtype_green_darkroof    :> Green livery w/ dark roof
 str_cargo_subtype_green_moustache   :> Green livery w/ moustache
+str_cargo_subtype_green_red         :> Green livery w/ red stripes
 str_cargo_subtype_green_yellow      :> Green livery w/ yellow stripes
 str_cargo_subtype_green_yellow_blue :> Green livery w/ yellow stripes and blue banners
 str_cargo_subtype_grey              :> Grey livery
@@ -233,6 +234,7 @@ str_emu_Mat40ELD2       :Mat '40 ElD2 (Electric)
 str_emu_Mat40ELD5       :Mat '40 ElD5 (Electric)
 str_emu_Mat46ELD2       :Mat '46 ElD2 (Electric)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Electric)
+str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P (Electric)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Electric)
 str_emu_Mat64PlanT      :Mat '64 Plan T (Electric)
 str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Electric)

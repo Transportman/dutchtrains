@@ -134,3 +134,5 @@ item(FEAT_TRAINS, item_emu_gen9_HST, 246) {}
 item(FEAT_TRAINS, item_emu_TGV, 247) {}
 item(FEAT_TRAINS, item_coaches_M2, 248) {}
 item(FEAT_TRAINS, item_coaches_ICK, 249) {}
+item(FEAT_TRAINS, item_emu_Mat54ELD4, 250) {}
+item(FEAT_TRAINS, item_emu_Mat54ELD4D, 251) {}
