@@ -64,7 +64,8 @@ switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchinglivery, vehicle_type_id)
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_livery, cargo_subtype) {
 	1: switch_coaches_DDAR_DDM1_position;
 	2: switch_coaches_DDAR_DDAR_position;
-    3: switch_coaches_DDAR_NID_position;
+	3: spriteset_coaches_DDAR_DDAR;
+    4: switch_coaches_DDAR_NID_position;
     switch_coaches_DDAR_matchinglivery;
 }
 
@@ -73,7 +74,8 @@ switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_matching);
     1: return string(str_cargo_subtype_ddm1);
     2: return string(str_cargo_subtype_ddar);
-    3: return string(str_cargo_subtype_nid);
+    3: return string(str_cargo_subtype_ddm_nocab);
+    4: return string(str_cargo_subtype_nid);
     return CB_RESULT_NO_TEXT;
 }
 

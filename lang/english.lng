@@ -71,9 +71,11 @@ str_cargo_subtype_ELD4              :(ElD4)
 str_cargo_subtype_ELD5              :(ElD5)
 
 str_cargo_subtype_benelux           :> Benelux livery
+str_cargo_subtype_benelux_nocab     :> Benelux livery, no cab control
 str_cargo_subtype_benelux_plandcab  :> Benelux livery w/ Plan D cab
 str_cargo_subtype_citypendel        :> Citypendel livery
-str_cargo_subtype_ddar              :> DD-AR livery
+str_cargo_subtype_ddar              :> DDM-2/3 livery
+str_cargo_subtype_ddm_nocab         :> DDM livery, no cab control
 str_cargo_subtype_ddm1              :> DDM-1 livery
 str_cargo_subtype_fyra              :> Fyra livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
@@ -83,9 +85,11 @@ str_cargo_subtype_icplus            :> IC+ livery (May 28, 1995 - June 2002)
 str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_hispeed           :> NS Hispeed livery
+str_cargo_subtype_hispeed_nocab     :> NS Hispeed livery, no cab control
 str_cargo_subtype_maashopper        :> Veolia white/red "Maashopper" livery
 str_cargo_subtype_nid               :> NID livery
 str_cargo_subtype_ns_ic             :> NS InterCity livery
+str_cargo_subtype_ns_ic_nocab       :> NS InterCity livery, no cab control
 str_cargo_subtype_olympic           :> Olympic livery
 str_cargo_subtype_original          :> Original livery
 str_cargo_subtype_randstadrail      :> RandstadRail livery
