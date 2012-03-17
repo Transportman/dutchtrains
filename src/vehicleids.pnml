@@ -133,3 +133,4 @@ item(FEAT_TRAINS, item_emu_ICM3, 245) {}
 item(FEAT_TRAINS, item_emu_gen9_HST, 246) {}
 item(FEAT_TRAINS, item_emu_TGV, 247) {}
 item(FEAT_TRAINS, item_coaches_M2, 248) {}
+item(FEAT_TRAINS, item_coaches_ICK, 249) {}

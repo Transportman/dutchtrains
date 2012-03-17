@@ -240,6 +240,8 @@
 #include "src/coaches/K4_item.pnml"
 #include "src/coaches/M2_graphics.pnml"
 #include "src/coaches/M2_item.pnml"
+#include "src/coaches/ICK_graphics.pnml"
+#include "src/coaches/ICK_item.pnml"
 
 //baggage wagons
 #include "src/coaches/SS_E_129_graphics.pnml"

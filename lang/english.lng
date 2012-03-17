@@ -280,6 +280,7 @@ str_coaches_PlanK       :Passenger Carriage Plan K
 str_coaches_PlanN       :Passenger Carriage Plan N (sleeper)
 str_coaches_PlanW       :Passenger Carriage Plan W
 str_coaches_ICR         :Passenger Carriage ICR
+str_coaches_ICK         :Passenger Carriage ICK
 str_coaches_Avmz        :Passenger Carriage Avmz
 str_coaches_ICL         :Passenger Carriage ICL
 str_coaches_M2          :Passenger Carriage NMBS M2
