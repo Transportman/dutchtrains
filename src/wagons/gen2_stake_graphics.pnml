@@ -1,0 +1,54 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen2_stake_purchase, "gfx/purchase/wagons/gen2_stake.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen2_stake_empty, "gfx/wagons/gen2_stake.png") {
+	template_2cc_68(0, 0)
+}
+spriteset(spriteset_wagons_gen2_stake_half_wood, "gfx/wagons/gen2_stake.png") {
+	template_2cc_68(0, 120)
+}
+spriteset(spriteset_wagons_gen2_stake_full_wood, "gfx/wagons/gen2_stake.png") {
+	template_2cc_68(0, 150)
+}
+spriteset(spriteset_wagons_gen2_stake_half_stel, "gfx/wagons/gen2_stake.png") {
+	template_2cc_68(0, 30)
+}
+spriteset(spriteset_wagons_gen2_stake_full_stel, "gfx/wagons/gen2_stake.png") {
+	template_2cc_68(0, 60)
+}
+spriteset(spriteset_wagons_gen2_stake_half_wdpr, "gfx/wagons/gen2_stake.png") {
+	template_2cc_68(0, 210)
+}
+spriteset(spriteset_wagons_gen2_stake_full_wdpr, "gfx/wagons/gen2_stake.png") {
+	template_2cc_68(0, 240)
+}
+
+spritegroup spritegroup_wagons_gen2_stake_wood {
+    loading: [spriteset_wagons_gen2_stake_empty, spriteset_wagons_gen2_stake_half_wood, spriteset_wagons_gen2_stake_full_wood];
+    loaded:  [spriteset_wagons_gen2_stake_empty, spriteset_wagons_gen2_stake_half_wood, spriteset_wagons_gen2_stake_full_wood];
+}
+
+spritegroup spritegroup_wagons_gen2_stake_stel {
+    loading: [spriteset_wagons_gen2_stake_empty, spriteset_wagons_gen2_stake_half_stel, spriteset_wagons_gen2_stake_full_stel];
+    loaded:  [spriteset_wagons_gen2_stake_empty, spriteset_wagons_gen2_stake_half_stel, spriteset_wagons_gen2_stake_full_stel];
+}
+
+spritegroup spritegroup_wagons_gen2_stake_wdpr {
+    loading: [spriteset_wagons_gen2_stake_empty, spriteset_wagons_gen2_stake_half_wdpr, spriteset_wagons_gen2_stake_full_wdpr];
+    loaded:  [spriteset_wagons_gen2_stake_empty, spriteset_wagons_gen2_stake_half_wdpr, spriteset_wagons_gen2_stake_full_wdpr];
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen2_stake_livery, cargo_type_in_veh) {
+    WOOD: spritegroup_wagons_gen2_stake_wood;
+    STEL: spritegroup_wagons_gen2_stake_stel;
+    spritegroup_wagons_gen2_stake_wdpr;
+}
