@@ -14,7 +14,7 @@ item(FEAT_TRAINS, item_wagons_gen7_containercarrier) {
         running_cost_factor: 3;
         speed: 160 km/h;
         power: 0;
-        cargo_capacity: 0;
+        cargo_capacity: 40;
         weight: 12 ton;
         tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
