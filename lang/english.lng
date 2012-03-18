@@ -271,6 +271,7 @@ str_wagons_gen0livestockwagon    :Livestock Wagon
 str_wagons_gen2_boxcar              :Goods Wagon (small)
 str_wagons_gen2_livestock           :Livestock Wagon (small)
 str_wagons_gen2_silo                :Silo Wagon (small)
+str_wagons_gen2_tanker              :Tanker Wagon (small)
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (oversized)
 str_wagons_gen9_silowagon           :Silo Wagon (large)
 str_wagons_gen7_cartransporter      :Car Transporter

@@ -1,0 +1,41 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen2_tanker_purchase, "gfx/purchase/wagons/gen2_tanker.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen2_tanker_white, "gfx/wagons/gen2_tanker.png") {
+	template_2cc_58(0, 0)
+}
+spriteset(spriteset_wagons_gen2_tanker_blue, "gfx/wagons/gen2_tanker.png") {
+	template_2cc_58(0, 30)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen2_tanker_randomlivery) {
+	1: spriteset_wagons_gen2_tanker_white;
+    1: spriteset_wagons_gen2_tanker_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen2_tanker_livery, cargo_subtype) {
+	1: spriteset_wagons_gen2_tanker_white;
+    2: spriteset_wagons_gen2_tanker_blue;
+    switch_wagons_gen2_tanker_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_gen2_tanker_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_blue);
+    2: return string(str_cargo_subtype_grey);
+    return CB_RESULT_NO_TEXT;
+}

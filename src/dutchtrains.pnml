@@ -284,6 +284,8 @@
 #include "src/wagons/gen2_livestock_item.pnml"
 #include "src/wagons/gen2_silo_graphics.pnml"
 #include "src/wagons/gen2_silo_item.pnml"
+#include "src/wagons/gen2_tanker_graphics.pnml"
+#include "src/wagons/gen2_tanker_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"
