@@ -56,6 +56,7 @@ str_cargo_subtype_yellow            :> Yellow livery
 str_cargo_subtype_yellow_blue       :> Yellow livery w/ blue banners
 str_cargo_subtype_yellow_blue_ic    :> Yellow/blue InterCity livery
 str_cargo_subtype_yellow_red        :> Yellow/red livery
+str_cargo_subtype_white             :> White livery
 str_cargo_subtype_white_blue        :> White/blue livery
 str_cargo_subtype_white_red         :> White/red livery
 str_cargo_subtype_white_yellow      :> White/yellow livery
@@ -269,6 +270,7 @@ str_wagons_gen0stakewagon        :Stake Wagon
 str_wagons_gen0livestockwagon    :Livestock Wagon
 str_wagons_gen2_boxcar              :Goods Wagon (small)
 str_wagons_gen2_livestock           :Livestock Wagon (small)
+str_wagons_gen2_silo                :Silo Wagon (small)
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (oversized)
 str_wagons_gen9_silowagon           :Silo Wagon (large)
 str_wagons_gen7_cartransporter      :Car Transporter
