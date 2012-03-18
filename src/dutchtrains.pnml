@@ -14,6 +14,8 @@
 #include "src/vehiclesort.pnml"
 //cargo translation table
 #include "src/cargotable.pnml"
+//cargo refit definitions
+#include "src/cargorefits.pnml"
 //railtype translation table
 #include "src/railtypetable.pnml"
 //recolour sprites for cargo

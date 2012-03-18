@@ -1,0 +1,6 @@
+//this file lists all cargo refits for each wagon type.
+//it is referenced from the wagon item definitions.
+//any changes to cargo refits can be done centrally from this file.
+//MUs that have a cargo compartment are not controlled by this file.
+
+#define CARGODEF_BOXCAR refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS); non_refittable_cargo_classes: 0; cargo_allow_refit: [GRAI, WHEA, RUBR, FRUT, MAIZ, WATR, SUGR, TOFF, COLA, CTCD, PLST, CERE, CMNT, OLSD, SGCN]; cargo_disallow_refit: [LVST, WOOD, STEL, VEHI, TOUR];
