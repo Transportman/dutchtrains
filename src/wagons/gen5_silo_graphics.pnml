@@ -1,0 +1,15 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen5_silo_purchase, "gfx/purchase/wagons/gen5_silo.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen5_silo, "gfx/wagons/gen5_silo.png") {
+	template_2cc_78(0, 0)
+}

@@ -144,3 +144,4 @@ item(FEAT_TRAINS, item_wagons_gen2_silo, 256) {}
 item(FEAT_TRAINS, item_wagons_gen2_tanker, 257) {}
 item(FEAT_TRAINS, item_wagons_gen2_stake, 258) {}
 item(FEAT_TRAINS, item_wagons_gen2_refrigerator, 259) {}
+item(FEAT_TRAINS, item_wagons_gen5_silo, 260) {}
