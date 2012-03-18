@@ -3,4 +3,33 @@
 //any changes to cargo refits can be done centrally from this file.
 //MUs that have a cargo compartment are not controlled by this file.
 
+
+#define CARGODEF_HOPPER refittable_cargo_classes: bitmask(CC_BULK); non_refittable_cargo_classes: bitmask(CC_NON_POURABLE); cargo_allow_refit: [PLST, PLAS]; cargo_disallow_refit: [FRUT, TOFF, CTCD, BDMT, WDPR];
+
+#define CARGODEF_GONDOLA refittable_cargo_classes: bitmask(CC_BULK); non_refittable_cargo_classes: 0; cargo_allow_refit: [BRCK, RUBR, RCYC]; cargo_disallow_refit: [TOFF, CTCD];
+
+#define CARGODEF_FLAT refittable_cargo_classes: bitmask(CC_PIECE_GOODS); non_refittable_cargo_classes: bitmask(CC_OVERSIZED); cargo_allow_refit: [SCMT]; cargo_disallow_refit: [LVST, TOYS, BATT, BUBL, FZDR, BEER, CERA, COPR, DYES, FERT, FICR, FRVG, MNSP, PLAS, RCYC, WOOL];
+
+#define CARGODEF_HEAVYFLAT refittable_cargo_classes: bitmask(CC_OVERSIZED); non_refittable_cargo_classes: 0; cargo_allow_refit: []; cargo_disallow_refit: [];
+
 #define CARGODEF_BOXCAR refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS); non_refittable_cargo_classes: 0; cargo_allow_refit: [GRAI, WHEA, RUBR, FRUT, MAIZ, WATR, SUGR, TOFF, COLA, CTCD, PLST, CERE, CMNT, OLSD, SGCN]; cargo_disallow_refit: [LVST, WOOD, STEL, VEHI, TOUR];
+
+#define CARGODEF_TANKER refittable_cargo_classes: bitmask(CC_LIQUID); non_refittable_cargo_classes: 0; cargo_allow_refit: [FZDR, FISH]; cargo_disallow_refit: [];
+
+#define CARGODEF_REFRIGERATOR refittable_cargo_classes: bitmask(CC_REFRIGERATED); non_refittable_cargo_classes: 0; cargo_allow_refit: []; cargo_disallow_refit: [];
+
+#define CARGODEF_CONTAINER refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS); non_refittable_cargo_classes: 0; cargo_allow_refit: [RUBR, FRUT, WATR, SUGR, TOFF, COLA, CTCD, PLST, CMNT, RFPR]; cargo_disallow_refit: [LVST, WOOD, STEL, BRCK, COPR, FICR, VEHI, TOUR];
+
+#define CARGODEF_SILO refittable_cargo_classes: bitmask(CC_POWDERIZED); non_refittable_cargo_classes: 0; cargo_allow_refit: [GRAI, WHEA, MAIZ, SUGR, BDMT, CERE, CMNT, OLSD, POTA]; cargo_disallow_refit: [];
+
+#define CARGODEF_COIL refittable_cargo_classes: 0; non_refittable_cargo_classes: 0; cargo_allow_refit: [STEL, COPR]; cargo_disallow_refit: [];
+
+#define CARGODEF_LIVESTOCK refittable_cargo_classes: 0; non_refittable_cargo_classes: 0; cargo_allow_refit: [LVST]; cargo_disallow_refit: [];
+
+#define CARGODEF_AUTORACK refittable_cargo_classes: 0; non_refittable_cargo_classes: 0; cargo_allow_refit: [VEHI]; cargo_disallow_refit: [];
+
+//below are some special definitions for typical Dutch wagons
+
+#define CARGODEF_BOLLENWAGEN refittable_cargo_classes: bitmask(CC_POWDERIZED); non_refittable_cargo_classes: 0; cargo_allow_refit: [SUGR, BDMT, CMNT, FERT, LIME, POTA, SULP]; cargo_disallow_refit: [];
+
+#define CARGODEF_VAM refittable_cargo_classes: 0; non_refittable_cargo_classes: 0; cargo_allow_refit: [FMSP, RCYC]; cargo_disallow_refit: [];
