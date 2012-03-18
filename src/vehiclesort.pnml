@@ -144,6 +144,7 @@ sort(FEAT_TRAINS, [
     item_wagons_gen0stakewagon,
     item_wagons_gen0livestockwagon,
     item_wagons_gen2_boxcar,
+    item_wagons_gen2_livestock,
     item_wagons_gen7_containercarrier,
     item_wagons_gen7_cartransporter,
     item_wagons_gen9_superheavy_flatcar,

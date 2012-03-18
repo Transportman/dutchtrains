@@ -139,3 +139,4 @@ item(FEAT_TRAINS, item_emu_Mat54ELD4D, 251) {}
 item(FEAT_TRAINS, item_emu_Mat54ELD2, 252) {}
 item(FEAT_TRAINS, item_emu_Mat54ELDD, 253) {}
 item(FEAT_TRAINS, item_wagons_gen2_boxcar, 254) {}
+item(FEAT_TRAINS, item_wagons_gen2_livestock, 255) {}

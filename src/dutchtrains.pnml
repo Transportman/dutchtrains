@@ -280,6 +280,8 @@
 #include "src/wagons/gen7_containercarrier_item.pnml"
 #include "src/wagons/gen2_boxcar_graphics.pnml"
 #include "src/wagons/gen2_boxcar_item.pnml"
+#include "src/wagons/gen2_livestock_graphics.pnml"
+#include "src/wagons/gen2_livestock_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"
