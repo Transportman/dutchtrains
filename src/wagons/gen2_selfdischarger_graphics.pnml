@@ -12,31 +12,31 @@ spriteset(spriteset_wagons_gen2_selfdischarger_purchase, "gfx/purchase/wagons/ge
 
 //darker blue
 spriteset(spriteset_wagons_gen2_selfdischarger_1_empty, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 0)
+	template_2cc_58(0, 0)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_1_half_coal, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 30)
+	template_2cc_58(0, 30)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_1_full_coal, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 60)
+	template_2cc_58(0, 60)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_1_half_iore, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 120)
+	template_2cc_58(0, 120)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_1_full_iore, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 150)
+	template_2cc_58(0, 150)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_1_half_clay, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 210)
+	template_2cc_58(0, 210)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_1_full_clay, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 240)
+	template_2cc_58(0, 240)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_1_half_grai, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 300)
+	template_2cc_58(0, 300)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_1_full_grai, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 330)
+	template_2cc_58(0, 330)
 }
 
 spritegroup spritegroup_wagons_gen2_selfdischarger_1_coal {
@@ -68,31 +68,31 @@ switch(FEAT_TRAINS, SELF, switch_wagons_gen2_selfdischarger_1_cargo, cargo_type_
 
 //lighter blue
 spriteset(spriteset_wagons_gen2_selfdischarger_2_empty, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 360)
+	template_2cc_58(0, 360)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_2_half_coal, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 390)
+	template_2cc_58(0, 390)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_2_full_coal, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 420)
+	template_2cc_58(0, 420)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_2_half_iore, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 480)
+	template_2cc_58(0, 480)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_2_full_iore, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 510)
+	template_2cc_58(0, 510)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_2_half_clay, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 570)
+	template_2cc_58(0, 570)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_2_full_clay, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 600)
+	template_2cc_58(0, 600)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_2_half_grai, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 660)
+	template_2cc_58(0, 660)
 }
 spriteset(spriteset_wagons_gen2_selfdischarger_2_full_grai, "gfx/wagons/gen2_selfdischarger.png") {
-	template_2cc_68(0, 690)
+	template_2cc_58(0, 690)
 }
 
 spritegroup spritegroup_wagons_gen2_selfdischarger_2_coal {
