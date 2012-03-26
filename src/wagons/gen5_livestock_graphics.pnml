@@ -1,0 +1,15 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen5_livestock_purchase, "gfx/purchase/wagons/gen5_livestock.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen5_livestock, "gfx/wagons/gen5_slidingdoor.png") {
+	template_2cc_68(0, 30)
+}
