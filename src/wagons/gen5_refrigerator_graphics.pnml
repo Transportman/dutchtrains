@@ -1,0 +1,15 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen5_refrigerator_purchase, "gfx/purchase/wagons/gen5_refrigerator.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen5_refrigerator, "gfx/wagons/gen5_refrigerator.png") {
+	template_2cc_88(0, 0)
+}

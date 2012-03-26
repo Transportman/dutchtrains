@@ -298,6 +298,8 @@
 #include "src/wagons/gen5_slidingdoor_item.pnml"
 #include "src/wagons/gen5_livestock_graphics.pnml"
 #include "src/wagons/gen5_livestock_item.pnml"
+#include "src/wagons/gen5_refrigerator_graphics.pnml"
+#include "src/wagons/gen5_refrigerator_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"

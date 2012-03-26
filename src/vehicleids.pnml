@@ -148,3 +148,4 @@ item(FEAT_TRAINS, item_wagons_gen5_silo, 260) {}
 item(FEAT_TRAINS, item_wagons_gen2_selfdischarger, 261) {}
 item(FEAT_TRAINS, item_wagons_gen5_slidingdoor, 262) {}
 item(FEAT_TRAINS, item_wagons_gen5_livestock, 263) {}
+item(FEAT_TRAINS, item_wagons_gen5_refrigerator, 264) {}
