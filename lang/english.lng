@@ -32,6 +32,7 @@ str_cargo_subtype_bordeaux_white_blue       :> Bordeaux livery w/ white/blue
 str_cargo_subtype_bordeaux_white_yellow     :> Bordeaux livery w/ white/yellow
 str_cargo_subtype_black             :> Black livery
 str_cargo_subtype_blue              :> Blue livery
+str_cargo_subtype_lighterblue       :> Slightly lighter blue livery
 str_cargo_subtype_blue_banners      :> Blue livery w/ banners
 str_cargo_subtype_blue_yellow       :> Blue livery w/ yellow stripes
 str_cargo_subtype_brown             :> Brown livery
@@ -274,6 +275,7 @@ str_wagons_gen2_silo                :Silo Wagon (small)
 str_wagons_gen2_tanker              :Tanker Wagon (small)
 str_wagons_gen2_stake               :Stake Wagon (small)
 str_wagons_gen2_refrigerator        :Refrigerator Wagon (small)
+str_wagons_gen2_selfdischarger      :Selfdischarger (small)
 str_wagons_gen5_silo                :Silo Wagon (medium)
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (oversized)
 str_wagons_gen9_silowagon           :Silo Wagon (large)
