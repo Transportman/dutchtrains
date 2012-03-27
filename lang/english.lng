@@ -44,6 +44,8 @@ str_cargo_subtype_green_red         :> Green livery w/ red stripes
 str_cargo_subtype_green_yellow      :> Green livery w/ yellow stripes
 str_cargo_subtype_green_yellow_blue :> Green livery w/ yellow stripes and blue banners
 str_cargo_subtype_grey              :> Grey livery
+str_cargo_subtype_grey_dark         :> Dark Grey livery
+str_cargo_subtype_grey_light        :> Light Grey livery
 str_cargo_subtype_purple            :> Purple livery
 str_cargo_subtype_red               :> Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery
@@ -281,6 +283,7 @@ str_wagons_gen5_slidingdoor         :Sliding Door Wagon (medium)
 str_wagons_gen5_livestock           :Livestock Wagon (medium)
 str_wagons_gen5_stake               :Stake Wagon (medium)
 str_wagons_gen5_refrigerator        :Refrigerator Wagon (large)
+str_wagons_gen5_tanker              :Tanker Wagon (large)
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (oversized)
 str_wagons_gen9_silowagon           :Silo Wagon (large)
 str_wagons_gen7_cartransporter      :Car Transporter

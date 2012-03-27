@@ -302,6 +302,8 @@
 #include "src/wagons/gen5_refrigerator_item.pnml"
 #include "src/wagons/gen5_stake_graphics.pnml"
 #include "src/wagons/gen5_stake_item.pnml"
+#include "src/wagons/gen5_tanker_graphics.pnml"
+#include "src/wagons/gen5_tanker_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"
