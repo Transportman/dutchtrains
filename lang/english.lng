@@ -284,6 +284,7 @@ str_wagons_gen5_livestock           :Livestock Wagon (medium)
 str_wagons_gen5_stake               :Stake Wagon (medium)
 str_wagons_gen5_refrigerator        :Refrigerator Wagon (large)
 str_wagons_gen5_tanker              :Tanker Wagon (large)
+str_wagons_gen6_coil                :Coil Wagon (large)
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (oversized)
 str_wagons_gen9_silowagon           :Silo Wagon (large)
 str_wagons_gen7_cartransporter      :Car Transporter
