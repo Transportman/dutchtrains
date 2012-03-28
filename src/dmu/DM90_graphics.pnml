@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_2125, "gfx/dutchtrainsw.png") {
-	[130, 2696, 50, 12, -25, -6]
+spriteset(spriteset_dmu_DM90_purchase, "gfx/purchase/dmu/DM90.png") {
+	template_purchase(0, 0)
 }
 
 /*
@@ -11,59 +11,29 @@ spriteset(spriteset_2125, "gfx/dutchtrainsw.png") {
 */
 
 //ns
-spriteset(spriteset_2083, "gfx/dutchtrainsw.png") {
-	[514, 2600, 10, 24, -4, -12]
-	[530, 2600, 24, 16, -12, -9]
-	[562, 2600, 32, 12, -16, -7]
-	[610, 2600, 24, 16, -11, -10]
-	[642, 2600, 10, 24, -4, -12]
-	[658, 2600, 24, 16, -12, -9]
-	[690, 2600, 32, 12, -16, -7]
-	[738, 2600, 24, 16, -11, -10]
+spriteset(spriteset_dmu_DM90_ns_front, "gfx/dmu/DM90.png") {
+	template_2cc_88(0, 0)
 }
-
-spriteset(spriteset_2093, "gfx/dutchtrainsw.png") {
-	[2, 2648, 10, 24, -4, -12]
-	[18, 2648, 24, 16, -12, -9]
-	[50, 2648, 32, 12, -15, -7]
-	[98, 2648, 24, 16, -11, -10]
-	[130, 2648, 10, 24, -4, -12]
-	[146, 2648, 24, 16, -12, -9]
-	[178, 2648, 32, 12, -17, -7]
-	[226, 2648, 24, 16, -11, -10]
+spriteset(spriteset_dmu_DM90_ns_back, "gfx/dmu/DM90.png") {
+	template_2cc_88(0, 30)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns, (position_in_vehid_chain % 2)) {
-	1: spriteset_2093;
-    spriteset_2083;
+	1: spriteset_dmu_DM90_ns_back;
+    spriteset_dmu_DM90_ns_front;
 }
 
 //syntus
-spriteset(spriteset_2104, "gfx/dutchtrainsw.png") {
-	[306, 2648, 10, 24, -4, -12]
-	[322, 2648, 24, 16, -12, -9]
-	[354, 2648, 32, 12, -16, -7]
-	[402, 2648, 24, 16, -11, -10]
-	[434, 2648, 10, 24, -4, -12]
-	[450, 2648, 24, 16, -12, -9]
-	[482, 2648, 32, 12, -16, -7]
-	[530, 2648, 24, 16, -11, -10]
+spriteset(spriteset_dmu_DM90_syntus_front, "gfx/dmu/DM90.png") {
+	template_2cc_88(0, 60)
 }
-
-spriteset(spriteset_2114, "gfx/dutchtrainsw.png") {
-	[594, 2648, 10, 24, -4, -12]
-	[610, 2648, 24, 16, -12, -9]
-	[642, 2648, 32, 12, -15, -7]
-	[690, 2648, 24, 16, -11, -10]
-	[722, 2648, 10, 24, -4, -12]
-	[738, 2648, 24, 16, -12, -9]
-	[2, 2696, 32, 12, -17, -7]
-	[50, 2696, 24, 16, -11, -10]
+spriteset(spriteset_dmu_DM90_syntus_back, "gfx/dmu/DM90.png") {
+	template_2cc_88(0, 90)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_syntus, (position_in_vehid_chain % 2)) {
-	1: spriteset_2114;
-    spriteset_2104;
+	1: spriteset_dmu_DM90_syntus_back;
+    spriteset_dmu_DM90_syntus_front;
 }
 
 /*
