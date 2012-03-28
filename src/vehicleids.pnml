@@ -154,3 +154,4 @@ item(FEAT_TRAINS, item_wagons_gen5_tanker, 266) {}
 item(FEAT_TRAINS, item_wagons_gen6_coil, 267) {}
 item(FEAT_TRAINS, item_wagons_gen6_stake, 268) {}
 item(FEAT_TRAINS, item_wagons_gen6_goods, 269) {}
+item(FEAT_TRAINS, item_wagons_gen5_selfdischarger, 270) {}

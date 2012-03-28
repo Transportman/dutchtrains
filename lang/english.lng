@@ -27,6 +27,7 @@ str_cargo_subtype_purchase          :> Construction year livery
 str_cargo_subtype_random            :> Random livery
 str_cargo_subtype_matching          :> Engine-matching livery
 
+str_cargo_subtype_bordeaux          :> Bordeaux livery
 str_cargo_subtype_bordeaux_white            :> Bordeaux livery w/ white
 str_cargo_subtype_bordeaux_white_blue       :> Bordeaux livery w/ white/blue
 str_cargo_subtype_bordeaux_white_yellow     :> Bordeaux livery w/ white/yellow
@@ -52,6 +53,8 @@ str_cargo_subtype_grey_dark         :> Dark Grey livery
 str_cargo_subtype_grey_light        :> Light Grey livery
 str_cargo_subtype_purple            :> Purple livery
 str_cargo_subtype_red               :> Red livery
+str_cargo_subtype_red_light         :> Light Red livery
+str_cargo_subtype_red_pinkish       :> Pinkish Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery
 str_cargo_subtype_olive_silverroof  :> Olive livery w/ light roof
 str_cargo_subtype_olive_greyroof    :> Olive livery w/ dark roof
@@ -289,6 +292,7 @@ str_wagons_gen5_livestock           :Livestock Wagon (medium)
 str_wagons_gen5_stake               :Stake Wagon (medium)
 str_wagons_gen5_refrigerator        :Refrigerator Wagon (large)
 str_wagons_gen5_tanker              :Tanker Wagon (large)
+str_wagons_gen5_selfdischarger      :Selfdischarger (large)
 str_wagons_gen6_coil                :Coil Wagon (large)
 str_wagons_gen6_stake               :Stake Wagon (large)
 str_wagons_gen6_goods               :Goods Wagon (large)
