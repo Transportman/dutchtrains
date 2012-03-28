@@ -36,6 +36,10 @@ str_cargo_subtype_lighterblue       :> Slightly lighter blue livery
 str_cargo_subtype_blue_banners      :> Blue livery w/ banners
 str_cargo_subtype_blue_yellow       :> Blue livery w/ yellow stripes
 str_cargo_subtype_brown             :> Brown livery
+str_cargo_subtype_brown_other       :> Other Brown livery
+str_cargo_subtype_brown_light       :> Light Brown livery
+str_cargo_subtype_brown_greenish    :> Greenish Brown livery
+str_cargo_subtype_brown_reddish     :> Reddish Brown livery
 str_cargo_subtype_green             :> Green livery
 str_cargo_subtype_green_lightroof   :> Green livery w/ light roof
 str_cargo_subtype_green_darkroof    :> Green livery w/ dark roof
@@ -51,6 +55,7 @@ str_cargo_subtype_red               :> Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery
 str_cargo_subtype_olive_silverroof  :> Olive livery w/ light roof
 str_cargo_subtype_olive_greyroof    :> Olive livery w/ dark roof
+str_cargo_subtype_salmon            :> Salmon livery
 str_cargo_subtype_silver_blue       :> Silver/blue livery
 str_cargo_subtype_silver_green      :> Silver/green livery
 str_cargo_subtype_silver_red        :> Silver/red livery
@@ -286,6 +291,7 @@ str_wagons_gen5_refrigerator        :Refrigerator Wagon (large)
 str_wagons_gen5_tanker              :Tanker Wagon (large)
 str_wagons_gen6_coil                :Coil Wagon (large)
 str_wagons_gen6_stake               :Stake Wagon (large)
+str_wagons_gen6_goods               :Goods Wagon (large)
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (oversized)
 str_wagons_gen9_silowagon           :Silo Wagon (large)
 str_wagons_gen7_cartransporter      :Car Transporter

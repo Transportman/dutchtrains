@@ -158,6 +158,7 @@ sort(FEAT_TRAINS, [
     item_wagons_gen5_tanker,
     item_wagons_gen6_coil,
     item_wagons_gen6_stake,
+    item_wagons_gen6_goods,
     item_wagons_gen7_containercarrier,
     item_wagons_gen7_cartransporter,
     item_wagons_gen9_superheavy_flatcar,
