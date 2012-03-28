@@ -28,10 +28,10 @@ spriteset(spriteset_coaches_M2_bordeaux_white, "gfx/coaches/M2.png") {
 spriteset(spriteset_coaches_M2_bordeaux_whiteyellow, "gfx/coaches/M2.png") {
 	template_2cc_88(1, 32)
 }
-spriteset(spriteset_coaches_M2_turqoise, "gfx/coaches/M2.png") {
+spriteset(spriteset_coaches_M2_blue, "gfx/coaches/M2.png") {
 	template_2cc_88(1, 64)
 }
-spriteset(spriteset_coaches_M2_blue, "gfx/coaches/M2.png") {
+spriteset(spriteset_coaches_M2_turqoise, "gfx/coaches/M2.png") {
 	template_2cc_88(1, 96)
 }
 
