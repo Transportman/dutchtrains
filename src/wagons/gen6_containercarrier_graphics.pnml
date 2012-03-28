@@ -1,0 +1,32 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen6_containercarrier_purchase, "gfx/purchase/wagons/gen6_containercarrier.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//container
+spriteset(spriteset_wagons_gen6_containercarrier_1, "gfx/wagons/gen6_containercarrier.png") {
+	template_2cc_88(0, 0)
+}
+spriteset(spriteset_wagons_gen6_containercarrier_2, "gfx/wagons/gen6_containercarrier.png") {
+	template_2cc_88(0, 30)
+}
+spriteset(spriteset_wagons_gen6_containercarrier_3, "gfx/wagons/gen6_containercarrier.png") {
+	template_2cc_88(0, 60)
+}
+spriteset(spriteset_wagons_gen6_containercarrier_4, "gfx/wagons/gen6_containercarrier.png") {
+	template_2cc_88(0, 90)
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen6_containercarrier_livery) {
+	1: spriteset_wagons_gen6_containercarrier_1;
+    1: spriteset_wagons_gen6_containercarrier_2;
+    1: spriteset_wagons_gen6_containercarrier_3;
+    1: spriteset_wagons_gen6_containercarrier_4; 
+}

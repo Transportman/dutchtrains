@@ -296,6 +296,7 @@ str_wagons_gen5_selfdischarger      :Selfdischarger (large)
 str_wagons_gen6_coil                :Coil Wagon (large)
 str_wagons_gen6_stake               :Stake Wagon (large)
 str_wagons_gen6_goods               :Goods Wagon (large)
+str_wagons_gen6_containercarrier    :Container Carrier
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (oversized)
 str_wagons_gen9_silowagon           :Silo Wagon (large)
 str_wagons_gen7_cartransporter      :Car Transporter
