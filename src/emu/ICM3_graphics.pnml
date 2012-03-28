@@ -11,11 +11,11 @@
 //defined for ICM4
 
 //original
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position_front, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position_front, position_in_consist) {
 	0: spriteset_emu_ICM_original_front;
     spriteset_emu_ICM_original_front_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position_back, position_in_vehid_chain_from_end) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position_back, position_in_consist_from_end) {
 	0: spriteset_emu_ICM_original_back;
     spriteset_emu_ICM_original_back_open;
 }
@@ -26,11 +26,11 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position, (position_in_vehid_
 }
 
 //whitedoors
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position_front, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position_front, position_in_consist) {
 	0: spriteset_emu_ICM_whitedoors_front;
     spriteset_emu_ICM_whitedoors_front_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position_back, position_in_vehid_chain_from_end) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position_back, position_in_consist_from_end) {
 	0: spriteset_emu_ICM_whitedoors_back;
     spriteset_emu_ICM_whitedoors_back_open;
 }
