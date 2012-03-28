@@ -293,6 +293,7 @@ str_wagons_gen5_stake               :Stake Wagon (medium)
 str_wagons_gen5_refrigerator        :Refrigerator Wagon (large)
 str_wagons_gen5_tanker              :Tanker Wagon (large)
 str_wagons_gen5_selfdischarger      :Selfdischarger (large)
+str_wagons_gen5_VAM                 :VAM Compost Wagon
 str_wagons_gen6_coil                :Coil Wagon (large)
 str_wagons_gen6_stake               :Stake Wagon (large)
 str_wagons_gen6_goods               :Goods Wagon (large)

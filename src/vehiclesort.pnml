@@ -157,6 +157,7 @@ sort(FEAT_TRAINS, [
     item_wagons_gen5_refrigerator,
     item_wagons_gen5_tanker,
     item_wagons_gen5_selfdischarger,
+    item_wagons_gen5_VAM,
     item_wagons_gen6_coil,
     item_wagons_gen6_stake,
     item_wagons_gen6_goods,

@@ -1,0 +1,27 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen5_VAM_purchase, "gfx/purchase/wagons/gen5_VAM.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen5_VAM_1, "gfx/wagons/gen5_VAM.png") {
+	template_2cc_88(0, 0)
+}
+spriteset(spriteset_wagons_gen5_VAM_2, "gfx/wagons/gen5_VAM.png") {
+	template_2cc_88(0, 30)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen5_VAM_livery) {
+	1: spriteset_wagons_gen5_VAM_1;
+    1: spriteset_wagons_gen5_VAM_2;
+}
