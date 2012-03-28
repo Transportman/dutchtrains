@@ -96,6 +96,7 @@ sort(FEAT_TRAINS, [
     item_emu_SGM3,
     item_emu_ICM3,
     item_emu_ICM4,
+    item_emu_SM90,
     item_emu_IRMIII,
     item_emu_IRMIV,
     item_emu_IRMVI,

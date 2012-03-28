@@ -1,0 +1,33 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_SM90_purchase, "gfx/purchase/emu/SM90.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//ns
+spriteset(spriteset_emu_SM90_front, "gfx/emu/SM90.png") {
+	template_2cc_88(0, 0)
+}
+spriteset(spriteset_emu_SM90_back, "gfx/emu/SM90.png") {
+	template_2cc_88(0, 30)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SM90_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_emu_SM90_back;
+    spriteset_emu_SM90_front;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SM90_articulated, extra_callback_info1) {
+    1: return item_emu_SM90;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
