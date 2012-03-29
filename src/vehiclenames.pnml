@@ -1,34 +1,48 @@
-//original Dutch version of vehicle nicknames
+//translated versions of vehicle nicknames
 
 if (param_vehicle_names == 1) {
     //only have this when the parameter is enabled
     
     //steam
-    item(FEAT_TRAINS, item_steam_Arend) { property { name: string(str_steam_Arend_nl); } }
-    item(FEAT_TRAINS, item_steam_HSM500) { property { name: string(str_steam_HSM500_nl); } }
-    item(FEAT_TRAINS, item_steam_NBDS30) { property { name: string(str_steam_NBDS30_nl); } }
+    item(FEAT_TRAINS, item_steam_Arend) { property { name: string(str_steam_Arend_t); } }
+    item(FEAT_TRAINS, item_steam_HSM500) { property { name: string(str_steam_HSM500_t); } }
+    item(FEAT_TRAINS, item_steam_SS700) { property { name: string(str_steam_SS700_t); } }
+    item(FEAT_TRAINS, item_steam_NBDS30) { property { name: string(str_steam_NBDS30_t); } }
+    item(FEAT_TRAINS, item_steam_NCS71) { property { name: string(str_steam_NCS71_t); } }
     
     //diesel
-    item(FEAT_TRAINS, item_diesel_NS100) { property { name: string(str_diesel_NS100_nl); } }
-    item(FEAT_TRAINS, item_diesel_NS200) { property { name: string(str_diesel_NS200_nl); } }
-    item(FEAT_TRAINS, item_diesel_NS400) { property { name: string(str_diesel_NS400_nl); } }
-    item(FEAT_TRAINS, item_diesel_NS600) { property { name: string(str_diesel_NS600_nl); } }
-    item(FEAT_TRAINS, item_diesel_NS2801) { property { name: string(str_diesel_NS2801_nl); } }
+    item(FEAT_TRAINS, item_diesel_NS100) { property { name: string(str_diesel_NS100_t); } }
+    item(FEAT_TRAINS, item_diesel_NS200) { property { name: string(str_diesel_NS200_t); } }
+    item(FEAT_TRAINS, item_diesel_NS400) { property { name: string(str_diesel_NS400_t); } }
+    item(FEAT_TRAINS, item_diesel_NS600) { property { name: string(str_diesel_NS600_t); } }
+    item(FEAT_TRAINS, item_diesel_NS2801) { property { name: string(str_diesel_NS2801_t); } }
+    
+    //electric
+    item(FEAT_TRAINS, item_electric_NID) { property { name: string(str_electric_NID_t); } }
     
     //dmu
-    item(FEAT_TRAINS, item_dmu_Mat34) { property { name: string(str_dmu_Mat34_nl); } }
-    item(FEAT_TRAINS, item_dmu_DE1) { property { name: string(str_dmu_DE1_nl); } }
-    item(FEAT_TRAINS, item_dmu_DE2) { property { name: string(str_dmu_DE2_nl); } }
-    item(FEAT_TRAINS, item_dmu_DE3) { property { name: string(str_dmu_DE3_nl); } }
-    item(FEAT_TRAINS, item_dmu_DE5) { property { name: string(str_dmu_DE5_nl); } }
-    item(FEAT_TRAINS, item_dmu_DH1) { property { name: string(str_dmu_DH1_nl); } }
-    item(FEAT_TRAINS, item_dmu_DH2) { property { name: string(str_dmu_DH2_nl); } }
-    item(FEAT_TRAINS, item_dmu_DM90) { property { name: string(str_dmu_DM90_nl); } }
-    item(FEAT_TRAINS, item_dmu_NS20) { property { name: string(str_dmu_NS20_nl); } }
+    item(FEAT_TRAINS, item_dmu_Mat34) { property { name: string(str_dmu_Mat34_t); } }
+    item(FEAT_TRAINS, item_dmu_DE1) { property { name: string(str_dmu_DE1_t); } }
+    item(FEAT_TRAINS, item_dmu_DE2) { property { name: string(str_dmu_DE2_t); } }
+    item(FEAT_TRAINS, item_dmu_DE3) { property { name: string(str_dmu_DE3_t); } }
+    item(FEAT_TRAINS, item_dmu_DE5) { property { name: string(str_dmu_DE5_t); } }
+    item(FEAT_TRAINS, item_dmu_DH1) { property { name: string(str_dmu_DH1_t); } }
+    item(FEAT_TRAINS, item_dmu_DH2) { property { name: string(str_dmu_DH2_t); } }
+    item(FEAT_TRAINS, item_dmu_DM90) { property { name: string(str_dmu_DM90_t); } }
+    item(FEAT_TRAINS, item_dmu_NS20) { property { name: string(str_dmu_NS20_t); } }
     
     //emu
-    item(FEAT_TRAINS, item_emu_V250) { property { name: string(str_emu_V250_nl); } }
+    item(FEAT_TRAINS, item_emu_V250) { property { name: string(str_emu_V250_t); } }
+    item(FEAT_TRAINS, item_emu_ICM3) { property { name: string(str_emu_ICM3_t); } }
+    item(FEAT_TRAINS, item_emu_ICM4) { property { name: string(str_emu_ICM4_t); } }
+    item(FEAT_TRAINS, item_emu_IRMIII) { property { name: string(str_emu_IRMIII_t); } }
+    item(FEAT_TRAINS, item_emu_IRMIV) { property { name: string(str_emu_IRMIV_t); } }
+    item(FEAT_TRAINS, item_emu_IRMVI) { property { name: string(str_emu_IRMVI_t); } }
+    
+    //coaches
+    item(FEAT_TRAINS, item_coaches_Ovaleramen) { property { name: string(str_coaches_Ovaleramen_t); } }
+    item(FEAT_TRAINS, item_coaches_Bolkoprijtuigen) { property { name: string(str_coaches_Bolkoprijtuigen_t); } }
     
     //metro
-    item(FEAT_TRAINS, item_metro_GVB_M1M2) { property { name: string(str_metro_GVB_M1M2_nl); } }
+    item(FEAT_TRAINS, item_metro_GVB_M1M2) { property { name: string(str_metro_GVB_M1M2_t); } }
 }

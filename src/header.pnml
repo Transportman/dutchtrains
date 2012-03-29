@@ -7,16 +7,10 @@ grf {
 	min_compatible_version:	281;
     param {
         param_vehicle_names {
-            type:   int;
+            type:   bool;
             name:   string(STR_PARAM_VEHICLE_NAMES);
             desc:   string(STR_PARAM_VEHICLE_NAMES_DESC);
-            min_value: 0;
-            max_value: 1;
             def_value: 0;
-            names: {
-                        0: string(STR_PARAM_VEHICLE_NAMES_TRANSLATED);
-                        1: string(STR_PARAM_VEHICLE_NAMES_ORIGINAL);
-            };
         }
     }
     param {
