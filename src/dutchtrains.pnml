@@ -4,6 +4,8 @@
 
 //define grf
 #include "src/header.pnml"
+//checks for other sets
+#include "src/checks.pnml"
 //disable original vehicles
 #include "src/disableorigvehs.pnml"
 //include sprite templates

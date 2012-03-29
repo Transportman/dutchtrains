@@ -1,0 +1,6 @@
+//some checks
+
+//NuTracks: this set must be loaded after NuTracks to work with NuTracks
+if (grf_future_status("\44\4A\54\01") && !grf_order_behind("\44\4A\54\01")) {
+    error(WARNING, MUST_LOAD_AFTER, "NuTracks");
+}
