@@ -43,6 +43,7 @@ item(FEAT_TRAINS, item_coaches_ICL) {
     graphics {
         purchase: switch_coaches_ICL_purchase;
         cargo_subtype_text: switch_coaches_ICL_subtype_text;
+        colour_mapping: PALETTE_USE_DEFAULT;
         switch_coaches_ICL_livery;
     }
 }

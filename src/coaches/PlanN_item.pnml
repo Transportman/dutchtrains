@@ -42,6 +42,7 @@ item(FEAT_TRAINS, item_coaches_PlanN) {
 	}
     graphics {
         purchase: spriteset_coaches_PlanN_purchase;
+        colour_mapping: PALETTE_USE_DEFAULT;
         spriteset_coaches_PlanN;
     }
 }
