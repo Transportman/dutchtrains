@@ -1,6 +1,5 @@
 //this file sets the vehicle ids for compatibility reasons
 
-item(FEAT_TRAINS, item_dmu_DH2, 116) {}
 item(FEAT_TRAINS, item_dmu_DE2, 117) {}
 item(FEAT_TRAINS, item_dmu_DE3, 118) {}
 item(FEAT_TRAINS, item_dmu_Mat34, 119) {}
@@ -158,3 +157,4 @@ item(FEAT_TRAINS, item_wagons_gen5_selfdischarger, 270) {}
 item(FEAT_TRAINS, item_wagons_gen6_containercarrier, 271) {}
 item(FEAT_TRAINS, item_wagons_gen5_VAM, 272) {}
 item(FEAT_TRAINS, item_emu_SM90, 273) {}
+item(FEAT_TRAINS, item_dmu_DH2, 274) {}

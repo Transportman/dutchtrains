@@ -1,12 +1,14 @@
 /*
 * PURCHASE
 */
+
 spriteset(spriteset_dmu_DH2_orig_purchase, "gfx/purchase/dmu/DH2_orig.png") {
 	template_purchase(0, 0)
 }
 spriteset(spriteset_dmu_DH2_renew_purchase, "gfx/purchase/dmu/DH2_renew.png") {
 	template_purchase(0, 0)
 }
+
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_livery_purchase, current_year) {
 	0..1996: spriteset_dmu_DH2_orig_purchase;
     spriteset_dmu_DH2_renew_purchase;
@@ -41,6 +43,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen2, (position_in_vehid_chain
 	1: spriteset_dmu_DH2_renew_back;
     spriteset_dmu_DH2_renew_front;
 }
+
 //wadkikker
 spriteset(spriteset_dmu_DH2_wadkikker_front, "gfx/dmu/DH2.png") {
 	template_2cc_88(0, 120)
