@@ -2,8 +2,24 @@
 * PURCHASE
 */
 
-spriteset(spriteset_electric_NS1300_purchase, "gfx/electric/NS1300.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_electric_NS1300_purchase_turquoise, "gfx/purchase/electric/NS1300_turquoise.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1300_purchase_blue, "gfx/purchase/electric/NS1300_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1300_purchase_grey, "gfx/purchase/electric/NS1300_grey.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1300_purchase_yellow, "gfx/purchase/electric/NS1300_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_electric_NS1300_purchase, current_year) {
+	0..1955: spriteset_electric_NS1300_purchase_turquoise;
+    1956..1971: spriteset_electric_NS1300_purchase_blue;
+    1972..1984: spriteset_electric_NS1300_purchase_grey;
+    spriteset_electric_NS1300_purchase_yellow;
 }
 
 /*

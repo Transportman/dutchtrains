@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_electric_gen9_HS001_purchase, "gfx/electric/gen9_HS001.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_electric_gen9_HS001_purchase, "gfx/purchase/electric/gen9_HS001.png") {
+	template_purchase(0, 0)
 }
 
 /*

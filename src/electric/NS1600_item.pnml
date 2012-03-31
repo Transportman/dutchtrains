@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_electric_NS1600) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_electric_NS1600_purchase;
+        purchase: switch_electric_NS1600_purchase;
         cargo_subtype_text: switch_electric_NS1600_subtype_text;
         cargo_capacity: return 0;
         switch_electric_NS1600_livery;

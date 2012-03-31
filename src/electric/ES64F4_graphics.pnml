@@ -2,8 +2,20 @@
 * PURCHASE
 */
 
-spriteset(spriteset_electric_ES64F4_purchase, "gfx/electric/ES64F4.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_electric_ES64F4_purchase_dbs, "gfx/purchase/electric/ES64F4_dbs.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_ES64F4_purchase_ers, "gfx/purchase/electric/ES64F4_ers.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_ES64F4_purchase_locon, "gfx/purchase/electric/ES64F4_locon.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_electric_ES64F4_purchase, current_year) {
+	0..2005: spriteset_electric_ES64F4_purchase_dbs;
+    2006-2010: spriteset_electric_ES64F4_purchase_ers;
+    spriteset_electric_ES64F4_purchase_locon;
 }
 
 /*

@@ -2,8 +2,37 @@
 * PURCHASE
 */
 
-spriteset(spriteset_electric_NS1200_purchase, "gfx/electric/NS1200.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_electric_NS1200_purchase_turquoise, "gfx/purchase/electric/NS1200_turquoise.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1200_purchase_brown, "gfx/purchase/electric/NS1200_brown.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1200_purchase_blue, "gfx/purchase/electric/NS1200_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1200_purchase_grey, "gfx/purchase/electric/NS1200_grey.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1200_purchase_vos, "gfx/purchase/electric/NS1200_vos.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1200_purchase_acts, "gfx/purchase/electric/NS1200_acts.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1200_purchase_eetc, "gfx/purchase/electric/NS1200_eetc.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_electric_NS1200_purchase, current_year) {
+	0..1952: spriteset_electric_NS1200_purchase_turquoise;
+    1953..1954: spriteset_electric_NS1200_purchase_brown;
+    1955..1969: spriteset_electric_NS1200_purchase_blue;
+    1970..1998: spriteset_electric_NS1200_purchase_grey;
+    1999..1999: spriteset_electric_NS1200_purchase_acts;
+    2000..2002: spriteset_electric_NS1200_purchase_vos;
+    2003..2010: spriteset_electric_NS1200_purchase_acts;
+    spriteset_electric_NS1200_purchase_eetc;
 }
 
 /*

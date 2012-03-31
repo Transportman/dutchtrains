@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_electric_mDDM_purchase, "gfx/electric/mDDM.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_electric_mDDM_purchase, "gfx/purchase/electric/mDDM.png") {
+	template_purchase(0, 0)
 }
 
 /*

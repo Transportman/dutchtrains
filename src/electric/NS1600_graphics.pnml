@@ -2,8 +2,21 @@
 * PURCHASE
 */
 
-spriteset(spriteset_electric_NS1600_purchase, "gfx/electric/NS1600.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_electric_NS1600_purchase, "gfx/purchase/electric/NS1700.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1600_purchase_red, "gfx/purchase/electric/NS1600_red.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1600_purchase_husa, "gfx/purchase/electric/NS1600_husa.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_electric_NS1600_purchase, current_year) {
+	0..1998: spriteset_electric_NS1600_purchase;
+    1999..2003: spriteset_electric_NS1600_purchase_red;
+    2004..2010: spriteset_electric_NS1600_purchase;
+    spriteset_electric_NS1600_purchase_husa;
 }
 
 /*

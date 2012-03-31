@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_electric_NS1500_purchase, "gfx/electric/NS1500.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_electric_NS1500_purchase_black, "gfx/purchase/electric/NS1500_black.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_NS1500_purchase_yellow, "gfx/purchase/electric/NS1500_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_electric_NS1500_purchase, current_year) {
+	0..1971: spriteset_electric_NS1500_purchase_black;
+    spriteset_electric_NS1500_purchase_yellow;
 }
 
 /*
