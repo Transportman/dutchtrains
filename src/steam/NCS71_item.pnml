@@ -14,10 +14,10 @@ item(FEAT_TRAINS, item_steam_NCS71) {
         cost_factor: 32;
         running_cost_factor: 23;
         speed: 90 km/h;
-        power: 900 hpM;
+        power: 946 hpM;
         cargo_capacity: 1;
         weight: 118 ton;
-        tractive_effort_coefficient: 0.078;
+        tractive_effort_coefficient: 0.080;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;

@@ -14,10 +14,10 @@ item(FEAT_TRAINS, item_steam_NBDS30) {
         cost_factor: 28;
         running_cost_factor: 23;
         speed: 100 km/h;
-        power: 800 hpM;
+        power: 778 hpM;
         cargo_capacity: 1;
         weight: 100 ton;
-        tractive_effort_coefficient: 0.081;
+        tractive_effort_coefficient: 0.083;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -47,6 +47,7 @@ item(FEAT_TRAINS, item_steam_NBDS30) {
         cargo_subtype_text: switch_steam_NBDS30_subtype_text;
         cargo_capacity: return 0;
         speed: switch_steam_NBDS30_speed;
+        power: switch_steam_NBDS30_power;
         switch_steam_NBDS30_livery;
     }
 }

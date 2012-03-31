@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_steam_Arend) {
         power: 51 hpM;
         cargo_capacity: 0;
         weight: 19.3 ton;
-        tractive_effort_coefficient: 0.047;
+        tractive_effort_coefficient: 0.048;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;

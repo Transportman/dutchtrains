@@ -144,10 +144,15 @@ switch(FEAT_TRAINS, SELF, switch_steam_NBDS30_length, (position_in_vehid_chain %
 }
 
 /*
-* VEHICLE SPEED CALLBACK
+* VEHICLE PROPERTY CALLBACKS
 */
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_speed, date_of_last_service) {
 	0..date(1939,12,31): return 101;
     return 51;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_power, date_of_last_service) {
+	0..date(1919,12,31): return 778;
+    return 867;
 }

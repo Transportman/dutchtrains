@@ -208,7 +208,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_weight, date_of_last_service) {
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_te, date_of_last_service) {
-	0..date(1924,12,31): return 20; //0.078*255;
+	0..date(1924,12,31): return 20; //0.080*255;
 	date(1925,1,1)..date(1934,12,31): return 19; //0.073*255;
     return 17; //0.065*255;
 }

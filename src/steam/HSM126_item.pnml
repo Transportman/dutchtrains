@@ -7,17 +7,17 @@ item(FEAT_TRAINS, item_steam_HSM126) {
         name: string(str_steam_HSM126);
         
         introduction_date: date(1883,1,1);
-        model_life: 67;
+        model_life: 78;
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 17;
-        running_cost_factor: 15;
-        speed: 80 km/h;
-        power: 250 hpM;
+        cost_factor: 21;
+        running_cost_factor: 20;
+        speed: 90 km/h;
+        power: 562 hpM;
         cargo_capacity: 1;
-        weight: 60 ton;
-        tractive_effort_coefficient: 0.068;
+        weight: 71 ton;
+        tractive_effort_coefficient: 0.067;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;

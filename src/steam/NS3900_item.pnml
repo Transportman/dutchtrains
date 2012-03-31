@@ -11,13 +11,13 @@ item(FEAT_TRAINS, item_steam_NS3900) {
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 38;
-        running_cost_factor: 26;
+        cost_factor: 39;
+        running_cost_factor: 29;
         speed: 110 km/h;
-        power: 1163 hpM;
+        power: 1622 hpM;
         cargo_capacity: 0;
         weight: 147 ton;
-        tractive_effort_coefficient: 0.084;
+        tractive_effort_coefficient: 0.086;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
