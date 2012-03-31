@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_SGM3_purchase, "gfx/emu/SGM.png") {
-	template_purchase(1, 384)
+spriteset(spriteset_emu_SGM3_purchase_original, "gfx/purchase/emu/SGM_III_original.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_SGM3_purchase_renewal, "gfx/purchase/emu/SGM_III_renewal.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_purchase, current_year) {
+	0..2003: spriteset_emu_SGM3_purchase_original;
+    spriteset_emu_SGM3_purchase_renewal;
 }
 
 /*

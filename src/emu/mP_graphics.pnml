@@ -2,8 +2,20 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_mP_purchase, "gfx/emu/mP.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_emu_mP_purchase_brown, "gfx/purchase/emu/mP_brown.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_mP_purchase_yellow_red, "gfx/purchase/emu/mP_yellow_red.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_mP_purchase_red, "gfx/purchase/emu/mP_red.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_mP_purchase, current_year) {
+	0..1976: spriteset_emu_mP_purchase_brown;
+    1977..1988: spriteset_emu_mP_purchase_yellow_red;
+    spriteset_emu_mP_purchase_red;
 }
 
 /*

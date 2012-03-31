@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_Mat64PlanT_purchase, "gfx/emu/Mat64.png") {
-	template_purchase(1, 256)
+spriteset(spriteset_emu_Mat64PlanT_purchase_green, "gfx/purchase/emu/Mat64_green.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat64PlanT_purchase_yellow, "gfx/purchase/emu/Mat64_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanT_purchase, current_year) {
+	0..1955: spriteset_emu_Mat64PlanT_purchase_green;
+    spriteset_emu_Mat64PlanT_purchase_yellow;
 }
 
 /*

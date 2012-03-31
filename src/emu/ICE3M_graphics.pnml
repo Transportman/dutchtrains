@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_ICE3M_purchase, "gfx/emu/ICE3.png") {
-	template_purchase(1, 255)
+spriteset(spriteset_emu_ICE3M_purchase, "gfx/purchase/emu/ICE3.png") {
+	template_purchase(0, 0)
 }
 
 /*

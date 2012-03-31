@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_SLTVI_purchase, "gfx/emu/SLT.png") {
-	template_purchase(1, 147)
+spriteset(spriteset_emu_SLTVI_purchase, "gfx/purchase/emu/SLT_VI.png") {
+	template_purchase(0, 0)
 }
 
 /*

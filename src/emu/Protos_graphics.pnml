@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_Protos_purchase, "gfx/emu/Protos.png") {
-	template_purchase(1, 64)
+spriteset(spriteset_emu_Protos_purchase, "gfx/purchase/emu/Protos.png") {
+	template_purchase(0, 0)
 }
 
 /*

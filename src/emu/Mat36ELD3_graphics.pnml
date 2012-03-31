@@ -2,8 +2,32 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_Mat36ELD3_purchase, "gfx/emu/Mat36ELD3_600.png") {
-	template_purchase(1, 192)
+spriteset(spriteset_emu_Mat36ELD3_purchase_600_olive_lightroof, "gfx/purchase/emu/Mat36ELD3_600_olive_lightroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat36ELD3_purchase_600_olive_darkroof, "gfx/purchase/emu/Mat36ELD3_600_olive_darkroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat36ELD3_purchase_olive, "gfx/purchase/emu/Mat36ELD3_olive.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat36ELD3_purchase_green, "gfx/purchase/emu/Mat36ELD3_green.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat36ELD3_purchase_moustache, "gfx/purchase/emu/Mat36ELD3_green_moustache.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat36EL3_purchase_green, "gfx/purchase/emu/Mat36EL3_green.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_purchase, current_year) {
+    0..1938: spriteset_emu_Mat36ELD3_purchase_600_olive_lightroof;
+    1939..1941: spriteset_emu_Mat36ELD3_purchase_600_olive_darkroof;
+    1942..1955: spriteset_emu_Mat36ELD3_purchase_olive;
+	1956..1957: spriteset_emu_Mat36ELD3_purchase_green;
+    1958..1959: spriteset_emu_Mat36ELD3_purchase_moustache;
+    spriteset_emu_Mat36EL3_purchase_green;
 }
 
 /*

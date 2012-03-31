@@ -2,8 +2,15 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_Mat35ELD2_purchase, "gfx/emu/Mat35ELD2.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_emu_Mat35ELD2_purchase_lightroof, "gfx/purchase/emu/Mat35ELD2_lightroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat35ELD2_purchase_darkroof, "gfx/purchase/emu/Mat35ELD2_darkroof.png") {
+	template_purchase(0, 0)
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat35ELD2_purchase, current_year) {
+	0..1938: spriteset_emu_Mat35ELD2_purchase_lightroof;
+    spriteset_emu_Mat35ELD2_purchase_darkroof;
 }
 
 /*
