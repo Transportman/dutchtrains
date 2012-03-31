@@ -1,0 +1,11 @@
+Dutch Trainset Changelog
+========================
+
+2.0.0-alpha1 (2012/04/01)
+-------------------------
+- Complete new codebase
+- Most graphics redrawn
+- Many new trains added
+- Liveries, liveries, liveries
+- Prebuilt MUs
+- Broad range of passenger carriages

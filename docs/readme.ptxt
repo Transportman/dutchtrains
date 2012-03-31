@@ -1,21 +1,27 @@
 {{GRF_TITLE}}
------------------------------------
+===================================
+Dutch Trains for OpenTTD
 
-Contents:
+----------
+0 Contents
+----------
 
-1 About
-2 Requirements
-3 Installation
-  3.1 Parameter settings
-4 Usage
-  4.1 List of vehicles
-5 License
-6 Credits
-7 Building from source
-  7.1 Obtaining the source
-  7.2 Dependencies
-  7.3 Makefile targets
-  7.4 Speed issues
+1   About
+2   General information
+    2.1  Requirements
+    2.2  Installation
+    2.3  Parameter settings
+    2.4  Usage
+3   Known issues
+4   Background information
+5   Frequently Asked Questions
+6   Credits
+7   Contact information
+    7.1  Bug reports
+    7.2  Other problems
+    7.3  General enquiries
+8   License
+9   Obtaining the source
 
 
 
@@ -23,76 +29,267 @@ Contents:
 1 About
 -------
 
-Dutch Trains is New Graphics Set which adds a great number of both 
-historical and current Dutch trains to OpenTTD.
+The Dutch Trainset adds most of the historic and current Dutch trains
+to OpenTTD. For each train the most important liveries (if not all!) are
+included.
 
 {{GRF_TITLE}}
-Filename: {{FILENAME}}
 MD5Hash:  {{GRF_MD5}}
 Version:  {{REPO_REVISION}}
 GRF ID:   {{GRF_ID}}
 
 
 
+---------------------
+2 General information
+---------------------
+
+2.1 Requirements
+----------------
+- OpenTTD 1.2.0-RC1 or nightly r23971, or higher.
+- Not compatible with TTDPatch
 
 
---------------
-2 Requirements
---------------
-
-You need a recent version of OpenTTD to be able to use all features of 
-the Dutch Tram Set. A recent version of OpenTTD can be obtained from 
-http://www.openttd.org/.
-
-If you play TTDPatch, you can get an older version of this set that 
-works in TTDPatch from here: 
-http://users2.tt-forums.net/dutchset/downloads.php
+2.2 Installation
+----------------
+OpenTTD:
+  see http://wiki.openttd.org/NewGRF
+  This NewGRF is available from the ingame Online Content
 
 
-
---------------
-3 Installation
---------------
-
-By far the easiest way to install is to aquire the Dutch Trains 
-via the ingame Content Download feature. How to do this is explained at
-http://wiki.openttd.org/Online_content.
-
-If you somehow cannot use the Content Download feature, you need to copy
-the Dutch Trains .grf file to the OpenTTD data directory. The OpenTTD 
-readme explains where you can find this directory.
-
-The final step is to activate the Dutch Trains.
-This is done via the NewGRF Settings window, which is explained here:
-http://wiki.openttd.org/NewGRF.
-Now you can use the Dutch Trains in your new games.
-
-
-3.1 Parameter Settings
+2.3 Parameter settings
 ----------------------
+There are two parameter settings available. The first setting translates
+the vehicle nicknames to your own language, or English if we don't have
+a translation for your language. The other setting allows to keep the 
+default TTD rail/monorail/maglev vehicles, if they're not already
+disabled by a different NewGRF
+
+Set the parameters before starting a new game. Once started they 
+cannot be changed any longer.
+
+Useful details if you need to set the parameters manually in the
+configuration file:
+
+  1st parameter: Translate vehicle nicknames
+  0: Show Dutch nicknames
+  1: Show localized/English nicknames
+  
+  2nd parameter: Keep default TTD vehicles
+  0: none (default)
+  1: rail only
+  2: monorail only
+  3: rail and monorail
+  4: maglev only
+  5: rail and maglev
+  6: monorail and maglev
+  7: all
+
+
+2.4 Usage
+---------
+Metro vehicles
+    Metro vehicles are only available if you have loaded a metro track
+    NewGRF. The train set has been tested to work with the Metro Track
+    Set, the UK Railway Set tracks and NuTracks. If you want to use it 
+    with NuTracks, make sure to set the NuTracks track parameter to 
+    either metro or third rail, and make sure to load this set after 
+    NuTracks in the NewGRF configuration.
+    
+Multiple units
+    Multiple units are purchased as a single complete unit. If MUs are
+    available in multiple lengths, you choose the lenght directy from
+    the purchase menu by selecting the appropriate train to purchase.
+    You cannot change the length of a MU once purchased, in that case 
+    you have to sell the train and buy an new one.
+    
+    Many of the older multiple units have a baggage compartment. This 
+    compartment can be refitted to carry mail or any express cargo. By 
+    default, the baggage compartment will carry either passengers or 
+    nothing at all.
+    
+Livery refits
+    The set comes with a comprehensive livery refit system. If a vehicle
+    has multiple liveries available, you can refit it in the depot to 
+    select a different livery. At any one time, all liveries are 
+    available for refit, even if this is not historically accurate (it 
+    is up to you to play realistic or not).
+    For realistic play, most vehicles are equipped with a "year-dependent
+    livery" option. This is selected by default upon vehicle purchase, 
+    and what this does is give you the livery that was common at the 
+    current (game) year. Sometimes even randomized, if multiple liveries
+    were common at the same time. If a new livery is introduced as the 
+    years pass, the vehicles will be automatically repainted when 
+    visiting a depot.
+    If you rather have your vehicles always keep the livery they got 
+    when you purchased the vehicle, then you can achieve this by refitting
+    to the "construction year livery". This can also be done later on in
+    case you forgot, the livery will then revert to the one the train
+    had upon purchase.
+    A couple of modern engines don't have these options, but instead 
+    come with a "random livery" refit option. In this case the game will
+    pick a random livery from the available liveries for each vehicle.
+    And of course all liveries are listed separately, selecting a 
+    specific livery will make the vehicle always keep this livery.
+    
+    When livery-refitting, it's best to do this for each vehicle part
+    individually. Refitting a complete train at once may not always give
+    the expected result, but you can always try and then refit each part
+    individually if you didn't get what you wanted.
+    
+    Note: all livery refits are marked as "Passengers" in the vehicle
+    refit window. This is also the case for engines that don't actually
+    have a capacity, due to game limitations. Even though it says 
+    passengers, these engines will not hold anything after refitting.
 
 
 
+--------------
+3 Known issues
+--------------
 
--------
-4 Usage
--------
+MU livery refits
+    If you combine multiple MUs in a single train, the livery refit of 
+    the first MU will be applied to all subsequent MUs (#3818).
+    
+Vehicle names
+    Vehicle names are somewhat inconsistent and will be reviewed (#3646).
+    
+Sparks and smoke
+    MUs and steamers will emit sparks or smoke from every vehicle part,
+    not just the parts that have an engine or exhaust (#3685).
+    
+Changing vehicle properties
+    Some vehicles change their properties (speed, power, etc.) during
+    their lifetime, but you are not informed by that (#3686).
+    
+Mat '24 missing
+    The Mat '24 was in v1, but is not in this release. It will be 
+    completely redrawn and re-added later (#3798).
+    
+Bollenwagen missing
+    The bollenwagen was in v1, but is not in this release. It is 
+    currently unknown who drew this for v1, so we don't have permission
+    to include it in this release. This will either be sorted or it 
+    will be redrawn later (#3872).
 
 
 
+------------------------
+4 Background information
+------------------------
 
-4.1 List of vehicles
---------------------
+We aim to provide nearly every train that ever ran on Dutch tracks for
+any significant amount of time. This includes foreign trains that often
+visit our country, but of course the very first train that roamed our 
+tracks, the very new models, and everything inbetween.
 
+The vehicle properties are kept as real as possible. So you get real
+horsepowers, real weights, real maximum speeds and real capacities. For
+trains this is the seated capacity, for metros we also allow standees.
+We hope that this makes the trains feel as real as possible.
+
+
+
+----------------------------
+5 Frequently Asked Questions
+----------------------------
+
+Q: Why does the livery refit of a second MU not work?
+A: This is a technical limitation that currently hasn't been solved yet.
+   For now the second and further MU in a train will take the livery of
+   the first MU.
+   
+Q: Why do some MUs with a baggage compartment increase capacity when
+   refitted to passengers, while others don't?
+A: In real life, some MUs came in multiple variants, with and without
+   baggage compartment. In this case, when refitted to passengers, you 
+   will automatically get the version without the baggage compartment.
+   In other cases, the baggage compartment was later rebuilt as passenger
+   compartment. If this is the case, then at some point the vehicle 
+   capacity will increase when refitted to passengers.
+   The last case is that the baggage compartment was never used to 
+   carry passengers. In this case, the compartment will remain empty
+   when refitted to passengers.
 
 
 
 ---------
-5 License
+6 Credits
 ---------
 
-Dutch Trains - Trains of The Netherlands for OpenTTD
-Copyright (C) 2003-2011 Dutch Trainset Team
+Graphics (see individual graphic files in the source for details):
+- Bastiaan (Bastiaan Luytjes)
+- DanMacK (Dan MacKellar)
+- FooBar (Jasper Vries)
+- Hyronymus (Jeroen Otto)
+- Purno (Mark Leppen)
+- Snail (Jacopo Coletto)
+- STT Transport
+- Voyager One
+- Wile E. Coyote
+
+Code:
+- FooBar (Jasper Vries)
+
+Translations:
+- Dutch: FooBar (Jasper Vries)
+- English: FooBar (Jasper Vries)
+
+Makefile system:
+- planetmaker (Ingo von Borstel)
+
+
+Special thanks to the developers of the first Dutch Trainset and 
+everyone who supported us during development of this new version.
+
+
+
+---------------------
+7 Contact information
+---------------------
+
+7.1 Bug reports
+---------------
+Please report any bugs you find at
+  bug tracker: http://dev.openttdcoop.org/projects/dutchtrains/issues
+  or forum topic: http://www.tt-forums.net/viewtopic.php?t=5033
+
+Always included a detailed description of the bug, preferrably with
+screenshot and savegame. Also state the exact game version you're using, 
+as well as the version of this NewGRF.
+
+If you have a savegame that includes NewGRFs not available on OpenTTD's 
+Online Content, then please try to reproduce the bug in a new game 
+which has all NewGRFs easily accessible.
+
+If you're using a patched version of the game, please try to reproduce
+the bug on an official game build. If you can't reproduce the bug, then
+don't report it here but in the forum topic of the patch(pack) instead.
+
+
+7.2 Other problems
+------------------
+If you have any problems using this NewGRF that are not covered in the 
+Frequently Asked Questions above, then you can ask your questions in the
+forum topic: http://www.tt-forums.net/viewtopic.php?t=5033
+
+
+7.3 General enquiries
+---------------------
+
+If you have any queries that cannot be asked in the forum topic, then
+contact FooBar via Private Message at www.tt-forums.net or send
+an email to foobar at jaspervries.nl.
+
+
+
+---------
+8 License
+---------
+
+Dutch Trainset - Dutch Trains for OpenTTD
+Copyright (C) 2003-2012 Dutch Trainset Team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -110,172 +307,17 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 
 
----------
-6 Credits
----------
-
-Dutch Trainset Team:
---------------------
-* Hyronymus,
-* Purno,
-* Bastiaan.
-Graphics by: 
-* Bastiaan, 
-* DanMacK, 
-* Purno, 
-* Snail, 
-* Voyager One,
-* Wile E. Coyote,
-* and others.
-Coded by:
-* FooBar.
-
-Makefile system:
-----------------
-Ingo von Borstel (planetmaker)
-
-Special Thanks to:
-------------------
-* NML developers
-* AndersI and jvassie
-* Everybody involved with the development of Dutch Trainset v1.0
-* #openttdcoop DevZone for providing the repository, bug tracker, 
-  nightly builds and much more!
-
-
-
 ----------------------
-7 Building from source
+9 Obtaining the source
 ----------------------
 
-Usually there's not much which needs to be changed when you obtain the
-source. Your friends will usually be
-    make
-	make install
-Both will build the grf from source, the latter will also try to copy
-the grf into your grf folder so that it is available for testing and
-use straight away.
+The source code can be obtained from the #openttdcoop DevZone
+via source browser:
+    http://dev.openttdcoop.org/projects/dutchtrains/repository
+or via mercurial checkout:
+    hg clone http://hg.openttdcoop.org/dutchtrains
+or via a source bundle download (releases only):
+    http://bundles.openttdcoop.org/dutchtrains/
 
-
-7.1 Obtaining the source
-------------------------
-
-The source code can be obtained from the #openttdcoop DevZone at
-    http://dev.openttdcoop.org/projects/dutchtramset
-or via mercurial checkout
-    hg clone http://hg.openttdcoop.org/dutchtramset
-
-
-7.2 Dependencies
-----------------
-
-Requirements for running the Makefile successfully:
-	NML
-	gcc
-	md5sum (or md5 on Mac)
-	make
-    mercurial (recommended)
-    python (recommended)
-
-If you want to bundle the grf, you'll need additionally
-	tar
-	zip
-	bzip2
-	unix2dos (optional)
-
-Windows only:
-On Windows systems this means that you'll need to install MinGW and MSys
-in order to obtain a posix compatible environment. Then the makefile can
-be called the very same way as it is on linux and mac systems.
-MinGW/MSys contain the above mentioned programmes (except NML of course) 
-and can be obtained from http://www.mingw.org/ That site also features 
-an excellent walk-through on how to install it.0
-
-If you use for OpenTTD data folder a non-default path or Windows with a
-non-English localization make sure to copy Makefile.local.sample to
-Makefile.local and edit the line with
-	INSTALLDIR =
-accordingly so that it shows the full path to your OpenTTD data
-directory.
-
-
-7.3 Makefile targets
---------------------
-
-A brief overview over all Makefile targets is given here:
-
-all:
-	This is the default target, if also no parameter is given to
-	make. It will simply build the grf file, if it needs building
-
-depend:
-	Re-run the dependency check. Usually not manually needed.
-
-docs:
-	Build the documentation files
-
-bundle:
-	This target will create a directory called "<name>-nightly" and
-	copy the grf file there and the documentation files, readme.txt,
-	changelog.txt and license.txt
-
-bundle_zip
-	This will zip the bundle directory into one zip for distribution
-
-bundle_tar
-	This will tar the bundle directory into a tar archive for
-	distribution or upload to bananas
-
-bundle_src
-	Creates a source bundle
-
-install:
-	This will create a tar archive (like bundle_tar) and copy it
-	into the INSTALLDIR as specified in Makefile.local (or the
-	default dir, if that isn't defined). Don't rely on a good
-	detection of the default installation directory. It's
-	especially bound to fail on windows machines.
-
-distclean:
-	This phony target cleans everything from a source bundle which
-	wasn't shipped.
-
-clean:
-	This phony target will delete all files which this Makefile will
-	create
-
-mrproper:
-	This phony target will delete also all directories created by
-	different Makefile targets
-
-remake:
-	It's a shortcut for first cleaning the dir and then making the
-	grf anew.
-
-addcheck:
-	Check whether there are some files required but not part of the
-	repository.
-
-check:
-	Check the md5sum of the built newgrf against the supplied md5sum
-	(Intended to be used when building from tar balls)
-
-
-7.4 Speed issues
-----------------
-
-A note concerning the speed of the makefile:
-It seems that the required tools using MinGW and / or msys are thoroughly
-slow on Windows. A few example run times for OpenGFX, same processor type
-(both core 2 duo, 2.26GHz for the windows machine, 2.0 GHz for the OSX
-machine). Note that the values given are the 'real' time. Even though
-this varies more and is dependent on the processor load, that's what you
-have to wait for; the 'user' times are quite low on the Windows machine
-(~16s), but that by no means reflects the build time. Times are from
-OpenGFX r539 with makefile r199.
-
-DEP_CHECK_TYPE         Windows               bash native
-                 native       in VM            (OSX)
-none            1m23.360s      -             0m32.781s
-mdep            1m54.484s   0m30.164s        0m33.807s
-normal          2m37.857s      -             0m36.528s
+How to build from source and the requirements for that are included 
+with the source in the file /docs/building_from_source.txt.
