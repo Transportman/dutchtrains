@@ -2,8 +2,20 @@
 * PURCHASE
 */
 
-spriteset(spriteset_metro_RET_typeT_blue_purchase, "gfx/metro/RET_typeT.png") {
-	template_purchase(1, 192)
+spriteset(spriteset_metro_RET_typeT_purchase_blue_red, "gfx/purchase/metro/RET_typeT_blue_red.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_metro_RET_typeT_purchase_white_blue, "gfx/purchase/metro/RET_typeT_white_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_metro_RET_typeT_purchase_silver_green, "gfx/purchase/metro/RET_typeT_silver_green.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeT_purchase, current_year) {
+	0..1997: spriteset_metro_RET_typeT_purchase_blue_red;
+    2006..2009: spriteset_metro_RET_typeT_purchase_white_blue;
+    spriteset_metro_RET_typeT_purchase_silver_green;
 }
 
 /*

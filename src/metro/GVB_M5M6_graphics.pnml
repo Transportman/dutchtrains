@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_metro_GVB_M5M6_purchase, "gfx/metro/GVB_M5M6.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_metro_GVB_M5M6_purchase, "gfx/purchase/metro/GVB_M5M6.png") {
+	template_purchase(0, 0)
 }
 
 /*

@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_metro_RET_typeM_blue_purchase, "gfx/metro/RET_typeM.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_metro_RET_typeM_blue_purchase, "gfx/purchase/metro/RET_typeM.png") {
+	template_purchase(0, 0)
 }
 
 /*

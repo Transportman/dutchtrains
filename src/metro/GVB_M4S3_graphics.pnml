@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_metro_GVB_M4S3_blue_purchase, "gfx/metro/GVB_M4S3.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_metro_GVB_M4S3_purchase_blue_red, "gfx/purchase/metro/GVB_M4S3_blue_red.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_metro_GVB_M4S3_purchase_blue, "gfx/purchase/metro/GVB_M4S3_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M4S3_purchase, current_year) {
+	0..2005: spriteset_metro_GVB_M4S3_purchase_blue_red;
+    spriteset_metro_GVB_M4S3_purchase_blue;
 }
 
 /*
