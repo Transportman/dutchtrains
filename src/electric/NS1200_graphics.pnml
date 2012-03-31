@@ -41,14 +41,28 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_NS1200_randomlivery_actsvos) {
     4: spriteset_electric_NS1200_ACTS;
 }
 
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery_ACTS_EETC, (bitmask_consist_info & bitmask(0))) {
+    bitmask(0): spriteset_electric_NS1200_EETC; //if passenger carriage attached
+    spriteset_electric_NS1200_ACTS;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery_cargo_EETC, (bitmask_consist_info & bitmask(0))) {
+    bitmask(0): spriteset_electric_NS1200_EETC; //if passenger carriage attached
+    switch_electric_NS1200_randomlivery_actsvos;
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery_grey_cargo, (bitmask_consist_info & bitmask(0))) {
+    bitmask(0): spriteset_electric_NS1200_grey; //if passenger carriage attached
+    switch_electric_NS1200_randomlivery_actsvos;
+}
+
 switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery_cargopassenger, build_year) { //service 2011+
-	0..2002: switch_electric_NS1200_randomlivery_actsvos; //cargo, or EETC depending on next wagon (not yet implemented)
-    2003..2010: spriteset_electric_NS1200_ACTS; //ACTS, or EETC depending on next wagon (not yet implemented)
-    spriteset_electric_NS1200_EETC ;//eetc
+	0..2002: switch_electric_NS1200_livery_cargo_EETC; //cargo, or EETC depending on wagons attached
+    2003..2010: switch_electric_NS1200_livery_ACTS_EETC; //ACTS, or EETC depending on wagons attached
+    spriteset_electric_NS1200_EETC ;//EETC
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery_passengercargo, build_year) { //service 1999-2010
-	0..1998: spriteset_electric_NS1200_grey; //ns-grey, or cargo depending on next wagon (not yet implemented)
+	0..1998: switch_electric_NS1200_livery_grey_cargo; //ns-grey, or cargo depending on wagons attached
     1999..2002: switch_electric_NS1200_randomlivery_actsvos; //cargo, randomized
     spriteset_electric_NS1200_ACTS; //ACTS
 }
