@@ -2,12 +2,12 @@
 * PURCHASE
 */
 
-spriteset(spriteset_steam_NBDS30_purchase, "gfx/steam/NBDS30.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_NBDS30_purchase, "gfx/purchase/steam/NBDS30.png") {
+	template_purchase(0, 0)
 }
 
-spriteset(spriteset_steam_NS3500_purchase, "gfx/steam/NS3500.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_NS3500_purchase, "gfx/purchase/steam/NS3500.png") {
+	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, SELF, switch_steam_NBDS30_livery_purchase, current_year) {

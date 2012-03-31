@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_steam_Arend_purchase, "gfx/steam/arend.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_Arend_purchase, "gfx/purchase/steam/arend.png") {
+	template_purchase(0, 0)
 }
 
 /*

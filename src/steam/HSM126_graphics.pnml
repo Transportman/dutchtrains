@@ -2,12 +2,12 @@
 * PURCHASE
 */
 
-spriteset(spriteset_steam_HSM126_purchase, "gfx/steam/HSM126.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_HSM126_purchase, "gfx/purchase/steam/HSM126.png") {
+	template_purchase(0, 0)
 }
 
-spriteset(spriteset_steam_NS1100_purchase, "gfx/steam/NS1100.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_NS1100_purchase, "gfx/purchase/steam/NS1100.png") {
+	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, SELF, switch_steam_HSM126_livery_purchase, current_year) {

@@ -2,16 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_steam_NCS71_purchase, "gfx/steam/NCS71_1.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_NCS71_purchase, "gfx/purchase/steam/NCS71_1.png") {
+	template_purchase(0, 0)
 }
 
-spriteset(spriteset_steam_NCS72_purchase, "gfx/steam/NCS71_2.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_NCS72_purchase, "gfx/purchase/steam/NCS71_2.png") {
+	template_purchase(0, 0)
 }
 
-spriteset(spriteset_steam_NS3600_purchase, "gfx/steam/NS3600.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_NS3600_purchase, "gfx/purchase/steam/NS3600.png") {
+	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, SELF, switch_steam_NCS71_livery_purchase, current_year) {

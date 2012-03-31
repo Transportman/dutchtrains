@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_steam_NS3800_purchase, "gfx/steam/NS3800.png") {
-	template_purchase(1, 224)
+spriteset(spriteset_steam_NS3800_purchase, "gfx/purchase/steam/NS3800.png") {
+	template_purchase(0, 0)
 }
 
 /*
