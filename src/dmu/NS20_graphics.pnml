@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_dmu_NS20_purchase, "gfx/dmu/NS20.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_dmu_NS20_purchase_blue_red, "gfx/purchase/dmu/NS20_blue_red.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_NS20_purchase_blue_yellow, "gfx/purchase/dmu/NS20_blue_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_NS20_purchase, current_year) {
+	0..1972: spriteset_dmu_NS20_purchase_blue_red;
+    spriteset_dmu_NS20_purchase_blue_yellow;
 }
 
 /*

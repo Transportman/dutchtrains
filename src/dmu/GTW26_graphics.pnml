@@ -2,7 +2,17 @@
 * PURCHASE
 */
 
-//graphics from GTW 2/8
+spriteset(spriteset_dmu_GTW26_purchase_arriva, "gfx/purchase/dmu/GTW26_arriva.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_GTW26_purchase_veolia, "gfx/purchase/dmu/GTW26_veolia.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_purchase, current_year) {
+	0..2006: spriteset_dmu_GTW26_purchase_arriva;
+    spriteset_dmu_GTW26_purchase_veolia;
+}
 
 /*
 * VEHICLE

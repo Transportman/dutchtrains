@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_dmu_Lint41H_purchase, "gfx/dmu/Lint41H.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_dmu_Lint41H_purchase_syntus, "gfx/purchase/dmu/Lint41H_syntus.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_Lint41H_purchase_twents, "gfx/purchase/dmu/Lint41H_twents.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_purchase, current_year) {
+	0..2006: spriteset_dmu_Lint41H_purchase_syntus;
+    spriteset_dmu_Lint41H_purchase_twents;
 }
 
 /*

@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_dmu_DE4_purchase, "gfx/dmu/DE4.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_dmu_DE4_purchase, "gfx/purchase/dmu/DE4.png") {
+	template_purchase(0, 0)
 }
 
 /*

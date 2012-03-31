@@ -2,8 +2,20 @@
 * PURCHASE
 */
 
-spriteset(spriteset_dmu_GTW_purchase, "gfx/dmu/GTW.png") {
-	template_purchase(1, 480)
+spriteset(spriteset_dmu_GTW28_purchase_arriva, "gfx/purchase/dmu/GTW28_arriva.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_GTW28_purchase_veolia, "gfx/purchase/dmu/GTW28_veolia.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_GTW28_purchase_breng, "gfx/purchase/dmu/GTW28_breng.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_purchase, current_year) {
+	0..2006: spriteset_dmu_GTW28_purchase_arriva;
+    2007..2012: spriteset_dmu_GTW28_purchase_veolia;
+    spriteset_dmu_GTW28_purchase_breng;
 }
 
 /*

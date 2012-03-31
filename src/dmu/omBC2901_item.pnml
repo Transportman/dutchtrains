@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_dmu_omBC2901) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_dmu_omBC2901_purchase;
+        purchase: switch_dmu_omBC2901_purchase;
         cargo_subtype_text: switch_dmu_omBC2901_subtype_text;
         switch_dmu_omBC2901_livery;
     }

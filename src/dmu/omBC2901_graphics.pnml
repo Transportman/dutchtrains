@@ -2,8 +2,20 @@
 * PURCHASE
 */
 
-spriteset(spriteset_dmu_omBC2901_purchase, "gfx/dmu/omBC2901.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_dmu_omBC2901_purchase_olive_lightroof, "gfx/purchase/dmu/omBC2901_olive_lightroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_omBC2901_purchase_olive_darkroof, "gfx/purchase/dmu/omBC2901_olive_darkroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_omBC2901_purchase_blue, "gfx/purchase/dmu/omBC2901_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_omBC2901_purchase, current_year) {
+	0..1938: spriteset_dmu_omBC2901_purchase_olive_lightroof;
+    1939..1952: spriteset_dmu_omBC2901_purchase_olive_darkroof;
+    spriteset_dmu_omBC2901_purchase_blue;
 }
 
 /*

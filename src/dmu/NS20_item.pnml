@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_dmu_NS20) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_dmu_NS20_purchase;
+        purchase: switch_dmu_NS20_purchase;
         cargo_subtype_text: switch_dmu_NS20_subtype_text;
         switch_dmu_NS20_livery;
     }
