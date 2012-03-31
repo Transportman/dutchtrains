@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_wagons_gen9_silowagon_purchase, "gfx/wagons/gen9_silowagon.png") {
-	template_purchase(1, 96)
+spriteset(spriteset_wagons_gen9_silowagon_purchase, "gfx/purchase/wagons/gen9_silowagon.png") {
+	template_purchase(0, 0)
 }
 
 /*

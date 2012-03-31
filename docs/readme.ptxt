@@ -36,7 +36,7 @@ included.
 {{GRF_TITLE}}
 MD5Hash:  {{GRF_MD5}}
 Version:  {{REPO_REVISION}}
-GRF ID:   {{GRF_ID}}
+GRF ID:   FBFB0601
 
 
 
@@ -211,6 +211,12 @@ A: In real life, some MUs came in multiple variants, with and without
    The last case is that the baggage compartment was never used to 
    carry passengers. In this case, the compartment will remain empty
    when refitted to passengers.
+   
+Q: Why are some wagon types not available?
+A: Some specialized wagons, like the VAM compost wagon, the cartransporter
+   and the superheavy flatcar are only able to carry specialized cargoes.
+   These cargoes are not available without an industry NewGRF, and these
+   wagons are not available if the cargoes they carry are not available.
 
 
 

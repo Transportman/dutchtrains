@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_wagons_gen9_superheavy_flatcar_purchase, "gfx/wagons/gen9_superheavy_flatcar.png") {
-	template_purchase(1, 190)
+spriteset(spriteset_wagons_gen9_superheavy_flatcar_purchase, "gfx/purchase/wagons/gen9_superheavy_flatcar.png") {
+	template_purchase(0, 0)
 }
 
 /*
