@@ -31,18 +31,28 @@ spriteset(spriteset_electric_NS1600_DBSchenker, "gfx/electric/NS1600.png") {
 * LIVERY SELECTION
 */
 
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery_NS_NSC, (bitmask_consist_info & bitmask(0))) {
+    bitmask(0): spriteset_electric_NS1600_yellow; //if passenger carriage attached
+    spriteset_electric_NS1600_NSCargo;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery_NS_HUSA, (bitmask_consist_info & bitmask(0))) {
+    bitmask(0): spriteset_electric_NS1600_yellow; //if passenger carriage attached
+    spriteset_electric_NS1600_HUSA;
+}
+
 switch(FEAT_TRAINS, SELF, switch_electric_NS1600_autolivery, date_of_last_service) {
 	0..date(1998,12,31): spriteset_electric_NS1600_yellow;
-    date(1999,1,1)..date(2003,12,31): spriteset_electric_NS1600_NSCargo;
+    date(1999,1,1)..date(2003,12,31): switch_electric_NS1600_livery_NS_NSC;
     date(2004,1,1)..date(2010,12,31): spriteset_electric_NS1600_yellow;
-    spriteset_electric_NS1600_HUSA;
+    switch_electric_NS1600_livery_NS_HUSA;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1600_purchaselivery, build_year) {
 	0..1998: spriteset_electric_NS1600_yellow;
-    1999..2003: spriteset_electric_NS1600_NSCargo;
+    1999..2003: switch_electric_NS1600_livery_NS_NSC;
     2004..2010: spriteset_electric_NS1600_yellow;
-    spriteset_electric_NS1600_HUSA;
+    switch_electric_NS1600_livery_NS_HUSA;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, cargo_subtype) {
