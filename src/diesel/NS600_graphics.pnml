@@ -2,8 +2,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_diesel_NS600_purchase, "gfx/diesel/NS600.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_diesel_NS600_purchase_green, "gfx/purchase/diesel/NS600_green.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_diesel_NS600_purchase_yellow, "gfx/purchase/diesel/NS600_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_diesel_NS600_purchase, current_year) {
+	0..1970: spriteset_diesel_NS600_purchase_green;
+    spriteset_diesel_NS600_purchase_yellow;
 }
 
 /*

@@ -2,8 +2,24 @@
 * PURCHASE
 */
 
-spriteset(spriteset_diesel_NS2200_purchase, "gfx/diesel/NS2200.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_diesel_NS2200_purchase_brown, "gfx/purchase/diesel/NS2200_brown.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_diesel_NS2200_purchase_yellow, "gfx/purchase/diesel/NS2200_yellow.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_diesel_NS2200_purchase_red, "gfx/purchase/diesel/NS2200_red.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_diesel_NS2200_purchase_strukton, "gfx/purchase/diesel/NS2200_strukton.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_diesel_NS2200_purchase, current_year) {
+	0..1970: spriteset_diesel_NS2200_purchase_brown;
+    1971..1995: spriteset_diesel_NS2200_purchase_yellow;
+    1996..2003: spriteset_diesel_NS2200_purchase_red;
+    spriteset_diesel_NS2200_purchase_strukton;
 }
 
 /*

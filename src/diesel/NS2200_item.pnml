@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_NS2200) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_diesel_NS2200_purchase;
+        purchase: switch_diesel_NS2200_purchase;
         cargo_subtype_text: switch_diesel_NS2200_subtype_text;
         cargo_capacity: return 0;
         switch_diesel_NS2200_livery;

@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_diesel_NS6400) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_diesel_NS6400_purchase;
+        purchase: switch_diesel_NS6400_purchase;
         cargo_subtype_text: switch_diesel_NS6400_subtype_text;
         cargo_capacity: return 0;
         switch_diesel_NS6400_livery;

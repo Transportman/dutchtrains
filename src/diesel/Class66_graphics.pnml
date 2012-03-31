@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_diesel_Class66_purchase, "gfx/diesel/Class66.png") {
-	template_purchase(1, 352)
+spriteset(spriteset_diesel_Class66_purchase, "gfx/purchase/diesel/Class66_rail4chem.png") {
+	template_purchase(0, 0)
 }
 
 /*

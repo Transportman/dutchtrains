@@ -2,8 +2,8 @@
 * PURCHASE
 */
 
-spriteset(spriteset_diesel_NS400_purchase, "gfx/diesel/NS400.png") {
-	template_purchase(1, 128)
+spriteset(spriteset_diesel_NS400_purchase, "gfx/purchase/diesel/NS400.png") {
+	template_purchase(0, 0)
 }
 
 /*
