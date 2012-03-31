@@ -279,9 +279,9 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)
 
 #wagons
-str_wagons_gen0hopper   :Hopper
+str_wagons_gen0hopper   :Hopper Wagon
 str_wagons_gen0boxcar   :Boxcar
-str_wagons_gen0tanker   :Tanker
+str_wagons_gen0tanker   :Tanker Wagon
 str_wagons_gen0openwagonmedium   :Open Wagon (medium)
 str_wagons_gen0openwagonsmall    :Open Wagon (small)
 str_wagons_gen0stakewagon        :Stake Wagon
@@ -340,12 +340,12 @@ str_coaches_SS_E_129    :Baggage Carriage SS E 129
 str_coaches_HSM_D_1916  :Baggage Carriage HSM D 1916
 
 #metro
-str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro, third rail)
-str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro, third rail)
-str_metro_GVB_M4S3      :GVB M4/S3 (Metro, third rail)
-str_metro_GVB_S1S2      :GVB S1-S2 (Metro, third rail)
-str_metro_GVB_M5M6      :GVB M5-M6 (Metro, third rail)
-str_metro_RET_typeT     :RET Type T (SG2) (Metro, third rail)
-str_metro_RET_typeM     :RET Type M (MG2) (Metro, third rail)
-str_metro_RET_typeB     :RET Type B (MG2/1) (Metro, third rail)
-str_metro_RET_typeR     :RET Type R (RSG3) (Metro, third rail)
+str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
+str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
+str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
+str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
+str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
+str_metro_RET_typeT     :RET Type T (SG2) (Metro)
+str_metro_RET_typeM     :RET Type M (MG2) (Metro)
+str_metro_RET_typeB     :RET Type B (MG2/1) (Metro)
+str_metro_RET_typeR     :RET Type R (RSG3) (Metro)
