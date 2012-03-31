@@ -38,7 +38,7 @@ item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
         dual_headed: 0;
         length: 7;
         extra_power_per_wagon: 0;
-        bitmask_vehicle_info: 0;
+        bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
         purchase: spriteset_coaches_RTM_BD_438_purchase;

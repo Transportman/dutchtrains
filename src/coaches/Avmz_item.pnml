@@ -38,7 +38,7 @@ item(FEAT_TRAINS, item_coaches_Avmz) {
         dual_headed: 0;
         length: 8;
         extra_power_per_wagon: 0;
-        bitmask_vehicle_info: 0;
+        bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
         purchase: switch_coaches_Avmz_purchase;
