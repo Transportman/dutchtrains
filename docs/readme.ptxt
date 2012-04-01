@@ -29,9 +29,11 @@ Dutch Trains for OpenTTD
 1 About
 -------
 
-The Dutch Trainset adds most of the historic and current Dutch trains
-to OpenTTD. For each train the most important liveries (if not all!) are
-included.
+Dutch Trains for OpenTTD. It all starts with Arend in 1839 continues to 
+the V250 Albatross and beyond. The set gives you the steam engines, 
+diesel and electric engines, diesel and electric multiple units and 
+metros that once were or still are common in the Netherlands. With many 
+liveries to choose from.
 
 {{GRF_TITLE}}
 MD5Hash:  {{GRF_MD5}}
@@ -88,6 +90,14 @@ configuration file:
 
 2.4 Usage
 ---------
+Starting date
+    Because our selection of steam trains isn't complete yet, the 
+    earliest you can start is 1883. From that year there will always be
+    at least one train available. If you want to start at the dawn of 
+    Dutch railroading, you can start as early as 1839 with Arend, but be
+    advised that there will be no trains available between 1857 and 
+    1883, a gap that will be filled in future releases.
+
 Metro vehicles
     Metro vehicles are only available if you have loaded a metro track
     NewGRF. The train set has been tested to work with the Metro Track
