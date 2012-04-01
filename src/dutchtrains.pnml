@@ -260,6 +260,8 @@
 #include "src/coaches/Pec_item.pnml"
 #include "src/coaches/Hbbkkss_graphics.pnml"
 #include "src/coaches/Hbbkkss_item.pnml"
+#include "src/coaches/PlanL_graphics.pnml"
+#include "src/coaches/PlanL_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

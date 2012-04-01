@@ -1,0 +1,67 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_PlanL_purchase_blue, "gfx/purchase/coaches/PlanL_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_PlanL_purchase_blue_yellow, "gfx/purchase/coaches/PlanL_blue_yellow.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_PlanL_purchase_yellow_blue, "gfx/purchase/coaches/PlanL_yellow_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanL_purchase, current_year) {
+	0..1973: spriteset_coaches_PlanL_purchase_blue;
+	1974..1982: spriteset_coaches_PlanL_purchase_blue_yellow;
+    spriteset_coaches_PlanL_purchase_yellow_blue;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_PlanL_blue, "gfx/coaches/PlanL.png") {
+	template_2cc_88(0, 0)
+}
+spriteset(spriteset_coaches_PlanL_blue_yellow, "gfx/coaches/PlanL.png") {
+	template_2cc_88(0, 30)
+}
+spriteset(spriteset_coaches_PlanL_yellow_blue, "gfx/coaches/PlanL.png") {
+	template_2cc_88(0, 60)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanL_autolivery, date_of_last_service) {
+	0..date(1979,12,31): spriteset_coaches_PlanL_blue;
+	date(1980,12,31)..date(1982,12,31): spriteset_coaches_PlanL_blue_yellow;
+    spriteset_coaches_PlanL_yellow_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanL_purchaselivery, build_year) {
+	0..1979: spriteset_coaches_PlanL_blue;
+	1980..1982: spriteset_coaches_PlanL_blue_yellow;
+    spriteset_coaches_PlanL_yellow_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanL_livery, cargo_subtype) {
+	1: switch_coaches_PlanL_purchaselivery;
+    2: spriteset_coaches_PlanL_blue;
+    3: spriteset_coaches_PlanL_blue_yellow;
+    4: spriteset_coaches_PlanL_yellow_blue;
+    switch_coaches_PlanL_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanL_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_blue);
+    3: return string(str_cargo_subtype_benelux);
+    4: return string(str_cargo_subtype_yellow_blue_ic);
+    return CB_RESULT_NO_TEXT;
+}
