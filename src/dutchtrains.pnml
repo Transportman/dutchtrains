@@ -12,8 +12,6 @@
 #include "src/templates.pnml"
 //give vehicle a specific ID
 #include "src/vehicleids.pnml"
-//sort vehicles in purchase list
-#include "src/vehiclesort.pnml"
 //cargo translation table
 #include "src/cargotable.pnml"
 //cargo refit definitions
@@ -339,5 +337,7 @@
 #include "src/metro/RET_typeR_graphics.pnml"
 #include "src/metro/RET_typeR_item.pnml"
 
-//original Dutch vehicle names
+//English vehicle names
 #include "src/vehiclenames.pnml"
+//sort vehicles in purchase list
+#include "src/vehiclesort.pnml"
