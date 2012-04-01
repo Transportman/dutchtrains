@@ -6,7 +6,7 @@ item(FEAT_TRAINS, item_coaches_PlanL) {
     property {
         name: string(str_coaches_PlanL);
         
-        introduction_date: date(1858,1,1);
+        introduction_date: date(1958,1,1);
         model_life: 73;
         retire_early: 20;
         vehicle_life: 20;
