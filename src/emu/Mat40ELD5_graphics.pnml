@@ -195,8 +195,8 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5D_subtype_text, cargo_subtype) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_articulated, extra_callback_info1) {
-    1..2: return item_emu_Mat40ELD5;
-    3: return item_emu_Mat40ELD5D;
+    1..3: return item_emu_Mat40ELD5;
+    4: return item_emu_Mat40ELD5D;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
