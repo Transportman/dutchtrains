@@ -1,7 +1,7 @@
 ﻿##grflangid 0x1F
 
 #Main grf title en description
-STR_GRF_DESCRIPTION		:Nederlandse Treinen voor OpenTTD {}(c)Dutch Trainset Team {}Licentie: GPLv2 of hoger. {}Lees de readme voor details.
+STR_GRF_DESCRIPTION		:Nederlandse Treinen voor OpenTTD {}Eerste locomotief: 1839. Aanbevolen vroegste startjaar: 1883.{}{}(c)Dutch Trainset Team {}Licentie: GPLv2 of hoger. {}Lees de readme voor details.
 
 #parameter strings
 STR_PARAM_VEHICLE_NAMES             :Gebruik Engelse bijnamen voor voertuigen
