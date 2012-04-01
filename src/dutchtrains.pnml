@@ -251,11 +251,13 @@
 #include "src/coaches/ICK_graphics.pnml"
 #include "src/coaches/ICK_item.pnml"
 
-//baggage wagons
+//baggage and mail wagons
 #include "src/coaches/SS_E_129_graphics.pnml"
 #include "src/coaches/SS_E_129_item.pnml"
 #include "src/coaches/HSM_D_1916_graphics.pnml"
 #include "src/coaches/HSM_D_1916_item.pnml"
+#include "src/coaches/Pec_graphics.pnml"
+#include "src/coaches/Pec_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

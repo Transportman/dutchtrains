@@ -158,3 +158,4 @@ item(FEAT_TRAINS, item_wagons_gen6_containercarrier, 271) {}
 item(FEAT_TRAINS, item_wagons_gen5_VAM, 272) {}
 item(FEAT_TRAINS, item_emu_SM90, 273) {}
 item(FEAT_TRAINS, item_dmu_DH2, 274) {}
+item(FEAT_TRAINS, item_coaches_Pec, 275) {}

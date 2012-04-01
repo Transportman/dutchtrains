@@ -327,9 +327,10 @@ str_coaches_K4          :Rijtuig NMBS K4
 str_coaches_DDAR        :Dubbeldekkerrijtuig DDM/NID
 str_coaches_gen9_IC_DD  :Dubbeldekkerrijtuig HS-DD
 
-#baggage wagons
+#baggage and mail wagons
 str_coaches_SS_E_129    :Baggagewagen SS E 129
 str_coaches_HSM_D_1916  :Baggagewagen HSM D 1916
+str_coaches_Pec         :Postwagen Pec
 
 #metro
 str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
