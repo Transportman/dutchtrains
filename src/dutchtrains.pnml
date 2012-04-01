@@ -258,6 +258,8 @@
 #include "src/coaches/HSM_D_1916_item.pnml"
 #include "src/coaches/Pec_graphics.pnml"
 #include "src/coaches/Pec_item.pnml"
+#include "src/coaches/Hbbkkss_graphics.pnml"
+#include "src/coaches/Hbbkkss_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"
