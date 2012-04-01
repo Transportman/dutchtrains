@@ -10,8 +10,8 @@ item(FEAT_TRAINS, item_dmu_Lint41H) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 32;
-        running_cost_factor: 24;
+        cost_factor: 40;
+        running_cost_factor: 29;
         speed: 120 km/h;
         power: 630 kW;
         cargo_capacity: 65;

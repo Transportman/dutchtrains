@@ -11,8 +11,8 @@ item(FEAT_TRAINS, item_dmu_DE5) {
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 68;
-        running_cost_factor: 39;
+        cost_factor: 76;
+        running_cost_factor: 45;
         speed: 160 km/h;
         power: 1950 hpM;
         cargo_capacity: 53;
