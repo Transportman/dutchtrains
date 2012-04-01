@@ -11,8 +11,8 @@ item(FEAT_TRAINS, item_emu_Mat54ELD2) {
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 52;
-        running_cost_factor: 30;
+        cost_factor: 60;
+        running_cost_factor: 35;
         speed: 140 km/h;
         power: 912 hpM;
         cargo_capacity: 136;

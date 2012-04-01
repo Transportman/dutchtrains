@@ -11,8 +11,8 @@ item(FEAT_TRAINS, item_emu_mP) {
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 29;
-        running_cost_factor: 24;
+        cost_factor: 37;
+        running_cost_factor: 29;
         speed: 140 km/h;
         power: 900 hpM;
         cargo_capacity: 15;

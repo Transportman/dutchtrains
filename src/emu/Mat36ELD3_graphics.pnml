@@ -352,8 +352,8 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_capacity, build_year) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_running_cost, build_year) {
-    0..1941: return 36;
-    return 29;
+    0..1941: return 41;
+    return 33;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_power, build_year) {

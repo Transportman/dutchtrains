@@ -11,8 +11,8 @@ item(FEAT_TRAINS, item_emu_SM90) {
         retire_early: 11;
         vehicle_life: 11;
         loading_speed: 5;
-        cost_factor: 54;
-        running_cost_factor: 36;
+        cost_factor: 58;
+        running_cost_factor: 42;
         speed: 160 km/h;
         power: 1490 hpM;
         cargo_capacity: 81;

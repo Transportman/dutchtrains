@@ -11,8 +11,8 @@ item(FEAT_TRAINS, item_emu_IRMIII) {
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 88;
-        running_cost_factor: 46;
+        cost_factor: 96;
+        running_cost_factor: 52;
         speed: 160 km/h;
         power: 2155 hpM;
         cargo_capacity: 96;

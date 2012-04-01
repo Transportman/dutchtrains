@@ -10,8 +10,8 @@ item(FEAT_TRAINS, item_emu_TGV) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 147;
-        running_cost_factor: 71;
+        cost_factor: 155;
+        running_cost_factor: 82;
         speed: 300 km/h;
         power: 4933 hpM;
         cargo_capacity: 38;

@@ -11,8 +11,8 @@ item(FEAT_TRAINS, item_emu_Mat36ELD3) {
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 69;
-        running_cost_factor: 36;
+        cost_factor: 72;
+        running_cost_factor: 41;
         speed: 110 km/h;
         power: 1775 hpM;
         cargo_capacity: 96;

@@ -10,8 +10,8 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 164;
-        running_cost_factor: 70;
+        cost_factor: 172;
+        running_cost_factor: 79;
         speed: 220 km/h;
         power: 5764 hpM;
         cargo_capacity: 53;

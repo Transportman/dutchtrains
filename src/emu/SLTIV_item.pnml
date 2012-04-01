@@ -10,8 +10,8 @@ item(FEAT_TRAINS, item_emu_SLTIV) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 68;
-        running_cost_factor: 40;
+        cost_factor: 76;
+        running_cost_factor: 46;
         speed: 160 km/h;
         power: 1689 hpM;
         cargo_capacity: 54;

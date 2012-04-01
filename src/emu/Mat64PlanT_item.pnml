@@ -11,8 +11,8 @@ item(FEAT_TRAINS, item_emu_Mat64PlanT) {
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 81;
-        running_cost_factor: 42;
+        cost_factor: 89;
+        running_cost_factor: 48;
         speed: 140 km/h;
         power: 1877 hpM;
         cargo_capacity: 85;
