@@ -1,0 +1,78 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_StalenDV_olive_silverroof_purchase, "gfx/purchase/coaches/StalenDV_olive_silverroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_StalenDV_olive_greyroof_purchase, "gfx/purchase/coaches/StalenDV_olive_greyroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_StalenDV_turquoise_purchase, "gfx/purchase/coaches/StalenDV_turquoise.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_StalenDV_blue_yellow_purchase, "gfx/purchase/coaches/StalenDV_blue_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_StalenDV_purchase, current_year) {
+	0..1938: spriteset_coaches_StalenDV_olive_silverroof_purchase;
+	1939..1950: spriteset_coaches_StalenDV_olive_greyroof_purchase;
+	1951..1953: spriteset_coaches_StalenDV_turquoise_purchase;
+    spriteset_coaches_StalenDV_blue_yellow_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_StalenDV_olive_silverroof, "gfx/coaches/StalenDV.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_StalenDV_olive_greyroof, "gfx/coaches/StalenDV.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_StalenDV_turquoise, "gfx/coaches/StalenDV.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_coaches_StalenDV_blue_yellow, "gfx/coaches/StalenDV.png") {
+	template_2cc_88(1, 96)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_StalenDV_autolivery, date_of_last_service) {
+	0..date(1938,12,31): spriteset_coaches_StalenDV_olive_silverroof;
+	date(1939,1,1)..date(1950,12,31): spriteset_coaches_StalenDV_olive_greyroof;
+	date(1951,1,1)..date(1953,12,31): spriteset_coaches_StalenDV_turquoise;
+    spriteset_coaches_StalenDV_blue_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_StalenDV_purchaselivery, build_year) {
+	0..1938: spriteset_coaches_StalenDV_olive_silverroof;
+	1939..1950: spriteset_coaches_StalenDV_olive_greyroof;
+	1951..1953: spriteset_coaches_StalenDV_turquoise;
+    spriteset_coaches_StalenDV_blue_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_StalenDV_livery, cargo_subtype) {
+	1: switch_coaches_StalenDV_purchaselivery;
+    2: spriteset_coaches_StalenDV_olive_silverroof;
+    3: spriteset_coaches_StalenDV_olive_greyroof;
+    4: spriteset_coaches_StalenDV_turquoise;
+    5: spriteset_coaches_StalenDV_blue_yellow;
+    switch_coaches_StalenDV_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_StalenDV_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_olive_silverroof);
+    3: return string(str_cargo_subtype_olive_greyroof);
+    4: return string(str_cargo_subtype_turquoise);
+    5: return string(str_cargo_subtype_blue_yellow);
+    return CB_RESULT_NO_TEXT;
+}

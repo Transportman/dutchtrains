@@ -164,3 +164,4 @@ item(FEAT_TRAINS, item_coaches_PlanL, 277) {}
 item(FEAT_TRAINS, item_coaches_PlanE, 278) {}
 item(FEAT_TRAINS, item_coaches_PlanC, 279) {}
 item(FEAT_TRAINS, item_coaches_StalenDIV, 280) {}
+item(FEAT_TRAINS, item_coaches_StalenDV, 281) {}

@@ -334,6 +334,7 @@ str_coaches_gen9_IC_DD  :Dubbeldekkerrijtuig HS-DD
 str_coaches_SS_E_129    :Baggagewagen SS E 129
 str_coaches_HSM_D_1916  :Baggagewagen HSM D 1916
 str_coaches_StalenDIV   :Baggagewagen D-IV
+str_coaches_StalenDV    :Baggagewagen D-V
 str_coaches_Pec         :Postrijtuig Pec
 str_coaches_Hbbkkss     :Postrijtuig Hbbkkss
 str_coaches_PlanC       :Postrijtuig Plan C
