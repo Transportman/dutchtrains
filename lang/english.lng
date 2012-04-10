@@ -280,36 +280,36 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)
 
 #wagons
-str_wagons_gen0hopper   :Hopper Wagon
-str_wagons_gen0boxcar   :Boxcar
-str_wagons_gen0tanker   :Tanker Wagon
-str_wagons_gen0openwagonmedium   :Open Wagon (medium)
-str_wagons_gen0openwagonsmall    :Open Wagon (small)
-str_wagons_gen0stakewagon        :Stake Wagon
-str_wagons_gen0livestockwagon    :Livestock Wagon
-str_wagons_gen2_boxcar              :Goods Wagon (small)
-str_wagons_gen2_livestock           :Livestock Wagon (small)
-str_wagons_gen2_silo                :Silo Wagon (small)
-str_wagons_gen2_tanker              :Tanker Wagon (small)
-str_wagons_gen2_stake               :Stake Wagon (small)
-str_wagons_gen2_refrigerator        :Refrigerator Wagon (small)
-str_wagons_gen2_selfdischarger      :Selfdischarger (small)
-str_wagons_gen5_silo                :Silo Wagon (medium)
-str_wagons_gen5_slidingdoor         :Sliding Door Wagon (medium)
-str_wagons_gen5_livestock           :Livestock Wagon (medium)
-str_wagons_gen5_stake               :Stake Wagon (medium)
-str_wagons_gen5_refrigerator        :Refrigerator Wagon (large)
-str_wagons_gen5_tanker              :Tanker Wagon (large)
-str_wagons_gen5_selfdischarger      :Selfdischarger (large)
-str_wagons_gen5_VAM                 :VAM Compost Wagon
-str_wagons_gen6_coil                :Coil Wagon (large)
-str_wagons_gen6_stake               :Stake Wagon (large)
-str_wagons_gen6_goods               :Goods Wagon (large)
-str_wagons_gen6_containercarrier    :Container Carrier
-str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (oversized)
-str_wagons_gen9_silowagon           :Silo Wagon (large)
-str_wagons_gen7_cartransporter      :Car Transporter
-str_wagons_gen7_containercarrier    :Container Carrier
+str_wagons_gen0hopper   :Hopper Wagon (XS)
+str_wagons_gen0boxcar   :Boxcar (XS)
+str_wagons_gen0tanker   :Tanker Wagon (XS)
+str_wagons_gen0openwagonmedium   :Open Wagon (S)
+str_wagons_gen0openwagonsmall    :Open Wagon (XS)
+str_wagons_gen0stakewagon        :Stake Wagon (XS)
+str_wagons_gen0livestockwagon    :Livestock Wagon (XS)
+str_wagons_gen2_boxcar              :Goods Wagon (S)
+str_wagons_gen2_livestock           :Livestock Wagon (S)
+str_wagons_gen2_silo                :Silo Wagon (S)
+str_wagons_gen2_tanker              :Tanker Wagon (S)
+str_wagons_gen2_stake               :Stake Wagon (S)
+str_wagons_gen2_refrigerator        :Refrigerator Wagon (S)
+str_wagons_gen2_selfdischarger      :Selfdischarger (S)
+str_wagons_gen5_silo                :Silo Wagon (M)
+str_wagons_gen5_slidingdoor         :Sliding Door Wagon (M)
+str_wagons_gen5_livestock           :Livestock Wagon (M)
+str_wagons_gen5_stake               :Stake Wagon (M)
+str_wagons_gen5_refrigerator        :Refrigerator Wagon (L)
+str_wagons_gen5_tanker              :Tanker Wagon (L)
+str_wagons_gen5_selfdischarger      :Selfdischarger (L)
+str_wagons_gen5_VAM                 :VAM Compost Wagon (L)
+str_wagons_gen6_coil                :Coil Wagon (L)
+str_wagons_gen6_stake               :Stake Wagon (L)
+str_wagons_gen6_goods               :Goods Wagon (L)
+str_wagons_gen6_containercarrier    :Container Carrier (M)
+str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (XL)
+str_wagons_gen9_silowagon           :Silo Wagon (L)
+str_wagons_gen7_cartransporter      :Car Transporter (L)
+str_wagons_gen7_containercarrier    :Container Carrier (L)
 
 #coaches
 str_coaches_HIJSM_4_8_10:Passenger Carriage HIJSM 4, 8, 10

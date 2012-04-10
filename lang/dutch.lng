@@ -271,36 +271,36 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Elektrisch)
 
 #wagons
-str_wagons_gen0hopper               :Onderlosser
-str_wagons_gen0boxcar               :Gesloten wagen
-str_wagons_gen0tanker               :Ketelwagen
-str_wagons_gen0openwagonmedium      :Open Wagen (middel)
-str_wagons_gen0openwagonsmall       :Open Wagen (klein)
-str_wagons_gen0stakewagon           :Rongenwagen
-str_wagons_gen0livestockwagon       :Veewagen
-str_wagons_gen2_boxcar              :Gesloten wagen (klein)
-str_wagons_gen2_livestock           :Veewagen (klein)
-str_wagons_gen2_silo                :Silowagen (klein)
-str_wagons_gen2_tanker              :Ketelwagen (klein)
-str_wagons_gen2_stake               :Rongenwagen (klein)
-str_wagons_gen2_refrigerator        :Koelwagen (klein)
-str_wagons_gen2_selfdischarger      :Onderlosser (klein)
-str_wagons_gen5_silo                :Silowagen (middel)
-str_wagons_gen5_slidingdoor         :Schuifdeurwagen (middel)
-str_wagons_gen5_livestock           :Veewagen (middel)
-str_wagons_gen5_stake               :Rongenwagen (middel)
-str_wagons_gen5_refrigerator        :Koelwagen (groot)
-str_wagons_gen5_tanker              :Ketelwagen (groot)
-str_wagons_gen5_selfdischarger      :Onderlosser (groot)
-str_wagons_gen5_VAM                 :VAM Compostwagen
-str_wagons_gen6_coil                :Coil Wagon (groot)
-str_wagons_gen6_stake               :Rongenwagen (groot)
-str_wagons_gen6_goods               :Gesloten wagen (groot)
-str_wagons_gen6_containercarrier    :Containerwagen
-str_wagons_gen9_superheavy_flatcar  :Kuilwagen (uitzonderlijk transport)
-str_wagons_gen9_silowagon           :Silowagen (groot)
-str_wagons_gen7_cartransporter      :Autotreinwagen
-str_wagons_gen7_containercarrier    :Containerwagen
+str_wagons_gen0hopper               :Onderlosser (XS)
+str_wagons_gen0boxcar               :Gesloten wagen (XS)
+str_wagons_gen0tanker               :Ketelwagen (XS)
+str_wagons_gen0openwagonmedium      :Open Wagen (S)
+str_wagons_gen0openwagonsmall       :Open Wagen (XS)
+str_wagons_gen0stakewagon           :Rongenwagen (XS)
+str_wagons_gen0livestockwagon       :Veewagen (XS)
+str_wagons_gen2_boxcar              :Gesloten wagen (S)
+str_wagons_gen2_livestock           :Veewagen (S)
+str_wagons_gen2_silo                :Silowagen (S)
+str_wagons_gen2_tanker              :Ketelwagen (S)
+str_wagons_gen2_stake               :Rongenwagen (S)
+str_wagons_gen2_refrigerator        :Koelwagen (S)
+str_wagons_gen2_selfdischarger      :Onderlosser (S)
+str_wagons_gen5_silo                :Silowagen (M)
+str_wagons_gen5_slidingdoor         :Schuifdeurwagen (M)
+str_wagons_gen5_livestock           :Veewagen (M)
+str_wagons_gen5_stake               :Rongenwagen (M)
+str_wagons_gen5_refrigerator        :Koelwagen (L)
+str_wagons_gen5_tanker              :Ketelwagen (L)
+str_wagons_gen5_selfdischarger      :Onderlosser (L)
+str_wagons_gen5_VAM                 :VAM Compostwagen (L)
+str_wagons_gen6_coil                :Coil Wagon (L)
+str_wagons_gen6_stake               :Rongenwagen (L)
+str_wagons_gen6_goods               :Gesloten wagen (L)
+str_wagons_gen6_containercarrier    :Containerwagen (M)
+str_wagons_gen9_superheavy_flatcar  :Kuilwagen (XL)
+str_wagons_gen9_silowagon           :Silowagen (L)
+str_wagons_gen7_cartransporter      :Autotreinwagen (L)
+str_wagons_gen7_containercarrier    :Containerwagen (L)
 
 #coaches
 str_coaches_HIJSM_4_8_10:Rijtuig HIJSM 4, 8, 10
