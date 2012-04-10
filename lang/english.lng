@@ -342,6 +342,7 @@ str_coaches_SS_E_129    :Baggage Carriage SS E 129
 str_coaches_HSM_D_1916  :Baggage Carriage HSM D 1916
 str_coaches_Pec         :Mail Carriage Pec
 str_coaches_Hbbkkss     :Mail Carriage Hbbkkss
+str_coaches_PlanC       :Mail Carriage Plan C
 str_coaches_PlanL       :Mail Carriage Plan L
 
 #metro

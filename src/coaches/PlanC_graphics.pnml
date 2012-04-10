@@ -1,0 +1,56 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_PlanC_turquoise_purchase, "gfx/purchase/coaches/PlanC_turquoise.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_PlanC_blue_purchase, "gfx/purchase/coaches/PlanC_blue.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanC_purchase, current_year) {
+	0..1954: spriteset_coaches_PlanC_turquoise_purchase;
+    spriteset_coaches_PlanC_blue_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_PlanC_turquoise, "gfx/coaches/PlanC.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_PlanC_blue, "gfx/coaches/PlanC.png") {
+	template_2cc_88(1, 32)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanC_autolivery, date_of_last_service) {
+	0..date(1954,12,31): spriteset_coaches_PlanC_turquoise;
+    spriteset_coaches_PlanC_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanC_purchaselivery, build_year) {
+	0..1954: spriteset_coaches_PlanC_turquoise;
+    spriteset_coaches_PlanC_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanC_livery, cargo_subtype) {
+	1: switch_coaches_PlanC_purchaselivery;
+    2: spriteset_coaches_PlanC_turquoise;
+    3: spriteset_coaches_PlanC_blue;
+    switch_coaches_PlanC_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanC_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_turquoise);
+    3: return string(str_cargo_subtype_blue);
+    return CB_RESULT_NO_TEXT;
+}

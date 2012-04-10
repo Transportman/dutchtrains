@@ -264,6 +264,8 @@
 #include "src/coaches/Hbbkkss_item.pnml"
 #include "src/coaches/PlanL_graphics.pnml"
 #include "src/coaches/PlanL_item.pnml"
+#include "src/coaches/PlanC_graphics.pnml"
+#include "src/coaches/PlanC_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"
