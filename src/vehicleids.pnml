@@ -166,3 +166,4 @@ item(FEAT_TRAINS, item_coaches_PlanC, 279) {}
 item(FEAT_TRAINS, item_coaches_StalenDIV, 280) {}
 item(FEAT_TRAINS, item_coaches_StalenDV, 281) {}
 item(FEAT_TRAINS, item_coaches_Couchette, 282) {}
+item(FEAT_TRAINS, item_coaches_Citynightline, 283) {}

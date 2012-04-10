@@ -332,6 +332,7 @@ str_coaches_DDAR        :Dubbeldekkerrijtuig DDM/NID
 str_coaches_gen9_IC_DD  :Dubbeldekkerrijtuig HS-DD
 str_coaches_PlanN       :Slaaprijtuig Plan N
 str_coaches_Couchette   :Slaaprijtuig Couchette Bcm
+str_coaches_Citynightline   :Slaaprijtuig CityNightLine
 
 #baggage and mail wagons
 str_coaches_SS_E_129    :Baggagewagen SS E 129

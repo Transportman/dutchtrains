@@ -1,0 +1,75 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_Citynightline, "gfx/purchase/coaches/Citynightline.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_Citynightline_1, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Citynightline_2, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_Citynightline_3, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_coaches_Citynightline_4, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_coaches_Citynightline_5, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 127)
+}
+spriteset(spriteset_coaches_Citynightline_6, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 159)
+}
+spriteset(spriteset_coaches_Citynightline_7, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 191)
+}
+spriteset(spriteset_coaches_Citynightline_8, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 222)
+}
+spriteset(spriteset_coaches_Citynightline_9, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 254)
+}
+spriteset(spriteset_coaches_Citynightline_10, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 286)
+}
+spriteset(spriteset_coaches_Citynightline_11, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 317)
+}
+spriteset(spriteset_coaches_Citynightline_12, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 349)
+}
+spriteset(spriteset_coaches_Citynightline_13, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 381)
+}
+spriteset(spriteset_coaches_Citynightline_14, "gfx/coaches/Citynightline.png") {
+	template_2cc_88(1, 413)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Citynightline_livery, (position_in_consist % 14)) {
+	1: spriteset_coaches_Citynightline_1;
+    2: spriteset_coaches_Citynightline_2;
+    3: spriteset_coaches_Citynightline_3;
+    4: spriteset_coaches_Citynightline_4;
+    5: spriteset_coaches_Citynightline_5;
+    6: spriteset_coaches_Citynightline_6;
+    7: spriteset_coaches_Citynightline_7;
+    8: spriteset_coaches_Citynightline_8;
+    9: spriteset_coaches_Citynightline_9;
+    10: spriteset_coaches_Citynightline_10;
+    11: spriteset_coaches_Citynightline_11;
+    12: spriteset_coaches_Citynightline_12;
+    13: spriteset_coaches_Citynightline_13;
+    spriteset_coaches_Citynightline_14;
+}
