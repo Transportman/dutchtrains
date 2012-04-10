@@ -1,0 +1,67 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_Couchette_blue_green_white, "gfx/purchase/coaches/Couchette_green_white.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Couchette_blue_white_purchase, "gfx/purchase/coaches/Couchette_blue_white.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Couchette_blue_yellow_purchase, "gfx/purchase/coaches/Couchette_blue_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Couchette_purchase, current_year) {
+	0..1993: spriteset_coaches_Couchette_blue_green_white;
+	1994..1994: spriteset_coaches_Couchette_blue_white_purchase;
+    spriteset_coaches_Couchette_blue_yellow_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_Couchette_green_white, "gfx/coaches/Couchette.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Couchette_blue_white, "gfx/coaches/Couchette.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_Couchette_blue_yellow, "gfx/coaches/Couchette.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Couchette_autolivery, date_of_last_service) {
+	0..date(1993,12,31): spriteset_coaches_Couchette_green_white;
+	date(1994,1,1)..date(1994,12,31): spriteset_coaches_Couchette_blue_white;
+    spriteset_coaches_Couchette_blue_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Couchette_purchaselivery, build_year) {
+	0..1993: spriteset_coaches_Couchette_green_white;
+	1994..1994: spriteset_coaches_Couchette_blue_white;
+    spriteset_coaches_Couchette_blue_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Couchette_livery, cargo_subtype) {
+	1: switch_coaches_Couchette_purchaselivery;
+    2: spriteset_coaches_Couchette_green_white;
+    3: spriteset_coaches_Couchette_blue_white;
+    4: spriteset_coaches_Couchette_blue_yellow;
+    switch_coaches_Couchette_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Couchette_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_white);
+    3: return string(str_cargo_subtype_blue_white);
+    4: return string(str_cargo_subtype_blue_yellow);
+    return CB_RESULT_NO_TEXT;
+}

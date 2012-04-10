@@ -252,6 +252,8 @@
 #include "src/coaches/ICK_item.pnml"
 #include "src/coaches/PlanE_graphics.pnml"
 #include "src/coaches/PlanE_item.pnml"
+#include "src/coaches/Couchette_graphics.pnml"
+#include "src/coaches/Couchette_item.pnml"
 
 //baggage and mail wagons
 #include "src/coaches/SS_E_129_graphics.pnml"

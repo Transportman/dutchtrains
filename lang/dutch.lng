@@ -33,6 +33,7 @@ str_cargo_subtype_blue              :> Blauwe kleurstelling
 str_cargo_subtype_lighterblue       :> Enigszins lichter blauwe kleurstelling
 str_cargo_subtype_blue_banners      :> Blauwe kleurstelling met reclamebanen
 str_cargo_subtype_blue_yellow       :> Blauwe kleurstelling met gele strepen
+str_cargo_subtype_blue_white        :> Blauwe/witte kleurstelling
 str_cargo_subtype_brown             :> Bruine kleurstelling
 str_cargo_subtype_brown_other       :> Andere Bruine kleurstelling
 str_cargo_subtype_brown_light       :> Lichtbruine kleurstelling
@@ -45,6 +46,7 @@ str_cargo_subtype_green_moustache   :> Groene kleurstelling met snor
 str_cargo_subtype_green_red         :> Groene kleurstelling met rode strepen
 str_cargo_subtype_green_yellow      :> Groene kleurstelling met gele strepen
 str_cargo_subtype_green_yellow_blue :> Groene kleurstelling met gele strepen en reclamebanen
+str_cargo_subtype_green_white       :> Groene/witte kleurstelling
 str_cargo_subtype_grey              :> Grijze kleurstelling
 str_cargo_subtype_grey_dark         :> Donkergrijze kleurstelling
 str_cargo_subtype_grey_light        :> Lichtgrijze kleurstelling
@@ -319,7 +321,6 @@ str_coaches_Bolkoprijtuigen_t   :Rijtuig "Bulgehead carriages"
 str_coaches_PlanD       :Rijtuig Plan D
 str_coaches_PlanE       :Rijtuig Plan E
 str_coaches_PlanK       :Rijtuig Plan K
-str_coaches_PlanN       :Rijtuig Plan N (slaapwagen)
 str_coaches_PlanW       :Rijtuig Plan W
 str_coaches_ICR         :Rijtuig ICR
 str_coaches_ICK         :Rijtuig ICK
@@ -329,6 +330,8 @@ str_coaches_M2          :Rijtuig NMBS M2
 str_coaches_K4          :Rijtuig NMBS K4
 str_coaches_DDAR        :Dubbeldekkerrijtuig DDM/NID
 str_coaches_gen9_IC_DD  :Dubbeldekkerrijtuig HS-DD
+str_coaches_PlanN       :Slaaprijtuig Plan N
+str_coaches_Couchette   :Slaaprijtuig Couchette Bcm
 
 #baggage and mail wagons
 str_coaches_SS_E_129    :Baggagewagen SS E 129

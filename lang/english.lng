@@ -35,6 +35,7 @@ str_cargo_subtype_blue              :> Blue livery
 str_cargo_subtype_lighterblue       :> Slightly lighter blue livery
 str_cargo_subtype_blue_banners      :> Blue livery w/ banners
 str_cargo_subtype_blue_yellow       :> Blue livery w/ yellow stripes
+str_cargo_subtype_blue_white        :> Blue/white livery
 str_cargo_subtype_brown             :> Brown livery
 str_cargo_subtype_brown_other       :> Other Brown livery
 str_cargo_subtype_brown_light       :> Light Brown livery
@@ -47,6 +48,7 @@ str_cargo_subtype_green_moustache   :> Green livery w/ moustache
 str_cargo_subtype_green_red         :> Green livery w/ red stripes
 str_cargo_subtype_green_yellow      :> Green livery w/ yellow stripes
 str_cargo_subtype_green_yellow_blue :> Green livery w/ yellow stripes and blue banners
+str_cargo_subtype_green_white       :> Green/white livery
 str_cargo_subtype_grey              :> Grey livery
 str_cargo_subtype_grey_dark         :> Dark Grey livery
 str_cargo_subtype_grey_light        :> Light Grey livery
@@ -328,7 +330,6 @@ str_coaches_Bolkoprijtuigen_t   :Passenger Carriage "Bulgehead carriages"
 str_coaches_PlanD       :Passenger Carriage Plan D
 str_coaches_PlanE       :Passenger Carriage Plan E
 str_coaches_PlanK       :Passenger Carriage Plan K
-str_coaches_PlanN       :Passenger Carriage Plan N (sleeper)
 str_coaches_PlanW       :Passenger Carriage Plan W
 str_coaches_ICR         :Passenger Carriage ICR
 str_coaches_ICK         :Passenger Carriage ICK
@@ -338,6 +339,8 @@ str_coaches_M2          :Passenger Carriage NMBS M2
 str_coaches_K4          :Passenger Carriage NMBS K4
 str_coaches_DDAR        :Double-decker Passenger Carriage DDM/NID
 str_coaches_gen9_IC_DD  :Double-decker Passenger Carriage HS-DD
+str_coaches_PlanN       :Sleeper Carriage Plan N
+str_coaches_Couchette   :Sleeper Carriage Couchette Bcm
 
 #baggage and mail wagons
 str_coaches_SS_E_129    :Baggage Wagon SS E 129
