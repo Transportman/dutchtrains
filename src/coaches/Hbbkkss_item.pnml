@@ -40,8 +40,7 @@ item(FEAT_TRAINS, item_coaches_Hbbkkss) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: switch_coaches_Hbbkkss_purchase;
-        cargo_subtype_text: switch_coaches_Hbbkkss_subtype_text;
-        switch_coaches_Hbbkkss_livery;
+        purchase: spriteset_coaches_Hbbkkss_purchase_red;
+        spriteset_coaches_Hbbkkss_red;
     }
 }
