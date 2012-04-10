@@ -2,14 +2,77 @@
 * PURCHASE
 */
 
-spriteset(spriteset_coaches_Pec_purchase, "gfx/purchase/coaches/Pec_green_yellow.png") {
+spriteset(spriteset_coaches_Pec_olive_silverroof_purchase, "gfx/purchase/coaches/Pec_olive_silverroof.png") {
 	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Pec_olive_greyroof_purchase, "gfx/purchase/coaches/Pec_olive_greyroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Pec_green_red_purchase, "gfx/purchase/coaches/Pec_green_red.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Pec_green_yellow_purchase, "gfx/purchase/coaches/Pec_green_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Pec_purchase, current_year) {
+	0..1938: spriteset_coaches_Pec_olive_silverroof_purchase;
+	1939..1949: spriteset_coaches_Pec_olive_greyroof_purchase;
+	1950..1961: spriteset_coaches_Pec_green_red_purchase;
+    spriteset_coaches_Pec_green_yellow_purchase;
 }
 
 /*
 * VEHICLE
 */
 
-spriteset(spriteset_coaches_Pec, "gfx/coaches/Pec.png") {
-	template_2cc_78(0, 0)
+spriteset(spriteset_coaches_Pec_olive_silverroof, "gfx/coaches/Pec.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Pec_olive_greyroof, "gfx/coaches/Pec.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_Pec_green_red, "gfx/coaches/Pec.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_coaches_Pec_green_yellow, "gfx/coaches/Pec.png") {
+	template_2cc_88(1, 96)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Pec_autolivery, date_of_last_service) {
+	0..date(1938,12,31): spriteset_coaches_Pec_olive_silverroof;
+	date(1939,1,1)..date(1949,12,31): spriteset_coaches_Pec_olive_greyroof;
+	date(1950,1,1)..date(1961,12,31): spriteset_coaches_Pec_green_red;
+    spriteset_coaches_Pec_green_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Pec_purchaselivery, build_year) {
+	0..1938: spriteset_coaches_Pec_olive_silverroof;
+	1939..1949: spriteset_coaches_Pec_olive_greyroof;
+	1950..1961: spriteset_coaches_Pec_green_red;
+    spriteset_coaches_Pec_green_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Pec_livery, cargo_subtype) {
+	1: switch_coaches_Pec_purchaselivery;
+    2: spriteset_coaches_Pec_olive_silverroof;
+    3: spriteset_coaches_Pec_olive_greyroof;
+    4: spriteset_coaches_Pec_green_red;
+    5: spriteset_coaches_Pec_green_yellow;
+    switch_coaches_Pec_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Pec_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_olive_silverroof);
+    3: return string(str_cargo_subtype_olive_greyroof);
+    4: return string(str_cargo_subtype_green_red);
+    5: return string(str_cargo_subtype_green_yellow);
+    return CB_RESULT_NO_TEXT;
 }
