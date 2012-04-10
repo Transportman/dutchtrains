@@ -266,6 +266,8 @@
 #include "src/coaches/PlanL_item.pnml"
 #include "src/coaches/PlanC_graphics.pnml"
 #include "src/coaches/PlanC_item.pnml"
+#include "src/coaches/StalenDIV_graphics.pnml"
+#include "src/coaches/StalenDIV_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

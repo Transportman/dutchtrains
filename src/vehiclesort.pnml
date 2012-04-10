@@ -136,6 +136,7 @@ sort(FEAT_TRAINS, [
     //baggage/mail wagons
     item_coaches_HSM_D_1916,
     item_coaches_SS_E_129,
+    item_coaches_StalenDIV,
     item_coaches_Pec,
     item_coaches_PlanC,
     item_coaches_PlanL,

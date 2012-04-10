@@ -1,0 +1,108 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_StalenDIV_olive_silverroof_purchase, "gfx/purchase/coaches/StalenDIV_olive_silverroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_StalenDIV_olive_greyroof_purchase, "gfx/purchase/coaches/StalenDIV_olive_greyroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_StalenDIV_green_purchase, "gfx/purchase/coaches/StalenDIV_green.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_StalenDIV_blue_purchase, "gfx/purchase/coaches/StalenDIV_blue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_StalenDIV_blue_yellow_purchase, "gfx/purchase/coaches/StalenDIV_blue_yellow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_StalenDIV_purchase, current_year) {
+	0..1938: spriteset_coaches_StalenDIV_olive_silverroof_purchase;
+	1939..1948: spriteset_coaches_StalenDIV_olive_greyroof_purchase;
+	1949..1953: spriteset_coaches_StalenDIV_green_purchase;
+	1954..1955: spriteset_coaches_StalenDIV_blue_purchase;
+    spriteset_coaches_StalenDIV_blue_yellow_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_StalenDIV_olive_silverroof, "gfx/coaches/StalenDIV.png") {
+	template_2cc_78(1, 1)
+}
+spriteset(spriteset_coaches_StalenDIV_olive_greyroof, "gfx/coaches/StalenDIV.png") {
+	template_2cc_78(1, 32)
+}
+spriteset(spriteset_coaches_StalenDIV_green, "gfx/coaches/StalenDIV.png") {
+	template_2cc_78(1, 64)
+}
+spriteset(spriteset_coaches_StalenDIV_blue, "gfx/coaches/StalenDIV.png") {
+	template_2cc_78(1, 96)
+}
+spriteset(spriteset_coaches_StalenDIV_blue_yellow, "gfx/coaches/StalenDIV.png") {
+	template_2cc_78(1, 127)
+}
+spriteset(spriteset_coaches_StalenDIV_brown, "gfx/coaches/StalenDIV.png") {
+	template_2cc_78(1, 159)
+}
+spriteset(spriteset_coaches_StalenDIV_yellow, "gfx/coaches/StalenDIV.png") {
+	template_2cc_78(1, 191)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_StalenDIV_autolivery, date_of_last_service) {
+	0..date(1938,12,31): spriteset_coaches_StalenDIV_olive_silverroof;
+	date(1939,1,1)..date(1948,12,31): spriteset_coaches_StalenDIV_olive_greyroof;
+	date(1949,1,1)..date(1953,12,31): spriteset_coaches_StalenDIV_green;
+	date(1954,1,1)..date(1955,12,31): spriteset_coaches_StalenDIV_blue;
+    spriteset_coaches_StalenDIV_blue_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_StalenDIV_purchaselivery, build_year) {
+	0..1938: spriteset_coaches_StalenDIV_olive_silverroof;
+	1939..1948: spriteset_coaches_StalenDIV_olive_greyroof;
+	1949..1953: spriteset_coaches_StalenDIV_green;
+	1954..1955: spriteset_coaches_StalenDIV_blue;
+    spriteset_coaches_StalenDIV_blue_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_StalenDIV_livery, cargo_subtype) {
+	1: switch_coaches_StalenDIV_purchaselivery;
+    2: spriteset_coaches_StalenDIV_olive_silverroof;
+    3: spriteset_coaches_StalenDIV_olive_greyroof;
+    4: spriteset_coaches_StalenDIV_green;
+    5: spriteset_coaches_StalenDIV_blue;
+    6: spriteset_coaches_StalenDIV_blue_yellow;
+    7: spriteset_coaches_StalenDIV_brown;
+    8: spriteset_coaches_StalenDIV_yellow;
+    switch_coaches_StalenDIV_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_StalenDIV_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_olive_silverroof);
+    3: return string(str_cargo_subtype_olive_greyroof);
+    4: return string(str_cargo_subtype_green);
+    5: return string(str_cargo_subtype_blue);
+    6: return string(str_cargo_subtype_blue_yellow);
+    7: return string(str_cargo_subtype_accident_brown);
+    8: return string(str_cargo_subtype_accident_yellow);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* Cargo Capacity Callback
+*/
+
+switch(FEAT_TRAINS, SELF, switch_coaches_StalenDIV_capacity, cargo_subtype) {
+    7..8: return 0;
+    return 24;
+}

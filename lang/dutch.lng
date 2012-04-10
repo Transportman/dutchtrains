@@ -71,6 +71,8 @@ str_cargo_subtype_white_yellow      :> Witte/gele kleurstelling
 
 str_cargo_subtype_blue_crashnose    :> Blauwe kleurstelling (met botsneus)
 str_cargo_subtype_grey_crashnose    :> Grijze kleurstelling (met botsneus)
+str_cargo_subtype_accident_brown    :> Bruine kleurstelling (ongevallentrein)
+str_cargo_subtype_accident_yellow   :> Gele kleurstelling (ongevallentrein)
 
 str_cargo_subtype_benelux           :> Benelux kleurstelling
 str_cargo_subtype_benelux_nocab     :> Benelux kleurstelling, zonder stuurstand
@@ -329,8 +331,9 @@ str_coaches_DDAR        :Dubbeldekkerrijtuig DDM/NID
 str_coaches_gen9_IC_DD  :Dubbeldekkerrijtuig HS-DD
 
 #baggage and mail wagons
-str_coaches_SS_E_129    :Baggagerijtuig SS E 129
-str_coaches_HSM_D_1916  :Baggagerijtuig HSM D 1916
+str_coaches_SS_E_129    :Baggagewagen SS E 129
+str_coaches_HSM_D_1916  :Baggagewagen HSM D 1916
+str_coaches_StalenDIV   :Baggagewagen D-IV
 str_coaches_Pec         :Postrijtuig Pec
 str_coaches_Hbbkkss     :Postrijtuig Hbbkkss
 str_coaches_PlanC       :Postrijtuig Plan C
