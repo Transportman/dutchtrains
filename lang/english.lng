@@ -342,6 +342,7 @@ str_coaches_gen9_IC_DD  :Double-decker Passenger Carriage HS-DD
 str_coaches_PlanN       :Sleeper Carriage Plan N
 str_coaches_Couchette   :Sleeper Carriage Couchette Bcm
 str_coaches_Citynightline   :Sleeper Carriage CityNightLine
+str_coaches_MUs         :Sleeper Carriage MUs
 
 #baggage and mail wagons
 str_coaches_SS_E_129    :Baggage Wagon SS E 129

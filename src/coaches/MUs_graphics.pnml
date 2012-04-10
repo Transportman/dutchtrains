@@ -1,0 +1,15 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_MUs_purchase, "gfx/purchase/coaches/MUs.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_MUs, "gfx/coaches/MUs.png") {
+	template_2cc_88(1, 1)
+}
