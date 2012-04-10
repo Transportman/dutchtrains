@@ -1,6 +1,14 @@
 Dutch Trainset Changelog
 ========================
 
+2.0.0-alpha2 (2012/04/10)
+- Fix: Mat40 ELD5 should be a 5-part EMU
+- Fix: Plan L introduction year
+- Fix: a lot of derailed vehicles due to faulty template
+- Fix: make capacity indication of wagons consistent
+- Fix: Hbbkkss was always red, the brown one was a Gs
+
+
 2.0.0-alpha1 (2012/04/01)
 -------------------------
 - Complete new codebase

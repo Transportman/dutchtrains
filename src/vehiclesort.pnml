@@ -120,6 +120,7 @@ sort(FEAT_TRAINS, [
     item_coaches_Ovaleramen,
     item_coaches_Bolkoprijtuigen,
     item_coaches_PlanD,
+    item_coaches_PlanE,
     item_coaches_PlanK,
     item_coaches_PlanN,
     item_coaches_PlanW,

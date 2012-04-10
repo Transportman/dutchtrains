@@ -324,6 +324,7 @@ str_coaches_Ovaleramen_t:Passenger Carriage "Oval windows"
 str_coaches_Bolkoprijtuigen     :Passenger Carriage "Bolkoprijtuigen"
 str_coaches_Bolkoprijtuigen_t   :Passenger Carriage "Bulgehead carriages"
 str_coaches_PlanD       :Passenger Carriage Plan D
+str_coaches_PlanE       :Passenger Carriage Plan E
 str_coaches_PlanK       :Passenger Carriage Plan K
 str_coaches_PlanN       :Passenger Carriage Plan N (sleeper)
 str_coaches_PlanW       :Passenger Carriage Plan W

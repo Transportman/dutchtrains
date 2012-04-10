@@ -315,6 +315,7 @@ str_coaches_Ovaleramen_t:Rijtuig "Oval windows"
 str_coaches_Bolkoprijtuigen     :Rijtuig "Bolkoprijtuigen"
 str_coaches_Bolkoprijtuigen_t   :Rijtuig "Bulgehead carriages"
 str_coaches_PlanD       :Rijtuig Plan D
+str_coaches_PlanE       :Rijtuig Plan E
 str_coaches_PlanK       :Rijtuig Plan K
 str_coaches_PlanN       :Rijtuig Plan N (slaapwagen)
 str_coaches_PlanW       :Rijtuig Plan W
