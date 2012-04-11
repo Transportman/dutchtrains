@@ -206,6 +206,8 @@
 #include "src/emu/Mat54ELD2_item.pnml"
 #include "src/emu/SM90_graphics.pnml"
 #include "src/emu/SM90_item.pnml"
+#include "src/emu/Mat24_graphics.pnml"
+#include "src/emu/Mat24_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"

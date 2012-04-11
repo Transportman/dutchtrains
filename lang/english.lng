@@ -49,6 +49,7 @@ str_cargo_subtype_green_red         :> Green livery w/ red stripes
 str_cargo_subtype_green_yellow      :> Green livery w/ yellow stripes
 str_cargo_subtype_green_yellow_blue :> Green livery w/ yellow stripes and blue banners
 str_cargo_subtype_green_white       :> Green/white livery
+str_cargo_subtype_green_lightyellow :> Green/light yellow livery
 str_cargo_subtype_grey              :> Grey livery
 str_cargo_subtype_grey_dark         :> Dark Grey livery
 str_cargo_subtype_grey_light        :> Light Grey livery
@@ -248,6 +249,8 @@ str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
+str_emu_Mat24           :Mat '24 "Blokkendoos" motorcar (Electric)
+str_emu_Mat24_t         :Mat '24 "Blocks set" motorcar (Electric)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Electric)
 str_emu_Mat36EL2        :Mat '36 El2 (Electric)
 str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (Electric)

@@ -1,0 +1,132 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_Mat24_purchase_green_yellow, "gfx/purchase/emu/Mat24_green_yellow.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat24_purchase_green, "gfx/purchase/emu/Mat24_green.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat24_purchase_green_red, "gfx/purchase/emu/Mat24_green_red.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat24_purchase, current_year) {
+	0..1928: spriteset_emu_Mat24_purchase_green_yellow;
+    1929..1949: spriteset_emu_Mat24_purchase_green;
+    spriteset_emu_Mat24_purchase_green_red;
+}
+
+/*
+* VEHICLE
+*/
+//front
+spriteset(spriteset_emu_Mat24_mBD_green_yellow, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Mat24_mBD_green, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_Mat24_mBD_green_red, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 64)
+}
+//middle, between 1930 and 1939 also end on 3 or 4 part trains
+spriteset(spriteset_emu_Mat24_mCd_green_yellow, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_Mat24_mCd_green, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 128)
+}
+//end, also middle from 1950
+spriteset(spriteset_emu_Mat24_mC_green_yellow, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_Mat24_mC_green, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_Mat24_mC_green_red, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 224)
+}
+//front
+spriteset(spriteset_emu_Mat24_mABD_green_yellow, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_emu_Mat24_mABD_green, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_emu_Mat24_mABD_green_red, "gfx/emu/Mat24.png") {
+	template_2cc_88(1, 320)
+}
+
+//random front
+random_switch(FEAT_TRAINS, SELF, switch_emu_Mat24_front_green_yellow) {
+    30: spriteset_emu_Mat24_mBD_green_yellow;
+    4: spriteset_emu_Mat24_mABD_green_yellow;
+}
+random_switch(FEAT_TRAINS, SELF, switch_emu_Mat24_front_green) {
+    30: spriteset_emu_Mat24_mBD_green;
+    4: spriteset_emu_Mat24_mABD_green;
+}
+random_switch(FEAT_TRAINS, SELF, switch_emu_Mat24_front_green_red) {
+    30: spriteset_emu_Mat24_mBD_green_red;
+    4: spriteset_emu_Mat24_mABD_green_red;
+}
+
+//position selection
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24_position_back_green_yellow, position_in_consist_from_end) {
+    0: spriteset_emu_Mat24_mC_green_yellow; //end
+    spriteset_emu_Mat24_mCd_green_yellow; //middle
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24_position_front_green_yellow, position_in_consist) {
+    0: switch_emu_Mat24_front_green_yellow; //front
+    switch_emu_Mat24_position_back_green_yellow; //end or middle
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24_position_back_green, position_in_consist_from_end) {
+    0: spriteset_emu_Mat24_mC_green; //end
+    spriteset_emu_Mat24_mCd_green; //middle
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24_position_front_green, position_in_consist) {
+    0: switch_emu_Mat24_front_green; //front
+    switch_emu_Mat24_position_back_green; //end or middle
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24_position_front_green_red, position_in_consist) {
+    0: switch_emu_Mat24_front_green_red; //front
+    spriteset_emu_Mat24_mC_green_red; //end or middle
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat24_autolivery, date_of_last_service) {
+	0..date(1928,12,31): switch_emu_Mat24_position_front_green_yellow;
+    date(1929,1,1)..date(1949,12,31): switch_emu_Mat24_position_front_green;
+    switch_emu_Mat24_position_front_green_red;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat24_purchaselivery, build_year) {
+	0..1928: switch_emu_Mat24_position_front_green_yellow;
+    1929..1949: switch_emu_Mat24_position_front_green;
+    switch_emu_Mat24_position_front_green_red;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat24_livery, cargo_subtype) {
+	1: switch_emu_Mat24_purchaselivery;
+    2: switch_emu_Mat24_position_front_green_yellow;
+    3: switch_emu_Mat24_position_front_green;
+    4: switch_emu_Mat24_position_front_green_red;
+    switch_emu_Mat24_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat24_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_lightyellow);
+    3: return string(str_cargo_subtype_green);
+    4: return string(str_cargo_subtype_green_red);
+    return CB_RESULT_NO_TEXT;
+}

@@ -80,6 +80,7 @@ sort(FEAT_TRAINS, [
     item_electric_gen9_HS002,
     
     //emu
+    item_emu_Mat24,
     item_emu_Mat35ELD2,
     item_emu_Mat36EL2,
     item_emu_Mat36ELD3,
