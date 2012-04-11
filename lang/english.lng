@@ -25,6 +25,7 @@ str_cargo_subtype_auto              :> Year-dependent livery
 str_cargo_subtype_purchase          :> Construction year livery
 str_cargo_subtype_random            :> Random livery
 str_cargo_subtype_matching          :> Engine-matching livery
+str_cargo_subtype_Jules             :> "Jules"
 
 str_cargo_subtype_bordeaux          :> Bordeaux livery
 str_cargo_subtype_bordeaux_white            :> Bordeaux livery w/ white

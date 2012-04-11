@@ -76,6 +76,7 @@ str_cargo_subtype_blue_crashnose    :> Blauwe kleurstelling (met botsneus)
 str_cargo_subtype_grey_crashnose    :> Grijze kleurstelling (met botsneus)
 str_cargo_subtype_accident_brown    :> Bruine kleurstelling (ongevallentrein)
 str_cargo_subtype_accident_yellow   :> Gele kleurstelling (ongevallentrein)
+str_cargo_subtype_Jules             :> "Jules"
 
 str_cargo_subtype_benelux           :> Benelux kleurstelling
 str_cargo_subtype_benelux_nocab     :> Benelux kleurstelling, zonder stuurstand
