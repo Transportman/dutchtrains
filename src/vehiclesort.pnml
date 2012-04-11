@@ -124,19 +124,21 @@ sort(FEAT_TRAINS, [
     item_coaches_PlanD,
     item_coaches_PlanE,
     item_coaches_PlanK,
-    item_coaches_PlanN,
     item_coaches_PlanW,
     item_coaches_ICR,
-    item_coaches_DDAR,
     item_coaches_M2,
-    item_coaches_Couchette,
-    item_coaches_MUs,
     item_coaches_K4,
     item_coaches_ICK,
     item_coaches_Avmz,
     item_coaches_ICL,
-    item_coaches_Citynightline,
+    //doubledecker coaches
+    item_coaches_DDAR,
     item_coaches_gen9_IC_DD,
+    //sleepers
+    item_coaches_PlanN,
+    item_coaches_Couchette,
+    item_coaches_MUs,
+    item_coaches_Citynightline,
     
     //baggage/mail wagons
     item_coaches_HSM_D_1916,
