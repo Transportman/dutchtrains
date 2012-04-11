@@ -15,7 +15,7 @@ item(FEAT_TRAINS, item_emu_Mat24) {
         running_cost_factor: 29;
         speed: 100 km/h;
         power: 900 hpM;
-        cargo_capacity: 88;
+        cargo_capacity: 40;
         weight: 61 ton;
         tractive_effort_coefficient: 0.30;
         air_drag_coefficient: 0;

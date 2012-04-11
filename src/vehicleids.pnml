@@ -169,3 +169,4 @@ item(FEAT_TRAINS, item_coaches_Couchette, 282) {}
 item(FEAT_TRAINS, item_coaches_Citynightline, 283) {}
 item(FEAT_TRAINS, item_coaches_MUs, 284) {}
 item(FEAT_TRAINS, item_emu_Mat24, 285) {}
+item(FEAT_TRAINS, item_coaches_Mat24, 286) {}

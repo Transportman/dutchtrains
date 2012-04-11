@@ -317,6 +317,7 @@ str_coaches_SS_C_218    :Rijtuig SS C 1-339
 str_coaches_SS_C_723    :Rijtuig SS C 651-760
 str_coaches_SS_ABd_7516 :Rijtuig SS ABd 7516
 str_coaches_RTM_BD_438  :Rijtuig RTM BD 438
+str_coaches_Mat24       :Rijtuig Mat '24
 str_coaches_Ovaleramen  :Rijtuig "Ovaleramen"
 str_coaches_Ovaleramen_t:Rijtuig "Oval windows"
 str_coaches_Bolkoprijtuigen     :Rijtuig "Bolkoprijtuigen"

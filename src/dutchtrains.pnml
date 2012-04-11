@@ -260,6 +260,8 @@
 #include "src/coaches/Citynightline_item.pnml"
 #include "src/coaches/MUs_graphics.pnml"
 #include "src/coaches/MUs_item.pnml"
+#include "src/coaches/Mat24_graphics.pnml"
+#include "src/coaches/Mat24_item.pnml"
 
 //baggage and mail wagons
 #include "src/coaches/SS_E_129_graphics.pnml"

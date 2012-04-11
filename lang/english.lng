@@ -326,6 +326,7 @@ str_coaches_SS_C_218    :Passenger Carriage SS C 1-339
 str_coaches_SS_C_723    :Passenger Carriage SS C 651-760
 str_coaches_SS_ABd_7516 :Passenger Carriage SS ABd 7516
 str_coaches_RTM_BD_438  :Passenger Carriage RTM BD 438
+str_coaches_Mat24       :Passenger Carriage Mat '24
 str_coaches_Ovaleramen  :Passenger Carriage "Ovaleramen"
 str_coaches_Ovaleramen_t:Passenger Carriage "Oval windows"
 str_coaches_Bolkoprijtuigen     :Passenger Carriage "Bolkoprijtuigen"
