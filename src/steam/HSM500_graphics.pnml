@@ -43,7 +43,7 @@ spriteset(spriteset_steam_HSM500_tender, "gfx/steam/HSM500.png") {
 	template_2cc_48(1, 192)
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_HSM500_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_HSM500_animation, (motion_counter)) {
     3..4:   spriteset_steam_HSM500_ani_2;
     5..7:   spriteset_steam_HSM500_ani_3;
     8..10:  spriteset_steam_HSM500_ani_4;
@@ -81,7 +81,7 @@ spriteset(spriteset_steam_NS2100_tender, "gfx/steam/NS2100.png") {
 	template_2cc_48(1, 192)
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_NS2100_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NS2100_animation, (motion_counter)) {
     3..4:   spriteset_steam_NS2100_ani_2;
     5..7:   spriteset_steam_NS2100_ani_3;
     8..10:  spriteset_steam_NS2100_ani_4;

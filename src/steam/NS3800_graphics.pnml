@@ -34,7 +34,7 @@ spriteset(spriteset_steam_NS3800_tender, "gfx/steam/NS3800.png") {
 	template_2cc_48(1, 192)
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_NS3800_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NS3800_animation, (motion_counter)) {
     3..4:   spriteset_steam_NS3800_ani_2;
     5..7:   spriteset_steam_NS3800_ani_3;
     8..10:  spriteset_steam_NS3800_ani_4;
