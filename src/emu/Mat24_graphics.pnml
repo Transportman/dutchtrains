@@ -58,10 +58,6 @@ spriteset(spriteset_emu_Mat24_mABD_green, "gfx/emu/Mat24.png") {
 spriteset(spriteset_emu_Mat24_mABD_green_red, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 320)
 }
-//Jules
-spriteset(spriteset_emu_Mat24_mBD_yellow, "gfx/emu/Mat24_Jules.png") {
-	template_2cc_88(1, 64)
-}
 
 //random front
 random_switch(FEAT_TRAINS, SELF, switch_emu_Mat24_front_green_yellow) {
@@ -122,7 +118,6 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat24_livery, cargo_subtype) {
     2: switch_emu_Mat24_position_front_green_yellow;
     3: switch_emu_Mat24_position_front_green;
     4: switch_emu_Mat24_position_front_green_red;
-    5: spriteset_emu_Mat24_mBD_yellow;
     switch_emu_Mat24_autolivery;
 }
 
@@ -133,6 +128,5 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat24_subtype_text, cargo_subtype) {
     2: return string(str_cargo_subtype_green_lightyellow);
     3: return string(str_cargo_subtype_green);
     4: return string(str_cargo_subtype_green_red);
-    5: return string(str_cargo_subtype_Jules);
     return CB_RESULT_NO_TEXT;
 }
