@@ -1,12 +1,24 @@
 Dutch Trainset Changelog
 ========================
 
-2.0.0-alpha2 (2012/04/10)
+2.0.0-alpha2 (2012/04/14)
+- Feature: Plan E coach
+- Feature: Plan C mailcoach
+- Feature: D-IV baggage wagon
+- Feature: D-V baggage wagon
+- Feature: Couchette sleeper coach
+- Feature: Citynightline coach
+- Feature: MUs sleeper coach
+- Feature: Mat '24 motorcar and coach
+- Change: sort order of coaches
+- Change: animation speed of steamers
 - Fix: Mat40 ELD5 should be a 5-part EMU
 - Fix: Plan L introduction year
 - Fix: a lot of derailed vehicles due to faulty template
 - Fix: make capacity indication of wagons consistent
 - Fix: Hbbkkss was always red, the brown one was a Gs
+- Fix: Only first steam train in a consist was animated
+- Fix: vertical alignment of some coaches
 
 
 2.0.0-alpha1 (2012/04/01)
