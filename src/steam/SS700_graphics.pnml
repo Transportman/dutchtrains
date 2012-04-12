@@ -44,11 +44,16 @@ spriteset(spriteset_steam_SS700_tender, "gfx/steam/SS700.png") {
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_SS700_animation, (motion_counter)) {
-    3..4:   spriteset_steam_SS700_ani_2;
-    5..7:   spriteset_steam_SS700_ani_3;
-    8..10:  spriteset_steam_SS700_ani_4;
-    11..12: spriteset_steam_SS700_ani_5;
-    13..15: spriteset_steam_SS700_ani_6;
+    2:      spriteset_steam_SS700_ani_2;
+    3:      spriteset_steam_SS700_ani_3;
+    4..5:   spriteset_steam_SS700_ani_4;
+    6:      spriteset_steam_SS700_ani_5;
+    7:      spriteset_steam_SS700_ani_6;
+    10:     spriteset_steam_SS700_ani_2;
+    11:     spriteset_steam_SS700_ani_3;
+    12..13: spriteset_steam_SS700_ani_4;
+    14:     spriteset_steam_SS700_ani_5;
+    15:     spriteset_steam_SS700_ani_6;
     spriteset_steam_SS700_ani_1;
 }
 
@@ -82,11 +87,16 @@ spriteset(spriteset_steam_NS3700_tender, "gfx/steam/NS3700.png") {
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NS3700_animation, (motion_counter)) {
-    3..4:   spriteset_steam_NS3700_ani_2;
-    5..7:   spriteset_steam_NS3700_ani_3;
-    8..10:  spriteset_steam_NS3700_ani_4;
-    11..12: spriteset_steam_NS3700_ani_5;
-    13..15: spriteset_steam_NS3700_ani_6;
+    2:      spriteset_steam_NS3700_ani_2;
+    3:      spriteset_steam_NS3700_ani_3;
+    4..5:   spriteset_steam_NS3700_ani_4;
+    6:      spriteset_steam_NS3700_ani_5;
+    7:      spriteset_steam_NS3700_ani_6;
+    10:     spriteset_steam_NS3700_ani_2;
+    11:     spriteset_steam_NS3700_ani_3;
+    12..13: spriteset_steam_NS3700_ani_4;
+    14:     spriteset_steam_NS3700_ani_5;
+    15:     spriteset_steam_NS3700_ani_6;
     spriteset_steam_NS3700_ani_1;
 }
 

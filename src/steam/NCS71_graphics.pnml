@@ -49,11 +49,16 @@ spriteset(spriteset_steam_NCS71_tender, "gfx/steam/NCS71_1.png") {
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS71_animation, (motion_counter)) {
-    3..4:   spriteset_steam_NCS71_ani_2;
-    5..7:   spriteset_steam_NCS71_ani_3;
-    8..10:  spriteset_steam_NCS71_ani_4;
-    11..12: spriteset_steam_NCS71_ani_5;
-    13..15: spriteset_steam_NCS71_ani_6;
+    2:      spriteset_steam_NCS71_ani_2;
+    3:      spriteset_steam_NCS71_ani_3;
+    4..5:   spriteset_steam_NCS71_ani_4;
+    6:      spriteset_steam_NCS71_ani_5;
+    7:      spriteset_steam_NCS71_ani_6;
+    10:     spriteset_steam_NCS71_ani_2;
+    11:     spriteset_steam_NCS71_ani_3;
+    12..13: spriteset_steam_NCS71_ani_4;
+    14:     spriteset_steam_NCS71_ani_5;
+    15:     spriteset_steam_NCS71_ani_6;
     spriteset_steam_NCS71_ani_1;
 }
 
@@ -87,11 +92,16 @@ spriteset(spriteset_steam_NCS72_tender, "gfx/steam/NCS71_2.png") {
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS72_animation, (motion_counter)) {
-    3..4:   spriteset_steam_NCS72_ani_2;
-    5..7:   spriteset_steam_NCS72_ani_3;
-    8..10:  spriteset_steam_NCS72_ani_4;
-    11..12: spriteset_steam_NCS72_ani_5;
-    13..15: spriteset_steam_NCS72_ani_6;
+    2:      spriteset_steam_NCS72_ani_2;
+    3:      spriteset_steam_NCS72_ani_3;
+    4..5:   spriteset_steam_NCS72_ani_4;
+    6:      spriteset_steam_NCS72_ani_5;
+    7:      spriteset_steam_NCS72_ani_6;
+    10:     spriteset_steam_NCS72_ani_2;
+    11:     spriteset_steam_NCS72_ani_3;
+    12..13: spriteset_steam_NCS72_ani_4;
+    14:     spriteset_steam_NCS72_ani_5;
+    15:     spriteset_steam_NCS72_ani_6;
     spriteset_steam_NCS72_ani_1;
 }
 
@@ -125,11 +135,16 @@ spriteset(spriteset_steam_NS3600_tender, "gfx/steam/NS3600.png") {
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NS3600_animation, (motion_counter)) {
-    3..4:   spriteset_steam_NS3600_ani_2;
-    5..7:   spriteset_steam_NS3600_ani_3;
-    8..10:  spriteset_steam_NS3600_ani_4;
-    11..12: spriteset_steam_NS3600_ani_5;
-    13..15: spriteset_steam_NS3600_ani_6;
+    2:      spriteset_steam_NS3600_ani_2;
+    3:      spriteset_steam_NS3600_ani_3;
+    4..5:   spriteset_steam_NS3600_ani_4;
+    6:      spriteset_steam_NS3600_ani_5;
+    7:      spriteset_steam_NS3600_ani_6;
+    10:     spriteset_steam_NS3600_ani_2;
+    11:     spriteset_steam_NS3600_ani_3;
+    12..13: spriteset_steam_NS3600_ani_4;
+    14:     spriteset_steam_NS3600_ani_5;
+    15:     spriteset_steam_NS3600_ani_6;
     spriteset_steam_NS3600_ani_1;
 }
 
