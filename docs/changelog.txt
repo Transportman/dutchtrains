@@ -10,6 +10,7 @@ Dutch Trainset Changelog
 - Feature: Citynightline coach
 - Feature: MUs sleeper coach
 - Feature: Mat '24 motorcar and coach
+- Feature: Mat '24 mP
 - Change: sort order of coaches
 - Change: animation speed of steamers
 - Fix: Mat40 ELD5 should be a 5-part EMU
@@ -19,6 +20,7 @@ Dutch Trainset Changelog
 - Fix: Hbbkkss was always red, the brown one was a Gs
 - Fix: Only first steam train in a consist was animated
 - Fix: vertical alignment of some coaches
+- Fix: action colours in HLR77
 
 
 2.0.0-alpha1 (2012/04/01)
