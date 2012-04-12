@@ -1,0 +1,49 @@
+/*
+* ITEM
+*/
+
+item(FEAT_TRAINS, item_emu_Mat24mP) {
+    property {
+        name: string(str_emu_Mat24mP);
+        
+        introduction_date: date(1955,1,1);
+        model_life: 29;
+        retire_early: 11;
+        vehicle_life: 11;
+        loading_speed: 5;
+        cost_factor: 32;
+        running_cost_factor: 25;
+        speed: 100 km/h;
+        power: 900 hpM;
+        cargo_capacity: 15;
+        weight: 61 ton;
+        tractive_effort_coefficient: 0.30;
+        air_drag_coefficient: 0;
+        
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_allow_refit: [];
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
+        refit_cost: 0;
+        track_type: ELRL;
+		ai_special_flag: 0;
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+        
+        climates_available: ALL_CLIMATES;
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+	}
+    graphics {
+        purchase: spriteset_emu_Mat24mP_purchase;
+        cargo_subtype_text: switch_emu_Mat24mP_subtype_text;
+        cargo_capacity: switch_emu_Mat24mP_capacity;
+        switch_emu_Mat24mP_livery;
+    }
+}

@@ -81,6 +81,7 @@ sort(FEAT_TRAINS, [
     
     //emu
     item_emu_Mat24,
+    item_emu_Mat24mP,
     item_emu_Mat35ELD2,
     item_emu_Mat36EL2,
     item_emu_Mat36ELD3,

@@ -1,0 +1,62 @@
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_Mat24mP_purchase, "gfx/purchase/emu/Mat24mP_brown.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_emu_Mat24mP_brown, "gfx/emu/Mat24_Jules.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Mat24mP_brown_yellow, "gfx/emu/Mat24_Jules.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_Mat24mP_Jules, "gfx/emu/Mat24_Jules.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24mP_autolivery, date_of_last_service) {
+	0..date(1972,12,31): spriteset_emu_Mat24mP_brown;
+    spriteset_emu_Mat24mP_brown_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24mP_purchaselivery, build_year) {
+	0..1972: spriteset_emu_Mat24mP_brown;
+    spriteset_emu_Mat24mP_brown_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24mP_livery, cargo_subtype) {
+	1: switch_emu_Mat24mP_purchaselivery;
+    2: spriteset_emu_Mat24mP_brown;
+    3: spriteset_emu_Mat24mP_brown_yellow;
+    4: spriteset_emu_Mat24mP_Jules;
+    switch_emu_Mat24mP_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24mP_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_brown);
+    3: return string(str_cargo_subtype_brown_yellowfront);
+    4: return string(str_cargo_subtype_Jules);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+ * cargo capacity callback
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24mP_capacity, cargo_subtype) {
+    4: return 0; //Jules doesn't have a capacity
+    return 15;
+}
