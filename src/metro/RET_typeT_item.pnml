@@ -10,7 +10,7 @@ item(FEAT_TRAINS, item_metro_RET_typeT) {
         model_life: 59;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 20;
         cost_factor: 42;
         running_cost_factor: 33;
         speed: 80 km/h;

@@ -13,6 +13,7 @@ Dutch Trainset Changelog
 - Feature: Mat '24 mP
 - Change: sort order of coaches
 - Change: animation speed of steamers
+- Change: increase loading speed of metros
 - Fix: Mat40 ELD5 should be a 5-part EMU
 - Fix: Plan L introduction year
 - Fix: a lot of derailed vehicles due to faulty template

@@ -173,9 +173,10 @@ Changing vehicle properties
     Some vehicles change their properties (speed, power, etc.) during
     their lifetime, but you are not informed by that (#3686).
     
-Mat '24 missing
-    The Mat '24 was in v1, but is not in this release. It will be 
-    completely redrawn and re-added later (#3798).
+Loading speed
+    The loading speed of wagons, carriages and multiple units is not
+    yet optimized. Currently all have a loading speed of 5/tick, except
+    metros which have a loading speed of 20/tick (#3905).
     
 Bollenwagen missing
     The bollenwagen was in v1, but is not in this release. It is 

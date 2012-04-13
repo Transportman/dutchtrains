@@ -9,7 +9,7 @@ item(FEAT_TRAINS, item_metro_GVB_M4S3) {
         introduction_date: date(1996,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 20;
         cost_factor: 40;
         running_cost_factor: 33;
         speed: 100 km/h;
