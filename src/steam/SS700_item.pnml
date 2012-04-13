@@ -46,6 +46,7 @@ item(FEAT_TRAINS, item_steam_SS700) {
         length: switch_steam_SS700_length;
         cargo_subtype_text: switch_steam_SS700_subtype_text;
         cargo_capacity: return 0;
+        visual_effect_and_powered: switch_steam_SS700_visual_effect_and_powered;
         switch_steam_SS700_livery;
     }
 }

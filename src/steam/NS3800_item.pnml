@@ -44,6 +44,7 @@ item(FEAT_TRAINS, item_steam_NS3800) {
         purchase: spriteset_steam_NS3800_purchase;
         articulated_part: switch_steam_NS3800_articulated;
         length: switch_steam_NS3800_length;
+        visual_effect_and_powered: switch_steam_NS3800_visual_effect_and_powered;
         switch_steam_NS3800_position;
     }
 }

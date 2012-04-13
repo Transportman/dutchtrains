@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_steam_NBDS30) {
         cargo_capacity: return 0;
         speed: switch_steam_NBDS30_speed;
         power: switch_steam_NBDS30_power;
+        visual_effect_and_powered: switch_steam_NBDS30_visual_effect_and_powered;
         switch_steam_NBDS30_livery;
     }
 }

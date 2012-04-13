@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_steam_NCS71) {
         speed: switch_steam_NCS71_speed;
         weight: switch_steam_NCS71_weight;
         tractive_effort_coefficient: switch_steam_NCS71_te;
+        visual_effect_and_powered: switch_steam_NCS71_visual_effect_and_powered;
         switch_steam_NCS71_livery;
     }
 }

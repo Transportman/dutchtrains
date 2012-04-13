@@ -166,3 +166,12 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NBDS30_power, date_of_last_service) {
 	0..date(1919,12,31): return 778;
     return 867;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_NBDS30_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -4, DISABLE_WAGON_POWER);
+}
