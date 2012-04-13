@@ -5,6 +5,9 @@
 spriteset(spriteset_emu_mP_purchase_brown, "gfx/purchase/emu/mP_brown.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_emu_mP_purchase_brown_yellow, "gfx/purchase/emu/mP_brown_yellow.png") {
+	template_purchase(0, 0)
+}
 spriteset(spriteset_emu_mP_purchase_yellow_red, "gfx/purchase/emu/mP_yellow_red.png") {
 	template_purchase(0, 0)
 }
@@ -13,8 +16,9 @@ spriteset(spriteset_emu_mP_purchase_red, "gfx/purchase/emu/mP_red.png") {
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_mP_purchase, current_year) {
-	0..1976: spriteset_emu_mP_purchase_brown;
-    1977..1988: spriteset_emu_mP_purchase_yellow_red;
+	0..1969: spriteset_emu_mP_purchase_brown;
+    1970..1975: spriteset_emu_mP_purchase_brown_yellow;
+    1976..1988: spriteset_emu_mP_purchase_yellow_red;
     spriteset_emu_mP_purchase_red;
 }
 
@@ -22,7 +26,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_mP_purchase, current_year) {
 * VEHICLE
 */
 
-spriteset(spriteset_emu_mP_brown, "gfx/emu/mP.png") {
+spriteset(spriteset_emu_mP_brown_yellow, "gfx/emu/mP.png") {
 	template_2cc_88(1, 1)
 }
 spriteset(spriteset_emu_mP_yellow, "gfx/emu/mP.png") {
@@ -31,28 +35,34 @@ spriteset(spriteset_emu_mP_yellow, "gfx/emu/mP.png") {
 spriteset(spriteset_emu_mP_red, "gfx/emu/mP.png") {
 	template_2cc_88(1, 64)
 }
+spriteset(spriteset_emu_mP_brown, "gfx/emu/mP.png") {
+	template_2cc_88(1, 96)
+}
 
 /*
 * LIVERY SELECTION
 */
 
 switch(FEAT_TRAINS, PARENT, switch_emu_mP_autolivery, date_of_last_service) {
-	0..date(1976,12,31): spriteset_emu_mP_brown;
-    date(1977,1,1)..date(1988,12,31): spriteset_emu_mP_yellow;
+	0..date(1969,12,31): spriteset_emu_mP_brown;
+    date(1970,1,1)..date(1975,12,31): spriteset_emu_mP_brown_yellow;
+    date(1976,1,1)..date(1988,12,31): spriteset_emu_mP_yellow;
     spriteset_emu_mP_red;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_mP_purchaselivery, build_year) {
-	0..1976: spriteset_emu_mP_brown;
-    1977..1988: spriteset_emu_mP_yellow;
+	0..1969: spriteset_emu_mP_brown;
+    1970..1975: spriteset_emu_mP_brown_yellow;
+    1976..1988: spriteset_emu_mP_yellow;
     spriteset_emu_mP_red;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_mP_livery, cargo_subtype) {
 	1: switch_emu_mP_purchaselivery;
     2: spriteset_emu_mP_brown;
-    3: spriteset_emu_mP_yellow;
-    4: spriteset_emu_mP_red;
+    3: spriteset_emu_mP_brown_yellow;
+    4: spriteset_emu_mP_yellow;
+    5: spriteset_emu_mP_red;
     switch_emu_mP_autolivery;
 }
 
@@ -61,7 +71,8 @@ switch(FEAT_TRAINS, PARENT, switch_emu_mP_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_brown);
-    3: return string(str_cargo_subtype_yellow_red);
-    4: return string(str_cargo_subtype_red);
+    3: return string(str_cargo_subtype_brown_yellowfront);
+    4: return string(str_cargo_subtype_yellow_red);
+    5: return string(str_cargo_subtype_red);
     return CB_RESULT_NO_TEXT;
 }
