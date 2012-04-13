@@ -42,6 +42,7 @@ item(FEAT_TRAINS, item_metro_RET_typeB) {
     graphics {
         purchase: spriteset_metro_RET_typeB_purchase;
         articulated_part: switch_metro_RET_typeB_articulated;
+        additional_text: return string(str_purchase_metro_1);
         switch_metro_RET_typeB_position;
     }
 }

@@ -11,6 +11,8 @@ Dutch Trainset Changelog
 - Feature: MUs sleeper coach
 - Feature: Mat '24 motorcar and coach
 - Feature: Mat '24 mP
+- Feature: corrected smoke exhaust of steam trains
+- Feature: additional purchase menu info for metros
 - Change: sort order of coaches
 - Change: animation speed of steamers
 - Change: increase loading speed of metros

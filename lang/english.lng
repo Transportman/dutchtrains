@@ -371,3 +371,9 @@ str_metro_RET_typeT     :RET Type T (SG2) (Metro)
 str_metro_RET_typeM     :RET Type M (MG2) (Metro)
 str_metro_RET_typeB     :RET Type B (MG2/1) (Metro)
 str_metro_RET_typeR     :RET Type R (RSG3) (Metro)
+
+#PURCHASE MENU TEXTS
+
+#metro
+str_purchase_metro_1    :{BLACK}Length: {YELLOW}2 units (1.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
+str_purchase_metro_2    :{BLACK}Length: {YELLOW}6 units (3.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}

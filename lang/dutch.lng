@@ -362,3 +362,9 @@ str_metro_RET_typeT     :RET Type T (SG2) (Metro)
 str_metro_RET_typeM     :RET Type M (MG2) (Metro)
 str_metro_RET_typeB     :RET Type B (MG2/1) (Metro)
 str_metro_RET_typeR     :RET Type R (RSG3) (Metro)
+
+#PURCHASE MENU TEXTS
+
+#metro
+str_purchase_metro_1    :{BLACK}Lengte: {YELLOW}2 bakken (1.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
+str_purchase_metro_2    :{BLACK}Lengte: {YELLOW}6 bakken (3.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}

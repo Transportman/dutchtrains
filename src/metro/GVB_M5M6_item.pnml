@@ -42,6 +42,7 @@ item(FEAT_TRAINS, item_metro_GVB_M5M6) {
     graphics {
         purchase: spriteset_metro_GVB_M5M6_purchase;
         articulated_part: switch_metro_GVB_M5M6_articulated;
+        additional_text: return string(str_purchase_metro_2);
         switch_metro_GVB_M5M6_livery;
     }
 }
