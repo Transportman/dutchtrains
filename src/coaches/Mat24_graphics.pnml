@@ -8,9 +8,9 @@ spriteset(spriteset_coaches_Mat24_purchase_green_yellow, "gfx/purchase/coaches/M
 spriteset(spriteset_coaches_Mat24_purchase_green, "gfx/purchase/coaches/Mat24_green.png") {
 	template_purchase(0, 0)
 }
-/* spriteset(spriteset_coaches_Mat24_purchase_green_red, "gfx/purchase/coaches/Mat24_green_red.png") {
+spriteset(spriteset_coaches_Mat24_purchase_green_red, "gfx/purchase/coaches/Mat24_green_red.png") {
 	template_purchase(0, 0)
-} */
+}
 spriteset(spriteset_coaches_Mat24_purchase_blue, "gfx/purchase/coaches/Mat24_blue.png") {
 	template_purchase(0, 0)
 }
@@ -18,7 +18,7 @@ spriteset(spriteset_coaches_Mat24_purchase_blue, "gfx/purchase/coaches/Mat24_blu
 switch(FEAT_TRAINS, PARENT, switch_coaches_Mat24_purchase, current_year) {
 	0..1928: spriteset_coaches_Mat24_purchase_green_yellow;
 	1929..1949: spriteset_coaches_Mat24_purchase_green;
-	1950..1955: spriteset_coaches_Mat24_purchase_green;
+	1950..1955: spriteset_coaches_Mat24_purchase_green_red;
     spriteset_coaches_Mat24_purchase_blue;
 }
 
@@ -33,9 +33,9 @@ spriteset(spriteset_coaches_Mat24_Aec_green_yellow, "gfx/emu/Mat24.png") {
 spriteset(spriteset_coaches_Mat24_Aec_green, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 384)
 }
-/* spriteset(spriteset_coaches_Mat24_Aec_green_red, "gfx/emu/Mat24.png") {
+spriteset(spriteset_coaches_Mat24_Aec_green_red, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 416)
-} */
+}
 spriteset(spriteset_coaches_Mat24_Aec_blue, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 448)
 }
@@ -46,9 +46,9 @@ spriteset(spriteset_coaches_Mat24_Bec_green_yellow, "gfx/emu/Mat24.png") {
 spriteset(spriteset_coaches_Mat24_Bec_green, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 512)
 }
-/* spriteset(spriteset_coaches_Mat24_Bec_green_red, "gfx/emu/Mat24.png") {
+spriteset(spriteset_coaches_Mat24_Bec_green_red, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 544)
-} */
+}
 spriteset(spriteset_coaches_Mat24_Bec_blue, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 576)
 }
@@ -59,9 +59,9 @@ spriteset(spriteset_coaches_Mat24_Cec_green_yellow, "gfx/emu/Mat24.png") {
 spriteset(spriteset_coaches_Mat24_Cec_green, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 640)
 }
-/* spriteset(spriteset_coaches_Mat24_Cec_green_red, "gfx/emu/Mat24.png") {
+spriteset(spriteset_coaches_Mat24_Cec_green_red, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 672)
-} */
+}
 spriteset(spriteset_coaches_Mat24_Cec_blue, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 704)
 }
@@ -72,9 +72,9 @@ spriteset(spriteset_coaches_Mat24_Ces_green_yellow, "gfx/emu/Mat24.png") {
 spriteset(spriteset_coaches_Mat24_Ces_green, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 768)
 }
-/* spriteset(spriteset_coaches_Mat24_Ces_green_red, "gfx/emu/Mat24.png") {
+spriteset(spriteset_coaches_Mat24_Ces_green_red, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 800)
-} */
+}
 spriteset(spriteset_coaches_Mat24_Ces_blue, "gfx/emu/Mat24.png") {
 	template_2cc_88(1, 832)
 }
@@ -98,12 +98,12 @@ random_switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_middle_green) {
     55: spriteset_coaches_Mat24_Cec_green;
     11: spriteset_coaches_Mat24_ABecm_green;
 }
-/* random_switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_middle_green_red) {
+random_switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_middle_green_red) {
     27: spriteset_coaches_Mat24_Aec_green_red;
     33: spriteset_coaches_Mat24_Bec_green_red;
     55: spriteset_coaches_Mat24_Cec_green_red;
     11: spriteset_coaches_Mat24_ABecm_green;
-} */
+}
 random_switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_middle_blue) {
     27: spriteset_coaches_Mat24_Aec_blue;
     33: spriteset_coaches_Mat24_Bec_blue;
@@ -122,34 +122,32 @@ switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_position_back_green, position_in_
     switch_coaches_Mat24_middle_green; //middle
 }
 
-/* switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_position_back_green_red, position_in_consist) {
+switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_position_back_green_red, position_in_consist) {
     0: spriteset_coaches_Mat24_Ces_green_red; //front
     switch_coaches_Mat24_middle_green_red; //end or middle
-} */
+}
 
 /*
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_coaches_Mat24_autolivery, date_of_last_service) {
 	0..date(1928,12,31): switch_coaches_Mat24_position_back_green_yellow;
-    //date(1929,1,1)..date(1949,12,31): switch_coaches_Mat24_position_back_green;
-    switch_coaches_Mat24_position_back_green;
-    //switch_coaches_Mat24_position_back_green_red;
+    date(1929,1,1)..date(1949,12,31): switch_coaches_Mat24_position_back_green;
+    switch_coaches_Mat24_position_back_green_red;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_purchaselivery, build_year) {
 	0..1928: switch_coaches_Mat24_position_back_green_yellow;
-    //1929..1949: switch_coaches_Mat24_position_back_green;
-    switch_coaches_Mat24_position_back_green;
-    //switch_coaches_Mat24_position_back_green_red;
+    1929..1949: switch_coaches_Mat24_position_back_green;
+    switch_coaches_Mat24_position_back_green_red;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_livery, cargo_subtype) {
 	1: switch_coaches_Mat24_purchaselivery;
     2: switch_coaches_Mat24_position_back_green_yellow;
     3: switch_coaches_Mat24_position_back_green;
-    //4: switch_coaches_Mat24_position_back_green;
+    4: switch_coaches_Mat24_position_back_green_red;
     switch_coaches_Mat24_autolivery;
 }
 
@@ -170,11 +168,16 @@ switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_subtype_text, cargo_subtype) {
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green_lightyellow);
     3: return string(str_cargo_subtype_green);
-    //4: return string(str_cargo_subtype_green_red);
+    4: return string(str_cargo_subtype_green_red);
     return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_coaches_Mat24_subtype_text_available, vehicle_type_id) {
     item_emu_Mat24: switch_coaches_Mat24_subtype_text;
     return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_subtype_text_year, build_year) {
+	0..1955: switch_coaches_Mat24_subtype_text;
+    switch_coaches_Mat24_subtype_text_available;
 }

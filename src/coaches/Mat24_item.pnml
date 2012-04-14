@@ -42,7 +42,7 @@ item(FEAT_TRAINS, item_coaches_Mat24) {
 	}
     graphics {
         purchase: switch_coaches_Mat24_purchase;
-        cargo_subtype_text: switch_coaches_Mat24_subtype_text_available;
+        cargo_subtype_text: switch_coaches_Mat24_subtype_text_year;
         colour_mapping: PALETTE_USE_DEFAULT;
         switch_coaches_Mat24_buildyearlivery;
     }
