@@ -13,6 +13,7 @@ Dutch Trainset Changelog
 - Feature: Mat '24 mP
 - Feature: corrected smoke exhaust of steam trains
 - Feature: additional purchase menu info for metros
+- Feature: New graphics for Plan L coach
 - Change: sort order of coaches
 - Change: animation speed of steamers
 - Change: increase loading speed of metros

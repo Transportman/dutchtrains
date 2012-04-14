@@ -23,36 +23,44 @@ switch(FEAT_TRAINS, PARENT, switch_coaches_PlanL_purchase, current_year) {
 */
 
 spriteset(spriteset_coaches_PlanL_blue, "gfx/coaches/PlanL.png") {
-	template_2cc_88(0, 0)
+	template_2cc_88(1, 1)
 }
 spriteset(spriteset_coaches_PlanL_blue_yellow, "gfx/coaches/PlanL.png") {
-	template_2cc_88(0, 30)
+	template_2cc_88(1, 32)
 }
 spriteset(spriteset_coaches_PlanL_yellow_blue, "gfx/coaches/PlanL.png") {
-	template_2cc_88(0, 60)
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_coaches_PlanL_yellow_blue2, "gfx/coaches/PlanL.png") {
+	template_2cc_88(1, 96)
 }
 
 /*
 * LIVERY SELECTION
 */
 
+random_switch(FEAT_TRAINS, SELF, switch_coaches_PlanL_random_yellow_blue) {
+	1: spriteset_coaches_PlanL_yellow_blue;
+	1: spriteset_coaches_PlanL_yellow_blue2;
+}
+
 switch(FEAT_TRAINS, PARENT, switch_coaches_PlanL_autolivery, date_of_last_service) {
 	0..date(1979,12,31): spriteset_coaches_PlanL_blue;
 	date(1980,12,31)..date(1982,12,31): spriteset_coaches_PlanL_blue_yellow;
-    spriteset_coaches_PlanL_yellow_blue;
+    switch_coaches_PlanL_random_yellow_blue;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_PlanL_purchaselivery, build_year) {
 	0..1979: spriteset_coaches_PlanL_blue;
 	1980..1982: spriteset_coaches_PlanL_blue_yellow;
-    spriteset_coaches_PlanL_yellow_blue;
+    switch_coaches_PlanL_random_yellow_blue;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_PlanL_livery, cargo_subtype) {
 	1: switch_coaches_PlanL_purchaselivery;
     2: spriteset_coaches_PlanL_blue;
     3: spriteset_coaches_PlanL_blue_yellow;
-    4: spriteset_coaches_PlanL_yellow_blue;
+    4: switch_coaches_PlanL_random_yellow_blue;
     switch_coaches_PlanL_autolivery;
 }
 
