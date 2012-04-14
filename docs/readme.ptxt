@@ -166,7 +166,7 @@ Vehicle names
     Vehicle names are somewhat inconsistent and will be reviewed (#3646).
     
 Sparks and smoke
-    MUs and steamers will emit sparks or smoke from every vehicle part,
+    MUs will emit sparks or smoke from every vehicle part,
     not just the parts that have an engine or exhaust (#3685).
     
 Changing vehicle properties
@@ -228,6 +228,9 @@ A: Some specialized wagons, like the VAM compost wagon, the cartransporter
    and the superheavy flatcar are only able to carry specialized cargoes.
    These cargoes are not available without an industry NewGRF, and these
    wagons are not available if the cargoes they carry are not available.
+
+Q: Can I use Autorefit?
+A: Yes.
 
 
 
