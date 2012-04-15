@@ -58,6 +58,7 @@ item(FEAT_TRAINS, item_emu_Mat36ELD3) {
         weight: switch_emu_Mat36ELD3_weight;
         tractive_effort_coefficient: switch_emu_Mat36ELD3_te;
         length: switch_emu_Mat36ELD3_length;
+        visual_effect_and_powered: switch_emu_Mat36ELD3_visual_effect_and_powered;
         switch_emu_Mat36ELD3_livery;
     }
 }

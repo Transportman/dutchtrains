@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_emu_Mat54ELD4) {
         purchase: switch_emu_Mat54ELD4_purchase;
         articulated_part: switch_emu_Mat54ELD4_articulated;
         cargo_subtype_text: switch_emu_Mat54ELD4_subtype_text;
+        visual_effect_and_powered: switch_emu_Mat54ELD4_visual_effect_and_powered;
         switch_emu_Mat54ELD4_livery;
     }
 }

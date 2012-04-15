@@ -170,3 +170,12 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD4D_capacity, cargo_classes) {
     bitmask(CC_MAIL): return 24;
     return 12;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD4_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
