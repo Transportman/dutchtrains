@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_emu_IRMIV) {
         articulated_part: switch_emu_IRMIV_articulated;
         cargo_capacity: switch_emu_IRMIV_capacity;
         weight: switch_emu_IRMIV_weight;
+        visual_effect_and_powered: switch_emu_IRMIV_visual_effect_and_powered;
         switch_emu_IRMIV_livery;
     }
 }

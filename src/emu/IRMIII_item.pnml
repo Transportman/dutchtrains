@@ -51,6 +51,7 @@ item(FEAT_TRAINS, item_emu_IRMIII) {
     graphics {
         purchase: spriteset_emu_IRMVI_purchase;
         articulated_part: switch_emu_IRMIII_articulated;
+        visual_effect_and_powered: switch_emu_IRMIII_visual_effect_and_powered;
         switch_emu_IRMIII_livery;
     }
 }

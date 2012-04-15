@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_emu_gen9_HST) {
     graphics {
         purchase: spriteset_emu_gen9_HST_purchase;
         articulated_part: switch_emu_gen9_HST_articulated;
+        visual_effect_and_powered: switch_emu_gen9_HST_visual_effect_and_powered;
         switch_emu_gen9_HST_position;
     }
 }

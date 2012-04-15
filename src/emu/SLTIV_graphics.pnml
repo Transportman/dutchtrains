@@ -60,3 +60,12 @@ switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_length, (position_in_vehid_chain % 4)
     3: return 6;
     return 5;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+    2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

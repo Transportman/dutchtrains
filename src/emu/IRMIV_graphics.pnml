@@ -65,3 +65,12 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_weight, build_year) {
     0..2001: return 234;
     return 237;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

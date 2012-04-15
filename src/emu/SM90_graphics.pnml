@@ -39,3 +39,12 @@ switch(FEAT_TRAINS, SELF, switch_emu_SM90_articulated, extra_callback_info1) {
     1: return item_emu_SM90;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SM90_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

@@ -98,3 +98,12 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_articulated, extra_callback_info1) {
     1..5: return item_emu_IRMVI;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_visual_effect_and_powered, (position_in_vehid_chain % 6)) {
+    2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

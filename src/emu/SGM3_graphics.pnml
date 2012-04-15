@@ -108,3 +108,12 @@ switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_capacity, cargo_subtype) {
     3: return 74;
     switch_emu_SGM3_autocapacity;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

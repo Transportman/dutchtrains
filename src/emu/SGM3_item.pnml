@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_emu_SGM3) {
         articulated_part: switch_emu_SGM3_articulated;
         cargo_subtype_text: switch_emu_SGM3_subtype_text;
         cargo_capacity: switch_emu_SGM3_capacity;
+        visual_effect_and_powered: switch_emu_SGM3_visual_effect_and_powered;
         switch_emu_SGM3_livery;
     }
 }

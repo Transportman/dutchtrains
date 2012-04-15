@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_emu_V250) {
     graphics {
         purchase: spriteset_emu_V250_purchase;
         articulated_part: switch_emu_V250_articulated;
+        visual_effect_and_powered: switch_emu_V250_visual_effect_and_powered;
         switch_emu_V250_position;
     }
 }
