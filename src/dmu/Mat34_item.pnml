@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_dmu_Mat34) {
         articulated_part: switch_dmu_Mat34_articulated;
         length: switch_dmu_Mat34_length;
         cargo_subtype_text: switch_dmu_Mat34_subtype_text;
+        visual_effect_and_powered: switch_dmu_Mat34_visual_effect_and_powered;
         switch_dmu_Mat34_livery;
     }
 }

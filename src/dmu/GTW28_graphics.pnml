@@ -157,3 +157,12 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_length, (position_in_vehid_chain % 4)
     2: return 7;
     return 8;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -3, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

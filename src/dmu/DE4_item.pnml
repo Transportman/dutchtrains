@@ -51,6 +51,7 @@ item(FEAT_TRAINS, item_dmu_DE4) {
     graphics {
         purchase: spriteset_dmu_DE4_purchase;
         articulated_part: switch_dmu_DE4_articulated;
+        visual_effect_and_powered: switch_dmu_DE4_visual_effect_and_powered;
         switch_dmu_DE4_position_red;
     }
 }

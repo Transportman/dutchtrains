@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_dmu_DH2) {
         purchase: switch_dmu_DH2_livery_purchase;
         articulated_part: switch_dmu_DH2_articulated;
         cargo_subtype_text: switch_dmu_DH2_subtype_text;
+        visual_effect_and_powered: switch_dmu_DH2_visual_effect_and_powered;
         switch_dmu_DH2_livery;
     }
 }

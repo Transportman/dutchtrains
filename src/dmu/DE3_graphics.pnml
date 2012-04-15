@@ -98,3 +98,12 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE3_articulated, extra_callback_info1) {
     1..2: return item_dmu_DE3;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE3_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
