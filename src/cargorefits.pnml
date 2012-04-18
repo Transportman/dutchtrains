@@ -18,7 +18,7 @@
 
 #define CARGODEF_FLAT refittable_cargo_classes: bitmask(CC_PIECE_GOODS); non_refittable_cargo_classes: bitmask(CC_OVERSIZED); cargo_allow_refit: [SCMT]; cargo_disallow_refit: [LVST, TOYS, BATT, BUBL, FZDR, BEER, CERA, COPR, DYES, FERT, FICR, FRVG, MNSP, PLAS, RCYC, WOOL];
 
-#define CARGODEF_HEAVYFLAT refittable_cargo_classes: bitmask(CC_OVERSIZED); non_refittable_cargo_classes: 0; cargo_allow_refit: []; cargo_disallow_refit: [];
+#define CARGODEF_HEAVYFLAT refittable_cargo_classes: bitmask(CC_OVERSIZED); non_refittable_cargo_classes: 0; cargo_allow_refit: [GOOD]; cargo_disallow_refit: [];
 
 #define CARGODEF_BOXCAR refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS); non_refittable_cargo_classes: 0; cargo_allow_refit: [GRAI, WHEA, RUBR, FRUT, MAIZ, WATR, SUGR, TOFF, COLA, CTCD, PLST, CERE, CMNT, OLSD, SGCN]; cargo_disallow_refit: [LVST, WOOD, STEL, VEHI, TOUR];
 
