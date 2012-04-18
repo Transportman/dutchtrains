@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_dmu_GTW28) {
         speed: 140 km/h;
         power: 804 hpM;
         cargo_capacity: 48;
-        weight: 8 ton;
+        weight: 87 ton;
         tractive_effort_coefficient: 0.075;
         air_drag_coefficient: 0;
         
