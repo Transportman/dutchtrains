@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen0openwagonsmall) {
 	}
     graphics {
         purchase: spriteset_wagons_gen0openwagonsmall_purchase;
+        cargo_capacity: return 10;
         colour_mapping: switch_generic_recolour;
         cargo_subtype_text: switch_wagons_gen0openwagonsmall_subtype_text;
         switch_wagons_gen0openwagonsmall_livery;

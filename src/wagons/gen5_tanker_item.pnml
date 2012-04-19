@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_wagons_gen5_tanker) {
 	}
     graphics {
         purchase: spriteset_wagons_gen5_tanker_purchase;
+        cargo_capacity: return 25;
         cargo_subtype_text: switch_wagons_gen5_tanker_subtype_text;
         switch_wagons_gen5_tanker_livery;
     }

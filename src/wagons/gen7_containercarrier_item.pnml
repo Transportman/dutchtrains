@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_wagons_gen7_containercarrier) {
 	}
     graphics {
         purchase: spriteset_wagons_gen7_containercarrier_purchase;
+        cargo_capacity: return 42;
         switch_wagons_gen7_containercarrier_livery;
     }
 }

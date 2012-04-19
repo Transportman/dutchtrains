@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen2_stake) {
 	}
     graphics {
         purchase: spriteset_wagons_gen2_stake_purchase;
+        cargo_capacity: return 18;
         switch_wagons_gen2_stake_livery;
     }
 }

@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen0boxcar) {
 	}
     graphics {
         purchase: spriteset_wagons_gen0boxcar_purchase;
+        cargo_capacity: return 10;
         cargo_subtype_text: switch_wagons_gen0boxcar_subtype_text;
         switch_wagons_gen0boxcar_livery;
     }

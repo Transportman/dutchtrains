@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_wagons_gen5_refrigerator) {
 	}
     graphics {
         purchase: spriteset_wagons_gen5_refrigerator_purchase;
+        cargo_capacity: return 24;
         spriteset_wagons_gen5_refrigerator;
     }
 }
