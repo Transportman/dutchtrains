@@ -32,6 +32,7 @@ sort(FEAT_TRAINS, [
     item_steam_NS4600,
     item_steam_NS3900,
     item_steam_NS4700,
+    item_steam_NS5000II,
     
     //diesel
     item_diesel_NS100,
