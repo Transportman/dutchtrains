@@ -10,22 +10,22 @@
 * ITEM
 */
 
-item(FEAT_TRAINS, item_steam_NS4600) {
+item(FEAT_TRAINS, item_steam_NS4700) {
     property {
-        name: string(str_steam_NS4600);
+        name: string(str_steam_NS4700);
         
-        introduction_date: date(1923,1,1);
-        model_life: 53;
-        retire_early: 20;
-        vehicle_life: 20;
+        introduction_date: date(1944,1,1);
+        model_life: 35;
+        retire_early: 14;
+        vehicle_life: 14;
         loading_speed: 5;
-        cost_factor: 32;
-        running_cost_factor: 21;
-        speed: 60 km/h;
-        power: 1075 hpM;
+        cost_factor: 35;
+        running_cost_factor: 26;
+        speed: 70 km/h;
+        power: 1724 hpM;
         cargo_capacity: 0;
-        weight: 119 ton;
-        tractive_effort_coefficient: 0.123;
+        weight: 128 ton;
+        tractive_effort_coefficient: 0.133;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -49,10 +49,10 @@ item(FEAT_TRAINS, item_steam_NS4600) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_steam_NS4600_purchase;
-        articulated_part: switch_steam_NS4600_articulated;
-        length: switch_steam_NS4600_length;
-        visual_effect_and_powered: switch_steam_NS4600_visual_effect_and_powered;
-        switch_steam_NS4600_position;
+        purchase: spriteset_steam_NS4700_purchase;
+        articulated_part: switch_steam_NS4700_articulated;
+        length: switch_steam_NS4700_length;
+        visual_effect_and_powered: switch_steam_NS4700_visual_effect_and_powered;
+        switch_steam_NS4700_position;
     }
 }

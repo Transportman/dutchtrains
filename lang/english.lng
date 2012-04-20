@@ -180,6 +180,7 @@ str_steam_NBDS30_t      :NBDS 30-36 (NS 3501-3508) "Blue Brabanders" (Steam)
 str_steam_NCS71         :NCS 71-78 (SS 971-978, NS 3600 series) "Zeppelin" (Steam)
 str_steam_NCS71_t       :NCS 71-78 (SS 971-978, NS 3600 series) "Zeppelin" (Steam)
 str_steam_NS4600        :NS 4600 (Steam)
+str_steam_NS4700        :NS 4700 (Steam)
 
 #diesel
 str_diesel_NS100        :NS 100 "Oersik" (Petrol)

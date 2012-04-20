@@ -1,0 +1,80 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_steam_NS4700_purchase, "gfx/purchase/steam/NS4700.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//6x engine animation
+spriteset(spriteset_steam_NS4700_ani_1, "gfx/steam/NS4700.png") {
+	template_2cc_78(0, 0)
+}
+spriteset(spriteset_steam_NS4700_ani_2, "gfx/steam/NS4700.png") {
+	template_2cc_78(0, 30)
+}
+spriteset(spriteset_steam_NS4700_ani_3, "gfx/steam/NS4700.png") {
+	template_2cc_78(0, 60)
+}
+spriteset(spriteset_steam_NS4700_ani_4, "gfx/steam/NS4700.png") {
+	template_2cc_78(0, 90)
+}
+//tender
+spriteset(spriteset_steam_NS4700_tender, "gfx/steam/NS4700.png") {
+	template_2cc_48(0, 120)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NS4700_animation, (motion_counter)) {
+    2..3:   spriteset_steam_NS4700_ani_2;
+    4..5:   spriteset_steam_NS4700_ani_3;
+    6..7:   spriteset_steam_NS4700_ani_4;
+    
+    10..11: spriteset_steam_NS4700_ani_2;
+    12..13: spriteset_steam_NS4700_ani_3;
+    14..15: spriteset_steam_NS4700_ani_4;
+    spriteset_steam_NS4700_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS4700_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_NS4700_tender;
+    switch_steam_NS4700_animation;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS4700_articulated, extra_callback_info1) {
+    1: return item_steam_NS4700;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VEHICLE LENGTH CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS4700_length, (position_in_vehid_chain % 2)) {
+    1: return 4;
+    return 6;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS4700_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
+}
