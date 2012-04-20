@@ -183,3 +183,4 @@ item(FEAT_TRAINS, item_wagons_gen4_GTUW, 288) {}
 item(FEAT_TRAINS, item_wagons_gen4_Uh, 289) {}
 item(FEAT_TRAINS, item_emu_ZHESM_mBC, 290) {}
 item(FEAT_TRAINS, item_coaches_ZHESM_B, 291) {}
+item(FEAT_TRAINS, item_steam_NS4600, 292) {}
