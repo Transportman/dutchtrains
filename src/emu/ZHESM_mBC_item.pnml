@@ -50,6 +50,8 @@ item(FEAT_TRAINS, item_emu_ZHESM_mBC) {
 	}
     graphics {
         purchase: spriteset_emu_ZHESM_mBC_purchase;
+        power: switch_emu_ZHESM_mBC_power;
+        tractive_effort_coefficient: switch_emu_ZHESM_mBC_te;
         spriteset_emu_ZHESM_mBC;
     }
 }

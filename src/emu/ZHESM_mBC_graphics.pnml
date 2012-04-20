@@ -21,3 +21,17 @@ spriteset(spriteset_emu_ZHESM_mBC_purchase, "gfx/purchase/emu/ZHESM_mBC.png") {
 spriteset(spriteset_emu_ZHESM_mBC, "gfx/emu/ZHESM_mBC.png") {
 	template_2cc_88(0, 0)
 }
+
+/*
+* PROPERTY CALLBACKS
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_emu_ZHESM_mBC_power, date_of_last_service) {
+	0..date(1925,12,31): return 360;
+    return 900;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_ZHESM_mBC_te, date_of_last_service) {
+	0..date(1925,12,31): return 19; //0.3*0.25*255
+    return 38; //0.3*0.5*255
+}
