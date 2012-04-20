@@ -218,6 +218,8 @@
 #include "src/emu/Mat24_item.pnml"
 #include "src/emu/Mat24mP_graphics.pnml"
 #include "src/emu/Mat24mP_item.pnml"
+#include "src/emu/ZHESM_mBC_graphics.pnml"
+#include "src/emu/ZHESM_mBC_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"

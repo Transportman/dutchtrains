@@ -243,6 +243,7 @@ str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
+str_emu_ZHESM_mBC       :ZHESM mBC (NS mBC9900) motorwagen (Elektrisch)
 str_emu_Mat24           :Mat '24 "Blokkendoos" motorwagen (Elektrisch)
 str_emu_Mat24_t         :Mat '24 "Blocks set" motorwagen (Elektrisch)
 str_emu_Mat24mP         :Mat '24 mP (Elektrisch)
