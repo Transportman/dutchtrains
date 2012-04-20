@@ -21,3 +21,12 @@ spriteset(spriteset_coaches_HSM_D_1916_purchase, "gfx/purchase/coaches/HSM_D_191
 spriteset(spriteset_coaches_HSM_D_1916, "gfx/coaches/HSM_D_1916.png") {
 	template_2cc_88(1, 1)
 }
+spriteset(spriteset_coaches_HSM_D_1916_reverse, "gfx/coaches/HSM_D_1916.png") {
+	template_2cc_88(1, 32)
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_coaches_HSM_D_1916) {
+	2: spriteset_coaches_HSM_D_1916;
+	1: spriteset_coaches_HSM_D_1916_reverse;
+}
+

@@ -50,6 +50,6 @@ item(FEAT_TRAINS, item_coaches_HSM_D_1916) {
 	}
     graphics {
         purchase: spriteset_coaches_HSM_D_1916_purchase;
-        spriteset_coaches_HSM_D_1916;
+        switch_coaches_HSM_D_1916;
     }
 }
