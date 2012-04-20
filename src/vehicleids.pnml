@@ -179,3 +179,4 @@ item(FEAT_TRAINS, item_coaches_MUs, 284) {}
 item(FEAT_TRAINS, item_emu_Mat24, 285) {}
 item(FEAT_TRAINS, item_coaches_Mat24, 286) {}
 item(FEAT_TRAINS, item_emu_Mat24mP, 287) {}
+item(FEAT_TRAINS, item_wagons_gen4_GTUW, 288) {}

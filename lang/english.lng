@@ -40,6 +40,7 @@ str_cargo_subtype_brown             :> Brown livery
 str_cargo_subtype_brown_yellowfront :> Brown livery w/ yellow front
 str_cargo_subtype_brown_other       :> Other Brown livery
 str_cargo_subtype_brown_light       :> Light Brown livery
+str_cargo_subtype_brown_dark        :> Dark Brown livery
 str_cargo_subtype_brown_greenish    :> Greenish Brown livery
 str_cargo_subtype_brown_reddish     :> Reddish Brown livery
 str_cargo_subtype_green             :> Green livery
@@ -304,6 +305,7 @@ str_wagons_gen2_tanker              :Tanker Wagon (S)
 str_wagons_gen2_stake               :Stake Wagon (S)
 str_wagons_gen2_refrigerator        :Refrigerator Wagon (S)
 str_wagons_gen2_selfdischarger      :Selfdischarger (S)
+str_wagons_gen4_GTUW                :Open Wagon GTUW (M)
 str_wagons_gen5_silo                :Silo Wagon (M)
 str_wagons_gen5_slidingdoor         :Sliding Door Wagon (M)
 str_wagons_gen5_livestock           :Livestock Wagon (M)

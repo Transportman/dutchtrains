@@ -38,6 +38,7 @@ str_cargo_subtype_brown             :> Bruine kleurstelling
 str_cargo_subtype_brown_yellowfront :> Bruine kleurstelling met gele neus
 str_cargo_subtype_brown_other       :> Andere Bruine kleurstelling
 str_cargo_subtype_brown_light       :> Lichtbruine kleurstelling
+str_cargo_subtype_brown_dark        :> Donkerbruine kleurstelling
 str_cargo_subtype_brown_greenish    :> Groenbruine kleurstelling
 str_cargo_subtype_brown_reddish     :> Roodbruine kleurstelling
 str_cargo_subtype_green             :> Groene kleurstelling
@@ -295,6 +296,7 @@ str_wagons_gen2_tanker              :Ketelwagen (S)
 str_wagons_gen2_stake               :Rongenwagen (S)
 str_wagons_gen2_refrigerator        :Koelwagen (S)
 str_wagons_gen2_selfdischarger      :Onderlosser (S)
+str_wagons_gen4_GTUW                :Open Wagen GTUW (M)
 str_wagons_gen5_silo                :Silowagen (M)
 str_wagons_gen5_slidingdoor         :Schuifdeurwagen (M)
 str_wagons_gen5_livestock           :Veewagen (M)

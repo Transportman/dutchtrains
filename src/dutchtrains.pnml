@@ -352,6 +352,8 @@
 #include "src/wagons/gen6_containercarrier_item.pnml"
 #include "src/wagons/gen5_VAM_graphics.pnml"
 #include "src/wagons/gen5_VAM_item.pnml"
+#include "src/wagons/gen4_GTUW_graphics.pnml"
+#include "src/wagons/gen4_GTUW_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"
