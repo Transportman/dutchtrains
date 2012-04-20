@@ -56,6 +56,8 @@
 #include "src/steam/NS4700_item.pnml"
 #include "src/steam/NS5000II_graphics.pnml"
 #include "src/steam/NS5000II_item.pnml"
+#include "src/steam/NS6200_graphics.pnml"
+#include "src/steam/NS6200_item.pnml"
 
 //diesel
 #include "src/diesel/NS100_graphics.pnml"
