@@ -187,3 +187,4 @@ item(FEAT_TRAINS, item_steam_NS4600, 292) {}
 item(FEAT_TRAINS, item_steam_NS4700, 293) {}
 item(FEAT_TRAINS, item_steam_NS5000II, 294) {}
 item(FEAT_TRAINS, item_steam_NS6200, 295) {}
+item(FEAT_TRAINS, item_steam_NS6300, 296) {}

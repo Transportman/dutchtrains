@@ -17,6 +17,7 @@ if (param_vehicle_names == 1) {
     item(FEAT_TRAINS, item_steam_SS700) { property { name: string(str_steam_SS700_t); } }
     item(FEAT_TRAINS, item_steam_NBDS30) { property { name: string(str_steam_NBDS30_t); } }
     item(FEAT_TRAINS, item_steam_NCS71) { property { name: string(str_steam_NCS71_t); } }
+    item(FEAT_TRAINS, item_steam_NS6300) { property { name: string(str_steam_NS6300_t); } }
     
     //diesel
     item(FEAT_TRAINS, item_diesel_NS100) { property { name: string(str_diesel_NS100_t); } }

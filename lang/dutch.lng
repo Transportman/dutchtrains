@@ -174,6 +174,8 @@ str_steam_NS4600        :NS 4600 (Stoom)
 str_steam_NS4700        :NS 4700 (Stoom)
 str_steam_NS5000II      :NS 5000-II (Stoom)
 str_steam_NS6200        :NS 6200 (Stoom)
+str_steam_NS6300        :NS 6300 "De Beul" (Stoom)
+str_steam_NS6300_t      :NS 6300 "The Headsman" (Stoom)
 
 #diesel
 str_diesel_NS100        :NS 100 "Oersik" (Benzine)
