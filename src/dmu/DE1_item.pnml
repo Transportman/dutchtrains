@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_dmu_DE1) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 73;
         purchase: switch_dmu_DE1_livery_purchase;
         cargo_subtype_text: switch_dmu_DE1_subtype_text;
         switch_dmu_DE1_livery;

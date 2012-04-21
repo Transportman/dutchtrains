@@ -48,7 +48,6 @@ item(FEAT_TRAINS, item_coaches_DDAR) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
-        cargo_capacity: return 150;
         purchase: switch_coaches_DDAR_purchase;
         cargo_subtype_text: switch_coaches_DDAR_subtype_text;
         cargo_capacity: switch_coaches_DDAR_capacity;

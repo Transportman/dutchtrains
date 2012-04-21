@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_dmu_DE5) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 53;
         purchase: switch_dmu_DE5_livery_purchase;
         articulated_part: switch_dmu_DE5_articulated;
         length: switch_dmu_DE5_length;
