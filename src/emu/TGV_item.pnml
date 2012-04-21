@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_emu_TGV) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 38;
         purchase: spriteset_emu_TGV_purchase;
         articulated_part: switch_emu_TGV_articulated;
         cargo_subtype_text: switch_emu_TGV_subtype_text;

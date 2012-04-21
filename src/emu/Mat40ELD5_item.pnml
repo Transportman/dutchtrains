@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_emu_Mat40ELD5) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 77;
         purchase: switch_emu_Mat40ELD5_purchase;
         articulated_part: switch_emu_Mat40ELD5_articulated;
         cargo_subtype_text: switch_emu_Mat40ELD5_subtype_text;

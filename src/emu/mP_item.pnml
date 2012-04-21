@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_emu_mP) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 15;
         purchase: switch_emu_mP_purchase;
         cargo_subtype_text: switch_emu_mP_subtype_text;
         switch_emu_mP_livery;

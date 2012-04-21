@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_emu_SLTIV) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 54;
         purchase: spriteset_emu_SLTIV_purchase;
         articulated_part: switch_emu_SLTIV_articulated;
         length: switch_emu_SLTIV_length;

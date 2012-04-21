@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_emu_Protos) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 85;
         purchase: spriteset_emu_Protos_purchase;
         articulated_part: switch_emu_Protos_articulated;
         visual_effect_and_powered: switch_emu_Protos_visual_effect_and_powered;

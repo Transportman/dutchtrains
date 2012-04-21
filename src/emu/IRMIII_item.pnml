@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_emu_IRMIII) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 96;
         purchase: spriteset_emu_IRMVI_purchase;
         articulated_part: switch_emu_IRMIII_articulated;
         visual_effect_and_powered: switch_emu_IRMIII_visual_effect_and_powered;

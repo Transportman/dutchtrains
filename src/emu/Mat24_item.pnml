@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_emu_Mat24) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 40;
         purchase: switch_emu_Mat24_purchase;
         cargo_subtype_text: switch_emu_Mat24_subtype_text;
         switch_emu_Mat24_livery;

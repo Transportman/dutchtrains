@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_emu_SM90) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 81;
         purchase: spriteset_emu_SM90_purchase;
         articulated_part: switch_emu_SM90_articulated;
         visual_effect_and_powered: switch_emu_SM90_visual_effect_and_powered;
