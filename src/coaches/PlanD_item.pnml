@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_PlanD) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 72;
         purchase: switch_coaches_PlanD_purchase;
         cargo_subtype_text: switch_coaches_PlanD_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;

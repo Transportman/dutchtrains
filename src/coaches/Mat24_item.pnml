@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_Mat24) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 64;
         purchase: switch_coaches_Mat24_purchase;
         cargo_subtype_text: switch_coaches_Mat24_subtype_text_year;
         colour_mapping: PALETTE_USE_DEFAULT;

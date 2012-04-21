@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_SS_E_129) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 30;
         purchase: spriteset_coaches_SS_E_129_purchase;
         spriteset_coaches_SS_E_129;
     }

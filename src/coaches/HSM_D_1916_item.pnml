@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_HSM_D_1916) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 29;
         purchase: spriteset_coaches_HSM_D_1916_purchase;
         switch_coaches_HSM_D_1916;
     }

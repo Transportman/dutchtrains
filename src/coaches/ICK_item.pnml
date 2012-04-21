@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_ICK) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 72;
         purchase: spriteset_coaches_ICL_yellow_blue_purchase;
         spriteset_coaches_ICL_yellow_blue;
     }

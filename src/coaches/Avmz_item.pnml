@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_Avmz) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 54;
         purchase: switch_coaches_Avmz_purchase;
         cargo_subtype_text: switch_coaches_Avmz_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;

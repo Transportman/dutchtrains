@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_coaches_gen9_IC_DD) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 140;
         purchase: spriteset_coaches_gen9_IC_DD_purchase;
         cargo_subtype_text: switch_coaches_gen9_IC_DD_subtype_text;
         switch_coaches_gen9_IC_DD_livery;

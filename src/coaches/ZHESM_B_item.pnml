@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_ZHESM_B) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 56;
         purchase: spriteset_coaches_ZHESM_B_purchase;
         spriteset_coaches_ZHESM_B;
     }

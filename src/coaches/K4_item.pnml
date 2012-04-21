@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_K4) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 80;
         purchase: spriteset_coaches_K4_purchase;
         cargo_subtype_text: switch_coaches_K4_subtype_text;
         switch_coaches_K4_livery;

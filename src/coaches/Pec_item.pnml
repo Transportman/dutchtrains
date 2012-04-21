@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_Pec) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 34;
         purchase: switch_coaches_Pec_purchase;
         cargo_subtype_text: switch_coaches_Pec_subtype_text;
         switch_coaches_Pec_livery;

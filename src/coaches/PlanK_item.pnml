@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_PlanK) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 58;
         purchase: spriteset_coaches_PlanK_purchase;
         colour_mapping: PALETTE_USE_DEFAULT;
         spriteset_coaches_PlanK;

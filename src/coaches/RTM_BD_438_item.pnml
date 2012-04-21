@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 40;
         purchase: spriteset_coaches_RTM_BD_438_purchase;
         spriteset_coaches_RTM_BD_438;
     }

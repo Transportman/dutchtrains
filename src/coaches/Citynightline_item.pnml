@@ -48,8 +48,8 @@ item(FEAT_TRAINS, item_coaches_Citynightline) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 56;
         purchase: spriteset_coaches_Citynightline;
-        //colour_mapping: PALETTE_USE_DEFAULT;
         switch_coaches_Citynightline_livery;
     }
 }

@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_coaches_ICR) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 90;
         purchase: switch_coaches_ICR_purchase;
         cargo_subtype_text: switch_coaches_ICR_subtype_text;
         switch_coaches_ICR_livery;

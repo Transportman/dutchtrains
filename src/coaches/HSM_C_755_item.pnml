@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_HSM_C_755) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 110;
         purchase: spriteset_coaches_HSM_C_755_purchase;
         spriteset_coaches_HSM_C_755;
     }

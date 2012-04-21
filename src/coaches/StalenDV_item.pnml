@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_StalenDV) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 36;
         purchase: switch_coaches_StalenDV_purchase;
         cargo_subtype_text: switch_coaches_StalenDV_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;

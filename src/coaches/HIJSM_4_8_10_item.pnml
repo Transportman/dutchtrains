@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_coaches_HIJSM_4_8_10) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
+        cargo_capacity: return 16;
         purchase: spriteset_coaches_HIJSM_4_8_10_purchase;
         cargo_subtype_text: switch_coaches_HIJSM_4_8_10_subtype_text;
         switch_coaches_HIJSM_4_8_10_livery;
