@@ -306,6 +306,8 @@
 #include "src/coaches/StalenDV_item.pnml"
 #include "src/coaches/Dm_graphics.pnml"
 #include "src/coaches/Dm_item.pnml"
+#include "src/coaches/Pd7011_graphics.pnml"
+#include "src/coaches/Pd7011_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

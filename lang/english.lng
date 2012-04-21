@@ -373,6 +373,7 @@ str_coaches_HSM_D_1916  :Baggage Wagon HSM D 1916
 str_coaches_StalenDIV   :Baggage Wagon D-IV
 str_coaches_StalenDV    :Baggage Wagon D-V
 str_coaches_Dm          :Baggage Wagon Dm
+str_coaches_Pd7011      :Mail Carriage Pd
 str_coaches_Pec         :Mail Carriage Pec
 str_coaches_Hbbkkss     :Mail Carriage Hbbkkss
 str_coaches_PlanC       :Mail Carriage Plan C

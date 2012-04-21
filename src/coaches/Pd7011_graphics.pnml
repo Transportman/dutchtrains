@@ -1,0 +1,64 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_Pd7011_green_purchase, "gfx/purchase/coaches/Pd7011_green.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Pd7011_turquoise_purchase, "gfx/purchase/coaches/Pd7011_turquoise.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Pd7011_purchase, current_year) {
+	0..1951: spriteset_coaches_Pd7011_green_purchase;
+    spriteset_coaches_Pd7011_turquoise_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_Pd7011_green, "gfx/coaches/Pd7011.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Pd7011_turquoise, "gfx/coaches/Pd7011.png") {
+	template_2cc_88(1, 32)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Pd7011_autolivery, date_of_last_service) {
+	0..date(1951,12,31): spriteset_coaches_Pd7011_green;
+    spriteset_coaches_Pd7011_turquoise;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Pd7011_purchaselivery, build_year) {
+	0..1951: spriteset_coaches_Pd7011_green;
+    spriteset_coaches_Pd7011_turquoise;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Pd7011_livery, cargo_subtype) {
+	1: switch_coaches_Pd7011_purchaselivery;
+    2: spriteset_coaches_Pd7011_green;
+    3: spriteset_coaches_Pd7011_turquoise;
+    switch_coaches_Pd7011_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Pd7011_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green);
+    3: return string(str_cargo_subtype_turquoise);
+    return CB_RESULT_NO_TEXT;
+}
