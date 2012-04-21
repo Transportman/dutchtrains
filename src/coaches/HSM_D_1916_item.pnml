@@ -19,12 +19,12 @@ item(FEAT_TRAINS, item_coaches_HSM_D_1916) {
         retire_early: 14;
         vehicle_life: 14;
         loading_speed: 5;
-        cost_factor: 41;
+        cost_factor: 50;
         running_cost_factor: 2;
-        speed: 80 km/h;
+        speed: 100 km/h;
         power: 0;
-        cargo_capacity: 29;
-        weight: 15 ton;
+        cargo_capacity: 20;
+        weight: 28 ton;
         tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
         
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_coaches_HSM_D_1916) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        cargo_capacity: return 29;
+        cargo_capacity: return 20;
         purchase: spriteset_coaches_HSM_D_1916_purchase;
         switch_coaches_HSM_D_1916;
     }
