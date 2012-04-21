@@ -1,0 +1,75 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_Dm_ns_purchase, "gfx/purchase/coaches/Dm_ns.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Dm_railion_purchase, "gfx/purchase/coaches/Dm_railion.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_Dm_one_purchase, "gfx/purchase/coaches/Dm_one.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Dm_purchase, current_year) {
+	0..2003: spriteset_coaches_Dm_one_purchase;
+	2007..2010: spriteset_coaches_Dm_ns_purchase;
+    spriteset_coaches_Dm_railion_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_Dm_ns, "gfx/coaches/Dm.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Dm_railion, "gfx/coaches/Dm.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_coaches_Dm_one, "gfx/coaches/Dm.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_Dm_autolivery, date_of_last_service) {
+	0..date(2003,12,31): spriteset_coaches_Dm_one;
+	date(2007,1,1)..date(2010,12,31): spriteset_coaches_Dm_ns;
+    spriteset_coaches_Dm_railion;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Dm_purchaselivery, build_year) {
+	0..2003: spriteset_coaches_Dm_one;
+	2007..2010: spriteset_coaches_Dm_ns;
+    spriteset_coaches_Dm_railion;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Dm_livery, cargo_subtype) {
+	1: switch_coaches_Dm_purchaselivery;
+    2: spriteset_coaches_Dm_one;
+    3: spriteset_coaches_Dm_ns;
+    4: spriteset_coaches_Dm_railion;
+    switch_coaches_Dm_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Dm_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_overnightexpress);
+    3: return string(str_cargo_subtype_ns_ic);
+    4: return string(str_cargo_subtype_Railion_regular);
+    return CB_RESULT_NO_TEXT;
+}

@@ -190,3 +190,4 @@ item(FEAT_TRAINS, item_steam_NS6200, 295) {}
 item(FEAT_TRAINS, item_steam_NS6300, 296) {}
 item(FEAT_TRAINS, item_wagons_gen7_Eass, 297) {}
 item(FEAT_TRAINS, item_wagons_gen5_Es, 298) {}
+item(FEAT_TRAINS, item_coaches_Dm, 299) {}

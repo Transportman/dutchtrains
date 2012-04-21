@@ -161,6 +161,7 @@ sort(FEAT_TRAINS, [
     item_coaches_SS_E_129,
     item_coaches_StalenDIV,
     item_coaches_StalenDV,
+    item_coaches_Dm,
     item_coaches_Pec,
     item_coaches_PlanC,
     item_coaches_PlanL,

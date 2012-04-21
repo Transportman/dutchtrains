@@ -103,6 +103,7 @@ str_cargo_subtype_ns_ic             :> NS InterCity kleurstelling
 str_cargo_subtype_ns_ic_nocab       :> NS InterCity kleurstelling, zonder stuurstand
 str_cargo_subtype_olympic           :> Olympische kleurstelling
 str_cargo_subtype_original          :> Originele kleurstelling
+str_cargo_subtype_overnightexpress  :> Overnight Express kleurstelling
 str_cargo_subtype_randstadrail      :> RandstadRail kleurstelling
 str_cargo_subtype_renewal           :> Gemoderniseerde kleurstelling
 str_cargo_subtype_sr10              :> Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)
@@ -135,6 +136,7 @@ str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (groen) kleurstelling
 str_cargo_subtype_Rail4Chem_red     :> Rail4Chem (rood) kleurstelling
 str_cargo_subtype_Rail4Chem_grey_yellow :> Rail4Chem (grijs/geel) kleurstelling
 str_cargo_subtype_Railion           :> Railion (overgestickerd) kleurstelling
+str_cargo_subtype_Railion_regular   :> Railion kleurstelling
 str_cargo_subtype_Railion_red       :> Railion (rood) kleurstelling
 str_cargo_subtype_Railpro           :> Railpro kleurstelling
 str_cargo_subtype_staatsmijnen      :> Staatsmijnen kleurstelling
@@ -361,6 +363,7 @@ str_coaches_SS_E_129    :Baggagewagen SS E 129
 str_coaches_HSM_D_1916  :Baggagewagen HSM D 1916
 str_coaches_StalenDIV   :Baggagewagen D-IV
 str_coaches_StalenDV    :Baggagewagen D-V
+str_coaches_Dm          :Baggagewagen Dm
 str_coaches_Pec         :Postrijtuig Pec
 str_coaches_Hbbkkss     :Postrijtuig Hbbkkss
 str_coaches_PlanC       :Postrijtuig Plan C
