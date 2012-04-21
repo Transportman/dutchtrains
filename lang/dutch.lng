@@ -361,6 +361,7 @@ str_coaches_MUs         :Slaaprijtuig MUs
 
 #baggage and mail wagons
 str_coaches_SS_DII      :Baggagewagen SS D-II
+str_coaches_SS_DIII     :Baggagewagen SS D-III
 str_coaches_SS_E_129    :Baggagewagen SS E 129
 str_coaches_HSM_D_1916  :Baggagewagen HSM D 1916
 str_coaches_StalenDIV   :Baggagewagen D-IV
