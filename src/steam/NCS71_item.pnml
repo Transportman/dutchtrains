@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_steam_NCS71) {
         articulated_part: switch_steam_NCS71_articulated;
         length: switch_steam_NCS71_length;
         cargo_subtype_text: switch_steam_NCS71_subtype_text;
+        additional_text: string(str_purchase_steam_NCS71);
         cargo_capacity: return 0;
         speed: switch_steam_NCS71_speed;
         weight: switch_steam_NCS71_weight;

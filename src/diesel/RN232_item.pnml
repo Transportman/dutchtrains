@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_diesel_RN232) {
 	}
     graphics {
         purchase: spriteset_diesel_RN232_purchase;
+        additional_text: string(str_purchase_diesel_RN232);
         spriteset_diesel_RN232;
     }
 }

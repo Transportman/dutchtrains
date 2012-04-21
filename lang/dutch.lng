@@ -162,17 +162,17 @@ str_cargo_subtype_tractor           :> Traktor lading kleurstelling
 #steam
 str_steam_Arend         :HSM "Arend" (Stoom)
 str_steam_Arend_t       :HSM "Eagle" (Stoom)
-str_steam_HSM126        :HSM 126-135 (NS 1100 series) (Stoom)
-str_steam_HSM500        :HSM 501-535 (NS 2100 series) "Blikken Tinus" (Stoom)
-str_steam_HSM500_t      :HSM 501-535 (NS 2100 series) "Tin Tinus" (Stoom)
-str_steam_SS700         :SS 685-778, 785-799 (NS 3700 series) "Jumbo" (Stoom)
-str_steam_SS700_t       :SS 685-778, 785-799 (NS 3700 series) "Jumbo" (Stoom)
-str_steam_NS3800        :NS 3851-3855 (Stoom)
-str_steam_NS3900        :NS 3900 series (Stoom)
-str_steam_NBDS30        :NBDS 30-36 (NS 3501-3508) "Blauwe Brabanders" (Stoom)
-str_steam_NBDS30_t      :NBDS 30-36 (NS 3501-3508) "Blue Brabanders" (Stoom)
-str_steam_NCS71         :NCS 71-78 (SS 971-978, NS 3600 series) "Zeppelin" (Stoom)
-str_steam_NCS71_t       :NCS 71-78 (SS 971-978, NS 3600 series) "Zeppelin" (Stoom)
+str_steam_HSM126        :NS 1100 (Stoom)
+str_steam_HSM500        :NS 2100 "Blikken Tinus" (Stoom)
+str_steam_HSM500_t      :NS 2100 "Tin Tinus" (Stoom)
+str_steam_SS700         :NS 3700 "Jumbo" (Stoom)
+str_steam_SS700_t       :NS 3700 "Jumbo" (Stoom)
+str_steam_NS3800        :NS 3850 (Stoom)
+str_steam_NS3900        :NS 3900 (Stoom)
+str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Stoom)
+str_steam_NBDS30_t      :NS 3500 "Blue Brabanders" (Stoom)
+str_steam_NCS71         :NS 3600 "Zeppelin" (Stoom)
+str_steam_NCS71_t       :NS 3600 "Zeppelin" (Stoom)
 str_steam_NS4600        :NS 4600 (Stoom)
 str_steam_NS4700        :NS 4700 (Stoom)
 str_steam_NS5000II      :NS 5000-II (Stoom)
@@ -190,37 +190,37 @@ str_diesel_NS400_t      :NS 400 "Big Billy" (Diesel)
 str_diesel_NS450        :NS 450 (Diesel)
 str_diesel_NS600        :NS 600 "Bakkie" (Diesel)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diesel)
-str_diesel_NS2000       :NS 2000 (Whitcomb 65-DE-19A) (Diesel)
+str_diesel_NS2000       :NS 2000 (Diesel)
 str_diesel_NS2200       :NS 2200 (Diesel)
 str_diesel_NS2400       :NS 2400 (Diesel)
 str_diesel_NS2600       :NS 2600 "Beelen" (Diesel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diesel)
 str_diesel_NS2801_t     :NS 2801 "Little Cripple Mary" (Diesel)
-str_diesel_SM151        :SM 151-155 (NS 2900) (Diesel)
+str_diesel_SM151        :NS 2900 (Diesel)
 str_diesel_NS6400       :NS 6400 (Diesel)
-str_diesel_ACTS5800     :ACTS 5800 (BR Class 58) (Diesel)
-str_diesel_ACTS6700     :ACTS 6700 (HLD 62) (Diesel)
-str_diesel_RN232        :RN 232 (DB BR 232) "Ludmilla" (Diesel)
+str_diesel_ACTS5800     :ACTS 5800 (Diesel)
+str_diesel_ACTS6700     :ACTS 6700 (Diesel)
+str_diesel_RN232        :RN 232 "Ludmilla" (Diesel)
 str_diesel_Class66      :Class 66 (Diesel)
 str_diesel_G1206        :MaK G 1206 (Diesel)
 str_diesel_G400B        :Vossloh G 400 B (Diesel)
 str_diesel_G2000        :Vossloh G 2000 (Diesel)
-str_diesel_HLR77        :HLR 77 (NMBS 7700/7800) (Diesel)
+str_diesel_HLR77        :NMBS HLR 77 (Diesel)
 
 #electric
 str_electric_NS1000     :NS 1000 (Elektrisch)
 str_electric_NS1100     :NS 1100 (Elektrisch)
 str_electric_NS1200     :NS 1200 (Elektrisch)
 str_electric_NS1300     :NS 1300 (Elektrisch)
-str_electric_NS1500     :NS 1500 (BR Class EM2) (Elektrisch)
+str_electric_NS1500     :NS 1500 (Elektrisch)
 str_electric_NS1600     :NS 1600/1800 (Elektrisch)
 str_electric_NS1700     :NS 1700 (Elektrisch)
 str_electric_NID        :Nieuwe Intercity Dubbeldekker (Elektrisch)
 str_electric_NID_t      :New Intercity Doubledecker (Elektrisch)
 str_electric_mDDM       :mDDM (Elektrisch)
 str_electric_NS1600P    :NS 1600P (Elektrisch)
-str_electric_HLE11      :HLE 11 (NMBS series 11.8) (Elektrisch)
-str_electric_HLE25      :HLE 25.5 (NMBS series 25.5) (Elektrisch)
+str_electric_HLE11      :NMBS HLE 11 (Elektrisch)
+str_electric_HLE25      :NMBS HLE 25.5 (Elektrisch)
 str_electric_TRAXXF140MS2   :TRAXX F140 MS2 (Elektrisch)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Elektrisch)
 str_electric_gen9_HS001 :HS-1 (Elektrisch)
@@ -232,15 +232,15 @@ str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diesel)
 str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diesel)
 str_dmu_DE5             :DE5 "Dieselvijf" (Diesel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diesel)
-str_dmu_DE1             :DE1 (Plan X) "Blauwe Engel" (Diesel)
-str_dmu_DE1_t           :DE1 (Plan X) "Blue Angel" (Diesel)
-str_dmu_DE2             :DE2 (Plan X) "Blauwe Engel" (Diesel)
-str_dmu_DE2_t           :DE2 (Plan X) "Blue Angel" (Diesel)
+str_dmu_DE1             :DE1 Plan X "Blauwe Engel" (Diesel)
+str_dmu_DE1_t           :DE1 Plan X "Blue Angel" (Diesel)
+str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Diesel)
+str_dmu_DE2_t           :DE2 Plan X "Blue Angel" (Diesel)
 str_dmu_NS20            :NS20 "Kameel" (Diesel)
 str_dmu_NS20_t          :NS20 "Camel" (Diesel)
 str_dmu_DE4             :DE4 "Trans Europ Express" (Diesel)
-str_dmu_DE3             :DE3 (Plan U) "Rode Duivel" (Diesel)
-str_dmu_DE3_t           :DE3 (Plan U) "Red Devil" (Diesel)
+str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Diesel)
+str_dmu_DE3_t           :DE3 Plan U "Red Devil" (Diesel)
 str_dmu_DH1             :DH1 "Wadloper" (Diesel)
 str_dmu_DH1_t           :DH1 "Mudflat Walker" (Diesel)
 str_dmu_DH2             :DH2 "Wadloper" (Diesel)
@@ -252,9 +252,9 @@ str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
-str_emu_ZHESM_mBC       :ZHESM mBC (NS mBC9900) motorwagen (Elektrisch)
-str_emu_Mat24           :Mat '24 "Blokkendoos" motorwagen (Elektrisch)
-str_emu_Mat24_t         :Mat '24 "Blocks set" motorwagen (Elektrisch)
+str_emu_ZHESM_mBC       :ZHESM mBC (Elektrisch)
+str_emu_Mat24           :Mat '24 "Blokkendoos" (Elektrisch)
+str_emu_Mat24_t         :Mat '24 "Blocks set" (Elektrisch)
 str_emu_Mat24mP         :Mat '24 mP (Elektrisch)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Elektrisch)
 str_emu_Mat36EL2        :Mat '36 El2 (Elektrisch)
@@ -283,7 +283,7 @@ str_emu_IRMVI           :VIRM-VI "Bizon" (Elektrisch)
 str_emu_IRMVI_t         :VIRM-VI "Bison" (Elektrisch)
 str_emu_mP              :Plan mP (Elektrisch)
 str_emu_TGV             :TGV Thalys PBKA/PBA (Elektrisch)
-str_emu_ICE3M           :ICE 3M (DB BR 406) (Elektrisch)
+str_emu_ICE3M           :ICE 3M (Elektrisch)
 str_emu_V250            :Fyra V250 "Albatros" (Elektrisch)
 str_emu_V250_t          :Fyra V250 "Albatross" (Elektrisch)
 str_emu_gen9_HST        :P8001 (Elektrisch)
@@ -329,14 +329,14 @@ str_wagons_gen7_cartransporter      :Autotreinwagen (L)
 str_wagons_gen7_containercarrier    :Containerwagen (L)
 
 #coaches
-str_coaches_HIJSM_4_8_10:Rijtuig HIJSM 4, 8, 10
-str_coaches_HSM_C_755   :Rijtuig HSM C 707-766
-str_coaches_NCS_B_119   :Rijtuig NCS B 111-126
-str_coaches_SS_C_218    :Rijtuig SS C 1-339
-str_coaches_SS_C_723    :Rijtuig SS C 651-760
-str_coaches_SS_ABd_7516 :Rijtuig SS ABd 7516
-str_coaches_RTM_BD_438  :Rijtuig RTM BD 438
-str_coaches_ZHESM_B     :Rijtuig ZHESM B (NS B9900)
+str_coaches_HIJSM_4_8_10:Rijtuig HSM 1
+str_coaches_HSM_C_755   :Rijtuig HSM C
+str_coaches_NCS_B_119   :Rijtuig NCS B
+str_coaches_SS_C_218    :Rijtuig SS C 1
+str_coaches_SS_C_723    :Rijtuig SS C 650
+str_coaches_SS_ABd_7516 :Rijtuig SS ABd
+str_coaches_RTM_BD_438  :Rijtuig RTM BD
+str_coaches_ZHESM_B     :Rijtuig ZHESM B
 str_coaches_Mat24       :Rijtuig Mat '24
 str_coaches_Ovaleramen  :Rijtuig "Ovaleramen"
 str_coaches_Ovaleramen_t:Rijtuig "Oval windows"
@@ -362,8 +362,8 @@ str_coaches_MUs         :Slaaprijtuig MUs
 #baggage and mail wagons
 str_coaches_SS_DII      :Baggagewagen SS D-II
 str_coaches_SS_DIII     :Baggagewagen SS D-III
-str_coaches_SS_E_129    :Baggagewagen SS E 129
-str_coaches_HSM_D_1916  :Baggagewagen HSM D 1916
+str_coaches_SS_E_129    :Baggagewagen SS E
+str_coaches_HSM_D_1916  :Baggagewagen HSM D
 str_coaches_StalenDIV   :Baggagewagen D-IV
 str_coaches_StalenDV    :Baggagewagen D-V
 str_coaches_Dm          :Baggagewagen Dm
@@ -379,13 +379,32 @@ str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
 str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
-str_metro_RET_typeT     :RET Type T (SG2) (Metro)
-str_metro_RET_typeM     :RET Type M (MG2) (Metro)
-str_metro_RET_typeB     :RET Type B (MG2/1) (Metro)
-str_metro_RET_typeR     :RET Type R (RSG3) (Metro)
+str_metro_RET_typeT     :RET Type T SG2 (Metro)
+str_metro_RET_typeM     :RET Type M MG2 (Metro)
+str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
+str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 
 #PURCHASE MENU TEXTS
 
 #metro
 str_purchase_metro_1    :{BLACK}Lengte: {YELLOW}2 bakken (1.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
 str_purchase_metro_2    :{BLACK}Lengte: {YELLOW}6 bakken (3.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
+
+str_purchase_steam_HSM126   :{BLACK}Voorheen: {SILVER} HSM 126-135
+str_purchase_steam_HSM500   :{BLACK}Voorheen: {SILVER} HSM 501-535
+str_purchase_steam_SS700    :{BLACK}Voorheen: {SILVER} SS 685-778, 785-799
+str_purchase_steam_NBDS30   :{BLACK}Voorheen: {SILVER} NBDS 30-36
+str_purchase_steam_NCS71    :{BLACK}Voorheen: {SILVER} NCS 71-78, SS 971-978
+
+str_purchase_diesel_NS2000  :{BLACK}Voorheen: {SILVER} Whitcomb 65-DE-19A
+str_purchase_diesel_SM151   :{BLACK}Voorheen: {SILVER} SM 151-155
+str_purchase_diesel_ACTS5800:{BLACK}Voorheen: {SILVER} BR Class 58
+str_purchase_diesel_ACTS6700:{BLACK}Voorheen: {SILVER} NMBS HLD 62
+str_purchase_diesel_RN232   :{BLACK}Voorheen: {SILVER} DB BR 232
+
+str_purchase_electric_NS1500:{BLACK}Voorheen: {SILVER} BR Class EM2
+
+str_purchase_emu_ICE3M      :{BLACK}Ook bekend als: {SILVER} DB BR 406
+str_purchase_emu_ZHESM_mBC  :{BLACK}Later: {SILVER} NS mBC9900
+
+str_purchase_coaches_ZHESM_B:{BLACK}Later: {SILVER} NS B9900

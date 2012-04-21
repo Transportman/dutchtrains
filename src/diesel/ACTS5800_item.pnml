@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_diesel_ACTS5800) {
     graphics {
         purchase: switch_diesel_ACTS5800_purchase;
         cargo_subtype_text: switch_diesel_ACTS5800_subtype_text;
+        additional_text: string(str_purchase_diesel_ACTS5800);
         cargo_capacity: return 0;
         switch_diesel_ACTS5800_livery;
     }

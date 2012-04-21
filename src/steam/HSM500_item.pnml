@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_steam_HSM500) {
         articulated_part: switch_steam_HSM500_articulated;
         length: switch_steam_HSM500_length;
         cargo_subtype_text: switch_steam_HSM500_subtype_text;
+        additional_text: string(str_purchase_steam_HSM500);
         cargo_capacity: return 0;
         visual_effect_and_powered: switch_steam_HSM500_visual_effect_and_powered;
         switch_steam_HSM500_livery;

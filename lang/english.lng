@@ -171,17 +171,17 @@ str_cargo_subtype_tractor           :> Tractor cargo livery
 #steam
 str_steam_Arend         :HSM "Arend" (Steam)
 str_steam_Arend_t       :HSM "Eagle" (Steam)
-str_steam_HSM126        :HSM 126-135 (NS 1100 series) (Steam)
-str_steam_HSM500        :HSM 501-535 (NS 2100 series) "Blikken Tinus" (Steam)
-str_steam_HSM500_t      :HSM 501-535 (NS 2100 series) "Tin Tinus" (Steam)
-str_steam_SS700         :SS 685-778, 785-799 (NS 3700 series) "Jumbo" (Steam)
-str_steam_SS700_t       :SS 685-778, 785-799 (NS 3700 series) "Jumbo" (Steam)
-str_steam_NS3800        :NS 3851-3855 (Steam)
-str_steam_NS3900        :NS 3900 series (Steam)
-str_steam_NBDS30        :NBDS 30-36 (NS 3501-3508) "Blauwe Brabanders" (Steam)
-str_steam_NBDS30_t      :NBDS 30-36 (NS 3501-3508) "Blue Brabanders" (Steam)
-str_steam_NCS71         :NCS 71-78 (SS 971-978, NS 3600 series) "Zeppelin" (Steam)
-str_steam_NCS71_t       :NCS 71-78 (SS 971-978, NS 3600 series) "Zeppelin" (Steam)
+str_steam_HSM126        :NS 1100 (Steam)
+str_steam_HSM500        :NS 2100 "Blikken Tinus" (Steam)
+str_steam_HSM500_t      :NS 2100 series "Tin Tinus" (Steam)
+str_steam_SS700         :NS 3700 "Jumbo" (Steam)
+str_steam_SS700_t       :NS 3700 "Jumbo" (Steam)
+str_steam_NS3800        :NS 3850 (Steam)
+str_steam_NS3900        :NS 3900 (Steam)
+str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Steam)
+str_steam_NBDS30_t      :NS 3500 "Blue Brabanders" (Steam)
+str_steam_NCS71         :NS 3600 "Zeppelin" (Steam)
+str_steam_NCS71_t       :NS 3600 "Zeppelin" (Steam)
 str_steam_NS4600        :NS 4600 (Steam)
 str_steam_NS4700        :NS 4700 (Steam)
 str_steam_NS5000II      :NS 5000-II (Steam)
@@ -199,37 +199,37 @@ str_diesel_NS400_t      :NS 400 "Big Billy" (Diesel)
 str_diesel_NS450        :NS 450 (Diesel)
 str_diesel_NS600        :NS 600 "Bakkie" (Diesel)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diesel)
-str_diesel_NS2000       :NS 2000 (Whitcomb 65-DE-19A) (Diesel)
+str_diesel_NS2000       :NS 2000 (Diesel)
 str_diesel_NS2200       :NS 2200 (Diesel)
 str_diesel_NS2400       :NS 2400 (Diesel)
 str_diesel_NS2600       :NS 2600 "Beelen" (Diesel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diesel)
 str_diesel_NS2801_t     :NS 2801 "Little Cripple Mary" (Diesel)
-str_diesel_SM151        :SM 151-155 (NS 2900) (Diesel)
+str_diesel_SM151        :NS 2900 (Diesel)
 str_diesel_NS6400       :NS 6400 (Diesel)
-str_diesel_ACTS5800     :ACTS 5800 (BR Class 58) (Diesel)
-str_diesel_ACTS6700     :ACTS 6700 (HLD 62) (Diesel)
-str_diesel_RN232        :RN 232 (DB BR 232) "Ludmilla" (Diesel)
+str_diesel_ACTS5800     :ACTS 5800 (Diesel)
+str_diesel_ACTS6700     :ACTS 6700 (Diesel)
+str_diesel_RN232        :RN 232 "Ludmilla" (Diesel)
 str_diesel_Class66      :Class 66 (Diesel)
 str_diesel_G1206        :MaK G 1206 (Diesel)
 str_diesel_G400B        :Vossloh G 400 B (Diesel)
 str_diesel_G2000        :Vossloh G 2000 (Diesel)
-str_diesel_HLR77        :HLR 77 (NMBS 7700/7800) (Diesel)
+str_diesel_HLR77        :NMBS HLR 77 (Diesel)
 
 #electric
 str_electric_NS1000     :NS 1000 (Electric)
 str_electric_NS1100     :NS 1100 (Electric)
 str_electric_NS1200     :NS 1200 (Electric)
 str_electric_NS1300     :NS 1300 (Electric)
-str_electric_NS1500     :NS 1500 (BR Class EM2) (Electric)
+str_electric_NS1500     :NS 1500 (Electric)
 str_electric_NS1600     :NS 1600/1800 (Electric)
 str_electric_NS1700     :NS 1700 (Electric)
 str_electric_NID        :Nieuwe Intercity Dubbeldekker (Electric)
 str_electric_NID_t      :New Intercity Doubledecker (Electric)
 str_electric_mDDM       :mDDM (Electric)
 str_electric_NS1600P    :NS 1600P (Electric)
-str_electric_HLE11      :HLE 11 (NMBS series 11.8) (Electric)
-str_electric_HLE25      :HLE 25.5 (NMBS series 25.5) (Electric)
+str_electric_HLE11      :NMBS HLE 11 (Electric)
+str_electric_HLE25      :NMBS HLE 25.5 (Electric)
 str_electric_TRAXXF140MS2   :TRAXX F140 MS2 (Electric)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Electric)
 str_electric_gen9_HS001 :HS-1 (Electric)
@@ -241,15 +241,15 @@ str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diesel)
 str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diesel)
 str_dmu_DE5             :DE5 "Dieselvijf" (Diesel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diesel)
-str_dmu_DE1             :DE1 (Plan X) "Blauwe Engel" (Diesel)
-str_dmu_DE1_t           :DE1 (Plan X) "Blue Angel" (Diesel)
-str_dmu_DE2             :DE2 (Plan X) "Blauwe Engel" (Diesel)
-str_dmu_DE2_t           :DE2 (Plan X) "Blue Angel" (Diesel)
+str_dmu_DE1             :DE1 Plan X "Blauwe Engel" (Diesel)
+str_dmu_DE1_t           :DE1 Plan X "Blue Angel" (Diesel)
+str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Diesel)
+str_dmu_DE2_t           :DE2 Plan X "Blue Angel" (Diesel)
 str_dmu_NS20            :NS20 "Kameel" (Diesel)
 str_dmu_NS20_t          :NS20 "Camel" (Diesel)
 str_dmu_DE4             :DE4 "Trans Europ Express" (Diesel)
-str_dmu_DE3             :DE3 (Plan U) "Rode Duivel" (Diesel)
-str_dmu_DE3_t           :DE3 (Plan U) "Red Devil" (Diesel)
+str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Diesel)
+str_dmu_DE3_t           :DE3 Plan U "Red Devil" (Diesel)
 str_dmu_DH1             :DH1 "Wadloper" (Diesel)
 str_dmu_DH1_t           :DH1 "Mudflat Walker" (Diesel)
 str_dmu_DH2             :DH2 "Wadloper" (Diesel)
@@ -261,9 +261,9 @@ str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
 
 #emu
-str_emu_ZHESM_mBC       :ZHESM mBC (NS mBC9900) motorcar (Electric)
-str_emu_Mat24           :Mat '24 "Blokkendoos" motorcar (Electric)
-str_emu_Mat24_t         :Mat '24 "Blocks set" motorcar (Electric)
+str_emu_ZHESM_mBC       :ZHESM mBC (Electric)
+str_emu_Mat24           :Mat '24 "Blokkendoos" (Electric)
+str_emu_Mat24_t         :Mat '24 "Blocks set" (Electric)
 str_emu_Mat24mP         :Mat '24 mP (Electric)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Electric)
 str_emu_Mat36EL2        :Mat '36 El2 (Electric)
@@ -292,7 +292,7 @@ str_emu_IRMVI           :VIRM-VI "Bizon" (Electric)
 str_emu_IRMVI_t         :VIRM-VI "Bison" (Electric)
 str_emu_mP              :Plan mP (Electric)
 str_emu_TGV             :TGV Thalys PBKA/PBA (Electric)
-str_emu_ICE3M           :ICE 3M (DB BR 406) (Electric)
+str_emu_ICE3M           :ICE 3M (Electric)
 str_emu_V250            :Fyra V250 "Albatros" (Electric)
 str_emu_V250_t          :Fyra V250 "Albatross" (Electric)
 str_emu_gen9_HST        :P8001 (Electric)
@@ -301,13 +301,13 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)
 
 #wagons
-str_wagons_gen0hopper   :Hopper Wagon (XS)
-str_wagons_gen0boxcar   :Boxcar (XS)
-str_wagons_gen0tanker   :Tanker Wagon (XS)
-str_wagons_gen0openwagonmedium   :Open Wagon (S)
-str_wagons_gen0openwagonsmall    :Open Wagon (XS)
-str_wagons_gen0stakewagon        :Stake Wagon (XS)
-str_wagons_gen0livestockwagon    :Livestock Wagon (XS)
+str_wagons_gen0hopper               :Hopper Wagon (XS)
+str_wagons_gen0boxcar               :Boxcar (XS)
+str_wagons_gen0tanker               :Tanker Wagon (XS)
+str_wagons_gen0openwagonmedium      :Open Wagon (S)
+str_wagons_gen0openwagonsmall       :Open Wagon (XS)
+str_wagons_gen0stakewagon           :Stake Wagon (XS)
+str_wagons_gen0livestockwagon       :Livestock Wagon (XS)
 str_wagons_gen2_boxcar              :Goods Wagon (S)
 str_wagons_gen2_livestock           :Livestock Wagon (S)
 str_wagons_gen2_silo                :Silo Wagon (S)
@@ -338,31 +338,31 @@ str_wagons_gen7_cartransporter      :Car Transporter (L)
 str_wagons_gen7_containercarrier    :Container Carrier (L)
 
 #coaches
-str_coaches_HIJSM_4_8_10:Passenger Carriage HIJSM 4, 8, 10
-str_coaches_HSM_C_755   :Passenger Carriage HSM C 707-766
-str_coaches_NCS_B_119   :Passenger Carriage NCS B 111-126
-str_coaches_SS_C_218    :Passenger Carriage SS C 1-339
-str_coaches_SS_C_723    :Passenger Carriage SS C 651-760
-str_coaches_SS_ABd_7516 :Passenger Carriage SS ABd 7516
-str_coaches_RTM_BD_438  :Passenger Carriage RTM BD 438
-str_coaches_Mat24       :Passenger Carriage Mat '24
-str_coaches_ZHESM_B     :Passenger Carriage ZHESM B (NS B9900)
-str_coaches_Ovaleramen  :Passenger Carriage "Ovaleramen"
-str_coaches_Ovaleramen_t:Passenger Carriage "Oval windows"
-str_coaches_Bolkoprijtuigen     :Passenger Carriage "Bolkoprijtuigen"
-str_coaches_Bolkoprijtuigen_t   :Passenger Carriage "Bulgehead carriages"
-str_coaches_PlanD       :Passenger Carriage Plan D
-str_coaches_PlanE       :Passenger Carriage Plan E
-str_coaches_PlanK       :Passenger Carriage Plan K
-str_coaches_PlanW       :Passenger Carriage Plan W
-str_coaches_ICR         :Passenger Carriage ICR
-str_coaches_ICK         :Passenger Carriage ICK
-str_coaches_Avmz        :Passenger Carriage Avmz
-str_coaches_ICL         :Passenger Carriage ICL
-str_coaches_M2          :Passenger Carriage NMBS M2
-str_coaches_K4          :Passenger Carriage NMBS K4
-str_coaches_DDAR        :Double-decker Passenger Carriage DDM/NID
-str_coaches_gen9_IC_DD  :Double-decker Passenger Carriage HS-DD
+str_coaches_HIJSM_4_8_10:Carriage HSM 1
+str_coaches_HSM_C_755   :Carriage HSM C
+str_coaches_NCS_B_119   :Carriage NCS B
+str_coaches_SS_C_218    :Carriage SS C 1
+str_coaches_SS_C_723    :Carriage SS C 650
+str_coaches_SS_ABd_7516 :Carriage SS ABd
+str_coaches_RTM_BD_438  :Carriage RTM BD
+str_coaches_Mat24       :Carriage Mat '24
+str_coaches_ZHESM_B     :Carriage ZHESM B
+str_coaches_Ovaleramen  :Carriage "Ovaleramen"
+str_coaches_Ovaleramen_t:Carriage "Oval windows"
+str_coaches_Bolkoprijtuigen     :Carriage "Bolkoprijtuigen"
+str_coaches_Bolkoprijtuigen_t   :Carriage "Bulgehead carriages"
+str_coaches_PlanD       :Carriage Plan D
+str_coaches_PlanE       :Carriage Plan E
+str_coaches_PlanK       :Carriage Plan K
+str_coaches_PlanW       :Carriage Plan W
+str_coaches_ICR         :Carriage ICR
+str_coaches_ICK         :Carriage ICK
+str_coaches_Avmz        :Carriage Avmz
+str_coaches_ICL         :Carriage ICL
+str_coaches_M2          :Carriage NMBS M2
+str_coaches_K4          :Carriage NMBS K4
+str_coaches_DDAR        :Double-decker Carriage DDM/NID
+str_coaches_gen9_IC_DD  :Double-decker Carriage HS-DD
 str_coaches_PlanN       :Sleeper Carriage Plan N
 str_coaches_Couchette   :Sleeper Carriage Couchette Bcm
 str_coaches_Citynightline   :Sleeper Carriage CityNightLine
@@ -371,8 +371,8 @@ str_coaches_MUs         :Sleeper Carriage MUs
 #baggage and mail wagons
 str_coaches_SS_DII      :Baggage Wagon SS D-II
 str_coaches_SS_DIII     :Baggage Wagon SS D-III
-str_coaches_SS_E_129    :Baggage Wagon SS E 129
-str_coaches_HSM_D_1916  :Baggage Wagon HSM D 1916
+str_coaches_SS_E_129    :Baggage Wagon SS E
+str_coaches_HSM_D_1916  :Baggage Wagon HSM D
 str_coaches_StalenDIV   :Baggage Wagon D-IV
 str_coaches_StalenDV    :Baggage Wagon D-V
 str_coaches_Dm          :Baggage Wagon Dm
@@ -388,13 +388,32 @@ str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
 str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
-str_metro_RET_typeT     :RET Type T (SG2) (Metro)
-str_metro_RET_typeM     :RET Type M (MG2) (Metro)
-str_metro_RET_typeB     :RET Type B (MG2/1) (Metro)
-str_metro_RET_typeR     :RET Type R (RSG3) (Metro)
+str_metro_RET_typeT     :RET Type T SG2 (Metro)
+str_metro_RET_typeM     :RET Type M MG2 (Metro)
+str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
+str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 
 #PURCHASE MENU TEXTS
 
 #metro
 str_purchase_metro_1    :{BLACK}Length: {YELLOW}2 units (1.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
 str_purchase_metro_2    :{BLACK}Length: {YELLOW}6 units (3.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
+
+str_purchase_steam_HSM126   :{BLACK}Previously: {SILVER} HSM 126-135
+str_purchase_steam_HSM500   :{BLACK}Previously: {SILVER} HSM 501-535
+str_purchase_steam_SS700    :{BLACK}Previously: {SILVER} SS 685-778, 785-799
+str_purchase_steam_NBDS30   :{BLACK}Previously: {SILVER} NBDS 30-36
+str_purchase_steam_NCS71    :{BLACK}Previously: {SILVER} NCS 71-78, SS 971-978
+
+str_purchase_diesel_NS2000  :{BLACK}Previously: {SILVER} Whitcomb 65-DE-19A
+str_purchase_diesel_SM151   :{BLACK}Previously: {SILVER} SM 151-155
+str_purchase_diesel_ACTS5800:{BLACK}Previously: {SILVER} BR Class 58
+str_purchase_diesel_ACTS6700:{BLACK}Previously: {SILVER} NMBS HLD 62
+str_purchase_diesel_RN232   :{BLACK}Previously: {SILVER} DB BR 232
+
+str_purchase_electric_NS1500:{BLACK}Previously: {SILVER} BR Class EM2
+
+str_purchase_emu_ICE3M      :{BLACK}Also known as: {SILVER} DB BR 406
+str_purchase_emu_ZHESM_mBC  :{BLACK}Later: {SILVER} NS mBC9900
+
+str_purchase_coaches_ZHESM_B:{BLACK}Later: {SILVER} NS B9900
