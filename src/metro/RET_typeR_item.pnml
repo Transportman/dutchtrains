@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_metro_RET_typeR) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 90;
         purchase: switch_metro_RET_typeR_purchase;
         articulated_part: switch_metro_RET_typeR_articulated;
         length: switch_metro_RET_typeR_length;

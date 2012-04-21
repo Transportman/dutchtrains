@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_metro_RET_typeM) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
+        cargo_capacity: return 118;
         purchase: spriteset_metro_RET_typeM_blue_purchase;
         articulated_part: switch_metro_RET_typeM_articulated;
         additional_text: return string(str_purchase_metro_1);
