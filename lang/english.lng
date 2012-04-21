@@ -32,6 +32,7 @@ str_cargo_subtype_bordeaux_white_blue       :> Bordeaux livery w/ white/blue
 str_cargo_subtype_bordeaux_white_yellow     :> Bordeaux livery w/ white/yellow
 str_cargo_subtype_black             :> Black livery
 str_cargo_subtype_blue              :> Blue livery
+str_cargo_subtype_blue_greyish      :> Greyish Blue livery
 str_cargo_subtype_lighterblue       :> Slightly lighter blue livery
 str_cargo_subtype_blue_banners      :> Blue livery w/ banners
 str_cargo_subtype_blue_yellow       :> Blue livery w/ yellow stripes
@@ -328,6 +329,7 @@ str_wagons_gen6_goods               :Goods Wagon (L)
 str_wagons_gen6_containercarrier    :Container Carrier (M)
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (XL)
 str_wagons_gen9_silowagon           :Silo Wagon (L)
+str_wagons_gen7_Eass                :Open Wagon Eass (L)
 str_wagons_gen7_cartransporter      :Car Transporter (L)
 str_wagons_gen7_containercarrier    :Container Carrier (L)
 

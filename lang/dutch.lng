@@ -30,6 +30,7 @@ str_cargo_subtype_bordeaux_white_blue       :> Bordeauxkleurstelling met wit/bla
 str_cargo_subtype_bordeaux_white_yellow     :> Bordeauxkleurstelling met wit/geel
 str_cargo_subtype_black             :> Zwarte kleurstelling
 str_cargo_subtype_blue              :> Blauwe kleurstelling
+str_cargo_subtype_blue_greyish      :> Grijsblauwe livery
 str_cargo_subtype_lighterblue       :> Enigszins lichter blauwe kleurstelling
 str_cargo_subtype_blue_banners      :> Blauwe kleurstelling met reclamebanen
 str_cargo_subtype_blue_yellow       :> Blauwe kleurstelling met gele strepen
@@ -319,6 +320,7 @@ str_wagons_gen6_goods               :Gesloten wagen (L)
 str_wagons_gen6_containercarrier    :Containerwagen (M)
 str_wagons_gen9_superheavy_flatcar  :Kuilwagen (XL)
 str_wagons_gen9_silowagon           :Silowagen (L)
+str_wagons_gen7_Eass                :Open Wagen Eass (L)
 str_wagons_gen7_cartransporter      :Autotreinwagen (L)
 str_wagons_gen7_containercarrier    :Containerwagen (L)
 

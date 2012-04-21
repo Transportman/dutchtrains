@@ -1,0 +1,468 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen7_Eass_purchase, "gfx/purchase/wagons/gen7_Eass.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//brown
+spriteset(spriteset_wagons_gen7_Eass_1_empty, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 0)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_13_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 30)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_23_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 60)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_33_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 90)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_13_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 120)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_23_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 150)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_33_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 180)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_13_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 210)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_23_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 240)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_33_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 270)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_13_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 300)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_23_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 330)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_33_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 360)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_13_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 390)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_23_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 420)
+}
+spriteset(spriteset_wagons_gen7_Eass_1_33_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(0, 450)
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_1_grai {
+    loading: [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_grai, spriteset_wagons_gen7_Eass_1_23_grai, spriteset_wagons_gen7_Eass_1_33_grai];
+    loaded:  [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_grai, spriteset_wagons_gen7_Eass_1_23_grai, spriteset_wagons_gen7_Eass_1_33_grai];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_1_coal {
+    loading: [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_coal, spriteset_wagons_gen7_Eass_1_23_coal, spriteset_wagons_gen7_Eass_1_33_coal];
+    loaded:  [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_coal, spriteset_wagons_gen7_Eass_1_23_coal, spriteset_wagons_gen7_Eass_1_33_coal];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_1_iore {
+    loading: [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_iore, spriteset_wagons_gen7_Eass_1_23_iore, spriteset_wagons_gen7_Eass_1_33_iore];
+    loaded:  [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_iore, spriteset_wagons_gen7_Eass_1_23_iore, spriteset_wagons_gen7_Eass_1_33_iore];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_1_sulp {
+    loading: [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_sulp, spriteset_wagons_gen7_Eass_1_23_sulp, spriteset_wagons_gen7_Eass_1_33_sulp];
+    loaded:  [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_sulp, spriteset_wagons_gen7_Eass_1_23_sulp, spriteset_wagons_gen7_Eass_1_33_sulp];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_1_grvl {
+    loading: [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_grvl, spriteset_wagons_gen7_Eass_1_23_grvl, spriteset_wagons_gen7_Eass_1_33_grvl];
+    loaded:  [spriteset_wagons_gen7_Eass_1_empty, spriteset_wagons_gen7_Eass_1_13_grvl, spriteset_wagons_gen7_Eass_1_23_grvl, spriteset_wagons_gen7_Eass_1_33_grvl];
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_Eass_1_cargo, cargo_type_in_veh) {
+    GRAI: spritegroup_wagons_gen7_Eass_1_grai;
+    COAL: spritegroup_wagons_gen7_Eass_1_coal;
+    IORE: spritegroup_wagons_gen7_Eass_1_iore;
+    SULP: spritegroup_wagons_gen7_Eass_1_sulp;
+    spritegroup_wagons_gen7_Eass_1_grvl;
+}
+
+//greyish blue
+spriteset(spriteset_wagons_gen7_Eass_2_empty, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 0)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_13_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 30)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_23_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 60)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_33_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 90)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_13_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 120)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_23_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 150)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_33_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 180)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_13_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 210)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_23_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 240)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_33_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 270)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_13_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 300)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_23_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 330)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_33_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 360)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_13_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 390)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_23_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 420)
+}
+spriteset(spriteset_wagons_gen7_Eass_2_33_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(200, 450)
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_2_grai {
+    loading: [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_grai, spriteset_wagons_gen7_Eass_2_23_grai, spriteset_wagons_gen7_Eass_2_33_grai];
+    loaded:  [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_grai, spriteset_wagons_gen7_Eass_2_23_grai, spriteset_wagons_gen7_Eass_2_33_grai];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_2_coal {
+    loading: [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_coal, spriteset_wagons_gen7_Eass_2_23_coal, spriteset_wagons_gen7_Eass_2_33_coal];
+    loaded:  [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_coal, spriteset_wagons_gen7_Eass_2_23_coal, spriteset_wagons_gen7_Eass_2_33_coal];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_2_iore {
+    loading: [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_iore, spriteset_wagons_gen7_Eass_2_23_iore, spriteset_wagons_gen7_Eass_2_33_iore];
+    loaded:  [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_iore, spriteset_wagons_gen7_Eass_2_23_iore, spriteset_wagons_gen7_Eass_2_33_iore];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_2_sulp {
+    loading: [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_sulp, spriteset_wagons_gen7_Eass_2_23_sulp, spriteset_wagons_gen7_Eass_2_33_sulp];
+    loaded:  [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_sulp, spriteset_wagons_gen7_Eass_2_23_sulp, spriteset_wagons_gen7_Eass_2_33_sulp];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_2_grvl {
+    loading: [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_grvl, spriteset_wagons_gen7_Eass_2_23_grvl, spriteset_wagons_gen7_Eass_2_33_grvl];
+    loaded:  [spriteset_wagons_gen7_Eass_2_empty, spriteset_wagons_gen7_Eass_2_13_grvl, spriteset_wagons_gen7_Eass_2_23_grvl, spriteset_wagons_gen7_Eass_2_33_grvl];
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_Eass_2_cargo, cargo_type_in_veh) {
+    GRAI: spritegroup_wagons_gen7_Eass_2_grai;
+    COAL: spritegroup_wagons_gen7_Eass_2_coal;
+    IORE: spritegroup_wagons_gen7_Eass_2_iore;
+    SULP: spritegroup_wagons_gen7_Eass_2_sulp;
+    spritegroup_wagons_gen7_Eass_2_grvl;
+}
+
+//blue
+spriteset(spriteset_wagons_gen7_Eass_3_empty, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 0)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_13_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 30)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_23_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 60)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_33_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 90)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_13_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 120)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_23_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 150)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_33_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 180)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_13_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 210)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_23_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 240)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_33_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 270)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_13_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 300)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_23_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 330)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_33_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 360)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_13_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 390)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_23_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 420)
+}
+spriteset(spriteset_wagons_gen7_Eass_3_33_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(400, 450)
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_3_grai {
+    loading: [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_grai, spriteset_wagons_gen7_Eass_3_23_grai, spriteset_wagons_gen7_Eass_3_33_grai];
+    loaded:  [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_grai, spriteset_wagons_gen7_Eass_3_23_grai, spriteset_wagons_gen7_Eass_3_33_grai];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_3_coal {
+    loading: [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_coal, spriteset_wagons_gen7_Eass_3_23_coal, spriteset_wagons_gen7_Eass_3_33_coal];
+    loaded:  [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_coal, spriteset_wagons_gen7_Eass_3_23_coal, spriteset_wagons_gen7_Eass_3_33_coal];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_3_iore {
+    loading: [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_iore, spriteset_wagons_gen7_Eass_3_23_iore, spriteset_wagons_gen7_Eass_3_33_iore];
+    loaded:  [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_iore, spriteset_wagons_gen7_Eass_3_23_iore, spriteset_wagons_gen7_Eass_3_33_iore];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_3_sulp {
+    loading: [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_sulp, spriteset_wagons_gen7_Eass_3_23_sulp, spriteset_wagons_gen7_Eass_3_33_sulp];
+    loaded:  [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_sulp, spriteset_wagons_gen7_Eass_3_23_sulp, spriteset_wagons_gen7_Eass_3_33_sulp];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_3_grvl {
+    loading: [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_grvl, spriteset_wagons_gen7_Eass_3_23_grvl, spriteset_wagons_gen7_Eass_3_33_grvl];
+    loaded:  [spriteset_wagons_gen7_Eass_3_empty, spriteset_wagons_gen7_Eass_3_13_grvl, spriteset_wagons_gen7_Eass_3_23_grvl, spriteset_wagons_gen7_Eass_3_33_grvl];
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_Eass_3_cargo, cargo_type_in_veh) {
+    GRAI: spritegroup_wagons_gen7_Eass_3_grai;
+    COAL: spritegroup_wagons_gen7_Eass_3_coal;
+    IORE: spritegroup_wagons_gen7_Eass_3_iore;
+    SULP: spritegroup_wagons_gen7_Eass_3_sulp;
+    spritegroup_wagons_gen7_Eass_3_grvl;
+}
+
+//dark blue
+spriteset(spriteset_wagons_gen7_Eass_4_empty, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 0)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_13_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 30)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_23_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 60)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_33_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 90)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_13_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 120)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_23_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 150)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_33_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 180)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_13_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 210)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_23_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 240)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_33_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 270)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_13_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 300)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_23_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 330)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_33_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 360)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_13_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 390)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_23_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 420)
+}
+spriteset(spriteset_wagons_gen7_Eass_4_33_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(600, 450)
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_4_grai {
+    loading: [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_grai, spriteset_wagons_gen7_Eass_4_23_grai, spriteset_wagons_gen7_Eass_4_33_grai];
+    loaded:  [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_grai, spriteset_wagons_gen7_Eass_4_23_grai, spriteset_wagons_gen7_Eass_4_33_grai];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_4_coal {
+    loading: [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_coal, spriteset_wagons_gen7_Eass_4_23_coal, spriteset_wagons_gen7_Eass_4_33_coal];
+    loaded:  [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_coal, spriteset_wagons_gen7_Eass_4_23_coal, spriteset_wagons_gen7_Eass_4_33_coal];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_4_iore {
+    loading: [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_iore, spriteset_wagons_gen7_Eass_4_23_iore, spriteset_wagons_gen7_Eass_4_33_iore];
+    loaded:  [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_iore, spriteset_wagons_gen7_Eass_4_23_iore, spriteset_wagons_gen7_Eass_4_33_iore];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_4_sulp {
+    loading: [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_sulp, spriteset_wagons_gen7_Eass_4_23_sulp, spriteset_wagons_gen7_Eass_4_33_sulp];
+    loaded:  [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_sulp, spriteset_wagons_gen7_Eass_4_23_sulp, spriteset_wagons_gen7_Eass_4_33_sulp];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_4_grvl {
+    loading: [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_grvl, spriteset_wagons_gen7_Eass_4_23_grvl, spriteset_wagons_gen7_Eass_4_33_grvl];
+    loaded:  [spriteset_wagons_gen7_Eass_4_empty, spriteset_wagons_gen7_Eass_4_13_grvl, spriteset_wagons_gen7_Eass_4_23_grvl, spriteset_wagons_gen7_Eass_4_33_grvl];
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_Eass_4_cargo, cargo_type_in_veh) {
+    GRAI: spritegroup_wagons_gen7_Eass_4_grai;
+    COAL: spritegroup_wagons_gen7_Eass_4_coal;
+    IORE: spritegroup_wagons_gen7_Eass_4_iore;
+    SULP: spritegroup_wagons_gen7_Eass_4_sulp;
+    spritegroup_wagons_gen7_Eass_4_grvl;
+}
+
+//grey
+spriteset(spriteset_wagons_gen7_Eass_5_empty, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 0)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_13_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 30)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_23_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 60)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_33_grai, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 90)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_13_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 120)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_23_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 150)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_33_coal, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 180)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_13_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 210)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_23_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 240)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_33_iore, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 270)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_13_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 300)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_23_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 330)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_33_sulp, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 360)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_13_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 390)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_23_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 420)
+}
+spriteset(spriteset_wagons_gen7_Eass_5_33_grvl, "gfx/wagons/gen7_Eass.png") {
+	template_2cc_78(800, 450)
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_5_grai {
+    loading: [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_grai, spriteset_wagons_gen7_Eass_5_23_grai, spriteset_wagons_gen7_Eass_5_33_grai];
+    loaded:  [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_grai, spriteset_wagons_gen7_Eass_5_23_grai, spriteset_wagons_gen7_Eass_5_33_grai];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_5_coal {
+    loading: [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_coal, spriteset_wagons_gen7_Eass_5_23_coal, spriteset_wagons_gen7_Eass_5_33_coal];
+    loaded:  [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_coal, spriteset_wagons_gen7_Eass_5_23_coal, spriteset_wagons_gen7_Eass_5_33_coal];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_5_iore {
+    loading: [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_iore, spriteset_wagons_gen7_Eass_5_23_iore, spriteset_wagons_gen7_Eass_5_33_iore];
+    loaded:  [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_iore, spriteset_wagons_gen7_Eass_5_23_iore, spriteset_wagons_gen7_Eass_5_33_iore];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_5_sulp {
+    loading: [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_sulp, spriteset_wagons_gen7_Eass_5_23_sulp, spriteset_wagons_gen7_Eass_5_33_sulp];
+    loaded:  [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_sulp, spriteset_wagons_gen7_Eass_5_23_sulp, spriteset_wagons_gen7_Eass_5_33_sulp];
+}
+
+spritegroup spritegroup_wagons_gen7_Eass_5_grvl {
+    loading: [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_grvl, spriteset_wagons_gen7_Eass_5_23_grvl, spriteset_wagons_gen7_Eass_5_33_grvl];
+    loaded:  [spriteset_wagons_gen7_Eass_5_empty, spriteset_wagons_gen7_Eass_5_13_grvl, spriteset_wagons_gen7_Eass_5_23_grvl, spriteset_wagons_gen7_Eass_5_33_grvl];
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_Eass_5_cargo, cargo_type_in_veh) {
+    GRAI: spritegroup_wagons_gen7_Eass_5_grai;
+    COAL: spritegroup_wagons_gen7_Eass_5_coal;
+    IORE: spritegroup_wagons_gen7_Eass_5_iore;
+    SULP: spritegroup_wagons_gen7_Eass_5_sulp;
+    spritegroup_wagons_gen7_Eass_5_grvl;
+}
+
+
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen7_Eass_randomlivery) {
+	1: switch_wagons_gen7_Eass_1_cargo;
+    1: switch_wagons_gen7_Eass_2_cargo;
+    1: switch_wagons_gen7_Eass_3_cargo;
+    1: switch_wagons_gen7_Eass_4_cargo;
+    1: switch_wagons_gen7_Eass_5_cargo;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_Eass_livery, cargo_subtype) {
+	1: switch_wagons_gen7_Eass_1_cargo;
+    2: switch_wagons_gen7_Eass_2_cargo;
+    3: switch_wagons_gen7_Eass_4_cargo;
+    4: switch_wagons_gen7_Eass_3_cargo;
+    5: switch_wagons_gen7_Eass_5_cargo;
+    switch_wagons_gen7_Eass_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_Eass_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_brown);
+    2: return string(str_cargo_subtype_blue_greyish);
+    3: return string(str_cargo_subtype_blue);
+    4: return string(str_cargo_subtype_lighterblue);
+    5: return string(str_cargo_subtype_grey);
+    return CB_RESULT_NO_TEXT;
+}
