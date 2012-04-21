@@ -372,6 +372,8 @@
 #include "src/wagons/gen4_Uh_item.pnml"
 #include "src/wagons/gen7_Eass_graphics.pnml"
 #include "src/wagons/gen7_Eass_item.pnml"
+#include "src/wagons/gen5_Es_graphics.pnml"
+#include "src/wagons/gen5_Es_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"

@@ -189,6 +189,7 @@ sort(FEAT_TRAINS, [
     item_wagons_gen5_silo,
     item_wagons_gen5_selfdischarger,
     item_wagons_gen5_stake,
+    item_wagons_gen5_Es,
     item_wagons_gen5_tanker,
     item_wagons_gen5_VAM,
     item_wagons_gen6_containercarrier,
