@@ -390,21 +390,21 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_purchase_metro_1    :{BLACK}Lengte: {YELLOW}2 bakken (1.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
 str_purchase_metro_2    :{BLACK}Lengte: {YELLOW}6 bakken (3.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
 
-str_purchase_steam_HSM126   :{BLACK}Voorheen: {SILVER} HSM 126-135
-str_purchase_steam_HSM500   :{BLACK}Voorheen: {SILVER} HSM 501-535
-str_purchase_steam_SS700    :{BLACK}Voorheen: {SILVER} SS 685-778, 785-799
-str_purchase_steam_NBDS30   :{BLACK}Voorheen: {SILVER} NBDS 30-36
-str_purchase_steam_NCS71    :{BLACK}Voorheen: {SILVER} NCS 71-78, SS 971-978
+str_purchase_steam_HSM126   :{BLACK}Voorheen bekend als: {SILVER} HSM 126-135
+str_purchase_steam_HSM500   :{BLACK}Voorheen bekend als: {SILVER} HSM 501-535
+str_purchase_steam_SS700    :{BLACK}Voorheen bekend als: {SILVER} SS 685-778, 785-799
+str_purchase_steam_NBDS30   :{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36
+str_purchase_steam_NCS71    :{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978
 
-str_purchase_diesel_NS2000  :{BLACK}Voorheen: {SILVER} Whitcomb 65-DE-19A
-str_purchase_diesel_SM151   :{BLACK}Voorheen: {SILVER} SM 151-155
-str_purchase_diesel_ACTS5800:{BLACK}Voorheen: {SILVER} BR Class 58
-str_purchase_diesel_ACTS6700:{BLACK}Voorheen: {SILVER} NMBS HLD 62
-str_purchase_diesel_RN232   :{BLACK}Voorheen: {SILVER} DB BR 232
+str_purchase_diesel_NS2000  :{BLACK}Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A
+str_purchase_diesel_SM151   :{BLACK}Voorheen bekend als: {SILVER} SM 151-155
+str_purchase_diesel_ACTS5800:{BLACK}Voorheen bekend als: {SILVER} BR Class 58
+str_purchase_diesel_ACTS6700:{BLACK}Voorheen bekend als: {SILVER} NMBS HLD 62
+str_purchase_diesel_RN232   :{BLACK}Voorheen bekend als: {SILVER} DB BR 232
 
 str_purchase_electric_NS1500:{BLACK}Voorheen: {SILVER} BR Class EM2
 
 str_purchase_emu_ICE3M      :{BLACK}Ook bekend als: {SILVER} DB BR 406
-str_purchase_emu_ZHESM_mBC  :{BLACK}Later: {SILVER} NS mBC9900
+str_purchase_emu_ZHESM_mBC  :{BLACK}Later bekend als: {SILVER} NS mBC9900
 
-str_purchase_coaches_ZHESM_B:{BLACK}Later: {SILVER} NS B9900
+str_purchase_coaches_ZHESM_B:{BLACK}Later bekend als: {SILVER} NS B9900

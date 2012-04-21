@@ -399,21 +399,21 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_purchase_metro_1    :{BLACK}Length: {YELLOW}2 units (1.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
 str_purchase_metro_2    :{BLACK}Length: {YELLOW}6 units (3.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
 
-str_purchase_steam_HSM126   :{BLACK}Previously: {SILVER} HSM 126-135
-str_purchase_steam_HSM500   :{BLACK}Previously: {SILVER} HSM 501-535
-str_purchase_steam_SS700    :{BLACK}Previously: {SILVER} SS 685-778, 785-799
-str_purchase_steam_NBDS30   :{BLACK}Previously: {SILVER} NBDS 30-36
-str_purchase_steam_NCS71    :{BLACK}Previously: {SILVER} NCS 71-78, SS 971-978
+str_purchase_steam_HSM126   :{BLACK}Previously known as: {SILVER} HSM 126-135
+str_purchase_steam_HSM500   :{BLACK}Previously known as: {SILVER} HSM 501-535
+str_purchase_steam_SS700    :{BLACK}Previously known as: {SILVER} SS 685-778, 785-799
+str_purchase_steam_NBDS30   :{BLACK}Previously known as: {SILVER} NBDS 30-36
+str_purchase_steam_NCS71    :{BLACK}Previously known as: {SILVER} NCS 71-78, SS 971-978
 
-str_purchase_diesel_NS2000  :{BLACK}Previously: {SILVER} Whitcomb 65-DE-19A
-str_purchase_diesel_SM151   :{BLACK}Previously: {SILVER} SM 151-155
-str_purchase_diesel_ACTS5800:{BLACK}Previously: {SILVER} BR Class 58
-str_purchase_diesel_ACTS6700:{BLACK}Previously: {SILVER} NMBS HLD 62
-str_purchase_diesel_RN232   :{BLACK}Previously: {SILVER} DB BR 232
+str_purchase_diesel_NS2000  :{BLACK}Previously known as: {SILVER} Whitcomb 65-DE-19A
+str_purchase_diesel_SM151   :{BLACK}Previously known as: {SILVER} SM 151-155
+str_purchase_diesel_ACTS5800:{BLACK}Previously known as: {SILVER} BR Class 58
+str_purchase_diesel_ACTS6700:{BLACK}Previously known as: {SILVER} NMBS HLD 62
+str_purchase_diesel_RN232   :{BLACK}Previously known as: {SILVER} DB BR 232
 
-str_purchase_electric_NS1500:{BLACK}Previously: {SILVER} BR Class EM2
+str_purchase_electric_NS1500:{BLACK}Previously known as: {SILVER} BR Class EM2
 
 str_purchase_emu_ICE3M      :{BLACK}Also known as: {SILVER} DB BR 406
-str_purchase_emu_ZHESM_mBC  :{BLACK}Later: {SILVER} NS mBC9900
+str_purchase_emu_ZHESM_mBC  :{BLACK}Later known as: {SILVER} NS mBC9900
 
-str_purchase_coaches_ZHESM_B:{BLACK}Later: {SILVER} NS B9900
+str_purchase_coaches_ZHESM_B:{BLACK}Later known as: {SILVER} NS B9900
