@@ -192,3 +192,4 @@ item(FEAT_TRAINS, item_wagons_gen7_Eass, 297) {}
 item(FEAT_TRAINS, item_wagons_gen5_Es, 298) {}
 item(FEAT_TRAINS, item_coaches_Dm, 299) {}
 item(FEAT_TRAINS, item_coaches_Pd7011, 300) {}
+item(FEAT_TRAINS, item_wagons_gen4_Gs, 301) {}

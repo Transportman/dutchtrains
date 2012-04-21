@@ -22,6 +22,8 @@
 
 #define CARGODEF_BOXCAR refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS); non_refittable_cargo_classes: 0; cargo_allow_refit: [GRAI, WHEA, RUBR, FRUT, MAIZ, WATR, SUGR, TOFF, COLA, CTCD, PLST, CERE, CMNT, OLSD, SGCN]; cargo_disallow_refit: [LVST, WOOD, STEL, VEHI, TOUR];
 
+#define CARGODEF_BOXCAR_w_MAIL refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_MAIL); non_refittable_cargo_classes: 0; cargo_allow_refit: [GRAI, WHEA, RUBR, FRUT, MAIZ, WATR, SUGR, TOFF, COLA, CTCD, PLST, CERE, CMNT, OLSD, SGCN]; cargo_disallow_refit: [LVST, WOOD, STEL, VEHI, TOUR];
+
 #define CARGODEF_TANKER refittable_cargo_classes: bitmask(CC_LIQUID); non_refittable_cargo_classes: 0; cargo_allow_refit: [FZDR, FISH]; cargo_disallow_refit: [];
 
 #define CARGODEF_REFRIGERATOR refittable_cargo_classes: bitmask(CC_REFRIGERATED); non_refittable_cargo_classes: 0; cargo_allow_refit: []; cargo_disallow_refit: [];
