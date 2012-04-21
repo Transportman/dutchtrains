@@ -19,5 +19,5 @@ spriteset(spriteset_coaches_Hbbkkss_purchase_red, "gfx/purchase/coaches/Hbbkkss_
 */
 
 spriteset(spriteset_coaches_Hbbkkss_red, "gfx/coaches/Hbbkkss.png") {
-	template_2cc_68(0, 30)
+	template_2cc_78(1, 1)
 }
