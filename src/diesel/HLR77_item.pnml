@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_diesel_HLR77) {
 	}
     graphics {
         purchase: spriteset_diesel_HLR77_purchase;
+        additional_text: string(str_purchase_slf);
         spriteset_diesel_HLR77;
     }
 }

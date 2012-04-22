@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_diesel_G1206) {
     graphics {
         purchase: spriteset_diesel_G1206_purchase;
         cargo_subtype_text: switch_diesel_G1206_subtype_text;
+        additional_text: string(str_purchase_hf);
         cargo_capacity: return 0;
         switch_diesel_G1206_livery;
     }

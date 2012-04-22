@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_diesel_NS100) {
 	}
     graphics {
         purchase: spriteset_diesel_NS100_purchase;
+        additional_text: string(str_purchase_s);
         spriteset_diesel_NS100;
     }
 }

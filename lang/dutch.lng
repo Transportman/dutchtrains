@@ -389,8 +389,12 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_purchase_p              :{BLACK}Dienst: {YELLOW}reizigers
 str_purchase_lp             :{BLACK}Dienst: {YELLOW}stoptrein
 str_purchase_ep             :{BLACK}Dienst: {YELLOW}sneltrein
+str_purchase_eplf           :{BLACK}Dienst: {YELLOW}sneltrein of lichte vracht
 str_purchase_flp            :{BLACK}Dienst: {YELLOW}vracht of stoptrein
+str_purchase_lfep           :{BLACK}Dienst: {YELLOW}lichte vracht of sneltrein
 str_purchase_hf             :{BLACK}Dienst: {YELLOW}zware vracht
+str_purchase_s              :{BLACK}Dienst: {YELLOW}rangeren
+str_purchase_slf            :{BLACK}Dienst: {YELLOW}rangeren or lichte vracht
 
 str_purchase_steam_HSM126   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 501-535
@@ -398,11 +402,11 @@ str_purchase_steam_SS700    :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen b
 str_purchase_steam_NBDS30   :{BLACK}Dienst: {YELLOW}sneltrein, vanaf 1940 stoptrein{}{BLACK}Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36
 str_purchase_steam_NCS71    :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978
 
-str_purchase_diesel_NS2000  :{BLACK}Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A
-str_purchase_diesel_SM151   :{BLACK}Voorheen bekend als: {SILVER} SM 151-155
-str_purchase_diesel_ACTS5800:{BLACK}Voorheen bekend als: {SILVER} BR Class 58
-str_purchase_diesel_ACTS6700:{BLACK}Voorheen bekend als: {SILVER} NMBS HLD 62
-str_purchase_diesel_RN232   :{BLACK}Voorheen bekend als: {SILVER} DB BR 232
+str_purchase_diesel_NS2000  :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A
+str_purchase_diesel_SM151   :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} SM 151-155
+str_purchase_diesel_ACTS5800:{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} BR Class 58
+str_purchase_diesel_ACTS6700:{BLACK}Dienst: {YELLOW}lichte vracht{}{BLACK}Voorheen bekend als: {SILVER} NMBS HLD 62
+str_purchase_diesel_RN232   :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} DB BR 232
 
 str_purchase_electric_NS1500:{BLACK}Voorheen: {SILVER} BR Class EM2
 

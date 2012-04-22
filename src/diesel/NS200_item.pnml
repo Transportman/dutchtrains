@@ -51,6 +51,7 @@ item(FEAT_TRAINS, item_diesel_NS200) {
     graphics {
         purchase: switch_diesel_NS200_purchase;
         cargo_subtype_text: switch_diesel_NS200_subtype_text;
+        additional_text: string(str_purchase_s);
         cargo_capacity: return 0;
         switch_diesel_NS200_livery;
     }
