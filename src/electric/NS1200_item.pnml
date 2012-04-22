@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_electric_NS1200) {
     graphics {
         purchase: switch_electric_NS1200_purchase;
         cargo_subtype_text: switch_electric_NS1200_subtype_text;
+        additional_text: string(str_purchase_eiphf);
         cargo_capacity: return 0;
         switch_electric_NS1200_livery;
     }

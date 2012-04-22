@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_electric_ES64F4) {
     graphics {
         purchase: switch_electric_ES64F4_purchase;
         cargo_subtype_text: switch_electric_ES64F4_subtype_text;
+        additional_text: string(str_purchase_hf);
         cargo_capacity: return 0;
         switch_electric_ES64F4_livery;
     }

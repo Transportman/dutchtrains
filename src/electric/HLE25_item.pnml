@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_electric_HLE25) {
 	}
     graphics {
         purchase: spriteset_electric_HLE25_5_purchase;
+        additional_text: string(str_purchase_Ip);
         spriteset_electric_HLE25_5;
     }
 }

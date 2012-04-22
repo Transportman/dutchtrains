@@ -398,6 +398,12 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_purchase_p              :{BLACK}Service: {YELLOW}passengers
 str_purchase_lp             :{BLACK}Service: {YELLOW}local passengers
 str_purchase_ep             :{BLACK}Service: {YELLOW}express passengers
+str_purchase_ip             :{BLACK}Service: {YELLOW}intercity passengers
+str_purchase_eiphf          :{BLACK}Service: {YELLOW}express and intercity passengers or heavy freight
+str_purchase_iphf           :{BLACK}Service: {YELLOW}intercity passengers or heavy freight
+str_purchase_hp             :{BLACK}Service: {YELLOW}high speed passengers
+str_purchase_hphf           :{BLACK}Service: {YELLOW}high speed passengers or heavy freight
+str_purchase_Ip             :{BLACK}Service: {YELLOW}international passengers
 str_purchase_eplf           :{BLACK}Service: {YELLOW}express passengers or light freight
 str_purchase_flp            :{BLACK}Service: {YELLOW}freight or local passengers
 str_purchase_lfep           :{BLACK}Service: {YELLOW}light freight or express passengers
@@ -417,7 +423,8 @@ str_purchase_diesel_ACTS5800:{BLACK}Service: {YELLOW}heavy freight{}{BLACK}Previ
 str_purchase_diesel_ACTS6700:{BLACK}Service: {YELLOW}light freight{}{BLACK}Previously known as: {SILVER} NMBS HLD 62
 str_purchase_diesel_RN232   :{BLACK}Service: {YELLOW}heavy freight{}{BLACK}Previously known as: {SILVER} DB BR 232
 
-str_purchase_electric_NS1500:{BLACK}Previously known as: {SILVER} BR Class EM2
+str_purchase_electric_NS1100:{BLACK}Service: {YELLOW}express and intercity passengers{}{BLACK}Refurbished 1979: {YELLOW}+4% weight, +1/8 length
+str_purchase_electric_NS1500:{BLACK}Service: {YELLOW}intercity passengers or heavy freight{}{BLACK}Previously known as: {SILVER} BR Class EM2
 
 str_purchase_emu_ICE3M      :{BLACK}Also known as: {SILVER} DB BR 406
 str_purchase_emu_ZHESM_mBC  :{BLACK}Later known as: {SILVER} NS mBC9900

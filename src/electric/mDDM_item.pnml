@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_electric_mDDM) {
 	}
     graphics {
         purchase: spriteset_electric_mDDM_purchase;
+        additional_text: string(str_purchase_lp);
         spriteset_electric_mDDM;
     }
 }
