@@ -395,6 +395,45 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 
 #PURCHASE MENU TEXTS
 
+str_purchase_svc            :{BLACK}Service: {YELLOW}{STRING}
+str_purchase_svc_len        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}
+str_purchase_svc_len_lsp    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
+
+str_purchase_svc_p          :passengers
+str_purchase_svc_lp         :local passengers
+str_purchase_svc_ep         :express passengers
+str_purchase_svc_ip         :intercity passengers
+str_purchase_svc_hp         :high speed passengers
+str_purchase_svc_Ip         :international passengers
+str_purchase_svc_eiphf      :express and intercity passengers or heavy freight
+str_purchase_svc_iphf       :intercity passengers or heavy freight
+str_purchase_svc_hphf       :high speed passengers or heavy freight
+str_purchase_svc_eplf       :express passengers or light freight
+str_purchase_svc_flp        :freight or local passengers
+str_purchase_svc_lfep       :light freight or express passengers
+str_purchase_svc_hf         :heavy freight
+str_purchase_svc_s          :shunting
+str_purchase_svc_slf        :shunting or light freight
+str_purchase_svc_m          :mail
+str_purchase_svc_M          :metro
+
+str_purchase_len_1_05       :1 unit (0.5)
+str_purchase_len_2_10       :2 units (1.0)
+str_purchase_len_2_12       :2 units (1.2)
+str_purchase_len_3_15       :3 units (1.5)
+str_purchase_len_3_17       :3 units (1.7)
+str_purchase_len_4_14       :4 units (1.4)
+str_purchase_len_4_20       :4 units (2.0)
+str_purchase_len_5_24       :5 units (2.4)
+str_purchase_len_6_20       :6 units (2.0)
+str_purchase_len_6_30       :6 units (3.0)
+str_purchase_len_8_40       :8 units (4.0)
+str_purchase_len_10_50      :10 units (5.0)
+
+str_purchase_lsp_20         :high (20/t)
+
+
+
 str_purchase_p              :{BLACK}Service: {YELLOW}passengers
 str_purchase_lp             :{BLACK}Service: {YELLOW}local passengers
 str_purchase_ep             :{BLACK}Service: {YELLOW}express passengers

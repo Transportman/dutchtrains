@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_metro_GVB_S1S2) {
         purchase: switch_metro_GVB_S1S2_purchase;
         articulated_part: switch_metro_GVB_S1S2_articulated;
         cargo_subtype_text: switch_metro_GVB_S1S2_subtype_text;
-        additional_text: return string(str_purchase_M_2_10);
+        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_M), string(str_purchase_len_2_10), string(str_purchase_lsp_20));
         switch_metro_GVB_S1S2_livery;
     }
 }

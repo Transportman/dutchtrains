@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_metro_GVB_M5M6) {
         cargo_capacity: return 160;
         purchase: spriteset_metro_GVB_M5M6_purchase;
         articulated_part: switch_metro_GVB_M5M6_articulated;
-        additional_text: return string(str_purchase_M_6_30);
+        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_M), string(str_purchase_len_6_30), string(str_purchase_lsp_20));
         switch_metro_GVB_M5M6_livery;
     }
 }
