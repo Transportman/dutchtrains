@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_electric_NS1600P) {
 	}
     graphics {
         purchase: spriteset_electric_NS1600P_purchase;
-        additional_text: string(str_purchase_hp);
+        additional_text: return string(str_purchase_svc, string(str_purchase_svc_hp));
         spriteset_electric_NS1600P;
     }
 }

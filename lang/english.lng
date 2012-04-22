@@ -399,6 +399,7 @@ str_purchase_svc            :{BLACK}Service: {YELLOW}{STRING}
 str_purchase_svc_len        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}
 str_purchase_svc_len_lsp    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
 str_purchase_svc_len_lsp_spc:{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_p          :passengers
 str_purchase_svc_lp         :local passengers
@@ -407,6 +408,7 @@ str_purchase_svc_ip         :intercity passengers
 str_purchase_svc_hp         :high speed passengers
 str_purchase_svc_Ip         :international passengers
 str_purchase_svc_elp        :express and local passengers
+str_purchase_svc_eip        :express and intercity passengers
 str_purchase_svc_eiphf      :express and intercity passengers or heavy freight
 str_purchase_svc_iphf       :intercity passengers or heavy freight
 str_purchase_svc_hphf       :high speed passengers or heavy freight
@@ -442,6 +444,7 @@ str_purchase_p              :{BLACK}Service: {YELLOW}passengers
 str_purchase_lp             :{BLACK}Service: {YELLOW}local passengers
 str_purchase_ep             :{BLACK}Service: {YELLOW}express passengers
 str_purchase_ip             :{BLACK}Service: {YELLOW}intercity passengers
+str_purchase_eip            :{BLACK}Service: {YELLOW}express and intercity passengers
 str_purchase_eiphf          :{BLACK}Service: {YELLOW}express and intercity passengers or heavy freight
 str_purchase_iphf           :{BLACK}Service: {YELLOW}intercity passengers or heavy freight
 str_purchase_hp             :{BLACK}Service: {YELLOW}high speed passengers
@@ -466,8 +469,8 @@ str_purchase_diesel_ACTS5800:{BLACK}Service: {YELLOW}heavy freight{}{BLACK}Previ
 str_purchase_diesel_ACTS6700:{BLACK}Service: {YELLOW}light freight{}{BLACK}Previously known as: {SILVER} NMBS HLD 62
 str_purchase_diesel_RN232   :{BLACK}Service: {YELLOW}heavy freight{}{BLACK}Previously known as: {SILVER} DB BR 232
 
-str_purchase_electric_NS1100:{BLACK}Service: {YELLOW}express and intercity passengers{}{BLACK}Refurbished 1979: {YELLOW}+4% weight, +1/8 length
-str_purchase_electric_NS1500:{BLACK}Service: {YELLOW}intercity passengers or heavy freight{}{BLACK}Previously known as: {SILVER} BR Class EM2
+str_purchase_electric_NS1100:Refurbished 1979: {YELLOW}+4% weight, +1/8 length
+str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2
 
 str_purchase_emu_ZHESM_mBC  :Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900
 str_purchase_emu_Mat36ELD3  :Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8

@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_electric_NS1700) {
 	}
     graphics {
         purchase: spriteset_electric_NS1600_purchase;
-        additional_text: string(str_purchase_ip);
+        additional_text: return string(str_purchase_svc, string(str_purchase_svc_ip));
         spriteset_electric_NS1600_yellow;
     }
 }

@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_electric_NS1100) {
     graphics {
         purchase: switch_electric_NS1100_purchase;
         cargo_subtype_text: switch_electric_NS1100_subtype_text;
-        additional_text: string(str_purchase_electric_NS1100);
+        additional_text: return string(str_purchase_svc_spc, string(str_purchase_eip), string(str_purchase_electric_NS1100));
         cargo_capacity: return 0;
         length: switch_electric_NS1100_length;
         weight: switch_electric_NS1100_weight;

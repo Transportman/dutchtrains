@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_electric_TRAXXF140MS2) {
     graphics {
         purchase: switch_electric_TRAXXF140MS2_purchase;
         cargo_subtype_text: switch_electric_TRAXXF140MS2_subtype_text;
-        additional_text: string(str_purchase_hp);
+        additional_text: return string(str_purchase_svc, string(str_purchase_svc_hp));
         cargo_capacity: return 0;
         switch_electric_TRAXXF140MS2_livery;
     }
