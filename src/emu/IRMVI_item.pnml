@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_IRMVI) {
     graphics {
         cargo_capacity: return 100;
         purchase: spriteset_emu_IRMVI_purchase;
-        additional_text: string(str_purchase_ip_6_30);
+        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_ip), string(str_purchase_len_6_30), string(str_purchase_lsp_5));
         articulated_part: switch_emu_IRMVI_articulated;
         visual_effect_and_powered: switch_emu_IRMVI_visual_effect_and_powered;
         switch_emu_IRMVI_livery;

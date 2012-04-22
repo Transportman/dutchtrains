@@ -53,7 +53,7 @@ item(FEAT_TRAINS, item_emu_Mat35ELD2) {
         purchase: switch_emu_Mat35ELD2_purchase;
         articulated_part: switch_emu_Mat35ELD2_articulated;
         cargo_subtype_text: switch_emu_Mat35ELD2_subtype_text;
-        additional_text: string(str_purchase_lp_2_10);
+        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_lp), string(str_purchase_len_2_10), string(str_purchase_lsp_5));
         switch_emu_Mat35ELD2_livery;
     }
 }

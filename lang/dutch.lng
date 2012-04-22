@@ -389,6 +389,7 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_purchase_svc            :{BLACK}Dienst: {YELLOW}{STRING}
 str_purchase_svc_len        :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}
 str_purchase_svc_len_lsp    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadsnelheid: {YELLOW}{STRING}
+str_purchase_svc_len_lsp_spc:{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadsnelheid: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_p          :reizigers
 str_purchase_svc_lp         :stoptrein
@@ -396,6 +397,7 @@ str_purchase_svc_ep         :sneltrein
 str_purchase_svc_ip         :intercitytrein
 str_purchase_svc_hp         :hogesnelheidstrein
 str_purchase_svc_Ip         :internationale trein
+str_purchase_svc_elp        :snel- en stoptrein
 str_purchase_svc_eiphf      :snel- en intercitytrein of zware vracht
 str_purchase_svc_iphf       :intercitytrein of zware vracht
 str_purchase_svc_hphf       :hogesnelheidstrein of zware vracht
@@ -407,6 +409,7 @@ str_purchase_svc_s          :rangeren
 str_purchase_svc_slf        :rangeren or lichte vracht
 str_purchase_svc_m          :post
 str_purchase_svc_M          :metro
+str_purchase_svc_x          :directie
 
 str_purchase_len_1_05       :1 bak (0.5)
 str_purchase_len_2_10       :2 bakken (1.0)
@@ -421,6 +424,7 @@ str_purchase_len_6_30       :6 bakken (3.0)
 str_purchase_len_8_40       :8 bakken (4.0)
 str_purchase_len_10_50      :10 bakken (5.0)
 
+str_purchase_lsp_5          :laag (5/t)
 str_purchase_lsp_20         :hoog (20/t)
 
 
@@ -437,13 +441,11 @@ str_purchase_diesel_ACTS5800:{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorhee
 str_purchase_diesel_ACTS6700:{BLACK}Dienst: {YELLOW}lichte vracht{}{BLACK}Voorheen bekend als: {SILVER} NMBS HLD 62
 str_purchase_diesel_RN232   :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} DB BR 232
 
-str_purchase_dmu_NS20       :{BLACK}Dienst: {YELLOW}directie{}{BLACK}Lengte: {YELLOW}1 bak (0.5)
-
 str_purchase_electric_NS1100:{BLACK}Dienst: {YELLOW}snel- en intercitytrein{}{BLACK}Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte
 str_purchase_electric_NS1500:{BLACK}Dienst: {YELLOW}intercitytrein of zware vracht{}{BLACK}Voorheen bekend als: {SILVER} BR Class EM2
 
-str_purchase_emu_ZHESM_mBC  :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}1 bak (0.5){}{BLACK}Refurbished 1926: {YELLOW}+150% kracht, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900
-str_purchase_emu_Mat36ELD3  :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.5){}{BLACK}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8
-str_purchase_emu_ICE3M      :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}8 bakken (4.0){BLACK}Ook bekend als: {SILVER} DB BR 406
+str_purchase_emu_ZHESM_mBC  :Gereviseerd 1926: {YELLOW}+150% kracht, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900
+str_purchase_emu_Mat36ELD3  :Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8
+str_purchase_emu_ICE3M      :Ook bekend als: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later bekend als: {SILVER} NS B9900

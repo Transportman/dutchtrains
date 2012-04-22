@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_V250) {
     graphics {
         cargo_capacity: return 68;
         purchase: spriteset_emu_V250_purchase;
-        additional_text: string(str_purchase_Ip_8_40);
+        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_Ip), string(str_purchase_len_8_40), string(str_purchase_lsp_5));
         articulated_part: switch_emu_V250_articulated;
         visual_effect_and_powered: switch_emu_V250_visual_effect_and_powered;
         switch_emu_V250_position;

@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_emu_Mat24) {
         cargo_capacity: return 40;
         purchase: switch_emu_Mat24_purchase;
         cargo_subtype_text: switch_emu_Mat24_subtype_text;
-        additional_text: string(str_purchase_lp_1_05);
+        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_lp), string(str_purchase_len_1_05), string(str_purchase_lsp_5));
         switch_emu_Mat24_livery;
     }
 }

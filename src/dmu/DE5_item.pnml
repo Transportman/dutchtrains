@@ -54,7 +54,7 @@ item(FEAT_TRAINS, item_dmu_DE5) {
         articulated_part: switch_dmu_DE5_articulated;
         length: switch_dmu_DE5_length;
         cargo_subtype_text: switch_dmu_DE5_subtype_text;
-        additional_text: string(str_purchase_ep_5_24);
+        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_ep), string(str_purchase_len_5_24), string(str_purchase_lsp_5));
         visual_effect_and_powered: switch_dmu_DE5_visual_effect_and_powered;
         switch_dmu_DE5_livery;
     }
