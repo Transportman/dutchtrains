@@ -406,6 +406,7 @@ str_purchase_svc_hphf       :hogesnelheidstrein of zware vracht
 str_purchase_svc_eplf       :sneltrein of lichte vracht
 str_purchase_svc_flp        :vracht of stoptrein
 str_purchase_svc_lfep       :lichte vracht of sneltrein
+str_purchase_svc_lf         :lichte vracht
 str_purchase_svc_hf         :zware vracht
 str_purchase_svc_s          :rangeren
 str_purchase_svc_slf        :rangeren or lichte vracht
@@ -437,11 +438,11 @@ str_purchase_steam_SS700    :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen b
 str_purchase_steam_NBDS30   :{BLACK}Dienst: {YELLOW}sneltrein, vanaf 1940 stoptrein{}{BLACK}Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36
 str_purchase_steam_NCS71    :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978
 
-str_purchase_diesel_NS2000  :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A
-str_purchase_diesel_SM151   :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} SM 151-155
-str_purchase_diesel_ACTS5800:{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} BR Class 58
-str_purchase_diesel_ACTS6700:{BLACK}Dienst: {YELLOW}lichte vracht{}{BLACK}Voorheen bekend als: {SILVER} NMBS HLD 62
-str_purchase_diesel_RN232   :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} DB BR 232
+str_purchase_diesel_NS2000  :Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A
+str_purchase_diesel_SM151   :Voorheen bekend als: {SILVER} SM 151-155
+str_purchase_diesel_ACTS5800:Voorheen bekend als: {SILVER} BR Class 58
+str_purchase_diesel_ACTS6700:Voorheen bekend als: {SILVER} NMBS HLD 62
+str_purchase_diesel_RN232   :Voorheen bekend als: {SILVER} DB BR 232
 
 str_purchase_electric_NS1100:Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte
 str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2

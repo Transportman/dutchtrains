@@ -415,6 +415,7 @@ str_purchase_svc_hphf       :high speed passengers or heavy freight
 str_purchase_svc_eplf       :express passengers or light freight
 str_purchase_svc_flp        :freight or local passengers
 str_purchase_svc_lfep       :light freight or express passengers
+str_purchase_svc_lf         :light freight
 str_purchase_svc_hf         :heavy freight
 str_purchase_svc_s          :shunting
 str_purchase_svc_slf        :shunting or light freight
@@ -463,11 +464,11 @@ str_purchase_steam_SS700    :{BLACK}Service: {YELLOW}express passengers{}{BLACK}
 str_purchase_steam_NBDS30   :{BLACK}Service: {YELLOW}express passengers, from 1940 local passengers{}{BLACK}Refurbished 1940: {YELLOW}-50% speed, +11% power{}{BLACK}Previously known as: {SILVER} NBDS 30-36
 str_purchase_steam_NCS71    :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Refurbished 1925: {YELLOW}+5% weight, -4% TE{}{BLACK}Refurbished 1935: {YELLOW}+22% speed, +12% weight{}{BLACK}Previously known as: {SILVER} NCS 71-78, SS 971-978
 
-str_purchase_diesel_NS2000  :{BLACK}Service: {YELLOW}heavy freight{}{BLACK}Previously known as: {SILVER} Whitcomb 65-DE-19A
-str_purchase_diesel_SM151   :{BLACK}Service: {YELLOW}heavy freight{}{BLACK}Previously known as: {SILVER} SM 151-155
-str_purchase_diesel_ACTS5800:{BLACK}Service: {YELLOW}heavy freight{}{BLACK}Previously known as: {SILVER} BR Class 58
-str_purchase_diesel_ACTS6700:{BLACK}Service: {YELLOW}light freight{}{BLACK}Previously known as: {SILVER} NMBS HLD 62
-str_purchase_diesel_RN232   :{BLACK}Service: {YELLOW}heavy freight{}{BLACK}Previously known as: {SILVER} DB BR 232
+str_purchase_diesel_NS2000  :Previously known as: {SILVER} Whitcomb 65-DE-19A
+str_purchase_diesel_SM151   :Previously known as: {SILVER} SM 151-155
+str_purchase_diesel_ACTS5800:Previously known as: {SILVER} BR Class 58
+str_purchase_diesel_ACTS6700:Previously known as: {SILVER} NMBS HLD 62
+str_purchase_diesel_RN232   :Previously known as: {SILVER} DB BR 232
 
 str_purchase_electric_NS1100:Refurbished 1979: {YELLOW}+4% weight, +1/8 length
 str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2
