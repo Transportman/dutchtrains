@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_diesel_SM151) {
     graphics {
         purchase: switch_diesel_SM151_purchase;
         cargo_subtype_text: switch_diesel_SM151_subtype_text;
-        additional_text: return string(str_purchase_svc_spc, string(str_purchase_hf), string(str_purchase_diesel_SM151));
+        additional_text: return string(str_purchase_svc_spc, string(str_purchase_svc_hf), string(str_purchase_diesel_SM151));
         cargo_capacity: return 0;
         switch_diesel_SM151_livery;
     }

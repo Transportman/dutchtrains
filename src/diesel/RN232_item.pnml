@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_diesel_RN232) {
 	}
     graphics {
         purchase: spriteset_diesel_RN232_purchase;
-        additional_text: return string(str_purchase_svc_spc, string(str_purchase_hf), string(str_purchase_diesel_RN232));
+        additional_text: return string(str_purchase_svc_spc, string(str_purchase_svc_hf), string(str_purchase_diesel_RN232));
         spriteset_diesel_RN232;
     }
 }
