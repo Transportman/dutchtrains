@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_steam_NS6200) {
 	}
     graphics {
         purchase: spriteset_steam_NS6200_purchase;
+        additional_text: string(str_purchase_lp);
         switch_steam_NS6200_animation;
     }
 }

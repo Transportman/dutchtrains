@@ -395,15 +395,17 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 
 #PURCHASE MENU TEXTS
 
-#metro
-str_purchase_metro_1    :{BLACK}Length: {YELLOW}2 units (1.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
-str_purchase_metro_2    :{BLACK}Length: {YELLOW}6 units (3.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
+str_purchase_p              :{BLACK}Service: {YELLOW}passengers
+str_purchase_lp             :{BLACK}Service: {YELLOW}local passengers
+str_purchase_ep             :{BLACK}Service: {YELLOW}express passengers
+str_purchase_flp            :{BLACK}Service: {YELLOW}freight or local passengers
+str_purchase_hf             :{BLACK}Service: {YELLOW}heavy freight
 
-str_purchase_steam_HSM126   :{BLACK}Previously known as: {SILVER} HSM 126-135
-str_purchase_steam_HSM500   :{BLACK}Previously known as: {SILVER} HSM 501-535
-str_purchase_steam_SS700    :{BLACK}Previously known as: {SILVER} SS 685-778, 785-799
-str_purchase_steam_NBDS30   :{BLACK}Previously known as: {SILVER} NBDS 30-36
-str_purchase_steam_NCS71    :{BLACK}Previously known as: {SILVER} NCS 71-78, SS 971-978
+str_purchase_steam_HSM126   :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Previously known as: {SILVER} HSM 126-135
+str_purchase_steam_HSM500   :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Previously known as: {SILVER} HSM 501-535
+str_purchase_steam_SS700    :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Previously known as: {SILVER} SS 685-778, 785-799
+str_purchase_steam_NBDS30   :{BLACK}Service: {YELLOW}express passengers, from 1940 local passengers{}{BLACK}Refurbished 1940: {YELLOW}-50% speed, +11% power{}{BLACK}Previously known as: {SILVER} NBDS 30-36
+str_purchase_steam_NCS71    :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Refurbished 1925: {YELLOW}+5% weight, -4% TE{}{BLACK}Refurbished 1935: {YELLOW}+22% speed, +12% weight{}{BLACK}Previously known as: {SILVER} NCS 71-78, SS 971-978
 
 str_purchase_diesel_NS2000  :{BLACK}Previously known as: {SILVER} Whitcomb 65-DE-19A
 str_purchase_diesel_SM151   :{BLACK}Previously known as: {SILVER} SM 151-155
@@ -417,3 +419,6 @@ str_purchase_emu_ICE3M      :{BLACK}Also known as: {SILVER} DB BR 406
 str_purchase_emu_ZHESM_mBC  :{BLACK}Later known as: {SILVER} NS mBC9900
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later known as: {SILVER} NS B9900
+
+str_purchase_metro_1    :{BLACK}Length: {YELLOW}2 units (1.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
+str_purchase_metro_2    :{BLACK}Length: {YELLOW}6 units (3.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}

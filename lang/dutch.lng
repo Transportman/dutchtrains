@@ -386,15 +386,17 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 
 #PURCHASE MENU TEXTS
 
-#metro
-str_purchase_metro_1    :{BLACK}Lengte: {YELLOW}2 bakken (1.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
-str_purchase_metro_2    :{BLACK}Lengte: {YELLOW}6 bakken (3.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
+str_purchase_p              :{BLACK}Dienst: {YELLOW}reizigers
+str_purchase_lp             :{BLACK}Dienst: {YELLOW}stoptrein
+str_purchase_ep             :{BLACK}Dienst: {YELLOW}sneltrein
+str_purchase_flp            :{BLACK}Dienst: {YELLOW}vracht of stoptrein
+str_purchase_hf             :{BLACK}Dienst: {YELLOW}zware vracht
 
-str_purchase_steam_HSM126   :{BLACK}Voorheen bekend als: {SILVER} HSM 126-135
-str_purchase_steam_HSM500   :{BLACK}Voorheen bekend als: {SILVER} HSM 501-535
-str_purchase_steam_SS700    :{BLACK}Voorheen bekend als: {SILVER} SS 685-778, 785-799
-str_purchase_steam_NBDS30   :{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36
-str_purchase_steam_NCS71    :{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978
+str_purchase_steam_HSM126   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 126-135
+str_purchase_steam_HSM500   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 501-535
+str_purchase_steam_SS700    :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} SS 685-778, 785-799
+str_purchase_steam_NBDS30   :{BLACK}Dienst: {YELLOW}sneltrein, vanaf 1940 stoptrein{}{BLACK}Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36
+str_purchase_steam_NCS71    :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978
 
 str_purchase_diesel_NS2000  :{BLACK}Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A
 str_purchase_diesel_SM151   :{BLACK}Voorheen bekend als: {SILVER} SM 151-155
@@ -408,3 +410,6 @@ str_purchase_emu_ICE3M      :{BLACK}Ook bekend als: {SILVER} DB BR 406
 str_purchase_emu_ZHESM_mBC  :{BLACK}Later bekend als: {SILVER} NS mBC9900
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later bekend als: {SILVER} NS B9900
+
+str_purchase_metro_1    :{BLACK}Lengte: {YELLOW}2 bakken (1.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
+str_purchase_metro_2    :{BLACK}Lengte: {YELLOW}6 bakken (3.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
