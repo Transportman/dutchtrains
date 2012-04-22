@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_emu_TGV) {
         purchase: spriteset_emu_TGV_purchase;
         articulated_part: switch_emu_TGV_articulated;
         cargo_subtype_text: switch_emu_TGV_subtype_text;
+        additional_text: string(str_purchase_Ip_10_50);
         visual_effect_and_powered: switch_emu_TGV_visual_effect_and_powered;
         switch_emu_TGV_livery;
     }

@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_emu_SLTVI) {
     graphics {
         cargo_capacity: return 54;
         purchase: spriteset_emu_SLTVI_purchase;
+        additional_text: string(str_purchase_lp_6_20);
         articulated_part: switch_emu_SLTVI_articulated;
         length: switch_emu_SLTVI_length;
         visual_effect_and_powered: switch_emu_SLTVI_visual_effect_and_powered;

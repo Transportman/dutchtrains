@@ -405,11 +405,24 @@ str_purchase_slf            :{BLACK}Dienst: {YELLOW}rangeren or lichte vracht
 str_purchase_lp_1_05        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}1 bak (0.5)
 str_purchase_lp_2_10        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}2 bakken (1.0)
 str_purchase_lp_2_12        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}2 bakken (1.2)
+str_purchase_lp_3_15        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.5)
 str_purchase_lp_3_17        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.7)
+str_purchase_lp_4_14        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}4 bakken (1.4)
+str_purchase_lp_4_20        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}4 bakken (2.0)
+str_purchase_lp_5_24        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}5 bakken (2.4)
+str_purchase_lp_6_20        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}6 bakken (2.0)
+str_purchase_ep_2_10        :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Lengte: {YELLOW}2 bakken (1.0)
 str_purchase_ep_3_15        :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.5)
+str_purchase_ep_4_20        :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Lengte: {YELLOW}4 bakken (2.0)
 str_purchase_ep_5_24        :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Lengte: {YELLOW}5 bakken (2.4)
 str_purchase_elp_3_15       :{BLACK}Dienst: {YELLOW}snel- en stoptrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.5)
+str_purchase_ip_3_15        :{BLACK}Dienst: {YELLOW}intercitytrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.5)
+str_purchase_ip_4_20        :{BLACK}Dienst: {YELLOW}intercitytrein{}{BLACK}Lengte: {YELLOW}4 bakken (2.0)
+str_purchase_ip_6_30        :{BLACK}Dienst: {YELLOW}intercitytrein{}{BLACK}Lengte: {YELLOW}6 bakken (3.0)
 str_purchase_Ip_4_20        :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}4 bakken (2.0)
+str_purchase_Ip_8_40        :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}8 bakken (4.0)
+str_purchase_Ip_10_50        :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}10 bakken (5.0)
+str_purchase_m_1_05         :{BLACK}Dienst: {YELLOW}post{}{BLACK}Lengte: {YELLOW}1 bak (0.5)
 
 str_purchase_steam_HSM126   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 501-535
@@ -428,8 +441,9 @@ str_purchase_dmu_NS20       :{BLACK}Dienst: {YELLOW}directie{}{BLACK}Lengte: {YE
 str_purchase_electric_NS1100:{BLACK}Dienst: {YELLOW}snel- en intercitytrein{}{BLACK}Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte
 str_purchase_electric_NS1500:{BLACK}Dienst: {YELLOW}intercitytrein of zware vracht{}{BLACK}Voorheen bekend als: {SILVER} BR Class EM2
 
-str_purchase_emu_ICE3M      :{BLACK}Ook bekend als: {SILVER} DB BR 406
-str_purchase_emu_ZHESM_mBC  :{BLACK}Later bekend als: {SILVER} NS mBC9900
+str_purchase_emu_ZHESM_mBC  :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}1 bak (0.5){}{BLACK}Refurbished 1926: {YELLOW}+150% kracht, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900
+str_purchase_emu_Mat36ELD3  :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.5){}{BLACK}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8
+str_purchase_emu_ICE3M      :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}8 bakken (4.0){BLACK}Ook bekend als: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later bekend als: {SILVER} NS B9900
 

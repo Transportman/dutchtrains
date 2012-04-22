@@ -51,6 +51,7 @@ item(FEAT_TRAINS, item_emu_Mat24mP) {
     graphics {
         purchase: spriteset_emu_Mat24mP_purchase;
         cargo_subtype_text: switch_emu_Mat24mP_subtype_text;
+        additional_text: string(str_purchase_m_1_05);
         cargo_capacity: switch_emu_Mat24mP_capacity;
         switch_emu_Mat24mP_livery;
     }

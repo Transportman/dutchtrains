@@ -49,6 +49,7 @@ item(FEAT_TRAINS, item_emu_IRMIV) {
 	}
     graphics {
         purchase: spriteset_emu_IRMVI_purchase;
+        additional_text: string(str_purchase_ip_4_20);
         articulated_part: switch_emu_IRMIV_articulated;
         cargo_capacity: switch_emu_IRMIV_capacity;
         weight: switch_emu_IRMIV_weight;

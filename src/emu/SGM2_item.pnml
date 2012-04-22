@@ -51,6 +51,7 @@ item(FEAT_TRAINS, item_emu_SGM2) {
         purchase: switch_emu_SGM2_purchase;
         articulated_part: switch_emu_SGM2_articulated;
         cargo_subtype_text: switch_emu_SGM2_subtype_text;
+        additional_text: string(str_purchase_lp_2_10);
         cargo_capacity: switch_emu_SGM2_capacity;
         visual_effect_and_powered: switch_emu_SGM2_visual_effect_and_powered;
         switch_emu_SGM2_livery;

@@ -414,11 +414,24 @@ str_purchase_slf            :{BLACK}Service: {YELLOW}shunting or light freight
 str_purchase_lp_1_05        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}1 unit (0.5)
 str_purchase_lp_2_10        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}2 units (1.0)
 str_purchase_lp_2_12        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}2 units (1.2)
+str_purchase_lp_3_15        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}3 units (1.5)
 str_purchase_lp_3_17        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}3 units (1.7)
+str_purchase_lp_4_14        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}4 units (1.4)
+str_purchase_lp_4_20        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}4 units (2.0)
+str_purchase_lp_5_24        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}5 units (2.4)
+str_purchase_lp_6_20        :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}6 units (2.0)
+str_purchase_ep_2_10        :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Length: {YELLOW}2 units (1.0)
 str_purchase_ep_3_15        :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Length: {YELLOW}3 units (1.5)
+str_purchase_ep_4_20        :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Length: {YELLOW}4 units (2.0)
 str_purchase_ep_5_24        :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Length: {YELLOW}5 units (2.4)
 str_purchase_elp_3_15       :{BLACK}Service: {YELLOW}express and local passengers{}{BLACK}Length: {YELLOW}3 units (1.5)
+str_purchase_ip_3_15        :{BLACK}Service: {YELLOW}intercity passengers{}{BLACK}Length: {YELLOW}3 units (1.5)
+str_purchase_ip_4_20        :{BLACK}Service: {YELLOW}intercity passengers{}{BLACK}Length: {YELLOW}4 units (2.0)
+str_purchase_ip_6_30        :{BLACK}Service: {YELLOW}intercity passengers{}{BLACK}Length: {YELLOW}6 units (3.0)
 str_purchase_Ip_4_20        :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}4 units (2.0)
+str_purchase_Ip_8_40        :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}8 units (4.0)
+str_purchase_Ip_10_50        :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}10 units (5.0)
+str_purchase_m_1_05         :{BLACK}Service: {YELLOW}mail{}{BLACK}Length: {YELLOW}1 unit (0.5)
 
 str_purchase_steam_HSM126   :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Previously known as: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Previously known as: {SILVER} HSM 501-535
@@ -437,8 +450,9 @@ str_purchase_dmu_NS20       :{BLACK}Service: {YELLOW}executive{}{BLACK}Length: {
 str_purchase_electric_NS1100:{BLACK}Service: {YELLOW}express and intercity passengers{}{BLACK}Refurbished 1979: {YELLOW}+4% weight, +1/8 length
 str_purchase_electric_NS1500:{BLACK}Service: {YELLOW}intercity passengers or heavy freight{}{BLACK}Previously known as: {SILVER} BR Class EM2
 
-str_purchase_emu_ICE3M      :{BLACK}Also known as: {SILVER} DB BR 406
-str_purchase_emu_ZHESM_mBC  :{BLACK}Later known as: {SILVER} NS mBC9900
+str_purchase_emu_ZHESM_mBC  :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}1 unit (0.5){}{BLACK}Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900
+str_purchase_emu_Mat36ELD3  :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Length: {YELLOW}3 units (1.5){}{BLACK}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8
+str_purchase_emu_ICE3M      :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}8 units (4.0){BLACK}Also known as: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later known as: {SILVER} NS B9900
 

@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_emu_Mat46ELD4) {
         purchase: switch_emu_Mat46ELD4_purchase;
         articulated_part: switch_emu_Mat46ELD4_articulated;
         cargo_subtype_text: switch_emu_Mat46ELD4_subtype_text;
+        additional_text: string(str_purchase_lp_4_20);
         visual_effect_and_powered: switch_emu_Mat46ELD4_visual_effect_and_powered;
         switch_emu_Mat46ELD4_livery;
     }

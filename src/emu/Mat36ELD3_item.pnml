@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_emu_Mat36ELD3) {
         purchase: switch_emu_Mat36ELD3_purchase;
         articulated_part: switch_emu_Mat36ELD3_articulated;
         cargo_subtype_text: switch_emu_Mat36ELD3_subtype_text;
+        additional_text: string(str_purchase_emu_Mat36ELD3);
         running_cost_factor: switch_emu_Mat36ELD3_running_cost;
         power: switch_emu_Mat36ELD3_power;
         cargo_capacity: switch_emu_Mat36ELD3_capacity;

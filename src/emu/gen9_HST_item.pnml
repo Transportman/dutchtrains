@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_emu_gen9_HST) {
     graphics {
         cargo_capacity: return 63;
         purchase: spriteset_emu_gen9_HST_purchase;
+        additional_text: string(str_purchase_Ip_8_40);
         articulated_part: switch_emu_gen9_HST_articulated;
         visual_effect_and_powered: switch_emu_gen9_HST_visual_effect_and_powered;
         switch_emu_gen9_HST_position;

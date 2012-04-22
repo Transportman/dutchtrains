@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_emu_ICM4) {
         purchase: spriteset_emu_ICM_purchase;
         articulated_part: switch_emu_ICM4_articulated;
         cargo_subtype_text: switch_emu_ICM4_subtype_text;
+        additional_text: string(str_purchase_ip_4_20);
         visual_effect_and_powered: switch_emu_ICM4_visual_effect_and_powered;
         switch_emu_ICM4_livery;
     }
