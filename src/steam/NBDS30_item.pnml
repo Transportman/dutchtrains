@@ -53,7 +53,7 @@ item(FEAT_TRAINS, item_steam_NBDS30) {
         articulated_part: switch_steam_NBDS30_articulated;
         length: switch_steam_NBDS30_length;
         cargo_subtype_text: switch_steam_NBDS30_subtype_text;
-        additional_text: string(str_purchase_steam_NBDS30);
+        additional_text: return string(str_purchase_svc_spc, string(str_purchase_svc_p), string(str_purchase_steam_NBDS30));
         cargo_capacity: return 0;
         speed: switch_steam_NBDS30_speed;
         power: switch_steam_NBDS30_power;

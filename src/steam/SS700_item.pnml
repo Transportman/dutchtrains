@@ -53,7 +53,7 @@ item(FEAT_TRAINS, item_steam_SS700) {
         articulated_part: switch_steam_SS700_articulated;
         length: switch_steam_SS700_length;
         cargo_subtype_text: switch_steam_SS700_subtype_text;
-        additional_text: string(str_purchase_steam_SS700);
+        additional_text: return string(str_purchase_svc_spc, string(str_purchase_svc_ep), string(str_purchase_steam_SS700));
         cargo_capacity: return 0;
         visual_effect_and_powered: switch_steam_SS700_visual_effect_and_powered;
         switch_steam_SS700_livery;

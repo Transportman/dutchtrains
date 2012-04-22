@@ -430,13 +430,11 @@ str_purchase_len_10_50      :10 bakken (5.0)
 str_purchase_lsp_5          :laag (5/t)
 str_purchase_lsp_20         :hoog (20/t)
 
-
-
-str_purchase_steam_HSM126   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 126-135
-str_purchase_steam_HSM500   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 501-535
-str_purchase_steam_SS700    :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} SS 685-778, 785-799
-str_purchase_steam_NBDS30   :{BLACK}Dienst: {YELLOW}sneltrein, vanaf 1940 stoptrein{}{BLACK}Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36
-str_purchase_steam_NCS71    :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978
+str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135
+str_purchase_steam_HSM500   :Voorheen bekend als: {SILVER} HSM 501-535
+str_purchase_steam_SS700    :Voorheen bekend als: {SILVER} SS 685-778, 785-799
+str_purchase_steam_NBDS30   :Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36
+str_purchase_steam_NCS71    :Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978
 
 str_purchase_diesel_NS2000  :Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A
 str_purchase_diesel_SM151   :Voorheen bekend als: {SILVER} SM 151-155

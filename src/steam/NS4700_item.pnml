@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_steam_NS4700) {
 	}
     graphics {
         purchase: spriteset_steam_NS4700_purchase;
-        additional_text: string(str_purchase_flp);
+        additional_text: return string(str_purchase_svc, string(str_purchase_svc_flp));
         articulated_part: switch_steam_NS4700_articulated;
         length: switch_steam_NS4700_length;
         visual_effect_and_powered: switch_steam_NS4700_visual_effect_and_powered;
