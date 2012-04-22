@@ -430,8 +430,10 @@ str_purchase_ip_4_20        :{BLACK}Service: {YELLOW}intercity passengers{}{BLAC
 str_purchase_ip_6_30        :{BLACK}Service: {YELLOW}intercity passengers{}{BLACK}Length: {YELLOW}6 units (3.0)
 str_purchase_Ip_4_20        :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}4 units (2.0)
 str_purchase_Ip_8_40        :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}8 units (4.0)
-str_purchase_Ip_10_50        :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}10 units (5.0)
+str_purchase_Ip_10_50       :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}10 units (5.0)
 str_purchase_m_1_05         :{BLACK}Service: {YELLOW}mail{}{BLACK}Length: {YELLOW}1 unit (0.5)
+str_purchase_M_2_10         :{BLACK}Service: {YELLOW}metro{}{BLACK}Length: {YELLOW}2 units (1.0){}{BLACK}Loading Speed: {YELLOW}high (20/t){}
+str_purchase_M_6_30         :{BLACK}Service: {YELLOW}metro{}{BLACK}Length: {YELLOW}6 units (3.0){}{BLACK}Loading Speed: {YELLOW}high (20/t){}
 
 str_purchase_steam_HSM126   :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Previously known as: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :{BLACK}Service: {YELLOW}express passengers{}{BLACK}Previously known as: {SILVER} HSM 501-535
@@ -455,6 +457,3 @@ str_purchase_emu_Mat36ELD3  :{BLACK}Service: {YELLOW}local passengers{}{BLACK}Le
 str_purchase_emu_ICE3M      :{BLACK}Service: {YELLOW}international passengers{}{BLACK}Length: {YELLOW}8 units (4.0){BLACK}Also known as: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later known as: {SILVER} NS B9900
-
-str_purchase_metro_1    :{BLACK}Length: {YELLOW}2 units (1.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}
-str_purchase_metro_2    :{BLACK}Length: {YELLOW}6 units (3.0){}{BLACK}Service: {YELLOW}metro{}{BLACK}Loading Speed: {YELLOW}high (20/t){}

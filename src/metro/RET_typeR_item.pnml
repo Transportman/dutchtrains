@@ -53,7 +53,7 @@ item(FEAT_TRAINS, item_metro_RET_typeR) {
         articulated_part: switch_metro_RET_typeR_articulated;
         length: switch_metro_RET_typeR_length;
         cargo_subtype_text: switch_metro_RET_typeR_subtype_text;
-        additional_text: return string(str_purchase_metro_1);
+        additional_text: return string(str_purchase_M_2_10);
         switch_metro_RET_typeR_livery;
     }
 }

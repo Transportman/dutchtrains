@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_metro_RET_typeB) {
         cargo_capacity: return 113;
         purchase: spriteset_metro_RET_typeB_purchase;
         articulated_part: switch_metro_RET_typeB_articulated;
-        additional_text: return string(str_purchase_metro_1);
+        additional_text: return string(str_purchase_M_2_10);
         switch_metro_RET_typeB_position;
     }
 }

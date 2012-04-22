@@ -421,8 +421,10 @@ str_purchase_ip_4_20        :{BLACK}Dienst: {YELLOW}intercitytrein{}{BLACK}Lengt
 str_purchase_ip_6_30        :{BLACK}Dienst: {YELLOW}intercitytrein{}{BLACK}Lengte: {YELLOW}6 bakken (3.0)
 str_purchase_Ip_4_20        :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}4 bakken (2.0)
 str_purchase_Ip_8_40        :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}8 bakken (4.0)
-str_purchase_Ip_10_50        :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}10 bakken (5.0)
+str_purchase_Ip_10_50       :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}10 bakken (5.0)
 str_purchase_m_1_05         :{BLACK}Dienst: {YELLOW}post{}{BLACK}Lengte: {YELLOW}1 bak (0.5)
+str_purchase_M_2_10         :{BLACK}Dienst: {YELLOW}metro{}{BLACK}Lengte: {YELLOW}2 bakken (1.0){}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
+str_purchase_M_6_30         :{BLACK}Dienst: {YELLOW}metro{}{BLACK}Lengte: {YELLOW}6 bakken (3.0){}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
 
 str_purchase_steam_HSM126   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 501-535
@@ -446,6 +448,3 @@ str_purchase_emu_Mat36ELD3  :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {Y
 str_purchase_emu_ICE3M      :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}8 bakken (4.0){BLACK}Ook bekend als: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later bekend als: {SILVER} NS B9900
-
-str_purchase_metro_1    :{BLACK}Lengte: {YELLOW}2 bakken (1.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
-str_purchase_metro_2    :{BLACK}Lengte: {YELLOW}6 bakken (3.0){}{BLACK}Dienst: {YELLOW}metro{}{BLACK}Laadsnelheid: {YELLOW}hoog (20/t){}
