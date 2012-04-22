@@ -51,6 +51,7 @@ item(FEAT_TRAINS, item_dmu_DE4) {
     graphics {
         cargo_capacity: return 29;
         purchase: spriteset_dmu_DE4_purchase;
+        additional_text: string(str_purchase_Ip_4_20);
         articulated_part: switch_dmu_DE4_articulated;
         visual_effect_and_powered: switch_dmu_DE4_visual_effect_and_powered;
         switch_dmu_DE4_position_red;

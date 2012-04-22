@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_dmu_NS20) {
         cargo_capacity: return 28;
         purchase: switch_dmu_NS20_purchase;
         cargo_subtype_text: switch_dmu_NS20_subtype_text;
+        additional_text: string(str_purchase_dmu_NS20);
         switch_dmu_NS20_livery;
     }
 }

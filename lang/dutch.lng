@@ -394,12 +394,22 @@ str_purchase_eiphf          :{BLACK}Dienst: {YELLOW}snel- en intercitytrein of z
 str_purchase_iphf           :{BLACK}Dienst: {YELLOW}intercitytrein of zware vracht
 str_purchase_hp             :{BLACK}Dienst: {YELLOW}hogesnelheidstrein
 str_purchase_hphf           :{BLACK}Dienst: {YELLOW}hogesnelheidstrein of zware vracht
+str_purchase_Ip             :{BLACK}Dienst: {YELLOW}internationale trein
 str_purchase_eplf           :{BLACK}Dienst: {YELLOW}sneltrein of lichte vracht
 str_purchase_flp            :{BLACK}Dienst: {YELLOW}vracht of stoptrein
 str_purchase_lfep           :{BLACK}Dienst: {YELLOW}lichte vracht of sneltrein
 str_purchase_hf             :{BLACK}Dienst: {YELLOW}zware vracht
 str_purchase_s              :{BLACK}Dienst: {YELLOW}rangeren
 str_purchase_slf            :{BLACK}Dienst: {YELLOW}rangeren or lichte vracht
+
+str_purchase_lp_1_05        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}1 bak (0.5)
+str_purchase_lp_2_10        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}2 bakken (1.0)
+str_purchase_lp_2_12        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}2 bakken (1.2)
+str_purchase_lp_3_17        :{BLACK}Dienst: {YELLOW}stoptrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.7)
+str_purchase_ep_3_15        :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.5)
+str_purchase_ep_5_24        :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Lengte: {YELLOW}5 bakken (2.4)
+str_purchase_elp_3_15       :{BLACK}Dienst: {YELLOW}snel- en stoptrein{}{BLACK}Lengte: {YELLOW}3 bakken (1.5)
+str_purchase_Ip_4_20        :{BLACK}Dienst: {YELLOW}internationale trein{}{BLACK}Lengte: {YELLOW}4 bakken (2.0)
 
 str_purchase_steam_HSM126   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :{BLACK}Dienst: {YELLOW}sneltrein{}{BLACK}Voorheen bekend als: {SILVER} HSM 501-535
@@ -412,6 +422,8 @@ str_purchase_diesel_SM151   :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorhee
 str_purchase_diesel_ACTS5800:{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} BR Class 58
 str_purchase_diesel_ACTS6700:{BLACK}Dienst: {YELLOW}lichte vracht{}{BLACK}Voorheen bekend als: {SILVER} NMBS HLD 62
 str_purchase_diesel_RN232   :{BLACK}Dienst: {YELLOW}zware vracht{}{BLACK}Voorheen bekend als: {SILVER} DB BR 232
+
+str_purchase_dmu_NS20       :{BLACK}Dienst: {YELLOW}directie{}{BLACK}Lengte: {YELLOW}1 bak (0.5)
 
 str_purchase_electric_NS1100:{BLACK}Dienst: {YELLOW}snel- en intercitytrein{}{BLACK}Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte
 str_purchase_electric_NS1500:{BLACK}Dienst: {YELLOW}intercitytrein of zware vracht{}{BLACK}Voorheen bekend als: {SILVER} BR Class EM2

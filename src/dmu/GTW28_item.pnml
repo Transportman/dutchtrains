@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_dmu_GTW28) {
         articulated_part: switch_dmu_GTW28_articulated;
         length: switch_dmu_GTW28_length;
         cargo_subtype_text: switch_dmu_GTW28_subtype_text;
+        additional_text: string(str_purchase_lp_3_17);
         colour_mapping: PALETTE_USE_DEFAULT;
         visual_effect_and_powered: switch_dmu_GTW28_visual_effect_and_powered;
         switch_dmu_GTW28_livery;

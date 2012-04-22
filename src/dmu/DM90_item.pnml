@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_dmu_DM90) {
         purchase: spriteset_dmu_DM90_purchase;
         articulated_part: switch_dmu_DM90_articulated;
         cargo_subtype_text: switch_dmu_DM90_subtype_text;
+        additional_text: string(str_purchase_lp_2_10);
         switch_dmu_DM90_livery;
     }
 }
