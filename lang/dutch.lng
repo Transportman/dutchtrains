@@ -360,13 +360,13 @@ str_coaches_Citynightline   :Slaaprijtuig CityNightLine
 str_coaches_MUs         :Slaaprijtuig MUs
 
 #baggage and mail wagons
-str_coaches_SS_DII      :Baggagewagen SS D-II
-str_coaches_SS_DIII     :Baggagewagen SS D-III
-str_coaches_SS_E_129    :Baggagewagen SS E
-str_coaches_HSM_D_1916  :Baggagewagen HSM D-IV
-str_coaches_StalenDIV   :Baggagewagen D-IV
-str_coaches_StalenDV    :Baggagewagen D-V
-str_coaches_Dm          :Baggagewagen Dm
+str_coaches_SS_DII      :Bagagewagen SS D-II
+str_coaches_SS_DIII     :Bagagewagen SS D-III
+str_coaches_SS_E_129    :Bagagewagen SS E
+str_coaches_HSM_D_1916  :Bagagewagen HSM D-IV
+str_coaches_StalenDIV   :Bagagewagen D-IV
+str_coaches_StalenDV    :Bagagewagen D-V
+str_coaches_Dm          :Bagagewagen Dm
 str_coaches_Pd7011      :Postrijtuig Pd
 str_coaches_Pec         :Postrijtuig Pec
 str_coaches_Hbbkkss     :Postrijtuig Hbbkkss
