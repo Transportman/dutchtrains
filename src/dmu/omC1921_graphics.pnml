@@ -1,0 +1,64 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_dmu_omC1921_purchase_greenyellow, "gfx/purchase/dmu/omC1921_greenyellow.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_omC1921_purchase_green, "gfx/purchase/dmu/omC1921_green.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_omC1921_purchase, current_year) {
+	0..1928: spriteset_dmu_omC1921_purchase_greenyellow;
+    spriteset_dmu_omC1921_purchase_green;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_dmu_omC1921_greenyellow, "gfx/dmu/omBC1900.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_dmu_omC1921_green, "gfx/dmu/omBC1900.png") {
+	template_2cc_88(1, 128)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_omC1921_autolivery, date_of_last_service) {
+	0..date(1928,12,31): spriteset_dmu_omC1921_greenyellow;
+    spriteset_dmu_omC1921_green;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_omC1921_purchaselivery, build_year) {
+	0..1928: spriteset_dmu_omC1921_greenyellow;
+    spriteset_dmu_omC1921_green;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_omC1921_livery, cargo_subtype) {
+	1: switch_dmu_omC1921_purchaselivery;
+    2: spriteset_dmu_omC1921_greenyellow;
+    3: spriteset_dmu_omC1921_green;
+    switch_dmu_omC1921_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_dmu_omC1921_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_lightyellow);
+    3: return string(str_cargo_subtype_green);
+    return CB_RESULT_NO_TEXT;
+}

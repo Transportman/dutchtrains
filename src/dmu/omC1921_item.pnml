@@ -10,21 +10,21 @@
 * ITEM
 */
 
-item(FEAT_TRAINS, item_dmu_omC901) {
+item(FEAT_TRAINS, item_dmu_omC1921) {
     property {
-        name: string(str_dmu_omC901);
+        name: string(str_dmu_omC1921);
         
-        introduction_date: date(1927,1,1);
-        model_life: 51;
+        introduction_date: date(1924,1,1);
+        model_life: 54;
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 21;
-        running_cost_factor: 12;
-        speed: 70 km/h;
-        power: 100 hpM;
-        cargo_capacity: 40;
-        weight: 20 ton;
+        cost_factor: 26;
+        running_cost_factor: 14;
+        speed: 80 km/h;
+        power: 115 hpM;
+        cargo_capacity: 72;
+        weight: 38 ton;
         tractive_effort_coefficient: 0.15;
         air_drag_coefficient: 0;
         
@@ -44,15 +44,15 @@ item(FEAT_TRAINS, item_dmu_omC901) {
         climates_available: ALL_CLIMATES;
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
-        length: 6;
+        length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        cargo_capacity: return 40;
-        purchase: switch_dmu_omC901_purchase;
-        cargo_subtype_text: switch_dmu_omC901_subtype_text;
-        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_lp), string(str_purchase_len_1_04), string(str_purchase_lsp_5));
-        switch_dmu_omC901_livery;
+        cargo_capacity: return 72;
+        purchase: switch_dmu_omC1921_purchase;
+        cargo_subtype_text: switch_dmu_omC1921_subtype_text;
+        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_lp), string(str_purchase_len_1_05), string(str_purchase_lsp_5));
+        switch_dmu_omC1921_livery;
     }
 }

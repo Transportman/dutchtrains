@@ -198,3 +198,4 @@ item(FEAT_TRAINS, item_coaches_SS_DIII, 303) {}
 item(FEAT_TRAINS, item_emu_Mat56ELD2, 304) {}
 item(FEAT_TRAINS, item_emu_Mat56ELD2D, 305) {}
 item(FEAT_TRAINS, item_dmu_omC901, 306) {}
+item(FEAT_TRAINS, item_dmu_omC1921, 307) {}
