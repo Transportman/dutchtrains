@@ -30,6 +30,7 @@ if (param_vehicle_names == 1) {
     item(FEAT_TRAINS, item_electric_NID) { property { name: string(str_electric_NID_t); } }
     
     //dmu
+    item(FEAT_TRAINS, item_dmu_omC901) { property { name: string(str_dmu_omC901_t); } }
     item(FEAT_TRAINS, item_dmu_Mat34) { property { name: string(str_dmu_Mat34_t); } }
     item(FEAT_TRAINS, item_dmu_DE1) { property { name: string(str_dmu_DE1_t); } }
     item(FEAT_TRAINS, item_dmu_DE2) { property { name: string(str_dmu_DE2_t); } }

@@ -229,6 +229,8 @@ str_electric_gen9_HS001 :HS-1 (Elektrisch)
 str_electric_gen9_HS002 :HS-2 (Elektrisch)
 
 #dmu
+str_dmu_omC901          :omC 901-916 "Ome Cees" (Diesel)
+str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diesel)
 str_dmu_omBC2901        :omBC 2901-2908 (Diesel)
 str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diesel)
 str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diesel)
@@ -420,6 +422,7 @@ str_purchase_svc_m          :post
 str_purchase_svc_M          :metro
 str_purchase_svc_x          :directie
 
+str_purchase_len_1_04       :1 bak (0.4)
 str_purchase_len_1_05       :1 bak (0.5)
 str_purchase_len_2_10       :2 bakken (1.0)
 str_purchase_len_2_12       :2 bakken (1.2)

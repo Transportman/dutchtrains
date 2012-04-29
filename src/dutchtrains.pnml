@@ -166,6 +166,8 @@
 #include "src/dmu/NS20_item.pnml"
 #include "src/dmu/omBC2901_graphics.pnml"
 #include "src/dmu/omBC2901_item.pnml"
+#include "src/dmu/omC901_graphics.pnml"
+#include "src/dmu/omC901_item.pnml"
 
 //emu
 #include "src/emu/mP_graphics.pnml"
