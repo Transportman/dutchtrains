@@ -42,6 +42,9 @@ if (param_vehicle_names == 1) {
     
     //emu
     item(FEAT_TRAINS, item_emu_Mat24) { property { name: string(str_emu_Mat24_t); } }
+    item(FEAT_TRAINS, item_emu_Mat54ELD2) { property { name: string(str_emu_Mat54ELD2); } }
+    item(FEAT_TRAINS, item_emu_Mat54ELD4) { property { name: string(str_emu_Mat54ELD4); } }
+    item(FEAT_TRAINS, item_emu_Mat56ELD2) { property { name: string(str_emu_Mat56ELD2); } }
     item(FEAT_TRAINS, item_emu_V250) { property { name: string(str_emu_V250_t); } }
     item(FEAT_TRAINS, item_emu_ICM3) { property { name: string(str_emu_ICM3_t); } }
     item(FEAT_TRAINS, item_emu_ICM4) { property { name: string(str_emu_ICM4_t); } }
