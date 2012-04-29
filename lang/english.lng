@@ -445,6 +445,9 @@ str_purchase_len_10_50      :10 units (5.0)
 str_purchase_lsp_5          :low (5/t)
 str_purchase_lsp_20         :high (20/t)
 
+str_purchase_spc_eld        :With baggage compartment refittable to express cargoes.
+str_purchase_spc_el_eld     :With baggage compartment refittable to express cargoes or passengers.
+
 str_purchase_steam_HSM126   :Previously known as: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :Previously known as: {SILVER} HSM 501-535
 str_purchase_steam_SS700    :Previously known as: {SILVER} SS 685-778, 785-799
@@ -461,7 +464,7 @@ str_purchase_electric_NS1100:Refurbished 1979: {YELLOW}+4% weight, +1/8 length
 str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2
 
 str_purchase_emu_ZHESM_mBC  :Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900
-str_purchase_emu_Mat36ELD3  :Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8
+str_purchase_emu_Mat36ELD3  :With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8
 str_purchase_emu_ICE3M      :Also known as: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later known as: {SILVER} NS B9900

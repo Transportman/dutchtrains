@@ -436,6 +436,9 @@ str_purchase_len_10_50      :10 bakken (5.0)
 str_purchase_lsp_5          :laag (5/t)
 str_purchase_lsp_20         :hoog (20/t)
 
+str_purchase_spc_eld        :Met bagagecompartiment ombouwbaar tot expresvracht.
+str_purchase_spc_el_eld     :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.
+
 str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :Voorheen bekend als: {SILVER} HSM 501-535
 str_purchase_steam_SS700    :Voorheen bekend als: {SILVER} SS 685-778, 785-799
@@ -452,7 +455,7 @@ str_purchase_electric_NS1100:Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte
 str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2
 
 str_purchase_emu_ZHESM_mBC  :Gereviseerd 1926: {YELLOW}+150% kracht, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900
-str_purchase_emu_Mat36ELD3  :Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8
+str_purchase_emu_Mat36ELD3  :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.{}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8
 str_purchase_emu_ICE3M      :Ook bekend als: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:{BLACK}Later bekend als: {SILVER} NS B9900
