@@ -34,6 +34,8 @@ str_cargo_subtype_blue_greyish      :> Grijsblauwe livery
 str_cargo_subtype_lighterblue       :> Enigszins lichter blauwe kleurstelling
 str_cargo_subtype_blue_banners      :> Blauwe kleurstelling met reclamebanen
 str_cargo_subtype_blue_yellow       :> Blauwe kleurstelling met gele strepen
+str_cargo_subtype_blue_lightyellow  :> Blauwe kleurstelling met lichtgele strepen
+str_cargo_subtype_blue_darkyellow   :> Blauwe kleurstelling met donkergele strepen
 str_cargo_subtype_blue_white        :> Blauwe/witte kleurstelling
 str_cargo_subtype_brown             :> Bruine kleurstelling
 str_cargo_subtype_brown_yellowfront :> Bruine kleurstelling met gele neus
@@ -266,6 +268,7 @@ str_emu_Mat46ELD2       :Mat '46 ElD2 (Elektrisch)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Elektrisch)
 str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q (Elektrisch)
 str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P (Elektrisch)
+str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux (Elektrisch)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Elektrisch)
 str_emu_Mat64PlanT      :Mat '64 Plan T (Elektrisch)
 str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Elektrisch)

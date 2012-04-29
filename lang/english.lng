@@ -36,6 +36,8 @@ str_cargo_subtype_blue_greyish      :> Greyish Blue livery
 str_cargo_subtype_lighterblue       :> Slightly lighter blue livery
 str_cargo_subtype_blue_banners      :> Blue livery w/ banners
 str_cargo_subtype_blue_yellow       :> Blue livery w/ yellow stripes
+str_cargo_subtype_blue_lightyellow  :> Blue livery w/ light yellow stripes
+str_cargo_subtype_blue_darkyellow   :> Blue livery w/ dark yellow stripes
 str_cargo_subtype_blue_white        :> Blue/white livery
 str_cargo_subtype_brown             :> Brown livery
 str_cargo_subtype_brown_yellowfront :> Brown livery w/ yellow front
@@ -275,6 +277,7 @@ str_emu_Mat46ELD2       :Mat '46 ElD2 (Electric)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Electric)
 str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q (Electric)
 str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P (Electric)
+str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux (Electric)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Electric)
 str_emu_Mat64PlanT      :Mat '64 Plan T (Electric)
 str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Electric)
