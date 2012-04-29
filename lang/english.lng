@@ -241,6 +241,7 @@ str_electric_gen9_HS002 :HS-2 (Electric)
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diesel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diesel)
 str_dmu_omC1921         :omC 1921-1931 (Diesel)
+str_dmu_omBC1901        :omBC 1901-2910 (Diesel)
 str_dmu_omBC2901        :omBC 2901-2908 (Diesel)
 str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diesel)
 str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diesel)
@@ -466,6 +467,8 @@ str_purchase_diesel_RN232   :Previously known as: {SILVER} DB BR 232
 
 str_purchase_electric_NS1100:Refurbished 1979: {YELLOW}+4% weight, +1/8 length
 str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2
+
+str_purchase_dmu_omBC1901   :Purchased from  1929: {YELLOW}+41% weight, +233% power, +7% speed, +23% running cost
 
 str_purchase_emu_ZHESM_mBC  :Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900
 str_purchase_emu_Mat36ELD3  :With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8

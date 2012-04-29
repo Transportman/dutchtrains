@@ -1,0 +1,96 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_dmu_omBC1901_purchase_greenyellow, "gfx/purchase/dmu/omBC1901_greenyellow.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_omBC1904_purchase_green, "gfx/purchase/dmu/omBC1904_green.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_dmu_omBC1901_purchase, current_year) {
+	0..1928: spriteset_dmu_omBC1901_purchase_greenyellow;
+    spriteset_dmu_omBC1904_purchase_green;
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_dmu_omBC1901_greenyellow, "gfx/dmu/omBC1900.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_dmu_omBC1901_green, "gfx/dmu/omBC1900.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_dmu_omBC1904_green, "gfx/dmu/omBC1900.png") {
+	template_2cc_88(1, 64)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_autolivery, date_of_last_service) {
+	0..date(1928,12,31): spriteset_dmu_omBC1901_greenyellow;
+    spriteset_dmu_omBC1901_green;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_purchaselivery, build_year) {
+	0..1928: spriteset_dmu_omBC1901_greenyellow;
+    spriteset_dmu_omBC1901_green;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_livery_options, cargo_subtype) {
+	1: switch_dmu_omBC1901_purchaselivery;
+    2: spriteset_dmu_omBC1901_greenyellow;
+    3: spriteset_dmu_omBC1901_green;
+    switch_dmu_omBC1901_autolivery;
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_livery, build_year) {
+    0..1928: switch_dmu_omBC1901_livery_options;
+    spriteset_dmu_omBC1904_green;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_subtype_text_options, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_lightyellow);
+    3: return string(str_cargo_subtype_green);
+    return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_subtype_text, build_year) {
+    0..1928: switch_dmu_omBC1901_subtype_text_options;
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* CARGO PROPERTY CALLBACKS
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_power, build_year) {
+    0..1928: return 75;
+    return 250;
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_speed, build_year) {
+    0..1928: return 75;
+    return 80;
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_weight, build_year) {
+    0..1928: return 34;
+    return 48;
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_running_cost_factor, build_year) {
+    0..1928: return 24;
+    return 28;
+}
