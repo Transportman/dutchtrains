@@ -10,77 +10,150 @@
 * PURCHASE
 */
 
-//graphics defined in ELD4
+spriteset(spriteset_emu_Mat54ELD2_greenred_purchase, "gfx/purchase/emu/Mat54ELD2_greenred.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat54ELD2_greenredmoustache_purchase, "gfx/purchase/emu/Mat54ELD2_greenredmoustache.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat54ELD2_greenyellow_purchase, "gfx/purchase/emu/Mat54ELD2_greenyellow.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat54ELD2_yellowblue_purchase, "gfx/purchase/emu/Mat54ELD2_yellowblue.png") {
+	template_purchase(0, 0)
+}
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_purchase, current_year) {
-	0..1961: spriteset_emu_Mat54ELD4_green_red_purchase;
-	1962..1967: spriteset_emu_Mat54ELD4_green_yellow_yellow_purchase;
-	spriteset_emu_Mat54ELD4_yellow_blue_purchase;
+	0..1958: spriteset_emu_Mat54ELD2_greenred_purchase;
+	1959..1961: spriteset_emu_Mat54ELD2_greenredmoustache_purchase;
+	1962..1968: spriteset_emu_Mat54ELD2_greenyellow_purchase;
+	spriteset_emu_Mat54ELD2_yellowblue_purchase;
 }
 
 /*
 * VEHICLE
 */
 
-//front part graphics in ELD4
-
 //green red
-spriteset(spriteset_emu_Mat54ELD2_green_red_back, "gfx/emu/Mat54.png") {
-	template_2cc_88(0, 60)
+spriteset(spriteset_emu_Mat54ELD2_greenred_front, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 1)
 }
-
-//green_yellow
-spriteset(spriteset_emu_Mat54ELD2_green_yellow_back, "gfx/emu/Mat54.png") {
-	template_2cc_88(0, 180)
+spriteset(spriteset_emu_Mat54ELD2_greenred_back, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 32)
 }
-
-//stoppertrain
-spriteset(spriteset_emu_Mat54ELD2_blue_yellow_back, "gfx/emu/Mat54.png") {
-	template_2cc_88(0, 300)
+//green red moustache
+spriteset(spriteset_emu_Mat54ELD2_greenredmoustache_front, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_Mat54ELD2_greenredmoustache_back, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 96)
+}
+//green yellow
+spriteset(spriteset_emu_Mat54ELD2_greenyellow_front, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_Mat54ELD2_greenyellow_back, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 160)
+}
+//green yellow blue
+spriteset(spriteset_emu_Mat54ELD2_greenyellowblue_front, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_Mat54ELD2_greenyellowblue_back, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 224)
+}
+//yellow blue
+spriteset(spriteset_emu_Mat54ELD2_yellowblue_front, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_emu_Mat54ELD2_yellowblue_back, "gfx/emu/Mat54ELD2.png") {
+	template_2cc_88(1, 288)
 }
 
 /*
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery, date_of_last_service) {
-	0..date(1961,12,31): spriteset_emu_Mat54ELD4_green_red_front;
-	date(1962,1,1)..date(1967,12,31): spriteset_emu_Mat54ELD4_green_yellow_front;
-	spriteset_emu_Mat54ELD4_blue_yellow_front;
+random_switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery_1959) {
+	58: spriteset_emu_Mat54ELD2_greenred_front;
+    10: spriteset_emu_Mat54ELD2_greenredmoustache_front;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery_1969_green, date_of_last_service) {
+	0..date(1971,12,31): spriteset_emu_Mat54ELD2_greenyellow_front;
+	spriteset_emu_Mat54ELD2_greenyellowblue_front;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery_1969) {
+	1: switch_emu_Mat54ELD2_autolivery_1969_green;
+    3: spriteset_emu_Mat54ELD2_yellowblue_front;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery_1956, date_of_last_service) {
+	0..date(1958,12,31): spriteset_emu_Mat54ELD2_greenred_front;
+	date(1959,1,1)..date(1961,12,31): switch_emu_Mat54ELD2_autolivery_1959;
+	date(1962,1,1)..date(1968,12,31): spriteset_emu_Mat54ELD2_greenyellow_front;
+	date(1969,1,1)..date(1979,12,31): switch_emu_Mat54ELD2_autolivery_1969;
+    spriteset_emu_Mat54ELD2_yellowblue_front;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery, build_year) {
+	0..1968: switch_emu_Mat54ELD2_autolivery_1956;
+	spriteset_emu_Mat54ELD2_yellowblue_front;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_purchaselivery, build_year) {
-	0..1961: spriteset_emu_Mat54ELD4_green_red_front;
-	1962..1967: spriteset_emu_Mat54ELD4_green_yellow_front;
-	spriteset_emu_Mat54ELD4_blue_yellow_front;
+	0..1958: spriteset_emu_Mat54ELD2_greenred_front;
+	1959..1961: spriteset_emu_Mat54ELD2_greenredmoustache_front;
+	1962..1968: spriteset_emu_Mat54ELD2_greenyellow_front;
+	spriteset_emu_Mat54ELD2_yellowblue_front;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_livery, cargo_subtype) {
 	1: switch_emu_Mat54ELD2_purchaselivery;
-    2: spriteset_emu_Mat54ELD4_green_red_front;
-    3: spriteset_emu_Mat54ELD4_green_yellow_front;
-    4: spriteset_emu_Mat54ELD4_blue_yellow_front;
+    2: spriteset_emu_Mat54ELD2_greenred_front;
+    3: spriteset_emu_Mat54ELD2_greenredmoustache_front;
+    4: spriteset_emu_Mat54ELD2_greenyellow_front;
+    5: spriteset_emu_Mat54ELD2_greenyellowblue_front;
+    6: spriteset_emu_Mat54ELD2_yellowblue_front;
     switch_emu_Mat54ELD2_autolivery;
 }
 
 //D-part
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery, date_of_last_service) {
-	0..date(1961,12,31): spriteset_emu_Mat54ELD2_green_red_back;
-	date(1962,1,1)..date(1967,12,31): spriteset_emu_Mat54ELD2_green_yellow_back;
-	spriteset_emu_Mat54ELD2_blue_yellow_back;
+random_switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery_1959) {
+	58: spriteset_emu_Mat54ELD2_greenred_back;
+    10: spriteset_emu_Mat54ELD2_greenredmoustache_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery_1969_green, date_of_last_service) {
+	0..date(1971,12,31): spriteset_emu_Mat54ELD2_greenyellow_back;
+	spriteset_emu_Mat54ELD2_greenyellowblue_back;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery_1969) {
+	1: switch_emu_Mat54ELD2D_autolivery_1969_green;
+    3: spriteset_emu_Mat54ELD2_yellowblue_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery_1956, date_of_last_service) {
+	0..date(1958,12,31): spriteset_emu_Mat54ELD2_greenred_back;
+	date(1959,1,1)..date(1961,12,31): switch_emu_Mat54ELD2D_autolivery_1959;
+	date(1962,1,1)..date(1968,12,31): spriteset_emu_Mat54ELD2_greenyellow_back;
+	date(1969,1,1)..date(1979,12,31): switch_emu_Mat54ELD2D_autolivery_1969;
+    spriteset_emu_Mat54ELD2_yellowblue_back;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery, build_year) {
+	0..1968: switch_emu_Mat54ELD2D_autolivery_1956;
+	spriteset_emu_Mat54ELD2_yellowblue_back;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_purchaselivery, build_year) {
-	0..1961: spriteset_emu_Mat54ELD2_green_red_back;
-	1962..1967: spriteset_emu_Mat54ELD2_green_yellow_back;
-	spriteset_emu_Mat54ELD2_blue_yellow_back;
+	0..1958: spriteset_emu_Mat54ELD2_greenred_back;
+	1959..1961: spriteset_emu_Mat54ELD2_greenredmoustache_back;
+	1962..1968: spriteset_emu_Mat54ELD2_greenyellow_back;
+	spriteset_emu_Mat54ELD2_yellowblue_back;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_livery, cargo_subtype) {
 	1: switch_emu_Mat54ELD2D_purchaselivery;
-    2: spriteset_emu_Mat54ELD2_green_red_back;
-    3: spriteset_emu_Mat54ELD2_green_yellow_back;
-    4: spriteset_emu_Mat54ELD2_blue_yellow_back;
+    2: spriteset_emu_Mat54ELD2_greenred_back;
+    3: spriteset_emu_Mat54ELD2_greenredmoustache_back;
+    4: spriteset_emu_Mat54ELD2_greenyellow_back;
+    5: spriteset_emu_Mat54ELD2_greenyellowblue_back;
+    6: spriteset_emu_Mat54ELD2_yellowblue_back;
     switch_emu_Mat54ELD2D_autolivery;
 }
 
@@ -89,8 +162,10 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green_red);
-    3: return string(str_cargo_subtype_green_yellow);
-    4: return string(str_cargo_subtype_yellow_blue);
+    3: return string(str_cargo_subtype_green_moustache);
+    4: return string(str_cargo_subtype_green_yellow);
+    5: return string(str_cargo_subtype_green_yellow_blue);
+    6: return string(str_cargo_subtype_yellow_blue);
     return CB_RESULT_NO_TEXT;
 }
 
