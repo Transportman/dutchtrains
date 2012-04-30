@@ -162,27 +162,18 @@ MU livery refits
     If you combine multiple MUs in a single train, the livery refit of 
     the first MU will be applied to all subsequent MUs (#3818).
     
-Vehicle names
-    Vehicle names are somewhat inconsistent and will be reviewed (#3646).
-    
-Sparks and smoke
-    MUs will emit sparks or smoke from every vehicle part,
-    not just the parts that have an engine or exhaust (#3685).
-    
-Changing vehicle properties
-    Some vehicles change their properties (speed, power, etc.) during
-    their lifetime, but you are not informed by that (#3686).
-    
 Loading speed
     The loading speed of wagons, carriages and multiple units is not
     yet optimized. Currently all have a loading speed of 5/tick, except
     metros which have a loading speed of 20/tick (#3905).
     
-Bollenwagen missing
-    The bollenwagen was in v1, but is not in this release. It is 
-    currently unknown who drew this for v1, so we don't have permission
-    to include it in this release. This will either be sorted or it 
-    will be redrawn later (#3872).
+Additional steam engines
+    The selection of steam engines is currently incomplete, not 
+    allowing you to start in 1839. (#3952)
+    
+Cargo wagon properties
+    Cargo wagon properties like capacity, speed, weight etc. are 
+    currently suboptimal and need to be reviewed (#3953)
 
 
 

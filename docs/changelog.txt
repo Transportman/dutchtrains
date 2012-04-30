@@ -1,7 +1,65 @@
 Dutch Trainset Changelog
 ========================
 
+2.0.0-alpha3 (2012/04/30)
+-------------------------
+- Feature: additional purchase menu text for diesels (#3686)
+- Feature: additional purchase menu text for DMUs (#3686)
+- Feature: additional purchase menu text for electrics (#3686)
+- Feature: additional purchase menu text for EMUs (#3686)
+- Feature: additional purchase menu text for steamers (#3686)
+- Feature: consistency of vehicle names (#3646, #3686)
+- Feature: correct smoke for DMUs (#3685)
+- Feature: correct sparks for Matx EMUs (#3685)
+- Feature: correct sparks for remaining EMUs (#3685)
+- Feature: Dm wagon (graphics by Voyager One) (#3899)
+- Feature: Eass wagon (graphics by Purno) (templated by Transportman) (#3891)
+- Feature: Es wagon (graphics by Purno) (templated by Transportman) (#3893)
+- Feature: graphical improvements for some HSM and SS coaches (by Voyager One) (#3915)
+- Feature: Gs boxcar (graphics by Voyager One) (#3899)
+- Feature: GTUW wagon (graphics by Purno) (templated by Mahoo76) (#3890)
+- Feature: Herik Rail livery for Dm baggage wagon (graphics by Voyager One) (#3917)
+- Feature: improved and more liveries for Mat '54 ELD2 (graphics by Voyager One) (#3937)
+- Feature: improved and more liveries for Mat '54 ELD4 (graphics by Voyager One) (#3937)
+- Feature: indicate baggage compartment in purchase menu description (#3686)
+- Feature:  Mat '56 (graphics by Voyager One) (#3937)
+- Feature: more power and TE for ZHESM mBC after 1925
+- Feature: new graphics for Hbbkkss (graphics by Voyager One) (breaks compatibility) (#3899)
+- Feature: nickname of Mat '54/'56
+- Feature: NS 4600 (graphics by Snail) (templated by Transportman) (#3913)
+- Feature: NS 4700 (graphics by Snail) (templated by Transportman) (#3913)
+- Feature: NS 5000-II (graphics by Snail) (templated by Transportman) (#3913)
+- Feature: NS 6200 (graphics by Snail) (templated by Transportman) (#3913)
+- Feature: NS 6300 (graphics by Snail) (templated by Transportman) (#3913)
+- Feature: omBC 1901-1910 (graphics by Voyager One) (#3945)
+- Feature: omC 1921-1931 (graphics by Voyager One) (#3945)
+- Feature: omC 901-916 (graphics by Voyager One) (#3938)
+- Feature: Pd 7011-7021 mailcoach (graphics by Voyager One) (#3899)
+- Feature: SS D-II baggage wagon (graphics by Voyager One) (#3899)
+- Feature: SS D-III baggage wagon (graphics by Voyager One) (#3899)
+- Feature: Ubcs "bollenwagen" (graphics by Voyager One) (#3872, #3951)
+- Feature: Uh wagon (graphics by Purno) (templated by Mahoo76) (#3850)
+- Feature: ZHESM B carriage (graphics by Purno) (templated by Mahoo76) (#3850)
+- Feature: ZHESM mBC motorcar (graphics by Purno) (templated by Mahoo76) (#3850)
+- Change: allow goods in the heavy flatcar
+- Change: have indication of wagon size before UIC type
+- Change: properties of HSM D-IV baggage carriage
+- Change: purchase menu alternative vehicle names (#3686)
+- Change: show complete and only the cab control in purchase for wagons which have one (#3911)
+- Change: unify purchase menu text for metros (#3686)
+- Fix: alignment of some carriages (#3933)
+- Fix: cargo capacities for DMUs (#3918)
+- Fix: cargo capacities for EMUs (#3918)
+- Fix: cargo capacities for metros (#3918)
+- Fix: cargo capacities for passenger carriages (#3918)
+- Fix: cargo capacities for wagons (#3918)
+- Fix: last part of Plan T had wrong livery after 1955 with autolivery and purchaselivery option
+- Fix: Typo in Dutch translation
+- Fix: weight of GTW2/8
+
+
 2.0.0-alpha2 (2012/04/14)
+-------------------------
 - Feature: Plan E coach
 - Feature: Plan C mailcoach
 - Feature: D-IV baggage wagon
