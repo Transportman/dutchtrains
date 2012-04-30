@@ -189,6 +189,7 @@ sort(FEAT_TRAINS, [
     item_wagons_gen2_selfdischarger,
     item_wagons_gen2_stake,
     item_wagons_gen2_tanker,
+    item_wagons_gen4_Ubcs,
     item_wagons_gen4_GTUW,
     item_wagons_gen4_Uh,
     item_wagons_gen4_Gs,

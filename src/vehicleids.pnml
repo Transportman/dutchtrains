@@ -200,3 +200,4 @@ item(FEAT_TRAINS, item_emu_Mat56ELD2D, 305) {}
 item(FEAT_TRAINS, item_dmu_omC901, 306) {}
 item(FEAT_TRAINS, item_dmu_omC1921, 307) {}
 item(FEAT_TRAINS, item_dmu_omBC1901, 308) {}
+item(FEAT_TRAINS, item_wagons_gen4_Ubcs, 309) {}

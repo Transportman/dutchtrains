@@ -392,6 +392,8 @@
 #include "src/wagons/gen5_Es_item.pnml"
 #include "src/wagons/gen4_Gs_graphics.pnml"
 #include "src/wagons/gen4_Gs_item.pnml"
+#include "src/wagons/gen4_Ubcs_graphics.pnml"
+#include "src/wagons/gen4_Ubcs_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"
