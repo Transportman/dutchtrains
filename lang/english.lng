@@ -133,7 +133,8 @@ str_cargo_subtype_Crossrail         :> Crossrail livery
 str_cargo_subtype_DBSchenker        :> DB Schenker livery
 str_cargo_subtype_DLC               :> DLC livery
 str_cargo_subtype_ERS               :> ERS livery
-str_cargo_subtype_EETC              :> Euro Express Treincharter Livery
+str_cargo_subtype_EETC              :> Euro Express Treincharter livery
+str_cargo_subtype_HerikRail         :> Herik Rail livery
 str_cargo_subtype_HGK               :> HGK livery
 str_cargo_subtype_HSM               :> Hollandsche IJzeren Spoorweg-Maatschappij livery
 str_cargo_subtype_HUSA              :> HUSA livery

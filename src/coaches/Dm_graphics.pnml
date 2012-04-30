@@ -19,11 +19,15 @@ spriteset(spriteset_coaches_Dm_railion_purchase, "gfx/purchase/coaches/Dm_railio
 spriteset(spriteset_coaches_Dm_one_purchase, "gfx/purchase/coaches/Dm_one.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_coaches_Dm_herikrail_purchase, "gfx/purchase/coaches/Dm_herikrail.png") {
+	template_purchase(0, 0)
+}
 
 switch(FEAT_TRAINS, PARENT, switch_coaches_Dm_purchase, current_year) {
 	0..2003: spriteset_coaches_Dm_one_purchase;
+    2004..2006: spriteset_coaches_Dm_railion_purchase;
 	2007..2010: spriteset_coaches_Dm_ns_purchase;
-    spriteset_coaches_Dm_railion_purchase;
+    spriteset_coaches_Dm_herikrail_purchase;
 }
 
 /*
@@ -39,6 +43,9 @@ spriteset(spriteset_coaches_Dm_railion, "gfx/coaches/Dm.png") {
 spriteset(spriteset_coaches_Dm_one, "gfx/coaches/Dm.png") {
 	template_2cc_88(1, 64)
 }
+spriteset(spriteset_coaches_Dm_herikrail, "gfx/coaches/Dm.png") {
+	template_2cc_88(1, 96)
+}
 
 /*
 * LIVERY SELECTION
@@ -46,14 +53,16 @@ spriteset(spriteset_coaches_Dm_one, "gfx/coaches/Dm.png") {
 
 switch(FEAT_TRAINS, PARENT, switch_coaches_Dm_autolivery, date_of_last_service) {
 	0..date(2003,12,31): spriteset_coaches_Dm_one;
+	date(2004,1,1)..date(2006,12,31): spriteset_coaches_Dm_railion;
 	date(2007,1,1)..date(2010,12,31): spriteset_coaches_Dm_ns;
-    spriteset_coaches_Dm_railion;
+    spriteset_coaches_Dm_herikrail;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_Dm_purchaselivery, build_year) {
 	0..2003: spriteset_coaches_Dm_one;
+	2004..2006: spriteset_coaches_Dm_railion;
 	2007..2010: spriteset_coaches_Dm_ns;
-    spriteset_coaches_Dm_railion;
+    spriteset_coaches_Dm_herikrail;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_Dm_livery, cargo_subtype) {
@@ -61,6 +70,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_Dm_livery, cargo_subtype) {
     2: spriteset_coaches_Dm_one;
     3: spriteset_coaches_Dm_ns;
     4: spriteset_coaches_Dm_railion;
+    5: spriteset_coaches_Dm_herikrail;
     switch_coaches_Dm_autolivery;
 }
 
@@ -71,5 +81,6 @@ switch(FEAT_TRAINS, SELF, switch_coaches_Dm_subtype_text, cargo_subtype) {
     2: return string(str_cargo_subtype_overnightexpress);
     3: return string(str_cargo_subtype_ns_ic);
     4: return string(str_cargo_subtype_Railion_regular);
+    5: return string(str_cargo_subtype_HerikRail);
     return CB_RESULT_NO_TEXT;
 }

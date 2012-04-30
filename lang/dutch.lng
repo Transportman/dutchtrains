@@ -125,6 +125,7 @@ str_cargo_subtype_DBSchenker        :> DB Schenker kleurstelling
 str_cargo_subtype_DLC               :> DLC kleurstelling
 str_cargo_subtype_ERS               :> ERS kleurstelling
 str_cargo_subtype_EETC              :> Euro Express Treincharter kleurstelling
+str_cargo_subtype_HerikRail         :> Herik Rail kleurstelling
 str_cargo_subtype_HGK               :> HGK kleurstelling
 str_cargo_subtype_HSM               :> Hollandsche IJzeren Spoorweg-Maatschappij kleurstelling
 str_cargo_subtype_HUSA              :> HUSA kleurstelling
