@@ -326,16 +326,16 @@ str_wagons_gen2_tanker              :Tanker Wagon (S)
 str_wagons_gen2_stake               :Stake Wagon (S)
 str_wagons_gen2_refrigerator        :Refrigerator Wagon (S)
 str_wagons_gen2_selfdischarger      :Selfdischarger (S)
-str_wagons_gen4_Ubcs                :Silo Wagon Ubcs "Bollenwagen" (M)
-str_wagons_gen4_Ubcs_t              :Silo Wagon Ubcs "Spherewagon" (M)
-str_wagons_gen4_GTUW                :Open Wagon GTUW (M)
-str_wagons_gen4_Uh                  :Tanker Wagon Uh (M)
-str_wagons_gen4_Gs                  :Boxcar Gs (M)
+str_wagons_gen4_Ubcs                :Silo Wagon (M) Ubcs "Bollenwagen"
+str_wagons_gen4_Ubcs_t              :Silo Wagon (M) Ubcs "Spherewagon"
+str_wagons_gen4_GTUW                :Open Wagon (M) GTUW
+str_wagons_gen4_Uh                  :Tanker Wagon (M) Uh
+str_wagons_gen4_Gs                  :Boxcar (M) Gs
 str_wagons_gen5_silo                :Silo Wagon (M)
 str_wagons_gen5_slidingdoor         :Sliding Door Wagon (M)
 str_wagons_gen5_livestock           :Livestock Wagon (M)
 str_wagons_gen5_stake               :Stake Wagon (M)
-str_wagons_gen5_Es                  :Open Wagon Es (M)
+str_wagons_gen5_Es                  :Open Wagon (M) Es
 str_wagons_gen5_refrigerator        :Refrigerator Wagon (L)
 str_wagons_gen5_tanker              :Tanker Wagon (L)
 str_wagons_gen5_selfdischarger      :Selfdischarger (L)
@@ -346,7 +346,7 @@ str_wagons_gen6_goods               :Goods Wagon (L)
 str_wagons_gen6_containercarrier    :Container Carrier (M)
 str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (XL)
 str_wagons_gen9_silowagon           :Silo Wagon (L)
-str_wagons_gen7_Eass                :Open Wagon Eass (L)
+str_wagons_gen7_Eass                :Open Wagon (L) Eass
 str_wagons_gen7_cartransporter      :Car Transporter (L)
 str_wagons_gen7_containercarrier    :Container Carrier (L)
 
