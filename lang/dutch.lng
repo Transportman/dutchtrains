@@ -118,6 +118,7 @@ str_cargo_subtype_ACTS              :> ACTS kleurstelling
 str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blauw/geel) kleurstelling
 str_cargo_subtype_ACTS_grey_green   :> ACTS (grijs/groen) kleurstelling
 str_cargo_subtype_Arriva            :> Arriva kleurstelling
+str_cargo_subtype_Arriva_spurt      :> Arriva "Spurt" kleurstelling
 str_cargo_subtype_Breng             :> Breng kleurstelling
 str_cargo_subtype_Captrain          :> Captrain kleurstelling
 str_cargo_subtype_Crossrail         :> Crossrail kleurstelling
@@ -148,6 +149,7 @@ str_cargo_subtype_Strukton          :> Strukton kleurstelling
 str_cargo_subtype_Syntus            :> Syntus kleurstelling
 str_cargo_subtype_Twents            :> Twents kleurstelling
 str_cargo_subtype_Veolia            :> Veolia kleurstelling
+str_cargo_subtype_Veolia_velios     :> Veolia "Velios" kleurstelling
 str_cargo_subtype_Veolia_white_red  :> Veolia (wit/rood) kleurstelling
 str_cargo_subtype_Veolia_black      :> Veolia (zwart) kleurstelling
 str_cargo_subtype_VOSlogistics      :> VOS Logistics kleurstelling

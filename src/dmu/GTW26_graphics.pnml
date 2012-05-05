@@ -16,10 +16,14 @@ spriteset(spriteset_dmu_GTW26_purchase_arriva, "gfx/purchase/dmu/GTW26_arriva.pn
 spriteset(spriteset_dmu_GTW26_purchase_veolia, "gfx/purchase/dmu/GTW26_veolia.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_dmu_GTW26_purchase_veolia2, "gfx/purchase/dmu/GTW26_veolia2.png") {
+	template_purchase(0, 0)
+}
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_purchase, current_year) {
 	0..2006: spriteset_dmu_GTW26_purchase_arriva;
-    spriteset_dmu_GTW26_purchase_veolia;
+	2007..2007: spriteset_dmu_GTW26_purchase_veolia;
+    spriteset_dmu_GTW26_purchase_veolia2;
 }
 
 /*
@@ -44,13 +48,24 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios, (position_in_vehid_c
     spriteset_dmu_GTW_velios_front;
 }
 
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios2, (position_in_vehid_chain % 3)) {
+	1: spriteset_dmu_GTW_velios_powerpack2_dmu;
+    2: spriteset_dmu_GTW_velios_back;
+    spriteset_dmu_GTW_velios_front;
+}
+
 /*
 * LIVERY SELECTION
 */
 
+switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_velios, date_of_last_service) {
+	0..date(2007,12,31): switch_dmu_GTW26_position_velios;
+    switch_dmu_GTW26_position_velios2;
+}
+
 random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery_arriva_veolia) {
 	1: switch_dmu_GTW26_position_spurt;
-    1: switch_dmu_GTW26_position_velios;
+    1: switch_dmu_GTW26_velios;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery, build_year) {
@@ -60,15 +75,15 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery, build_year) {
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_livery, cargo_subtype) {
     1: switch_dmu_GTW26_position_spurt;
-    2: switch_dmu_GTW26_position_velios;
+    2: switch_dmu_GTW26_velios;
     switch_dmu_GTW26_randomlivery;
 }
 
 // CARGO SUBTYPE CALLBACK
 switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_random);
-    1: return string(str_cargo_subtype_Arriva);
-    2: return string(str_cargo_subtype_Veolia);
+    1: return string(str_cargo_subtype_Arriva_spurt);
+    2: return string(str_cargo_subtype_Veolia_velios);
     return CB_RESULT_NO_TEXT;
 }
 
