@@ -128,6 +128,7 @@ str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blue/yellow) livery
 str_cargo_subtype_ACTS_grey_green   :> ACTS (grey/green) livery
 str_cargo_subtype_Arriva            :> Arriva livery
 str_cargo_subtype_Arriva_spurt      :> Arriva "Spurt" livery
+str_cargo_subtype_Arriva_vechtdallijnen :> Arriva "Vechtdallijnen" livery
 str_cargo_subtype_Breng             :> Breng livery
 str_cargo_subtype_Captrain          :> Captrain livery
 str_cargo_subtype_Crossrail         :> Crossrail livery
@@ -309,6 +310,8 @@ str_emu_ICE3M           :ICE 3M (Electric)
 str_emu_V250            :Fyra V250 "Albatros" (Electric)
 str_emu_V250_t          :Fyra V250 "Albatross" (Electric)
 str_emu_gen9_HST        :P8001 (Electric)
+str_emu_GTW26           :GTW 2/6 (Electric)
+str_emu_GTW28           :GTW 2/8 (Electric)
 str_emu_Protos          :Protos (Electric)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)

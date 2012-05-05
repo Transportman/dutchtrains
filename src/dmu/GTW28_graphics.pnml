@@ -67,9 +67,9 @@ spriteset(spriteset_dmu_GTW_velios_middle, "gfx/dmu/GTW.png") {
 spriteset(spriteset_dmu_GTW_velios_powerpack_dmu, "gfx/dmu/GTW.png") {
 	template_2cc_38(1, 256)
 }
-spriteset(spriteset_dmu_GTW_velios_powerpack_emu, "gfx/dmu/GTW.png") {
+/* spriteset(spriteset_dmu_GTW_velios_powerpack_emu, "gfx/dmu/GTW.png") {
 	template_2cc_38(1, 288)
-}
+} */
 spriteset(spriteset_dmu_GTW_velios_powerpack2_dmu, "gfx/dmu/GTW.png") {
 	template_2cc_38(1, 576)
 }

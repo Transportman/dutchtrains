@@ -1,0 +1,127 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_GTW28_purchase_arriva, "gfx/purchase/emu/GTW28_arriva.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_GTW28_purchase_veolia, "gfx/purchase/emu/GTW28_veolia.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_GTW28_purchase_vechtdallijnen, "gfx/purchase/emu/GTW28_vechtdallijnen.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_purchase, current_year) {
+	0..2007: spriteset_emu_GTW28_purchase_arriva;
+    2008..2012: spriteset_emu_GTW28_purchase_veolia;
+    spriteset_emu_GTW28_purchase_vechtdallijnen;
+}
+
+/*
+* VEHICLE
+*/
+
+//spurt
+//graphics from GTW 2/8 dmu
+
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_spurt, (position_in_vehid_chain % 4)) {
+	1: spriteset_dmu_GTW_spurt_powerpack_emu;
+    2: spriteset_dmu_GTW_spurt_middle;
+    3: spriteset_dmu_GTW_spurt_back;
+    spriteset_dmu_GTW_spurt_front;
+}
+
+//velios
+//graphics from GTW 2/8 dmu
+
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_velios2, (position_in_vehid_chain % 4)) {
+	1: spriteset_dmu_GTW_velios_powerpack2_emu;
+    2: spriteset_dmu_GTW_velios_middle;
+    3: spriteset_dmu_GTW_velios_back;
+    spriteset_dmu_GTW_velios_front;
+}
+
+//vechtdallijnen
+//graphics from GTW 2/8 dmu
+
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_vechtdallijnen, (position_in_vehid_chain % 4)) {
+	1: spriteset_dmu_GTW_vechtdallijnen_powerpack_emu;
+    2: spriteset_dmu_GTW_vechtdallijnen_middle;
+    3: spriteset_dmu_GTW_vechtdallijnen_back;
+    spriteset_dmu_GTW_vechtdallijnen_front;
+}
+
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_randomlivery_arriva_veolia_vechtdallijnen) {
+	1: switch_emu_GTW28_position_spurt;
+    1: switch_emu_GTW28_position_velios2;
+    1: switch_emu_GTW28_position_vechtdallijnen;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_randomlivery_arriva_veolia) {
+	1: switch_emu_GTW28_position_spurt;
+    1: switch_emu_GTW28_position_velios2;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_randomlivery, build_year) {
+	0..2007: switch_emu_GTW28_position_spurt;
+    2008..2012: switch_emu_GTW28_randomlivery_arriva_veolia;
+    switch_emu_GTW28_randomlivery_arriva_veolia_vechtdallijnen;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_livery, cargo_subtype) {
+    1: switch_emu_GTW28_position_spurt;
+    2: switch_emu_GTW28_position_velios2;
+    3: switch_emu_GTW28_position_vechtdallijnen;
+    switch_emu_GTW28_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_Arriva_spurt);
+    2: return string(str_cargo_subtype_Veolia_velios);
+    3: return string(str_cargo_subtype_Arriva_vechtdallijnen);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_articulated, extra_callback_info1) {
+    1..3: return item_emu_GTW28;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* SHORTEN VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_length, (position_in_vehid_chain % 4)) {
+    1: return 3;
+    2: return 7;
+    return 8;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

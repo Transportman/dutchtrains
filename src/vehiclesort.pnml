@@ -123,6 +123,8 @@ sort(FEAT_TRAINS, [
     item_emu_IRMVI,
     item_emu_TGV,
     item_emu_ICE3M,
+    item_emu_GTW26,
+    item_emu_GTW28,
     item_emu_Protos,
     item_emu_SLTIV,
     item_emu_SLTVI,
