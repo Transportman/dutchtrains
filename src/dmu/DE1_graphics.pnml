@@ -68,15 +68,15 @@ random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_3_1) {
 	1: spriteset_dmu_DE1_redyellow; //redyellow
     1: spriteset_dmu_DE1_redyellowblue; //redyellowblue
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_1, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_1_1_1, date_of_last_service) {
 	0..date(1969,12,31): spriteset_dmu_DE1_bluered;
 	spriteset_dmu_DE1_redyellow;
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_2, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_1_1_2, date_of_last_service) {
 	0..date(1969,12,31): spriteset_dmu_DE1_blueyellow;
 	spriteset_dmu_DE1_redyellow;
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_3, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_1_1_3, date_of_last_service) {
 	0..date(1967,12,31): spriteset_dmu_DE1_redyellow;
 	switch_dmu_DE1_autolivery_1_1_1_3_1;
 }
@@ -85,11 +85,11 @@ random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1) {
     5:  switch_dmu_DE1_autolivery_1_1_1_2; //blueyellow
     15: switch_dmu_DE1_autolivery_1_1_1_3; //redyellow
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_2, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_2, date_of_last_service) {
 	0..date(1961,12,31): spriteset_dmu_DE1_blueredmoustache;
 	switch_dmu_DE1_autolivery_1_1_1_3;
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_1, date_of_last_service) {
 	0..date(1958,12,31): spriteset_dmu_DE1_blueredsilverroof;
 	date(1959,1,1)..date(1959,12,31): spriteset_dmu_DE1_bluered;
 	switch_dmu_DE1_autolivery_1_1_1;
@@ -98,7 +98,7 @@ random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1) {
 	25: switch_dmu_DE1_autolivery_1_1; //blueredsilver
     5:  switch_dmu_DE1_autolivery_1_2; //blueredmoustache
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery, date_of_last_service) {
 	0..date(1956,12,31): spriteset_dmu_DE1_blueredsilverroof;
 	switch_dmu_DE1_autolivery_1;
 }
