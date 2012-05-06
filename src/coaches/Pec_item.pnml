@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_coaches_Pec) {
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
-        CARGODEF_BAGGAGE
+        CARGODEF_MAIL_ARMOURED
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
