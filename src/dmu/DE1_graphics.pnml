@@ -10,50 +10,115 @@
 * PURCHASE
 */
 
-spriteset(spriteset_dmu_DE1_blue_purchase, "gfx/purchase/dmu/DE1_blue.png") {
+spriteset(spriteset_dmu_DE1_blueredsilverroof_purchase, "gfx/purchase/dmu/DE1_blueredsilverroof.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_dmu_DE1_red_purchase, "gfx/purchase/dmu/DE1_red.png") {
+spriteset(spriteset_dmu_DE1_bluered_purchase, "gfx/purchase/dmu/DE1_bluered.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_DE1_blueredmoustache_purchase, "gfx/purchase/dmu/DE1_blueredmoustache.png") {
+	template_purchase(0, 0)
+}
+/* spriteset(spriteset_dmu_DE1_blueyellow_purchase, "gfx/purchase/dmu/DE1_blueyellow.png") {
+	template_purchase(0, 0)
+} */
+spriteset(spriteset_dmu_DE1_redyellow_purchase, "gfx/purchase/dmu/DE1_redyellow.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_DE1_redyellowblue_purchase, "gfx/purchase/dmu/DE1_redyellowblue.png") {
 	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE1_livery_purchase, current_year) {
-	0..1964: spriteset_dmu_DE1_blue_purchase;
-    spriteset_dmu_DE1_red_purchase;
+	0..1956: spriteset_dmu_DE1_blueredsilverroof_purchase;
+	1957..1958: spriteset_dmu_DE1_blueredmoustache_purchase;
+	1959..1959: spriteset_dmu_DE1_bluered_purchase;
+	1960..1967: spriteset_dmu_DE1_redyellow_purchase;
+    spriteset_dmu_DE1_redyellowblue_purchase;
 }
 
 /*
 * VEHICLE
 */
 
-//blue
-spriteset(spriteset_dmu_DE1_blue, "gfx/dmu/DE1.png") {
-	template_2cc_88(0, 0)
+spriteset(spriteset_dmu_DE1_blueredsilverroof, "gfx/dmu/DE1.png") {
+	template_2cc_88(1, 1)
 }
-
-//red
-spriteset(spriteset_dmu_DE1_red, "gfx/dmu/DE1.png") {
-	template_2cc_88(0, 30)
+spriteset(spriteset_dmu_DE1_bluered, "gfx/dmu/DE1.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_dmu_DE1_blueredmoustache, "gfx/dmu/DE1.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_dmu_DE1_blueyellow, "gfx/dmu/DE1.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_dmu_DE1_redyellow, "gfx/dmu/DE1.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_dmu_DE1_redyellowblue, "gfx/dmu/DE1.png") {
+	template_2cc_88(1, 160)
 }
 
 /*
 * LIVERY SELECTION
 */
 
+random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_3_1) {
+	1: spriteset_dmu_DE1_redyellow; //redyellow
+    1: spriteset_dmu_DE1_redyellowblue; //redyellowblue
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_1, date_of_last_service) {
+	0..date(1969,12,31): spriteset_dmu_DE1_bluered;
+	spriteset_dmu_DE1_redyellow;
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_2, date_of_last_service) {
+	0..date(1969,12,31): spriteset_dmu_DE1_blueyellow;
+	spriteset_dmu_DE1_redyellow;
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_3, date_of_last_service) {
+	0..date(1967,12,31): spriteset_dmu_DE1_redyellow;
+	switch_dmu_DE1_autolivery_1_1_1_3_1;
+}
+random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1) {
+	5:  switch_dmu_DE1_autolivery_1_1_1_1; //bluered
+    5:  switch_dmu_DE1_autolivery_1_1_1_2; //blueyellow
+    15: switch_dmu_DE1_autolivery_1_1_1_3; //redyellow
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_2, date_of_last_service) {
+	0..date(1961,12,31): spriteset_dmu_DE1_blueredmoustache;
+	switch_dmu_DE1_autolivery_1_1_1_3;
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1, date_of_last_service) {
+	0..date(1958,12,31): spriteset_dmu_DE1_blueredsilverroof;
+	date(1959,1,1)..date(1959,12,31): spriteset_dmu_DE1_bluered;
+	switch_dmu_DE1_autolivery_1_1_1;
+}
+random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1) {
+	25: switch_dmu_DE1_autolivery_1_1; //blueredsilver
+    5:  switch_dmu_DE1_autolivery_1_2; //blueredmoustache
+}
 switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery, date_of_last_service) {
-	0..date(1964,12,31): spriteset_dmu_DE1_blue;
-    spriteset_dmu_DE1_red;
+	0..date(1956,12,31): spriteset_dmu_DE1_blueredsilverroof;
+	switch_dmu_DE1_autolivery_1;
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE1_purchaselivery, build_year) {
-	0..1964: spriteset_dmu_DE1_blue;
-    spriteset_dmu_DE1_red;
+	0..1956: spriteset_dmu_DE1_blueredsilverroof;
+	1957..1958: spriteset_dmu_DE1_blueredmoustache;
+	1959..1959: spriteset_dmu_DE1_bluered;
+	1960..1967: spriteset_dmu_DE1_redyellow;
+    spriteset_dmu_DE1_redyellowblue;
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE1_livery, cargo_subtype) {
 	1: switch_dmu_DE1_purchaselivery;
-    2: spriteset_dmu_DE1_blue;
-    3: spriteset_dmu_DE1_red;
+    2: spriteset_dmu_DE1_blueredsilverroof;
+    3: spriteset_dmu_DE1_bluered;
+    4: spriteset_dmu_DE1_blueredmoustache;
+    5: spriteset_dmu_DE1_blueyellow;
+    6: spriteset_dmu_DE1_redyellow;
+    7: spriteset_dmu_DE1_redyellowblue;
     switch_dmu_DE1_autolivery;
 }
 
@@ -61,7 +126,11 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE1_livery, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_dmu_DE1_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
-    2: return string(str_cargo_subtype_blue);
-    3: return string(str_cargo_subtype_red);
+    2: return string(str_cargo_subtype_blue_red_silverroof);
+    3: return string(str_cargo_subtype_blue_red);
+    4: return string(str_cargo_subtype_blue_red_yellowmoustache);
+    5: return string(str_cargo_subtype_blue_yellow);
+    6: return string(str_cargo_subtype_red_yellow);
+    7: return string(str_cargo_subtype_red_yellow_blue);
     return CB_RESULT_NO_TEXT;
 }

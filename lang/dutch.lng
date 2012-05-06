@@ -33,6 +33,9 @@ str_cargo_subtype_blue              :> Blauwe kleurstelling
 str_cargo_subtype_blue_greyish      :> Grijsblauwe livery
 str_cargo_subtype_lighterblue       :> Enigszins lichter blauwe kleurstelling
 str_cargo_subtype_blue_banners      :> Blauwe kleurstelling met reclamebanen
+str_cargo_subtype_blue_red          :> Blauwe kleurstelling met rode strepen
+str_cargo_subtype_blue_red_silverroof       :> Blauwe kleurstelling met rode strepen en zilver dak
+str_cargo_subtype_blue_red_yellowmoustache  :> Blauwe kleurstelling met rode strepen en gele snor
 str_cargo_subtype_blue_yellow       :> Blauwe kleurstelling met gele strepen
 str_cargo_subtype_blue_lightyellow  :> Blauwe kleurstelling met lichtgele strepen
 str_cargo_subtype_blue_darkyellow   :> Blauwe kleurstelling met donkergele strepen
@@ -61,6 +64,8 @@ str_cargo_subtype_red               :> Rode kleurstelling
 str_cargo_subtype_red_light         :> Lichtrode kleurstelling
 str_cargo_subtype_red_pinkish       :> Roze-rode kleurstelling
 str_cargo_subtype_red_blue          :> Rood/blauwe kleurstelling
+str_cargo_subtype_red_yellow        :> Rode kleurstelling met gele strepen
+str_cargo_subtype_red_yellow_blue   :> Rode kleurstelling met gele strepen en reclamebanen
 str_cargo_subtype_olive_silverroof  :> Olijfkleurstelling met licht dak
 str_cargo_subtype_olive_greyroof    :> Olijfkleurstelling met donker dak
 str_cargo_subtype_salmon            :> Zalmkleurstelling

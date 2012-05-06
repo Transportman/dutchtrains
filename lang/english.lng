@@ -35,6 +35,9 @@ str_cargo_subtype_blue              :> Blue livery
 str_cargo_subtype_blue_greyish      :> Greyish Blue livery
 str_cargo_subtype_lighterblue       :> Slightly lighter blue livery
 str_cargo_subtype_blue_banners      :> Blue livery w/ banners
+str_cargo_subtype_blue_red          :> Blue livery w/ red stripes
+str_cargo_subtype_blue_red_silverroof       :> Blue livery w/ red stripes and silver roof
+str_cargo_subtype_blue_red_yellowmoustache  :> Blue livery w/ red stripes and yellow moustache
 str_cargo_subtype_blue_yellow       :> Blue livery w/ yellow stripes
 str_cargo_subtype_blue_lightyellow  :> Blue livery w/ light yellow stripes
 str_cargo_subtype_blue_darkyellow   :> Blue livery w/ dark yellow stripes
@@ -63,6 +66,8 @@ str_cargo_subtype_red               :> Red livery
 str_cargo_subtype_red_light         :> Light Red livery
 str_cargo_subtype_red_pinkish       :> Pinkish Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery
+str_cargo_subtype_red_yellow        :> Red livery w/ yellow stripes
+str_cargo_subtype_red_yellow_blue   :> Red livery w/ yellow stripes and blue banners
 str_cargo_subtype_olive_silverroof  :> Olive livery w/ light roof
 str_cargo_subtype_olive_greyroof    :> Olive livery w/ dark roof
 str_cargo_subtype_salmon            :> Salmon livery
