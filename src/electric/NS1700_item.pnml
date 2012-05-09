@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_electric_NS1700) {
         //cargo_age_period: 0;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: ELRL;
+        track_type: DC_C;
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_electric_NS1700) {
 	}
     graphics {
         purchase: spriteset_electric_NS1600_purchase;
-        additional_text: return string(str_purchase_svc, string(str_purchase_svc_ip));
+        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_ip), string(str_purchase_axl_C));
         spriteset_electric_NS1600_yellow;
     }
 }
