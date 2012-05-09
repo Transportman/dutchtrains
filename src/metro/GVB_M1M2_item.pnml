@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_metro_GVB_M1M2) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: metro;
+        track_type: metro_B;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_metro_GVB_M1M2) {
         purchase: switch_metro_GVB_M1M2_purchase;
         articulated_part: switch_metro_GVB_M1M2_articulated;
         cargo_subtype_text: switch_metro_GVB_M1M2_subtype_text;
-        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_M), string(str_purchase_len_2_10), string(str_purchase_lsp_20));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_20));
         switch_metro_GVB_M1M2_livery;
     }
 }
