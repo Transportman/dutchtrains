@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_diesel_NS100) {
         //cargo_age_period: 0;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_A;
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_diesel_NS100) {
 	}
     graphics {
         purchase: spriteset_diesel_NS100_purchase;
-        additional_text: return string(str_purchase_svc, string(str_purchase_svc_s));
+        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_s), string(str_purchase_axl_A));
         spriteset_diesel_NS100;
     }
 }

@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_diesel_G1206) {
         //cargo_age_period: 0;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_C;
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_diesel_G1206) {
     graphics {
         purchase: spriteset_diesel_G1206_purchase;
         cargo_subtype_text: switch_diesel_G1206_subtype_text;
-        additional_text: return string(str_purchase_svc, string(str_purchase_svc_hf));
+        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_hf), string(str_purchase_axl_C));
         cargo_capacity: return 0;
         switch_diesel_G1206_livery;
     }
