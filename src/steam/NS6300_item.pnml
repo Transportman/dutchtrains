@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_steam_NS6300) {
         //cargo_age_period: 185;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_D;
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_steam_NS6300) {
 	}
     graphics {
         purchase: spriteset_steam_NS6300_purchase;
-        additional_text: return string(str_purchase_svc, string(str_purchase_svc_hf));
+        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_hf), string(str_purchase_axl_D));
         switch_steam_NS6300_animation;
     }
 }

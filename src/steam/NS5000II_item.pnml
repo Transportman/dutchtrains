@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_steam_NS5000II) {
         //cargo_age_period: 185;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_B;
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_steam_NS5000II) {
 	}
     graphics {
         purchase: spriteset_steam_NS5000II_purchase;
-        additional_text: return string(str_purchase_svc, string(str_purchase_svc_flp));
+        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_flp), string(str_purchase_axl_B));
         articulated_part: switch_steam_NS5000II_articulated;
         length: switch_steam_NS5000II_length;
         visual_effect_and_powered: switch_steam_NS5000II_visual_effect_and_powered;
