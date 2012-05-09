@@ -9,6 +9,17 @@
 //railtype translation table
 
 railtypetable {
+    unelectrified_A: [SAAN, RAIL],
+    unelectrified_B: [SABN, RAIL],
+    unelectrified_C: [SACN, RAIL],
+    unelectrified_D: [SADN, RAIL],
+    DC_B: [SABD, SABE, ELRL],
+    DC_C: [SACD, SACE, ELRL],
+    dual_B: [SABE, ELRL],
+    dual_C: [SACE, ELRL],
+    dual_D: [SADE, ELRL],
+    dual_E: [SAEE, ELRL],
+    metro_B: [SAB3, MTRO, "3RDR"],
     RAIL,
     ELRL,
     metro: [MTRO, "3RDR"]

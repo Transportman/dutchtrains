@@ -1,0 +1,67 @@
+Railtype labels according to the Standardized Railtype Scheme
+http://newgrf-specs.tt-wiki.net/wiki/Standardized_Railtype_Scheme
+
+TRACK GAUGE AND TYPE CLASS
+All vehicles run on standard gauge track. The early steamers ran on 
+broad gauge, but we're not implementing that.
+-> Class: S
+
+SPEED LIMIT CLASS
+-> Class: A
+
+AXLE LOAD CLASS
+This should be processed in the infosheet, simply by dividing the 
+engine/wagon weight by the number of axles, assuming a full load.
+The lowest axle load in the set is 4 t, the highest is 34 t. All vehicles
+are mapped linearly inbetween.
+There will be five different axle load classes.
+-> Class: A     0-10 t
+-> Class: B     10-20 t
+-> Class: C     20-30 t
+-> Class: D     30-40 t
+-> Class: E     40+ t
+
+ENERGY SOURCE TYPE CLASS
+There are unelectrified, 1500 V DC electified, 25 kV AC electrified, 
+dual system electrified and 3rd rail electrified vehicles in the set.
+-> Class: N     unelectrified
+-> Class: D     1500 V DC
+-> Class: A     25 kV AC
+-> Class: E     dual system 1500 V DC and 25 kV AC electrified
+-> Class: 3     third rail electrified
+
+STANDARD LABELS
+All unelectrified will fallback to RAIL.
+All electrified except third rail will fallback to ELRL.
+
+LABEL TABLE
+Below is an overview of all railtype labels, in the form of an NML 
+railtypetable. Not all of the labels are actually used.
+
+railtypetable {
+    unelectrified_A: [SAAN, RAIL],
+    unelectrified_B: [SABN, RAIL],
+    unelectrified_C: [SACN, RAIL],
+    unelectrified_D: [SADN, RAIL],
+    unelectrified_E: [SAEN, RAIL],
+    DC_A: [SAAD, SAAE, ELRL],
+    DC_B: [SABD, SABE, ELRL],
+    DC_C: [SACD, SACE, ELRL],
+    DC_D: [SADD, SADE, ELRL],
+    DC_E: [SAED, SAEE, ELRL],
+    AC_A: [SAAA, SAAE, ELRL],
+    AC_B: [SABA, SABE, ELRL],
+    AC_C: [SACA, SACE, ELRL],
+    AC_D: [SADA, SADE, ELRL],
+    AC_E: [SAEA, SAEE, ELRL],
+    dual_A: [SAAE, ELRL],
+    dual_B: [SABE, ELRL],
+    dual_C: [SACE, ELRL],
+    dual_D: [SADE, ELRL],
+    dual_E: [SAEE, ELRL],
+    metro_A: [SAA3, MTRO, "3RDR"],
+    metro_B: [SAB3, MTRO, "3RDR"],
+    metro_C: [SAC3, MTRO, "3RDR"],
+    metro_D: [SAD3, MTRO, "3RDR"],
+    metro_E: [SAE3, MTRO, "3RDR"]
+}
