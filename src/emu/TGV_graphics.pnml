@@ -99,3 +99,16 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_visual_effect_and_powered, (position_in
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_power, current_railtype) {
+    SAAA: return 11801;
+    SABA: return 11801;
+    SACA: return 11801;
+    SADA: return 11801;
+    SAEA: return 11801;
+    return 4935;
+}

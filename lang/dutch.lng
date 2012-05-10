@@ -469,6 +469,8 @@ str_purchase_axl_E          :zeer hoog (klasse E)
 
 str_purchase_spc_eld        :Met bagagecompartiment ombouwbaar tot expresvracht.
 str_purchase_spc_el_eld     :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.
+str_purchase_spc_emu_ms     :Meersysteemtreinstel, volledige kracht alleen onder 25 kV ~.
+str_purchase_spc_loc_ms     :Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.
 
 str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :Voorheen bekend als: {SILVER} HSM 501-535
