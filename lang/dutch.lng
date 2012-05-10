@@ -418,6 +418,8 @@ str_purchase_svc_axl_len_lsp_spc:{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk:
 str_purchase_svc_len_lsp_spc    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadsnelheid: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_spc        :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_axl                :{BLACK}Asdruk: {YELLOW}{STRING}
+str_purchase_axl_spc            :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_p          :reizigers
 str_purchase_svc_lp         :stoptrein
@@ -488,4 +490,4 @@ str_purchase_emu_ZHESM_mBC  :Gereviseerd 1926: {YELLOW}+150% kracht, +100% trekk
 str_purchase_emu_Mat36ELD3  :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.{}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8
 str_purchase_emu_ICE3M      :Ook bekend als: {SILVER} DB BR 406
 
-str_purchase_coaches_ZHESM_B:{BLACK}Later bekend als: {SILVER} NS B9900
+str_purchase_coaches_ZHESM_B:Later bekend als: {SILVER} NS B9900

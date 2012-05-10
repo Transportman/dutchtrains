@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_coaches_Hbbkkss) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_C;
 		ai_special_flag: AI_FLAG_CARGO;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -47,6 +47,7 @@ item(FEAT_TRAINS, item_coaches_Hbbkkss) {
 	}
     graphics {
         cargo_capacity: return 24;
+        additional_text: string(str_purchase_axl, string(str_purchase_axl_C));
         purchase: spriteset_coaches_Hbbkkss_purchase_red;
         spriteset_coaches_Hbbkkss_red;
     }

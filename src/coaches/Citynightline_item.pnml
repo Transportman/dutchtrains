@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_coaches_Citynightline) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_B;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -47,6 +47,7 @@ item(FEAT_TRAINS, item_coaches_Citynightline) {
 	}
     graphics {
         cargo_capacity: return 56;
+        additional_text: string(str_purchase_axl, string(str_purchase_axl_B));
         purchase: spriteset_coaches_Citynightline;
         switch_coaches_Citynightline_livery;
     }

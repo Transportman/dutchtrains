@@ -13,6 +13,7 @@ railtypetable {
     unelectrified_B: [SABN, RAIL],
     unelectrified_C: [SACN, RAIL],
     unelectrified_D: [SADN, RAIL],
+    unelectrified_E: [SAEN, RAIL],
     DC_B: [SABD, SABE, ELRL],
     DC_C: [SACD, SACE, ELRL],
     dual_B: [SABE, ELRL],

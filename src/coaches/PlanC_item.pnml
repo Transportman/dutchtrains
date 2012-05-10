@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_coaches_PlanC) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_E;
 		ai_special_flag: AI_FLAG_CARGO;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_coaches_PlanC) {
 	}
     graphics {
         cargo_capacity: return 38;
+        additional_text: string(str_purchase_axl, string(str_purchase_axl_E));
         purchase: switch_coaches_PlanC_purchase;
         cargo_subtype_text: switch_coaches_PlanC_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;
