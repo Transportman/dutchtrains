@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_dmu_DE5) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_B;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_dmu_DE5) {
         articulated_part: switch_dmu_DE5_articulated;
         length: switch_dmu_DE5_length;
         cargo_subtype_text: switch_dmu_DE5_subtype_text;
-        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_ep), string(str_purchase_len_5_24), string(str_purchase_lsp_5));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ep), string(str_purchase_axl_B), string(str_purchase_len_5_24), string(str_purchase_lsp_5));
         visual_effect_and_powered: switch_dmu_DE5_visual_effect_and_powered;
         switch_dmu_DE5_livery;
     }

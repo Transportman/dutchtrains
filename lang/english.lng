@@ -250,7 +250,7 @@ str_electric_gen9_HS002 :HS-2 (Electric)
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diesel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diesel)
 str_dmu_omC1921         :omC 1921-1931 (Diesel)
-str_dmu_omBC1901        :omBC 1901-2910 (Diesel)
+str_dmu_omBC1901        :omBC 1901-1910 (Diesel)
 str_dmu_omBC2901        :omBC 2901-2908 (Diesel)
 str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diesel)
 str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diesel)
@@ -418,14 +418,15 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 
 #PURCHASE MENU TEXTS
 
-str_purchase_svc            :{BLACK}Service: {YELLOW}{STRING}
-str_purchase_svc_axl        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}
-str_purchase_svc_len        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}
-str_purchase_svc_len_lsp    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp:{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
-str_purchase_svc_len_lsp_spc:{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_spc    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc                :{BLACK}Service: {YELLOW}{STRING}
+str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}
+str_purchase_svc_len            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}
+str_purchase_svc_len_lsp        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp_spc:{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_len_lsp_spc    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_spc            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_p          :passengers
 str_purchase_svc_lp         :local passengers

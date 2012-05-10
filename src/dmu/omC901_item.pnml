@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_dmu_omC901) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: RAIL;
+        track_type: unelectrified_B;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_dmu_omC901) {
         cargo_capacity: return 40;
         purchase: switch_dmu_omC901_purchase;
         cargo_subtype_text: switch_dmu_omC901_subtype_text;
-        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_lp), string(str_purchase_len_1_04), string(str_purchase_lsp_5));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_1_04), string(str_purchase_lsp_5));
         switch_dmu_omC901_livery;
     }
 }
