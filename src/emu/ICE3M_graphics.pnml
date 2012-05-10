@@ -71,3 +71,16 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_visual_effect_and_powered, (position_
     6: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_power, current_railtype) {
+    SAAA: return 10728;
+    SABA: return 10728;
+    SACA: return 10728;
+    SADA: return 10728;
+    SAEA: return 10728;
+    return 5766;
+}

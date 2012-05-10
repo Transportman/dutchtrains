@@ -21,6 +21,11 @@ railtypetable {
     dual_D: [SADE, SADA, ELRL],
     dual_E: [SAEE, SAEA, ELRL],
     metro_B: [SAB3, MTRO, "3RDR"],
+    SAAA,
+    SABA,
+    SACA,
+    SADA,
+    SAEA,
     RAIL,
     ELRL,
     metro: [MTRO, "3RDR"]

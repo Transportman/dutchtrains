@@ -498,6 +498,6 @@ str_purchase_dmu_omBC1901   :Purchased from  1929: {YELLOW}+41% weight, +233% po
 
 str_purchase_emu_ZHESM_mBC  :Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900
 str_purchase_emu_Mat36ELD3  :With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8
-str_purchase_emu_ICE3M      :Also known as: {SILVER} DB BR 406
+str_purchase_emu_ICE3M      :Multisystem EMU, full power only under 25 kV ~.{}Also known as: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900

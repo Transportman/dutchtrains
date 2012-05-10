@@ -489,6 +489,6 @@ str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% kra
 
 str_purchase_emu_ZHESM_mBC  :Gereviseerd 1926: {YELLOW}+150% kracht, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900
 str_purchase_emu_Mat36ELD3  :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.{}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8
-str_purchase_emu_ICE3M      :Ook bekend als: {SILVER} DB BR 406
+str_purchase_emu_ICE3M      :Meersysteemtreinstel, volledige kracht alleen onder 25 kV ~.{}Ook bekend als: {SILVER} DB BR 406
 
 str_purchase_coaches_ZHESM_B:Later bekend als: {SILVER} NS B9900

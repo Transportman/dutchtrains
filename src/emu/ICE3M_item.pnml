@@ -18,10 +18,10 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 172;
-        running_cost_factor: 79;
+        cost_factor: 183;
+        running_cost_factor: 93;
         speed: 220 km/h;
-        power: 5764 hpM;
+        power: 8000 kW;
         cargo_capacity: 53;
         weight: 435 ton;
         tractive_effort_coefficient: 0.15;
@@ -50,6 +50,8 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
         purchase: spriteset_emu_ICE3M_purchase;
         additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_5), string(str_purchase_emu_ICE3M));
         articulated_part: switch_emu_ICE3M_articulated;
+        power: switch_emu_ICE3M_power;
+        purchase_power: return 10728;
         visual_effect_and_powered: switch_emu_ICE3M_visual_effect_and_powered;
         switch_emu_ICE3M_position;
     }
