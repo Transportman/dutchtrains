@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_emu_Mat64PlanV) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: ELRL;
+        track_type: DC_B;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_Mat64PlanV) {
         purchase: switch_emu_Mat64PlanV_purchase;
         articulated_part: switch_emu_Mat64PlanV_articulated;
         cargo_subtype_text: switch_emu_Mat64PlanV_subtype_text;
-        additional_text: return string(str_purchase_svc_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_len_2_10), string(str_purchase_lsp_5), string(str_purchase_spc_eld));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_5), string(str_purchase_spc_eld));
         switch_emu_Mat64PlanV_livery;
     }
 }
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_emu_Mat64PlanVD) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: ELRL;
+        track_type: DC_B;
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;

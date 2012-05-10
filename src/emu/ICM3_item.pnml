@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_emu_ICM3) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: ELRL;
+        track_type: DC_B;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_ICM3) {
         purchase: spriteset_emu_ICM_purchase;
         articulated_part: switch_emu_ICM3_articulated;
         cargo_subtype_text: switch_emu_ICM3_subtype_text;
-        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_ip), string(str_purchase_len_3_15), string(str_purchase_lsp_5));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ip), string(str_purchase_axl_B), string(str_purchase_len_3_15), string(str_purchase_lsp_5));
         visual_effect_and_powered: switch_emu_ICM3_visual_effect_and_powered;
         switch_emu_ICM3_livery;
     }

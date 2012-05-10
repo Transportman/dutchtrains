@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_emu_mP) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: ELRL;
+        track_type: DC_C;
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_mP) {
         cargo_capacity: return 15;
         purchase: switch_emu_mP_purchase;
         cargo_subtype_text: switch_emu_mP_subtype_text;
-        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_m), string(str_purchase_len_1_05), string(str_purchase_lsp_5));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_m), string(str_purchase_axl_C), string(str_purchase_len_1_05), string(str_purchase_lsp_5));
         switch_emu_mP_livery;
     }
 }

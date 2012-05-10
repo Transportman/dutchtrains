@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_emu_ZHESM_mBC) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: ELRL;
+        track_type: DC_C;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_emu_ZHESM_mBC) {
     graphics {
         cargo_capacity: return 73;
         purchase: spriteset_emu_ZHESM_mBC_purchase;
-        additional_text: return string(str_purchase_svc_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_len_1_05), string(str_purchase_lsp_5), string(str_purchase_emu_ZHESM_mBC));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_C), string(str_purchase_len_1_05), string(str_purchase_lsp_5), string(str_purchase_emu_ZHESM_mBC));
         power: switch_emu_ZHESM_mBC_power;
         tractive_effort_coefficient: switch_emu_ZHESM_mBC_te;
         spriteset_emu_ZHESM_mBC;

@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_emu_SLTIV) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: ELRL;
+        track_type: DC_B;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_emu_SLTIV) {
     graphics {
         cargo_capacity: return 54;
         purchase: spriteset_emu_SLTIV_purchase;
-        additional_text: return string(str_purchase_svc_len_lsp, string(str_purchase_svc_lp), string(str_purchase_len_4_14), string(str_purchase_lsp_5));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_4_14), string(str_purchase_lsp_5));
         articulated_part: switch_emu_SLTIV_articulated;
         length: switch_emu_SLTIV_length;
         visual_effect_and_powered: switch_emu_SLTIV_visual_effect_and_powered;
