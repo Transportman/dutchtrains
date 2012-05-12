@@ -86,3 +86,16 @@ switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_subtype_text, cargo_subtype) {
     4: return string(str_cargo_subtype_Locon);
     return CB_RESULT_NO_TEXT;
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_power, current_railtype) {
+    SAAA: return 8583;
+    SABA: return 8583;
+    SACA: return 8583;
+    SADA: return 8583;
+    SAEA: return 8583;
+    return 6035;
+}

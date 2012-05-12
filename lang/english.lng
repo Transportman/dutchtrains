@@ -479,7 +479,7 @@ str_purchase_axl_E          :very high (class E)
 str_purchase_spc_eld        :With baggage compartment refittable to express cargoes.
 str_purchase_spc_el_eld     :With baggage compartment refittable to express cargoes or passengers.
 str_purchase_spc_emu_ms     :Multisystem EMU, full power only under 25 kV ~.
-str_purchase_spc_loc_ms     :Multisystem locomotive, full power only under 25 kV ~.
+str_purchase_spc_electric_ms:Multisystem locomotive, full power only under 25 kV ~.
 
 str_purchase_steam_HSM126   :Previously known as: {SILVER} HSM 126-135
 str_purchase_steam_HSM500   :Previously known as: {SILVER} HSM 501-535
