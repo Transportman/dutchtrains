@@ -81,3 +81,16 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_subtype_text, cargo_subty
     4: return string(str_cargo_subtype_fyra_white);
     return CB_RESULT_NO_TEXT;
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_power, current_railtype) {
+    SAAA: return 7510;
+    SABA: return 7510;
+    SACA: return 7510;
+    SADA: return 7510;
+    SAEA: return 7510;
+    return 4023;
+}
