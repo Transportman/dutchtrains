@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_emu_Mat24mP) {
         model_life: 29;
         retire_early: 11;
         vehicle_life: 11;
-        loading_speed: 5;
+        loading_speed: 12;
         cost_factor: 32;
         running_cost_factor: 25;
         speed: 100 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_emu_Mat24mP) {
     graphics {
         purchase: spriteset_emu_Mat24mP_purchase;
         cargo_subtype_text: switch_emu_Mat24mP_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_m), string(str_purchase_axl_C), string(str_purchase_len_1_05), string(str_purchase_lsp_5));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_m), string(str_purchase_axl_C), string(str_purchase_len_1_05), string(str_purchase_lsp_12));
         cargo_capacity: switch_emu_Mat24mP_capacity;
         switch_emu_Mat24mP_livery;
     }
