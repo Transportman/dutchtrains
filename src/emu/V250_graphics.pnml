@@ -71,3 +71,16 @@ switch(FEAT_TRAINS, SELF, switch_emu_V250_visual_effect_and_powered, (position_i
     1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_V250_power, current_railtype) {
+    SAAA: return 7376;
+    SABA: return 7376;
+    SACA: return 7376;
+    SADA: return 7376;
+    SAEA: return 7376;
+    return 3688;
+}
