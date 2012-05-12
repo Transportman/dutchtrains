@@ -58,3 +58,16 @@ switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_subtype_text, cargo_subtype
     4: return string(str_cargo_subtype_fyra_white);
     return CB_RESULT_NO_TEXT;
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_power, current_railtype) {
+    SAAA: return 10000;
+    SABA: return 10000;
+    SACA: return 10000;
+    SADA: return 10000;
+    SAEA: return 10000;
+    return 6050;
+}
