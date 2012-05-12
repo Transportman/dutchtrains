@@ -21,3 +21,16 @@ spriteset(spriteset_electric_NS1600P_purchase, "gfx/purchase/electric/NS1600P.pn
 spriteset(spriteset_electric_NS1600P, "gfx/electric/NS1600P.png") {
 	template_2cc_88(1, 1)
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600P_power, current_railtype) {
+    SAAA: return 9119;
+    SABA: return 9119;
+    SACA: return 9119;
+    SADA: return 9119;
+    SAEA: return 9119;
+    return 5364;
+}
