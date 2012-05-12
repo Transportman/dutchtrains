@@ -96,3 +96,16 @@ switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_articulated, extra_callback
     1: return item_electric_gen9_HS002;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_power, current_railtype) {
+    SAAA: return 18000;
+    SABA: return 18000;
+    SACA: return 18000;
+    SADA: return 18000;
+    SAEA: return 18000;
+    return 6050;
+}
