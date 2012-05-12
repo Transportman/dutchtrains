@@ -60,3 +60,16 @@ switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_visual_effect_and_powered, (positi
     6: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_power, current_railtype) {
+    SAAA: return 8000;
+    SABA: return 8000;
+    SACA: return 8000;
+    SADA: return 8000;
+    SAEA: return 8000;
+    return 4750;
+}
