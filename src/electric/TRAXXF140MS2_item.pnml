@@ -53,7 +53,7 @@ item(FEAT_TRAINS, item_electric_TRAXXF140MS2) {
         additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_spc_electric_ms));
         cargo_capacity: return 0;
         power: switch_electric_TRAXXF140MS2_power;
-        purchase_power: return 7510;
+        purchase_power: return 7509;
         switch_electric_TRAXXF140MS2_livery;
     }
 }

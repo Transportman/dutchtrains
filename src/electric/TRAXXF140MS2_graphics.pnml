@@ -87,10 +87,10 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_subtype_text, cargo_subty
 */
 
 switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_power, current_railtype) {
-    SAAA: return 7510;
-    SABA: return 7510;
-    SACA: return 7510;
-    SADA: return 7510;
-    SAEA: return 7510;
+    SAAA: return 7509;
+    SABA: return 7509;
+    SACA: return 7509;
+    SADA: return 7509;
+    SAEA: return 7509;
     return 4023;
 }

@@ -77,10 +77,10 @@ switch(FEAT_TRAINS, SELF, switch_emu_V250_visual_effect_and_powered, (position_i
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_V250_power, current_railtype) {
-    SAAA: return 7376;
-    SABA: return 7376;
-    SACA: return 7376;
-    SADA: return 7376;
-    SAEA: return 7376;
-    return 3688;
+    SAAA: return 7375;
+    SABA: return 7375;
+    SACA: return 7375;
+    SADA: return 7375;
+    SAEA: return 7375;
+    return 4023;
 }

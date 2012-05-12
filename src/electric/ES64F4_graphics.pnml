@@ -92,10 +92,10 @@ switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_subtype_text, cargo_subtype) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_power, current_railtype) {
-    SAAA: return 8583;
-    SABA: return 8583;
-    SACA: return 8583;
-    SADA: return 8583;
-    SAEA: return 8583;
-    return 6035;
+    SAAA: return 8582;
+    SABA: return 8582;
+    SACA: return 8582;
+    SADA: return 8582;
+    SAEA: return 8582;
+    return 6034;
 }
