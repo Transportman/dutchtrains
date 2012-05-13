@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_coaches_Hbbkkss) {
         introduction_date: date(1978,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 8;
         cost_factor: 38;
         running_cost_factor: 2;
         speed: 120 km/h;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_coaches_Hbbkkss) {
 	}
     graphics {
         cargo_capacity: return 24;
-        additional_text: string(str_purchase_axl, string(str_purchase_axl_C));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_C), string(str_purchase_lsp_4));
         purchase: spriteset_coaches_Hbbkkss_purchase_red;
         spriteset_coaches_Hbbkkss_red;
     }

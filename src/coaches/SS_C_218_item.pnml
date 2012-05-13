@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_SS_C_218) {
         model_life: 86;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 10;
         cost_factor: 64;
         running_cost_factor: 2;
         speed: 75 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_SS_C_218) {
 	}
     graphics {
         cargo_capacity: return 50;
-        additional_text: string(str_purchase_axl, string(str_purchase_axl_B));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_6));
         purchase: spriteset_coaches_SS_C_218_purchase;
         spriteset_coaches_SS_C_218;
     }

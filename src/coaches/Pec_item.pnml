@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_Pec) {
         model_life: 68;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 12;
         cost_factor: 73;
         running_cost_factor: 2;
         speed: 125 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_Pec) {
 	}
     graphics {
         cargo_capacity: return 34;
-        additional_text: string(str_purchase_axl, string(str_purchase_axl_E));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_E), string(str_purchase_lsp_4));
         purchase: switch_coaches_Pec_purchase;
         cargo_subtype_text: switch_coaches_Pec_subtype_text;
         switch_coaches_Pec_livery;

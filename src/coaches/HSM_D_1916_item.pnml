@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_HSM_D_1916) {
         model_life: 35;
         retire_early: 14;
         vehicle_life: 14;
-        loading_speed: 5;
+        loading_speed: 8;
         cost_factor: 50;
         running_cost_factor: 2;
         speed: 100 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_HSM_D_1916) {
 	}
     graphics {
         cargo_capacity: return 20;
-        additional_text: string(str_purchase_axl, string(str_purchase_axl_D));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_D), string(str_purchase_lsp_3));
         purchase: spriteset_coaches_HSM_D_1916_purchase;
         switch_coaches_HSM_D_1916;
     }

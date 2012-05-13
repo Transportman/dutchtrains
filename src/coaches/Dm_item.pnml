@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_coaches_Dm) {
         introduction_date: date(2000,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 8;
         cost_factor: 73;
         running_cost_factor: 3;
         speed: 200 km/h;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_coaches_Dm) {
 	}
     graphics {
         cargo_capacity: return 34;
-        additional_text: string(str_purchase_axl, string(str_purchase_axl_E));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_E), string(str_purchase_lsp_5));
         purchase: switch_coaches_Dm_purchase;
         cargo_subtype_text: switch_coaches_Dm_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;
