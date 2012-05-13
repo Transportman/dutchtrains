@@ -419,17 +419,17 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 #PURCHASE MENU TEXTS
 
 str_purchase_svc                :{BLACK}Service: {YELLOW}{STRING}
-str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}
+str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}
 str_purchase_svc_len            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}
-str_purchase_svc_len_lsp        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp_spc:{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_len_lsp_spc    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_len_lsp        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp_spc:{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_len_lsp_spc    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_axl                :{BLACK}Axle weight: {YELLOW}{STRING}
-str_purchase_axl_lsp            :{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}Loading Speed: {YELLOW}{STRING}
-str_purchase_axl_spc            :{BLACK}Axle weight: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_axl                :{BLACK}Axle Weight: {YELLOW}{STRING}
+str_purchase_axl_lsp            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
+str_purchase_axl_spc            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_p          :passengers
 str_purchase_svc_lp         :local passengers
@@ -467,23 +467,27 @@ str_purchase_len_6_30       :6 units (3.0)
 str_purchase_len_8_40       :8 units (4.0)
 str_purchase_len_10_50      :10 units (5.0)
 
-str_purchase_lsp_4          :low (4/t)
 str_purchase_lsp_5          :low (5/t)
-str_purchase_lsp_8          :low (8/t)
-str_purchase_lsp_10         :low (10/t)
-str_purchase_lsp_12         :low (12/t)
-str_purchase_lsp_14         :low (14/t)
-str_purchase_lsp_16         :low (16/t)
-str_purchase_lsp_18         :medium (18/t)
-str_purchase_lsp_20         :medium (20/t)
-str_purchase_lsp_22         :medium (22/t)
-str_purchase_lsp_24         :medium (24/t)
-str_purchase_lsp_26         :medium (26/t)
-str_purchase_lsp_28         :medium (28/t)
-str_purchase_lsp_32         :medium (32/t)
-str_purchase_lsp_36         :high (36/t)
-str_purchase_lsp_40         :high (40/t)
-str_purchase_lsp_48         :high (48/t)
+
+str_purchase_lsp_2          :2 days
+str_purchase_lsp_6          :6 days
+str_purchase_lsp_7          :7 days
+str_purchase_lsp_8          :8 days
+str_purchase_lsp_9          :9 days
+str_purchase_lsp_10         :10 days
+str_purchase_lsp_11         :11 days
+str_purchase_lsp_12         :12 days
+str_purchase_lsp_13         :13 days
+str_purchase_lsp_14         :14 days
+str_purchase_lsp_15         :15 days
+str_purchase_lsp_17         :17 days
+str_purchase_lsp_18         :18 days
+str_purchase_lsp_20         :20 days
+str_purchase_lsp_23         :23 days
+str_purchase_lsp_24         :24 days
+str_purchase_lsp_26         :26 days
+str_purchase_lsp_29         :29 days
+str_purchase_lsp_37         :37 days
 
 str_purchase_axl_A          :very low (class A)
 str_purchase_axl_B          :low (class B)

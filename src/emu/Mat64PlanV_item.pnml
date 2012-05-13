@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_Mat64PlanV) {
         purchase: switch_emu_Mat64PlanV_purchase;
         articulated_part: switch_emu_Mat64PlanV_articulated;
         cargo_subtype_text: switch_emu_Mat64PlanV_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_16), string(str_purchase_spc_eld));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_8), string(str_purchase_spc_eld));
         switch_emu_Mat64PlanV_livery;
     }
 }

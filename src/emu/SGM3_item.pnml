@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_emu_SGM3) {
         purchase: switch_emu_SGM3_purchase;
         articulated_part: switch_emu_SGM3_articulated;
         cargo_subtype_text: switch_emu_SGM3_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_15), string(str_purchase_lsp_36));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_15), string(str_purchase_lsp_8));
         cargo_capacity: switch_emu_SGM3_capacity;
         visual_effect_and_powered: switch_emu_SGM3_visual_effect_and_powered;
         switch_emu_SGM3_livery;

@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
     graphics {
         cargo_capacity: return 53;
         purchase: spriteset_emu_ICE3M_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_8), string(str_purchase_emu_ICE3M));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_29), string(str_purchase_emu_ICE3M));
         articulated_part: switch_emu_ICE3M_articulated;
         power: switch_emu_ICE3M_power;
         purchase_power: return 10728;
