@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_wagons_gen2_stake) {
         model_life: 87;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 3;
         cost_factor: 30;
         running_cost_factor: 1;
         speed: 88 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen2_stake) {
 	}
     graphics {
         purchase: spriteset_wagons_gen2_stake_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_5));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_4));
         cargo_capacity: return 18;
         switch_wagons_gen2_stake_livery;
     }

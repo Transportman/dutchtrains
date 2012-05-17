@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_wagons_gen0openwagonmedium) {
         model_life: 114;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 2;
         cost_factor: 22;
         running_cost_factor: 1;
         speed: 50 km/h;

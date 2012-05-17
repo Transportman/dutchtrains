@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen4_Uh) {
 	}
     graphics {
         purchase: spriteset_wagons_gen4_Uh_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_5));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_2));
         cargo_capacity: return 13;
         cargo_subtype_text: switch_wagons_gen4_Uh_subtype_text;
         switch_wagons_gen4_Uh_livery;

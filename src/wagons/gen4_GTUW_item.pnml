@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_wagons_gen4_GTUW) {
         model_life: 67;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 3;
         cost_factor: 36;
         running_cost_factor: 2;
         speed: 80 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen4_GTUW) {
 	}
     graphics {
         purchase: spriteset_wagons_gen4_GTUW_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_C), string(str_purchase_lsp_5));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_C), string(str_purchase_lsp_6));
         cargo_capacity: return 28;
         cargo_subtype_text: switch_wagons_gen4_GTUW_subtype_text;
         switch_wagons_gen4_GTUW_livery;

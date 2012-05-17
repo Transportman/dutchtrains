@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_wagons_gen6_containercarrier) {
         model_life: 62;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 7;
         cost_factor: 46;
         running_cost_factor: 3;
         speed: 160 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen6_containercarrier) {
 	}
     graphics {
         purchase: spriteset_wagons_gen6_containercarrier_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_5));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_4));
         cargo_capacity: return 40;
         switch_wagons_gen6_containercarrier_livery;
     }

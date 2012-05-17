@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_wagons_gen0livestockwagon) {
         model_life: 114;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: 1;
         cost_factor: 15;
         running_cost_factor: 1;
         speed: 50 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen0livestockwagon) {
 	}
     graphics {
         purchase: spriteset_wagons_gen0livestockwagon_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_A), string(str_purchase_lsp_5));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_A), string(str_purchase_lsp_6));
         cargo_capacity: return 10;
         cargo_subtype_text: switch_wagons_gen0livestockwagon_subtype_text;
         switch_wagons_gen0livestockwagon_livery;
