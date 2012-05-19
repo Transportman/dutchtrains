@@ -10,78 +10,112 @@
 * PURCHASE
 */
 
-//grey
-spriteset(spriteset_dmu_Mat34_grey_purchase, "gfx/purchase/dmu/Mat34_white.png") {
+spriteset(spriteset_dmu_Mat34_greyred_purchase, "gfx/purchase/dmu/Mat34_greyred.png") {
 	template_purchase(0, 0)
 }
-//green
-spriteset(spriteset_dmu_Mat34_green_purchase, "gfx/purchase/dmu/Mat34_green.png") {
+spriteset(spriteset_dmu_Mat34_greenredlightroof_purchase, "gfx/purchase/dmu/Mat34_greenredlightroof.png") {
 	template_purchase(0, 0)
 }
-//blue
-spriteset(spriteset_dmu_Mat34_blue_purchase, "gfx/purchase/dmu/Mat34_blue.png") {
+spriteset(spriteset_dmu_Mat34_greenreddarkroof_purchase, "gfx/purchase/dmu/Mat34_greenreddarkroof.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_Mat34_bluered_purchase, "gfx/purchase/dmu/Mat34_bluered.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_Mat34_blueyellow_purchase, "gfx/purchase/dmu/Mat34_blueyellow.png") {
 	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_livery_purchase, current_year) {
-	0..1937: spriteset_dmu_Mat34_grey_purchase;
-    1938..1953: spriteset_dmu_Mat34_green_purchase;
-    spriteset_dmu_Mat34_blue_purchase;
+	0..1937: spriteset_dmu_Mat34_greyred_purchase;
+    1938: spriteset_dmu_Mat34_greenredlightroof_purchase;
+    1939..1953: spriteset_dmu_Mat34_greenreddarkroof_purchase;
+    1954..1960: spriteset_dmu_Mat34_bluered_purchase;
+    spriteset_dmu_Mat34_blueyellow_purchase;
 }
 
 /*
 * VEHICLE
 */
 
-//grey
-spriteset(spriteset_dmu_Mat34_grey_front, "gfx/dmu/Mat34.png") {
-	template_2cc_88(0, 0)
+//greyred
+spriteset(spriteset_dmu_Mat34_greyred_front, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 1)
 }
-spriteset(spriteset_dmu_Mat34_grey_middle, "gfx/dmu/Mat34.png") {
-	template_2cc_78(0, 30)
+spriteset(spriteset_dmu_Mat34_greyred_middle, "gfx/dmu/Mat34.png") {
+	template_2cc_78(1, 32)
 }
-spriteset(spriteset_dmu_Mat34_grey_back, "gfx/dmu/Mat34.png") {
-	template_2cc_88(0, 60)
+spriteset(spriteset_dmu_Mat34_greyred_back, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 64)
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_grey, (position_in_vehid_chain % 3)) {
-	1: spriteset_dmu_Mat34_grey_middle;
-    2: spriteset_dmu_Mat34_grey_back;
-    spriteset_dmu_Mat34_grey_front;
-}
-
-//green
-spriteset(spriteset_dmu_Mat34_green_front, "gfx/dmu/Mat34.png") {
-	template_2cc_88(0, 90)
-}
-spriteset(spriteset_dmu_Mat34_green_middle, "gfx/dmu/Mat34.png") {
-	template_2cc_78(0, 120)
-}
-spriteset(spriteset_dmu_Mat34_green_back, "gfx/dmu/Mat34.png") {
-	template_2cc_88(0, 150)
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greyred, (position_in_vehid_chain % 3)) {
+	1: spriteset_dmu_Mat34_greyred_middle;
+    2: spriteset_dmu_Mat34_greyred_back;
+    spriteset_dmu_Mat34_greyred_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_green, (position_in_vehid_chain % 3)) {
-	1: spriteset_dmu_Mat34_green_middle;
-    2: spriteset_dmu_Mat34_green_back;
-    spriteset_dmu_Mat34_green_front;
+//greenredlightroof
+spriteset(spriteset_dmu_Mat34_greenredlightroof_front, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_dmu_Mat34_greenredlightroof_middle, "gfx/dmu/Mat34.png") {
+	template_2cc_78(1, 128)
+}
+spriteset(spriteset_dmu_Mat34_greenredlightroof_back, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 160)
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greenredlightroof, (position_in_vehid_chain % 3)) {
+	1: spriteset_dmu_Mat34_greenredlightroof_middle;
+    2: spriteset_dmu_Mat34_greenredlightroof_back;
+    spriteset_dmu_Mat34_greenredlightroof_front;
 }
 
-//blue
-spriteset(spriteset_dmu_Mat34_blue_front, "gfx/dmu/Mat34.png") {
-	template_2cc_88(0, 180)
+//greenreddarkroof
+spriteset(spriteset_dmu_Mat34_greenreddarkroof_front, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 192)
 }
-spriteset(spriteset_dmu_Mat34_blue_middle, "gfx/dmu/Mat34.png") {
-	template_2cc_78(0, 210)
+spriteset(spriteset_dmu_Mat34_greenreddarkroof_middle, "gfx/dmu/Mat34.png") {
+	template_2cc_78(1, 224)
 }
-spriteset(spriteset_dmu_Mat34_blue_back, "gfx/dmu/Mat34.png") {
-	template_2cc_88(0, 240)
+spriteset(spriteset_dmu_Mat34_greenreddarkroof_back, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 256)
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greenreddarkroof, (position_in_vehid_chain % 3)) {
+	1: spriteset_dmu_Mat34_greenreddarkroof_middle;
+    2: spriteset_dmu_Mat34_greenreddarkroof_back;
+    spriteset_dmu_Mat34_greenreddarkroof_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_blue, (position_in_vehid_chain % 3)) {
-	1: spriteset_dmu_Mat34_blue_middle;
-    2: spriteset_dmu_Mat34_blue_back;
-    spriteset_dmu_Mat34_blue_front;
+//bluered
+spriteset(spriteset_dmu_Mat34_bluered_front, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_dmu_Mat34_bluered_middle, "gfx/dmu/Mat34.png") {
+	template_2cc_78(1, 320)
+}
+spriteset(spriteset_dmu_Mat34_bluered_back, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 352)
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_bluered, (position_in_vehid_chain % 3)) {
+	1: spriteset_dmu_Mat34_bluered_middle;
+    2: spriteset_dmu_Mat34_bluered_back;
+    spriteset_dmu_Mat34_bluered_front;
+}
+
+//blueyellow
+spriteset(spriteset_dmu_Mat34_blueyellow_front, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 384)
+}
+spriteset(spriteset_dmu_Mat34_blueyellow_middle, "gfx/dmu/Mat34.png") {
+	template_2cc_78(1, 416)
+}
+spriteset(spriteset_dmu_Mat34_blueyellow_back, "gfx/dmu/Mat34.png") {
+	template_2cc_88(1, 448)
+}
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_blueyellow, (position_in_vehid_chain % 3)) {
+	1: spriteset_dmu_Mat34_blueyellow_middle;
+    2: spriteset_dmu_Mat34_blueyellow_back;
+    spriteset_dmu_Mat34_blueyellow_front;
 }
 
 /*
@@ -89,22 +123,28 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_blue, (position_in_vehid_cha
 */
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_autolivery, date_of_last_service) {
-	0..date(1937,12,31): switch_dmu_Mat34_position_grey;
-    date(1938,1,1)..date(1953,12,31): switch_dmu_Mat34_position_green;
-    switch_dmu_Mat34_position_blue;
+	0..date(1937,12,31): switch_dmu_Mat34_position_greyred;
+    date(1938,1,1): switch_dmu_Mat34_position_greenredlightroof;
+    date(1939,1,1)..date(1953,12,31): switch_dmu_Mat34_position_greenreddarkroof;
+    date(1954,1,1)..date(1960,12,31): switch_dmu_Mat34_position_bluered;
+    switch_dmu_Mat34_position_blueyellow;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_purchaselivery, build_year) {
-	0..1937: switch_dmu_Mat34_position_grey;
-    1938..1953: switch_dmu_Mat34_position_green;
-    switch_dmu_Mat34_position_blue;
+	0..1937: switch_dmu_Mat34_position_greyred;
+    1938: switch_dmu_Mat34_position_greenredlightroof;
+    1939..1953: switch_dmu_Mat34_position_greenreddarkroof;
+    1954..1960: switch_dmu_Mat34_position_bluered;
+    switch_dmu_Mat34_position_blueyellow;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_livery, cargo_subtype) {
 	1: switch_dmu_Mat34_purchaselivery;
-    2: switch_dmu_Mat34_position_grey;
-    3: switch_dmu_Mat34_position_green;
-    4: switch_dmu_Mat34_position_blue;
+    2: switch_dmu_Mat34_position_greyred;
+    3: switch_dmu_Mat34_position_greenredlightroof;
+    4: switch_dmu_Mat34_position_greenreddarkroof;
+    5: switch_dmu_Mat34_position_bluered;
+    6: switch_dmu_Mat34_position_blueyellow;
     switch_dmu_Mat34_autolivery;
 }
 
@@ -112,9 +152,11 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_livery, cargo_subtype) {
 switch(FEAT_TRAINS, PARENT, switch_dmu_Mat34_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
-    2: return string(str_cargo_subtype_grey);
-    3: return string(str_cargo_subtype_green);
-    4: return string(str_cargo_subtype_blue);
+    2: return string(str_cargo_subtype_grey_light);
+    3: return string(str_cargo_subtype_green_lightroof);
+    4: return string(str_cargo_subtype_green_darkroof);
+    5: return string(str_cargo_subtype_blue_red);
+    6: return string(str_cargo_subtype_blue_yellow);
     return CB_RESULT_NO_TEXT;
 }
 
