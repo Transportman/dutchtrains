@@ -18,7 +18,7 @@ spriteset(spriteset_dmu_DE3_yellow_purchase, "gfx/purchase/dmu/DE3_yellow.png") 
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE3_livery_purchase, current_year) {
-	0..1967: spriteset_dmu_DE3_red_purchase;
+	0..1968: spriteset_dmu_DE3_red_purchase;
     spriteset_dmu_DE3_yellow_purchase;
 }
 
@@ -28,13 +28,13 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE3_livery_purchase, current_year) {
 
 //red
 spriteset(spriteset_dmu_DE3_red_front, "gfx/dmu/DE3.png") {
-	template_2cc_88(0, 0)
+	template_2cc_88(1, 1)
 }
 spriteset(spriteset_dmu_DE3_red_middle, "gfx/dmu/DE3.png") {
-	template_2cc_88(0, 30)
+	template_2cc_88(1, 32)
 }
 spriteset(spriteset_dmu_DE3_red_back, "gfx/dmu/DE3.png") {
-	template_2cc_88(0, 60)
+	template_2cc_88(1, 64)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE3_position_red, (position_in_vehid_chain % 3)) {
@@ -43,15 +43,32 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE3_position_red, (position_in_vehid_chain 
     spriteset_dmu_DE3_red_front;
 }
 
+///red grey doors
+spriteset(spriteset_dmu_DE3_redgreydoors_front, "gfx/dmu/DE3.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_dmu_DE3_redgreydoors_middle, "gfx/dmu/DE3.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_dmu_DE3_redgreydoors_back, "gfx/dmu/DE3.png") {
+	template_2cc_88(1, 160)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DE3_position_redgreydoors, (position_in_vehid_chain % 3)) {
+	1: spriteset_dmu_DE3_redgreydoors_middle;
+    2: spriteset_dmu_DE3_redgreydoors_back;
+    spriteset_dmu_DE3_redgreydoors_front;
+}
+
 //yellow
 spriteset(spriteset_dmu_DE3_yellow_front, "gfx/dmu/DE3.png") {
-	template_2cc_88(0, 90)
+	template_2cc_88(1, 192)
 }
 spriteset(spriteset_dmu_DE3_yellow_middle, "gfx/dmu/DE3.png") {
-	template_2cc_88(0, 120)
+	template_2cc_88(1, 224)
 }
 spriteset(spriteset_dmu_DE3_yellow_back, "gfx/dmu/DE3.png") {
-	template_2cc_88(0, 150)
+	template_2cc_88(1, 256)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DE3_position_yellow, (position_in_vehid_chain % 3)) {
@@ -64,20 +81,40 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE3_position_yellow, (position_in_vehid_cha
 * LIVERY SELECTION
 */
 
+switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_autolivery_red, date_of_last_service) {
+	0..date(1971,12,31): switch_dmu_DE3_position_red;
+    switch_dmu_DE3_position_redgreydoors;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_autolivery_1969) {
+	1: switch_dmu_DE3_autolivery_red;
+    1: switch_dmu_DE3_position_yellow;
+}
 switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_autolivery, date_of_last_service) {
-	0..date(1967,12,31): switch_dmu_DE3_position_red;
+	0..date(1968,12,31): switch_dmu_DE3_position_red;
+	date(1969,12,31)..date(1973,12,31): switch_dmu_DE3_autolivery_1969;
     switch_dmu_DE3_position_yellow;
 }
 
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_purchaselivery_1972) {
+	1: switch_dmu_DE3_position_red;
+    1: switch_dmu_DE3_position_yellow;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_purchaselivery_1969) {
+	1: switch_dmu_DE3_position_redgreydoors;
+    1: switch_dmu_DE3_position_yellow;
+}
 switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_purchaselivery, build_year) {
-	0..1967: switch_dmu_DE3_position_red;
+	0..1968: switch_dmu_DE3_position_red;
+	1969..1971: switch_dmu_DE3_purchaselivery_1969;
+	1972..1973: switch_dmu_DE3_purchaselivery_1972;
     switch_dmu_DE3_position_yellow;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_livery, cargo_subtype) {
 	1: switch_dmu_DE3_purchaselivery;
     2: switch_dmu_DE3_position_red;
-    3: switch_dmu_DE3_position_yellow;
+    3: switch_dmu_DE3_position_redgreydoors;
+    4: switch_dmu_DE3_position_yellow;
     switch_dmu_DE3_autolivery;
 }
 
@@ -86,7 +123,8 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_red);
-    3: return string(str_cargo_subtype_yellow);
+    3: return string(str_cargo_subtype_red_greydoors);
+    4: return string(str_cargo_subtype_yellow);
     return CB_RESULT_NO_TEXT;
 }
 

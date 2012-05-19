@@ -63,6 +63,7 @@ str_cargo_subtype_grey_dark         :> Dark Grey livery
 str_cargo_subtype_grey_light        :> Light Grey livery
 str_cargo_subtype_purple            :> Purple livery
 str_cargo_subtype_red               :> Red livery
+str_cargo_subtype_red_greydoors     :> Red livery w/ grey doors
 str_cargo_subtype_red_light         :> Light Red livery
 str_cargo_subtype_red_pinkish       :> Pinkish Red livery
 str_cargo_subtype_red_blue          :> Red/blue livery

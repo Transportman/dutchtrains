@@ -61,6 +61,7 @@ str_cargo_subtype_grey_dark         :> Donkergrijze kleurstelling
 str_cargo_subtype_grey_light        :> Lichtgrijze kleurstelling
 str_cargo_subtype_purple            :> Paarse kleurstelling
 str_cargo_subtype_red               :> Rode kleurstelling
+str_cargo_subtype_red_greydoors     :> Rode kleurstelling met grijze deuren
 str_cargo_subtype_red_light         :> Lichtrode kleurstelling
 str_cargo_subtype_red_pinkish       :> Roze-rode kleurstelling
 str_cargo_subtype_red_blue          :> Rood/blauwe kleurstelling
