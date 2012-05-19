@@ -25,8 +25,5 @@ railtypetable {
     SABA,
     SACA,
     SADA,
-    SAEA,
-    RAIL,
-    ELRL,
-    metro: [MTRO, "3RDR"]
+    SAEA
 }
