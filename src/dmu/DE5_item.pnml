@@ -14,8 +14,8 @@ item(FEAT_TRAINS, item_dmu_DE5) {
     property {
         name: string(str_dmu_DE5);
         
-        introduction_date: date(1945,1,1);
-        model_life: 56;
+        introduction_date: date(1940,1,1);
+        model_life: 61;
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 4;
