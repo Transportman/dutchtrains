@@ -110,6 +110,7 @@ str_cargo_subtype_ns_ic             :> NS InterCity kleurstelling
 str_cargo_subtype_ns_ic_nocab       :> NS InterCity kleurstelling, zonder stuurstand
 str_cargo_subtype_olympic           :> Olympische kleurstelling
 str_cargo_subtype_original          :> Originele kleurstelling
+str_cargo_subtype_ovchip            :> OV Chipkaart kleurstelling
 str_cargo_subtype_overnightexpress  :> Overnight Express kleurstelling
 str_cargo_subtype_randstadrail      :> RandstadRail kleurstelling
 str_cargo_subtype_renewal           :> Gemoderniseerde kleurstelling

@@ -119,6 +119,7 @@ str_cargo_subtype_ns_ic             :> NS InterCity livery
 str_cargo_subtype_ns_ic_nocab       :> NS InterCity livery, no cab control
 str_cargo_subtype_olympic           :> Olympic livery
 str_cargo_subtype_original          :> Original livery
+str_cargo_subtype_ovchip            :> OV Chipkaart livery
 str_cargo_subtype_overnightexpress  :> Overnight Express livery
 str_cargo_subtype_randstadrail      :> RandstadRail livery
 str_cargo_subtype_renewal           :> Renewal livery

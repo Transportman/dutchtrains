@@ -90,6 +90,35 @@ random_switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_livery) {
 	1: switch_emu_IRMVI_position_4;
 }
 
+//IRM_ovchip
+spriteset(spriteset_emu_IRM_ovchip_front_pup, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_IRM_ovchip_front_pdown, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_IRM_ovchip_front_pno, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_pup, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_pdown, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_pno, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_IRM_ovchip_middle_pup, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_IRM_ovchip_middle_pdown, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 224)
+}
+spriteset(spriteset_emu_IRM_ovchip_middle_pno, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 256)
+}
+
 /*
 * ARTICULATED VEHICLE CALLBACK
 */

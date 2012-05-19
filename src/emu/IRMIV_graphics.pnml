@@ -16,6 +16,7 @@
 * VEHICLE
 */
 
+//normal livery
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_1, (position_in_vehid_chain % 4)) {
 	1: spriteset_emu_IRM_middle_pno;
 	2: spriteset_emu_IRM_middle_pdown;
@@ -37,10 +38,99 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_3, (position_in_vehid_chain 
     spriteset_emu_IRM_front_pdown;
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_livery) {
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_ic_livery) {
 	1: switch_emu_IRMIV_position_1;
 	1: switch_emu_IRMIV_position_2;
 	1: switch_emu_IRMIV_position_3;
+}
+
+//olympic livery
+//tba
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_olympic_livery) {
+	1: switch_emu_IRMIV_position_1;
+	1: switch_emu_IRMIV_position_2;
+	1: switch_emu_IRMIV_position_3;
+}
+
+//ovchip livery
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_1, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_IRM_ovchip_middle_pno;
+	2: spriteset_emu_IRM_ovchip_middle_pdown;
+	3: spriteset_emu_IRM_ovchip_back_pdown;
+    spriteset_emu_IRM_ovchip_front_pup;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_2, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_IRM_ovchip_middle_pno;
+	2: spriteset_emu_IRM_ovchip_middle_pup;
+	3: spriteset_emu_IRM_ovchip_back_pdown;
+    spriteset_emu_IRM_ovchip_front_pdown;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_3, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_IRM_ovchip_middle_pno;
+	2: spriteset_emu_IRM_ovchip_middle_pdown;
+	3: spriteset_emu_IRM_ovchip_back_pup;
+    spriteset_emu_IRM_ovchip_front_pdown;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_ovchip_livery) {
+	1: switch_emu_IRMIV_ovchip_position_1;
+	1: switch_emu_IRMIV_ovchip_position_2;
+	1: switch_emu_IRMIV_ovchip_position_3;
+}
+
+/*
+* LIVERY SELECTION
+*/
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randomauto_ic_olympic_ovchip) {
+	2:  switch_emu_IRMIV_ovchip_livery;
+    43: switch_emu_IRMIV_ic_livery;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_purchase_ic_olympic_ovchip, date_of_last_service) {
+    date(2010,1,1)..date(2011,12,31): switch_emu_IRMIV_randomauto_ic_olympic_ovchip;
+    switch_emu_IRMIV_ic_livery;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randomauto_ic_olympic) {
+	2:  switch_emu_IRMIV_olympic_livery;
+    45: switch_emu_IRMIV_purchase_ic_olympic_ovchip;
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_autolivery, date_of_last_service) {
+    0..date(2004,12,31): switch_emu_IRMIV_ic_livery;
+    switch_emu_IRMIV_randomauto_ic_olympic;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randompurchase_ic_olympic_ovchip) {
+	2:  switch_emu_IRMIV_olympic_livery;
+    2:  switch_emu_IRMIV_ovchip_livery;
+    43: switch_emu_IRMIV_ic_livery;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randompurchase_ic_olympic) {
+	2:  switch_emu_IRMIV_olympic_livery;
+    45: switch_emu_IRMIV_ic_livery;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_purchaselivery, build_year) {
+    0..2004: switch_emu_IRMIV_ic_livery;
+    2010..2011: switch_emu_IRMIV_randompurchase_ic_olympic_ovchip;
+    switch_emu_IRMIV_randompurchase_ic_olympic;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_livery, cargo_subtype) {
+	1: switch_emu_IRMIV_purchaselivery;
+    2: switch_emu_IRMIV_ic_livery;
+    3: switch_emu_IRMIV_ic_livery;
+    4: switch_emu_IRMIV_ovchip_livery;
+    switch_emu_IRMIV_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_yellow_blue_ic);
+    3: return string(str_cargo_subtype_olympic);
+    4: return string(str_cargo_subtype_ovchip);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*
