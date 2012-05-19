@@ -43,7 +43,7 @@ switch(FEAT_TRAINS, SELF, switch_wagons_gen2_tanker_livery, cargo_subtype) {
 // CARGO SUBTYPE CALLBACK
 switch(FEAT_TRAINS, SELF, switch_wagons_gen2_tanker_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_random);
-    1: return string(str_cargo_subtype_blue);
-    2: return string(str_cargo_subtype_grey);
+    1: return string(str_cargo_subtype_white);
+    2: return string(str_cargo_subtype_blue);
     return CB_RESULT_NO_TEXT;
 }
