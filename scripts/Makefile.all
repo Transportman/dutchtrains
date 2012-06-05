@@ -5,20 +5,7 @@
 # See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with NML build framework. If not, see <http://www.gnu.org/licenses/>.
 #
 
-################################################################
-# NML-specific targets and rules
-################################################################
+all: doc
 
-nml:
-	$(_E) "[CPP] $(NML_FILE)"
-	$(_V) $(CC) -D REPO_REVISION=$(REPO_REVISION) $(CC_FLAGS) $(MAIN_SRC_FILE) > $(NML_FILE)
-
-################################################################
-# Definitions which extend the common rules
-################################################################
-clean::
-	$(_E) "[CLEAN NML]"
-	$(_V)-rm -rf $(NML_FILE)
-
-test::
-	$(_E) "nml:                          $(NML) $(NML_FLAGS)"
+distclean:: clean
+maintainer-clean:: distclean
