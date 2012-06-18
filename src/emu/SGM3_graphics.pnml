@@ -10,10 +10,10 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_SGM3_purchase_original, "gfx/purchase/emu/SGM_III_original.png") {
+spriteset(spriteset_emu_SGM3_purchase_original, "gfx/purchase/emu/SGM3_original.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_emu_SGM3_purchase_renewal, "gfx/purchase/emu/SGM_III_renewal.png") {
+spriteset(spriteset_emu_SGM3_purchase_renewal, "gfx/purchase/emu/SGM3_renewal.png") {
 	template_purchase(0, 0)
 }
 
@@ -27,27 +27,38 @@ switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_purchase, current_year) {
 */
 
 //original sgm
-spriteset(spriteset_emu_SGM3_sgm_middle, "gfx/emu/SGM.png") {
+spriteset(spriteset_emu_SGM3_sgm_front, "gfx/emu/SGM3.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_SGM3_sgm_middle, "gfx/emu/SGM3.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_SGM3_sgm_back, "gfx/emu/SGM3.png") {
 	template_2cc_88(1, 64)
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_SGM3_sgm, (position_in_vehid_chain % 3)) {
 	1: spriteset_emu_SGM3_sgm_middle;
-	2: spriteset_emu_SGM2_sgm_back;
-    spriteset_emu_SGM2_sgm_front;
+	2: spriteset_emu_SGM3_sgm_back;
+    spriteset_emu_SGM3_sgm_front;
 }
 
 // sgmm
-spriteset(spriteset_emu_SGM3_sgmm_middle, "gfx/emu/SGM.png") {
+spriteset(spriteset_emu_SGM3_sgmm_front, "gfx/emu/SGM3.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_SGM3_sgmm_middle, "gfx/emu/SGM3.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_SGM3_sgmm_back, "gfx/emu/SGM3.png") {
 	template_2cc_88(1, 160)
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_SGM3_sgmm, (position_in_vehid_chain % 3)) {
 	1: spriteset_emu_SGM3_sgmm_middle;
-	2: spriteset_emu_SGM2_sgmm_back;
-    spriteset_emu_SGM2_sgmm_front;
+	2: spriteset_emu_SGM3_sgmm_back;
+    spriteset_emu_SGM3_sgmm_front;
 }
-
 
 /*
 * LIVERY SELECTION
