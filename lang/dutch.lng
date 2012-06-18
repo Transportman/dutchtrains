@@ -117,6 +117,8 @@ str_cargo_subtype_overnightexpress  :> Overnight Express kleurstelling
 str_cargo_subtype_randstadrail      :> RandstadRail kleurstelling
 str_cargo_subtype_renewal           :> Gemoderniseerde kleurstelling
 str_cargo_subtype_sr10              :> Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)
+str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter" kleurstelling met strandballen
+str_cargo_subtype_strandsprinter    :> "Strandsprinter" kleurstelling
 str_cargo_subtype_TGV_PBKA          :> PBKA kleurstelling
 str_cargo_subtype_TGV_PBA           :> PBA kleurstelling
 str_cargo_subtype_valleilijn_yellow_blue    :>Valleilijn geel/blauwe kleurstelling

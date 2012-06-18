@@ -126,6 +126,8 @@ str_cargo_subtype_overnightexpress  :> Overnight Express livery
 str_cargo_subtype_randstadrail      :> RandstadRail livery
 str_cargo_subtype_renewal           :> Renewal livery
 str_cargo_subtype_sr10              :> Sr10 Royal ICR livery (Dec 22, 1993 - current)
+str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter" livery w/ beachballs
+str_cargo_subtype_strandsprinter    :> "Strandsprinter" livery
 str_cargo_subtype_TGV_PBKA          :> PBKA livery
 str_cargo_subtype_TGV_PBA           :> PBA livery
 str_cargo_subtype_valleilijn_yellow_blue    :>Valleilijn yellow/blue livery
