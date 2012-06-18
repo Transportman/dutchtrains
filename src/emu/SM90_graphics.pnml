@@ -20,10 +20,10 @@ spriteset(spriteset_emu_SM90_purchase, "gfx/purchase/emu/SM90.png") {
 
 //ns
 spriteset(spriteset_emu_SM90_front, "gfx/emu/SM90.png") {
-	template_2cc_88(0, 0)
+	template_2cc_88(1, 1)
 }
 spriteset(spriteset_emu_SM90_back, "gfx/emu/SM90.png") {
-	template_2cc_88(0, 30)
+	template_2cc_88(1, 32)
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_SM90_position, (position_in_vehid_chain % 2)) {
