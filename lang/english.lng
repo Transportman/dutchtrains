@@ -156,6 +156,7 @@ str_cargo_subtype_NBDS              :> Noord-Brabantsch-Duitsche Spoorweg-Maatsc
 str_cargo_subtype_NCS               :> Nederlandsche Centraal-Spoorweg-Maatschappij livery
 str_cargo_subtype_nedtrain          :> NedTrain livery
 str_cargo_subtype_NS                :> NS livery
+str_cargo_subtype_NS_whiteroof      :> NS livery w/ white roof
 str_cargo_subtype_NSCargo           :> NS Cargo livery
 str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (green) livery
 str_cargo_subtype_Rail4Chem_red     :> Rail4Chem (red) livery

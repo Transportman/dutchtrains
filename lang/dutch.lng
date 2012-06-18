@@ -147,6 +147,7 @@ str_cargo_subtype_NBDS              :> Noord-Brabantsch-Duitsche Spoorweg-Maatsc
 str_cargo_subtype_NCS               :> Nederlandsche Centraal-Spoorweg-Maatschappij kleurstelling
 str_cargo_subtype_nedtrain          :> NedTrain kleurstelling
 str_cargo_subtype_NS                :> NS kleurstelling
+str_cargo_subtype_NS_whiteroof      :> NS kleurstelling met wit dak
 str_cargo_subtype_NSCargo           :> NS Cargo kleurstelling
 str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (groen) kleurstelling
 str_cargo_subtype_Rail4Chem_red     :> Rail4Chem (rood) kleurstelling

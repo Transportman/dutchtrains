@@ -13,6 +13,14 @@
 spriteset(spriteset_dmu_DM90_purchase, "gfx/purchase/dmu/DM90.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_dmu_DM90_purchase_whiteroof, "gfx/purchase/dmu/DM90_whiteroof.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DM90_livery_purchase, current_year) {
+	0..2001: spriteset_dmu_DM90_purchase;
+    spriteset_dmu_DM90_purchase_whiteroof;
+}
 
 /*
 * VEHICLE
@@ -20,10 +28,10 @@ spriteset(spriteset_dmu_DM90_purchase, "gfx/purchase/dmu/DM90.png") {
 
 //ns
 spriteset(spriteset_dmu_DM90_ns_front, "gfx/dmu/DM90.png") {
-	template_2cc_88(0, 0)
+	template_2cc_88(1, 1)
 }
 spriteset(spriteset_dmu_DM90_ns_back, "gfx/dmu/DM90.png") {
-	template_2cc_88(0, 30)
+	template_2cc_88(1, 32)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns, (position_in_vehid_chain % 2)) {
@@ -31,12 +39,25 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns, (position_in_vehid_chain 
     spriteset_dmu_DM90_ns_front;
 }
 
+//ns with white roof
+spriteset(spriteset_dmu_DM90_ns_whiteroof_front, "gfx/dmu/DM90.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_dmu_DM90_ns_whiteroof_back, "gfx/dmu/DM90.png") {
+	template_2cc_88(1, 160)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns_whiteroof, (position_in_vehid_chain % 2)) {
+	1: spriteset_dmu_DM90_ns_whiteroof_back;
+    spriteset_dmu_DM90_ns_whiteroof_front;
+}
+
 //syntus
 spriteset(spriteset_dmu_DM90_syntus_front, "gfx/dmu/DM90.png") {
-	template_2cc_88(0, 60)
+	template_2cc_88(1, 64)
 }
 spriteset(spriteset_dmu_DM90_syntus_back, "gfx/dmu/DM90.png") {
-	template_2cc_88(0, 90)
+	template_2cc_88(1, 96)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_syntus, (position_in_vehid_chain % 2)) {
@@ -48,27 +69,31 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_syntus, (position_in_vehid_ch
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_randomlivery_ns_syntus) {
-	1: switch_dmu_DM90_position_ns;
-    1: switch_dmu_DM90_position_syntus;
+switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_autolivery, date_of_last_service) {
+	0..date(2001,12,31): switch_dmu_DM90_position_ns;
+    switch_dmu_DM90_position_ns_whiteroof;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_randomlivery, build_year) {
-	0..1998: switch_dmu_DM90_position_ns;
-    switch_dmu_DM90_randomlivery_ns_syntus;
+switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_purchaselivery, build_year) {
+	0..2001: switch_dmu_DM90_position_ns;
+    switch_dmu_DM90_position_ns_whiteroof;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_livery, cargo_subtype) {
-    1: switch_dmu_DM90_position_ns;
-    2: switch_dmu_DM90_position_syntus;
-    switch_dmu_DM90_randomlivery;
+	1: switch_dmu_DM90_purchaselivery;
+    2: switch_dmu_DM90_position_ns;
+    3: switch_dmu_DM90_position_ns_whiteroof;
+    4: switch_dmu_DM90_position_syntus;
+    switch_dmu_DM90_autolivery;
 }
 
 // CARGO SUBTYPE CALLBACK
 switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_subtype_text, cargo_subtype) {
-    0: return string(str_cargo_subtype_random);
-    1: return string(str_cargo_subtype_NS);
-    2: return string(str_cargo_subtype_Syntus);
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_NS);
+    3: return string(str_cargo_subtype_NS_whiteroof);
+    4: return string(str_cargo_subtype_Syntus);
     return CB_RESULT_NO_TEXT;
 }
 
