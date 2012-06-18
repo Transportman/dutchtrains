@@ -10,15 +10,19 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_Mat64PlanT_purchase_green, "gfx/purchase/emu/Mat64_green.png") {
+spriteset(spriteset_emu_Mat64PlanT_purchase_green, "gfx/purchase/emu/PlanT_greenyellow.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_emu_Mat64PlanT_purchase_yellow, "gfx/purchase/emu/Mat64_yellow.png") {
+spriteset(spriteset_emu_Mat64PlanT_purchase_yellow, "gfx/purchase/emu/PlanT_yellowblue.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_Mat64PlanT_purchase_freedom, "gfx/purchase/emu/PlanT_freedom.png") {
 	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanT_purchase, current_year) {
-	0..1955: spriteset_emu_Mat64PlanT_purchase_green;
+	0..1967: spriteset_emu_Mat64PlanT_purchase_green;
+	2010..2010: spriteset_emu_Mat64PlanT_purchase_freedom;
     spriteset_emu_Mat64PlanT_purchase_yellow;
 }
 
@@ -26,45 +30,94 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanT_purchase, current_year) {
 * VEHICLE
 */
 
-//green, front and back are from Plan V
-spriteset(spriteset_emu_Mat64PlanT_green_middle_1, "gfx/emu/Mat64.png") {
+//green
+spriteset(spriteset_emu_Mat64PlanT_green_front, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Mat64PlanT_green_middle_1, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_Mat64PlanT_green_middle_2, "gfx/emu/PlanT.png") {
 	template_2cc_88(1, 64)
 }
-spriteset(spriteset_emu_Mat64PlanT_green_middle_2, "gfx/emu/Mat64.png") {
+spriteset(spriteset_emu_Mat64PlanT_green_back, "gfx/emu/PlanT.png") {
 	template_2cc_88(1, 96)
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_green, (position_in_vehid_chain % 4)) {
 	1: spriteset_emu_Mat64PlanT_green_middle_1;
 	2: spriteset_emu_Mat64PlanT_green_middle_2;
-    spriteset_emu_Mat64PlanV_green_front;
+    spriteset_emu_Mat64PlanT_green_front;
 }
 
 //yellow
-spriteset(spriteset_emu_Mat64PlanT_yellow_middle_1, "gfx/emu/Mat64.png") {
+spriteset(spriteset_emu_Mat64PlanT_yellow_front, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_Mat64PlanT_yellow_middle_1, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_Mat64PlanT_yellow_middle_2, "gfx/emu/PlanT.png") {
 	template_2cc_88(1, 192)
 }
-spriteset(spriteset_emu_Mat64PlanT_yellow_middle_2, "gfx/emu/Mat64.png") {
+spriteset(spriteset_emu_Mat64PlanT_yellow_back, "gfx/emu/PlanT.png") {
 	template_2cc_88(1, 224)
 }
+spriteset(spriteset_emu_Mat64PlanT_yellow_middle_1_noD, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 288)
+}
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_yellow, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_yellow_D, (position_in_vehid_chain % 4)) {
 	1: spriteset_emu_Mat64PlanT_yellow_middle_1;
 	2: spriteset_emu_Mat64PlanT_yellow_middle_2;
-    spriteset_emu_Mat64PlanV_yellow_front;
+    spriteset_emu_Mat64PlanT_yellow_front;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_yellow_noD, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_Mat64PlanT_yellow_middle_1_noD;
+	2: spriteset_emu_Mat64PlanT_yellow_middle_2;
+    spriteset_emu_Mat64PlanT_yellow_front;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_yellow, cargo_classes) {
+    bitmask(CC_PASSENGERS): switch_emu_Mat64PlanT_yellow_noD;
+    switch_emu_Mat64PlanT_yellow_D;
+}
+
+//freedom
+spriteset(spriteset_emu_Mat64PlanT_freedom_front, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 384)
+}
+spriteset(spriteset_emu_Mat64PlanT_freedom_middle_1, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 416)
+}
+spriteset(spriteset_emu_Mat64PlanT_freedom_middle_2, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 448)
+}
+spriteset(spriteset_emu_Mat64PlanT_freedom_back, "gfx/emu/PlanT.png") {
+	template_2cc_88(1, 480)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_freedom, (position_in_vehid_chain % 4)) {
+	1: spriteset_emu_Mat64PlanT_freedom_middle_1;
+	2: spriteset_emu_Mat64PlanT_freedom_middle_2;
+    spriteset_emu_Mat64PlanT_freedom_front;
 }
 
 /*
 * LIVERY SELECTION
 */
-
+random_switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanT_random_freedom) {
+	1: switch_emu_Mat64PlanT_freedom;
+    31: switch_emu_Mat64PlanT_yellow;
+}
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanT_autolivery, date_of_last_service) {
-	0..date(1955,12,31): switch_emu_Mat64PlanT_green;
+	0..date(1967,12,31): switch_emu_Mat64PlanT_green;
+	date(2010,1,1)..date(2010,12,31): switch_emu_Mat64PlanT_random_freedom;
     switch_emu_Mat64PlanT_yellow;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanT_purchaselivery, build_year) {
-	0..1955: switch_emu_Mat64PlanT_green;
+	0..1967: switch_emu_Mat64PlanT_green;
+	2010..2010: switch_emu_Mat64PlanT_random_freedom;
     switch_emu_Mat64PlanT_yellow;
 }
 
@@ -72,17 +125,24 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanT_livery, cargo_subtype) {
 	1: switch_emu_Mat64PlanT_purchaselivery;
     2: switch_emu_Mat64PlanT_green;
     3: switch_emu_Mat64PlanT_yellow;
+    4: switch_emu_Mat64PlanT_freedom;
     switch_emu_Mat64PlanT_autolivery;
 }
 
 //D-part
+random_switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanTD_random_freedom) {
+	1: spriteset_emu_Mat64PlanT_freedom_back;
+    31: spriteset_emu_Mat64PlanV_yellow_back;
+}
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanTD_autolivery, date_of_last_service) {
-	0..date(1955,12,31): spriteset_emu_Mat64PlanV_green_back;
+	0..date(1967,12,31): spriteset_emu_Mat64PlanV_green_back;
+    date(2010,1,1)..date(2010,12,31): switch_emu_Mat64PlanTD_random_freedom;
     spriteset_emu_Mat64PlanV_yellow_back;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanTD_purchaselivery, build_year) {
-	0..1955: spriteset_emu_Mat64PlanV_green_back;
+	0..1967: spriteset_emu_Mat64PlanV_green_back;
+    2010..2010: spriteset_emu_Mat64PlanT_freedom_back;
     spriteset_emu_Mat64PlanV_yellow_back;
 }
 
@@ -90,6 +150,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanTD_livery, cargo_subtype) {
 	1: switch_emu_Mat64PlanTD_purchaselivery;
     2: spriteset_emu_Mat64PlanV_green_back;
     3: spriteset_emu_Mat64PlanV_yellow_back;
+    4: spriteset_emu_Mat64PlanT_freedom_back;
     switch_emu_Mat64PlanTD_autolivery;
 }
 
@@ -99,6 +160,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_subtype_text, cargo_subtype) {
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green_yellow);
     3: return string(str_cargo_subtype_yellow_blue);
+    4: return string(str_cargo_subtype_freedom);
     return CB_RESULT_NO_TEXT;
 }
 

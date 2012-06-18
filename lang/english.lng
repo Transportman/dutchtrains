@@ -105,6 +105,7 @@ str_cargo_subtype_citypendel        :> Citypendel livery
 str_cargo_subtype_ddar              :> DDM-2/3 livery
 str_cargo_subtype_ddm_nocab         :> DDM livery, no cab control
 str_cargo_subtype_ddm1              :> DDM-1 livery
+str_cargo_subtype_freedom           :> Freedom livery
 str_cargo_subtype_fyra              :> Fyra livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
