@@ -28,10 +28,10 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_livery_purchase, current_year) {
 
 //gen1
 spriteset(spriteset_dmu_DH2_orig_front, "gfx/dmu/DH2.png") {
-	template_2cc_88(0, 0)
+	template_2cc_88(1, 1)
 }
 spriteset(spriteset_dmu_DH2_orig_back, "gfx/dmu/DH2.png") {
-	template_2cc_88(0, 30)
+	template_2cc_88(1, 32)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen1, (position_in_vehid_chain % 2)) {
@@ -41,10 +41,10 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen1, (position_in_vehid_chain
 
 //gen2
 spriteset(spriteset_dmu_DH2_renew_front, "gfx/dmu/DH2.png") {
-	template_2cc_88(0, 60)
+	template_2cc_88(1, 64)
 }
 spriteset(spriteset_dmu_DH2_renew_back, "gfx/dmu/DH2.png") {
-	template_2cc_88(0, 90)
+	template_2cc_88(1, 96)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen2, (position_in_vehid_chain % 2)) {
@@ -54,10 +54,10 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen2, (position_in_vehid_chain
 
 //wadkikker
 spriteset(spriteset_dmu_DH2_wadkikker_front, "gfx/dmu/DH2.png") {
-	template_2cc_88(0, 120)
+	template_2cc_88(1, 192)
 }
 spriteset(spriteset_dmu_DH2_wadkikker_back, "gfx/dmu/DH2.png") {
-	template_2cc_88(0, 150)
+	template_2cc_88(1, 224)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_wadkikker, (position_in_vehid_chain % 2)) {
@@ -67,10 +67,10 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_wadkikker, (position_in_vehid_
 
 //maashopper
 spriteset(spriteset_dmu_DH2_maashopper_front, "gfx/dmu/DH2.png") {
-	template_2cc_88(0, 180)
+	template_2cc_88(1, 128)
 }
 spriteset(spriteset_dmu_DH2_maashopper_back, "gfx/dmu/DH2.png") {
-	template_2cc_88(0, 210)
+	template_2cc_88(1, 160)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_maashopper, (position_in_vehid_chain % 2)) {

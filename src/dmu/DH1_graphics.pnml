@@ -28,11 +28,11 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH1_livery_purchase, current_year) {
 
 //original
 spriteset(spriteset_dmu_DH1_orig, "gfx/dmu/DH1.png") {
-	template_2cc_88(0, 0)
+	template_2cc_88(1, 1)
 }
 //renewal
 spriteset(spriteset_dmu_DH1_renew, "gfx/dmu/DH1.png") {
-	template_2cc_88(0, 30)
+	template_2cc_88(1, 32)
 }
 
 /*
