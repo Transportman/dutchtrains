@@ -118,6 +118,9 @@ str_cargo_subtype_renewal           :> Gemoderniseerde kleurstelling
 str_cargo_subtype_sr10              :> Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)
 str_cargo_subtype_TGV_PBKA          :> PBKA kleurstelling
 str_cargo_subtype_TGV_PBA           :> PBA kleurstelling
+str_cargo_subtype_valleilijn_yellow_blue    :>Valleilijn geel/blauwe kleurstelling
+str_cargo_subtype_valleilijn_blue_yellownose:>Valleilijn blauwe kleurstelling met gele neus
+str_cargo_subtype_valleilijn_blue           :>Valleilijn blauwe kleurstelling (fictief)
 str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker" kleurstelling
 str_cargo_subtype_zilverrail        :> Zilverrail kleurstelling (Oct 24-27, 2005)
 

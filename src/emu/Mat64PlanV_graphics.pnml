@@ -10,10 +10,10 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_Mat64PlanV_purchase_green, "gfx/purchase/emu/Mat64_green.png") {
+spriteset(spriteset_emu_Mat64PlanV_purchase_green, "gfx/purchase/emu/PlanV_greenyellow.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_emu_Mat64PlanV_purchase_yellow, "gfx/purchase/emu/Mat64_yellow.png") {
+spriteset(spriteset_emu_Mat64PlanV_purchase_yellow, "gfx/purchase/emu/PlanV_yellowblue.png") {
 	template_purchase(0, 0)
 }
 
@@ -27,19 +27,55 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanV_purchase, current_year) {
 */
 
 //green
-spriteset(spriteset_emu_Mat64PlanV_green_front, "gfx/emu/Mat64.png") {
+spriteset(spriteset_emu_Mat64PlanV_green_front, "gfx/emu/PlanV.png") {
 	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_Mat64PlanV_green_back, "gfx/emu/Mat64.png") {
+spriteset(spriteset_emu_Mat64PlanV_green_back, "gfx/emu/PlanV.png") {
 	template_2cc_88(1, 32)
 }
 
 //yellow
-spriteset(spriteset_emu_Mat64PlanV_yellow_front, "gfx/emu/Mat64.png") {
+spriteset(spriteset_emu_Mat64PlanV_yellow_front, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_Mat64PlanV_yellow_back, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_Mat64PlanV_yellow_back_noD, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 352)
+}
+
+//valleilijn half blue half yellow
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_yellow_blue_front, "gfx/emu/PlanV.png") {
 	template_2cc_88(1, 128)
 }
-spriteset(spriteset_emu_Mat64PlanV_yellow_back, "gfx/emu/Mat64.png") {
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_yellow_blue_back, "gfx/emu/PlanV.png") {
 	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_yellow_blue_back_noD, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 416)
+}
+
+//valleilijn blue yellow nose
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_yellownose_front, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_yellownose_back, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 224)
+}
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_yellownose_back_noD, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 480)
+}
+
+//valleilijn blue
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_front, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_back, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_back_noD, "gfx/emu/PlanV.png") {
+	template_2cc_88(1, 544)
 }
 
 /*
@@ -60,6 +96,9 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanV_livery, cargo_subtype) {
 	1: switch_emu_Mat64PlanV_purchaselivery;
     2: spriteset_emu_Mat64PlanV_green_front;
     3: spriteset_emu_Mat64PlanV_yellow_front;
+    4: spriteset_emu_Mat64PlanV_valleilijn_yellow_blue_front;
+    5: spriteset_emu_Mat64PlanV_valleilijn_blue_yellownose_front;
+    6: spriteset_emu_Mat64PlanV_valleilijn_blue_front;
     switch_emu_Mat64PlanV_autolivery;
 }
 
@@ -75,11 +114,41 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_purchaselivery, build_year) {
     spriteset_emu_Mat64PlanV_yellow_back;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_livery, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_livery_D, cargo_subtype) {
 	1: switch_emu_Mat64PlanVD_purchaselivery;
     2: spriteset_emu_Mat64PlanV_green_back;
     3: spriteset_emu_Mat64PlanV_yellow_back;
+    4: spriteset_emu_Mat64PlanV_valleilijn_yellow_blue_back;
+    5: spriteset_emu_Mat64PlanV_valleilijn_blue_yellownose_back;
+    6: spriteset_emu_Mat64PlanV_valleilijn_blue_back;
     switch_emu_Mat64PlanVD_autolivery;
+}
+
+//D-part passengers
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_autolivery_noD, date_of_last_service) {
+	0..date(1967,12,31): spriteset_emu_Mat64PlanV_green_back;
+    spriteset_emu_Mat64PlanV_yellow_back_noD;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_purchaselivery_noD, build_year) {
+	0..1967: spriteset_emu_Mat64PlanV_green_back;
+    spriteset_emu_Mat64PlanV_yellow_back_noD;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_livery_noD, cargo_subtype) {
+	1: switch_emu_Mat64PlanVD_purchaselivery_noD;
+    2: spriteset_emu_Mat64PlanV_green_back;
+    3: spriteset_emu_Mat64PlanV_yellow_back_noD;
+    4: spriteset_emu_Mat64PlanV_valleilijn_yellow_blue_back_noD;
+    5: spriteset_emu_Mat64PlanV_valleilijn_blue_yellownose_back_noD;
+    6: spriteset_emu_Mat64PlanV_valleilijn_blue_back_noD;
+    switch_emu_Mat64PlanVD_autolivery_noD;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanVD_livery, cargo_classes) {
+	bitmask(CC_PASSENGERS): switch_emu_Mat64PlanVD_livery_noD;
+    switch_emu_Mat64PlanVD_livery_D;
 }
 
 // CARGO SUBTYPE CALLBACK
@@ -88,6 +157,9 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanV_subtype_text, cargo_subtype) {
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green_yellow);
     3: return string(str_cargo_subtype_yellow_blue);
+    4: return string(str_cargo_subtype_valleilijn_yellow_blue);
+    5: return string(str_cargo_subtype_valleilijn_blue_yellownose);
+    6: return string(str_cargo_subtype_valleilijn_blue);
     return CB_RESULT_NO_TEXT;
 }
 
