@@ -96,7 +96,7 @@ str_cargo_subtype_citypendel        :> Citypendel kleurstelling
 str_cargo_subtype_ddar              :> DDM-2/3 kleurstelling
 str_cargo_subtype_ddm_nocab         :> DDM kleurstelling, zonder stuurstand
 str_cargo_subtype_ddm1              :> DDM-1 kleurstelling
-str_cargo_subtype_freedom           :> Vrijheidskleurstelling
+str_cargo_subtype_freedom           :> Vrijheidstrein kleurstelling
 str_cargo_subtype_fyra              :> Fyra kleurstelling
 str_cargo_subtype_fyra_red          :> Fyra (rood) kleurstelling
 str_cargo_subtype_fyra_white        :> Fyra (wit) kleurstelling
