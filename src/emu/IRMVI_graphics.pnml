@@ -10,7 +10,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_IRMVI_purchase, "gfx/purchase/emu/IRM.png") {
+spriteset(spriteset_emu_IRMVI_purchase, "gfx/purchase/emu/VIRM_VI.png") {
 	template_purchase(0, 0)
 }
 
@@ -19,103 +19,99 @@ spriteset(spriteset_emu_IRMVI_purchase, "gfx/purchase/emu/IRM.png") {
 */
 
 //IRM
-spriteset(spriteset_emu_IRM_front_pup, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_front_pantoup, "gfx/emu/IRM.png") {
 	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_IRM_front_pdown, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_front_pantodown, "gfx/emu/IRM.png") {
 	template_2cc_88(1, 32)
 }
-spriteset(spriteset_emu_IRM_front_pno, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_front_nopanto, "gfx/emu/IRM.png") {
 	template_2cc_88(1, 64)
 }
-spriteset(spriteset_emu_IRM_back_pup, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_back_pantoup, "gfx/emu/IRM.png") {
 	template_2cc_88(1, 96)
 }
-spriteset(spriteset_emu_IRM_back_pdown, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_back_pantodown, "gfx/emu/IRM.png") {
 	template_2cc_88(1, 128)
 }
-spriteset(spriteset_emu_IRM_back_pno, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_back_nopanto, "gfx/emu/IRM.png") {
 	template_2cc_88(1, 160)
 }
-spriteset(spriteset_emu_IRM_middle_pup, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_middle_panto, "gfx/emu/IRM.png") {
 	template_2cc_88(1, 192)
 }
-spriteset(spriteset_emu_IRM_middle_pdown, "gfx/emu/IRM.png") {
-	template_2cc_88(1, 224)
-}
-spriteset(spriteset_emu_IRM_middle_pno, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_middle_nopanto, "gfx/emu/IRM.png") {
 	template_2cc_88(1, 256)
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_1, (position_in_vehid_chain % 6)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_middle_pdown;
-	3: spriteset_emu_IRM_middle_pno;
-	4: spriteset_emu_IRM_middle_pup;
-	5: spriteset_emu_IRM_back_pno;
-    spriteset_emu_IRM_front_pup;
+	0: spriteset_emu_IRM_front_nopanto;
+    2: spriteset_emu_IRM_middle_panto;
+	5: spriteset_emu_IRM_back_nopanto;
+    spriteset_emu_IRM_middle_nopanto;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_2, (position_in_vehid_chain % 6)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_middle_pup;
-	3: spriteset_emu_IRM_middle_pno;
-	4: spriteset_emu_IRM_middle_pup;
-	5: spriteset_emu_IRM_back_pno;
-    spriteset_emu_IRM_front_pdown;
+	0: spriteset_emu_IRM_front_nopanto;
+    3: spriteset_emu_IRM_middle_panto;
+	5: spriteset_emu_IRM_back_nopanto;
+    spriteset_emu_IRM_middle_nopanto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_3, (position_in_vehid_chain % 6)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_middle_pup;
-	3: spriteset_emu_IRM_middle_pno;
-	4: spriteset_emu_IRM_middle_pdown;
-	5: spriteset_emu_IRM_back_pup;
-    spriteset_emu_IRM_front_pno;
-}
-
-switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_4, (position_in_vehid_chain % 6)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_middle_pdown;
-	3: spriteset_emu_IRM_middle_pno;
-	4: spriteset_emu_IRM_middle_pup;
-	5: spriteset_emu_IRM_back_pup;
-    spriteset_emu_IRM_front_pno;
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_livery) {
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_livery) {
 	1: switch_emu_IRMVI_position_1;
 	1: switch_emu_IRMVI_position_2;
-	1: switch_emu_IRMVI_position_3;
-	1: switch_emu_IRMVI_position_4;
 }
 
-//IRM_ovchip
-spriteset(spriteset_emu_IRM_ovchip_front_pup, "gfx/emu/IRM_ovchip.png") {
+//olypmic
+spriteset(spriteset_emu_IRM_olympic_front_pantoup, "gfx/emu/IRM_olympic.png") {
 	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_IRM_ovchip_front_pdown, "gfx/emu/IRM_ovchip.png") {
+spriteset(spriteset_emu_IRM_olympic_front_pantodown, "gfx/emu/IRM_olympic.png") {
 	template_2cc_88(1, 32)
 }
-spriteset(spriteset_emu_IRM_ovchip_front_pno, "gfx/emu/IRM_ovchip.png") {
+spriteset(spriteset_emu_IRM_olympic_front_nopanto, "gfx/emu/IRM_olympic.png") {
 	template_2cc_88(1, 64)
 }
-spriteset(spriteset_emu_IRM_ovchip_back_pup, "gfx/emu/IRM_ovchip.png") {
+spriteset(spriteset_emu_IRM_olympic_back_pantoup, "gfx/emu/IRM_olympic.png") {
 	template_2cc_88(1, 96)
 }
-spriteset(spriteset_emu_IRM_ovchip_back_pdown, "gfx/emu/IRM_ovchip.png") {
+spriteset(spriteset_emu_IRM_olympic_back_pantodown, "gfx/emu/IRM_olympic.png") {
 	template_2cc_88(1, 128)
 }
-spriteset(spriteset_emu_IRM_ovchip_back_pno, "gfx/emu/IRM_ovchip.png") {
+spriteset(spriteset_emu_IRM_olympic_back_nopanto, "gfx/emu/IRM_olympic.png") {
 	template_2cc_88(1, 160)
 }
-spriteset(spriteset_emu_IRM_ovchip_middle_pup, "gfx/emu/IRM_ovchip.png") {
+spriteset(spriteset_emu_IRM_olympic_middle_panto, "gfx/emu/IRM_olympic.png") {
 	template_2cc_88(1, 192)
 }
-spriteset(spriteset_emu_IRM_ovchip_middle_pdown, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 224)
+spriteset(spriteset_emu_IRM_olympic_middle_nopanto, "gfx/emu/IRM_olympic.png") {
+	template_2cc_88(1, 256)
 }
-spriteset(spriteset_emu_IRM_ovchip_middle_pno, "gfx/emu/IRM_ovchip.png") {
+
+//ovchip
+spriteset(spriteset_emu_IRM_ovchip_front_pantoup, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_IRM_ovchip_front_pantodown, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_IRM_ovchip_front_nopanto, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_pantoup, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_pantodown, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_IRM_ovchip_back_nopanto, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_IRM_ovchip_middle_panto, "gfx/emu/IRM_ovchip.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_IRM_ovchip_middle_nopanto, "gfx/emu/IRM_ovchip.png") {
 	template_2cc_88(1, 256)
 }
 

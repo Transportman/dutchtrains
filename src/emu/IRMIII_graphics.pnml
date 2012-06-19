@@ -17,18 +17,18 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_1, (position_in_vehid_chain % 3)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_back_pdown;
-    spriteset_emu_IRM_front_pup;
+	1: spriteset_emu_IRM_middle_nopanto;
+	2: spriteset_emu_IRM_back_pantodown;
+    spriteset_emu_IRM_front_pantoup;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_2, (position_in_vehid_chain % 3)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_back_pup;
-    spriteset_emu_IRM_front_pdown;
+	1: spriteset_emu_IRM_middle_nopanto;
+	2: spriteset_emu_IRM_back_pantoup;
+    spriteset_emu_IRM_front_pantodown;
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_livery) {
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIII_livery) {
 	1: switch_emu_IRMIII_position_1;
 	1: switch_emu_IRMIII_position_2;
 }

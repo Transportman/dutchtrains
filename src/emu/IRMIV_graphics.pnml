@@ -10,74 +10,106 @@
 * PURCHASE
 */
 
-//graphics defined in IRMVI
+spriteset(spriteset_emu_IRMIV_irm_purchase, "gfx/purchase/emu/IRM.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_IRMIV_virm_purchase, "gfx/purchase/emu/VIRM_IV.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_IRMIV_olympic_purchase, "gfx/purchase/emu/VIRM_IV_olympic.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_IRMIV_ovchip_purchase, "gfx/purchase/emu/VIRM_IV_ovchip.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_purchase, current_year) {
+    0..2001: spriteset_emu_IRMIV_irm_purchase;
+    2002..2004: spriteset_emu_IRMIV_virm_purchase;
+    2010..2011: spriteset_emu_IRMIV_ovchip_purchase;
+    spriteset_emu_IRMIV_olympic_purchase;
+}
 
 /*
 * VEHICLE
 */
 
-//normal livery
+//irm livery
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_1, (position_in_vehid_chain % 4)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_middle_pdown;
-	3: spriteset_emu_IRM_back_pdown;
-    spriteset_emu_IRM_front_pup;
+	0: spriteset_emu_IRM_front_pantoup;
+	3: spriteset_emu_IRM_back_pantodown;
+    spriteset_emu_IRM_middle_nopanto;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_2, (position_in_vehid_chain % 4)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_middle_pup;
-	3: spriteset_emu_IRM_back_pdown;
-    spriteset_emu_IRM_front_pdown;
+	0: spriteset_emu_IRM_front_pantodown;
+	3: spriteset_emu_IRM_back_pantoup;
+    spriteset_emu_IRM_middle_nopanto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_3, (position_in_vehid_chain % 4)) {
-	1: spriteset_emu_IRM_middle_pno;
-	2: spriteset_emu_IRM_middle_pdown;
-	3: spriteset_emu_IRM_back_pup;
-    spriteset_emu_IRM_front_pdown;
-}
-
-random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_ic_livery) {
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_irm_livery) {
 	1: switch_emu_IRMIV_position_1;
 	1: switch_emu_IRMIV_position_2;
-	1: switch_emu_IRMIV_position_3;
+}
+
+//virm livery
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_virm_position_1, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_front_nopanto;
+    1: spriteset_emu_IRM_middle_panto;
+	3: spriteset_emu_IRM_back_nopanto;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_virm_position_2, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_front_nopanto;
+    2: spriteset_emu_IRM_middle_panto;
+	3: spriteset_emu_IRM_back_nopanto;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_virm_livery) {
+	1: switch_emu_IRMIV_virm_position_1;
+	1: switch_emu_IRMIV_virm_position_2;
 }
 
 //olympic livery
-//tba
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_olympic_position_1, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_olympic_front_nopanto;
+    1: spriteset_emu_IRM_olympic_middle_panto;
+	3: spriteset_emu_IRM_olympic_back_nopanto;
+    spriteset_emu_IRM_olympic_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_olympic_position_2, (position_in_vehid_chain % 4)) {
+	0: spriteset_emu_IRM_olympic_front_nopanto;
+    2: spriteset_emu_IRM_olympic_middle_panto;
+	3: spriteset_emu_IRM_olympic_back_nopanto;
+    spriteset_emu_IRM_olympic_middle_nopanto;
+}
+
 random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_olympic_livery) {
-	1: switch_emu_IRMIV_position_1;
-	1: switch_emu_IRMIV_position_2;
-	1: switch_emu_IRMIV_position_3;
+	1: switch_emu_IRMIV_olympic_position_1;
+	1: switch_emu_IRMIV_olympic_position_2;
 }
 
 //ovchip livery
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_1, (position_in_vehid_chain % 4)) {
-	1: spriteset_emu_IRM_ovchip_middle_pno;
-	2: spriteset_emu_IRM_ovchip_middle_pdown;
-	3: spriteset_emu_IRM_ovchip_back_pdown;
-    spriteset_emu_IRM_ovchip_front_pup;
+	0: spriteset_emu_IRM_ovchip_front_nopanto;
+    1: spriteset_emu_IRM_ovchip_middle_panto;
+	3: spriteset_emu_IRM_ovchip_back_nopanto;
+    spriteset_emu_IRM_ovchip_middle_nopanto;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_2, (position_in_vehid_chain % 4)) {
-	1: spriteset_emu_IRM_ovchip_middle_pno;
-	2: spriteset_emu_IRM_ovchip_middle_pup;
-	3: spriteset_emu_IRM_ovchip_back_pdown;
-    spriteset_emu_IRM_ovchip_front_pdown;
-}
-
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_3, (position_in_vehid_chain % 4)) {
-	1: spriteset_emu_IRM_ovchip_middle_pno;
-	2: spriteset_emu_IRM_ovchip_middle_pdown;
-	3: spriteset_emu_IRM_ovchip_back_pup;
-    spriteset_emu_IRM_ovchip_front_pdown;
+	0: spriteset_emu_IRM_ovchip_front_nopanto;
+    2: spriteset_emu_IRM_ovchip_middle_panto;
+	3: spriteset_emu_IRM_ovchip_back_nopanto;
+    spriteset_emu_IRM_ovchip_middle_nopanto;
 }
 
 random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_ovchip_livery) {
 	1: switch_emu_IRMIV_ovchip_position_1;
 	1: switch_emu_IRMIV_ovchip_position_2;
-	1: switch_emu_IRMIV_ovchip_position_3;
 }
 
 /*
@@ -85,40 +117,47 @@ random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_ovchip_livery) {
 */
 random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randomauto_ic_olympic_ovchip) {
 	2:  switch_emu_IRMIV_ovchip_livery;
-    43: switch_emu_IRMIV_ic_livery;
+    43: switch_emu_IRMIV_virm_livery;
 }
 switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_purchase_ic_olympic_ovchip, date_of_last_service) {
     date(2010,1,1)..date(2011,12,31): switch_emu_IRMIV_randomauto_ic_olympic_ovchip;
-    switch_emu_IRMIV_ic_livery;
+    switch_emu_IRMIV_virm_livery;
 }
 random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randomauto_ic_olympic) {
 	2:  switch_emu_IRMIV_olympic_livery;
     45: switch_emu_IRMIV_purchase_ic_olympic_ovchip;
 }
 switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_autolivery, date_of_last_service) {
-    0..date(2004,12,31): switch_emu_IRMIV_ic_livery;
+    0..date(2001,12,31): switch_emu_IRMIV_irm_livery;
+    date(2002,1,3)..date(2004,12,31): switch_emu_IRMIV_virm_livery;
     switch_emu_IRMIV_randomauto_ic_olympic;
 }
 
 random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randompurchase_ic_olympic_ovchip) {
 	2:  switch_emu_IRMIV_olympic_livery;
     2:  switch_emu_IRMIV_ovchip_livery;
-    43: switch_emu_IRMIV_ic_livery;
+    43: switch_emu_IRMIV_virm_livery;
 }
 random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_randompurchase_ic_olympic) {
 	2:  switch_emu_IRMIV_olympic_livery;
-    45: switch_emu_IRMIV_ic_livery;
+    45: switch_emu_IRMIV_virm_livery;
 }
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_purchaselivery, build_year) {
-    0..2004: switch_emu_IRMIV_ic_livery;
+    0..2001: switch_emu_IRMIV_irm_livery;
+    2002..2004: switch_emu_IRMIV_virm_livery;
     2010..2011: switch_emu_IRMIV_randompurchase_ic_olympic_ovchip;
     switch_emu_IRMIV_randompurchase_ic_olympic;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_ic_livery, date_of_last_service) {
+    0..date(2001,12,31): switch_emu_IRMIV_irm_livery;
+    switch_emu_IRMIV_virm_livery;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_livery, cargo_subtype) {
 	1: switch_emu_IRMIV_purchaselivery;
     2: switch_emu_IRMIV_ic_livery;
-    3: switch_emu_IRMIV_ic_livery;
+    3: switch_emu_IRMIV_olympic_livery;
     4: switch_emu_IRMIV_ovchip_livery;
     switch_emu_IRMIV_autolivery;
 }
