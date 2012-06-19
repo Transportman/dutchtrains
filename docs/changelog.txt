@@ -1,6 +1,71 @@
 Dutch Trainset Changelog
 ========================
 
+2.0.0-alpha4 (2012/06/19)
+-------------------------
+- Feature: ES64F4 power depends on railtype
+- Feature: F140MS2 power depends on railtype
+- Feature: freedom livery for Mat '54 ELD4 (by Voyager One) (issue #3937)
+- Feature: GTW 2/6 and 2/8 EMUs
+- Feature: HS-1 power depends on railtype
+- Feature: HS-2 power depends on railtype
+- Feature: ICE3M power depends on railtype
+- Feature: indicate loading time in days for EMUs in purchase menu (issue #3686)
+- Feature: loading speeds for carriages (issue #3686, issue #3905)
+- Feature: loading speeds for DMUs (issue #3686, issue #3905)
+- Feature: loading speeds for EMUs (issue #3686, issue #3905)
+- Feature: loading speeds for metros (issue #3686, issue #3905)
+- Feature: loading speeds for wagons (issue #3686, issue #3905)
+- Feature: more and improved liveries for DE1 (by Voyager One) (issue #3957)
+- Feature: more and improved liveries for DE2 (by Voyager One) (issue #3957)
+- Feature: new graphics and more liveries for DE3 (by Voyager One) (issue #3976)
+- Feature: new graphics and more liveries for DE5 (by Voyager One) (issue #3966)
+- Feature: new graphics and more liveries for DM90 (by Voyager One) (issue #3999) (breaks compatibility)
+- Feature: new graphics and more liveries for Mat '34 (by Voyager One) (issue #3968)
+- Feature: new graphics and more liveries for Plan T (by Voyager One) (issue #3988)
+- Feature: new graphics and more liveries for Plan V (by Voyager One) (issue #3980)
+- Feature: new graphics and more liveries for SGM2 (by Voyager One) (issue #4012)
+- Feature: new graphics for DH1/2 (by Voyager One) (issue #3991)
+- Feature: new graphics for SGM3 (by Voyager One) (issue #4012)
+- Feature: new graphics for SM90 (by Voyager One) (issue #4004)
+- Feature: NS1600P power depends on railtype
+- Feature: olympic livery for VIRM-IV (by STT Transport) (issue #4003)
+- Feature: ov chipcard livery for IRM-IV
+- Feature: P8001 power depends on railtype
+- Feature: standardized railtype labels for carriages (issue #3686, issue #3927)
+- Feature: standardized railtype labels for diesels (issue #3686, issue #3927)
+- Feature: standardized railtype labels for DMUs (issue #3686, issue #3927)
+- Feature: standardized railtype labels for electrics (issue #3686, issue #3927)
+- Feature: standardized railtype labels for EMUs (issue #3686, issue #3927)
+- Feature: standardized railtype labels for metros (issue #3686, issue #3927)
+- Feature: standardized railtype labels for steamers (issue #3686, issue #3927)
+- Feature: standardized railtype labels for wagons (issue #3686, issue #3927)
+- Feature: Thalys power depends on railtype
+- Feature: V250 power depends on railtype
+- Feature: Veolia 'faces' powerunit for GTW (STT Transport)
+- Change: expand railtypetable for broader compatibility (issue #3927)
+- Change: explicitly allow/deny all known cargoes
+- Change: mail wagons can carry mail and armoured cargotypes
+- Change: r581 has actually broken compatibility
+- Change: rename ICM for consistency
+- Change: rename P8001 to P8000
+- Change: Ubcs graphics (Voyager One) (issue #3951)
+- Codechange: control cargo definition for coaches from cargorefits.pnml
+- Codechange: control cargo definition for DMUs from cargorefits.pnml
+- Codechange: control cargo definition for EMUs from cargorefits.pnml
+- Codechange: control cargo definition for metros from cargorefits.pnml
+- Codechange: prepare railtypetable for standardized railtype labels (issue #3927)
+- Fix: alignment of Eass
+- Fix: build.sh (planetmaker) (issue #3983)
+- Fix: livery names of gen2 tanker
+- Fix: Plan K had wrong length set
+- Fix: position of pantographs on IRM/VIRM (issue #4003)
+- Fix (r519): sprite alignment of Mat'54 ELD4 (issue #3937)
+- Fix (r535): require electrified track for electric GTWs
+- Fix (r558, r560, r561): power values
+- Update: makefile system (planetmaker) (issue #3984)
+
+
 2.0.0-alpha3 (2012/04/30)
 -------------------------
 - Feature: additional purchase menu text for diesels (#3686)

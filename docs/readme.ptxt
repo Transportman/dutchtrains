@@ -162,11 +162,6 @@ MU livery refits
     If you combine multiple MUs in a single train, the livery refit of 
     the first MU will be applied to all subsequent MUs (#3818).
     
-Loading speed
-    The loading speed of wagons, carriages and multiple units is not
-    yet optimized. Currently all have a loading speed of 5/tick, except
-    metros which have a loading speed of 20/tick (#3905).
-    
 Additional steam engines
     The selection of steam engines is currently incomplete, not 
     allowing you to start in 1839. (#3952)
