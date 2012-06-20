@@ -8,6 +8,7 @@
 # Definition of the grfs
 GRF_FILE            := dutchtrains.grf
 MAIN_SRC_FILE       := src/dutchtrains.pnml
+REPO_NAME           := Dutch Trainset
 # GFX_LIST_FILES      := gfx/png_source_list
 
 # Directory structure
