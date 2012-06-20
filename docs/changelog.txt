@@ -1,6 +1,11 @@
 Dutch Trainset Changelog
 ========================
 
+2.0.0-alpha5 (2012/06/20)
+-------------------------
+Fix: grf name was missing
+
+
 2.0.0-alpha4 (2012/06/19)
 -------------------------
 - Feature: ES64F4 power depends on railtype
