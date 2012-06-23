@@ -51,6 +51,7 @@ item(FEAT_TRAINS, item_wagons_gen4_GTUW) {
         purchase: spriteset_wagons_gen4_GTUW_purchase;
         additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_C), string(str_purchase_lsp_6));
         cargo_capacity: return 28;
+        colour_mapping: switch_generic_recolour;
         cargo_subtype_text: switch_wagons_gen4_GTUW_subtype_text;
         switch_wagons_gen4_GTUW_livery;
     }
