@@ -10,16 +10,76 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_ZHESM_mBC_purchase, "gfx/purchase/emu/ZHESM_mBC.png") {
+spriteset(spriteset_emu_ZHESM_green_yellow_oldpanto_purchase, "gfx/purchase/emu/ZHESM_green_yellow_oldpanto.png") {
 	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_ZHESM_green_yellow_newpanto_purchase, "gfx/purchase/emu/ZHESM_green_yellow_newpanto.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_ZHESM_green_purchase, "gfx/purchase/emu/ZHESM_green.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_ZHESM_purchase, current_year) {
+	0..1925: spriteset_emu_ZHESM_green_yellow_oldpanto_purchase;
+    1926..1926: spriteset_emu_ZHESM_green_yellow_newpanto_purchase;
+    spriteset_emu_ZHESM_green_purchase;
 }
 
 /*
 * VEHICLE
 */
 
-spriteset(spriteset_emu_ZHESM_mBC, "gfx/emu/ZHESM_mBC.png") {
-	template_2cc_88(0, 0)
+spriteset(spriteset_emu_ZHESM_green_yellow_oldpanto, "gfx/emu/ZHESM.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_ZHESM_green_yellow_newpanto, "gfx/emu/ZHESM.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_ZHESM_green_yellow_singlepanto, "gfx/emu/ZHESM.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_ZHESM_green, "gfx/emu/ZHESM.png") {
+	template_2cc_88(1, 128)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_random_newpanto) {
+	1: spriteset_emu_ZHESM_green_yellow_newpanto;
+    1: spriteset_emu_ZHESM_green_yellow_singlepanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_autolivery, date_of_last_service) {
+	0..date(1925,12,31): spriteset_emu_ZHESM_green_yellow_oldpanto;
+    date(1926,1,1)..date(1926,12,31): switch_emu_ZHESM_random_newpanto;
+    spriteset_emu_ZHESM_green;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_purchaselivery, build_year) {
+	0..1925: spriteset_emu_ZHESM_green_yellow_oldpanto;
+    1926..1926: switch_emu_ZHESM_random_newpanto;
+    spriteset_emu_ZHESM_green;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_livery, cargo_subtype) {
+	1: switch_emu_ZHESM_purchaselivery;
+    2: spriteset_emu_ZHESM_green_yellow_oldpanto;
+    3: switch_emu_ZHESM_random_newpanto;
+    4: spriteset_emu_ZHESM_green;
+    switch_emu_ZHESM_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_lightyellow);
+    3: return string(str_cargo_subtype_renewal);
+    4: return string(str_cargo_subtype_green);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*

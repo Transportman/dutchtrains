@@ -10,14 +10,55 @@
 * PURCHASE
 */
 
-spriteset(spriteset_coaches_ZHESM_B_purchase, "gfx/purchase/coaches/ZHESM_B.png") {
+spriteset(spriteset_coaches_ZHESM_B_green_yellow_purchase, "gfx/purchase/coaches/ZHESM_green_yellow.png") {
 	template_purchase(0, 0)
+}
+spriteset(spriteset_coaches_ZHESM_B_green_purchase, "gfx/purchase/coaches/ZHESM_green.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_ZHESM_B_purchase, current_year) {
+	0..1926: spriteset_coaches_ZHESM_B_green_yellow_purchase;
+    spriteset_coaches_ZHESM_B_green_purchase;
 }
 
 /*
 * VEHICLE
 */
 
-spriteset(spriteset_coaches_ZHESM_B, "gfx/emu/ZHESM_mBC.png") {
-	template_2cc_88(0, 30)
+spriteset(spriteset_coaches_ZHESM_B_green_yellow, "gfx/emu/ZHESM.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_coaches_ZHESM_B_green, "gfx/emu/ZHESM.png") {
+	template_2cc_88(1, 192)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_ZHESM_B_autolivery, date_of_last_service) {
+	0..date(1926,12,31): spriteset_coaches_ZHESM_B_green_yellow;
+    spriteset_coaches_ZHESM_B_green;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_ZHESM_B_purchaselivery, build_year) {
+	0..1926: spriteset_coaches_ZHESM_B_green_yellow;
+    spriteset_coaches_ZHESM_B_green;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_ZHESM_B_livery, cargo_subtype) {
+	1: switch_coaches_ZHESM_B_purchaselivery;
+    2: spriteset_coaches_ZHESM_B_green_yellow;
+    3: spriteset_coaches_ZHESM_B_green;
+    switch_coaches_ZHESM_B_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_ZHESM_B_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_green_lightyellow);
+    4: return string(str_cargo_subtype_green);
+    return CB_RESULT_NO_TEXT;
 }

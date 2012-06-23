@@ -48,8 +48,9 @@ item(FEAT_TRAINS, item_coaches_ZHESM_B) {
 	}
     graphics {
         cargo_capacity: return 56;
+        cargo_subtype_text: switch_coaches_ZHESM_B_subtype_text;
         additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_16), string(str_purchase_coaches_ZHESM_B));
-        purchase: spriteset_coaches_ZHESM_B_purchase;
-        spriteset_coaches_ZHESM_B;
+        purchase: switch_coaches_ZHESM_B_purchase;
+        switch_coaches_ZHESM_B_livery;
     }
 }
