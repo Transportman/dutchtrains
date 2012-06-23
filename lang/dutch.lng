@@ -96,12 +96,14 @@ str_cargo_subtype_citypendel        :> Citypendel kleurstelling
 str_cargo_subtype_ddar              :> DDM-2/3 kleurstelling
 str_cargo_subtype_ddm_nocab         :> DDM kleurstelling, zonder stuurstand
 str_cargo_subtype_ddm1              :> DDM-1 kleurstelling
+str_cargo_subtype_football          :> WK Voetbal kleurstelling
 str_cargo_subtype_freedom           :> Vrijheidstrein kleurstelling
 str_cargo_subtype_fyra              :> Fyra kleurstelling
 str_cargo_subtype_fyra_red          :> Fyra (rood) kleurstelling
 str_cargo_subtype_fyra_white        :> Fyra (wit) kleurstelling
-str_cargo_subtype_groningermuseum   :> Groninger Museum kleurstelling
+str_cargo_subtype_groningen         :> Groningen Mendini kleurstelling
 str_cargo_subtype_icplus            :> IC+ kleurstelling (Mei 28, 1995 - Juni 2002)
+str_cargo_subtype_kinderboeken      :> Kinderboekenweek kleurstelling
 str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_hispeed           :> NS Hispeed kleurstelling
@@ -114,6 +116,7 @@ str_cargo_subtype_olympic           :> Olympische kleurstelling
 str_cargo_subtype_original          :> Originele kleurstelling
 str_cargo_subtype_ovchip            :> OV Chipkaart kleurstelling
 str_cargo_subtype_overnightexpress  :> Overnight Express kleurstelling
+str_cargo_subtype_prototype         :> Prototype kleurstelling
 str_cargo_subtype_randstadrail      :> RandstadRail kleurstelling
 str_cargo_subtype_renewal           :> Gemoderniseerde kleurstelling
 str_cargo_subtype_sr10              :> Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)

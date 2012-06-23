@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_emu_ICM4) {
 	}
     graphics {
         cargo_capacity: return 63;
-        purchase: spriteset_emu_ICM_purchase;
+        purchase: switch_emu_ICM4_purchase;
         articulated_part: switch_emu_ICM4_articulated;
         cargo_subtype_text: switch_emu_ICM4_subtype_text;
         additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ip), string(str_purchase_axl_B), string(str_purchase_len_4_20), string(str_purchase_lsp_10));

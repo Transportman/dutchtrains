@@ -10,42 +10,109 @@
 * PURCHASE
 */
 
-//defined for ICM4
+spriteset(spriteset_emu_ICM_0_purchase, "gfx/purchase/emu/ICM_0.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_ICM_football_purchase, "gfx/purchase/emu/ICM_football.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_ICM_groningen_purchase, "gfx/purchase/emu/ICM_groningen.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_ICM_kinderboekenweek_purchase, "gfx/purchase/emu/ICM_kinderboekenweek.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_purchase, current_year) {
+	0..1982: spriteset_emu_ICM_0_purchase;
+	1983..1989: spriteset_emu_ICM_purchase;
+	1990..1990: spriteset_emu_ICM_football_purchase;
+	1991..1998: spriteset_emu_ICM_purchase;
+	1999..2003: spriteset_emu_ICM_groningen_purchase;
+	2004..2004: spriteset_emu_ICM_kinderboekenweek_purchase;
+	2005..2006: spriteset_emu_ICM_groningen_purchase;
+    spriteset_emu_ICM_ICMm_purchase;
+}
 
 /*
 * VEHICLE
 */
 
-//defined for ICM4
+//graphics defined for ICM4
 
-//original
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position_front, position_in_consist) {
-	0: spriteset_emu_ICM_original_front;
-    spriteset_emu_ICM_original_front_open;
+//ICM-0
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_0_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_0_front;
+    spriteset_emu_ICM_0_front_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position_back, position_in_consist_from_end) {
-	0: spriteset_emu_ICM_original_back;
-    spriteset_emu_ICM_original_back_open;
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_0_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_0_back;
+    spriteset_emu_ICM_0_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_original_position, (position_in_vehid_chain % 3)) {
-	1: spriteset_emu_ICM_original_middle;
-    2: switch_emu_ICM3_original_position_back;
-    switch_emu_ICM3_original_position_front;
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_0_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_0_middle;
+    2: switch_emu_ICM3_0_position_back;
+    switch_emu_ICM3_0_position_front;
 }
 
-//whitedoors
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position_front, position_in_consist) {
-	0: spriteset_emu_ICM_whitedoors_front;
-    spriteset_emu_ICM_whitedoors_front_open;
+//ICM-12
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_12_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_1234_front;
+    spriteset_emu_ICM_1234_front_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position_back, position_in_consist_from_end) {
-	0: spriteset_emu_ICM_whitedoors_back;
-    spriteset_emu_ICM_whitedoors_back_open;
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_12_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_1234_back;
+    spriteset_emu_ICM_1234_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_whitedoors_position, (position_in_vehid_chain % 3)) {
-	1: spriteset_emu_ICM_whitedoors_middle;
-    2: switch_emu_ICM3_whitedoors_position_back;
-    switch_emu_ICM3_whitedoors_position_front;
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_12_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_1234_middle;
+    2: switch_emu_ICM3_12_position_back;
+    switch_emu_ICM3_12_position_front;
+}
+
+//football
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_football_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_football_front;
+    spriteset_emu_ICM_football_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_football_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_football_back;
+    spriteset_emu_ICM_football_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_football_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_football_middle;
+    2: switch_emu_ICM3_football_position_back;
+    switch_emu_ICM3_football_position_front;
+}
+
+//kinderboeken
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_kinderboeken_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_kinderboeken_front;
+    spriteset_emu_ICM_kinderboeken_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_kinderboeken_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_kinderboeken_back;
+    spriteset_emu_ICM_kinderboeken_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_kinderboeken_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_kinderboeken_middle;
+    2: switch_emu_ICM3_kinderboeken_position_back;
+    switch_emu_ICM3_kinderboeken_position_front;
+}
+
+//groningen
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_groningen_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_groningen_front;
+    spriteset_emu_ICM_groningen_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_groningen_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_groningen_back;
+    spriteset_emu_ICM_groningen_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_groningen_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_groningen_middle;
+    2: switch_emu_ICM3_groningen_position_back;
+    switch_emu_ICM3_groningen_position_front;
 }
 
 //renewal
@@ -59,35 +126,56 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_renewal_position, (position_in_vehid_c
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery_random_whitedoors_original) {
-	47: switch_emu_ICM3_original_position;
-    3: switch_emu_ICM3_whitedoors_position;
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery_random_groningen_12) {
+	47: switch_emu_ICM3_12_position;
+    3: switch_emu_ICM3_groningen_position;
 }
-
-random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery_random_whitedoors_renewal) {
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery_random_groningen_renewal) {
 	47: switch_emu_ICM3_renewal_position;
-    3: switch_emu_ICM3_whitedoors_position;
+    3: switch_emu_ICM3_groningen_position;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery_random_12_groningen_kinderboeken) {
+	44: switch_emu_ICM3_12_position;
+    3: switch_emu_ICM3_kinderboeken_position;
+    3: switch_emu_ICM3_groningen_position;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery_random_12_football) {
+	69: switch_emu_ICM3_12_position;
+    25: switch_emu_ICM3_football_position;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery, date_of_last_service) {
-	0..date(1998,12,31): switch_emu_ICM3_original_position;
-	date(1999,1,1)..date(2006,12,31): switch_emu_ICM3_autolivery_random_whitedoors_original;
-	date(2007,1,1)..date(2007,12,31): switch_emu_ICM3_autolivery_random_whitedoors_renewal;
+	0..date(1982,12,31): switch_emu_ICM3_0_position;
+	date(1983,1,1)..date(1989,12,31): switch_emu_ICM3_12_position;
+	date(1990,1,1)..date(1990,12,31): switch_emu_ICM3_autolivery_random_12_football;
+	date(1991,1,1)..date(1998,12,31): switch_emu_ICM3_12_position;
+	date(1999,1,1)..date(2003,12,31): switch_emu_ICM3_autolivery_random_groningen_12;
+	date(2004,1,1)..date(2004,12,31): switch_emu_ICM3_autolivery_random_12_groningen_kinderboeken;
+	date(2005,1,1)..date(2006,12,31): switch_emu_ICM3_autolivery_random_groningen_12;
+	date(2007,1,1)..date(2007,12,31): switch_emu_ICM3_autolivery_random_groningen_renewal;
     switch_emu_ICM3_renewal_position;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_purchaselivery, build_year) {
-	0..1998: switch_emu_ICM3_original_position;
-	1999..2006: switch_emu_ICM3_autolivery_random_whitedoors_original;
-	2007..2007: switch_emu_ICM3_autolivery_random_whitedoors_renewal;
+	0..1982: switch_emu_ICM3_0_position;
+	1983..1989: switch_emu_ICM3_12_position;
+	1990..1990: switch_emu_ICM3_autolivery_random_12_football;
+	1991..1998: switch_emu_ICM3_12_position;
+	1999..2003: switch_emu_ICM3_autolivery_random_groningen_12;
+	2004..2004: switch_emu_ICM3_autolivery_random_12_groningen_kinderboeken;
+	2005..2006: switch_emu_ICM3_autolivery_random_groningen_12;
+	2007..2007: switch_emu_ICM3_autolivery_random_groningen_renewal;
     switch_emu_ICM3_renewal_position;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_livery, cargo_subtype) {
 	1: switch_emu_ICM3_purchaselivery;
-    2: switch_emu_ICM3_original_position;
-    3: switch_emu_ICM3_renewal_position;
-    4: switch_emu_ICM3_whitedoors_position;
+    2: switch_emu_ICM3_0_position;
+    3: switch_emu_ICM3_12_position;
+    4: switch_emu_ICM3_renewal_position;
+    5: switch_emu_ICM3_football_position;
+    6: switch_emu_ICM3_kinderboeken_position;
+    7: switch_emu_ICM3_groningen_position;
     switch_emu_ICM3_autolivery;
 }
 
@@ -95,9 +183,12 @@ switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_livery, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_emu_ICM3_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
-    2: return string(str_cargo_subtype_original);
-    3: return string(str_cargo_subtype_renewal);
-    4: return string(str_cargo_subtype_groningermuseum);
+    2: return string(str_cargo_subtype_prototype);
+    3: return string(str_cargo_subtype_original);
+    4: return string(str_cargo_subtype_renewal);
+    5: return string(str_cargo_subtype_football);
+    6: return string(str_cargo_subtype_kinderboeken);
+    7: return string(str_cargo_subtype_groningen);
     return CB_RESULT_NO_TEXT;
 }
 

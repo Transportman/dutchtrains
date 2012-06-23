@@ -105,14 +105,16 @@ str_cargo_subtype_citypendel        :> Citypendel livery
 str_cargo_subtype_ddar              :> DDM-2/3 livery
 str_cargo_subtype_ddm_nocab         :> DDM livery, no cab control
 str_cargo_subtype_ddm1              :> DDM-1 livery
+str_cargo_subtype_football          :> World Cup Football livery
 str_cargo_subtype_freedom           :> Freedom livery
 str_cargo_subtype_fyra              :> Fyra livery
 str_cargo_subtype_fyra_red          :> Fyra (red) livery
 str_cargo_subtype_fyra_white        :> Fyra (white) livery
-str_cargo_subtype_groningermuseum   :> Groninger Museum livery
+str_cargo_subtype_groningen         :> Groningen Mendini livery
 str_cargo_subtype_icplus            :> IC+ livery (May 28, 1995 - June 2002)
 str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
+str_cargo_subtype_kinderboeken      :> Week of Children's Books livery
 str_cargo_subtype_hispeed           :> NS Hispeed livery
 str_cargo_subtype_hispeed_nocab     :> NS Hispeed livery, no cab control
 str_cargo_subtype_maashopper        :> Veolia white/red "Maashopper" livery
@@ -123,6 +125,7 @@ str_cargo_subtype_olympic           :> Olympic livery
 str_cargo_subtype_original          :> Original livery
 str_cargo_subtype_ovchip            :> OV Chipkaart livery
 str_cargo_subtype_overnightexpress  :> Overnight Express livery
+str_cargo_subtype_prototype         :> Prototype livery
 str_cargo_subtype_randstadrail      :> RandstadRail livery
 str_cargo_subtype_renewal           :> Renewal livery
 str_cargo_subtype_sr10              :> Sr10 Royal ICR livery (Dec 22, 1993 - current)

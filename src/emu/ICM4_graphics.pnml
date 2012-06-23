@@ -13,88 +13,149 @@
 spriteset(spriteset_emu_ICM_purchase, "gfx/purchase/emu/ICM.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_emu_ICM_ICMm_purchase, "gfx/purchase/emu/ICMm.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_ICM_olympic_purchase, "gfx/purchase/emu/ICM_olympic.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_purchase, current_year) {
+	0..2003: spriteset_emu_ICM_purchase;
+	2004..2011: spriteset_emu_ICM_olympic_purchase;
+    spriteset_emu_ICM_ICMm_purchase;
+}
 
 /*
 * VEHICLE
 */
 
-//original
-spriteset(spriteset_emu_ICM_original_front, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 0)
+//ICM-0
+spriteset(spriteset_emu_ICM_0_front, "gfx/emu/ICM_0.png") {
+	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_ICM_original_middle, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 30)
+spriteset(spriteset_emu_ICM_0_middle, "gfx/emu/ICM_0.png") {
+	template_2cc_88(1, 32)
 }
-spriteset(spriteset_emu_ICM_original_back, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 60)
+spriteset(spriteset_emu_ICM_0_back, "gfx/emu/ICM_0.png") {
+	template_2cc_88(1, 64)
 }
-spriteset(spriteset_emu_ICM_original_front_open, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 90)
+spriteset(spriteset_emu_ICM_0_front_open, "gfx/emu/ICM_0.png") {
+	template_2cc_88(1, 96)
 }
-spriteset(spriteset_emu_ICM_original_back_open, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 120)
+spriteset(spriteset_emu_ICM_0_back_open, "gfx/emu/ICM_0.png") {
+	template_2cc_88(1, 128)
 }
 
+//ICM-1/2/3/4
+spriteset(spriteset_emu_ICM_1234_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_ICM_1234_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_ICM_1234_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_ICM_1234_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_ICM_1234_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 128)
+}
 
-//groninger museum
-spriteset(spriteset_emu_ICM_whitedoors_front, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 150)
+//football
+spriteset(spriteset_emu_ICM_football_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 160)
 }
-spriteset(spriteset_emu_ICM_whitedoors_middle, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 180)
+spriteset(spriteset_emu_ICM_football_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 192)
 }
-spriteset(spriteset_emu_ICM_whitedoors_back, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 210)
+spriteset(spriteset_emu_ICM_football_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 224)
 }
-spriteset(spriteset_emu_ICM_whitedoors_front_open, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 240)
+spriteset(spriteset_emu_ICM_football_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 256)
 }
-spriteset(spriteset_emu_ICM_whitedoors_back_open, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 270)
+spriteset(spriteset_emu_ICM_football_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 288)
+}
+
+//kinderboeken
+spriteset(spriteset_emu_ICM_kinderboeken_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 320)
+}
+spriteset(spriteset_emu_ICM_kinderboeken_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 352)
+}
+spriteset(spriteset_emu_ICM_kinderboeken_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 384)
+}
+spriteset(spriteset_emu_ICM_kinderboeken_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 416)
+}
+spriteset(spriteset_emu_ICM_kinderboeken_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 448)
+}
+
+//groningen
+spriteset(spriteset_emu_ICM_groningen_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 480)
+}
+spriteset(spriteset_emu_ICM_groningen_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 512)
+}
+spriteset(spriteset_emu_ICM_groningen_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 544)
+}
+spriteset(spriteset_emu_ICM_groningen_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 576)
+}
+spriteset(spriteset_emu_ICM_groningen_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 608)
 }
 
 //olympic
-spriteset(spriteset_emu_ICM_olympic_front, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 300)
+spriteset(spriteset_emu_ICM_olympic_front, "gfx/emu/ICM_4.png") {
+	template_2cc_88(1, 192)
 }
-spriteset(spriteset_emu_ICM_olympic_middle, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 330)
+spriteset(spriteset_emu_ICM_olympic_middle, "gfx/emu/ICM_4.png") {
+	template_2cc_88(1, 224)
 }
-spriteset(spriteset_emu_ICM_olympic_back, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 360)
+spriteset(spriteset_emu_ICM_olympic_back, "gfx/emu/ICM_4.png") {
+	template_2cc_88(1, 288)
 }
-spriteset(spriteset_emu_ICM_olympic_front_open, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 390)
+spriteset(spriteset_emu_ICM_olympic_front_open, "gfx/emu/ICM_4.png") {
+	template_2cc_88(1, 320)
 }
-spriteset(spriteset_emu_ICM_olympic_back_open, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 420)
+spriteset(spriteset_emu_ICM_olympic_back_open, "gfx/emu/ICM_4.png") {
+	template_2cc_88(1, 352)
 }
 
 //renewal
-spriteset(spriteset_emu_ICM_renewal_front, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 450)
+spriteset(spriteset_emu_ICM_renewal_front, "gfx/emu/ICMm.png") {
+	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_ICM_renewal_middle, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 480)
+spriteset(spriteset_emu_ICM_renewal_middle, "gfx/emu/ICMm.png") {
+	template_2cc_88(1, 32)
 }
-spriteset(spriteset_emu_ICM_renewal_back, "gfx/emu/ICM.png") {
-	template_2cc_88(0, 510)
+spriteset(spriteset_emu_ICM_renewal_back, "gfx/emu/ICMm.png") {
+	template_2cc_88(1, 96)
 }
 
-
-//original
-switch(FEAT_TRAINS, SELF, switch_emu_ICM4_original_position_front, position_in_consist) {
-	0: spriteset_emu_ICM_original_front;
-    spriteset_emu_ICM_original_front_open;
+//ICM-34
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_34_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_1234_front;
+    spriteset_emu_ICM_1234_front_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM4_original_position_back, position_in_consist_from_end) {
-	0: spriteset_emu_ICM_original_back;
-    spriteset_emu_ICM_original_back_open;
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_34_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_1234_back;
+    spriteset_emu_ICM_1234_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM4_original_position, (position_in_vehid_chain % 4)) {
-	1..2: spriteset_emu_ICM_original_middle;
-    3: switch_emu_ICM4_original_position_back;
-    switch_emu_ICM4_original_position_front;
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_34_position, (position_in_vehid_chain % 4)) {
+	1..2: spriteset_emu_ICM_1234_middle;
+    3: switch_emu_ICM4_34_position_back;
+    switch_emu_ICM4_34_position_front;
 }
 
 //olympic
@@ -123,8 +184,8 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM4_renewal_position, (position_in_vehid_c
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_autolivery_random_olympic_original) {
-	47: switch_emu_ICM4_original_position;
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_autolivery_random_olympic_34) {
+	47: switch_emu_ICM4_34_position;
     3: switch_emu_ICM4_olympic_position;
 }
 
@@ -134,22 +195,22 @@ random_switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_autolivery_random_olympic_ren
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_autolivery, date_of_last_service) {
-	0..date(2003,12,31): switch_emu_ICM4_original_position;
-	date(2004,1,1)..date(2006,12,31): switch_emu_ICM4_autolivery_random_olympic_original;
+	0..date(2003,12,31): switch_emu_ICM4_34_position;
+	date(2004,1,1)..date(2006,12,31): switch_emu_ICM4_autolivery_random_olympic_34;
 	date(2007,1,1)..date(2011,12,31): switch_emu_ICM4_autolivery_random_olympic_renewal;
     switch_emu_ICM4_renewal_position;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_purchaselivery, build_year) {
-	0..2003: switch_emu_ICM4_original_position;
-	2004..2006: switch_emu_ICM4_autolivery_random_olympic_original;
+	0..2003: switch_emu_ICM4_34_position;
+	2004..2006: switch_emu_ICM4_autolivery_random_olympic_34;
 	2007..2011: switch_emu_ICM4_autolivery_random_olympic_renewal;
     switch_emu_ICM4_renewal_position;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_livery, cargo_subtype) {
 	1: switch_emu_ICM4_purchaselivery;
-    2: switch_emu_ICM4_original_position;
+    2: switch_emu_ICM4_34_position;
     3: switch_emu_ICM4_renewal_position;
     4: switch_emu_ICM4_olympic_position;
     switch_emu_ICM4_autolivery;
