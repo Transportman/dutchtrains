@@ -50,6 +50,7 @@ item(FEAT_TRAINS, item_wagons_gen7_Eass) {
         purchase: spriteset_wagons_gen7_Eass_purchase;
         additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_C), string(str_purchase_lsp_8));
         cargo_capacity: return 58;
+        colour_mapping: switch_generic_recolour;
         cargo_subtype_text: switch_wagons_gen7_Eass_subtype_text;
         switch_wagons_gen7_Eass_livery;
     }
