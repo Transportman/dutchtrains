@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_Mat24) {
 	}
     graphics {
         cargo_capacity: return 64;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_9));
+        additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_9), string(str_purchase_coaches_Mat24));
         purchase: switch_coaches_Mat24_purchase;
         cargo_subtype_text: switch_coaches_Mat24_subtype_text_year;
         colour_mapping: PALETTE_USE_DEFAULT;

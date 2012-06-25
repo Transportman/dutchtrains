@@ -436,6 +436,7 @@ str_purchase_svc_len            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length
 str_purchase_svc_len_lsp        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
 str_purchase_svc_axl_len_lsp    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
 str_purchase_svc_axl_len_lsp_spc:{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_lsp_spc    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_len_lsp_spc    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
@@ -515,27 +516,39 @@ str_purchase_axl_E          :very high (class E)
 str_purchase_spc_eld        :With baggage compartment refittable to express cargoes.
 str_purchase_spc_el_eld     :With baggage compartment refittable to express cargoes or passengers.
 str_purchase_spc_emu_ms     :Multisystem EMU, full power only under 25 kV ~.
+str_purchase_spc_emu_ms_fictional:Multisystem EMU, full power only under 25 kV ~.{}Fictional.
 str_purchase_spc_electric_ms:Multisystem locomotive, full power only under 25 kV ~.
+str_purchase_spc_electric_ms_fictional:Multisystem locomotive, full power only under 25 kV ~.{}Fictional.
+str_purchase_spc_fictional  :Fictional.
 
-str_purchase_steam_HSM126   :Previously known as: {SILVER} HSM 126-135
-str_purchase_steam_HSM500   :Previously known as: {SILVER} HSM 501-535
-str_purchase_steam_SS700    :Previously known as: {SILVER} SS 685-778, 785-799
-str_purchase_steam_NBDS30   :Refurbished 1940: {YELLOW}-50% speed, +11% power{}{BLACK}Previously known as: {SILVER} NBDS 30-36
-str_purchase_steam_NCS71    :Refurbished 1925: {YELLOW}+5% weight, -4% TE{}{BLACK}Refurbished 1935: {YELLOW}+22% speed, +12% weight{}{BLACK}Previously known as: {SILVER} NCS 71-78, SS 971-978
+str_purchase_steam_HSM126   :Previously known as: {SILVER} HSM 126-135.
+str_purchase_steam_HSM500   :Previously known as: {SILVER} HSM 501-535.
+str_purchase_steam_SS700    :Previously known as: {SILVER} SS 685-778, 785-799.
+str_purchase_steam_NBDS30   :Refurbished 1940: {YELLOW}-50% speed, +11% power{}{BLACK}Previously known as: {SILVER} NBDS 30-36.
+str_purchase_steam_NCS71    :Refurbished 1925: {YELLOW}+5% weight, -4% TE{}{BLACK}Refurbished 1935: {YELLOW}+22% speed, +12% weight{}{BLACK}Previously known as: {SILVER} NCS 71-78, SS 971-978.
 
-str_purchase_diesel_NS2000  :Previously known as: {SILVER} Whitcomb 65-DE-19A
-str_purchase_diesel_SM151   :Previously known as: {SILVER} SM 151-155
-str_purchase_diesel_ACTS5800:Previously known as: {SILVER} BR Class 58
-str_purchase_diesel_ACTS6700:Previously known as: {SILVER} NMBS HLD 62
-str_purchase_diesel_RN232   :Previously known as: {SILVER} DB BR 232
+str_purchase_diesel_NS2000  :Previously known as: {SILVER} Whitcomb 65-DE-19A.
+str_purchase_diesel_SM151   :Previously known as: {SILVER} SM 151-155.
+str_purchase_diesel_ACTS5800:Previously known as: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700:Previously known as: {SILVER} NMBS HLD 62.
+str_purchase_diesel_RN232   :Previously known as: {SILVER} DB BR 232.
 
-str_purchase_electric_NS1100:Refurbished 1979: {YELLOW}+4% weight, +1/8 length
-str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2
+str_purchase_electric_NS1100:Refurbished 1979: {YELLOW}+4% weight, +1/8 length.
+str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID:For use Double-decker Carriage DDM/NID.
+str_purchase_electric_HLE11 :For use Carriage ICR for Benelux service.
+str_purchase_electric_HLE25 :For use Carriage Plan W for Benelux service.
+str_purchase_electric_TRAXXF140MS2:For use Carriage ICR for Benelux service.{}Multisystem locomotive, full power only under 25 kV ~.
 
-str_purchase_dmu_omBC1901   :Purchased from  1929: {YELLOW}+41% weight, +233% power, +7% speed, +23% running cost
+str_purchase_dmu_omBC1901   :Purchased from  1929: {YELLOW}+41% weight, +233% power, +7% speed, +23% running cost.
 
-str_purchase_emu_ZHESM_mBC  :Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900
-str_purchase_emu_Mat36ELD3  :With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8
-str_purchase_emu_ICE3M      :Multisystem EMU, full power only under 25 kV ~.{}Also known as: {SILVER} DB BR 406
+str_purchase_emu_ZHESM_mBC  :Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900.{}{BLACK}For use with Carriage ZHESM B.
+str_purchase_emu_Mat24      :For use with Carriage Mat '24.
+str_purchase_emu_Mat36ELD3  :With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8.
+str_purchase_emu_ICE3M      :Multisystem EMU, full power only under 25 kV ~.{}Also known as: {SILVER} DB BR 406.
 
-str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900
+str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900.{}{BLACK}For use with motorcar ZHESM mBC.
+str_purchase_coaches_Mat24  :For use with motorcar Mat '24.
+str_purchase_coaches_DDAR   :For use with motorcar mDDM or NID.
+str_purchase_coaches_PlanW  :For use with electric NS locomotives for national service and NMBS HLE 25.5 for Benelux service.
+str_purchase_coaches_IRC    :For use with electric NS locomotives for national service, NMBS HLE 11 for Benelux service and TRAXX F140 MS2 as Fyra service.

@@ -46,7 +46,7 @@ item(FEAT_TRAINS, item_coaches_DDAR) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_14));
+        additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_14), string(str_purchase_coaches_DDAR));
         purchase: switch_coaches_DDAR_purchase;
         cargo_subtype_text: switch_coaches_DDAR_subtype_text;
         cargo_capacity: switch_coaches_DDAR_capacity;

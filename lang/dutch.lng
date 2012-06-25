@@ -427,6 +427,7 @@ str_purchase_svc_len            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte:
 str_purchase_svc_len_lsp        :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}
 str_purchase_svc_axl_len_lsp    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}
 str_purchase_svc_axl_len_lsp_spc:{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_lsp_spc    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_len_lsp_spc    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_spc        :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}{STRING}
@@ -506,27 +507,39 @@ str_purchase_axl_E          :zeer hoog (klasse E)
 str_purchase_spc_eld        :Met bagagecompartiment ombouwbaar tot expresvracht.
 str_purchase_spc_el_eld     :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.
 str_purchase_spc_emu_ms     :Meersysteemtreinstel, volledige kracht alleen onder 25 kV ~.
+str_purchase_spc_emu_ms_fictional:Meersysteemtreinstel, volledige kracht alleen onder 25 kV ~.{}Fictief.
 str_purchase_spc_electric_ms:Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.
+str_purchase_spc_electric_ms_fictional:Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.{}Fictief.
+str_purchase_spc_fictional  :Fictief.
 
-str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135
-str_purchase_steam_HSM500   :Voorheen bekend als: {SILVER} HSM 501-535
-str_purchase_steam_SS700    :Voorheen bekend als: {SILVER} SS 685-778, 785-799
-str_purchase_steam_NBDS30   :Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36
-str_purchase_steam_NCS71    :Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978
+str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135.
+str_purchase_steam_HSM500   :Voorheen bekend als: {SILVER} HSM 501-535.
+str_purchase_steam_SS700    :Voorheen bekend als: {SILVER} SS 685-778, 785-799.
+str_purchase_steam_NBDS30   :Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36.
+str_purchase_steam_NCS71    :Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978.
 
-str_purchase_diesel_NS2000  :Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A
-str_purchase_diesel_SM151   :Voorheen bekend als: {SILVER} SM 151-155
-str_purchase_diesel_ACTS5800:Voorheen bekend als: {SILVER} BR Class 58
-str_purchase_diesel_ACTS6700:Voorheen bekend als: {SILVER} NMBS HLD 62
-str_purchase_diesel_RN232   :Voorheen bekend als: {SILVER} DB BR 232
+str_purchase_diesel_NS2000  :Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A.
+str_purchase_diesel_SM151   :Voorheen bekend als: {SILVER} SM 151-155.
+str_purchase_diesel_ACTS5800:Voorheen bekend als: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700:Voorheen bekend als: {SILVER} NMBS HLD 62.
+str_purchase_diesel_RN232   :Voorheen bekend als: {SILVER} DB BR 232.
 
-str_purchase_electric_NS1100:Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte
-str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2
+str_purchase_electric_NS1100:Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte.
+str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID:Voor gebruik met Dubbeldekkerrijtuig DDM/NID.
+str_purchase_electric_HLE11 :Voor gebruik met Rijtuig ICR voor Beneluxtrein.
+str_purchase_electric_HLE25 :Voor gebruik met Rijtuig Plan W voor Beneluxtrein.
+str_purchase_electric_TRAXXF140MS2:Voor gebruik met Rijtuig Plan W voor Beneluxtrein.{}Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.
 
-str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% kracht, +7% snelheid, +23% onderhoudskosten
+str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% kracht, +7% snelheid, +23% onderhoudskosten.
 
-str_purchase_emu_ZHESM_mBC  :Gereviseerd 1926: {YELLOW}+150% kracht, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900
-str_purchase_emu_Mat36ELD3  :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.{}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8
-str_purchase_emu_ICE3M      :Meersysteemtreinstel, volledige kracht alleen onder 25 kV ~.{}Ook bekend als: {SILVER} DB BR 406
+str_purchase_emu_ZHESM_mBC  :Gereviseerd 1926: {YELLOW}+150% kracht, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900.{}{BLACK}Voor gebruik met Rijtuig ZHESM B.
+str_purchase_emu_Mat24      :Voor gebruik met Rijtuig Mat '24.
+str_purchase_emu_Mat36ELD3  :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.{}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8.
+str_purchase_emu_ICE3M      :Meersysteemtreinstel, volledige kracht alleen onder 25 kV ~.{}Ook bekend als: {SILVER} DB BR 406.
 
-str_purchase_coaches_ZHESM_B:Later bekend als: {SILVER} NS B9900
+str_purchase_coaches_ZHESM_B:Later bekend als: {SILVER} NS B9900.{}{BLACK}Voor gebruik met motorwagen ZHESM mBC.
+str_purchase_coaches_Mat24  :Voor gebruik met motorwagen Mat '24.
+str_purchase_coaches_DDAR   :Voor gebruik met motorwagen mDDM of NID.
+str_purchase_coaches_PlanW  :Voor gebruik met electrische NS locomotieven voor nationale treindienst en NMBS HLE 25.5 voor Beneluxtrein.
+str_purchase_coaches_IRC    :Voor gebruik met electrische NS locomotieven voor nationale treindienst, NMBS HLE 11 voor Beneluxtrein en TRAXX F140 MS2 als Fyra.

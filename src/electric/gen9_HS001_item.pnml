@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_electric_gen9_HS001) {
     graphics {
         purchase: spriteset_electric_gen9_HS001_purchase;
         cargo_subtype_text: switch_electric_gen9_HS001_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hphf), string(str_purchase_axl_D), string(str_purchase_spc_electric_ms));
+        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hphf), string(str_purchase_axl_D), string(str_purchase_spc_electric_ms_fictional));
         cargo_capacity: return 0;
         power: switch_electric_gen9_HS001_power;
         purchase_power: return 10000;

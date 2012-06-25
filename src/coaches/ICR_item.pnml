@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_coaches_ICR) {
 	}
     graphics {
         cargo_capacity: return 90;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_17));
+        additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_17), string(str_purchase_coaches_IRC));
         purchase: switch_coaches_ICR_purchase;
         cargo_subtype_text: switch_coaches_ICR_subtype_text;
         switch_coaches_ICR_livery;
