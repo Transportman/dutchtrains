@@ -39,7 +39,7 @@ spriteset(spriteset_dmu_NS20_yellow, "gfx/dmu/NS20.png") {
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_NS20_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_NS20_autolivery, date_of_last_service) {
 	0..date(1972,12,31): spriteset_dmu_NS20_blue;
     spriteset_dmu_NS20_yellow;
 }

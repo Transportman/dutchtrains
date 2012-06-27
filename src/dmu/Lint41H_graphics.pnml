@@ -60,19 +60,19 @@ random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_syntus_twents
     1: switch_dmu_Lint41H_position_Twents;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_randomlivery, build_year) {
 	0..2006: switch_dmu_Lint41H_position_syntus;
     switch_dmu_Lint41H_randomlivery_syntus_twents;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_livery, cargo_subtype) {
     1: switch_dmu_Lint41H_position_syntus;
     2: switch_dmu_Lint41H_position_Twents;
     switch_dmu_Lint41H_randomlivery;
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_random);
     1: return string(str_cargo_subtype_Syntus);
     2: return string(str_cargo_subtype_Twents);

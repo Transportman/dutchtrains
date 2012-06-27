@@ -74,12 +74,12 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_autolivery, date_of_last_service) {
     switch_dmu_DM90_position_ns_whiteroof;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DM90_purchaselivery, build_year) {
 	0..2001: switch_dmu_DM90_position_ns;
     switch_dmu_DM90_position_ns_whiteroof;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DM90_livery, cargo_subtype) {
 	1: switch_dmu_DM90_purchaselivery;
     2: switch_dmu_DM90_position_ns;
     3: switch_dmu_DM90_position_ns_whiteroof;
@@ -88,7 +88,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_dmu_DM90_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DM90_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_NS);

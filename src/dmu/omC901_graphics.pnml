@@ -37,7 +37,7 @@ spriteset(spriteset_dmu_omC901_green, "gfx/dmu/omC901.png") {
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_omC901_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_omC901_autolivery, date_of_last_service) {
 	0..date(1928,12,31): spriteset_dmu_omC901_greenyellow;
     spriteset_dmu_omC901_green;
 }

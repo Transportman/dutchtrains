@@ -85,7 +85,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_autolivery_red, date_of_last_service)
 	0..date(1971,12,31): switch_dmu_DE3_position_red;
     switch_dmu_DE3_position_redgreydoors;
 }
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_autolivery_1969) {
+random_switch(FEAT_TRAINS, SELF, switch_dmu_DE3_autolivery_1969) {
 	1: switch_dmu_DE3_autolivery_red;
     1: switch_dmu_DE3_position_yellow;
 }
@@ -95,22 +95,22 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_autolivery, date_of_last_service) {
     switch_dmu_DE3_position_yellow;
 }
 
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_purchaselivery_1972) {
+random_switch(FEAT_TRAINS, SELF, switch_dmu_DE3_purchaselivery_1972) {
 	1: switch_dmu_DE3_position_red;
     1: switch_dmu_DE3_position_yellow;
 }
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_purchaselivery_1969) {
+random_switch(FEAT_TRAINS, SELF, switch_dmu_DE3_purchaselivery_1969) {
 	1: switch_dmu_DE3_position_redgreydoors;
     1: switch_dmu_DE3_position_yellow;
 }
-switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE3_purchaselivery, build_year) {
 	0..1968: switch_dmu_DE3_position_red;
 	1969..1971: switch_dmu_DE3_purchaselivery_1969;
 	1972..1973: switch_dmu_DE3_purchaselivery_1972;
     switch_dmu_DE3_position_yellow;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE3_livery, cargo_subtype) {
 	1: switch_dmu_DE3_purchaselivery;
     2: switch_dmu_DE3_position_red;
     3: switch_dmu_DE3_position_redgreydoors;
@@ -119,7 +119,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_dmu_DE3_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE3_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_red);

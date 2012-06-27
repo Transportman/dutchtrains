@@ -39,7 +39,7 @@ spriteset(spriteset_dmu_DH1_renew, "gfx/dmu/DH1.png") {
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DH1_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_dmu_DH1_autolivery, date_of_last_service) {
 	0..date(1995,12,31): spriteset_dmu_DH1_orig;
     spriteset_dmu_DH1_renew;
 }

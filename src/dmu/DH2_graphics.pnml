@@ -82,13 +82,13 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_maashopper, (position_in_vehid
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_randomlivery_wadkikker_maashopper) {
+random_switch(FEAT_TRAINS, SELF, switch_dmu_DH2_randomlivery_wadkikker_maashopper) {
 	29: switch_dmu_DH2_position_gen2;
     1: switch_dmu_DH2_position_wadkikker;
     1: switch_dmu_DH2_position_maashopper;
 }
 
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_randomlivery_wadkikker) {
+random_switch(FEAT_TRAINS, SELF, switch_dmu_DH2_randomlivery_wadkikker) {
 	30: switch_dmu_DH2_position_gen2;
     1: switch_dmu_DH2_position_wadkikker;
 }
@@ -100,14 +100,14 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_autolivery, date_of_last_service) {
     switch_dmu_DH2_randomlivery_wadkikker_maashopper;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_purchaselivery, build_year) {
 	0..1996: switch_dmu_DH2_position_gen1;
     1997..1998: switch_dmu_DH2_position_gen2;
     1999..2006: switch_dmu_DH2_randomlivery_wadkikker;
     switch_dmu_DH2_randomlivery_wadkikker_maashopper;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_livery, cargo_subtype) {
 	1: switch_dmu_DH2_purchaselivery;
     2: switch_dmu_DH2_position_gen1;
     3: switch_dmu_DH2_position_gen2;
@@ -117,7 +117,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_original);
