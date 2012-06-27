@@ -59,10 +59,15 @@ switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_beneluxcab, position_in_consist_f
 	spriteset_coaches_PlanW_benelux;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_coaches_PlanW_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanW_autolivery_national, date_of_last_service) {
 	0..date(1969,12,31): spriteset_coaches_PlanW_blue;
 	date(1970,1,1)..date(1981,12,31): spriteset_coaches_PlanW_blue_banners;
     spriteset_coaches_PlanW_yellow_blue;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanW_autolivery, vehicle_type_id) {
+    item_electric_HLE25: switch_coaches_PlanW_beneluxcab;
+    switch_coaches_PlanW_autolivery_national;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_purchaselivery, build_year) {
