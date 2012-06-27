@@ -20,6 +20,21 @@ STR_PARAM_DISABLE_ORIGINAL_101      :rail and maglev
 STR_PARAM_DISABLE_ORIGINAL_011      :monorail and maglev
 STR_PARAM_DISABLE_ORIGINAL_111      :all
 
+STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
+STR_PARAM_PURCHASE_COST_DESC        :You can use this setting to increase or decrease the purchase costs of the vehicles in this set. Note that changing this setting will make the costs imbalanced towards the default vehicles.
+STR_PARAM_RUNNING_COST              :Running cost multiplier
+STR_PARAM_RUNNING_COST_DESC         :You can use this setting to increase or decrease the running costs of the vehicles in this set. Note that changing this setting will make the costs imbalanced towards the default vehicles.
+
+STR_PARAM_DIVIDE_16                 :1/16
+STR_PARAM_DIVIDE_8                  :1/8
+STR_PARAM_DIVIDE_4                  :1/4
+STR_PARAM_DIVIDE_2                  :1/2
+STR_PARAM_NORMAL                    :1 (default)
+STR_PARAM_TIMES_2                   :2
+STR_PARAM_TIMES_4                   :4
+STR_PARAM_TIMES_8                   :8
+STR_PARAM_TIMES_16                  :16
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              :> Year-dependent livery
 str_cargo_subtype_purchase          :> Construction year livery

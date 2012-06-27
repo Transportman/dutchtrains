@@ -18,6 +18,13 @@ STR_PARAM_DISABLE_ORIGINAL_101      :rail en maglev
 STR_PARAM_DISABLE_ORIGINAL_011      :monorail en maglev
 STR_PARAM_DISABLE_ORIGINAL_111      :alle
 
+STR_PARAM_PURCHASE_COST             :Vermenigvuldigingsfactor voor aankoopkosten
+STR_PARAM_PURCHASE_COST_DESC        :Je kunt deze instelling gebruiken om de aankoopkosten van de voertuigen in deze set te verhogen of verlagen. Let op dat het wijzigen van deze instelling de balans met de standaardvoertuigen verstoord.
+STR_PARAM_RUNNING_COST              :Vermenigvuldigingsfactor voor onderhoudskosten
+STR_PARAM_RUNNING_COST_DESC         :Je kunt deze instelling gebruiken om de onderhoudskosten van de voertuigen in deze set te verhogen of verlagen. Let op dat het wijzigen van deze instelling de balans met de standaardvoertuigen verstoord.
+
+STR_PARAM_NORMAL                    :1 (standaard)
+
 #cargo subtype kleurstelling strings
 str_cargo_subtype_auto              :> Jaar-afhankelijke kleurstelling
 str_cargo_subtype_purchase          :> Aankoop-afhankelijke kleurstelling

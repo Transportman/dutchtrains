@@ -61,11 +61,13 @@ OpenTTD:
 
 2.3 Parameter settings
 ----------------------
-There are two parameter settings available. The first setting translates
-the vehicle nicknames to your own language, or English if we don't have
-a translation for your language. The other setting allows to keep the 
-default TTD rail/monorail/maglev vehicles, if they're not already
-disabled by a different NewGRF
+There are four parameter settings available. 
+ 1: Translates the vehicle nicknames to your own language, or English if 
+    we don't have a translation for your language. 
+ 2: Allows to keep the default TTD rail/monorail/maglev vehicles, if 
+    they're not already disabled by a different NewGRF.
+ 3: Increase or decrease vehicle purchase costs.
+ 4: Increase or decrease vehicle running costs.
 
 Set the parameters before starting a new game. Once started they 
 cannot be changed any longer.
@@ -86,6 +88,28 @@ configuration file:
   5: rail and maglev
   6: monorail and maglev
   7: all
+  
+  3rd parameter: Purchase cost multiplier
+  0: divide by 16
+  1: divide by 8
+  2: divide by 4
+  3: divide by 2
+  4: normal purchase costs
+  5: multiply by 2
+  6: multiply by 4
+  7: multiply by 8
+  8: multiply by 16
+
+  4th parameter: Running cost multiplier
+  0: divide by 16
+  1: divide by 8
+  2: divide by 4
+  3: divide by 2
+  4: normal purchase costs
+  5: multiply by 2
+  6: multiply by 4
+  7: multiply by 8
+  8: multiply by 16
 
 
 2.4 Usage
@@ -111,7 +135,7 @@ Multiple units
     available in multiple lengths, you choose the lenght directy from
     the purchase menu by selecting the appropriate train to purchase.
     You cannot change the length of a MU once purchased, in that case 
-    you have to sell the train and buy an new one.
+    you have to sell the train and buy an new one, or use autoreplace.
     
     Many of the older multiple units have a baggage compartment. This 
     compartment can be refitted to carry mail or any express cargo. By 
@@ -157,10 +181,6 @@ Livery refits
 --------------
 3 Known issues
 --------------
-
-MU livery refits
-    If you combine multiple MUs in a single train, the livery refit of 
-    the first MU will be applied to all subsequent MUs (#3818).
     
 Additional steam engines
     The selection of steam engines is currently incomplete, not 
@@ -192,10 +212,10 @@ We hope that this makes the trains feel as real as possible.
 5 Frequently Asked Questions
 ----------------------------
 
-Q: Why does the livery refit of a second MU not work?
-A: This is a technical limitation that currently hasn't been solved yet.
-   For now the second and further MU in a train will take the livery of
-   the first MU.
+Q: Why is the livery refit of a second MU not possible?
+A: This is a technical limitation that currently cannot be solved. It is
+   not possible to provide both the livery refit and the baggage 
+   compartment refit for MUs other than the first in the chain.
    
 Q: Why do some MUs with a baggage compartment increase capacity when
    refitted to passengers, while others don't?
