@@ -64,7 +64,7 @@ spriteset(spriteset_dmu_DE1_redyellowblue, "gfx/dmu/DE1.png") {
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1_3_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_1_1_3_1) {
 	1: spriteset_dmu_DE1_redyellow; //redyellow
     1: spriteset_dmu_DE1_redyellowblue; //redyellowblue
 }
@@ -80,7 +80,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_1_1_3, date_of_last_serv
 	0..date(1967,12,31): spriteset_dmu_DE1_redyellow;
 	switch_dmu_DE1_autolivery_1_1_1_3_1;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1_1_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_1_1) {
 	5:  switch_dmu_DE1_autolivery_1_1_1_1; //bluered
     5:  switch_dmu_DE1_autolivery_1_1_1_2; //blueyellow
     15: switch_dmu_DE1_autolivery_1_1_1_3; //redyellow
@@ -94,7 +94,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1_1, date_of_last_service)
 	date(1959,1,1)..date(1959,12,31): spriteset_dmu_DE1_bluered;
 	switch_dmu_DE1_autolivery_1_1_1;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE1_autolivery_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE1_autolivery_1) {
 	25: switch_dmu_DE1_autolivery_1_1; //blueredsilver
     5:  switch_dmu_DE1_autolivery_1_2; //blueredmoustache
 }

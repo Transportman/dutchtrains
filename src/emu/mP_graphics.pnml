@@ -58,14 +58,14 @@ switch(FEAT_TRAINS, PARENT, switch_emu_mP_autolivery, date_of_last_service) {
     spriteset_emu_mP_red;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_mP_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_mP_purchaselivery, build_year) {
 	0..1969: spriteset_emu_mP_brown;
     1970..1975: spriteset_emu_mP_brown_yellow;
     1976..1988: spriteset_emu_mP_yellow;
     spriteset_emu_mP_red;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_mP_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_mP_livery, cargo_subtype) {
 	1: switch_emu_mP_purchaselivery;
     2: spriteset_emu_mP_brown;
     3: spriteset_emu_mP_brown_yellow;
@@ -75,7 +75,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_mP_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_emu_mP_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_mP_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_brown);

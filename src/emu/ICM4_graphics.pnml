@@ -201,14 +201,14 @@ switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_autolivery, date_of_last_service) {
     switch_emu_ICM4_renewal_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_purchaselivery, build_year) {
 	0..2003: switch_emu_ICM4_34_position;
 	2004..2006: switch_emu_ICM4_autolivery_random_olympic_34;
 	2007..2011: switch_emu_ICM4_autolivery_random_olympic_renewal;
     switch_emu_ICM4_renewal_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_livery, cargo_subtype) {
 	1: switch_emu_ICM4_purchaselivery;
     2: switch_emu_ICM4_34_position;
     3: switch_emu_ICM4_renewal_position;

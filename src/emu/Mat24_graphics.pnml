@@ -109,7 +109,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat24_position_front_green_red, position_in
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat24_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat24_autolivery, date_of_last_service) {
 	0..date(1928,12,31): switch_emu_Mat24_position_front_green_yellow;
     date(1929,1,1)..date(1949,12,31): switch_emu_Mat24_position_front_green;
     switch_emu_Mat24_position_front_green_red;

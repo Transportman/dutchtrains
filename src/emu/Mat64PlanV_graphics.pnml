@@ -87,7 +87,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanV_autolivery, date_of_last_servi
     spriteset_emu_Mat64PlanV_yellow_front;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanV_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanV_purchaselivery, build_year) {
 	0..1967: spriteset_emu_Mat64PlanV_green_front;
     spriteset_emu_Mat64PlanV_yellow_front;
 }
@@ -109,7 +109,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_autolivery, date_of_last_serv
     spriteset_emu_Mat64PlanV_yellow_back;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanVD_purchaselivery, build_year) {
 	0..1967: spriteset_emu_Mat64PlanV_green_back;
     spriteset_emu_Mat64PlanV_yellow_back;
 }
@@ -131,7 +131,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_autolivery_noD, date_of_last_
     spriteset_emu_Mat64PlanV_yellow_back_noD;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_purchaselivery_noD, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanVD_purchaselivery_noD, build_year) {
 	0..1967: spriteset_emu_Mat64PlanV_green_back;
     spriteset_emu_Mat64PlanV_yellow_back_noD;
 }
@@ -152,7 +152,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanVD_livery, cargo_classes) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanV_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanV_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green_yellow);

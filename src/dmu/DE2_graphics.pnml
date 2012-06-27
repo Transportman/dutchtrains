@@ -140,7 +140,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_yellow, (position_in_vehid_cha
 /*
 * LIVERY SELECTION
 */
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE2_autolivery_1_1_1_3_1_2_1_2_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3_1_2_1_2_1) {
 	1: switch_dmu_DE2_position_yellowblue; //yellowblue
     1: switch_dmu_DE2_position_redyellowblue; //redyellowblue
 }
@@ -148,7 +148,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3_1_2_1_2, date_of_l
 	0..date(1976,12,31): switch_dmu_DE2_position_redyellowblue;
 	switch_dmu_DE2_autolivery_1_1_1_3_1_2_1_2_1;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE2_autolivery_1_1_1_3_1_1_1_2_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3_1_1_1_2_1) {
 	1: switch_dmu_DE2_position_yellowblue; //yellowblue
     1: switch_dmu_DE2_position_redyellow; //redyellow
 }
@@ -156,11 +156,11 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3_1_1_1_2, date_of_l
 	0..date(1976,12,31): switch_dmu_DE2_position_redyellow;
 	switch_dmu_DE2_autolivery_1_1_1_3_1_1_1_2_1;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE2_autolivery_1_1_1_3_1_1_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3_1_1_1) {
 	1: switch_dmu_DE2_position_yellowblue; //yellowblue
     1: switch_dmu_DE2_autolivery_1_1_1_3_1_1_1_2; //redyellow
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE2_autolivery_1_1_1_3_1_2_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3_1_2_1) {
 	1: switch_dmu_DE2_position_yellowblue; //yellowblue
     1: switch_dmu_DE2_autolivery_1_1_1_3_1_2_1_2; //redyellowblue
 }
@@ -172,7 +172,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3_1_2, date_of_last_
 	0..date(1976,12,31): switch_dmu_DE2_position_redyellowblue;
 	switch_dmu_DE2_autolivery_1_1_1_3_1_2_1;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE2_autolivery_1_1_1_3_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3_1) {
 	1: switch_dmu_DE2_autolivery_1_1_1_3_1_1; //redyellow
     1: switch_dmu_DE2_autolivery_1_1_1_3_1_2; //redyellowblue
 }
@@ -188,7 +188,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1_3, date_of_last_serv
 	0..date(1967,12,31): switch_dmu_DE2_position_redyellow;
 	switch_dmu_DE2_autolivery_1_1_1_3_1;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE2_autolivery_1_1_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1_1) {
 	5:  switch_dmu_DE2_autolivery_1_1_1_1; //bluered
     5:  switch_dmu_DE2_autolivery_1_1_1_2; //blueyellow
     15: switch_dmu_DE2_autolivery_1_1_1_3; //redyellow
@@ -202,7 +202,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1_1, date_of_last_service)
 	date(1959,1,1)..date(1959,12,31): switch_dmu_DE2_position_bluered;
 	switch_dmu_DE2_autolivery_1_1_1;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE2_autolivery_1) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE2_autolivery_1) {
 	25: switch_dmu_DE2_autolivery_1_1; //blueredsilver
     5:  switch_dmu_DE2_autolivery_1_2; //blueredmoustache
 }

@@ -76,13 +76,13 @@ random_switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_randomlivery_arriva_veolia) 
     1: switch_emu_GTW28_position_velios2;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_randomlivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_randomlivery, build_year) {
 	0..2007: switch_emu_GTW28_position_spurt;
     2008..2012: switch_emu_GTW28_randomlivery_arriva_veolia;
     switch_emu_GTW28_randomlivery_arriva_veolia_vechtdallijnen;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_livery, cargo_subtype) {
     1: switch_emu_GTW28_position_spurt;
     2: switch_emu_GTW28_position_velios2;
     3: switch_emu_GTW28_position_vechtdallijnen;
@@ -90,7 +90,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_random);
     1: return string(str_cargo_subtype_Arriva_spurt);
     2: return string(str_cargo_subtype_Veolia_velios);

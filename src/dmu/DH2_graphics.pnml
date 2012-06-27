@@ -82,13 +82,13 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_maashopper, (position_in_vehid
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DH2_randomlivery_wadkikker_maashopper) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_randomlivery_wadkikker_maashopper) {
 	29: switch_dmu_DH2_position_gen2;
     1: switch_dmu_DH2_position_wadkikker;
     1: switch_dmu_DH2_position_maashopper;
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DH2_randomlivery_wadkikker) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DH2_randomlivery_wadkikker) {
 	30: switch_dmu_DH2_position_gen2;
     1: switch_dmu_DH2_position_wadkikker;
 }

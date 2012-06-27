@@ -214,13 +214,13 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4_autolivery_green, date_of_last_
 	date(1962,1,1)..date(1968,12,31): switch_emu_Mat54ELD4_greenyellow;
 	switch_emu_Mat54ELD4_autolivery_1969;
 }
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4_autolivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_autolivery, build_year) {
 	0..1968: switch_emu_Mat54ELD4_autolivery_green;
 	1969..1974: switch_emu_Mat54ELD4_autolivery_1969_yellow;
 	switch_emu_Mat54ELD4_autolivery_freedom;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_purchaselivery, build_year) {
 	0..1961: switch_emu_Mat54ELD4_greenred;
 	1962..1968: switch_emu_Mat54ELD4_greenyellow;
 	1969..1971: switch_emu_Mat54ELD4_yellow;
@@ -275,13 +275,13 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4D_autolivery_green, date_of_last
 	date(1962,1,1)..date(1968,12,31): spriteset_emu_Mat54ELD4_greenyellow_back;
 	switch_emu_Mat54ELD4D_autolivery_1969;
 }
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4D_autolivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4D_autolivery, build_year) {
 	0..1968: switch_emu_Mat54ELD4D_autolivery_green;
 	1969..1974: switch_emu_Mat54ELD4D_autolivery_1969_yellow;
 	switch_emu_Mat54ELD4D_autolivery_freedom;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4D_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4D_purchaselivery, build_year) {
 	0..1961: spriteset_emu_Mat54ELD4_greenred_back;
 	1962..1968: spriteset_emu_Mat54ELD4_greenyellow_back;
 	1969..1971: spriteset_emu_Mat54ELD4_yellow_back;
@@ -303,7 +303,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4D_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green_red);

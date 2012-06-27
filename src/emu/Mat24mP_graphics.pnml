@@ -32,7 +32,7 @@ spriteset(spriteset_emu_Mat24mP_Jules, "gfx/emu/Mat24mP.png") {
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat24mP_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat24mP_autolivery, date_of_last_service) {
 	0..date(1972,12,31): spriteset_emu_Mat24mP_brown;
     spriteset_emu_Mat24mP_brown_yellow;
 }

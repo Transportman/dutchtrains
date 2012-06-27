@@ -52,7 +52,7 @@ random_switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_random_newpanto) {
     1: spriteset_emu_ZHESM_green_yellow_singlepanto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_autolivery, date_of_last_service) {
+switch(FEAT_TRAINS, PARENT, switch_emu_ZHESM_autolivery, date_of_last_service) {
 	0..date(1925,12,31): spriteset_emu_ZHESM_green_yellow_oldpanto;
     date(1926,1,1)..date(1926,12,31): switch_emu_ZHESM_random_newpanto;
     spriteset_emu_ZHESM_green;

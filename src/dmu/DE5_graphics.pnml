@@ -186,7 +186,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_redyellowblue, (position_in_ve
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE5_autolivery_1961) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_autolivery_1961) {
     1: switch_dmu_DE5_position_blueyellow;
     1: switch_dmu_DE5_position_redyellow;
 }
@@ -198,7 +198,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_autolivery_blueredmoustache, date_of_
     0..date(1962,12,31): switch_dmu_DE5_position_blueredmoustache;
     switch_dmu_DE5_position_blueyellow;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE5_autolivery_1959) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_autolivery_1959) {
     1: switch_dmu_DE5_autolivery_blueredmoustache;
     17: switch_dmu_DE5_autolivery_bluered;
 }
@@ -210,16 +210,16 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_autolivery, date_of_last_service) {
     switch_dmu_DE5_position_redyellowblue;
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE5_purchaselivery_1959) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_purchaselivery_1959) {
     1: switch_dmu_DE5_position_blueredmoustache;
     17: switch_dmu_DE5_position_bluered;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE5_purchaselivery_1961) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_purchaselivery_1961) {
     1: switch_dmu_DE5_position_blueredmoustache;
     8: switch_dmu_DE5_position_blueyellow;
     9: switch_dmu_DE5_position_redyellow;
 }
-random_switch(FEAT_TRAINS, SELF, switch_dmu_DE5_purchaselivery_1963) {
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_DE5_purchaselivery_1963) {
     1: switch_dmu_DE5_position_blueyellow;
     1: switch_dmu_DE5_position_redyellow;
 }

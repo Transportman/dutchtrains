@@ -69,12 +69,12 @@ switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_autolivery, date_of_last_service) {
     switch_emu_SGM3_sgmm;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_purchaselivery, build_year) {
 	0..2003: switch_emu_SGM3_sgm;
     switch_emu_SGM3_sgmm;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_livery, cargo_subtype) {
 	1: switch_emu_SGM3_purchaselivery;
     2: switch_emu_SGM3_sgm;
     3: switch_emu_SGM3_sgmm;

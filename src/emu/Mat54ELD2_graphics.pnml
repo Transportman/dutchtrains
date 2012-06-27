@@ -93,12 +93,12 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery_1956, date_of_last_s
 	date(1969,1,1)..date(1979,12,31): switch_emu_Mat54ELD2_autolivery_1969;
     spriteset_emu_Mat54ELD2_yellowblue_front;
 }
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_autolivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2_autolivery, build_year) {
 	0..1968: switch_emu_Mat54ELD2_autolivery_1956;
 	spriteset_emu_Mat54ELD2_yellowblue_front;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2_purchaselivery, build_year) {
 	0..1958: spriteset_emu_Mat54ELD2_greenred_front;
 	1959..1961: spriteset_emu_Mat54ELD2_greenredmoustache_front;
 	1962..1968: spriteset_emu_Mat54ELD2_greenyellow_front;
@@ -135,12 +135,12 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery_1956, date_of_last_
 	date(1969,1,1)..date(1979,12,31): switch_emu_Mat54ELD2D_autolivery_1969;
     spriteset_emu_Mat54ELD2_yellowblue_back;
 }
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_autolivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2D_autolivery, build_year) {
 	0..1968: switch_emu_Mat54ELD2D_autolivery_1956;
 	spriteset_emu_Mat54ELD2_yellowblue_back;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2D_purchaselivery, build_year) {
 	0..1958: spriteset_emu_Mat54ELD2_greenred_back;
 	1959..1961: spriteset_emu_Mat54ELD2_greenredmoustache_back;
 	1962..1968: spriteset_emu_Mat54ELD2_greenyellow_back;
@@ -158,7 +158,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2D_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD2_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD2_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green_red);

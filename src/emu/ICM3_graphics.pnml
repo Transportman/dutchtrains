@@ -156,7 +156,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_autolivery, date_of_last_service) {
     switch_emu_ICM3_renewal_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_purchaselivery, build_year) {
 	0..1982: switch_emu_ICM3_0_position;
 	1983..1989: switch_emu_ICM3_12_position;
 	1990..1990: switch_emu_ICM3_autolivery_random_12_football;
@@ -168,7 +168,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_purchaselivery, build_year) {
     switch_emu_ICM3_renewal_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_ICM3_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_livery, cargo_subtype) {
 	1: switch_emu_ICM3_purchaselivery;
     2: switch_emu_ICM3_0_position;
     3: switch_emu_ICM3_12_position;

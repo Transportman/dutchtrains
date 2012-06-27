@@ -141,7 +141,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat40ELD5_autolivery, date_of_last_servic
     switch_emu_Mat40ELD5_greenyellow;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat40ELD5_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_purchaselivery, build_year) {
 	0..1955: switch_emu_Mat40ELD5_greyroof;
 	1956..1958: switch_emu_Mat40ELD5_green;
 	1959..1963: switch_emu_Mat40ELD5_greenmoustache;
@@ -165,7 +165,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat40ELD5D_autolivery, date_of_last_servi
     spriteset_emu_Mat40ELD5_greenyellow_back;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat40ELD5D_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5D_purchaselivery, build_year) {
 	0..1955: spriteset_emu_Mat40ELD5_greyroof_back;
 	1956..1958: spriteset_emu_Mat40ELD5_green_back;
 	1959..1963: spriteset_emu_Mat40ELD5_greenmoustache_back;
@@ -182,7 +182,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat40ELD5D_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD5_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_emu_Mat40ELD5_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_olive_greyroof);

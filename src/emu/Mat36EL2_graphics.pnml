@@ -78,13 +78,13 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat36EL2_autolivery, date_of_last_service
     switch_emu_Mat36EL2_green;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat36EL2_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL2_purchaselivery, build_year) {
 	0..1938: switch_emu_Mat36EL2_silverroof;
 	1939..1955: switch_emu_Mat36EL2_greyroof;
     switch_emu_Mat36EL2_green;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat36EL2_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL2_livery, cargo_subtype) {
 	1: switch_emu_Mat36EL2_purchaselivery;
     2: switch_emu_Mat36EL2_silverroof;
     3: switch_emu_Mat36EL2_greyroof;

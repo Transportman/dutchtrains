@@ -68,7 +68,7 @@ random_switch(FEAT_TRAINS, PARENT, switch_emu_TGV_randomlivery) {
     10: switch_emu_TGV_PBA_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_TGV_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_livery, cargo_subtype) {
 	1: switch_emu_TGV_PBKA_position;
     2: switch_emu_TGV_PBA_position;
     switch_emu_TGV_randomlivery;
