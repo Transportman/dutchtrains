@@ -210,6 +210,7 @@ str_cargo_subtype_tractor           :> Tractor cargo livery
 str_steam_Arend         :HSM "Arend" (Steam)
 str_steam_Arend_t       :HSM "Eagle" (Steam)
 str_steam_HSM126        :NS 1100 (Steam)
+str_steam_NCS21         :NS 1500 (Steam)
 str_steam_HSM500        :NS 2100 "Blikken Tinus" (Steam)
 str_steam_HSM500_t      :NS 2100 series "Tin Tinus" (Steam)
 str_steam_SS700         :NS 3700 "Jumbo" (Steam)
@@ -536,6 +537,7 @@ str_purchase_spc_electric_ms:Multisystem locomotive, full power only under 25 kV
 str_purchase_spc_electric_ms_fictional:Multisystem locomotive, full power only under 25 kV ~.{}Fictional.
 str_purchase_spc_fictional  :Fictional.
 
+str_purchase_steam_NCS21    :Previously known as: {SILVER} NCS 21-30, later SS 481-490.
 str_purchase_steam_HSM126   :Previously known as: {SILVER} HSM 126-135.
 str_purchase_steam_HSM500   :Previously known as: {SILVER} HSM 501-535.
 str_purchase_steam_SS700    :Previously known as: {SILVER} SS 685-778, 785-799.

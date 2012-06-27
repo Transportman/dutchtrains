@@ -193,6 +193,7 @@ str_cargo_subtype_tractor           :> Traktor lading kleurstelling
 str_steam_Arend         :HSM "Arend" (Stoom)
 str_steam_Arend_t       :HSM "Eagle" (Stoom)
 str_steam_HSM126        :NS 1100 (Stoom)
+str_steam_NCS21         :NS 1500 (Stoom)
 str_steam_HSM500        :NS 2100 "Blikken Tinus" (Stoom)
 str_steam_HSM500_t      :NS 2100 "Tin Tinus" (Stoom)
 str_steam_SS700         :NS 3700 "Jumbo" (Stoom)
@@ -519,6 +520,7 @@ str_purchase_spc_electric_ms:Meersysteemlocomotief, volledige kracht alleen onde
 str_purchase_spc_electric_ms_fictional:Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.{}Fictief.
 str_purchase_spc_fictional  :Fictief.
 
+str_purchase_steam_NCS21    :Voorheen bekend als: {SILVER} NCS 21-30, later SS 481-490.
 str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135.
 str_purchase_steam_HSM500   :Voorheen bekend als: {SILVER} HSM 501-535.
 str_purchase_steam_SS700    :Voorheen bekend als: {SILVER} SS 685-778, 785-799.
