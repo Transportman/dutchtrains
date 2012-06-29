@@ -187,6 +187,7 @@ str_cargo_subtype_Railion_red       :> Railion (red) livery
 str_cargo_subtype_Railpro           :> Railpro livery
 str_cargo_subtype_staatsmijnen      :> Staatsmijnen livery
 str_cargo_subtype_SS                :> Staatsspoorwegen livery
+str_cargo_subtype_SS_NS             :> Staatsspoorwegen / NS livery
 str_cargo_subtype_Strukton          :> Strukton livery
 str_cargo_subtype_Syntus            :> Syntus livery
 str_cargo_subtype_Twents            :> Twents livery

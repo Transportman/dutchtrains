@@ -14,6 +14,15 @@ spriteset(spriteset_steam_NCS21_purchase, "gfx/purchase/steam/NCS21.png") {
 	template_purchase(0, 0)
 }
 
+spriteset(spriteset_steam_SS481_purchase, "gfx/purchase/steam/SS481.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_NCS21_livery_purchase, current_year) {
+	0..1919: spriteset_steam_NCS21_purchase;
+    spriteset_steam_SS481_purchase;
+}
+
 /*
 * VEHICLE
 */
@@ -52,6 +61,70 @@ switch(FEAT_TRAINS, SELF, switch_steam_NCS21_position, (position_in_vehid_chain 
     switch_steam_NCS21_animation;
 }
 
+//6x engine animation
+spriteset(spriteset_steam_SS481_ani_1, "gfx/steam/SS481.png") {
+	template_2cc_68(1, 1)
+}
+spriteset(spriteset_steam_SS481_ani_2, "gfx/steam/SS481.png") {
+	template_2cc_68(1, 32)
+}
+spriteset(spriteset_steam_SS481_ani_3, "gfx/steam/SS481.png") {
+	template_2cc_68(1, 64)
+}
+spriteset(spriteset_steam_SS481_ani_4, "gfx/steam/SS481.png") {
+	template_2cc_68(1, 96)
+}
+//tender
+spriteset(spriteset_steam_SS481_tender, "gfx/steam/SS481.png") {
+	template_2cc_58(1, 128)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS481_animation, (motion_counter)) {
+    2..3:   spriteset_steam_SS481_ani_2;
+    4..5:   spriteset_steam_SS481_ani_3;
+    6..7:   spriteset_steam_SS481_ani_4;
+    
+    10..11: spriteset_steam_SS481_ani_2;
+    12..13: spriteset_steam_SS481_ani_3;
+    14..15: spriteset_steam_SS481_ani_4;
+    spriteset_steam_SS481_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS481_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_SS481_tender;
+    switch_steam_SS481_animation;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS21_autolivery, date_of_last_service) {
+	0..date(1919,12,31): switch_steam_NCS21_position;
+    switch_steam_SS481_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS21_purchaselivery, build_year) {
+	0..1919: switch_steam_NCS21_position;
+    switch_steam_SS481_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS21_livery, cargo_subtype) {
+	1: switch_steam_NCS21_purchaselivery;
+    2: switch_steam_NCS21_position;
+    3: switch_steam_SS481_position;
+    switch_steam_NCS21_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS21_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_NBDS);
+    3: return string(str_cargo_subtype_SS_NS);
+    return CB_RESULT_NO_TEXT;
+}
+
 /*
 * ARTICULATED VEHICLE CALLBACK
 */
@@ -66,8 +139,8 @@ switch(FEAT_TRAINS, SELF, switch_steam_NCS21_articulated, extra_callback_info1) 
 */
 
 switch(FEAT_TRAINS, SELF, switch_steam_NCS21_length, (position_in_vehid_chain % 2)) {
-    1: return 6;
-    return 5;
+    1: return 5;
+    return 6;
 }
 
 /*
