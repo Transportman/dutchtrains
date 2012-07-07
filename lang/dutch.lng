@@ -195,6 +195,7 @@ str_steam_Arend         :HSM "Arend" (Stoom)
 str_steam_Arend_t       :HSM "Eagle" (Stoom)
 str_steam_HSM126        :NS 1100 (Stoom)
 str_steam_NCS21         :NS 1500 (Stoom)
+str_steam_HSM83         :NS 3100 (Stoom)
 str_steam_HSM500        :NS 2100 "Blikken Tinus" (Stoom)
 str_steam_HSM500_t      :NS 2100 "Tin Tinus" (Stoom)
 str_steam_HSM701        :NS 5500 (Stoom)
@@ -461,6 +462,7 @@ str_purchase_svc_hphf       :hogesnelheidstrein of zware vracht
 str_purchase_svc_eplf       :sneltrein of lichte vracht
 str_purchase_svc_flp        :vracht of stoptrein
 str_purchase_svc_lfep       :lichte vracht of sneltrein
+str_purchase_svc_f          :vracht
 str_purchase_svc_lf         :lichte vracht
 str_purchase_svc_hf         :zware vracht
 str_purchase_svc_s          :rangeren
@@ -524,6 +526,7 @@ str_purchase_spc_electric_ms_fictional:Meersysteemlocomotief, volledige kracht a
 str_purchase_spc_fictional  :Fictief.
 
 str_purchase_steam_NCS21    :Voorheen bekend als: {SILVER} NCS 21-30, later SS 481-490.
+str_purchase_steam_HSM83    :Voorheen bekend als: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135.
 str_purchase_steam_HSM500   :Voorheen bekend als: {SILVER} HSM 501-535.
 str_purchase_steam_HSM701   :Voorheen bekend als: {SILVER} HSM 701-755.
