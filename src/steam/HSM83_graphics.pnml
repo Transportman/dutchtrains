@@ -18,22 +18,22 @@ spriteset(spriteset_steam_HSM83_purchase, "gfx/purchase/steam/HSM83.png") {
 * VEHICLE
 */
 
-//6x engine animation
+//4x engine animation
 spriteset(spriteset_steam_HSM83_ani_1, "gfx/steam/HSM83.png") {
-	template_2cc_68(1, 1)
+	template_2cc_78(1, 1)
 }
 spriteset(spriteset_steam_HSM83_ani_2, "gfx/steam/HSM83.png") {
-	template_2cc_68(1, 32)
+	template_2cc_78(1, 32)
 }
 spriteset(spriteset_steam_HSM83_ani_3, "gfx/steam/HSM83.png") {
-	template_2cc_68(1, 64)
+	template_2cc_78(1, 64)
 }
 spriteset(spriteset_steam_HSM83_ani_4, "gfx/steam/HSM83.png") {
-	template_2cc_68(1, 96)
+	template_2cc_78(1, 96)
 }
 //tender
 spriteset(spriteset_steam_HSM83_tender, "gfx/steam/HSM83.png") {
-	template_2cc_48(1, 128)
+	template_2cc_58(1, 128)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_HSM83_animation, (motion_counter)) {
