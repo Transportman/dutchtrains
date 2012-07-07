@@ -10,9 +10,9 @@
 * ITEM
 */
 
-item(FEAT_TRAINS, item_steam_NS3800) {
+item(FEAT_TRAINS, item_steam_NS3850) {
     property {
-        name: string(str_steam_NS3800);
+        name: string(str_steam_NS3850);
         
         introduction_date: date(1920,1,1);
         model_life: 63;
@@ -49,11 +49,11 @@ item(FEAT_TRAINS, item_steam_NS3800) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_steam_NS3800_purchase;
+        purchase: spriteset_steam_NS3850_purchase;
         additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_ep), string(str_purchase_axl_B));
-        articulated_part: switch_steam_NS3800_articulated;
-        length: switch_steam_NS3800_length;
-        visual_effect_and_powered: switch_steam_NS3800_visual_effect_and_powered;
-        switch_steam_NS3800_position;
+        articulated_part: switch_steam_NS3850_articulated;
+        length: switch_steam_NS3850_length;
+        visual_effect_and_powered: switch_steam_NS3850_visual_effect_and_powered;
+        switch_steam_NS3850_position;
     }
 }
