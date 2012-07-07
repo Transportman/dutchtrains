@@ -157,8 +157,11 @@ str_cargo_subtype_HUSA              :> HUSA kleurstelling
 str_cargo_subtype_Locon             :> Locon kleurstelling
 str_cargo_subtype_NBDS              :> Noord-Brabantsch-Duitsche Spoorweg-Maatschappij kleurstelling
 str_cargo_subtype_NCS               :> Nederlandsche Centraal-Spoorweg-Maatschappij kleurstelling
+str_cargo_subtype_NCS_tender        :> NCS kleurstelling (locomotief met tender)
+str_cargo_subtype_NCS_tank          :> NCS kleurstelling (tenderlocomotief)
 str_cargo_subtype_nedtrain          :> NedTrain kleurstelling
 str_cargo_subtype_NS                :> NS kleurstelling
+str_cargo_subtype_NS_tank           :> NS kleurstelling (tenderlocomotief)
 str_cargo_subtype_NS_whiteroof      :> NS kleurstelling met wit dak
 str_cargo_subtype_NSCargo           :> NS Cargo kleurstelling
 str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (groen) kleurstelling
@@ -170,6 +173,7 @@ str_cargo_subtype_Railion_red       :> Railion (rood) kleurstelling
 str_cargo_subtype_Railpro           :> Railpro kleurstelling
 str_cargo_subtype_staatsmijnen      :> Staatsmijnen kleurstelling
 str_cargo_subtype_SS                :> Staatsspoorwegen kleurstelling
+str_cargo_subtype_SS_tank           :> SS kleurstelling (tenderlocomotief)
 str_cargo_subtype_SS_NS             :> Staatsspoorwegen / NS kleurstelling
 str_cargo_subtype_Strukton          :> Strukton kleurstelling
 str_cargo_subtype_Syntus            :> Syntus kleurstelling
@@ -194,6 +198,7 @@ str_cargo_subtype_tractor           :> Traktor lading kleurstelling
 str_steam_Arend         :HSM "Arend" (Stoom)
 str_steam_Arend_t       :HSM "Eagle" (Stoom)
 str_steam_HSM126        :NS 1100 (Stoom)
+str_steam_NCS1          :NS 7200 (Stoom)
 str_steam_NCS21         :NS 1500 (Stoom)
 str_steam_HSM83         :NS 3100 (Stoom)
 str_steam_HSM500        :NS 2100 "Blikken Tinus" (Stoom)
@@ -525,6 +530,7 @@ str_purchase_spc_electric_ms:Meersysteemlocomotief, volledige kracht alleen onde
 str_purchase_spc_electric_ms_fictional:Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.{}Fictief.
 str_purchase_spc_fictional  :Fictief.
 
+str_purchase_steam_NCS1     :Herbouwd 1892 als tenderlocomotief: {YELLOW}-15% gewicht, +48% kracht, +73% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} NCS 1-12, 31-39 (locomotief met tender), NCS 81-89 (tenderlocomotief), SS 571-579 (tenderlocomotief).
 str_purchase_steam_NCS21    :Voorheen bekend als: {SILVER} NCS 21-30, later SS 481-490.
 str_purchase_steam_HSM83    :Voorheen bekend als: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135.

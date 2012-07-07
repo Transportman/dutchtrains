@@ -207,3 +207,4 @@ item(FEAT_TRAINS, item_steam_NCS21, 312) {}
 item(FEAT_TRAINS, item_steam_SS651, 313) {}
 item(FEAT_TRAINS, item_steam_HSM701, 314) {}
 item(FEAT_TRAINS, item_steam_HSM83, 315) {}
+item(FEAT_TRAINS, item_steam_NCS1, 316) {}
