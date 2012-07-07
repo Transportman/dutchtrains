@@ -33,7 +33,7 @@ sort(FEAT_TRAINS, [
     item_steam_NCS71,
     item_steam_SS700,
     item_steam_NS6200,
-    item_steam_HSM500,
+    item_steam_HSM501,
     item_steam_NS3850,
     item_steam_NS4600,
     item_steam_NS3900,

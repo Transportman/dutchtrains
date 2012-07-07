@@ -10,9 +10,9 @@
 * ITEM
 */
 
-item(FEAT_TRAINS, item_steam_HSM500) {
+item(FEAT_TRAINS, item_steam_HSM501) {
     property {
-        name: string(str_steam_HSM500);
+        name: string(str_steam_HSM501);
         
         introduction_date: date(1914,1,1);
         model_life: 67;
@@ -49,13 +49,13 @@ item(FEAT_TRAINS, item_steam_HSM500) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: switch_steam_HSM500_livery_purchase;
-        articulated_part: switch_steam_HSM500_articulated;
-        length: switch_steam_HSM500_length;
-        cargo_subtype_text: switch_steam_HSM500_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_ep), string(str_purchase_axl_B), string(str_purchase_steam_HSM500));
+        purchase: switch_steam_HSM501_livery_purchase;
+        articulated_part: switch_steam_HSM501_articulated;
+        length: switch_steam_HSM501_length;
+        cargo_subtype_text: switch_steam_HSM501_subtype_text;
+        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_ep), string(str_purchase_axl_B), string(str_purchase_steam_HSM501));
         cargo_capacity: return 0;
-        visual_effect_and_powered: switch_steam_HSM500_visual_effect_and_powered;
-        switch_steam_HSM500_livery;
+        visual_effect_and_powered: switch_steam_HSM501_visual_effect_and_powered;
+        switch_steam_HSM501_livery;
     }
 }

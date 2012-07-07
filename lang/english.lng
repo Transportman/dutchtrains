@@ -218,8 +218,8 @@ str_steam_HSM126        :NS 1100 (Steam)
 str_steam_NCS1          :NS 7200 (Steam)
 str_steam_NCS21         :NS 1500 (Steam)
 str_steam_HSM83         :NS 3100 (Steam)
-str_steam_HSM500        :NS 2100 "Blikken Tinus" (Steam)
-str_steam_HSM500_t      :NS 2100 series "Tin Tinus" (Steam)
+str_steam_HSM501        :NS 2100 "Blikken Tinus" (Steam)
+str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Steam)
 str_steam_HSM701        :NS 5500 (Steam)
 str_steam_SS651         :NS 8100 (Steam)
 str_steam_SS700         :NS 3700 "Jumbo" (Steam)
@@ -551,7 +551,7 @@ str_purchase_steam_NCS1     :Rebuilt 1892 as tank locomotive: {YELLOW}-15% weigh
 str_purchase_steam_NCS21    :Previously known as: {SILVER} NCS 21-30, later SS 481-490.
 str_purchase_steam_HSM83    :Previously known as: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Previously known as: {SILVER} HSM 126-135.
-str_purchase_steam_HSM500   :Previously known as: {SILVER} HSM 501-535.
+str_purchase_steam_HSM501   :Previously known as: {SILVER} HSM 501-535.
 str_purchase_steam_HSM701   :Previously known as: {SILVER} HSM 701-755.
 str_purchase_steam_SS651    :Previously known as: {SILVER} SS 651-680.
 str_purchase_steam_SS700    :Previously known as: {SILVER} SS 685-778, 785-799.

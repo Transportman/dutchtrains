@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_emu_SLTIV, 137) {}
 item(FEAT_TRAINS, item_emu_SLTVI, 138) {}
 item(FEAT_TRAINS, item_emu_ICE3M, 139) {}
 item(FEAT_TRAINS, item_emu_Protos, 140) {}
-item(FEAT_TRAINS, item_steam_HSM500, 141) {}
+item(FEAT_TRAINS, item_steam_HSM501, 141) {}
 item(FEAT_TRAINS, item_steam_SS700, 142) {}
 item(FEAT_TRAINS, item_steam_NS3850, 143) {}
 item(FEAT_TRAINS, item_steam_NS3900, 144) {}
