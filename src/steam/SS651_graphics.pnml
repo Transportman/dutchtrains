@@ -19,7 +19,7 @@ spriteset(spriteset_steam_NS8100_purchase, "gfx/purchase/steam/NS8100.png") {
 }
 
 switch(FEAT_TRAINS, SELF, switch_steam_SS651_livery_purchase, current_year) {
-	0..1919: spriteset_steam_SS651_purchase;
+	0..1938: spriteset_steam_SS651_purchase;
     spriteset_steam_NS8100_purchase;
 }
 
@@ -82,12 +82,12 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NS8100_animation, (motion_counter)) {
 */
 
 switch(FEAT_TRAINS, PARENT, switch_steam_SS651_autolivery, date_of_last_service) {
-	0..date(1919,12,31): switch_steam_SS651_animation;
+	0..date(1938,12,31): switch_steam_SS651_animation;
     switch_steam_NS8100_animation;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_SS651_purchaselivery, build_year) {
-	0..1919: switch_steam_SS651_animation;
+	0..1938: switch_steam_SS651_animation;
     switch_steam_NS8100_animation;
 }
 
