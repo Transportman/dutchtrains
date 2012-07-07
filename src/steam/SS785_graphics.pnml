@@ -10,7 +10,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_steam_SS700_purchase, "gfx/purchase/steam/SS700.png") {
+spriteset(spriteset_steam_SS785_purchase, "gfx/purchase/steam/SS785.png") {
 	template_purchase(0, 0)
 }
 
@@ -18,8 +18,8 @@ spriteset(spriteset_steam_NS3700_purchase, "gfx/purchase/steam/NS3700.png") {
 	template_purchase(0, 0)
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_SS700_livery_purchase, current_year) {
-	0..1919: spriteset_steam_SS700_purchase;
+switch(FEAT_TRAINS, SELF, switch_steam_SS785_livery_purchase, current_year) {
+	0..1919: spriteset_steam_SS785_purchase;
     spriteset_steam_NS3700_purchase;
 }
 
@@ -28,46 +28,46 @@ switch(FEAT_TRAINS, SELF, switch_steam_SS700_livery_purchase, current_year) {
 */
 
 //6x engine animation
-spriteset(spriteset_steam_SS700_ani_1, "gfx/steam/SS700.png") {
+spriteset(spriteset_steam_SS785_ani_1, "gfx/steam/SS785.png") {
 	template_2cc_68(1, 1)
 }
-spriteset(spriteset_steam_SS700_ani_2, "gfx/steam/SS700.png") {
+spriteset(spriteset_steam_SS785_ani_2, "gfx/steam/SS785.png") {
 	template_2cc_68(1, 32)
 }
-spriteset(spriteset_steam_SS700_ani_3, "gfx/steam/SS700.png") {
+spriteset(spriteset_steam_SS785_ani_3, "gfx/steam/SS785.png") {
 	template_2cc_68(1, 64)
 }
-spriteset(spriteset_steam_SS700_ani_4, "gfx/steam/SS700.png") {
+spriteset(spriteset_steam_SS785_ani_4, "gfx/steam/SS785.png") {
 	template_2cc_68(1, 96)
 }
-spriteset(spriteset_steam_SS700_ani_5, "gfx/steam/SS700.png") {
+spriteset(spriteset_steam_SS785_ani_5, "gfx/steam/SS785.png") {
 	template_2cc_68(1, 128)
 }
-spriteset(spriteset_steam_SS700_ani_6, "gfx/steam/SS700.png") {
+spriteset(spriteset_steam_SS785_ani_6, "gfx/steam/SS785.png") {
 	template_2cc_68(1, 160)
 }
 //tender
-spriteset(spriteset_steam_SS700_tender, "gfx/steam/SS700.png") {
+spriteset(spriteset_steam_SS785_tender, "gfx/steam/SS785.png") {
 	template_2cc_48(1, 192)
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_SS700_animation, (motion_counter)) {
-    2:      spriteset_steam_SS700_ani_2;
-    3:      spriteset_steam_SS700_ani_3;
-    4..5:   spriteset_steam_SS700_ani_4;
-    6:      spriteset_steam_SS700_ani_5;
-    7:      spriteset_steam_SS700_ani_6;
-    10:     spriteset_steam_SS700_ani_2;
-    11:     spriteset_steam_SS700_ani_3;
-    12..13: spriteset_steam_SS700_ani_4;
-    14:     spriteset_steam_SS700_ani_5;
-    15:     spriteset_steam_SS700_ani_6;
-    spriteset_steam_SS700_ani_1;
+switch(FEAT_TRAINS, PARENT, switch_steam_SS785_animation, (motion_counter)) {
+    2:      spriteset_steam_SS785_ani_2;
+    3:      spriteset_steam_SS785_ani_3;
+    4..5:   spriteset_steam_SS785_ani_4;
+    6:      spriteset_steam_SS785_ani_5;
+    7:      spriteset_steam_SS785_ani_6;
+    10:     spriteset_steam_SS785_ani_2;
+    11:     spriteset_steam_SS785_ani_3;
+    12..13: spriteset_steam_SS785_ani_4;
+    14:     spriteset_steam_SS785_ani_5;
+    15:     spriteset_steam_SS785_ani_6;
+    spriteset_steam_SS785_ani_1;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_SS700_position, (position_in_vehid_chain % 2)) {
-	1: spriteset_steam_SS700_tender;
-    switch_steam_SS700_animation;
+switch(FEAT_TRAINS, SELF, switch_steam_SS785_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_SS785_tender;
+    switch_steam_SS785_animation;
 }
 
 //6x engine animation
@@ -117,25 +117,25 @@ switch(FEAT_TRAINS, SELF, switch_steam_NS3700_position, (position_in_vehid_chain
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, PARENT, switch_steam_SS700_autolivery, date_of_last_service) {
-	0..date(1919,12,31): switch_steam_SS700_position;
+switch(FEAT_TRAINS, PARENT, switch_steam_SS785_autolivery, date_of_last_service) {
+	0..date(1919,12,31): switch_steam_SS785_position;
     switch_steam_NS3700_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_SS700_purchaselivery, build_year) {
-	0..1919: switch_steam_SS700_position;
+switch(FEAT_TRAINS, PARENT, switch_steam_SS785_purchaselivery, build_year) {
+	0..1919: switch_steam_SS785_position;
     switch_steam_NS3700_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_SS700_livery, cargo_subtype) {
-	1: switch_steam_SS700_purchaselivery;
-    2: switch_steam_SS700_position;
+switch(FEAT_TRAINS, PARENT, switch_steam_SS785_livery, cargo_subtype) {
+	1: switch_steam_SS785_purchaselivery;
+    2: switch_steam_SS785_position;
     3: switch_steam_NS3700_position;
-    switch_steam_SS700_autolivery;
+    switch_steam_SS785_autolivery;
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_steam_SS700_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_steam_SS785_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_SS);
@@ -147,8 +147,8 @@ switch(FEAT_TRAINS, PARENT, switch_steam_SS700_subtype_text, cargo_subtype) {
 * ARTICULATED VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_steam_SS700_articulated, extra_callback_info1) {
-    1: return item_steam_SS700;
+switch(FEAT_TRAINS, SELF, switch_steam_SS785_articulated, extra_callback_info1) {
+    1: return item_steam_SS785;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -156,7 +156,7 @@ switch(FEAT_TRAINS, SELF, switch_steam_SS700_articulated, extra_callback_info1) 
 * VEHICLE LENGTH CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_steam_SS700_length, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_SS785_length, (position_in_vehid_chain % 2)) {
     1: return 4;
     return 6;
 }
@@ -165,7 +165,7 @@ switch(FEAT_TRAINS, SELF, switch_steam_SS700_length, (position_in_vehid_chain % 
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_steam_SS700_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_SS785_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
 }

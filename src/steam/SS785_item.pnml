@@ -10,9 +10,9 @@
 * ITEM
 */
 
-item(FEAT_TRAINS, item_steam_SS700) {
+item(FEAT_TRAINS, item_steam_SS785) {
     property {
-        name: string(str_steam_SS700);
+        name: string(str_steam_SS785);
         
         introduction_date: date(1911,1,1);
         model_life: 74;
@@ -49,13 +49,13 @@ item(FEAT_TRAINS, item_steam_SS700) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: switch_steam_SS700_livery_purchase;
-        articulated_part: switch_steam_SS700_articulated;
-        length: switch_steam_SS700_length;
-        cargo_subtype_text: switch_steam_SS700_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_ep), string(str_purchase_axl_B), string(str_purchase_steam_SS700));
+        purchase: switch_steam_SS785_livery_purchase;
+        articulated_part: switch_steam_SS785_articulated;
+        length: switch_steam_SS785_length;
+        cargo_subtype_text: switch_steam_SS785_subtype_text;
+        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_ep), string(str_purchase_axl_B), string(str_purchase_steam_SS785));
         cargo_capacity: return 0;
-        visual_effect_and_powered: switch_steam_SS700_visual_effect_and_powered;
-        switch_steam_SS700_livery;
+        visual_effect_and_powered: switch_steam_SS785_visual_effect_and_powered;
+        switch_steam_SS785_livery;
     }
 }

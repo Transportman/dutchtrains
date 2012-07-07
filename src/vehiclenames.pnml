@@ -14,7 +14,7 @@ if (param_vehicle_names == 1) {
     //steam
     item(FEAT_TRAINS, item_steam_Arend) { property { name: string(str_steam_Arend_t); } }
     item(FEAT_TRAINS, item_steam_HSM501) { property { name: string(str_steam_HSM501_t); } }
-    item(FEAT_TRAINS, item_steam_SS700) { property { name: string(str_steam_SS700_t); } }
+    item(FEAT_TRAINS, item_steam_SS785) { property { name: string(str_steam_SS785_t); } }
     item(FEAT_TRAINS, item_steam_NBDS30) { property { name: string(str_steam_NBDS30_t); } }
     item(FEAT_TRAINS, item_steam_NCS71) { property { name: string(str_steam_NCS71_t); } }
     item(FEAT_TRAINS, item_steam_NS6300) { property { name: string(str_steam_NS6300_t); } }
