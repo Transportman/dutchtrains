@@ -62,6 +62,8 @@
 #include "src/steam/NS6300_item.pnml"
 #include "src/steam/NCS21_graphics.pnml"
 #include "src/steam/NCS21_item.pnml"
+#include "src/steam/SS651_graphics.pnml"
+#include "src/steam/SS651_item.pnml"
 
 //diesel
 #include "src/diesel/NS100_graphics.pnml"

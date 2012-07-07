@@ -197,6 +197,7 @@ str_steam_HSM126        :NS 1100 (Stoom)
 str_steam_NCS21         :NS 1500 (Stoom)
 str_steam_HSM500        :NS 2100 "Blikken Tinus" (Stoom)
 str_steam_HSM500_t      :NS 2100 "Tin Tinus" (Stoom)
+str_steam_SS651         :NS 8100 (Stoom)
 str_steam_SS700         :NS 3700 "Jumbo" (Stoom)
 str_steam_SS700_t       :NS 3700 "Jumbo" (Stoom)
 str_steam_NS3800        :NS 3850 (Stoom)
@@ -524,6 +525,7 @@ str_purchase_spc_fictional  :Fictief.
 str_purchase_steam_NCS21    :Voorheen bekend als: {SILVER} NCS 21-30, later SS 481-490.
 str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135.
 str_purchase_steam_HSM500   :Voorheen bekend als: {SILVER} HSM 501-535.
+str_purchase_steam_SS651    :Voorheen bekend als: {SILVER} SS 651-680.
 str_purchase_steam_SS700    :Voorheen bekend als: {SILVER} SS 685-778, 785-799.
 str_purchase_steam_NBDS30   :Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36.
 str_purchase_steam_NCS71    :Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978.

@@ -204,3 +204,4 @@ item(FEAT_TRAINS, item_wagons_gen4_Ubcs, 309) {}
 item(FEAT_TRAINS, item_emu_GTW26, 310) {}
 item(FEAT_TRAINS, item_emu_GTW28, 311) {}
 item(FEAT_TRAINS, item_steam_NCS21, 312) {}
+item(FEAT_TRAINS, item_steam_SS651, 313) {}
