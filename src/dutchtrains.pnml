@@ -70,6 +70,8 @@
 #include "src/steam/HSM83_item.pnml"
 #include "src/steam/NCS1_graphics.pnml"
 #include "src/steam/NCS1_item.pnml"
+#include "src/steam/SS517_graphics.pnml"
+#include "src/steam/SS517_item.pnml"
 
 //diesel
 #include "src/diesel/NS100_graphics.pnml"

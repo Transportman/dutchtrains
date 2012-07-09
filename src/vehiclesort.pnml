@@ -26,6 +26,7 @@ sort(FEAT_TRAINS, [
     item_steam_NCS1,
     item_steam_HSM83,
     item_steam_HSM126,
+    item_steam_SS517,
     item_steam_NCS21,
     item_steam_HSM701,
     item_steam_SS651,
