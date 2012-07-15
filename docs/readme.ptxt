@@ -116,11 +116,11 @@ configuration file:
 ---------
 Starting date
     Because our selection of steam trains isn't complete yet, the 
-    earliest you can start is 1883. From that year there will always be
+    earliest you can start is 1863. From that year there will always be
     at least one train available. If you want to start at the dawn of 
     Dutch railroading, you can start as early as 1839 with Arend, but be
     advised that there will be no trains available between 1857 and 
-    1883, a gap that will be filled in future releases.
+    1863, a gap that will be filled in future releases.
 
 Metro vehicles
     Metro vehicles are only available if you have loaded a metro track
@@ -132,7 +132,7 @@ Metro vehicles
     
 Multiple units
     Multiple units are purchased as a single complete unit. If MUs are
-    available in multiple lengths, you choose the lenght directy from
+    available in multiple lengths, you choose the length directy from
     the purchase menu by selecting the appropriate train to purchase.
     You cannot change the length of a MU once purchased, in that case 
     you have to sell the train and buy an new one, or use autoreplace.

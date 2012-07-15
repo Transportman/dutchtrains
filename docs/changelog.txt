@@ -1,6 +1,36 @@
 Dutch Trainset Changelog
 ========================
 
+2.0.0-alpha6 (2012/07/15)
+-------------------------
+- Feature: advice on some engine/carriage combinations in purchase menu (issue #3686)
+- Feature: automatically select benelux livery for PlanW when attached to HLE25.5 (issue #4036)
+- Feature: green livery for NCS 21-30 (Voyager One) (issue #3952)
+- Feature: HSM 601-647 / NS 3200 (graphics by Voyager One) (issue #3952)
+- Feature: HSM701 / NS 5500 (graphics by Voyager One) (issue #3952)
+- Feature: HSM83 / NS 3100 (graphics by Voyager One) (issue #3952)
+- Feature: NCS1/81 / SS571 / NS 7200 (graphics by Voyager One) (issue #3952)
+- Feature: NCS 21-30 steam engine (graphics by Voyager One) (issue #3952)
+- Feature: new graphics and more liveries for ICM (by Voyager One) (issue #4025)
+- Feature: new graphics and more liveries for ZHESM (by Voyager One) (issue #4032)
+- Feature: parameter to increase/decrease purchase and running costs (issue #4028)
+- Feature: SS 517-527 / NBDS 25-26 / NS 6900 "Bello" (graphics by Voyager One) (issue #3952)
+- Feature: SS 651 / NS 8100 (graphics by Voyager One) (issue #3952)
+- Feature: SS 9-16, 21-78 / NBDS 1-5 / NS 700 (graphics by Voyager One) (issue #3952)
+- Change: cargo recolour for gen2_selfdischarger (issue #3347)
+- Change: cargo recolour for gen4_GTUW (issue #3347)
+- Change: cargo recolour for gen7_Eass (issue #3347)
+- Change: improved HSM83 / NS 3100 graphics (Voyager One) (issue #3952)
+- Fix: do not offer livery refits for connected MUs if they don't work (issue #3818)
+- Fix: livery refit options for DMUs
+- Fix: NS 6200 was actually initially a freighter
+- Fix (r613): NS livery in 1938
+- Fix (r615): set correct vehicle length for sprites
+- Codechange: rename HSM500 to HSM501
+- Codechange: rename NS3800 to NS3850
+- Codechange: rename SS700 to SS785
+
+
 2.0.0-alpha5 (2012/06/20)
 -------------------------
 Fix: grf name was missing
