@@ -1,0 +1,222 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_steam_SS9_purchase, "gfx/purchase/steam/SS9.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_steam_SS21_purchase, "gfx/purchase/steam/SS21.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_steam_NS700_purchase, "gfx/purchase/steam/NS700.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_livery_purchase, current_year) {
+	0..1871: spriteset_steam_SS9_purchase;
+	1872..1919: spriteset_steam_SS21_purchase;
+    spriteset_steam_NS700_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+//4x engine animation
+spriteset(spriteset_steam_SS9_ani_1, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 1)
+}
+spriteset(spriteset_steam_SS9_ani_2, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 32)
+}
+spriteset(spriteset_steam_SS9_ani_3, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 64)
+}
+spriteset(spriteset_steam_SS9_ani_4, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 96)
+}
+//tender
+spriteset(spriteset_steam_SS9_tender, "gfx/steam/SS9.png") {
+	template_2cc_48(1, 128)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS9_animation, (motion_counter)) {
+    2..3:   spriteset_steam_SS9_ani_2;
+    4..5:   spriteset_steam_SS9_ani_3;
+    6..7:   spriteset_steam_SS9_ani_4;
+    
+    10..11: spriteset_steam_SS9_ani_2;
+    12..13: spriteset_steam_SS9_ani_3;
+    14..15: spriteset_steam_SS9_ani_4;
+    spriteset_steam_SS9_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_SS9_tender;
+    switch_steam_SS9_animation;
+}
+
+//4x engine animation
+spriteset(spriteset_steam_SS21_ani_1, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 160)
+}
+spriteset(spriteset_steam_SS21_ani_2, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 192)
+}
+spriteset(spriteset_steam_SS21_ani_3, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 224)
+}
+spriteset(spriteset_steam_SS21_ani_4, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 256)
+}
+//tender
+spriteset(spriteset_steam_SS21_tender, "gfx/steam/SS9.png") {
+	template_2cc_48(1, 288)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS21_animation, (motion_counter)) {
+    2..3:   spriteset_steam_SS21_ani_2;
+    4..5:   spriteset_steam_SS21_ani_3;
+    6..7:   spriteset_steam_SS21_ani_4;
+    
+    10..11: spriteset_steam_SS21_ani_2;
+    12..13: spriteset_steam_SS21_ani_3;
+    14..15: spriteset_steam_SS21_ani_4;
+    spriteset_steam_SS21_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS21_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_SS21_tender;
+    switch_steam_SS21_animation;
+}
+
+//4x engine animation
+spriteset(spriteset_steam_NS700_ani_1, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 320)
+}
+spriteset(spriteset_steam_NS700_ani_2, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 352)
+}
+spriteset(spriteset_steam_NS700_ani_3, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 384)
+}
+spriteset(spriteset_steam_NS700_ani_4, "gfx/steam/SS9.png") {
+	template_2cc_68(1, 416)
+}
+//tender
+spriteset(spriteset_steam_NS700_tender, "gfx/steam/SS9.png") {
+	template_2cc_48(1, 448)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NS700_animation, (motion_counter)) {
+    2..3:   spriteset_steam_NS700_ani_2;
+    4..5:   spriteset_steam_NS700_ani_3;
+    6..7:   spriteset_steam_NS700_ani_4;
+    
+    10..11: spriteset_steam_NS700_ani_2;
+    12..13: spriteset_steam_NS700_ani_3;
+    14..15: spriteset_steam_NS700_ani_4;
+    spriteset_steam_NS700_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS700_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_NS700_tender;
+    switch_steam_NS700_animation;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS9_autolivery, date_of_last_service) {
+	0..date(1871,12,31): switch_steam_SS9_position;
+	date(1872,12,31)..date(1919,12,31): switch_steam_SS21_position;
+    switch_steam_NS700_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS9_purchaselivery, build_year) {
+	0..1871: switch_steam_SS9_position;
+	1872..1919: switch_steam_SS21_position;
+    switch_steam_NS700_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS9_livery, cargo_subtype) {
+	1: switch_steam_SS9_purchaselivery;
+    2: switch_steam_SS9_position;
+    3: switch_steam_SS21_position;
+    4: switch_steam_NS700_position;
+    switch_steam_SS9_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_steam_SS9_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_black);
+    3: return string(str_cargo_subtype_SS);
+    4: return string(str_cargo_subtype_NS);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_articulated, extra_callback_info1) {
+    1: return item_steam_SS9;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VEHICLE LENGTH CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_length, (position_in_vehid_chain % 2)) {
+    1: return 4;
+    return 6;
+}
+
+/*
+* VEHICLE PROPERTY CALLBACKS
+*/
+
+//power
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_power, build_year) {
+	0..1891: return 262;
+    return 316;
+}
+
+//weight
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_weight, build_year) {
+	0..1891: return 47;
+    return 49;
+}
+
+//tractive_effort_coefficient
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_tractive_effort_coefficient, build_year) {
+	0..1891: return 11; //0.043*255;
+    return 18; //0.070*255;
+}
+
+//running_cost_factor
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_running_cost_factor, build_year) {
+	0..1891: return 15;
+    return 16;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS9_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
+}
