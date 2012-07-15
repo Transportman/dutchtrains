@@ -74,6 +74,8 @@
 #include "src/steam/SS517_item.pnml"
 #include "src/steam/SS9_graphics.pnml"
 #include "src/steam/SS9_item.pnml"
+#include "src/steam/HSM601_graphics.pnml"
+#include "src/steam/HSM601_item.pnml"
 
 //diesel
 #include "src/diesel/NS100_graphics.pnml"

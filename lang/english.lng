@@ -220,6 +220,7 @@ str_steam_NCS21         :NS 1500 (Steam)
 str_steam_HSM83         :NS 3100 (Steam)
 str_steam_HSM501        :NS 2100 "Blikken Tinus" (Steam)
 str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Steam)
+str_steam_HSM601        :NS 3200 (Steam)
 str_steam_HSM701        :NS 5500 (Steam)
 str_steam_SS9           :NS 700 (Steam)
 str_steam_SS517         :NS 6900 "Bello" (Steam)
@@ -554,6 +555,7 @@ str_purchase_steam_NCS21    :Previously known as: {SILVER} NCS 21-30, later SS 4
 str_purchase_steam_HSM83    :Previously known as: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Previously known as: {SILVER} HSM 126-135.
 str_purchase_steam_HSM501   :Previously known as: {SILVER} HSM 501-535.
+str_purchase_steam_HSM601   :Previously known as: {SILVER} HSM 601-647.
 str_purchase_steam_HSM701   :Previously known as: {SILVER} HSM 701-755.
 str_purchase_steam_SS9      :Purchased from 1872: {YELLOW}+4% weight, +21% power, +64% TU, +7% running cost.{}{BLACK}Previously known as: {SILVER} SS 9-16, 21-78, NBDS 1-5.
 str_purchase_steam_SS517    :Previously known as: {SILVER} SS 517-527, NBDS 25-26.
