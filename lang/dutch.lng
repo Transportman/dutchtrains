@@ -264,7 +264,7 @@ str_electric_mDDM       :mDDM (Elektrisch)
 str_electric_NS1600P    :NS 1600P (Elektrisch)
 str_electric_HLE11      :NMBS HLE 11 (Elektrisch)
 str_electric_HLE25      :NMBS HLE 25.5 (Elektrisch)
-str_electric_TRAXXF140MS2   :TRAXX F140 MS2 (Elektrisch)
+str_electric_TRAXXF140MS2   :NS Hispeed 186 (Elektrisch)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Elektrisch)
 str_electric_gen9_HS001 :HS-1 (Elektrisch)
 str_electric_gen9_HS002 :HS-2 (Elektrisch)
@@ -558,7 +558,7 @@ str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2.
 str_purchase_electric_mDDM_NID:Voor gebruik met Dubbeldekkerrijtuig DDM/NID.
 str_purchase_electric_HLE11 :Voor gebruik met Rijtuig ICR voor Beneluxtrein.
 str_purchase_electric_HLE25 :Voor gebruik met Rijtuig Plan W voor Beneluxtrein.
-str_purchase_electric_TRAXXF140MS2:Voor gebruik met Rijtuig ICR voor Beneluxtrein.{}Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.
+str_purchase_electric_TRAXXF140MS2:Voor gebruik met Rijtuig ICR voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.
 
 str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% kracht, +7% snelheid, +23% onderhoudskosten.
 
