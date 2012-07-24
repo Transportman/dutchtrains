@@ -521,7 +521,7 @@ str_purchase_lsp_37         :37 dagen
 
 str_purchase_axl_A          :zeer laag (klasse A)
 str_purchase_axl_B          :laag (klasse B)
-str_purchase_axl_C          :middelmaig (klasse C)
+str_purchase_axl_C          :middelmatig (klasse C)
 str_purchase_axl_D          :hoog (klasse D)
 str_purchase_axl_E          :zeer hoog (klasse E)
 
@@ -558,7 +558,7 @@ str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2.
 str_purchase_electric_mDDM_NID:Voor gebruik met Dubbeldekkerrijtuig DDM/NID.
 str_purchase_electric_HLE11 :Voor gebruik met Rijtuig ICR voor Beneluxtrein.
 str_purchase_electric_HLE25 :Voor gebruik met Rijtuig Plan W voor Beneluxtrein.
-str_purchase_electric_TRAXXF140MS2:Voor gebruik met Rijtuig Plan W voor Beneluxtrein.{}Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.
+str_purchase_electric_TRAXXF140MS2:Voor gebruik met Rijtuig ICR voor Beneluxtrein.{}Meersysteemlocomotief, volledige kracht alleen onder 25 kV ~.
 
 str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% kracht, +7% snelheid, +23% onderhoudskosten.
 
