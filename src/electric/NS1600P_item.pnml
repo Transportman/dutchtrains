@@ -49,9 +49,9 @@ item(FEAT_TRAINS, item_electric_NS1600P) {
 	}
     graphics {
         purchase: spriteset_electric_NS1600P_purchase;
-        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_spc_electric_ms));
+        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_spc_NS1600P));
         power: switch_electric_NS1600P_power;
-        purchase_power: return 9199;
+        purchase_power: return 5364;
         spriteset_electric_NS1600P;
     }
 }

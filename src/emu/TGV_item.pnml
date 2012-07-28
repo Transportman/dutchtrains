@@ -50,10 +50,10 @@ item(FEAT_TRAINS, item_emu_TGV) {
         purchase: spriteset_emu_TGV_purchase;
         articulated_part: switch_emu_TGV_articulated;
         cargo_subtype_text: switch_emu_TGV_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_10_50), string(str_purchase_lsp_26), string(str_purchase_spc_emu_ms));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_10_50), string(str_purchase_lsp_26), string(str_purchase_spc_emu_TGV));
         visual_effect_and_powered: switch_emu_TGV_visual_effect_and_powered;
         power: switch_emu_TGV_power;
-        purchase_power: return 11801;
+        purchase_power: return 4935;
         switch_emu_TGV_livery;
     }
 }

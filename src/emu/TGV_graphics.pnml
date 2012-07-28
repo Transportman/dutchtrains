@@ -110,5 +110,20 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_power, current_railtype) {
     SACA: return 11801;
     SADA: return 11801;
     SAEA: return 11801;
+    SBAA: return 11801;
+    SBBA: return 11801;
+    SBCA: return 11801;
+    SBDA: return 11801;
+    SBEA: return 11801;
+    SAAa: return 6921;
+    SABa: return 6921;
+    SACa: return 6921;
+    SADa: return 6921;
+    SAEa: return 6921;
+    SBAa: return 6921;
+    SBBa: return 6921;
+    SBCa: return 6921;
+    SBDa: return 6921;
+    SBEa: return 6921;
     return 4935;
 }

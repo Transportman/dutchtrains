@@ -71,5 +71,20 @@ switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_power, current_railtype) {
     SACA: return 8000;
     SADA: return 8000;
     SAEA: return 8000;
+    SBAA: return 8000;
+    SBBA: return 8000;
+    SBCA: return 8000;
+    SBDA: return 8000;
+    SBEA: return 8000;
+    SAAa: return 8000;
+    SABa: return 8000;
+    SACa: return 8000;
+    SADa: return 8000;
+    SAEa: return 8000;
+    SBAa: return 8000;
+    SBBa: return 8000;
+    SBCa: return 8000;
+    SBDa: return 8000;
+    SBEa: return 8000;
     return 4750;
 }

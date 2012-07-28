@@ -69,5 +69,20 @@ switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_power, current_railtype) {
     SACA: return 10000;
     SADA: return 10000;
     SAEA: return 10000;
+    SBAA: return 10000;
+    SBBA: return 10000;
+    SBCA: return 10000;
+    SBDA: return 10000;
+    SBEA: return 10000;
+    SAAa: return 10000;
+    SABa: return 10000;
+    SACa: return 10000;
+    SADa: return 10000;
+    SAEa: return 10000;
+    SBAa: return 10000;
+    SBBa: return 10000;
+    SBCa: return 10000;
+    SBDa: return 10000;
+    SBEa: return 10000;
     return 6050;
 }

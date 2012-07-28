@@ -25,5 +25,20 @@ railtypetable {
     SABA,
     SACA,
     SADA,
-    SAEA
+    SAEA,
+    SBAA,
+    SBBA,
+    SBCA,
+    SBDA,
+    SBEA,
+    SAAa,
+    SABa,
+    SACa,
+    SADa,
+    SAEa,
+    SBAa,
+    SBBa,
+    SBCa,
+    SBDa,
+    SBEa
 }

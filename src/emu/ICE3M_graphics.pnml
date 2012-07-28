@@ -82,5 +82,20 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_power, current_railtype) {
     SACA: return 10728;
     SADA: return 10728;
     SAEA: return 10728;
+    SBAA: return 10728;
+    SBBA: return 10728;
+    SBCA: return 10728;
+    SBDA: return 10728;
+    SBEA: return 10728;
+    SAAa: return 10728;
+    SABa: return 10728;
+    SACa: return 10728;
+    SADa: return 10728;
+    SAEa: return 10728;
+    SBAa: return 10728;
+    SBBa: return 10728;
+    SBCa: return 10728;
+    SBDa: return 10728;
+    SBEa: return 10728;
     return 5766;
 }

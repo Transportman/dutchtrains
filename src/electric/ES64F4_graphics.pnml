@@ -97,5 +97,20 @@ switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_power, current_railtype) {
     SACA: return 8582;
     SADA: return 8582;
     SAEA: return 8582;
+    SBAA: return 8582;
+    SBBA: return 8582;
+    SBCA: return 8582;
+    SBDA: return 8582;
+    SBEA: return 8582;
+    SAAa: return 8582;
+    SABa: return 8582;
+    SACa: return 8582;
+    SADa: return 8582;
+    SAEa: return 8582;
+    SBAa: return 8582;
+    SBBa: return 8582;
+    SBCa: return 8582;
+    SBDa: return 8582;
+    SBEa: return 8582;
     return 6034;
 }

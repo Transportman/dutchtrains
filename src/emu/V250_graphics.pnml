@@ -82,5 +82,20 @@ switch(FEAT_TRAINS, SELF, switch_emu_V250_power, current_railtype) {
     SACA: return 7375;
     SADA: return 7375;
     SAEA: return 7375;
+    SBAA: return 7375;
+    SBBA: return 7375;
+    SBCA: return 7375;
+    SBDA: return 7375;
+    SBEA: return 7375;
+    SAAa: return 7375;
+    SABa: return 7375;
+    SACa: return 7375;
+    SADa: return 7375;
+    SAEa: return 7375;
+    SBAa: return 7375;
+    SBBa: return 7375;
+    SBCa: return 7375;
+    SBDa: return 7375;
+    SBEa: return 7375;
     return 4023;
 }

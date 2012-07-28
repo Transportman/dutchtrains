@@ -48,11 +48,11 @@ item(FEAT_TRAINS, item_emu_gen9_HST) {
     graphics {
         cargo_capacity: return 63;
         purchase: spriteset_emu_gen9_HST_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_D), string(str_purchase_len_8_40), string(str_purchase_lsp_17), string(str_purchase_spc_emu_ms_fictional));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_D), string(str_purchase_len_8_40), string(str_purchase_lsp_17), string(str_purchase_spc_emu_gen9_HST));
         articulated_part: switch_emu_gen9_HST_articulated;
         visual_effect_and_powered: switch_emu_gen9_HST_visual_effect_and_powered;
         power: switch_emu_gen9_HST_power;
-        purchase_power: return 8000;
+        purchase_power: return 4750;
         switch_emu_gen9_HST_position;
     }
 }

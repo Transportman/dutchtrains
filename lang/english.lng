@@ -544,10 +544,6 @@ str_purchase_axl_E          :very high (class E)
 
 str_purchase_spc_eld        :With baggage compartment refittable to express cargoes.
 str_purchase_spc_el_eld     :With baggage compartment refittable to express cargoes or passengers.
-str_purchase_spc_emu_ms     :Multisystem EMU, full power only under 25 kV ~.
-str_purchase_spc_emu_ms_fictional:Multisystem EMU, full power only under 25 kV ~.{}Fictional.
-str_purchase_spc_electric_ms:Multisystem locomotive, full power only under 25 kV ~.
-str_purchase_spc_electric_ms_fictional:Multisystem locomotive, full power only under 25 kV ~.{}Fictional.
 str_purchase_spc_fictional  :Fictional.
 
 str_purchase_steam_NCS1     :Rebuilt 1892 as tank locomotive: {YELLOW}-15% weight, +48% power, +73% TE, +7% running cost.{}{BLACK}Previously known as: {SILVER} NCS 1-12, 31-39 (tender locomotive), NCS 81-89 (tank locomotive), SS 571-579 (tank locomotive).
@@ -575,14 +571,21 @@ str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2.
 str_purchase_electric_mDDM_NID:For use Double-decker Carriage DDM/NID.
 str_purchase_electric_HLE11 :For use Carriage ICR for Benelux service.
 str_purchase_electric_HLE25 :For use Carriage Plan W for Benelux service.
-str_purchase_electric_TRAXXF140MS2:For use Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive, full power only under 25 kV ~.
+str_purchase_electric_TRAXXF140MS2:For use Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive, {YELLOW}+87% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_electric_ES64F4:Multisystem locomotive, {YELLOW}+42% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_NS1600P    :Multisystem locomotive, {YELLOW}+70% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_electric_gen9_HS001:Multisystem locomotive, {YELLOW}+65% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_spc_electric_gen9_HS002:Multisystem locomotive, {YELLOW}+197% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
 
 str_purchase_dmu_omBC1901   :Purchased from 1929: {YELLOW}+41% weight, +233% power, +7% speed, +23% running cost.
 
 str_purchase_emu_ZHESM_mBC  :Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900.{}{BLACK}For use with Carriage ZHESM B.
 str_purchase_emu_Mat24      :For use with Carriage Mat '24.
 str_purchase_emu_Mat36ELD3  :With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8.
-str_purchase_emu_ICE3M      :Multisystem EMU, full power only under 25 kV ~.{}Also known as: {SILVER} DB BR 406.
+str_purchase_emu_ICE3M      :Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV ~ electrified track.{}Also known as: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV    :Multisystem EMU, {YELLOW}+139% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_emu_V250   :Multisystem EMU, {YELLOW}+83% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_emu_gen9_HST:Multisystem EMU, {YELLOW}+68% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
 
 str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900.{}{BLACK}For use with motorcar ZHESM mBC.
 str_purchase_coaches_Mat24  :For use with motorcar Mat '24.

@@ -92,5 +92,20 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_power, current_railtype) 
     SACA: return 7509;
     SADA: return 7509;
     SAEA: return 7509;
+    SBAA: return 7509;
+    SBBA: return 7509;
+    SBCA: return 7509;
+    SBDA: return 7509;
+    SBEA: return 7509;
+    SAAa: return 7509;
+    SABa: return 7509;
+    SACa: return 7509;
+    SADa: return 7509;
+    SAEa: return 7509;
+    SBAa: return 7509;
+    SBBa: return 7509;
+    SBCa: return 7509;
+    SBDa: return 7509;
+    SBEa: return 7509;
     return 4023;
 }
