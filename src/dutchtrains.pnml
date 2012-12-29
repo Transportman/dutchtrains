@@ -78,6 +78,8 @@
 #include "src/steam/HSM601_item.pnml"
 #include "src/steam/NCS41_graphics.pnml"
 #include "src/steam/NCS41_item.pnml"
+#include "src/steam/NRS11_graphics.pnml"
+#include "src/steam/NRS11_item.pnml"
 
 //diesel
 #include "src/diesel/NS100_graphics.pnml"

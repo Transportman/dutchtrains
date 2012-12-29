@@ -23,6 +23,7 @@ sort(FEAT_TRAINS, [
     
     //steam
     item_steam_Arend,
+    item_steam_NRS11,
     item_steam_NCS1,
     item_steam_SS9,
     item_steam_HSM83,
@@ -31,6 +32,7 @@ sort(FEAT_TRAINS, [
     item_steam_NCS21,
     item_steam_HSM601,
     item_steam_HSM701,
+    item_steam_NCS41,
     item_steam_SS651,
     item_steam_NBDS30,
     item_steam_NCS71,
@@ -43,7 +45,6 @@ sort(FEAT_TRAINS, [
     item_steam_NS6300,
     item_steam_NS4700,
     item_steam_NS5000II,
-    item_steam_NCS41,
     
     //diesel
     item_diesel_NS100,
