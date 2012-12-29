@@ -1,6 +1,31 @@
 Dutch Trainset Changelog
 ========================
 
+2.0.0-alpha7 (2012/12/29)
+-------------------------
+- Feature: HSM 1-15, 26-30 (graphics by Voyager One) (issue #3952)
+- Feature: HSM 601-647 / NS 3200 (graphics by Voyager One) (issue #3952)
+- Feature: NCS 41-50 / SS 151-160 / NS 7000 (graphics by Voyager One) (issue #3952)
+- Feature: NRS 11-16 (graphics by Voyager One) (issue #3952)
+- Feature: SS 17-20, 161-205, 212 / NS 2900 (graphics by Voyager One) (issue #3952)
+- Feature: SS 9-16, 21-78 / NBDS 1-5 / NS 700 (graphics by Voyager One) (issue #3952)
+- Change: HSM 601-647 / NS 3200 graphics (by Voyager One) (issue #3952)
+- Change: HSM83 / NS 3100 graphics (by Voyager One) (issue #3952)
+- Change: improved SS651 / NS8100 graphics (Voyager One) breaks compatibility (issue #3952)
+- Change: NCS1 graphics (by Voyager One) (issue #3952)
+- Change: NCS21 graphics (by Voyager One) (issue #3952)
+- Change: rename TRAXX F140 MS2 to NS Hispeed 186
+- Change: SS 517-527 / NBDS 25-26 / NS 6900 "Bello" graphics (by Voyager One) (issue #3952)
+- Change: SS 651 / NS 8100 graphics (by Voyager One) (issue #3952)
+- Change: SS 9-16, 21-78 / NBDS 1-5 / NS 700 graphics (by Voyager One) (issue #3952)
+- Fix: also have multisystem trains full power on S[AB][ABCDE][Aa] and not only SA[ABCDE]A (issue #4062)
+- Fix: increase gen5 silo capacity, breaks compatibility (issue #4197)
+- Fix: misalignment DE5 red livery (Transportman) (issue #4172)
+- Fix: Misalignment ICR Fyra 1st coach (Transportman) (issue #4194)
+- Fix: NS7200 cannot change length on the fly (issue #4137)
+- Lang: Fix typo Dutch
+
+
 2.0.0-alpha6 (2012/07/15)
 -------------------------
 - Feature: advice on some engine/carriage combinations in purchase menu (issue #3686)

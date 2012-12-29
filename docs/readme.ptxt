@@ -115,20 +115,15 @@ configuration file:
 2.4 Usage
 ---------
 Starting date
-    Because our selection of steam trains isn't complete yet, the 
-    earliest you can start is 1863. From that year there will always be
-    at least one train available. If you want to start at the dawn of 
-    Dutch railroading, you can start as early as 1839 with Arend, but be
-    advised that there will be no trains available between 1857 and 
-    1863, a gap that will be filled in future releases.
+    If you want to start at the dawn of Dutch railroading, you can start
+    as early as 1839 with Arend, but be advised that there still are
+    some gaps with certain types of wagons.
 
 Metro vehicles
     Metro vehicles are only available if you have loaded a metro track
     NewGRF. The train set has been tested to work with the Metro Track
-    Set, the UK Railway Set tracks and NuTracks. If you want to use it 
-    with NuTracks, make sure to set the NuTracks track parameter to 
-    either metro or third rail, and make sure to load this set after 
-    NuTracks in the NewGRF configuration.
+    Set and the UK Railway Set tracks. Please note that recent versions
+    of NuTracks do not contain metro tracks any more.
     
 Multiple units
     Multiple units are purchased as a single complete unit. If MUs are
@@ -175,6 +170,7 @@ Livery refits
     refit window. This is also the case for engines that don't actually
     have a capacity, due to game limitations. Even though it says 
     passengers, these engines will not hold anything after refitting.
+    Think of the engineer being a person/passenger.
 
 
 
@@ -182,13 +178,13 @@ Livery refits
 3 Known issues
 --------------
     
-Additional steam engines
-    The selection of steam engines is currently incomplete, not 
-    allowing you to start in 1839. (#3952)
-    
 Cargo wagon properties
     Cargo wagon properties like capacity, speed, weight etc. are 
     currently suboptimal and need to be reviewed (#3953)
+
+Multisystem trains don't go full power
+    Some modern trains don't run full power if no compatible track set
+    is loaded (#4477)
 
 
 
@@ -238,6 +234,15 @@ A: Some specialized wagons, like the VAM compost wagon, the cartransporter
 Q: Can I use Autorefit?
 A: Yes.
 
+Q: Why have some newer trains less power when purchased than stated in
+   the purchase menu?
+A: These are so-called multi-current trains. These trains can only run
+   full power when on a track type that provides enough current. To get 
+   full power for these trains you need to load a track set providing
+   compatible high-voltage tracks, like the Dutch Trackset. We're working
+   on a fix such that you'll get full power for these trains if you 
+   didn't load a track set.
+
 
 
 ---------
@@ -255,13 +260,15 @@ Graphics (see individual graphic files in the source for details):
 - Voyager One
 - Wile E. Coyote
 
+Code:
+- FooBar (Jasper Vries)
+
+Development support:
+- Transportman
+
 Templating of graphics:
 - Mahoo76
 - Supercheese
-- Transportman
-
-Code:
-- FooBar (Jasper Vries)
 
 Translations:
 - Dutch: FooBar (Jasper Vries)
