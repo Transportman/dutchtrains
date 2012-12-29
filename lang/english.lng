@@ -2,7 +2,7 @@
 
 #Main grf title and description
 STR_GRF_NAME			:{TITLE}
-STR_GRF_DESCRIPTION		:{SILVER}Dutch Trains for OpenTTD {}{BLACK}First vehicle: 1839. Recommended earliest starting year: 1883.{}{}(c)Dutch Trainset Team {}License: GPLv2 or higher. {}See readme for details.
+STR_GRF_DESCRIPTION		:{SILVER}Dutch Trains for OpenTTD {}{BLACK}First vehicle: 1839.{}{}(c)Dutch Trainset Team {}License: GPLv2 or higher. {}See readme for details.
 STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 #parameter strings
