@@ -49,7 +49,7 @@ spriteset(spriteset_steam_NCS1_ani_4, "gfx/steam/NCS1.png") {
 }
 //tender
 spriteset(spriteset_steam_NCS1_tender, "gfx/steam/NCS1.png") {
-	template_2cc_48(1, 128)
+	template_2cc_38(1, 128)
 }
 //faketender
 spriteset(spriteset_steam_NCS1_faketender, "gfx/steam/NCS1.png") {
@@ -217,7 +217,7 @@ switch(FEAT_TRAINS, SELF, switch_steam_NCS1_articulated, extra_callback_info1) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_steam_NCS1_length_tender, (position_in_vehid_chain % 2)) {
-    1: return 4;
+    1: return 3;
     return 6;
 }
 switch(FEAT_TRAINS, SELF, switch_steam_NCS1_length_tank, (position_in_vehid_chain % 2)) {
