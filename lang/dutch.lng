@@ -200,6 +200,7 @@ str_steam_Arend_t       :HSM "Eagle" (Stoom)
 str_steam_HSM126        :NS 1100 (Stoom)
 str_steam_NCS1          :NS 7200 (Stoom)
 str_steam_NCS21         :NS 1500 (Stoom)
+str_steam_NCS41         :NS 7000 (Stoom)
 str_steam_HSM83         :NS 3100 (Stoom)
 str_steam_HSM501        :NS 2100 "Blikken Tinus" (Stoom)
 str_steam_HSM501_t      :NS 2100 "Tin Tinus" (Stoom)
@@ -531,6 +532,7 @@ str_purchase_spc_fictional  :Fictief.
 
 str_purchase_steam_NCS1     :Gekocht vanaf 1892 als tenderlocomotief: {YELLOW}-15% gewicht, +48% kracht, +73% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} NCS 1-12, 31-39 (locomotief met tender), NCS 81-89 (tenderlocomotief), SS 571-579 (tenderlocomotief).
 str_purchase_steam_NCS21    :Voorheen bekend als: {SILVER} NCS 21-30, later SS 481-490.
+str_purchase_steam_NCS41    :Voorheen bekend als: {SILVER} NCS 41-50, later SS 151-160.
 str_purchase_steam_HSM83    :Voorheen bekend als: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135.
 str_purchase_steam_HSM501   :Voorheen bekend als: {SILVER} HSM 501-535.

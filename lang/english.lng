@@ -217,6 +217,7 @@ str_steam_Arend_t       :HSM "Eagle" (Steam)
 str_steam_HSM126        :NS 1100 (Steam)
 str_steam_NCS1          :NS 7200 (Steam)
 str_steam_NCS21         :NS 1500 (Steam)
+str_steam_NCS41         :NS 7000 (Steam)
 str_steam_HSM83         :NS 3100 (Steam)
 str_steam_HSM501        :NS 2100 "Blikken Tinus" (Steam)
 str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Steam)
@@ -548,6 +549,7 @@ str_purchase_spc_fictional  :Fictional.
 
 str_purchase_steam_NCS1     :Purchased from 1892 as tank locomotive: {YELLOW}-15% weight, +48% power, +73% TE, +7% running cost.{}{BLACK}Previously known as: {SILVER} NCS 1-12, 31-39 (tender locomotive), NCS 81-89 (tank locomotive), SS 571-579 (tank locomotive).
 str_purchase_steam_NCS21    :Previously known as: {SILVER} NCS 21-30, later SS 481-490.
+str_purchase_steam_NCS41    :Previously known as: {SILVER} NCS 41-50, later SS 151-160.
 str_purchase_steam_HSM83    :Previously known as: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Previously known as: {SILVER} HSM 126-135.
 str_purchase_steam_HSM501   :Previously known as: {SILVER} HSM 501-535.
