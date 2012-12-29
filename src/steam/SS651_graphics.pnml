@@ -29,16 +29,16 @@ switch(FEAT_TRAINS, SELF, switch_steam_SS651_livery_purchase, current_year) {
 
 //4x engine animation
 spriteset(spriteset_steam_SS651_ani_1, "gfx/steam/SS651.png") {
-	template_2cc_58(1, 1)
+	template_2cc_48(1, 1)
 }
 spriteset(spriteset_steam_SS651_ani_2, "gfx/steam/SS651.png") {
-	template_2cc_58(1, 32)
+	template_2cc_48(1, 32)
 }
 spriteset(spriteset_steam_SS651_ani_3, "gfx/steam/SS651.png") {
-	template_2cc_58(1, 64)
+	template_2cc_48(1, 64)
 }
 spriteset(spriteset_steam_SS651_ani_4, "gfx/steam/SS651.png") {
-	template_2cc_58(1, 96)
+	template_2cc_48(1, 96)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_SS651_animation, (motion_counter)) {
@@ -54,16 +54,16 @@ switch(FEAT_TRAINS, PARENT, switch_steam_SS651_animation, (motion_counter)) {
 
 //6x engine animation
 spriteset(spriteset_steam_NS8100_ani_1, "gfx/steam/SS651.png") {
-	template_2cc_58(1, 128)
+	template_2cc_48(1, 128)
 }
 spriteset(spriteset_steam_NS8100_ani_2, "gfx/steam/SS651.png") {
-	template_2cc_58(1, 160)
+	template_2cc_48(1, 160)
 }
 spriteset(spriteset_steam_NS8100_ani_3, "gfx/steam/SS651.png") {
-	template_2cc_58(1, 192)
+	template_2cc_48(1, 192)
 }
 spriteset(spriteset_steam_NS8100_ani_4, "gfx/steam/SS651.png") {
-	template_2cc_58(1, 224)
+	template_2cc_48(1, 224)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NS8100_animation, (motion_counter)) {
