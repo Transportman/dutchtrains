@@ -1,0 +1,175 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_steam_SS17_purchase, "gfx/purchase/steam/SS17.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_steam_NS2900_purchase, "gfx/purchase/steam/NS2900.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS17_livery_purchase, current_year) {
+	0..1912: spriteset_steam_SS17_purchase;
+    spriteset_steam_NS2900_purchase;
+}
+
+/*
+* VEHICLE
+*/
+
+//4x engine animation
+spriteset(spriteset_steam_SS17_ani_1, "gfx/steam/SS17.png") {
+	template_2cc_68(1, 1)
+}
+spriteset(spriteset_steam_SS17_ani_2, "gfx/steam/SS17.png") {
+	template_2cc_68(1, 32)
+}
+spriteset(spriteset_steam_SS17_ani_3, "gfx/steam/SS17.png") {
+	template_2cc_68(1, 64)
+}
+spriteset(spriteset_steam_SS17_ani_4, "gfx/steam/SS17.png") {
+	template_2cc_68(1, 96)
+}
+//tender
+spriteset(spriteset_steam_SS17_tender, "gfx/steam/SS17.png") {
+	template_2cc_48(1, 128)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS17_animation, (motion_counter)) {
+    2..3:   spriteset_steam_SS17_ani_2;
+    4..5:   spriteset_steam_SS17_ani_3;
+    6..7:   spriteset_steam_SS17_ani_4;
+    
+    10..11: spriteset_steam_SS17_ani_2;
+    12..13: spriteset_steam_SS17_ani_3;
+    14..15: spriteset_steam_SS17_ani_4;
+    spriteset_steam_SS17_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS17_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_SS17_tender;
+    switch_steam_SS17_animation;
+}
+
+//4x engine animation
+spriteset(spriteset_steam_NS2900_ani_1, "gfx/steam/SS17.png") {
+	template_2cc_68(1, 160)
+}
+spriteset(spriteset_steam_NS2900_ani_2, "gfx/steam/SS17.png") {
+	template_2cc_68(1, 192)
+}
+spriteset(spriteset_steam_NS2900_ani_3, "gfx/steam/SS17.png") {
+	template_2cc_68(1, 224)
+}
+spriteset(spriteset_steam_NS2900_ani_4, "gfx/steam/SS17.png") {
+	template_2cc_68(1, 256)
+}
+//tender
+spriteset(spriteset_steam_NS2900_tender, "gfx/steam/SS17.png") {
+	template_2cc_48(1, 288)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_NS2900_animation, (motion_counter)) {
+    2..3:   spriteset_steam_NS2900_ani_2;
+    4..5:   spriteset_steam_NS2900_ani_3;
+    6..7:   spriteset_steam_NS2900_ani_4;
+    
+    10..11: spriteset_steam_NS2900_ani_2;
+    12..13: spriteset_steam_NS2900_ani_3;
+    14..15: spriteset_steam_NS2900_ani_4;
+    spriteset_steam_NS2900_ani_1;
+}
+
+switch(FEAT_TRAINS, SELF, switch_steam_NS2900_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_steam_NS2900_tender;
+    switch_steam_NS2900_animation;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS17_autolivery, date_of_last_service) {
+	0..date(1912,12,31): switch_steam_SS17_position;
+    switch_steam_NS2900_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS17_purchaselivery, build_year) {
+	0..1912: switch_steam_SS17_position;
+    switch_steam_NS2900_position;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_steam_SS17_livery, cargo_subtype) {
+	1: switch_steam_SS17_purchaselivery;
+    2: switch_steam_SS17_position;
+    3: switch_steam_NS2900_position;
+    switch_steam_SS17_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, PARENT, switch_steam_SS17_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_SS);
+    3: return string(str_cargo_subtype_NS);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS17_articulated, extra_callback_info1) {
+    1: return item_steam_SS17;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VEHICLE LENGTH CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS17_length, (position_in_vehid_chain % 2)) {
+    1: return 4;
+    return 6;
+}
+
+/*
+* VEHICLE PROPERTY CALLBACKS
+*/
+
+//power
+switch(FEAT_TRAINS, SELF, switch_steam_SS17_power, date_of_last_service) {
+	0..date(1912,12,31): return 356;
+    return 429;
+}
+
+//tractive_effort_coefficient
+switch(FEAT_TRAINS, SELF, switch_steam_SS17_tractive_effort_coefficient, date_of_last_service) {
+	0..date(1912,12,31): return 21; //0.084*255;
+    return 25; //0.099*255;
+}
+
+//running_cost_factor
+switch(FEAT_TRAINS, SELF, switch_steam_SS17_running_cost_factor, date_of_last_service) {
+	0..date(1912,12,31): return 14;
+    return 15;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_steam_SS17_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
+}

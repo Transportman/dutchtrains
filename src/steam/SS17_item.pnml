@@ -1,0 +1,64 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* ITEM
+*/
+
+item(FEAT_TRAINS, item_steam_SS17) {
+    property {
+        name: string(str_steam_SS17);
+        
+        introduction_date: date(1865,1,1);
+        model_life: 100;
+        retire_early: 20;
+        vehicle_life: 20;
+        loading_speed: 5;
+        cost_factor: 17;
+        running_cost_factor: 14;
+        speed: 60 km/h;
+        power: 356 hpM;
+        cargo_capacity: 1;
+        weight: 57 ton;
+        tractive_effort_coefficient: 0.084;
+        air_drag_coefficient: 0;
+        
+        reliability_decay: 20;
+        //refittable_cargo_classes: 0;
+        //non_refittable_cargo_classes: 0;
+        cargo_allow_refit: [PASS];
+        //cargo_age_period: 185;
+        misc_flags: 0;
+        refit_cost: 0;
+        track_type: unelectrified_B;
+		ai_special_flag: 0;
+        running_cost_base: RUNNING_COST_STEAM;
+        engine_class: ENGINE_CLASS_STEAM;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);
+        
+        climates_available: ALL_CLIMATES;
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+	}
+    graphics {
+        purchase: switch_steam_SS17_livery_purchase;
+        cargo_subtype_text: switch_steam_SS17_subtype_text;
+        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_f), string(str_purchase_axl_B), string(str_purchase_steam_SS17));
+        articulated_part: switch_steam_SS17_articulated;
+        cargo_capacity: return 0;
+        length: switch_steam_SS17_length;
+        visual_effect_and_powered: switch_steam_SS17_visual_effect_and_powered;
+        running_cost_factor: switch_steam_SS17_running_cost_factor;
+        power: switch_steam_SS17_power;
+        tractive_effort_coefficient: switch_steam_SS17_tractive_effort_coefficient;
+        switch_steam_SS17_livery;
+    }
+}
