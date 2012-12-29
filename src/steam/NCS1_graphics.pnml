@@ -166,11 +166,14 @@ switch(FEAT_TRAINS, SELF, switch_steam_NS7200_position, (position_in_vehid_chain
 * LIVERY SELECTION
 */
 
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_autolivery, date_of_last_service) {
-	0..date(1891,12,31): switch_steam_NCS1_position;
-	date(1892,12,31)..date(1918,12,31): switch_steam_NCS81_position;
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_autolivery_2, date_of_last_service) {
+	0..date(1918,12,31): switch_steam_NCS81_position;
 	date(1919,12,31)..date(1924,12,31): switch_steam_SS571_position;
     switch_steam_NS7200_position;
+}
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_autolivery_1, build_year) {
+	0..1891: switch_steam_NCS1_position;
+    switch_steam_NCS1_autolivery_2;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_purchaselivery, build_year) {
@@ -186,7 +189,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_livery, cargo_subtype) {
     3: switch_steam_NCS81_position;
     4: switch_steam_SS571_position;
     5: switch_steam_NS7200_position;
-    switch_steam_NCS1_autolivery;
+    switch_steam_NCS1_autolivery_1;
 }
 
 // CARGO SUBTYPE CALLBACK
@@ -221,21 +224,17 @@ switch(FEAT_TRAINS, SELF, switch_steam_NCS1_length_tank, (position_in_vehid_chai
     1: return 1;
     return 5;
 }
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_autolivery_length, date_of_last_service) {
-	0..date(1891,12,31): switch_steam_NCS1_length_tender;
-    switch_steam_NCS1_length_tank;
-}
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_purchaselivery_length, build_year) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_build_year_length, build_year) {
 	0..1891: switch_steam_NCS1_length_tender;
     switch_steam_NCS1_length_tank;
 }
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_length, cargo_subtype) {
-	1: switch_steam_NCS1_purchaselivery_length;
+	1: switch_steam_NCS1_build_year_length;
     2: switch_steam_NCS1_length_tender;
     3: switch_steam_NCS1_length_tank;
     4: switch_steam_NCS1_length_tank;
     5: switch_steam_NCS1_length_tank;
-    switch_steam_NCS1_autolivery_length;
+    switch_steam_NCS1_build_year_length;
 }
 
 /*
@@ -243,75 +242,59 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_length, cargo_subtype) {
 */
 
 //power
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_autolivery_power, date_of_last_service) {
-	0..date(1891,12,31): return 239;
-    return 353;
-}
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_purchaselivery_power, build_year) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_build_year_power, build_year) {
 	0..1891: return 239;
     return 353;
 }
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_power, cargo_subtype) {
-	1: switch_steam_NCS1_purchaselivery_power;
+	1: switch_steam_NCS1_build_year_power;
     2: return 239;
     3: return 353;
     4: return 353;
     5: return 353;
-    switch_steam_NCS1_autolivery_power;
+    switch_steam_NCS1_build_year_power;
 }
 
 //weight
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_autolivery_weight, date_of_last_service) {
-	0..date(1891,12,31): return 47;
-    return 40;
-}
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_purchaselivery_weight, build_year) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_build_year_weight, build_year) {
 	0..1891: return 47;
     return 40;
 }
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_weight, cargo_subtype) {
-	1: switch_steam_NCS1_purchaselivery_weight;
+	1: switch_steam_NCS1_build_year_weight;
     2: return 47;
     3: return 40;
     4: return 40;
     5: return 40;
-    switch_steam_NCS1_autolivery_weight;
+    switch_steam_NCS1_build_year_weight;
 }
 
 //tractive_effort_coefficient
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_autolivery_tractive_effort_coefficient, date_of_last_service) {
-	0..date(1891,12,31): return 15; //0.060*255;
-    return 26; //0.102*255;
-}
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_purchaselivery_tractive_effort_coefficient, build_year) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_build_year_tractive_effort_coefficient, build_year) {
 	0..1891: return 15; //0.060*255;
     return 26; //0.102*255;
 }
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_tractive_effort_coefficient, cargo_subtype) {
-	1: switch_steam_NCS1_purchaselivery_tractive_effort_coefficient;
+	1: switch_steam_NCS1_build_year_tractive_effort_coefficient;
     2: return 15; //0.060*255;
     3: return 26; //0.102*255;
     4: return 26; //0.102*255;
     5: return 26; //0.102*255;
-    switch_steam_NCS1_autolivery_tractive_effort_coefficient;
+    switch_steam_NCS1_build_year_tractive_effort_coefficient;
 }
 
 //running_cost_factor
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_autolivery_running_cost_factor, date_of_last_service) {
-	0..date(1891,12,31): return 15;
-    return 16;
-}
-switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_purchaselivery_running_cost_factor, build_year) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_build_year_running_cost_factor, build_year) {
 	0..1891: return 15;
     return 16;
 }
 switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_running_cost_factor, cargo_subtype) {
-	1: switch_steam_NCS1_purchaselivery_running_cost_factor;
+	1: switch_steam_NCS1_build_year_running_cost_factor;
     2: return 15;
     3: return 16;
     4: return 16;
     5: return 16;
-    switch_steam_NCS1_autolivery_running_cost_factor;
+    switch_steam_NCS1_build_year_running_cost_factor;
 }
 
 /*

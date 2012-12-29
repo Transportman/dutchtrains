@@ -529,7 +529,7 @@ str_purchase_spc_eld        :Met bagagecompartiment ombouwbaar tot expresvracht.
 str_purchase_spc_el_eld     :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.
 str_purchase_spc_fictional  :Fictief.
 
-str_purchase_steam_NCS1     :Herbouwd 1892 als tenderlocomotief: {YELLOW}-15% gewicht, +48% kracht, +73% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} NCS 1-12, 31-39 (locomotief met tender), NCS 81-89 (tenderlocomotief), SS 571-579 (tenderlocomotief).
+str_purchase_steam_NCS1     :Gekocht vanaf 1892 als tenderlocomotief: {YELLOW}-15% gewicht, +48% kracht, +73% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} NCS 1-12, 31-39 (locomotief met tender), NCS 81-89 (tenderlocomotief), SS 571-579 (tenderlocomotief).
 str_purchase_steam_NCS21    :Voorheen bekend als: {SILVER} NCS 21-30, later SS 481-490.
 str_purchase_steam_HSM83    :Voorheen bekend als: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135.
