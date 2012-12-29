@@ -45,7 +45,7 @@ spriteset(spriteset_steam_SS9_ani_4, "gfx/steam/SS9.png") {
 }
 //tender
 spriteset(spriteset_steam_SS9_tender, "gfx/steam/SS9.png") {
-	template_2cc_48(1, 128)
+	template_2cc_38(1, 128)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_SS9_animation, (motion_counter)) {
@@ -79,7 +79,7 @@ spriteset(spriteset_steam_SS21_ani_4, "gfx/steam/SS9.png") {
 }
 //tender
 spriteset(spriteset_steam_SS21_tender, "gfx/steam/SS9.png") {
-	template_2cc_48(1, 288)
+	template_2cc_38(1, 288)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_SS21_animation, (motion_counter)) {
@@ -113,7 +113,7 @@ spriteset(spriteset_steam_NS700_ani_4, "gfx/steam/SS9.png") {
 }
 //tender
 spriteset(spriteset_steam_NS700_tender, "gfx/steam/SS9.png") {
-	template_2cc_48(1, 448)
+	template_2cc_38(1, 448)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_steam_NS700_animation, (motion_counter)) {
@@ -180,7 +180,7 @@ switch(FEAT_TRAINS, SELF, switch_steam_SS9_articulated, extra_callback_info1) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_steam_SS9_length, (position_in_vehid_chain % 2)) {
-    1: return 4;
+    1: return 3;
     return 6;
 }
 
