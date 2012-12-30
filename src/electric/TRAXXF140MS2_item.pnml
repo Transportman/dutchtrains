@@ -47,13 +47,25 @@ item(FEAT_TRAINS, item_electric_TRAXXF140MS2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 	}
-    graphics {
-        purchase: switch_electric_TRAXXF140MS2_purchase;
-        cargo_subtype_text: switch_electric_TRAXXF140MS2_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_electric_TRAXXF140MS2));
-        cargo_capacity: return 0;
-        power: switch_electric_TRAXXF140MS2_power;
-        purchase_power: return 4023;
-        switch_electric_TRAXXF140MS2_livery;
-    }
+	if ( TRACK_POWER_ON ) {
+		graphics {
+		    purchase: switch_electric_TRAXXF140MS2_purchase;
+			cargo_capacity: return 0;
+			cargo_subtype_text: switch_electric_TRAXXF140MS2_subtype_text;
+			additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_electric_TRAXXF140MS2));
+			power: switch_electric_TRAXXF140MS2_power;
+			purchase_power: return 4023;
+			switch_electric_TRAXXF140MS2_livery;
+		}	
+	} else {
+		graphics {
+		    purchase: switch_electric_TRAXXF140MS2_purchase;
+			cargo_capacity: return 0;
+			cargo_subtype_text: switch_electric_TRAXXF140MS2_subtype_text;
+			additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_electric_TRAXXF140MS2_no_track));
+			power: 7509;
+			purchase_power: return 7509;
+			switch_electric_TRAXXF140MS2_livery;
+		}
+	}	
 }

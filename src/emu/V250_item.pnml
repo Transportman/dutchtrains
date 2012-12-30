@@ -45,14 +45,27 @@ item(FEAT_TRAINS, item_emu_V250) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 	}
-    graphics {
-        cargo_capacity: return 68;
-        purchase: spriteset_emu_V250_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_37), string(str_purchase_spc_emu_V250));
-        articulated_part: switch_emu_V250_articulated;
-        visual_effect_and_powered: switch_emu_V250_visual_effect_and_powered;
-        power: switch_emu_V250_power;
-        purchase_power: return 4023;
-        switch_emu_V250_position;
-    }
-}
+	if ( TRACK_POWER_ON ) {
+		graphics {
+			cargo_capacity: return 68;
+	        purchase: spriteset_emu_V250_purchase;	
+			articulated_part: switch_emu_V250_articulated;
+			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_37), string(str_purchase_spc_emu_V250));
+ 			visual_effect_and_powered: switch_emu_V250_visual_effect_and_powered;
+			power: switch_emu_V250_power;
+			purchase_power: return 4023;			
+			switch_emu_V250_position;
+		}	
+	} else {
+		graphics {
+			cargo_capacity: return 68;
+			purchase: spriteset_emu_V250_purchase;
+			articulated_part: switch_emu_V250_articulated;
+			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_37), string(str_purchase_spc_emu_V250_no_track));
+			visual_effect_and_powered: switch_emu_V250_visual_effect_and_powered;
+			power: return 7375;
+			purchase_power: return 7375;			
+			switch_emu_V250_position;
+		}
+	}
+}	

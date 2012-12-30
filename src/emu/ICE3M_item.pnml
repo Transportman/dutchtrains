@@ -45,14 +45,27 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 	}
-    graphics {
-        cargo_capacity: return 53;
-        purchase: spriteset_emu_ICE3M_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_29), string(str_purchase_emu_ICE3M));
-        articulated_part: switch_emu_ICE3M_articulated;
-        power: switch_emu_ICE3M_power;
-        purchase_power: return 5766;
-        visual_effect_and_powered: switch_emu_ICE3M_visual_effect_and_powered;
-        switch_emu_ICE3M_position;
-    }
+	if ( TRACK_POWER_ON ) {
+		graphics {
+			cargo_capacity: return 53;
+			purchase: spriteset_emu_ICE3M_purchase;
+			articulated_part: switch_emu_ICE3M_articulated;
+			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_29), string(str_purchase_emu_ICE3M));
+			visual_effect_and_powered: switch_emu_ICE3M_visual_effect_and_powered;
+			power: switch_emu_ICE3M_power;
+			purchase_power: return 5766;
+			switch_emu_ICE3M_position;
+		}	
+	} else {
+		graphics {
+			cargo_capacity: return 53;
+			purchase: spriteset_emu_ICE3M_purchase;
+			articulated_part: switch_emu_ICE3M_articulated;
+			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_29), string(str_purchase_emu_ICE3M_no_track));
+			visual_effect_and_powered: switch_emu_ICE3M_visual_effect_and_powered;
+			power: 10728;
+			purchase_power: return 10728;
+			switch_emu_ICE3M_position;
+		}
+	}	
 }

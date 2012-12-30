@@ -582,6 +582,11 @@ str_purchase_spc_electric_ES64F4:Multisystem locomotive, {YELLOW}+42% power {BLA
 str_purchase_spc_NS1600P    :Multisystem locomotive, {YELLOW}+70% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_electric_gen9_HS001:Multisystem locomotive, {YELLOW}+65% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
 str_purchase_spc_electric_gen9_HS002:Multisystem locomotive, {YELLOW}+197% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_electric_TRAXXF140MS2_no_track:For use Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive.
+str_purchase_spc_electric_ES64F4_no_track:Multisystem locomotive.
+str_purchase_spc_NS1600P_no_track:Multisystem locomotive.
+str_purchase_spc_electric_gen9_HS001_no_track:Multisystem locomotive.{}Fictional.
+str_purchase_spc_electric_gen9_HS002_no_track:Multisystem locomotive.{}Fictional.
 
 str_purchase_dmu_omBC1901   :Purchased from 1929: {YELLOW}+41% weight, +233% power, +7% speed, +23% running cost.
 
@@ -592,6 +597,10 @@ str_purchase_emu_ICE3M      :Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV
 str_purchase_spc_emu_TGV    :Multisystem EMU, {YELLOW}+139% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_emu_V250   :Multisystem EMU, {YELLOW}+83% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_emu_gen9_HST:Multisystem EMU, {YELLOW}+68% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_emu_ICE3M_no_track:Multisystem EMU.{}Also known as: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track:Multisystem EMU.
+str_purchase_spc_emu_V250_no_track:Multisystem EMU.
+str_purchase_spc_emu_gen9_HST_no_track:Multisystem EMU.{}Fictional.
 
 str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900.{}{BLACK}For use with motorcar ZHESM mBC.
 str_purchase_coaches_Mat24  :For use with motorcar Mat '24.

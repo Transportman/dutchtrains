@@ -565,6 +565,11 @@ str_purchase_spc_electric_ES64F4:Meersysteemlocomotief, {YELLOW}+42% kracht {BLA
 str_purchase_spc_NS1600P    :Meersysteemlocomotief, {YELLOW}+70% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
 str_purchase_spc_electric_gen9_HS001:Meersysteemlocomotief, {YELLOW}+65% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
 str_purchase_spc_electric_gen9_HS002:Meersysteemlocomotief, {YELLOW}+197% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_electric_TRAXXF140MS2_no_track:Voor gebruik met Rijtuig ICR voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief.
+str_purchase_spc_electric_ES64F4_no_track:Meersysteemlocomotief.
+str_purchase_spc_NS1600P_no_track:Meersysteemlocomotief.
+str_purchase_spc_electric_gen9_HS001_no_track:Meersysteemlocomotief.{}Fictief.
+str_purchase_spc_electric_gen9_HS002_no_track:Meersysteemlocomotief.{}Fictief.
 
 str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% kracht, +7% snelheid, +23% onderhoudskosten.
 
@@ -575,6 +580,10 @@ str_purchase_emu_ICE3M      :Meersysteemtreinstel, {YELLOW}+86% kracht {BLACK}op
 str_purchase_spc_emu_TGV    :Meersysteemtreinstel, {YELLOW}+139% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
 str_purchase_spc_emu_V250   :Meersysteemtreinstel, {YELLOW}+83% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
 str_purchase_spc_emu_gen9_HST:Meersysteemtreinstel, {YELLOW}+68% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_emu_ICE3M_no_track:Meersysteemtreinstel.{}Ook bekend als: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track:Meersysteemtreinstel.
+str_purchase_spc_emu_V250_no_track:Meersysteemtreinstel.
+str_purchase_spc_emu_gen9_HST_no_track:Meersysteemtreinstel.{}Fictief.
 
 str_purchase_coaches_ZHESM_B:Later bekend als: {SILVER} NS B9900.{}{BLACK}Voor gebruik met motorwagen ZHESM mBC.
 str_purchase_coaches_Mat24  :Voor gebruik met motorwagen Mat '24.

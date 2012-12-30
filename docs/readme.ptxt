@@ -182,10 +182,6 @@ Cargo wagon properties
     Cargo wagon properties like capacity, speed, weight etc. are 
     currently suboptimal and need to be reviewed (#3953)
 
-Multisystem trains don't go full power
-    Some modern trains don't run full power if no compatible track set
-    is loaded (#4477)
-
 
 
 ------------------------
@@ -236,12 +232,11 @@ A: Yes.
 
 Q: Why have some newer trains less power when purchased than stated in
    the purchase menu?
-A: These are so-called multi-current trains. These trains can only run
-   full power when on a track type that provides enough current. To get 
-   full power for these trains you need to load a track set providing
-   compatible high-voltage tracks, like the Dutch Trackset. We're working
-   on a fix such that you'll get full power for these trains if you 
-   didn't load a track set.
+A: These are so-called multi-current trains. When a trackset is loaded
+   that provides tracks which correspond with 25 kV AC tracks these trains
+   have their power depend on the track they are on. When there is no such
+   track detected these trains always get full power independent of the
+   track they are on.
 
 
 
