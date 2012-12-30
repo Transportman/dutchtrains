@@ -25,6 +25,11 @@ STR_PARAM_RUNNING_COST_DESC         :Je kunt deze instelling gebruiken om de ond
 
 STR_PARAM_NORMAL                    :1 (standaard)
 
+STR_PARAM_TRACK_POWER				:Meersysteem vermogen
+STR_PARAM_TRACK_POWER_DESC			:Standaard hangt het vermogen van meersysteemtreinen af van het spoor waar deze zich op bevind als een geschikte spoorset geladen is. Gebruik deze parameter om dit uit te schakelen en altijd het hoogste vermogen te gebruiken.
+STR_PARAM_TRACK_POWER_OFF			:Altijd hoogste vermogen
+STR_PARAM_TRACK_POWER_ON			:Afhankelijk van spoor indien geschikte spoorset geladen is (standaard)
+
 #cargo subtype kleurstelling strings
 str_cargo_subtype_auto              :> Jaar-afhankelijke kleurstelling
 str_cargo_subtype_purchase          :> Aankoop-afhankelijke kleurstelling

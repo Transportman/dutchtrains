@@ -8,5 +8,9 @@
 
 //this file defines the content of the if-statements (TRACK_POWER_ON) for the power of multisystem trains.
 //those if-statements check if the train should have their power depend on the track they are on or should always use the highest power.
+//if both conditions are true the power depends on the track label, otherwise it uses the highest power for these trains.
+//the conditons are:
+//	-there is at least one track that defines a label that corresponds with an AC-power track
+//	-the parameter to have the power depend on the label is set to 1 (on)
 
-#define TRACK_POWER_ON railtype_available ("SAAA") || railtype_available ("SABA") || railtype_available ("SACA") || railtype_available ("SADA") || railtype_available ("SAEA") || railtype_available ("SBAA") || railtype_available ("SBBA") || railtype_available ("SBCA") || railtype_available ("SBDA") || railtype_available ("SBEA") || railtype_available ("SAAa") || railtype_available ("SABa") || railtype_available ("SACa") || railtype_available ("SADa") || railtype_available ("SAEa") || railtype_available ("SBAa") || railtype_available ("SBBa") || railtype_available ("SBCa") || railtype_available ("SBDa") || railtype_available ("SBEa")
+#define TRACK_POWER_ON ( railtype_available ("SAAA") || railtype_available ("SABA") || railtype_available ("SACA") || railtype_available ("SADA") || railtype_available ("SAEA") || railtype_available ("SBAA") || railtype_available ("SBBA") || railtype_available ("SBCA") || railtype_available ("SBDA") || railtype_available ("SBEA") || railtype_available ("SAAa") || railtype_available ("SABa") || railtype_available ("SACa") || railtype_available ("SADa") || railtype_available ("SAEa") || railtype_available ("SBAa") || railtype_available ("SBBa") || railtype_available ("SBCa") || railtype_available ("SBDa") || railtype_available ("SBEa") ) && param_track_power == 1

@@ -35,6 +35,11 @@ STR_PARAM_TIMES_4                   :4
 STR_PARAM_TIMES_8                   :8
 STR_PARAM_TIMES_16                  :16
 
+STR_PARAM_TRACK_POWER				:Multisystem power
+STR_PARAM_TRACK_POWER_DESC			:By default the power of multisystem trains depends on the track it is on when a compatible trackset is loaded. You can use this parameter to disable this and always use the highest power.
+STR_PARAM_TRACK_POWER_OFF			:Always highest power
+STR_PARAM_TRACK_POWER_ON			:Depend on track when a compatible trackset is loaded (default)
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              :> Year-dependent livery
 str_cargo_subtype_purchase          :> Construction year livery

@@ -61,14 +61,15 @@ OpenTTD:
 
 2.3 Parameter settings
 ----------------------
-There are four parameter settings available. 
+There are five parameter settings available. 
  1: Translates the vehicle nicknames to your own language, or English if 
     we don't have a translation for your language. 
  2: Allows to keep the default TTD rail/monorail/maglev vehicles, if 
     they're not already disabled by a different NewGRF.
  3: Increase or decrease vehicle purchase costs.
  4: Increase or decrease vehicle running costs.
-
+ 5: Disable the track dependency for multisystem trains and only use the highest power.
+ 
 Set the parameters before starting a new game. Once started they 
 cannot be changed any longer.
 
@@ -111,7 +112,11 @@ configuration file:
   7: multiply by 8
   8: multiply by 16
 
-
+  5th parameter: Variable power
+  0: Always highest power
+  1: Power depends on track
+  
+  
 2.4 Usage
 ---------
 Starting date
@@ -235,7 +240,8 @@ Q: Why have some newer trains less power when purchased than stated in
 A: These are so-called multi-current trains. When a trackset is loaded
    that provides tracks which correspond with 25 kV AC tracks these trains
    have their power depend on the track they are on. When there is no such
-   track detected these trains always get full power independent of the
+   track detected or when the Variable power parameter is set to 
+   Always highest power these trains always get full power independent of the
    track they are on.
 
 
