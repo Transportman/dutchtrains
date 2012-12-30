@@ -19,10 +19,10 @@ item(FEAT_TRAINS, item_diesel_RN232) {
         retire_early: 8;
         vehicle_life: 8;
         loading_speed: 5;
-        cost_factor: 41;
-        running_cost_factor: 33;
+        cost_factor: 36;
+        running_cost_factor: 37;
         speed: 120 km/h;
-        power: 2940 hpM;
+        power: 2940 kW;
         cargo_capacity: 0;
         weight: 125 ton;
         tractive_effort_coefficient: 0.277;

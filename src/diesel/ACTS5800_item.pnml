@@ -18,10 +18,10 @@ item(FEAT_TRAINS, item_diesel_ACTS5800) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 38;
-        running_cost_factor: 29;
+        cost_factor: 42;
+        running_cost_factor: 36;
         speed: 128 km/h;
-        power: 1780 kW;
+        power: 2460 kW;
         cargo_capacity: 1;
         weight: 130 ton;
         tractive_effort_coefficient: 0.216;
