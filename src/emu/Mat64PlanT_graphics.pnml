@@ -16,13 +16,9 @@ spriteset(spriteset_emu_Mat64PlanT_purchase_green, "gfx/purchase/emu/PlanT_green
 spriteset(spriteset_emu_Mat64PlanT_purchase_yellow, "gfx/purchase/emu/PlanT_yellowblue.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_emu_Mat64PlanT_purchase_freedom, "gfx/purchase/emu/PlanT_freedom.png") {
-	template_purchase(0, 0)
-}
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanT_purchase, current_year) {
 	0..1967: spriteset_emu_Mat64PlanT_purchase_green;
-	2010..2010: spriteset_emu_Mat64PlanT_purchase_freedom;
     spriteset_emu_Mat64PlanT_purchase_yellow;
 }
 

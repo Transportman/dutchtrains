@@ -16,18 +16,10 @@ spriteset(spriteset_emu_IRMIV_irm_purchase, "gfx/purchase/emu/IRM.png") {
 spriteset(spriteset_emu_IRMIV_virm_purchase, "gfx/purchase/emu/VIRM_IV.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_emu_IRMIV_olympic_purchase, "gfx/purchase/emu/VIRM_IV_olympic.png") {
-	template_purchase(0, 0)
-}
-spriteset(spriteset_emu_IRMIV_ovchip_purchase, "gfx/purchase/emu/VIRM_IV_ovchip.png") {
-	template_purchase(0, 0)
-}
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_purchase, current_year) {
     0..2001: spriteset_emu_IRMIV_irm_purchase;
-    2002..2004: spriteset_emu_IRMIV_virm_purchase;
-    2010..2011: spriteset_emu_IRMIV_ovchip_purchase;
-    spriteset_emu_IRMIV_olympic_purchase;
+    spriteset_emu_IRMIV_virm_purchase;
 }
 
 /*

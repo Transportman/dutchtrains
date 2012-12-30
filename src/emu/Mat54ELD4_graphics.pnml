@@ -25,16 +25,12 @@ spriteset(spriteset_emu_Mat54ELD4_yellowblue_purchase, "gfx/purchase/emu/Mat54EL
 spriteset(spriteset_emu_Mat54ELD4_yellowblueic_purchase, "gfx/purchase/emu/Mat54ELD4_yellowblueic.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_emu_Mat54ELD4_freedom_purchase, "gfx/purchase/emu/Mat54ELD4_freedom.png") {
-	template_purchase(0, 0)
-}
 
 switch(FEAT_TRAINS, PARENT, switch_emu_Mat54ELD4_purchase, current_year) {
 	0..1961: spriteset_emu_Mat54ELD4_greenred_purchase;
 	1962..1968: spriteset_emu_Mat54ELD4_greenyellow_purchase;
 	1969..1971: spriteset_emu_Mat54ELD4_yellow_purchase;
 	1972..1974: spriteset_emu_Mat54ELD4_yellowblue_purchase;
-	1995..1995: spriteset_emu_Mat54ELD4_freedom_purchase;
     spriteset_emu_Mat54ELD4_yellowblueic_purchase;
 }
 

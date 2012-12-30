@@ -16,13 +16,9 @@ spriteset(spriteset_emu_ICM_purchase, "gfx/purchase/emu/ICM.png") {
 spriteset(spriteset_emu_ICM_ICMm_purchase, "gfx/purchase/emu/ICMm.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_emu_ICM_olympic_purchase, "gfx/purchase/emu/ICM_olympic.png") {
-	template_purchase(0, 0)
-}
 
 switch(FEAT_TRAINS, PARENT, switch_emu_ICM4_purchase, current_year) {
-	0..2003: spriteset_emu_ICM_purchase;
-	2004..2011: spriteset_emu_ICM_olympic_purchase;
+	0..2006: spriteset_emu_ICM_purchase;
     spriteset_emu_ICM_ICMm_purchase;
 }
 
