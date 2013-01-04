@@ -611,4 +611,4 @@ str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900.{}{BLACK}For use 
 str_purchase_coaches_Mat24  :For use with motorcar Mat '24.
 str_purchase_coaches_DDAR   :For use with motorcar mDDM or NID.
 str_purchase_coaches_PlanW  :For use with electric NS locomotives for national service and NMBS HLE 25.5 for Benelux service.
-str_purchase_coaches_IRC    :For use with electric NS locomotives for national service, NMBS HLE 11 for Benelux service and TRAXX F140 MS2 as Fyra service.
+str_purchase_coaches_IRC    :For use with electric NS locomotives for national service, NMBS HLE 11 for Benelux service and NS Hispeed 186 as Fyra service.
