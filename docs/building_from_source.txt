@@ -19,7 +19,7 @@ Contents:
 ---------
 
 Dutch Trainset - Dutch Trains for OpenTTD
-Copyright (C) 2003-2012 Dutch Trainset Team
+Copyright (C) 2003-2013 Dutch Trainset Team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

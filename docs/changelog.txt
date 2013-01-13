@@ -1,6 +1,22 @@
 Dutch Trainset Changelog
 ========================
 
+2.0.0-beta1 (2013/01/13)
+------------------------
+- Feature: auto-detection of 25 kV AC tracks, if no such tracks multisystem trains get full power (Transportman) (issue #4477)
+- Feature: parameter to enable/disable the track dependency for multisystem trains (Transportman) (issue #4477)
+- Change: allow mail and armoured cargo in first boxcar (issue #4136)
+- Change: allow WDPR (timber) on flat wagons
+- Change: introduce SS C 1-339 carriage in 1865 (issue #4135)
+- Change: no longer display special liveries in purchase menu (issue #4081)
+- Change: position of mDDM and NID in sort order, following forum discussion
+- Fix: Mat'36 ELD3 length callback (Transportman) (issue #4766)
+- Fix: misalignment of Mat'34
+- Fix: power value of Class 66, Class 58 and RN232 (issue #4297)
+- Fix (r633): also rename TRAXX F140 MS2 in ICR additional text (issue #4745)
+- Update: GRF description, one now can start from 1839
+
+
 2.0.0-alpha7 (2012/12/29)
 -------------------------
 - Feature: HSM 1-15, 26-30 (graphics by Voyager One) (issue #3952)

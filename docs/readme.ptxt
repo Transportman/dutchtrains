@@ -114,15 +114,14 @@ configuration file:
 
   5th parameter: Variable power
   0: Always highest power
-  1: Power depends on track
+  1: Power depends on track (default)
   
   
 2.4 Usage
 ---------
 Starting date
     If you want to start at the dawn of Dutch railroading, you can start
-    as early as 1839 with Arend, but be advised that there still are
-    some gaps with certain types of wagons.
+    as early as 1839 with Arend.
 
 Metro vehicles
     Metro vehicles are only available if you have loaded a metro track
@@ -328,7 +327,7 @@ an email to foobar at jaspervries.nl.
 ---------
 
 Dutch Trainset - Dutch Trains for OpenTTD
-Copyright (C) 2003-2012 Dutch Trainset Team
+Copyright (C) 2003-2013 Dutch Trainset Team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
