@@ -1,7 +1,9 @@
-﻿##grflangid 0x1F
+##grflangid 0x1f
 
-#Main grf title en description
-STR_GRF_DESCRIPTION		:{SILVER}Nederlandse Treinen voor OpenTTD {}{BLACK}Eerste locomotief: 1839.{}{}(c)Dutch Trainset Team {}Licentie: GPLv2 of hoger. {}Lees de readme voor details.
+#Main grf title and description
+STR_GRF_NAME                    :{TITLE}
+STR_GRF_DESCRIPTION             :{SILVER}Nederlandse Treinen voor OpenTTD{}{BLACK}Eerste locomotief: 1839.{}{}(c)Dutch Trainset Team{}Licentie: GPLv2 of hoger.{}Lees de readme voor details.
+STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 #parameter strings
 STR_PARAM_VEHICLE_NAMES             :Gebruik Engelse bijnamen voor voertuigen
@@ -23,14 +25,22 @@ STR_PARAM_PURCHASE_COST_DESC        :Je kunt deze instelling gebruiken om de aan
 STR_PARAM_RUNNING_COST              :Vermenigvuldigingsfactor voor onderhoudskosten
 STR_PARAM_RUNNING_COST_DESC         :Je kunt deze instelling gebruiken om de onderhoudskosten van de voertuigen in deze set te verhogen of verlagen. Let op dat het wijzigen van deze instelling de balans met de standaardvoertuigen verstoord.
 
+STR_PARAM_DIVIDE_16                 :1/16
+STR_PARAM_DIVIDE_8                  :1/8
+STR_PARAM_DIVIDE_4                  :1/4
+STR_PARAM_DIVIDE_2                  :1/2
 STR_PARAM_NORMAL                    :1 (standaard)
+STR_PARAM_TIMES_2                   :2
+STR_PARAM_TIMES_4                   :4
+STR_PARAM_TIMES_8                   :8
+STR_PARAM_TIMES_16                  :16
 
-STR_PARAM_TRACK_POWER				:Meersysteem vermogen
-STR_PARAM_TRACK_POWER_DESC			:Standaard hangt het vermogen van meersysteemtreinen af van het spoor waar deze zich op bevind als een geschikte spoorset geladen is. Gebruik deze parameter om dit uit te schakelen en altijd het hoogste vermogen te gebruiken.
-STR_PARAM_TRACK_POWER_OFF			:Altijd hoogste vermogen
-STR_PARAM_TRACK_POWER_ON			:Afhankelijk van spoor indien geschikte spoorset geladen is (standaard)
+STR_PARAM_TRACK_POWER                           :Meersysteem vermogen
+STR_PARAM_TRACK_POWER_DESC                      :Standaard hangt het vermogen van meersysteemtreinen af van het spoor waar deze zich op bevind als een geschikte spoorset geladen is. Gebruik deze parameter om dit uit te schakelen en altijd het hoogste vermogen te gebruiken.
+STR_PARAM_TRACK_POWER_OFF                       :Altijd hoogste vermogen
+STR_PARAM_TRACK_POWER_ON                        :Afhankelijk van spoor indien geschikte spoorset geladen is (standaard)
 
-#cargo subtype kleurstelling strings
+#cargo subtype livery strings
 str_cargo_subtype_auto              :> Jaar-afhankelijke kleurstelling
 str_cargo_subtype_purchase          :> Aankoop-afhankelijke kleurstelling
 str_cargo_subtype_random            :> Willekeurige kleurstelling
@@ -42,7 +52,7 @@ str_cargo_subtype_bordeaux_white_blue       :> Bordeauxkleurstelling met wit/bla
 str_cargo_subtype_bordeaux_white_yellow     :> Bordeauxkleurstelling met wit/geel
 str_cargo_subtype_black             :> Zwarte kleurstelling
 str_cargo_subtype_blue              :> Blauwe kleurstelling
-str_cargo_subtype_blue_greyish      :> Grijsblauwe livery
+str_cargo_subtype_blue_greyish      :> Grijsblauwe kleurstelling
 str_cargo_subtype_lighterblue       :> Enigszins lichter blauwe kleurstelling
 str_cargo_subtype_blue_banners      :> Blauwe kleurstelling met reclamebanen
 str_cargo_subtype_blue_red          :> Blauwe kleurstelling met rode strepen
@@ -101,6 +111,13 @@ str_cargo_subtype_accident_brown    :> Bruine kleurstelling (ongevallentrein)
 str_cargo_subtype_accident_yellow   :> Gele kleurstelling (ongevallentrein)
 str_cargo_subtype_Jules             :> "Jules"
 
+str_cargo_subtype_EL2               :(El2)
+str_cargo_subtype_ELD2              :(ElD2)
+str_cargo_subtype_EL3               :(El3)
+str_cargo_subtype_ELD3              :(ElD3)
+str_cargo_subtype_ELD4              :(ElD4)
+str_cargo_subtype_ELD5              :(ElD5)
+
 str_cargo_subtype_benelux           :> Benelux kleurstelling
 str_cargo_subtype_benelux_nocab     :> Benelux kleurstelling, zonder stuurstand
 str_cargo_subtype_benelux_plandcab  :> Benelux kleurstelling met Plan D stuurstand
@@ -115,9 +132,9 @@ str_cargo_subtype_fyra_red          :> Fyra (rood) kleurstelling
 str_cargo_subtype_fyra_white        :> Fyra (wit) kleurstelling
 str_cargo_subtype_groningen         :> Groningen Mendini kleurstelling
 str_cargo_subtype_icplus            :> IC+ kleurstelling (Mei 28, 1995 - Juni 2002)
-str_cargo_subtype_kinderboeken      :> Kinderboekenweek kleurstelling
 str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
+str_cargo_subtype_kinderboeken      :> Kinderboekenweek kleurstelling
 str_cargo_subtype_hispeed           :> NS Hispeed kleurstelling
 str_cargo_subtype_hispeed_nocab     :> NS Hispeed kleurstelling, zonder stuurstand
 str_cargo_subtype_maashopper        :> Veolia white/red "Maashopper" kleurstelling
@@ -132,12 +149,12 @@ str_cargo_subtype_prototype         :> Prototype kleurstelling
 str_cargo_subtype_randstadrail      :> RandstadRail kleurstelling
 str_cargo_subtype_renewal           :> Gemoderniseerde kleurstelling
 str_cargo_subtype_sr10              :> Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)
-str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter" kleurstelling met strandballen
+str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter" kleurstelling met strandballen
 str_cargo_subtype_strandsprinter    :> "Strandsprinter" kleurstelling
 str_cargo_subtype_TGV_PBKA          :> PBKA kleurstelling
 str_cargo_subtype_TGV_PBA           :> PBA kleurstelling
 str_cargo_subtype_valleilijn_yellow_blue    :>Valleilijn geel/blauwe kleurstelling
-str_cargo_subtype_valleilijn_blue_yellownose:>Valleilijn blauwe kleurstelling met gele neus
+str_cargo_subtype_valleilijn_blue_yellownose :>Valleilijn blauwe kleurstelling met gele neus
 str_cargo_subtype_valleilijn_blue           :>Valleilijn blauwe kleurstelling (fictief)
 str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker" kleurstelling
 str_cargo_subtype_zilverrail        :> Zilverrail kleurstelling (Oct 24-27, 2005)
@@ -178,7 +195,7 @@ str_cargo_subtype_Railion_red       :> Railion (rood) kleurstelling
 str_cargo_subtype_Railpro           :> Railpro kleurstelling
 str_cargo_subtype_staatsmijnen      :> Staatsmijnen kleurstelling
 str_cargo_subtype_SS                :> Staatsspoorwegen kleurstelling
-str_cargo_subtype_SS_tank           :> SS kleurstelling (tenderlocomotief)
+str_cargo_subtype_SS_tank           :> Staatsspoorwegen kleurstelling (tenderlocomotief)
 str_cargo_subtype_SS_NS             :> Staatsspoorwegen / NS kleurstelling
 str_cargo_subtype_Strukton          :> Strukton kleurstelling
 str_cargo_subtype_Syntus            :> Syntus kleurstelling
@@ -194,7 +211,7 @@ str_cargo_subtype_brown_pigs        :> Bruine (Varkens) kleurstelling
 str_cargo_subtype_grey_cows         :> Grijze (Koeien) kleurstelling
 str_cargo_subtype_grey_pigs         :> Grijze (Varkens) kleurstelling
 
-str_cargo_subtype_transformer:      :> Transformator lading kleurstelling
+str_cargo_subtype_transformer :      :> Transformator lading kleurstelling
 str_cargo_subtype_house             :> Huis lading kleurstelling
 str_cargo_subtype_train             :> Trein lading kleurstelling
 str_cargo_subtype_tractor           :> Traktor lading kleurstelling
@@ -207,7 +224,7 @@ str_steam_NCS1          :NS 7200 (Stoom)
 str_steam_NCS21         :NS 1500 (Stoom)
 str_steam_NCS41         :NS 7000 (Stoom)
 str_steam_NRS11         :NRS 11-16 (Stoom)
-str_steam_HSM1          :HSM 1-15, 26-30 (Steam)
+str_steam_HSM1          :HSM 1-15, 26-30 (Stoom)
 str_steam_HSM83         :NS 3100 (Stoom)
 str_steam_HSM501        :NS 2100 "Blikken Tinus" (Stoom)
 str_steam_HSM501_t      :NS 2100 "Tin Tinus" (Stoom)
@@ -393,17 +410,17 @@ str_wagons_gen7_cartransporter      :Autotreinwagen (L)
 str_wagons_gen7_containercarrier    :Containerwagen (L)
 
 #coaches
-str_coaches_HIJSM_4_8_10:Rijtuig HSM 1
+str_coaches_HIJSM_4_8_10 :Rijtuig HSM 1
 str_coaches_HSM_C_755   :Rijtuig HSM C
 str_coaches_NCS_B_119   :Rijtuig NCS B
 str_coaches_SS_C_218    :Rijtuig SS C 1
 str_coaches_SS_C_723    :Rijtuig SS C 650
 str_coaches_SS_ABd_7516 :Rijtuig SS ABd
 str_coaches_RTM_BD_438  :Rijtuig RTM BD
-str_coaches_ZHESM_B     :Rijtuig ZHESM B
 str_coaches_Mat24       :Rijtuig Mat '24
+str_coaches_ZHESM_B     :Rijtuig ZHESM B
 str_coaches_Ovaleramen  :Rijtuig "Ovaleramen"
-str_coaches_Ovaleramen_t:Rijtuig "Oval windows"
+str_coaches_Ovaleramen_t :Rijtuig "Oval windows"
 str_coaches_Bolkoprijtuigen     :Rijtuig "Bolkoprijtuigen"
 str_coaches_Bolkoprijtuigen_t   :Rijtuig "Bulgehead carriages"
 str_coaches_PlanD       :Rijtuig Plan D
@@ -455,7 +472,7 @@ str_purchase_svc_axl            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk:
 str_purchase_svc_len            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}
 str_purchase_svc_len_lsp        :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}
 str_purchase_svc_axl_len_lsp    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp_spc:{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_len_lsp_spc :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_lsp_spc    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_len_lsp_spc    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}{STRING}
@@ -556,25 +573,25 @@ str_purchase_steam_NCS71    :Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkrac
 
 str_purchase_diesel_NS2000  :Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Voorheen bekend als: {SILVER} SM 151-155.
-str_purchase_diesel_ACTS5800:Voorheen bekend als: {SILVER} BR Class 58.
-str_purchase_diesel_ACTS6700:Voorheen bekend als: {SILVER} NMBS HLD 62.
+str_purchase_diesel_ACTS5800 :Voorheen bekend als: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700 :Voorheen bekend als: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Voorheen bekend als: {SILVER} DB BR 232.
 
-str_purchase_electric_NS1100:Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte.
-str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2.
-str_purchase_electric_mDDM_NID:Voor gebruik met Dubbeldekkerrijtuig DDM/NID.
+str_purchase_electric_NS1100 :Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte.
+str_purchase_electric_NS1500 :Voorheen bekend als: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID :Voor gebruik met Dubbeldekkerrijtuig DDM/NID.
 str_purchase_electric_HLE11 :Voor gebruik met Rijtuig ICR voor Beneluxtrein.
 str_purchase_electric_HLE25 :Voor gebruik met Rijtuig Plan W voor Beneluxtrein.
-str_purchase_electric_TRAXXF140MS2:Voor gebruik met Rijtuig ICR voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief, {YELLOW}+87% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
-str_purchase_spc_electric_ES64F4:Meersysteemlocomotief, {YELLOW}+42% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
+str_purchase_electric_TRAXXF140MS2 :Voor gebruik met Rijtuig ICR voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief, {YELLOW}+87% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
+str_purchase_spc_electric_ES64F4 :Meersysteemlocomotief, {YELLOW}+42% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
 str_purchase_spc_NS1600P    :Meersysteemlocomotief, {YELLOW}+70% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
-str_purchase_spc_electric_gen9_HS001:Meersysteemlocomotief, {YELLOW}+65% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
-str_purchase_spc_electric_gen9_HS002:Meersysteemlocomotief, {YELLOW}+197% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
-str_purchase_electric_TRAXXF140MS2_no_track:Voor gebruik met Rijtuig ICR voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief.
-str_purchase_spc_electric_ES64F4_no_track:Meersysteemlocomotief.
-str_purchase_spc_NS1600P_no_track:Meersysteemlocomotief.
-str_purchase_spc_electric_gen9_HS001_no_track:Meersysteemlocomotief.{}Fictief.
-str_purchase_spc_electric_gen9_HS002_no_track:Meersysteemlocomotief.{}Fictief.
+str_purchase_spc_electric_gen9_HS001 :Meersysteemlocomotief, {YELLOW}+65% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_spc_electric_gen9_HS002 :Meersysteemlocomotief, {YELLOW}+197% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_electric_TRAXXF140MS2_no_track :Voor gebruik met Rijtuig ICR voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief.
+str_purchase_spc_electric_ES64F4_no_track :Meersysteemlocomotief.
+str_purchase_spc_NS1600P_no_track :Meersysteemlocomotief.
+str_purchase_spc_electric_gen9_HS001_no_track :Meersysteemlocomotief.{}Fictief.
+str_purchase_spc_electric_gen9_HS002_no_track :Meersysteemlocomotief.{}Fictief.
 
 str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% kracht, +7% snelheid, +23% onderhoudskosten.
 
@@ -584,13 +601,13 @@ str_purchase_emu_Mat36ELD3  :Met bagagecompartiment ombouwbaar tot expresvracht 
 str_purchase_emu_ICE3M      :Meersysteemtreinstel, {YELLOW}+86% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Ook bekend als: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :Meersysteemtreinstel, {YELLOW}+139% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
 str_purchase_spc_emu_V250   :Meersysteemtreinstel, {YELLOW}+83% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
-str_purchase_spc_emu_gen9_HST:Meersysteemtreinstel, {YELLOW}+68% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
-str_purchase_emu_ICE3M_no_track:Meersysteemtreinstel.{}Ook bekend als: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track:Meersysteemtreinstel.
-str_purchase_spc_emu_V250_no_track:Meersysteemtreinstel.
-str_purchase_spc_emu_gen9_HST_no_track:Meersysteemtreinstel.{}Fictief.
+str_purchase_spc_emu_gen9_HST :Meersysteemtreinstel, {YELLOW}+68% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_emu_ICE3M_no_track :Meersysteemtreinstel.{}Ook bekend als: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track :Meersysteemtreinstel.
+str_purchase_spc_emu_V250_no_track :Meersysteemtreinstel.
+str_purchase_spc_emu_gen9_HST_no_track :Meersysteemtreinstel.{}Fictief.
 
-str_purchase_coaches_ZHESM_B:Later bekend als: {SILVER} NS B9900.{}{BLACK}Voor gebruik met motorwagen ZHESM mBC.
+str_purchase_coaches_ZHESM_B :Later bekend als: {SILVER} NS B9900.{}{BLACK}Voor gebruik met motorwagen ZHESM mBC.
 str_purchase_coaches_Mat24  :Voor gebruik met motorwagen Mat '24.
 str_purchase_coaches_DDAR   :Voor gebruik met motorwagen mDDM of NID.
 str_purchase_coaches_PlanW  :Voor gebruik met electrische NS locomotieven voor nationale treindienst en NMBS HLE 25.5 voor Beneluxtrein.
