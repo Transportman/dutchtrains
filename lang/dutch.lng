@@ -137,7 +137,7 @@ str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      :> Kinderboekenweek kleurstelling
 str_cargo_subtype_hispeed           :> NS Hispeed kleurstelling
 str_cargo_subtype_hispeed_nocab     :> NS Hispeed kleurstelling, zonder stuurstand
-str_cargo_subtype_maashopper        :> Veolia white/red "Maashopper" kleurstelling
+str_cargo_subtype_maashopper        :> Veolia wit/rood "Maashopper" kleurstelling
 str_cargo_subtype_nid               :> NID kleurstelling
 str_cargo_subtype_ns_ic             :> NS InterCity kleurstelling
 str_cargo_subtype_ns_ic_nocab       :> NS InterCity kleurstelling, zonder stuurstand
@@ -399,7 +399,7 @@ str_wagons_gen5_refrigerator        :Koelwagen (L)
 str_wagons_gen5_tanker              :Ketelwagen (L)
 str_wagons_gen5_selfdischarger      :Onderlosser (L)
 str_wagons_gen5_VAM                 :VAM Compostwagen (L)
-str_wagons_gen6_coil                :Coil Wagon (L)
+str_wagons_gen6_coil                :Spoelwagen (L)
 str_wagons_gen6_stake               :Rongenwagen (L)
 str_wagons_gen6_goods               :Gesloten wagen (L)
 str_wagons_gen6_containercarrier    :Containerwagen (M)
