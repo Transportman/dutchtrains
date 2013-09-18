@@ -10,10 +10,12 @@ syntax: glob
 *.scm
 custom_tags.txt
 docs/readme.txt
-Makefile.dist
+Makefile.fordist
 *-*-source
 *-*-source.tar*
 *-*-source.zip
+dutchtrains/*
+dutchtrains.tar
 
 # The local makefile should be ignored:
 Makefile.local
