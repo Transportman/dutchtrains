@@ -30,12 +30,16 @@ spriteset(spriteset_electric_gen9_HS001_fyra_red, "gfx/electric/gen9_HS001.png")
 spriteset(spriteset_electric_gen9_HS001_fyra_white, "gfx/electric/gen9_HS001.png") {
 	template_2cc_88(1, 96)
 }
+spriteset(spriteset_electric_gen9_HS001_black, "gfx/electric/gen9_HS001.png") {
+	template_2cc_88(1, 128)
+}
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_random) {
 	1: spriteset_electric_gen9_HS001_yellow;
     1: spriteset_electric_gen9_HS001_ic;
     1: spriteset_electric_gen9_HS001_fyra_red;
     1: spriteset_electric_gen9_HS001_fyra_white;
+	1: spriteset_electric_gen9_HS001_black;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_livery, cargo_subtype) {
@@ -43,6 +47,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_livery, cargo_subtype) {
     2: spriteset_electric_gen9_HS001_ic;
     3: spriteset_electric_gen9_HS001_fyra_red;
     4: spriteset_electric_gen9_HS001_fyra_white;
+	5: spriteset_electric_gen9_HS001_black;
     switch_electric_gen9_HS001_random;
 }
 
@@ -56,6 +61,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_subtype_text, cargo_subtype
     2: return string(str_cargo_subtype_ns_ic);
     3: return string(str_cargo_subtype_fyra_red);
     4: return string(str_cargo_subtype_fyra_white);
+	5: return string(str_cargo_subtype_black);
     return CB_RESULT_NO_TEXT;
 }
 
