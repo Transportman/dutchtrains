@@ -72,7 +72,7 @@ switch(FEAT_TRAINS, PARENT, switch_metro_GVB_S1S2_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_metro_GVB_S1S2_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_metro_GVB_S1S2_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_red_blue);

@@ -79,7 +79,7 @@ switch(FEAT_TRAINS, PARENT, switch_electric_gen9_HS002_livery, cargo_subtype) {
 * CARGO SUBTYPE CALLBACK
 */
 
-switch(FEAT_TRAINS, PARENT, switch_electric_gen9_HS002_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_random);
 	1: return string(str_cargo_subtype_black);
     2: return string(str_cargo_subtype_ns_ic);
