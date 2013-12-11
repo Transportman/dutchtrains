@@ -1,0 +1,52 @@
+##grflangid 0x35
+##plural 0
+
+#Main grf title and description
+STR_GRF_DESCRIPTION             :{SILVER}Hollantilaisia junia OpenTTD:hen{}{BLACK}Ensimmäisen junan käyttöönottovuosi: 1839.{}{}(c)Dutch Trainset Team{}Lisenssi: GPLv2 tai korkeampi.{}Lisätietoja löytyy readme-tiedostosta.
+
+#parameter strings
+
+
+
+
+
+#cargo subtype livery strings
+
+
+
+
+
+
+
+
+#steam
+
+#diesel
+
+#electric
+
+#dmu
+
+#emu
+
+#wagons
+
+#coaches
+
+#baggage and mail wagons
+
+#metro
+
+#PURCHASE MENU TEXTS
+
+
+
+
+
+
+
+
+
+
+
+
