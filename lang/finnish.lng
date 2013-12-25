@@ -8,45 +8,95 @@ STR_GRF_DESCRIPTION             :{SILVER}Hollantilaisia junia OpenTTD:hen{}{BLAC
 
 
 
+STR_PARAM_NORMAL                    :1 (oletusarvo)
 
+STR_PARAM_TRACK_POWER                           :Monijärjestelmävirta
 
 #cargo subtype livery strings
 
+str_cargo_subtype_bordeaux_white_blue       :&gt; Bordeaux-väritys valkoisella ja sinisellä
+str_cargo_subtype_blue_lightyellow  :&gt; Sininen väritys vaaleankeltaisilla raidoilla
+str_cargo_subtype_green             :&gt; Vihreä väritys
+str_cargo_subtype_white_yellow      :&gt; Valkokeltainen väritys
 
+str_cargo_subtype_accident_yellow   :&gt; Keltainen väritys (onnettomuusveturi)
 
+str_cargo_subtype_EL3               :(El3)
 
+str_cargo_subtype_ns_ic             :&gt; NS InterCityväritys
+str_cargo_subtype_olympic           :&gt; Olympiaväritys
+str_cargo_subtype_renewal           :&gt; Saneerausväritys
+str_cargo_subtype_strandsprinter_beachballs :&gt; "Strandsprinter"-väritys rantapalloilla
+str_cargo_subtype_TGV_PBA           :&gt; PBA-väritys
+str_cargo_subtype_zilverrail        :&gt; Zilverrail-väritys (24-27. lokakuuta 2005)
 
+str_cargo_subtype_Breng             :Breng-väritys
+str_cargo_subtype_Locon             :Locon-väritys
+str_cargo_subtype_Rail4Chem_green   :&gt; Rail4Chem (vihreä) väritys
+str_cargo_subtype_Rail4Chem_grey_yellow :&gt; Rail4Chem (harmaa/keltainen) väritys
+str_cargo_subtype_SS_tank           :&gt; SS-väritys (tankkiveturi)
+str_cargo_subtype_Veolia_black      :&gt; Veolia (musta) väritys
 
 
 
 #steam
+str_steam_HSM126        :NS 1100 (Höyry)
+str_steam_HSM501_t      :NS 2100-sarja "Peltipete" (Höyry)
+str_steam_HSM601        :NS 3200 (Höyry)
 
 #diesel
 
 #electric
+str_electric_HLE25      :NMBS HLE 25.5 (Sähkö)
 
 #dmu
 
 #emu
+str_emu_Mat24           :Mat '24 "Blokkendoos" (Sähkö)
+str_emu_ICM3_t          :ICM-III Plan Z "Pääkävelijä" (Electric)
+str_emu_mP              :Plan mP (Sähkö)
+str_emu_TGV             :TGV Thalys PBKA/PBA (Sähkö)
+str_emu_ICE3M           :ICE 3M (Sähkö)
 
 #wagons
+str_wagons_gen0boxcar               :Yleisvaunu (XS)
+str_wagons_gen4_Uh                  :Säiliövaunu (M) Uh
 
 #coaches
+str_coaches_SS_C_723    :Matkustajavaunu SS C 650
+str_coaches_RTM_BD_438  :Matkustajavaunu RTM BD
 
 #baggage and mail wagons
+str_coaches_Pd7011      :Postivaunu Pd
 
 #metro
 
 #PURCHASE MENU TEXTS
 
+str_purchase_svc                :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}
+
+str_purchase_svc_Ip         :kansainvälinen matkustajaliikenne
+str_purchase_svc_eip        :pika- ja intercitymatkustajat
+str_purchase_svc_iphf       :intercity- tai raskas tavaraliikenne
+
+str_purchase_len_3_17       :3 yksikköä (1,7)
+str_purchase_len_8_40       :8 yksikköä (4,0)
+
+str_purchase_lsp_6          :6 päivää
+str_purchase_lsp_11         :11 päivää
+str_purchase_lsp_12         :12 päivää
 
 
 
 
 
+str_purchase_electric_NS1100 :Saneerattu 1979: {YELLOW}+4% paino, +1/8 pituus.
+str_purchase_electric_NS1500 :Aikaisemmin tunnettu nimellä: {SILVER} BR Class EM2.
+str_purchase_spc_electric_gen9_HS001_no_track :Monijärjestelmäjuna.{}Kuvitteellinen.
+str_purchase_spc_electric_gen9_HS002_no_track :Monijärjestelmäjuna.{}Kuvitteellinen.
 
 
+str_purchase_emu_Mat36ELD3  :Mukana matkatavaraosasto, joka voidaan sovittaa pikarahdille tai matkustajille.{}Vuodesta 1942 lähtien: {YELLOW}-26% paino, -50% teho, -45% vetovoima, -20% käyttökulut, -21% kapasiteetti, pituus -1/8.
+str_purchase_spc_emu_V250   :Monijärjestelmäsähkömoottorijuna, {YELLOW}+83% teho {BLACK}25 kV:n ~ sähköistetyllä radalla.
 
-
-
-
+str_purchase_coaches_DDAR   :Tarkoitettu käytettäväksi moottorivaunutyyppien mDDM tai NID kanssa.
