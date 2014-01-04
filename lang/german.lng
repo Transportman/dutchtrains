@@ -7,6 +7,7 @@ STR_GRF_DESCRIPTION             :{SILVER}Niederländische Züge für OpenTTD{}{B
 
 #parameter strings
 
+STR_PARAM_DISABLE_ORIGINAL_DESC     :Standardmäßig deaktiviert dieses Set alle Schienen-, Einschienen- und Magnetbahnfahrzeuge. Diesen Parameter kann man nutzen, um jede Kombination aus Schienen-, Einschienen- und/oder Magnetbahnfahrzeugen zu behalten. Wenn jedoche andere NewGRFs die entsprechenden Orginalfahrzeuge deaktivieren, kann diese Einstellung sie nicht wieder zurückholen.
 STR_PARAM_DISABLE_ORIGINAL_100      :nur Schienen
 STR_PARAM_DISABLE_ORIGINAL_110      :Schienen und Einschienenbahn
 
@@ -15,6 +16,7 @@ STR_PARAM_PURCHASE_COST_DESC        :Man kann diese Einstellung verwenden, um di
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_TIMES_16                  :16
 
+STR_PARAM_TRACK_POWER                           :Multisystem-Antrieb
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              :> Lackierung automatisch ans Spieljahr anpassen
@@ -41,12 +43,14 @@ str_cargo_subtype_zilverrail        :> Zilverrail Lackierung (24. - 27. Okt. 200
 
 str_cargo_subtype_EETC              :> Euro Express Treincharter Lakierung
 str_cargo_subtype_HerikRail         :> Herik Schienen-Lackierung
+str_cargo_subtype_NS                :> NS Lackierung
 str_cargo_subtype_Rail4Chem_green   :> Lakierung Rail4Chem (grün)
 
 
 str_cargo_subtype_tractor           :> Lackierung der Traktoren-Fracht
 
 #steam
+str_steam_NCS1          :NS 7200 (Dampf)
 str_steam_NS4600        :NS 4600 (Dampf)
 
 #diesel
@@ -56,6 +60,7 @@ str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diesel)
 str_electric_mDDM       :mDDM (Electrisch)
 
 #dmu
+str_dmu_omC901_t        :omC 901-916 "Onkel Cees" (Diesel)
 str_dmu_DE2             :DE2 Plan X "Blauer Engel" (Diesel)
 str_dmu_DE2_t           :DE2 Plan X "Blauer Engel" (Diesel)
 str_dmu_NS20            :NS20 "Kamel" (Diesel)
@@ -63,19 +68,26 @@ str_dmu_Lint41H         :Lint 41/H (Diesel)
 
 #emu
 str_emu_Mat24_t         :Mat '24 "Blocks set" (Electrisch)
+str_emu_Mat40ELD2       :Mat '40 ElD2 (Elektrisch)
+str_emu_ICM3            :ICM-III Plan Z "Koploper" (Elektrisch)
 str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Electrisch)
+str_emu_IRMIV_t         :IRM-IV/VIRM-IV "Bison" (Elektrisch)
 str_emu_IRMVI_t         :VIRM-VI "Bison" (Electrisch)
 str_emu_TGV             :TGV Thalys PBKA/PBA (Electrisch)
 str_emu_V250_t          :Fyra V250 "Albatross" (Electrisch)
 str_emu_GTW26           :GTW 2/6 (Electrisch)
+str_emu_GTW28           :GTW 2/8 (Electrisch)
+str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
 
 #wagons
 str_wagons_gen2_silo                :Silowagen (S)
 str_wagons_gen2_selfdischarger      :Selbstentlader (S)
+str_wagons_gen9_silowagon           :Silowagon (L)
 str_wagons_gen7_containercarrier    :Containerwagen (L)
 
 #coaches
 str_coaches_SS_ABd_7516 :Wagen SS ABd
+str_coaches_RTM_BD_438  :Wagen RTM BD
 str_coaches_Avmz        :Wagen Avmz
 str_coaches_ICL         :Wagen ICL
 
@@ -88,25 +100,33 @@ str_metro_RET_typeM     :RET Typ M MG2 (Metro)
 
 #PURCHASE MENU TEXTS
 
+str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Achsgewicht: {YELLOW}{STRING}
 str_purchase_axl                :{BLACK}Achsgewichtt: {YELLOW}{STRING}
 str_purchase_axl_lsp            :{BLACK}Achsgewicht: {YELLOW}{STRING}{}{BLACK}Ladezeit: {YELLOW}{STRING}
 
+str_purchase_svc_hphf       :Hochgeschwindigkeits-Passagiertransport oder schwere Fracht
 str_purchase_svc_lfep       :leichte Fracht oder Passagierexpress
 str_purchase_svc_x          :executive
 
+str_purchase_len_1_05       :1 Einheit (0.5)
+str_purchase_len_3_15       :3 Einheiten (1.5)
 str_purchase_len_4_20       :4 Einheiten (2.0)
+str_purchase_len_5_24       :5 Einheiten (2.4)
 
 str_purchase_lsp_9          :9 Tage
 str_purchase_lsp_16         :16 Tage
 str_purchase_lsp_23         :23 Tage
 
 
+str_purchase_spc_fictional  :Fiktional.
 
 str_purchase_steam_HSM501   :Vorher bekannt als: {SILVER} HSM 501-535.
 
+str_purchase_diesel_ACTS6700 :Vormals bekannt als: {SILVER} NMBS HLD 62.
 
 
 
 str_purchase_emu_ICE3M      :Multisystem Elektrotriebwagen, {YELLOW}+86% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.{}Auch bekannt als: {SILVER} DB BR 406.
+str_purchase_emu_ICE3M_no_track :Multisystem EMU.{}Auch bekannt als: {SILVER} DB BR 406.
 
 str_purchase_coaches_ZHESM_B :Später bekannt als: {SILVER} NS B9900.{}{BLACK}Zusammen mit Antriebswagen ZHESM mBC nutzen.
