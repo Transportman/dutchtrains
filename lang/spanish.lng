@@ -10,6 +10,8 @@ STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 #parameter strings
 
 STR_PARAM_DISABLE_ORIGINAL          :Mantener los motores y vagones originales
+STR_PARAM_DISABLE_ORIGINAL_000      :Ninguno (opción por defecto)
+STR_PARAM_DISABLE_ORIGINAL_100      :Sólo el ferrocarril (tanto el convencional como el eléctrico)
 STR_PARAM_DISABLE_ORIGINAL_010      :Sólo el monorraíl
 STR_PARAM_DISABLE_ORIGINAL_001      :Sólo el maglev
 STR_PARAM_DISABLE_ORIGINAL_011      :Monorraíl y maglev
@@ -36,11 +38,16 @@ str_steam_NS3850        :NS 3850 (Vapor)
 #diesel
 
 #electric
+str_electric_NS1500     :NS 1500 (Eléctrico)
+str_electric_NS1600     :NS 1600/1800 (Eléctrico)
+str_electric_NS1600P    :NS 1600P (Eléctrico)
 
 #dmu
 
 #emu
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
+str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Eléctrico)
+str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Eléctrico)
 
 #wagons
 str_wagons_gen2_refrigerator        :Vagón frigorífico (S)
