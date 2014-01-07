@@ -14,6 +14,7 @@ STR_PARAM_DISABLE_ORIGINAL_000      :Ninguno (opción por defecto)
 STR_PARAM_DISABLE_ORIGINAL_100      :Sólo el ferrocarril (tanto el convencional como el eléctrico)
 STR_PARAM_DISABLE_ORIGINAL_010      :Sólo el monorraíl
 STR_PARAM_DISABLE_ORIGINAL_001      :Sólo el maglev
+STR_PARAM_DISABLE_ORIGINAL_101      :Ferrocarril (tanto el convencional como el eléctrico) y maglev
 STR_PARAM_DISABLE_ORIGINAL_011      :Monorraíl y maglev
 STR_PARAM_DISABLE_ORIGINAL_111      :Todos
 
@@ -38,6 +39,7 @@ str_steam_NS3850        :NS 3850 (Vapor)
 #diesel
 
 #electric
+str_electric_NS1200     :NS 1200 (Eléctrico)
 str_electric_NS1500     :NS 1500 (Eléctrico)
 str_electric_NS1600     :NS 1600/1800 (Eléctrico)
 str_electric_NS1600P    :NS 1600P (Eléctrico)
