@@ -24,6 +24,8 @@ STR_PARAM_RUNNING_COST              :Multiplicador del coste de funcionamiento
 
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_DIVIDE_8                  :1/8
+STR_PARAM_DIVIDE_2                  :1/2
+STR_PARAM_NORMAL                    :1 (opción por defecto)
 
 
 #cargo subtype livery strings
@@ -36,7 +38,9 @@ STR_PARAM_DIVIDE_8                  :1/8
 
 
 #steam
+str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
+str_steam_NS6200        :NS 6200 (Vapor)
 
 #diesel
 
