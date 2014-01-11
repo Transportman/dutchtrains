@@ -28,6 +28,21 @@ spriteset(spriteset_diesel_G2000_Railion, "gfx/diesel/G2000.png") {
 spriteset(spriteset_diesel_G2000_ERS, "gfx/diesel/G2000.png") {
 	template_2cc_78(1, 64)
 }
+spriteset(spriteset_diesel_G2000_rurtalbahn_black, "gfx/diesel/G2000.png") {
+	template_2cc_78(1, 96)
+}
+spriteset(spriteset_diesel_G2000_rurtalbahn_blue, "gfx/diesel/G2000.png") {
+	template_2cc_78(1, 128)
+}
+spriteset(spriteset_diesel_G2000_rff, "gfx/diesel/G2000.png") {
+	template_2cc_78(1, 160)
+}
+spriteset(spriteset_diesel_G2000_rts_black, "gfx/diesel/G2000.png") {
+	template_2cc_78(1, 192)
+}
+spriteset(spriteset_diesel_G2000_rts_orange, "gfx/diesel/G2000.png") {
+	template_2cc_78(1, 224)
+}
 
 /*
 * LIVERY SELECTION
@@ -37,12 +52,22 @@ random_switch(FEAT_TRAINS, SELF, switch_diesel_G2000_randomlivery) {
 	1: spriteset_diesel_G2000_Rail4Chem;
     1: spriteset_diesel_G2000_Railion;
     1: spriteset_diesel_G2000_ERS;
+    1: spriteset_diesel_G2000_rurtalbahn_black;
+    1: spriteset_diesel_G2000_rurtalbahn_blue;
+    1: spriteset_diesel_G2000_rff;
+    1: spriteset_diesel_G2000_rts_black;
+    1: spriteset_diesel_G2000_rts_orange;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_G2000_livery, cargo_subtype) {
 	1: spriteset_diesel_G2000_Rail4Chem;
     2: spriteset_diesel_G2000_Railion;
     3: spriteset_diesel_G2000_ERS;
+    4: spriteset_diesel_G2000_rurtalbahn_black;
+    5: spriteset_diesel_G2000_rurtalbahn_blue;
+    6: spriteset_diesel_G2000_rff;
+    7: spriteset_diesel_G2000_rts_black;
+    8: spriteset_diesel_G2000_rts_orange;
     switch_diesel_G2000_randomlivery;
 }
 
@@ -52,5 +77,10 @@ switch(FEAT_TRAINS, SELF, switch_diesel_G2000_subtype_text, cargo_subtype) {
 	1: return string(str_cargo_subtype_Rail4Chem_green);
     2: return string(str_cargo_subtype_Railion_red);
     3: return string(str_cargo_subtype_ERS);
+    4: return string(str_cargo_subtype_rurtalbahn_black);
+    5: return string(str_cargo_subtype_rurtalbahn_blue);
+    6: return string(str_cargo_subtype_rff);
+    7: return string(str_cargo_subtype_rts_black);
+    8: return string(str_cargo_subtype_rts_orange);
     return CB_RESULT_NO_TEXT;
 }
