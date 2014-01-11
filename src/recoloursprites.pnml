@@ -220,6 +220,48 @@ replace(recolour_scmt) {
     }
 }
 
+recolour_sgbt = reserve_sprites(1);
+replace(recolour_sgbt) {
+    recolour_sprite {
+        0xE5: 0x36;
+        0xE8: 0x69;
+        0xE9: 0x5C;
+        0xEA: 0x6D;
+        0xEB: 0x3B;
+        0xEC: 0x1A;
+        0xED: 0x6C;
+        0xEE: 0x35;
+    }
+}
+
+recolour_sgcn = reserve_sprites(1);
+replace(recolour_sgcn) {
+    recolour_sprite {
+        0xE5: 0x60;
+        0xE8: 0x69;
+        0xE9: 0x55;
+        0xEA: 0x53;
+        0xEB: 0x51;
+        0xEC: 0x59;
+        0xED: 0x50;
+        0xEE: 0x40;
+    }
+}
+
+recolour_java = reserve_sprites(1);
+replace(recolour_java) {
+    recolour_sprite {
+        0xE5: 0x68;
+        0xE8: 0x6A;
+        0xE9: 0x60;
+        0xEA: 0x69;
+        0xEB: 0x46;
+        0xEC: 0x5C;
+        0xED: 0x3C;
+        0xEE: 0x47;
+    }
+}
+
 recolour_blue = reserve_sprites(1);
 replace(recolour_blue) {
     recolour_sprite {
@@ -254,5 +296,8 @@ switch(FEAT_TRAINS, SELF, switch_generic_recolour, cargo_type_in_veh) {
     COAL: recolour_coal;
     FRUT: recolour_frut;
     SCMT: recolour_scmt;
+    SGBT: recolour_sgbt;
+    SGCN: recolour_sgcn;
+    JAVA: recolour_java;
     recolour_blue;
 }
