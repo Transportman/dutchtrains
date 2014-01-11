@@ -164,8 +164,8 @@ str_cargo_subtype_aegon				: > Aegon livery
 str_cargo_subtype_randstad			: > Randstad livery
 str_cargo_subtype_delagelanden1		: > De Lage Landen livery 1
 str_cargo_subtype_delagelanden2		: > De Lage Landen livery 2
-
-
+str_cargo_subtype_algemeendagblad1	: > Algemeen Dagblad livery 1
+str_cargo_subtype_algemeendagblad2	: > Algemeen Dagblad livery 2
 
 str_cargo_subtype_ACTS              : > ACTS livery
 str_cargo_subtype_ACTS_blue_yellow  : > ACTS (blue/yellow) livery

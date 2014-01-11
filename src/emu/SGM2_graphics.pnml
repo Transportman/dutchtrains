@@ -95,6 +95,32 @@ switch(FEAT_TRAINS, SELF, switch_emu_SGM2_strandsprinter2, (position_in_vehid_ch
     spriteset_emu_SGM2_strandsprinter2_front;
 }
 
+//algemeendagblad1
+spriteset(spriteset_emu_SGM2_algemeendagblad1_front, "gfx/emu/SGM2.png") {
+	template_2cc_88(1, 384)
+}
+spriteset(spriteset_emu_SGM2_algemeendagblad1_back, "gfx/emu/SGM2.png") {
+	template_2cc_88(1, 416)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_algemeendagblad1, (position_in_vehid_chain % 2)) {
+	1: spriteset_emu_SGM2_algemeendagblad1_back;
+    spriteset_emu_SGM2_algemeendagblad1_front;
+}
+
+//algemeendagblad2
+spriteset(spriteset_emu_SGM2_algemeendagblad2_front, "gfx/emu/SGM2.png") {
+	template_2cc_88(1, 448)
+}
+spriteset(spriteset_emu_SGM2_algemeendagblad2_back, "gfx/emu/SGM2.png") {
+	template_2cc_88(1, 480)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_algemeendagblad2, (position_in_vehid_chain % 2)) {
+	1: spriteset_emu_SGM2_algemeendagblad2_back;
+    spriteset_emu_SGM2_algemeendagblad2_front;
+}
+
 /*
 * LIVERY SELECTION
 */
@@ -123,6 +149,8 @@ switch(FEAT_TRAINS, SELF, switch_emu_SGM2_livery, cargo_subtype) {
     4: switch_emu_SGM2_citypendel;
     5: switch_emu_SGM2_strandsprinter;
     6: switch_emu_SGM2_strandsprinterlivery;
+    7: switch_emu_SGM2_algemeendagblad1;
+    8: switch_emu_SGM2_algemeendagblad2;
     switch_emu_SGM2_autolivery;
 }
 
@@ -135,6 +163,8 @@ switch(FEAT_TRAINS, SELF, switch_emu_SGM2_subtype_text, cargo_subtype) {
     4: return string(str_cargo_subtype_citypendel);
     5: return string(str_cargo_subtype_strandsprinter_beachballs);
     6: return string(str_cargo_subtype_strandsprinter);
+    7: return string(str_cargo_subtype_algemeendagblad1);
+    8: return string(str_cargo_subtype_algemeendagblad2);
     return CB_RESULT_NO_TEXT;
 }
 
