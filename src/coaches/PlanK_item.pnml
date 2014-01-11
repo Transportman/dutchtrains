@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_PlanK) {
         model_life: 54;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 105;
         running_cost_factor: 3;
         speed: 140 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_PlanK) {
 	}
     graphics {
         cargo_capacity: return 58;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_16));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_13));
         purchase: spriteset_coaches_PlanK_purchase;
         colour_mapping: PALETTE_USE_DEFAULT;
         spriteset_coaches_PlanK;

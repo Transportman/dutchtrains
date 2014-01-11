@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_coaches_gen9_IC_DD) {
         introduction_date: date(2018,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 166;
         running_cost_factor: 7;
         speed: 320 km/h;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_coaches_gen9_IC_DD) {
 	}
     graphics {
         cargo_capacity: return 140;
-        additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_19), string(str_purchase_spc_fictional));
+        additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_16), string(str_purchase_spc_fictional));
         purchase: spriteset_coaches_gen9_IC_DD_purchase;
         cargo_subtype_text: switch_coaches_gen9_IC_DD_subtype_text;
         switch_coaches_gen9_IC_DD_livery;

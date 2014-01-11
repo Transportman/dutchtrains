@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_HSM_C_755) {
         model_life: 72;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 22;
+        loading_speed: 28;
         cost_factor: 126;
         running_cost_factor: 3;
         speed: 80 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_HSM_C_755) {
 	}
     graphics {
         cargo_capacity: return 110;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_6));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_5));
         purchase: spriteset_coaches_HSM_C_755_purchase;
         spriteset_coaches_HSM_C_755;
     }

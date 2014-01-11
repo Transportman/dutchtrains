@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_K4) {
         model_life: 11;
         retire_early: 2;
         vehicle_life: 2;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 110;
         running_cost_factor: 3;
         speed: 140 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_K4) {
 	}
     graphics {
         cargo_capacity: return 80;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_22));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_18));
         purchase: spriteset_coaches_K4_purchase;
         cargo_subtype_text: switch_coaches_K4_subtype_text;
         switch_coaches_K4_livery;

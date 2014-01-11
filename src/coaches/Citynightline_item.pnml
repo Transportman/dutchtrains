@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_coaches_Citynightline) {
         introduction_date: date(2007,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 110;
         running_cost_factor: 4;
         speed: 200 km/h;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_coaches_Citynightline) {
 	}
     graphics {
         cargo_capacity: return 56;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_16));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_13));
         purchase: spriteset_coaches_Citynightline;
         switch_coaches_Citynightline_livery;
     }

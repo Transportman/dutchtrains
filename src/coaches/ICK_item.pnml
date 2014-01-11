@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_ICK) {
         model_life: 25;
         retire_early: 9;
         vehicle_life: 9;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 103;
         running_cost_factor: 4;
         speed: 200 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_ICK) {
 	}
     graphics {
         cargo_capacity: return 72;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_20));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_16));
         purchase: spriteset_coaches_ICL_yellow_blue_purchase;
         spriteset_coaches_ICL_yellow_blue;
     }

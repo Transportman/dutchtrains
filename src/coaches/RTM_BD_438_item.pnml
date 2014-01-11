@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
         model_life: 69;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 2;
+        loading_speed: 3;
         cost_factor: 62;
         running_cost_factor: 2;
         speed: 80 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
 	}
     graphics {
         cargo_capacity: return 40;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_A), string(str_purchase_lsp_22));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_A), string(str_purchase_lsp_15));
         purchase: spriteset_coaches_RTM_BD_438_purchase;
         spriteset_coaches_RTM_BD_438;
     }

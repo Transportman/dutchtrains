@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_Ovaleramen) {
         model_life: 69;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 106;
         running_cost_factor: 3;
         speed: 130 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_Ovaleramen) {
 	}
     graphics {
         cargo_capacity: return 56;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_16));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_13));
         purchase: switch_coaches_Ovaleramen_purchase;
         cargo_subtype_text: switch_coaches_Ovaleramen_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;

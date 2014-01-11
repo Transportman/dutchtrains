@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_Bolkoprijtuigen) {
         model_life: 65;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 112;
         running_cost_factor: 3;
         speed: 130 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_Bolkoprijtuigen) {
 	}
     graphics {
         cargo_capacity: return 70;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_19));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_16));
         purchase: switch_coaches_Bolkoprijtuigen_purchase;
         cargo_subtype_text: switch_coaches_Bolkoprijtuigen_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;

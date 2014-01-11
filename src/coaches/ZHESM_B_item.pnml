@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_ZHESM_B) {
         model_life: 76;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 94;
         running_cost_factor: 2;
         speed: 80 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_coaches_ZHESM_B) {
     graphics {
         cargo_capacity: return 56;
         cargo_subtype_text: switch_coaches_ZHESM_B_subtype_text;
-        additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_16), string(str_purchase_coaches_ZHESM_B));
+        additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_13), string(str_purchase_coaches_ZHESM_B));
         purchase: switch_coaches_ZHESM_B_purchase;
         switch_coaches_ZHESM_B_livery;
     }

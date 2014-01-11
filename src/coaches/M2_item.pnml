@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_coaches_M2) {
         model_life: 25;
         retire_early: 9;
         vehicle_life: 9;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 110;
         running_cost_factor: 3;
         speed: 120 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_coaches_M2) {
 	}
     graphics {
         cargo_capacity: return 74;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_10));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_8));
         purchase: switch_coaches_M2_purchase;
         cargo_subtype_text: switch_coaches_M2_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;
