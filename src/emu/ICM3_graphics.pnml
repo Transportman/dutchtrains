@@ -101,6 +101,96 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_groningen_position, (position_in_vehid
     switch_emu_ICM3_groningen_position_front;
 }
 
+//martinair
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_martinair_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_martinair_front;
+    spriteset_emu_ICM_martinair_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_martinair_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_martinair_back;
+    spriteset_emu_ICM_martinair_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_martinair_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_martinair_middle;
+    2: switch_emu_ICM3_martinair_position_back;
+    switch_emu_ICM3_martinair_position_front;
+}
+
+//klm
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_klm_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_klm_front;
+    spriteset_emu_ICM_klm_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_klm_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_klm_back;
+    spriteset_emu_ICM_klm_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_klm_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_klm_middle;
+    2: switch_emu_ICM3_klm_position_back;
+    switch_emu_ICM3_klm_position_front;
+}
+
+//delagelanden1
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden1_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_delagelanden1_front;
+    spriteset_emu_ICM_delagelanden1_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden1_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_delagelanden1_back;
+    spriteset_emu_ICM_delagelanden1_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden1_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_delagelanden1_middle;
+    2: switch_emu_ICM3_delagelanden1_position_back;
+    switch_emu_ICM3_delagelanden1_position_front;
+}
+
+//delagelanden2
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden2_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_delagelanden2_front;
+    spriteset_emu_ICM_delagelanden2_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden2_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_delagelanden2_back;
+    spriteset_emu_ICM_delagelanden2_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden2_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_delagelanden2_middle;
+    2: switch_emu_ICM3_delagelanden2_position_back;
+    switch_emu_ICM3_delagelanden2_position_front;
+}
+
+//randstad
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_randstad_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_randstad_front;
+    spriteset_emu_ICM_randstad_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_randstad_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_randstad_back;
+    spriteset_emu_ICM_randstad_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_randstad_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_randstad_middle;
+    2: switch_emu_ICM3_randstad_position_back;
+    switch_emu_ICM3_randstad_position_front;
+}
+
+//aegon
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_aegon_position_front, position_in_consist) {
+	0: spriteset_emu_ICM_aegon_front;
+    spriteset_emu_ICM_aegon_front_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_aegon_position_back, position_in_consist_from_end) {
+	0: spriteset_emu_ICM_aegon_back;
+    spriteset_emu_ICM_aegon_back_open;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_aegon_position, (position_in_vehid_chain % 3)) {
+	1: spriteset_emu_ICM_aegon_middle;
+    2: switch_emu_ICM3_aegon_position_back;
+    switch_emu_ICM3_aegon_position_front;
+}
+
 //renewal
 switch(FEAT_TRAINS, SELF, switch_emu_ICM3_renewal_position, (position_in_vehid_chain % 3)) {
 	1: spriteset_emu_ICM_renewal_middle;
@@ -162,6 +252,12 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_livery, cargo_subtype) {
     5: switch_emu_ICM3_football_position;
     6: switch_emu_ICM3_kinderboeken_position;
     7: switch_emu_ICM3_groningen_position;
+    8: switch_emu_ICM3_klm_position;
+    9: switch_emu_ICM3_martinair_position;
+    10: switch_emu_ICM3_aegon_position;
+    11: switch_emu_ICM3_randstad_position;
+    12: switch_emu_ICM3_delagelanden1_position;
+    13: switch_emu_ICM3_delagelanden2_position;
     switch_emu_ICM3_autolivery;
 }
 
@@ -175,6 +271,12 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_subtype_text, cargo_subtype) {
     5: return string(str_cargo_subtype_football);
     6: return string(str_cargo_subtype_kinderboeken);
     7: return string(str_cargo_subtype_groningen);
+    8: return string(str_cargo_subtype_klm);
+    9: return string(str_cargo_subtype_martinair);
+    10: return string(str_cargo_subtype_aegon);
+    11: return string(str_cargo_subtype_randstad);
+    12: return string(str_cargo_subtype_delagelanden1);
+    13: return string(str_cargo_subtype_delagelanden2);
     return CB_RESULT_NO_TEXT;
 }
 

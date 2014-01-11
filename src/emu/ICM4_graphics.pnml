@@ -111,6 +111,108 @@ spriteset(spriteset_emu_ICM_groningen_back_open, "gfx/emu/ICM_1.png") {
 	template_2cc_88(1, 608)
 }
 
+//klm
+spriteset(spriteset_emu_ICM_klm_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 800)
+}
+spriteset(spriteset_emu_ICM_klm_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 832)
+}
+spriteset(spriteset_emu_ICM_klm_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 864)
+}
+spriteset(spriteset_emu_ICM_klm_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 896)
+}
+spriteset(spriteset_emu_ICM_klm_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 928)
+}
+
+//martinair
+spriteset(spriteset_emu_ICM_martinair_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 640)
+}
+spriteset(spriteset_emu_ICM_martinair_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 672)
+}
+spriteset(spriteset_emu_ICM_martinair_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 704)
+}
+spriteset(spriteset_emu_ICM_martinair_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 736)
+}
+spriteset(spriteset_emu_ICM_martinair_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 768)
+}
+
+//aegon
+spriteset(spriteset_emu_ICM_aegon_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1440)
+}
+spriteset(spriteset_emu_ICM_aegon_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1472)
+}
+spriteset(spriteset_emu_ICM_aegon_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1504)
+}
+spriteset(spriteset_emu_ICM_aegon_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1536)
+}
+spriteset(spriteset_emu_ICM_aegon_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1568)
+}
+
+//randstad
+spriteset(spriteset_emu_ICM_randstad_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1280)
+}
+spriteset(spriteset_emu_ICM_randstad_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1312)
+}
+spriteset(spriteset_emu_ICM_randstad_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1344)
+}
+spriteset(spriteset_emu_ICM_randstad_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1376)
+}
+spriteset(spriteset_emu_ICM_randstad_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1408)
+}
+
+//delagelanden1
+spriteset(spriteset_emu_ICM_delagelanden1_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 960)
+}
+spriteset(spriteset_emu_ICM_delagelanden1_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 992)
+}
+spriteset(spriteset_emu_ICM_delagelanden1_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1024)
+}
+spriteset(spriteset_emu_ICM_delagelanden1_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1056)
+}
+spriteset(spriteset_emu_ICM_delagelanden1_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1088)
+}
+
+//delagelanden2
+spriteset(spriteset_emu_ICM_delagelanden2_front, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1120)
+}
+spriteset(spriteset_emu_ICM_delagelanden2_middle, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1152)
+}
+spriteset(spriteset_emu_ICM_delagelanden2_back, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1184)
+}
+spriteset(spriteset_emu_ICM_delagelanden2_front_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1216)
+}
+spriteset(spriteset_emu_ICM_delagelanden2_back_open, "gfx/emu/ICM_1.png") {
+	template_2cc_88(1, 1248)
+}
+
 //olympic
 spriteset(spriteset_emu_ICM_olympic_front, "gfx/emu/ICM_4.png") {
 	template_2cc_88(1, 192)

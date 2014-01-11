@@ -158,6 +158,14 @@ str_cargo_subtype_valleilijn_blue_yellownose: >Valleilijn blue livery w/ yellow 
 str_cargo_subtype_valleilijn_blue           : >Valleilijn blue livery (fictional)
 str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" livery
 str_cargo_subtype_zilverrail        : > Zilverrail livery (Oct 24-27, 2005)
+str_cargo_subtype_klm				: > KLM livery
+str_cargo_subtype_martinair			: > Martinair livery
+str_cargo_subtype_aegon				: > Aegon livery
+str_cargo_subtype_randstad			: > Randstad livery
+str_cargo_subtype_delagelanden1		: > De Lage Landen livery 1
+str_cargo_subtype_delagelanden2		: > De Lage Landen livery 2
+
+
 
 str_cargo_subtype_ACTS              : > ACTS livery
 str_cargo_subtype_ACTS_blue_yellow  : > ACTS (blue/yellow) livery

@@ -158,6 +158,12 @@ str_cargo_subtype_valleilijn_blue_yellownose : >Valleilijn blauwe kleurstelling 
 str_cargo_subtype_valleilijn_blue           : >Valleilijn blauwe kleurstelling (fictief)
 str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" kleurstelling
 str_cargo_subtype_zilverrail        : > Zilverrail kleurstelling (Oct 24-27, 2005)
+str_cargo_subtype_klm				: > KLM kleurstelling
+str_cargo_subtype_martinair			: > Martinair kleurstelling
+str_cargo_subtype_aegon				: > Aegon kleurstelling
+str_cargo_subtype_randstad			: > Randstad kleurstelling
+str_cargo_subtype_delagelanden1		: > De Lage Landen kleurstelling 1
+str_cargo_subtype_delagelanden2		: > De Lage Landen kleurstelling 2
 
 str_cargo_subtype_ACTS              : > ACTS kleurstelling
 str_cargo_subtype_ACTS_blue_yellow  : > ACTS (blauw/geel) kleurstelling
