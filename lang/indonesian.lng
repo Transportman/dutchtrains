@@ -22,58 +22,58 @@ STR_PARAM_TIMES_8                   :8
 STR_PARAM_TRACK_POWER                           :Daya multi-sistem
 
 #cargo subtype livery strings
-str_cargo_subtype_auto              :> Seragam bergantung sama tahun
+str_cargo_subtype_auto              : > Seragam bergantung sama tahun
 
-str_cargo_subtype_bordeaux_white            :> Seragam Bordeaux sama warna putih
-str_cargo_subtype_bordeaux_white_yellow     :> Seragam Bordeaux sama warna putih/kuning
-str_cargo_subtype_lighterblue       :> Seragam warna biru agak muda
-str_cargo_subtype_blue_darkyellow   :> Seragam warna biru sama garis warna kuning tua
-str_cargo_subtype_blue_white        :> Seragam warna biru/putih
-str_cargo_subtype_brown_yellowfront :> Seragam warna coklat sama depan warna kuning
-str_cargo_subtype_brown_other       :> Seragam warna coklat yang lain
-str_cargo_subtype_brown_dark        :> Seragam warna coklat tua
-str_cargo_subtype_green_moustache   :> Seragam warna hijau sama kumis
-str_cargo_subtype_green_red         :> Seragam warna hijau sama garis warna merah
-str_cargo_subtype_green_white       :> Seragam warna hijau/putih
-str_cargo_subtype_red_pinkish       :> Seragam merah-jambu
-str_cargo_subtype_red_yellow        :> Seragam warna merah sama garis warna kuning
-str_cargo_subtype_olive_silverroof  :> Seragam zaitun sama atap ringan
-str_cargo_subtype_silver_red        :> Seragam perak/merah
-str_cargo_subtype_turquoise         :> Seragam warna biru pirus
-str_cargo_subtype_white_blue        :> Seragam warna putih/biru
+str_cargo_subtype_bordeaux_white            : > Seragam Bordeaux sama warna putih
+str_cargo_subtype_bordeaux_white_yellow     : > Seragam Bordeaux sama warna putih/kuning
+str_cargo_subtype_lighterblue       : > Seragam warna biru agak muda
+str_cargo_subtype_blue_darkyellow   : > Seragam warna biru sama garis warna kuning tua
+str_cargo_subtype_blue_white        : > Seragam warna biru/putih
+str_cargo_subtype_brown_yellowfront : > Seragam warna coklat sama depan warna kuning
+str_cargo_subtype_brown_other       : > Seragam warna coklat yang lain
+str_cargo_subtype_brown_dark        : > Seragam warna coklat tua
+str_cargo_subtype_green_moustache   : > Seragam warna hijau sama kumis
+str_cargo_subtype_green_red         : > Seragam warna hijau sama garis warna merah
+str_cargo_subtype_green_white       : > Seragam warna hijau/putih
+str_cargo_subtype_red_pinkish       : > Seragam merah-jambu
+str_cargo_subtype_red_yellow        : > Seragam warna merah sama garis warna kuning
+str_cargo_subtype_olive_silverroof  : > Seragam zaitun sama atap ringan
+str_cargo_subtype_silver_red        : > Seragam perak/merah
+str_cargo_subtype_turquoise         : > Seragam warna biru pirus
+str_cargo_subtype_white_blue        : > Seragam warna putih/biru
 
-str_cargo_subtype_accident_brown    :> Seragam warna coklat (kereta kecelakaan)
+str_cargo_subtype_accident_brown    : > Seragam warna coklat (kereta kecelakaan)
 
 str_cargo_subtype_ELD4              :(ElD4)
 
-str_cargo_subtype_freedom           :> Seragam merdeka
-str_cargo_subtype_groningen         :> Seragam Groningen Mendini
-str_cargo_subtype_hispeed           :> Seragam NS Hispeed
-str_cargo_subtype_hispeed_nocab     :> Seragam NS Hispeed, tidak ada kuasa masinis
-str_cargo_subtype_nid               :> Seragam NID
-str_cargo_subtype_strandsprinter_beachballs :> Seragam "Strandsprinter" sama bola pantai
-str_cargo_subtype_strandsprinter    :> Seragam "Strandsprinter"
-str_cargo_subtype_TGV_PBA           :> Seragam PBA
-str_cargo_subtype_zilverrail        :> Seragam Zilverrail (Oct 24-27, 2005)
+str_cargo_subtype_freedom           : > Seragam merdeka
+str_cargo_subtype_groningen         : > Seragam Groningen Mendini
+str_cargo_subtype_hispeed           : > Seragam NS Hispeed
+str_cargo_subtype_hispeed_nocab     : > Seragam NS Hispeed, tidak ada kuasa masinis
+str_cargo_subtype_nid               : > Seragam NID
+str_cargo_subtype_strandsprinter_beachballs : > Seragam "Strandsprinter" sama bola pantai
+str_cargo_subtype_strandsprinter    : > Seragam "Strandsprinter"
+str_cargo_subtype_TGV_PBA           : > Seragam PBA
+str_cargo_subtype_zilverrail        : > Seragam Zilverrail (Oct 24-27, 2005)
 
-str_cargo_subtype_ACTS              :> Seragam ACTS
-str_cargo_subtype_Arriva_vechtdallijnen :> Seragam Arriva "Vechtdallijnen"
-str_cargo_subtype_Captrain          :> Seragam Captrain
-str_cargo_subtype_Crossrail         :> Seragam Crossrail
-str_cargo_subtype_DLC               :> Seragam DLC
-str_cargo_subtype_ERS               :> Seragam ERS
-str_cargo_subtype_HSM               :> Seragam Hollandsche IJzeren Spoorweg-Maatschappij
-str_cargo_subtype_NCS_tender        :> Seragam NCS (lokomotif tender)
-str_cargo_subtype_NS                :> Seragam NS
-str_cargo_subtype_NSCargo           :> Seragam Kargo NS
-str_cargo_subtype_Rail4Chem_grey_yellow :> Seragam Rail4Chem (warna abu-abu/kuning)
-str_cargo_subtype_Railpro           :> Seragam Railpro
-str_cargo_subtype_Syntus            :> Seragam Syntus
+str_cargo_subtype_ACTS              : > Seragam ACTS
+str_cargo_subtype_Arriva_vechtdallijnen : > Seragam Arriva "Vechtdallijnen"
+str_cargo_subtype_Captrain          : > Seragam Captrain
+str_cargo_subtype_Crossrail         : > Seragam Crossrail
+str_cargo_subtype_DLC               : > Seragam DLC
+str_cargo_subtype_ERS               : > Seragam ERS
+str_cargo_subtype_HSM               : > Seragam Hollandsche IJzeren Spoorweg-Maatschappij
+str_cargo_subtype_NCS_tender        : > Seragam NCS (lokomotif tender)
+str_cargo_subtype_NS                : > Seragam NS
+str_cargo_subtype_NSCargo           : > Seragam Kargo NS
+str_cargo_subtype_Rail4Chem_grey_yellow : > Seragam Rail4Chem (warna abu-abu/kuning)
+str_cargo_subtype_Railpro           : > Seragam Railpro
+str_cargo_subtype_Syntus            : > Seragam Syntus
 
-str_cargo_subtype_brown_cows        :> Seragam warna coklat (sapi)
-str_cargo_subtype_grey_cows         :> Seragam warna abu-abu (sapi)
+str_cargo_subtype_brown_cows        : > Seragam warna coklat (sapi)
+str_cargo_subtype_grey_cows         : > Seragam warna abu-abu (sapi)
 
-str_cargo_subtype_transformer ::> Seragam kargo transformator
+str_cargo_subtype_transformer :: > Seragam kargo transformator
 
 #steam
 str_steam_Arend         :HSM "Arend" (Uap)

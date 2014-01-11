@@ -44,75 +44,75 @@ STR_PARAM_TRACK_POWER_OFF                       :Uvijek najveća snaga
 STR_PARAM_TRACK_POWER_ON                        :Ovisi o pruzi kada je učitan kompatibilni pružni set (osnovna postavka)
 
 #cargo subtype livery strings
-str_cargo_subtype_auto              :> Livreja ovisna o godini
-str_cargo_subtype_purchase          :> Livreja godine proizvodnje
-str_cargo_subtype_random            :> Livreja po slučajnom odabiru
-str_cargo_subtype_matching          :> Livreja kao kod lokomotive
+str_cargo_subtype_auto              : > Livreja ovisna o godini
+str_cargo_subtype_purchase          : > Livreja godine proizvodnje
+str_cargo_subtype_random            : > Livreja po slučajnom odabiru
+str_cargo_subtype_matching          : > Livreja kao kod lokomotive
 
-str_cargo_subtype_bordeaux          :> Bordo livreja
-str_cargo_subtype_bordeaux_white            :> Bordo livreja sa bijelim
-str_cargo_subtype_bordeaux_white_blue       :> Bordo livreja sa bijelo-plavim
-str_cargo_subtype_bordeaux_white_yellow     :> Bordo livreja sa bijelo-žutim
-str_cargo_subtype_black             :> Crna livreja
-str_cargo_subtype_blue              :> Plava livreja
-str_cargo_subtype_blue_greyish      :> Sivoplava livreja
-str_cargo_subtype_lighterblue       :> Svjetlije plava livreja
-str_cargo_subtype_blue_banners      :> Plava livreja sa linijama
-str_cargo_subtype_blue_red          :> Plava livreja sa crvenim linijama
-str_cargo_subtype_blue_red_silverroof       :> Plava livreja sa crvenim linijama i srebrnim krovom
-str_cargo_subtype_blue_red_yellowmoustache  :> Plava livreja sa crvenim linijama i žutim "brkovima"
-str_cargo_subtype_blue_yellow       :> Plava livreja sa žutim linijama
-str_cargo_subtype_blue_lightyellow  :> Plava livreja sa svijetlo žutim linijama
-str_cargo_subtype_blue_darkyellow   :> Plava livreja sa tamno žutim linijama
-str_cargo_subtype_blue_white        :> Plavo-bijela livreja
-str_cargo_subtype_brown             :> Smeđa livreja
-str_cargo_subtype_brown_yellowfront :> Smeđa livreja sa žutim sprijeda
-str_cargo_subtype_brown_other       :> Druga smeđa livreja
-str_cargo_subtype_brown_light       :> Svijetlo smeđa livreja
-str_cargo_subtype_brown_dark        :> Tamno smeđa livreja
-str_cargo_subtype_brown_greenish    :> Zeleno-smeđa livreja
-str_cargo_subtype_brown_reddish     :> Crveno-smeđa livreja
-str_cargo_subtype_green             :> Zelena livreja
-str_cargo_subtype_green_lightroof   :> Zelena livreja sa svijetlim krovom
-str_cargo_subtype_green_darkroof    :> Zelena livreja sa tamnim krovom
-str_cargo_subtype_green_moustache   :> Zelena livreja sa "brkovima"
-str_cargo_subtype_green_red         :> Zelena livreja sa crvenim linijama
-str_cargo_subtype_green_yellow      :> Zelena livreja sa žutim linijama
-str_cargo_subtype_green_yellow_blue :> Zelena livreja sa žutim linijama i plavim prugama
-str_cargo_subtype_green_white       :> Zeleno-bijela livreja
-str_cargo_subtype_green_lightyellow :> Zeleno-svijetložuta livreja
-str_cargo_subtype_grey              :> Siva livreja
-str_cargo_subtype_grey_dark         :> Tamno siva livreja
-str_cargo_subtype_grey_light        :> Svijetlo siva livreja
-str_cargo_subtype_purple            :> Ljubičasta livreja
-str_cargo_subtype_red               :> Crvena livreja
-str_cargo_subtype_red_greydoors     :> Crvena livreja sa sivim vratima
-str_cargo_subtype_red_light         :> Svijetlo-crvena livreja
-str_cargo_subtype_red_pinkish       :> Crveno-roza livreja
-str_cargo_subtype_red_blue          :> Crveno-plava livreja
-str_cargo_subtype_red_yellow        :> Crvena livreja sa žutim linijama
-str_cargo_subtype_red_yellow_blue   :> Crvena livreja sa žutim linijama i plavim prugama
-str_cargo_subtype_olive_silverroof  :> Maslinasto zelena livreja sa svijetlim krovom
-str_cargo_subtype_olive_greyroof    :> Maslinasto zelena livreja sa tamnim krovom
-str_cargo_subtype_salmon            :> Salmon livreja
-str_cargo_subtype_silver_blue       :> Srebrno-plava livreja
-str_cargo_subtype_silver_green      :> Srebrno-zelena livreja
-str_cargo_subtype_silver_red        :> Srebrno-crvena livreja
-str_cargo_subtype_turquoise         :> Tirkizna livreja
-str_cargo_subtype_yellow            :> Žuta livreja
-str_cargo_subtype_yellow_blue       :> Žuta livreja sa plavim prugama
-str_cargo_subtype_yellow_blue_ic    :> Žuto-plava InterCity livreja
-str_cargo_subtype_yellow_red        :> Žuto-crvena livreja
-str_cargo_subtype_white             :> Bijela livreja
-str_cargo_subtype_white_blue        :> Bijelo-plava livreja
-str_cargo_subtype_white_red         :> Bijelo-crvena livreja
-str_cargo_subtype_white_yellow      :> Bijelo-žuta livreja
+str_cargo_subtype_bordeaux          : > Bordo livreja
+str_cargo_subtype_bordeaux_white            : > Bordo livreja sa bijelim
+str_cargo_subtype_bordeaux_white_blue       : > Bordo livreja sa bijelo-plavim
+str_cargo_subtype_bordeaux_white_yellow     : > Bordo livreja sa bijelo-žutim
+str_cargo_subtype_black             : > Crna livreja
+str_cargo_subtype_blue              : > Plava livreja
+str_cargo_subtype_blue_greyish      : > Sivoplava livreja
+str_cargo_subtype_lighterblue       : > Svjetlije plava livreja
+str_cargo_subtype_blue_banners      : > Plava livreja sa linijama
+str_cargo_subtype_blue_red          : > Plava livreja sa crvenim linijama
+str_cargo_subtype_blue_red_silverroof       : > Plava livreja sa crvenim linijama i srebrnim krovom
+str_cargo_subtype_blue_red_yellowmoustache  : > Plava livreja sa crvenim linijama i žutim "brkovima"
+str_cargo_subtype_blue_yellow       : > Plava livreja sa žutim linijama
+str_cargo_subtype_blue_lightyellow  : > Plava livreja sa svijetlo žutim linijama
+str_cargo_subtype_blue_darkyellow   : > Plava livreja sa tamno žutim linijama
+str_cargo_subtype_blue_white        : > Plavo-bijela livreja
+str_cargo_subtype_brown             : > Smeđa livreja
+str_cargo_subtype_brown_yellowfront : > Smeđa livreja sa žutim sprijeda
+str_cargo_subtype_brown_other       : > Druga smeđa livreja
+str_cargo_subtype_brown_light       : > Svijetlo smeđa livreja
+str_cargo_subtype_brown_dark        : > Tamno smeđa livreja
+str_cargo_subtype_brown_greenish    : > Zeleno-smeđa livreja
+str_cargo_subtype_brown_reddish     : > Crveno-smeđa livreja
+str_cargo_subtype_green             : > Zelena livreja
+str_cargo_subtype_green_lightroof   : > Zelena livreja sa svijetlim krovom
+str_cargo_subtype_green_darkroof    : > Zelena livreja sa tamnim krovom
+str_cargo_subtype_green_moustache   : > Zelena livreja sa "brkovima"
+str_cargo_subtype_green_red         : > Zelena livreja sa crvenim linijama
+str_cargo_subtype_green_yellow      : > Zelena livreja sa žutim linijama
+str_cargo_subtype_green_yellow_blue : > Zelena livreja sa žutim linijama i plavim prugama
+str_cargo_subtype_green_white       : > Zeleno-bijela livreja
+str_cargo_subtype_green_lightyellow : > Zeleno-svijetložuta livreja
+str_cargo_subtype_grey              : > Siva livreja
+str_cargo_subtype_grey_dark         : > Tamno siva livreja
+str_cargo_subtype_grey_light        : > Svijetlo siva livreja
+str_cargo_subtype_purple            : > Ljubičasta livreja
+str_cargo_subtype_red               : > Crvena livreja
+str_cargo_subtype_red_greydoors     : > Crvena livreja sa sivim vratima
+str_cargo_subtype_red_light         : > Svijetlo-crvena livreja
+str_cargo_subtype_red_pinkish       : > Crveno-roza livreja
+str_cargo_subtype_red_blue          : > Crveno-plava livreja
+str_cargo_subtype_red_yellow        : > Crvena livreja sa žutim linijama
+str_cargo_subtype_red_yellow_blue   : > Crvena livreja sa žutim linijama i plavim prugama
+str_cargo_subtype_olive_silverroof  : > Maslinasto zelena livreja sa svijetlim krovom
+str_cargo_subtype_olive_greyroof    : > Maslinasto zelena livreja sa tamnim krovom
+str_cargo_subtype_salmon            : > Salmon livreja
+str_cargo_subtype_silver_blue       : > Srebrno-plava livreja
+str_cargo_subtype_silver_green      : > Srebrno-zelena livreja
+str_cargo_subtype_silver_red        : > Srebrno-crvena livreja
+str_cargo_subtype_turquoise         : > Tirkizna livreja
+str_cargo_subtype_yellow            : > Žuta livreja
+str_cargo_subtype_yellow_blue       : > Žuta livreja sa plavim prugama
+str_cargo_subtype_yellow_blue_ic    : > Žuto-plava InterCity livreja
+str_cargo_subtype_yellow_red        : > Žuto-crvena livreja
+str_cargo_subtype_white             : > Bijela livreja
+str_cargo_subtype_white_blue        : > Bijelo-plava livreja
+str_cargo_subtype_white_red         : > Bijelo-crvena livreja
+str_cargo_subtype_white_yellow      : > Bijelo-žuta livreja
 
-str_cargo_subtype_blue_crashnose    :> Plava livreja (sa nosom za sudare)
-str_cargo_subtype_grey_crashnose    :> Siva livreja (sa nosom za sudare)
-str_cargo_subtype_accident_brown    :> Smeđa livreja (nesreća vlaka)
-str_cargo_subtype_accident_yellow   :> Žuta livreja (nesreća vlaka)
-str_cargo_subtype_Jules             :> "Jules"
+str_cargo_subtype_blue_crashnose    : > Plava livreja (sa nosom za sudare)
+str_cargo_subtype_grey_crashnose    : > Siva livreja (sa nosom za sudare)
+str_cargo_subtype_accident_brown    : > Smeđa livreja (nesreća vlaka)
+str_cargo_subtype_accident_yellow   : > Žuta livreja (nesreća vlaka)
+str_cargo_subtype_Jules             : > "Jules"
 
 str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_ELD2              :(ElD2)
@@ -121,103 +121,103 @@ str_cargo_subtype_ELD3              :(ElD3)
 str_cargo_subtype_ELD4              :(ElD4)
 str_cargo_subtype_ELD5              :(ElD5)
 
-str_cargo_subtype_benelux           :> Benelux livreja
-str_cargo_subtype_benelux_nocab     :> Benelux livreja, bez stražnjeg upravljačkog vagona
-str_cargo_subtype_benelux_plandcab  :> Benelux livreja sa Plan D stražnjim upravljačkim vagonom
-str_cargo_subtype_citypendel        :> Citypendel livreja
-str_cargo_subtype_ddar              :> DDM-2/3 livreja
-str_cargo_subtype_ddm_nocab         :> DDM livreja, bez stražnjeg upravljačkog vagona
-str_cargo_subtype_ddm1              :> DDM-1 livreja
-str_cargo_subtype_football          :> Livreja svjetskog prvenstva u nogometu
-str_cargo_subtype_freedom           :> Freedom livreja
-str_cargo_subtype_fyra              :> Fyra livreja
-str_cargo_subtype_fyra_red          :> Fyra (crvena) livreja
-str_cargo_subtype_fyra_white        :> Fyra (bijela) livreja
-str_cargo_subtype_groningen         :> Groningen Mendini livreja
-str_cargo_subtype_icplus            :> IC+ livreja (svibanj 28, 1995 - lipanj 2002)
-str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Express"
-str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Express"
-str_cargo_subtype_kinderboeken      :> Livreja Tjedan dječje knjige
-str_cargo_subtype_hispeed           :> NS Hispeed livreja
-str_cargo_subtype_hispeed_nocab     :> NS Hispeed livreja, bez stražnjeg upravljačkog vagona
-str_cargo_subtype_maashopper        :> Veolia bijelo-crvena "Maashopper" livreja
-str_cargo_subtype_nid               :> NID livreja
-str_cargo_subtype_ns_ic             :> NS InterCity livreja
-str_cargo_subtype_ns_ic_nocab       :> NS InterCity livreja, bez stražnjeg upravljačkog vagona
-str_cargo_subtype_olympic           :> Olimpijska livreja
-str_cargo_subtype_original          :> Originalna livreja
-str_cargo_subtype_ovchip            :> OV Chipkaart livreja
-str_cargo_subtype_overnightexpress  :> Overnight Express livreja
-str_cargo_subtype_prototype         :> Prototip livreja
-str_cargo_subtype_randstadrail      :> RandstadRail livreja
-str_cargo_subtype_renewal           :> Renewal livreja
-str_cargo_subtype_sr10              :> Sr10 Royal ICR livery (prosinac 22, 1993 - danas)
-str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter" livreja sa loptama za plažu
-str_cargo_subtype_strandsprinter    :> "Strandsprinter" livreja
-str_cargo_subtype_TGV_PBKA          :> PBKA livreja
-str_cargo_subtype_TGV_PBA           :> PBA livreja
-str_cargo_subtype_valleilijn_yellow_blue    :> Valleilijn žuto-plava livreja
-str_cargo_subtype_valleilijn_blue_yellownose :> Valleilijn plava livreja sa žutim nosom
-str_cargo_subtype_valleilijn_blue           :> Valleilijn plava livreja (izmišljena)
-str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker" livreja
-str_cargo_subtype_zilverrail        :> Zilverrail livreja (listopad 24-27, 2005)
+str_cargo_subtype_benelux           : > Benelux livreja
+str_cargo_subtype_benelux_nocab     : > Benelux livreja, bez stražnjeg upravljačkog vagona
+str_cargo_subtype_benelux_plandcab  : > Benelux livreja sa Plan D stražnjim upravljačkim vagonom
+str_cargo_subtype_citypendel        : > Citypendel livreja
+str_cargo_subtype_ddar              : > DDM-2/3 livreja
+str_cargo_subtype_ddm_nocab         : > DDM livreja, bez stražnjeg upravljačkog vagona
+str_cargo_subtype_ddm1              : > DDM-1 livreja
+str_cargo_subtype_football          : > Livreja svjetskog prvenstva u nogometu
+str_cargo_subtype_freedom           : > Freedom livreja
+str_cargo_subtype_fyra              : > Fyra livreja
+str_cargo_subtype_fyra_red          : > Fyra (crvena) livreja
+str_cargo_subtype_fyra_white        : > Fyra (bijela) livreja
+str_cargo_subtype_groningen         : > Groningen Mendini livreja
+str_cargo_subtype_icplus            : > IC+ livreja (svibanj 28, 1995 - lipanj 2002)
+str_cargo_subtype_kennemerstrand    : > Lovers Rail "Kennemerstrand Express"
+str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Express"
+str_cargo_subtype_kinderboeken      : > Livreja Tjedan dječje knjige
+str_cargo_subtype_hispeed           : > NS Hispeed livreja
+str_cargo_subtype_hispeed_nocab     : > NS Hispeed livreja, bez stražnjeg upravljačkog vagona
+str_cargo_subtype_maashopper        : > Veolia bijelo-crvena "Maashopper" livreja
+str_cargo_subtype_nid               : > NID livreja
+str_cargo_subtype_ns_ic             : > NS InterCity livreja
+str_cargo_subtype_ns_ic_nocab       : > NS InterCity livreja, bez stražnjeg upravljačkog vagona
+str_cargo_subtype_olympic           : > Olimpijska livreja
+str_cargo_subtype_original          : > Originalna livreja
+str_cargo_subtype_ovchip            : > OV Chipkaart livreja
+str_cargo_subtype_overnightexpress  : > Overnight Express livreja
+str_cargo_subtype_prototype         : > Prototip livreja
+str_cargo_subtype_randstadrail      : > RandstadRail livreja
+str_cargo_subtype_renewal           : > Renewal livreja
+str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (prosinac 22, 1993 - danas)
+str_cargo_subtype_strandsprinter_beachballs : > "Strandsprinter" livreja sa loptama za plažu
+str_cargo_subtype_strandsprinter    : > "Strandsprinter" livreja
+str_cargo_subtype_TGV_PBKA          : > PBKA livreja
+str_cargo_subtype_TGV_PBA           : > PBA livreja
+str_cargo_subtype_valleilijn_yellow_blue    : > Valleilijn žuto-plava livreja
+str_cargo_subtype_valleilijn_blue_yellownose : > Valleilijn plava livreja sa žutim nosom
+str_cargo_subtype_valleilijn_blue           : > Valleilijn plava livreja (izmišljena)
+str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" livreja
+str_cargo_subtype_zilverrail        : > Zilverrail livreja (listopad 24-27, 2005)
 
-str_cargo_subtype_ACTS              :> ACTS livreja
-str_cargo_subtype_ACTS_blue_yellow  :> ACTS (plavo-žuta) livreja
-str_cargo_subtype_ACTS_grey_green   :> ACTS (sivo-zelena) livreja
-str_cargo_subtype_Arriva            :> Arriva livreja
-str_cargo_subtype_Arriva_spurt      :> Arriva "Spurt" livreja
-str_cargo_subtype_Arriva_vechtdallijnen :> Arriva "Vechtdallijnen" livreja
-str_cargo_subtype_Breng             :> Breng livreja
-str_cargo_subtype_Captrain          :> Captrain livreja
-str_cargo_subtype_Crossrail         :> Crossrail livreja
-str_cargo_subtype_DBSchenker        :> DB Schenker livreja
-str_cargo_subtype_DLC               :> DLC livreja
-str_cargo_subtype_ERS               :> ERS livreja
-str_cargo_subtype_EETC              :> Euro Express Treincharter livreja
-str_cargo_subtype_HerikRail         :> Herik Rail livreja
-str_cargo_subtype_HGK               :> HGK livreja
-str_cargo_subtype_HSM               :> Hollandsche IJzeren Spoorweg-Maatschappij livreja
-str_cargo_subtype_HUSA              :> HUSA livreja
-str_cargo_subtype_Locon             :> Locon livreja
-str_cargo_subtype_NBDS              :> Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livreja
-str_cargo_subtype_NCS               :> Nederlandsche Centraal-Spoorweg-Maatschappij livreja
-str_cargo_subtype_NCS_tender        :> NCS livreja (tender lokomotiva)
-str_cargo_subtype_NCS_tank          :> NCS livreja (tank lokomotiva)
-str_cargo_subtype_nedtrain          :> NedTrain livreja
-str_cargo_subtype_NS                :> NS livreja
-str_cargo_subtype_NS_tank           :> NS livreja (tank lokomotiva)
-str_cargo_subtype_NS_whiteroof      :> NS livreja sa bijelim krovom
-str_cargo_subtype_NSCargo           :> NS Cargo livreja
-str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (zelena) livreja
-str_cargo_subtype_Rail4Chem_red     :> Rail4Chem (crvena) livreja
-str_cargo_subtype_Rail4Chem_grey_yellow :> Rail4Chem (sivo-žuta) livreja
-str_cargo_subtype_Railion           :> Railion (druga) livreja
-str_cargo_subtype_Railion_regular   :> Railion livreja
-str_cargo_subtype_Railion_red       :> Railion (crvena) livreja
-str_cargo_subtype_Railpro           :> Railpro livreja
-str_cargo_subtype_staatsmijnen      :> Staatsmijnen livreja
-str_cargo_subtype_SS                :> Staatsspoorwegen livreja
-str_cargo_subtype_SS_tank           :> SS livreja (tank lokomotiva)
-str_cargo_subtype_SS_NS             :> Staatsspoorwegen / NS livreja
-str_cargo_subtype_Strukton          :> Strukton livreja
-str_cargo_subtype_Syntus            :> Syntus livreja
-str_cargo_subtype_Twents            :> Twents livreja
-str_cargo_subtype_Veolia            :> Veolia livreja
-str_cargo_subtype_Veolia_velios     :> Veolia "Velios" livreja
-str_cargo_subtype_Veolia_white_red  :> Veolia (bijelo-crvena) livreja
-str_cargo_subtype_Veolia_black      :> Veolia (crna) livreja
-str_cargo_subtype_VOSlogistics      :> VOS Logistics livreja
+str_cargo_subtype_ACTS              : > ACTS livreja
+str_cargo_subtype_ACTS_blue_yellow  : > ACTS (plavo-žuta) livreja
+str_cargo_subtype_ACTS_grey_green   : > ACTS (sivo-zelena) livreja
+str_cargo_subtype_Arriva            : > Arriva livreja
+str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" livreja
+str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" livreja
+str_cargo_subtype_Breng             : > Breng livreja
+str_cargo_subtype_Captrain          : > Captrain livreja
+str_cargo_subtype_Crossrail         : > Crossrail livreja
+str_cargo_subtype_DBSchenker        : > DB Schenker livreja
+str_cargo_subtype_DLC               : > DLC livreja
+str_cargo_subtype_ERS               : > ERS livreja
+str_cargo_subtype_EETC              : > Euro Express Treincharter livreja
+str_cargo_subtype_HerikRail         : > Herik Rail livreja
+str_cargo_subtype_HGK               : > HGK livreja
+str_cargo_subtype_HSM               : > Hollandsche IJzeren Spoorweg-Maatschappij livreja
+str_cargo_subtype_HUSA              : > HUSA livreja
+str_cargo_subtype_Locon             : > Locon livreja
+str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livreja
+str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livreja
+str_cargo_subtype_NCS_tender        : > NCS livreja (tender lokomotiva)
+str_cargo_subtype_NCS_tank          : > NCS livreja (tank lokomotiva)
+str_cargo_subtype_nedtrain          : > NedTrain livreja
+str_cargo_subtype_NS                : > NS livreja
+str_cargo_subtype_NS_tank           : > NS livreja (tank lokomotiva)
+str_cargo_subtype_NS_whiteroof      : > NS livreja sa bijelim krovom
+str_cargo_subtype_NSCargo           : > NS Cargo livreja
+str_cargo_subtype_Rail4Chem_green   : > Rail4Chem (zelena) livreja
+str_cargo_subtype_Rail4Chem_red     : > Rail4Chem (crvena) livreja
+str_cargo_subtype_Rail4Chem_grey_yellow : > Rail4Chem (sivo-žuta) livreja
+str_cargo_subtype_Railion           : > Railion (druga) livreja
+str_cargo_subtype_Railion_regular   : > Railion livreja
+str_cargo_subtype_Railion_red       : > Railion (crvena) livreja
+str_cargo_subtype_Railpro           : > Railpro livreja
+str_cargo_subtype_staatsmijnen      : > Staatsmijnen livreja
+str_cargo_subtype_SS                : > Staatsspoorwegen livreja
+str_cargo_subtype_SS_tank           : > SS livreja (tank lokomotiva)
+str_cargo_subtype_SS_NS             : > Staatsspoorwegen / NS livreja
+str_cargo_subtype_Strukton          : > Strukton livreja
+str_cargo_subtype_Syntus            : > Syntus livreja
+str_cargo_subtype_Twents            : > Twents livreja
+str_cargo_subtype_Veolia            : > Veolia livreja
+str_cargo_subtype_Veolia_velios     : > Veolia "Velios" livreja
+str_cargo_subtype_Veolia_white_red  : > Veolia (bijelo-crvena) livreja
+str_cargo_subtype_Veolia_black      : > Veolia (crna) livreja
+str_cargo_subtype_VOSlogistics      : > VOS Logistics livreja
 
-str_cargo_subtype_brown_cows        :> Smeđa (krave) livreja
-str_cargo_subtype_brown_pigs        :> Smeđa (svinje) livreja
-str_cargo_subtype_grey_cows         :> Siva (krave) livreja
-str_cargo_subtype_grey_pigs         :> Siva (svinje) livreja
+str_cargo_subtype_brown_cows        : > Smeđa (krave) livreja
+str_cargo_subtype_brown_pigs        : > Smeđa (svinje) livreja
+str_cargo_subtype_grey_cows         : > Siva (krave) livreja
+str_cargo_subtype_grey_pigs         : > Siva (svinje) livreja
 
-str_cargo_subtype_transformer :> Livreja tereta transformatora
-str_cargo_subtype_house             :> Livreja tereta kuće
-str_cargo_subtype_train             :> Livreja tereta vlaka
-str_cargo_subtype_tractor           :> Livreja tereta traktora
+str_cargo_subtype_transformer : > Livreja tereta transformatora
+str_cargo_subtype_house             : > Livreja tereta kuće
+str_cargo_subtype_train             : > Livreja tereta vlaka
+str_cargo_subtype_tractor           : > Livreja tereta traktora
 
 #steam
 str_steam_Arend         :HSM "Arend" (Para)

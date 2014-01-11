@@ -19,35 +19,35 @@ STR_PARAM_TIMES_16                  :16
 STR_PARAM_TRACK_POWER                           :Multisystem-Antrieb
 
 #cargo subtype livery strings
-str_cargo_subtype_auto              :> Lackierung automatisch ans Spieljahr anpassen
-str_cargo_subtype_purchase          :> Gängige Lackierung im Jahr der Indienststellung
-str_cargo_subtype_random            :> Zufällige Lackierung
-str_cargo_subtype_matching          :> Lackierung an die Lokomotive anpassen
+str_cargo_subtype_auto              : > Lackierung automatisch ans Spieljahr anpassen
+str_cargo_subtype_purchase          : > Gängige Lackierung im Jahr der Indienststellung
+str_cargo_subtype_random            : > Zufällige Lackierung
+str_cargo_subtype_matching          : > Lackierung an die Lokomotive anpassen
 
-str_cargo_subtype_blue_red          :> Blaue Lackierung mit roten Streifen
-str_cargo_subtype_blue_white        :> Blau-weiße Lackierung
-str_cargo_subtype_green             :> Grüne Lackierung
-str_cargo_subtype_grey_dark         :> dunkelgraue Lakierung
-str_cargo_subtype_red_greydoors     :> Rote Lackierung mit grauen Türen
-str_cargo_subtype_silver_blue       :> Silber-blaue Lackierung
-str_cargo_subtype_yellow_blue       :> Gelbe Lackierung mit blauen Streifen
+str_cargo_subtype_blue_red          : > Blaue Lackierung mit roten Streifen
+str_cargo_subtype_blue_white        : > Blau-weiße Lackierung
+str_cargo_subtype_green             : > Grüne Lackierung
+str_cargo_subtype_grey_dark         : > dunkelgraue Lakierung
+str_cargo_subtype_red_greydoors     : > Rote Lackierung mit grauen Türen
+str_cargo_subtype_silver_blue       : > Silber-blaue Lackierung
+str_cargo_subtype_yellow_blue       : > Gelbe Lackierung mit blauen Streifen
 
 
 str_cargo_subtype_ELD2              :(ElD2)
 
-str_cargo_subtype_ddm1              :> DDM-1 Lackierung
-str_cargo_subtype_original          :> Orginallackierung
+str_cargo_subtype_ddm1              : > DDM-1 Lackierung
+str_cargo_subtype_original          : > Orginallackierung
 str_cargo_subtype_strandsprinter_beachballs : "Strandsprinter" Lackierung mit Wasserbällen
-str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker" Lackierung
-str_cargo_subtype_zilverrail        :> Zilverrail Lackierung (24. - 27. Okt. 2005)
+str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" Lackierung
+str_cargo_subtype_zilverrail        : > Zilverrail Lackierung (24. - 27. Okt. 2005)
 
-str_cargo_subtype_EETC              :> Euro Express Treincharter Lakierung
-str_cargo_subtype_HerikRail         :> Herik Schienen-Lackierung
-str_cargo_subtype_NS                :> NS Lackierung
-str_cargo_subtype_Rail4Chem_green   :> Lakierung Rail4Chem (grün)
+str_cargo_subtype_EETC              : > Euro Express Treincharter Lakierung
+str_cargo_subtype_HerikRail         : > Herik Schienen-Lackierung
+str_cargo_subtype_NS                : > NS Lackierung
+str_cargo_subtype_Rail4Chem_green   : > Lakierung Rail4Chem (grün)
 
 
-str_cargo_subtype_tractor           :> Lackierung der Traktoren-Fracht
+str_cargo_subtype_tractor           : > Lackierung der Traktoren-Fracht
 
 #steam
 str_steam_NCS1          :NS 7200 (Dampf)

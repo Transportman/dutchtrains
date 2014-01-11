@@ -41,75 +41,75 @@ STR_PARAM_TRACK_POWER_OFF                       :Altijd hoogste vermogen
 STR_PARAM_TRACK_POWER_ON                        :Afhankelijk van spoor indien geschikte spoorset geladen is (standaard)
 
 #cargo subtype livery strings
-str_cargo_subtype_auto              :> Jaar-afhankelijke kleurstelling
-str_cargo_subtype_purchase          :> Aankoop-afhankelijke kleurstelling
-str_cargo_subtype_random            :> Willekeurige kleurstelling
-str_cargo_subtype_matching          :> Bij locomotief passende kleurstelling
+str_cargo_subtype_auto              : > Jaar-afhankelijke kleurstelling
+str_cargo_subtype_purchase          : > Aankoop-afhankelijke kleurstelling
+str_cargo_subtype_random            : > Willekeurige kleurstelling
+str_cargo_subtype_matching          : > Bij locomotief passende kleurstelling
 
-str_cargo_subtype_bordeaux          :> Bordeauxkleurstelling
-str_cargo_subtype_bordeaux_white            :> Bordeauxkleurstelling met wit
-str_cargo_subtype_bordeaux_white_blue       :> Bordeauxkleurstelling met wit/blauw
-str_cargo_subtype_bordeaux_white_yellow     :> Bordeauxkleurstelling met wit/geel
-str_cargo_subtype_black             :> Zwarte kleurstelling
-str_cargo_subtype_blue              :> Blauwe kleurstelling
-str_cargo_subtype_blue_greyish      :> Grijsblauwe kleurstelling
-str_cargo_subtype_lighterblue       :> Enigszins lichter blauwe kleurstelling
-str_cargo_subtype_blue_banners      :> Blauwe kleurstelling met reclamebanen
-str_cargo_subtype_blue_red          :> Blauwe kleurstelling met rode strepen
-str_cargo_subtype_blue_red_silverroof       :> Blauwe kleurstelling met rode strepen en zilver dak
-str_cargo_subtype_blue_red_yellowmoustache  :> Blauwe kleurstelling met rode strepen en gele snor
-str_cargo_subtype_blue_yellow       :> Blauwe kleurstelling met gele strepen
-str_cargo_subtype_blue_lightyellow  :> Blauwe kleurstelling met lichtgele strepen
-str_cargo_subtype_blue_darkyellow   :> Blauwe kleurstelling met donkergele strepen
-str_cargo_subtype_blue_white        :> Blauwe/witte kleurstelling
-str_cargo_subtype_brown             :> Bruine kleurstelling
-str_cargo_subtype_brown_yellowfront :> Bruine kleurstelling met gele neus
-str_cargo_subtype_brown_other       :> Andere Bruine kleurstelling
-str_cargo_subtype_brown_light       :> Lichtbruine kleurstelling
-str_cargo_subtype_brown_dark        :> Donkerbruine kleurstelling
-str_cargo_subtype_brown_greenish    :> Groenbruine kleurstelling
-str_cargo_subtype_brown_reddish     :> Roodbruine kleurstelling
-str_cargo_subtype_green             :> Groene kleurstelling
-str_cargo_subtype_green_lightroof   :> Groene kleurstelling met licht dak
-str_cargo_subtype_green_darkroof    :> Groene kleurstelling met donker dak
-str_cargo_subtype_green_moustache   :> Groene kleurstelling met snor
-str_cargo_subtype_green_red         :> Groene kleurstelling met rode strepen
-str_cargo_subtype_green_yellow      :> Groene kleurstelling met gele strepen
-str_cargo_subtype_green_yellow_blue :> Groene kleurstelling met gele strepen en reclamebanen
-str_cargo_subtype_green_white       :> Groene/witte kleurstelling
-str_cargo_subtype_green_lightyellow :> Groene/licht gele kleurstelling
-str_cargo_subtype_grey              :> Grijze kleurstelling
-str_cargo_subtype_grey_dark         :> Donkergrijze kleurstelling
-str_cargo_subtype_grey_light        :> Lichtgrijze kleurstelling
-str_cargo_subtype_purple            :> Paarse kleurstelling
-str_cargo_subtype_red               :> Rode kleurstelling
-str_cargo_subtype_red_greydoors     :> Rode kleurstelling met grijze deuren
-str_cargo_subtype_red_light         :> Lichtrode kleurstelling
-str_cargo_subtype_red_pinkish       :> Roze-rode kleurstelling
-str_cargo_subtype_red_blue          :> Rood/blauwe kleurstelling
-str_cargo_subtype_red_yellow        :> Rode kleurstelling met gele strepen
-str_cargo_subtype_red_yellow_blue   :> Rode kleurstelling met gele strepen en reclamebanen
-str_cargo_subtype_olive_silverroof  :> Olijfkleurstelling met licht dak
-str_cargo_subtype_olive_greyroof    :> Olijfkleurstelling met donker dak
-str_cargo_subtype_salmon            :> Zalmkleurstelling
-str_cargo_subtype_silver_blue       :> Zilver/blauwe kleurstelling
-str_cargo_subtype_silver_green      :> Zilver/groene kleurstelling
-str_cargo_subtype_silver_red        :> Zilver/rode kleurstelling
-str_cargo_subtype_turquoise         :> Turquoise kleurstelling
-str_cargo_subtype_yellow            :> Gele kleurstelling
-str_cargo_subtype_yellow_blue       :> Gele kleurstelling met reclamebanen
-str_cargo_subtype_yellow_blue_ic    :> Geel/blauwe InterCity kleurstelling
-str_cargo_subtype_yellow_red        :> Geel/rode kleurstelling
-str_cargo_subtype_white             :> Witte kleurstelling
-str_cargo_subtype_white_blue        :> Witte/blauwe kleurstelling
-str_cargo_subtype_white_red         :> Witte/rode kleurstelling
-str_cargo_subtype_white_yellow      :> Witte/gele kleurstelling
+str_cargo_subtype_bordeaux          : > Bordeauxkleurstelling
+str_cargo_subtype_bordeaux_white            : > Bordeauxkleurstelling met wit
+str_cargo_subtype_bordeaux_white_blue       : > Bordeauxkleurstelling met wit/blauw
+str_cargo_subtype_bordeaux_white_yellow     : > Bordeauxkleurstelling met wit/geel
+str_cargo_subtype_black             : > Zwarte kleurstelling
+str_cargo_subtype_blue              : > Blauwe kleurstelling
+str_cargo_subtype_blue_greyish      : > Grijsblauwe kleurstelling
+str_cargo_subtype_lighterblue       : > Enigszins lichter blauwe kleurstelling
+str_cargo_subtype_blue_banners      : > Blauwe kleurstelling met reclamebanen
+str_cargo_subtype_blue_red          : > Blauwe kleurstelling met rode strepen
+str_cargo_subtype_blue_red_silverroof       : > Blauwe kleurstelling met rode strepen en zilver dak
+str_cargo_subtype_blue_red_yellowmoustache  : > Blauwe kleurstelling met rode strepen en gele snor
+str_cargo_subtype_blue_yellow       : > Blauwe kleurstelling met gele strepen
+str_cargo_subtype_blue_lightyellow  : > Blauwe kleurstelling met lichtgele strepen
+str_cargo_subtype_blue_darkyellow   : > Blauwe kleurstelling met donkergele strepen
+str_cargo_subtype_blue_white        : > Blauwe/witte kleurstelling
+str_cargo_subtype_brown             : > Bruine kleurstelling
+str_cargo_subtype_brown_yellowfront : > Bruine kleurstelling met gele neus
+str_cargo_subtype_brown_other       : > Andere Bruine kleurstelling
+str_cargo_subtype_brown_light       : > Lichtbruine kleurstelling
+str_cargo_subtype_brown_dark        : > Donkerbruine kleurstelling
+str_cargo_subtype_brown_greenish    : > Groenbruine kleurstelling
+str_cargo_subtype_brown_reddish     : > Roodbruine kleurstelling
+str_cargo_subtype_green             : > Groene kleurstelling
+str_cargo_subtype_green_lightroof   : > Groene kleurstelling met licht dak
+str_cargo_subtype_green_darkroof    : > Groene kleurstelling met donker dak
+str_cargo_subtype_green_moustache   : > Groene kleurstelling met snor
+str_cargo_subtype_green_red         : > Groene kleurstelling met rode strepen
+str_cargo_subtype_green_yellow      : > Groene kleurstelling met gele strepen
+str_cargo_subtype_green_yellow_blue : > Groene kleurstelling met gele strepen en reclamebanen
+str_cargo_subtype_green_white       : > Groene/witte kleurstelling
+str_cargo_subtype_green_lightyellow : > Groene/licht gele kleurstelling
+str_cargo_subtype_grey              : > Grijze kleurstelling
+str_cargo_subtype_grey_dark         : > Donkergrijze kleurstelling
+str_cargo_subtype_grey_light        : > Lichtgrijze kleurstelling
+str_cargo_subtype_purple            : > Paarse kleurstelling
+str_cargo_subtype_red               : > Rode kleurstelling
+str_cargo_subtype_red_greydoors     : > Rode kleurstelling met grijze deuren
+str_cargo_subtype_red_light         : > Lichtrode kleurstelling
+str_cargo_subtype_red_pinkish       : > Roze-rode kleurstelling
+str_cargo_subtype_red_blue          : > Rood/blauwe kleurstelling
+str_cargo_subtype_red_yellow        : > Rode kleurstelling met gele strepen
+str_cargo_subtype_red_yellow_blue   : > Rode kleurstelling met gele strepen en reclamebanen
+str_cargo_subtype_olive_silverroof  : > Olijfkleurstelling met licht dak
+str_cargo_subtype_olive_greyroof    : > Olijfkleurstelling met donker dak
+str_cargo_subtype_salmon            : > Zalmkleurstelling
+str_cargo_subtype_silver_blue       : > Zilver/blauwe kleurstelling
+str_cargo_subtype_silver_green      : > Zilver/groene kleurstelling
+str_cargo_subtype_silver_red        : > Zilver/rode kleurstelling
+str_cargo_subtype_turquoise         : > Turquoise kleurstelling
+str_cargo_subtype_yellow            : > Gele kleurstelling
+str_cargo_subtype_yellow_blue       : > Gele kleurstelling met reclamebanen
+str_cargo_subtype_yellow_blue_ic    : > Geel/blauwe InterCity kleurstelling
+str_cargo_subtype_yellow_red        : > Geel/rode kleurstelling
+str_cargo_subtype_white             : > Witte kleurstelling
+str_cargo_subtype_white_blue        : > Witte/blauwe kleurstelling
+str_cargo_subtype_white_red         : > Witte/rode kleurstelling
+str_cargo_subtype_white_yellow      : > Witte/gele kleurstelling
 
-str_cargo_subtype_blue_crashnose    :> Blauwe kleurstelling (met botsneus)
-str_cargo_subtype_grey_crashnose    :> Grijze kleurstelling (met botsneus)
-str_cargo_subtype_accident_brown    :> Bruine kleurstelling (ongevallentrein)
-str_cargo_subtype_accident_yellow   :> Gele kleurstelling (ongevallentrein)
-str_cargo_subtype_Jules             :> "Jules"
+str_cargo_subtype_blue_crashnose    : > Blauwe kleurstelling (met botsneus)
+str_cargo_subtype_grey_crashnose    : > Grijze kleurstelling (met botsneus)
+str_cargo_subtype_accident_brown    : > Bruine kleurstelling (ongevallentrein)
+str_cargo_subtype_accident_yellow   : > Gele kleurstelling (ongevallentrein)
+str_cargo_subtype_Jules             : > "Jules"
 
 str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_ELD2              :(ElD2)
@@ -118,103 +118,103 @@ str_cargo_subtype_ELD3              :(ElD3)
 str_cargo_subtype_ELD4              :(ElD4)
 str_cargo_subtype_ELD5              :(ElD5)
 
-str_cargo_subtype_benelux           :> Benelux kleurstelling
-str_cargo_subtype_benelux_nocab     :> Benelux kleurstelling, zonder stuurstand
-str_cargo_subtype_benelux_plandcab  :> Benelux kleurstelling met Plan D stuurstand
-str_cargo_subtype_citypendel        :> Citypendel kleurstelling
-str_cargo_subtype_ddar              :> DDM-2/3 kleurstelling
-str_cargo_subtype_ddm_nocab         :> DDM kleurstelling, zonder stuurstand
-str_cargo_subtype_ddm1              :> DDM-1 kleurstelling
-str_cargo_subtype_football          :> WK Voetbal kleurstelling
-str_cargo_subtype_freedom           :> Vrijheidstrein kleurstelling
-str_cargo_subtype_fyra              :> Fyra kleurstelling
-str_cargo_subtype_fyra_red          :> Fyra (rood) kleurstelling
-str_cargo_subtype_fyra_white        :> Fyra (wit) kleurstelling
-str_cargo_subtype_groningen         :> Groningen Mendini kleurstelling
-str_cargo_subtype_icplus            :> IC+ kleurstelling (Mei 28, 1995 - Juni 2002)
-str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Expres"
-str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
-str_cargo_subtype_kinderboeken      :> Kinderboekenweek kleurstelling
-str_cargo_subtype_hispeed           :> NS Hispeed kleurstelling
-str_cargo_subtype_hispeed_nocab     :> NS Hispeed kleurstelling, zonder stuurstand
-str_cargo_subtype_maashopper        :> Veolia wit/rood "Maashopper" kleurstelling
-str_cargo_subtype_nid               :> NID kleurstelling
-str_cargo_subtype_ns_ic             :> NS InterCity kleurstelling
-str_cargo_subtype_ns_ic_nocab       :> NS InterCity kleurstelling, zonder stuurstand
-str_cargo_subtype_olympic           :> Olympische kleurstelling
-str_cargo_subtype_original          :> Originele kleurstelling
-str_cargo_subtype_ovchip            :> OV Chipkaart kleurstelling
-str_cargo_subtype_overnightexpress  :> Overnight Express kleurstelling
-str_cargo_subtype_prototype         :> Prototype kleurstelling
-str_cargo_subtype_randstadrail      :> RandstadRail kleurstelling
-str_cargo_subtype_renewal           :> Gemoderniseerde kleurstelling
-str_cargo_subtype_sr10              :> Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)
-str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter" kleurstelling met strandballen
-str_cargo_subtype_strandsprinter    :> "Strandsprinter" kleurstelling
-str_cargo_subtype_TGV_PBKA          :> PBKA kleurstelling
-str_cargo_subtype_TGV_PBA           :> PBA kleurstelling
-str_cargo_subtype_valleilijn_yellow_blue    :>Valleilijn geel/blauwe kleurstelling
-str_cargo_subtype_valleilijn_blue_yellownose :>Valleilijn blauwe kleurstelling met gele neus
-str_cargo_subtype_valleilijn_blue           :>Valleilijn blauwe kleurstelling (fictief)
-str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker" kleurstelling
-str_cargo_subtype_zilverrail        :> Zilverrail kleurstelling (Oct 24-27, 2005)
+str_cargo_subtype_benelux           : > Benelux kleurstelling
+str_cargo_subtype_benelux_nocab     : > Benelux kleurstelling, zonder stuurstand
+str_cargo_subtype_benelux_plandcab  : > Benelux kleurstelling met Plan D stuurstand
+str_cargo_subtype_citypendel        : > Citypendel kleurstelling
+str_cargo_subtype_ddar              : > DDM-2/3 kleurstelling
+str_cargo_subtype_ddm_nocab         : > DDM kleurstelling, zonder stuurstand
+str_cargo_subtype_ddm1              : > DDM-1 kleurstelling
+str_cargo_subtype_football          : > WK Voetbal kleurstelling
+str_cargo_subtype_freedom           : > Vrijheidstrein kleurstelling
+str_cargo_subtype_fyra              : > Fyra kleurstelling
+str_cargo_subtype_fyra_red          : > Fyra (rood) kleurstelling
+str_cargo_subtype_fyra_white        : > Fyra (wit) kleurstelling
+str_cargo_subtype_groningen         : > Groningen Mendini kleurstelling
+str_cargo_subtype_icplus            : > IC+ kleurstelling (Mei 28, 1995 - Juni 2002)
+str_cargo_subtype_kennemerstrand    : > Lovers Rail "Kennemerstrand Expres"
+str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Expres"
+str_cargo_subtype_kinderboeken      : > Kinderboekenweek kleurstelling
+str_cargo_subtype_hispeed           : > NS Hispeed kleurstelling
+str_cargo_subtype_hispeed_nocab     : > NS Hispeed kleurstelling, zonder stuurstand
+str_cargo_subtype_maashopper        : > Veolia wit/rood "Maashopper" kleurstelling
+str_cargo_subtype_nid               : > NID kleurstelling
+str_cargo_subtype_ns_ic             : > NS InterCity kleurstelling
+str_cargo_subtype_ns_ic_nocab       : > NS InterCity kleurstelling, zonder stuurstand
+str_cargo_subtype_olympic           : > Olympische kleurstelling
+str_cargo_subtype_original          : > Originele kleurstelling
+str_cargo_subtype_ovchip            : > OV Chipkaart kleurstelling
+str_cargo_subtype_overnightexpress  : > Overnight Express kleurstelling
+str_cargo_subtype_prototype         : > Prototype kleurstelling
+str_cargo_subtype_randstadrail      : > RandstadRail kleurstelling
+str_cargo_subtype_renewal           : > Gemoderniseerde kleurstelling
+str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)
+str_cargo_subtype_strandsprinter_beachballs : > "Strandsprinter" kleurstelling met strandballen
+str_cargo_subtype_strandsprinter    : > "Strandsprinter" kleurstelling
+str_cargo_subtype_TGV_PBKA          : > PBKA kleurstelling
+str_cargo_subtype_TGV_PBA           : > PBA kleurstelling
+str_cargo_subtype_valleilijn_yellow_blue    : >Valleilijn geel/blauwe kleurstelling
+str_cargo_subtype_valleilijn_blue_yellownose : >Valleilijn blauwe kleurstelling met gele neus
+str_cargo_subtype_valleilijn_blue           : >Valleilijn blauwe kleurstelling (fictief)
+str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" kleurstelling
+str_cargo_subtype_zilverrail        : > Zilverrail kleurstelling (Oct 24-27, 2005)
 
-str_cargo_subtype_ACTS              :> ACTS kleurstelling
-str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blauw/geel) kleurstelling
-str_cargo_subtype_ACTS_grey_green   :> ACTS (grijs/groen) kleurstelling
-str_cargo_subtype_Arriva            :> Arriva kleurstelling
-str_cargo_subtype_Arriva_spurt      :> Arriva "Spurt" kleurstelling
-str_cargo_subtype_Arriva_vechtdallijnen :> Arriva "Vechtdallijnen" kleurstelling
-str_cargo_subtype_Breng             :> Breng kleurstelling
-str_cargo_subtype_Captrain          :> Captrain kleurstelling
-str_cargo_subtype_Crossrail         :> Crossrail kleurstelling
-str_cargo_subtype_DBSchenker        :> DB Schenker kleurstelling
-str_cargo_subtype_DLC               :> DLC kleurstelling
-str_cargo_subtype_ERS               :> ERS kleurstelling
-str_cargo_subtype_EETC              :> Euro Express Treincharter kleurstelling
-str_cargo_subtype_HerikRail         :> Herik Rail kleurstelling
-str_cargo_subtype_HGK               :> HGK kleurstelling
-str_cargo_subtype_HSM               :> Hollandsche IJzeren Spoorweg-Maatschappij kleurstelling
-str_cargo_subtype_HUSA              :> HUSA kleurstelling
-str_cargo_subtype_Locon             :> Locon kleurstelling
-str_cargo_subtype_NBDS              :> Noord-Brabantsch-Duitsche Spoorweg-Maatschappij kleurstelling
-str_cargo_subtype_NCS               :> Nederlandsche Centraal-Spoorweg-Maatschappij kleurstelling
-str_cargo_subtype_NCS_tender        :> NCS kleurstelling (locomotief met tender)
-str_cargo_subtype_NCS_tank          :> NCS kleurstelling (tenderlocomotief)
-str_cargo_subtype_nedtrain          :> NedTrain kleurstelling
-str_cargo_subtype_NS                :> NS kleurstelling
-str_cargo_subtype_NS_tank           :> NS kleurstelling (tenderlocomotief)
-str_cargo_subtype_NS_whiteroof      :> NS kleurstelling met wit dak
-str_cargo_subtype_NSCargo           :> NS Cargo kleurstelling
-str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (groen) kleurstelling
-str_cargo_subtype_Rail4Chem_red     :> Rail4Chem (rood) kleurstelling
-str_cargo_subtype_Rail4Chem_grey_yellow :> Rail4Chem (grijs/geel) kleurstelling
-str_cargo_subtype_Railion           :> Railion (overgestickerd) kleurstelling
-str_cargo_subtype_Railion_regular   :> Railion kleurstelling
-str_cargo_subtype_Railion_red       :> Railion (rood) kleurstelling
-str_cargo_subtype_Railpro           :> Railpro kleurstelling
-str_cargo_subtype_staatsmijnen      :> Staatsmijnen kleurstelling
-str_cargo_subtype_SS                :> Staatsspoorwegen kleurstelling
-str_cargo_subtype_SS_tank           :> Staatsspoorwegen kleurstelling (tenderlocomotief)
-str_cargo_subtype_SS_NS             :> Staatsspoorwegen / NS kleurstelling
-str_cargo_subtype_Strukton          :> Strukton kleurstelling
-str_cargo_subtype_Syntus            :> Syntus kleurstelling
-str_cargo_subtype_Twents            :> Twents kleurstelling
-str_cargo_subtype_Veolia            :> Veolia kleurstelling
-str_cargo_subtype_Veolia_velios     :> Veolia "Velios" kleurstelling
-str_cargo_subtype_Veolia_white_red  :> Veolia (wit/rood) kleurstelling
-str_cargo_subtype_Veolia_black      :> Veolia (zwart) kleurstelling
-str_cargo_subtype_VOSlogistics      :> VOS Logistics kleurstelling
+str_cargo_subtype_ACTS              : > ACTS kleurstelling
+str_cargo_subtype_ACTS_blue_yellow  : > ACTS (blauw/geel) kleurstelling
+str_cargo_subtype_ACTS_grey_green   : > ACTS (grijs/groen) kleurstelling
+str_cargo_subtype_Arriva            : > Arriva kleurstelling
+str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" kleurstelling
+str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" kleurstelling
+str_cargo_subtype_Breng             : > Breng kleurstelling
+str_cargo_subtype_Captrain          : > Captrain kleurstelling
+str_cargo_subtype_Crossrail         : > Crossrail kleurstelling
+str_cargo_subtype_DBSchenker        : > DB Schenker kleurstelling
+str_cargo_subtype_DLC               : > DLC kleurstelling
+str_cargo_subtype_ERS               : > ERS kleurstelling
+str_cargo_subtype_EETC              : > Euro Express Treincharter kleurstelling
+str_cargo_subtype_HerikRail         : > Herik Rail kleurstelling
+str_cargo_subtype_HGK               : > HGK kleurstelling
+str_cargo_subtype_HSM               : > Hollandsche IJzeren Spoorweg-Maatschappij kleurstelling
+str_cargo_subtype_HUSA              : > HUSA kleurstelling
+str_cargo_subtype_Locon             : > Locon kleurstelling
+str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij kleurstelling
+str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij kleurstelling
+str_cargo_subtype_NCS_tender        : > NCS kleurstelling (locomotief met tender)
+str_cargo_subtype_NCS_tank          : > NCS kleurstelling (tenderlocomotief)
+str_cargo_subtype_nedtrain          : > NedTrain kleurstelling
+str_cargo_subtype_NS                : > NS kleurstelling
+str_cargo_subtype_NS_tank           : > NS kleurstelling (tenderlocomotief)
+str_cargo_subtype_NS_whiteroof      : > NS kleurstelling met wit dak
+str_cargo_subtype_NSCargo           : > NS Cargo kleurstelling
+str_cargo_subtype_Rail4Chem_green   : > Rail4Chem (groen) kleurstelling
+str_cargo_subtype_Rail4Chem_red     : > Rail4Chem (rood) kleurstelling
+str_cargo_subtype_Rail4Chem_grey_yellow : > Rail4Chem (grijs/geel) kleurstelling
+str_cargo_subtype_Railion           : > Railion (overgestickerd) kleurstelling
+str_cargo_subtype_Railion_regular   : > Railion kleurstelling
+str_cargo_subtype_Railion_red       : > Railion (rood) kleurstelling
+str_cargo_subtype_Railpro           : > Railpro kleurstelling
+str_cargo_subtype_staatsmijnen      : > Staatsmijnen kleurstelling
+str_cargo_subtype_SS                : > Staatsspoorwegen kleurstelling
+str_cargo_subtype_SS_tank           : > Staatsspoorwegen kleurstelling (tenderlocomotief)
+str_cargo_subtype_SS_NS             : > Staatsspoorwegen / NS kleurstelling
+str_cargo_subtype_Strukton          : > Strukton kleurstelling
+str_cargo_subtype_Syntus            : > Syntus kleurstelling
+str_cargo_subtype_Twents            : > Twents kleurstelling
+str_cargo_subtype_Veolia            : > Veolia kleurstelling
+str_cargo_subtype_Veolia_velios     : > Veolia "Velios" kleurstelling
+str_cargo_subtype_Veolia_white_red  : > Veolia (wit/rood) kleurstelling
+str_cargo_subtype_Veolia_black      : > Veolia (zwart) kleurstelling
+str_cargo_subtype_VOSlogistics      : > VOS Logistics kleurstelling
 
-str_cargo_subtype_brown_cows        :> Bruine (Koeien) kleurstelling
-str_cargo_subtype_brown_pigs        :> Bruine (Varkens) kleurstelling
-str_cargo_subtype_grey_cows         :> Grijze (Koeien) kleurstelling
-str_cargo_subtype_grey_pigs         :> Grijze (Varkens) kleurstelling
+str_cargo_subtype_brown_cows        : > Bruine (Koeien) kleurstelling
+str_cargo_subtype_brown_pigs        : > Bruine (Varkens) kleurstelling
+str_cargo_subtype_grey_cows         : > Grijze (Koeien) kleurstelling
+str_cargo_subtype_grey_pigs         : > Grijze (Varkens) kleurstelling
 
-str_cargo_subtype_transformer :      :> Transformator lading kleurstelling
-str_cargo_subtype_house             :> Huis lading kleurstelling
-str_cargo_subtype_train             :> Trein lading kleurstelling
-str_cargo_subtype_tractor           :> Traktor lading kleurstelling
+str_cargo_subtype_transformer :      : > Transformator lading kleurstelling
+str_cargo_subtype_house             : > Huis lading kleurstelling
+str_cargo_subtype_train             : > Trein lading kleurstelling
+str_cargo_subtype_tractor           : > Traktor lading kleurstelling
 
 #steam
 str_steam_Arend         :HSM "Arend" (Stoom)

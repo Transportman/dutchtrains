@@ -41,75 +41,75 @@ STR_PARAM_TRACK_POWER_OFF			:Always highest power
 STR_PARAM_TRACK_POWER_ON			:Depend on track when a compatible trackset is loaded (default)
 
 #cargo subtype livery strings
-str_cargo_subtype_auto              :> Year-dependent livery
-str_cargo_subtype_purchase          :> Construction year livery
-str_cargo_subtype_random            :> Random livery
-str_cargo_subtype_matching          :> Engine-matching livery
+str_cargo_subtype_auto              : > Year-dependent livery
+str_cargo_subtype_purchase          : > Construction year livery
+str_cargo_subtype_random            : > Random livery
+str_cargo_subtype_matching          : > Engine-matching livery
 
-str_cargo_subtype_bordeaux          :> Bordeaux livery
-str_cargo_subtype_bordeaux_white            :> Bordeaux livery w/ white
-str_cargo_subtype_bordeaux_white_blue       :> Bordeaux livery w/ white/blue
-str_cargo_subtype_bordeaux_white_yellow     :> Bordeaux livery w/ white/yellow
-str_cargo_subtype_black             :> Black livery
-str_cargo_subtype_blue              :> Blue livery
-str_cargo_subtype_blue_greyish      :> Greyish Blue livery
-str_cargo_subtype_lighterblue       :> Slightly lighter blue livery
-str_cargo_subtype_blue_banners      :> Blue livery w/ banners
-str_cargo_subtype_blue_red          :> Blue livery w/ red stripes
-str_cargo_subtype_blue_red_silverroof       :> Blue livery w/ red stripes and silver roof
-str_cargo_subtype_blue_red_yellowmoustache  :> Blue livery w/ red stripes and yellow moustache
-str_cargo_subtype_blue_yellow       :> Blue livery w/ yellow stripes
-str_cargo_subtype_blue_lightyellow  :> Blue livery w/ light yellow stripes
-str_cargo_subtype_blue_darkyellow   :> Blue livery w/ dark yellow stripes
-str_cargo_subtype_blue_white        :> Blue/white livery
-str_cargo_subtype_brown             :> Brown livery
-str_cargo_subtype_brown_yellowfront :> Brown livery w/ yellow front
-str_cargo_subtype_brown_other       :> Other Brown livery
-str_cargo_subtype_brown_light       :> Light Brown livery
-str_cargo_subtype_brown_dark        :> Dark Brown livery
-str_cargo_subtype_brown_greenish    :> Greenish Brown livery
-str_cargo_subtype_brown_reddish     :> Reddish Brown livery
-str_cargo_subtype_green             :> Green livery
-str_cargo_subtype_green_lightroof   :> Green livery w/ light roof
-str_cargo_subtype_green_darkroof    :> Green livery w/ dark roof
-str_cargo_subtype_green_moustache   :> Green livery w/ moustache
-str_cargo_subtype_green_red         :> Green livery w/ red stripes
-str_cargo_subtype_green_yellow      :> Green livery w/ yellow stripes
-str_cargo_subtype_green_yellow_blue :> Green livery w/ yellow stripes and blue banners
-str_cargo_subtype_green_white       :> Green/white livery
-str_cargo_subtype_green_lightyellow :> Green/light yellow livery
-str_cargo_subtype_grey              :> Grey livery
-str_cargo_subtype_grey_dark         :> Dark Grey livery
-str_cargo_subtype_grey_light        :> Light Grey livery
-str_cargo_subtype_purple            :> Purple livery
-str_cargo_subtype_red               :> Red livery
-str_cargo_subtype_red_greydoors     :> Red livery w/ grey doors
-str_cargo_subtype_red_light         :> Light Red livery
-str_cargo_subtype_red_pinkish       :> Pinkish Red livery
-str_cargo_subtype_red_blue          :> Red/blue livery
-str_cargo_subtype_red_yellow        :> Red livery w/ yellow stripes
-str_cargo_subtype_red_yellow_blue   :> Red livery w/ yellow stripes and blue banners
-str_cargo_subtype_olive_silverroof  :> Olive livery w/ light roof
-str_cargo_subtype_olive_greyroof    :> Olive livery w/ dark roof
-str_cargo_subtype_salmon            :> Salmon livery
-str_cargo_subtype_silver_blue       :> Silver/blue livery
-str_cargo_subtype_silver_green      :> Silver/green livery
-str_cargo_subtype_silver_red        :> Silver/red livery
-str_cargo_subtype_turquoise         :> Turquoise livery
-str_cargo_subtype_yellow            :> Yellow livery
-str_cargo_subtype_yellow_blue       :> Yellow livery w/ blue banners
-str_cargo_subtype_yellow_blue_ic    :> Yellow/blue InterCity livery
-str_cargo_subtype_yellow_red        :> Yellow/red livery
-str_cargo_subtype_white             :> White livery
-str_cargo_subtype_white_blue        :> White/blue livery
-str_cargo_subtype_white_red         :> White/red livery
-str_cargo_subtype_white_yellow      :> White/yellow livery
+str_cargo_subtype_bordeaux          : > Bordeaux livery
+str_cargo_subtype_bordeaux_white            : > Bordeaux livery w/ white
+str_cargo_subtype_bordeaux_white_blue       : > Bordeaux livery w/ white/blue
+str_cargo_subtype_bordeaux_white_yellow     : > Bordeaux livery w/ white/yellow
+str_cargo_subtype_black             : > Black livery
+str_cargo_subtype_blue              : > Blue livery
+str_cargo_subtype_blue_greyish      : > Greyish Blue livery
+str_cargo_subtype_lighterblue       : > Slightly lighter blue livery
+str_cargo_subtype_blue_banners      : > Blue livery w/ banners
+str_cargo_subtype_blue_red          : > Blue livery w/ red stripes
+str_cargo_subtype_blue_red_silverroof       : > Blue livery w/ red stripes and silver roof
+str_cargo_subtype_blue_red_yellowmoustache  : > Blue livery w/ red stripes and yellow moustache
+str_cargo_subtype_blue_yellow       : > Blue livery w/ yellow stripes
+str_cargo_subtype_blue_lightyellow  : > Blue livery w/ light yellow stripes
+str_cargo_subtype_blue_darkyellow   : > Blue livery w/ dark yellow stripes
+str_cargo_subtype_blue_white        : > Blue/white livery
+str_cargo_subtype_brown             : > Brown livery
+str_cargo_subtype_brown_yellowfront : > Brown livery w/ yellow front
+str_cargo_subtype_brown_other       : > Other Brown livery
+str_cargo_subtype_brown_light       : > Light Brown livery
+str_cargo_subtype_brown_dark        : > Dark Brown livery
+str_cargo_subtype_brown_greenish    : > Greenish Brown livery
+str_cargo_subtype_brown_reddish     : > Reddish Brown livery
+str_cargo_subtype_green             : > Green livery
+str_cargo_subtype_green_lightroof   : > Green livery w/ light roof
+str_cargo_subtype_green_darkroof    : > Green livery w/ dark roof
+str_cargo_subtype_green_moustache   : > Green livery w/ moustache
+str_cargo_subtype_green_red         : > Green livery w/ red stripes
+str_cargo_subtype_green_yellow      : > Green livery w/ yellow stripes
+str_cargo_subtype_green_yellow_blue : > Green livery w/ yellow stripes and blue banners
+str_cargo_subtype_green_white       : > Green/white livery
+str_cargo_subtype_green_lightyellow : > Green/light yellow livery
+str_cargo_subtype_grey              : > Grey livery
+str_cargo_subtype_grey_dark         : > Dark Grey livery
+str_cargo_subtype_grey_light        : > Light Grey livery
+str_cargo_subtype_purple            : > Purple livery
+str_cargo_subtype_red               : > Red livery
+str_cargo_subtype_red_greydoors     : > Red livery w/ grey doors
+str_cargo_subtype_red_light         : > Light Red livery
+str_cargo_subtype_red_pinkish       : > Pinkish Red livery
+str_cargo_subtype_red_blue          : > Red/blue livery
+str_cargo_subtype_red_yellow        : > Red livery w/ yellow stripes
+str_cargo_subtype_red_yellow_blue   : > Red livery w/ yellow stripes and blue banners
+str_cargo_subtype_olive_silverroof  : > Olive livery w/ light roof
+str_cargo_subtype_olive_greyroof    : > Olive livery w/ dark roof
+str_cargo_subtype_salmon            : > Salmon livery
+str_cargo_subtype_silver_blue       : > Silver/blue livery
+str_cargo_subtype_silver_green      : > Silver/green livery
+str_cargo_subtype_silver_red        : > Silver/red livery
+str_cargo_subtype_turquoise         : > Turquoise livery
+str_cargo_subtype_yellow            : > Yellow livery
+str_cargo_subtype_yellow_blue       : > Yellow livery w/ blue banners
+str_cargo_subtype_yellow_blue_ic    : > Yellow/blue InterCity livery
+str_cargo_subtype_yellow_red        : > Yellow/red livery
+str_cargo_subtype_white             : > White livery
+str_cargo_subtype_white_blue        : > White/blue livery
+str_cargo_subtype_white_red         : > White/red livery
+str_cargo_subtype_white_yellow      : > White/yellow livery
 
-str_cargo_subtype_blue_crashnose    :> Blue livery (with crashnose)
-str_cargo_subtype_grey_crashnose    :> Grey livery (with crashnose)
-str_cargo_subtype_accident_brown    :> Brown livery (accident train)
-str_cargo_subtype_accident_yellow   :> Yellow livery (accident train)
-str_cargo_subtype_Jules             :> "Jules"
+str_cargo_subtype_blue_crashnose    : > Blue livery (with crashnose)
+str_cargo_subtype_grey_crashnose    : > Grey livery (with crashnose)
+str_cargo_subtype_accident_brown    : > Brown livery (accident train)
+str_cargo_subtype_accident_yellow   : > Yellow livery (accident train)
+str_cargo_subtype_Jules             : > "Jules"
 
 str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_ELD2              :(ElD2)
@@ -118,103 +118,103 @@ str_cargo_subtype_ELD3              :(ElD3)
 str_cargo_subtype_ELD4              :(ElD4)
 str_cargo_subtype_ELD5              :(ElD5)
 
-str_cargo_subtype_benelux           :> Benelux livery
-str_cargo_subtype_benelux_nocab     :> Benelux livery, no cab control
-str_cargo_subtype_benelux_plandcab  :> Benelux livery w/ Plan D cab
-str_cargo_subtype_citypendel        :> Citypendel livery
-str_cargo_subtype_ddar              :> DDM-2/3 livery
-str_cargo_subtype_ddm_nocab         :> DDM livery, no cab control
-str_cargo_subtype_ddm1              :> DDM-1 livery
-str_cargo_subtype_football          :> World Cup Football livery
-str_cargo_subtype_freedom           :> Freedom livery
-str_cargo_subtype_fyra              :> Fyra livery
-str_cargo_subtype_fyra_red          :> Fyra (red) livery
-str_cargo_subtype_fyra_white        :> Fyra (white) livery
-str_cargo_subtype_groningen         :> Groningen Mendini livery
-str_cargo_subtype_icplus            :> IC+ livery (May 28, 1995 - June 2002)
-str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Expres"
-str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
-str_cargo_subtype_kinderboeken      :> Week of Children's Books livery
-str_cargo_subtype_hispeed           :> NS Hispeed livery
-str_cargo_subtype_hispeed_nocab     :> NS Hispeed livery, no cab control
-str_cargo_subtype_maashopper        :> Veolia white/red "Maashopper" livery
-str_cargo_subtype_nid               :> NID livery
-str_cargo_subtype_ns_ic             :> NS InterCity livery
-str_cargo_subtype_ns_ic_nocab       :> NS InterCity livery, no cab control
-str_cargo_subtype_olympic           :> Olympic livery
-str_cargo_subtype_original          :> Original livery
-str_cargo_subtype_ovchip            :> OV Chipkaart livery
-str_cargo_subtype_overnightexpress  :> Overnight Express livery
-str_cargo_subtype_prototype         :> Prototype livery
-str_cargo_subtype_randstadrail      :> RandstadRail livery
-str_cargo_subtype_renewal           :> Renewal livery
-str_cargo_subtype_sr10              :> Sr10 Royal ICR livery (Dec 22, 1993 - current)
-str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter" livery w/ beachballs
-str_cargo_subtype_strandsprinter    :> "Strandsprinter" livery
-str_cargo_subtype_TGV_PBKA          :> PBKA livery
-str_cargo_subtype_TGV_PBA           :> PBA livery
-str_cargo_subtype_valleilijn_yellow_blue    :>Valleilijn yellow/blue livery
-str_cargo_subtype_valleilijn_blue_yellownose:>Valleilijn blue livery w/ yellow nose
-str_cargo_subtype_valleilijn_blue           :>Valleilijn blue livery (fictional)
-str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker" livery
-str_cargo_subtype_zilverrail        :> Zilverrail livery (Oct 24-27, 2005)
+str_cargo_subtype_benelux           : > Benelux livery
+str_cargo_subtype_benelux_nocab     : > Benelux livery, no cab control
+str_cargo_subtype_benelux_plandcab  : > Benelux livery w/ Plan D cab
+str_cargo_subtype_citypendel        : > Citypendel livery
+str_cargo_subtype_ddar              : > DDM-2/3 livery
+str_cargo_subtype_ddm_nocab         : > DDM livery, no cab control
+str_cargo_subtype_ddm1              : > DDM-1 livery
+str_cargo_subtype_football          : > World Cup Football livery
+str_cargo_subtype_freedom           : > Freedom livery
+str_cargo_subtype_fyra              : > Fyra livery
+str_cargo_subtype_fyra_red          : > Fyra (red) livery
+str_cargo_subtype_fyra_white        : > Fyra (white) livery
+str_cargo_subtype_groningen         : > Groningen Mendini livery
+str_cargo_subtype_icplus            : > IC+ livery (May 28, 1995 - June 2002)
+str_cargo_subtype_kennemerstrand    : > Lovers Rail "Kennemerstrand Expres"
+str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Expres"
+str_cargo_subtype_kinderboeken      : > Week of Children's Books livery
+str_cargo_subtype_hispeed           : > NS Hispeed livery
+str_cargo_subtype_hispeed_nocab     : > NS Hispeed livery, no cab control
+str_cargo_subtype_maashopper        : > Veolia white/red "Maashopper" livery
+str_cargo_subtype_nid               : > NID livery
+str_cargo_subtype_ns_ic             : > NS InterCity livery
+str_cargo_subtype_ns_ic_nocab       : > NS InterCity livery, no cab control
+str_cargo_subtype_olympic           : > Olympic livery
+str_cargo_subtype_original          : > Original livery
+str_cargo_subtype_ovchip            : > OV Chipkaart livery
+str_cargo_subtype_overnightexpress  : > Overnight Express livery
+str_cargo_subtype_prototype         : > Prototype livery
+str_cargo_subtype_randstadrail      : > RandstadRail livery
+str_cargo_subtype_renewal           : > Renewal livery
+str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (Dec 22, 1993 - current)
+str_cargo_subtype_strandsprinter_beachballs: > "Strandsprinter" livery w/ beachballs
+str_cargo_subtype_strandsprinter    : > "Strandsprinter" livery
+str_cargo_subtype_TGV_PBKA          : > PBKA livery
+str_cargo_subtype_TGV_PBA           : > PBA livery
+str_cargo_subtype_valleilijn_yellow_blue    : >Valleilijn yellow/blue livery
+str_cargo_subtype_valleilijn_blue_yellownose: >Valleilijn blue livery w/ yellow nose
+str_cargo_subtype_valleilijn_blue           : >Valleilijn blue livery (fictional)
+str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" livery
+str_cargo_subtype_zilverrail        : > Zilverrail livery (Oct 24-27, 2005)
 
-str_cargo_subtype_ACTS              :> ACTS livery
-str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blue/yellow) livery
-str_cargo_subtype_ACTS_grey_green   :> ACTS (grey/green) livery
-str_cargo_subtype_Arriva            :> Arriva livery
-str_cargo_subtype_Arriva_spurt      :> Arriva "Spurt" livery
-str_cargo_subtype_Arriva_vechtdallijnen :> Arriva "Vechtdallijnen" livery
-str_cargo_subtype_Breng             :> Breng livery
-str_cargo_subtype_Captrain          :> Captrain livery
-str_cargo_subtype_Crossrail         :> Crossrail livery
-str_cargo_subtype_DBSchenker        :> DB Schenker livery
-str_cargo_subtype_DLC               :> DLC livery
-str_cargo_subtype_ERS               :> ERS livery
-str_cargo_subtype_EETC              :> Euro Express Treincharter livery
-str_cargo_subtype_HerikRail         :> Herik Rail livery
-str_cargo_subtype_HGK               :> HGK livery
-str_cargo_subtype_HSM               :> Hollandsche IJzeren Spoorweg-Maatschappij livery
-str_cargo_subtype_HUSA              :> HUSA livery
-str_cargo_subtype_Locon             :> Locon livery
-str_cargo_subtype_NBDS              :> Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livery
-str_cargo_subtype_NCS               :> Nederlandsche Centraal-Spoorweg-Maatschappij livery
-str_cargo_subtype_NCS_tender        :> NCS livery (tender locomotive)
-str_cargo_subtype_NCS_tank          :> NCS livery (tank locomotive)
-str_cargo_subtype_nedtrain          :> NedTrain livery
-str_cargo_subtype_NS                :> NS livery
-str_cargo_subtype_NS_tank           :> NS livery (tank locomotive)
-str_cargo_subtype_NS_whiteroof      :> NS livery w/ white roof
-str_cargo_subtype_NSCargo           :> NS Cargo livery
-str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (green) livery
-str_cargo_subtype_Rail4Chem_red     :> Rail4Chem (red) livery
-str_cargo_subtype_Rail4Chem_grey_yellow :> Rail4Chem (grey/yellow) livery
-str_cargo_subtype_Railion           :> Railion (rebrand) livery
-str_cargo_subtype_Railion_regular   :> Railion livery
-str_cargo_subtype_Railion_red       :> Railion (red) livery
-str_cargo_subtype_Railpro           :> Railpro livery
-str_cargo_subtype_staatsmijnen      :> Staatsmijnen livery
-str_cargo_subtype_SS                :> Staatsspoorwegen livery
-str_cargo_subtype_SS_tank           :> SS livery (tank locomotive)
-str_cargo_subtype_SS_NS             :> Staatsspoorwegen / NS livery
-str_cargo_subtype_Strukton          :> Strukton livery
-str_cargo_subtype_Syntus            :> Syntus livery
-str_cargo_subtype_Twents            :> Twents livery
-str_cargo_subtype_Veolia            :> Veolia livery
-str_cargo_subtype_Veolia_velios     :> Veolia "Velios" livery
-str_cargo_subtype_Veolia_white_red  :> Veolia (white/red) livery
-str_cargo_subtype_Veolia_black      :> Veolia (black) livery
-str_cargo_subtype_VOSlogistics      :> VOS Logistics livery
+str_cargo_subtype_ACTS              : > ACTS livery
+str_cargo_subtype_ACTS_blue_yellow  : > ACTS (blue/yellow) livery
+str_cargo_subtype_ACTS_grey_green   : > ACTS (grey/green) livery
+str_cargo_subtype_Arriva            : > Arriva livery
+str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" livery
+str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" livery
+str_cargo_subtype_Breng             : > Breng livery
+str_cargo_subtype_Captrain          : > Captrain livery
+str_cargo_subtype_Crossrail         : > Crossrail livery
+str_cargo_subtype_DBSchenker        : > DB Schenker livery
+str_cargo_subtype_DLC               : > DLC livery
+str_cargo_subtype_ERS               : > ERS livery
+str_cargo_subtype_EETC              : > Euro Express Treincharter livery
+str_cargo_subtype_HerikRail         : > Herik Rail livery
+str_cargo_subtype_HGK               : > HGK livery
+str_cargo_subtype_HSM               : > Hollandsche IJzeren Spoorweg-Maatschappij livery
+str_cargo_subtype_HUSA              : > HUSA livery
+str_cargo_subtype_Locon             : > Locon livery
+str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livery
+str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livery
+str_cargo_subtype_NCS_tender        : > NCS livery (tender locomotive)
+str_cargo_subtype_NCS_tank          : > NCS livery (tank locomotive)
+str_cargo_subtype_nedtrain          : > NedTrain livery
+str_cargo_subtype_NS                : > NS livery
+str_cargo_subtype_NS_tank           : > NS livery (tank locomotive)
+str_cargo_subtype_NS_whiteroof      : > NS livery w/ white roof
+str_cargo_subtype_NSCargo           : > NS Cargo livery
+str_cargo_subtype_Rail4Chem_green   : > Rail4Chem (green) livery
+str_cargo_subtype_Rail4Chem_red     : > Rail4Chem (red) livery
+str_cargo_subtype_Rail4Chem_grey_yellow : > Rail4Chem (grey/yellow) livery
+str_cargo_subtype_Railion           : > Railion (rebrand) livery
+str_cargo_subtype_Railion_regular   : > Railion livery
+str_cargo_subtype_Railion_red       : > Railion (red) livery
+str_cargo_subtype_Railpro           : > Railpro livery
+str_cargo_subtype_staatsmijnen      : > Staatsmijnen livery
+str_cargo_subtype_SS                : > Staatsspoorwegen livery
+str_cargo_subtype_SS_tank           : > SS livery (tank locomotive)
+str_cargo_subtype_SS_NS             : > Staatsspoorwegen / NS livery
+str_cargo_subtype_Strukton          : > Strukton livery
+str_cargo_subtype_Syntus            : > Syntus livery
+str_cargo_subtype_Twents            : > Twents livery
+str_cargo_subtype_Veolia            : > Veolia livery
+str_cargo_subtype_Veolia_velios     : > Veolia "Velios" livery
+str_cargo_subtype_Veolia_white_red  : > Veolia (white/red) livery
+str_cargo_subtype_Veolia_black      : > Veolia (black) livery
+str_cargo_subtype_VOSlogistics      : > VOS Logistics livery
 
-str_cargo_subtype_brown_cows        :> Brown (Cows) livery
-str_cargo_subtype_brown_pigs        :> Brown (Pigs) livery
-str_cargo_subtype_grey_cows         :> Grey (Cows) livery
-str_cargo_subtype_grey_pigs         :> Grey (Pigs) livery
+str_cargo_subtype_brown_cows        : > Brown (Cows) livery
+str_cargo_subtype_brown_pigs        : > Brown (Pigs) livery
+str_cargo_subtype_grey_cows         : > Grey (Cows) livery
+str_cargo_subtype_grey_pigs         : > Grey (Pigs) livery
 
-str_cargo_subtype_transformer:      :> Transformer cargo livery
-str_cargo_subtype_house             :> House cargo livery
-str_cargo_subtype_train             :> Train cargo livery
-str_cargo_subtype_tractor           :> Tractor cargo livery
+str_cargo_subtype_transformer:      : > Transformer cargo livery
+str_cargo_subtype_house             : > House cargo livery
+str_cargo_subtype_train             : > Train cargo livery
+str_cargo_subtype_tractor           : > Tractor cargo livery
 
 #steam
 str_steam_Arend         :HSM "Arend" (Steam)
