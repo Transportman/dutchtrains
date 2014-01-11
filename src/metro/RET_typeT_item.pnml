@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_metro_RET_typeT) {
         model_life: 59;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 12;
+        loading_speed: 15;
         cost_factor: 42;
         running_cost_factor: 33;
         speed: 80 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_metro_RET_typeT) {
         purchase: switch_metro_RET_typeT_purchase;
         articulated_part: switch_metro_RET_typeT_articulated;
         cargo_subtype_text: switch_metro_RET_typeT_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_12));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_10));
         switch_metro_RET_typeT_livery;
     }
 }

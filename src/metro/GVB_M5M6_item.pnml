@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_metro_GVB_M5M6) {
         introduction_date: date(2012,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 16;
+        loading_speed: 20;
         cost_factor: 139;
         running_cost_factor: 103;
         speed: 90 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_metro_GVB_M5M6) {
         cargo_capacity: return 160;
         purchase: spriteset_metro_GVB_M5M6_purchase;
         articulated_part: switch_metro_GVB_M5M6_articulated;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_6_30), string(str_purchase_lsp_11));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_6_30), string(str_purchase_lsp_9));
         switch_metro_GVB_M5M6_livery;
     }
 }

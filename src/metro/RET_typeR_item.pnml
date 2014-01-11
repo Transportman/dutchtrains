@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_metro_RET_typeR) {
         introduction_date: date(2008,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 9;
+        loading_speed: 12;
         cost_factor: 49;
         running_cost_factor: 40;
         speed: 100 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_metro_RET_typeR) {
         articulated_part: switch_metro_RET_typeR_articulated;
         length: switch_metro_RET_typeR_length;
         cargo_subtype_text: switch_metro_RET_typeR_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_11));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_9));
         switch_metro_RET_typeR_livery;
     }
 }
