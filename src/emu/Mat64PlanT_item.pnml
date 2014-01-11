@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_emu_Mat64PlanT) {
         model_life: 73;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 11;
+        loading_speed: 13;
         cost_factor: 89;
         running_cost_factor: 48;
         speed: 140 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_Mat64PlanT) {
         purchase: switch_emu_Mat64PlanT_purchase;
         articulated_part: switch_emu_Mat64PlanT_articulated;
         cargo_subtype_text: switch_emu_Mat64PlanT_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_4_20), string(str_purchase_lsp_9), string(str_purchase_spc_eld));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_4_20), string(str_purchase_lsp_8), string(str_purchase_spc_eld));
         visual_effect_and_powered: switch_emu_Mat64PlanT_visual_effect_and_powered;
         switch_emu_Mat64PlanT_livery;
     }

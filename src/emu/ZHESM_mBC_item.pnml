@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_emu_ZHESM_mBC) {
         model_life: 76;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 39;
         running_cost_factor: 21;
         speed: 80 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_ZHESM_mBC) {
         cargo_capacity: return 73;
         purchase: switch_emu_ZHESM_purchase;
         cargo_subtype_text: switch_emu_ZHESM_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_C), string(str_purchase_len_1_05), string(str_purchase_lsp_20), string(str_purchase_emu_ZHESM_mBC));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_C), string(str_purchase_len_1_05), string(str_purchase_lsp_16), string(str_purchase_emu_ZHESM_mBC));
         power: switch_emu_ZHESM_mBC_power;
         tractive_effort_coefficient: switch_emu_ZHESM_mBC_te;
         switch_emu_ZHESM_livery;

@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_SGM3) {
         introduction_date: date(1978,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 12;
+        loading_speed: 15;
         cost_factor: 81;
         running_cost_factor: 43;
         speed: 120 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_emu_SGM3) {
         purchase: switch_emu_SGM3_purchase;
         articulated_part: switch_emu_SGM3_articulated;
         cargo_subtype_text: switch_emu_SGM3_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_15), string(str_purchase_lsp_8));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_15), string(str_purchase_lsp_6));
         cargo_capacity: switch_emu_SGM3_capacity;
         visual_effect_and_powered: switch_emu_SGM3_visual_effect_and_powered;
         switch_emu_SGM3_livery;

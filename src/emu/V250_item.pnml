@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_V250) {
         introduction_date: date(2012,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 2;
+        loading_speed: 3;
         cost_factor: 186;
         running_cost_factor: 93;
         speed: 250 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_V250) {
 			cargo_capacity: return 68;
 	        purchase: spriteset_emu_V250_purchase;	
 			articulated_part: switch_emu_V250_articulated;
-			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_37), string(str_purchase_spc_emu_V250));
+			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_25), string(str_purchase_spc_emu_V250));
  			visual_effect_and_powered: switch_emu_V250_visual_effect_and_powered;
 			power: switch_emu_V250_power;
 			purchase_power: return 4023;			

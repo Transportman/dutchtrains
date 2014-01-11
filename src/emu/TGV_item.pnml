@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_TGV) {
         introduction_date: date(1996,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 2;
+        loading_speed: 3;
         cost_factor: 171;
         running_cost_factor: 103;
         speed: 320 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_TGV) {
 			purchase: spriteset_emu_TGV_purchase;
 			articulated_part: switch_emu_TGV_articulated;
 			cargo_subtype_text: switch_emu_TGV_subtype_text;
-			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_10_50), string(str_purchase_lsp_26), string(str_purchase_spc_emu_TGV));
+			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_10_50), string(str_purchase_lsp_17), string(str_purchase_spc_emu_TGV));
 			visual_effect_and_powered: switch_emu_TGV_visual_effect_and_powered;
 			power: switch_emu_TGV_power;
 			purchase_power: return 4935;

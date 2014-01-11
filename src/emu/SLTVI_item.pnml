@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_SLTVI) {
         introduction_date: date(2009,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 7;
+        loading_speed: 8;
         cost_factor: 98;
         running_cost_factor: 55;
         speed: 160 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_emu_SLTVI) {
     graphics {
         cargo_capacity: return 54;
         purchase: spriteset_emu_SLTVI_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_6_20), string(str_purchase_lsp_9));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_6_20), string(str_purchase_lsp_8));
         articulated_part: switch_emu_SLTVI_articulated;
         length: switch_emu_SLTVI_length;
         visual_effect_and_powered: switch_emu_SLTVI_visual_effect_and_powered;

@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_ICM4) {
         introduction_date: date(1990,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 7;
+        loading_speed: 9;
         cost_factor: 96;
         running_cost_factor: 53;
         speed: 160 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_ICM4) {
         purchase: switch_emu_ICM4_purchase;
         articulated_part: switch_emu_ICM4_articulated;
         cargo_subtype_text: switch_emu_ICM4_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ip), string(str_purchase_axl_B), string(str_purchase_len_4_20), string(str_purchase_lsp_10));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ip), string(str_purchase_axl_B), string(str_purchase_len_4_20), string(str_purchase_lsp_8));
         visual_effect_and_powered: switch_emu_ICM4_visual_effect_and_powered;
         switch_emu_ICM4_livery;
     }

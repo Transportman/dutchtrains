@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_Protos) {
         introduction_date: date(2007,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 68;
         running_cost_factor: 45;
         speed: 160 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_emu_Protos) {
     graphics {
         cargo_capacity: return 85;
         purchase: spriteset_emu_Protos_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_12));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_10));
         articulated_part: switch_emu_Protos_articulated;
         visual_effect_and_powered: switch_emu_Protos_visual_effect_and_powered;
         switch_emu_Protos_position;

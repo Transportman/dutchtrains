@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_emu_IRMIII) {
         model_life: 33;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 96;
         running_cost_factor: 52;
         speed: 160 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_emu_IRMIII) {
     graphics {
         cargo_capacity: return 96;
         purchase: spriteset_emu_IRMIV_irm_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ip), string(str_purchase_axl_C), string(str_purchase_len_3_15), string(str_purchase_lsp_14));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ip), string(str_purchase_axl_C), string(str_purchase_len_3_15), string(str_purchase_lsp_11));
         articulated_part: switch_emu_IRMIII_articulated;
         visual_effect_and_powered: switch_emu_IRMIII_visual_effect_and_powered;
         switch_emu_IRMIII_livery;

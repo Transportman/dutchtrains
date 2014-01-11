@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_emu_SM90) {
         model_life: 29;
         retire_early: 11;
         vehicle_life: 11;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 58;
         running_cost_factor: 42;
         speed: 160 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_emu_SM90) {
     graphics {
         cargo_capacity: return 81;
         purchase: spriteset_emu_SM90_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_11));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_9));
         articulated_part: switch_emu_SM90_articulated;
         visual_effect_and_powered: switch_emu_SM90_visual_effect_and_powered;
         switch_emu_SM90_position;

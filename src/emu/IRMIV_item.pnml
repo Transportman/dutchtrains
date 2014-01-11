@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_IRMIV) {
         introduction_date: date(1994,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 118;
         running_cost_factor: 58;
         speed: 160 km/h;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_emu_IRMIV) {
     graphics {
         purchase: switch_emu_IRMIV_purchase;
         cargo_subtype_text: switch_emu_IRMIV_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ip), string(str_purchase_axl_C), string(str_purchase_len_4_20), string(str_purchase_lsp_14));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ip), string(str_purchase_axl_C), string(str_purchase_len_4_20), string(str_purchase_lsp_11));
         articulated_part: switch_emu_IRMIV_articulated;
         cargo_capacity: switch_emu_IRMIV_capacity;
         weight: switch_emu_IRMIV_weight;

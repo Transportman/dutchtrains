@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_emu_Mat35ELD2) {
         model_life: 52;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 10;
+        loading_speed: 13;
         cost_factor: 52;
         running_cost_factor: 33;
         speed: 125 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_Mat35ELD2) {
         purchase: switch_emu_Mat35ELD2_purchase;
         articulated_part: switch_emu_Mat35ELD2_articulated;
         cargo_subtype_text: switch_emu_Mat35ELD2_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_13), string(str_purchase_spc_el_eld));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_10), string(str_purchase_spc_el_eld));
         switch_emu_Mat35ELD2_livery;
     }
 }

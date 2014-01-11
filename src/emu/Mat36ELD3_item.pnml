@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_emu_Mat36ELD3) {
         model_life: 60;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 9;
+        loading_speed: 11;
         cost_factor: 72;
         running_cost_factor: 41;
         speed: 110 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_Mat36ELD3) {
         purchase: switch_emu_Mat36ELD3_purchase;
         articulated_part: switch_emu_Mat36ELD3_articulated;
         cargo_subtype_text: switch_emu_Mat36ELD3_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_15), string(str_purchase_lsp_13), string(str_purchase_emu_Mat36ELD3));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_15), string(str_purchase_lsp_10), string(str_purchase_emu_Mat36ELD3));
         running_cost_factor: switch_emu_Mat36ELD3_running_cost;
         power: switch_emu_Mat36ELD3_power;
         cargo_capacity: switch_emu_Mat36ELD3_capacity;

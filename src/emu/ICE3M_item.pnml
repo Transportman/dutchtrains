@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
         introduction_date: date(2006,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 2;
+        loading_speed: 3;
         cost_factor: 183;
         running_cost_factor: 93;
         speed: 220 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
 			cargo_capacity: return 53;
 			purchase: spriteset_emu_ICE3M_purchase;
 			articulated_part: switch_emu_ICE3M_articulated;
-			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_29), string(str_purchase_emu_ICE3M));
+			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_20), string(str_purchase_emu_ICE3M));
 			visual_effect_and_powered: switch_emu_ICE3M_visual_effect_and_powered;
 			power: switch_emu_ICE3M_power;
 			purchase_power: return 5766;
@@ -61,7 +61,7 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
 			cargo_capacity: return 53;
 			purchase: spriteset_emu_ICE3M_purchase;
 			articulated_part: switch_emu_ICE3M_articulated;
-			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_29), string(str_purchase_emu_ICE3M_no_track));
+			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_20), string(str_purchase_emu_ICE3M_no_track));
 			visual_effect_and_powered: switch_emu_ICE3M_visual_effect_and_powered;
 			power: 10728;
 			purchase_power: return 10728;
