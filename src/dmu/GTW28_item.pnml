@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_dmu_GTW28) {
         introduction_date: date(2006,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 3;
+        loading_speed: 4;
         cost_factor: 49;
         running_cost_factor: 33;
         speed: 140 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_dmu_GTW28) {
         articulated_part: switch_dmu_GTW28_articulated;
         length: switch_dmu_GTW28_length;
         cargo_subtype_text: switch_dmu_GTW28_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_17), string(str_purchase_lsp_24));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_17), string(str_purchase_lsp_18));
         colour_mapping: PALETTE_USE_DEFAULT;
         visual_effect_and_powered: switch_dmu_GTW28_visual_effect_and_powered;
         switch_dmu_GTW28_livery;

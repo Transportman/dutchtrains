@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_dmu_omBC1901) {
         model_life: 55;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 24;
         running_cost_factor: 13;
         speed: 75 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_dmu_omBC1901) {
         cargo_capacity: return 65;
         purchase: switch_dmu_omBC1901_purchase;
         cargo_subtype_text: switch_dmu_omBC1901_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_1_05), string(str_purchase_lsp_9), string(str_purchase_dmu_omBC1901));
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_1_05), string(str_purchase_lsp_8), string(str_purchase_dmu_omBC1901));
         power: switch_dmu_omBC1901_power;
         speed: switch_dmu_omBC1901_speed;
         weight: switch_dmu_omBC1901_weight;

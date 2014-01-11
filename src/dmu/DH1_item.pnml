@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_dmu_DH1) {
         model_life: 52;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 27;
         running_cost_factor: 18;
         speed: 100 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_dmu_DH1) {
         cargo_capacity: return 63;
         purchase: switch_dmu_DH1_livery_purchase;
         cargo_subtype_text: switch_dmu_DH1_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_1_05), string(str_purchase_lsp_9));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_1_05), string(str_purchase_lsp_7));
         switch_dmu_DH1_livery;
     }
 }

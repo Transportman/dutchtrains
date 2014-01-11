@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_dmu_DM90) {
         introduction_date: date(1996,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: 10;
         cost_factor: 44;
         running_cost_factor: 30;
         speed: 140 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_dmu_DM90) {
         purchase: switch_dmu_DM90_livery_purchase;
         articulated_part: switch_dmu_DM90_articulated;
         cargo_subtype_text: switch_dmu_DM90_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_10));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_8));
         switch_dmu_DM90_livery;
     }
 }

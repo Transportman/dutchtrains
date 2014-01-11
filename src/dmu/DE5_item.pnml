@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_dmu_DE5) {
         model_life: 61;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 4;
+        loading_speed: 5;
         cost_factor: 76;
         running_cost_factor: 45;
         speed: 160 km/h;
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_dmu_DE5) {
         articulated_part: switch_dmu_DE5_articulated;
         length: switch_dmu_DE5_length;
         cargo_subtype_text: switch_dmu_DE5_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ep), string(str_purchase_axl_B), string(str_purchase_len_5_24), string(str_purchase_lsp_15));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_ep), string(str_purchase_axl_B), string(str_purchase_len_5_24), string(str_purchase_lsp_12));
         visual_effect_and_powered: switch_dmu_DE5_visual_effect_and_powered;
         switch_dmu_DE5_livery;
     }
