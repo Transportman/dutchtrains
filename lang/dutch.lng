@@ -411,7 +411,7 @@ str_wagons_gen5_stake               :Rongenwagen (M)
 str_wagons_gen5_Es                  :Open Wagen (M) Es
 str_wagons_gen5_refrigerator        :Koelwagen (L)
 str_wagons_gen5_tanker              :Ketelwagen (L)
-str_wagons_gen5_selfdischarger      :Onderlosser (L)
+str_wagons_Tals_selfdischarger      :Tals Onderlosser
 str_wagons_gen5_VAM                 :VAM Compostwagen (L)
 str_wagons_gen6_coil                :Spoelwagen (L)
 str_wagons_gen6_stake               :Rongenwagen (L)

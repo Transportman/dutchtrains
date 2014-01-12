@@ -400,7 +400,7 @@ str_wagons_gen5_stake               :Plato-vagon sa stupcima (M)
 str_wagons_gen5_Es                  :Otvoreni vagon (M) Es
 str_wagons_gen5_refrigerator        :Rashladni vagon (L)
 str_wagons_gen5_tanker              :Vagon cisterna (L)
-str_wagons_gen5_selfdischarger      :Samoistovarujući vagon (L)
+str_wagons_Tals_selfdischarger      :Tals Samoistovarujući vagon
 str_wagons_gen5_VAM                 :VAM vagon za kompost (L)
 str_wagons_gen6_coil                :Vagon za kaleme (L)
 str_wagons_gen6_stake               :Plato-vagon sa stupcima (L)

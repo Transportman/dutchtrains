@@ -10,20 +10,20 @@
 * ITEM
 */
 
-item(FEAT_TRAINS, item_wagons_gen5_selfdischarger) {
+item(FEAT_TRAINS, item_wagons_Tals_selfdischarger) {
     property {
-        name: string(str_wagons_gen5_selfdischarger);
+        name: string(str_wagons_Tals_selfdischarger);
         
         introduction_date: date(1970,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
         loading_speed: 5;
-        cost_factor: 52;
+        cost_factor: 53;
         running_cost_factor: 2;
-        speed: 120 km/h;
+        speed: 100 km/h;
         power: 0;
         cargo_capacity: 35;
-        weight: 20 ton;
+        weight: 21 ton;
         tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
         
@@ -47,10 +47,10 @@ item(FEAT_TRAINS, item_wagons_gen5_selfdischarger) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_wagons_gen5_selfdischarger_purchase;
+        purchase: spriteset_wagons_Tals_selfdischarger_purchase;
         additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_4));
         cargo_capacity: return 35;
-        cargo_subtype_text: switch_wagons_gen5_selfdischarger_subtype_text;
-        switch_wagons_gen5_selfdischarger_livery;
+        cargo_subtype_text: switch_wagons_Tals_selfdischarger_subtype_text;
+        switch_wagons_Tals_selfdischarger_livery;
     }
 }

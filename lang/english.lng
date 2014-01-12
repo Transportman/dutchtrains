@@ -411,7 +411,7 @@ str_wagons_gen5_stake               :Stake Wagon (M)
 str_wagons_gen5_Es                  :Open Wagon (M) Es
 str_wagons_gen5_refrigerator        :Refrigerator Wagon (L)
 str_wagons_gen5_tanker              :Tanker Wagon (L)
-str_wagons_gen5_selfdischarger      :Selfdischarger (L)
+str_wagons_Tals_selfdischarger      :Tals Selfdischarger
 str_wagons_gen5_VAM                 :VAM Compost Wagon (L)
 str_wagons_gen6_coil                :Coil Wagon (L)
 str_wagons_gen6_stake               :Stake Wagon (L)

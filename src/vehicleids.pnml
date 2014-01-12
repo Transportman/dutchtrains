@@ -161,7 +161,7 @@ item(FEAT_TRAINS, item_wagons_gen5_tanker, 266) {}
 item(FEAT_TRAINS, item_wagons_gen6_coil, 267) {}
 item(FEAT_TRAINS, item_wagons_gen6_stake, 268) {}
 item(FEAT_TRAINS, item_wagons_gen6_goods, 269) {}
-item(FEAT_TRAINS, item_wagons_gen5_selfdischarger, 270) {}
+item(FEAT_TRAINS, item_wagons_Tals_selfdischarger, 270) {}
 item(FEAT_TRAINS, item_wagons_gen6_containercarrier, 271) {}
 item(FEAT_TRAINS, item_wagons_gen5_VAM, 272) {}
 item(FEAT_TRAINS, item_emu_SM90, 273) {}

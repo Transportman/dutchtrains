@@ -211,7 +211,7 @@ sort(FEAT_TRAINS, [
     item_wagons_gen5_livestock,
     item_wagons_gen5_refrigerator,
     item_wagons_gen5_silo,
-    item_wagons_gen5_selfdischarger,
+    item_wagons_Tals_selfdischarger,
     item_wagons_Tads_selfdischarger,
     item_wagons_gen5_stake,
     item_wagons_gen5_Es,
