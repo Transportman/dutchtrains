@@ -384,7 +384,7 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)
 
 #wagons
-str_wagons_Falns_selfdischarger     :Falns Selfdischarger
+str_wagons_Tads_selfdischarger      :Tads Selfdischarger
 str_wagons_gen0hopper               :Hopper Wagon (XS)
 str_wagons_gen0boxcar               :Boxcar (XS)
 str_wagons_gen0tanker               :Tanker Wagon (XS)

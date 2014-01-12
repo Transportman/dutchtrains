@@ -10,9 +10,9 @@
 * ITEM
 */
 
-item(FEAT_TRAINS, item_wagons_Falns_selfdischarger) {
+item(FEAT_TRAINS, item_wagons_Tads_selfdischarger) {
     property {
-        name: string(str_wagons_Falns_selfdischarger);
+        name: string(str_wagons_Tads_selfdischarger);
         
         introduction_date: date(1970,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -22,8 +22,8 @@ item(FEAT_TRAINS, item_wagons_Falns_selfdischarger) {
         running_cost_factor: 2;
         speed: 100 km/h;
         power: 0;
-        cargo_capacity: 40;
-        weight: 20 ton;
+        cargo_capacity: 34;
+        weight: 23 ton;
         tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
         
@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_wagons_Falns_selfdischarger) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: unelectrified_C;
+        track_type: unelectrified_B;
 		ai_special_flag: AI_FLAG_CARGO;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -47,10 +47,10 @@ item(FEAT_TRAINS, item_wagons_Falns_selfdischarger) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        purchase: spriteset_wagons_Falns_selfdischarger_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_C), string(str_purchase_lsp_5));
-        cargo_capacity: return 40;
-        cargo_subtype_text: switch_wagons_Falns_selfdischarger_subtype_text;
-        switch_wagons_Falns_selfdischarger_livery;
+        purchase: spriteset_wagons_Tads_selfdischarger_purchase;
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_4));
+        cargo_capacity: return 34;
+        cargo_subtype_text: switch_wagons_Tads_selfdischarger_subtype_text;
+        switch_wagons_Tads_selfdischarger_livery;
     }
 }

@@ -384,7 +384,7 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Elektrisch)
 
 #wagons
-str_wagons_Falns_selfdischarger     :Falns Onderlosser
+str_wagons_Tads_selfdischarger      :Tads Onderlosser
 str_wagons_gen0hopper               :Onderlosser (XS)
 str_wagons_gen0boxcar               :Gesloten wagen (XS)
 str_wagons_gen0tanker               :Ketelwagen (XS)

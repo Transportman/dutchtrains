@@ -423,8 +423,8 @@
 #include "src/wagons/gen4_Gs_item.pnml"
 #include "src/wagons/gen4_Ubcs_graphics.pnml"
 #include "src/wagons/gen4_Ubcs_item.pnml"
-#include "src/wagons/Falns_selfdischarger_graphics.pnml"
-#include "src/wagons/Falns_selfdischarger_item.pnml"
+#include "src/wagons/Tads_selfdischarger_graphics.pnml"
+#include "src/wagons/Tads_selfdischarger_item.pnml"
 
 //metro
 #include "src/metro/GVB_M1M2_graphics.pnml"
