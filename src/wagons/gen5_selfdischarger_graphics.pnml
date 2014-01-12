@@ -30,18 +30,6 @@ spriteset(spriteset_wagons_gen5_selfdischarger_3, "gfx/wagons/gen5_selfdischarge
 spriteset(spriteset_wagons_gen5_selfdischarger_4, "gfx/wagons/gen5_selfdischarger.png") {
 	template_2cc_78(0, 90)
 }
-spriteset(spriteset_wagons_gen5_selfdischarger_5, "gfx/wagons/gen5_selfdischarger.png") {
-	template_2cc_78(0, 120)
-}
-spriteset(spriteset_wagons_gen5_selfdischarger_6, "gfx/wagons/gen5_selfdischarger.png") {
-	template_2cc_78(0, 150)
-}
-spriteset(spriteset_wagons_gen5_selfdischarger_7, "gfx/wagons/gen5_selfdischarger.png") {
-	template_2cc_78(0, 180)
-}
-spriteset(spriteset_wagons_gen5_selfdischarger_8, "gfx/wagons/gen5_selfdischarger.png") {
-	template_2cc_78(0, 210)
-}
 
 /*
 * LIVERY SELECTION
@@ -52,10 +40,6 @@ random_switch(FEAT_TRAINS, SELF, switch_wagons_gen5_selfdischarger_randomlivery)
     1: spriteset_wagons_gen5_selfdischarger_2;
     1: spriteset_wagons_gen5_selfdischarger_3;
     1: spriteset_wagons_gen5_selfdischarger_4;
-    1: spriteset_wagons_gen5_selfdischarger_5;
-    1: spriteset_wagons_gen5_selfdischarger_6;
-    1: spriteset_wagons_gen5_selfdischarger_7;
-    1: spriteset_wagons_gen5_selfdischarger_8;
 }
 
 switch(FEAT_TRAINS, SELF, switch_wagons_gen5_selfdischarger_livery, cargo_subtype) {
@@ -63,10 +47,6 @@ switch(FEAT_TRAINS, SELF, switch_wagons_gen5_selfdischarger_livery, cargo_subtyp
     2: spriteset_wagons_gen5_selfdischarger_2;
     3: spriteset_wagons_gen5_selfdischarger_3;
     4: spriteset_wagons_gen5_selfdischarger_4;
-    5: spriteset_wagons_gen5_selfdischarger_5;
-    6: spriteset_wagons_gen5_selfdischarger_6;
-    7: spriteset_wagons_gen5_selfdischarger_7;
-    8: spriteset_wagons_gen5_selfdischarger_8;
     switch_wagons_gen5_selfdischarger_randomlivery;
 }
 
@@ -77,9 +57,5 @@ switch(FEAT_TRAINS, SELF, switch_wagons_gen5_selfdischarger_subtype_text, cargo_
     2: return string(str_cargo_subtype_brown_light);
     3: return string(str_cargo_subtype_brown_reddish);
     4: return string(str_cargo_subtype_salmon);
-    5: return string(str_cargo_subtype_red_light);
-    6: return string(str_cargo_subtype_bordeaux);
-    7: return string(str_cargo_subtype_red);
-    8: return string(str_cargo_subtype_red_pinkish); 
     return CB_RESULT_NO_TEXT;
 }

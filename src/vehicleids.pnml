@@ -215,3 +215,4 @@ item(FEAT_TRAINS, item_steam_NCS41, 320) {}
 item(FEAT_TRAINS, item_steam_NRS11, 321) {}
 item(FEAT_TRAINS, item_steam_SS17, 322) {}
 item(FEAT_TRAINS, item_steam_HSM1, 323) {}
+item(FEAT_TRAINS, item_wagons_Falns_selfdischarger, 324) {}
