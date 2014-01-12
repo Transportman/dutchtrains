@@ -398,7 +398,7 @@ str_wagons_gen2_silo                :Silowagen (S)
 str_wagons_gen2_tanker              :Ketelwagen (S)
 str_wagons_gen2_stake               :Rongenwagen (S)
 str_wagons_gen2_refrigerator        :Koelwagen (S)
-str_wagons_gen2_selfdischarger      :Onderlosser (S)
+str_wagons_Fccpps_selfdischarger    :Fccpps Onderlosser
 str_wagons_gen4_Ubcs                :Silowagen (M) Ubcs "Bollenwagen"
 str_wagons_gen4_Ubcs_t              :Silowagen (M) Ubcs "Spherewagon"
 str_wagons_gen4_GTUW                :Open Wagen (M) GTUW

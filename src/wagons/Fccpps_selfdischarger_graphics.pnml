@@ -1,0 +1,74 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_Fccpps_selfdischarger_purchase, "gfx/purchase/wagons/Fccpps_selfdischarger.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//darker blue
+spriteset(spriteset_wagons_Fccpps_selfdischarger_1_empty, "gfx/wagons/Fccpps_selfdischarger.png") {
+	template_2cc_58(0, 0)
+}
+spriteset(spriteset_wagons_Fccpps_selfdischarger_1_half, "gfx/wagons/Fccpps_selfdischarger.png") {
+	template_2cc_58(0, 30)
+}
+spriteset(spriteset_wagons_Fccpps_selfdischarger_1_full, "gfx/wagons/Fccpps_selfdischarger.png") {
+	template_2cc_58(0, 60)
+}
+
+spritegroup spritegroup_wagons_Fccpps_selfdischarger_1 {
+    loading: [spriteset_wagons_Fccpps_selfdischarger_1_empty, spriteset_wagons_Fccpps_selfdischarger_1_half, spriteset_wagons_Fccpps_selfdischarger_1_full];
+    loaded:  [spriteset_wagons_Fccpps_selfdischarger_1_empty, spriteset_wagons_Fccpps_selfdischarger_1_half, spriteset_wagons_Fccpps_selfdischarger_1_full];
+}
+
+//lighter blue
+spriteset(spriteset_wagons_Fccpps_selfdischarger_2_empty, "gfx/wagons/Fccpps_selfdischarger.png") {
+	template_2cc_58(0, 90)
+}
+spriteset(spriteset_wagons_Fccpps_selfdischarger_2_half, "gfx/wagons/Fccpps_selfdischarger.png") {
+	template_2cc_58(0, 120)
+}
+spriteset(spriteset_wagons_Fccpps_selfdischarger_2_full, "gfx/wagons/Fccpps_selfdischarger.png") {
+	template_2cc_58(0, 150)
+}
+
+spritegroup spritegroup_wagons_Fccpps_selfdischarger_2 {
+    loading: [spriteset_wagons_Fccpps_selfdischarger_2_empty, spriteset_wagons_Fccpps_selfdischarger_2_half, spriteset_wagons_Fccpps_selfdischarger_2_full];
+    loaded:  [spriteset_wagons_Fccpps_selfdischarger_2_empty, spriteset_wagons_Fccpps_selfdischarger_2_half, spriteset_wagons_Fccpps_selfdischarger_2_full];
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_Fccpps_selfdischarger_randomlivery) {
+	1: spritegroup_wagons_Fccpps_selfdischarger_1;
+    1: spritegroup_wagons_Fccpps_selfdischarger_2;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_Fccpps_selfdischarger_livery, cargo_subtype) {
+	1: spritegroup_wagons_Fccpps_selfdischarger_1;
+    2: spritegroup_wagons_Fccpps_selfdischarger_2;
+    switch_wagons_Fccpps_selfdischarger_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_Fccpps_selfdischarger_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_blue);
+    2: return string(str_cargo_subtype_lighterblue);
+    return CB_RESULT_NO_TEXT;
+}

@@ -387,7 +387,7 @@ str_wagons_gen2_silo                :Vagon-silos (S)
 str_wagons_gen2_tanker              :Vagon cisterna (S)
 str_wagons_gen2_stake               :Plato-vagon sa stupcima (S)
 str_wagons_gen2_refrigerator        :Rashladni vagon (S)
-str_wagons_gen2_selfdischarger      :Samoistovarujući vagon (S)
+str_wagons_Fccpps_selfdischarger    :Fccpps Samoistovarujući vagon
 str_wagons_gen4_Ubcs                :Vagon-silos (M) Ubcs "Bollenwagen"
 str_wagons_gen4_Ubcs_t              :Vagon-silos (M) Ubcs "Spherewagon"
 str_wagons_gen4_GTUW                :Otvoreni vagon (M) GTUW

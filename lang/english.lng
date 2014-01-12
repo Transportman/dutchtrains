@@ -398,7 +398,7 @@ str_wagons_gen2_silo                :Silo Wagon (S)
 str_wagons_gen2_tanker              :Tanker Wagon (S)
 str_wagons_gen2_stake               :Stake Wagon (S)
 str_wagons_gen2_refrigerator        :Refrigerator Wagon (S)
-str_wagons_gen2_selfdischarger      :Selfdischarger (S)
+str_wagons_Fccpps_selfdischarger    :Fccpps Selfdischarger
 str_wagons_gen4_Ubcs                :Silo Wagon (M) Ubcs "Bollenwagen"
 str_wagons_gen4_Ubcs_t              :Silo Wagon (M) Ubcs "Spherewagon"
 str_wagons_gen4_GTUW                :Open Wagon (M) GTUW
