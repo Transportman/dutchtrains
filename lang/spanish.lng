@@ -10,6 +10,7 @@ STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 #parameter strings
 
 STR_PARAM_DISABLE_ORIGINAL          :Mantener los motores y vagones originales
+STR_PARAM_DISABLE_ORIGINAL_DESC     :Por defecto, este NewGRF deshabilita todas las locomotoras y vagones de ferrocarril, monorraíl y maglev originales. Puedes utilizar este parámetro para mantener cualquier combinación con los ferrocarriles, monorraíl y/o maglev originales. Sin embargo y encontrándonos en la tesitura de que fuera otro NewGRF el que desactivara los vehículos originales, este ajuste no podría volver a habilitarlos.
 STR_PARAM_DISABLE_ORIGINAL_000      :Ninguno (opción por defecto)
 STR_PARAM_DISABLE_ORIGINAL_100      :Sólo el ferrocarril (tanto el convencional como el eléctrico)
 STR_PARAM_DISABLE_ORIGINAL_010      :Sólo el monorraíl
@@ -24,6 +25,7 @@ STR_PARAM_RUNNING_COST              :Multiplicador del coste de funcionamiento
 
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_DIVIDE_8                  :1/8
+STR_PARAM_DIVIDE_4                  :1/4
 STR_PARAM_DIVIDE_2                  :1/2
 STR_PARAM_NORMAL                    :1 (opción por defecto)
 
@@ -55,11 +57,13 @@ str_electric_NS1600P    :NS 1600P (Eléctrico)
 
 #emu
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
+str_emu_Mat46ELD4       :Mat '46 ElD4 (Eléctrico)
 str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Eléctrico)
 str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
 
 #wagons
+str_wagons_gen2_boxcar              :Vagón de mercancías (S)
 str_wagons_gen2_refrigerator        :Vagón frigorífico (S)
 str_wagons_gen5_refrigerator        :Vagón frigorífico (L)
 str_wagons_gen6_stake               :Vagón de estacas (L)
