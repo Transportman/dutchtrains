@@ -161,6 +161,14 @@ str_cargo_subtype_valleilijn_blue_yellownose : > Valleilijn plava livreja sa žu
 str_cargo_subtype_valleilijn_blue           : > Valleilijn plava livreja (izmišljena)
 str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" livreja
 str_cargo_subtype_zilverrail        : > Zilverrail livreja (listopad 24-27, 2005)
+str_cargo_subtype_klm                           :> KLM livreja
+str_cargo_subtype_martinair                     :> Martinair livreja
+str_cargo_subtype_aegon                         :> Aegon livreja
+str_cargo_subtype_randstad                      :> Randstad livreja
+str_cargo_subtype_delagelanden1         :> De Lage Landen livreja 1
+str_cargo_subtype_delagelanden2         :> De Lage Landen livreja 2
+str_cargo_subtype_algemeendagblad1      :> Algemeen Dagblad livreja 1
+str_cargo_subtype_algemeendagblad2      :> Algemeen Dagblad livreja 2
 
 str_cargo_subtype_ACTS              : > ACTS livreja
 str_cargo_subtype_ACTS_blue_yellow  : > ACTS (plavo-žuta) livreja
@@ -196,6 +204,11 @@ str_cargo_subtype_Railion           : > Railion (druga) livreja
 str_cargo_subtype_Railion_regular   : > Railion livreja
 str_cargo_subtype_Railion_red       : > Railion (crvena) livreja
 str_cargo_subtype_Railpro           : > Railpro livreja
+str_cargo_subtype_rff                           :> RFF Cargo livreja
+str_cargo_subtype_rts_black                     :> RTS (crna) livreja
+str_cargo_subtype_rts_orange            :> RTS (narančasto-bijela) livreja
+str_cargo_subtype_rurtalbahn_black      :> Rurtalbahn (crna) livreja
+str_cargo_subtype_rurtalbahn_blue       :> Rurtalbahn (plava) livreja
 str_cargo_subtype_staatsmijnen      : > Staatsmijnen livreja
 str_cargo_subtype_SS                : > Staatsspoorwegen livreja
 str_cargo_subtype_SS_tank           : > SS livreja (tank lokomotiva)
@@ -374,6 +387,7 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Električni)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Električni)
 
 #wagons
+str_wagons_Tads_selfdischarger      :Tads Samoistovarujući vagon
 str_wagons_gen0hopper               :Vagon za rasuti teret (XS)
 str_wagons_gen0boxcar               :Zatvoreni vagon (XS)
 str_wagons_gen0tanker               :Vagon cisterna (XS)
@@ -544,6 +558,7 @@ str_purchase_lsp_20         :20 dana
 str_purchase_lsp_22         :22 dana
 str_purchase_lsp_23         :23 dana
 str_purchase_lsp_24         :24 dana
+str_purchase_lsp_25         :25 dana
 str_purchase_lsp_26         :26 dana
 str_purchase_lsp_29         :29 dana
 str_purchase_lsp_37         :37 dana
