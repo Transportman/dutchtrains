@@ -51,6 +51,7 @@ str_electric_NS1200     :NS 1200 (Eléctrico)
 str_electric_NS1300     :NS 1300 (eléctrico)
 str_electric_NS1500     :NS 1500 (Eléctrico)
 str_electric_NS1600     :NS 1600/1800 (Eléctrico)
+str_electric_NS1700     :NS 1700 (Eléctrico)
 str_electric_NS1600P    :NS 1600P (Eléctrico)
 
 #dmu
@@ -76,11 +77,15 @@ str_wagons_gen6_stake               :Vagón de estacas (L)
 
 #PURCHASE MENU TEXTS
 
+str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 
 str_purchase_svc_p          :pasajeros
 
 
+str_purchase_lsp_17         :17 días
 
+str_purchase_axl_A          :Muy bajo (clase A)
+str_purchase_axl_B          :Bajo (clase B)
 
 
 str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
