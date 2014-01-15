@@ -66,8 +66,11 @@ str_emu_gen9_HST        :P8000 (Eléctrico)
 #wagons
 str_wagons_gen2_boxcar              :Vagón de mercancías (S)
 str_wagons_gen2_refrigerator        :Vagón frigorífico (S)
+str_wagons_gen4_GTUW                :Vagón abierto (M) GTUW
+str_wagons_gen5_stake               :Vagón de estacas (M)
 str_wagons_gen5_refrigerator        :Vagón frigorífico (L)
 str_wagons_gen6_stake               :Vagón de estacas (L)
+str_wagons_gen6_goods               :Vagón de mercancías (L)
 
 #coaches
 
@@ -80,6 +83,7 @@ str_wagons_gen6_stake               :Vagón de estacas (L)
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 
 str_purchase_svc_p          :pasajeros
+str_purchase_svc_m          :correo
 
 
 str_purchase_lsp_17         :17 días
