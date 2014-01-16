@@ -92,7 +92,10 @@ str_purchase_axl_A          :Muy bajo (clase A)
 str_purchase_axl_B          :Bajo (clase B)
 
 
+str_purchase_steam_HSM83    :Anteriormente conocido como: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
+str_purchase_steam_HSM701   :Anteriormente conocido como: {SILVER} HSM 701-755.
+str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
 
 
 
