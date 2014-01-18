@@ -94,9 +94,12 @@ str_purchase_axl_A          :Muy bajo (clase A)
 str_purchase_axl_B          :Bajo (clase B)
 
 
+str_purchase_steam_NCS21    :Anteriormente conocido como: {SILVER} NCS 21-30, después SS 481-490.
+str_purchase_steam_NCS41    :Anteriormente conocido como: {SILVER} NCS 41-50, después SS 151-160.
 str_purchase_steam_HSM83    :Anteriormente conocido como: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
 str_purchase_steam_HSM701   :Anteriormente conocido como: {SILVER} HSM 701-755.
+str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, NBDS 25-26.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
 
 
