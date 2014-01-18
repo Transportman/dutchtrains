@@ -384,44 +384,44 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)
 
 #wagons
-str_wagons_Tads_selfdischarger      :Tads Selfdischarger
-str_wagons_gen0hopper               :Hopper Wagon (XS)
-str_wagons_gen0boxcar               :Boxcar (XS)
-str_wagons_gen0tanker               :Tanker Wagon (XS)
-str_wagons_gen0openwagonmedium      :Open Wagon (S)
-str_wagons_gen0openwagonsmall       :Open Wagon (XS)
-str_wagons_gen0stakewagon           :Stake Wagon (XS)
-str_wagons_gen0livestockwagon       :Livestock Wagon (XS)
-str_wagons_gen2_boxcar              :Goods Wagon (S)
-str_wagons_gen2_livestock           :Livestock Wagon (S)
-str_wagons_gen2_silo                :Silo Wagon (S)
-str_wagons_gen2_tanker              :Tanker Wagon (S)
-str_wagons_gen2_stake               :Stake Wagon (S)
-str_wagons_gen2_refrigerator        :Refrigerator Wagon (S)
+str_wagons_gen0boxcar               :Small Boxcar
+str_wagons_gen2_boxcar              :Goods Wagon
+str_wagons_Gs_boxcar                :Gs Boxcar
+str_wagons_gen6_slidingdoor         :Sliding Door Wagon
+str_wagons_Habbiins_goodswagon      :Habbiins Goods Wagon
+str_wagons_gen0openwagonsmall       :Small Open Wagon
+str_wagons_gen2_openwagon           :Medium Open Wagon
+str_wagons_GTUW_openwagon           :GTUW Open Wagon
+str_wagons_Es_openwagon             :Es Open Wagon
+str_wagons_Eass_openwagon           :Eass Open Wagon
+str_wagons_gen0hopper               :Small Hopper Wagon
 str_wagons_Fccpps_selfdischarger    :Fccpps Selfdischarger
-str_wagons_gen4_Ubcs                :Silo Wagon (M) Ubcs "Bollenwagen"
-str_wagons_gen4_Ubcs_t              :Silo Wagon (M) Ubcs "Spherewagon"
-str_wagons_gen4_GTUW                :Open Wagon (M) GTUW
-str_wagons_gen4_Uh                  :Tanker Wagon (M) Uh
-str_wagons_gen4_Gs                  :Boxcar (M) Gs
-str_wagons_gen5_silo                :Silo Wagon (M)
-str_wagons_gen5_slidingdoor         :Sliding Door Wagon (M)
-str_wagons_gen5_livestock           :Livestock Wagon (M)
-str_wagons_gen5_stake               :Stake Wagon (M)
-str_wagons_gen5_Es                  :Open Wagon (M) Es
-str_wagons_gen5_refrigerator        :Refrigerator Wagon (L)
-str_wagons_gen5_tanker              :Tanker Wagon (L)
 str_wagons_Tals_selfdischarger      :Tals Selfdischarger
-str_wagons_gen5_VAM                 :VAM Compost Wagon (L)
-str_wagons_gen6_coil                :Coil Wagon (L)
-str_wagons_gen6_stake               :Stake Wagon (L)
-str_wagons_gen6_goods               :Goods Wagon (L)
-str_wagons_gen6_containercarrier    :Container Carrier (M)
-str_wagons_gen9_superheavy_flatcar  :Superheavy Flatcar (XL)
-str_wagons_gen9_silowagon           :Silo Wagon (L)
-str_wagons_gen7_Eass                :Open Wagon (L) Eass
-str_wagons_gen7_cartransporter      :Car Transporter (L)
-str_wagons_gen7_containercarrier    :Container Carrier (L)
+str_wagons_Tads_selfdischarger      :Tads Selfdischarger
+str_wagons_gen0stakewagon           :Small Stake Wagon
+str_wagons_gen2_stake               :Stake Wagon
+str_wagons_gen4_stake               :Stake Wagon
+str_wagons_gen6_stake               :Stake Wagon
+str_wagons_gen7_coil                :Coil Wagon
+str_wagons_gen0tanker               :Small Tank Wagon
+str_wagons_gen2_tanker              :Tank Wagon
+str_wagons_Uh_tanker                :Uh Tank Wagon
+str_wagons_gen6_tanker              :Large Tank Wagon
+str_wagons_gen0livestockwagon       :Small Livestock Wagon
+str_wagons_gen3_livestock           :Medium Livestock Wagon
+str_wagons_gen6_livestock           :Large Livestock Wagon
+str_wagons_gen4_silo                :Small Silo Wagon
+str_wagons_gen6_silo                :Medium Silo Wagon
+str_wagons_gen9_silowagon           :Large Silo Wagon
+str_wagons_Ubcs_bollenwagen         :Ubcs Silo Wagon "Bollenwagen"
+str_wagons_Ubcs_bollenwagen_t       :Ubcs Silo Wagon "Spherewagon"
+str_wagons_gen6_refrigerator        :Medium Refrigerator Wagon
+str_wagons_gen7_refrigerator        :Large Refrigerator Wagon
+str_wagons_Takkls_VAM               :Takkls Compost Wagon
+str_wagons_gen7_cartransporter      :Car Transporter
+str_wagons_gen7_containercarrier    :Container Carrier
+str_wagons_gen9_containercarrier    :Container Carrier
+str_wagons_gen7_superheavy_flatcar  :Superheavy Flatcar
 
 #coaches
 str_coaches_HIJSM_4_8_10:Carriage HSM 1

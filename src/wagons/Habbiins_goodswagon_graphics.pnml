@@ -1,0 +1,85 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_Habbiins_goodswagon_purchase, "gfx/purchase/wagons/Habbiins_goodswagon.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_Habbiins_goodswagon_1, "gfx/wagons/Habbiins_goodswagon.png") {
+	template_2cc_88(0, 0)
+}
+spriteset(spriteset_wagons_Habbiins_goodswagon_2, "gfx/wagons/Habbiins_goodswagon.png") {
+	template_2cc_88(0, 30)
+}
+spriteset(spriteset_wagons_Habbiins_goodswagon_3, "gfx/wagons/Habbiins_goodswagon.png") {
+	template_2cc_88(0, 60)
+}
+spriteset(spriteset_wagons_Habbiins_goodswagon_4, "gfx/wagons/Habbiins_goodswagon.png") {
+	template_2cc_88(0, 90)
+}
+spriteset(spriteset_wagons_Habbiins_goodswagon_5, "gfx/wagons/Habbiins_goodswagon.png") {
+	template_2cc_88(0, 120)
+}
+spriteset(spriteset_wagons_Habbiins_goodswagon_6, "gfx/wagons/Habbiins_goodswagon.png") {
+	template_2cc_88(0, 150)
+}
+spriteset(spriteset_wagons_Habbiins_goodswagon_7, "gfx/wagons/Habbiins_goodswagon.png") {
+	template_2cc_88(0, 180)
+}
+spriteset(spriteset_wagons_Habbiins_goodswagon_8, "gfx/wagons/Habbiins_goodswagon.png") {
+	template_2cc_88(0, 210)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_Habbiins_goodswagon_randomlivery) {
+	1: spriteset_wagons_Habbiins_goodswagon_1;
+    1: spriteset_wagons_Habbiins_goodswagon_2;
+    1: spriteset_wagons_Habbiins_goodswagon_3;
+    1: spriteset_wagons_Habbiins_goodswagon_4;
+    1: spriteset_wagons_Habbiins_goodswagon_5;
+    1: spriteset_wagons_Habbiins_goodswagon_6;
+    1: spriteset_wagons_Habbiins_goodswagon_7;
+    1: spriteset_wagons_Habbiins_goodswagon_8;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_Habbiins_goodswagon_livery, cargo_subtype) {
+	1: spriteset_wagons_Habbiins_goodswagon_1;
+    2: spriteset_wagons_Habbiins_goodswagon_2;
+    3: spriteset_wagons_Habbiins_goodswagon_3;
+    4: spriteset_wagons_Habbiins_goodswagon_4;
+    5: spriteset_wagons_Habbiins_goodswagon_5;
+    6: spriteset_wagons_Habbiins_goodswagon_6;
+    7: spriteset_wagons_Habbiins_goodswagon_7;
+    8: spriteset_wagons_Habbiins_goodswagon_8;
+    switch_wagons_Habbiins_goodswagon_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_Habbiins_goodswagon_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_brown);
+    2: return string(str_cargo_subtype_brown_light);
+    3: return string(str_cargo_subtype_brown_greenish);
+    4: return string(str_cargo_subtype_brown_other);
+    5: return string(str_cargo_subtype_grey);
+    6: return string(str_cargo_subtype_white);
+    7: return string(str_cargo_subtype_salmon);
+    8: return string(str_cargo_subtype_brown_reddish);
+    return CB_RESULT_NO_TEXT;
+}

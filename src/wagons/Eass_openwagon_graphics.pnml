@@ -1,0 +1,145 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_Eass_openwagon_purchase, "gfx/purchase/wagons/Eass_openwagon.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//brown
+spriteset(spriteset_wagons_Eass_openwagon_1_empty, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(0, 0)
+}
+spriteset(spriteset_wagons_Eass_openwagon_1_13, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(0, 30)
+}
+spriteset(spriteset_wagons_Eass_openwagon_1_23, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(0, 60)
+}
+spriteset(spriteset_wagons_Eass_openwagon_1_33, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(0, 90)
+}
+
+spritegroup spritegroup_wagons_Eass_openwagon_1 {
+    loading: [spriteset_wagons_Eass_openwagon_1_empty, spriteset_wagons_Eass_openwagon_1_13, spriteset_wagons_Eass_openwagon_1_23, spriteset_wagons_Eass_openwagon_1_33];
+    loaded:  [spriteset_wagons_Eass_openwagon_1_empty, spriteset_wagons_Eass_openwagon_1_13, spriteset_wagons_Eass_openwagon_1_23, spriteset_wagons_Eass_openwagon_1_33];
+}
+
+//greyish blue
+spriteset(spriteset_wagons_Eass_openwagon_2_empty, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(200, 0)
+}
+spriteset(spriteset_wagons_Eass_openwagon_2_13, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(200, 30)
+}
+spriteset(spriteset_wagons_Eass_openwagon_2_23, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(200, 60)
+}
+spriteset(spriteset_wagons_Eass_openwagon_2_33, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(200, 90)
+}
+
+spritegroup spritegroup_wagons_Eass_openwagon_2 {
+    loading: [spriteset_wagons_Eass_openwagon_2_empty, spriteset_wagons_Eass_openwagon_2_13, spriteset_wagons_Eass_openwagon_2_23, spriteset_wagons_Eass_openwagon_2_33];
+    loaded:  [spriteset_wagons_Eass_openwagon_2_empty, spriteset_wagons_Eass_openwagon_2_13, spriteset_wagons_Eass_openwagon_2_23, spriteset_wagons_Eass_openwagon_2_33];
+}
+
+//blue
+spriteset(spriteset_wagons_Eass_openwagon_3_empty, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(400, 0)
+}
+spriteset(spriteset_wagons_Eass_openwagon_3_13, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(400, 30)
+}
+spriteset(spriteset_wagons_Eass_openwagon_3_23, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(400, 60)
+}
+spriteset(spriteset_wagons_Eass_openwagon_3_33, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(400, 90)
+}
+
+spritegroup spritegroup_wagons_Eass_openwagon_3 {
+    loading: [spriteset_wagons_Eass_openwagon_3_empty, spriteset_wagons_Eass_openwagon_3_13, spriteset_wagons_Eass_openwagon_3_23, spriteset_wagons_Eass_openwagon_3_33];
+    loaded:  [spriteset_wagons_Eass_openwagon_3_empty, spriteset_wagons_Eass_openwagon_3_13, spriteset_wagons_Eass_openwagon_3_23, spriteset_wagons_Eass_openwagon_3_33];
+}
+
+//dark blue
+spriteset(spriteset_wagons_Eass_openwagon_4_empty, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(600, 0)
+}
+spriteset(spriteset_wagons_Eass_openwagon_4_13, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(600, 30)
+}
+spriteset(spriteset_wagons_Eass_openwagon_4_23, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(600, 60)
+}
+spriteset(spriteset_wagons_Eass_openwagon_4_33, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(600, 90)
+}
+
+spritegroup spritegroup_wagons_Eass_openwagon_4 {
+    loading: [spriteset_wagons_Eass_openwagon_4_empty, spriteset_wagons_Eass_openwagon_4_13, spriteset_wagons_Eass_openwagon_4_23, spriteset_wagons_Eass_openwagon_4_33];
+    loaded:  [spriteset_wagons_Eass_openwagon_4_empty, spriteset_wagons_Eass_openwagon_4_13, spriteset_wagons_Eass_openwagon_4_23, spriteset_wagons_Eass_openwagon_4_33];
+}
+
+//grey
+spriteset(spriteset_wagons_Eass_openwagon_5_empty, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(800, 0)
+}
+spriteset(spriteset_wagons_Eass_openwagon_5_13, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(800, 30)
+}
+spriteset(spriteset_wagons_Eass_openwagon_5_23, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(800, 60)
+}
+spriteset(spriteset_wagons_Eass_openwagon_5_33, "gfx/wagons/Eass_openwagon.png") {
+	template_2cc_78(800, 90)
+}
+
+spritegroup spritegroup_wagons_Eass_openwagon_5 {
+    loading: [spriteset_wagons_Eass_openwagon_5_empty, spriteset_wagons_Eass_openwagon_5_13, spriteset_wagons_Eass_openwagon_5_23, spriteset_wagons_Eass_openwagon_5_33];
+    loaded:  [spriteset_wagons_Eass_openwagon_5_empty, spriteset_wagons_Eass_openwagon_5_13, spriteset_wagons_Eass_openwagon_5_23, spriteset_wagons_Eass_openwagon_5_33];
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_Eass_openwagon_randomlivery) {
+    1: spritegroup_wagons_Eass_openwagon_2;
+    1: spritegroup_wagons_Eass_openwagon_3;
+    1: spritegroup_wagons_Eass_openwagon_4;
+    1: spritegroup_wagons_Eass_openwagon_5;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_Eass_openwagon_livery, cargo_subtype) {
+	1: spritegroup_wagons_Eass_openwagon_1;
+    2: spritegroup_wagons_Eass_openwagon_2;
+    3: spritegroup_wagons_Eass_openwagon_4;
+    4: spritegroup_wagons_Eass_openwagon_3;
+    5: spritegroup_wagons_Eass_openwagon_5;
+    switch_wagons_Eass_openwagon_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_Eass_openwagon_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_brown);
+    2: return string(str_cargo_subtype_blue_greyish);
+    3: return string(str_cargo_subtype_blue);
+    4: return string(str_cargo_subtype_lighterblue);
+    5: return string(str_cargo_subtype_grey);
+    return CB_RESULT_NO_TEXT;
+}

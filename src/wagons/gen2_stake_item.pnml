@@ -14,14 +14,14 @@ item(FEAT_TRAINS, item_wagons_gen2_stake) {
     property {
         name: string(str_wagons_gen2_stake);
         
-        introduction_date: date(1920,1,1);
-        model_life: 87;
+        introduction_date: date(1860,1,1);
+        model_life: 102;
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 3;
         cost_factor: 30;
         running_cost_factor: 1;
-        speed: 88 km/h;
+        speed: 60 km/h;
         power: 0;
         cargo_capacity: 18;
         weight: 13 ton;

@@ -1,0 +1,128 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen9_containercarrier_purchase, "gfx/purchase/wagons/gen9_containercarrier.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//container
+spriteset(spriteset_wagons_gen9_containercarrier_1_empty, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_1_half, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_1_full, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_2_half, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(186, 32)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_2_full, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(186, 64)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_3_half, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(371, 32)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_3_full, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(371, 64)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_4_half, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(556, 32)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_4_full, "gfx/wagons/gen9_containercarrier.png") {
+	template_2cc_88(556, 64)
+}
+
+spritegroup spritegroup_wagons_gen9_containercarrier_1 {
+    loading: [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_1_half, spriteset_wagons_gen9_containercarrier_1_full];
+    loaded:  [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_1_half, spriteset_wagons_gen9_containercarrier_1_full];
+}
+spritegroup spritegroup_wagons_gen9_containercarrier_2 {
+    loading: [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_2_half, spriteset_wagons_gen9_containercarrier_2_full];
+    loaded:  [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_2_half, spriteset_wagons_gen9_containercarrier_2_full];
+}
+spritegroup spritegroup_wagons_gen9_containercarrier_3 {
+    loading: [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_3_half, spriteset_wagons_gen9_containercarrier_3_full];
+    loaded:  [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_3_half, spriteset_wagons_gen9_containercarrier_3_full];
+}
+spritegroup spritegroup_wagons_gen9_containercarrier_4 {
+    loading: [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_4_half, spriteset_wagons_gen9_containercarrier_4_full];
+    loaded:  [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_4_half, spriteset_wagons_gen9_containercarrier_4_full];
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen9_containercarrier_container) {
+	1: spritegroup_wagons_gen9_containercarrier_1;
+    1: spritegroup_wagons_gen9_containercarrier_2;
+    1: spritegroup_wagons_gen9_containercarrier_3;
+    1: spritegroup_wagons_gen9_containercarrier_4; 
+}
+
+//tanker
+spriteset(spriteset_wagons_gen9_containercarrier_5_half, "gfx/wagons/gen9_tankercarrier.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_5_full, "gfx/wagons/gen9_tankercarrier.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_6_half, "gfx/wagons/gen9_tankercarrier.png") {
+	template_2cc_88(186, 32)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_6_full, "gfx/wagons/gen9_tankercarrier.png") {
+	template_2cc_88(186, 64)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_7_half, "gfx/wagons/gen9_tankercarrier.png") {
+	template_2cc_88(371, 32)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_7_full, "gfx/wagons/gen9_tankercarrier.png") {
+	template_2cc_88(371, 64)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_8_half, "gfx/wagons/gen9_tankercarrier.png") {
+	template_2cc_88(556, 32)
+}
+spriteset(spriteset_wagons_gen9_containercarrier_8_full, "gfx/wagons/gen9_tankercarrier.png") {
+	template_2cc_88(556, 64)
+}
+
+spritegroup spritegroup_wagons_gen9_containercarrier_5 {
+    loading: [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_5_half, spriteset_wagons_gen9_containercarrier_5_full];
+    loaded:  [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_5_half, spriteset_wagons_gen9_containercarrier_5_full];
+}
+spritegroup spritegroup_wagons_gen9_containercarrier_6 {
+    loading: [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_6_half, spriteset_wagons_gen9_containercarrier_6_full];
+    loaded:  [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_6_half, spriteset_wagons_gen9_containercarrier_6_full];
+}
+spritegroup spritegroup_wagons_gen9_containercarrier_7 {
+    loading: [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_7_half, spriteset_wagons_gen9_containercarrier_7_full];
+    loaded:  [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_7_half, spriteset_wagons_gen9_containercarrier_7_full];
+}
+spritegroup spritegroup_wagons_gen9_containercarrier_8 {
+    loading: [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_8_half, spriteset_wagons_gen9_containercarrier_8_full];
+    loaded:  [spriteset_wagons_gen9_containercarrier_1_empty, spriteset_wagons_gen9_containercarrier_8_half, spriteset_wagons_gen9_containercarrier_8_full];
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen9_containercarrier_tanker) {
+	1: spritegroup_wagons_gen9_containercarrier_5;
+    1: spritegroup_wagons_gen9_containercarrier_6;
+    1: spritegroup_wagons_gen9_containercarrier_7;
+    1: spritegroup_wagons_gen9_containercarrier_8; 
+}
+
+//decide container or tanker depending on cargo
+switch(FEAT_TRAINS, SELF, switch_wagons_gen9_containercarrier_livery, cargo_classes) {
+	bitmask(CC_LIQUID): switch_wagons_gen9_containercarrier_tanker;
+    switch_wagons_gen9_containercarrier_container;
+}

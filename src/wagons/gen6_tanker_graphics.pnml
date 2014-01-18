@@ -1,0 +1,67 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen6_tanker_purchase, "gfx/purchase/wagons/gen6_tanker.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen6_tanker_white, "gfx/wagons/gen6_tanker.png") {
+	template_2cc_88(0, 0)
+}
+spriteset(spriteset_wagons_gen6_tanker_grey, "gfx/wagons/gen6_tanker.png") {
+	template_2cc_88(0, 30)
+}
+spriteset(spriteset_wagons_gen6_tanker_blue, "gfx/wagons/gen6_tanker.png") {
+	template_2cc_88(0, 60)
+}
+spriteset(spriteset_wagons_gen6_tanker_lightgrey, "gfx/wagons/gen6_tanker.png") {
+	template_2cc_88(0, 90)
+}
+spriteset(spriteset_wagons_gen6_tanker_red, "gfx/wagons/gen6_tanker.png") {
+	template_2cc_88(0, 120)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen6_tanker_randomlivery) {
+	1: spriteset_wagons_gen6_tanker_white;
+    1: spriteset_wagons_gen6_tanker_grey;
+    1: spriteset_wagons_gen6_tanker_blue;
+    1: spriteset_wagons_gen6_tanker_lightgrey;
+    1: spriteset_wagons_gen6_tanker_red;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen6_tanker_livery, cargo_subtype) {
+	1: spriteset_wagons_gen6_tanker_white;
+    2: spriteset_wagons_gen6_tanker_grey;
+    3: spriteset_wagons_gen6_tanker_blue;
+    4: spriteset_wagons_gen6_tanker_lightgrey;
+    5: spriteset_wagons_gen6_tanker_red;
+    switch_wagons_gen6_tanker_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_gen6_tanker_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_white);
+    2: return string(str_cargo_subtype_grey_dark);
+    3: return string(str_cargo_subtype_blue);
+    4: return string(str_cargo_subtype_grey_light);
+    5: return string(str_cargo_subtype_red);
+    return CB_RESULT_NO_TEXT;
+}

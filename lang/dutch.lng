@@ -384,44 +384,44 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Elektrisch)
 
 #wagons
-str_wagons_Tads_selfdischarger      :Tads Onderlosser
-str_wagons_gen0hopper               :Onderlosser (XS)
-str_wagons_gen0boxcar               :Gesloten wagen (XS)
-str_wagons_gen0tanker               :Ketelwagen (XS)
-str_wagons_gen0openwagonmedium      :Open Wagen (S)
-str_wagons_gen0openwagonsmall       :Open Wagen (XS)
-str_wagons_gen0stakewagon           :Rongenwagen (XS)
-str_wagons_gen0livestockwagon       :Veewagen (XS)
-str_wagons_gen2_boxcar              :Gesloten wagen (S)
-str_wagons_gen2_livestock           :Veewagen (S)
-str_wagons_gen2_silo                :Silowagen (S)
-str_wagons_gen2_tanker              :Ketelwagen (S)
-str_wagons_gen2_stake               :Rongenwagen (S)
-str_wagons_gen2_refrigerator        :Koelwagen (S)
+str_wagons_gen0boxcar               :Kleine Gesloten Wagen
+str_wagons_gen2_boxcar              :Gesloten Wagen
+str_wagons_Gs_boxcar                :Gs Gesloten Wagen
+str_wagons_gen6_slidingdoor         :Schuifdeurwagen
+str_wagons_Habbiins_goodswagon      :Habbiins Gesloten Wagen
+str_wagons_gen0openwagonsmall       :Kleine Open Wagen
+str_wagons_gen2_openwagon           :Middelgrote Open Wagen
+str_wagons_GTUW_openwagon           :GTUW Open Wagen
+str_wagons_Es_openwagon             :Es Open Wagen
+str_wagons_Eass_openwagon           :Eass Open Wagen
+str_wagons_gen0hopper               :Kleine Onderlosser
 str_wagons_Fccpps_selfdischarger    :Fccpps Onderlosser
-str_wagons_gen4_Ubcs                :Silowagen (M) Ubcs "Bollenwagen"
-str_wagons_gen4_Ubcs_t              :Silowagen (M) Ubcs "Spherewagon"
-str_wagons_gen4_GTUW                :Open Wagen (M) GTUW
-str_wagons_gen4_Uh                  :Ketelwagen (M) Uh
-str_wagons_gen4_Gs                  :Gesloten wagen (M) Gs
-str_wagons_gen5_silo                :Silowagen (M)
-str_wagons_gen5_slidingdoor         :Schuifdeurwagen (M)
-str_wagons_gen5_livestock           :Veewagen (M)
-str_wagons_gen5_stake               :Rongenwagen (M)
-str_wagons_gen5_Es                  :Open Wagen (M) Es
-str_wagons_gen5_refrigerator        :Koelwagen (L)
-str_wagons_gen5_tanker              :Ketelwagen (L)
 str_wagons_Tals_selfdischarger      :Tals Onderlosser
-str_wagons_gen5_VAM                 :VAM Compostwagen (L)
-str_wagons_gen6_coil                :Spoelwagen (L)
-str_wagons_gen6_stake               :Rongenwagen (L)
-str_wagons_gen6_goods               :Gesloten wagen (L)
-str_wagons_gen6_containercarrier    :Containerwagen (M)
-str_wagons_gen9_superheavy_flatcar  :Kuilwagen (XL)
-str_wagons_gen9_silowagon           :Silowagen (L)
-str_wagons_gen7_Eass                :Open Wagen (L) Eass
-str_wagons_gen7_cartransporter      :Autotreinwagen (L)
-str_wagons_gen7_containercarrier    :Containerwagen (L)
+str_wagons_Tads_selfdischarger      :Tads Onderlosser
+str_wagons_gen0stakewagon           :Kleine Rongenwagen
+str_wagons_gen2_stake               :Rongenwagen
+str_wagons_gen4_stake               :Rongenwagen
+str_wagons_gen6_stake               :Rongenwagen
+str_wagons_gen7_coil                :Spoelwagen
+str_wagons_gen0tanker               :Kleine Ketelwagen
+str_wagons_gen2_tanker              :Ketelwagen
+str_wagons_Uh_tanker                :Uh Ketelwagen
+str_wagons_gen6_tanker              :Large Ketelwagen
+str_wagons_gen0livestockwagon       :Kleine Veewagen
+str_wagons_gen3_livestock           :Middelgrote Veewagen
+str_wagons_gen6_livestock           :Grote Veewagen
+str_wagons_gen4_silo                :Kleine Silowagen
+str_wagons_gen6_silo                :Middelgrote Silowagen
+str_wagons_gen9_silowagon           :Grote Silowagen
+str_wagons_Ubcs_bollenwagen         :Ubcs Silowagen "Bollenwagen"
+str_wagons_Ubcs_bollenwagen_t       :Ubcs Silowagen "Spherewagon"
+str_wagons_gen6_refrigerator        :Middelgrote Koelwagen
+str_wagons_gen7_refrigerator        :Grote Koelwagen
+str_wagons_Takkls_VAM               :Takkls Compostwagen
+str_wagons_gen7_cartransporter      :Autotreinwagen
+str_wagons_gen7_containercarrier    :Containerwagen
+str_wagons_gen9_containercarrier    :Containerwagen
+str_wagons_gen7_superheavy_flatcar  :Kuilwagen
 
 #coaches
 str_coaches_HIJSM_4_8_10 :Rijtuig HSM 1

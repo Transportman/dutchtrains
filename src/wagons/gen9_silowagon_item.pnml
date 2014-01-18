@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_wagons_gen9_silowagon) {
     property {
         name: string(str_wagons_gen9_silowagon);
         
-        introduction_date: date(2020,1,1);
+        introduction_date: date(2025,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
         loading_speed: 8;
         cost_factor: 54;
         running_cost_factor: 3;
-        speed: 160 km/h;
+        speed: 140 km/h;
         power: 0;
         cargo_capacity: 40;
         weight: 18 ton;

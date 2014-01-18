@@ -14,9 +14,8 @@ item(FEAT_TRAINS, item_wagons_Fccpps_selfdischarger) {
     property {
         name: string(str_wagons_Fccpps_selfdischarger);
         
-        introduction_date: date(1920,1,1);
+        introduction_date: date(1925,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        retire_early: 0;
         vehicle_life: 20;
         loading_speed: 5;
         cost_factor: 26;
@@ -33,7 +32,7 @@ item(FEAT_TRAINS, item_wagons_Fccpps_selfdischarger) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: unelectrified_D;
+        track_type: unelectrified_B;
 		ai_special_flag: AI_FLAG_CARGO;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -49,7 +48,7 @@ item(FEAT_TRAINS, item_wagons_Fccpps_selfdischarger) {
 	}
     graphics {
         purchase: spriteset_wagons_Fccpps_selfdischarger_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_D), string(str_purchase_lsp_2));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_2));
         cargo_capacity: return 18;
         colour_mapping: switch_generic_recolour;
         cargo_subtype_text: switch_wagons_Fccpps_selfdischarger_subtype_text;

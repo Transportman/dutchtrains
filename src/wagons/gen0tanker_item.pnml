@@ -14,8 +14,8 @@ item(FEAT_TRAINS, item_wagons_gen0tanker) {
     property {
         name: string(str_wagons_gen0tanker);
         
-        introduction_date: date(1838,1,1);
-        model_life: 114;
+        introduction_date: date(1820,1,1);
+        model_life: 102;
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 4;

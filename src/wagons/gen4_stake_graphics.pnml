@@ -1,0 +1,62 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen4_stake_purchase, "gfx/purchase/wagons/gen4_stake.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen4_stake_empty, "gfx/wagons/gen4_stake.png") {
+	template_2cc_68(0, 0)
+}
+spriteset(spriteset_wagons_gen4_stake_half_wood, "gfx/wagons/gen4_stake.png") {
+	template_2cc_68(0, 120)
+}
+spriteset(spriteset_wagons_gen4_stake_full_wood, "gfx/wagons/gen4_stake.png") {
+	template_2cc_68(0, 150)
+}
+spriteset(spriteset_wagons_gen4_stake_half_stel, "gfx/wagons/gen4_stake.png") {
+	template_2cc_68(0, 30)
+}
+spriteset(spriteset_wagons_gen4_stake_full_stel, "gfx/wagons/gen4_stake.png") {
+	template_2cc_68(0, 60)
+}
+spriteset(spriteset_wagons_gen4_stake_half_wdpr, "gfx/wagons/gen4_stake.png") {
+	template_2cc_68(0, 210)
+}
+spriteset(spriteset_wagons_gen4_stake_full_wdpr, "gfx/wagons/gen4_stake.png") {
+	template_2cc_68(0, 240)
+}
+
+spritegroup spritegroup_wagons_gen4_stake_wood {
+    loading: [spriteset_wagons_gen4_stake_empty, spriteset_wagons_gen4_stake_half_wood, spriteset_wagons_gen4_stake_full_wood];
+    loaded:  [spriteset_wagons_gen4_stake_empty, spriteset_wagons_gen4_stake_half_wood, spriteset_wagons_gen4_stake_full_wood];
+}
+
+spritegroup spritegroup_wagons_gen4_stake_stel {
+    loading: [spriteset_wagons_gen4_stake_empty, spriteset_wagons_gen4_stake_half_stel, spriteset_wagons_gen4_stake_full_stel];
+    loaded:  [spriteset_wagons_gen4_stake_empty, spriteset_wagons_gen4_stake_half_stel, spriteset_wagons_gen4_stake_full_stel];
+}
+
+spritegroup spritegroup_wagons_gen4_stake_wdpr {
+    loading: [spriteset_wagons_gen4_stake_empty, spriteset_wagons_gen4_stake_half_wdpr, spriteset_wagons_gen4_stake_full_wdpr];
+    loaded:  [spriteset_wagons_gen4_stake_empty, spriteset_wagons_gen4_stake_half_wdpr, spriteset_wagons_gen4_stake_full_wdpr];
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen4_stake_livery, cargo_type_in_veh) {
+    WOOD: spritegroup_wagons_gen4_stake_wood;
+    STEL: spritegroup_wagons_gen4_stake_stel;
+    spritegroup_wagons_gen4_stake_wdpr;
+}

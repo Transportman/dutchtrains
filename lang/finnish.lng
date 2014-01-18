@@ -60,7 +60,7 @@ str_emu_ICE3M           :ICE 3M (Sähkö)
 
 #wagons
 str_wagons_gen0boxcar               :Yleisvaunu (XS)
-str_wagons_gen4_Uh                  :Säiliövaunu (M) Uh
+str_wagons_Uh_tanker                :Säiliövaunu (M) Uh
 
 #coaches
 str_coaches_SS_C_723    :Matkustajavaunu SS C 650

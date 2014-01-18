@@ -58,7 +58,7 @@ if (param_vehicle_names == 1) {
     item(FEAT_TRAINS, item_coaches_Bolkoprijtuigen) { property { name: string(str_coaches_Bolkoprijtuigen_t); } }
     
     //wagons
-    item(FEAT_TRAINS, item_wagons_gen4_Ubcs) { property { name: string(str_wagons_gen4_Ubcs_t); } }
+    item(FEAT_TRAINS, item_wagons_Ubcs_bollenwagen) { property { name: string(str_wagons_Ubcs_bollenwagen_t); } }
     
     //metro
     item(FEAT_TRAINS, item_metro_GVB_M1M2) { property { name: string(str_metro_GVB_M1M2_t); } }

@@ -1,0 +1,107 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_wagons_gen7_superheavy_flatcar_purchase, "gfx/purchase/wagons/gen7_superheavy_flatcar.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_wagons_gen7_superheavy_flatcar_front, "gfx/wagons/gen7_superheavy_flatcar.png") {
+	template_2cc_48(1, 64)
+}
+spriteset(spriteset_wagons_gen7_superheavy_flatcar_back, "gfx/wagons/gen7_superheavy_flatcar.png") {
+	template_2cc_48(1, 1)
+}
+spriteset(spriteset_wagons_gen7_superheavy_flatcar_empty, "gfx/wagons/gen7_superheavy_flatcar.png") {
+	template_2cc_48(1, 32)
+}
+spriteset(spriteset_wagons_gen7_superheavy_flatcar_transformer, "gfx/wagons/gen7_superheavy_flatcar.png") {
+	template_2cc_48(1, 126)
+}
+spriteset(spriteset_wagons_gen7_superheavy_flatcar_house, "gfx/wagons/gen7_superheavy_flatcar.png") {
+	template_2cc_48(186, 126)
+}
+spriteset(spriteset_wagons_gen7_superheavy_flatcar_train, "gfx/wagons/gen7_superheavy_flatcar.png") {
+	template_2cc_48(371, 126)
+}
+spriteset(spriteset_wagons_gen7_superheavy_flatcar_tractor, "gfx/wagons/gen7_superheavy_flatcar.png") {
+	template_2cc_48(556, 126)
+}
+
+spritegroup spritegroup_wagons_gen7_superheavy_flatcar_transformer {
+    loading: [spriteset_wagons_gen7_superheavy_flatcar_empty, spriteset_wagons_gen7_superheavy_flatcar_transformer];
+    loaded:  [spriteset_wagons_gen7_superheavy_flatcar_empty, spriteset_wagons_gen7_superheavy_flatcar_transformer];
+}
+
+spritegroup spritegroup_wagons_gen7_superheavy_flatcar_house {
+    loading: [spriteset_wagons_gen7_superheavy_flatcar_empty, spriteset_wagons_gen7_superheavy_flatcar_house];
+    loaded:  [spriteset_wagons_gen7_superheavy_flatcar_empty, spriteset_wagons_gen7_superheavy_flatcar_house];
+}
+
+spritegroup spritegroup_wagons_gen7_superheavy_flatcar_train {
+    loading: [spriteset_wagons_gen7_superheavy_flatcar_empty, spriteset_wagons_gen7_superheavy_flatcar_train];
+    loaded:  [spriteset_wagons_gen7_superheavy_flatcar_empty, spriteset_wagons_gen7_superheavy_flatcar_train];
+}
+
+spritegroup spritegroup_wagons_gen7_superheavy_flatcar_tractor {
+    loading: [spriteset_wagons_gen7_superheavy_flatcar_empty, spriteset_wagons_gen7_superheavy_flatcar_tractor];
+    loaded:  [spriteset_wagons_gen7_superheavy_flatcar_empty, spriteset_wagons_gen7_superheavy_flatcar_tractor];
+}
+
+
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_wagons_gen7_superheavy_flatcar_randomlivery) {
+	1: spritegroup_wagons_gen7_superheavy_flatcar_transformer;
+    1: spritegroup_wagons_gen7_superheavy_flatcar_house;
+    1: spritegroup_wagons_gen7_superheavy_flatcar_train;
+    1: spritegroup_wagons_gen7_superheavy_flatcar_tractor;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_superheavy_flatcar_middle, cargo_subtype) {
+	1: spritegroup_wagons_gen7_superheavy_flatcar_transformer;
+    2: spritegroup_wagons_gen7_superheavy_flatcar_house;
+    3: spritegroup_wagons_gen7_superheavy_flatcar_train;
+    4: spritegroup_wagons_gen7_superheavy_flatcar_tractor;
+    switch_wagons_gen7_superheavy_flatcar_randomlivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_superheavy_flatcar_livery, (position_in_vehid_chain % 3)) {
+    0: spriteset_wagons_gen7_superheavy_flatcar_front;
+    2: spriteset_wagons_gen7_superheavy_flatcar_back;
+    switch_wagons_gen7_superheavy_flatcar_middle;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_superheavy_flatcar_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_transformer);
+    2: return string(str_cargo_subtype_house);
+    3: return string(str_cargo_subtype_train);
+    4: return string(str_cargo_subtype_tractor);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_superheavy_flatcar_articulated, extra_callback_info1) {
+    1..2: return item_wagons_gen7_superheavy_flatcar;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

@@ -67,12 +67,12 @@ str_emu_gen9_HST        :P8000 (Eléctrico)
 
 #wagons
 str_wagons_gen2_boxcar              :Vagón de mercancías (S)
-str_wagons_gen2_refrigerator        :Vagón frigorífico (S)
-str_wagons_gen4_GTUW                :Vagón abierto (M) GTUW
-str_wagons_gen5_stake               :Vagón de estacas (M)
-str_wagons_gen5_refrigerator        :Vagón frigorífico (L)
+str_wagons_gen6_refrigerator        :Vagón frigorífico (S)
+str_wagons_GTUW_openwagon           :Vagón abierto (M) GTUW
+str_wagons_gen4_stake               :Vagón de estacas (M)
+str_wagons_gen7_refrigerator        :Vagón frigorífico (L)
 str_wagons_gen6_stake               :Vagón de estacas (L)
-str_wagons_gen6_goods               :Vagón de mercancías (L)
+str_wagons_Habbiins_goodswagon      :Vagón de mercancías (L)
 
 #coaches
 

@@ -80,10 +80,10 @@ str_emu_GTW28           :GTW 2/8 (Electrisch)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
 
 #wagons
-str_wagons_gen2_silo                :Silowagen (S)
+str_wagons_gen4_silo                :Silowagen (S)
 str_wagons_Fccpps_selfdischarger    :Fccpps Selbstentlader
 str_wagons_gen9_silowagon           :Silowagon (L)
-str_wagons_gen7_containercarrier    :Containerwagen (L)
+str_wagons_gen9_containercarrier    :Containerwagen (L)
 
 #coaches
 str_coaches_SS_ABd_7516 :Wagen SS ABd

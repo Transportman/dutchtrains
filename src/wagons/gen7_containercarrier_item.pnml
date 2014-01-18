@@ -14,16 +14,17 @@ item(FEAT_TRAINS, item_wagons_gen7_containercarrier) {
     property {
         name: string(str_wagons_gen7_containercarrier);
         
-        introduction_date: date(2000,1,1);
-        model_life: VEHICLE_NEVER_EXPIRES;
+        introduction_date: date(1975,1,1);
+        model_life: 102;
+        retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 8;
-        cost_factor: 49;
+        loading_speed: 7;
+        cost_factor: 46;
         running_cost_factor: 3;
-        speed: 200 km/h;
+        speed: 100 km/h;
         power: 0;
-        cargo_capacity: 42;
-        weight: 13 ton;
+        cargo_capacity: 40;
+        weight: 12 ton;
         tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
         
@@ -48,8 +49,8 @@ item(FEAT_TRAINS, item_wagons_gen7_containercarrier) {
 	}
     graphics {
         purchase: spriteset_wagons_gen7_containercarrier_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_3));
-        cargo_capacity: return 42;
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_4));
+        cargo_capacity: return 40;
         switch_wagons_gen7_containercarrier_livery;
     }
 }

@@ -14,17 +14,17 @@ item(FEAT_TRAINS, item_wagons_gen2_boxcar) {
     property {
         name: string(str_wagons_gen2_boxcar);
         
-        introduction_date: date(1920,1,1);
-        model_life: 87;
+        introduction_date: date(1860,1,1);
+        model_life: 102;
         retire_early: 20;
         vehicle_life: 20;
         loading_speed: 3;
-        cost_factor: 32;
-        running_cost_factor: 2;
-        speed: 96 km/h;
+        cost_factor: 25;
+        running_cost_factor: 1;
+        speed: 60 km/h;
         power: 0;
         cargo_capacity: 18;
-        weight: 15 ton;
+        weight: 9 ton;
         tractive_effort_coefficient: 0;
         air_drag_coefficient: 0;
         
@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_wagons_gen2_boxcar) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: unelectrified_C;
+        track_type: unelectrified_B;
 		ai_special_flag: AI_FLAG_CARGO;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_wagons_gen2_boxcar) {
 	}
     graphics {
         purchase: spriteset_wagons_gen2_boxcar_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_C), string(str_purchase_lsp_4));
+        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_4));
         cargo_capacity: return 18;
         spriteset_wagons_gen2_boxcar;
     }

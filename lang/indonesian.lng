@@ -115,7 +115,7 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Listrik)
 #wagons
 str_wagons_gen0openwagonsmall       :Gerbong Terbuka (XS)
 str_wagons_gen0livestockwagon       :Gerbong Ternak (XS)
-str_wagons_gen6_containercarrier    :Pengangkut Peti Kemas (M)
+str_wagons_gen7_containercarrier    :Pengangkut Peti Kemas (M)
 
 #coaches
 str_coaches_RTM_BD_438  :Gerbong RTM BD
