@@ -80,9 +80,10 @@ str_emu_GTW28           :GTW 2/8 (Electrisch)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
 
 #wagons
-str_wagons_gen4_silo                :Silowagen (S)
 str_wagons_Fccpps_selfdischarger    :Fccpps Selbstentlader
+str_wagons_gen4_silo                :Silowagen (S)
 str_wagons_gen9_silowagon           :Silowagon (L)
+str_wagons_gen7_containercarrier    :Containerwagen (L)
 str_wagons_gen9_containercarrier    :Containerwagen (L)
 
 #coaches
@@ -127,6 +128,7 @@ str_purchase_diesel_ACTS6700 :Vormals bekannt als: {SILVER} NMBS HLD 62.
 
 
 str_purchase_emu_ICE3M      :Multisystem Elektrotriebwagen, {YELLOW}+86% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.{}Auch bekannt als: {SILVER} DB BR 406.
+
 str_purchase_emu_ICE3M_no_track :Multisystem EMU.{}Auch bekannt als: {SILVER} DB BR 406.
 
 str_purchase_coaches_ZHESM_B :Später bekannt als: {SILVER} NS B9900.{}{BLACK}Zusammen mit Antriebswagen ZHESM mBC nutzen.

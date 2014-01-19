@@ -387,44 +387,44 @@ str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Električni)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Električni)
 
 #wagons
-str_wagons_Tads_selfdischarger      :Tads Samoistovarujući vagon
-str_wagons_gen0hopper               :Vagon za rasuti teret (XS)
 str_wagons_gen0boxcar               :Zatvoreni vagon (XS)
-str_wagons_gen0tanker               :Vagon cisterna (XS)
-str_wagons_gen2_openwagon           :Otvoreni vagon (S)
-str_wagons_gen0openwagonsmall       :Otvoreni vagon (XS)
-str_wagons_gen0stakewagon           :Plato-vagon sa stupcima (XS)
-str_wagons_gen0livestockwagon       :Vagon za stoku (XS)
 str_wagons_gen2_boxcar              :Teretni vagon (S)
-str_wagons_gen3_livestock           :Vagon za stoku (S)
-str_wagons_gen4_silo                :Vagon-silos (S)
-str_wagons_gen2_tanker              :Vagon cisterna (S)
-str_wagons_gen2_stake               :Plato-vagon sa stupcima (S)
-str_wagons_gen6_refrigerator        :Rashladni vagon (S)
+str_wagons_Gs_boxcar                :Zatvoreni vagon (M) Gs
+str_wagons_gen6_slidingdoor         :Vagon sa kliznim vratima (M)
+str_wagons_Habbiins_goodswagon      :Teretni vagon (L)
+str_wagons_gen0openwagonsmall       :Otvoreni vagon (XS)
+str_wagons_gen2_openwagon           :Otvoreni vagon (S)
+str_wagons_GTUW_openwagon           :Otvoreni vagon (M) GTUW
+str_wagons_Es_openwagon             :Otvoreni vagon (M) Es
+str_wagons_Eass_openwagon           :Otvoreni vagon (L) Eass
+str_wagons_gen0hopper               :Vagon za rasuti teret (XS)
 str_wagons_Fccpps_selfdischarger    :Fccpps Samoistovarujući vagon
+str_wagons_Tals_selfdischarger      :Tals Samoistovarujući vagon
+str_wagons_Tads_selfdischarger      :Tads Samoistovarujući vagon
+str_wagons_gen0stakewagon           :Plato-vagon sa stupcima (XS)
+str_wagons_gen2_stake               :Plato-vagon sa stupcima (S)
+str_wagons_gen4_stake               :Plato-vagon sa stupcima (M)
+str_wagons_gen6_stake               :Plato-vagon sa stupcima (L)
+str_wagons_gen7_coil                :Vagon za kaleme (L)
+str_wagons_gen0tanker               :Vagon cisterna (XS)
+str_wagons_gen2_tanker              :Vagon cisterna (S)
+str_wagons_Uh_tanker                :Vagon cisterna (M) Uh
+str_wagons_gen6_tanker              :Vagon cisterna (L)
+str_wagons_gen0livestockwagon       :Vagon za stoku (XS)
+str_wagons_gen3_livestock           :Vagon za stoku (S)
+str_wagons_gen6_livestock           :Vagon za stoku (M)
+str_wagons_gen4_silo                :Vagon-silos (S)
+str_wagons_gen6_silo                :Vagon-silos (M)
+str_wagons_gen9_silowagon           :Vagon-silos (L)
 str_wagons_Ubcs_bollenwagen         :Vagon-silos (M) Ubcs "Bollenwagen"
 str_wagons_Ubcs_bollenwagen_t       :Vagon-silos (M) Ubcs "Spherewagon"
-str_wagons_GTUW_openwagon           :Otvoreni vagon (M) GTUW
-str_wagons_Uh_tanker                :Vagon cisterna (M) Uh
-str_wagons_Gs_boxcar                :Zatvoreni vagon (M) Gs
-str_wagons_gen6_silo                :Vagon-silos (M)
-str_wagons_gen6_slidingdoor         :Vagon sa kliznim vratima (M)
-str_wagons_gen6_livestock           :Vagon za stoku (M)
-str_wagons_gen4_stake               :Plato-vagon sa stupcima (M)
-str_wagons_Es_openwagon             :Otvoreni vagon (M) Es
+str_wagons_gen6_refrigerator        :Rashladni vagon (S)
 str_wagons_gen7_refrigerator        :Rashladni vagon (L)
-str_wagons_gen6_tanker              :Vagon cisterna (L)
-str_wagons_Tals_selfdischarger      :Tals Samoistovarujući vagon
 str_wagons_Takkls_VAM               :VAM vagon za kompost (L)
-str_wagons_gen7_coil                :Vagon za kaleme (L)
-str_wagons_gen6_stake               :Plato-vagon sa stupcima (L)
-str_wagons_Habbiins_goodswagon      :Teretni vagon (L)
-str_wagons_gen7_containercarrier    :Nosač kontejnera (M)
-str_wagons_gen7_superheavy_flatcar  :Plato-vagon za vrlo teške terete (XL)
-str_wagons_gen9_silowagon           :Vagon-silos (L)
-str_wagons_Eass_openwagon           :Otvoreni vagon (L) Eass
 str_wagons_gen7_cartransporter      :Nosač automobila (L)
+str_wagons_gen7_containercarrier    :Nosač kontejnera (M)
 str_wagons_gen9_containercarrier    :Nosač kontejnera (L)
+str_wagons_gen7_superheavy_flatcar  :Plato-vagon za vrlo teške terete (XL)
 
 #coaches
 str_coaches_HIJSM_4_8_10 :Vagon HSM 1
@@ -620,6 +620,7 @@ str_purchase_emu_ICE3M      :Višesistemska EMU, {YELLOW}+86% snage {BLACK}na 25
 str_purchase_spc_emu_TGV    :Višesistemska EMU, {YELLOW}+139% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
 str_purchase_spc_emu_V250   :Višesistemska EMU, {YELLOW}+83% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
 str_purchase_spc_emu_gen9_HST :Višesistemska EMU, {YELLOW}+68% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+
 str_purchase_emu_ICE3M_no_track :Višesistemska EMU.{}Također poznata kao: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track :Višesistemska EMU.
 str_purchase_spc_emu_V250_no_track :Višesistemska EMU.

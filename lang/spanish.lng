@@ -66,13 +66,13 @@ str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
 
 #wagons
-str_wagons_gen2_boxcar              :Vagón de mercancías (S)
-str_wagons_gen6_refrigerator        :Vagón frigorífico (S)
+str_wagons_gen2_boxcar              :Vagón de mercancías
+str_wagons_Habbiins_goodswagon      :Vagón de mercancías (L)
 str_wagons_GTUW_openwagon           :Vagón abierto (M) GTUW
 str_wagons_gen4_stake               :Vagón de estacas (M)
+str_wagons_gen6_stake               :Vagón de estacas
+str_wagons_gen6_refrigerator        :Vagón frigorífico (S)
 str_wagons_gen7_refrigerator        :Vagón frigorífico (L)
-str_wagons_gen6_stake               :Vagón de estacas (L)
-str_wagons_Habbiins_goodswagon      :Vagón de mercancías (L)
 
 #coaches
 
@@ -101,6 +101,7 @@ str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
 str_purchase_steam_HSM701   :Anteriormente conocido como: {SILVER} HSM 701-755.
 str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, NBDS 25-26.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
+
 
 
 

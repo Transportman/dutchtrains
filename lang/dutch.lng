@@ -51,6 +51,8 @@ str_cargo_subtype_bordeaux_white            : > Bordeauxkleurstelling met wit
 str_cargo_subtype_bordeaux_white_blue       : > Bordeauxkleurstelling met wit/blauw
 str_cargo_subtype_bordeaux_white_yellow     : > Bordeauxkleurstelling met wit/geel
 str_cargo_subtype_black             : > Zwarte kleurstelling
+str_cargo_subtype_blackyellow_Crates            : > Zwarte/gele kleurstelling (kratten)
+str_cargo_subtype_blackyellow_Containers        : > Zwarte/gele kleurstelling (containers)
 str_cargo_subtype_blue              : > Blauwe kleurstelling
 str_cargo_subtype_blue_greyish      : > Grijsblauwe kleurstelling
 str_cargo_subtype_lighterblue       : > Enigszins lichter blauwe kleurstelling
@@ -131,10 +133,12 @@ str_cargo_subtype_fyra              : > Fyra kleurstelling
 str_cargo_subtype_fyra_red          : > Fyra (rood) kleurstelling
 str_cargo_subtype_fyra_white        : > Fyra (wit) kleurstelling
 str_cargo_subtype_groningen         : > Groningen Mendini kleurstelling
+str_cargo_subtype_ICE                           : > ICE kleurstelling
 str_cargo_subtype_icplus            : > IC+ kleurstelling (Mei 28, 1995 - Juni 2002)
 str_cargo_subtype_kennemerstrand    : > Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      : > Kinderboekenweek kleurstelling
+str_cargo_subtype_lll                           : > Lage Landen Lijn
 str_cargo_subtype_hispeed           : > NS Hispeed kleurstelling
 str_cargo_subtype_hispeed_nocab     : > NS Hispeed kleurstelling, zonder stuurstand
 str_cargo_subtype_maashopper        : > Veolia wit/rood "Maashopper" kleurstelling
@@ -148,9 +152,11 @@ str_cargo_subtype_overnightexpress  : > Overnight Express kleurstelling
 str_cargo_subtype_prototype         : > Prototype kleurstelling
 str_cargo_subtype_randstadrail      : > RandstadRail kleurstelling
 str_cargo_subtype_renewal           : > Gemoderniseerde kleurstelling
+str_cargo_subtype_ns_sprinter           : > NS Sprinter kleurstelling
 str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)
 str_cargo_subtype_strandsprinter_beachballs : > "Strandsprinter" kleurstelling met strandballen
 str_cargo_subtype_strandsprinter    : > "Strandsprinter" kleurstelling
+str_cargo_subtype_TGV                           : > Thalys kleurstelling
 str_cargo_subtype_TGV_PBKA          : > PBKA kleurstelling
 str_cargo_subtype_TGV_PBA           : > PBA kleurstelling
 str_cargo_subtype_valleilijn_yellow_blue    : >Valleilijn geel/blauwe kleurstelling
@@ -177,13 +183,19 @@ str_cargo_subtype_Breng             : > Breng kleurstelling
 str_cargo_subtype_Captrain          : > Captrain kleurstelling
 str_cargo_subtype_Crossrail         : > Crossrail kleurstelling
 str_cargo_subtype_DBSchenker        : > DB Schenker kleurstelling
+str_cargo_subtype_DBSchenker_Crates     : > DB Schenker kleurstelling (kratten)
+str_cargo_subtype_DBSchenker_Containers : > DB Schenker kleurstelling (containers)
 str_cargo_subtype_DLC               : > DLC kleurstelling
 str_cargo_subtype_ERS               : > ERS kleurstelling
+str_cargo_subtype_ERS_Crates            : > ERS kleurstelling (kratten)
+str_cargo_subtype_ERS_Containers        : > ERS kleurstelling (containers)
 str_cargo_subtype_EETC              : > Euro Express Treincharter kleurstelling
 str_cargo_subtype_HerikRail         : > Herik Rail kleurstelling
 str_cargo_subtype_HGK               : > HGK kleurstelling
 str_cargo_subtype_HSM               : > Hollandsche IJzeren Spoorweg-Maatschappij kleurstelling
 str_cargo_subtype_HUSA              : > HUSA kleurstelling
+str_cargo_subtype_HUSA_Crates           : > HUSA livery (kratten)
+str_cargo_subtype_HUSA_Containers       : > HUSA kleurstelling (containers)
 str_cargo_subtype_Locon             : > Locon kleurstelling
 str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij kleurstelling
 str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij kleurstelling
@@ -194,6 +206,8 @@ str_cargo_subtype_NS                : > NS kleurstelling
 str_cargo_subtype_NS_tank           : > NS kleurstelling (tenderlocomotief)
 str_cargo_subtype_NS_whiteroof      : > NS kleurstelling met wit dak
 str_cargo_subtype_NSCargo           : > NS Cargo kleurstelling
+str_cargo_subtype_NSCargo_Crates        : > NS Cargo kleurstelling (kratten)
+str_cargo_subtype_NSCargo_Containers : > NS Cargo kleurstelling (containers)
 str_cargo_subtype_Rail4Chem_green   : > Rail4Chem (groen) kleurstelling
 str_cargo_subtype_Rail4Chem_red     : > Rail4Chem (rood) kleurstelling
 str_cargo_subtype_Rail4Chem_grey_yellow : > Rail4Chem (grijs/geel) kleurstelling
@@ -336,6 +350,8 @@ str_dmu_DM90_t          :DM '90 "Buffalo" (Diesel)
 str_dmu_Lint41H         :Lint 41/H (Diesel)
 str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
+str_dmu_V200D4                  :V200-D4 (Diesel)
+str_dmu_V200D6                  :V200-D6 (Diesel)
 
 #emu
 str_emu_ZHESM_mBC       :ZHESM mBC (Elektrisch)
@@ -382,6 +398,10 @@ str_emu_GTW28           :GTW 2/8 (Elektrisch)
 str_emu_Protos          :Protos (Elektrisch)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Elektrisch)
+str_emu_Future_DD               :Futuristische DD (Electrisch)
+str_emu_V200E6                  :V200-E6 (Electrisch)
+str_emu_V200E8                  :V200-E8 (Electrisch)
+str_emu_CargoDD                 :Goederentreinstel (Electrisch)
 
 #wagons
 str_wagons_gen0boxcar               :Kleine Gesloten Wagen
@@ -478,6 +498,7 @@ str_metro_RET_typeT     :RET Type T SG2 (Metro)
 str_metro_RET_typeM     :RET Type M MG2 (Metro)
 str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
 str_metro_RET_typeR     :RET Type R RSG3 (Metro)
+str_metro_Future_MTR1   :Futuristische Metro1
 
 #PURCHASE MENU TEXTS
 
@@ -617,13 +638,19 @@ str_purchase_emu_ICE3M      :Meersysteemtreinstel, {YELLOW}+86% kracht {BLACK}op
 str_purchase_spc_emu_TGV    :Meersysteemtreinstel, {YELLOW}+139% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
 str_purchase_spc_emu_V250   :Meersysteemtreinstel, {YELLOW}+83% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
 str_purchase_spc_emu_gen9_HST :Meersysteemtreinstel, {YELLOW}+68% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_spc_emu_Future_DD :Meersysteemtreinstel, {YELLOW}+118% kracht {BLACK} op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_emu_CargoDD        :Meersysteemtreinstel, {YELLOW}+100% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+
 str_purchase_emu_ICE3M_no_track :Meersysteemtreinstel.{}Ook bekend als: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track :Meersysteemtreinstel.
 str_purchase_spc_emu_V250_no_track :Meersysteemtreinstel.
 str_purchase_spc_emu_gen9_HST_no_track :Meersysteemtreinstel.{}Fictief.
+str_purchase_spc_emu_Future_DD_no_track :Meersysteemtreinstel.{}Fictief.
+str_purchase_emu_CargoDD_no_track :Meersysteemtreinstel.{}Fictief.
 
 str_purchase_coaches_ZHESM_B :Later bekend als: {SILVER} NS B9900.{}{BLACK}Voor gebruik met motorwagen ZHESM mBC.
 str_purchase_coaches_Mat24  :Voor gebruik met motorwagen Mat '24.
 str_purchase_coaches_DDAR   :Voor gebruik met motorwagen mDDM of NID.
 str_purchase_coaches_PlanW  :Voor gebruik met electrische NS locomotieven voor nationale treindienst en NMBS HLE 25.5 voor Beneluxtrein.
 str_purchase_coaches_IRC    :Voor gebruik met electrische NS locomotieven voor nationale treindienst, NMBS HLE 11 voor Beneluxtrein en NS Hispeed 186 als Fyra.
+str_purchase_wagons_gen10_CargoDD       :Voor gebruik met Futuristic Cargo Mover.{}Fictief.

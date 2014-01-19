@@ -99,4 +99,5 @@ str_purchase_spc_electric_gen9_HS002_no_track :Monijärjestelmäjuna.{}Kuvitteel
 str_purchase_emu_Mat36ELD3  :Mukana matkatavaraosasto, joka voidaan sovittaa pikarahdille tai matkustajille.{}Vuodesta 1942 lähtien: {YELLOW}-26% paino, -50% teho, -45% vetovoima, -20% käyttökulut, -21% kapasiteetti, pituus -1/8.
 str_purchase_spc_emu_V250   :Monijärjestelmäsähkömoottorijuna, {YELLOW}+83% teho {BLACK}25 kV:n ~ sähköistetyllä radalla.
 
+
 str_purchase_coaches_DDAR   :Tarkoitettu käytettäväksi moottorivaunutyyppien mDDM tai NID kanssa.
