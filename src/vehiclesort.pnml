@@ -20,6 +20,7 @@ sort(FEAT_TRAINS, [
     item_metro_RET_typeT,
     item_metro_RET_typeB,
     item_metro_RET_typeR,
+	item_metro_Future_MTR1,
     
     //steam
     item_steam_Arend,
@@ -88,6 +89,8 @@ sort(FEAT_TRAINS, [
     item_dmu_Lint41H,
     item_dmu_GTW26,
     item_dmu_GTW28,
+	item_dmu_V200D4,
+	item_dmu_V200D6,
     
     //electric
     item_electric_NS1000,
@@ -142,6 +145,10 @@ sort(FEAT_TRAINS, [
 	item_electric_NID,
     item_emu_V250,
     item_emu_gen9_HST,
+	item_emu_V200E6,
+	item_emu_V200E8,
+	item_emu_Future_DD,
+	item_emu_CargoDD,
     
     //coaches
     item_coaches_HIJSM_4_8_10,

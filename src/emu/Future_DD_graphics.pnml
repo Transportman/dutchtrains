@@ -1,0 +1,307 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_Future_DD_purchase, "gfx/purchase/emu/Future_DD_blackyellow.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//NS-Sprinter
+spriteset(spriteset_emu_Future_DD_Sprinter_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Future_DD_Sprinter_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_Future_DD_Sprinter_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_Future_DD_Sprinter_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Sprinter_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_Sprinter_front;
+    3: spriteset_emu_Future_DD_Sprinter_middleblack;
+    5: spriteset_emu_Future_DD_Sprinter_middleblack; 
+    9: spriteset_emu_Future_DD_Sprinter_back;
+    spriteset_emu_Future_DD_Sprinter_middlewindow;
+}
+
+//NS-IC
+spriteset(spriteset_emu_Future_DD_IC_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_Future_DD_IC_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_Future_DD_IC_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_emu_Future_DD_IC_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 224)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_IC_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_IC_front;
+    3: spriteset_emu_Future_DD_IC_middleblack;
+    5: spriteset_emu_Future_DD_IC_middleblack; 
+    9: spriteset_emu_Future_DD_IC_back;
+    spriteset_emu_Future_DD_IC_middlewindow;
+}
+
+//Fyra
+spriteset(spriteset_emu_Future_DD_Fyra_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_emu_Future_DD_Fyra_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_emu_Future_DD_Fyra_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 320)
+}
+spriteset(spriteset_emu_Future_DD_Fyra_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 352)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Fyra_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_Fyra_front;
+    3: spriteset_emu_Future_DD_Fyra_middleblack;
+    5: spriteset_emu_Future_DD_Fyra_middleblack; 
+    9: spriteset_emu_Future_DD_Fyra_back;
+    spriteset_emu_Future_DD_Fyra_middlewindow;
+}
+
+//Black and Yellow
+spriteset(spriteset_emu_Future_DD_blackyellow_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 384)
+}
+spriteset(spriteset_emu_Future_DD_blackyellow_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 416)
+}
+spriteset(spriteset_emu_Future_DD_blackyellow_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 448)
+}
+spriteset(spriteset_emu_Future_DD_blackyellow_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 480)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_blackyellow_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_blackyellow_front;
+    3: spriteset_emu_Future_DD_blackyellow_middleblack;
+    5: spriteset_emu_Future_DD_blackyellow_middleblack; 
+    9: spriteset_emu_Future_DD_blackyellow_back;
+    spriteset_emu_Future_DD_blackyellow_middlewindow;
+}
+
+//Veolia
+spriteset(spriteset_emu_Future_DD_Veolia_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 512)
+}
+spriteset(spriteset_emu_Future_DD_Veolia_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 544)
+}
+spriteset(spriteset_emu_Future_DD_Veolia_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 576)
+}
+spriteset(spriteset_emu_Future_DD_Veolia_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 608)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Veolia_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_Veolia_front;
+    3: spriteset_emu_Future_DD_Veolia_middleblack;
+    5: spriteset_emu_Future_DD_Veolia_middleblack; 
+    9: spriteset_emu_Future_DD_Veolia_back;
+    spriteset_emu_Future_DD_Veolia_middlewindow;
+}
+
+//Syntus
+spriteset(spriteset_emu_Future_DD_Syntus_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 640)
+}
+spriteset(spriteset_emu_Future_DD_Syntus_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 672)
+}
+spriteset(spriteset_emu_Future_DD_Syntus_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 704)
+}
+spriteset(spriteset_emu_Future_DD_Syntus_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 736)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Syntus_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_Syntus_front;
+    3: spriteset_emu_Future_DD_Syntus_middleblack;
+    5: spriteset_emu_Future_DD_Syntus_middleblack; 
+    9: spriteset_emu_Future_DD_Syntus_back;
+    spriteset_emu_Future_DD_Syntus_middlewindow;
+}
+
+//Arriva
+spriteset(spriteset_emu_Future_DD_Arriva_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 768)
+}
+spriteset(spriteset_emu_Future_DD_Arriva_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 800)
+}
+spriteset(spriteset_emu_Future_DD_Arriva_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 832)
+}
+spriteset(spriteset_emu_Future_DD_Arriva_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 864)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Arriva_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_Arriva_front;
+    3: spriteset_emu_Future_DD_Arriva_middleblack;
+    5: spriteset_emu_Future_DD_Arriva_middleblack; 
+    9: spriteset_emu_Future_DD_Arriva_back;
+    spriteset_emu_Future_DD_Arriva_middlewindow;
+}
+
+//Thalys
+spriteset(spriteset_emu_Future_DD_Thalys_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 896)
+}
+spriteset(spriteset_emu_Future_DD_Thalys_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 928)
+}
+spriteset(spriteset_emu_Future_DD_Thalys_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 960)
+}
+spriteset(spriteset_emu_Future_DD_Thalys_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 992)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Thalys_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_Thalys_front;
+    3: spriteset_emu_Future_DD_Thalys_middleblack;
+    5: spriteset_emu_Future_DD_Thalys_middleblack; 
+    9: spriteset_emu_Future_DD_Thalys_back;
+    spriteset_emu_Future_DD_Thalys_middlewindow;
+}
+
+//ICE
+spriteset(spriteset_emu_Future_DD_ICE_front, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 1024)
+}
+spriteset(spriteset_emu_Future_DD_ICE_middlewindow, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 1056)
+}
+spriteset(spriteset_emu_Future_DD_ICE_middleblack, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 1088)
+}
+spriteset(spriteset_emu_Future_DD_ICE_back, "gfx/emu/Future_DD.png") {
+	template_2cc_88(1, 1120)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_ICE_position, (position_in_vehid_chain % 10)) {
+	0: spriteset_emu_Future_DD_ICE_front;
+    3: spriteset_emu_Future_DD_ICE_middleblack;
+    5: spriteset_emu_Future_DD_ICE_middleblack; 
+    9: spriteset_emu_Future_DD_ICE_back;
+    spriteset_emu_Future_DD_ICE_middlewindow;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_Future_DD_randomlivery) {
+	1: switch_emu_Future_DD_Sprinter_position;
+	1: switch_emu_Future_DD_IC_position;
+	1: switch_emu_Future_DD_Fyra_position;
+	1: switch_emu_Future_DD_blackyellow_position;
+	1: switch_emu_Future_DD_Veolia_position;
+	1: switch_emu_Future_DD_Syntus_position;
+	1: switch_emu_Future_DD_Arriva_position;
+	1: switch_emu_Future_DD_Thalys_position;
+	1: switch_emu_Future_DD_ICE_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_livery, cargo_subtype) {
+	1: switch_emu_Future_DD_Sprinter_position;
+	2: switch_emu_Future_DD_IC_position;
+	3: switch_emu_Future_DD_Fyra_position;
+	4: switch_emu_Future_DD_blackyellow_position;
+	5: switch_emu_Future_DD_Veolia_position;
+	6: switch_emu_Future_DD_Syntus_position;
+	7: switch_emu_Future_DD_Arriva_position;
+	8: switch_emu_Future_DD_Thalys_position;
+	9: switch_emu_Future_DD_ICE_position;
+    switch_emu_Future_DD_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+	1: return string(str_cargo_subtype_ns_sprinter);
+    2: return string(str_cargo_subtype_ns_ic);
+	3: return string(str_cargo_subtype_fyra_white);
+    4: return string(str_cargo_subtype_black);
+	5: return string(str_cargo_subtype_Veolia);
+    6: return string(str_cargo_subtype_Syntus);
+	7: return string(str_cargo_subtype_Arriva);
+	8: return string(str_cargo_subtype_TGV);
+    9: return string(str_cargo_subtype_ICE);	
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_articulated, extra_callback_info1) {
+    1..9: return item_emu_Future_DD;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_visual_effect_and_powered, (position_in_vehid_chain % 10)) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_power, current_railtype) {
+    SAAA: return 15801;
+    SABA: return 15801;
+    SACA: return 15801;
+    SADA: return 15801;
+    SAEA: return 15801;
+    SBAA: return 15801;
+    SBBA: return 15801;
+    SBCA: return 15801;
+    SBDA: return 15801;
+    SBEA: return 15801;
+    SAAa: return 9921;
+    SABa: return 9921;
+    SACa: return 9921;
+    SADa: return 9921;
+    SAEa: return 9921;
+    SBAa: return 9921;
+    SBBa: return 9921;
+    SBCa: return 9921;
+    SBDa: return 9921;
+    SBEa: return 9921;
+    return 6935;
+}

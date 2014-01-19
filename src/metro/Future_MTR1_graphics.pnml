@@ -1,0 +1,122 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_metro_Future_MTR1_redwhite_purchase, "gfx/purchase/metro/Future_MTR1_redwhite.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_metro_Future_MTR1_whiteblue_front, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_metro_Future_MTR1_whiteblue_middle, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_metro_Future_MTR1_whiteblue_back, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_white_blue, (position_in_vehid_chain % 4)) {
+	1..2: spriteset_metro_Future_MTR1_whiteblue_middle;
+    3: spriteset_metro_Future_MTR1_whiteblue_back;
+    spriteset_metro_Future_MTR1_whiteblue_front;
+}
+
+spriteset(spriteset_metro_Future_MTR1_grey_front, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_metro_Future_MTR1_grey_middle, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_metro_Future_MTR1_grey_back, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 160)
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_grey, (position_in_vehid_chain % 4)) {
+	1..2: spriteset_metro_Future_MTR1_grey_middle;
+    3: spriteset_metro_Future_MTR1_grey_back;
+    spriteset_metro_Future_MTR1_grey_front;
+}
+
+spriteset(spriteset_metro_Future_MTR1_whitered_front, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_metro_Future_MTR1_whitered_middle, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 224)
+}
+spriteset(spriteset_metro_Future_MTR1_whitered_back, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 256)
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_white_red, (position_in_vehid_chain % 4)) {
+	1..2: spriteset_metro_Future_MTR1_whitered_middle;
+    3: spriteset_metro_Future_MTR1_whitered_back;
+    spriteset_metro_Future_MTR1_whitered_front;
+}
+
+spriteset(spriteset_metro_Future_MTR1_blue_front, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_metro_Future_MTR1_blue_middle, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 320)
+}
+spriteset(spriteset_metro_Future_MTR1_blue_back, "gfx/metro/Future_MTR1.png") {
+	template_2cc_88(1, 352)
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_blue, (position_in_vehid_chain % 4)) {
+	1..2: spriteset_metro_Future_MTR1_blue_middle;
+    3: spriteset_metro_Future_MTR1_blue_back;
+    spriteset_metro_Future_MTR1_blue_front;
+}
+
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_metro_Future_MTR1_randomlivery) {
+    1: switch_metro_Future_MTR1_position_white_blue;
+    1: switch_metro_Future_MTR1_position_grey;
+	1: switch_metro_Future_MTR1_position_white_red;
+	1: switch_metro_Future_MTR1_position_blue;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_Future_MTR1_livery, cargo_subtype) {
+    1: switch_metro_Future_MTR1_position_white_blue;
+    2: switch_metro_Future_MTR1_position_grey;
+	3: switch_metro_Future_MTR1_position_white_red;
+	4: switch_metro_Future_MTR1_position_blue;
+    switch_metro_Future_MTR1_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_white_blue);
+    2: return string(str_cargo_subtype_grey);
+	3: return string(str_cargo_subtype_white_red);
+	4: return string(str_cargo_subtype_blue);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_articulated, extra_callback_info1) {
+    1..2: return item_metro_Future_MTR1;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

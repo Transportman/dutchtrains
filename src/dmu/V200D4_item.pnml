@@ -1,0 +1,57 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* ITEM
+*/
+
+item(FEAT_TRAINS, item_dmu_V200D4) {
+    property {
+        name: string(str_dmu_V200D4);
+        
+        introduction_date: date(2025,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 20;
+        loading_speed: 5;
+        cost_factor: 71;
+        running_cost_factor: 47;
+        speed: 200 km/h;
+        power: 1900 hpM;
+        cargo_capacity: 60;
+        weight: 100 ton;
+        tractive_effort_coefficient: 0.2;
+        air_drag_coefficient: 0;
+        
+        reliability_decay: 20;
+        CARGODEF_PASSENGERS
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        refit_cost: 0;
+        track_type: unelectrified_B;
+		ai_special_flag: AI_FLAG_PASSENGER;
+        running_cost_base: RUNNING_COST_DIESEL;
+        engine_class: ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+        
+        climates_available: ALL_CLIMATES;
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+	}
+    graphics {
+        cargo_capacity: return 60;
+        purchase: spriteset_dmu_V200D4_purchase;
+		cargo_subtype_text: switch_dmu_V200D4_subtype_text;
+        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_4_20), string(str_purchase_lsp_7), string(str_purchase_spc_fictional));
+        articulated_part: switch_dmu_V200D4_articulated;
+        visual_effect_and_powered: switch_dmu_V200D4_visual_effect_and_powered;
+        switch_dmu_V200D4_livery;
+    }
+}

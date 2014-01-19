@@ -197,6 +197,10 @@
 #include "src/dmu/omC1921_item.pnml"
 #include "src/dmu/omBC1901_graphics.pnml"
 #include "src/dmu/omBC1901_item.pnml"
+#include "src/dmu/V200D4_graphics.pnml"
+#include "src/dmu/V200D4_item.pnml"
+#include "src/dmu/V200D6_graphics.pnml"
+#include "src/dmu/V200D6_item.pnml"
 
 //emu
 #include "src/emu/mP_graphics.pnml"
@@ -267,6 +271,14 @@
 #include "src/emu/GTW26_item.pnml"
 #include "src/emu/GTW28_graphics.pnml"
 #include "src/emu/GTW28_item.pnml"
+#include "src/emu/Future_DD_graphics.pnml"
+#include "src/emu/Future_DD_item.pnml"
+#include "src/emu/V200E6_graphics.pnml"
+#include "src/emu/V200E6_item.pnml"
+#include "src/emu/V200E8_graphics.pnml"
+#include "src/emu/V200E8_item.pnml"
+#include "src/emu/CargoDD_graphics.pnml"
+#include "src/emu/CargoDD_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"
@@ -443,6 +455,8 @@
 #include "src/metro/RET_typeB_item.pnml"
 #include "src/metro/RET_typeR_graphics.pnml"
 #include "src/metro/RET_typeR_item.pnml"
+#include "src/metro/Future_MTR1_graphics.pnml"
+#include "src/metro/Future_MTR1_item.pnml"
 
 //English vehicle names
 #include "src/vehiclenames.pnml"

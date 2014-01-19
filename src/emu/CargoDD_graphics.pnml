@@ -1,0 +1,452 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_CargoDD_purchase, "gfx/purchase/emu/CargoDD_HUSAorangeblue.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//NS Cargo Crates
+spriteset(spriteset_emu_CargoDD_NSCargo_Crates_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Crates_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Crates_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Crates_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Crates_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Crates_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 160)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Crates_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 192)
+}
+
+spritegroup spritegroup_emu_CargoDD_NSCargo_Crates_middle {
+    loading: [spriteset_emu_CargoDD_NSCargo_Crates_middle_empty, spriteset_emu_CargoDD_NSCargo_Crates_middle_onethird, spriteset_emu_CargoDD_NSCargo_Crates_middle_twothird, spriteset_emu_CargoDD_NSCargo_Crates_middle_full];
+    loaded:  [spriteset_emu_CargoDD_NSCargo_Crates_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_NSCargo_Crates, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_NSCargo_Crates_front;
+    7: spriteset_emu_CargoDD_NSCargo_Crates_back;
+    spritegroup_emu_CargoDD_NSCargo_Crates_middle;
+}
+
+//NS Cargo Containers
+spriteset(spriteset_emu_CargoDD_NSCargo_Containers_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 224)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Containers_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Containers_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Containers_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 320)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Containers_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 352)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Containers_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 384)
+}
+spriteset(spriteset_emu_CargoDD_NSCargo_Containers_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 416)
+}
+
+spritegroup spritegroup_emu_CargoDD_NSCargo_Containers_middle {
+    loading: [spriteset_emu_CargoDD_NSCargo_Containers_middle_empty, spriteset_emu_CargoDD_NSCargo_Containers_middle_onethird, spriteset_emu_CargoDD_NSCargo_Containers_middle_twothird, spriteset_emu_CargoDD_NSCargo_Containers_middle_full];
+    loaded:  [spriteset_emu_CargoDD_NSCargo_Containers_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_NSCargo_Containers, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_NSCargo_Containers_front;
+    7: spriteset_emu_CargoDD_NSCargo_Containers_back;
+    spritegroup_emu_CargoDD_NSCargo_Containers_middle;
+}
+
+//DB Schenker Crates
+spriteset(spriteset_emu_CargoDD_DBSchenker_Crates_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 448)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Crates_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 480)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Crates_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 512)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Crates_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 544)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Crates_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 576)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Crates_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 608)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Crates_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 640)
+}
+
+spritegroup spritegroup_emu_CargoDD_DBSchenker_Crates_middle {
+    loading: [spriteset_emu_CargoDD_DBSchenker_Crates_middle_empty, spriteset_emu_CargoDD_DBSchenker_Crates_middle_onethird, spriteset_emu_CargoDD_DBSchenker_Crates_middle_twothird, spriteset_emu_CargoDD_DBSchenker_Crates_middle_full];
+    loaded:  [spriteset_emu_CargoDD_DBSchenker_Crates_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_DBSchenker_Crates, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_DBSchenker_Crates_front;
+    7: spriteset_emu_CargoDD_DBSchenker_Crates_back;
+    spritegroup_emu_CargoDD_DBSchenker_Crates_middle;
+}
+
+//DB Schenker Containers
+spriteset(spriteset_emu_CargoDD_DBSchenker_Containers_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 672)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Containers_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 704)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Containers_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 736)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Containers_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 768)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Containers_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 800)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Containers_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 832)
+}
+spriteset(spriteset_emu_CargoDD_DBSchenker_Containers_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 864)
+}
+
+spritegroup spritegroup_emu_CargoDD_DBSchenker_Containers_middle {
+    loading: [spriteset_emu_CargoDD_DBSchenker_Containers_middle_empty, spriteset_emu_CargoDD_DBSchenker_Containers_middle_onethird, spriteset_emu_CargoDD_DBSchenker_Containers_middle_twothird, spriteset_emu_CargoDD_DBSchenker_Containers_middle_full];
+    loaded:  [spriteset_emu_CargoDD_DBSchenker_Containers_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_DBSchenker_Containers, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_DBSchenker_Containers_front;
+    7: spriteset_emu_CargoDD_DBSchenker_Containers_back;
+    spritegroup_emu_CargoDD_DBSchenker_Containers_middle;
+}
+
+//Blackyellow Crates
+spriteset(spriteset_emu_CargoDD_blackyellow_Crates_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 896)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Crates_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 928)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Crates_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 960)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Crates_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 992)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Crates_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1024)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Crates_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1056)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Crates_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1088)
+}
+
+spritegroup spritegroup_emu_CargoDD_blackyellow_Crates_middle {
+    loading: [spriteset_emu_CargoDD_blackyellow_Crates_middle_empty, spriteset_emu_CargoDD_blackyellow_Crates_middle_onethird, spriteset_emu_CargoDD_blackyellow_Crates_middle_twothird, spriteset_emu_CargoDD_blackyellow_Crates_middle_full];
+    loaded:  [spriteset_emu_CargoDD_blackyellow_Crates_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_blackyellow_Crates, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_blackyellow_Crates_front;
+    7: spriteset_emu_CargoDD_blackyellow_Crates_back;
+    spritegroup_emu_CargoDD_blackyellow_Crates_middle;
+}
+
+//Blackyellow Containers
+spriteset(spriteset_emu_CargoDD_blackyellow_Containers_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1120)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Containers_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1152)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Containers_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1184)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Containers_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1216)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Containers_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1248)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Containers_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1280)
+}
+spriteset(spriteset_emu_CargoDD_blackyellow_Containers_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1312)
+}
+
+spritegroup spritegroup_emu_CargoDD_blackyellow_Containers_middle {
+    loading: [spriteset_emu_CargoDD_blackyellow_Containers_middle_empty, spriteset_emu_CargoDD_blackyellow_Containers_middle_onethird, spriteset_emu_CargoDD_blackyellow_Containers_middle_twothird, spriteset_emu_CargoDD_blackyellow_Containers_middle_full];
+    loaded:  [spriteset_emu_CargoDD_blackyellow_Containers_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_blackyellow_Containers, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_blackyellow_Containers_front;
+    7: spriteset_emu_CargoDD_blackyellow_Containers_back;
+    spritegroup_emu_CargoDD_blackyellow_Containers_middle;
+}
+
+//ERS Crates
+spriteset(spriteset_emu_CargoDD_ERS_Crates_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1344)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Crates_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1376)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Crates_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1408)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Crates_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1440)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Crates_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1472)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Crates_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1504)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Crates_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1536)
+}
+
+spritegroup spritegroup_emu_CargoDD_ERS_Crates_middle {
+    loading: [spriteset_emu_CargoDD_ERS_Crates_middle_empty, spriteset_emu_CargoDD_ERS_Crates_middle_onethird, spriteset_emu_CargoDD_ERS_Crates_middle_twothird, spriteset_emu_CargoDD_ERS_Crates_middle_full];
+    loaded:  [spriteset_emu_CargoDD_ERS_Crates_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_ERS_Crates, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_ERS_Crates_front;
+    7: spriteset_emu_CargoDD_ERS_Crates_back;
+    spritegroup_emu_CargoDD_ERS_Crates_middle;
+}
+
+//ERS Containers
+spriteset(spriteset_emu_CargoDD_ERS_Containers_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1568)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Containers_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1600)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Containers_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1632)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Containers_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1664)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Containers_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1696)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Containers_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1728)
+}
+spriteset(spriteset_emu_CargoDD_ERS_Containers_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1760)
+}
+
+spritegroup spritegroup_emu_CargoDD_ERS_Containers_middle {
+    loading: [spriteset_emu_CargoDD_ERS_Containers_middle_empty, spriteset_emu_CargoDD_ERS_Containers_middle_onethird, spriteset_emu_CargoDD_ERS_Containers_middle_twothird, spriteset_emu_CargoDD_ERS_Containers_middle_full];
+    loaded:  [spriteset_emu_CargoDD_ERS_Containers_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_ERS_Containers, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_ERS_Containers_front;
+    7: spriteset_emu_CargoDD_ERS_Containers_back;
+    spritegroup_emu_CargoDD_ERS_Containers_middle;
+}
+
+//HUSA Crates
+spriteset(spriteset_emu_CargoDD_HUSA_Crates_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1792)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Crates_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1824)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Crates_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1856)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Crates_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1888)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Crates_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1920)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Crates_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1952)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Crates_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 1984)
+}
+
+spritegroup spritegroup_emu_CargoDD_HUSA_Crates_middle {
+    loading: [spriteset_emu_CargoDD_HUSA_Crates_middle_empty, spriteset_emu_CargoDD_HUSA_Crates_middle_onethird, spriteset_emu_CargoDD_HUSA_Crates_middle_twothird, spriteset_emu_CargoDD_HUSA_Crates_middle_full];
+    loaded:  [spriteset_emu_CargoDD_HUSA_Crates_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_HUSA_Crates, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_HUSA_Crates_front;
+    7: spriteset_emu_CargoDD_HUSA_Crates_back;
+    spritegroup_emu_CargoDD_HUSA_Crates_middle;
+}
+
+//HUSA Containers
+spriteset(spriteset_emu_CargoDD_HUSA_Containers_front, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 2016)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Containers_middle_closed, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 2048)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Containers_middle_empty, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 2080)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Containers_middle_onethird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 2112)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Containers_middle_twothird, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 2144)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Containers_middle_full, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 2176)
+}
+spriteset(spriteset_emu_CargoDD_HUSA_Containers_back, "gfx/emu/CargoDD.png") {
+	template_2cc_88(1, 2208)
+}
+
+spritegroup spritegroup_emu_CargoDD_HUSA_Containers_middle {
+    loading: [spriteset_emu_CargoDD_HUSA_Containers_middle_empty, spriteset_emu_CargoDD_HUSA_Containers_middle_onethird, spriteset_emu_CargoDD_HUSA_Containers_middle_twothird, spriteset_emu_CargoDD_HUSA_Containers_middle_full];
+    loaded:  [spriteset_emu_CargoDD_HUSA_Containers_middle_closed];
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_HUSA_Containers, (position_in_vehid_chain % 8)) {
+	0: spriteset_emu_CargoDD_HUSA_Containers_front;
+    7: spriteset_emu_CargoDD_HUSA_Containers_back;
+    spritegroup_emu_CargoDD_HUSA_Containers_middle;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_CargoDD_randomlivery) {
+    1: switch_emu_CargoDD_position_NSCargo_Crates;
+    1: switch_emu_CargoDD_position_NSCargo_Containers;
+	1: switch_emu_CargoDD_position_DBSchenker_Crates;
+	1: switch_emu_CargoDD_position_DBSchenker_Containers;
+	1: switch_emu_CargoDD_position_blackyellow_Crates;
+    1: switch_emu_CargoDD_position_blackyellow_Containers;
+	1: switch_emu_CargoDD_position_ERS_Crates;
+	1: switch_emu_CargoDD_position_ERS_Containers;
+	1: switch_emu_CargoDD_position_HUSA_Crates;
+	1: switch_emu_CargoDD_position_HUSA_Containers;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_CargoDD_livery, cargo_subtype) {
+    1: switch_emu_CargoDD_position_NSCargo_Crates;
+    2: switch_emu_CargoDD_position_NSCargo_Containers;
+	3: switch_emu_CargoDD_position_DBSchenker_Crates;
+	4: switch_emu_CargoDD_position_DBSchenker_Containers;
+	5: switch_emu_CargoDD_position_blackyellow_Crates;
+    6: switch_emu_CargoDD_position_blackyellow_Containers;
+	7: switch_emu_CargoDD_position_ERS_Crates;
+	8: switch_emu_CargoDD_position_ERS_Containers;
+	9: switch_emu_CargoDD_position_HUSA_Crates;
+	10: switch_emu_CargoDD_position_HUSA_Containers;
+    switch_emu_CargoDD_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_NSCargo_Crates);
+    2: return string(str_cargo_subtype_NSCargo_Containers);
+	3: return string(str_cargo_subtype_DBSchenker_Crates);
+	4: return string(str_cargo_subtype_DBSchenker_Containers);
+	5: return string(str_cargo_subtype_blackyellow_Crates);
+	6: return string(str_cargo_subtype_blackyellow_Containers);
+	7: return string(str_cargo_subtype_ERS_Crates);
+	8: return string(str_cargo_subtype_ERS_Containers);
+	9: return string(str_cargo_subtype_HUSA_Crates);
+	10: return string(str_cargo_subtype_HUSA_Containers);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_articulated, extra_callback_info1) {
+    1..7: return item_emu_CargoDD;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_visual_effect_and_powered, (position_in_vehid_chain % 8)) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_power, current_railtype) {
+    SAAA: return 20000;
+    SABA: return 20000;
+    SACA: return 20000;
+    SADA: return 20000;
+    SAEA: return 20000;
+    SBAA: return 20000;
+    SBBA: return 20000;
+    SBCA: return 20000;
+    SBDA: return 20000;
+    SBEA: return 20000;
+    SAAa: return 15000;
+    SABa: return 15000;
+    SACa: return 15000;
+    SADa: return 15000;
+    SAEa: return 15000;
+    SBAa: return 15000;
+    SBBa: return 15000;
+    SBCa: return 15000;
+    SBDa: return 15000;
+    SBEa: return 15000;
+    return 10000;
+}

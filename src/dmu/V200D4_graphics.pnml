@@ -1,0 +1,175 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_dmu_V200D4_purchase, "gfx/purchase/dmu/V200D_NS_Sprinter.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//NS-IC
+spriteset(spriteset_dmu_V200D4_IC_front, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_dmu_V200D4_IC_middle, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 32)
+}
+spriteset(spriteset_dmu_V200D4_IC_back, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_IC_position, (position_in_vehid_chain % 4)) {
+	0: spriteset_dmu_V200D4_IC_front;
+    3: spriteset_dmu_V200D4_IC_back;
+    spriteset_dmu_V200D4_IC_middle;
+}
+
+//NS-Sprinter
+spriteset(spriteset_dmu_V200D4_Sprinter_front, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 96)
+}
+spriteset(spriteset_dmu_V200D4_Sprinter_middle, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 128)
+}
+spriteset(spriteset_dmu_V200D4_Sprinter_back, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 160)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_Sprinter_position, (position_in_vehid_chain % 4)) {
+	0: spriteset_dmu_V200D4_Sprinter_front;
+    3: spriteset_dmu_V200D4_Sprinter_back;
+    spriteset_dmu_V200D4_Sprinter_middle;
+}
+
+//Veolia
+spriteset(spriteset_dmu_V200D4_Veolia_front, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 192)
+}
+spriteset(spriteset_dmu_V200D4_Veolia_middle, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 224)
+}
+spriteset(spriteset_dmu_V200D4_Veolia_back, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 256)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_Veolia_position, (position_in_vehid_chain % 4)) {
+	0: spriteset_dmu_V200D4_Veolia_front;
+    3: spriteset_dmu_V200D4_Veolia_back;
+    spriteset_dmu_V200D4_Veolia_middle;
+}
+
+//Arriva
+spriteset(spriteset_dmu_V200D4_Arriva_front, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 288)
+}
+spriteset(spriteset_dmu_V200D4_Arriva_middle, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 320)
+}
+spriteset(spriteset_dmu_V200D4_Arriva_back, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 352)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_Arriva_position, (position_in_vehid_chain % 4)) {
+	0: spriteset_dmu_V200D4_Arriva_front;
+    3: spriteset_dmu_V200D4_Arriva_back;
+    spriteset_dmu_V200D4_Arriva_middle;
+}
+
+//Black and Yellow
+spriteset(spriteset_dmu_V200D4_blackyellow_front, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 384)
+}
+spriteset(spriteset_dmu_V200D4_blackyellow_middle, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 416)
+}
+spriteset(spriteset_dmu_V200D4_blackyellow_back, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 448)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_blackyellow_position, (position_in_vehid_chain % 4)) {
+	0: spriteset_dmu_V200D4_blackyellow_front;
+    3: spriteset_dmu_V200D4_blackyellow_back;
+    spriteset_dmu_V200D4_blackyellow_middle;
+}
+
+//Lage Landen Lijn
+spriteset(spriteset_dmu_V200D4_LLL_front, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 480)
+}
+spriteset(spriteset_dmu_V200D4_LLL_middle, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 512)
+}
+spriteset(spriteset_dmu_V200D4_LLL_back, "gfx/dmu/V200D.png") {
+	template_2cc_88(1, 544)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_LLL_position, (position_in_vehid_chain % 4)) {
+	0: spriteset_dmu_V200D4_LLL_front; 
+    3: spriteset_dmu_V200D4_LLL_back;
+    spriteset_dmu_V200D4_LLL_middle;
+}
+
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_V200D4_randomlivery) {
+	1: switch_dmu_V200D4_IC_position;
+	1: switch_dmu_V200D4_Sprinter_position;
+	1: switch_dmu_V200D4_Veolia_position;
+	1: switch_dmu_V200D4_Arriva_position;
+	1: switch_dmu_V200D4_blackyellow_position;
+	1: switch_dmu_V200D4_LLL_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_livery, cargo_subtype) {
+	1: switch_dmu_V200D4_IC_position;
+	2: switch_dmu_V200D4_Sprinter_position;
+	3: switch_dmu_V200D4_Veolia_position;
+	4: switch_dmu_V200D4_Arriva_position;
+	5: switch_dmu_V200D4_blackyellow_position;
+	6: switch_dmu_V200D4_LLL_position;
+    switch_dmu_V200D4_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+	1: return string(str_cargo_subtype_ns_ic);
+    2: return string(str_cargo_subtype_ns_sprinter);
+	3: return string(str_cargo_subtype_Veolia);
+    4: return string(str_cargo_subtype_Arriva);
+	5: return string(str_cargo_subtype_black);
+    6: return string(str_cargo_subtype_lll);	
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_articulated, extra_callback_info1) {
+    1..3: return item_dmu_V200D4;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D4_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

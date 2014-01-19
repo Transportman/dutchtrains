@@ -51,6 +51,8 @@ str_cargo_subtype_bordeaux_white            : > Bordeaux livery w/ white
 str_cargo_subtype_bordeaux_white_blue       : > Bordeaux livery w/ white/blue
 str_cargo_subtype_bordeaux_white_yellow     : > Bordeaux livery w/ white/yellow
 str_cargo_subtype_black             : > Black livery
+str_cargo_subtype_blackyellow_Crates		: > Black/yellow livery (crates)
+str_cargo_subtype_blackyellow_Containers	: > Black/yellow livery (containers)
 str_cargo_subtype_blue              : > Blue livery
 str_cargo_subtype_blue_greyish      : > Greyish Blue livery
 str_cargo_subtype_lighterblue       : > Slightly lighter blue livery
@@ -131,10 +133,12 @@ str_cargo_subtype_fyra              : > Fyra livery
 str_cargo_subtype_fyra_red          : > Fyra (red) livery
 str_cargo_subtype_fyra_white        : > Fyra (white) livery
 str_cargo_subtype_groningen         : > Groningen Mendini livery
+str_cargo_subtype_ICE				: > ICE livery
 str_cargo_subtype_icplus            : > IC+ livery (May 28, 1995 - June 2002)
 str_cargo_subtype_kennemerstrand    : > Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      : > Week of Children's Books livery
+str_cargo_subtype_lll				: > Lage Landen Lijn
 str_cargo_subtype_hispeed           : > NS Hispeed livery
 str_cargo_subtype_hispeed_nocab     : > NS Hispeed livery, no cab control
 str_cargo_subtype_maashopper        : > Veolia white/red "Maashopper" livery
@@ -148,9 +152,11 @@ str_cargo_subtype_overnightexpress  : > Overnight Express livery
 str_cargo_subtype_prototype         : > Prototype livery
 str_cargo_subtype_randstadrail      : > RandstadRail livery
 str_cargo_subtype_renewal           : > Renewal livery
+str_cargo_subtype_ns_sprinter		: > NS Sprinter livery
 str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (Dec 22, 1993 - current)
 str_cargo_subtype_strandsprinter_beachballs: > "Strandsprinter" livery w/ beachballs
 str_cargo_subtype_strandsprinter    : > "Strandsprinter" livery
+str_cargo_subtype_TGV				: > Thalys livery
 str_cargo_subtype_TGV_PBKA          : > PBKA livery
 str_cargo_subtype_TGV_PBA           : > PBA livery
 str_cargo_subtype_valleilijn_yellow_blue    : >Valleilijn yellow/blue livery
@@ -177,13 +183,19 @@ str_cargo_subtype_Breng             : > Breng livery
 str_cargo_subtype_Captrain          : > Captrain livery
 str_cargo_subtype_Crossrail         : > Crossrail livery
 str_cargo_subtype_DBSchenker        : > DB Schenker livery
+str_cargo_subtype_DBSchenker_Crates	: > DB Schenker livery (crates)
+str_cargo_subtype_DBSchenker_Containers : > DB Schenker livery (containers)
 str_cargo_subtype_DLC               : > DLC livery
 str_cargo_subtype_ERS               : > ERS livery
+str_cargo_subtype_ERS_Crates		: > ERS livery (crates)
+str_cargo_subtype_ERS_Containers	: > ERS livery (containers)
 str_cargo_subtype_EETC              : > Euro Express Treincharter livery
 str_cargo_subtype_HerikRail         : > Herik Rail livery
 str_cargo_subtype_HGK               : > HGK livery
 str_cargo_subtype_HSM               : > Hollandsche IJzeren Spoorweg-Maatschappij livery
 str_cargo_subtype_HUSA              : > HUSA livery
+str_cargo_subtype_HUSA_Crates		: > HUSA livery (crates)
+str_cargo_subtype_HUSA_Containers	: > HUSA livery (containers)
 str_cargo_subtype_Locon             : > Locon livery
 str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livery
 str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livery
@@ -194,6 +206,8 @@ str_cargo_subtype_NS                : > NS livery
 str_cargo_subtype_NS_tank           : > NS livery (tank locomotive)
 str_cargo_subtype_NS_whiteroof      : > NS livery w/ white roof
 str_cargo_subtype_NSCargo           : > NS Cargo livery
+str_cargo_subtype_NSCargo_Crates	: > NS Cargo livery (crates)
+str_cargo_subtype_NSCargo_Containers : > NS Cargo livery (containers)
 str_cargo_subtype_Rail4Chem_green   : > Rail4Chem (green) livery
 str_cargo_subtype_Rail4Chem_red     : > Rail4Chem (red) livery
 str_cargo_subtype_Rail4Chem_grey_yellow : > Rail4Chem (grey/yellow) livery
@@ -336,6 +350,8 @@ str_dmu_DM90_t          :DM '90 "Buffalo" (Diesel)
 str_dmu_Lint41H         :Lint 41/H (Diesel)
 str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
+str_dmu_V200D4			:V200-D4 (Diesel)
+str_dmu_V200D6			:V200-D6 (Diesel)
 
 #emu
 str_emu_ZHESM_mBC       :ZHESM mBC (Electric)
@@ -382,6 +398,10 @@ str_emu_GTW28           :GTW 2/8 (Electric)
 str_emu_Protos          :Protos (Electric)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Electric)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Electric)
+str_emu_Future_DD		:Future DD (Electric)
+str_emu_V200E6			:V200-E6 (Electric)
+str_emu_V200E8			:V200-E8 (Electric)
+str_emu_CargoDD			:Cargo EMU (Electric)
 
 #wagons
 str_wagons_gen0boxcar               :Small Boxcar
@@ -478,6 +498,7 @@ str_metro_RET_typeT     :RET Type T SG2 (Metro)
 str_metro_RET_typeM     :RET Type M MG2 (Metro)
 str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
 str_metro_RET_typeR     :RET Type R RSG3 (Metro)
+str_metro_Future_MTR1	:Futuristic Metro1
 
 #PURCHASE MENU TEXTS
 
@@ -617,13 +638,19 @@ str_purchase_emu_ICE3M      :Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV
 str_purchase_spc_emu_TGV    :Multisystem EMU, {YELLOW}+139% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_emu_V250   :Multisystem EMU, {YELLOW}+83% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_emu_gen9_HST:Multisystem EMU, {YELLOW}+68% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_spc_emu_Future_DD:Multisystem EMU, {YELLOW}+118% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_emu_CargoDD	:Multisystem EMU, {YELLOW}+100% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+
 str_purchase_emu_ICE3M_no_track:Multisystem EMU.{}Also known as: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track:Multisystem EMU.
 str_purchase_spc_emu_V250_no_track:Multisystem EMU.
 str_purchase_spc_emu_gen9_HST_no_track:Multisystem EMU.{}Fictional.
+str_purchase_spc_emu_Future_DD_no_track:Multisystem EMU.{}Fictional.
+str_purchase_emu_CargoDD_no_track:Multisystem EMU.{}Fictional.
 
 str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900.{}{BLACK}For use with motorcar ZHESM mBC.
 str_purchase_coaches_Mat24  :For use with motorcar Mat '24.
 str_purchase_coaches_DDAR   :For use with motorcar mDDM or NID.
 str_purchase_coaches_PlanW  :For use with electric NS locomotives for national service and NMBS HLE 25.5 for Benelux service.
 str_purchase_coaches_IRC    :For use with electric NS locomotives for national service, NMBS HLE 11 for Benelux service and NS Hispeed 186 as Fyra service.
+str_purchase_wagons_gen10_CargoDD	:For use with Futuristic Cargo Mover.{}Fictional.

@@ -1,0 +1,74 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* ITEM
+*/
+
+item(FEAT_TRAINS, item_emu_CargoDD) {
+    property {
+        name: string(str_emu_CargoDD);
+        
+        introduction_date: date(2030,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 20;
+        loading_speed: 4;
+        cost_factor: 100;
+        running_cost_factor: 70;
+        speed: 300 km/h;
+        power: 10000 kW;
+        cargo_capacity: 60;
+        weight: 300 ton;
+        tractive_effort_coefficient: 0.055;
+        air_drag_coefficient: 0;
+        
+        reliability_decay: 20;
+        CARGODEF_CONTAINER
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
+        refit_cost: 0;
+        track_type: dual_E;
+		ai_special_flag: AI_FLAG_CARGO;
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+        
+        climates_available: ALL_CLIMATES;
+		retire_early: 0;
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+	}
+	if ( TRACK_POWER_ON ) {
+		graphics {
+			cargo_capacity: return 60;
+			purchase: spriteset_emu_CargoDD_purchase;
+			cargo_subtype_text: switch_emu_CargoDD_subtype_text;
+			articulated_part: switch_emu_CargoDD_articulated;
+			additional_text: string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_hf), string(str_purchase_axl_E), string(str_purchase_len_8_40), string(str_purchase_lsp_4), string(str_purchase_emu_CargoDD));
+			visual_effect_and_powered: switch_emu_CargoDD_visual_effect_and_powered;
+			power: switch_emu_CargoDD_power;
+			purchase_power: return 10000;
+			switch_emu_CargoDD_livery;
+		}	
+	} else {
+		graphics {
+			cargo_capacity: return 60;
+			purchase: spriteset_emu_CargoDD_purchase;
+			cargo_subtype_text: switch_emu_CargoDD_subtype_text;
+			articulated_part: switch_emu_CargoDD_articulated;
+			additional_text: string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_hf), string(str_purchase_axl_E), string(str_purchase_len_8_40), string(str_purchase_lsp_4), string(str_purchase_emu_CargoDD_no_track));
+			visual_effect_and_powered: switch_emu_CargoDD_visual_effect_and_powered;
+			power: 8000;
+			purchase_power: return 20000;
+			switch_emu_CargoDD_livery;
+		}
+	}
+}
