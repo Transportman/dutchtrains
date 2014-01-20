@@ -54,6 +54,8 @@ str_cargo_subtype_bordeaux_white            : > Bordo livreja sa bijelim
 str_cargo_subtype_bordeaux_white_blue       : > Bordo livreja sa bijelo-plavim
 str_cargo_subtype_bordeaux_white_yellow     : > Bordo livreja sa bijelo-žutim
 str_cargo_subtype_black             : > Crna livreja
+str_cargo_subtype_blackyellow_Crates            :> Crno-žuta livreja (kutije)
+str_cargo_subtype_blackyellow_Containers        :> Crno-žuta livreja (kontejneri)
 str_cargo_subtype_blue              : > Plava livreja
 str_cargo_subtype_blue_greyish      : > Sivoplava livreja
 str_cargo_subtype_lighterblue       : > Svjetlije plava livreja
@@ -134,10 +136,12 @@ str_cargo_subtype_fyra              : > Fyra livreja
 str_cargo_subtype_fyra_red          : > Fyra (crvena) livreja
 str_cargo_subtype_fyra_white        : > Fyra (bijela) livreja
 str_cargo_subtype_groningen         : > Groningen Mendini livreja
+str_cargo_subtype_ICE                           :> ICE livreja
 str_cargo_subtype_icplus            : > IC+ livreja (svibanj 28, 1995 - lipanj 2002)
 str_cargo_subtype_kennemerstrand    : > Lovers Rail "Kennemerstrand Express"
 str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Express"
 str_cargo_subtype_kinderboeken      : > Livreja Tjedan dječje knjige
+str_cargo_subtype_lll                           :> Lage Landen Lijn
 str_cargo_subtype_hispeed           : > NS Hispeed livreja
 str_cargo_subtype_hispeed_nocab     : > NS Hispeed livreja, bez stražnjeg upravljačkog vagona
 str_cargo_subtype_maashopper        : > Veolia bijelo-crvena "Maashopper" livreja
@@ -151,9 +155,11 @@ str_cargo_subtype_overnightexpress  : > Overnight Express livreja
 str_cargo_subtype_prototype         : > Prototip livreja
 str_cargo_subtype_randstadrail      : > RandstadRail livreja
 str_cargo_subtype_renewal           : > Renewal livreja
+str_cargo_subtype_ns_sprinter           :> NS Sprinter livreja
 str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (prosinac 22, 1993 - danas)
 str_cargo_subtype_strandsprinter_beachballs : > "Strandsprinter" livreja sa loptama za plažu
 str_cargo_subtype_strandsprinter    : > "Strandsprinter" livreja
+str_cargo_subtype_TGV                           :> Thalys livreja
 str_cargo_subtype_TGV_PBKA          : > PBKA livreja
 str_cargo_subtype_TGV_PBA           : > PBA livreja
 str_cargo_subtype_valleilijn_yellow_blue    : > Valleilijn žuto-plava livreja
@@ -180,13 +186,19 @@ str_cargo_subtype_Breng             : > Breng livreja
 str_cargo_subtype_Captrain          : > Captrain livreja
 str_cargo_subtype_Crossrail         : > Crossrail livreja
 str_cargo_subtype_DBSchenker        : > DB Schenker livreja
+str_cargo_subtype_DBSchenker_Crates     :> DB Schenker livreja (kutije)
+str_cargo_subtype_DBSchenker_Containers :> DB Schenker livreja (kontejneri)
 str_cargo_subtype_DLC               : > DLC livreja
 str_cargo_subtype_ERS               : > ERS livreja
+str_cargo_subtype_ERS_Crates            :> ERS livreja (kutije)
+str_cargo_subtype_ERS_Containers        :> ERS livreja (kontejneri)
 str_cargo_subtype_EETC              : > Euro Express Treincharter livreja
 str_cargo_subtype_HerikRail         : > Herik Rail livreja
 str_cargo_subtype_HGK               : > HGK livreja
 str_cargo_subtype_HSM               : > Hollandsche IJzeren Spoorweg-Maatschappij livreja
 str_cargo_subtype_HUSA              : > HUSA livreja
+str_cargo_subtype_HUSA_Crates           : > HUSA livreja (kutije)
+str_cargo_subtype_HUSA_Containers       :> HUSA livreja (kontejneri)
 str_cargo_subtype_Locon             : > Locon livreja
 str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livreja
 str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livreja
@@ -197,6 +209,8 @@ str_cargo_subtype_NS                : > NS livreja
 str_cargo_subtype_NS_tank           : > NS livreja (tank lokomotiva)
 str_cargo_subtype_NS_whiteroof      : > NS livreja sa bijelim krovom
 str_cargo_subtype_NSCargo           : > NS Cargo livreja
+str_cargo_subtype_NSCargo_Crates        :> NS Cargo livreja (kutije)
+str_cargo_subtype_NSCargo_Containers :> NS Cargo livreja (kontejneri)
 str_cargo_subtype_Rail4Chem_green   : > Rail4Chem (zelena) livreja
 str_cargo_subtype_Rail4Chem_red     : > Rail4Chem (crvena) livreja
 str_cargo_subtype_Rail4Chem_grey_yellow : > Rail4Chem (sivo-žuta) livreja
@@ -339,6 +353,8 @@ str_dmu_DM90_t          :DM '90 "Buffalo" (Dizel)
 str_dmu_Lint41H         :Lint 41/H (Dizel)
 str_dmu_GTW26           :GTW 2/6 (Dizel)
 str_dmu_GTW28           :GTW 2/8 (Dizel)
+str_dmu_V200D4                  :V200-D4 (Dizel)
+str_dmu_V200D6                  :V200-D6 (Dizel)
 
 #emu
 str_emu_ZHESM_mBC       :ZHESM mBC (Električni)
@@ -385,43 +401,47 @@ str_emu_GTW28           :GTW 2/8 (Električni)
 str_emu_Protos          :Protos (Električni)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Električni)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Električni)
+str_emu_Future_DD               :Futuristički DD (Električni)
+str_emu_V200E6                  :V200-E6 (Električni)
+str_emu_V200E8                  :V200-E8 (Električni)
+str_emu_CargoDD                 :Teretni EMU (Električni)
 
 #wagons
-str_wagons_gen0boxcar               :Zatvoreni vagon (XS)
-str_wagons_gen2_boxcar              :Teretni vagon (S)
+str_wagons_gen0boxcar               :Mali zatvoreni vagon
+str_wagons_gen2_boxcar              :Teretni vagon
 str_wagons_Gs_boxcar                :Zatvoreni vagon (M) Gs
 str_wagons_gen6_slidingdoor         :Vagon sa kliznim vratima (M)
 str_wagons_Habbiins_goodswagon      :Teretni vagon (L)
-str_wagons_gen0openwagonsmall       :Otvoreni vagon (XS)
+str_wagons_gen0openwagonsmall       :Mali otvoreni vagon
 str_wagons_gen2_openwagon           :Otvoreni vagon (S)
 str_wagons_GTUW_openwagon           :Otvoreni vagon (M) GTUW
 str_wagons_Es_openwagon             :Otvoreni vagon (M) Es
 str_wagons_Eass_openwagon           :Otvoreni vagon (L) Eass
-str_wagons_gen0hopper               :Vagon za rasuti teret (XS)
+str_wagons_gen0hopper               :Mali vagon za rasuti teret
 str_wagons_Fccpps_selfdischarger    :Fccpps Samoistovarujući vagon
 str_wagons_Tals_selfdischarger      :Tals Samoistovarujući vagon
 str_wagons_Tads_selfdischarger      :Tads Samoistovarujući vagon
-str_wagons_gen0stakewagon           :Plato-vagon sa stupcima (XS)
-str_wagons_gen2_stake               :Plato-vagon sa stupcima (S)
+str_wagons_gen0stakewagon           :Mali plato-vagon sa stupcima
+str_wagons_gen2_stake               :Plato-vagon sa stupcima
 str_wagons_gen4_stake               :Plato-vagon sa stupcima (M)
-str_wagons_gen6_stake               :Plato-vagon sa stupcima (L)
+str_wagons_gen6_stake               :Plato-vagon sa stupcima
 str_wagons_gen7_coil                :Vagon za kaleme (L)
-str_wagons_gen0tanker               :Vagon cisterna (XS)
-str_wagons_gen2_tanker              :Vagon cisterna (S)
+str_wagons_gen0tanker               :Mali vagon cisterna
+str_wagons_gen2_tanker              :Vagon cisterna
 str_wagons_Uh_tanker                :Vagon cisterna (M) Uh
 str_wagons_gen6_tanker              :Vagon cisterna (L)
-str_wagons_gen0livestockwagon       :Vagon za stoku (XS)
+str_wagons_gen0livestockwagon       :Mali vagon za stoku
 str_wagons_gen3_livestock           :Vagon za stoku (S)
 str_wagons_gen6_livestock           :Vagon za stoku (M)
 str_wagons_gen4_silo                :Vagon-silos (S)
 str_wagons_gen6_silo                :Vagon-silos (M)
-str_wagons_gen9_silowagon           :Vagon-silos (L)
+str_wagons_gen9_silowagon           :Veliki vagon-silos
 str_wagons_Ubcs_bollenwagen         :Vagon-silos (M) Ubcs "Bollenwagen"
 str_wagons_Ubcs_bollenwagen_t       :Vagon-silos (M) Ubcs "Spherewagon"
 str_wagons_gen6_refrigerator        :Rashladni vagon (S)
 str_wagons_gen7_refrigerator        :Rashladni vagon (L)
 str_wagons_Takkls_VAM               :VAM vagon za kompost (L)
-str_wagons_gen7_cartransporter      :Nosač automobila (L)
+str_wagons_gen7_cartransporter      :Nosač automobila
 str_wagons_gen7_containercarrier    :Nosač kontejnera (M)
 str_wagons_gen9_containercarrier    :Nosač kontejnera (L)
 str_wagons_gen7_superheavy_flatcar  :Plato-vagon za vrlo teške terete (XL)
@@ -481,6 +501,7 @@ str_metro_RET_typeT     :RET Type T SG2 (Metro)
 str_metro_RET_typeM     :RET Type M MG2 (Metro)
 str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
 str_metro_RET_typeR     :RET Type R RSG3 (Metro)
+str_metro_Future_MTR1   :Futuristički Metro1
 
 #PURCHASE MENU TEXTS
 
@@ -620,14 +641,19 @@ str_purchase_emu_ICE3M      :Višesistemska EMU, {YELLOW}+86% snage {BLACK}na 25
 str_purchase_spc_emu_TGV    :Višesistemska EMU, {YELLOW}+139% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
 str_purchase_spc_emu_V250   :Višesistemska EMU, {YELLOW}+83% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
 str_purchase_spc_emu_gen9_HST :Višesistemska EMU, {YELLOW}+68% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_spc_emu_Future_DD :Višesistemska EMU, {YELLOW}+118% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_emu_CargoDD        :Višesistemska EMU, {YELLOW}+100% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
 
 str_purchase_emu_ICE3M_no_track :Višesistemska EMU.{}Također poznata kao: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track :Višesistemska EMU.
 str_purchase_spc_emu_V250_no_track :Višesistemska EMU.
 str_purchase_spc_emu_gen9_HST_no_track :Višesistemska EMU.{}Izmišljena.
+str_purchase_spc_emu_Future_DD_no_track :Višesistemska EMU.{}Izmišljena.
+str_purchase_emu_CargoDD_no_track :Višesistemska EMU.{}Izmišljena.
 
 str_purchase_coaches_ZHESM_B :Kasnije poznata kao: {SILVER} NS B9900.{}{BLACK}Za korištenje sa motornim vagonom ZHESM mBC.
 str_purchase_coaches_Mat24  :Za korištenje sa motornim vagonima Mat '24.
 str_purchase_coaches_DDAR   :Za korištenje sa motornim vagonima mDDM or NID.
 str_purchase_coaches_PlanW  :Za korištenje sa električnim NS lokomotivama za nacionalni prijevoz i NMBS HLE 25.5 za Benelux uslugu.
 str_purchase_coaches_IRC    :Za korištenje sa električnim NS lokomotivama za nacionalni prijevoz, NMBS HLE 11 za Benelux uslugu i NS Hispeed 186 kao Fyra uslugu.
+str_purchase_wagons_gen10_CargoDD       :Za korištenje sa Futurističkim Teretnim Prijevozom.{}Izmišljeno.

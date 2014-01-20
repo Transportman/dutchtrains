@@ -8,6 +8,8 @@ STR_GRF_DESCRIPTION             :{SILVER}Trenes holandeses para OpenTTD{}{BLACK}
 STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 #parameter strings
+STR_PARAM_VEHICLE_NAMES             :Usar el apodo inglés de los vehículos de este set
+STR_PARAM_VEHICLE_NAMES_DESC        :Activada, esta opción habilita los apodos de todos los vehículos del set traducidos al Inglés. Cuando está desactivada, los apodos de los vehículos se muestran en holandés.
 
 STR_PARAM_DISABLE_ORIGINAL          :Mantener los motores y vagones originales
 STR_PARAM_DISABLE_ORIGINAL_DESC     :Por defecto, este NewGRF deshabilita todas las locomotoras y vagones de ferrocarril, monorraíl y maglev originales. Puedes utilizar este parámetro para mantener cualquier combinación con los ferrocarriles, monorraíl y/o maglev originales. Sin embargo y encontrándonos en la tesitura de que fuera otro NewGRF el que desactivara los vehículos originales, este ajuste no podría volver a habilitarlos.
@@ -97,6 +99,7 @@ str_purchase_axl_B          :Bajo (clase B)
 str_purchase_steam_NCS21    :Anteriormente conocido como: {SILVER} NCS 21-30, después SS 481-490.
 str_purchase_steam_NCS41    :Anteriormente conocido como: {SILVER} NCS 41-50, después SS 151-160.
 str_purchase_steam_HSM83    :Anteriormente conocido como: {SILVER} HSM 83-88, 101-115.
+str_purchase_steam_HSM126   :Anteriormente conocido como: {SILVER} HSM 126-135.
 str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
 str_purchase_steam_HSM701   :Anteriormente conocido como: {SILVER} HSM 701-755.
 str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, NBDS 25-26.
