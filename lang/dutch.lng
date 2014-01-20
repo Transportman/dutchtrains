@@ -404,40 +404,40 @@ str_emu_V200E8                  :V200-E8 (Electrisch)
 str_emu_CargoDD                 :Goederentreinstel (Electrisch)
 
 #wagons
-str_wagons_gen0boxcar               :Kleine Gesloten Wagen
+str_wagons_gen0boxcar               :Gesloten Wagen Klein
 str_wagons_gen2_boxcar              :Gesloten Wagen
-str_wagons_Gs_boxcar                :Gs Gesloten Wagen
-str_wagons_gen6_slidingdoor         :Schuifdeurwagen
-str_wagons_Habbiins_goodswagon      :Habbiins Gesloten Wagen
-str_wagons_gen0openwagonsmall       :Kleine Open Wagen
-str_wagons_gen2_openwagon           :Middelgrote Open Wagen
-str_wagons_GTUW_openwagon           :GTUW Open Wagen
-str_wagons_Es_openwagon             :Es Open Wagen
-str_wagons_Eass_openwagon           :Eass Open Wagen
-str_wagons_gen0hopper               :Kleine Onderlosser
-str_wagons_Fccpps_selfdischarger    :Fccpps Onderlosser
-str_wagons_Tals_selfdischarger      :Tals Onderlosser
-str_wagons_Tads_selfdischarger      :Tads Onderlosser
-str_wagons_gen0stakewagon           :Kleine Rongenwagen
+str_wagons_Gs_boxcar                :Gesloten Wagen Gs
+str_wagons_gen6_slidingdoor         :Gesloten Wagen met Schuifdeuren
+str_wagons_Habbiins_goodswagon      :Gesloten Wagen Habbiins
+str_wagons_gen0openwagonsmall       :Open Wagen Klein
+str_wagons_gen2_openwagon           :Open Wagen Middel
+str_wagons_GTUW_openwagon           :Open Wagen GTUW
+str_wagons_Es_openwagon             :Open Wagen Es
+str_wagons_Eass_openwagon           :Open Wagen Eass
+str_wagons_gen0hopper               :Onderlosser Klein
+str_wagons_Fccpps_selfdischarger    :Onderlosser Fccpps
+str_wagons_Tals_selfdischarger      :Onderlosser Tals
+str_wagons_Tads_selfdischarger      :Onderlosser Tads
+str_wagons_gen0stakewagon           :Rongenwagen Klein
 str_wagons_gen2_stake               :Rongenwagen
 str_wagons_gen4_stake               :Rongenwagen
 str_wagons_gen6_stake               :Rongenwagen
 str_wagons_gen7_coil                :Spoelwagen
-str_wagons_gen0tanker               :Kleine Ketelwagen
+str_wagons_gen0tanker               :Ketelwagen Klein
 str_wagons_gen2_tanker              :Ketelwagen
-str_wagons_Uh_tanker                :Uh Ketelwagen
-str_wagons_gen6_tanker              :Large Ketelwagen
-str_wagons_gen0livestockwagon       :Kleine Veewagen
-str_wagons_gen3_livestock           :Middelgrote Veewagen
-str_wagons_gen6_livestock           :Grote Veewagen
-str_wagons_gen4_silo                :Kleine Silowagen
-str_wagons_gen6_silo                :Middelgrote Silowagen
-str_wagons_gen9_silowagon           :Grote Silowagen
-str_wagons_Ubcs_bollenwagen         :Ubcs Silowagen "Bollenwagen"
-str_wagons_Ubcs_bollenwagen_t       :Ubcs Silowagen "Spherewagon"
-str_wagons_gen6_refrigerator        :Middelgrote Koelwagen
-str_wagons_gen7_refrigerator        :Grote Koelwagen
-str_wagons_Takkls_VAM               :Takkls Compostwagen
+str_wagons_Uh_tanker                :Ketelwagen Uh
+str_wagons_gen6_tanker              :Ketelwagen Groot
+str_wagons_gen0livestockwagon       :Veewagen Klein
+str_wagons_gen3_livestock           :Veewagen Middel
+str_wagons_gen6_livestock           :Veewagen Groot
+str_wagons_gen4_silo                :Silowagen Klein
+str_wagons_gen6_silo                :Silowagen Middel
+str_wagons_gen9_silowagon           :Silowagen Groot
+str_wagons_Ubcs_bollenwagen         :Silowagen Ubcs "Bollenwagen"
+str_wagons_Ubcs_bollenwagen_t       :Silowagen Ubcs "Spherewagon"
+str_wagons_gen6_refrigerator        :Koelwagen Middel
+str_wagons_gen7_refrigerator        :Koelwagen Groot
+str_wagons_Takkls_VAM               :Compostwagen Takkls
 str_wagons_gen7_cartransporter      :Autotreinwagen
 str_wagons_gen7_containercarrier    :Containerwagen
 str_wagons_gen9_containercarrier    :Containerwagen
