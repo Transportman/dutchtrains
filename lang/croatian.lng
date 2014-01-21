@@ -408,43 +408,43 @@ str_emu_CargoDD                 :Teretni EMU (Električni)
 
 #wagons
 str_wagons_gen0boxcar               :Mali zatvoreni vagon
-str_wagons_gen2_boxcar              :Teretni vagon
-str_wagons_Gs_boxcar                :Zatvoreni vagon (M) Gs
-str_wagons_gen6_slidingdoor         :Vagon sa kliznim vratima (M)
-str_wagons_Habbiins_goodswagon      :Teretni vagon (L)
+str_wagons_gen2_boxcar              :Zatvoreni vagon
+str_wagons_Gs_boxcar                :Zatvoreni vagon Gs
+str_wagons_gen6_slidingdoor         :Zatvoreni vagon sa kliznim vratima
+str_wagons_Habbiins_goodswagon      :Zatvoreni vagon Habbiins
 str_wagons_gen0openwagonsmall       :Mali otvoreni vagon
-str_wagons_gen2_openwagon           :Otvoreni vagon (S)
-str_wagons_GTUW_openwagon           :Otvoreni vagon (M) GTUW
-str_wagons_Es_openwagon             :Otvoreni vagon (M) Es
-str_wagons_Eass_openwagon           :Otvoreni vagon (L) Eass
+str_wagons_gen2_openwagon           :Srednji otvoreni vagon
+str_wagons_GTUW_openwagon           :Otvoreni vagon GTUW
+str_wagons_Es_openwagon             :Otvoreni vagon Es
+str_wagons_Eass_openwagon           :Otvoreni vagon Eass
 str_wagons_gen0hopper               :Mali vagon za rasuti teret
-str_wagons_Fccpps_selfdischarger    :Fccpps Samoistovarujući vagon
-str_wagons_Tals_selfdischarger      :Tals Samoistovarujući vagon
-str_wagons_Tads_selfdischarger      :Tads Samoistovarujući vagon
+str_wagons_Fccpps_selfdischarger    :Samoistovarujući vagon Fccpps
+str_wagons_Tals_selfdischarger      :Samoistovarujući vagon Tals
+str_wagons_Tads_selfdischarger      :Samoistovarujući vagon Tads
 str_wagons_gen0stakewagon           :Mali plato-vagon sa stupcima
 str_wagons_gen2_stake               :Plato-vagon sa stupcima
-str_wagons_gen4_stake               :Plato-vagon sa stupcima (M)
+str_wagons_gen4_stake               :Plato-vagon sa stupcima
 str_wagons_gen6_stake               :Plato-vagon sa stupcima
-str_wagons_gen7_coil                :Vagon za kaleme (L)
-str_wagons_gen0tanker               :Mali vagon cisterna
+str_wagons_gen7_coil                :Vagon za kaleme
+str_wagons_gen0tanker               :Mali vagon-cisterna
 str_wagons_gen2_tanker              :Vagon cisterna
-str_wagons_Uh_tanker                :Vagon cisterna (M) Uh
-str_wagons_gen6_tanker              :Vagon cisterna (L)
+str_wagons_Uh_tanker                :Vagon-cisterna Uh
+str_wagons_gen6_tanker              :Veliki vagon-cisterna
 str_wagons_gen0livestockwagon       :Mali vagon za stoku
-str_wagons_gen3_livestock           :Vagon za stoku (S)
-str_wagons_gen6_livestock           :Vagon za stoku (M)
-str_wagons_gen4_silo                :Vagon-silos (S)
-str_wagons_gen6_silo                :Vagon-silos (M)
+str_wagons_gen3_livestock           :Srednji vagon za stoku
+str_wagons_gen6_livestock           :Veliki vagon za stoku
+str_wagons_gen4_silo                :Mali vagon-silos
+str_wagons_gen6_silo                :Srednji vagon-silos
 str_wagons_gen9_silowagon           :Veliki vagon-silos
-str_wagons_Ubcs_bollenwagen         :Vagon-silos (M) Ubcs "Bollenwagen"
-str_wagons_Ubcs_bollenwagen_t       :Vagon-silos (M) Ubcs "Spherewagon"
-str_wagons_gen6_refrigerator        :Rashladni vagon (S)
-str_wagons_gen7_refrigerator        :Rashladni vagon (L)
-str_wagons_Takkls_VAM               :VAM vagon za kompost (L)
+str_wagons_Ubcs_bollenwagen         :Vagon-silos Ubcs "Bollenwagen"
+str_wagons_Ubcs_bollenwagen_t       :Vagon-silos Ubcs "Spherewagon"
+str_wagons_gen6_refrigerator        :Srednji vagon-hladnjača
+str_wagons_gen7_refrigerator        :Veliki vagon-hladnjača
+str_wagons_Takkls_VAM               :Vagon za kompost Takkls
 str_wagons_gen7_cartransporter      :Nosač automobila
-str_wagons_gen7_containercarrier    :Nosač kontejnera (M)
-str_wagons_gen9_containercarrier    :Nosač kontejnera (L)
-str_wagons_gen7_superheavy_flatcar  :Plato-vagon za vrlo teške terete (XL)
+str_wagons_gen7_containercarrier    :Nosač kontejnera
+str_wagons_gen9_containercarrier    :Nosač kontejnera
+str_wagons_gen7_superheavy_flatcar  :Plato-vagon za iznimno teške terete
 
 #coaches
 str_coaches_HIJSM_4_8_10 :Vagon HSM 1

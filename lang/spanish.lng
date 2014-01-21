@@ -54,6 +54,7 @@ str_electric_NS1300     :NS 1300 (eléctrico)
 str_electric_NS1500     :NS 1500 (Eléctrico)
 str_electric_NS1600     :NS 1600/1800 (Eléctrico)
 str_electric_NS1700     :NS 1700 (Eléctrico)
+str_electric_mDDM       :mDDM (Eléctrico)
 str_electric_NS1600P    :NS 1600P (Eléctrico)
 str_electric_TRAXXF140MS2   :NS Hispeed 186 (Eléctrico)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Eléctrico)
@@ -73,12 +74,13 @@ str_wagons_Habbiins_goodswagon      :Vagón de mercancías (L)
 str_wagons_GTUW_openwagon           :Vagón abierto (M) GTUW
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
-str_wagons_gen6_refrigerator        :Vagón frigorífico (S)
-str_wagons_gen7_refrigerator        :Vagón frigorífico (L)
+str_wagons_gen6_refrigerator        :Vagón frigorífico medio
+str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 
 #coaches
 
 #baggage and mail wagons
+str_coaches_Pd7011      :Vagón de correo Pd
 
 #metro
 
