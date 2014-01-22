@@ -43,6 +43,7 @@ STR_PARAM_NORMAL                    :1 (opción por defecto)
 
 #steam
 str_steam_NCS21         :NS 1500 (Vapor)
+str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
 str_steam_NS6200        :NS 6200 (Vapor)
 
@@ -71,7 +72,7 @@ str_emu_gen9_HST        :P8000 (Eléctrico)
 #wagons
 str_wagons_gen2_boxcar              :Vagón de mercancías
 str_wagons_Habbiins_goodswagon      :Vagón de mercancías (L)
-str_wagons_GTUW_openwagon           :Vagón abierto (M) GTUW
+str_wagons_GTUW_openwagon           :Vagón abierto GTUW
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
