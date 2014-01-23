@@ -35,7 +35,7 @@ spriteset(spriteset_emu_Future_DD_Sprinter_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Sprinter_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_Sprinter_front;
     3: spriteset_emu_Future_DD_Sprinter_middleblack;
-    5: spriteset_emu_Future_DD_Sprinter_middleblack; 
+    6: spriteset_emu_Future_DD_Sprinter_middleblack; 
     9: spriteset_emu_Future_DD_Sprinter_back;
     spriteset_emu_Future_DD_Sprinter_middlewindow;
 }
@@ -57,7 +57,7 @@ spriteset(spriteset_emu_Future_DD_IC_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_IC_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_IC_front;
     3: spriteset_emu_Future_DD_IC_middleblack;
-    5: spriteset_emu_Future_DD_IC_middleblack; 
+    6: spriteset_emu_Future_DD_IC_middleblack; 
     9: spriteset_emu_Future_DD_IC_back;
     spriteset_emu_Future_DD_IC_middlewindow;
 }
@@ -79,7 +79,7 @@ spriteset(spriteset_emu_Future_DD_Fyra_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Fyra_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_Fyra_front;
     3: spriteset_emu_Future_DD_Fyra_middleblack;
-    5: spriteset_emu_Future_DD_Fyra_middleblack; 
+    6: spriteset_emu_Future_DD_Fyra_middleblack; 
     9: spriteset_emu_Future_DD_Fyra_back;
     spriteset_emu_Future_DD_Fyra_middlewindow;
 }
@@ -101,7 +101,7 @@ spriteset(spriteset_emu_Future_DD_blackyellow_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_blackyellow_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_blackyellow_front;
     3: spriteset_emu_Future_DD_blackyellow_middleblack;
-    5: spriteset_emu_Future_DD_blackyellow_middleblack; 
+    6: spriteset_emu_Future_DD_blackyellow_middleblack; 
     9: spriteset_emu_Future_DD_blackyellow_back;
     spriteset_emu_Future_DD_blackyellow_middlewindow;
 }
@@ -123,7 +123,7 @@ spriteset(spriteset_emu_Future_DD_Veolia_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Veolia_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_Veolia_front;
     3: spriteset_emu_Future_DD_Veolia_middleblack;
-    5: spriteset_emu_Future_DD_Veolia_middleblack; 
+    6: spriteset_emu_Future_DD_Veolia_middleblack; 
     9: spriteset_emu_Future_DD_Veolia_back;
     spriteset_emu_Future_DD_Veolia_middlewindow;
 }
@@ -145,7 +145,7 @@ spriteset(spriteset_emu_Future_DD_Syntus_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Syntus_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_Syntus_front;
     3: spriteset_emu_Future_DD_Syntus_middleblack;
-    5: spriteset_emu_Future_DD_Syntus_middleblack; 
+    6: spriteset_emu_Future_DD_Syntus_middleblack; 
     9: spriteset_emu_Future_DD_Syntus_back;
     spriteset_emu_Future_DD_Syntus_middlewindow;
 }
@@ -167,7 +167,7 @@ spriteset(spriteset_emu_Future_DD_Arriva_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Arriva_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_Arriva_front;
     3: spriteset_emu_Future_DD_Arriva_middleblack;
-    5: spriteset_emu_Future_DD_Arriva_middleblack; 
+    6: spriteset_emu_Future_DD_Arriva_middleblack; 
     9: spriteset_emu_Future_DD_Arriva_back;
     spriteset_emu_Future_DD_Arriva_middlewindow;
 }
@@ -189,7 +189,7 @@ spriteset(spriteset_emu_Future_DD_Thalys_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_Thalys_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_Thalys_front;
     3: spriteset_emu_Future_DD_Thalys_middleblack;
-    5: spriteset_emu_Future_DD_Thalys_middleblack; 
+    6: spriteset_emu_Future_DD_Thalys_middleblack; 
     9: spriteset_emu_Future_DD_Thalys_back;
     spriteset_emu_Future_DD_Thalys_middlewindow;
 }
@@ -211,7 +211,7 @@ spriteset(spriteset_emu_Future_DD_ICE_back, "gfx/emu/Future_DD.png") {
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_ICE_position, (position_in_vehid_chain % 10)) {
 	0: spriteset_emu_Future_DD_ICE_front;
     3: spriteset_emu_Future_DD_ICE_middleblack;
-    5: spriteset_emu_Future_DD_ICE_middleblack; 
+    6: spriteset_emu_Future_DD_ICE_middleblack; 
     9: spriteset_emu_Future_DD_ICE_back;
     spriteset_emu_Future_DD_ICE_middlewindow;
 }
