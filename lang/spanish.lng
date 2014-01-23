@@ -65,13 +65,14 @@ str_electric_ES64F4     :EuroSprinter ES64F4 (Eléctrico)
 #emu
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Eléctrico)
+str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q "Hondekop" (Eléctrico)
 str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Eléctrico)
 str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
 
 #wagons
 str_wagons_gen2_boxcar              :Vagón de mercancías
-str_wagons_Habbiins_goodswagon      :Vagón de mercancías (L)
+str_wagons_Habbiins_goodswagon      :Vagón de mercancías Habbiins
 str_wagons_GTUW_openwagon           :Vagón abierto GTUW
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
