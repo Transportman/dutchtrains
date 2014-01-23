@@ -28,9 +28,9 @@ spriteset(spriteset_metro_Future_MTR1_whiteblue_back, "gfx/metro/Future_MTR1.png
 	template_2cc_88(1, 64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_white_blue, (position_in_vehid_chain % 4)) {
-	1..2: spriteset_metro_Future_MTR1_whiteblue_middle;
-    3: spriteset_metro_Future_MTR1_whiteblue_back;
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_white_blue, (position_in_vehid_chain % 3)) {
+	1: spriteset_metro_Future_MTR1_whiteblue_middle;
+    2: spriteset_metro_Future_MTR1_whiteblue_back;
     spriteset_metro_Future_MTR1_whiteblue_front;
 }
 
@@ -44,9 +44,9 @@ spriteset(spriteset_metro_Future_MTR1_grey_back, "gfx/metro/Future_MTR1.png") {
 	template_2cc_88(1, 160)
 }
 
-switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_grey, (position_in_vehid_chain % 4)) {
-	1..2: spriteset_metro_Future_MTR1_grey_middle;
-    3: spriteset_metro_Future_MTR1_grey_back;
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_grey, (position_in_vehid_chain % 3)) {
+	1: spriteset_metro_Future_MTR1_grey_middle;
+    2: spriteset_metro_Future_MTR1_grey_back;
     spriteset_metro_Future_MTR1_grey_front;
 }
 
@@ -60,9 +60,9 @@ spriteset(spriteset_metro_Future_MTR1_whitered_back, "gfx/metro/Future_MTR1.png"
 	template_2cc_88(1, 256)
 }
 
-switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_white_red, (position_in_vehid_chain % 4)) {
-	1..2: spriteset_metro_Future_MTR1_whitered_middle;
-    3: spriteset_metro_Future_MTR1_whitered_back;
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_white_red, (position_in_vehid_chain % 3)) {
+	1: spriteset_metro_Future_MTR1_whitered_middle;
+    2: spriteset_metro_Future_MTR1_whitered_back;
     spriteset_metro_Future_MTR1_whitered_front;
 }
 
@@ -76,9 +76,9 @@ spriteset(spriteset_metro_Future_MTR1_blue_back, "gfx/metro/Future_MTR1.png") {
 	template_2cc_88(1, 352)
 }
 
-switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_blue, (position_in_vehid_chain % 4)) {
-	1..2: spriteset_metro_Future_MTR1_blue_middle;
-    3: spriteset_metro_Future_MTR1_blue_back;
+switch(FEAT_TRAINS, SELF, switch_metro_Future_MTR1_position_blue, (position_in_vehid_chain % 3)) {
+	1: spriteset_metro_Future_MTR1_blue_middle;
+    2: spriteset_metro_Future_MTR1_blue_back;
     spriteset_metro_Future_MTR1_blue_front;
 }
 
