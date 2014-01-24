@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_emu_Future_DD) {
         introduction_date: date(2040,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 2;
+        loading_speed: 4;
         cost_factor: 171;
         running_cost_factor: 103;
         speed: 400 km/h;
