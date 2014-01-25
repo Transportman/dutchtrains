@@ -60,6 +60,8 @@ str_electric_NS1600P    :NS 1600P (Eléctrico)
 str_electric_HLE11      :NMBS HLE 11 (Eléctrico)
 str_electric_TRAXXF140MS2   :NS Hispeed 186 (Eléctrico)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Eléctrico)
+str_electric_gen9_HS001 :HS-1 (Eléctrico)
+str_electric_gen9_HS002 :HS-2 (Eléctrico)
 
 #dmu
 
@@ -107,6 +109,7 @@ str_purchase_steam_NCS41    :Anteriormente conocido como: {SILVER} NCS 41-50, de
 str_purchase_steam_HSM83    :Anteriormente conocido como: {SILVER} HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Anteriormente conocido como: {SILVER} HSM 126-135.
 str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
+str_purchase_steam_HSM601   :Anteriormente conocido como: {SILVER} HSM 601-647.
 str_purchase_steam_HSM701   :Anteriormente conocido como: {SILVER} HSM 701-755.
 str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, NBDS 25-26.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
