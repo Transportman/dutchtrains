@@ -83,6 +83,8 @@ str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 
 #coaches
+str_coaches_SS_ABd_7516 :Vagón SS ABd
+str_coaches_ICK         :Vagón ICK
 
 #baggage and mail wagons
 str_coaches_Pd7011      :Vagón de correo Pd
@@ -118,5 +120,6 @@ str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocid
 str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8.
 
 
+str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
 
 
