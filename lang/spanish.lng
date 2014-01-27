@@ -14,10 +14,10 @@ STR_PARAM_VEHICLE_NAMES_DESC        :Activada, esta opción habilita los apodos 
 STR_PARAM_DISABLE_ORIGINAL          :Mantener los motores y vagones originales
 STR_PARAM_DISABLE_ORIGINAL_DESC     :Por defecto, este NewGRF deshabilita todas las locomotoras y vagones de ferrocarril, monorraíl y maglev originales. Puedes utilizar este parámetro para mantener cualquier combinación con los ferrocarriles, monorraíl y/o maglev originales. Sin embargo y encontrándonos en la tesitura de que fuera otro NewGRF el que desactivara los vehículos originales, este ajuste no podría volver a habilitarlos.
 STR_PARAM_DISABLE_ORIGINAL_000      :Ninguno (opción por defecto)
-STR_PARAM_DISABLE_ORIGINAL_100      :Sólo el ferrocarril (tanto el convencional como el eléctrico)
-STR_PARAM_DISABLE_ORIGINAL_010      :Sólo el monorraíl
+STR_PARAM_DISABLE_ORIGINAL_100      :Solo el ferrocarril (tanto el convencional como el eléctrico)
+STR_PARAM_DISABLE_ORIGINAL_010      :Solo el monorraíl
 STR_PARAM_DISABLE_ORIGINAL_110      :Ferrocarril (tanto el convencional como el eléctrico) y monorraíl
-STR_PARAM_DISABLE_ORIGINAL_001      :Sólo el maglev
+STR_PARAM_DISABLE_ORIGINAL_001      :Solo el maglev
 STR_PARAM_DISABLE_ORIGINAL_101      :Ferrocarril (tanto el convencional como el eléctrico) y maglev
 STR_PARAM_DISABLE_ORIGINAL_011      :Monorraíl y maglev
 STR_PARAM_DISABLE_ORIGINAL_111      :Todos
@@ -95,6 +95,9 @@ str_coaches_Hbbkkss     :Vagón de correo Hbbkkss
 #PURCHASE MENU TEXTS
 
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
+str_purchase_axl_lsp            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
+str_purchase_axl_lsp_spc        :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_p          :pasajeros
 str_purchase_svc_m          :correo
@@ -104,6 +107,9 @@ str_purchase_lsp_17         :17 días
 
 str_purchase_axl_A          :Muy bajo (clase A)
 str_purchase_axl_B          :Bajo (clase B)
+str_purchase_axl_C          :Medio (clase C)
+str_purchase_axl_D          :Alto (clase D)
+str_purchase_axl_E          :Muy alto (clase E)
 
 
 str_purchase_steam_NCS21    :Anteriormente conocido como: {SILVER} NCS 21-30, después SS 481-490.
