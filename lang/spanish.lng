@@ -84,7 +84,10 @@ str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 
 #coaches
 str_coaches_SS_ABd_7516 :Vagón SS ABd
+str_coaches_ICR         :Vagón ICR
 str_coaches_ICK         :Vagón ICK
+str_coaches_M2          :Vagón NMBS M2
+str_coaches_K4          :Vagón NMBS K4
 
 #baggage and mail wagons
 str_coaches_Pd7011      :Vagón de correo Pd
@@ -102,8 +105,10 @@ str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{
 str_purchase_svc_p          :pasajeros
 str_purchase_svc_m          :correo
 
+str_purchase_len_4_14       :4 unidades (1.4)
 
 str_purchase_lsp_17         :17 días
+str_purchase_lsp_25         :25 días
 
 str_purchase_axl_A          :Muy bajo (clase A)
 str_purchase_axl_B          :Bajo (clase B)
