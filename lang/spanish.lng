@@ -36,6 +36,8 @@ STR_PARAM_NORMAL                    :1 (opción por defecto)
 
 
 
+str_cargo_subtype_EL2               :(El2)
+str_cargo_subtype_EL3               :(El3)
 
 
 
