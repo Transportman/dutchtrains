@@ -40,6 +40,11 @@ str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_EL3               :(El3)
 
 
+str_cargo_subtype_ACTS              :Librea ACTS
+str_cargo_subtype_ACTS_blue_yellow  :Librea ACTS (amarillo/azul)
+str_cargo_subtype_ACTS_grey_green   :Librea ACTS (verde/gris)
+str_cargo_subtype_Breng             :Librea Breng
+str_cargo_subtype_Captrain          :Librea Captrain
 
 
 
