@@ -43,6 +43,9 @@ str_cargo_subtype_EL3               :(El3)
 str_cargo_subtype_ACTS              :Librea ACTS
 str_cargo_subtype_ACTS_blue_yellow  :Librea ACTS (amarillo/azul)
 str_cargo_subtype_ACTS_grey_green   :Librea ACTS (verde/gris)
+str_cargo_subtype_Arriva            :Librea Arriva
+str_cargo_subtype_Arriva_spurt      :Librea Arriva "Spurt"
+str_cargo_subtype_Arriva_vechtdallijnen :Librea Arriva "Vechtdallijnen"
 str_cargo_subtype_Breng             :Librea Breng
 str_cargo_subtype_Captrain          :Librea Captrain
 
@@ -83,6 +86,7 @@ str_emu_gen9_HST        :P8000 (Eléctrico)
 #wagons
 str_wagons_gen2_boxcar              :Vagón de mercancías
 str_wagons_Habbiins_goodswagon      :Vagón de mercancías Habbiins
+str_wagons_gen2_openwagon           :Vagón abierto medio
 str_wagons_GTUW_openwagon           :Vagón abierto GTUW
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
