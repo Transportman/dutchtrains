@@ -39,6 +39,7 @@ STR_PARAM_NORMAL                    :1 (opción por defecto)
 str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_EL3               :(El3)
 
+str_cargo_subtype_ICE                           :Librea ICE
 
 str_cargo_subtype_ACTS              :Librea ACTS
 str_cargo_subtype_ACTS_blue_yellow  :Librea ACTS (amarillo/azul)
@@ -48,6 +49,8 @@ str_cargo_subtype_Arriva_spurt      :Librea Arriva "Spurt"
 str_cargo_subtype_Arriva_vechtdallijnen :Librea Arriva "Vechtdallijnen"
 str_cargo_subtype_Breng             :Librea Breng
 str_cargo_subtype_Captrain          :Librea Captrain
+str_cargo_subtype_NS                :Librea NS
+str_cargo_subtype_Syntus            :Librea Syntus
 
 
 
