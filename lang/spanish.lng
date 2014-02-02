@@ -49,6 +49,9 @@ str_cargo_subtype_Arriva_spurt      :Librea Arriva "Spurt"
 str_cargo_subtype_Arriva_vechtdallijnen :Librea Arriva "Vechtdallijnen"
 str_cargo_subtype_Breng             :Librea Breng
 str_cargo_subtype_Captrain          :Librea Captrain
+str_cargo_subtype_DBSchenker        :Librea DB Schenker
+str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
+str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
 str_cargo_subtype_NS                :Librea NS
 str_cargo_subtype_Syntus            :Librea Syntus
 
