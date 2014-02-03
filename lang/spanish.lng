@@ -40,6 +40,7 @@ str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_EL3               :(El3)
 
 str_cargo_subtype_ICE                           :Librea ICE
+str_cargo_subtype_TGV                           :Librea Thalys
 
 str_cargo_subtype_ACTS              :Librea ACTS
 str_cargo_subtype_ACTS_blue_yellow  :Librea ACTS (amarillo/azul)
@@ -53,6 +54,7 @@ str_cargo_subtype_DBSchenker        :Librea DB Schenker
 str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
 str_cargo_subtype_NS                :Librea NS
+str_cargo_subtype_SS                :Librea Staatsspoorwegen
 str_cargo_subtype_Syntus            :Librea Syntus
 
 
@@ -61,6 +63,7 @@ str_cargo_subtype_Syntus            :Librea Syntus
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
+str_steam_NS4600        :NS 4600 (Vapor)
 str_steam_NS6200        :NS 6200 (Vapor)
 
 #diesel
