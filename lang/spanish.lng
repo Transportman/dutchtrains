@@ -39,7 +39,9 @@ STR_PARAM_NORMAL                    :1 (opción por defecto)
 str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_EL3               :(El3)
 
+str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
+str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_TGV                           :Librea Thalys
 
 str_cargo_subtype_ACTS              :Librea ACTS
@@ -55,7 +57,9 @@ str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
 str_cargo_subtype_NS                :Librea NS
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
+str_cargo_subtype_Strukton          :Librea Strukton
 str_cargo_subtype_Syntus            :Librea Syntus
+str_cargo_subtype_Twents            :Librea Twents
 
 
 
