@@ -55,11 +55,13 @@ str_cargo_subtype_Captrain          :Librea Captrain
 str_cargo_subtype_DBSchenker        :Librea DB Schenker
 str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
+str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
 str_cargo_subtype_Strukton          :Librea Strukton
 str_cargo_subtype_Syntus            :Librea Syntus
 str_cargo_subtype_Twents            :Librea Twents
+str_cargo_subtype_Veolia            :Librea Veolia
 
 
 
