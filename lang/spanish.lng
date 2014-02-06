@@ -109,9 +109,12 @@ str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 
 #coaches
+str_coaches_HSM_C_755   :Vagón HSM C
 str_coaches_SS_ABd_7516 :Vagón SS ABd
+str_coaches_Bolkoprijtuigen     :Vagón "Bolkoprijtuigen"
 str_coaches_ICR         :Vagón ICR
 str_coaches_ICK         :Vagón ICK
+str_coaches_Avmz        :Vagón Avmz
 str_coaches_M2          :Vagón NMBS M2
 str_coaches_K4          :Vagón NMBS K4
 
