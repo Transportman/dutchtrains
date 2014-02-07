@@ -37,7 +37,9 @@ STR_PARAM_NORMAL                    :1 (opción por defecto)
 
 
 str_cargo_subtype_EL2               :(El2)
+str_cargo_subtype_ELD2              :(ElD2)
 str_cargo_subtype_EL3               :(El3)
+str_cargo_subtype_ELD3              :(ElD3)
 
 str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
@@ -136,6 +138,7 @@ str_purchase_svc_m          :correo
 
 str_purchase_len_4_14       :4 unidades (1.4)
 
+str_purchase_lsp_9          :9 días
 str_purchase_lsp_17         :17 días
 str_purchase_lsp_25         :25 días
 
