@@ -30,6 +30,7 @@ STR_PARAM_DIVIDE_8                  :1/8
 STR_PARAM_DIVIDE_4                  :1/4
 STR_PARAM_DIVIDE_2                  :1/2
 STR_PARAM_NORMAL                    :1 (opción por defecto)
+STR_PARAM_TIMES_16                  :16
 
 
 #cargo subtype livery strings
@@ -98,6 +99,7 @@ str_emu_Mat46ELD4       :Mat '46 ElD4 (Eléctrico)
 str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q "Hondekop" (Eléctrico)
 str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Eléctrico)
 str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Eléctrico)
+str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux "Doghead" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
 
 #wagons
