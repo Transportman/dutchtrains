@@ -127,6 +127,8 @@ str_coaches_M2          :Vagón NMBS M2
 str_coaches_K4          :Vagón NMBS K4
 
 #baggage and mail wagons
+str_coaches_SS_DIII     :Vagón de equipajes SS D-III
+str_coaches_SS_E_129    :Vagón de equipajes SS E
 str_coaches_Pd7011      :Vagón de correo Pd
 str_coaches_Hbbkkss     :Vagón de correo Hbbkkss
 
