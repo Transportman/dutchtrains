@@ -31,6 +31,8 @@ STR_PARAM_DIVIDE_4                  :1/4
 STR_PARAM_DIVIDE_2                  :1/2
 STR_PARAM_NORMAL                    :1 (opción por defecto)
 STR_PARAM_TIMES_2                   :2
+STR_PARAM_TIMES_4                   :4
+STR_PARAM_TIMES_8                   :8
 STR_PARAM_TIMES_16                  :16
 
 
@@ -64,6 +66,7 @@ str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
+str_cargo_subtype_SS_NS             :Librea Staatsspoorwegen / NS
 str_cargo_subtype_Strukton          :Librea Strukton
 str_cargo_subtype_Syntus            :Librea Syntus
 str_cargo_subtype_Twents            :Librea Twents
@@ -122,6 +125,8 @@ str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 str_coaches_HSM_C_755   :Vagón HSM C
 str_coaches_SS_ABd_7516 :Vagón SS ABd
 str_coaches_Bolkoprijtuigen     :Vagón "Bolkoprijtuigen"
+str_coaches_PlanD       :Vagón Plan D
+str_coaches_PlanW       :Vagón Plan W
 str_coaches_ICR         :Vagón ICR
 str_coaches_ICK         :Vagón ICK
 str_coaches_Avmz        :Vagón Avmz
@@ -133,6 +138,7 @@ str_coaches_SS_DIII     :Vagón de equipajes SS D-III
 str_coaches_SS_E_129    :Vagón de equipajes SS E
 str_coaches_Pd7011      :Vagón de correo Pd
 str_coaches_Hbbkkss     :Vagón de correo Hbbkkss
+str_coaches_PlanC       :Vagón de correo Plan C
 
 #metro
 
