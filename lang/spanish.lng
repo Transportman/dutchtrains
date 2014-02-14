@@ -51,6 +51,8 @@ str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_TGV                           :Librea Thalys
+str_cargo_subtype_TGV_PBKA          :Librea PBKA
+str_cargo_subtype_TGV_PBA           :Librea PBA
 
 str_cargo_subtype_ACTS              :Librea ACTS
 str_cargo_subtype_ACTS_blue_yellow  :Librea ACTS (amarillo/azul)
@@ -63,6 +65,7 @@ str_cargo_subtype_Captrain          :Librea Captrain
 str_cargo_subtype_DBSchenker        :Librea DB Schenker
 str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
+str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
