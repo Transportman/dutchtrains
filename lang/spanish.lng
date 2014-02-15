@@ -53,6 +53,8 @@ str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_TGV                           :Librea Thalys
 str_cargo_subtype_TGV_PBKA          :Librea PBKA
 str_cargo_subtype_TGV_PBA           :Librea PBA
+str_cargo_subtype_delagelanden1         :Librea De Lage Landen (1)
+str_cargo_subtype_delagelanden2         :Librea De Lage Landen (2)
 
 str_cargo_subtype_ACTS              :Librea ACTS
 str_cargo_subtype_ACTS_blue_yellow  :Librea ACTS (amarillo/azul)
@@ -83,6 +85,7 @@ str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
 str_steam_NS4600        :NS 4600 (Vapor)
 str_steam_NS6200        :NS 6200 (Vapor)
+str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 
 #diesel
 
