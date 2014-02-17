@@ -67,6 +67,7 @@ str_cargo_subtype_Captrain          :Librea Captrain
 str_cargo_subtype_DBSchenker        :Librea DB Schenker
 str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
+str_cargo_subtype_DLC               :Librea DLC
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
@@ -132,6 +133,7 @@ str_coaches_HSM_C_755   :Vagón HSM C
 str_coaches_SS_ABd_7516 :Vagón SS ABd
 str_coaches_Bolkoprijtuigen     :Vagón "Bolkoprijtuigen"
 str_coaches_PlanD       :Vagón Plan D
+str_coaches_PlanE       :Vagón Plan E
 str_coaches_PlanW       :Vagón Plan W
 str_coaches_ICR         :Vagón ICR
 str_coaches_ICK         :Vagón ICK
@@ -150,6 +152,7 @@ str_coaches_PlanC       :Vagón de correo Plan C
 
 #PURCHASE MENU TEXTS
 
+str_purchase_svc_axl_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_axl_lsp            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
 str_purchase_axl_lsp_spc        :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
