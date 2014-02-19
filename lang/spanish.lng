@@ -68,15 +68,18 @@ str_cargo_subtype_DBSchenker        :Librea DB Schenker
 str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
 str_cargo_subtype_DLC               :Librea DLC
+str_cargo_subtype_HSM               :Librea Hollandsche IJzeren Spoorweg-Maatschappij
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
+str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
 str_cargo_subtype_SS_NS             :Librea Staatsspoorwegen / NS
 str_cargo_subtype_Strukton          :Librea Strukton
 str_cargo_subtype_Syntus            :Librea Syntus
 str_cargo_subtype_Twents            :Librea Twents
 str_cargo_subtype_Veolia            :Librea Veolia
+str_cargo_subtype_Veolia_velios     :Librea Veolia "Velios"
 
 
 
