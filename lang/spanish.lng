@@ -47,6 +47,7 @@ str_cargo_subtype_ELD3              :(ElD3)
 str_cargo_subtype_ELD4              :(ElD4)
 str_cargo_subtype_ELD5              :(ElD5)
 
+str_cargo_subtype_citypendel        :Librea Citypendel
 str_cargo_subtype_ddar              :Librea DDM-2/3
 str_cargo_subtype_ddm1              :Librea DDM-1
 str_cargo_subtype_groningen         :Librea Groningen Mendini
@@ -55,6 +56,7 @@ str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_TGV                           :Librea Thalys
 str_cargo_subtype_TGV_PBKA          :Librea PBKA
 str_cargo_subtype_TGV_PBA           :Librea PBA
+str_cargo_subtype_aegon                         :Librea Aegon
 str_cargo_subtype_delagelanden1         :Librea De Lage Landen (1)
 str_cargo_subtype_delagelanden2         :Librea De Lage Landen (2)
 
@@ -169,6 +171,7 @@ str_purchase_svc_m          :correo
 str_purchase_len_4_14       :4 unidades (1.4)
 
 str_purchase_lsp_9          :9 días
+str_purchase_lsp_15         :15 días
 str_purchase_lsp_17         :17 días
 str_purchase_lsp_19         :19 días
 str_purchase_lsp_25         :25 días
