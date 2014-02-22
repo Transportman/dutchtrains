@@ -23,6 +23,7 @@ STR_PARAM_DISABLE_ORIGINAL_011      :Monorraíl y maglev
 STR_PARAM_DISABLE_ORIGINAL_111      :Todos
 
 STR_PARAM_PURCHASE_COST             :Multiplicador del precio de compra
+STR_PARAM_PURCHASE_COST_DESC        :Usa esta opción para aumentar o disminuir el precio de compra de los vehículos de este set. Ten en cuenta que cambiar este parámetro desequilibra los precios en relación a los vehículos por defecto.
 STR_PARAM_RUNNING_COST              :Multiplicador del coste de funcionamiento
 
 STR_PARAM_DIVIDE_16                 :1/16
@@ -72,6 +73,7 @@ str_cargo_subtype_DBSchenker        :Librea DB Schenker
 str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
 str_cargo_subtype_DLC               :Librea DLC
+str_cargo_subtype_EETC              :Librea Euro Express Treincharter
 str_cargo_subtype_HSM               :Librea Hollandsche IJzeren Spoorweg-Maatschappij
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
@@ -124,6 +126,7 @@ str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Eléctrico)
 str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux "Doghead" (Eléctrico)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
+str_emu_GTW26           :GTW 2/6 (Eléctrico)
 
 #wagons
 str_wagons_gen2_boxcar              :Vagón de mercancías
