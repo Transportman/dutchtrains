@@ -73,6 +73,9 @@ str_cargo_subtype_DBSchenker        :Librea DB Schenker
 str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
 str_cargo_subtype_DLC               :Librea DLC
+str_cargo_subtype_ERS               :Librea ERS
+str_cargo_subtype_ERS_Crates            :Librea ERS (cajas)
+str_cargo_subtype_ERS_Containers        :Librea ERS (contenedores)
 str_cargo_subtype_EETC              :Librea Euro Express Treincharter
 str_cargo_subtype_HSM               :Librea Hollandsche IJzeren Spoorweg-Maatschappij
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
