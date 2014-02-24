@@ -78,6 +78,8 @@ str_cargo_subtype_ERS_Crates            :Librea ERS (cajas)
 str_cargo_subtype_ERS_Containers        :Librea ERS (contenedores)
 str_cargo_subtype_EETC              :Librea Euro Express Treincharter
 str_cargo_subtype_HSM               :Librea Hollandsche IJzeren Spoorweg-Maatschappij
+str_cargo_subtype_HUSA_Crates           :Librea HUSA (cajas)
+str_cargo_subtype_HUSA_Containers       :Librea HUSA (contenedores)
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
