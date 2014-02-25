@@ -78,6 +78,7 @@ str_cargo_subtype_ERS_Crates            :Librea ERS (cajas)
 str_cargo_subtype_ERS_Containers        :Librea ERS (contenedores)
 str_cargo_subtype_EETC              :Librea Euro Express Treincharter
 str_cargo_subtype_HSM               :Librea Hollandsche IJzeren Spoorweg-Maatschappij
+str_cargo_subtype_HUSA              :Librea HUSA
 str_cargo_subtype_HUSA_Crates           :Librea HUSA (cajas)
 str_cargo_subtype_HUSA_Containers       :Librea HUSA (contenedores)
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
@@ -130,6 +131,7 @@ str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Eléctrico)
 str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Eléctrico)
 str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux "Doghead" (Eléctrico)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Eléctrico)
+str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
 str_emu_GTW26           :GTW 2/6 (Eléctrico)
 
