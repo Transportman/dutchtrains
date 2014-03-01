@@ -94,6 +94,7 @@ str_cargo_subtype_Syntus            :Librea Syntus
 str_cargo_subtype_Twents            :Librea Twents
 str_cargo_subtype_Veolia            :Librea Veolia
 str_cargo_subtype_Veolia_velios     :Librea Veolia "Velios"
+str_cargo_subtype_VOSlogistics      :Librea VOS Logistics
 
 
 
@@ -122,8 +123,8 @@ str_electric_gen9_HS001 :HS-1 (Eléctrico)
 str_electric_gen9_HS002 :HS-2 (Eléctrico)
 
 #dmu
-str_dmu_omC901          :omC 901-916 "Ome Cees" (Diesel)
-str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diesel)
+str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
+str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
 
 #emu
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
