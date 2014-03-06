@@ -80,6 +80,7 @@ str_cargo_subtype_ERS               :Librea ERS
 str_cargo_subtype_ERS_Crates            :Librea ERS (cajas)
 str_cargo_subtype_ERS_Containers        :Librea ERS (contenedores)
 str_cargo_subtype_EETC              :Librea Euro Express Treincharter
+str_cargo_subtype_HGK               :Librea HGK
 str_cargo_subtype_HSM               :Librea Hollandsche IJzeren Spoorweg-Maatschappij
 str_cargo_subtype_HUSA              :Librea HUSA
 str_cargo_subtype_HUSA_Crates           :Librea HUSA (cajas)
@@ -87,6 +88,7 @@ str_cargo_subtype_HUSA_Containers       :Librea HUSA (contenedores)
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
+str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railpro           :Librea Railpro
 str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
@@ -186,6 +188,7 @@ str_purchase_svc_m          :correo
 
 str_purchase_len_4_14       :4 unidades (1.4)
 
+str_purchase_lsp_5          :5 días
 str_purchase_lsp_9          :9 días
 str_purchase_lsp_15         :15 días
 str_purchase_lsp_17         :17 días
