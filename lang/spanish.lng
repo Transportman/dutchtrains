@@ -25,6 +25,7 @@ STR_PARAM_DISABLE_ORIGINAL_111      :Todos
 STR_PARAM_PURCHASE_COST             :Multiplicador del precio de compra
 STR_PARAM_PURCHASE_COST_DESC        :Usa esta opción para aumentar o disminuir el precio de compra de los vehículos de este set. Ten en cuenta que cambiar este parámetro desequilibra los precios en relación a los vehículos por defecto.
 STR_PARAM_RUNNING_COST              :Multiplicador del coste de funcionamiento
+STR_PARAM_RUNNING_COST_DESC         :Usa esta opción para aumentar o disminuir los costes de funcionamiento de los vehículos de este set. Ten en cuenta que todo cambio en este parámetro dará lugar a cierto desequilibrio del coste de funcionamiento en relación a los vehículos base, ya sea por defecto o, bien puede ser, exceso.
 
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_DIVIDE_8                  :1/8
@@ -130,6 +131,7 @@ str_electric_gen9_HS002 :HS-2 (Eléctrico)
 #dmu
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
+str_dmu_GTW26           :GTW 2/6 (Diésel)
 
 #emu
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
@@ -170,6 +172,7 @@ str_coaches_K4          :Vagón NMBS K4
 str_coaches_SS_DIII     :Vagón de equipajes SS D-III
 str_coaches_SS_E_129    :Vagón de equipajes SS E
 str_coaches_Pd7011      :Vagón de correo Pd
+str_coaches_Pec         :Vagón de correo Pec
 str_coaches_Hbbkkss     :Vagón de correo Hbbkkss
 str_coaches_PlanC       :Vagón de correo Plan C
 
