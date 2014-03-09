@@ -37,6 +37,8 @@ STR_PARAM_TIMES_4                   :4
 STR_PARAM_TIMES_8                   :8
 STR_PARAM_TIMES_16                  :16
 
+STR_PARAM_TRACK_POWER                           :Potencia multisistema
+STR_PARAM_TRACK_POWER_DESC                      :Por defecto, la potencia de los trenes multisistema depende de la vía sobre la que corre cuando un set compatible es cargado. Puedes utilizar este parámetro para desactivar esto y usar siempre la potencia más alta.
 STR_PARAM_TRACK_POWER_OFF                       :Siempre la máxima potencia
 STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando un set compatible ha sido cargado (por defecto)
 
@@ -61,6 +63,7 @@ str_cargo_subtype_ns_ic             :Librea NS InterCity
 str_cargo_subtype_TGV                           :Librea Thalys
 str_cargo_subtype_TGV_PBKA          :Librea PBKA
 str_cargo_subtype_TGV_PBA           :Librea PBA
+str_cargo_subtype_zilverrail        :Librea Zilverrail (Oct 24-27, 2005)
 str_cargo_subtype_aegon                         :Librea Aegon
 str_cargo_subtype_delagelanden1         :Librea De Lage Landen (1)
 str_cargo_subtype_delagelanden2         :Librea De Lage Landen (2)
