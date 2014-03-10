@@ -64,6 +64,7 @@ str_cargo_subtype_TGV                           :Librea Thalys
 str_cargo_subtype_TGV_PBKA          :Librea PBKA
 str_cargo_subtype_TGV_PBA           :Librea PBA
 str_cargo_subtype_zilverrail        :Librea Zilverrail (Oct 24-27, 2005)
+str_cargo_subtype_klm                           :Librea KLM
 str_cargo_subtype_aegon                         :Librea Aegon
 str_cargo_subtype_delagelanden1         :Librea De Lage Landen (1)
 str_cargo_subtype_delagelanden2         :Librea De Lage Landen (2)
@@ -76,6 +77,7 @@ str_cargo_subtype_Arriva_spurt      :Librea Arriva "Spurt"
 str_cargo_subtype_Arriva_vechtdallijnen :Librea Arriva "Vechtdallijnen"
 str_cargo_subtype_Breng             :Librea Breng
 str_cargo_subtype_Captrain          :Librea Captrain
+str_cargo_subtype_Crossrail         :Librea Crossrail
 str_cargo_subtype_DBSchenker        :Librea DB Schenker
 str_cargo_subtype_DBSchenker_Crates     :Librea DB Schenker (cajas)
 str_cargo_subtype_DBSchenker_Containers :Librea DB Schenker (contenedores)
@@ -108,6 +110,7 @@ str_cargo_subtype_VOSlogistics      :Librea VOS Logistics
 
 
 #steam
+str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
