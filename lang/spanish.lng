@@ -60,6 +60,7 @@ str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_ns_ic             :Librea NS InterCity
+str_cargo_subtype_randstadrail      :Librea RandstadRail
 str_cargo_subtype_TGV                           :Librea Thalys
 str_cargo_subtype_TGV_PBKA          :Librea PBKA
 str_cargo_subtype_TGV_PBA           :Librea PBA
@@ -95,6 +96,7 @@ str_cargo_subtype_HUSA_Containers       :Librea HUSA (contenedores)
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
+str_cargo_subtype_NSCargo_Containers :Librea NS Cargo (contenedores)
 str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railpro           :Librea Railpro
 str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
@@ -112,6 +114,7 @@ str_cargo_subtype_VOSlogistics      :Librea VOS Logistics
 #steam
 str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
+str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
 str_steam_NS4600        :NS 4600 (Vapor)
@@ -173,6 +176,7 @@ str_coaches_PlanW       :Vagón Plan W
 str_coaches_ICR         :Vagón ICR
 str_coaches_ICK         :Vagón ICK
 str_coaches_Avmz        :Vagón Avmz
+str_coaches_ICL         :Vagón ICL
 str_coaches_M2          :Vagón NMBS M2
 str_coaches_K4          :Vagón NMBS K4
 
