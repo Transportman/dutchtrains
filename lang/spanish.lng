@@ -96,6 +96,7 @@ str_cargo_subtype_HUSA_Containers       :Librea HUSA (contenedores)
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
+str_cargo_subtype_NSCargo_Crates        :Librea NS Cargo (cajas)
 str_cargo_subtype_NSCargo_Containers :Librea NS Cargo (contenedores)
 str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railpro           :Librea Railpro
@@ -141,6 +142,7 @@ str_electric_gen9_HS002 :HS-2 (Eléctrico)
 #dmu
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
+str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
 str_dmu_GTW26           :GTW 2/6 (Diésel)
 
 #emu
@@ -159,6 +161,7 @@ str_emu_V200E6                  :V200-E6 (Eléctrico)
 #wagons
 str_wagons_gen2_boxcar              :Vagón de mercancías
 str_wagons_Habbiins_goodswagon      :Vagón de mercancías Habbiins
+str_wagons_gen0openwagonsmall       :Vagón abierto pequeño
 str_wagons_gen2_openwagon           :Vagón abierto medio
 str_wagons_GTUW_openwagon           :Vagón abierto GTUW
 str_wagons_gen4_stake               :Vagón de estacas (M)
