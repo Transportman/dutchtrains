@@ -44,6 +44,7 @@ STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando
 
 #cargo subtype livery strings
 
+str_cargo_subtype_grey              :Librea gris
 
 
 str_cargo_subtype_EL2               :(El2)
@@ -96,6 +97,7 @@ str_cargo_subtype_HUSA_Containers       :Librea HUSA (contenedores)
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
+str_cargo_subtype_NSCargo           :Librea NS Cargo
 str_cargo_subtype_NSCargo_Crates        :Librea NS Cargo (cajas)
 str_cargo_subtype_NSCargo_Containers :Librea NS Cargo (contenedores)
 str_cargo_subtype_Railion           :Librea Railion (rebrand)
@@ -117,6 +119,7 @@ str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
+str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
 str_steam_NS4600        :NS 4600 (Vapor)
 str_steam_NS6200        :NS 6200 (Vapor)
