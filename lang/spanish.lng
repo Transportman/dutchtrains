@@ -45,6 +45,7 @@ STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando
 #cargo subtype livery strings
 
 str_cargo_subtype_grey              :Librea gris
+str_cargo_subtype_turquoise         :Librea turquesa
 
 
 str_cargo_subtype_EL2               :(El2)
@@ -100,6 +101,8 @@ str_cargo_subtype_NS                :Librea NS
 str_cargo_subtype_NSCargo           :Librea NS Cargo
 str_cargo_subtype_NSCargo_Crates        :Librea NS Cargo (cajas)
 str_cargo_subtype_NSCargo_Containers :Librea NS Cargo (contenedores)
+str_cargo_subtype_Rail4Chem_green   :Librea Rail4Chem (verde)
+str_cargo_subtype_Rail4Chem_red     :Librea Rail4Chem (rojo)
 str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railpro           :Librea Railpro
 str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
@@ -146,6 +149,7 @@ str_electric_gen9_HS002 :HS-2 (Eléctrico)
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
+str_dmu_NS20_t          :NS20 "Camel" (Diésel)
 str_dmu_GTW26           :GTW 2/6 (Diésel)
 
 #emu
@@ -185,6 +189,7 @@ str_coaches_Avmz        :Vagón Avmz
 str_coaches_ICL         :Vagón ICL
 str_coaches_M2          :Vagón NMBS M2
 str_coaches_K4          :Vagón NMBS K4
+str_coaches_Couchette   :Coche cama Couchette Bcm
 
 #baggage and mail wagons
 str_coaches_SS_DIII     :Vagón de equipajes SS D-III
