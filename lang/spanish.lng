@@ -44,6 +44,7 @@ STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando
 
 #cargo subtype livery strings
 
+str_cargo_subtype_green_lightyellow :Librea verde/amarillo día
 str_cargo_subtype_grey              :Librea gris
 str_cargo_subtype_turquoise         :Librea turquesa
 
@@ -104,6 +105,7 @@ str_cargo_subtype_NSCargo_Containers :Librea NS Cargo (contenedores)
 str_cargo_subtype_Rail4Chem_green   :Librea Rail4Chem (verde)
 str_cargo_subtype_Rail4Chem_red     :Librea Rail4Chem (rojo)
 str_cargo_subtype_Railion           :Librea Railion (rebrand)
+str_cargo_subtype_Railion_red       :Librea Railion (rojo)
 str_cargo_subtype_Railpro           :Librea Railpro
 str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
@@ -132,6 +134,7 @@ str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
 
 #electric
+str_electric_NS1000     :NS 1000 (Eléctrico)
 str_electric_NS1200     :NS 1200 (Eléctrico)
 str_electric_NS1300     :NS 1300 (eléctrico)
 str_electric_NS1500     :NS 1500 (Eléctrico)
