@@ -115,11 +115,13 @@ str_cargo_subtype_Syntus            :Librea Syntus
 str_cargo_subtype_Twents            :Librea Twents
 str_cargo_subtype_Veolia            :Librea Veolia
 str_cargo_subtype_Veolia_velios     :Librea Veolia "Velios"
+str_cargo_subtype_Veolia_white_red  :Librea Veolia (blanco/rojo)
 str_cargo_subtype_VOSlogistics      :Librea VOS Logistics
 
 
 
 #steam
+str_steam_Arend_t       :HSM "Eagle" (Vapor)
 str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
@@ -166,6 +168,7 @@ str_emu_Mat64PlanV      :Mat '64 Plan V (Eléctrico)
 str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
 str_emu_GTW26           :GTW 2/6 (Eléctrico)
+str_emu_GTW28           :GTW 2/8 (Eléctrico)
 str_emu_V200E6                  :V200-E6 (Eléctrico)
 
 #wagons
