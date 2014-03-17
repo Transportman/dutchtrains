@@ -72,6 +72,8 @@ str_cargo_subtype_klm                           :Librea KLM
 str_cargo_subtype_aegon                         :Librea Aegon
 str_cargo_subtype_delagelanden1         :Librea De Lage Landen (1)
 str_cargo_subtype_delagelanden2         :Librea De Lage Landen (2)
+str_cargo_subtype_algemeendagblad1      :Librea Algemeen Dagblad (1)
+str_cargo_subtype_algemeendagblad2      :Librea Algemeen Dagblad (2)
 
 str_cargo_subtype_ACTS              :Librea ACTS
 str_cargo_subtype_ACTS_blue_yellow  :Librea ACTS (amarillo/azul)
@@ -185,6 +187,7 @@ str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 #coaches
 str_coaches_HSM_C_755   :Vagón HSM C
 str_coaches_SS_ABd_7516 :Vagón SS ABd
+str_coaches_Mat24       :Vagón Mat '24
 str_coaches_Bolkoprijtuigen     :Vagón "Bolkoprijtuigen"
 str_coaches_PlanD       :Vagón Plan D
 str_coaches_PlanE       :Vagón Plan E
@@ -225,6 +228,7 @@ str_purchase_lsp_9          :9 días
 str_purchase_lsp_15         :15 días
 str_purchase_lsp_17         :17 días
 str_purchase_lsp_19         :19 días
+str_purchase_lsp_22         :22 días
 str_purchase_lsp_25         :25 días
 
 str_purchase_axl_A          :Muy bajo (clase A)
