@@ -106,6 +106,7 @@ str_cargo_subtype_NSCargo_Crates        :Librea NS Cargo (cajas)
 str_cargo_subtype_NSCargo_Containers :Librea NS Cargo (contenedores)
 str_cargo_subtype_Rail4Chem_green   :Librea Rail4Chem (verde)
 str_cargo_subtype_Rail4Chem_red     :Librea Rail4Chem (rojo)
+str_cargo_subtype_Rail4Chem_grey_yellow :Librea Rail4Chem (gris/amarillo)
 str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railion_red       :Librea Railion (rojo)
 str_cargo_subtype_Railpro           :Librea Railpro
@@ -118,6 +119,7 @@ str_cargo_subtype_Twents            :Librea Twents
 str_cargo_subtype_Veolia            :Librea Veolia
 str_cargo_subtype_Veolia_velios     :Librea Veolia "Velios"
 str_cargo_subtype_Veolia_white_red  :Librea Veolia (blanco/rojo)
+str_cargo_subtype_Veolia_black      :Librea Veolia (negro)
 str_cargo_subtype_VOSlogistics      :Librea VOS Logistics
 
 
@@ -225,6 +227,7 @@ str_purchase_len_4_14       :4 unidades (1.4)
 
 str_purchase_lsp_5          :5 días
 str_purchase_lsp_9          :9 días
+str_purchase_lsp_12         :12 días
 str_purchase_lsp_15         :15 días
 str_purchase_lsp_17         :17 días
 str_purchase_lsp_19         :19 días
