@@ -48,6 +48,7 @@ str_cargo_subtype_green_lightyellow :Librea verde/amarillo día
 str_cargo_subtype_grey              :Librea gris
 str_cargo_subtype_turquoise         :Librea turquesa
 
+str_cargo_subtype_Jules             :"Jules"
 
 str_cargo_subtype_EL2               :(El2)
 str_cargo_subtype_ELD2              :(ElD2)
@@ -98,6 +99,7 @@ str_cargo_subtype_HSM               :Librea Hollandsche IJzeren Spoorweg-Maatsch
 str_cargo_subtype_HUSA              :Librea HUSA
 str_cargo_subtype_HUSA_Crates           :Librea HUSA (cajas)
 str_cargo_subtype_HUSA_Containers       :Librea HUSA (contenedores)
+str_cargo_subtype_Locon             :Librea Locon
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
@@ -138,6 +140,7 @@ str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 
 #diesel
 str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
+str_diesel_ACTS6700     :ACTS 6700 (Diésel)
 
 #electric
 str_electric_NS1000     :NS 1000 (Eléctrico)
