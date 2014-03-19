@@ -127,7 +127,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_HSM501_purchaselivery, build_year) {
     switch_steam_NS2100_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_HSM501_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_steam_HSM501_livery, cargo_subtype) {
 	1: switch_steam_HSM501_purchaselivery;
     2: switch_steam_HSM501_position;
     3: switch_steam_NS2100_position;
@@ -135,7 +135,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_HSM501_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_steam_HSM501_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_steam_HSM501_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_HSM);
