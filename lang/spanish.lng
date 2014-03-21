@@ -43,9 +43,11 @@ STR_PARAM_TRACK_POWER_OFF                       :Siempre la máxima potencia
 STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando un set compatible ha sido cargado (por defecto)
 
 #cargo subtype livery strings
+str_cargo_subtype_auto              :Librea dependiente del año
 
 str_cargo_subtype_green_lightyellow :Librea verde/amarillo día
 str_cargo_subtype_grey              :Librea gris
+str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_turquoise         :Librea turquesa
 
 str_cargo_subtype_Jules             :"Jules"
@@ -113,6 +115,7 @@ str_cargo_subtype_Rail4Chem_green   :Librea Rail4Chem (verde)
 str_cargo_subtype_Rail4Chem_red     :Librea Rail4Chem (rojo)
 str_cargo_subtype_Rail4Chem_grey_yellow :Librea Rail4Chem (gris/amarillo)
 str_cargo_subtype_Railion           :Librea Railion (rebrand)
+str_cargo_subtype_Railion_regular   :Librea Railion
 str_cargo_subtype_Railion_red       :Librea Railion (rojo)
 str_cargo_subtype_Railpro           :Librea Railpro
 str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
@@ -134,6 +137,7 @@ str_steam_Arend_t       :HSM "Eagle" (Vapor)
 str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
+str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
@@ -198,6 +202,7 @@ str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 str_coaches_HSM_C_755   :Vagón HSM C
 str_coaches_SS_ABd_7516 :Vagón SS ABd
 str_coaches_Mat24       :Vagón Mat '24
+str_coaches_Ovaleramen  :Vagón "Ovaleramen"
 str_coaches_Bolkoprijtuigen     :Vagón "Bolkoprijtuigen"
 str_coaches_PlanD       :Vagón Plan D
 str_coaches_PlanE       :Vagón Plan E
