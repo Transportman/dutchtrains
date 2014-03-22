@@ -45,8 +45,10 @@ STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando
 #cargo subtype livery strings
 str_cargo_subtype_auto              :Librea dependiente del año
 
+str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
 str_cargo_subtype_green_lightyellow :Librea verde/amarillo día
 str_cargo_subtype_grey              :Librea gris
+str_cargo_subtype_purple            :Librea púrpura
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_turquoise         :Librea turquesa
 
@@ -243,6 +245,7 @@ str_purchase_lsp_5          :5 días
 str_purchase_lsp_9          :9 días
 str_purchase_lsp_12         :12 días
 str_purchase_lsp_15         :15 días
+str_purchase_lsp_16         :16 días
 str_purchase_lsp_17         :17 días
 str_purchase_lsp_19         :19 días
 str_purchase_lsp_22         :22 días
