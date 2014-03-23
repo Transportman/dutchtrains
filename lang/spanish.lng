@@ -67,6 +67,9 @@ str_cargo_subtype_benelux_plandcab  :Librea Benelux, con cabina Plan D
 str_cargo_subtype_citypendel        :Librea Citypendel
 str_cargo_subtype_ddar              :Librea DDM-2/3
 str_cargo_subtype_ddm1              :Librea DDM-1
+str_cargo_subtype_fyra              :Librea Fyra
+str_cargo_subtype_fyra_red          :Librea Fyra (rojo)
+str_cargo_subtype_fyra_white        :Librea Fyra (blanco)
 str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
@@ -247,6 +250,7 @@ str_purchase_lsp_12         :12 días
 str_purchase_lsp_15         :15 días
 str_purchase_lsp_16         :16 días
 str_purchase_lsp_17         :17 días
+str_purchase_lsp_18         :18 días
 str_purchase_lsp_19         :19 días
 str_purchase_lsp_22         :22 días
 str_purchase_lsp_25         :25 días
