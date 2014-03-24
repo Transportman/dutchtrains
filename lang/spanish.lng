@@ -74,6 +74,7 @@ str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_ns_ic             :Librea NS InterCity
+str_cargo_subtype_original          :Librea Original
 str_cargo_subtype_randstadrail      :Librea RandstadRail
 str_cargo_subtype_TGV                           :Librea Thalys
 str_cargo_subtype_TGV_PBKA          :Librea PBKA
@@ -174,9 +175,11 @@ str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
 str_dmu_NS20_t          :NS20 "Camel" (Diésel)
+str_dmu_Lint41H         :Lint 41/H (Diésel)
 str_dmu_GTW26           :GTW 2/6 (Diésel)
 
 #emu
+str_emu_ZHESM_mBC       :ZHESM mBC (Eléctrico)
 str_emu_Mat24mP         :Mat '24 mP (Eléctrico)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Eléctrico)
