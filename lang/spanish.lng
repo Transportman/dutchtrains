@@ -46,6 +46,8 @@ STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando
 str_cargo_subtype_auto              :Librea dependiente del año
 
 str_cargo_subtype_black             :Librea negra
+str_cargo_subtype_blackyellow_Crates            :Librea amarilla/negra (cajas)
+str_cargo_subtype_blackyellow_Containers        :Librea amarilla/negra (contenedores)
 str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
 str_cargo_subtype_green_lightyellow :Librea verde/amarillo día
 str_cargo_subtype_grey              :Librea gris
@@ -80,6 +82,7 @@ str_cargo_subtype_randstadrail      :Librea RandstadRail
 str_cargo_subtype_TGV                           :Librea Thalys
 str_cargo_subtype_TGV_PBKA          :Librea PBKA
 str_cargo_subtype_TGV_PBA           :Librea PBA
+str_cargo_subtype_valleilijn_yellow_blue    :Librea azul/amarillo Valleilijn
 str_cargo_subtype_zilverrail        :Librea Zilverrail (Oct 24-27, 2005)
 str_cargo_subtype_klm                           :Librea KLM
 str_cargo_subtype_aegon                         :Librea Aegon
@@ -154,6 +157,7 @@ str_steam_NS6200        :NS 6200 (Vapor)
 str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 
 #diesel
+str_diesel_NS450        :NS 450 (Diésel)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
 str_diesel_ACTS6700     :ACTS 6700 (Diésel)
 
@@ -280,6 +284,7 @@ str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
 str_purchase_steam_HSM601   :Anteriormente conocido como: {SILVER} HSM 601-647.
 str_purchase_steam_HSM701   :Anteriormente conocido como: {SILVER} HSM 701-755.
 str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, NBDS 25-26.
+str_purchase_steam_SS785    :Anteriormente conocido como: {SILVER} SS 685-778, 785-799.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
 
 str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
