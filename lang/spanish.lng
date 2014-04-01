@@ -141,6 +141,8 @@ str_cargo_subtype_Veolia_white_red  :Librea Veolia (blanco/rojo)
 str_cargo_subtype_Veolia_black      :Librea Veolia (negro)
 str_cargo_subtype_VOSlogistics      :Librea VOS Logistics
 
+str_cargo_subtype_brown_cows        :Librea Marrón (Vacas)
+str_cargo_subtype_brown_pigs        :Librea Marrón (Cerdos)
 
 
 #steam
@@ -148,10 +150,12 @@ str_steam_Arend_t       :HSM "Eagle" (Vapor)
 str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
+str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Vapor)
 str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
+str_steam_NCS71         :NS 3600 "Zeppelin" (Vapor)
 str_steam_NS4600        :NS 4600 (Vapor)
 str_steam_NS6200        :NS 6200 (Vapor)
 str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
