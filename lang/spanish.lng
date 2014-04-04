@@ -49,6 +49,8 @@ str_cargo_subtype_black             :Librea negra
 str_cargo_subtype_blackyellow_Crates            :Librea amarilla/negra (cajas)
 str_cargo_subtype_blackyellow_Containers        :Librea amarilla/negra (contenedores)
 str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
+str_cargo_subtype_brown             :Librea Marrón
+str_cargo_subtype_brown_dark        :Librea Marrón oscuro
 str_cargo_subtype_green_lightyellow :Librea verde/amarillo día
 str_cargo_subtype_grey              :Librea gris
 str_cargo_subtype_purple            :Librea púrpura
@@ -77,6 +79,7 @@ str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_ns_ic             :Librea NS InterCity
+str_cargo_subtype_olympic           :Librea olímpica
 str_cargo_subtype_original          :Librea Original
 str_cargo_subtype_randstadrail      :Librea RandstadRail
 str_cargo_subtype_TGV                           :Librea Thalys
@@ -150,6 +153,7 @@ str_steam_Arend_t       :HSM "Eagle" (Vapor)
 str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
+str_steam_HSM501        :NS 2100 "Blikken Tinus" (Vapor)
 str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Vapor)
 str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
