@@ -51,11 +51,13 @@ str_cargo_subtype_blackyellow_Containers        :Librea amarilla/negra (contened
 str_cargo_subtype_blue              :Librea azul
 str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
 str_cargo_subtype_blue_yellow       :Librea azul, con rayas amarillas
+str_cargo_subtype_blue_darkyellow   :Librea azul, con rayas en amarillo oscuro
 str_cargo_subtype_brown             :Librea Marrón
 str_cargo_subtype_brown_dark        :Librea Marrón oscuro
 str_cargo_subtype_green_lightyellow :Librea verde/amarillo claro
 str_cargo_subtype_grey              :Librea gris
 str_cargo_subtype_purple            :Librea púrpura
+str_cargo_subtype_red               :Librea roja
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_turquoise         :Librea turquesa
 
@@ -84,6 +86,7 @@ str_cargo_subtype_ns_ic             :Librea NS InterCity
 str_cargo_subtype_olympic           :Librea olímpica
 str_cargo_subtype_original          :Librea Original
 str_cargo_subtype_randstadrail      :Librea RandstadRail
+str_cargo_subtype_strandsprinter    :Librea "Strandsprinter"
 str_cargo_subtype_TGV                           :Librea Thalys
 str_cargo_subtype_TGV_PBKA          :Librea PBKA
 str_cargo_subtype_TGV_PBA           :Librea PBA
@@ -134,6 +137,7 @@ str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railion_regular   :Librea Railion
 str_cargo_subtype_Railion_red       :Librea Railion (rojo)
 str_cargo_subtype_Railpro           :Librea Railpro
+str_cargo_subtype_rurtalbahn_blue       :Librea Rurtalbahn (azul)
 str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
 str_cargo_subtype_SS_NS             :Librea Staatsspoorwegen / NS
@@ -263,6 +267,7 @@ str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{
 
 str_purchase_svc_p          :pasajeros
 str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
+str_purchase_svc_hf         :carga pesada
 str_purchase_svc_m          :correo
 
 str_purchase_len_1_05       :1 unidad (0.5)
@@ -299,6 +304,7 @@ str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, N
 str_purchase_steam_SS785    :Anteriormente conocido como: {SILVER} SS 685-778, 785-799.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
 
+str_purchase_diesel_ACTS5800 :Anteriormente conocido como: {SILVER} BR Class 58.
 str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8.
