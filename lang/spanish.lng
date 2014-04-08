@@ -60,6 +60,7 @@ str_cargo_subtype_grey_dark         :Librea gris oscuro
 str_cargo_subtype_grey_light        :Librea gris claro
 str_cargo_subtype_purple            :Librea púrpura
 str_cargo_subtype_red               :Librea roja
+str_cargo_subtype_red_light         :Librea rojo claro
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_turquoise         :Librea turquesa
 
@@ -158,7 +159,9 @@ str_cargo_subtype_grey_pigs         :Librea gris (Cerdos)
 
 
 #steam
+str_steam_Arend         :HSM "Arend" (Vapor)
 str_steam_Arend_t       :HSM "Eagle" (Vapor)
+str_steam_HSM126        :NS 1100 (Vapor)
 str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
@@ -174,6 +177,7 @@ str_steam_NS6200        :NS 6200 (Vapor)
 str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 
 #diesel
+str_diesel_NS400        :NS 400 "Grote Sik" (Diésel)
 str_diesel_NS450        :NS 450 (Diésel)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diésel)
@@ -288,6 +292,7 @@ str_purchase_lsp_18         :18 días
 str_purchase_lsp_19         :19 días
 str_purchase_lsp_22         :22 días
 str_purchase_lsp_25         :25 días
+str_purchase_lsp_26         :26 días
 
 str_purchase_axl_A          :Muy bajo (clase A)
 str_purchase_axl_B          :Bajo (clase B)
