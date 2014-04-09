@@ -53,6 +53,7 @@ str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
 str_cargo_subtype_blue_yellow       :Librea azul, con rayas amarillas
 str_cargo_subtype_blue_darkyellow   :Librea azul, con rayas en amarillo oscuro
 str_cargo_subtype_brown             :Librea Marrón
+str_cargo_subtype_brown_light       :Librea Marrón claro
 str_cargo_subtype_brown_dark        :Librea Marrón oscuro
 str_cargo_subtype_green_lightyellow :Librea verde/amarillo claro
 str_cargo_subtype_grey              :Librea gris
@@ -140,6 +141,7 @@ str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railion_regular   :Librea Railion
 str_cargo_subtype_Railion_red       :Librea Railion (rojo)
 str_cargo_subtype_Railpro           :Librea Railpro
+str_cargo_subtype_rurtalbahn_black      :Librea Rurtalbahn (negra)
 str_cargo_subtype_rurtalbahn_blue       :Librea Rurtalbahn (azul)
 str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
@@ -186,6 +188,7 @@ str_diesel_ACTS6700     :ACTS 6700 (Diésel)
 
 #electric
 str_electric_NS1000     :NS 1000 (Eléctrico)
+str_electric_NS1100     :NS 1100 (Eléctrico)
 str_electric_NS1200     :NS 1200 (Eléctrico)
 str_electric_NS1300     :NS 1300 (eléctrico)
 str_electric_NS1500     :NS 1500 (Eléctrico)
@@ -267,6 +270,7 @@ str_coaches_PlanC       :Vagón de correo Plan C
 
 #PURCHASE MENU TEXTS
 
+str_purchase_svc_len_lsp        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
 str_purchase_svc_axl_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_axl_lsp            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
@@ -282,6 +286,7 @@ str_purchase_len_1_05       :1 unidad (0.5)
 str_purchase_len_2_12       :2 unidades (1.2)
 str_purchase_len_4_14       :4 unidades (1.4)
 
+str_purchase_lsp_3          :3 días
 str_purchase_lsp_5          :5 días
 str_purchase_lsp_9          :9 días
 str_purchase_lsp_12         :12 días
