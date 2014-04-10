@@ -55,6 +55,11 @@ str_cargo_subtype_blue_darkyellow   :Librea azul, con rayas en amarillo oscuro
 str_cargo_subtype_brown             :Librea Marrón
 str_cargo_subtype_brown_light       :Librea Marrón claro
 str_cargo_subtype_brown_dark        :Librea Marrón oscuro
+str_cargo_subtype_green             :Librea verde
+str_cargo_subtype_green_lightroof   :Librea verde, con techo claro
+str_cargo_subtype_green_darkroof    :Librea verde, con techo oscuro
+str_cargo_subtype_green_red         :Librea verde, con rayas rojas
+str_cargo_subtype_green_yellow      :Librea verde, con rayas amarillas
 str_cargo_subtype_green_lightyellow :Librea verde/amarillo claro
 str_cargo_subtype_grey              :Librea gris
 str_cargo_subtype_grey_dark         :Librea gris oscuro
@@ -185,6 +190,7 @@ str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diésel)
 str_diesel_SM151        :NS 2900 (Diésel)
 str_diesel_ACTS6700     :ACTS 6700 (Diésel)
+str_diesel_RN232        :RN 232 "Ludmilla" (Diésel)
 
 #electric
 str_electric_NS1000     :NS 1000 (Eléctrico)
@@ -207,6 +213,7 @@ str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
 str_dmu_NS20_t          :NS20 "Camel" (Diésel)
+str_dmu_DH2             :DH2 "Wadloper" (Diésel)
 str_dmu_Lint41H         :Lint 41/H (Diésel)
 str_dmu_GTW26           :GTW 2/6 (Diésel)
 
