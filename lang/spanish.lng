@@ -91,6 +91,7 @@ str_cargo_subtype_fyra_white        :Librea Fyra (blanco)
 str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
+str_cargo_subtype_hispeed_nocab     :Librea NS Hispeed, sin control de cabina
 str_cargo_subtype_ns_ic             :Librea NS InterCity
 str_cargo_subtype_olympic           :Librea olímpica
 str_cargo_subtype_original          :Librea Original
@@ -162,6 +163,7 @@ str_cargo_subtype_VOSlogistics      :Librea VOS Logistics
 
 str_cargo_subtype_brown_cows        :Librea Marrón (Vacas)
 str_cargo_subtype_brown_pigs        :Librea Marrón (Cerdos)
+str_cargo_subtype_grey_cows         :Librea gris (Vacas)
 str_cargo_subtype_grey_pigs         :Librea gris (Cerdos)
 
 
@@ -256,6 +258,7 @@ str_coaches_Ovaleramen  :Vagón "Ovaleramen"
 str_coaches_Bolkoprijtuigen     :Vagón "Bolkoprijtuigen"
 str_coaches_PlanD       :Vagón Plan D
 str_coaches_PlanE       :Vagón Plan E
+str_coaches_PlanK       :Vagón Plan K
 str_coaches_PlanW       :Vagón Plan W
 str_coaches_ICR         :Vagón ICR
 str_coaches_ICK         :Vagón ICK
@@ -272,6 +275,7 @@ str_coaches_Pd7011      :Vagón de correo Pd
 str_coaches_Pec         :Vagón de correo Pec
 str_coaches_Hbbkkss     :Vagón de correo Hbbkkss
 str_coaches_PlanC       :Vagón de correo Plan C
+str_coaches_PlanL       :Vagón de correo Plan L
 
 #metro
 
@@ -326,6 +330,7 @@ str_purchase_steam_SS785    :Anteriormente conocido como: {SILVER} SS 685-778, 7
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
 
 str_purchase_diesel_ACTS5800 :Anteriormente conocido como: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700 :Anteriormente conocido como: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8.
