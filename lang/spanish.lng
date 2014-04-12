@@ -67,6 +67,7 @@ str_cargo_subtype_grey_light        :Librea gris claro
 str_cargo_subtype_purple            :Librea púrpura
 str_cargo_subtype_red               :Librea roja
 str_cargo_subtype_red_light         :Librea rojo claro
+str_cargo_subtype_red_yellow        :Librea roja, con rayas amarillas
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_turquoise         :Librea turquesa
 
@@ -180,6 +181,7 @@ str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
+str_steam_NBDS30_t      :NS 3500 "Blue Brabanders" (Vapor)
 str_steam_NCS71         :NS 3600 "Zeppelin" (Vapor)
 str_steam_NS4600        :NS 4600 (Vapor)
 str_steam_NS6200        :NS 6200 (Vapor)
@@ -189,6 +191,7 @@ str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 str_diesel_NS400        :NS 400 "Grote Sik" (Diésel)
 str_diesel_NS450        :NS 450 (Diésel)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
+str_diesel_NS2200       :NS 2200 (Diésel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diésel)
 str_diesel_SM151        :NS 2900 (Diésel)
 str_diesel_ACTS6700     :ACTS 6700 (Diésel)
@@ -205,6 +208,7 @@ str_electric_NS1700     :NS 1700 (Eléctrico)
 str_electric_mDDM       :mDDM (Eléctrico)
 str_electric_NS1600P    :NS 1600P (Eléctrico)
 str_electric_HLE11      :NMBS HLE 11 (Eléctrico)
+str_electric_HLE25      :NMBS HLE 25.5 (Eléctrico)
 str_electric_TRAXXF140MS2   :NS Hispeed 186 (Eléctrico)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Eléctrico)
 str_electric_gen9_HS001 :HS-1 (Eléctrico)
@@ -213,6 +217,7 @@ str_electric_gen9_HS002 :HS-2 (Eléctrico)
 #dmu
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
+str_dmu_DE5             :DE5 "Dieselvijf" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
 str_dmu_NS20_t          :NS20 "Camel" (Diésel)
 str_dmu_DH2             :DH2 "Wadloper" (Diésel)
@@ -281,6 +286,7 @@ str_coaches_PlanL       :Vagón de correo Plan L
 
 #PURCHASE MENU TEXTS
 
+str_purchase_svc_axl            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_svc_len_lsp        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
 str_purchase_svc_axl_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
@@ -296,6 +302,7 @@ str_purchase_svc_m          :correo
 str_purchase_len_1_05       :1 unidad (0.5)
 str_purchase_len_2_12       :2 unidades (1.2)
 str_purchase_len_4_14       :4 unidades (1.4)
+str_purchase_len_10_50      :10 unidades (5.0)
 
 str_purchase_lsp_3          :3 días
 str_purchase_lsp_5          :5 días
