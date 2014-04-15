@@ -1,0 +1,71 @@
+##grflangid 0x22
+##plural 0
+##gender Masculin Femenin
+
+#Main grf title and description
+STR_GRF_NAME                    :{TITLE}
+
+#parameter strings
+
+
+
+STR_PARAM_DIVIDE_4                  :1/4
+
+STR_PARAM_TRACK_POWER                           :Potència multisistema
+
+#cargo subtype livery strings
+
+
+
+str_cargo_subtype_EL3               :(El3)
+
+
+
+
+
+#steam
+str_steam_NCS1          :NS 7200 (Vapor)
+str_steam_HSM601        :NS 3200 (Vapor)
+str_steam_NS4700        :NS 4700 (Vapor)
+
+#diesel
+
+#electric
+str_electric_NS1600     :NS 1600/1800 (Elèctrica)
+
+#dmu
+str_dmu_DE4             :DE4 "Trans Europ Express" (Dièsel)
+
+#emu
+
+#wagons
+str_wagons_gen7_refrigerator        :Vagó Refrigerador Gran
+
+#coaches
+
+#baggage and mail wagons
+str_coaches_SS_DIII     :Vagó d'Equipatge SS D-III
+
+#metro
+
+#PURCHASE MENU TEXTS
+
+
+str_purchase_svc_elp        :passatgers locals i exprés
+
+str_purchase_len_6_20       :6 unitats (2.0)
+
+str_purchase_lsp_11         :11 dies
+str_purchase_lsp_25         :25 dies
+str_purchase_lsp_26         :26 dies
+
+
+
+
+str_purchase_diesel_SM151   :Abans conegut com a: {SILVER} SM 151-155.
+str_purchase_diesel_ACTS6700 :Abans conegut com a: {SILVER} NMBS HLD 62.
+
+
+
+
+

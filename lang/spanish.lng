@@ -73,6 +73,7 @@ str_cargo_subtype_grey_light        :Librea gris claro
 str_cargo_subtype_purple            :Librea púrpura
 str_cargo_subtype_red               :Librea roja
 str_cargo_subtype_red_light         :Librea rojo claro
+str_cargo_subtype_red_blue          :Librea azul/roja
 str_cargo_subtype_red_yellow        :Librea roja, con rayas amarillas
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_turquoise         :Librea turquesa
@@ -181,6 +182,7 @@ str_steam_HSM126        :NS 1100 (Vapor)
 str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
 str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
+str_steam_HSM83         :NS 3100 (Vapor)
 str_steam_HSM501        :NS 2100 "Blikken Tinus" (Vapor)
 str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Vapor)
 str_steam_HSM601        :NS 3200 (Vapor)
@@ -304,6 +306,7 @@ str_purchase_axl_lsp_spc        :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}T
 str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_p          :pasajeros
+str_purchase_svc_hp         :pasajeros de alta velocidad
 str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
 str_purchase_svc_hf         :carga pesada
 str_purchase_svc_m          :correo
