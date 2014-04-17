@@ -207,6 +207,7 @@ str_diesel_SM151        :NS 2900 (Diésel)
 str_diesel_ACTS6700     :ACTS 6700 (Diésel)
 str_diesel_RN232        :RN 232 "Ludmilla" (Diésel)
 str_diesel_G400B        :Vossloh G 400 B (Diésel)
+str_diesel_G2000        :Vossloh G 2000 (Diésel)
 
 #electric
 str_electric_NS1000     :NS 1000 (Eléctrico)
@@ -263,6 +264,7 @@ str_wagons_Habbiins_goodswagon      :Vagón de mercancías Habbiins
 str_wagons_gen0openwagonsmall       :Vagón abierto pequeño
 str_wagons_gen2_openwagon           :Vagón abierto medio
 str_wagons_GTUW_openwagon           :Vagón abierto GTUW
+str_wagons_Eass_openwagon           :Vagón abierto Eass
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
@@ -289,6 +291,7 @@ str_coaches_Couchette   :Coche cama Couchette Bcm
 #baggage and mail wagons
 str_coaches_SS_DIII     :Vagón de equipajes SS D-III
 str_coaches_SS_E_129    :Vagón de equipajes SS E
+str_coaches_StalenDV    :Vagón de equipajes D-V
 str_coaches_Pd7011      :Vagón de correo Pd
 str_coaches_Pec         :Vagón de correo Pec
 str_coaches_Hbbkkss     :Vagón de correo Hbbkkss
@@ -321,6 +324,7 @@ str_purchase_len_10_50      :10 unidades (5.0)
 
 str_purchase_lsp_3          :3 días
 str_purchase_lsp_5          :5 días
+str_purchase_lsp_7          :7 días
 str_purchase_lsp_8          :8 días
 str_purchase_lsp_9          :9 días
 str_purchase_lsp_12         :12 días
