@@ -77,6 +77,7 @@ str_cargo_subtype_red_blue          :Librea azul/roja
 str_cargo_subtype_red_yellow        :Librea roja, con rayas amarillas
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_turquoise         :Librea turquesa
+str_cargo_subtype_white_yellow      :Librea amarilla/blanca
 
 str_cargo_subtype_Jules             :"Jules"
 
@@ -242,6 +243,7 @@ str_dmu_GTW26           :GTW 2/6 (Diésel)
 #emu
 str_emu_ZHESM_mBC       :ZHESM mBC (Eléctrico)
 str_emu_Mat24mP         :Mat '24 mP (Eléctrico)
+str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Eléctrico)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Eléctrico)
 str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q "Hondekop" (Eléctrico)
@@ -312,6 +314,7 @@ str_purchase_svc_axl            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso 
 str_purchase_svc_len            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}
 str_purchase_svc_len_lsp        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
 str_purchase_svc_axl_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_spc            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_axl_lsp            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
 str_purchase_axl_lsp_spc        :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
