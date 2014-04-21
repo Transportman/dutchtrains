@@ -192,6 +192,7 @@ str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
+str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Vapor)
 str_steam_NBDS30_t      :NS 3500 "Blue Brabanders" (Vapor)
 str_steam_NCS71         :NS 3600 "Zeppelin" (Vapor)
 str_steam_NS4600        :NS 4600 (Vapor)
@@ -245,6 +246,7 @@ str_emu_ZHESM_mBC       :ZHESM mBC (Eléctrico)
 str_emu_Mat24mP         :Mat '24 mP (Eléctrico)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Eléctrico)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
+str_emu_Mat46ELD2       :Mat '46 ElD2 (Eléctrico)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Eléctrico)
 str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q "Hondekop" (Eléctrico)
 str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Eléctrico)
@@ -259,6 +261,7 @@ str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Eléctrico)
 str_emu_mP              :Plan mP (Eléctrico)
 str_emu_TGV             :TGV Thalys PBKA/PBA (Eléctrico)
 str_emu_V250            :Fyra V250 "Albatros" (Eléctrico)
+str_emu_V250_t          :Fyra V250 "Albatross" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
 str_emu_GTW26           :GTW 2/6 (Eléctrico)
 str_emu_GTW28           :GTW 2/8 (Eléctrico)
@@ -306,6 +309,8 @@ str_coaches_PlanC       :Vagón de correo Plan C
 str_coaches_PlanL       :Vagón de correo Plan L
 
 #metro
+str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
+str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 
 #PURCHASE MENU TEXTS
 
