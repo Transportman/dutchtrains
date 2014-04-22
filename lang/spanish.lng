@@ -273,6 +273,7 @@ str_wagons_Habbiins_goodswagon      :Vagón de mercancías Habbiins
 str_wagons_gen0openwagonsmall       :Vagón abierto pequeño
 str_wagons_gen2_openwagon           :Vagón abierto medio
 str_wagons_GTUW_openwagon           :Vagón abierto GTUW
+str_wagons_Es_openwagon             :Vagón abierto Es
 str_wagons_Eass_openwagon           :Vagón abierto Eass
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
@@ -284,6 +285,7 @@ str_coaches_HSM_C_755   :Vagón HSM C
 str_coaches_SS_ABd_7516 :Vagón SS ABd
 str_coaches_Mat24       :Vagón Mat '24
 str_coaches_Ovaleramen  :Vagón "Ovaleramen"
+str_coaches_Ovaleramen_t :Vagón "Oval windows"
 str_coaches_Bolkoprijtuigen     :Vagón "Bolkoprijtuigen"
 str_coaches_PlanD       :Vagón Plan D
 str_coaches_PlanE       :Vagón Plan E
@@ -336,6 +338,7 @@ str_purchase_len_2_12       :2 unidades (1.2)
 str_purchase_len_4_14       :4 unidades (1.4)
 str_purchase_len_10_50      :10 unidades (5.0)
 
+str_purchase_lsp_2          :2 días
 str_purchase_lsp_3          :3 días
 str_purchase_lsp_5          :5 días
 str_purchase_lsp_7          :7 días
