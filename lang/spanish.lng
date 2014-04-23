@@ -236,6 +236,7 @@ str_dmu_omBC2901        :omBC 2901-2908 (Diésel)
 str_dmu_DE5             :DE5 "Dieselvijf" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
 str_dmu_NS20_t          :NS20 "Camel" (Diésel)
+str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Diésel)
 str_dmu_DH2             :DH2 "Wadloper" (Diésel)
 str_dmu_DM90_t          :DM '90 "Buffalo" (Diésel)
 str_dmu_Lint41H         :Lint 41/H (Diésel)
@@ -258,6 +259,7 @@ str_emu_ICM4            :ICM-IV Plan Z "Koploper" (Eléctrico)
 str_emu_IRMIII          :IRM-III "Bizon" (Eléctrico)
 str_emu_IRMIII_t        :IRM-III "Bison" (Eléctrico)
 str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Eléctrico)
+str_emu_IRMVI_t         :VIRM-VI "Bison" (Eléctrico)
 str_emu_mP              :Plan mP (Eléctrico)
 str_emu_TGV             :TGV Thalys PBKA/PBA (Eléctrico)
 str_emu_V250            :Fyra V250 "Albatros" (Eléctrico)
@@ -266,6 +268,7 @@ str_emu_gen9_HST        :P8000 (Eléctrico)
 str_emu_GTW26           :GTW 2/6 (Eléctrico)
 str_emu_GTW28           :GTW 2/8 (Eléctrico)
 str_emu_V200E6                  :V200-E6 (Eléctrico)
+str_emu_V200E8                  :V200-E8 (Eléctrico)
 
 #wagons
 str_wagons_gen2_boxcar              :Vagón de mercancías
@@ -340,6 +343,7 @@ str_purchase_len_10_50      :10 unidades (5.0)
 
 str_purchase_lsp_2          :2 días
 str_purchase_lsp_3          :3 días
+str_purchase_lsp_4          :4 días
 str_purchase_lsp_5          :5 días
 str_purchase_lsp_7          :7 días
 str_purchase_lsp_8          :8 días
