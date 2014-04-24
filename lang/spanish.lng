@@ -208,6 +208,7 @@ str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diésel)
 str_diesel_SM151        :NS 2900 (Diésel)
 str_diesel_ACTS6700     :ACTS 6700 (Diésel)
 str_diesel_RN232        :RN 232 "Ludmilla" (Diésel)
+str_diesel_Class66      :Class 66 (Diésel)
 str_diesel_G400B        :Vossloh G 400 B (Diésel)
 str_diesel_G2000        :Vossloh G 2000 (Diésel)
 
@@ -256,6 +257,7 @@ str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux "Hondekop" (Eléctrico)
 str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux "Doghead" (Eléctrico)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Eléctrico)
 str_emu_ICM4            :ICM-IV Plan Z "Koploper" (Eléctrico)
+str_emu_SM90            :SM '90 "Railhopper" (Eléctrico)
 str_emu_IRMIII          :IRM-III "Bizon" (Eléctrico)
 str_emu_IRMIII_t        :IRM-III "Bison" (Eléctrico)
 str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Eléctrico)
@@ -339,6 +341,7 @@ str_purchase_svc_m          :correo
 str_purchase_len_1_05       :1 unidad (0.5)
 str_purchase_len_2_12       :2 unidades (1.2)
 str_purchase_len_4_14       :4 unidades (1.4)
+str_purchase_len_4_20       :4 unidades (2.0)
 str_purchase_len_10_50      :10 unidades (5.0)
 
 str_purchase_lsp_2          :2 días
