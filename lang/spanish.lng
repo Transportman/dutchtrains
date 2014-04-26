@@ -336,8 +336,11 @@ str_purchase_axl_lsp_spc        :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}T
 str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_p          :pasajeros
+str_purchase_svc_ep         :pasajeros express
 str_purchase_svc_hp         :pasajeros de alta velocidad
 str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
+str_purchase_svc_eplf       :pasajeros express o carga ligera
+str_purchase_svc_f          :carga
 str_purchase_svc_hf         :carga pesada
 str_purchase_svc_m          :correo
 
