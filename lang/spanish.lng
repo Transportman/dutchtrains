@@ -44,6 +44,7 @@ STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              :Librea dependiente del año
+str_cargo_subtype_random            :Librea aleatoria
 
 str_cargo_subtype_bordeaux          :Librea burdeos
 str_cargo_subtype_bordeaux_white            :Librea burdeos, con blanco
@@ -238,6 +239,7 @@ str_dmu_omC1921         :omC 1921-1931 (Diésel)
 str_dmu_omBC2901        :omBC 2901-2908 (Diésel)
 str_dmu_DE5             :DE5 "Dieselvijf" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
+str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Diésel)
 str_dmu_NS20_t          :NS20 "Camel" (Diésel)
 str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Diésel)
 str_dmu_DH2             :DH2 "Wadloper" (Diésel)
@@ -294,6 +296,7 @@ str_coaches_Mat24       :Vagón Mat '24
 str_coaches_Ovaleramen  :Vagón "Ovaleramen"
 str_coaches_Ovaleramen_t :Vagón "Oval windows"
 str_coaches_Bolkoprijtuigen     :Vagón "Bolkoprijtuigen"
+str_coaches_Bolkoprijtuigen_t   :Vagón "Bulgehead carriages"
 str_coaches_PlanD       :Vagón Plan D
 str_coaches_PlanE       :Vagón Plan E
 str_coaches_PlanK       :Vagón Plan K
@@ -354,6 +357,7 @@ str_purchase_lsp_2          :2 días
 str_purchase_lsp_3          :3 días
 str_purchase_lsp_4          :4 días
 str_purchase_lsp_5          :5 días
+str_purchase_lsp_6          :6 días
 str_purchase_lsp_7          :7 días
 str_purchase_lsp_8          :8 días
 str_purchase_lsp_9          :9 días
