@@ -44,6 +44,7 @@ STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              :Librea dependiente del año
+str_cargo_subtype_purchase          :Librea del año de construcción
 str_cargo_subtype_random            :Librea aleatoria
 
 str_cargo_subtype_bordeaux          :Librea burdeos
@@ -212,6 +213,7 @@ str_diesel_SM151        :NS 2900 (Diésel)
 str_diesel_ACTS6700     :ACTS 6700 (Diésel)
 str_diesel_RN232        :RN 232 "Ludmilla" (Diésel)
 str_diesel_Class66      :Class 66 (Diésel)
+str_diesel_G1206        :MaK G 1206 (Diésel)
 str_diesel_G400B        :Vossloh G 400 B (Diésel)
 str_diesel_G2000        :Vossloh G 2000 (Diésel)
 
@@ -310,6 +312,7 @@ str_coaches_K4          :Vagón NMBS K4
 str_coaches_PlanN       :Coche cama Plan N
 str_coaches_Couchette   :Coche cama Couchette Bcm
 str_coaches_Citynightline   :Coche cama CityNightLine
+str_coaches_MUs         :Coche cama MUs
 
 #baggage and mail wagons
 str_coaches_SS_DIII     :Vagón de equipajes SS D-III
