@@ -245,6 +245,7 @@ str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
 str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Diésel)
 str_dmu_NS20_t          :NS20 "Camel" (Diésel)
 str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Diésel)
+str_dmu_DH1_t           :DH1 "Mudflat Walker" (Diésel)
 str_dmu_DH2             :DH2 "Wadloper" (Diésel)
 str_dmu_DM90_t          :DM '90 "Buffalo" (Diésel)
 str_dmu_Lint41H         :Lint 41/H (Diésel)
@@ -272,6 +273,7 @@ str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Eléctrico)
 str_emu_IRMVI_t         :VIRM-VI "Bison" (Eléctrico)
 str_emu_mP              :Plan mP (Eléctrico)
 str_emu_TGV             :TGV Thalys PBKA/PBA (Eléctrico)
+str_emu_ICE3M           :ICE 3M (Eléctrico)
 str_emu_V250            :Fyra V250 "Albatros" (Eléctrico)
 str_emu_V250_t          :Fyra V250 "Albatross" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
@@ -296,6 +298,7 @@ str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 #coaches
 str_coaches_HSM_C_755   :Vagón HSM C
 str_coaches_SS_ABd_7516 :Vagón SS ABd
+str_coaches_RTM_BD_438  :Vagón RTM BD
 str_coaches_Mat24       :Vagón Mat '24
 str_coaches_ZHESM_B     :Vagón ZHESM B
 str_coaches_Ovaleramen  :Vagón "Ovaleramen"
@@ -357,6 +360,7 @@ str_purchase_len_1_05       :1 unidad (0.5)
 str_purchase_len_2_12       :2 unidades (1.2)
 str_purchase_len_4_14       :4 unidades (1.4)
 str_purchase_len_4_20       :4 unidades (2.0)
+str_purchase_len_8_40       :8 unidades (4.0)
 str_purchase_len_10_50      :10 unidades (5.0)
 
 str_purchase_lsp_2          :2 días
