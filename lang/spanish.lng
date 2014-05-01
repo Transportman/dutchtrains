@@ -259,6 +259,7 @@ str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
 str_emu_Mat46ELD2       :Mat '46 ElD2 (Eléctrico)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Eléctrico)
 str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q "Hondekop" (Eléctrico)
+str_emu_Mat54ELD2_t     :Mat '54 ElD2 Plan F/G/M/Q "Doghead" (Eléctrico)
 str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Eléctrico)
 str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Eléctrico)
 str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux "Hondekop" (Eléctrico)
@@ -296,6 +297,7 @@ str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 
 #coaches
+str_coaches_HIJSM_4_8_10 :Vagón HSM 1
 str_coaches_HSM_C_755   :Vagón HSM C
 str_coaches_SS_ABd_7516 :Vagón SS ABd
 str_coaches_RTM_BD_438  :Vagón RTM BD
@@ -324,6 +326,7 @@ str_coaches_MUs         :Coche cama MUs
 str_coaches_SS_DIII     :Vagón de equipajes SS D-III
 str_coaches_SS_E_129    :Vagón de equipajes SS E
 str_coaches_StalenDV    :Vagón de equipajes D-V
+str_coaches_Dm          :Vagón de equipajes Dm
 str_coaches_Pd7011      :Vagón de correo Pd
 str_coaches_Pec         :Vagón de correo Pec
 str_coaches_Hbbkkss     :Vagón de correo Hbbkkss
