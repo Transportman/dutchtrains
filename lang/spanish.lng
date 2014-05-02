@@ -57,6 +57,7 @@ str_cargo_subtype_blackyellow_Containers        :Librea amarilla/negra (contened
 str_cargo_subtype_blue              :Librea azul
 str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
 str_cargo_subtype_blue_yellow       :Librea azul, con rayas amarillas
+str_cargo_subtype_blue_lightyellow  :Librea azul, con rayas en amarillo claro
 str_cargo_subtype_blue_darkyellow   :Librea azul, con rayas en amarillo oscuro
 str_cargo_subtype_blue_white        :Librea blanca/azul
 str_cargo_subtype_brown             :Librea Marrón
@@ -325,6 +326,7 @@ str_coaches_MUs         :Coche cama MUs
 #baggage and mail wagons
 str_coaches_SS_DIII     :Vagón de equipajes SS D-III
 str_coaches_SS_E_129    :Vagón de equipajes SS E
+str_coaches_StalenDIV   :Vagón de equipajes D-IV
 str_coaches_StalenDV    :Vagón de equipajes D-V
 str_coaches_Dm          :Vagón de equipajes Dm
 str_coaches_Pd7011      :Vagón de correo Pd
@@ -355,6 +357,7 @@ str_purchase_svc_ep         :pasajeros express
 str_purchase_svc_hp         :pasajeros de alta velocidad
 str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
 str_purchase_svc_eplf       :pasajeros express o carga ligera
+str_purchase_svc_lfep       :carga ligera o pasajeros express
 str_purchase_svc_f          :carga
 str_purchase_svc_hf         :carga pesada
 str_purchase_svc_m          :correo
