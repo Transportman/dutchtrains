@@ -326,6 +326,7 @@ str_coaches_MUs         :Coche cama MUs
 #baggage and mail wagons
 str_coaches_SS_DIII     :Vagón de equipajes SS D-III
 str_coaches_SS_E_129    :Vagón de equipajes SS E
+str_coaches_HSM_D_1916  :Vagón de equipajes HSM D-IV
 str_coaches_StalenDIV   :Vagón de equipajes D-IV
 str_coaches_StalenDV    :Vagón de equipajes D-V
 str_coaches_Dm          :Vagón de equipajes Dm
@@ -364,6 +365,7 @@ str_purchase_svc_m          :correo
 
 str_purchase_len_1_05       :1 unidad (0.5)
 str_purchase_len_2_12       :2 unidades (1.2)
+str_purchase_len_3_15       :3 unidades (1.5)
 str_purchase_len_4_14       :4 unidades (1.4)
 str_purchase_len_4_20       :4 unidades (2.0)
 str_purchase_len_8_40       :8 unidades (4.0)
@@ -377,6 +379,7 @@ str_purchase_lsp_6          :6 días
 str_purchase_lsp_7          :7 días
 str_purchase_lsp_8          :8 días
 str_purchase_lsp_9          :9 días
+str_purchase_lsp_10         :10 días
 str_purchase_lsp_12         :12 días
 str_purchase_lsp_14         :14 días
 str_purchase_lsp_15         :15 días
