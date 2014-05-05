@@ -303,6 +303,7 @@ str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 #coaches
 str_coaches_HIJSM_4_8_10 :Vagón HSM 1
 str_coaches_HSM_C_755   :Vagón HSM C
+str_coaches_SS_C_723    :Vagón SS C 650
 str_coaches_SS_ABd_7516 :Vagón SS ABd
 str_coaches_RTM_BD_438  :Vagón RTM BD
 str_coaches_Mat24       :Vagón Mat '24
@@ -342,6 +343,7 @@ str_coaches_PlanL       :Vagón de correo Plan L
 #metro
 str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
 str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
+str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 
 #PURCHASE MENU TEXTS
 
@@ -392,6 +394,7 @@ str_purchase_lsp_18         :18 días
 str_purchase_lsp_19         :19 días
 str_purchase_lsp_20         :20 días
 str_purchase_lsp_22         :22 días
+str_purchase_lsp_23         :23 días
 str_purchase_lsp_25         :25 días
 str_purchase_lsp_26         :26 días
 
