@@ -105,6 +105,7 @@ str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_hispeed_nocab     :Librea NS Hispeed, sin control de cabina
+str_cargo_subtype_nid               :Librea NID
 str_cargo_subtype_ns_ic             :Librea NS InterCity
 str_cargo_subtype_olympic           :Librea olímpica
 str_cargo_subtype_original          :Librea Original
@@ -210,6 +211,7 @@ str_diesel_NS400        :NS 400 "Grote Sik" (Diésel)
 str_diesel_NS450        :NS 450 (Diésel)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
 str_diesel_NS2200       :NS 2200 (Diésel)
+str_diesel_NS2400       :NS 2400 (Diésel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diésel)
 str_diesel_SM151        :NS 2900 (Diésel)
 str_diesel_ACTS6700     :ACTS 6700 (Diésel)
@@ -303,6 +305,7 @@ str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 #coaches
 str_coaches_HIJSM_4_8_10 :Vagón HSM 1
 str_coaches_HSM_C_755   :Vagón HSM C
+str_coaches_SS_C_218    :Vagón SS C 1
 str_coaches_SS_C_723    :Vagón SS C 650
 str_coaches_SS_ABd_7516 :Vagón SS ABd
 str_coaches_RTM_BD_438  :Vagón RTM BD
