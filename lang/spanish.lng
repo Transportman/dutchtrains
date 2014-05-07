@@ -80,6 +80,7 @@ str_cargo_subtype_red_blue          :Librea azul/roja
 str_cargo_subtype_red_yellow        :Librea roja, con rayas amarillas
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_turquoise         :Librea turquesa
+str_cargo_subtype_yellow            :Librea amarilla
 str_cargo_subtype_yellow_red        :Librea roja/amarilla
 str_cargo_subtype_white_yellow      :Librea amarilla/blanca
 
@@ -355,6 +356,7 @@ str_purchase_svc_axl            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso 
 str_purchase_svc_len            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}
 str_purchase_svc_len_lsp        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
 str_purchase_svc_axl_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_len_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_axl_lsp            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
@@ -420,6 +422,7 @@ str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, N
 str_purchase_steam_SS785    :Anteriormente conocido como: {SILVER} SS 685-778, 785-799.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
 
+str_purchase_diesel_SM151   :Anteriormente conocido como: {SILVER} SM 151-155.
 str_purchase_diesel_ACTS5800 :Anteriormente conocido como: {SILVER} BR Class 58.
 str_purchase_diesel_ACTS6700 :Anteriormente conocido como: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
