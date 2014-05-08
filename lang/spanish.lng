@@ -244,6 +244,7 @@ str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
 str_dmu_omC1921         :omC 1921-1931 (Diésel)
 str_dmu_omBC2901        :omBC 2901-2908 (Diésel)
+str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diésel)
 str_dmu_DE5             :DE5 "Dieselvijf" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
 str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Diésel)
@@ -348,6 +349,7 @@ str_coaches_PlanL       :Vagón de correo Plan L
 str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
 str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
+str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
 
 #PURCHASE MENU TEXTS
 
@@ -402,6 +404,7 @@ str_purchase_lsp_22         :22 días
 str_purchase_lsp_23         :23 días
 str_purchase_lsp_25         :25 días
 str_purchase_lsp_26         :26 días
+str_purchase_lsp_29         :29 días
 
 str_purchase_axl_A          :Muy bajo (clase A)
 str_purchase_axl_B          :Bajo (clase B)
