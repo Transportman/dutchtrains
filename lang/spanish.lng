@@ -99,6 +99,7 @@ str_cargo_subtype_benelux_plandcab  :Librea Benelux, con cabina Plan D
 str_cargo_subtype_citypendel        :Librea Citypendel
 str_cargo_subtype_ddar              :Librea DDM-2/3
 str_cargo_subtype_ddm1              :Librea DDM-1
+str_cargo_subtype_freedom           :Librea Freedom
 str_cargo_subtype_fyra              :Librea Fyra
 str_cargo_subtype_fyra_red          :Librea Fyra (rojo)
 str_cargo_subtype_fyra_white        :Librea Fyra (blanco)
@@ -376,6 +377,7 @@ str_purchase_svc_hf         :carga pesada
 str_purchase_svc_m          :correo
 
 str_purchase_len_1_05       :1 unidad (0.5)
+str_purchase_len_2_10       :2 unidades (1.0)
 str_purchase_len_2_12       :2 unidades (1.2)
 str_purchase_len_3_15       :3 unidades (1.5)
 str_purchase_len_4_14       :4 unidades (1.4)
@@ -431,6 +433,7 @@ str_purchase_diesel_ACTS6700 :Anteriormente conocido como: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8.
+str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
 
 
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
