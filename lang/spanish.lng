@@ -107,6 +107,7 @@ str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_hispeed_nocab     :Librea NS Hispeed, sin control de cabina
+str_cargo_subtype_maashopper        :Librea Veolia blanco/rojo "Maashopper"
 str_cargo_subtype_nid               :Librea NID
 str_cargo_subtype_ns_ic             :Librea NS InterCity
 str_cargo_subtype_olympic           :Librea olímpica
@@ -382,6 +383,7 @@ str_purchase_len_2_12       :2 unidades (1.2)
 str_purchase_len_3_15       :3 unidades (1.5)
 str_purchase_len_4_14       :4 unidades (1.4)
 str_purchase_len_4_20       :4 unidades (2.0)
+str_purchase_len_6_30       :6 unidades (3.0)
 str_purchase_len_8_40       :8 unidades (4.0)
 str_purchase_len_10_50      :10 unidades (5.0)
 
@@ -424,6 +426,7 @@ str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
 str_purchase_steam_HSM601   :Anteriormente conocido como: {SILVER} HSM 601-647.
 str_purchase_steam_HSM701   :Anteriormente conocido como: {SILVER} HSM 701-755.
 str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, NBDS 25-26.
+str_purchase_steam_SS651    :Anteriormente conocido como: {SILVER} SS 651-680.
 str_purchase_steam_SS785    :Anteriormente conocido como: {SILVER} SS 685-778, 785-799.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
 
