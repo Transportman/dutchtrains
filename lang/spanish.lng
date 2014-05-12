@@ -81,6 +81,7 @@ str_cargo_subtype_red_blue          :Librea azul/roja
 str_cargo_subtype_red_yellow        :Librea roja, con rayas amarillas
 str_cargo_subtype_olive_silverroof  :Librea oliva, con techo claro
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
+str_cargo_subtype_silver_blue       :Librea azul/plata
 str_cargo_subtype_turquoise         :Librea turquesa
 str_cargo_subtype_yellow            :Librea amarilla
 str_cargo_subtype_yellow_red        :Librea roja/amarilla
@@ -356,6 +357,7 @@ str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
 str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
+str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
 
 #PURCHASE MENU TEXTS
 
@@ -380,6 +382,7 @@ str_purchase_svc_lfep       :carga ligera o pasajeros express
 str_purchase_svc_f          :carga
 str_purchase_svc_hf         :carga pesada
 str_purchase_svc_m          :correo
+str_purchase_svc_M          :metro
 
 str_purchase_len_1_05       :1 unidad (0.5)
 str_purchase_len_2_10       :2 unidades (1.0)
