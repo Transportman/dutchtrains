@@ -85,6 +85,7 @@ str_cargo_subtype_silver_blue       :Librea azul/plata
 str_cargo_subtype_turquoise         :Librea turquesa
 str_cargo_subtype_yellow            :Librea amarilla
 str_cargo_subtype_yellow_red        :Librea roja/amarilla
+str_cargo_subtype_white             :Librea blanca
 str_cargo_subtype_white_yellow      :Librea amarilla/blanca
 
 str_cargo_subtype_Jules             :"Jules"
@@ -259,6 +260,7 @@ str_dmu_NS20_t          :NS20 "Camel" (Diésel)
 str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Diésel)
 str_dmu_DH1_t           :DH1 "Mudflat Walker" (Diésel)
 str_dmu_DH2             :DH2 "Wadloper" (Diésel)
+str_dmu_DH2_t           :DH2 "Mudflat Walker" (Diésel)
 str_dmu_DM90_t          :DM '90 "Buffalo" (Diésel)
 str_dmu_Lint41H         :Lint 41/H (Diésel)
 str_dmu_GTW26           :GTW 2/6 (Diésel)
@@ -270,6 +272,7 @@ str_emu_Mat24_t         :Mat '24 "Blocks set" (Eléctrico)
 str_emu_Mat24mP         :Mat '24 mP (Eléctrico)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Eléctrico)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
+str_emu_Mat40ELD5       :Mat '40 ElD5 (Eléctrico)
 str_emu_Mat46ELD2       :Mat '46 ElD2 (Eléctrico)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Eléctrico)
 str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q "Hondekop" (Eléctrico)
