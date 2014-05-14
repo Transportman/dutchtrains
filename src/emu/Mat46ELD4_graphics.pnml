@@ -166,19 +166,13 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat46ELD4D_livery, cargo_subtype) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat46ELD4_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_olive_silverroof);
     3: return string(str_cargo_subtype_green);
     4: return string(str_cargo_subtype_green_yellow);
     5: return string(str_cargo_subtype_green_yellow_blue);
-    return CB_RESULT_NO_TEXT;
-}
-
-//D-part
-switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4D_subtype_text, cargo_subtype) {
-    0: return string(str_cargo_subtype_ELD4);
     return CB_RESULT_NO_TEXT;
 }
 

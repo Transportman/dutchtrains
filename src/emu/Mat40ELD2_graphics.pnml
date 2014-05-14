@@ -109,12 +109,6 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat40ELD2_subtype_text, cargo_subtype) {
     return CB_RESULT_NO_TEXT;
 }
 
-//D-part
-switch(FEAT_TRAINS, SELF, switch_emu_Mat40ELD2D_subtype_text, cargo_subtype) {
-    0: return string(str_cargo_subtype_ELD2);
-    return CB_RESULT_NO_TEXT;
-}
-
 /*
 * ARTICULATED VEHICLE CALLBACK
 */

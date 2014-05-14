@@ -94,7 +94,6 @@ item(FEAT_TRAINS, item_emu_Mat40ELD5D) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        cargo_subtype_text: switch_emu_Mat40ELD5D_subtype_text;
         cargo_capacity: switch_emu_Mat40ELD5D_capacity;
         switch_emu_Mat40ELD5D_livery;
     }

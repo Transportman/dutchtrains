@@ -92,7 +92,6 @@ item(FEAT_TRAINS, item_emu_Mat46ELD2D) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        cargo_subtype_text: switch_emu_Mat46ELD2D_subtype_text;
         cargo_capacity: switch_emu_Mat46ELD2D_capacity;
         switch_emu_Mat46ELD2D_livery;
     }

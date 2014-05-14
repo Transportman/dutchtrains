@@ -279,14 +279,14 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_livery, build_year) {
 }
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_subtype_text_600D, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_subtype_text_600D, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_olive_silverroof);
     3: return string(str_cargo_subtype_olive_greyroof);
     return CB_RESULT_NO_TEXT;
 }
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_subtype_text_400D, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_subtype_text_400D, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_olive_greyroof);
@@ -294,7 +294,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_subtype_text_400D, cargo_subtyp
     4: return string(str_cargo_subtype_green_moustache);
     return CB_RESULT_NO_TEXT;
 }
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_subtype_text_400, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_subtype_text_400, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_olive_greyroof);
@@ -302,28 +302,10 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_subtype_text_400, cargo_subtype
     return CB_RESULT_NO_TEXT;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3_subtype_text, build_year) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3_subtype_text, build_year) {
     0..1941: switch_emu_Mat36ELD3_subtype_text_600D;
     1942..1949: switch_emu_Mat36ELD3_subtype_text_400D;
     switch_emu_Mat36ELD3_subtype_text_400;
-}
-
-//D-part
-switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3D_subtype_text_ELD3, cargo_subtype) {
-    0: return string(str_cargo_subtype_ELD3);
-    return CB_RESULT_NO_TEXT;
-}
-switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3D_subtype_text_EL3, cargo_subtype) {
-    0: return string(str_cargo_subtype_EL3);
-    return CB_RESULT_NO_TEXT;
-}
-switch(FEAT_TRAINS, PARENT, switch_emu_Mat36ELD3D_subtype_text_year, build_year) {
-    0..1949: switch_emu_Mat36ELD3D_subtype_text_ELD3;
-    switch_emu_Mat36ELD3D_subtype_text_EL3;
-}
-switch(FEAT_TRAINS, SELF, switch_emu_Mat36ELD3D_subtype_text, cargo_classes) {
-    bitmask(CC_PASSENGERS): switch_emu_Mat36ELD3D_subtype_text_year;
-    switch_emu_Mat36ELD3D_subtype_text_ELD3;
 }
 
 /*
