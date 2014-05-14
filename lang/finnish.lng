@@ -22,8 +22,6 @@ str_cargo_subtype_white_yellow      :> Valkokeltainen väritys
 
 str_cargo_subtype_accident_yellow   :> Keltainen väritys (onnettomuusveturi)
 
-str_cargo_subtype_EL3               :(El3)
-
 str_cargo_subtype_benelux           :> Benelux-väritys
 str_cargo_subtype_benelux_nocab     :> Benelux-väritys, ei hyttiopastetta
 str_cargo_subtype_ns_ic             :> NS InterCity-väritys

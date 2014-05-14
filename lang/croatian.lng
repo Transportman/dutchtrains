@@ -116,13 +116,6 @@ str_cargo_subtype_accident_brown    : > Smeđa livreja (nesreća vlaka)
 str_cargo_subtype_accident_yellow   : > Žuta livreja (nesreća vlaka)
 str_cargo_subtype_Jules             : > "Jules"
 
-str_cargo_subtype_EL2               :(El2)
-str_cargo_subtype_ELD2              :(ElD2)
-str_cargo_subtype_EL3               :(El3)
-str_cargo_subtype_ELD3              :(ElD3)
-str_cargo_subtype_ELD4              :(ElD4)
-str_cargo_subtype_ELD5              :(ElD5)
-
 str_cargo_subtype_benelux           : > Benelux livreja
 str_cargo_subtype_benelux_nocab     : > Benelux livreja, bez stražnjeg upravljačkog vagona
 str_cargo_subtype_benelux_plandcab  : > Benelux livreja sa Plan D stražnjim upravljačkim vagonom

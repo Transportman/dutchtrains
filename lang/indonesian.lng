@@ -44,8 +44,6 @@ str_cargo_subtype_white_blue        : > Seragam warna putih/biru
 
 str_cargo_subtype_accident_brown    : > Seragam warna coklat (kereta kecelakaan)
 
-str_cargo_subtype_ELD4              :(ElD4)
-
 str_cargo_subtype_freedom           : > Seragam merdeka
 str_cargo_subtype_groningen         : > Seragam Groningen Mendini
 str_cargo_subtype_hispeed           : > Seragam NS Hispeed

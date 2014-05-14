@@ -33,8 +33,6 @@ str_cargo_subtype_silver_blue       : > Silber-blaue Lackierung
 str_cargo_subtype_yellow_blue       : > Gelbe Lackierung mit blauen Streifen
 
 
-str_cargo_subtype_ELD2              :(ElD2)
-
 str_cargo_subtype_ddm1              : > DDM-1 Lackierung
 str_cargo_subtype_original          : > Orginallackierung
 str_cargo_subtype_strandsprinter_beachballs : "Strandsprinter" Lackierung mit Wasserbällen

@@ -113,13 +113,6 @@ str_cargo_subtype_accident_brown    : > Bruine kleurstelling (ongevallentrein)
 str_cargo_subtype_accident_yellow   : > Gele kleurstelling (ongevallentrein)
 str_cargo_subtype_Jules             : > "Jules"
 
-str_cargo_subtype_EL2               :(El2)
-str_cargo_subtype_ELD2              :(ElD2)
-str_cargo_subtype_EL3               :(El3)
-str_cargo_subtype_ELD3              :(ElD3)
-str_cargo_subtype_ELD4              :(ElD4)
-str_cargo_subtype_ELD5              :(ElD5)
-
 str_cargo_subtype_benelux           : > Benelux kleurstelling
 str_cargo_subtype_benelux_nocab     : > Benelux kleurstelling, zonder stuurstand
 str_cargo_subtype_benelux_plandcab  : > Benelux kleurstelling met Plan D stuurstand

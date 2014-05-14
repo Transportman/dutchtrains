@@ -8,6 +8,7 @@ STR_GRF_DESCRIPTION             :{SILVER}Trens Holandesos (Dutch Trains) per a O
 STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 #parameter strings
+STR_PARAM_VEHICLE_NAMES             :Emprar noms anglesos per als vehicles
 
 STR_PARAM_DISABLE_ORIGINAL          :Mantén els vagons i locomotores originals
 STR_PARAM_DISABLE_ORIGINAL_000      :cap (per defecte)
@@ -18,6 +19,7 @@ STR_PARAM_DISABLE_ORIGINAL_101      :ferrocarril i maglev
 STR_PARAM_DISABLE_ORIGINAL_011      :monorail i maglev
 STR_PARAM_DISABLE_ORIGINAL_111      :tots
 
+STR_PARAM_PURCHASE_COST_DESC        :Es pot emprar aquest paràmetre per a incrementar o reduir els costos de compra dels vehicles en aquest NewGRF. Noteu que si es canvia aquest paràmetre, els costos respecte als dels vehicles per defecte es descompensaran.
 
 STR_PARAM_DIVIDE_16                 :1/16
 STR_PARAM_DIVIDE_8                  :1/8
@@ -34,6 +36,7 @@ STR_PARAM_TRACK_POWER_DESC                      :Per defecte la potència dels t
 STR_PARAM_TRACK_POWER_ON                        :Depèn de la via quan es carrega un NewGRF de vies de tren compatible (per defecte)
 
 #cargo subtype livery strings
+str_cargo_subtype_purchase          :> Any de construcció
 str_cargo_subtype_matching          :> Coincident amb la locomotora
 
 str_cargo_subtype_bordeaux          :> Color bordeus
@@ -41,10 +44,13 @@ str_cargo_subtype_bordeaux_white            :> Color bordeus amb blanc
 str_cargo_subtype_bordeaux_white_blue       :> Color bordeus amb blanc/blau
 str_cargo_subtype_blackyellow_Crates            :> Negre/groc (caixes)
 str_cargo_subtype_blue              :> Color blau
+str_cargo_subtype_blue_greyish      :> Color blau verdós
 str_cargo_subtype_lighterblue       :> Color blau una mica més clar
+str_cargo_subtype_blue_banners      :> Color blau amb laterals amb publicitat als laterals
 str_cargo_subtype_blue_lightyellow  :> Color blau amb franges groc clar
 str_cargo_subtype_blue_darkyellow   :> Color blau amb franges groc fosc
 str_cargo_subtype_brown             :> Color Marró
+str_cargo_subtype_brown_yellowfront :> Color marró amb frontal groc
 str_cargo_subtype_brown_light       :> Color Marró Clar
 str_cargo_subtype_brown_dark        :> Color marró fosc
 str_cargo_subtype_brown_greenish    :> Color Marró Verdós
@@ -56,6 +62,7 @@ str_cargo_subtype_green_yellow      :> Color verd amb franges grogues
 str_cargo_subtype_green_white       :> Colors verd/blanc
 str_cargo_subtype_green_lightyellow :> Color verd/groc clar
 str_cargo_subtype_grey              :> Color gris
+str_cargo_subtype_grey_dark         :> Color gris fosc
 str_cargo_subtype_grey_light        :> Color gris clar
 str_cargo_subtype_purple            :> Color porpra
 str_cargo_subtype_red_greydoors     :> Color vermell amb portes grises
@@ -63,23 +70,25 @@ str_cargo_subtype_red_light         :> Color vermell clar
 str_cargo_subtype_red_pinkish       :> Color vermell rosat
 str_cargo_subtype_red_blue          :> Colors vermell/blau
 str_cargo_subtype_red_yellow        :> Color vermell amb franges grogues
+str_cargo_subtype_red_yellow_blue   :> Color roig, franges grogues i publicitat lateral blava
 str_cargo_subtype_salmon            :> Color Salmó
 str_cargo_subtype_turquoise         :> Color Turquesa
 str_cargo_subtype_yellow            :> Color groc
+str_cargo_subtype_yellow_blue       :> Color groc amb publicitat lateral blava
 str_cargo_subtype_yellow_red        :> Colors groc/vermell
 str_cargo_subtype_white             :> Blanc
 str_cargo_subtype_white_blue        :> Colors blanc/blau
+str_cargo_subtype_white_red         :> Color blanc/vermell
+str_cargo_subtype_white_yellow      :> Color blanc/groc
 
 str_cargo_subtype_blue_crashnose    : > Color blau (amb para-xocs)
 str_cargo_subtype_grey_crashnose    :> Color gris (amb para-xocs)
 str_cargo_subtype_accident_brown    :> Marró (to tren accidentat)
+str_cargo_subtype_accident_yellow   :> Color groc (to tren accidentat)
 str_cargo_subtype_Jules             :> "Jules"
 
-str_cargo_subtype_ELD2              :(ElD2)
-str_cargo_subtype_EL3               :(El3)
-str_cargo_subtype_ELD4              :(ElD4)
-
 str_cargo_subtype_benelux           :> Benelux
+str_cargo_subtype_benelux_nocab     :> Benelux, sense control de cabina
 str_cargo_subtype_benelux_plandcab  :> Benelux amb cabina Plan D
 str_cargo_subtype_citypendel        :> Citypendel
 str_cargo_subtype_ddar              :> DDM-2/3
@@ -89,11 +98,14 @@ str_cargo_subtype_freedom           :> Freedom
 str_cargo_subtype_fyra              :> Fyra
 str_cargo_subtype_fyra_red          :> Fyra (vermell)
 str_cargo_subtype_fyra_white        :> Fyra (blanc)
+str_cargo_subtype_groningen         :> Groningen Mendini
 str_cargo_subtype_ICE                           :> ICE
 str_cargo_subtype_kinderboeken      :> Week of Children's Books
 str_cargo_subtype_lll                           :> Lage Landen Lijn
 str_cargo_subtype_hispeed           :> NS Hispeed
+str_cargo_subtype_hispeed_nocab     :> NH Hispeed, sense control de cabina
 str_cargo_subtype_maashopper        :> Veolia "Maashopper" blanc/vermell
+str_cargo_subtype_nid               :> NID
 str_cargo_subtype_ns_ic             :> NS InterCity
 str_cargo_subtype_ns_ic_nocab       :> NS InterCity, sense control de cabina
 str_cargo_subtype_olympic           :> Olympic
@@ -102,6 +114,7 @@ str_cargo_subtype_ovchip            :> OV Chipkaart
 str_cargo_subtype_prototype         :> Prototip
 str_cargo_subtype_randstadrail      :> RandstadRail
 str_cargo_subtype_renewal           :> Renewal
+str_cargo_subtype_sr10              :> Sr10 Royal ICR (des del 22 desembre del 1993)
 str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter" amb pilotes de platja
 str_cargo_subtype_strandsprinter    :> "Strandsprinter"
 str_cargo_subtype_TGV                           :> Thalys
@@ -115,12 +128,14 @@ str_cargo_subtype_randstad                      :> Randstad
 str_cargo_subtype_ACTS              :> ACTS
 str_cargo_subtype_ACTS_blue_yellow  :> ACTS (blau/groc)
 str_cargo_subtype_ACTS_grey_green   :> ACTS (gris/marró)
+str_cargo_subtype_Arriva            :> Arriva
 str_cargo_subtype_Arriva_spurt      :> Arriva "Spurt"
 str_cargo_subtype_Arriva_vechtdallijnen :> Arriva "Vechtdallijnen"
 str_cargo_subtype_Breng             :> Breng
 str_cargo_subtype_Crossrail         :> Crossrail
 str_cargo_subtype_DBSchenker        :> DB Schenker
 str_cargo_subtype_DLC               :> DLC
+str_cargo_subtype_ERS               :> ERS
 str_cargo_subtype_ERS_Crates            :> ERS (caixes)
 str_cargo_subtype_ERS_Containers        :> ERS (contenidors)
 str_cargo_subtype_EETC              :> Euro Express Treincharter
@@ -139,14 +154,19 @@ str_cargo_subtype_NS_whiteroof      :> NS amb sostre blanc
 str_cargo_subtype_NSCargo_Containers :> NS Cargo (contenidors)
 str_cargo_subtype_Rail4Chem_green   :> Rail4Chem (verd)
 str_cargo_subtype_Rail4Chem_red     :> Rail4Chem (vermell)
+str_cargo_subtype_Railion_regular   :> Railion
 str_cargo_subtype_Railpro           :> Railpro
 str_cargo_subtype_rff                           :> Càrrega RFF
+str_cargo_subtype_rts_black                     : > RTS (negre)
 str_cargo_subtype_rurtalbahn_black      :> Rurtalbahn (negre)
+str_cargo_subtype_staatsmijnen      :> Staatsmijnen
 str_cargo_subtype_SS                :> Staatsspoorwegen
 str_cargo_subtype_SS_tank           :> SS (locomotora cisterna)
+str_cargo_subtype_Syntus            :> Syntus
 str_cargo_subtype_Twents            :> Twents
 str_cargo_subtype_Veolia            :> Veolia
 str_cargo_subtype_Veolia_velios     :> Veolia "Velios"
+str_cargo_subtype_Veolia_white_red  :> Veolia (blanc/vermell)
 str_cargo_subtype_Veolia_black      :> Veolia (negre)
 
 str_cargo_subtype_grey_pigs         :> Gris (to gris de porc)
@@ -166,6 +186,7 @@ str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Vapor)
 str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS9           :NS 700 (Vapor)
+str_steam_SS651         :NS 8100 (Vapor)
 str_steam_SS785         :NS 3700 "Jumbo" (Vapor)
 str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3900        :NS 3900 (Vapor)
@@ -179,6 +200,7 @@ str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 
 #diesel
 str_diesel_NS100        :NS 100 "Oersik" (Gasolina)
+str_diesel_NS100_t      :NS 100 "Buck" (Gasolina)
 str_diesel_NS200        :NS 200 "Sik" (Dièsel)
 str_diesel_NS200_t      :NS 200 "Billy" (Dièsel)
 str_diesel_NS400        :NS 400 "Grote Sik" (Dièsel)
@@ -196,6 +218,7 @@ str_diesel_SM151        :NS 2900 (Dièsel)
 str_diesel_ACTS5800     :ACTS 5800 (Dièsel)
 str_diesel_RN232        :RN 232 "Ludmilla" (Dièsel)
 str_diesel_Class66      :Classe 66 (Dièsel)
+str_diesel_G400B        :Vossloh G 400 B (Dièsel)
 str_diesel_G2000        :Vossloh G 2000 (Dièsel)
 str_diesel_HLR77        :NMBS HLR 77 (Dièsel)
 
@@ -207,10 +230,12 @@ str_electric_NS1300     :NS 1300 (Elèctrica)
 str_electric_NS1500     :NS 1500 (Elèctrica)
 str_electric_NS1600     :NS 1600/1800 (Elèctrica)
 str_electric_NS1700     :NS 1700 (Elèctrica)
+str_electric_NID        :Nieuwe Intercity Dubbeldekker (Elèctrica)
 str_electric_NID_t      :Intercity Nou amb Dos Pisos (Elèctrica)
 str_electric_mDDM       :mDDM (Elèctrica)
 str_electric_NS1600P    :NS 1600P (Elèctrica)
 str_electric_HLE11      :NMBS HLE 11 (Elèctrica)
+str_electric_HLE25      :NMBS HLE 25.5 (Elèctrica)
 str_electric_TRAXXF140MS2   :NS Hispeed 186 (Elèctrica)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Elèctrica)
 str_electric_gen9_HS001 :HS-1 (Elèctrica)
@@ -222,6 +247,7 @@ str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Dièsel)
 str_dmu_omC1921         :omC 1921-1931 (Dièsel)
 str_dmu_omBC2901        :omBC 2901-2908 (Dièsel)
 str_dmu_Mat34           :Mat '34 "Dieseldrie" (Dièsel)
+str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Dièsel)
 str_dmu_DE5             :DE5 "Dieselvijf" (Dièsel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Dièsel)
 str_dmu_DE1             :DE1 Plan X "Blauwe Engel" (Dièsel)
@@ -232,6 +258,8 @@ str_dmu_NS20_t          :NS20 "Camel" (Dièsel)
 str_dmu_DE4             :DE4 "Trans Europ Express" (Dièsel)
 str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Dièsel)
 str_dmu_DE3_t           :DE3 Plan U "Red Devil" (Dièsel)
+str_dmu_DH1_t           :DH1 "Mudflat Walker" (Dièsel)
+str_dmu_DH2             :DH2 "Wadloper" (Dièsel)
 str_dmu_DH2_t           :DH2 "Mudflat Walker" (Dièsel)
 str_dmu_Lint41H         :Lint 41/H (Dièsel)
 str_dmu_GTW26           :GTW 2/6 (Dièsel)
@@ -246,6 +274,7 @@ str_emu_Mat24_t         :Mat '24 "Blocks set" (Elèctrica)
 str_emu_Mat24mP         :Mat '24 mP (Elèctrica)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Elèctrica)
 str_emu_Mat36EL2        :Mat '36 El2 (Elèctrica)
+str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (Elèctrica)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Elèctrica)
 str_emu_Mat40ELD2       :Mat '40 ElD2 (Elèctrica)
 str_emu_Mat46ELD2       :Mat '46 ElD2 (Elèctrica)
@@ -262,6 +291,7 @@ str_emu_ICM4_t          :ICM-IV Plan Z "Headwalker" (Elèctrica)
 str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Elèctrica)
 str_emu_IRMIV_t         :IRM-IV/VIRM-IV "Bison" (Elèctrica)
 str_emu_IRMVI           :VIRM-VI "Bizon" (Elèctrica)
+str_emu_IRMVI_t         :VIRM-VI "Bison" (Elèctrica)
 str_emu_mP              :Plan mP (Elèctrica)
 str_emu_TGV             :TGV Thalys PBKA/PBA (Elèctrica)
 str_emu_ICE3M           :ICE 3M (Elèctrica)
@@ -281,10 +311,13 @@ str_wagons_gen0openwagonsmall       :Vagó Obert Petit
 str_wagons_gen2_openwagon           :Vagó Obert Mitjà
 str_wagons_GTUW_openwagon           :Vagó Obert GTUW
 str_wagons_Es_openwagon             :Vagó Obert Es
+str_wagons_gen0hopper               :Vagó Tremuja Petit
 str_wagons_Fccpps_selfdischarger    :Selfdischarger Fccpps
 str_wagons_gen0stakewagon           :Vagó de Mercaderies Teler Petit
 str_wagons_gen2_stake               :Vagó de Mercaderies Teler
 str_wagons_gen4_stake               :Vagó de Mercaderies Teler
+str_wagons_gen0tanker               :Vagó Cisterna Petit
+str_wagons_gen2_tanker              :Vagó Cisterna
 str_wagons_Uh_tanker                :Vagó Cisterna Uh
 str_wagons_gen6_tanker              :Vagó Cisterna Gran
 str_wagons_gen3_livestock           :Vagó de Bestiar Mitjà
@@ -305,15 +338,20 @@ str_coaches_HIJSM_4_8_10 :Vagó HSM 1
 str_coaches_HSM_C_755   :Vagó HSM C
 str_coaches_NCS_B_119   :Vagó NCS B
 str_coaches_SS_C_218    :Vagó SS C 1
+str_coaches_SS_C_723    :Vagó SS C 650
+str_coaches_Mat24       :Vagó Mat '24
 str_coaches_ZHESM_B     :Vagó ZHESM B
 str_coaches_Bolkoprijtuigen     :Vagó "Bolkoprijtuigen"
+str_coaches_PlanD       :Vagó Plan D
 str_coaches_PlanE       :Vagó Plan E
 str_coaches_ICR         :Vagó ICR
 str_coaches_ICK         :Vagó ICK
 str_coaches_Avmz        :Vagó Avmz
 str_coaches_ICL         :Vagó ICL
 str_coaches_M2          :Vagó NMBS M2
+str_coaches_DDAR        :Vagó de dos pisos DDM/NID
 str_coaches_gen9_IC_DD  :Vagó de dos pisos HS-DD
+str_coaches_MUs         :Vagó dormitori MUs
 
 #baggage and mail wagons
 str_coaches_SS_DII      :Vagó d'Equipatge SS D-II
@@ -322,6 +360,7 @@ str_coaches_SS_E_129    :Vagó d'Equipatge SS E
 str_coaches_HSM_D_1916  :Vagó d'Equipatge HSM D-IV
 str_coaches_StalenDIV   :Vagó d'Equipatge D-IV
 str_coaches_Dm          :Vagó d'Equipatge Dm
+str_coaches_Pd7011      :Vagó de Correu Pd
 str_coaches_Pec         :Vagó de Correu Pec
 str_coaches_Hbbkkss     :Vagó de Correu Hbbkkss
 str_coaches_PlanC       :Vagó de Correu Plan C
@@ -329,15 +368,18 @@ str_coaches_PlanL       :Vagó de Correu Plan L
 
 #metro
 str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
+str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
 str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
+str_metro_RET_typeT     :RET Type T SG2 (Metro)
 str_metro_RET_typeM     :RET Type M MG2 (Metro)
 str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
 
 #PURCHASE MENU TEXTS
 
 str_purchase_svc                :{BLACK}Servei: {YELLOW}{STRING}
+str_purchase_svc_axl            :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}
 str_purchase_svc_len_lsp        :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de càrrega: {YELLOW}{STRING}
 str_purchase_svc_axl_len_lsp    :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}
 str_purchase_svc_axl_len_lsp_spc :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}{}{BLACK}{STRING}
@@ -345,9 +387,12 @@ str_purchase_svc_len_lsp_spc    :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Llargad
 str_purchase_svc_spc            :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_spc        :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}
+str_purchase_axl_lsp            :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}
+str_purchase_axl_lsp_spc        :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_lp         :passatgers locals
 str_purchase_svc_ep         :passatgers exprés
+str_purchase_svc_ip         :passatgers Intercity
 str_purchase_svc_hp         :passatgers a alta velocitat
 str_purchase_svc_Ip         :passatgers internacionals
 str_purchase_svc_elp        :passatgers locals i exprés
@@ -355,6 +400,7 @@ str_purchase_svc_eip        :passatgers exprés i Intercity
 str_purchase_svc_eiphf      :passatgers exprés i Intercity o càrrega pesant
 str_purchase_svc_iphf       :passatgers Intercity o càrrega pesant
 str_purchase_svc_hphf       :passatgers a alta velocitat o càrrega pesant
+str_purchase_svc_lfep       :càrrega lleugera o passatgers exprés
 str_purchase_svc_f          :càrrega
 str_purchase_svc_lf         :càrrega lleugera
 str_purchase_svc_hf         :càrrega pesant
@@ -375,6 +421,7 @@ str_purchase_len_6_30       :6 unitats (3.0)
 str_purchase_len_8_40       :8 unitats (4.0)
 str_purchase_len_10_50      :10 unitats (5.0)
 
+str_purchase_lsp_2          :2 dies
 str_purchase_lsp_3          :3 dies
 str_purchase_lsp_4          :4 dies
 str_purchase_lsp_5          :5 dies
@@ -392,6 +439,7 @@ str_purchase_lsp_17         :17 dies
 str_purchase_lsp_18         :18 dies
 str_purchase_lsp_19         :19 dies
 str_purchase_lsp_22         :22 dies
+str_purchase_lsp_24         :24 dies
 str_purchase_lsp_25         :25 dies
 str_purchase_lsp_26         :26 dies
 str_purchase_lsp_29         :29 dies
@@ -399,13 +447,16 @@ str_purchase_lsp_37         :37 dies
 
 
 str_purchase_spc_eld        :Amb compartiment per a equipatge remodelable a càrrega exprés.
+str_purchase_spc_fictional  :Fictícia.
 
 str_purchase_steam_NCS41    :Abans coneguda com a: {SILVER}NCS 41-50, later SS 151-160.
 str_purchase_steam_HSM83    :Abans coneguda com a: {SILVER}HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Abans coneguda com a: {SILVER}HSM 126-135.
 str_purchase_steam_HSM501   :Abans coneguda com a: {SILVER}HSM 501-535.
 str_purchase_steam_HSM601   :Abans coneguda com a: {SILVER}HSM 601-647.
+str_purchase_steam_HSM701   :Abans coneguda com a: {SILVER}HSM 701-755.
 str_purchase_steam_SS517    :Abans coneguda com a: {SILVER}SS 517-527, NBDS 25-26.
+str_purchase_steam_SS651    :Abans coneguda com a: {SILVER}SS 651-680.
 str_purchase_steam_SS785    :Abans coneguda com a: {SILVER}SS 685-778, 785-799.
 
 str_purchase_diesel_NS2000  :Abans coneguda com a: {SILVER}Whitcomb 65-DE-19A.
@@ -434,6 +485,7 @@ str_purchase_spc_emu_TGV_no_track :EMU multisistema.
 str_purchase_spc_emu_V250_no_track :EMU multisistema.
 str_purchase_spc_emu_gen9_HST_no_track :EMU multisistema.{}Fictícia.
 str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Fictícia.
+str_purchase_emu_CargoDD_no_track :EMU multisistema.{}Fictícia.
 
 str_purchase_coaches_ZHESM_B :Després coneguda com a: {SILVER}NS B9900.{}{BLACK}Per a emprar amb el vagó motor ZHESM mBC.
 str_purchase_coaches_Mat24  :Per a usar amb el vagó motor Mat '24.
