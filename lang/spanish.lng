@@ -260,6 +260,7 @@ str_dmu_DM90_t          :DM '90 "Buffalo" (Diésel)
 str_dmu_Lint41H         :Lint 41/H (Diésel)
 str_dmu_GTW26           :GTW 2/6 (Diésel)
 str_dmu_GTW28           :GTW 2/8 (Diésel)
+str_dmu_V200D6                  :V200-D6 (Diésel)
 
 #emu
 str_emu_ZHESM_mBC       :ZHESM mBC (Eléctrico)
@@ -438,6 +439,7 @@ str_purchase_steam_SS651    :Anteriormente conocido como: {SILVER} SS 651-680.
 str_purchase_steam_SS785    :Anteriormente conocido como: {SILVER} SS 685-778, 785-799.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
 
+str_purchase_diesel_NS2000  :Anteriormente conocido como: {SILVER} Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Anteriormente conocido como: {SILVER} SM 151-155.
 str_purchase_diesel_ACTS5800 :Anteriormente conocido como: {SILVER} BR Class 58.
 str_purchase_diesel_ACTS6700 :Anteriormente conocido como: {SILVER} NMBS HLD 62.
