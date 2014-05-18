@@ -210,6 +210,7 @@ str_steam_NS6200        :NS 6200 (Vapor)
 str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 
 #diesel
+str_diesel_NS200        :NS 200 "Sik" (Diésel)
 str_diesel_NS400        :NS 400 "Grote Sik" (Diésel)
 str_diesel_NS450        :NS 450 (Diésel)
 str_diesel_NS600        :NS 600 "Bakkie" (Diésel)
@@ -297,6 +298,7 @@ str_emu_V250_t          :Fyra V250 "Albatross" (Eléctrico)
 str_emu_gen9_HST        :P8000 (Eléctrico)
 str_emu_GTW26           :GTW 2/6 (Eléctrico)
 str_emu_GTW28           :GTW 2/8 (Eléctrico)
+str_emu_Protos          :Protos (Eléctrico)
 str_emu_V200E6                  :V200-E6 (Eléctrico)
 str_emu_V200E8                  :V200-E8 (Eléctrico)
 
