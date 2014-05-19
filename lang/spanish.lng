@@ -345,6 +345,7 @@ str_coaches_Citynightline   :Coche cama CityNightLine
 str_coaches_MUs         :Coche cama MUs
 
 #baggage and mail wagons
+str_coaches_SS_DII      :Vagón de equipajes SS D-II
 str_coaches_SS_DIII     :Vagón de equipajes SS D-III
 str_coaches_SS_E_129    :Vagón de equipajes SS E
 str_coaches_HSM_D_1916  :Vagón de equipajes HSM D-IV
@@ -419,6 +420,7 @@ str_purchase_lsp_19         :19 días
 str_purchase_lsp_20         :20 días
 str_purchase_lsp_22         :22 días
 str_purchase_lsp_23         :23 días
+str_purchase_lsp_24         :24 días
 str_purchase_lsp_25         :25 días
 str_purchase_lsp_26         :26 días
 str_purchase_lsp_29         :29 días
