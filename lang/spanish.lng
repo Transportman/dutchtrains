@@ -220,6 +220,7 @@ str_diesel_NS2200       :NS 2200 (Diésel)
 str_diesel_NS2400       :NS 2400 (Diésel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diésel)
 str_diesel_SM151        :NS 2900 (Diésel)
+str_diesel_NS6400       :NS 6400 (Diésel)
 str_diesel_ACTS6700     :ACTS 6700 (Diésel)
 str_diesel_RN232        :RN 232 "Ludmilla" (Diésel)
 str_diesel_Class66      :Class 66 (Diésel)
@@ -250,6 +251,7 @@ str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
 str_dmu_omC1921         :omC 1921-1931 (Diésel)
 str_dmu_omBC2901        :omBC 2901-2908 (Diésel)
+str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diésel)
 str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diésel)
 str_dmu_DE5             :DE5 "Dieselvijf" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
@@ -425,6 +427,7 @@ str_purchase_lsp_24         :24 días
 str_purchase_lsp_25         :25 días
 str_purchase_lsp_26         :26 días
 str_purchase_lsp_29         :29 días
+str_purchase_lsp_37         :37 días
 
 str_purchase_axl_A          :Muy bajo (clase A)
 str_purchase_axl_B          :Bajo (clase B)
