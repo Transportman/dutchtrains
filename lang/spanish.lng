@@ -154,6 +154,7 @@ str_cargo_subtype_Locon             :Librea Locon
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NS                :Librea NS
+str_cargo_subtype_NS_tank           :Librea NS (locomotora cisterna)
 str_cargo_subtype_NS_whiteroof      :Librea NS, con techo blanco
 str_cargo_subtype_NSCargo           :Librea NS Cargo
 str_cargo_subtype_NSCargo_Crates        :Librea NS Cargo (cajas)
@@ -171,6 +172,7 @@ str_cargo_subtype_rurtalbahn_black      :Librea Rurtalbahn (negra)
 str_cargo_subtype_rurtalbahn_blue       :Librea Rurtalbahn (azul)
 str_cargo_subtype_staatsmijnen      :Librea Staatsmijnen
 str_cargo_subtype_SS                :Librea Staatsspoorwegen
+str_cargo_subtype_SS_tank           :Librea SS (locomotora cisterna)
 str_cargo_subtype_SS_NS             :Librea Staatsspoorwegen / NS
 str_cargo_subtype_Strukton          :Librea Strukton
 str_cargo_subtype_Syntus            :Librea Syntus
@@ -286,6 +288,7 @@ str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux "Hondekop" (Eléctrico)
 str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux "Doghead" (Eléctrico)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Eléctrico)
 str_emu_Mat64PlanT      :Mat '64 Plan T (Eléctrico)
+str_emu_ICM3_t          :ICM-III Plan Z "Headwalker" (Eléctrico)
 str_emu_ICM4            :ICM-IV Plan Z "Koploper" (Eléctrico)
 str_emu_SM90            :SM '90 "Railhopper" (Eléctrico)
 str_emu_IRMIII          :IRM-III "Bizon" (Eléctrico)
