@@ -56,6 +56,7 @@ str_cargo_subtype_blackyellow_Crates            :Librea amarilla/negra (cajas)
 str_cargo_subtype_blackyellow_Containers        :Librea amarilla/negra (contenedores)
 str_cargo_subtype_blue              :Librea azul
 str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
+str_cargo_subtype_blue_red_silverroof       :Librea azul, con rayas rojas y techo plateado
 str_cargo_subtype_blue_yellow       :Librea azul, con rayas amarillas
 str_cargo_subtype_blue_lightyellow  :Librea azul, con rayas en amarillo claro
 str_cargo_subtype_blue_darkyellow   :Librea azul, con rayas en amarillo oscuro
@@ -167,6 +168,7 @@ str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railion_regular   :Librea Railion
 str_cargo_subtype_Railion_red       :Librea Railion (rojo)
 str_cargo_subtype_Railpro           :Librea Railpro
+str_cargo_subtype_rff                           :Librea RFF Cargo
 str_cargo_subtype_rts_black                     :Librea RTS (negra)
 str_cargo_subtype_rts_orange            :Librea RTS (blanca/naranja)
 str_cargo_subtype_rurtalbahn_black      :Librea Rurtalbahn (negra)
