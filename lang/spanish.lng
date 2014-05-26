@@ -88,6 +88,7 @@ str_cargo_subtype_yellow            :Librea amarilla
 str_cargo_subtype_yellow_red        :Librea roja/amarilla
 str_cargo_subtype_white             :Librea blanca
 str_cargo_subtype_white_blue        :Librea azul/blanca
+str_cargo_subtype_white_red         :Librea blanca/roja
 str_cargo_subtype_white_yellow      :Librea amarilla/blanca
 
 str_cargo_subtype_Jules             :"Jules"
@@ -221,6 +222,7 @@ str_diesel_NS400        :NS 400 "Grote Sik" (Diésel)
 str_diesel_NS450        :NS 450 (Diésel)
 str_diesel_NS600        :NS 600 "Bakkie" (Diésel)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
+str_diesel_NS2000       :NS 2000 (Diésel)
 str_diesel_NS2200       :NS 2200 (Diésel)
 str_diesel_NS2400       :NS 2400 (Diésel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diésel)
