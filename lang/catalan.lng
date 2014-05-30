@@ -390,6 +390,7 @@ str_wagons_gen0openwagonsmall       :Vagó Obert Petit
 str_wagons_gen2_openwagon           :Vagó Obert Mitjà
 str_wagons_GTUW_openwagon           :Vagó Obert GTUW
 str_wagons_Es_openwagon             :Vagó Obert Es
+str_wagons_Eass_openwagon           :Vagó Obert Eass
 str_wagons_gen0hopper               :Vagó Tremuja Petit
 str_wagons_Fccpps_selfdischarger    :Selfdischarger Fccpps
 str_wagons_gen0stakewagon           :Vagó de Mercaderies Teler Petit

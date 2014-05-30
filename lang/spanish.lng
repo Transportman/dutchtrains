@@ -225,6 +225,7 @@ str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
 str_diesel_NS2000       :NS 2000 (Diésel)
 str_diesel_NS2200       :NS 2200 (Diésel)
 str_diesel_NS2400       :NS 2400 (Diésel)
+str_diesel_NS2600       :NS 2600 "Beelen" (Diésel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diésel)
 str_diesel_NS2801_t     :NS 2801 "Little Cripple Mary" (Diésel)
 str_diesel_SM151        :NS 2900 (Diésel)
@@ -477,4 +478,5 @@ str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Fictici
 
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
 
+str_purchase_spc_emu_V250_no_track :EMU Multisistema.
 
