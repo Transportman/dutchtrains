@@ -62,6 +62,7 @@ str_cargo_subtype_blue_lightyellow  :Librea azul, con rayas en amarillo claro
 str_cargo_subtype_blue_darkyellow   :Librea azul, con rayas en amarillo oscuro
 str_cargo_subtype_blue_white        :Librea blanca/azul
 str_cargo_subtype_brown             :Librea Marrón
+str_cargo_subtype_brown_yellowfront :Librea Marrón, con frontal amarillo
 str_cargo_subtype_brown_light       :Librea Marrón claro
 str_cargo_subtype_brown_dark        :Librea Marrón oscuro
 str_cargo_subtype_green             :Librea verde
@@ -82,6 +83,7 @@ str_cargo_subtype_red_blue          :Librea azul/roja
 str_cargo_subtype_red_yellow        :Librea roja, con rayas amarillas
 str_cargo_subtype_olive_silverroof  :Librea oliva, con techo claro
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
+str_cargo_subtype_salmon            :Librea salmón
 str_cargo_subtype_silver_blue       :Librea azul/plata
 str_cargo_subtype_turquoise         :Librea turquesa
 str_cargo_subtype_yellow            :Librea amarilla
