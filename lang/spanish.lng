@@ -55,6 +55,7 @@ str_cargo_subtype_black             :Librea negra
 str_cargo_subtype_blackyellow_Crates            :Librea amarilla/negra (cajas)
 str_cargo_subtype_blackyellow_Containers        :Librea amarilla/negra (contenedores)
 str_cargo_subtype_blue              :Librea azul
+str_cargo_subtype_lighterblue       :Librea azul claro clarísimo
 str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
 str_cargo_subtype_blue_red_silverroof       :Librea azul, con rayas rojas y techo plateado
 str_cargo_subtype_blue_yellow       :Librea azul, con rayas amarillas
@@ -403,6 +404,7 @@ str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{
 str_purchase_svc_p          :pasajeros
 str_purchase_svc_ep         :pasajeros express
 str_purchase_svc_hp         :pasajeros de alta velocidad
+str_purchase_svc_elp        :pasajeros local y express
 str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
 str_purchase_svc_eplf       :pasajeros express o carga ligera
 str_purchase_svc_lfep       :carga ligera o pasajeros express
