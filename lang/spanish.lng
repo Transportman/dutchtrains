@@ -86,6 +86,7 @@ str_cargo_subtype_olive_silverroof  :Librea oliva, con techo claro
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_salmon            :Librea salmón
 str_cargo_subtype_silver_blue       :Librea azul/plata
+str_cargo_subtype_silver_red        :Librea roja/plata
 str_cargo_subtype_turquoise         :Librea turquesa
 str_cargo_subtype_yellow            :Librea amarilla
 str_cargo_subtype_yellow_red        :Librea roja/amarilla
@@ -108,6 +109,7 @@ str_cargo_subtype_fyra_red          :Librea Fyra (rojo)
 str_cargo_subtype_fyra_white        :Librea Fyra (blanco)
 str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
+str_cargo_subtype_kennemerstrand    :Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_hispeed_nocab     :Librea NS Hispeed, sin control de cabina
 str_cargo_subtype_maashopper        :Librea Veolia blanco/rojo "Maashopper"
@@ -386,6 +388,7 @@ str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
 str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
+str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 
 #PURCHASE MENU TEXTS
 
@@ -477,6 +480,7 @@ str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8.
 str_purchase_electric_NS1500 :Anteriormente conocido como: {SILVER} BR Class EM2.
+str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
 
 

@@ -9,6 +9,7 @@ STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 #parameter strings
 STR_PARAM_VEHICLE_NAMES             :Emprar noms anglesos per als vehicles
+STR_PARAM_VEHICLE_NAMES_DESC        :Activar aquesta opció per a emprar els sobrenoms dels vehicles traduïts al català. Quan es desactiva, els sobrenoms es mantindran en holandès.
 
 STR_PARAM_DISABLE_ORIGINAL          :Mantén els vagons i locomotores originals
 STR_PARAM_DISABLE_ORIGINAL_DESC     :Per defecte, aquesta extensió NewGRF deshabilitat tots els vagons i locomotores originals de ferrocarril, monorail i maglev. Es pot usar aquest paràmetre per a mantenir qualsevol combinació de vehicles originals de ferrocarril, monorail i maglev. No obstant, si una altra extensió NewGRF deshabilita els vehicles originals, aquest paràmetre no pot tornar a rehabilitar-los.
@@ -23,7 +24,7 @@ STR_PARAM_DISABLE_ORIGINAL_111      :tots
 
 STR_PARAM_PURCHASE_COST             :Multiplicador del cost de compra
 STR_PARAM_PURCHASE_COST_DESC        :Es pot emprar aquest paràmetre per a incrementar o reduir els costos de compra dels vehicles en aquest NewGRF. Noteu que si es canvia aquest paràmetre, els costos respecte als dels vehicles per defecte es descompensaran.
-STR_PARAM_RUNNING_COST              :Multiplicador del cost d'utilització
+STR_PARAM_RUNNING_COST              :Multiplicador del cost de circulació
 STR_PARAM_RUNNING_COST_DESC         :Aquest paràmetre permet incrementar o reduir els costos de circulació dels vehicles d'aquesta extensió. Cal tenir en compte que si es canvia aquest paràmetre, els costos respecte als dels vehicles per defecte es descompensaran.
 
 STR_PARAM_DIVIDE_16                 :1/16
@@ -38,11 +39,13 @@ STR_PARAM_TIMES_16                  :16
 
 STR_PARAM_TRACK_POWER                           :Potència multisistema
 STR_PARAM_TRACK_POWER_DESC                      :Per defecte la potència dels trens multisistema depèn de la via per on circulen quan es carrega un NewGRF de vies compatible. Es pot usar aquest paràmetre per a desactivar-ho i sempre emprar la potència més alta.
+STR_PARAM_TRACK_POWER_OFF                       :Sempre potència major
 STR_PARAM_TRACK_POWER_ON                        :Depèn de la via quan es carrega un NewGRF de vies de tren compatible (per defecte)
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              :> Depenent de l'any
 str_cargo_subtype_purchase          :> Any de construcció
+str_cargo_subtype_random            :> Aleatori
 str_cargo_subtype_matching          :> Coincident amb la locomotora
 
 str_cargo_subtype_bordeaux          :> Color bordeus
@@ -58,6 +61,7 @@ str_cargo_subtype_lighterblue       :> Color blau una mica més clar
 str_cargo_subtype_blue_banners      :> Color blau amb laterals amb publicitat als laterals
 str_cargo_subtype_blue_red          :> Color blau amb franges vermelles
 str_cargo_subtype_blue_red_silverroof       :> Color blau, franges vermelles i sostre platejat
+str_cargo_subtype_blue_red_yellowmoustache  :> Color blau amb franges vermelles i manillar groc
 str_cargo_subtype_blue_yellow       :> Color blau amb franges grogues
 str_cargo_subtype_blue_lightyellow  :> Color blau amb franges groc clar
 str_cargo_subtype_blue_darkyellow   :> Color blau amb franges groc fosc
@@ -72,6 +76,8 @@ str_cargo_subtype_brown_reddish     :> Color marró vermellós
 str_cargo_subtype_green             :> Color Verd
 str_cargo_subtype_green_lightroof   :> Color verd amb sostre clar
 str_cargo_subtype_green_darkroof    :> Color verd amb sostre fosc
+str_cargo_subtype_green_moustache   :> Color verd amb manillar
+str_cargo_subtype_green_red         :> Color verd amb franges vermelles
 str_cargo_subtype_green_yellow      :> Color verd amb franges grogues
 str_cargo_subtype_green_yellow_blue :> Color verd, franges grogues i publicitat lateral blava
 str_cargo_subtype_green_white       :> Colors verd/blanc
@@ -91,6 +97,7 @@ str_cargo_subtype_olive_silverroof  :> Color oliva amb sostre clar
 str_cargo_subtype_olive_greyroof    :> Color oliva amb sostre fosc
 str_cargo_subtype_salmon            :> Color Salmó
 str_cargo_subtype_silver_blue       :> Color platejat/blau
+str_cargo_subtype_silver_green      :> Color platejat/verd
 str_cargo_subtype_silver_red        :> Colors platejat/vermell
 str_cargo_subtype_turquoise         :> Color Turquesa
 str_cargo_subtype_yellow            :> Color groc
@@ -115,6 +122,7 @@ str_cargo_subtype_citypendel        :> Citypendel
 str_cargo_subtype_ddar              :> DDM-2/3
 str_cargo_subtype_ddm_nocab         :> DDM, sense control de cabina
 str_cargo_subtype_ddm1              :> DDM-1
+str_cargo_subtype_football          :> Especial Mundial de Futbol
 str_cargo_subtype_freedom           :> Freedom
 str_cargo_subtype_fyra              :> Fyra
 str_cargo_subtype_fyra_red          :> Fyra (vermell)
@@ -135,6 +143,7 @@ str_cargo_subtype_ns_ic_nocab       :> NS InterCity, sense control de cabina
 str_cargo_subtype_olympic           :> Olympic
 str_cargo_subtype_original          :> Original
 str_cargo_subtype_ovchip            :> OV Chipkaart
+str_cargo_subtype_overnightexpress  :> Exprés de Nit
 str_cargo_subtype_prototype         :> Prototip
 str_cargo_subtype_randstadrail      :> RandstadRail
 str_cargo_subtype_renewal           :> Renewal
@@ -156,6 +165,7 @@ str_cargo_subtype_aegon                         :> Aegon
 str_cargo_subtype_randstad                      :> Randstad
 str_cargo_subtype_delagelanden1         :> De Lage Landen 1
 str_cargo_subtype_delagelanden2         :> De Lage Landen 2
+str_cargo_subtype_algemeendagblad1      :> Algemeen Dagblad 1
 str_cargo_subtype_algemeendagblad2      :> Algemeen Dagblad 2
 
 str_cargo_subtype_ACTS              :> ACTS
@@ -218,12 +228,15 @@ str_cargo_subtype_Veolia_white_red  :> Veolia (blanc/vermell)
 str_cargo_subtype_Veolia_black      :> Veolia (negre)
 str_cargo_subtype_VOSlogistics      :> VOS Logistics
 
+str_cargo_subtype_brown_cows        :> Color marró (Cows)
 str_cargo_subtype_brown_pigs        :> Color marró (Pigs)
 str_cargo_subtype_grey_cows         :> Color gris (Cows)
 str_cargo_subtype_grey_pigs         :> Color gris (Pigs)
 
 str_cargo_subtype_transformer :> Càrrega Transformer
 str_cargo_subtype_house             :> Càrrega House
+str_cargo_subtype_train             :> Càrrega de tren
+str_cargo_subtype_tractor           :> Càrrega de tractors
 
 #steam
 str_steam_Arend         :HSM "Arend" (Vapor)
@@ -240,6 +253,7 @@ str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Vapor)
 str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS9           :NS 700 (Vapor)
+str_steam_SS17          :NS 2900 (Vapor)
 str_steam_SS517         :NS 6900 "Bello" (Vapor)
 str_steam_SS651         :NS 8100 (Vapor)
 str_steam_SS785         :NS 3700 "Jumbo" (Vapor)
@@ -274,6 +288,7 @@ str_diesel_NS2600       :NS 2600 "Beelen" (Dièsel)
 str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Dièsel)
 str_diesel_NS2801_t     :NS 2801 "Little Cripple Mary" (Dièsel)
 str_diesel_SM151        :NS 2900 (Dièsel)
+str_diesel_NS6400       :NS 6400 (Dièsel)
 str_diesel_ACTS5800     :ACTS 5800 (Dièsel)
 str_diesel_ACTS6700     :ACTS 6700 (Dièsel)
 str_diesel_RN232        :RN 232 "Ludmilla" (Dièsel)
@@ -385,7 +400,10 @@ str_emu_CargoDD                 :EMU de càrrega (Elèctrica)
 
 #wagons
 str_wagons_gen0boxcar               :Vagó petit
+str_wagons_gen2_boxcar              :Vagó
+str_wagons_Gs_boxcar                :Vagó Gs
 str_wagons_gen6_slidingdoor         :Vagó amb Portes Corredores
+str_wagons_Habbiins_goodswagon      :Vagó Habbiins
 str_wagons_gen0openwagonsmall       :Vagó Obert Petit
 str_wagons_gen2_openwagon           :Vagó Obert Mitjà
 str_wagons_GTUW_openwagon           :Vagó Obert GTUW
@@ -393,10 +411,13 @@ str_wagons_Es_openwagon             :Vagó Obert Es
 str_wagons_Eass_openwagon           :Vagó Obert Eass
 str_wagons_gen0hopper               :Vagó Tremuja Petit
 str_wagons_Fccpps_selfdischarger    :Selfdischarger Fccpps
+str_wagons_Tals_selfdischarger      :Selfdischarger Tals
+str_wagons_Tads_selfdischarger      :Selfdischarger Tads
 str_wagons_gen0stakewagon           :Vagó de Mercaderies Teler Petit
 str_wagons_gen2_stake               :Vagó de Mercaderies Teler
 str_wagons_gen4_stake               :Vagó de Mercaderies Teler
 str_wagons_gen6_stake               :Vago de Mercaderies Teler
+str_wagons_gen7_coil                :Vagó per a Bobines
 str_wagons_gen0tanker               :Vagó Cisterna Petit
 str_wagons_gen2_tanker              :Vagó Cisterna
 str_wagons_Uh_tanker                :Vagó Cisterna Uh
@@ -468,9 +489,10 @@ str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
 str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
-str_metro_RET_typeT     :RET Type T SG2 (Metro)
-str_metro_RET_typeM     :RET Type M MG2 (Metro)
-str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
+str_metro_RET_typeT     :T SG2 Tipus RET (Metro)
+str_metro_RET_typeM     :M MG2 Tipus RET (Metro)
+str_metro_RET_typeB     :B MG2/1 Tipus RET (Metro)
+str_metro_RET_typeR     :R RSG3 Tipus RET (Metro)
 str_metro_Future_MTR1   :Metro1 Fictici
 
 #PURCHASE MENU TEXTS
@@ -490,6 +512,7 @@ str_purchase_axl_lsp            :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{
 str_purchase_axl_lsp_spc        :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+str_purchase_svc_p          :passatgers
 str_purchase_svc_lp         :passatgers locals
 str_purchase_svc_ep         :passatgers exprés
 str_purchase_svc_ip         :passatgers Intercity
@@ -501,10 +524,13 @@ str_purchase_svc_eiphf      :passatgers exprés i Intercity o càrrega pesant
 str_purchase_svc_iphf       :passatgers Intercity o càrrega pesant
 str_purchase_svc_hphf       :passatgers a alta velocitat o càrrega pesant
 str_purchase_svc_eplf       :passatgers exprés o càrrega lleugera
+str_purchase_svc_flp        :càrrega o passatgers locals
 str_purchase_svc_lfep       :càrrega lleugera o passatgers exprés
 str_purchase_svc_f          :càrrega
 str_purchase_svc_lf         :càrrega lleugera
 str_purchase_svc_hf         :càrrega pesant
+str_purchase_svc_s          :acoblament
+str_purchase_svc_slf        :acoblament o càrrega lleugera
 str_purchase_svc_m          :correu
 str_purchase_svc_M          :metro
 str_purchase_svc_x          :executiu
@@ -529,6 +555,7 @@ str_purchase_lsp_4          :4 dies
 str_purchase_lsp_5          :5 dies
 str_purchase_lsp_6          :6 dies
 str_purchase_lsp_7          :7 dies
+str_purchase_lsp_8          :8 dies
 str_purchase_lsp_9          :9 dies
 str_purchase_lsp_10         :10 dies
 str_purchase_lsp_11         :11 dies
@@ -542,17 +569,24 @@ str_purchase_lsp_18         :18 dies
 str_purchase_lsp_19         :19 dies
 str_purchase_lsp_20         :20 dies
 str_purchase_lsp_22         :22 dies
+str_purchase_lsp_23         :23 dies
 str_purchase_lsp_24         :24 dies
 str_purchase_lsp_25         :25 dies
 str_purchase_lsp_26         :26 dies
 str_purchase_lsp_29         :29 dies
 str_purchase_lsp_37         :37 dies
 
+str_purchase_axl_A          :molt baix (classe A)
+str_purchase_axl_B          :baix (classe B)
+str_purchase_axl_C          :mitjà (classe C)
+str_purchase_axl_D          :alt (classe D)
+str_purchase_axl_E          :molt alt (classe E)
 
 str_purchase_spc_eld        :Amb compartiment per a equipatge remodelable a càrrega exprés.
 str_purchase_spc_el_eld     :Amb compartiment per a equipatge remodelable a càrregues exprés o passatgers.
 str_purchase_spc_fictional  :Fictícia.
 
+str_purchase_steam_NCS1     :Des de 1892: {YELLOW}-15% pes, +48% potència, +73% esforç de tracció, +7% cost de circulació.{}{BLACK}Abans coneguda com a: {SILVER}NCS 1-12, 31-39 (locomotora tènder), NCS 81-89 (locomotora cisterna), SS 571-579 (locomotora cisterna).
 str_purchase_steam_NCS21    :Abans coneguda com a: {SILVER}NCS 21-30, després SS 481-490.
 str_purchase_steam_NCS41    :Abans coneguda com a: {SILVER}NCS 41-50, later SS 151-160.
 str_purchase_steam_HSM83    :Abans coneguda com a: {SILVER}HSM 83-88, 101-115.
@@ -560,11 +594,12 @@ str_purchase_steam_HSM126   :Abans coneguda com a: {SILVER}HSM 126-135.
 str_purchase_steam_HSM501   :Abans coneguda com a: {SILVER}HSM 501-535.
 str_purchase_steam_HSM601   :Abans coneguda com a: {SILVER}HSM 601-647.
 str_purchase_steam_HSM701   :Abans coneguda com a: {SILVER}HSM 701-755.
-str_purchase_steam_SS9      :Des de 1892: {YELLOW}+4% pes, +21% potència, +64% esforç de tracció, +7% cost d'utilització.{}{BLACK}Abans coneguda com a: {SILVER}SS 9-16, 21-78, NBDS 1-5.
+str_purchase_steam_SS9      :Des de 1892: {YELLOW}+4% pes, +21% potència, +64% esforç de tracció, +7% cost de circulació.{}{BLACK}Abans coneguda com a: {SILVER}SS 9-16, 21-78, NBDS 1-5.
+str_purchase_steam_SS17     :Remodelat el 1913: {YELLOW}+20% potència, +19% esforç de tracció, +7% cost de circulació.{}{BLACK}Abans coneguda com a: {SILVER}SS 17-20, 161-205, 212.
 str_purchase_steam_SS517    :Abans coneguda com a: {SILVER}SS 517-527, NBDS 25-26.
 str_purchase_steam_SS651    :Abans coneguda com a: {SILVER}SS 651-680.
 str_purchase_steam_SS785    :Abans coneguda com a: {SILVER}SS 685-778, 785-799.
-str_purchase_steam_NBDS30   :Remodelat el 1940: {YELLOW}-50% velocitat, +11% potència{}{BLACK}Abans coneguda com a: {SILVER} NBDS 30-36.
+str_purchase_steam_NBDS30   :Remodelat el 1940: {YELLOW}-50% velocitat, +11% potència{}{BLACK}Abans coneguda com a: {SILVER}NBDS 30-36.
 str_purchase_steam_NCS71    :Remodelat el 1925: {YELLOW}+5% pes, -4% esforç de tracció{}{BLACK}Remodelat el 1935: {YELLOW}+22% velocitat, +12% pes{}{BLACK}Abans coneguda com a: {SILVER}NCS 71-78, SS 971-978.
 
 str_purchase_diesel_NS2000  :Abans coneguda com a: {SILVER}Whitcomb 65-DE-19A.
@@ -573,6 +608,7 @@ str_purchase_diesel_ACTS5800 :Abans coneguda com a: {SILVER}BR Classe 58.
 str_purchase_diesel_ACTS6700 :Abans coneguda com a: {SILVER}NMBS HLD 62.
 str_purchase_diesel_RN232   :Abans coneguda com a: {SILVER}DB BR 232.
 
+str_purchase_electric_NS1100 :Remodelat el 1979: {YELLOW}+5% pes, llargada +1/8.
 str_purchase_electric_NS1500 :Abans coneguda com a: {SILVER}BR Classe EM2.
 str_purchase_electric_mDDM_NID :Per a utilitzar vagons de dos pisos DDM/NID.
 str_purchase_electric_HLE11 :Per a emprar amb el Vagó ICR per a servei en Benelux.
@@ -583,15 +619,16 @@ str_purchase_spc_NS1600P    :Locomotora multisistema, {YELLOW}+70% de potència 
 str_purchase_spc_electric_gen9_HS001 :Locomotora multisistema, {YELLOW}+65% de potència {BLACK}en via electrificada 25kV.
 str_purchase_spc_electric_gen9_HS002 :Locomotora multisistema, {YELLOW}+97% de potència {BLACK}en via electrificada 25kV.
 str_purchase_electric_TRAXXF140MS2_no_track :Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema.
+str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Fictícia.
 str_purchase_spc_electric_gen9_HS002_no_track :Locomotora multisistema.{}Fictícia.
 
-str_purchase_dmu_omBC1901   :Des de 1929: {YELLOW}+41% pes, +233% potència, +7% velocitat, +23% cost d'utilització.
+str_purchase_dmu_omBC1901   :Des de 1929: {YELLOW}+41% pes, +233% potència, +7% velocitat, +23% cost de circulació.
 
 str_purchase_emu_ZHESM_mBC  :Remodelat el 1926: {YELLOW}+150% potència, +100% esforç de tracció{}{BLACK}Després coneguda com a: {SILVER}NS mBC9900.{}{BLACK}Per a emprar amb el Vagó ZHESM B.
 str_purchase_emu_Mat24      :Per a emprar amb el vagó motor Mat '24.
-str_purchase_emu_Mat36ELD3  :Amb compartiment per a equipatge remodelable a càrregues exprés o passatgers.{}Des de 1942: {YELLOW}-26% pes, -50% potència, -45% esforç de tracció, -20% cost d'utilització, -21% capacitat, llargada -1/8.
+str_purchase_emu_Mat36ELD3  :Amb compartiment per a equipatge remodelable a càrregues exprés o passatgers.{}Des de 1942: {YELLOW}-26% pes, -50% potència, -45% esforç de tracció, -20% cost de cicrulació, -21% capacitat, llargada -1/8.
 str_purchase_emu_ICE3M      :EMU multisistema, {YELLOW}+86% de potència {BLACK}en via electrificada de 25kV.{}També coneguda com a: {SILVER}DB BR 406.
 str_purchase_spc_emu_TGV    :EMU multisistema, {YELLOW}+139% de potència {BLACK}en via electrificada de 25kV.
 str_purchase_spc_emu_V250   :EMU multisistema, {YELLOW}+83% de potència {BLACK}en via electrificada de 25kV.
@@ -610,3 +647,5 @@ str_purchase_coaches_ZHESM_B :Després coneguda com a: {SILVER}NS B9900.{}{BLACK
 str_purchase_coaches_Mat24  :Per a emprar amb el vagó motor Mat '24.
 str_purchase_coaches_DDAR   :Per a emprar amb el vagó motor mDDM o el NID.
 str_purchase_coaches_PlanW  :Per a emprar amb les locomotores elèctriques NS per a serveis nacionals i NMBS HLE 25.5 per a serveis en Benelux.
+str_purchase_coaches_IRC    :Per a emprar amb les locomotores elèctriques NS per a serveis nacionals, NMBS HLE 11 per a serveis en Benelux i NS Hispeed 186 com a servei Fyra.
+str_purchase_wagons_gen10_CargoDD       :Per a emprar amb Vehicles Futurístics de Transport de Càrrega.{}Fictícia.
