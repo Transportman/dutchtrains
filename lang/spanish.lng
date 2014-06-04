@@ -103,6 +103,7 @@ str_cargo_subtype_benelux_plandcab  :Librea Benelux, con cabina Plan D
 str_cargo_subtype_citypendel        :Librea Citypendel
 str_cargo_subtype_ddar              :Librea DDM-2/3
 str_cargo_subtype_ddm1              :Librea DDM-1
+str_cargo_subtype_football          :Librea del mundial de fútbol
 str_cargo_subtype_freedom           :Librea Freedom
 str_cargo_subtype_fyra              :Librea Fyra
 str_cargo_subtype_fyra_red          :Librea Fyra (rojo)
@@ -271,6 +272,7 @@ str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diésel)
 str_dmu_DE5             :DE5 "Dieselvijf" (Diésel)
 str_dmu_DE5_t           :DE5 "Dieselfive" (Diésel)
 str_dmu_DE1             :DE1 Plan X "Blauwe Engel" (Diésel)
+str_dmu_DE1_t           :DE1 Plan X "Blue Angel" (Diésel)
 str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Diésel)
 str_dmu_DE2_t           :DE2 Plan X "Blue Angel" (Diésel)
 str_dmu_NS20            :NS20 "Kameel" (Diésel)
