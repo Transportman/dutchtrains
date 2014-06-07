@@ -588,7 +588,7 @@ str_purchase_spc_fictional  :Fictícia.
 
 str_purchase_steam_NCS1     :Des de 1892: {YELLOW}-15% pes, +48% potència, +73% esforç de tracció, +7% cost de circulació.{}{BLACK}Abans coneguda com a: {SILVER}NCS 1-12, 31-39 (locomotora tènder), NCS 81-89 (locomotora cisterna), SS 571-579 (locomotora cisterna).
 str_purchase_steam_NCS21    :Abans coneguda com a: {SILVER}NCS 21-30, després SS 481-490.
-str_purchase_steam_NCS41    :Abans coneguda com a: {SILVER}NCS 41-50, later SS 151-160.
+str_purchase_steam_NCS41    :Abans coneguda com a: {SILVER}NCS 41-50, després SS 151-160.
 str_purchase_steam_HSM83    :Abans coneguda com a: {SILVER}HSM 83-88, 101-115.
 str_purchase_steam_HSM126   :Abans coneguda com a: {SILVER}HSM 126-135.
 str_purchase_steam_HSM501   :Abans coneguda com a: {SILVER}HSM 501-535.
@@ -613,11 +613,11 @@ str_purchase_electric_NS1500 :Abans coneguda com a: {SILVER}BR Classe EM2.
 str_purchase_electric_mDDM_NID :Per a utilitzar vagons de dos pisos DDM/NID.
 str_purchase_electric_HLE11 :Per a emprar amb el Vagó ICR per a servei en Benelux.
 str_purchase_electric_HLE25 :Per a emprar amb el Vagó Plan W per a servei en Benelux.
-str_purchase_electric_TRAXXF140MS2 :Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema, {YELLOW}+87% potència {BLACK}en via electrificada 25kV.
-str_purchase_spc_electric_ES64F4 :Locomotora multisistema, {YELLOW}+42% de potència {BLACK}en via electrificada 25kV.
-str_purchase_spc_NS1600P    :Locomotora multisistema, {YELLOW}+70% de potència {BLACK}en via electrificada 25kV.
-str_purchase_spc_electric_gen9_HS001 :Locomotora multisistema, {YELLOW}+65% de potència {BLACK}en via electrificada 25kV.
-str_purchase_spc_electric_gen9_HS002 :Locomotora multisistema, {YELLOW}+97% de potència {BLACK}en via electrificada 25kV.
+str_purchase_electric_TRAXXF140MS2 :Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema, {YELLOW}+87% potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_electric_ES64F4 :Locomotora multisistema, {YELLOW}+42% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_NS1600P    :Locomotora multisistema, {YELLOW}+70% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_electric_gen9_HS001 :Locomotora multisistema, {YELLOW}+65% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_electric_gen9_HS002 :Locomotora multisistema, {YELLOW}+97% de potència {BLACK}en via electrificada de 25 kV.
 str_purchase_electric_TRAXXF140MS2_no_track :Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema.
 str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
@@ -629,12 +629,12 @@ str_purchase_dmu_omBC1901   :Des de 1929: {YELLOW}+41% pes, +233% potència, +7%
 str_purchase_emu_ZHESM_mBC  :Remodelat el 1926: {YELLOW}+150% potència, +100% esforç de tracció{}{BLACK}Després coneguda com a: {SILVER}NS mBC9900.{}{BLACK}Per a emprar amb el Vagó ZHESM B.
 str_purchase_emu_Mat24      :Per a emprar amb el vagó motor Mat '24.
 str_purchase_emu_Mat36ELD3  :Amb compartiment per a equipatge remodelable a càrregues exprés o passatgers.{}Des de 1942: {YELLOW}-26% pes, -50% potència, -45% esforç de tracció, -20% cost de cicrulació, -21% capacitat, llargada -1/8.
-str_purchase_emu_ICE3M      :EMU multisistema, {YELLOW}+86% de potència {BLACK}en via electrificada de 25kV.{}També coneguda com a: {SILVER}DB BR 406.
-str_purchase_spc_emu_TGV    :EMU multisistema, {YELLOW}+139% de potència {BLACK}en via electrificada de 25kV.
-str_purchase_spc_emu_V250   :EMU multisistema, {YELLOW}+83% de potència {BLACK}en via electrificada de 25kV.
-str_purchase_spc_emu_gen9_HST :EMU multisistema, {YELLOW}+68% de potència {BLACK}en via electrificada de 25kV.{}Fictícia.
-str_purchase_spc_emu_Future_DD :EMU multisistema, {YELLOW}+118% de potència {BLACK}en via electrificada de 25kV.{}Fictícia.
-str_purchase_emu_CargoDD        :EMU multisistema, {YELLOW}+100% de potència {BLACK}en via electrificada de 25kV.{}Fictícia.
+str_purchase_emu_ICE3M      :EMU multisistema, {YELLOW}+86% de potència {BLACK}en via electrificada de 25 kV.{}També coneguda com a: {SILVER}DB BR 406.
+str_purchase_spc_emu_TGV    :EMU multisistema, {YELLOW}+139% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_emu_V250   :EMU multisistema, {YELLOW}+83% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_emu_gen9_HST :EMU multisistema, {YELLOW}+68% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
+str_purchase_spc_emu_Future_DD :EMU multisistema, {YELLOW}+118% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
+str_purchase_emu_CargoDD        :EMU multisistema, {YELLOW}+100% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
 
 str_purchase_emu_ICE3M_no_track :EMU multisistema.{}També coneguda com a: {SILVER}DB BR 406.
 str_purchase_spc_emu_TGV_no_track :EMU multisistema.
