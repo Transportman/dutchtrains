@@ -292,6 +292,7 @@ str_dmu_DE3_t           :DE3 Plan U "Red Devil" (Diésel)
 str_dmu_DH1_t           :DH1 "Mudflat Walker" (Diésel)
 str_dmu_DH2             :DH2 "Wadloper" (Diésel)
 str_dmu_DH2_t           :DH2 "Mudflat Walker" (Diésel)
+str_dmu_DM90            :DM '90 "Buffel" (Diésel)
 str_dmu_DM90_t          :DM '90 "Buffalo" (Diésel)
 str_dmu_Lint41H         :Lint 41/H (Diésel)
 str_dmu_GTW26           :GTW 2/6 (Diésel)
@@ -504,4 +505,5 @@ str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Fictici
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
 
 str_purchase_spc_emu_V250_no_track :EMU Multisistema.
+str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Ficticia.
 
