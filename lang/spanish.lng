@@ -227,6 +227,7 @@ str_steam_NS4600        :NS 4600 (Vapor)
 str_steam_NS4700        :NS 4700 (Vapor)
 str_steam_NS5000II      :NS 5000-II (Vapor)
 str_steam_NS6200        :NS 6200 (Vapor)
+str_steam_NS6300        :NS 6300 "De Beul" (Vapor)
 str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 
 #diesel
@@ -323,6 +324,7 @@ str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Eléctrico)
 str_emu_SGM3            :SGM-III Plan Y "Sprinter" (Eléctrico)
 str_emu_ICM3_t          :ICM-III Plan Z "Headwalker" (Eléctrico)
 str_emu_ICM4            :ICM-IV Plan Z "Koploper" (Eléctrico)
+str_emu_ICM4_t          :ICM-IV Plan Z "Headwalker" (Eléctrico)
 str_emu_SM90            :SM '90 "Railhopper" (Eléctrico)
 str_emu_IRMIII          :IRM-III "Bizon" (Eléctrico)
 str_emu_IRMIII_t        :IRM-III "Bison" (Eléctrico)
@@ -435,6 +437,7 @@ str_purchase_svc_hf         :carga pesada
 str_purchase_svc_m          :correo
 str_purchase_svc_M          :metro
 
+str_purchase_len_1_04       :1 unidad (0.4)
 str_purchase_len_1_05       :1 unidad (0.5)
 str_purchase_len_2_10       :2 unidades (1.0)
 str_purchase_len_2_12       :2 unidades (1.2)
