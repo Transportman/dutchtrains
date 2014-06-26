@@ -220,6 +220,7 @@ str_steam_SS9           :NS 700 (Vapor)
 str_steam_SS517         :NS 6900 "Bello" (Vapor)
 str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
+str_steam_NS3900        :NS 3900 (Vapor)
 str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Vapor)
 str_steam_NBDS30_t      :NS 3500 "Blue Brabanders" (Vapor)
 str_steam_NCS71         :NS 3600 "Zeppelin" (Vapor)
@@ -406,6 +407,7 @@ str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
 str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
+str_metro_RET_typeT     :RET Type T SG2 (Metro)
 str_metro_RET_typeM     :RET Type M MG2 (Metro)
 str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
 str_metro_RET_typeR     :RET Type R RSG3 (Metro)
@@ -504,6 +506,7 @@ str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
 str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8.
 str_purchase_electric_NS1500 :Anteriormente conocido como: {SILVER} BR Class EM2.
 str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
+str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
 
 
