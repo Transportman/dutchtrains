@@ -308,6 +308,7 @@ str_emu_Mat24           :Mat '24 "Blokkendoos" (Eléctrico)
 str_emu_Mat24_t         :Mat '24 "Blocks set" (Eléctrico)
 str_emu_Mat24mP         :Mat '24 mP (Eléctrico)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Eléctrico)
+str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (Eléctrico)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
 str_emu_Mat40ELD2       :Mat '40 ElD2 (Eléctrico)
 str_emu_Mat40ELD5       :Mat '40 ElD5 (Eléctrico)
@@ -353,6 +354,7 @@ str_wagons_gen2_openwagon           :Vagón abierto medio
 str_wagons_GTUW_openwagon           :Vagón abierto GTUW
 str_wagons_Es_openwagon             :Vagón abierto Es
 str_wagons_Eass_openwagon           :Vagón abierto Eass
+str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
