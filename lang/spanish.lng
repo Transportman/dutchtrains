@@ -324,6 +324,7 @@ str_emu_Mat64PlanV      :Mat '64 Plan V (Eléctrico)
 str_emu_Mat64PlanT      :Mat '64 Plan T (Eléctrico)
 str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Eléctrico)
 str_emu_SGM3            :SGM-III Plan Y "Sprinter" (Eléctrico)
+str_emu_ICM3            :ICM-III Plan Z "Koploper" (Eléctrico)
 str_emu_ICM3_t          :ICM-III Plan Z "Headwalker" (Eléctrico)
 str_emu_ICM4            :ICM-IV Plan Z "Koploper" (Eléctrico)
 str_emu_ICM4_t          :ICM-IV Plan Z "Headwalker" (Eléctrico)
@@ -464,6 +465,7 @@ str_purchase_lsp_9          :9 días
 str_purchase_lsp_10         :10 días
 str_purchase_lsp_11         :11 días
 str_purchase_lsp_12         :12 días
+str_purchase_lsp_13         :13 días
 str_purchase_lsp_14         :14 días
 str_purchase_lsp_15         :15 días
 str_purchase_lsp_16         :16 días
