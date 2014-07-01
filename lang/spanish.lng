@@ -90,6 +90,7 @@ str_cargo_subtype_silver_green      :Librea plata/verde
 str_cargo_subtype_silver_red        :Librea roja/plata
 str_cargo_subtype_turquoise         :Librea turquesa
 str_cargo_subtype_yellow            :Librea amarilla
+str_cargo_subtype_yellow_blue_ic    :Librea interurbana azul/amarilla
 str_cargo_subtype_yellow_red        :Librea roja/amarilla
 str_cargo_subtype_white             :Librea blanca
 str_cargo_subtype_white_blue        :Librea azul/blanca
@@ -308,6 +309,7 @@ str_emu_Mat24           :Mat '24 "Blokkendoos" (Eléctrico)
 str_emu_Mat24_t         :Mat '24 "Blocks set" (Eléctrico)
 str_emu_Mat24mP         :Mat '24 mP (Eléctrico)
 str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Eléctrico)
+str_emu_Mat36EL2        :Mat '36 El2 (Eléctrico)
 str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (Eléctrico)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Eléctrico)
 str_emu_Mat40ELD2       :Mat '40 ElD2 (Eléctrico)
