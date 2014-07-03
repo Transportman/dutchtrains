@@ -219,6 +219,7 @@ str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS9           :NS 700 (Vapor)
 str_steam_SS517         :NS 6900 "Bello" (Vapor)
+str_steam_SS651         :NS 8100 (Vapor)
 str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
 str_steam_NS3900        :NS 3900 (Vapor)
@@ -437,6 +438,7 @@ str_purchase_svc_hp         :pasajeros de alta velocidad
 str_purchase_svc_elp        :pasajeros local y express
 str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
 str_purchase_svc_eplf       :pasajeros express o carga ligera
+str_purchase_svc_flp        :carga o pasajeros local
 str_purchase_svc_lfep       :carga ligera o pasajeros express
 str_purchase_svc_f          :carga
 str_purchase_svc_lf         :carga ligera
