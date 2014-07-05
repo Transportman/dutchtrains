@@ -168,6 +168,7 @@ str_cargo_subtype_Locon             :Librea Locon
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
 str_cargo_subtype_NCS_tank          :Librea NCS (locomotora cisterna)
+str_cargo_subtype_nedtrain          :Librea NedTrain
 str_cargo_subtype_NS                :Librea NS
 str_cargo_subtype_NS_tank           :Librea NS (locomotora cisterna)
 str_cargo_subtype_NS_whiteroof      :Librea NS, con techo blanco
@@ -347,6 +348,7 @@ str_emu_gen9_HST        :P8000 (Eléctrico)
 str_emu_GTW26           :GTW 2/6 (Eléctrico)
 str_emu_GTW28           :GTW 2/8 (Eléctrico)
 str_emu_Protos          :Protos (Eléctrico)
+str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Eléctrico)
 str_emu_V200E6                  :V200-E6 (Eléctrico)
 str_emu_V200E8                  :V200-E8 (Eléctrico)
 
