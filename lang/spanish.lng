@@ -360,6 +360,7 @@ str_wagons_gen2_openwagon           :Vagón abierto medio
 str_wagons_GTUW_openwagon           :Vagón abierto GTUW
 str_wagons_Es_openwagon             :Vagón abierto Es
 str_wagons_Eass_openwagon           :Vagón abierto Eass
+str_wagons_gen0stakewagon           :Vagón de estacas pequeño
 str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
@@ -524,6 +525,7 @@ str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Fictici
 
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
 
+str_purchase_emu_ICE3M_no_track :EMU Multisistema.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_V250_no_track :EMU Multisistema.
 str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Ficticia.
 
