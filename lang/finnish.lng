@@ -2,106 +2,422 @@
 ##plural 0
 
 #Main grf title and description
-STR_GRF_DESCRIPTION             :{SILVER}Hollantilaisia junia OpenTTD:hen{}{BLACK}Ensimmäisen junan käyttöönottovuosi: 1839.{}{}(c)Dutch Trainset Team{}Lisenssi: GPLv2 tai korkeampi.{}Lisätietoja löytyy readme-tiedostosta.
+STR_GRF_DESCRIPTION             :{SILVER}Hollantilaisia junia OpenTTD:lle{}{BLACK}Ensimmäisen junan käyttöönottovuosi: 1839.{}{}(c)Dutch Trainset Team{}Lisenssi: GPLv2 tai korkeampi.{}Lisätietoja löytyy readme-tiedostosta.
+STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 #parameter strings
 
+STR_PARAM_DISABLE_ORIGINAL          :Säilytä alkuperäiset veturit ja vaunut
+STR_PARAM_DISABLE_ORIGINAL_100      :vain perinteinen
+STR_PARAM_DISABLE_ORIGINAL_010      :vain yksiraiteinen
+STR_PARAM_DISABLE_ORIGINAL_110      :perinteinen ja yksiraiteinen
+STR_PARAM_DISABLE_ORIGINAL_011      :yksiraiteinen ja maglev
+STR_PARAM_DISABLE_ORIGINAL_111      :kaikki
 
+STR_PARAM_PURCHASE_COST             :Ostohinnan kerroin
+STR_PARAM_RUNNING_COST_DESC         :Voit käyttää tätä asetusta nostamaan tai laskemaan tämän valikoiman ajoneuvojen käyttökustannuksia. Huomio, että tämän asetuksen muuttaminen sotkee tämän valikoiman ja alkuperäisten ajoneuvojen välisen kustannustasapainon.
 
+STR_PARAM_DIVIDE_8                  :1/8
+STR_PARAM_DIVIDE_4                  :1/4
+STR_PARAM_DIVIDE_2                  :1/2
 STR_PARAM_NORMAL                    :1 (oletusarvo)
+STR_PARAM_TIMES_4                   :4
 
 STR_PARAM_TRACK_POWER                           :Monijärjestelmävirta
+STR_PARAM_TRACK_POWER_DESC                      :Oletusarvona monijärjestelmäjunien voima riippuu sen käyttämistä raiteista, kun yhteensopiva raidevalikoima on ladattu. Voit käyttää tätä asetusta poistamaan sen käytöstä ja käyttämään aina korkeinta mahdollista voimamäärää.
+STR_PARAM_TRACK_POWER_OFF                       :Aina korkein voima
+STR_PARAM_TRACK_POWER_ON                        :Riippuu raiteista, kun yhteensopiva raidevalikoima on ladattu (oletusarvo)
 
 #cargo subtype livery strings
+str_cargo_subtype_random            :> Satunnainen väritys
+str_cargo_subtype_matching          :> Veturin väritystä vastaava väritys
 
+str_cargo_subtype_bordeaux_white            :> Bordeaux-väritys valkoisella
 str_cargo_subtype_bordeaux_white_blue       :> Bordeaux-väritys valkoisella ja sinisellä
+str_cargo_subtype_bordeaux_white_yellow     :> Bordeaux-väritys valkoisella ja keltaisella
 str_cargo_subtype_black             :> Mustaväritys
+str_cargo_subtype_lighterblue       :> Hieman vaaleampi sininen väritys
+str_cargo_subtype_blue_banners      :> Sininen väritys mainosjulisteilla
+str_cargo_subtype_blue_red          :> Sininen väritys punaisilla raidoilla
+str_cargo_subtype_blue_red_yellowmoustache  :> Sininen väritys punaisilla raidoilla ja keltaisilla "viiksillä"
+str_cargo_subtype_blue_yellow       :> Sininen väritys keltaisilla raidoilla
 str_cargo_subtype_blue_lightyellow  :> Sininen väritys vaaleankeltaisilla raidoilla
+str_cargo_subtype_blue_darkyellow   :> Sininen väritys tummankeltaisilla raidoilla
+str_cargo_subtype_brown             :> Ruskea väritys
+str_cargo_subtype_brown_other       :> Muu ruskea väritys
+str_cargo_subtype_brown_light       :> Vaaleanruskea väritys
+str_cargo_subtype_brown_dark        :> Tummanruskea väritys
+str_cargo_subtype_brown_reddish     :> Punertavan ruskea väritys
 str_cargo_subtype_green             :> Vihreä väritys
-str_cargo_subtype_white_yellow      :> Valkokeltainen väritys
+str_cargo_subtype_green_moustache   :> Vihreä väritys "viiksillä"
+str_cargo_subtype_green_red         :> Vihreä väritys punaisilla raidoilla
+str_cargo_subtype_green_lightyellow :> Vihreä ja vaaleankeltainen väritys
+str_cargo_subtype_grey_dark         :> Tummanharmaa väritys
+str_cargo_subtype_grey_light        :> Vaaleanharmaa väritys
+str_cargo_subtype_purple            :> Purppura väritys
+str_cargo_subtype_red               :> Punainen väritys
+str_cargo_subtype_red_greydoors     :> Punainen väritys harmailla ovilla
+str_cargo_subtype_red_light         :> Vaalea punainen väritys
+str_cargo_subtype_red_pinkish       :> Vaaleanpunertava punainen väritys
+str_cargo_subtype_red_blue          :> Punainen ja sininen väritys
+str_cargo_subtype_red_yellow        :> Punainen väritys keltaisilla raidoilla
+str_cargo_subtype_olive_greyroof    :> Oliivinvihreä väritys tummalla katolla
+str_cargo_subtype_salmon            :> Lohenvärinen väritys
+str_cargo_subtype_silver_red        :> Hopea ja punainen väritys
+str_cargo_subtype_turquoise         :> Turkoosi väritys
+str_cargo_subtype_yellow            :> Keltainen väritys
+str_cargo_subtype_yellow_blue       :> Keltainen väritys sinisillä julisteilla
+str_cargo_subtype_yellow_blue_ic    :> Keltainen ja sininen InterCity-väritys
+str_cargo_subtype_yellow_red        :> Keltainen ja punainen väritys
+str_cargo_subtype_white             :> Valkoinen väritys
+str_cargo_subtype_white_blue        :> Valkoinen ja sininen väritys
+str_cargo_subtype_white_red         :> Valkoinen ja punainen väritys
+str_cargo_subtype_white_yellow      :> Valkoinen ja keltainen väritys
 
+str_cargo_subtype_blue_crashnose    :> Sininen väritys (törmäyspuskurilla)
 str_cargo_subtype_accident_yellow   :> Keltainen väritys (onnettomuusveturi)
 
 str_cargo_subtype_benelux           :> Benelux-väritys
 str_cargo_subtype_benelux_nocab     :> Benelux-väritys, ei hyttiopastetta
+str_cargo_subtype_benelux_plandcab  :> Benelux-väritys Plan D hytillä
+str_cargo_subtype_citypendel        :> Citypendel-väritys
+str_cargo_subtype_ddm_nocab         :> DDM-väritys, ei hyttiopastetta
+str_cargo_subtype_ddm1              :> DDM-1 -väritys
+str_cargo_subtype_football          :> Jalkapallon MM -väritys
+str_cargo_subtype_fyra              :> Fyra-väritys
+str_cargo_subtype_fyra_red          :> Fyra-väritys (punainen)
+str_cargo_subtype_ICE                           :> ICE-väritys
+str_cargo_subtype_icplus            :> IC+ -väritys (28. toukokuuta 1995 - kesäkuu 2002)
+str_cargo_subtype_kennemerstrand    :> Lovers Rail "Kennemerstrand Expres" -väritys
+str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres" -väritys
+str_cargo_subtype_kinderboeken      :> Lastenkirjojenviikonväritys
+str_cargo_subtype_hispeed           :> NS Hispeed -väritys
+str_cargo_subtype_hispeed_nocab     :> NS Hispeed -väritys, ei hyttiopastetta
+str_cargo_subtype_nid               :> NID-väritys
 str_cargo_subtype_ns_ic             :> NS InterCity-väritys
+str_cargo_subtype_ns_ic_nocab       :> NS InterCity -väritys, ei hyttiopastetta
 str_cargo_subtype_olympic           :> Olympiaväritys
+str_cargo_subtype_original          :> Alkuperäinen väritys
+str_cargo_subtype_overnightexpress  :> Overnight Express -väritys
 str_cargo_subtype_renewal           :> Saneerausväritys
+str_cargo_subtype_sr10              :> Sr10 Royal ICR -väritys (22. joulukuuta 1993 - )
 str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter"-väritys rantapalloilla
+str_cargo_subtype_strandsprinter    :> "Strandsprinter"-väritys
+str_cargo_subtype_TGV_PBKA          :> PBKA-väritys
 str_cargo_subtype_TGV_PBA           :> PBA-väritys
+str_cargo_subtype_valleilijn_yellow_blue    :> Keltainen ja sininen Valleilijn-väritys
+str_cargo_subtype_valleilijn_blue_yellownose :> Sininen Valleilijn-väritys keltaisella keulalla
+str_cargo_subtype_valleilijn_blue           :> Sininen Valleilijn-väritys (kuvitteellinen)
+str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker" -väritys
 str_cargo_subtype_zilverrail        :> Zilverrail-väritys (24.-27. lokakuuta 2005)
+str_cargo_subtype_klm                           :> KLM-väritys
+str_cargo_subtype_martinair                     :> Martinair-väritys
+str_cargo_subtype_randstad                      :> Randstad-väritys
+str_cargo_subtype_delagelanden2         :> De Lage Lander -väritys 2
 
+str_cargo_subtype_ACTS              :> ACTS-väritys
+str_cargo_subtype_Arriva            :> Arriva-väritys
+str_cargo_subtype_Arriva_vechtdallijnen :> Arriva "Vehctdallijnen" -väritys
 str_cargo_subtype_Breng             :> Breng-väritys
+str_cargo_subtype_DBSchenker        :> DB Schenker -väritys
+str_cargo_subtype_DBSchenker_Crates     :> DB Schenker -väritys (laatikoita)
+str_cargo_subtype_DLC               :> DLC-väritys
+str_cargo_subtype_ERS               :> ERS-väritys
+str_cargo_subtype_ERS_Crates            :> ERS-väritys (laatikoita)
+str_cargo_subtype_EETC              :> Euro Express Treincharter -väritys
+str_cargo_subtype_HerikRail         :> Herik Rail -väritys
 str_cargo_subtype_Locon             :> Locon-väritys
+str_cargo_subtype_NBDS              :> Noord-Brabantsch-Duitsche Spoorweg-Maatschappij -väritys
+str_cargo_subtype_NCS               :> Nederlandsche Centraal-Spoorweg-Maatschappij -väritys
+str_cargo_subtype_NCS_tender        :> NCS-väritys (veturi tenderillä)
+str_cargo_subtype_nedtrain          :> NedTrain-väritys
+str_cargo_subtype_NS_whiteroof      :> NS-väritys valkoisella katolla
+str_cargo_subtype_NSCargo_Containers :> NS Cargo -väritys (kontteja)
 str_cargo_subtype_Rail4Chem_green   :> Rail4Chem-väritys (vihreä)
 str_cargo_subtype_Rail4Chem_grey_yellow :> Rail4Chem-väritys (harmaa/keltainen)
-str_cargo_subtype_rff                           :> RFF Rahtiväritys
+str_cargo_subtype_Railion           :> Railion väritys (nimenvaihto)
+str_cargo_subtype_Railion_regular   :> Railion-väritys
+str_cargo_subtype_Railpro           :> Railpro-väritys
+str_cargo_subtype_rff                           :> RFF Cargo -väritys
+str_cargo_subtype_rts_orange            :> RTS-väritys (oranssi ja valkoinen)
+str_cargo_subtype_rurtalbahn_black      :> Rurtalbahn-väritys (musta)
+str_cargo_subtype_staatsmijnen      :> Staatsmijnen-väritys
 str_cargo_subtype_SS_tank           :> SS-väritys (tankkiveturi)
+str_cargo_subtype_Strukton          :> Strukton-väritys
+str_cargo_subtype_Veolia            :> Veolia-väritys
+str_cargo_subtype_Veolia_velios     :> Veolia "Velios" -väritys
+str_cargo_subtype_Veolia_white_red  :> Veolia-väritys (valkoinen ja punainen)
 str_cargo_subtype_Veolia_black      :> Veolia-väritys (musta)
+str_cargo_subtype_VOSlogistics      :> VOS Logistics -väritys
 
 
+str_cargo_subtype_house             :> Talonkuljetusväritys
+str_cargo_subtype_train             :> Junarahtiväritys
+str_cargo_subtype_tractor           :> Traktorinkuljetusväritys
 
 #steam
+str_steam_Arend_t       :HSM "Kotka" (Höyry)
 str_steam_HSM126        :NS 1100 (Höyry)
-str_steam_HSM501_t      :NS 2100-sarja "Peltipete" (Höyry)
+str_steam_NCS21         :NS 1500 (Höyry)
+str_steam_NRS11         :NRS 11-16 (Höyry)
+str_steam_HSM1          :HSM 1-15, 26-30 (Höyry)
+str_steam_HSM83         :NS 3100 (Höyry)
+str_steam_HSM501        :NS 2100 "Blikken Tinus" (Höyry)
+str_steam_HSM501_t      :NS 2100-sarja "Tin Tinus" (Höyry)
 str_steam_HSM601        :NS 3200 (Höyry)
+str_steam_HSM701        :NS 5500 (Höyry)
+str_steam_SS785         :NS 3700 "Jumbo" (Höyry)
+str_steam_SS785_t       :NS 3700 "Jumbo" (Höyry)
+str_steam_NS3900        :NS 3900 (Höyry)
+str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Höyry)
+str_steam_NCS71         :NS 3600 "Zeppelin" (Höyry)
+str_steam_NCS71_t       :NS 3600 "Zeppeliini" (Höyry)
+str_steam_NS4600        :NS 4600 (Höyry)
+str_steam_NS4700        :NS 4700 (Höyry)
+str_steam_NS5000II      :NS 5000-II (Höyry)
+str_steam_NS6200        :NS 6200 (Höyry)
+str_steam_NS6300_t      :NS 6300 "Pyöveli" (Höyry)
 
 #diesel
+str_diesel_NS100        :NS 100 "Oersik" (Bensiini)
+str_diesel_NS100_t      :NS 100 "Pässi" (Bensiini)
+str_diesel_NS400        :NS 400 "Grote Sik" (Diesel)
+str_diesel_NS450        :NS 450 (Diesel)
+str_diesel_NS2400       :NS 2400 (Diesel)
+str_diesel_NS2801_t     :NS 2801 "Pikku Rampa-Mari" (Diesel)
+str_diesel_SM151        :NS 2900 (Diesel)
+str_diesel_NS6400       :NS 6400 (Diesel)
+str_diesel_ACTS6700     :ACTS 6700 (Diesel)
+str_diesel_RN232        :RN 232 "Ludmilla" (Diesel)
+str_diesel_Class66      :Class 66 (Diesel)
+str_diesel_G2000        :Vossloh G 2000 (Diesel)
+str_diesel_HLR77        :NMBS HLR 77 (Diesel)
 
 #electric
+str_electric_NS1000     :NS 1000 (Sähkö)
+str_electric_NS1500     :NS 1500 (Sähkö)
+str_electric_NS1600     :NS 1600/1800 (Sähkö)
+str_electric_NID        :Nieuwe Intercity Dubbeldekker (Sähkö)
+str_electric_NID_t      :Uusi InterCity kaksikerroksinenveturi (Sähkö)
+str_electric_HLE11      :NMBS HLE 11 (Sähkö)
 str_electric_HLE25      :NMBS HLE 25.5 (Sähkö)
+str_electric_TRAXXF140MS2   :NS Hispeed 186 (Sähkö)
+str_electric_ES64F4     :EuroSprinter ES64F4 (Sähkö)
+str_electric_gen9_HS002 :HS-2 (Sähkö)
 
 #dmu
+str_dmu_omC901          :omC 901-916 "Ome Cees" (Dieselmoottorivaunu)
+str_dmu_omC901_t        :omC 901-916 "Cees-setä" (Dieselmoottorivaunu)
+str_dmu_omC1921         :omC 1921-1931 (Dieselmoottorivaunu)
+str_dmu_Mat34_t         :Mat '34 "Diesel-kolmonen" (Dieselmoottorivaunu)
+str_dmu_DE5             :DE5 "Dieselvijf" (Dieselmoottorivaunu)
+str_dmu_DE1             :DE1 Plan X "Blauwe Engel" (Dieselmoottorivaunu)
+str_dmu_DE1_t           :DE1 Plan X "Sininen enkeli" (Dieselmoottorivaunu)
+str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Dieselmoottorivaunu)
+str_dmu_NS20            :NS20 "Kameel" (Dieselmoottorivaunu)
+str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Dieselmoottorivaunu)
+str_dmu_DH1             :DH1 "Wadloper" (Dieselmoottorivaunu)
+str_dmu_DH1_t           :DH1 "Vattikävelijä" (Dieselmoottorivaunu)
+str_dmu_DM90            :DM '90 "Buffel" (Dieselmoottorivaunu)
+str_dmu_DM90_t          :DM '90 "Buffalo" (Dieselmoottorivaunu)
+str_dmu_V200D6                  :V200-D6 (Dieselmoottorivaunu)
 
 #emu
-str_emu_Mat24           :Mat '24 "Blokkendoos" (Sähkö)
-str_emu_ICM3_t          :ICM-III Plan Z "Pääkävelijä" (Sähkö)
-str_emu_mP              :Plan mP (Sähkö)
-str_emu_TGV             :TGV Thalys PBKA/PBA (Sähkö)
-str_emu_ICE3M           :ICE 3M (Sähkö)
+str_emu_ZHESM_mBC       :ZHESM mBC (Sähkömoottorivaunu)
+str_emu_Mat24           :Mat '24 "Blokkendoos" (Sähkömoottoriveturi)
+str_emu_Mat24mP         :Mat '24 mP (Sähkömoottoriveturi)
+str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Sähkömoottorivaunu)
+str_emu_Mat36ELD4       :Mat '36 ElD4 (Sähkömoottorivaunu)
+str_emu_Mat40ELD2       :Mat '40 ElD2 (Sähkömoottoriveturi)
+str_emu_Mat40ELD5       :Mat '40 ElD5 (Sähkömoottorivaunu)
+str_emu_Mat46ELD2       :Mat '46 ElD2 (Sähkömoottoriveturi)
+str_emu_Mat46ELD4       :Mat '46 ElD4 (Sähkömoottorivaunu)
+str_emu_Mat54ELD2_t     :Mat '54 ElD2 Plan F/G/M/Q "Koiranpää" (Sähkömoottorivaunu)
+str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Sähkömoottorivaunu)
+str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Sähkömoottorivaunu)
+str_emu_Mat64PlanT      :Mat '64 Plan T (Sähkömoottorivaunu)
+str_emu_ICM3            :ICM-III Plan Z "Koploper" (Sähkömoottorivaunu)
+str_emu_ICM3_t          :ICM-III Plan Z "Pääkävelijä" (Sähkömoottorivaunu)
+str_emu_SM90            :SM '90 "Raideloikkija" (Sähkömoottoriveturi)
+str_emu_IRMIII          :IRM-III "Bizon" (Sähkömoottorivaunu)
+str_emu_IRMIII_t        :IRM-III "Biisoni" (Sähkömoottorivaunu)
+str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Sähkömoottorivaunu)
+str_emu_IRMIV_t         :IRM-IV/VIRM-IV "Biisoni" (Sähkömoottorivaunu)
+str_emu_IRMVI           :VIRM-VI "Bizon" (Sähkömoottorivaunu)
+str_emu_IRMVI_t         :VIRM-VI "Biisoni" (Sähkömoottorivaunu)
+str_emu_mP              :Plan mP (Sähkömoottoriveturi)
+str_emu_TGV             :TGV Thalys PBKA/PBA (Sähkömoottoriveturi)
+str_emu_ICE3M           :ICE 3M (Sähkömoottoriveturi)
+str_emu_V250_t          :Fyra V250 "Albatrossi" (Sähkömoottorivaunu)
+str_emu_GTW26           :GTW 2/6 (Sähkömoottorivaunu)
+str_emu_GTW28           :GTW 2/8 (Sähkömoottorivaunu)
+str_emu_Protos          :Protos (Sähkömoottorivaunu)
+str_emu_SLTIV           :SLT-IV "Sprinter-kevytjuna" (Sähkömoottoriveturi)
+str_emu_V200E6                  :V200-E6 (Sähkömoottoriveturi)
 
 #wagons
 str_wagons_gen0boxcar               :Yleisvaunu (Pieni)
-str_wagons_gen0openwagonsmall       :Avolavavaunu (Pieni)
-str_wagons_Uh_tanker                :Säiliövaunu Uh
+str_wagons_gen2_boxcar              :Yleisvaunu
+str_wagons_Gs_boxcar                :Gs yleisvaunu
+str_wagons_gen6_slidingdoor         :Katettu tavaravaunu liukuovella
+str_wagons_Habbiins_goodswagon      :Habbiins yleisvaunu
+str_wagons_gen0openwagonsmall       :Avovaunu (Pieni)
+str_wagons_Es_openwagon             :Es avovaunu
+str_wagons_gen0stakewagon           :Avovaunu sivutolpilla (Pieni)
+str_wagons_gen4_stake               :Avovaunu sivutolpilla
+str_wagons_gen7_coil                :Kelavaunu
+str_wagons_Uh_tanker                :Uh säiliövaunu
+str_wagons_gen0livestockwagon       :Karjavaunu (Pieni)
+str_wagons_gen3_livestock           :Karjavaunu (Keskikokoinen)
+str_wagons_gen4_silo                :Siilovaunu (Pieni)
+str_wagons_gen7_cartransporter      :Autonkuljetusvaunu
+str_wagons_gen7_containercarrier    :Konttivaunu
 
 #coaches
-str_coaches_NCS_B_119   :Matkustajavaunu NCS B
-str_coaches_SS_C_723    :Matkustajavaunu SS C 650
-str_coaches_RTM_BD_438  :Matkustajavaunu RTM BD
+str_coaches_HIJSM_4_8_10 :HSM 1 matkustajavaunu
+str_coaches_HSM_C_755   :HSM C matkustajavaunu
+str_coaches_NCS_B_119   :NCS B matkustajavaunu
+str_coaches_SS_C_218    :SS C 1 matkustajavaunu
+str_coaches_SS_C_723    :SS C 650 matkustajavaunu
+str_coaches_RTM_BD_438  :RTM BD matkustajavaunu
+str_coaches_Mat24       :Mat '24 matkustajavaunu
+str_coaches_ZHESM_B     :ZHESM B matkustajavaunu
+str_coaches_Ovaleramen  :"Ovaleramen" matkustajavaunu
+str_coaches_Ovaleramen_t :"Soikeat ikkunat" matkustajavaunu
+str_coaches_Bolkoprijtuigen     :"Bolkoprijtuigen" matkustajavaunu
+str_coaches_Bolkoprijtuigen_t   :"Kohokeula" matkustajavaunu
+str_coaches_PlanD       :Plan D matkustajavaunu
+str_coaches_PlanE       :Plan E matkustajavaunu
+str_coaches_Avmz        :Avmz matkustajavaunu
+str_coaches_ICL         :ICL matkustajavaunu
+str_coaches_M2          :NMBS M2 matkustajavaunu
+str_coaches_gen9_IC_DD  :HS-DD kaksikerroksinen matkustajavaunu
+str_coaches_Couchette   :Couchette Bcm makuuvaunu
 
 #baggage and mail wagons
-str_coaches_Pd7011      :Postivaunu Pd
+str_coaches_SS_DIII     :SS D-III matkatavaravaunu
+str_coaches_HSM_D_1916  :HSM D-IV matkatavaravaunu
+str_coaches_Pd7011      :Pd postivaunu
+str_coaches_Pec         :Pec postivaunu
+str_coaches_Hbbkkss     :Hbbkkss postivaunu
+str_coaches_PlanC       :Plan C postivaunu
+str_coaches_PlanL       :Plan L postivaunu
 
 #metro
+str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
+str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
+str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
+str_metro_RET_typeM     :RET Type M MG2 (Metro)
+str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
+str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 
 #PURCHASE MENU TEXTS
 
 str_purchase_svc                :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}
+str_purchase_svc_axl            :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}
+str_purchase_svc_len            :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Pituus: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp    :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Pituus {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp_spc :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Pituus: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_lsp_spc    :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_spc            :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_axl                :{BLACK}Akselipaino: {YELLOW}{STRING}
 
+str_purchase_svc_p          :matkustajaliikenne
+str_purchase_svc_lp         :paikallismatkustajaliikenne
+str_purchase_svc_ip         :InterCity-matkustajaliikenne
+str_purchase_svc_hp         :suurinopeuksinen matkustajaliikenne
 str_purchase_svc_Ip         :kansainvälinen matkustajaliikenne
-str_purchase_svc_eip        :pika- ja intercitymatkustajat
-str_purchase_svc_iphf       :intercity- tai raskas tavaraliikenne
+str_purchase_svc_eip        :pika- ja InterCity-matkustajaliikenne
+str_purchase_svc_eiphf      :pikamatkustaja- ja InterCity- tai raskas tavaraliikenne
+str_purchase_svc_iphf       :InterCity- tai raskas tavaraliikenne
+str_purchase_svc_hphf       :suuri nopeuksinen matkustaja- tai raskas tavaraliikenne
+str_purchase_svc_eplf       :pikamatkustaja- tai kevyt tavaraliikenne
+str_purchase_svc_flp        :tavara- tai paikallismatkustajaliikenne
+str_purchase_svc_f          :tavaraliikenne
+str_purchase_svc_slf        :vaihtotyö tai kevyt tavaraliikenne
+str_purchase_svc_M          :metro
+str_purchase_svc_x          :yksityiskäyttö
 
+str_purchase_len_1_05       :1 yksikkö (0,5)
+str_purchase_len_2_10       :2 yksikköä (1,0)
+str_purchase_len_2_12       :2 yksikköä (1,2)
 str_purchase_len_3_17       :3 yksikköä (1,7)
+str_purchase_len_4_20       :4 yksikköä (2,0)
+str_purchase_len_6_20       :6 yksikköä (2,0)
+str_purchase_len_6_30       :6 yksikköä (3,0)
 str_purchase_len_8_40       :8 yksikköä (4,0)
+str_purchase_len_10_50      :10 yksikköä (5,0)
 
+str_purchase_lsp_2          :2 päivää
+str_purchase_lsp_3          :3 päivää
+str_purchase_lsp_4          :4 päivää
+str_purchase_lsp_5          :5 päivää
 str_purchase_lsp_6          :6 päivää
+str_purchase_lsp_7          :7 päivää
+str_purchase_lsp_8          :8 päivää
+str_purchase_lsp_9          :9 päivää
 str_purchase_lsp_11         :11 päivää
 str_purchase_lsp_12         :12 päivää
+str_purchase_lsp_13         :13 päivää
+str_purchase_lsp_15         :15 päivää
+str_purchase_lsp_16         :16 päivää
+str_purchase_lsp_17         :17 päivää
+str_purchase_lsp_18         :18 päivää
+str_purchase_lsp_20         :20 päivää
+str_purchase_lsp_22         :22 päivää
+str_purchase_lsp_23         :23 päivää
+str_purchase_lsp_26         :26 päivää
+str_purchase_lsp_37         :37 päivää
 
+str_purchase_axl_B          :matala (B-luokka)
+str_purchase_axl_C          :keskiraskas (C-luokka)
+str_purchase_axl_D          :raskas (D-luokka)
+str_purchase_axl_E          :hyvin raskas (E-luokka)
 
+str_purchase_spc_el_eld     :Mukana matkatavaraosasto, joka voidaan sovittaa pikarahdille tai matkustajille.
 
+str_purchase_steam_NCS1     :1892 jälkeen tankkiveturina ostettuna: {YELLOW}-15% painoa, +48% voimaa, +73% vetovoimaa, +7% käyttökustannuksia.{}{BLACK}Aikaisemmin tunnettu nimellä: {SILVER} NCS 1-12, 31-39 (veturi tenderillä), NCS 81-89 (tankkiveturi), SS 571-579 (tankkiveturi).
+str_purchase_steam_NCS21    :Aikaisemmin tunnettu nimellä: {SILVER} NCS 21-30, myöhemmin SS 481-490.
+str_purchase_steam_NCS41    :Aikaisemmin tunnettu nimellä: {SILVER} NCS 41-50, myöhemmin SS 151-160.
+str_purchase_steam_HSM83    :Aikaisemmin tunnettu nimellä: {SILVER} HSM 83-88, 101-115.
+str_purchase_steam_HSM501   :Aikaisemmin tunnettu nimellä: {SILVER} HSM 501-535.
+str_purchase_steam_HSM701   :Aikaisemmin tunnettu nimellä: {SILVER} HSM 701-755.
+str_purchase_steam_SS9      :1892 jälkeen ostettuna: {YELLOW}+4% painoa, +21% voimaa, +64% vetovoimaa, +7% käyttökustannuksia.{}{BLACK}Aikaisemmin tunnettu nimellä: {SILVER} SS 9-16, 21-78, NBDS 1-5.
+str_purchase_steam_SS785    :Aikaisemmin tunnettu nimellä: {SILVER} SS 685-778, 785-799.
 
+str_purchase_diesel_NS2000  :Aikaisemmin tunnettu nimellä: {SILVER} Whitcomb 65-DE-19A.
+str_purchase_diesel_ACTS6700 :Aikaisemmin tunnettu nimellä: {SILVER} NMBS HLD 62.
+str_purchase_diesel_RN232   :Aikaisemmin tunnettu nimellä: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100 :Saneerattu 1979: {YELLOW}+4% paino, +1/8 pituus.
 str_purchase_electric_NS1500 :Aikaisemmin tunnettu nimellä: {SILVER} BR Class EM2.
-str_purchase_spc_electric_gen9_HS001_no_track :Monijärjestelmäjuna.{}Kuvitteellinen.
-str_purchase_spc_electric_gen9_HS002_no_track :Monijärjestelmäjuna.{}Kuvitteellinen.
+str_purchase_electric_HLE11 :Käytettäväksi ICR-matkustajavaunujen kanssa Benelux-vuoroilla
+str_purchase_electric_HLE25 :Käytettäväksi Plan W matkustajavaunun kanssa Benelux-vuoroilla.
+str_purchase_electric_TRAXXF140MS2 :Käytettäväksi ICR-matkustajavaunujen kanssa Benelux-vuoroilla. Muokattu TRAXX F140 MS2.{}Monijärjestelmäveturi, {YELLOW}+87% voimaa {BLACK}25 kV ~ sähköradalla.
+str_purchase_spc_electric_gen9_HS002 :Monijärjestelmäveturi, {YELLOW}+197% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
+str_purchase_electric_TRAXXF140MS2_no_track :Käytettäväksi ICR-matkustajavaunujen kanssa Benelux-vuoroilla. Muokattu TRAXX F140 MS2.{}Monijärjestelmäveturi.
+str_purchase_spc_electric_ES64F4_no_track :Monijärjestelmäveturi.
+str_purchase_spc_NS1600P_no_track :Monijärjestelmäveturi.
+str_purchase_spc_electric_gen9_HS001_no_track :Monijärjestelmäveturi.{}Kuvitteellinen.
+str_purchase_spc_electric_gen9_HS002_no_track :Monijärjestelmäveturi.{}Kuvitteellinen.
 
+str_purchase_dmu_omBC1901   :1929 jälkeen ostettuna: {YELLOW}+41% painoa, 233% voimaa, +7% nopeutta, +23% käyttökustannuksia.
 
+str_purchase_emu_ZHESM_mBC  :Kunnostettu 1926: {YELLOW}+150% voimaa, +100% vetovoimaa{}{BLACK}Myöhemmin tunnetaan nimellä: {SILVER}NS mBC9900.{}{BLACK}Käytettäväksi ZHESM B matkustajavaunujen kanssa.
+str_purchase_emu_Mat24      :Käytettäväksi Mat '24 matkustajavaunun kanssa.
 str_purchase_emu_Mat36ELD3  :Mukana matkatavaraosasto, joka voidaan sovittaa pikarahdille tai matkustajille.{}Vuodesta 1942 lähtien: {YELLOW}-26% paino, -50% teho, -45% vetovoima, -20% käyttökulut, -21% kapasiteetti, pituus -1/8.
+str_purchase_emu_ICE3M      :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+86% voimaa {BLACK}25 kV ~ sähköradalla.{}Tunnetaan myös nimellä {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV    :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+139% voimaa {BLACK}25 kV ~ sähköradalla.
 str_purchase_spc_emu_V250   :Monijärjestelmäsähkömoottorijuna, {YELLOW}+83% teho {BLACK}25 kV:n ~ sähköistetyllä radalla.
+str_purchase_spc_emu_Future_DD :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+118% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
 
+str_purchase_spc_emu_TGV_no_track :Monijärjestelmäsähkömoottorivaunu.
+str_purchase_spc_emu_gen9_HST_no_track :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+str_purchase_spc_emu_Future_DD_no_track :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+str_purchase_emu_CargoDD_no_track :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
 
-str_purchase_coaches_DDAR   :Tarkoitettu käytettäväksi moottorivaunutyyppien mDDM tai NID kanssa.
+str_purchase_coaches_Mat24  :Käytettäväksi moottorivaunutyypin Mat '24 kanssa.
+str_purchase_coaches_DDAR   :Käytettäväksi moottorivaunutyyppien mDDM tai NID kanssa.
+str_purchase_coaches_PlanW  :Käytettäväksi NS:n sähköjunien kanssa valtiollisilla vuoroilla ja NMBS HLE 25.5:n kanssa Benelux-vuoroilla.
+str_purchase_coaches_IRC    :Käytettäväksi NS:n sähkövetureiden kanssa valtiollisilla vuoroilla, NMBS HLE 11:n kanssa Benelux-vuoroilla ja NS Hispeed 186:n kanssa Fyra-vuoroilla.
+str_purchase_wagons_gen10_CargoDD       :Käytettäväksi Tulevaisuuden rahtisiirtäjän kanssa.{}Kuvitteellinen.
