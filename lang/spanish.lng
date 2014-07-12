@@ -212,6 +212,7 @@ str_steam_Arend_t       :HSM "Eagle" (Vapor)
 str_steam_HSM126        :NS 1100 (Vapor)
 str_steam_NCS1          :NS 7200 (Vapor)
 str_steam_NCS21         :NS 1500 (Vapor)
+str_steam_NRS11         :NRS 11-16 (Vapor)
 str_steam_HSM1          :HSM 1-15, 26-30 (Vapor)
 str_steam_HSM83         :NS 3100 (Vapor)
 str_steam_HSM501        :NS 2100 "Blikken Tinus" (Vapor)
@@ -364,6 +365,7 @@ str_wagons_gen0stakewagon           :Vagón de estacas pequeño
 str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
+str_wagons_Uh_tanker                :Vagón cisterna Uh
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 
