@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_dmu_GTW26) {
         articulated_part: switch_dmu_GTW26_articulated;
         length: switch_dmu_GTW26_length;
         cargo_subtype_text: switch_dmu_GTW26_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_12), string(str_purchase_lsp_23));
+        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_12), string(str_purchase_lsp_15));
         visual_effect_and_powered: switch_dmu_GTW26_visual_effect_and_powered;
         switch_dmu_GTW26_livery;
     }
