@@ -5,7 +5,5 @@
 # See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with NML build framework. If not, see <http://www.gnu.org/licenses/>.
 #
 
-all: doc
-
-distclean:: clean
-maintainer-clean:: distclean
+#Required when building on Windows
+UNIX2DOS_FLAGS ?= -q
