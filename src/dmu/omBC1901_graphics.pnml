@@ -50,27 +50,19 @@ switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_purchaselivery, build_year) {
     spriteset_dmu_omBC1901_green;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_livery_options, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_livery, cargo_subtype) {
 	1: switch_dmu_omBC1901_purchaselivery;
     2: spriteset_dmu_omBC1901_greenyellow;
     3: spriteset_dmu_omBC1901_green;
     switch_dmu_omBC1901_autolivery;
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_livery, build_year) {
-    0..1928: switch_dmu_omBC1901_livery_options;
-    spriteset_dmu_omBC1904_green;
-}
 
 // CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_subtype_text_options, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
 	1: return string(str_cargo_subtype_purchase);
     2: return string(str_cargo_subtype_green_lightyellow);
     3: return string(str_cargo_subtype_green);
-    return CB_RESULT_NO_TEXT;
-}
-switch(FEAT_TRAINS, SELF, switch_dmu_omBC1901_subtype_text, build_year) {
-    0..1928: switch_dmu_omBC1901_subtype_text_options;
     return CB_RESULT_NO_TEXT;
 }
 
