@@ -115,7 +115,6 @@ str_cargo_subtype_accident_yellow   :> Keltainen väritys (onnettomuusjuna)
 str_cargo_subtype_Jules             :> "Jules"-väritys
 
 str_cargo_subtype_benelux           :> Benelux-väritys
-str_cargo_subtype_benelux_nocab     :> Benelux-väritys, ei hyttiopastetta
 str_cargo_subtype_benelux_plandcab  :> Benelux-väritys Plan D hytillä
 str_cargo_subtype_citypendel        :> Citypendel-väritys
 str_cargo_subtype_ddar              :> DDM-2/3 -väritys

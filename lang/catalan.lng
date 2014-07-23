@@ -116,7 +116,6 @@ str_cargo_subtype_accident_yellow   :> Color groc (to tren accidentat)
 str_cargo_subtype_Jules             :> "Jules"
 
 str_cargo_subtype_benelux           :> Benelux
-str_cargo_subtype_benelux_nocab     :> Benelux, sense control de cabina
 str_cargo_subtype_benelux_plandcab  :> Benelux amb cabina Plan D
 str_cargo_subtype_citypendel        :> Citypendel
 str_cargo_subtype_ddar              :> DDM-2/3

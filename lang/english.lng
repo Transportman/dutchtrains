@@ -115,8 +115,7 @@ str_cargo_subtype_Jules             : > "Jules"
 
 str_cargo_subtype_benelux           : > Benelux livery
 str_cargo_subtype_benelux_cab       : > Benelux livery (cab control)
-str_cargo_subtype_benelux_nocab     : > Benelux livery, no cab control
-str_cargo_subtype_benelux_plandcab  : > Benelux livery w/ Plan D cab
+str_cargo_subtype_benelux_plandcab  : > Plan D cab control
 str_cargo_subtype_citypendel        : > Citypendel livery
 str_cargo_subtype_ddar              : > DDM-2/3 livery
 str_cargo_subtype_ddar_cab          : > DDM-2/3 livery (cab control)

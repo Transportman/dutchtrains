@@ -114,7 +114,6 @@ str_cargo_subtype_accident_yellow   : > Gele kleurstelling (ongevallentrein)
 str_cargo_subtype_Jules             : > "Jules"
 
 str_cargo_subtype_benelux           : > Benelux kleurstelling
-str_cargo_subtype_benelux_nocab     : > Benelux kleurstelling, zonder stuurstand
 str_cargo_subtype_benelux_plandcab  : > Benelux kleurstelling met Plan D stuurstand
 str_cargo_subtype_citypendel        : > Citypendel kleurstelling
 str_cargo_subtype_ddar              : > DDM-2/3 kleurstelling

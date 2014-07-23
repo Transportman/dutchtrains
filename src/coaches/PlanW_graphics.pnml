@@ -81,7 +81,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_livery, cargo_subtype) {
     2: spriteset_coaches_PlanW_blue;
     3: spriteset_coaches_PlanW_blue_banners;
     4: spriteset_coaches_PlanW_benelux;
-    5: switch_coaches_PlanW_beneluxcab;
+    5: spriteset_coaches_PlanD_benelux_cab;
     6: spriteset_coaches_PlanW_yellow_blue;
     switch_coaches_PlanW_autolivery;
 }
