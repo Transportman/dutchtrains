@@ -116,7 +116,6 @@ str_cargo_subtype_kennemerstrand    :Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         :Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_hispeed           :Librea NS Hispeed
-str_cargo_subtype_hispeed_nocab     :Librea NS Hispeed, sin control de cabina
 str_cargo_subtype_maashopper        :Librea Veolia blanco/rojo "Maashopper"
 str_cargo_subtype_nid               :Librea NID
 str_cargo_subtype_ns_ic             :Librea NS InterCity

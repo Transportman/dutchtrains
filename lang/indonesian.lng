@@ -47,7 +47,6 @@ str_cargo_subtype_accident_brown    : > Seragam warna coklat (kereta kecelakaan)
 str_cargo_subtype_freedom           : > Seragam merdeka
 str_cargo_subtype_groningen         : > Seragam Groningen Mendini
 str_cargo_subtype_hispeed           : > Seragam NS Hispeed
-str_cargo_subtype_hispeed_nocab     : > Seragam NS Hispeed, tidak ada kuasa masinis
 str_cargo_subtype_nid               : > Seragam NID
 str_cargo_subtype_strandsprinter_beachballs : > Seragam "Strandsprinter" sama bola pantai
 str_cargo_subtype_strandsprinter    : > Seragam "Strandsprinter"

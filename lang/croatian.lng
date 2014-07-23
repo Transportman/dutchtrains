@@ -135,11 +135,9 @@ str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Express"
 str_cargo_subtype_kinderboeken      : > Livreja Tjedan dječje knjige
 str_cargo_subtype_lll                           :> Lage Landen Lijn
 str_cargo_subtype_hispeed           : > NS Hispeed livreja
-str_cargo_subtype_hispeed_nocab     : > NS Hispeed livreja, bez stražnjeg upravljačkog vagona
 str_cargo_subtype_maashopper        : > Veolia bijelo-crvena "Maashopper" livreja
 str_cargo_subtype_nid               : > NID livreja
 str_cargo_subtype_ns_ic             : > NS InterCity livreja
-str_cargo_subtype_ns_ic_nocab       : > NS InterCity livreja, bez stražnjeg upravljačkog vagona
 str_cargo_subtype_olympic           : > Olimpijska livreja
 str_cargo_subtype_original          : > Originalna livreja
 str_cargo_subtype_ovchip            : > OV Chipkaart livreja

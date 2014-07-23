@@ -134,11 +134,9 @@ str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      :> Week of Children's Books
 str_cargo_subtype_lll                           :> Lage Landen Lijn
 str_cargo_subtype_hispeed           :> NS Hispeed
-str_cargo_subtype_hispeed_nocab     :> NH Hispeed, sense control de cabina
 str_cargo_subtype_maashopper        :> Veolia "Maashopper" blanc/vermell
 str_cargo_subtype_nid               :> NID
 str_cargo_subtype_ns_ic             :> NS InterCity
-str_cargo_subtype_ns_ic_nocab       :> NS InterCity, sense control de cabina
 str_cargo_subtype_olympic           :> Olympic
 str_cargo_subtype_original          :> Original
 str_cargo_subtype_ovchip            :> OV Chipkaart

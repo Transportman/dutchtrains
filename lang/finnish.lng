@@ -133,11 +133,9 @@ str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres" -väritys
 str_cargo_subtype_kinderboeken      :> Lastenkirjojenviikonväritys
 str_cargo_subtype_lll                           :> Lage Landen Lijn -väritys
 str_cargo_subtype_hispeed           :> NS Hispeed -väritys
-str_cargo_subtype_hispeed_nocab     :> NS Hispeed -väritys, ei hyttiopastetta
 str_cargo_subtype_maashopper        :> Valkoinen ja punainen Veolia "Maashopper" -väritys
 str_cargo_subtype_nid               :> NID-väritys
 str_cargo_subtype_ns_ic             :> NS InterCity-väritys
-str_cargo_subtype_ns_ic_nocab       :> NS InterCity -väritys, ei hyttiopastetta
 str_cargo_subtype_olympic           :> Olympiaväritys
 str_cargo_subtype_original          :> Alkuperäinen väritys
 str_cargo_subtype_ovchip            :> OV Chipkaart -väritys

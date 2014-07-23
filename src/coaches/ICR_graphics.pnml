@@ -160,12 +160,12 @@ switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_matchinglivery, vehicle_type_id) 
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_ICR_livery, cargo_subtype) {
-	1: switch_coaches_ICR_blue_cab_availability;
-	2: spriteset_coaches_ICR_blue;
-    3: switch_coaches_ICR_benelux_cab_availability;
-    4: spriteset_coaches_ICR_benelux;
-    5: switch_coaches_ICR_hispeed_cab_availability;
-    6: switch_coaches_ICR_hispeed_position;
+	1: spriteset_coaches_ICR_blue;
+	2: spriteset_coaches_ICR_blue_cab;
+    3: spriteset_coaches_ICR_benelux;
+    4: spriteset_coaches_ICR_benelux_cab;
+    5: switch_coaches_ICR_hispeed_position;
+    6: spriteset_coaches_ICR_hispeed_cab;
     7: switch_coaches_ICR_fyra_position;
     8: spriteset_coaches_ICR_Sr10;
     9: spriteset_coaches_ICR_zilverrail;
@@ -177,11 +177,11 @@ switch(FEAT_TRAINS, SELF, switch_coaches_ICR_livery, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_coaches_ICR_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_matching);
     1: return string(str_cargo_subtype_ns_ic);
-    2: return string(str_cargo_subtype_ns_ic_nocab);
+    2: return string(str_cargo_subtype_ns_ic_cab);
     3: return string(str_cargo_subtype_benelux);
-    4: return string(str_cargo_subtype_benelux_nocab);
+    4: return string(str_cargo_subtype_benelux_cab);
     5: return string(str_cargo_subtype_hispeed);
-    6: return string(str_cargo_subtype_hispeed_nocab);
+    6: return string(str_cargo_subtype_hispeed_cab);
     7: return string(str_cargo_subtype_fyra);
     8: return string(str_cargo_subtype_sr10);
     9: return string(str_cargo_subtype_zilverrail);

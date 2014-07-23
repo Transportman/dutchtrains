@@ -132,11 +132,9 @@ str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      : > Kinderboekenweek kleurstelling
 str_cargo_subtype_lll                           : > Lage Landen Lijn
 str_cargo_subtype_hispeed           : > NS Hispeed kleurstelling
-str_cargo_subtype_hispeed_nocab     : > NS Hispeed kleurstelling, zonder stuurstand
 str_cargo_subtype_maashopper        : > Veolia wit/rood "Maashopper" kleurstelling
 str_cargo_subtype_nid               : > NID kleurstelling
 str_cargo_subtype_ns_ic             : > NS InterCity kleurstelling
-str_cargo_subtype_ns_ic_nocab       : > NS InterCity kleurstelling, zonder stuurstand
 str_cargo_subtype_olympic           : > Olympische kleurstelling
 str_cargo_subtype_original          : > Originele kleurstelling
 str_cargo_subtype_ovchip            : > OV Chipkaart kleurstelling
