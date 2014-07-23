@@ -119,7 +119,6 @@ str_cargo_subtype_benelux_nocab     :> Benelux-väritys, ei hyttiopastetta
 str_cargo_subtype_benelux_plandcab  :> Benelux-väritys Plan D hytillä
 str_cargo_subtype_citypendel        :> Citypendel-väritys
 str_cargo_subtype_ddar              :> DDM-2/3 -väritys
-str_cargo_subtype_ddm_nocab         :> DDM-väritys, ei hyttiopastetta
 str_cargo_subtype_ddm1              :> DDM-1 -väritys
 str_cargo_subtype_football          :> Jalkapallon MM -väritys
 str_cargo_subtype_freedom           :> Freedom-väritys

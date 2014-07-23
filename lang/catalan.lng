@@ -120,7 +120,6 @@ str_cargo_subtype_benelux_nocab     :> Benelux, sense control de cabina
 str_cargo_subtype_benelux_plandcab  :> Benelux amb cabina Plan D
 str_cargo_subtype_citypendel        :> Citypendel
 str_cargo_subtype_ddar              :> DDM-2/3
-str_cargo_subtype_ddm_nocab         :> DDM, sense control de cabina
 str_cargo_subtype_ddm1              :> DDM-1
 str_cargo_subtype_football          :> Especial Mundial de Futbol
 str_cargo_subtype_freedom           :> Freedom

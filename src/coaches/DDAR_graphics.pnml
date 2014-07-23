@@ -70,10 +70,12 @@ switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchinglivery, vehicle_type_id)
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_livery, cargo_subtype) {
-	1: switch_coaches_DDAR_DDM1_position;
-	2: switch_coaches_DDAR_DDAR_position;
+	1: spriteset_coaches_DDAR_DDAR;
+	2: spriteset_coaches_DDAR_DDM1_cab;
 	3: spriteset_coaches_DDAR_DDAR;
-    4: switch_coaches_DDAR_NID_position;
+    4: spriteset_coaches_DDAR_DDAR_cab;
+    5: spriteset_coaches_DDAR_NID;
+    6: spriteset_coaches_DDAR_NID_cab;
     switch_coaches_DDAR_matchinglivery;
 }
 
@@ -81,9 +83,11 @@ switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_livery, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_matching);
     1: return string(str_cargo_subtype_ddm1);
-    2: return string(str_cargo_subtype_ddar);
-    3: return string(str_cargo_subtype_ddm_nocab);
-    4: return string(str_cargo_subtype_nid);
+    2: return string(str_cargo_subtype_ddm1_cab);
+    3: return string(str_cargo_subtype_ddar);
+    4: return string(str_cargo_subtype_ddar_cab);
+    5: return string(str_cargo_subtype_nid);
+    6: return string(str_cargo_subtype_nid_cab);
     return CB_RESULT_NO_TEXT;
 }
 
@@ -91,15 +95,25 @@ switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_subtype_text, cargo_subtype) {
 * CARGO CAPACITY CALLBACK
 */
 
-switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchingcapacity, vehicle_type_id) {
-    item_electric_NID: return 113;
-    item_electric_NS1600: return 166;
-    return 150;
+switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchingcapacity_nocab, vehicle_type_id) {
+    item_electric_NID: return 130;
+    return 166;
+}
+switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchingcapacity_cab, vehicle_type_id) {
+    item_electric_NID: return 124;
+    return 90;
+}
+switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_matchingcapacity, position_in_consist_from_end) {
+	0: switch_coaches_DDAR_matchingcapacity_cab;
+    switch_coaches_DDAR_matchingcapacity_nocab;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_capacity, cargo_subtype) {
 	1: return 166;
-    2: return 150;
-    3: return 113;
+    2: return 124;
+    3: return 166;
+    4: return 124;
+    5: return 130;
+    6: return 90;
     switch_coaches_DDAR_matchingcapacity;
 }

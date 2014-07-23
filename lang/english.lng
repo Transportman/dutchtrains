@@ -117,9 +117,10 @@ str_cargo_subtype_benelux           : > Benelux livery
 str_cargo_subtype_benelux_nocab     : > Benelux livery, no cab control
 str_cargo_subtype_benelux_plandcab  : > Benelux livery w/ Plan D cab
 str_cargo_subtype_citypendel        : > Citypendel livery
-str_cargo_subtype_ddar              : > DDM-2/3 livery
-str_cargo_subtype_ddm_nocab         : > DDM livery, no cab control
-str_cargo_subtype_ddm1              : > DDM-1 livery
+str_cargo_subtype_ddar              : > DDM-2/3 livery (coach)
+str_cargo_subtype_ddar_cab          : > DDM-2/3 livery (cab)
+str_cargo_subtype_ddm1              : > DDM-1 livery (coach)
+str_cargo_subtype_ddm1_cab          : > DDM-1 livery (cab)
 str_cargo_subtype_football          : > World Cup Football livery
 str_cargo_subtype_freedom           : > Freedom livery
 str_cargo_subtype_fyra              : > Fyra livery
@@ -135,7 +136,8 @@ str_cargo_subtype_lll				: > Lage Landen Lijn
 str_cargo_subtype_hispeed           : > NS Hispeed livery
 str_cargo_subtype_hispeed_nocab     : > NS Hispeed livery, no cab control
 str_cargo_subtype_maashopper        : > Veolia white/red "Maashopper" livery
-str_cargo_subtype_nid               : > NID livery
+str_cargo_subtype_nid               : > NID livery (coach)
+str_cargo_subtype_nid_cab           : > NID livery (cab)
 str_cargo_subtype_ns_ic             : > NS InterCity livery
 str_cargo_subtype_ns_ic_nocab       : > NS InterCity livery, no cab control
 str_cargo_subtype_olympic           : > Olympic livery

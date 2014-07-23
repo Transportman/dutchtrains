@@ -121,7 +121,6 @@ str_cargo_subtype_benelux_nocab     : > Benelux livreja, bez stražnjeg upravlja
 str_cargo_subtype_benelux_plandcab  : > Benelux livreja sa Plan D stražnjim upravljačkim vagonom
 str_cargo_subtype_citypendel        : > Citypendel livreja
 str_cargo_subtype_ddar              : > DDM-2/3 livreja
-str_cargo_subtype_ddm_nocab         : > DDM livreja, bez stražnjeg upravljačkog vagona
 str_cargo_subtype_ddm1              : > DDM-1 livreja
 str_cargo_subtype_football          : > Livreja svjetskog prvenstva u nogometu
 str_cargo_subtype_freedom           : > Freedom livreja

@@ -118,7 +118,6 @@ str_cargo_subtype_benelux_nocab     : > Benelux kleurstelling, zonder stuurstand
 str_cargo_subtype_benelux_plandcab  : > Benelux kleurstelling met Plan D stuurstand
 str_cargo_subtype_citypendel        : > Citypendel kleurstelling
 str_cargo_subtype_ddar              : > DDM-2/3 kleurstelling
-str_cargo_subtype_ddm_nocab         : > DDM kleurstelling, zonder stuurstand
 str_cargo_subtype_ddm1              : > DDM-1 kleurstelling
 str_cargo_subtype_football          : > WK Voetbal kleurstelling
 str_cargo_subtype_freedom           : > Vrijheidstrein kleurstelling
