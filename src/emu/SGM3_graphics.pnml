@@ -103,11 +103,6 @@ switch(FEAT_TRAINS, SELF, switch_emu_SGM3_articulated, extra_callback_info1) {
 * CARGO CAPACITY CALLBACK
 */
 
-switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_autocapacity, date_of_last_service) {
-	0..date(2003,12,31): return 83;
-    return 74;
-}
-
 switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_purchasecapacity, build_year) {
 	0..2003: return 83;
     return 74;
@@ -117,7 +112,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_capacity, cargo_subtype) {
 	1: switch_emu_SGM3_purchasecapacity;
     2: return 83;
     3: return 74;
-    switch_emu_SGM3_autocapacity;
+    return 83; //used for autolivery, changing capacity without refitting is not allowed
 }
 
 /*
