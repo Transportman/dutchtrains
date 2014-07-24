@@ -117,10 +117,13 @@ str_cargo_subtype_accident_yellow   : > Žuta livreja (nesreća vlaka)
 str_cargo_subtype_Jules             : > "Jules"
 
 str_cargo_subtype_benelux           : > Benelux livreja
-str_cargo_subtype_benelux_plandcab  : > Benelux livreja sa Plan D stražnjim upravljačkim vagonom
+str_cargo_subtype_benelux_cab       :> Benelux livreja (stražnji upravljački vagon)
+str_cargo_subtype_benelux_plandcab  : > Plan D stražnji upravljački vagon
 str_cargo_subtype_citypendel        : > Citypendel livreja
 str_cargo_subtype_ddar              : > DDM-2/3 livreja
+str_cargo_subtype_ddar_cab          :> DDM-2/3 livreja (stražnji upravljački vagon)
 str_cargo_subtype_ddm1              : > DDM-1 livreja
+str_cargo_subtype_ddm1_cab          :> DDM-1 livreja (stražnji upravljački vagon)
 str_cargo_subtype_football          : > Livreja svjetskog prvenstva u nogometu
 str_cargo_subtype_freedom           : > Freedom livreja
 str_cargo_subtype_fyra              : > Fyra livreja
@@ -134,9 +137,12 @@ str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Express"
 str_cargo_subtype_kinderboeken      : > Livreja Tjedan dječje knjige
 str_cargo_subtype_lll                           :> Lage Landen Lijn
 str_cargo_subtype_hispeed           : > NS Hispeed livreja
+str_cargo_subtype_hispeed_cab       :> NS Hispeed livreja (stražnji upravljački vagon)
 str_cargo_subtype_maashopper        : > Veolia bijelo-crvena "Maashopper" livreja
 str_cargo_subtype_nid               : > NID livreja
+str_cargo_subtype_nid_cab           :> NID livreja (stražnji upravljački vagon)
 str_cargo_subtype_ns_ic             : > NS InterCity livreja
+str_cargo_subtype_ns_ic_cab         :> NS InterCity livreja (stražnji upravljački vagon)
 str_cargo_subtype_olympic           : > Olimpijska livreja
 str_cargo_subtype_original          : > Originalna livreja
 str_cargo_subtype_ovchip            : > OV Chipkaart livreja

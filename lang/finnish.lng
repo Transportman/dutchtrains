@@ -115,10 +115,13 @@ str_cargo_subtype_accident_yellow   :> Keltainen väritys (onnettomuusjuna)
 str_cargo_subtype_Jules             :> "Jules"-väritys
 
 str_cargo_subtype_benelux           :> Benelux-väritys
-str_cargo_subtype_benelux_plandcab  :> Benelux-väritys Plan D hytillä
+str_cargo_subtype_benelux_cab       :> Benelux-väritys (hytillä)
+str_cargo_subtype_benelux_plandcab  :> Plan D hytillä
 str_cargo_subtype_citypendel        :> Citypendel-väritys
 str_cargo_subtype_ddar              :> DDM-2/3 -väritys
+str_cargo_subtype_ddar_cab          :> DDM-2/3 -väritys (hytillä)
 str_cargo_subtype_ddm1              :> DDM-1 -väritys
+str_cargo_subtype_ddm1_cab          :> DDM-1 -väritys (hytillä)
 str_cargo_subtype_football          :> Jalkapallon MM -väritys
 str_cargo_subtype_freedom           :> Freedom-väritys
 str_cargo_subtype_fyra              :> Fyra-väritys
@@ -132,9 +135,12 @@ str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres" -väritys
 str_cargo_subtype_kinderboeken      :> Lastenkirjojenviikonväritys
 str_cargo_subtype_lll                           :> Lage Landen Lijn -väritys
 str_cargo_subtype_hispeed           :> NS Hispeed -väritys
+str_cargo_subtype_hispeed_cab       :> NS Hispeed-väritys (hytillä)
 str_cargo_subtype_maashopper        :> Valkoinen ja punainen Veolia "Maashopper" -väritys
 str_cargo_subtype_nid               :> NID-väritys
+str_cargo_subtype_nid_cab           :> NID-väritys (hytillä)
 str_cargo_subtype_ns_ic             :> NS InterCity-väritys
+str_cargo_subtype_ns_ic_cab         :> NS InterCity -väritys (hytillä)
 str_cargo_subtype_olympic           :> Olympiaväritys
 str_cargo_subtype_original          :> Alkuperäinen väritys
 str_cargo_subtype_ovchip            :> OV Chipkaart -väritys

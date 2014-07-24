@@ -116,10 +116,13 @@ str_cargo_subtype_accident_yellow   :> Color groc (to tren accidentat)
 str_cargo_subtype_Jules             :> "Jules"
 
 str_cargo_subtype_benelux           :> Benelux
-str_cargo_subtype_benelux_plandcab  :> Benelux amb cabina Plan D
+str_cargo_subtype_benelux_cab       :> Benelux (control de cabina)
+str_cargo_subtype_benelux_plandcab  :> Cabina de control Plan D
 str_cargo_subtype_citypendel        :> Citypendel
 str_cargo_subtype_ddar              :> DDM-2/3
+str_cargo_subtype_ddar_cab          :> DDM-2/3 (control de cabina)
 str_cargo_subtype_ddm1              :> DDM-1
+str_cargo_subtype_ddm1_cab          :> DDM-1 (control de cabina)
 str_cargo_subtype_football          :> Especial Mundial de Futbol
 str_cargo_subtype_freedom           :> Freedom
 str_cargo_subtype_fyra              :> Fyra
@@ -133,9 +136,12 @@ str_cargo_subtype_keukenhof         :> Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      :> Week of Children's Books
 str_cargo_subtype_lll                           :> Lage Landen Lijn
 str_cargo_subtype_hispeed           :> NS Hispeed
+str_cargo_subtype_hispeed_cab       :> NS Hispeed (control de cabina)
 str_cargo_subtype_maashopper        :> Veolia "Maashopper" blanc/vermell
 str_cargo_subtype_nid               :> NID
+str_cargo_subtype_nid_cab           :> NID (control de cabina)
 str_cargo_subtype_ns_ic             :> NS InterCity
+str_cargo_subtype_ns_ic_cab         :> NS Interurbà (control de cabina)
 str_cargo_subtype_olympic           :> Olympic
 str_cargo_subtype_original          :> Original
 str_cargo_subtype_ovchip            :> OV Chipkaart

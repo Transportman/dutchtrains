@@ -100,10 +100,11 @@ str_cargo_subtype_white_yellow      :Librea amarilla/blanca
 str_cargo_subtype_Jules             :"Jules"
 
 str_cargo_subtype_benelux           :Librea Benelux
-str_cargo_subtype_benelux_plandcab  :Librea Benelux, con cabina Plan D
+str_cargo_subtype_benelux_plandcab  :Cabina de mando Plan D
 str_cargo_subtype_citypendel        :Librea Citypendel
 str_cargo_subtype_ddar              :Librea DDM-2/3
 str_cargo_subtype_ddm1              :Librea DDM-1
+str_cargo_subtype_ddm1_cab          :Librea DDM-1 (cabina de mando)
 str_cargo_subtype_football          :Librea del mundial de fútbol
 str_cargo_subtype_freedom           :Librea Freedom
 str_cargo_subtype_fyra              :Librea Fyra
