@@ -401,8 +401,8 @@ str_emu_V200E8                  :V200-E8 (Elèctrica)
 str_emu_CargoDD                 :EMU de càrrega (Elèctrica)
 
 #wagons
-str_wagons_gen0boxcar               :Vagó petit
-str_wagons_gen2_boxcar              :Vagó
+str_wagons_gen0boxcar               :Furgó petit
+str_wagons_gen2_boxcar              :Furgó
 str_wagons_Gs_boxcar                :Vagó Gs
 str_wagons_gen6_slidingdoor         :Vagó amb Portes Corredores
 str_wagons_Habbiins_goodswagon      :Vagó Habbiins
