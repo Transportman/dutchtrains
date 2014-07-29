@@ -97,6 +97,8 @@ str_cargo_subtype_white_blue        :Librea azul/blanca
 str_cargo_subtype_white_red         :Librea blanca/roja
 str_cargo_subtype_white_yellow      :Librea amarilla/blanca
 
+str_cargo_subtype_accident_brown    :Librea marrón (tren accidentado)
+str_cargo_subtype_accident_yellow   :Librea amarilla (tren accidentado)
 str_cargo_subtype_Jules             :"Jules"
 
 str_cargo_subtype_benelux           :Librea Benelux
@@ -166,6 +168,7 @@ str_cargo_subtype_HUSA_Containers       :Librea HUSA (contenedores)
 str_cargo_subtype_Locon             :Librea Locon
 str_cargo_subtype_NBDS              :Librea Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
 str_cargo_subtype_NCS               :Librea Nederlandsche Centraal-Spoorweg-Maatschappij
+str_cargo_subtype_NCS_tender        :Librea NCS (locomotora ténder)
 str_cargo_subtype_NCS_tank          :Librea NCS (locomotora cisterna)
 str_cargo_subtype_nedtrain          :Librea NedTrain
 str_cargo_subtype_NS                :Librea NS
@@ -428,6 +431,8 @@ str_purchase_svc                :{BLACK}Servicio: {YELLOW}{STRING}
 str_purchase_svc_axl            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_svc_len            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}
 str_purchase_svc_len_lsp        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp_spc :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_len_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}{STRING}
