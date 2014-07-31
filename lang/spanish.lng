@@ -56,6 +56,7 @@ str_cargo_subtype_blackyellow_Crates            :Librea amarilla/negra (cajas)
 str_cargo_subtype_blackyellow_Containers        :Librea amarilla/negra (contenedores)
 str_cargo_subtype_blue              :Librea azul
 str_cargo_subtype_lighterblue       :Librea azul claro clarísimo
+str_cargo_subtype_blue_banners      :Librea azul, con publicidad
 str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
 str_cargo_subtype_blue_red_silverroof       :Librea azul, con rayas rojas y techo plateado
 str_cargo_subtype_blue_yellow       :Librea azul, con rayas amarillas
@@ -102,6 +103,7 @@ str_cargo_subtype_accident_yellow   :Librea amarilla (tren accidentado)
 str_cargo_subtype_Jules             :"Jules"
 
 str_cargo_subtype_benelux           :Librea Benelux
+str_cargo_subtype_benelux_cab       :Librea Benelux (cabina de mando)
 str_cargo_subtype_benelux_plandcab  :Cabina de mando Plan D
 str_cargo_subtype_citypendel        :Librea Citypendel
 str_cargo_subtype_ddar              :Librea DDM-2/3
@@ -365,6 +367,7 @@ str_wagons_gen2_openwagon           :Vagón abierto medio
 str_wagons_GTUW_openwagon           :Vagón abierto GTUW
 str_wagons_Es_openwagon             :Vagón abierto Es
 str_wagons_Eass_openwagon           :Vagón abierto Eass
+str_wagons_gen0hopper               :Vagón tolva pequeño
 str_wagons_gen0stakewagon           :Vagón de estacas pequeño
 str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
@@ -531,6 +534,7 @@ str_purchase_electric_NS1500 :Anteriormente conocido como: {SILVER} BR Class EM2
 str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
+str_purchase_spc_electric_gen9_HS002_no_track :Locomotora multisistema.{}Ficticia.
 
 
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
