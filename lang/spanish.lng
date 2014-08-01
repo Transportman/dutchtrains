@@ -67,6 +67,7 @@ str_cargo_subtype_brown             :Librea Marrón
 str_cargo_subtype_brown_yellowfront :Librea Marrón, con frontal amarillo
 str_cargo_subtype_brown_light       :Librea Marrón claro
 str_cargo_subtype_brown_dark        :Librea Marrón oscuro
+str_cargo_subtype_brown_reddish     :Librea marrón rojizo
 str_cargo_subtype_green             :Librea verde
 str_cargo_subtype_green_lightroof   :Librea verde, con techo claro
 str_cargo_subtype_green_darkroof    :Librea verde, con techo oscuro
@@ -98,6 +99,7 @@ str_cargo_subtype_white_blue        :Librea azul/blanca
 str_cargo_subtype_white_red         :Librea blanca/roja
 str_cargo_subtype_white_yellow      :Librea amarilla/blanca
 
+str_cargo_subtype_blue_crashnose    :Librea azul (con parachoques)
 str_cargo_subtype_accident_brown    :Librea marrón (tren accidentado)
 str_cargo_subtype_accident_yellow   :Librea amarilla (tren accidentado)
 str_cargo_subtype_Jules             :"Jules"
@@ -122,6 +124,7 @@ str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_hispeed           :Librea NS Hispeed
 str_cargo_subtype_maashopper        :Librea Veolia blanco/rojo "Maashopper"
 str_cargo_subtype_nid               :Librea NID
+str_cargo_subtype_nid_cab           :Librea NID (cabina de mando)
 str_cargo_subtype_ns_ic             :Librea NS InterCity
 str_cargo_subtype_olympic           :Librea olímpica
 str_cargo_subtype_original          :Librea Original
