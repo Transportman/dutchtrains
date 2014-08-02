@@ -43,6 +43,7 @@ STR_PARAM_TRACK_POWER_DESC                      :Po osnovnim postavkama, snaga v
 STR_PARAM_TRACK_POWER_OFF                       :Uvijek najveća snaga
 STR_PARAM_TRACK_POWER_ON                        :Ovisi o pruzi kada je učitan kompatibilni pružni set (osnovna postavka)
 
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Livreja ovisna o godini
 str_cargo_subtype_purchase          : > Livreja godine proizvodnje

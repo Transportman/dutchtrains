@@ -40,6 +40,7 @@ STR_PARAM_TRACK_POWER_DESC                      :Standaard hangt het vermogen va
 STR_PARAM_TRACK_POWER_OFF                       :Altijd hoogste vermogen
 STR_PARAM_TRACK_POWER_ON                        :Afhankelijk van spoor indien geschikte spoorset geladen is (standaard)
 
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Jaar-afhankelijke kleurstelling
 str_cargo_subtype_purchase          : > Aankoop-afhankelijke kleurstelling

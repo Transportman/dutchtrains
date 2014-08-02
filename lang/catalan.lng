@@ -42,6 +42,7 @@ STR_PARAM_TRACK_POWER_DESC                      :Per defecte la potència dels t
 STR_PARAM_TRACK_POWER_OFF                       :Sempre potència major
 STR_PARAM_TRACK_POWER_ON                        :Depèn de la via quan es carrega un NewGRF de vies de tren compatible (per defecte)
 
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              :> Depenent de l'any
 str_cargo_subtype_purchase          :> Any de construcció

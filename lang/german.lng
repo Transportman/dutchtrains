@@ -18,6 +18,7 @@ STR_PARAM_TIMES_16                  :16
 
 STR_PARAM_TRACK_POWER                           :Multisystem-Antrieb
 
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Lackierung automatisch ans Spieljahr anpassen
 str_cargo_subtype_purchase          : > Gängige Lackierung im Jahr der Indienststellung

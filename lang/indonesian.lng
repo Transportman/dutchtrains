@@ -21,6 +21,7 @@ STR_PARAM_TIMES_8                   :8
 
 STR_PARAM_TRACK_POWER                           :Daya multi-sistem
 
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Seragam bergantung sama tahun
 

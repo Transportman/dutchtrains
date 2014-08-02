@@ -41,6 +41,7 @@ STR_PARAM_TRACK_POWER_DESC                      :Oletusarvona monijärjestelmäj
 STR_PARAM_TRACK_POWER_OFF                       :Aina korkein voima
 STR_PARAM_TRACK_POWER_ON                        :Riippuu raiteista, kun yhteensopiva raidevalikoima on ladattu (oletusarvo)
 
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              :> Väritys vuodesta riippuen
 str_cargo_subtype_purchase          :> Rakennusvuoden väritys

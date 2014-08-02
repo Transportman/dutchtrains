@@ -42,6 +42,7 @@ STR_PARAM_TRACK_POWER_DESC                      :Por defecto, la potencia de los
 STR_PARAM_TRACK_POWER_OFF                       :Siempre la máxima potencia
 STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando un set compatible ha sido cargado (por defecto)
 
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              :Librea dependiente del año
 str_cargo_subtype_purchase          :Librea del año de construcción
@@ -55,6 +56,7 @@ str_cargo_subtype_black             :Librea negra
 str_cargo_subtype_blackyellow_Crates            :Librea amarilla/negra (cajas)
 str_cargo_subtype_blackyellow_Containers        :Librea amarilla/negra (contenedores)
 str_cargo_subtype_blue              :Librea azul
+str_cargo_subtype_blue_greyish      :Librea azul grisáceo
 str_cargo_subtype_lighterblue       :Librea azul claro clarísimo
 str_cargo_subtype_blue_banners      :Librea azul, con publicidad
 str_cargo_subtype_blue_red          :Librea azul, con rayas rojas
@@ -140,6 +142,7 @@ str_cargo_subtype_valleilijn_blue           :Librea Valleilijn azul (ficticia)
 str_cargo_subtype_wadkikker         :Librea NoordNet "Wadkikker"
 str_cargo_subtype_zilverrail        :Librea Zilverrail (Oct 24-27, 2005)
 str_cargo_subtype_klm                           :Librea KLM
+str_cargo_subtype_martinair                     :Librea Martinair
 str_cargo_subtype_aegon                         :Librea Aegon
 str_cargo_subtype_randstad                      :Librea Randstad
 str_cargo_subtype_delagelanden1         :Librea De Lage Landen (1)
@@ -376,6 +379,7 @@ str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
 str_wagons_Uh_tanker                :Vagón cisterna Uh
+str_wagons_gen6_tanker              :Vagón cisterna grande
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 
@@ -462,6 +466,7 @@ str_purchase_svc_lfep       :carga ligera o pasajeros express
 str_purchase_svc_f          :carga
 str_purchase_svc_lf         :carga ligera
 str_purchase_svc_hf         :carga pesada
+str_purchase_svc_slf        :maniobras o carga ligera
 str_purchase_svc_m          :correo
 str_purchase_svc_M          :metro
 
