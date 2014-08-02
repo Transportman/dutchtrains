@@ -40,6 +40,12 @@ STR_PARAM_TRACK_POWER_DESC			:By default the power of multisystem trains depends
 STR_PARAM_TRACK_POWER_OFF			:Always highest power
 STR_PARAM_TRACK_POWER_ON			:Depend on track when a compatible trackset is loaded (default)
 
+STR_PARAM_LOADING_SPEED             :Loading speed
+STR_PARAM_LOADING_SPEED_DESC        :Set the speed at which trains and wagons load their cargo.
+STR_PARAM_LOADING_SPEED_SLOW        :Slow
+STR_PARAM_LOADING_SPEED_MEDIUM      :Medium (default)
+STR_PARAM_LOADING_SPEED_FAST        :Fast
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Year-dependent livery
 str_cargo_subtype_purchase          : > Construction year livery

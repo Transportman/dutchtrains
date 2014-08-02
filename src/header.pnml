@@ -98,6 +98,21 @@ grf {
 			};
 		}
 	}	
+    param {
+        param_loading_speed {
+            type:   int;
+            name:	string(STR_PARAM_LOADING_SPEED);
+			desc:	string(STR_PARAM_LOADING_SPEED_DESC);
+			min_value: 0;
+			max_value: 2;
+			def_value: 1;
+			names: {
+						0: string(STR_PARAM_LOADING_SPEED_SLOW);
+						1: string(STR_PARAM_LOADING_SPEED_MEDIUM);
+						2: string(STR_PARAM_LOADING_SPEED_FAST);
+			};
+        }
+    }
 }
 
 //check for OpenTTD and version
