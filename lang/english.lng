@@ -416,7 +416,7 @@ str_wagons_gen2_openwagon           :Open Wagon Medium
 str_wagons_GTUW_openwagon           :Open Wagon GTUW
 str_wagons_Es_openwagon             :Open Wagon Es
 str_wagons_Eass_openwagon           :Open Wagon Eass
-str_wagons_gen0hopper               :Hopper Wagon Smal
+str_wagons_gen0hopper               :Hopper Wagon Small
 str_wagons_Fccpps_selfdischarger    :Selfdischarger Fccpps
 str_wagons_Tals_selfdischarger      :Selfdischarger Tals
 str_wagons_Tads_selfdischarger      :Selfdischarger Tads
@@ -621,10 +621,10 @@ str_purchase_diesel_RN232   :Previously known as: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100:Refurbished 1979: {YELLOW}+4% weight, +1/8 length.
 str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2.
-str_purchase_electric_mDDM_NID:For use Double-decker Carriage DDM/NID.
-str_purchase_electric_HLE11 :For use Carriage ICR for Benelux service.
-str_purchase_electric_HLE25 :For use Carriage Plan W for Benelux service.
-str_purchase_electric_TRAXXF140MS2:For use Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive, {YELLOW}+87% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_electric_mDDM_NID:For use with Double-decker Carriage DDM/NID.
+str_purchase_electric_HLE11 :For use with Carriage ICR for Benelux service.
+str_purchase_electric_HLE25 :For use with Carriage Plan W for Benelux service.
+str_purchase_electric_TRAXXF140MS2:For use with Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive, {YELLOW}+87% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_electric_ES64F4:Multisystem locomotive, {YELLOW}+42% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_NS1600P    :Multisystem locomotive, {YELLOW}+70% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_electric_gen9_HS001:Multisystem locomotive, {YELLOW}+65% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
