@@ -1,0 +1,654 @@
+##grflangid 0x0D
+##plural 6
+##gender muški ženski srednji
+##case nom big gen dat aku vok lok ins
+
+#Main grf title and description
+STR_GRF_NAME                    :{TITLE}
+STR_GRF_DESCRIPTION             :{SILVER}Nizozemski vlakovi za OpenTTD{}{BLACK}Prvo vozilo: 1839.{}{}(c)Dutch Trainset Tim{}Licenca: GPLv2 ili viša.{}Pogledajte readme za detalje.
+STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
+
+#parameter strings
+STR_PARAM_VEHICLE_NAMES             :Koristi nazive vozila na engleskom jeziku
+STR_PARAM_VEHICLE_NAMES_DESC        :Uključite ovo da bi imena vozila bila prevedena na engleski jezik. Ako je isključeno, imena vozila će biti prikazana na nizozemskom jeziku.
+
+STR_PARAM_DISABLE_ORIGINAL          :Zadrži originalne lokomotive i vagone
+STR_PARAM_DISABLE_ORIGINAL_DESC     :Po osnovnim postavkama, ovaj set isključuje sve originalne pružne, jednopružne i maglev lokomotive i vagone. Možete koristiti ovaj parametar za zadržavanje bilo koje kombinacije originalnih pružnih, jednopružnih i/ili magleva. Ipak, ako neki drugi NewGRF isključuje originalna vozila, ova postavka ih ne može ponovno uključiti.
+STR_PARAM_DISABLE_ORIGINAL_000      :ništa (osnovna postavka)
+STR_PARAM_DISABLE_ORIGINAL_100      :samo pružna vozila
+STR_PARAM_DISABLE_ORIGINAL_010      :samo jednopružna vozila
+STR_PARAM_DISABLE_ORIGINAL_110      :pružna i jednopružna vozila
+STR_PARAM_DISABLE_ORIGINAL_001      :samo maglev vozila
+STR_PARAM_DISABLE_ORIGINAL_101      :pružna i maglev vozila
+STR_PARAM_DISABLE_ORIGINAL_011      :jednopružna i maglev vozila
+STR_PARAM_DISABLE_ORIGINAL_111      :sva
+
+STR_PARAM_PURCHASE_COST             :Višekratnik za troškove nabave
+STR_PARAM_PURCHASE_COST_DESC        :Možete koristiti ove postavke za povećavanje ili smanjivanje troškova nabave vozila u ovom setu. Izmjena ovih postavki će učiniti troškove nesrazmjerne s troškovima osnovnih vozila.
+STR_PARAM_RUNNING_COST              :Višekratnik za tekuće troškove
+STR_PARAM_RUNNING_COST_DESC         :Možete koristiti ove postavke za povećavanje ili smanjivanje tekućih troškova vozila u ovom setu.  Izmjena ovih postavki će učiniti troškove nesrazmjerne s troškovima osnovnih vozila.
+
+STR_PARAM_DIVIDE_16                 :1/16
+STR_PARAM_DIVIDE_8                  :1/8
+STR_PARAM_DIVIDE_4                  :1/4
+STR_PARAM_DIVIDE_2                  :1/2
+STR_PARAM_NORMAL                    :1 (osnovna postavka)
+STR_PARAM_TIMES_2                   :2
+STR_PARAM_TIMES_4                   :4
+STR_PARAM_TIMES_8                   :8
+STR_PARAM_TIMES_16                  :16
+
+STR_PARAM_TRACK_POWER                           :Višesistemsko napajanje
+STR_PARAM_TRACK_POWER_DESC                      :Po osnovnim postavkama, snaga višesistemskih vlakova ovisi o pruzi na kojoj se nalaze kada je učitan kompatibilni pružni set. Možete koristiti ovaj parametar da bi ovo isključili i uvijek koristili najveću snagu.
+STR_PARAM_TRACK_POWER_OFF                       :Uvijek najveća snaga
+STR_PARAM_TRACK_POWER_ON                        :Ovisi o pruzi kada je učitan kompatibilni pružni set (osnovna postavka)
+
+#cargo subtype livery strings
+str_cargo_subtype_auto              : > Livreja ovisna o godini
+str_cargo_subtype_purchase          : > Livreja godine proizvodnje
+str_cargo_subtype_random            : > Livreja po slučajnom odabiru
+str_cargo_subtype_matching          : > Livreja kao kod lokomotive
+
+str_cargo_subtype_bordeaux          : > Bordo livreja
+str_cargo_subtype_bordeaux_white            : > Bordo livreja sa bijelim
+str_cargo_subtype_bordeaux_white_blue       : > Bordo livreja sa bijelo-plavim
+str_cargo_subtype_bordeaux_white_yellow     : > Bordo livreja sa bijelo-žutim
+str_cargo_subtype_black             : > Crna livreja
+str_cargo_subtype_blackyellow_Crates            :> Crno-žuta livreja (kutije)
+str_cargo_subtype_blackyellow_Containers        :> Crno-žuta livreja (kontejneri)
+str_cargo_subtype_blue              : > Plava livreja
+str_cargo_subtype_blue_greyish      : > Sivoplava livreja
+str_cargo_subtype_lighterblue       : > Svjetlije plava livreja
+str_cargo_subtype_blue_banners      : > Plava livreja sa linijama
+str_cargo_subtype_blue_red          : > Plava livreja sa crvenim linijama
+str_cargo_subtype_blue_red_silverroof       : > Plava livreja sa crvenim linijama i srebrnim krovom
+str_cargo_subtype_blue_red_yellowmoustache  : > Plava livreja sa crvenim linijama i žutim "brkovima"
+str_cargo_subtype_blue_yellow       : > Plava livreja sa žutim linijama
+str_cargo_subtype_blue_lightyellow  : > Plava livreja sa svijetlo žutim linijama
+str_cargo_subtype_blue_darkyellow   : > Plava livreja sa tamno žutim linijama
+str_cargo_subtype_blue_white        : > Plavo-bijela livreja
+str_cargo_subtype_brown             : > Smeđa livreja
+str_cargo_subtype_brown_yellowfront : > Smeđa livreja sa žutim sprijeda
+str_cargo_subtype_brown_other       : > Druga smeđa livreja
+str_cargo_subtype_brown_light       : > Svijetlo smeđa livreja
+str_cargo_subtype_brown_dark        : > Tamno smeđa livreja
+str_cargo_subtype_brown_greenish    : > Zeleno-smeđa livreja
+str_cargo_subtype_brown_reddish     : > Crveno-smeđa livreja
+str_cargo_subtype_green             : > Zelena livreja
+str_cargo_subtype_green_lightroof   : > Zelena livreja sa svijetlim krovom
+str_cargo_subtype_green_darkroof    : > Zelena livreja sa tamnim krovom
+str_cargo_subtype_green_moustache   : > Zelena livreja sa "brkovima"
+str_cargo_subtype_green_red         : > Zelena livreja sa crvenim linijama
+str_cargo_subtype_green_yellow      : > Zelena livreja sa žutim linijama
+str_cargo_subtype_green_yellow_blue : > Zelena livreja sa žutim linijama i plavim prugama
+str_cargo_subtype_green_white       : > Zeleno-bijela livreja
+str_cargo_subtype_green_lightyellow : > Zeleno-svijetložuta livreja
+str_cargo_subtype_grey              : > Siva livreja
+str_cargo_subtype_grey_dark         : > Tamno siva livreja
+str_cargo_subtype_grey_light        : > Svijetlo siva livreja
+str_cargo_subtype_purple            : > Ljubičasta livreja
+str_cargo_subtype_red               : > Crvena livreja
+str_cargo_subtype_red_greydoors     : > Crvena livreja sa sivim vratima
+str_cargo_subtype_red_light         : > Svijetlo-crvena livreja
+str_cargo_subtype_red_pinkish       : > Crveno-roza livreja
+str_cargo_subtype_red_blue          : > Crveno-plava livreja
+str_cargo_subtype_red_yellow        : > Crvena livreja sa žutim linijama
+str_cargo_subtype_red_yellow_blue   : > Crvena livreja sa žutim linijama i plavim prugama
+str_cargo_subtype_olive_silverroof  : > Maslinasto zelena livreja sa svijetlim krovom
+str_cargo_subtype_olive_greyroof    : > Maslinasto zelena livreja sa tamnim krovom
+str_cargo_subtype_salmon            : > Salmon livreja
+str_cargo_subtype_silver_blue       : > Srebrno-plava livreja
+str_cargo_subtype_silver_green      : > Srebrno-zelena livreja
+str_cargo_subtype_silver_red        : > Srebrno-crvena livreja
+str_cargo_subtype_turquoise         : > Tirkizna livreja
+str_cargo_subtype_yellow            : > Žuta livreja
+str_cargo_subtype_yellow_blue       : > Žuta livreja sa plavim prugama
+str_cargo_subtype_yellow_blue_ic    : > Žuto-plava InterCity livreja
+str_cargo_subtype_yellow_red        : > Žuto-crvena livreja
+str_cargo_subtype_white             : > Bijela livreja
+str_cargo_subtype_white_blue        : > Bijelo-plava livreja
+str_cargo_subtype_white_red         : > Bijelo-crvena livreja
+str_cargo_subtype_white_yellow      : > Bijelo-žuta livreja
+
+str_cargo_subtype_blue_crashnose    : > Plava livreja (sa nosom za sudare)
+str_cargo_subtype_grey_crashnose    : > Siva livreja (sa nosom za sudare)
+str_cargo_subtype_accident_brown    : > Smeđa livreja (nesreća vlaka)
+str_cargo_subtype_accident_yellow   : > Žuta livreja (nesreća vlaka)
+str_cargo_subtype_Jules             : > "Jules"
+
+str_cargo_subtype_benelux           : > Benelux livreja
+str_cargo_subtype_benelux_cab       :> Benelux livreja (stražnji upravljački vagon)
+str_cargo_subtype_benelux_plandcab  : > Plan D stražnji upravljački vagon
+str_cargo_subtype_citypendel        : > Citypendel livreja
+str_cargo_subtype_ddar              : > DDM-2/3 livreja
+str_cargo_subtype_ddar_cab          :> DDM-2/3 livreja (stražnji upravljački vagon)
+str_cargo_subtype_ddm1              : > DDM-1 livreja
+str_cargo_subtype_ddm1_cab          :> DDM-1 livreja (stražnji upravljački vagon)
+str_cargo_subtype_football          : > Livreja svjetskog prvenstva u nogometu
+str_cargo_subtype_freedom           : > Freedom livreja
+str_cargo_subtype_fyra              : > Fyra livreja
+str_cargo_subtype_fyra_red          : > Fyra (crvena) livreja
+str_cargo_subtype_fyra_white        : > Fyra (bijela) livreja
+str_cargo_subtype_groningen         : > Groningen Mendini livreja
+str_cargo_subtype_ICE                           :> ICE livreja
+str_cargo_subtype_icplus            : > IC+ livreja (svibanj 28, 1995 - lipanj 2002)
+str_cargo_subtype_kennemerstrand    : > Lovers Rail "Kennemerstrand Express"
+str_cargo_subtype_keukenhof         : > Lovers Rail "Keukenhof Express"
+str_cargo_subtype_kinderboeken      : > Livreja Tjedan dječje knjige
+str_cargo_subtype_lll                           :> Lage Landen Lijn
+str_cargo_subtype_hispeed           : > NS Hispeed livreja
+str_cargo_subtype_hispeed_cab       :> NS Hispeed livreja (stražnji upravljački vagon)
+str_cargo_subtype_maashopper        : > Veolia bijelo-crvena "Maashopper" livreja
+str_cargo_subtype_nid               : > NID livreja
+str_cargo_subtype_nid_cab           :> NID livreja (stražnji upravljački vagon)
+str_cargo_subtype_ns_ic             : > NS InterCity livreja
+str_cargo_subtype_ns_ic_cab         :> NS InterCity livreja (stražnji upravljački vagon)
+str_cargo_subtype_olympic           : > Olimpijska livreja
+str_cargo_subtype_original          : > Originalna livreja
+str_cargo_subtype_ovchip            : > OV Chipkaart livreja
+str_cargo_subtype_overnightexpress  : > Overnight Express livreja
+str_cargo_subtype_prototype         : > Prototip livreja
+str_cargo_subtype_randstadrail      : > RandstadRail livreja
+str_cargo_subtype_renewal           : > Renewal livreja
+str_cargo_subtype_ns_sprinter           :> NS Sprinter livreja
+str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (prosinac 22, 1993 - danas)
+str_cargo_subtype_strandsprinter_beachballs : > "Strandsprinter" livreja sa loptama za plažu
+str_cargo_subtype_strandsprinter    : > "Strandsprinter" livreja
+str_cargo_subtype_TGV                           :> Thalys livreja
+str_cargo_subtype_TGV_PBKA          : > PBKA livreja
+str_cargo_subtype_TGV_PBA           : > PBA livreja
+str_cargo_subtype_valleilijn_yellow_blue    : > Valleilijn žuto-plava livreja
+str_cargo_subtype_valleilijn_blue_yellownose : > Valleilijn plava livreja sa žutim nosom
+str_cargo_subtype_valleilijn_blue           : > Valleilijn plava livreja (izmišljena)
+str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" livreja
+str_cargo_subtype_zilverrail        : > Zilverrail livreja (listopad 24-27, 2005)
+str_cargo_subtype_klm                           :> KLM livreja
+str_cargo_subtype_martinair                     :> Martinair livreja
+str_cargo_subtype_aegon                         :> Aegon livreja
+str_cargo_subtype_randstad                      :> Randstad livreja
+str_cargo_subtype_delagelanden1         :> De Lage Landen livreja 1
+str_cargo_subtype_delagelanden2         :> De Lage Landen livreja 2
+str_cargo_subtype_algemeendagblad1      :> Algemeen Dagblad livreja 1
+str_cargo_subtype_algemeendagblad2      :> Algemeen Dagblad livreja 2
+
+str_cargo_subtype_ACTS              : > ACTS livreja
+str_cargo_subtype_ACTS_blue_yellow  : > ACTS (plavo-žuta) livreja
+str_cargo_subtype_ACTS_grey_green   : > ACTS (sivo-zelena) livreja
+str_cargo_subtype_Arriva            : > Arriva livreja
+str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" livreja
+str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" livreja
+str_cargo_subtype_Breng             : > Breng livreja
+str_cargo_subtype_Captrain          : > Captrain livreja
+str_cargo_subtype_Crossrail         : > Crossrail livreja
+str_cargo_subtype_DBSchenker        : > DB Schenker livreja
+str_cargo_subtype_DBSchenker_Crates     :> DB Schenker livreja (kutije)
+str_cargo_subtype_DBSchenker_Containers :> DB Schenker livreja (kontejneri)
+str_cargo_subtype_DLC               : > DLC livreja
+str_cargo_subtype_ERS               : > ERS livreja
+str_cargo_subtype_ERS_Crates            :> ERS livreja (kutije)
+str_cargo_subtype_ERS_Containers        :> ERS livreja (kontejneri)
+str_cargo_subtype_EETC              : > Euro Express Treincharter livreja
+str_cargo_subtype_HerikRail         : > Herik Rail livreja
+str_cargo_subtype_HGK               : > HGK livreja
+str_cargo_subtype_HSM               : > Hollandsche IJzeren Spoorweg-Maatschappij livreja
+str_cargo_subtype_HUSA              : > HUSA livreja
+str_cargo_subtype_HUSA_Crates           : > HUSA livreja (kutije)
+str_cargo_subtype_HUSA_Containers       :> HUSA livreja (kontejneri)
+str_cargo_subtype_Locon             : > Locon livreja
+str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livreja
+str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livreja
+str_cargo_subtype_NCS_tender        : > NCS livreja (tender lokomotiva)
+str_cargo_subtype_NCS_tank          : > NCS livreja (tank lokomotiva)
+str_cargo_subtype_nedtrain          : > NedTrain livreja
+str_cargo_subtype_NS                : > NS livreja
+str_cargo_subtype_NS_tank           : > NS livreja (tank lokomotiva)
+str_cargo_subtype_NS_whiteroof      : > NS livreja sa bijelim krovom
+str_cargo_subtype_NSCargo           : > NS Cargo livreja
+str_cargo_subtype_NSCargo_Crates        :> NS Cargo livreja (kutije)
+str_cargo_subtype_NSCargo_Containers :> NS Cargo livreja (kontejneri)
+str_cargo_subtype_Rail4Chem_green   : > Rail4Chem (zelena) livreja
+str_cargo_subtype_Rail4Chem_red     : > Rail4Chem (crvena) livreja
+str_cargo_subtype_Rail4Chem_grey_yellow : > Rail4Chem (sivo-žuta) livreja
+str_cargo_subtype_Railion           : > Railion (druga) livreja
+str_cargo_subtype_Railion_regular   : > Railion livreja
+str_cargo_subtype_Railion_red       : > Railion (crvena) livreja
+str_cargo_subtype_Railpro           : > Railpro livreja
+str_cargo_subtype_rff                           :> RFF Cargo livreja
+str_cargo_subtype_rts_black                     :> RTS (crna) livreja
+str_cargo_subtype_rts_orange            :> RTS (narančasto-bijela) livreja
+str_cargo_subtype_rurtalbahn_black      :> Rurtalbahn (crna) livreja
+str_cargo_subtype_rurtalbahn_blue       :> Rurtalbahn (plava) livreja
+str_cargo_subtype_staatsmijnen      : > Staatsmijnen livreja
+str_cargo_subtype_SS                : > Staatsspoorwegen livreja
+str_cargo_subtype_SS_tank           : > SS livreja (tank lokomotiva)
+str_cargo_subtype_SS_NS             : > Staatsspoorwegen / NS livreja
+str_cargo_subtype_Strukton          : > Strukton livreja
+str_cargo_subtype_Syntus            : > Syntus livreja
+str_cargo_subtype_Twents            : > Twents livreja
+str_cargo_subtype_Veolia            : > Veolia livreja
+str_cargo_subtype_Veolia_velios     : > Veolia "Velios" livreja
+str_cargo_subtype_Veolia_white_red  : > Veolia (bijelo-crvena) livreja
+str_cargo_subtype_Veolia_black      : > Veolia (crna) livreja
+str_cargo_subtype_VOSlogistics      : > VOS Logistics livreja
+
+str_cargo_subtype_brown_cows        : > Smeđa (krave) livreja
+str_cargo_subtype_brown_pigs        : > Smeđa (svinje) livreja
+str_cargo_subtype_grey_cows         : > Siva (krave) livreja
+str_cargo_subtype_grey_pigs         : > Siva (svinje) livreja
+
+str_cargo_subtype_transformer : > Livreja tereta transformatora
+str_cargo_subtype_house             : > Livreja tereta kuće
+str_cargo_subtype_train             : > Livreja tereta vlaka
+str_cargo_subtype_tractor           : > Livreja tereta traktora
+
+#steam
+str_steam_Arend         :HSM "Arend" (Para)
+str_steam_Arend_t       :HSM "Eagle" (Para)
+str_steam_HSM126        :NS 1100 (Para)
+str_steam_NCS1          :NS 7200 (Para)
+str_steam_NCS21         :NS 1500 (Para)
+str_steam_NCS41         :NS 7000 (Para)
+str_steam_NRS11         :NRS 11-16 (Para)
+str_steam_HSM1          :HSM 1-15, 26-30 (Para)
+str_steam_HSM83         :NS 3100 (Para)
+str_steam_HSM501        :NS 2100 "Blikken Tinus" (Para)
+str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Para)
+str_steam_HSM601        :NS 3200 (Para)
+str_steam_HSM701        :NS 5500 (Para)
+str_steam_SS9           :NS 700 (Para)
+str_steam_SS17          :NS 2900 (Para)
+str_steam_SS517         :NS 6900 "Bello" (Para)
+str_steam_SS651         :NS 8100 (Para)
+str_steam_SS785         :NS 3700 "Jumbo" (Para)
+str_steam_SS785_t       :NS 3700 "Jumbo" (Para)
+str_steam_NS3850        :NS 3850 (Para)
+str_steam_NS3900        :NS 3900 (Para)
+str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Para)
+str_steam_NBDS30_t      :NS 3500 "Blue Brabanders" (Para)
+str_steam_NCS71         :NS 3600 "Zeppelin" (Para)
+str_steam_NCS71_t       :NS 3600 "Zeppelin" (Para)
+str_steam_NS4600        :NS 4600 (Para)
+str_steam_NS4700        :NS 4700 (Para)
+str_steam_NS5000II      :NS 5000-II (Para)
+str_steam_NS6200        :NS 6200 (Para)
+str_steam_NS6300        :NS 6300 "De Beul" (Para)
+str_steam_NS6300_t      :NS 6300 "The Headsman" (Para)
+
+#diesel
+str_diesel_NS100        :NS 100 "Oersik" (Benzin)
+str_diesel_NS100_t      :NS 100 "Buck" (Benzin)
+str_diesel_NS200        :NS 200 "Sik" (Dizel)
+str_diesel_NS200_t      :NS 200 "Billy" (Dizel)
+str_diesel_NS400        :NS 400 "Grote Sik" (Dizel)
+str_diesel_NS400_t      :NS 400 "Big Billy" (Dizel)
+str_diesel_NS450        :NS 450 (Dizel)
+str_diesel_NS600        :NS 600 "Bakkie" (Dizel)
+str_diesel_NS600_t      :NS 600 "Boxie" (Dizel)
+str_diesel_NS2000       :NS 2000 (Dizel)
+str_diesel_NS2200       :NS 2200 (Dizel)
+str_diesel_NS2400       :NS 2400 (Dizel)
+str_diesel_NS2600       :NS 2600 "Beelen" (Dizel)
+str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Dizel)
+str_diesel_NS2801_t     :NS 2801 "Little Cripple Mary" (Dizel)
+str_diesel_SM151        :NS 2900 (Dizel)
+str_diesel_NS6400       :NS 6400 (Dizel)
+str_diesel_ACTS5800     :ACTS 5800 (Dizel)
+str_diesel_ACTS6700     :ACTS 6700 (Dizel)
+str_diesel_RN232        :RN 232 "Ludmilla" (Dizel)
+str_diesel_Class66      :Class 66 (Dizel)
+str_diesel_G1206        :MaK G 1206 (Dizel)
+str_diesel_G400B        :Vossloh G 400 B (Dizel)
+str_diesel_G2000        :Vossloh G 2000 (Dizel)
+str_diesel_HLR77        :NMBS HLR 77 (Dizel)
+
+#electric
+str_electric_NS1000     :NS 1000 (Električni)
+str_electric_NS1100     :NS 1100 (Električni)
+str_electric_NS1200     :NS 1200 (Električni)
+str_electric_NS1300     :NS 1300 (Električni)
+str_electric_NS1500     :NS 1500 (Električni)
+str_electric_NS1600     :NS 1600/1800 (Električni)
+str_electric_NS1700     :NS 1700 (Električni)
+str_electric_NID        :Nieuwe Intercity Dubbeldekker (Električni)
+str_electric_NID_t      :Nieuwe Intercity Dubbeldekker (Električni)
+str_electric_mDDM       :mDDM (Električni)
+str_electric_NS1600P    :NS 1600P (Električni)
+str_electric_HLE11      :NMBS HLE 11 (Električni)
+str_electric_HLE25      :NMBS HLE 25.5 (Električni)
+str_electric_TRAXXF140MS2   :NS Hispeed 186 (Električni)
+str_electric_ES64F4     :EuroSprinter ES64F4 (Električni)
+str_electric_gen9_HS001 :HS-1 (Električni)
+str_electric_gen9_HS002 :HS-2 (Električni)
+
+#dmu
+str_dmu_omC901          :omC 901-916 "Ome Cees" (Dizel)
+str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Dizel)
+str_dmu_omC1921         :omC 1921-1931 (Dizel)
+str_dmu_omBC1901        :omBC 1901-1910 (Dizel)
+str_dmu_omBC2901        :omBC 2901-2908 (Dizel)
+str_dmu_Mat34           :Mat '34 "Dieseldrie" (Dizel)
+str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Dizel)
+str_dmu_DE5             :DE5 "Dieselvijf" (Dizel)
+str_dmu_DE5_t           :DE5 "Dieselfive" (Dizel)
+str_dmu_DE1             :DE1 Plan X "Blauwe Engel" (Dizel)
+str_dmu_DE1_t           :DE1 Plan X "Blue Angel" (Dizel)
+str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Dizel)
+str_dmu_DE2_t           :DE2 Plan X "Blue Angel" (Dizel)
+str_dmu_NS20            :NS20 "Kameel" (Dizel)
+str_dmu_NS20_t          :NS20 "Camel" (Dizel)
+str_dmu_DE4             :DE4 "Trans Europ Express" (Dizel)
+str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Dizel)
+str_dmu_DE3_t           :DE3 Plan U "Red Devil" (Dizel)
+str_dmu_DH1             :DH1 "Wadloper" (Dizel)
+str_dmu_DH1_t           :DH1 "Mudflat Walker" (Dizel)
+str_dmu_DH2             :DH2 "Wadloper" (Dizel)
+str_dmu_DH2_t           :DH2 "Mudflat Walker" (Dizel)
+str_dmu_DM90            :DM '90 "Buffel" (Dizel)
+str_dmu_DM90_t          :DM '90 "Buffalo" (Dizel)
+str_dmu_Lint41H         :Lint 41/H (Dizel)
+str_dmu_GTW26           :GTW 2/6 (Dizel)
+str_dmu_GTW28           :GTW 2/8 (Dizel)
+str_dmu_V200D4                  :V200-D4 (Dizel)
+str_dmu_V200D6                  :V200-D6 (Dizel)
+
+#emu
+str_emu_ZHESM_mBC       :ZHESM mBC (Električni)
+str_emu_Mat24           :Mat '24 "Blokkendoos" (Električni)
+str_emu_Mat24_t         :Mat '24 "Blocks set" (Električni)
+str_emu_Mat24mP         :Mat '24 mP (Električni)
+str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Električni)
+str_emu_Mat36EL2        :Mat '36 El2 (Električni)
+str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (Električni)
+str_emu_Mat36ELD4       :Mat '36 ElD4 (Električni)
+str_emu_Mat40ELD2       :Mat '40 ElD2 (Električni)
+str_emu_Mat40ELD5       :Mat '40 ElD5 (Električni)
+str_emu_Mat46ELD2       :Mat '46 ElD2 (Električni)
+str_emu_Mat46ELD4       :Mat '46 ElD4 (Električni)
+str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q "Hondekop" (Električni)
+str_emu_Mat54ELD2_t     :Mat '54 ElD2 Plan F/G/M/Q "Doghead" (Električni)
+str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P "Hondekop" (Električni)
+str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Doghead" (Električni)
+str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux "Hondekop" (Električni)
+str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux "Doghead" (Električni)
+str_emu_Mat64PlanV      :Mat '64 Plan V (Električni)
+str_emu_Mat64PlanT      :Mat '64 Plan T (Električni)
+str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Električni)
+str_emu_SGM3            :SGM-III Plan Y "Sprinter" (Električni)
+str_emu_ICM3            :ICM-III Plan Z "Koploper" (Električni)
+str_emu_ICM3_t          :ICM-III Plan Z "Headwalker" (Električni)
+str_emu_ICM4            :ICM-IV Plan Z "Koploper" (Električni)
+str_emu_ICM4_t          :ICM-IV Plan Z "Headwalker" (Električni)
+str_emu_SM90            :SM '90 "Railhopper" (Električni)
+str_emu_IRMIII          :IRM-III "Bizon" (Električni)
+str_emu_IRMIII_t        :IRM-III "Bison" (Električni)
+str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Električni)
+str_emu_IRMIV_t         :IRM-IV/VIRM-IV "Bison" (Električni)
+str_emu_IRMVI           :VIRM-VI "Bizon" (Električni)
+str_emu_IRMVI_t         :VIRM-VI "Bison" (Električni)
+str_emu_mP              :Plan mP (Električni)
+str_emu_TGV             :TGV Thalys PBKA/PBA (Električni)
+str_emu_ICE3M           :ICE 3M (Električni)
+str_emu_V250            :Fyra V250 "Albatros" (Električni)
+str_emu_V250_t          :Fyra V250 "Albatross" (Električni)
+str_emu_gen9_HST        :P8000 (Električni)
+str_emu_GTW26           :GTW 2/6 (Električni)
+str_emu_GTW28           :GTW 2/8 (Električni)
+str_emu_Protos          :Protos (Električni)
+str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Električni)
+str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Električni)
+str_emu_Future_DD               :Futuristički DD (Električni)
+str_emu_V200E6                  :V200-E6 (Električni)
+str_emu_V200E8                  :V200-E8 (Električni)
+str_emu_CargoDD                 :Teretni EMU (Električni)
+
+#wagons
+str_wagons_gen0boxcar               :Mali zatvoreni vagon
+str_wagons_gen2_boxcar              :Zatvoreni vagon
+str_wagons_Gs_boxcar                :Zatvoreni vagon Gs
+str_wagons_gen6_slidingdoor         :Zatvoreni vagon sa kliznim vratima
+str_wagons_Habbiins_goodswagon      :Zatvoreni vagon Habbiins
+str_wagons_gen0openwagonsmall       :Mali otvoreni vagon
+str_wagons_gen2_openwagon           :Srednji otvoreni vagon
+str_wagons_GTUW_openwagon           :Otvoreni vagon GTUW
+str_wagons_Es_openwagon             :Otvoreni vagon Es
+str_wagons_Eass_openwagon           :Otvoreni vagon Eass
+str_wagons_gen0hopper               :Mali vagon za rasuti teret
+str_wagons_Fccpps_selfdischarger    :Samoistovarujući vagon Fccpps
+str_wagons_Tals_selfdischarger      :Samoistovarujući vagon Tals
+str_wagons_Tads_selfdischarger      :Samoistovarujući vagon Tads
+str_wagons_gen0stakewagon           :Mali plato-vagon sa stupcima
+str_wagons_gen2_stake               :Plato-vagon sa stupcima
+str_wagons_gen4_stake               :Plato-vagon sa stupcima
+str_wagons_gen6_stake               :Plato-vagon sa stupcima
+str_wagons_gen7_coil                :Vagon za kaleme
+str_wagons_gen0tanker               :Mali vagon-cisterna
+str_wagons_gen2_tanker              :Vagon cisterna
+str_wagons_Uh_tanker                :Vagon-cisterna Uh
+str_wagons_gen6_tanker              :Veliki vagon-cisterna
+str_wagons_gen0livestockwagon       :Mali vagon za stoku
+str_wagons_gen3_livestock           :Srednji vagon za stoku
+str_wagons_gen6_livestock           :Veliki vagon za stoku
+str_wagons_gen4_silo                :Mali vagon-silos
+str_wagons_gen6_silo                :Srednji vagon-silos
+str_wagons_gen9_silowagon           :Veliki vagon-silos
+str_wagons_Ubcs_bollenwagen         :Vagon-silos Ubcs "Bollenwagen"
+str_wagons_Ubcs_bollenwagen_t       :Vagon-silos Ubcs "Spherewagon"
+str_wagons_gen6_refrigerator        :Srednji vagon-hladnjača
+str_wagons_gen7_refrigerator        :Veliki vagon-hladnjača
+str_wagons_Takkls_VAM               :Vagon za kompost Takkls
+str_wagons_gen7_cartransporter      :Nosač automobila
+str_wagons_gen7_containercarrier    :Nosač kontejnera
+str_wagons_gen9_containercarrier    :Nosač kontejnera
+str_wagons_gen7_superheavy_flatcar  :Plato-vagon za iznimno teške terete
+
+#coaches
+str_coaches_HIJSM_4_8_10 :Vagon HSM 1
+str_coaches_HSM_C_755   :Vagon HSM C
+str_coaches_NCS_B_119   :Vagon NCS B
+str_coaches_SS_C_218    :Vagon SS C 1
+str_coaches_SS_C_723    :Vagon SS C 650
+str_coaches_SS_ABd_7516 :Vagon SS ABd
+str_coaches_RTM_BD_438  :Vagon RTM BD
+str_coaches_Mat24       :Vagon Mat '24
+str_coaches_ZHESM_B     :Vagon ZHESM B
+str_coaches_Ovaleramen  :Vagon "Ovaleramen"
+str_coaches_Ovaleramen_t :Vagon "Oval windows"
+str_coaches_Bolkoprijtuigen     :Vagon "Bolkoprijtuigen"
+str_coaches_Bolkoprijtuigen_t   :Vagon  "Bulgehead carriages"
+str_coaches_PlanD       :Vagon Plan D
+str_coaches_PlanE       :Vagon Plan E
+str_coaches_PlanK       :Vagon Plan K
+str_coaches_PlanW       :Vagon Plan W
+str_coaches_ICR         :Vagon ICR
+str_coaches_ICK         :Vagon ICK
+str_coaches_Avmz        :Vagon Avmz
+str_coaches_ICL         :Vagon ICL
+str_coaches_M2          :Vagon NMBS M2
+str_coaches_K4          :Vagon NMBS K4
+str_coaches_DDAR        :Vagon na kat DDM/NID
+str_coaches_gen9_IC_DD  :Vagon na kat HS-DD
+str_coaches_PlanN       :Vagon za spavanje Plan N
+str_coaches_Couchette   :Vagon za spavanje Couchette Bcm
+str_coaches_Citynightline   :Vagon za spavanje CityNightLine
+str_coaches_MUs         :Vagon za spavanje MUs
+
+#baggage and mail wagons
+str_coaches_SS_DII      :Vagon za prtljagu SS D-II
+str_coaches_SS_DIII     :Vagon za prtljagu SS D-III
+str_coaches_SS_E_129    :Vagon za prtljagu SS E
+str_coaches_HSM_D_1916  :Vagon za prtljagu HSM D-IV
+str_coaches_StalenDIV   :Vagon za prtljagu D-IV
+str_coaches_StalenDV    :Vagon za prtljagu D-V
+str_coaches_Dm          :Vagon za prtljagu Dm
+str_coaches_Pd7011      :Poštanski vagon Pd
+str_coaches_Pec         :Poštanski vagon Pec
+str_coaches_Hbbkkss     :Poštanski vagon Hbbkkss
+str_coaches_PlanC       :Poštanski vagon Plan C
+str_coaches_PlanL       :Poštanski vagon Plan L
+
+#metro
+str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Metro)
+str_metro_GVB_M1M2_t    :GVB M1-M2 "Herring Gull" (Metro)
+str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
+str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
+str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
+str_metro_RET_typeT     :RET Type T SG2 (Metro)
+str_metro_RET_typeM     :RET Type M MG2 (Metro)
+str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
+str_metro_RET_typeR     :RET Type R RSG3 (Metro)
+str_metro_Future_MTR1   :Futuristički Metro1
+
+#PURCHASE MENU TEXTS
+
+str_purchase_svc                :{BLACK}Usluga: {YELLOW}{STRING}
+str_purchase_svc_axl            :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}
+str_purchase_svc_len            :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Dužina: {YELLOW}{STRING}
+str_purchase_svc_len_lsp        :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Dužina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp    :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Dužina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}
+str_purchase_svc_axl_len_lsp_spc :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Dužina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_lsp_spc    :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_len_lsp_spc    :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Dužina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_spc            :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_spc        :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_axl                :{BLACK}Osovinska težina: {YELLOW}{STRING}
+str_purchase_axl_lsp            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}
+str_purchase_axl_lsp_spc        :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_axl_spc            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}{STRING}
+
+str_purchase_svc_p          :putnički prijevoz
+str_purchase_svc_lp         :lokalni putnički prijevoz
+str_purchase_svc_ep         :ekspresni putnički prijevoz
+str_purchase_svc_ip         :međugradski putnički prijevoz
+str_purchase_svc_hp         :putnički prijevoz velikih brzina
+str_purchase_svc_Ip         :međunarodni putnički prijevoz
+str_purchase_svc_elp        :ekspresni i lokalni putnički prijevoz
+str_purchase_svc_eip        :ekspresni i međugradski putnički prijevoz
+str_purchase_svc_eiphf      :ekspresni i međugradski putnički prijevoz ili prijevoz teškog tereta
+str_purchase_svc_iphf       :međugradski putnički prijevoz ili prijevoz teškog tereta
+str_purchase_svc_hphf       :putnički prijevoz velikih brzina ili prijevoz teškog tereta
+str_purchase_svc_eplf       :ekspresni putnički prijevoz ili prijevoz lakog tereta
+str_purchase_svc_flp        :teretni prijevoz ili lokalni putnički prijevoz
+str_purchase_svc_lfep       :prijevoz lakog tereta ili ekspresni putnički prijevoz
+str_purchase_svc_f          :teretni prijevoz
+str_purchase_svc_lf         :prijevoz lakog tereta
+str_purchase_svc_hf         :prijevoz teškog tereta
+str_purchase_svc_s          :manevriranje
+str_purchase_svc_slf        :manevriranje ili prijevoz lakog tereta
+str_purchase_svc_m          :poštanski prijevoz
+str_purchase_svc_M          :metro
+str_purchase_svc_x          :izvršni
+
+str_purchase_len_1_04       :1 jedinica (0.4)
+str_purchase_len_1_05       :1 jedinica (0.5)
+str_purchase_len_2_10       :2 jedinice (1.0)
+str_purchase_len_2_12       :2 jedinice (1.2)
+str_purchase_len_3_15       :3 jedinice (1.5)
+str_purchase_len_3_17       :3 jedinice (1.7)
+str_purchase_len_4_14       :4 jedinice (1.4)
+str_purchase_len_4_20       :4 jedinice (2.0)
+str_purchase_len_5_24       :5 jedinica (2.4)
+str_purchase_len_6_20       :6 jedinica (2.0)
+str_purchase_len_6_30       :6 jedinica (3.0)
+str_purchase_len_8_40       :8 jedinica (4.0)
+str_purchase_len_10_50      :10 jedinica (5.0)
+
+str_purchase_lsp_2          :2 dana
+str_purchase_lsp_3          :3 dana
+str_purchase_lsp_4          :4 dana
+str_purchase_lsp_5          :5 dana
+str_purchase_lsp_6          :6 dana
+str_purchase_lsp_7          :7 dana
+str_purchase_lsp_8          :8 dana
+str_purchase_lsp_9          :9 dana
+str_purchase_lsp_10         :10 dana
+str_purchase_lsp_11         :11 dana
+str_purchase_lsp_12         :12 dana
+str_purchase_lsp_13         :13 dana
+str_purchase_lsp_14         :14 dana
+str_purchase_lsp_15         :15 dana
+str_purchase_lsp_16         :16 dana
+str_purchase_lsp_17         :17 dana
+str_purchase_lsp_18         :18 dana
+str_purchase_lsp_19         :19 dana
+str_purchase_lsp_20         :20 dana
+str_purchase_lsp_22         :22 dana
+str_purchase_lsp_23         :23 dana
+str_purchase_lsp_24         :24 dana
+str_purchase_lsp_25         :25 dana
+str_purchase_lsp_26         :26 dana
+str_purchase_lsp_29         :29 dana
+str_purchase_lsp_37         :37 dana
+
+str_purchase_axl_A          :vrlo niska (A klasa)
+str_purchase_axl_B          :niska (B klasa)
+str_purchase_axl_C          :srednja (C klasa)
+str_purchase_axl_D          :visoka (D klasa)
+str_purchase_axl_E          :vrlo visoka (E klasa)
+
+str_purchase_spc_eld        :Sa odjeljkom za prtljagu koji se može prenamijeniti za ekspresne terete.
+str_purchase_spc_el_eld     :Sa odjeljkom za prtljagu koji se može prenamijeniti za ekspresne terete ili putnike.
+str_purchase_spc_fictional  :Izmišljena.
+
+str_purchase_steam_NCS1     :Kupljena 1892 kao tank lokomotiva: {YELLOW}-15% težine, +48% snage, +73% TE, +7% tekući troškovi{}{BLACK}Prethodno poznata kao: {SILVER} NCS 1-12, 31-39 (tender lokomotiva), NCS 81-89 (tank lokomotiva), SS 571-579 (tank lokomotiva).
+str_purchase_steam_NCS21    :Prethodno poznata kao: {SILVER} NCS 21-30, kasnije SS 481-490.
+str_purchase_steam_NCS41    :Prethodno poznata kao: {SILVER} NCS 41-50, kasnije SS 151-160.
+str_purchase_steam_HSM83    :Prethodno poznata kao: {SILVER} HSM 83-88, 101-115.
+str_purchase_steam_HSM126   :Prethodno poznata kao: {SILVER} HSM 126-135.
+str_purchase_steam_HSM501   :Prethodno poznata kao: {SILVER} HSM 501-535.
+str_purchase_steam_HSM601   :Prethodno poznata kao: {SILVER} HSM 601-647.
+str_purchase_steam_HSM701   :Prethodno poznata kao: {SILVER} HSM 701-755.
+str_purchase_steam_SS9      :Kupljena od 1892: {YELLOW}+4% težine, +21% snage, +64% TE, +7% tekući troškovi.{}{BLACK}Prethodno poznata kao: {SILVER} SS 9-16, 21-78, NBDS 1-5.
+str_purchase_steam_SS17     :Obnovljena 1913: {YELLOW}+20% snage, +19% TE, +7% tekući troškovi.{}{BLACK}Prethodno poznata kao: {SILVER} SS 17-20, 161-205, 212.
+str_purchase_steam_SS517    :Prethodno poznata kao: {SILVER} SS 517-527, NBDS 25-26.
+str_purchase_steam_SS651    :Prethodno poznata kao: {SILVER} SS 651-680.
+str_purchase_steam_SS785    :Prethodno poznata kao: {SILVER} SS 685-778, 785-799.
+str_purchase_steam_NBDS30   :Obnovljena 1940: {YELLOW}-50% brzine, +11% snage{}{BLACK}Prethodno poznata kao: {SILVER} NBDS 30-36.
+str_purchase_steam_NCS71    :Obnovljena 1925: {YELLOW}+5% težine, -4% TE{}{BLACK}Obnovljena 1935: {YELLOW}+22% brzine, +12% težine{}{BLACK}Prethodno poznata kao: {SILVER} NCS 71-78, SS 971-978.
+
+str_purchase_diesel_NS2000  :Prethodno poznata kao: {SILVER} Whitcomb 65-DE-19A.
+str_purchase_diesel_SM151   :Prethodno poznata kao: {SILVER} SM 151-155.
+str_purchase_diesel_ACTS5800 :Prethodno poznata kao: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700 :Prethodno poznata kao: {SILVER} NMBS HLD 62.
+str_purchase_diesel_RN232   :Prethodno poznata kao: {SILVER} DB BR 232.
+
+str_purchase_electric_NS1100 :Obnovljena 1979: {YELLOW}+4% težine, +1/8 dužine.
+str_purchase_electric_NS1500 :Prethodno poznata kao: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID :Za korištenje sa vagonom na kat DDM/NID
+str_purchase_electric_HLE11 :Za korištenje sa ICR vagonom za Benelux uslugu.
+str_purchase_electric_HLE25 :Za korištenje sa vagonom Plan W za Benelux uslugu.
+str_purchase_electric_TRAXXF140MS2 :Za korištenje sa ICR vagonom za Benelux uslugu. Modificirani TRAXX F140 MS2.{}Višesistemska lokomotiva, {YELLOW}+87% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_spc_electric_ES64F4 :Višesistemska lokomotiva, {YELLOW}+42% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_spc_NS1600P    :Višesistemska lokomotiva, {YELLOW}+70% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_spc_electric_gen9_HS001 :Višesistemska lokomotiva, {YELLOW}+65% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_spc_electric_gen9_HS002 :Višesistemska lokomotiva, {YELLOW}+197% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_electric_TRAXXF140MS2_no_track :Za korištenje sa ICR vagonom za Benelux uslugu. Modificirani TRAXX F140 MS2.{}Višesistemska lokomotiva.
+str_purchase_spc_electric_ES64F4_no_track :Višesistemska lokomotiva.
+str_purchase_spc_NS1600P_no_track :Višesistemska lokomotiva.
+str_purchase_spc_electric_gen9_HS001_no_track :Višesistemska lokomotiva.{}Izmišljena.
+str_purchase_spc_electric_gen9_HS002_no_track :Višesistemska lokomotiva.{}Izmišljena.
+
+str_purchase_dmu_omBC1901   :Kupljena od 1929: {YELLOW}+41% težine, +233% snage, +7% brzine, +23% tekući troškovi.
+
+str_purchase_emu_ZHESM_mBC  :Obnovljena 1926: {YELLOW}+150% snage, +100% TE{}{BLACK}Kasnije poznata kao: {SILVER} NS mBC9900.{}{BLACK}Za korištenje sa vagonom ZHESM B.
+str_purchase_emu_Mat24      :Za korištenje sa vagonima Mat '24.
+str_purchase_emu_Mat36ELD3  :Sa odjeljkom za prtljagu koji se može prenamijeniti za ekspresne terete ili putnike.{}Kupljena od 1942: {YELLOW}-26% težine, -50% snage, -45% TE, -20% tekući troškovi, -21% kapaciteta, dužina -1/8.
+str_purchase_emu_ICE3M      :Višesistemska EMU, {YELLOW}+86% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Također poznata kao: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV    :Višesistemska EMU, {YELLOW}+139% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_spc_emu_V250   :Višesistemska EMU, {YELLOW}+83% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_spc_emu_gen9_HST :Višesistemska EMU, {YELLOW}+68% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_spc_emu_Future_DD :Višesistemska EMU, {YELLOW}+118% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_emu_CargoDD        :Višesistemska EMU, {YELLOW}+100% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+
+str_purchase_emu_ICE3M_no_track :Višesistemska EMU.{}Također poznata kao: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track :Višesistemska EMU.
+str_purchase_spc_emu_V250_no_track :Višesistemska EMU.
+str_purchase_spc_emu_gen9_HST_no_track :Višesistemska EMU.{}Izmišljena.
+str_purchase_spc_emu_Future_DD_no_track :Višesistemska EMU.{}Izmišljena.
+str_purchase_emu_CargoDD_no_track :Višesistemska EMU.{}Izmišljena.
+
+str_purchase_coaches_ZHESM_B :Kasnije poznata kao: {SILVER} NS B9900.{}{BLACK}Za korištenje sa motornim vagonom ZHESM mBC.
+str_purchase_coaches_Mat24  :Za korištenje sa motornim vagonima Mat '24.
+str_purchase_coaches_DDAR   :Za korištenje sa motornim vagonima mDDM or NID.
+str_purchase_coaches_PlanW  :Za korištenje sa električnim NS lokomotivama za nacionalni prijevoz i NMBS HLE 25.5 za Benelux uslugu.
+str_purchase_coaches_IRC    :Za korištenje sa električnim NS lokomotivama za nacionalni prijevoz, NMBS HLE 11 za Benelux uslugu i NS Hispeed 186 kao Fyra uslugu.
+str_purchase_wagons_gen10_CargoDD       :Za korištenje sa Futurističkim Teretnim Prijevozom.{}Izmišljeno.
