@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_coaches_MUs_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 20 : (param_loading_speed == 2) ? 5 : 10, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_axl_ltm, string(str_purchase_axl_B));
+}
+
 item(FEAT_TRAINS, item_coaches_MUs) {
     property {
         name: string(str_coaches_MUs);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_coaches_MUs) {
         model_life: 19;
         retire_early: 6;
         vehicle_life: 6;
-        loading_speed: 3;
+        loading_speed: (param_loading_speed == 0) ? 2 : (param_loading_speed == 2) ? 8 : 4;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 92;
         running_cost_factor: 3;
         speed: 200 km/h;
@@ -48,7 +56,7 @@ item(FEAT_TRAINS, item_coaches_MUs) {
 	}
     graphics {
         cargo_capacity: return 36;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_13));
+        additional_text: switch_coaches_MUs_additional_text;
         purchase: spriteset_coaches_MUs_purchase;
         colour_mapping: PALETTE_USE_DEFAULT;
         spriteset_coaches_MUs;

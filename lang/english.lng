@@ -1,4 +1,5 @@
 ﻿##grflangid 0x01
+##plural 0
 
 #Main grf title and description
 STR_GRF_NAME			:{TITLE}
@@ -517,6 +518,10 @@ str_purchase_axl                :{BLACK}Axle Weight: {YELLOW}{STRING}
 str_purchase_axl_lsp            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
 str_purchase_axl_lsp_spc        :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
+
+str_purchase_axl_ltm            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
+str_purchase_axl_ltm_spc        :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
+
 
 str_purchase_svc_p          :passengers
 str_purchase_svc_lp         :local passengers

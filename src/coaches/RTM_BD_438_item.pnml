@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_coaches_RTM_BD_438_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 22 : (param_loading_speed == 2) ? 6 : 11, 256)
+        //                                      ^ slow                       fast ^   ^ medium
+        ]) {
+    return string(str_purchase_axl_ltm, string(str_purchase_axl_A));
+}
+
 item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
     property {
         name: string(str_coaches_RTM_BD_438);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
         model_life: 69;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 3;
+        loading_speed: (param_loading_speed == 0) ? 2 : (param_loading_speed == 2) ? 8 : 4;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 62;
         running_cost_factor: 2;
         speed: 80 km/h;
@@ -48,7 +56,7 @@ item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
 	}
     graphics {
         cargo_capacity: return 40;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_A), string(str_purchase_lsp_15));
+        additional_text: switch_coaches_RTM_BD_438_additional_text;
         purchase: spriteset_coaches_RTM_BD_438_purchase;
         spriteset_coaches_RTM_BD_438;
     }

@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 3 : 6, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_axl_ltm_spc, string(str_purchase_axl_B), string(str_purchase_coaches_PlanW));
+}
+
 item(FEAT_TRAINS, item_coaches_PlanW) {
     property {
         name: string(str_coaches_PlanW);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_coaches_PlanW) {
         model_life: 64;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 10;
+        loading_speed: (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 32 : 16;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 112;
         running_cost_factor: 4;
         speed: 140 km/h;
@@ -48,7 +56,7 @@ item(FEAT_TRAINS, item_coaches_PlanW) {
 	}
     graphics {
         cargo_capacity: return 88;
-        additional_text: string(str_purchase_axl_lsp_spc, string(str_purchase_axl_B), string(str_purchase_lsp_10), string(str_purchase_coaches_PlanW));
+        additional_text: switch_coaches_PlanW_additional_text;
         purchase: switch_coaches_PlanW_purchase;
         cargo_subtype_text: switch_coaches_PlanW_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;
