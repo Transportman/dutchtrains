@@ -1,6 +1,61 @@
 Dutch Trainset Changelog
 ========================
 
+2.0.0 (2014/08/02)
+------------------
+- Feature: Additional HS-1 livery (graphics by Voyager One) (issue #4931)
+- Feature: cargo recolouring for SGBT, SGCN and JAVA; cargo support for JAVA (issue #6155)
+- Feature: DD-AR/NID coach allows user to decide cab control or not (issue #4775)
+- Feature: Falns selfdischarger
+- Feature: five additional liveries for G2000 (issue #3917)
+- Feature: futuristic engines (Voyager One, Transportman) (issue #4931)
+- Feature: ICR coach allows user to decide cab control or not (issue #4775)
+- Feature: Plan W coach allows user to decide cab control or not (issue #4775)
+- Feature: Serbian translation (copied from Croatian)
+- Feature: six additional liveries for ICM-III (issue #3917)
+- Feature: two additional liveries for SGM-II (issue #3917)
+- Change/Fix: Don't use filenames with spaces
+- Change: [Makefile] Update to make-nml 0.4.3
+- Change: Falns is actually Tads
+- Change: increase loading speed of coaches by approx 25% (issue #5009)
+- Change: increase loading speed of DMU by approx 25% (issue #5009)
+- Change: increase loading speed of EMU by approx 25% (issue #5009)
+- Change: increase loading speed of metro by approx 25% (issue #5009)
+- Change: make wagon names more consistent with other vehicles
+- Change: rename gen2_selfdischarger to Fccpps
+- Change: rename gen5_selfdischarger to Tals
+- Change: reworked cargo wagons
+- Fix #6176: NS 700 purchase text error
+- Fix #6540: Liveries not showing in refit list (issue #5546)
+- Fix r713: Future DD loading speed doubled (issue #4931)
+- Fix r713: Futuristic Metro last part displayed middle part
+- Fix r713: V200-D purchase sprites (issue #4931)
+- Fix: [Makefile] Execute permission for version determination
+- Fix: action colours in futuristic metro (issue #4931)
+- Fix: alignment of dark green Mat'36 EL3 (issue #4766)
+- Fix: DE5 alignment of red liveries (issue #6865)
+- Fix: do not change capacity when not refitting (issue #6907)
+- Fix: Flashing pixels Futuristic DD (issue #4921)
+- Fix: GTW loading times (issue #6850)
+- Fix: Livery select for the Mat's (issue #6829)
+- Fix: livery selection for omBC1901 (issue #6829)
+- Fix: Livery selection not showing for several vehicles (issue #6829)
+- Fix: Open Wagon L misalignment (issue #4919)
+- Fix: Order of wagons for the Futuristic DD (issue #4931)
+- Fix: re-add space in cargo subtype strings that OpenTTD removed in r24938 (issue #4838)
+- Fix: recolour issue GTUW (issue #4793)
+- Update: makefile to r110
+- Update: Translations
+  ca_ES: by juanjo
+  de_DE: by planetmaker
+  de_DE: by Jogio
+  es_ES: by SilverSurferZzZ
+  fi_FI: by juzza1
+  fi_FI: by Arexander
+  hr_HR: by Voyager1
+  nl_NL: by foobar
+
+
 2.0.0-beta1 (2013/01/13)
 ------------------------
 - Feature: auto-detection of 25 kV AC tracks, if no such tracks multisystem trains get full power (Transportman) (issue #4477)

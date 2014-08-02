@@ -271,8 +271,14 @@ Templating of graphics:
 - Supercheese
 
 Translations:
-- Dutch: FooBar (Jasper Vries)
-- English: FooBar (Jasper Vries)
+- ca_ES: by juanjo
+- de_DE: by planetmaker
+- de_DE: by Jogio
+- es_ES: by SilverSurferZzZ
+- fi_FI: by juzza1
+- fi_FI: by Arexander
+- hr_HR: by Voyager1
+- nl_NL: by foobar
 
 Makefile system:
 - planetmaker (Ingo von Borstel)
@@ -327,7 +333,7 @@ an email to foobar at jaspervries.nl.
 ---------
 
 Dutch Trainset - Dutch Trains for OpenTTD
-Copyright (C) 2003-2013 Dutch Trainset Team
+Copyright (C) 2003-2014 Dutch Trainset Team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
