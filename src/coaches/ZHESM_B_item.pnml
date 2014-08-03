@@ -11,10 +11,11 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_coaches_ZHESM_B_additional_text, [
-        STORE_TEMP((param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 4 : 8, 256)
-        //                                      ^ slow                       fast ^   ^ medium
+        STORE_TEMP(string(str_purchase_axl_A) | string(str_purchase_coaches_ZHESM_B) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 4 : 8, 257)
+        //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_axl_ltm_spc, string(str_purchase_axl_A), string(str_purchase_coaches_ZHESM_B));
+    return string(str_purchase_axl_ltm_spc);
 }
 
 item(FEAT_TRAINS, item_coaches_ZHESM_B) {

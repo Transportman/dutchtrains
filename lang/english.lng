@@ -520,7 +520,7 @@ str_purchase_axl_lsp_spc        :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Lo
 str_purchase_axl_spc            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_axl_ltm            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
-str_purchase_axl_ltm_spc        :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
+str_purchase_axl_ltm_spc        :{BLACK}Axle Weight: {YELLOW}{0:STRING}{}{BLACK}testtextstringLoading Time: {YELLOW}{2:COMMA} day{P 2 "" s}{}{BLACK}{1:STRING}
 
 
 str_purchase_svc_p          :passengers

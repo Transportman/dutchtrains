@@ -11,10 +11,11 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_coaches_Mat24_additional_text, [
-        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 256)
+        STORE_TEMP(string(str_purchase_axl_B) | string(str_purchase_coaches_Mat24) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_axl_ltm_spc, string(str_purchase_axl_B), string(str_purchase_coaches_Mat24));
+    return string(str_purchase_axl_ltm_spc);
 }
 
 item(FEAT_TRAINS, item_coaches_Mat24) {
