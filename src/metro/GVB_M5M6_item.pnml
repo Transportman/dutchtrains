@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_metro_GVB_M5M6_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 2 : 3, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_6_30));
+}
+
 item(FEAT_TRAINS, item_metro_GVB_M5M6) {
     property {
         name: string(str_metro_GVB_M5M6);
@@ -17,7 +24,8 @@ item(FEAT_TRAINS, item_metro_GVB_M5M6) {
         introduction_date: date(2012,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 20;
+        loading_speed: (param_loading_speed == 0) ? 32 : (param_loading_speed == 2) ? 128 : 64;
+        //                                          ^ slow                       fast ^    ^ medium
         cost_factor: 139;
         running_cost_factor: 103;
         speed: 90 km/h;
@@ -49,7 +57,7 @@ item(FEAT_TRAINS, item_metro_GVB_M5M6) {
         cargo_capacity: return 160;
         purchase: spriteset_metro_GVB_M5M6_purchase;
         articulated_part: switch_metro_GVB_M5M6_articulated;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_6_30), string(str_purchase_lsp_9));
+        additional_text: switch_metro_GVB_M5M6_additional_text;
         switch_metro_GVB_M5M6_livery;
     }
 }

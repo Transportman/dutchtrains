@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeM_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 7 : (param_loading_speed == 2) ? 2 : 4, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10));
+}
+
 item(FEAT_TRAINS, item_metro_RET_typeM) {
     property {
         name: string(str_metro_RET_typeM);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_metro_RET_typeM) {
         model_life: 61;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 13;
+        loading_speed: (param_loading_speed == 0) ? 20 : (param_loading_speed == 2) ? 80 : 40;
+        //                                          ^ slow                       fast ^    ^ medium
         cost_factor: 37;
         running_cost_factor: 30;
         speed: 80 km/h;
@@ -50,7 +58,7 @@ item(FEAT_TRAINS, item_metro_RET_typeM) {
         cargo_capacity: return 118;
         purchase: spriteset_metro_RET_typeM_blue_purchase;
         articulated_part: switch_metro_RET_typeM_articulated;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_10));
+        additional_text: switch_metro_RET_typeM_additional_text;
         switch_metro_RET_typeM_position_blue;
     }
 }
