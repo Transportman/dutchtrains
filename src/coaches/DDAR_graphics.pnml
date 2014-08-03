@@ -100,8 +100,8 @@ switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchingcapacity_nocab, vehicle_
     return 166;
 }
 switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchingcapacity_cab, vehicle_type_id) {
-    item_electric_NID: return 124;
-    return 90;
+    item_electric_NID: return 90;
+    return 124;
 }
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_matchingcapacity, position_in_consist_from_end) {
 	0: switch_coaches_DDAR_matchingcapacity_cab;
