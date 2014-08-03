@@ -516,6 +516,8 @@ str_purchase_axl_lsp            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BL
 str_purchase_axl_lsp_spc        :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+
+
 str_purchase_svc_p          :putnički prijevoz
 str_purchase_svc_lp         :lokalni putnički prijevoz
 str_purchase_svc_ep         :ekspresni putnički prijevoz

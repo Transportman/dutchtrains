@@ -104,6 +104,8 @@ str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Achsge
 str_purchase_axl                :{BLACK}Achsgewichtt: {YELLOW}{STRING}
 str_purchase_axl_lsp            :{BLACK}Achsgewicht: {YELLOW}{STRING}{}{BLACK}Ladezeit: {YELLOW}{STRING}
 
+
+
 str_purchase_svc_hphf       :Hochgeschwindigkeits-Passagiertransport oder schwere Fracht
 str_purchase_svc_lfep       :leichte Fracht oder Passagierexpress
 str_purchase_svc_x          :executive

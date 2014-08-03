@@ -514,6 +514,8 @@ str_purchase_axl_lsp            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}La
 str_purchase_axl_lsp_spc        :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+
+
 str_purchase_svc_p          :matkustajaliikenne
 str_purchase_svc_lp         :paikallismatkustajaliikenne
 str_purchase_svc_ep         :pikamatkustajaliikenne

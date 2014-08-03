@@ -513,6 +513,8 @@ str_purchase_axl_lsp            :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Laadtij
 str_purchase_axl_lsp_spc        :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+
+
 str_purchase_svc_p          :reizigers
 str_purchase_svc_lp         :stoptrein
 str_purchase_svc_ep         :sneltrein
