@@ -22,7 +22,7 @@ item(FEAT_TRAINS, item_coaches_Mat24) {
     property {
         name: string(str_coaches_Mat24);
         
-        introduction_date: date(1923,1,1);
+        introduction_date: date(1922,1,1);
         model_life: 62;
         retire_early: 20;
         vehicle_life: 20;
