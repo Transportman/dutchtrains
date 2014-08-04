@@ -42,6 +42,10 @@ STR_PARAM_TRACK_POWER_DESC                      :Por defecto, la potencia de los
 STR_PARAM_TRACK_POWER_OFF                       :Siempre la máxima potencia
 STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando un set compatible ha sido cargado (por defecto)
 
+STR_PARAM_LOADING_SPEED             :Velocidad de carga
+STR_PARAM_LOADING_SPEED_SLOW        :Lenta
+STR_PARAM_LOADING_SPEED_MEDIUM      :Media (por defecto)
+STR_PARAM_LOADING_SPEED_FAST        :Rápida
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              :Librea dependiente del año

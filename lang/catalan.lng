@@ -42,6 +42,11 @@ STR_PARAM_TRACK_POWER_DESC                      :Per defecte la potència dels t
 STR_PARAM_TRACK_POWER_OFF                       :Sempre potència major
 STR_PARAM_TRACK_POWER_ON                        :Depèn de la via quan es carrega un NewGRF de vies de tren compatible (per defecte)
 
+STR_PARAM_LOADING_SPEED             :Velocitat de càrrega
+STR_PARAM_LOADING_SPEED_DESC        :Selecciona la velocitat a la que es carreguen els trens i vagons.
+STR_PARAM_LOADING_SPEED_SLOW        :Lenta
+STR_PARAM_LOADING_SPEED_MEDIUM      :Mitjana (per defecte)
+STR_PARAM_LOADING_SPEED_FAST        :Ràpida
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              :> Depenent de l'any
@@ -515,6 +520,9 @@ str_purchase_axl_lsp            :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{
 str_purchase_axl_lsp_spc        :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+str_purchase_axl_ltm            :{BLACK}Pes Permès per eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{COMMA} di{P a es}
+str_purchase_axl_ltm_spc        :{BLACK}Pes Permès per Eix: {YELLOW}{0:STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{2:COMMA} di{P a es}{}{BLACK}{1:STRING}
+str_purchase_svc_axl_len_ltm    :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{COMMA} di{P a es}
 
 
 str_purchase_svc_p          :passatgers
@@ -615,7 +623,7 @@ str_purchase_diesel_RN232   :Abans coneguda com a: {SILVER}DB BR 232.
 
 str_purchase_electric_NS1100 :Remodelat el 1979: {YELLOW}+5% pes, llargada +1/8.
 str_purchase_electric_NS1500 :Abans coneguda com a: {SILVER}BR Classe EM2.
-str_purchase_electric_mDDM_NID :Per a utilitzar vagons de dos pisos DDM/NID.
+str_purchase_electric_mDDM_NID :Per a utilitzar amb Vagons de Dos Pisos DDM/NID.
 str_purchase_electric_HLE11 :Per a emprar amb el Vagó ICR per a servei en Benelux.
 str_purchase_electric_HLE25 :Per a emprar amb el Vagó Plan W per a servei en Benelux.
 str_purchase_electric_TRAXXF140MS2 :Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema, {YELLOW}+87% potència {BLACK}en via electrificada de 25 kV.
