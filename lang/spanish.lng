@@ -115,6 +115,7 @@ str_cargo_subtype_benelux_cab       :Librea Benelux (cabina de mando)
 str_cargo_subtype_benelux_plandcab  :Cabina de mando Plan D
 str_cargo_subtype_citypendel        :Librea Citypendel
 str_cargo_subtype_ddar              :Librea DDM-2/3
+str_cargo_subtype_ddar_cab          :Librea DDM-2/3 (cabina de mando)
 str_cargo_subtype_ddm1              :Librea DDM-1
 str_cargo_subtype_ddm1_cab          :Librea DDM-1 (cabina de mando)
 str_cargo_subtype_football          :Librea del mundial de fútbol
@@ -311,6 +312,7 @@ str_dmu_NS20_t          :NS20 "Camel" (Diésel)
 str_dmu_DE4             :DE4 "Trans Europ Express" (Diésel)
 str_dmu_DE3             :DE3 Plan U "Rode Duivel" (Diésel)
 str_dmu_DE3_t           :DE3 Plan U "Red Devil" (Diésel)
+str_dmu_DH1             :DH1 "Wadloper" (Diésel)
 str_dmu_DH1_t           :DH1 "Mudflat Walker" (Diésel)
 str_dmu_DH2             :DH2 "Wadloper" (Diésel)
 str_dmu_DH2_t           :DH2 "Mudflat Walker" (Diésel)
@@ -383,6 +385,7 @@ str_wagons_gen0stakewagon           :Vagón de estacas pequeño
 str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
+str_wagons_gen2_tanker              :Vagón cisterna
 str_wagons_Uh_tanker                :Vagón cisterna Uh
 str_wagons_gen6_tanker              :Vagón cisterna grande
 str_wagons_gen6_livestock           :Vagón de ganado grande
@@ -460,6 +463,7 @@ str_purchase_axl_lsp            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}T
 str_purchase_axl_lsp_spc        :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+str_purchase_svc_axl_len_ltm    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
 
 
 str_purchase_svc_p          :pasajeros
