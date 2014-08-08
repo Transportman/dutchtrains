@@ -108,6 +108,7 @@ str_cargo_subtype_white_red         :Librea blanca/roja
 str_cargo_subtype_white_yellow      :Librea amarilla/blanca
 
 str_cargo_subtype_blue_crashnose    :Librea azul (con parachoques)
+str_cargo_subtype_grey_crashnose    :Librea gris (con parachoques)
 str_cargo_subtype_accident_brown    :Librea marrón (tren accidentado)
 str_cargo_subtype_accident_yellow   :Librea amarilla (tren accidentado)
 str_cargo_subtype_Jules             :"Jules"
@@ -131,6 +132,7 @@ str_cargo_subtype_kennemerstrand    :Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         :Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
 str_cargo_subtype_hispeed           :Librea NS Hispeed
+str_cargo_subtype_hispeed_cab       :Librea NS Hispeed (cabina de mando)
 str_cargo_subtype_maashopper        :Librea Veolia blanco/rojo "Maashopper"
 str_cargo_subtype_nid               :Librea NID
 str_cargo_subtype_nid_cab           :Librea NID (cabina de mando)
@@ -566,4 +568,5 @@ str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
 str_purchase_emu_ICE3M_no_track :EMU Multisistema.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_V250_no_track :EMU Multisistema.
 str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Ficticia.
+str_purchase_emu_CargoDD_no_track :EMU Multisistema.{}Ficticia.
 
