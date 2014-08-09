@@ -81,6 +81,7 @@ str_cargo_subtype_green_darkroof    :Librea verde, con techo oscuro
 str_cargo_subtype_green_moustache   :Librea verde, con "bigote"
 str_cargo_subtype_green_red         :Librea verde, con rayas rojas
 str_cargo_subtype_green_yellow      :Librea verde, con rayas amarillas
+str_cargo_subtype_green_yellow_blue :Librea verde, con rayas amarillas y publicidad azul
 str_cargo_subtype_green_white       :Librea blanca/verde
 str_cargo_subtype_green_lightyellow :Librea verde/amarillo claro
 str_cargo_subtype_grey              :Librea gris
@@ -484,6 +485,7 @@ str_purchase_svc_lfep       :carga ligera o pasajeros express
 str_purchase_svc_f          :carga
 str_purchase_svc_lf         :carga ligera
 str_purchase_svc_hf         :carga pesada
+str_purchase_svc_s          :maniobras
 str_purchase_svc_slf        :maniobras o carga ligera
 str_purchase_svc_m          :correo
 str_purchase_svc_M          :metro
