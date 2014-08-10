@@ -129,6 +129,7 @@ str_cargo_subtype_fyra_red          :Librea Fyra (rojo)
 str_cargo_subtype_fyra_white        :Librea Fyra (blanco)
 str_cargo_subtype_groningen         :Librea Groningen Mendini
 str_cargo_subtype_ICE                           :Librea ICE
+str_cargo_subtype_icplus            :Librea IC+ (28 Mayo 1995 - Junio 2002)
 str_cargo_subtype_kennemerstrand    :Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         :Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
@@ -141,6 +142,7 @@ str_cargo_subtype_ns_ic             :Librea NS InterCity
 str_cargo_subtype_olympic           :Librea olímpica
 str_cargo_subtype_original          :Librea Original
 str_cargo_subtype_ovchip            :Librea OV Chipkaart
+str_cargo_subtype_overnightexpress  :Librea Overnight Express
 str_cargo_subtype_randstadrail      :Librea RandstadRail
 str_cargo_subtype_strandsprinter_beachballs :Librea "Strandsprinter", con pelotas de playa
 str_cargo_subtype_strandsprinter    :Librea "Strandsprinter"

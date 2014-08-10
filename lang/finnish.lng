@@ -41,6 +41,11 @@ STR_PARAM_TRACK_POWER_DESC                      :Oletusarvona monijärjestelmäj
 STR_PARAM_TRACK_POWER_OFF                       :Aina korkein voima
 STR_PARAM_TRACK_POWER_ON                        :Riippuu raiteista, kun yhteensopiva raidevalikoima on ladattu (oletusarvo)
 
+STR_PARAM_LOADING_SPEED             :Lastausaika
+STR_PARAM_LOADING_SPEED_DESC        :Aseta nopeus, jolla veturit ja vaunut lastaavat rahtinsa.
+STR_PARAM_LOADING_SPEED_SLOW        :Hidas
+STR_PARAM_LOADING_SPEED_MEDIUM      :Keskiverto (oletusarvo)
+STR_PARAM_LOADING_SPEED_FAST        :Nopea
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              :> Väritys vuodesta riippuen
@@ -514,6 +519,9 @@ str_purchase_axl_lsp            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}La
 str_purchase_axl_lsp_spc        :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+str_purchase_axl_ltm            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
+str_purchase_axl_ltm_spc        :{BLACK}Akselipaino: {YELLOW}{0:STRING}{}BLACK}Lastausaika: {YELLOW}{2:COMMA} päivä{P 2 "" ä}{}{BLACK}{1:STRING}
+str_purchase_svc_axl_len_ltm    :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Pituus: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
 
 
 str_purchase_svc_p          :matkustajaliikenne
