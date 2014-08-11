@@ -139,6 +139,7 @@ str_cargo_subtype_maashopper        :Librea Veolia blanco/rojo "Maashopper"
 str_cargo_subtype_nid               :Librea NID
 str_cargo_subtype_nid_cab           :Librea NID (cabina de mando)
 str_cargo_subtype_ns_ic             :Librea NS InterCity
+str_cargo_subtype_ns_ic_cab         :Librea NS InterCity (cabina de mando)
 str_cargo_subtype_olympic           :Librea olímpica
 str_cargo_subtype_original          :Librea Original
 str_cargo_subtype_ovchip            :Librea OV Chipkaart
@@ -252,6 +253,7 @@ str_steam_NS3900        :NS 3900 (Vapor)
 str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Vapor)
 str_steam_NBDS30_t      :NS 3500 "Blue Brabanders" (Vapor)
 str_steam_NCS71         :NS 3600 "Zeppelin" (Vapor)
+str_steam_NCS71_t       :NS 3600 "Zeppelin" (Vapor)
 str_steam_NS4600        :NS 4600 (Vapor)
 str_steam_NS4700        :NS 4700 (Vapor)
 str_steam_NS5000II      :NS 5000-II (Vapor)
