@@ -43,6 +43,11 @@ STR_PARAM_TRACK_POWER_DESC                      :Po osnovnim postavkama, snaga v
 STR_PARAM_TRACK_POWER_OFF                       :Uvijek najveća snaga
 STR_PARAM_TRACK_POWER_ON                        :Ovisi o pruzi kada je učitan kompatibilni pružni set (osnovna postavka)
 
+STR_PARAM_LOADING_SPEED             :Brzina ukrcaja
+STR_PARAM_LOADING_SPEED_DESC        :Odredite brzinu ukrcaja tereta na vlakove i u vagone
+STR_PARAM_LOADING_SPEED_SLOW        :Sporo
+STR_PARAM_LOADING_SPEED_MEDIUM      :Srednje (osnovna postavka)
+STR_PARAM_LOADING_SPEED_FAST        :Brzo
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Livreja ovisna o godini
@@ -516,6 +521,9 @@ str_purchase_axl_lsp            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BL
 str_purchase_axl_lsp_spc        :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+str_purchase_axl_ltm            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{COMMA} dan{P "" a a}
+str_purchase_axl_ltm_spc        :{BLACK}Osovinska težina: {YELLOW}{0:STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{2:COMMA} dan{P "" a a}{}{BLACK}{1:STRING}
+str_purchase_svc_axl_len_ltm    :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Dužina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{COMMA} dan{P "" a a}
 
 
 str_purchase_svc_p          :putnički prijevoz
@@ -616,7 +624,7 @@ str_purchase_diesel_RN232   :Prethodno poznata kao: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100 :Obnovljena 1979: {YELLOW}+4% težine, +1/8 dužine.
 str_purchase_electric_NS1500 :Prethodno poznata kao: {SILVER} BR Class EM2.
-str_purchase_electric_mDDM_NID :Za korištenje sa vagonom na kat DDM/NID
+str_purchase_electric_mDDM_NID :Za korištenje sa vagonom na kat DDM/NID.
 str_purchase_electric_HLE11 :Za korištenje sa ICR vagonom za Benelux uslugu.
 str_purchase_electric_HLE25 :Za korištenje sa vagonom Plan W za Benelux uslugu.
 str_purchase_electric_TRAXXF140MS2 :Za korištenje sa ICR vagonom za Benelux uslugu. Modificirani TRAXX F140 MS2.{}Višesistemska lokomotiva, {YELLOW}+87% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.

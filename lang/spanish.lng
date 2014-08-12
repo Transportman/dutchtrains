@@ -145,6 +145,7 @@ str_cargo_subtype_original          :Librea Original
 str_cargo_subtype_ovchip            :Librea OV Chipkaart
 str_cargo_subtype_overnightexpress  :Librea Overnight Express
 str_cargo_subtype_randstadrail      :Librea RandstadRail
+str_cargo_subtype_ns_sprinter           :Librea NS Sprinter
 str_cargo_subtype_strandsprinter_beachballs :Librea "Strandsprinter", con pelotas de playa
 str_cargo_subtype_strandsprinter    :Librea "Strandsprinter"
 str_cargo_subtype_TGV                           :Librea Thalys
@@ -390,6 +391,7 @@ str_wagons_GTUW_openwagon           :Vagón abierto GTUW
 str_wagons_Es_openwagon             :Vagón abierto Es
 str_wagons_Eass_openwagon           :Vagón abierto Eass
 str_wagons_gen0hopper               :Vagón tolva pequeño
+str_wagons_Fccpps_selfdischarger    :Autodescarga Fccpps
 str_wagons_gen0stakewagon           :Vagón de estacas pequeño
 str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
