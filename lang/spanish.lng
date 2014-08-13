@@ -72,6 +72,7 @@ str_cargo_subtype_blue_darkyellow   :Librea azul, con rayas en amarillo oscuro
 str_cargo_subtype_blue_white        :Librea blanca/azul
 str_cargo_subtype_brown             :Librea Marrón
 str_cargo_subtype_brown_yellowfront :Librea Marrón, con frontal amarillo
+str_cargo_subtype_brown_other       :Librea marrón (alternativa)
 str_cargo_subtype_brown_light       :Librea Marrón claro
 str_cargo_subtype_brown_dark        :Librea Marrón oscuro
 str_cargo_subtype_brown_reddish     :Librea marrón rojizo
@@ -483,6 +484,7 @@ str_purchase_svc_ep         :pasajeros express
 str_purchase_svc_ip         :pasajeros intercity
 str_purchase_svc_hp         :pasajeros de alta velocidad
 str_purchase_svc_elp        :pasajeros local y express
+str_purchase_svc_eip        :pasajeros express e InterCity
 str_purchase_svc_iphf       :pasajeros InterCity o carga pesada
 str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
 str_purchase_svc_eplf       :pasajeros express o carga ligera
