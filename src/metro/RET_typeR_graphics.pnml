@@ -67,12 +67,12 @@ random_switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeR_random_ret_randstadrai
     1: switch_metro_RET_typeR_position_silver;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeR_randomlivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeR_randomlivery, build_year) {
 	0..2008: switch_metro_RET_typeR_position_blue;
     switch_metro_RET_typeR_random_ret_randstadrail;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeR_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeR_livery, cargo_subtype) {
     1: switch_metro_RET_typeR_position_blue;
     2: switch_metro_RET_typeR_position_silver;
     switch_metro_RET_typeR_randomlivery;

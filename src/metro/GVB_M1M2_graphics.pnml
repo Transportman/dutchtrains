@@ -59,12 +59,12 @@ switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_autolivery, date_of_last_servi
     switch_metro_GVB_M1M2_position_blue;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_purchaselivery, build_year) {
+switch(FEAT_TRAINS, SELF, switch_metro_GVB_M1M2_purchaselivery, build_year) {
 	0..2007: switch_metro_GVB_M1M2_position_red;
     switch_metro_GVB_M1M2_position_blue;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_metro_GVB_M1M2_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_metro_GVB_M1M2_livery, cargo_subtype) {
 	1: switch_metro_GVB_M1M2_purchaselivery;
     2: switch_metro_GVB_M1M2_position_red;
     3: switch_metro_GVB_M1M2_position_blue;
