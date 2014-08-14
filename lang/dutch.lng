@@ -1,4 +1,5 @@
 ##grflangid 0x1f
+##plural 0
 
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
