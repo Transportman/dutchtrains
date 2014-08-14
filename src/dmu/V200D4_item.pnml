@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,15 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_coaches_V200D4_additional_text, [
+        STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
+        STORE_TEMP(string(str_purchase_len_4_20) | string(str_purchase_spc_fictional) << 16, 257),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 258)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm_spc);
+}
+
 item(FEAT_TRAINS, item_dmu_V200D4) {
     property {
         name: string(str_dmu_V200D4);
@@ -17,8 +26,9 @@ item(FEAT_TRAINS, item_dmu_V200D4) {
         introduction_date: date(2025,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 5;
-        cost_factor: 71;
+        loading_speed: (param_loading_speed == 0) ? 32 : (param_loading_speed == 2) ? 128 : 64;
+        //                                          ^ slow                      fast ^   ^ medium
+        cost_factor: 62;
         running_cost_factor: 47;
         speed: 200 km/h;
         power: 1900 hpM;
@@ -49,7 +59,7 @@ item(FEAT_TRAINS, item_dmu_V200D4) {
         cargo_capacity: return 60;
         purchase: spriteset_dmu_V200D4_purchase;
 		cargo_subtype_text: switch_dmu_V200D4_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_4_20), string(str_purchase_lsp_7), string(str_purchase_spc_fictional));
+        additional_text: switch_coaches_V200D4_additional_text;
         articulated_part: switch_dmu_V200D4_articulated;
         visual_effect_and_powered: switch_dmu_V200D4_visual_effect_and_powered;
         switch_dmu_V200D4_livery;

@@ -522,6 +522,7 @@ str_purchase_axl_spc            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{S
 str_purchase_axl_ltm            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
 str_purchase_axl_ltm_spc        :{BLACK}Axle Weight: {YELLOW}{0:STRING}{}{BLACK}Loading Time: {YELLOW}{2:COMMA} day{P 2 "" s}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
+str_purchase_svc_axl_len_ltm_spc:{BLACK}Service: {YELLOW}{0:STRING}{}{BLACK}Axle Weight: {YELLOW}{1:STRING}{}{BLACK}Length: {YELLOW}{2:STRING}{}{BLACK}Loading Time: {YELLOW}{4:COMMA} day{P "" s}{}{BLACK}{3:STRING}
 
 
 str_purchase_svc_p          :passengers

@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,15 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_coaches_omBC1901_additional_text, [
+        STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
+        STORE_TEMP(string(str_purchase_len_1_05) | string(str_purchase_dmu_omBC1901) << 16, 257),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 258)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm_spc);
+}
+
 item(FEAT_TRAINS, item_dmu_omBC1901) {
     property {
         name: string(str_dmu_omBC1901);
@@ -18,7 +27,8 @@ item(FEAT_TRAINS, item_dmu_omBC1901) {
         model_life: 55;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 10;
+        loading_speed: (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 32 : 16;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 24;
         running_cost_factor: 13;
         speed: 75 km/h;
@@ -50,7 +60,7 @@ item(FEAT_TRAINS, item_dmu_omBC1901) {
         cargo_capacity: return 65;
         purchase: switch_dmu_omBC1901_purchase;
         cargo_subtype_text: switch_dmu_omBC1901_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_1_05), string(str_purchase_lsp_8), string(str_purchase_dmu_omBC1901));
+        additional_text: switch_coaches_omBC1901_additional_text;
         power: switch_dmu_omBC1901_power;
         speed: switch_dmu_omBC1901_speed;
         weight: switch_dmu_omBC1901_weight;

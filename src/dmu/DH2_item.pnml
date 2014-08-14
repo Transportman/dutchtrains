@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 14 : (param_loading_speed == 2) ? 4 : 7, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10));
+}
+
 item(FEAT_TRAINS, item_dmu_DH2) {
     property {
         name: string(str_dmu_DH2);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_dmu_DH2) {
         model_life: 54;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: (param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 48 : 24;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 41;
         running_cost_factor: 26;
         speed: 100 km/h;
@@ -51,7 +59,7 @@ item(FEAT_TRAINS, item_dmu_DH2) {
         purchase: switch_dmu_DH2_livery_purchase;
         articulated_part: switch_dmu_DH2_articulated;
         cargo_subtype_text: switch_dmu_DH2_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_11));
+        additional_text: switch_dmu_DH2_additional_text;
         visual_effect_and_powered: switch_dmu_DH2_visual_effect_and_powered;
         switch_dmu_DH2_livery;
     }

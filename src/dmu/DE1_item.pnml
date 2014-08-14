@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_dmu_DE1_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 14 : (param_loading_speed == 2) ? 4 : 7, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_lp), string(str_purchase_axl_C), string(str_purchase_len_1_05));
+}
+
 item(FEAT_TRAINS, item_dmu_DE1) {
     property {
         name: string(str_dmu_DE1);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_dmu_DE1) {
         model_life: 59;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: (param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 24 : 12;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 30;
         running_cost_factor: 19;
         speed: 105 km/h;
@@ -50,7 +58,7 @@ item(FEAT_TRAINS, item_dmu_DE1) {
         cargo_capacity: return 73;
         purchase: switch_dmu_DE1_livery_purchase;
         cargo_subtype_text: switch_dmu_DE1_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_C), string(str_purchase_len_1_05), string(str_purchase_lsp_10));
+        additional_text: switch_dmu_DE1_additional_text;
         switch_dmu_DE1_livery;
     }
 }
