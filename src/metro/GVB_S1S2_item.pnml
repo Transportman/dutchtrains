@@ -11,7 +11,7 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_metro_GVB_S1S2_additional_text, [
-        STORE_TEMP((param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 2 : 3, 256) //days
+        STORE_TEMP((param_loading_speed == 0) ? 11 : (param_loading_speed == 2) ? 3 : 6, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
     return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10));

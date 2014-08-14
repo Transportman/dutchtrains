@@ -11,7 +11,7 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_metro_GVB_M5M6_additional_text, [
-        STORE_TEMP((param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 2 : 3, 256) //days
+        STORE_TEMP((param_loading_speed == 0) ? 11 : (param_loading_speed == 2) ? 3 : 6, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
     return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_6_30));
@@ -24,7 +24,7 @@ item(FEAT_TRAINS, item_metro_GVB_M5M6) {
         introduction_date: date(2012,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: (param_loading_speed == 0) ? 32 : (param_loading_speed == 2) ? 128 : 64;
+        loading_speed: (param_loading_speed == 0) ? 96 : (param_loading_speed == 2) ? 255 : 192;
         //                                          ^ slow                       fast ^    ^ medium
         cost_factor: 139;
         running_cost_factor: 103;
