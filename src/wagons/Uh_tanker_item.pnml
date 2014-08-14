@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_wagons_Uh_tanker_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 1 : 2, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_axl_ltm, string(str_purchase_axl_B));
+}
+
 item(FEAT_TRAINS, item_wagons_Uh_tanker) {
     property {
         name: string(str_wagons_Uh_tanker);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_wagons_Uh_tanker) {
         model_life: 102;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 5;
+        loading_speed: (param_loading_speed == 0) ? 2 : (param_loading_speed == 2) ? 8 : 4;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 22;
         running_cost_factor: 1;
         speed: 80 km/h;
@@ -49,7 +57,7 @@ item(FEAT_TRAINS, item_wagons_Uh_tanker) {
 	}
     graphics {
         purchase: spriteset_wagons_Uh_tanker_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_2));
+        additional_text: switch_wagons_Uh_tanker_additional_text;
         cargo_capacity: return 13;
         cargo_subtype_text: switch_wagons_Uh_tanker_subtype_text;
         switch_wagons_Uh_tanker_livery;

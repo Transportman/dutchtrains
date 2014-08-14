@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_wagons_Gs_boxcar_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 5 : (param_loading_speed == 2) ? 2 : 3, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_axl_ltm, string(str_purchase_axl_C));
+}
+
 item(FEAT_TRAINS, item_wagons_Gs_boxcar) {
     property {
         name: string(str_wagons_Gs_boxcar);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_wagons_Gs_boxcar) {
         model_life: 102;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 3;
+        loading_speed: (param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 10 : 5;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 33;
         running_cost_factor: 2;
         speed: 100 km/h;
@@ -48,7 +56,7 @@ item(FEAT_TRAINS, item_wagons_Gs_boxcar) {
         bitmask_vehicle_info: 0;
 	}
     graphics {
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_C), string(str_purchase_lsp_4));
+        additional_text: switch_wagons_Gs_boxcar_additional_text;
         cargo_capacity: return 24;
         purchase: spriteset_wagons_Gs_boxcar_purchase;
         switch_wagons_Gs_boxcar_livery;

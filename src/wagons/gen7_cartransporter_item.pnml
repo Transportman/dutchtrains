@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_cartransporter_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 2 : 3, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_axl_ltm, string(str_purchase_axl_B));
+}
+
 item(FEAT_TRAINS, item_wagons_gen7_cartransporter) {
     property {
         name: string(str_wagons_gen7_cartransporter);
@@ -17,7 +24,8 @@ item(FEAT_TRAINS, item_wagons_gen7_cartransporter) {
         introduction_date: date(1975,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 2;
+        loading_speed: (param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 12 : 6;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 45;
         running_cost_factor: 3;
         speed: 100 km/h;
@@ -48,7 +56,7 @@ item(FEAT_TRAINS, item_wagons_gen7_cartransporter) {
 	}
     graphics {
         purchase: spriteset_wagons_gen7_cartransporter_purchase;
-        additional_text: string(str_purchase_axl_lsp, string(str_purchase_axl_B), string(str_purchase_lsp_9));
+        additional_text: switch_wagons_gen7_cartransporter_additional_text;
         cargo_capacity: return 32;
         switch_wagons_gen7_cartransporter_livery;
     }
