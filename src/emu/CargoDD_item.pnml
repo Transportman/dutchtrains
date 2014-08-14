@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,24 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_additional_text_tpo, [
+        STORE_TEMP(string(str_purchase_svc_hf) | string(str_purchase_axl_B) << 16, 256),
+        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_emu_CargoDD) << 16, 257),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 258)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm_spc);
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_additional_text_ntp, [
+        STORE_TEMP(string(str_purchase_svc_hf) | string(str_purchase_axl_B) << 16, 256),
+        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_emu_CargoDD_no_track) << 16, 257),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 258)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm_spc);
+}
+
 item(FEAT_TRAINS, item_emu_CargoDD) {
     property {
         name: string(str_emu_CargoDD);
@@ -17,14 +35,15 @@ item(FEAT_TRAINS, item_emu_CargoDD) {
         introduction_date: date(2030,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 4;
-        cost_factor: 100;
-        running_cost_factor: 70;
+        loading_speed: (param_loading_speed == 0) ? 32 : (param_loading_speed == 2) ? 128 : 64;
+        //                                          ^ slow                      fast ^   ^ medium
+        cost_factor: 170;
+        running_cost_factor: 109;
         speed: 300 km/h;
         power: 10000 kW;
         cargo_capacity: 60;
         weight: 300 ton;
-        tractive_effort_coefficient: 0.055;
+        tractive_effort_coefficient: 0.075;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -32,7 +51,7 @@ item(FEAT_TRAINS, item_emu_CargoDD) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: dual_E;
+        track_type: dual_B;
 		ai_special_flag: AI_FLAG_CARGO;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -52,7 +71,7 @@ item(FEAT_TRAINS, item_emu_CargoDD) {
 			purchase: spriteset_emu_CargoDD_purchase;
 			cargo_subtype_text: switch_emu_CargoDD_subtype_text;
 			articulated_part: switch_emu_CargoDD_articulated;
-			additional_text: string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_hf), string(str_purchase_axl_E), string(str_purchase_len_8_40), string(str_purchase_lsp_4), string(str_purchase_emu_CargoDD));
+			additional_text: switch_emu_CargoDD_additional_text_tpo;
 			visual_effect_and_powered: switch_emu_CargoDD_visual_effect_and_powered;
 			power: switch_emu_CargoDD_power;
 			purchase_power: return 10000;
@@ -64,7 +83,7 @@ item(FEAT_TRAINS, item_emu_CargoDD) {
 			purchase: spriteset_emu_CargoDD_purchase;
 			cargo_subtype_text: switch_emu_CargoDD_subtype_text;
 			articulated_part: switch_emu_CargoDD_articulated;
-			additional_text: string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_hf), string(str_purchase_axl_E), string(str_purchase_len_8_40), string(str_purchase_lsp_4), string(str_purchase_emu_CargoDD_no_track));
+			additional_text: switch_emu_CargoDD_additional_text_ntp;
 			visual_effect_and_powered: switch_emu_CargoDD_visual_effect_and_powered;
 			power: 8000;
 			purchase_power: return 20000;

@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_emu_Mat24mP_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 1 : 2, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_m), string(str_purchase_axl_C), string(str_purchase_len_1_05));
+}
+
 item(FEAT_TRAINS, item_emu_Mat24mP) {
     property {
         name: string(str_emu_Mat24mP);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_emu_Mat24mP) {
         model_life: 29;
         retire_early: 11;
         vehicle_life: 11;
-        loading_speed: 12;
+        loading_speed: (param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 24 : 12;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 32;
         running_cost_factor: 25;
         speed: 100 km/h;
@@ -49,7 +57,7 @@ item(FEAT_TRAINS, item_emu_Mat24mP) {
     graphics {
         purchase: spriteset_emu_Mat24mP_purchase;
         cargo_subtype_text: switch_emu_Mat24mP_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_m), string(str_purchase_axl_C), string(str_purchase_len_1_05), string(str_purchase_lsp_2));
+        additional_text: switch_emu_Mat24mP_additional_text;
         cargo_capacity: switch_emu_Mat24mP_capacity;
         switch_emu_Mat24mP_livery;
     }

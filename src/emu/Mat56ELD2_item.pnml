@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,15 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_emu_Mat56ELD2_additional_text, [
+        STORE_TEMP(string(str_purchase_svc_Ip) | string(str_purchase_axl_C) << 16, 256),
+        STORE_TEMP(string(str_purchase_len_2_10) | string(str_purchase_spc_eld) << 16, 257),
+        STORE_TEMP((param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 3 : 6, 258)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm_spc);
+}
+
 item(FEAT_TRAINS, item_emu_Mat56ELD2) {
     property {
         name: string(str_emu_Mat56ELD2);
@@ -18,7 +27,8 @@ item(FEAT_TRAINS, item_emu_Mat56ELD2) {
         model_life: 58;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 15;
+        loading_speed: (param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 48 : 24;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 60;
         running_cost_factor: 35;
         speed: 140 km/h;
@@ -51,7 +61,7 @@ item(FEAT_TRAINS, item_emu_Mat56ELD2) {
         purchase: switch_emu_Mat56ELD2_purchase;
         articulated_part: switch_emu_Mat56ELD2_articulated;
         cargo_subtype_text: switch_emu_Mat56ELD2_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_C), string(str_purchase_len_2_10), string(str_purchase_lsp_10), string(str_purchase_spc_eld));
+        additional_text: switch_emu_Mat56ELD2_additional_text;
         colour_mapping: PALETTE_USE_DEFAULT;
         switch_emu_Mat56ELD2_livery;
     }
@@ -63,7 +73,8 @@ item(FEAT_TRAINS, item_emu_Mat56ELD2D) {
         introduction_date: date(1,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 255;
-        loading_speed: 5;
+        loading_speed: (param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 48 : 24;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 0;
         running_cost_factor: 0;
         speed: 0 km/h;

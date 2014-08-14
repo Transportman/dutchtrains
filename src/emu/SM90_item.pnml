@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,13 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_emu_SM90_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 11 : (param_loading_speed == 2) ? 3 : 6, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10));
+}
+
 item(FEAT_TRAINS, item_emu_SM90) {
     property {
         name: string(str_emu_SM90);
@@ -18,7 +25,8 @@ item(FEAT_TRAINS, item_emu_SM90) {
         model_life: 29;
         retire_early: 11;
         vehicle_life: 11;
-        loading_speed: 10;
+        loading_speed: (param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 64 : 32;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 58;
         running_cost_factor: 42;
         speed: 160 km/h;
@@ -49,7 +57,7 @@ item(FEAT_TRAINS, item_emu_SM90) {
     graphics {
         cargo_capacity: return 81;
         purchase: spriteset_emu_SM90_purchase;
-        additional_text: return string(str_purchase_svc_axl_len_lsp, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_2_10), string(str_purchase_lsp_9));
+        additional_text: switch_emu_SM90_additional_text;
         articulated_part: switch_emu_SM90_articulated;
         visual_effect_and_powered: switch_emu_SM90_visual_effect_and_powered;
         switch_emu_SM90_position;

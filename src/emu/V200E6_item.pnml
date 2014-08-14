@@ -10,6 +10,15 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_emu_V200E6_additional_text, [
+        STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
+        STORE_TEMP(string(str_purchase_len_6_30) | string(str_purchase_spc_fictional) << 16, 257),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 258)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm_spc);
+}
+
 item(FEAT_TRAINS, item_emu_V200E6) {
     property {
         name: string(str_emu_V200E6);
@@ -17,14 +26,15 @@ item(FEAT_TRAINS, item_emu_V200E6) {
         introduction_date: date(2025,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 5;
-        cost_factor: 79;
-        running_cost_factor: 51;
+        loading_speed: (param_loading_speed == 0) ? 48 : (param_loading_speed == 2) ? 192 : 96;
+        //                                          ^ slow                      fast ^   ^ medium
+        cost_factor: 113;
+        running_cost_factor: 61;
         speed: 200 km/h;
         power: 2250 hpM;
         cargo_capacity: 60;
         weight: 156 ton;
-        tractive_effort_coefficient: 0.2;
+        tractive_effort_coefficient: 0.15;
         air_drag_coefficient: 0;
         
         reliability_decay: 20;
@@ -49,7 +59,7 @@ item(FEAT_TRAINS, item_emu_V200E6) {
         cargo_capacity: return 60;
         purchase: spriteset_emu_V200E6_purchase;
 		cargo_subtype_text: switch_emu_V200E6_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_6_30), string(str_purchase_lsp_7), string(str_purchase_spc_fictional));
+        additional_text: switch_emu_V200E6_additional_text;
         articulated_part: switch_emu_V200E6_articulated;
         visual_effect_and_powered: switch_emu_V200E6_visual_effect_and_powered;
         switch_emu_V200E6_livery;

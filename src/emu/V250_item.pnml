@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,24 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_emu_V250_additional_text_tpo, [
+        STORE_TEMP(string(str_purchase_svc_Ip) | string(str_purchase_axl_B) << 16, 256),
+        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_spc_emu_V250) << 16, 257),
+        STORE_TEMP((param_loading_speed == 0) ? 37 : (param_loading_speed == 2) ? 10 : 19, 258)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm_spc);
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_V250_additional_text_ntp, [
+        STORE_TEMP(string(str_purchase_svc_Ip) | string(str_purchase_axl_B) << 16, 256),
+        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_spc_emu_V250_no_track) << 16, 257),
+        STORE_TEMP((param_loading_speed == 0) ? 37 : (param_loading_speed == 2) ? 10 : 19, 258)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm_spc);
+}
+
 item(FEAT_TRAINS, item_emu_V250) {
     property {
         name: string(str_emu_V250);
@@ -17,7 +35,8 @@ item(FEAT_TRAINS, item_emu_V250) {
         introduction_date: date(2012,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 20;
-        loading_speed: 3;
+        loading_speed: (param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 64 : 32;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 186;
         running_cost_factor: 93;
         speed: 250 km/h;
@@ -50,7 +69,7 @@ item(FEAT_TRAINS, item_emu_V250) {
 			cargo_capacity: return 68;
 	        purchase: spriteset_emu_V250_purchase;	
 			articulated_part: switch_emu_V250_articulated;
-			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_25), string(str_purchase_spc_emu_V250));
+			additional_text: switch_emu_V250_additional_text_tpo;
  			visual_effect_and_powered: switch_emu_V250_visual_effect_and_powered;
 			power: switch_emu_V250_power;
 			purchase_power: return 4023;			
@@ -61,7 +80,7 @@ item(FEAT_TRAINS, item_emu_V250) {
 			cargo_capacity: return 68;
 			purchase: spriteset_emu_V250_purchase;
 			articulated_part: switch_emu_V250_articulated;
-			additional_text: return string(str_purchase_svc_axl_len_lsp_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_B), string(str_purchase_len_8_40), string(str_purchase_lsp_37), string(str_purchase_spc_emu_V250_no_track));
+			additional_text: switch_emu_V250_additional_text_ntp;
 			visual_effect_and_powered: switch_emu_V250_visual_effect_and_powered;
 			power: return 7375;
 			purchase_power: return 7375;			
