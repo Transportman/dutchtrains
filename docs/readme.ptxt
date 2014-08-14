@@ -49,6 +49,7 @@ GRF ID:   FBFB0601
 2.1 Requirements
 ----------------
 - OpenTTD 1.2.0-RC1 or nightly r23971, or higher.
+- OpenTTD 1.4.2-RC2 or nightly r26713, or higher is recommended.
 - Not compatible with TTDPatch
 
 
@@ -68,7 +69,8 @@ There are five parameter settings available.
     they're not already disabled by a different NewGRF.
  3: Increase or decrease vehicle purchase costs.
  4: Increase or decrease vehicle running costs.
- 5: Disable the track dependency for multisystem trains and only use the highest power.
+ 5: Disable the track dependency for multisystem trains and only use the
+    highest power.
  
 Set the parameters before starting a new game. Once started they 
 cannot be changed any longer.
@@ -76,11 +78,11 @@ cannot be changed any longer.
 Useful details if you need to set the parameters manually in the
 configuration file:
 
-  1st parameter: Translate vehicle nicknames
+1st parameter: Translate vehicle nicknames
   0: Show Dutch nicknames
   1: Show localized/English nicknames
   
-  2nd parameter: Keep default TTD vehicles
+2nd parameter: Keep default TTD vehicles
   0: none (default)
   1: rail only
   2: monorail only
@@ -90,7 +92,7 @@ configuration file:
   6: monorail and maglev
   7: all
   
-  3rd parameter: Purchase cost multiplier
+3rd parameter: Purchase cost multiplier
   0: divide by 16
   1: divide by 8
   2: divide by 4
@@ -101,7 +103,7 @@ configuration file:
   7: multiply by 8
   8: multiply by 16
 
-  4th parameter: Running cost multiplier
+4th parameter: Running cost multiplier
   0: divide by 16
   1: divide by 8
   2: divide by 4
@@ -112,9 +114,14 @@ configuration file:
   7: multiply by 8
   8: multiply by 16
 
-  5th parameter: Variable power
+5th parameter: Variable power
   0: Always highest power
   1: Power depends on track (default)
+
+6th parameter: Loading speed
+  0: Slow
+  1: Medium (default)
+  2: Fast
   
   
 2.4 Usage
@@ -147,18 +154,18 @@ Livery refits
     select a different livery. At any one time, all liveries are 
     available for refit, even if this is not historically accurate (it 
     is up to you to play realistic or not).
-    For realistic play, most vehicles are equipped with a "year-dependent
-    livery" option. This is selected by default upon vehicle purchase, 
-    and what this does is give you the livery that was common at the 
-    current (game) year. Sometimes even randomized, if multiple liveries
-    were common at the same time. If a new livery is introduced as the 
-    years pass, the vehicles will be automatically repainted when 
-    visiting a depot.
+    For realistic play, most vehicles are equipped with a 
+    "year-dependent livery" option. This is selected by default upon 
+    vehicle purchase, and what this does is give you the livery that was
+    common at the current (game) year. Sometimes even randomized, if 
+    multiple liveries were common at the same time. If a new livery is 
+    introduced as the years pass, the vehicles will be automatically 
+    repainted when visiting a depot.
     If you rather have your vehicles always keep the livery they got 
-    when you purchased the vehicle, then you can achieve this by refitting
-    to the "construction year livery". This can also be done later on in
-    case you forgot, the livery will then revert to the one the train
-    had upon purchase.
+    when you purchased the vehicle, then you can achieve this by 
+    refitting to the "construction year livery". This can also be done 
+    later on in case you forgot, the livery will then revert to the one 
+    the train had upon purchase.
     A couple of modern engines don't have these options, but instead 
     come with a "random livery" refit option. In this case the game will
     pick a random livery from the available liveries for each vehicle.
@@ -212,24 +219,32 @@ Q: Why is the livery refit of a second MU not possible?
 A: This is a technical limitation that currently cannot be solved. It is
    not possible to provide both the livery refit and the baggage 
    compartment refit for MUs other than the first in the chain.
+
+Q: Why is the random livery refit of an additional MU in a train always
+   the same as the first of the same type?
+A: This is a technical limitation that currently cannot be solved. Each
+   vehicle in the chain reads the randomness of the first vehicle in the
+   same chain. That is the only way to get all parts of the same MU to
+   have the same random livery.
    
 Q: Why do some MUs with a baggage compartment increase capacity when
    refitted to passengers, while others don't?
 A: In real life, some MUs came in multiple variants, with and without
    baggage compartment. In this case, when refitted to passengers, you 
    will automatically get the version without the baggage compartment.
-   In other cases, the baggage compartment was later rebuilt as passenger
-   compartment. If this is the case, then at some point the vehicle 
-   capacity will increase when refitted to passengers.
+   In other cases, the baggage compartment was later rebuilt as 
+   passenger compartment. If this is the case, then at some point the 
+   vehicle capacity will increase when refitted to passengers.
    The last case is that the baggage compartment was never used to 
    carry passengers. In this case, the compartment will remain empty
    when refitted to passengers.
    
 Q: Why are some wagon types not available?
-A: Some specialized wagons, like the VAM compost wagon, the cartransporter
-   and the superheavy flatcar are only able to carry specialized cargoes.
-   These cargoes are not available without an industry NewGRF, and these
-   wagons are not available if the cargoes they carry are not available.
+A: Some specialized wagons, like the VAM compost wagon, the 
+   cartransporter and the superheavy flatcar are only able to carry 
+   specialized cargoes. These cargoes are not available without an 
+   industry NewGRF, and these wagons are not available if the cargoes 
+   they carry are not available.
 
 Q: Can I use Autorefit?
 A: Yes.
@@ -237,11 +252,16 @@ A: Yes.
 Q: Why have some newer trains less power when purchased than stated in
    the purchase menu?
 A: These are so-called multi-current trains. When a trackset is loaded
-   that provides tracks which correspond with 25 kV AC tracks these trains
-   have their power depend on the track they are on. When there is no such
-   track detected or when the Variable power parameter is set to 
-   Always highest power these trains always get full power independent of the
-   track they are on.
+   that provides tracks which correspond with 25 kV AC tracks these 
+   trains have their power depend on the track they are on. When there 
+   is no such track detected or when the Variable power parameter is set
+   to "Always highest power" these trains always get full power 
+   independent of the track they are on.
+
+Q: Why is there a question mark or dagger symbol in front of the loading 
+   time in the purchase menu details?
+A: This is due to a bug in OpenTTD. Use OpenTTD 1.4.2-RC2 or newer
+   to resolve it. It does not harm gameplay.
 
 
 
@@ -286,6 +306,10 @@ Makefile system:
 
 Special thanks to the developers of the first Dutch Trainset and 
 everyone who supported us during development of this new version.
+Special thanks to the #openttdcoop DevZone for providing hosting and
+all the additional services for this project.
+Special thanks to the developers of OpenTTD, TTDPatch and Transport
+Tycoon Deluxe, without whom this project would never have existed.
 
 
 
