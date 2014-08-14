@@ -94,6 +94,7 @@ str_cargo_subtype_red_greydoors     :Librea roja, con puertas grises
 str_cargo_subtype_red_light         :Librea rojo claro
 str_cargo_subtype_red_blue          :Librea azul/roja
 str_cargo_subtype_red_yellow        :Librea roja, con rayas amarillas
+str_cargo_subtype_red_yellow_blue   :Librea roja, con rayas amarillas y publicidad azul
 str_cargo_subtype_olive_silverroof  :Librea oliva, con techo claro
 str_cargo_subtype_olive_greyroof    :Librea oliva, con techo oscuro
 str_cargo_subtype_salmon            :Librea salmón
@@ -134,6 +135,7 @@ str_cargo_subtype_icplus            :Librea IC+ (28 Mayo 1995 - Junio 2002)
 str_cargo_subtype_kennemerstrand    :Lovers Rail "Kennemerstrand Expres"
 str_cargo_subtype_keukenhof         :Lovers Rail "Keukenhof Expres"
 str_cargo_subtype_kinderboeken      :Librea Semana de los libros infantiles
+str_cargo_subtype_lll                           :Librea Lage Landen Lijn
 str_cargo_subtype_hispeed           :Librea NS Hispeed
 str_cargo_subtype_hispeed_cab       :Librea NS Hispeed (cabina de mando)
 str_cargo_subtype_maashopper        :Librea Veolia blanco/rojo "Maashopper"
@@ -230,6 +232,7 @@ str_cargo_subtype_brown_pigs        :Librea Marrón (Cerdos)
 str_cargo_subtype_grey_cows         :Librea gris (Vacas)
 str_cargo_subtype_grey_pigs         :Librea gris (Cerdos)
 
+str_cargo_subtype_house             :Librea Casa del transporte
 str_cargo_subtype_train             :Librea tren de carga
 
 #steam
