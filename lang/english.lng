@@ -507,23 +507,16 @@ str_metro_Future_MTR1	:Futuristic Metro1
 str_purchase_svc                :{BLACK}Service: {YELLOW}{STRING}
 str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}
 str_purchase_svc_len            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}
-str_purchase_svc_len_lsp        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp_spc:{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_lsp_spc    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_len_lsp_spc    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Axle Weight: {YELLOW}{STRING}
-str_purchase_axl_lsp            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}
-str_purchase_axl_lsp_spc        :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_axl_ltm            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
 str_purchase_axl_ltm_spc        :{BLACK}Axle Weight: {YELLOW}{0:STRING}{}{BLACK}Loading Time: {YELLOW}{2:COMMA} day{P 2 "" s}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
 str_purchase_svc_axl_len_ltm_spc:{BLACK}Service: {YELLOW}{0:STRING}{}{BLACK}Axle Weight: {YELLOW}{1:STRING}{}{BLACK}Length: {YELLOW}{2:STRING}{}{BLACK}Loading Time: {YELLOW}{4:COMMA} day{P "" s}{}{BLACK}{3:STRING}
-
+str_purchase_svc_axl_ltm_spc    :{BLACK}Service: {YELLOW}{0:STRING}{}{BLACK}Axle Weight: {YELLOW}{1:STRING}{}{BLACK}Loading Time: {YELLOW}{3:COMMA} day{P "" s}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :passengers
 str_purchase_svc_lp         :local passengers
@@ -561,33 +554,6 @@ str_purchase_len_6_20       :6 units (2.0)
 str_purchase_len_6_30       :6 units (3.0)
 str_purchase_len_8_40       :8 units (4.0)
 str_purchase_len_10_50      :10 units (5.0)
-
-str_purchase_lsp_2          :2 days
-str_purchase_lsp_3          :3 days
-str_purchase_lsp_4          :4 days
-str_purchase_lsp_5          :5 days
-str_purchase_lsp_6          :6 days
-str_purchase_lsp_7          :7 days
-str_purchase_lsp_8          :8 days
-str_purchase_lsp_9          :9 days
-str_purchase_lsp_10         :10 days
-str_purchase_lsp_11         :11 days
-str_purchase_lsp_12         :12 days
-str_purchase_lsp_13         :13 days
-str_purchase_lsp_14         :14 days
-str_purchase_lsp_15         :15 days
-str_purchase_lsp_16         :16 days
-str_purchase_lsp_17         :17 days
-str_purchase_lsp_18         :18 days
-str_purchase_lsp_19         :19 days
-str_purchase_lsp_20         :20 days
-str_purchase_lsp_22         :22 days
-str_purchase_lsp_23         :23 days
-str_purchase_lsp_24         :24 days
-str_purchase_lsp_25         :25 days
-str_purchase_lsp_26         :26 days
-str_purchase_lsp_29         :29 days
-str_purchase_lsp_37         :37 days
 
 str_purchase_axl_A          :very low (class A)
 str_purchase_axl_B          :low (class B)

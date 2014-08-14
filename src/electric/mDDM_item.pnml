@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,6 +10,14 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, SELF, switch_electric_mDDM_additional_text, [
+        STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
+        STORE_TEMP(string(str_purchase_electric_mDDM_NID) | (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 2 : 4 << 16, 257)
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_ltm_spc);
+}
+
 item(FEAT_TRAINS, item_electric_mDDM) {
     property {
         name: string(str_electric_mDDM);
@@ -18,7 +26,8 @@ item(FEAT_TRAINS, item_electric_mDDM) {
         model_life: 41;
         retire_early: 20;
         vehicle_life: 20;
-        loading_speed: 8;
+        loading_speed: (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 32 : 16;
+        //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 48;
         running_cost_factor: 37;
         speed: 140 km/h;
@@ -50,7 +59,7 @@ item(FEAT_TRAINS, item_electric_mDDM) {
 	}
     graphics {
         purchase: spriteset_electric_mDDM_purchase;
-        additional_text: return string(str_purchase_svc_axl_lsp_spc, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_lsp_8), string(str_purchase_electric_mDDM_NID));
+        additional_text: switch_electric_mDDM_additional_text;
         spriteset_electric_mDDM;
     }
 }
