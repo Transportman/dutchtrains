@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2012 Jasper Vries
+ *  Copyright (C) 2012-2014 Jasper Vries
  *  This file is part of The Dutch Trainset 2
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -10,8 +10,16 @@
 * PURCHASE
 */
 
-spriteset(spriteset_metro_RET_typeB_purchase, "gfx/purchase/metro/RET_typeB.png") {
+spriteset(spriteset_metro_RET_typeB_purchase_silvergreen, "gfx/purchase/metro/RET_typeB.png") {
 	template_purchase(0, 0)
+    
+}spriteset(spriteset_metro_RET_typeB_purchase_rnet, "gfx/purchase/metro/RET_typeB_rnet.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeB_purchase, current_year) {
+	0..2013: spriteset_metro_RET_typeB_purchase_silvergreen;
+    spriteset_metro_RET_typeB_purchase_rnet;
 }
 
 /*
@@ -28,6 +36,48 @@ spriteset(spriteset_metro_RET_typeB_back, "gfx/metro/RET_typeB.png") {
 switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_position, (position_in_vehid_chain % 2)) {
 	1: spriteset_metro_RET_typeB_back;
     spriteset_metro_RET_typeB_front;
+}
+
+spriteset(spriteset_metro_RET_typeB_rnet_front, "gfx/metro/RET_typeB.png") {
+	template_2cc_88(1, 64)
+}
+spriteset(spriteset_metro_RET_typeB_rnet_back, "gfx/metro/RET_typeB.png") {
+	template_2cc_88(1, 96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_rnet_position, (position_in_vehid_chain % 2)) {
+	1: spriteset_metro_RET_typeB_rnet_back;
+    spriteset_metro_RET_typeB_rnet_front;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+switch(FEAT_TRAINS, PARENT, switch_metro_RET_typeB_autolivery, date_of_last_service) {
+	0..date(2013,12,31): switch_metro_RET_typeB_position;
+    switch_metro_RET_typeB_rnet_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_purchaselivery, build_year) {
+	0..2013: switch_metro_RET_typeB_position;
+    switch_metro_RET_typeB_rnet_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_livery, cargo_subtype) {
+    1: switch_metro_RET_typeB_purchaselivery;
+    2: switch_metro_RET_typeB_position;
+    3: switch_metro_RET_typeB_rnet_position;
+    switch_metro_RET_typeB_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_silver_green);
+    3: return string(str_cargo_subtype_rnet);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*

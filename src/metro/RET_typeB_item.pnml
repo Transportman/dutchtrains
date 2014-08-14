@@ -55,9 +55,10 @@ item(FEAT_TRAINS, item_metro_RET_typeB) {
 	}
     graphics {
         cargo_capacity: return 113;
-        purchase: spriteset_metro_RET_typeB_purchase;
+        purchase: switch_metro_RET_typeB_purchase;
         articulated_part: switch_metro_RET_typeB_articulated;
         additional_text: switch_metro_RET_typeB_additional_text;
-        switch_metro_RET_typeB_position;
+        cargo_subtype_text: switch_metro_RET_typeB_subtype_text;
+        switch_metro_RET_typeB_livery;
     }
 }

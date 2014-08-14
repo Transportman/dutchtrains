@@ -154,6 +154,7 @@ str_cargo_subtype_overnightexpress  : > Overnight Express livery
 str_cargo_subtype_prototype         : > Prototype livery
 str_cargo_subtype_randstadrail      : > RandstadRail livery
 str_cargo_subtype_renewal           : > Renewal livery
+str_cargo_subtype_rnet              : > R-net livery
 str_cargo_subtype_ns_sprinter		: > NS Sprinter livery
 str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (Dec 22, 1993 - current)
 str_cargo_subtype_strandsprinter_beachballs: > "Strandsprinter" livery w/ beachballs
