@@ -147,8 +147,10 @@ str_cargo_subtype_olympic           :Librea olímpica
 str_cargo_subtype_original          :Librea Original
 str_cargo_subtype_ovchip            :Librea OV Chipkaart
 str_cargo_subtype_overnightexpress  :Librea Overnight Express
+str_cargo_subtype_prototype         :Librea prototipo
 str_cargo_subtype_randstadrail      :Librea RandstadRail
 str_cargo_subtype_ns_sprinter           :Librea NS Sprinter
+str_cargo_subtype_sr10              :Librea Sr10 Royal ICR  (22 Diciembre 1993 - Actualidad)
 str_cargo_subtype_strandsprinter_beachballs :Librea "Strandsprinter", con pelotas de playa
 str_cargo_subtype_strandsprinter    :Librea "Strandsprinter"
 str_cargo_subtype_TGV                           :Librea Thalys
@@ -157,7 +159,7 @@ str_cargo_subtype_TGV_PBA           :Librea PBA
 str_cargo_subtype_valleilijn_yellow_blue    :Librea azul/amarillo Valleilijn
 str_cargo_subtype_valleilijn_blue           :Librea Valleilijn azul (ficticia)
 str_cargo_subtype_wadkikker         :Librea NoordNet "Wadkikker"
-str_cargo_subtype_zilverrail        :Librea Zilverrail (Oct 24-27, 2005)
+str_cargo_subtype_zilverrail        :Librea Zilverrail (24-27 Octubre 2005)
 str_cargo_subtype_klm                           :Librea KLM
 str_cargo_subtype_martinair                     :Librea Martinair
 str_cargo_subtype_aegon                         :Librea Aegon
@@ -466,20 +468,12 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_purchase_svc                :{BLACK}Servicio: {YELLOW}{STRING}
 str_purchase_svc_axl            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_svc_len            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}
-str_purchase_svc_len_lsp        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp_spc :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_len_lsp_spc    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_spc        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
-str_purchase_axl_lsp            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}
-str_purchase_axl_lsp_spc        :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_svc_axl_len_ltm    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
-
 
 str_purchase_svc_p          :pasajeros
 str_purchase_svc_lp         :pasajeros local
@@ -514,33 +508,6 @@ str_purchase_len_6_20       :6 unidades (2.0)
 str_purchase_len_6_30       :6 unidades (3.0)
 str_purchase_len_8_40       :8 unidades (4.0)
 str_purchase_len_10_50      :10 unidades (5.0)
-
-str_purchase_lsp_2          :2 días
-str_purchase_lsp_3          :3 días
-str_purchase_lsp_4          :4 días
-str_purchase_lsp_5          :5 días
-str_purchase_lsp_6          :6 días
-str_purchase_lsp_7          :7 días
-str_purchase_lsp_8          :8 días
-str_purchase_lsp_9          :9 días
-str_purchase_lsp_10         :10 días
-str_purchase_lsp_11         :11 días
-str_purchase_lsp_12         :12 días
-str_purchase_lsp_13         :13 días
-str_purchase_lsp_14         :14 días
-str_purchase_lsp_15         :15 días
-str_purchase_lsp_16         :16 días
-str_purchase_lsp_17         :17 días
-str_purchase_lsp_18         :18 días
-str_purchase_lsp_19         :19 días
-str_purchase_lsp_20         :20 días
-str_purchase_lsp_22         :22 días
-str_purchase_lsp_23         :23 días
-str_purchase_lsp_24         :24 días
-str_purchase_lsp_25         :25 días
-str_purchase_lsp_26         :26 días
-str_purchase_lsp_29         :29 días
-str_purchase_lsp_37         :37 días
 
 str_purchase_axl_A          :Muy bajo (clase A)
 str_purchase_axl_B          :Bajo (clase B)

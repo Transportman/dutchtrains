@@ -41,6 +41,11 @@ STR_PARAM_TRACK_POWER_DESC                      :Standaard hangt het vermogen va
 STR_PARAM_TRACK_POWER_OFF                       :Altijd hoogste vermogen
 STR_PARAM_TRACK_POWER_ON                        :Afhankelijk van spoor indien geschikte spoorset geladen is (standaard)
 
+STR_PARAM_LOADING_SPEED             :Laadsnelheid
+STR_PARAM_LOADING_SPEED_DESC        :Stel de snelheid in waarmee treinen en wagons hun cargo inladen.
+STR_PARAM_LOADING_SPEED_SLOW        :Langzaam
+STR_PARAM_LOADING_SPEED_MEDIUM      :Gemiddeld (standaard)
+STR_PARAM_LOADING_SPEED_FAST        :Snel
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Jaar-afhankelijke kleurstelling
@@ -149,6 +154,7 @@ str_cargo_subtype_overnightexpress  : > Overnight Express kleurstelling
 str_cargo_subtype_prototype         : > Prototype kleurstelling
 str_cargo_subtype_randstadrail      : > RandstadRail kleurstelling
 str_cargo_subtype_renewal           : > Gemoderniseerde kleurstelling
+str_cargo_subtype_rnet              : > R-net kleurstelling
 str_cargo_subtype_ns_sprinter           : > NS Sprinter kleurstelling
 str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR kleurstelling (Dec 22, 1993 - huidig)
 str_cargo_subtype_strandsprinter_beachballs : > "Strandsprinter" kleurstelling met strandballen
@@ -502,19 +508,16 @@ str_metro_Future_MTR1   :Futuristische Metro1
 str_purchase_svc                :{BLACK}Dienst: {YELLOW}{STRING}
 str_purchase_svc_axl            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}
 str_purchase_svc_len            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}
-str_purchase_svc_len_lsp        :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp_spc :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_lsp_spc    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_len_lsp_spc    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_spc        :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Asdruk: {YELLOW}{STRING}
-str_purchase_axl_lsp            :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}
-str_purchase_axl_lsp_spc        :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}{STRING}
 
-
+str_purchase_axl_ltm            :{BLACK}Asdruik: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{COMMA} dag{P "" en}
+str_purchase_axl_ltm_spc        :{BLACK}Asdruk: {YELLOW}{0:STRING}{}{BLACK}Laadtijd: {YELLOW}{2:COMMA} dag{P 2 "" en}{}{BLACK}{1:STRING}
+str_purchase_svc_axl_len_ltm    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{COMMA} dag{P "" en}
+str_purchase_svc_axl_len_ltm_spc :{BLACK}Dienst: {YELLOW}{0:STRING}{}{BLACK}Asdruk: {YELLOW}{1:STRING}{}{BLACK}Lengte: {YELLOW}{2:STRING}{}{BLACK}Laadtijd: {YELLOW}{4:COMMA} dag{P "" en}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_ltm_spc    :{BLACK}Dienst: {YELLOW}{0:STRING}{}{BLACK}Asdruk: {YELLOW}{1:STRING}{}{BLACK}Laadtijd: {YELLOW}{3:COMMA} dag{P "" en}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :reizigers
 str_purchase_svc_lp         :stoptrein
@@ -552,33 +555,6 @@ str_purchase_len_6_20       :6 bakken (2.0)
 str_purchase_len_6_30       :6 bakken (3.0)
 str_purchase_len_8_40       :8 bakken (4.0)
 str_purchase_len_10_50      :10 bakken (5.0)
-
-str_purchase_lsp_2          :2 dagen
-str_purchase_lsp_3          :3 dagen
-str_purchase_lsp_4          :4 dagen
-str_purchase_lsp_5          :5 dagen
-str_purchase_lsp_6          :6 dagen
-str_purchase_lsp_7          :7 dagen
-str_purchase_lsp_8          :8 dagen
-str_purchase_lsp_9          :9 dagen
-str_purchase_lsp_10         :10 dagen
-str_purchase_lsp_11         :11 dagen
-str_purchase_lsp_12         :12 dagen
-str_purchase_lsp_13         :13 dagen
-str_purchase_lsp_14         :14 dagen
-str_purchase_lsp_15         :15 dagen
-str_purchase_lsp_16         :16 dagen
-str_purchase_lsp_17         :17 dagen
-str_purchase_lsp_18         :18 dagen
-str_purchase_lsp_19         :19 dagen
-str_purchase_lsp_20         :20 dagen
-str_purchase_lsp_22         :22 dagen
-str_purchase_lsp_23         :23 dagen
-str_purchase_lsp_24         :24 dagen
-str_purchase_lsp_25         :25 dagen
-str_purchase_lsp_26         :26 dagen
-str_purchase_lsp_29         :29 dagen
-str_purchase_lsp_37         :37 dagen
 
 str_purchase_axl_A          :zeer laag (klasse A)
 str_purchase_axl_B          :laag (klasse B)

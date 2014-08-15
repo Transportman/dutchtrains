@@ -102,8 +102,6 @@ str_metro_RET_typeM     :RET Typ M MG2 (Metro)
 
 str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Achsgewicht: {YELLOW}{STRING}
 str_purchase_axl                :{BLACK}Achsgewichtt: {YELLOW}{STRING}
-str_purchase_axl_lsp            :{BLACK}Achsgewicht: {YELLOW}{STRING}{}{BLACK}Ladezeit: {YELLOW}{STRING}
-
 
 
 str_purchase_svc_hphf       :Hochgeschwindigkeits-Passagiertransport oder schwere Fracht
@@ -114,10 +112,6 @@ str_purchase_len_1_05       :1 Einheit (0.5)
 str_purchase_len_3_15       :3 Einheiten (1.5)
 str_purchase_len_4_20       :4 Einheiten (2.0)
 str_purchase_len_5_24       :5 Einheiten (2.4)
-
-str_purchase_lsp_9          :9 Tage
-str_purchase_lsp_16         :16 Tage
-str_purchase_lsp_23         :23 Tage
 
 
 str_purchase_spc_fictional  :Fiktional.

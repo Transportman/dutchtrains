@@ -155,6 +155,7 @@ str_cargo_subtype_overnightexpress  :> Exprés de Nit
 str_cargo_subtype_prototype         :> Prototip
 str_cargo_subtype_randstadrail      :> RandstadRail
 str_cargo_subtype_renewal           :> Renewal
+str_cargo_subtype_rnet              :> R-net
 str_cargo_subtype_ns_sprinter           :> NS Sprinter
 str_cargo_subtype_sr10              :> Sr10 Royal ICR (des del 22 desembre del 1993)
 str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter" amb pilotes de platja
@@ -508,22 +509,16 @@ str_metro_Future_MTR1   :Metro1 Fictici
 str_purchase_svc                :{BLACK}Servei: {YELLOW}{STRING}
 str_purchase_svc_axl            :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}
 str_purchase_svc_len            :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}
-str_purchase_svc_len_lsp        :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de càrrega: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp    :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}
-str_purchase_svc_axl_len_lsp_spc :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_lsp_spc    :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_len_lsp_spc    :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de càrrega: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_spc            :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_svc_axl_spc        :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}
-str_purchase_axl_lsp            :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}
-str_purchase_axl_lsp_spc        :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl_spc            :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_axl_ltm            :{BLACK}Pes Permès per eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{COMMA} di{P a es}
 str_purchase_axl_ltm_spc        :{BLACK}Pes Permès per Eix: {YELLOW}{0:STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{2:COMMA} di{P a es}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{COMMA} di{P a es}
-
+str_purchase_svc_axl_len_ltm_spc :{BLACK}Servei: {YELLOW}{0:STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{1:STRING}{}{BLACK}Llargada: {YELLOW}{2:STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{4:COMMA} di{P a es}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_ltm_spc    :{BLACK}Servei: {YELLOW}{0:STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{1:STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{3:COMMA} di{P a es}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :passatgers
 str_purchase_svc_lp         :passatgers locals
@@ -561,33 +556,6 @@ str_purchase_len_6_20       :6 unitats (2.0)
 str_purchase_len_6_30       :6 unitats (3.0)
 str_purchase_len_8_40       :8 unitats (4.0)
 str_purchase_len_10_50      :10 unitats (5.0)
-
-str_purchase_lsp_2          :2 dies
-str_purchase_lsp_3          :3 dies
-str_purchase_lsp_4          :4 dies
-str_purchase_lsp_5          :5 dies
-str_purchase_lsp_6          :6 dies
-str_purchase_lsp_7          :7 dies
-str_purchase_lsp_8          :8 dies
-str_purchase_lsp_9          :9 dies
-str_purchase_lsp_10         :10 dies
-str_purchase_lsp_11         :11 dies
-str_purchase_lsp_12         :12 dies
-str_purchase_lsp_13         :13 dies
-str_purchase_lsp_14         :14 dies
-str_purchase_lsp_15         :15 dies
-str_purchase_lsp_16         :16 dies
-str_purchase_lsp_17         :17 dies
-str_purchase_lsp_18         :18 dies
-str_purchase_lsp_19         :19 dies
-str_purchase_lsp_20         :20 dies
-str_purchase_lsp_22         :22 dies
-str_purchase_lsp_23         :23 dies
-str_purchase_lsp_24         :24 dies
-str_purchase_lsp_25         :25 dies
-str_purchase_lsp_26         :26 dies
-str_purchase_lsp_29         :29 dies
-str_purchase_lsp_37         :37 dies
 
 str_purchase_axl_A          :molt baix (classe A)
 str_purchase_axl_B          :baix (classe B)
