@@ -398,6 +398,8 @@ str_wagons_Es_openwagon             :Vagón abierto Es
 str_wagons_Eass_openwagon           :Vagón abierto Eass
 str_wagons_gen0hopper               :Vagón tolva pequeño
 str_wagons_Fccpps_selfdischarger    :Autodescarga Fccpps
+str_wagons_Tals_selfdischarger      :Autodescarga Tals
+str_wagons_Tads_selfdischarger      :Autodescarga Tads
 str_wagons_gen0stakewagon           :Vagón de estacas pequeño
 str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)

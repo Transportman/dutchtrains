@@ -156,6 +156,7 @@ str_cargo_subtype_overnightexpress  : > Overnight Express livreja
 str_cargo_subtype_prototype         : > Prototip livreja
 str_cargo_subtype_randstadrail      : > RandstadRail livreja
 str_cargo_subtype_renewal           : > Renewal livreja
+str_cargo_subtype_rnet              :> R-net livreja
 str_cargo_subtype_ns_sprinter           :> NS Sprinter livreja
 str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (prosinac 22, 1993 - danas)
 str_cargo_subtype_strandsprinter_beachballs : > "Strandsprinter" livreja sa loptama za plažu
@@ -517,6 +518,8 @@ str_purchase_axl_spc            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BL
 str_purchase_axl_ltm            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{COMMA} dan{P "" a a}
 str_purchase_axl_ltm_spc        :{BLACK}Osovinska težina: {YELLOW}{0:STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{2:COMMA} dan{P "" a a}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}Dužina: {YELLOW}{STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{COMMA} dan{P "" a a}
+str_purchase_svc_axl_len_ltm_spc :{BLACK}Usluga: {YELLOW}{0:STRING}{}{BLACK}Osovinska težina: {YELLOW}{1:STRING}{}{BLACK}Dužina: {YELLOW}{2:STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{4:COMMA} dan{P "" a a}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_ltm_spc    :{BLACK}Usluga: {YELLOW}{0:STRING}{}{BLACK}Osovinska težina: {YELLOW}{1:STRING}{}{BLACK}Vrijeme ukrcaja: {YELLOW}{3:COMMA} dan{P "" a a}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :putnički prijevoz
 str_purchase_svc_lp         :lokalni putnički prijevoz
