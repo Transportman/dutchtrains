@@ -254,6 +254,7 @@ str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS9           :NS 700 (Vapor)
 str_steam_SS517         :NS 6900 "Bello" (Vapor)
 str_steam_SS651         :NS 8100 (Vapor)
+str_steam_SS785         :NS 3700 "Jumbo" (Vapor)
 str_steam_SS785_t       :NS 3700 "Jumbo" (Vapor)
 str_steam_NS3850        :NS 3850 (Vapor)
 str_steam_NS3900        :NS 3900 (Vapor)
@@ -404,6 +405,7 @@ str_wagons_gen0stakewagon           :Vagón de estacas pequeño
 str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
+str_wagons_gen0tanker               :Vagón cisterna pequeño
 str_wagons_gen2_tanker              :Vagón cisterna
 str_wagons_Uh_tanker                :Vagón cisterna Uh
 str_wagons_gen6_tanker              :Vagón cisterna grande
