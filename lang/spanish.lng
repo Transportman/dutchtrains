@@ -51,6 +51,7 @@ STR_PARAM_LOADING_SPEED_FAST        :Rápida
 str_cargo_subtype_auto              :Librea dependiente del año
 str_cargo_subtype_purchase          :Librea del año de construcción
 str_cargo_subtype_random            :Librea aleatoria
+str_cargo_subtype_matching          :Librea coincidente con la locomotora
 
 str_cargo_subtype_bordeaux          :Librea burdeos
 str_cargo_subtype_bordeaux_white            :Librea burdeos, con blanco
@@ -74,7 +75,8 @@ str_cargo_subtype_brown             :Librea Marrón
 str_cargo_subtype_brown_yellowfront :Librea Marrón, con frontal amarillo
 str_cargo_subtype_brown_other       :Librea marrón (alternativa)
 str_cargo_subtype_brown_light       :Librea Marrón claro
-str_cargo_subtype_brown_dark        :Librea Marrón oscuro
+str_cargo_subtype_brown_dark        :Librea marrón oscuro
+str_cargo_subtype_brown_greenish    :Librea marrón verdoso
 str_cargo_subtype_brown_reddish     :Librea marrón rojizo
 str_cargo_subtype_green             :Librea verde
 str_cargo_subtype_green_lightroof   :Librea verde, con techo claro
@@ -229,8 +231,8 @@ str_cargo_subtype_Veolia_white_red  :Librea Veolia (blanco/rojo)
 str_cargo_subtype_Veolia_black      :Librea Veolia (negro)
 str_cargo_subtype_VOSlogistics      :Librea VOS Logistics
 
-str_cargo_subtype_brown_cows        :Librea Marrón (Vacas)
-str_cargo_subtype_brown_pigs        :Librea Marrón (Cerdos)
+str_cargo_subtype_brown_cows        :Librea marrón (Vacas)
+str_cargo_subtype_brown_pigs        :Librea marrón (Cerdos)
 str_cargo_subtype_grey_cows         :Librea gris (Vacas)
 str_cargo_subtype_grey_pigs         :Librea gris (Cerdos)
 
