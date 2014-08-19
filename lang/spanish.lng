@@ -151,6 +151,7 @@ str_cargo_subtype_ovchip            :Librea OV Chipkaart
 str_cargo_subtype_overnightexpress  :Librea Overnight Express
 str_cargo_subtype_prototype         :Librea prototipo
 str_cargo_subtype_randstadrail      :Librea RandstadRail
+str_cargo_subtype_rnet              :Librea R-net
 str_cargo_subtype_ns_sprinter           :Librea NS Sprinter
 str_cargo_subtype_sr10              :Librea Sr10 Royal ICR  (22 Diciembre 1993 - Actualidad)
 str_cargo_subtype_strandsprinter_beachballs :Librea "Strandsprinter", con pelotas de playa
@@ -500,6 +501,7 @@ str_purchase_svc_s          :maniobras
 str_purchase_svc_slf        :maniobras o carga ligera
 str_purchase_svc_m          :correo
 str_purchase_svc_M          :metro
+str_purchase_svc_x          :ejecutivo
 
 str_purchase_len_1_04       :1 unidad (0.4)
 str_purchase_len_1_05       :1 unidad (0.5)
