@@ -105,6 +105,7 @@ str_cargo_subtype_silver_green      :Librea plata/verde
 str_cargo_subtype_silver_red        :Librea roja/plata
 str_cargo_subtype_turquoise         :Librea turquesa
 str_cargo_subtype_yellow            :Librea amarilla
+str_cargo_subtype_yellow_blue       :Librea amarilla, con publicidad azul
 str_cargo_subtype_yellow_blue_ic    :Librea interurbana azul/amarilla
 str_cargo_subtype_yellow_red        :Librea roja/amarilla
 str_cargo_subtype_white             :Librea blanca
@@ -304,7 +305,7 @@ str_electric_NS1300     :NS 1300 (eléctrico)
 str_electric_NS1500     :NS 1500 (Eléctrico)
 str_electric_NS1600     :NS 1600/1800 (Eléctrico)
 str_electric_NS1700     :NS 1700 (Eléctrico)
-str_electric_NID_t      :New Intercity Doubledecker (Eléctrico)
+str_electric_NID_t      :New InterCity Doubledecker (Eléctrico)
 str_electric_mDDM       :mDDM (Eléctrico)
 str_electric_NS1600P    :NS 1600P (Eléctrico)
 str_electric_HLE11      :NMBS HLE 11 (Eléctrico)
@@ -412,6 +413,7 @@ str_wagons_gen0tanker               :Vagón cisterna pequeño
 str_wagons_gen2_tanker              :Vagón cisterna
 str_wagons_Uh_tanker                :Vagón cisterna Uh
 str_wagons_gen6_tanker              :Vagón cisterna grande
+str_wagons_gen3_livestock           :Vagón de ganado medio
 str_wagons_gen6_livestock           :Vagón de ganado grande
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
@@ -552,6 +554,7 @@ str_purchase_spc_electric_gen9_HS002_no_track :Locomotora multisistema.{}Fictici
 
 
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
+str_purchase_spc_emu_V250   :EMU Multisistema, {YELLOW}+83% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 
 str_purchase_emu_ICE3M_no_track :EMU Multisistema.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_V250_no_track :EMU Multisistema.
