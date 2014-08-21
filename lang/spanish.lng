@@ -394,7 +394,8 @@ str_emu_V200E6                  :V200-E6 (Eléctrico)
 str_emu_V200E8                  :V200-E8 (Eléctrico)
 
 #wagons
-str_wagons_gen2_boxcar              :Vagón de mercancías
+str_wagons_gen0boxcar               :Vagón cerrado pequeño
+str_wagons_gen2_boxcar              :Vagón cerrado
 str_wagons_Habbiins_goodswagon      :Vagón de mercancías Habbiins
 str_wagons_gen0openwagonsmall       :Vagón abierto pequeño
 str_wagons_gen2_openwagon           :Vagón abierto medio
@@ -442,6 +443,7 @@ str_coaches_Avmz        :Vagón Avmz
 str_coaches_ICL         :Vagón ICL
 str_coaches_M2          :Vagón NMBS M2
 str_coaches_K4          :Vagón NMBS K4
+str_coaches_DDAR        :Vagón de dos pisos DDM/NID
 str_coaches_PlanN       :Coche cama Plan N
 str_coaches_Couchette   :Coche cama Couchette Bcm
 str_coaches_Citynightline   :Coche cama CityNightLine
@@ -552,6 +554,7 @@ str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
 str_purchase_spc_electric_gen9_HS002_no_track :Locomotora multisistema.{}Ficticia.
 
+str_purchase_dmu_omBC1901   :Comprado en/desde 1929: {YELLOW}peso +41%, potencia +233%, velocidad +7%, costes de funcionamiento +23%.
 
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
 str_purchase_spc_emu_V250   :EMU Multisistema, {YELLOW}+83% de potencia {BLACK}sobre vías electrificadas de 25 kV.
