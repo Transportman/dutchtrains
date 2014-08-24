@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_wagons_Fccpps_selfdischarger) {
         
         introduction_date: date(1925,1,1);
         model_life: 158;
-        retire_early: 83
+        retire_early: 83;
         vehicle_life: 75;
         loading_speed: (param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 10 : 5;
         //                                          ^ slow                      fast ^   ^ medium

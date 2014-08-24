@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_emu_V250) {
         
         introduction_date: date(2012,1,1);
         model_life: 27;
-        retire_early: 23
+        retire_early: 23;
         vehicle_life: 15;
         loading_speed: (param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 64 : 32;
         //                                          ^ slow                      fast ^   ^ medium
