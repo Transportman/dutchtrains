@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_coaches_NCS_B_119) {
         name: string(str_coaches_NCS_B_119);
         
         introduction_date: date(1904,1,1);
-        model_life: 75;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 104;
+        retire_early: 56;
+        vehicle_life: 48;
         loading_speed: (param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 16 : 8;
         //                                          ^ slow                      fast ^    ^ medium
         cost_factor: 75;

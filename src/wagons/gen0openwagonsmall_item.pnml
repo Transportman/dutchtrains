@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_wagons_gen0openwagonsmall) {
         name: string(str_wagons_gen0openwagonsmall);
         
         introduction_date: date(1820,1,1);
-        model_life: 102;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 158;
+        retire_early: 83;
+        vehicle_life: 75;
         loading_speed: (param_loading_speed == 0) ? 2 : (param_loading_speed == 2) ? 6 : 3;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 15;

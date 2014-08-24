@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_emu_Mat36EL2) {
         name: string(str_emu_Mat36EL2);
         
         introduction_date: date(1937,1,1);
-        model_life: 31;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 64;
+        retire_early: 36;
+        vehicle_life: 28;
         loading_speed: (param_loading_speed == 0) ? 14 : (param_loading_speed == 2) ? 56 : 28;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 52;

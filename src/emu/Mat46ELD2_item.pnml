@@ -24,9 +24,9 @@ item(FEAT_TRAINS, item_emu_Mat46ELD2) {
         name: string(str_emu_Mat46ELD2);
         
         introduction_date: date(1949,1,1);
-        model_life: 61;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 76;
+        retire_early: 42;
+        vehicle_life: 34;
         loading_speed: (param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 48 : 24;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 51;

@@ -24,9 +24,9 @@ item(FEAT_TRAINS, item_emu_Mat64PlanT) {
         name: string(str_emu_Mat64PlanT);
         
         introduction_date: date(1964,1,1);
-        model_life: 73;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 100;
+        retire_early: 54;
+        vehicle_life: 46;
         loading_speed: (param_loading_speed == 0) ? 32 : (param_loading_speed == 2) ? 128 : 64;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 89;

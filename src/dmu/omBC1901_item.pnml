@@ -24,9 +24,9 @@ item(FEAT_TRAINS, item_dmu_omBC1901) {
         name: string(str_dmu_omBC1901);
         
         introduction_date: date(1923,1,1);
-        model_life: 55;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 52;
+        retire_early: 30;
+        vehicle_life: 22;
         loading_speed: (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 32 : 16;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 24;

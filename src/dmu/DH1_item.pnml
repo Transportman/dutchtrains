@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_dmu_DH1) {
         name: string(str_dmu_DH1);
         
         introduction_date: date(1983,1,1);
-        model_life: 52;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 58;
+        retire_early: 33;
+        vehicle_life: 25;
         loading_speed: (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 32 : 16;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 27;

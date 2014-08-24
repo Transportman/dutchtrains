@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_metro_GVB_S1S2) {
         
         introduction_date: date(1990,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 31;
         loading_speed: (param_loading_speed == 0) ? 24 : (param_loading_speed == 2) ? 96 : 48;
         //                                          ^ slow                       fast ^    ^ medium
         cost_factor: 39;

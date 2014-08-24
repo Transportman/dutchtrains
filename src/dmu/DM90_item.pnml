@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_dmu_DM90) {
         
         introduction_date: date(1996,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 30;
         loading_speed: (param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 64 : 32;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 44;

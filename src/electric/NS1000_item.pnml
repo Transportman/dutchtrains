@@ -15,9 +15,9 @@ item(FEAT_TRAINS, item_electric_NS1000) {
         name: string(str_electric_NS1000);
         
         introduction_date: date(1948,1,1);
-        model_life: 61;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 76;
+        retire_early: 42;
+        vehicle_life: 34;
         loading_speed: 5;
         cost_factor: 59;
         running_cost_factor: 45;

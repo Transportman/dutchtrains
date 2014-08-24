@@ -16,7 +16,7 @@ item(FEAT_TRAINS, item_electric_NS1700) {
         
         introduction_date: date(1991,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 31;
         loading_speed: 5;
         cost_factor: 63;
         running_cost_factor: 57;

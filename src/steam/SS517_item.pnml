@@ -15,9 +15,9 @@ item(FEAT_TRAINS, item_steam_SS517) {
         name: string(str_steam_SS517);
         
         introduction_date: date(1884,1,1);
-        model_life: 80;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 114;
+        retire_early: 61;
+        vehicle_life: 53;
         loading_speed: 5;
         cost_factor: 10;
         running_cost_factor: 11;

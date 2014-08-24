@@ -25,7 +25,7 @@ item(FEAT_TRAINS, item_dmu_V200D6) {
         
         introduction_date: date(2025,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 30;
         loading_speed: (param_loading_speed == 0) ? 48 : (param_loading_speed == 2) ? 192 : 96;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 79;

@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_emu_SM90) {
         name: string(str_emu_SM90);
         
         introduction_date: date(1994,1,1);
-        model_life: 29;
-        retire_early: 11;
-        vehicle_life: 11;
+        model_life: 34;
+        retire_early: 23;
+        vehicle_life: 15;
         loading_speed: (param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 64 : 32;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 58;

@@ -23,9 +23,9 @@ item(FEAT_TRAINS, item_electric_mDDM) {
         name: string(str_electric_mDDM);
         
         introduction_date: date(1997,1,1);
-        model_life: 41;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 37;
+        retire_early: 23;
+        vehicle_life: 15;
         loading_speed: (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 32 : 16;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 48;

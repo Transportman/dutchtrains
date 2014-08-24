@@ -15,9 +15,9 @@ item(FEAT_TRAINS, item_diesel_NS100) {
         name: string(str_diesel_NS100);
         
         introduction_date: date(1927,1,1);
-        model_life: 48;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 50;
+        retire_early: 29;
+        vehicle_life: 21;
         loading_speed: 5;
         cost_factor: 15;
         running_cost_factor: 5;

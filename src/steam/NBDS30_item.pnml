@@ -15,9 +15,9 @@ item(FEAT_TRAINS, item_steam_NBDS30) {
         name: string(str_steam_NBDS30);
         
         introduction_date: date(1908,1,1);
-        model_life: 65;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 84;
+        retire_early: 46;
+        vehicle_life: 38;
         loading_speed: 5;
         cost_factor: 28;
         running_cost_factor: 23;

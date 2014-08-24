@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_emu_gen9_HST) {
         
         introduction_date: date(2020,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 30;
         loading_speed: (param_loading_speed == 0) ? 32 : (param_loading_speed == 2) ? 128 : 64;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 178;

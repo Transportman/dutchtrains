@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_coaches_HSM_C_755) {
         name: string(str_coaches_HSM_C_755);
         
         introduction_date: date(1907,1,1);
-        model_life: 72;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 98;
+        retire_early: 53;
+        vehicle_life: 45;
         loading_speed: (param_loading_speed == 0) ? 22 : (param_loading_speed == 2) ? 88 : 44;
         //                                          ^ slow                       fast ^    ^ medium
         cost_factor: 126;

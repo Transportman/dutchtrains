@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_wagons_Habbiins_goodswagon) {
         
         introduction_date: date(1975,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 37;
         loading_speed: (param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 12 : 6;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 62;

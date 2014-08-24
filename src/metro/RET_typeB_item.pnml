@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_metro_RET_typeB) {
         
         introduction_date: date(1998,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 30;
         loading_speed: (param_loading_speed == 0) ? 24 : (param_loading_speed == 2) ? 96 : 48;
         //                                          ^ slow                       fast ^    ^ medium
         cost_factor: 39;

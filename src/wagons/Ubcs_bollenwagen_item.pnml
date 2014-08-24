@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_wagons_Ubcs_bollenwagen) {
         name: string(str_wagons_Ubcs_bollenwagen);
         
         introduction_date: date(1940,1,1);
-        model_life: 74;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 102;
+        retire_early: 55;
+        vehicle_life: 47;
         loading_speed: (param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 10 : 2;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 34;

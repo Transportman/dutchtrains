@@ -22,8 +22,8 @@ item(FEAT_TRAINS, item_dmu_DE4) {
         name: string(str_dmu_DE4);
         
         introduction_date: date(1957,1,1);
-        model_life: 47;
-        retire_early: 20;
+        model_life: 48;
+        retire_early: 28;
         vehicle_life: 20;
         loading_speed: (param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 24 : 12;
         //                                          ^ slow                      fast ^   ^ medium

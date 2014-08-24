@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_emu_SLTVI) {
         
         introduction_date: date(2009,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 30;
         loading_speed: (param_loading_speed == 0) ? 40 : (param_loading_speed == 2) ? 160 : 80;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 98;

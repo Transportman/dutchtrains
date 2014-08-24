@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_emu_mP) {
         name: string(str_emu_mP);
         
         introduction_date: date(1965,1,1);
-        model_life: 58;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 70;
+        retire_early: 39;
+        vehicle_life: 31;
         loading_speed: (param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 24 : 12;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 37;

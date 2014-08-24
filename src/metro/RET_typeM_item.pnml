@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_metro_RET_typeM) {
         name: string(str_metro_RET_typeM);
         
         introduction_date: date(1968,1,1);
-        model_life: 61;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 76;
+        retire_early: 42;
+        vehicle_life: 34;
         loading_speed: (param_loading_speed == 0) ? 20 : (param_loading_speed == 2) ? 80 : 40;
         //                                          ^ slow                       fast ^    ^ medium
         cost_factor: 37;

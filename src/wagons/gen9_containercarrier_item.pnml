@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_wagons_gen9_containercarrier) {
         
         introduction_date: date(2025,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 37;
         loading_speed: (param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 14 : 7;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 49;

@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_emu_ICM3) {
         
         introduction_date: date(1977,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 36;
         loading_speed: (param_loading_speed == 0) ? 22 : (param_loading_speed == 2) ? 88 : 44;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 76;

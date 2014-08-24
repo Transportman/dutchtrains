@@ -16,7 +16,7 @@ item(FEAT_TRAINS, item_electric_gen9_HS001) {
         
         introduction_date: date(2028,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 20;
+        vehicle_life: 30;
         loading_speed: 5;
         cost_factor: 72;
         running_cost_factor: 78;

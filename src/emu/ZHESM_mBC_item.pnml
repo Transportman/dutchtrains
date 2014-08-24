@@ -24,9 +24,9 @@ item(FEAT_TRAINS, item_emu_ZHESM_mBC) {
         name: string(str_emu_ZHESM_mBC);
         
         introduction_date: date(1908,1,1);
-        model_life: 76;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 106;
+        retire_early: 57;
+        vehicle_life: 49;
         loading_speed: (param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 16 : 8;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 39;

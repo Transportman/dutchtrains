@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_coaches_Bolkoprijtuigen) {
         name: string(str_coaches_Bolkoprijtuigen);
         
         introduction_date: date(1935,1,1);
-        model_life: 65;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 84;
+        retire_early: 46;
+        vehicle_life: 38;
         loading_speed: (param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 16 : 8;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 112;

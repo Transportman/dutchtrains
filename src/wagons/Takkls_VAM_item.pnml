@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_wagons_Takkls_VAM) {
         name: string(str_wagons_Takkls_VAM);
         
         introduction_date: date(1975,1,1);
-        model_life: 52;
-        vehicle_life: 20;
-		retire_early: 20;
+        model_life: 58;
+        vehicle_life: 33;
+		retire_early: 25;
         loading_speed: (param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 12 : 6;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 66;

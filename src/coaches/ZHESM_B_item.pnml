@@ -23,9 +23,9 @@ item(FEAT_TRAINS, item_coaches_ZHESM_B) {
         name: string(str_coaches_ZHESM_B);
         
         introduction_date: date(1906,1,1);
-        model_life: 76;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 110;
+        retire_early: 59;
+        vehicle_life: 51;
         loading_speed: (param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 16 : 8;
         //                                          ^ slow                      fast ^    ^ medium
         cost_factor: 94;

@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_coaches_PlanC) {
         name: string(str_coaches_PlanC);
         
         introduction_date: date(1952,1,1);
-        model_life: 55;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 64;
+        retire_early: 36;
+        vehicle_life: 28;
         loading_speed: (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 32 : 16;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 82;

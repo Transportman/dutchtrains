@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_coaches_RTM_BD_438) {
         name: string(str_coaches_RTM_BD_438);
         
         introduction_date: date(1898,1,1);
-        model_life: 69;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 92;
+        retire_early: 50;
+        vehicle_life: 42;
         loading_speed: (param_loading_speed == 0) ? 2 : (param_loading_speed == 2) ? 8 : 4;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 62;

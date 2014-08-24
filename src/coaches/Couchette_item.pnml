@@ -22,8 +22,8 @@ item(FEAT_TRAINS, item_coaches_Couchette) {
         name: string(str_coaches_Couchette);
         
         introduction_date: date(1993,1,1);
-        model_life: 43;
-        retire_early: 18;
+        model_life: 44;
+        retire_early: 26;
         vehicle_life: 18;
         loading_speed: (param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 16 : 8;
         //                                          ^ slow                      fast ^   ^ medium

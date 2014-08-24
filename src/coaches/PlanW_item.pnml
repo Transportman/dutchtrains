@@ -23,9 +23,9 @@ item(FEAT_TRAINS, item_coaches_PlanW) {
         name: string(str_coaches_PlanW);
         
         introduction_date: date(1966,1,1);
-        model_life: 64;
-        retire_early: 20;
-        vehicle_life: 20;
+        model_life: 82;
+        retire_early: 45;
+        vehicle_life: 37;
         loading_speed: (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 32 : 16;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 112;

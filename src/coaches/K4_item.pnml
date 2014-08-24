@@ -22,9 +22,9 @@ item(FEAT_TRAINS, item_coaches_K4) {
         name: string(str_coaches_K4);
         
         introduction_date: date(2000,1,1);
-        model_life: 11;
-        retire_early: 2;
-        vehicle_life: 2;
+        model_life: 25;
+        retire_early: 23;
+        vehicle_life: 15;
         loading_speed: (param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 16 : 8;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 110;
