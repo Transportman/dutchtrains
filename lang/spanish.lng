@@ -417,6 +417,7 @@ str_wagons_Uh_tanker                :Vagón cisterna Uh
 str_wagons_gen6_tanker              :Vagón cisterna grande
 str_wagons_gen3_livestock           :Vagón de ganado medio
 str_wagons_gen6_livestock           :Vagón de ganado grande
+str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 
@@ -445,6 +446,7 @@ str_coaches_ICL         :Vagón ICL
 str_coaches_M2          :Vagón NMBS M2
 str_coaches_K4          :Vagón NMBS K4
 str_coaches_DDAR        :Vagón de dos pisos DDM/NID
+str_coaches_gen9_IC_DD  :Vagón de dos pisos HS-DD
 str_coaches_PlanN       :Coche cama Plan N
 str_coaches_Couchette   :Coche cama Couchette Bcm
 str_coaches_Citynightline   :Coche cama CityNightLine
