@@ -320,6 +320,7 @@ str_electric_gen9_HS002 :HS-2 (Eléctrico)
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diésel)
 str_dmu_omC901_t        :omC 901-916 "Uncle Cees" (Diésel)
 str_dmu_omC1921         :omC 1921-1931 (Diésel)
+str_dmu_omBC1901        :omBC 1901-1910 (Diésel)
 str_dmu_omBC2901        :omBC 2901-2908 (Diésel)
 str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diésel)
 str_dmu_Mat34_t         :Mat '34 "Dieselthree" (Diésel)
@@ -487,6 +488,7 @@ str_purchase_svc_axl_spc        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso 
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 
+str_purchase_axl_ltm            :{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
 str_purchase_svc_axl_len_ltm    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
 
 str_purchase_svc_p          :pasajeros

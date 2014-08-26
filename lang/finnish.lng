@@ -154,6 +154,7 @@ str_cargo_subtype_overnightexpress  :> Overnight Express -väritys
 str_cargo_subtype_prototype         :> Prototyyppiväritys
 str_cargo_subtype_randstadrail      :> RandstadRail-väritys
 str_cargo_subtype_renewal           :> Saneerausväritys
+str_cargo_subtype_rnet              :> R-net -väritys
 str_cargo_subtype_ns_sprinter           :> NS Sprinter -väritys
 str_cargo_subtype_sr10              :> Sr10 Royal ICR -väritys (22. joulukuuta 1993 - )
 str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter"-väritys rantapalloilla
@@ -515,6 +516,8 @@ str_purchase_axl_spc            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}{S
 str_purchase_axl_ltm            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
 str_purchase_axl_ltm_spc        :{BLACK}Akselipaino: {YELLOW}{0:STRING}{}BLACK}Lastausaika: {YELLOW}{2:COMMA} päivä{P 2 "" ä}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Pituus: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
+str_purchase_svc_axl_len_ltm_spc :{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Pituus: {YELLOW}{2:STRING}{}{BLACK}Lastausaika: {YELLOW}{4:COMMA} päivä{P "" ä}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_ltm_spc    :{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Lastausaika: {YELLOW}{3:COMMA} päivä{P "" ä}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :matkustajaliikenne
 str_purchase_svc_lp         :paikallismatkustajaliikenne
