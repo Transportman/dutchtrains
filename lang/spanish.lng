@@ -555,6 +555,8 @@ str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8.
 str_purchase_electric_NS1500 :Anteriormente conocido como: {SILVER} BR Class EM2.
+str_purchase_electric_HLE11 :Para usar con el Vagón ICR para su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
+str_purchase_electric_HLE25 :Para usar con el Vagón Plan W para su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
 str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
