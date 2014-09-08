@@ -421,6 +421,7 @@ str_wagons_gen6_livestock           :Vagón de ganado grande
 str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
+str_wagons_gen7_superheavy_flatcar  :Vagón plano superpesado
 
 #coaches
 str_coaches_HIJSM_4_8_10 :Vagón HSM 1
