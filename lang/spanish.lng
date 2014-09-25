@@ -277,6 +277,7 @@ str_steam_NS6300_t      :NS 6300 "The Headsman" (Vapor)
 
 #diesel
 str_diesel_NS100        :NS 100 "Oersik" (Gasolina)
+str_diesel_NS100_t      :NS 100 "Buck" (Gasolina)
 str_diesel_NS200        :NS 200 "Sik" (Diésel)
 str_diesel_NS200_t      :NS 200 "Billy" (Diésel)
 str_diesel_NS400        :NS 400 "Grote Sik" (Diésel)
@@ -575,3 +576,4 @@ str_purchase_spc_emu_V250_no_track :EMU Multisistema.
 str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Ficticia.
 str_purchase_emu_CargoDD_no_track :EMU Multisistema.{}Ficticia.
 
+str_purchase_coaches_PlanW  :Para usar con las locomotoras eléctricas NS en servicio nacional y el NMBS HLE 25.5 en su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
