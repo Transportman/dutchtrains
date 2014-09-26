@@ -281,6 +281,7 @@ str_diesel_NS100_t      :NS 100 "Buck" (Gasolina)
 str_diesel_NS200        :NS 200 "Sik" (Diésel)
 str_diesel_NS200_t      :NS 200 "Billy" (Diésel)
 str_diesel_NS400        :NS 400 "Grote Sik" (Diésel)
+str_diesel_NS400_t      :NS 400 "Big Billy" (Diésel)
 str_diesel_NS450        :NS 450 (Diésel)
 str_diesel_NS600        :NS 600 "Bakkie" (Diésel)
 str_diesel_NS600_t      :NS 600 "Boxie" (Diésel)
@@ -494,6 +495,7 @@ str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{
 
 str_purchase_axl_ltm            :{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
 str_purchase_svc_axl_len_ltm    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
+str_purchase_svc_axl_len_ltm_spc :{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Peso por Eje: {YELLOW}{1:STRING}{}{BLACK}Longitud: {YELLOW}{2:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{4:COMMA} día{P "" s}{}{BLACK}{3:STRING}
 
 str_purchase_svc_p          :pasajeros
 str_purchase_svc_lp         :pasajeros local
