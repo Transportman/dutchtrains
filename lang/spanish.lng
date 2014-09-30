@@ -240,6 +240,7 @@ str_cargo_subtype_brown_pigs        :Librea marrón (Cerdos)
 str_cargo_subtype_grey_cows         :Librea gris (Vacas)
 str_cargo_subtype_grey_pigs         :Librea gris (Cerdos)
 
+str_cargo_subtype_transformer :: > Librea de carga Transformer
 str_cargo_subtype_house             :Librea Casa del transporte
 str_cargo_subtype_train             :Librea tren de carga
 
@@ -425,6 +426,7 @@ str_wagons_gen6_livestock           :Vagón de ganado grande
 str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
+str_wagons_gen7_containercarrier    :Transportador de Contenedores
 str_wagons_gen7_superheavy_flatcar  :Vagón plano superpesado
 
 #coaches
