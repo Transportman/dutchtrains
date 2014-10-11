@@ -397,6 +397,7 @@ str_emu_GTW28           :GTW 2/8 (Eléctrico)
 str_emu_Protos          :Protos (Eléctrico)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Eléctrico)
 str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Eléctrico)
+str_emu_Future_DD               :Future DD (Eléctrico)
 str_emu_V200E6                  :V200-E6 (Eléctrico)
 str_emu_V200E8                  :V200-E8 (Eléctrico)
 
@@ -506,6 +507,7 @@ str_purchase_svc_ip         :pasajeros intercity
 str_purchase_svc_hp         :pasajeros de alta velocidad
 str_purchase_svc_elp        :pasajeros local y express
 str_purchase_svc_eip        :pasajeros express e InterCity
+str_purchase_svc_eiphf      :pasajeros express e InterCity o carga pesada
 str_purchase_svc_iphf       :pasajeros InterCity o carga pesada
 str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
 str_purchase_svc_eplf       :pasajeros express o carga ligera
