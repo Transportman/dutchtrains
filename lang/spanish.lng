@@ -579,7 +579,9 @@ str_purchase_spc_emu_V250   :EMU Multisistema, {YELLOW}+83% de potencia {BLACK}s
 
 str_purchase_emu_ICE3M_no_track :EMU Multisistema.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_V250_no_track :EMU Multisistema.
+str_purchase_spc_emu_gen9_HST_no_track :EMU Multisistema.{}Ficticia.
 str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Ficticia.
 str_purchase_emu_CargoDD_no_track :EMU Multisistema.{}Ficticia.
 
+str_purchase_coaches_DDAR   :Para usar con el vagón motorizado mDDM o el NID.
 str_purchase_coaches_PlanW  :Para usar con las locomotoras eléctricas NS en servicio nacional y el NMBS HLE 25.5 en su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
