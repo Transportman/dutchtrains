@@ -544,6 +544,7 @@ str_purchase_axl_C          :Medio (clase C)
 str_purchase_axl_D          :Alto (clase D)
 str_purchase_axl_E          :Muy alto (clase E)
 
+str_purchase_spc_el_eld     :Con compartimento de equipaje reformable a cargas express o pasajeros.
 str_purchase_spc_fictional  :Ficticio.
 
 str_purchase_steam_NCS21    :Anteriormente conocido como: {SILVER} NCS 21-30, después SS 481-490.
