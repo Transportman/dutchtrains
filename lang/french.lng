@@ -1,0 +1,410 @@
+##grflangid 0x03
+##plural 2
+##gender m m2 f
+
+#Main grf title and description
+STR_GRF_NAME                    :{TITLE}
+STR_GRF_DESCRIPTION             :{SILVER}Trains Hollandais pour OpenTTD{}{BLACK}Premier véhicule{NBSP}: 1839.{}{}(c)Dutch Trainset Team{}Licence: GPLv2 ou plus.{}Voir le readme pour pour plus de détails.
+STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
+
+#parameter strings
+STR_PARAM_VEHICLE_NAMES             :Traduire les surnoms en français
+
+STR_PARAM_DISABLE_ORIGINAL          :Conserver le matériel roulant original
+STR_PARAM_DISABLE_ORIGINAL_DESC     :Par défaut, ce Set désactive tout le matériel roulant original (rail, monorail, maglev). Ce paramètre permet d'en conserver. Si un autre NewGRF désactive aussi le matériel roulant original, ce paramètre ne le réactivera pas.
+STR_PARAM_DISABLE_ORIGINAL_000      :aucun (par défaut)
+STR_PARAM_DISABLE_ORIGINAL_100      :rail uniquement
+STR_PARAM_DISABLE_ORIGINAL_110      :rail et monorail
+STR_PARAM_DISABLE_ORIGINAL_001      :maglev seulement
+STR_PARAM_DISABLE_ORIGINAL_101      :rail et maglev
+STR_PARAM_DISABLE_ORIGINAL_011      :monorail et maglev
+
+STR_PARAM_PURCHASE_COST_DESC        :Utiliser ce réglage pour augmenter ou diminuer les prix d'achat des véhicules de ce Set. Les véhicules par défaut ne sont pas affectés et risquent d'être déséquilibrés.
+STR_PARAM_RUNNING_COST_DESC         :Utiliser ce réglage pour augmenter ou diminuer les coûts d'entretien des véhicules de ce Set. Les véhicules par défaut ne sont pas affectés et risquent d'être déséquilibrés.
+
+STR_PARAM_DIVIDE_2                  :1/2
+STR_PARAM_NORMAL                    :1 (par défaut)
+STR_PARAM_TIMES_2                   :2
+STR_PARAM_TIMES_4                   :4
+STR_PARAM_TIMES_8                   :8
+STR_PARAM_TIMES_16                  :16
+
+STR_PARAM_TRACK_POWER                           :Puissance des engins multi-tension
+STR_PARAM_TRACK_POWER_DESC                      :Par défaut, la puissance des trains multi-tension dépend de la voie qu'ils utilisent (quand des types de voies compatibles sont chargés). Ce paramètre peut être employé pour désactiver cette fonctionnalité et toujours avoir la puissance maximale.
+STR_PARAM_TRACK_POWER_OFF                       :Toujours la plus forte puissance
+STR_PARAM_TRACK_POWER_ON                        :Dépendante des voies quand un Set compatible est présent (par défaut)
+
+STR_PARAM_LOADING_SPEED_DESC        :Vitesse à laquelle trains et wagons sont chargés.
+STR_PARAM_LOADING_SPEED_MEDIUM      :Moyenne (par défaut)
+STR_PARAM_LOADING_SPEED_FAST        :Rapide
+
+#cargo subtype livery strings
+str_cargo_subtype_auto              :> Livrée changeante au fil du temps
+str_cargo_subtype_random            :> Livrée aléatoire
+
+str_cargo_subtype_bordeaux          :> Livrée bordeaux
+str_cargo_subtype_bordeaux_white_blue       :> Livrée bordeaux avec blanc/bleu
+str_cargo_subtype_bordeaux_white_yellow     :> Livrée bordeaux avec blanc/jaune
+str_cargo_subtype_black             :> Livrée noire
+str_cargo_subtype_lighterblue       :> Livrée bleu un peu plus clair
+str_cargo_subtype_blue_red_silverroof       :> Livrée bleue avec bandes rouges et toit argenté
+str_cargo_subtype_blue_lightyellow  :> Livrée bleue avec bandes jaune clair
+str_cargo_subtype_blue_darkyellow   :> Livrée bleue avec bandes jaune foncé
+str_cargo_subtype_blue_white        :> Livrée bleu/blanc
+str_cargo_subtype_brown             :> Livrée marron
+str_cargo_subtype_brown_other       :> Autre livrée marron
+str_cargo_subtype_brown_dark        :> Livrée marron foncé
+str_cargo_subtype_brown_greenish    :> Livrée marron-vert
+str_cargo_subtype_brown_reddish     :> Livrée marron-rouge
+str_cargo_subtype_green_lightroof   :> Livrée verte avec toit clair
+str_cargo_subtype_green_moustache   :> Livrée verte avec moustache
+str_cargo_subtype_green_yellow      :> Livrée verte avec bandes jaunes
+str_cargo_subtype_green_yellow_blue :> Livrée verte avec bandes jaunes et bannières bleues
+str_cargo_subtype_grey              :> Livrée grise
+str_cargo_subtype_grey_dark         :> Livrée gris foncé
+str_cargo_subtype_grey_light        :> Livrée gris clair
+str_cargo_subtype_purple            :> Livrée pourpre
+str_cargo_subtype_red               :> Livrée rouge
+str_cargo_subtype_red_light         :> Livrée rouge clair
+str_cargo_subtype_red_yellow        :> Livrée rouge avec bandes jaunes
+str_cargo_subtype_red_yellow_blue   :> Livrée rouge avec bandes jaunes et bannières bleues
+str_cargo_subtype_olive_greyroof    :> Livrée olive avec toit noir
+str_cargo_subtype_salmon            :> Livrée saumon
+str_cargo_subtype_silver_red        :> Livrée argent/rouge
+str_cargo_subtype_turquoise         :> Livrée turquoise
+str_cargo_subtype_yellow            :> Livrée jaune
+str_cargo_subtype_yellow_blue_ic    :> Livrée InterCity jaune/bleu
+str_cargo_subtype_yellow_red        :> Livrée jaune/rouge
+str_cargo_subtype_white_blue        :> Livrée blanc/bleu
+str_cargo_subtype_white_yellow      :> Livrée blanc/jaune
+
+str_cargo_subtype_blue_crashnose    :> Livrée bleue (avec pare-choc)
+str_cargo_subtype_grey_crashnose    :> Livrée grise (avec pare-choc)
+str_cargo_subtype_accident_brown    :> Livrée marron (train-usine)
+str_cargo_subtype_accident_yellow   :> Livrée jaune (train-usine)
+str_cargo_subtype_Jules             :> "Jules"
+
+str_cargo_subtype_benelux_cab       :> Livrée Benelux (voiture-pilote)
+str_cargo_subtype_benelux_plandcab  :> Voiture-pilote Plan D
+str_cargo_subtype_citypendel        :> Livrée Citypendel
+str_cargo_subtype_ddar              :> Livrée DDM-2/3
+str_cargo_subtype_ddar_cab          :> Livrée DDM-2/3 (voiture-pilote)
+str_cargo_subtype_ddm1              :> Livrée DDM-1
+str_cargo_subtype_ddm1_cab          :> Livrée DDM-1 (voiture-pilote)
+str_cargo_subtype_freedom           :> Livrée Freedom
+str_cargo_subtype_fyra_red          :> Livrée Fyra (rouge)
+str_cargo_subtype_fyra_white        :> Livrée Fyra (blanche)
+str_cargo_subtype_icplus            :> Livrée IC+ (28 mai 1995 - juin 2002)
+str_cargo_subtype_kinderboeken      :> Livrée 'Semaine du livre pour enfant'
+str_cargo_subtype_lll                           : > Lage Landen Lijn
+str_cargo_subtype_hispeed           :> Livrée NS Hispeed
+str_cargo_subtype_hispeed_cab       :> Livrée NS Hispeed (voiture-pilote)
+str_cargo_subtype_maashopper        :> Livrée Véolia blanc/rouge "Maashopper"
+str_cargo_subtype_ns_ic             :> Livrée NS InterCity
+str_cargo_subtype_ns_ic_cab         :> Livrée NS InterCity (voiture-pilote)
+str_cargo_subtype_olympic           :> Livrée olympique
+str_cargo_subtype_original          :> Livrée originale
+str_cargo_subtype_overnightexpress  :> Livrée 'express de nuit'
+str_cargo_subtype_randstadrail      :> Livrée RandstadRail
+str_cargo_subtype_rnet              :> Livrée R-net
+str_cargo_subtype_ns_sprinter           :> Livrée NS Sprinter
+str_cargo_subtype_sr10              :> Livrée Sr10 Royal ICR (22 déc. 1993 - présent)
+str_cargo_subtype_TGV                           :> Livrée Thalys
+str_cargo_subtype_TGV_PBKA          :> Livrée PBKA
+str_cargo_subtype_TGV_PBA           :> Livrée PBA
+str_cargo_subtype_valleilijn_yellow_blue    :> Livrée Valleilijn jaune/bleu
+str_cargo_subtype_valleilijn_blue_yellownose :> Livrée Valleilijn bleue avec nez jaune
+str_cargo_subtype_wadkikker         :> Livrée NoordNet "Wadkikker"
+str_cargo_subtype_klm                           :> Livrée KLM
+str_cargo_subtype_martinair                     :> Livrée Martinair
+str_cargo_subtype_aegon                         :> Livrée Aegon
+str_cargo_subtype_algemeendagblad1      :> Livrée Algemeen Dagblad 1
+str_cargo_subtype_algemeendagblad2      :> Livrée Algemeen Dagblad 2
+
+str_cargo_subtype_ACTS_blue_yellow  :> Livrée ACTS (bleu/jaune)
+str_cargo_subtype_Breng             :> LIvrée Breng
+str_cargo_subtype_DBSchenker_Crates     :> Livrée DB Schenker (caisses)
+str_cargo_subtype_DBSchenker_Containers :> Livrée DB Schenker (containers)
+str_cargo_subtype_ERS_Crates            :> Livrée ERS (caisses)
+str_cargo_subtype_HGK               :> Livrée HGK
+str_cargo_subtype_HSM               :> Livrée Hollandsche IJzeren Spoorweg-Maatschappij
+str_cargo_subtype_HUSA              :> Livrée HUSA
+str_cargo_subtype_HUSA_Crates           :> Livrée HUSA (caisses)
+str_cargo_subtype_HUSA_Containers       :> Livrée HUSA (containers)
+str_cargo_subtype_Locon             :> Livrée Locon
+str_cargo_subtype_NBDS              :> livrée Noord-Brabantsch-Duitsche Spoorweg-Maatschappij
+str_cargo_subtype_nedtrain          :> Livrée NedTrain
+str_cargo_subtype_NSCargo           :> Livrée NS Cargo
+str_cargo_subtype_NSCargo_Crates        :> Livrée NS Cargo (caisses)
+str_cargo_subtype_Rail4Chem_green   :> Livrée Rail4Chem (verte)
+str_cargo_subtype_Rail4Chem_red     :> Livrée Rail4Chem (rouge)
+str_cargo_subtype_Railion           :> Livrée Railion (rebrand)
+str_cargo_subtype_Railpro           :> Livrée Railpro
+str_cargo_subtype_rurtalbahn_black      :> Livrée Rurtalbahn (noire)
+str_cargo_subtype_staatsmijnen      :> Livrée Staatsmijnen
+str_cargo_subtype_SS                :> Livrée Staatsspoorwegen
+str_cargo_subtype_SS_NS             :> Livrée Staatsspoorwegen / NS
+str_cargo_subtype_Syntus            :> Livrée Syntus
+str_cargo_subtype_Twents            :> Livrée Twents
+str_cargo_subtype_Veolia            :> Livrée Véolia
+str_cargo_subtype_Veolia_velios     :> Livrée Véolia "Velios"
+str_cargo_subtype_Veolia_white_red  :> Livrée Véolia (blanc/rouge)
+str_cargo_subtype_VOSlogistics      :> Livrée VOS Logistics
+
+str_cargo_subtype_grey_cows         :> Livrée grise (bovins)
+str_cargo_subtype_grey_pigs         :> Livrée grise (cochons)
+
+str_cargo_subtype_house             :> Livrée House cargo
+str_cargo_subtype_tractor           :> Livrée Tractor cargo
+
+#steam
+str_steam_HSM126        :NS 1100 (Vapeur)
+str_steam_NCS21         :NS 1500 (Vapeur)
+str_steam_NCS41         :NS 7000 (Vapeur)
+str_steam_NRS11         :NRS 11-16 (Vapeur)
+str_steam_HSM1          :HSM 1-15, 26-30 (Vapeur)
+str_steam_HSM83         :NS 3100 (Vapeur)
+str_steam_HSM501        :NS 2100 "Blikken Tinus" (Vapeur)
+str_steam_HSM501_t      :NS Série 2100 "Tinus en tôle" (Vapeur)
+str_steam_HSM601        :NS 3200 (Vapeur)
+str_steam_SS517         :NS 6900 "Bello" (Vapeur)
+str_steam_SS651         :NS 8100 (Vapeur)
+str_steam_SS785         :NS 3700 "Jumbo" (Vapeur)
+str_steam_NS3900        :NS 3900 (Vapeur)
+str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Vapeur)
+str_steam_NCS71         :NS 3600 "Zeppelin" (Vapeur)
+str_steam_NS4700        :NS 4700 (Vapeur)
+str_steam_NS6200        :NS 6200 (Vapeur)
+str_steam_NS6300        :NS 6300 "De Beul" (Vapeur)
+str_steam_NS6300_t      :NS 6300 "Bourreau" (Vapeur)
+
+#diesel
+str_diesel_NS400        :NS 400 "Grote Sik" (Diesel)
+str_diesel_NS450        :NS 450 (Diesel)
+str_diesel_NS600        :NS 600 "Bakkie" (Diesel)
+str_diesel_NS600_t      :NS 600 "Boîte" (Diesel)
+str_diesel_NS2000       :NS 2000 (Diesel)
+str_diesel_NS2200       :NS 2200 (Diesel)
+str_diesel_NS2400       :NS 2400 (Diesel)
+str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diesel)
+str_diesel_NS2801_t     :NS 2801 "Mariette Éclopée" (Diesel)
+str_diesel_SM151        :NS 2900 (Diesel)
+str_diesel_NS6400       :NS 6400 (Diesel)
+str_diesel_ACTS6700     :ACTS 6700 (Diesel)
+str_diesel_Class66      :Class 66 (Diesel)
+str_diesel_G1206        :MaK G 1206 (Diesel)
+str_diesel_HLR77        :NMBS HLR 77 (Diesel)
+
+#electric
+str_electric_NS1100     :NS 1100 (Électrique)
+str_electric_NS1200     :NS 1200 (Électrique)
+str_electric_NS1300     :NS 1300 (Électrique)
+str_electric_NS1600     :NS 1600/1800 (Électrique)
+str_electric_NID_t      :Nouvel Intercity 2 niveaux (Électrique)
+str_electric_NS1600P    :NS 1600P (Électrique)
+str_electric_HLE11      :NMBS HLE 11 (Électrique)
+str_electric_HLE25      :NMBS HLE 25.5 (Électrique)
+str_electric_gen9_HS002 :HS-2 (Électrique)
+
+#dmu
+str_dmu_omBC1901        :omBC 1901-1910 (Diesel)
+str_dmu_omBC2901        :omBC 2901-2908 (Diesel)
+str_dmu_Mat34_t         :Mat '34 "Tridiesel" (Diesel)
+str_dmu_DE5             :DE5 "Dieselvijf" (Diesel)
+str_dmu_DE5_t           :DE5 "Pentadiesel" (Diesel)
+str_dmu_DE1             :DE1 Plan X "Blauwe Engel" (Diesel)
+str_dmu_DE1_t           :DE1 Plan X "Ange Bleu" (Diesel)
+str_dmu_DE2             :DE2 Plan X "Blauwe Engel" (Diesel)
+str_dmu_NS20_t          :NS20 "Chameau" (Diesel)
+str_dmu_DE4             :DE4 "Trans Europ Express" (Diesel)
+str_dmu_DE3_t           :DE3 Plan U "Diable Rouge" (Diesel)
+str_dmu_DH1_t           :DH1 "Promeneur des Vasières" (Diesel)
+str_dmu_DH2             :DH2 "Wadloper" (Diesel)
+str_dmu_DM90            :DM '90 "Buffel" (Diesel)
+str_dmu_Lint41H         :Lint 41/H (Diesel)
+str_dmu_V200D4                  :V200-D4 (Diesel)
+
+#emu
+str_emu_ZHESM_mBC       :ZHESM mBC (Électrique)
+str_emu_Mat24           :Mat '24 "Blokkendoos" (Électrique)
+str_emu_Mat24mP         :Mat '24 mP (Électrique)
+str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Électrique)
+str_emu_Mat36EL2        :Mat '36 El2 (Électrique)
+str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (Électrique)
+str_emu_Mat46ELD2       :Mat '46 ElD2 (Électrique)
+str_emu_Mat46ELD4       :Mat '46 ElD4 (Électrique)
+str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q "Hondekop" (Électrique)
+str_emu_Mat54ELD2_t     :Mat '54 ElD2 Plan F/G/M/Q "Tête-de-chien" (Électrique)
+str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P "Tête-de-chien" (Électrique)
+str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux "Hondekop" (Électrique)
+str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux "Tête-de-chien" (Électrique)
+str_emu_Mat64PlanV      :Mat '64 Plan V (Électrique)
+str_emu_SGM2            :SGM-II Plan Y "Sprinter" (Électrique)
+str_emu_SGM3            :SGM-III Plan Y "Sprinter" (Électrique)
+str_emu_ICM4            :ICM-IV Plan Z "Koploper" (Électrique)
+str_emu_ICM4_t          :ICM-IV Plan Z "Tête traversée" (Électrique)
+str_emu_SM90            :SM '90 "Railhopper" (Électrique)
+str_emu_IRMIII          :IRM-III "Bizon" (Électrique)
+str_emu_IRMIII_t        :IRM-III "Bison" (Électrique)
+str_emu_IRMVI_t         :VIRM-VI "Bison" (Électrique)
+str_emu_mP              :Plan mP (Électrique)
+str_emu_TGV             :TGV Thalys PBKA/PBA (Électrique)
+str_emu_ICE3M           :ICE 3M (Électrique)
+str_emu_V250            :Fyra V250 "Albatros" (Électrique)
+str_emu_GTW26           :GTW 2/6 (Électrique)
+str_emu_GTW28           :GTW 2/8 (Électrique)
+str_emu_Protos          :Protos (Électrique)
+str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Électrique)
+str_emu_SLTVI           :SLT-VI "Sprinter Lighttrain" (Électrique)
+str_emu_Future_DD               :Future DD (Électrique)
+str_emu_V200E6                  :V200-E6 (Électrique)
+str_emu_V200E8                  :V200-E8 (Électrique)
+str_emu_CargoDD                 :Rame marchandises (Électrique)
+
+#wagons
+str_wagons_gen2_boxcar              :Fourgon
+str_wagons_Gs_boxcar                :Fourgon Gs
+str_wagons_gen6_slidingdoor         :Fourgon à porte coulissante
+str_wagons_gen0openwagonsmall       :Wagon-tombereau (petit)
+str_wagons_gen2_openwagon           :Wagon-tombereau (moyen)
+str_wagons_GTUW_openwagon           :Wagon-tombereau GTUW
+str_wagons_Es_openwagon             :Wagon-tombereau Es
+str_wagons_gen0hopper               :Wagon-trémie (petit)
+str_wagons_Tals_selfdischarger      :Wagon à déchargement automatique Tals
+str_wagons_gen0stakewagon           :Wagon plat à ranchers (petit)
+str_wagons_gen2_stake               :Wagon plat à ranchers
+str_wagons_gen4_stake               :Wagon plat à ranchers
+str_wagons_gen6_stake               :Wagon plat à ranchers
+str_wagons_gen7_coil                :Wagon porte-bobines
+str_wagons_gen0tanker               :Wagon-citerne (petit)
+str_wagons_gen6_tanker              :Wagon-citerne (grand)
+str_wagons_gen3_livestock           :Wagon bétailler (moyen)
+str_wagons_gen6_livestock           :Wagon bétailler (grand)
+str_wagons_Ubcs_bollenwagen         :Wagon-silo Ubcs "Bollenwagen"
+str_wagons_gen6_refrigerator        :Wagon frigorifique (moyen)
+str_wagons_gen7_refrigerator        :Wagon frigorifique (grand)
+str_wagons_Takkls_VAM               :Wagon compost Takkls
+str_wagons_gen7_cartransporter      :Porte-automobile
+
+#coaches
+str_coaches_HIJSM_4_8_10 :Voiture HSM 1
+str_coaches_SS_C_723    :Voiture SS C 650
+str_coaches_SS_ABd_7516 :Voiture SS ABd
+str_coaches_Ovaleramen_t :Voiture "Fenêtres ovales"
+str_coaches_Bolkoprijtuigen_t   :Voiture "Toit bombé"
+str_coaches_PlanD       :Voiture Plan D
+str_coaches_PlanE       :Voiture Plan E
+str_coaches_PlanW       :Voiture Plan W
+str_coaches_Avmz        :Voiture Avmz
+str_coaches_ICL         :Voiture ICL
+str_coaches_M2          :Voiture NMBS M2
+str_coaches_gen9_IC_DD  :Voiture 2 niveaux HS-DD
+str_coaches_Couchette   :Voiture-couchette Bcm
+str_coaches_Citynightline   :Voiture-couchette CityNightLine
+str_coaches_MUs         :Voiture de Rame Couchette
+
+#baggage and mail wagons
+str_coaches_SS_DII      :Fourgon à bagages SS D-II
+str_coaches_SS_DIII     :Fourgon à bagages SS D-III
+str_coaches_StalenDIV   :Fourgon à bagages D-IV
+str_coaches_StalenDV    :Fourgon à bagages D-V
+str_coaches_Dm          :Fourgon à bagages Dm
+str_coaches_Hbbkkss     :Fourgon postal Hbbkkss
+str_coaches_PlanC       :Fourgon postal Plan C
+str_coaches_PlanL       :Fourgon postal Plan L
+
+#metro
+str_metro_GVB_M1M2      :GVB M1-M2 "Zilvermeeuw" (Métro)
+str_metro_GVB_M1M2_t    :GVB M1-M2 "Goéland" (Métro)
+str_metro_RET_typeT     :RET Type T SG2 (Métro)
+str_metro_RET_typeB     :RET Type B MG2/1 (Métro)
+str_metro_RET_typeR     :RET Type R RSG3 (Métro)
+str_metro_Future_MTR1   :Métro futuriste 1
+
+#PURCHASE MENU TEXTS
+
+str_purchase_svc                :{BLACK}Service{NBSP}: {YELLOW}{STRING}
+str_purchase_svc_axl            :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}
+str_purchase_svc_axl_spc        :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_axl                :{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}
+str_purchase_axl_spc            :{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}{STRING}
+
+str_purchase_axl_ltm_spc        :{BLACK}Charge par essieu{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{2:COMMA} jour{P "" s}{}{BLACK}{1:STRING}
+str_purchase_svc_axl_len_ltm    :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}Longueur{NBSP}: {YELLOW}{STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{COMMA} jour{P "" s}
+str_purchase_svc_axl_len_ltm_spc :{BLACK}Service{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{1:STRING}{}{BLACK}Longueur{NBSP}: {YELLOW}{2:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{4:COMMA} jour{P "" s}{}{BLACK}{3:STRING}
+
+str_purchase_svc_p          :passagers
+str_purchase_svc_lp         :passagers local
+str_purchase_svc_ep         :passagers express
+str_purchase_svc_Ip         :passager international
+str_purchase_svc_elp        :passagers express et local
+str_purchase_svc_eip        :passagers express et intercités
+str_purchase_svc_iphf       :passagers intercités ou fret lourd
+str_purchase_svc_hphf       :passagers grande vitesse ou fret lourd
+str_purchase_svc_eplf       :passagers express ou fret léger
+str_purchase_svc_lfep       :fret léger ou passagers express
+str_purchase_svc_lf         :fret léger
+str_purchase_svc_hf         :fret lourd
+str_purchase_svc_s          :triage
+str_purchase_svc_m          :postal
+str_purchase_svc_M          :métro
+
+str_purchase_len_1_04       :1 unité (0,4)
+str_purchase_len_1_05       :1 unité (0,5)
+str_purchase_len_2_10       :2 unités (1,0)
+str_purchase_len_3_15       :3 unités (1,5)
+str_purchase_len_4_14       :4 unités (1,4)
+str_purchase_len_4_20       :4 unités (2,0)
+str_purchase_len_5_24       :5 unités (2,4)
+str_purchase_len_6_20       :6 unités (2,0)
+str_purchase_len_6_30       :6 unités (3,0)
+
+str_purchase_axl_A          :très basse (classe A)
+str_purchase_axl_B          :basse (classe B)
+str_purchase_axl_D          :haute (classe D)
+str_purchase_axl_E          :très haute (classe E)
+
+str_purchase_spc_el_eld     :Avec compartiment à bagages réaménageable pour marchandises express ou passagers.
+str_purchase_spc_fictional  :Fictive.
+
+str_purchase_steam_NCS21    :Ancienne immatriculation{NBSP}: {SILVER} NCS 21-30, puis SS 481-490.
+str_purchase_steam_NCS41    :Ancienne immatriculation{NBSP}: {SILVER} NCS 41-50, puis SS 151-160.
+str_purchase_steam_HSM501   :Ancienne immatriculation{NBSP}: {SILVER} HSM 501-535.
+str_purchase_steam_HSM601   :Ancienne immatriculation{NBSP}: {SILVER} HSM 601-647.
+str_purchase_steam_HSM701   :Ancienne immatriculation{NBSP}: {SILVER} HSM 701-755.
+str_purchase_steam_SS517    :Ancienne immatriculation{NBSP}: {SILVER} SS 517-527, NBDS 25-26.
+str_purchase_steam_SS651    :Ancienne immatriculation{NBSP}: {SILVER} SS 651-680.
+str_purchase_steam_SS785    :Ancienne immatriculation{NBSP}: {SILVER} SS 685-778, 785-799.
+str_purchase_steam_NBDS30   :Rénovation 1940{NBSP}: {YELLOW}vitesse -50%, puissance +11%{}{BLACK}Ancienne immatriculation{NBSP}: {SILVER} NBDS 30-36.
+
+str_purchase_diesel_NS2000  :Ancienne immatriculation{NBSP}: {SILVER} Whitcomb 65-DE-19A.
+str_purchase_diesel_ACTS5800 :Ancienne immatriculation{NBSP}: {SILVER} BR Classe 58
+str_purchase_diesel_RN232   :Ancienne immatriculation{NBSP}: {SILVER} DB BR 232.
+
+str_purchase_electric_mDDM_NID :À utiliser avec la voiture 2 niveaux DDM/NID.
+str_purchase_electric_HLE11 :À utiliser avec la Voiture ICR pour un service Benelux.
+str_purchase_electric_HLE25 :À utiliser avec la Voiture Plan W pour un service Benelux.
+str_purchase_spc_electric_ES64F4 :Locomotive multi-tension, {YELLOW}puissance +42% {BLACK}sur voie électrifiée 25 kV ~.
+str_purchase_spc_NS1600P    :Locomotive multi-tension, {YELLOW}puissance +70% {BLACK}sur voie électrifiée 25 kV ~.
+str_purchase_spc_electric_gen9_HS002 :Locomotive multi-tension, {YELLOW}puissance +197% {BLACK}sur voie électrifiée 25 kV ~.{}Fictive.
+str_purchase_electric_TRAXXF140MS2_no_track :À utiliser avec la Voiture ICR pour un service Benelux. TRAXX F140 MS2 modifiée.{}Locomotive multi-tensions.
+str_purchase_spc_electric_ES64F4_no_track :Locomotive multi-tension.
+str_purchase_spc_NS1600P_no_track :Locomotive multi-tension.
+str_purchase_spc_electric_gen9_HS001_no_track :Locomotive multi-tension.{}Fictive.
+
+
+str_purchase_emu_ZHESM_mBC  :Rénovation 1926{NBSP}: {YELLOW}puissance +150%, eff. trac. +100%{}{BLACK}Immatriculé ensuite{NBSP}: {SILVER} NS mBC9900.{}{BLACK}À utiliser avec le voiture ZHESM B.
+str_purchase_emu_Mat24      :À utiliser avec la voiture Mat '24.
+str_purchase_emu_Mat36ELD3  :Avec compartiment à bagages réaménageable pour marchandises express ou passagers.{}Achat après 1942{NBSP}: {YELLOW}poids -26%, puissance -50%, eff. trac. -45%, coût ent. -20%, capacité -21%, longueur -1/8.
+str_purchase_emu_ICE3M      :Rame électrique multi-tension, {YELLOW}puissance +86% {BLACK}sur voies électrifiées 25 kV ~ .{}Autre immatriculation{NBSP}: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV    :Rame électrique multi-tension, {YELLOW}puissance +139% {BLACK}sur voies électrifiées 25 kV ~.
+str_purchase_spc_emu_V250   :Locomotive multi-tension, {YELLOW}puissance +83% {BLACK}sur voie électrifiée 25 kV ~.
+str_purchase_spc_emu_gen9_HST :Locomotive multi-tension, {YELLOW}puissance +68% {BLACK}sur voie électrifiée 25 kV ~.{}Fictive.
+
+str_purchase_spc_emu_TGV_no_track :Rame électrique multi-tension.
+str_purchase_spc_emu_V250_no_track :Rame électrique multi-tension.
+str_purchase_spc_emu_Future_DD_no_track :Rame électrique multi-tension.{}Fictive.
+str_purchase_emu_CargoDD_no_track :Rame électrique multi-tension.{}Fictive.
+
+str_purchase_coaches_DDAR   :À utiliser avec la voiture motorisée mDDM ou NID.
+str_purchase_coaches_IRC    :À utiliser avec les NS électriques pour un service national, la NBMS HLE 11 pour un service Benelux et avec la NS Hispeed 186 pour un service Fyra.
