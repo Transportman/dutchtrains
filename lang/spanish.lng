@@ -570,6 +570,7 @@ str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8
 str_purchase_electric_NS1500 :Anteriormente conocido como: {SILVER} BR Class EM2.
 str_purchase_electric_HLE11 :Para usar con el Vagón ICR para su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
 str_purchase_electric_HLE25 :Para usar con el Vagón Plan W para su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
+str_purchase_spc_electric_ES64F4 :Locomotora Multisistema, {YELLOW}+42% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
@@ -586,5 +587,6 @@ str_purchase_spc_emu_gen9_HST_no_track :EMU Multisistema.{}Ficticia.
 str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Ficticia.
 str_purchase_emu_CargoDD_no_track :EMU Multisistema.{}Ficticia.
 
+str_purchase_coaches_ZHESM_B :Posteriormente conocido como: {SILVER} NS B9900.{}{BLACK}Para usar con el vagón motorizado ZHESM mBC.
 str_purchase_coaches_DDAR   :Para usar con el vagón motorizado mDDM o el NID.
 str_purchase_coaches_PlanW  :Para usar con las locomotoras eléctricas NS en servicio nacional y el NMBS HLE 25.5 en su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
