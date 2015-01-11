@@ -499,6 +499,7 @@ str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_axl_ltm            :{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
+str_purchase_axl_ltm_spc        :{BLACK}Peso por Eje: {YELLOW}{0:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{2:COMMA} día{P 2 "" s}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
 str_purchase_svc_axl_len_ltm_spc :{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Peso por Eje: {YELLOW}{1:STRING}{}{BLACK}Longitud: {YELLOW}{2:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{4:COMMA} día{P "" s}{}{BLACK}{3:STRING}
 
@@ -581,6 +582,7 @@ str_purchase_dmu_omBC1901   :Comprado en/desde 1929: {YELLOW}peso +41%, potencia
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
 str_purchase_spc_emu_V250   :EMU Multisistema, {YELLOW}+83% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_emu_Future_DD :EMU Multisistema, {YELLOW}+118% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
+str_purchase_emu_CargoDD        :EMU Multisistema, {YELLOW}+100% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 
 str_purchase_emu_ICE3M_no_track :EMU Multisistema.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_V250_no_track :EMU Multisistema.
