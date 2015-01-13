@@ -259,6 +259,7 @@ str_steam_HSM501_t      :NS 2100 series "Tin Tinus" (Vapor)
 str_steam_HSM601        :NS 3200 (Vapor)
 str_steam_HSM701        :NS 5500 (Vapor)
 str_steam_SS9           :NS 700 (Vapor)
+str_steam_SS17          :NS 2900 (Vapor)
 str_steam_SS517         :NS 6900 "Bello" (Vapor)
 str_steam_SS651         :NS 8100 (Vapor)
 str_steam_SS785         :NS 3700 "Jumbo" (Vapor)
@@ -569,6 +570,7 @@ str_purchase_diesel_RN232   :Anteriormente conocido como: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100 :Reformado en 1979: {YELLOW}Peso +4%, longitud +1/8.
 str_purchase_electric_NS1500 :Anteriormente conocido como: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID :Para usar con el vagón de dos pisos DDM/NID.
 str_purchase_electric_HLE11 :Para usar con el Vagón ICR para su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
 str_purchase_electric_HLE25 :Para usar con el Vagón Plan W para su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
 str_purchase_spc_electric_ES64F4 :Locomotora Multisistema, {YELLOW}+42% de potencia {BLACK}sobre vías electrificadas de 25 kV.
