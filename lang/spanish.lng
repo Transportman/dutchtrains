@@ -556,6 +556,7 @@ str_purchase_steam_HSM126   :Anteriormente conocido como: {SILVER} HSM 126-135.
 str_purchase_steam_HSM501   :Anteriormente conocido como: {SILVER} HSM 501-535.
 str_purchase_steam_HSM601   :Anteriormente conocido como: {SILVER} HSM 601-647.
 str_purchase_steam_HSM701   :Anteriormente conocido como: {SILVER} HSM 701-755.
+str_purchase_steam_SS9      :Comprado en/desde 1892: {YELLOW}peso +4%, potencia +21%, fuerza de tracción +64%, costes de funcionamiento +7%.{}{BLACK}Anteriormente conocido como: {SILVER} SS 9-16, 21-78, NBDS 1-5.
 str_purchase_steam_SS17     :Reformado en 1913, pasando a tener: {YELLOW}potencia +20%, TE +19%, costes de funcionamiento +7%.{}{BLACK}Anteriormente conocido como: {SILVER} SS 17-20, 161-205, 212.
 str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, NBDS 25-26.
 str_purchase_steam_SS651    :Anteriormente conocido como: {SILVER} SS 651-680.
@@ -582,6 +583,7 @@ str_purchase_spc_electric_gen9_HS002_no_track :Locomotora multisistema.{}Fictici
 str_purchase_dmu_omBC1901   :Comprado en/desde 1929: {YELLOW}peso +41%, potencia +233%, velocidad +7%, costes de funcionamiento +23%.
 
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
+str_purchase_spc_emu_TGV    :EMU Multisistema, {YELLOW}+139% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_emu_V250   :EMU Multisistema, {YELLOW}+83% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_emu_Future_DD :EMU Multisistema, {YELLOW}+118% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 str_purchase_emu_CargoDD        :EMU Multisistema, {YELLOW}+100% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
