@@ -1,0 +1,99 @@
+##grflangid 0x27
+##plural 0
+##gender m ma f
+##case fp fs mp ms
+
+#Main grf title and description
+STR_GRF_DESCRIPTION             :{SILVER}Treni Olandesi per OpenTTD{}{BLACK}Primo veicolo: 1839.{}{}(c)Team di Treni Olandesi{}Licenza: GPLv2 o maggiore.{}Vedere readme per dettagli.
+STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
+
+#parameter strings
+
+STR_PARAM_DISABLE_ORIGINAL_010      :solo monorotaia
+STR_PARAM_DISABLE_ORIGINAL_110      :rotaia e monorotaia
+
+
+STR_PARAM_TIMES_4                   :4
+
+STR_PARAM_TRACK_POWER                           :Potenza di multisistema
+
+
+#cargo subtype livery strings
+
+str_cargo_subtype_bordeaux_white_blue       :> livrea Bordeaux con bianco/blu
+str_cargo_subtype_brown             :> Livrea marrone
+str_cargo_subtype_green             :> livrea verde
+
+
+str_cargo_subtype_citypendel        :> livrea Citypendel
+str_cargo_subtype_ddm1              :> Livrea DDM-1
+str_cargo_subtype_fyra              :> livrea Fyra
+str_cargo_subtype_lll                           :> Lage Landen Lijn
+str_cargo_subtype_hispeed_cab       :> livrea NS Hispeed (cabina di controllo)
+str_cargo_subtype_maashopper        :> livrea Veolia "Maashopper" (bianco/rosso)
+str_cargo_subtype_overnightexpress  :> livrea Overnight Express
+str_cargo_subtype_valleilijn_blue_yellownose :> livrea Valleilijn blu con naso giallo
+
+str_cargo_subtype_ERS               :> Livrea ERS
+str_cargo_subtype_NCS_tank          :> livrea NCS (locomotiva tender)
+str_cargo_subtype_NS_tank           :> livrea NS (locomotiva tender)
+str_cargo_subtype_Railion_regular   :> Livrea Railion
+str_cargo_subtype_Twents            :> Livrea Twents
+str_cargo_subtype_Veolia_white_red  :> livrea Veolia (bianco/rosso)
+
+
+
+#steam
+
+#diesel
+str_diesel_NS400_t      :NS 400 "Grande Billy" (Diesel)
+str_diesel_ACTS5800     :ACTS 5800 (Diesel)
+
+#electric
+str_electric_NS1600P    :NS 1600P (Elettrica)
+str_electric_HLE25      :NMBS HLE 25.5 (Elettrica)
+
+#dmu
+str_dmu_omC1921         :omC 1921-1931 (Diesel)
+str_dmu_Mat34           :Mat '34 "Dieseldrie" (Diesel)
+str_dmu_Mat34_t         :Mat '34 "Dieseltre" (Diesel)
+str_dmu_Lint41H         :Lint 41/H (Diesel)
+
+#emu
+str_emu_ICM3_t          :ICM-III Plan Z "Camminatore sulla testa" (Elettrica)
+
+#wagons
+str_wagons_gen0openwagonsmall       :Vagone aperto piccolo
+str_wagons_gen7_cartransporter      :Transporto automobili
+
+#coaches
+str_coaches_Ovaleramen  :Carrozza "Ovaleramen"
+str_coaches_ICL         :Carrozza ICL
+
+#baggage and mail wagons
+
+#metro
+str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
+str_metro_RET_typeM     :RET Tipo M MG2 (Metro)
+
+#PURCHASE MENU TEXTS
+
+
+str_purchase_svc_axl_len_ltm    :{BLACK}Servizio: {YELLOW}{STRING}{}{BLACK}Peso sulle assi: {YELLOW}{STRING}{}{BLACK}Lunghezza: {YELLOW}{STRING}{}{BLACK}Tempo di carico: {YELLOW}{COMMA} giorn{P o i}
+
+str_purchase_svc_lfep       :merci leggere o espresso passeggeri
+str_purchase_svc_lf         :merci leggere
+
+
+
+
+
+
+str_purchase_spc_electric_ES64F4 :Locomotiva multisistema, {YELLOW}+42% potenza {BLACK}sulle linee elettrificate 25 kV ~.
+str_purchase_spc_NS1600P_no_track :Locomotiva multisistema.
+
+
+str_purchase_emu_Mat24      :Per l'uso con carrozza Mat '24.
+str_purchase_emu_ICE3M      :Elettrotreno multisistema, {YELLOW}+86% potenza {BLACK}sulle linee elettrificate 25 kV ~ .{}Conosciuto anche come: {SILVER} DB BR 406.
+
+
