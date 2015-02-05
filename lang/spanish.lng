@@ -428,6 +428,7 @@ str_wagons_gen6_tanker              :Vagón cisterna grande
 str_wagons_gen3_livestock           :Vagón de ganado medio
 str_wagons_gen6_livestock           :Vagón de ganado grande
 str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
+str_wagons_Ubcs_bollenwagen_t       :Vagón silo Ubcs "Spherewagon"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 str_wagons_gen7_containercarrier    :Transportador de Contenedores
@@ -583,6 +584,7 @@ str_purchase_spc_electric_gen9_HS002_no_track :Locomotora multisistema.{}Fictici
 str_purchase_dmu_omBC1901   :Comprado en/desde 1929: {YELLOW}peso +41%, potencia +233%, velocidad +7%, costes de funcionamiento +23%.
 
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
+str_purchase_emu_ICE3M      :EMU Multisistema, {YELLOW}+86% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :EMU Multisistema, {YELLOW}+139% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_emu_V250   :EMU Multisistema, {YELLOW}+83% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_emu_Future_DD :EMU Multisistema, {YELLOW}+118% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
