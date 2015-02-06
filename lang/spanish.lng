@@ -425,6 +425,7 @@ str_wagons_gen0tanker               :Vagón cisterna pequeño
 str_wagons_gen2_tanker              :Vagón cisterna
 str_wagons_Uh_tanker                :Vagón cisterna Uh
 str_wagons_gen6_tanker              :Vagón cisterna grande
+str_wagons_gen0livestockwagon       :Vagón de ganado pequeño
 str_wagons_gen3_livestock           :Vagón de ganado medio
 str_wagons_gen6_livestock           :Vagón de ganado grande
 str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
@@ -583,6 +584,7 @@ str_purchase_spc_electric_gen9_HS002_no_track :Locomotora multisistema.{}Fictici
 
 str_purchase_dmu_omBC1901   :Comprado en/desde 1929: {YELLOW}peso +41%, potencia +233%, velocidad +7%, costes de funcionamiento +23%.
 
+str_purchase_emu_ZHESM_mBC  :Reformado en 1926, pasando a tener: {YELLOW}potencia +150%, TE +100%{}{BLACK}Posteriormente conocido como: {SILVER} NS mBC9900.{}{BLACK}Para usar con el vagón ZHESM B.
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
 str_purchase_emu_ICE3M      :EMU Multisistema, {YELLOW}+86% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :EMU Multisistema, {YELLOW}+139% de potencia {BLACK}sobre vías electrificadas de 25 kV.
