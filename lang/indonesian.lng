@@ -80,6 +80,7 @@ str_steam_NRS11         :NRS 11-16 (Uap)
 str_steam_HSM83         :NS 3100 (Uap)
 str_steam_SS517         :NS 6900 "Bello" (Uap)
 str_steam_SS785         :NS 3700 "Jumbo" (Uap)
+str_steam_NS3850        :NS 3850 (Uap)
 
 #diesel
 str_diesel_NS200        :NS 200 "Sik" (Diesel)
