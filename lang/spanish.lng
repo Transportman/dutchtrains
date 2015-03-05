@@ -509,8 +509,9 @@ str_purchase_svc_axl_len_ltm_spc :{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Pe
 str_purchase_svc_p          :pasajeros
 str_purchase_svc_lp         :pasajeros local
 str_purchase_svc_ep         :pasajeros express
-str_purchase_svc_ip         :pasajeros intercity
+str_purchase_svc_ip         :pasajeros InterCity
 str_purchase_svc_hp         :pasajeros de alta velocidad
+str_purchase_svc_Ip         :pasajeros internacional
 str_purchase_svc_elp        :pasajeros local y express
 str_purchase_svc_eip        :pasajeros express e InterCity
 str_purchase_svc_eiphf      :pasajeros express e InterCity o carga pesada
