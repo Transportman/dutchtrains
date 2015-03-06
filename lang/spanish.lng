@@ -407,6 +407,7 @@ str_emu_CargoDD                 :EMU de carga (Eléctrico)
 str_wagons_gen0boxcar               :Vagón cerrado pequeño
 str_wagons_gen2_boxcar              :Vagón cerrado
 str_wagons_Gs_boxcar                :Vagón cerrado Gs
+str_wagons_gen6_slidingdoor         :Vagón cerrado, con puertas correderas
 str_wagons_Habbiins_goodswagon      :Vagón de mercancías Habbiins
 str_wagons_gen0openwagonsmall       :Vagón abierto pequeño
 str_wagons_gen2_openwagon           :Vagón abierto medio
@@ -428,6 +429,7 @@ str_wagons_gen6_tanker              :Vagón cisterna grande
 str_wagons_gen0livestockwagon       :Vagón de ganado pequeño
 str_wagons_gen3_livestock           :Vagón de ganado medio
 str_wagons_gen6_livestock           :Vagón de ganado grande
+str_wagons_gen4_silo                :Vagón silo pequeño
 str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
 str_wagons_Ubcs_bollenwagen_t       :Vagón silo Ubcs "Spherewagon"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
