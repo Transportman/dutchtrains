@@ -153,6 +153,7 @@ str_cargo_subtype_ovchip            :Librea OV Chipkaart
 str_cargo_subtype_overnightexpress  :Librea Overnight Express
 str_cargo_subtype_prototype         :Librea prototipo
 str_cargo_subtype_randstadrail      :Librea RandstadRail
+str_cargo_subtype_renewal           :Librea Renovación
 str_cargo_subtype_rnet              :Librea R-net
 str_cargo_subtype_ns_sprinter           :Librea NS Sprinter
 str_cargo_subtype_sr10              :Librea Sr10 Royal ICR  (22 Diciembre 1993 - Actualidad)
@@ -431,6 +432,7 @@ str_wagons_gen0livestockwagon       :Vagón de ganado pequeño
 str_wagons_gen3_livestock           :Vagón de ganado medio
 str_wagons_gen6_livestock           :Vagón de ganado grande
 str_wagons_gen4_silo                :Vagón silo pequeño
+str_wagons_gen6_silo                :Vagón silo medio
 str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
 str_wagons_Ubcs_bollenwagen_t       :Vagón silo Ubcs "Spherewagon"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
