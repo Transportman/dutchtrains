@@ -43,6 +43,7 @@ STR_PARAM_TRACK_POWER_OFF                       :Siempre la máxima potencia
 STR_PARAM_TRACK_POWER_ON                        :Depende del tipo de vía cuando un set compatible ha sido cargado (por defecto)
 
 STR_PARAM_LOADING_SPEED             :Velocidad de carga
+STR_PARAM_LOADING_SPEED_DESC        :Usa esta opción para establecer la velocidad a la que los trenes y vagones realizan su carga/descarga.
 STR_PARAM_LOADING_SPEED_SLOW        :Lenta
 STR_PARAM_LOADING_SPEED_MEDIUM      :Media (por defecto)
 STR_PARAM_LOADING_SPEED_FAST        :Rápida
