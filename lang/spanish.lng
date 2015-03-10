@@ -511,6 +511,7 @@ str_purchase_axl_ltm            :{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}T
 str_purchase_axl_ltm_spc        :{BLACK}Peso por Eje: {YELLOW}{0:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{2:COMMA} día{P 2 "" s}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
 str_purchase_svc_axl_len_ltm_spc :{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Peso por Eje: {YELLOW}{1:STRING}{}{BLACK}Longitud: {YELLOW}{2:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{4:COMMA} día{P "" s}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_ltm_spc    :{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Peso por Eje: {YELLOW}{1:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{3:COMMA} día{P "" s}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :pasajeros
 str_purchase_svc_lp         :pasajeros local
