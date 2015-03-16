@@ -572,6 +572,7 @@ str_purchase_steam_SS517    :Anteriormente conocido como: {SILVER} SS 517-527, N
 str_purchase_steam_SS651    :Anteriormente conocido como: {SILVER} SS 651-680.
 str_purchase_steam_SS785    :Anteriormente conocido como: {SILVER} SS 685-778, 785-799.
 str_purchase_steam_NBDS30   :Reformado en 1940, pasando a tener: {YELLOW}velocidad -50%, potencia +11%{}{BLACK}Anteriormente conocido como: {SILVER} NBDs 30-36.
+str_purchase_steam_NCS71    :Reformado en 1925, pasando a tener: {YELLOW}Peso +5%, TE -4%{}{BLACK}Reformado en 1935, pasando a tener: {YELLOW}Velocidad +22%, peso +12%{}{BLACK}Anteriormente conocido como: {SILVER} NCS 71-78, SS 971-978.
 
 str_purchase_diesel_NS2000  :Anteriormente conocido como: {SILVER} Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Anteriormente conocido como: {SILVER} SM 151-155.
