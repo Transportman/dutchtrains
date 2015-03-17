@@ -434,6 +434,7 @@ str_wagons_gen3_livestock           :Vagón de ganado medio
 str_wagons_gen6_livestock           :Vagón de ganado grande
 str_wagons_gen4_silo                :Vagón silo pequeño
 str_wagons_gen6_silo                :Vagón silo medio
+str_wagons_gen9_silowagon           :Vagón silo grande
 str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
 str_wagons_Ubcs_bollenwagen_t       :Vagón silo Ubcs "Spherewagon"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
@@ -496,6 +497,7 @@ str_metro_RET_typeT     :RET Type T SG2 (Metro)
 str_metro_RET_typeM     :RET Type M MG2 (Metro)
 str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
 str_metro_RET_typeR     :RET Type R RSG3 (Metro)
+str_metro_Future_MTR1   :Metro1 Futuro
 
 #PURCHASE MENU TEXTS
 
