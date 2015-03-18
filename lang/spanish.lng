@@ -425,6 +425,7 @@ str_wagons_gen0stakewagon           :Vagón de estacas pequeño
 str_wagons_gen2_stake               :Vagón de estacas
 str_wagons_gen4_stake               :Vagón de estacas (M)
 str_wagons_gen6_stake               :Vagón de estacas
+str_wagons_gen7_coil                :Vagón de bobinas
 str_wagons_gen0tanker               :Vagón cisterna pequeño
 str_wagons_gen2_tanker              :Vagón cisterna
 str_wagons_Uh_tanker                :Vagón cisterna Uh
@@ -440,6 +441,7 @@ str_wagons_Ubcs_bollenwagen_t       :Vagón silo Ubcs "Spherewagon"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 str_wagons_gen7_containercarrier    :Transportador de Contenedores
+str_wagons_gen9_containercarrier    :Transportador de Contenedores
 str_wagons_gen7_superheavy_flatcar  :Vagón plano superpesado
 
 #coaches
