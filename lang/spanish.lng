@@ -591,6 +591,7 @@ str_purchase_electric_HLE11 :Para usar con el Vagón ICR para su servicio en Ben
 str_purchase_electric_HLE25 :Para usar con el Vagón Plan W para su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
 str_purchase_spc_electric_ES64F4 :Locomotora Multisistema, {YELLOW}+42% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_NS1600P    :Locomotora Multisistema, {YELLOW}+70% de potencia {BLACK}sobre vías electrificadas de 25 kV.
+str_purchase_spc_electric_gen9_HS001 :Locomotora Multisistema, {YELLOW}+65% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
@@ -607,6 +608,7 @@ str_purchase_spc_emu_Future_DD :EMU Multisistema, {YELLOW}+118% de potencia {BLA
 str_purchase_emu_CargoDD        :EMU Multisistema, {YELLOW}+100% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 
 str_purchase_emu_ICE3M_no_track :EMU Multisistema.{}También conocido como: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track :EMU Multisistema.
 str_purchase_spc_emu_V250_no_track :EMU Multisistema.
 str_purchase_spc_emu_gen9_HST_no_track :EMU Multisistema.{}Ficticia.
 str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Ficticia.
