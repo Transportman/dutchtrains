@@ -592,6 +592,7 @@ str_purchase_electric_HLE25 :Para usar con el Vagón Plan W para su servicio en 
 str_purchase_spc_electric_ES64F4 :Locomotora Multisistema, {YELLOW}+42% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_NS1600P    :Locomotora Multisistema, {YELLOW}+70% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_electric_gen9_HS001 :Locomotora Multisistema, {YELLOW}+65% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
+str_purchase_spc_electric_gen9_HS002 :Locomotora Multisistema, {YELLOW}+197% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
@@ -601,6 +602,7 @@ str_purchase_dmu_omBC1901   :Comprado en/desde 1929: {YELLOW}peso +41%, potencia
 
 str_purchase_emu_ZHESM_mBC  :Reformado en 1926, pasando a tener: {YELLOW}potencia +150%, TE +100%{}{BLACK}Posteriormente conocido como: {SILVER} NS mBC9900.{}{BLACK}Para usar con el vagón ZHESM B.
 str_purchase_emu_Mat24      :Para usar con el vagón Mat '24.
+str_purchase_emu_Mat36ELD3  :Con compartimento de equipaje reformable a cargas express o pasajeros.{}Comprado en/desde 1942: {YELLOW}peso -26%, potencia -50%, TE -45%, costes de funcionamiento -20%, capacidad -21%, longitud -1/8.
 str_purchase_emu_ICE3M      :EMU Multisistema, {YELLOW}+86% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :EMU Multisistema, {YELLOW}+139% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_emu_V250   :EMU Multisistema, {YELLOW}+83% de potencia {BLACK}sobre vías electrificadas de 25 kV.
