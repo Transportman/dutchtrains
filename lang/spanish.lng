@@ -440,6 +440,7 @@ str_wagons_Ubcs_bollenwagen         :Vagón silo Ubcs "Bollenwagen"
 str_wagons_Ubcs_bollenwagen_t       :Vagón silo Ubcs "Spherewagon"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
+str_wagons_Takkls_VAM               :Vagón de fertilizantes Takkls
 str_wagons_gen7_containercarrier    :Transportador de Contenedores
 str_wagons_gen9_containercarrier    :Transportador de Contenedores
 str_wagons_gen7_superheavy_flatcar  :Vagón plano superpesado
@@ -593,6 +594,7 @@ str_purchase_spc_electric_ES64F4 :Locomotora Multisistema, {YELLOW}+42% de poten
 str_purchase_spc_NS1600P    :Locomotora Multisistema, {YELLOW}+70% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_electric_gen9_HS001 :Locomotora Multisistema, {YELLOW}+65% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 str_purchase_spc_electric_gen9_HS002 :Locomotora Multisistema, {YELLOW}+197% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
+str_purchase_electric_TRAXXF140MS2_no_track :Para usar con el Vagón ICR para su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo). TRAXX F140 MS2 modificado.{}Locomotora Multisistema.
 str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Ficticia.
