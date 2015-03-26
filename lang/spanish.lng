@@ -561,6 +561,7 @@ str_purchase_axl_C          :Medio (clase C)
 str_purchase_axl_D          :Alto (clase D)
 str_purchase_axl_E          :Muy alto (clase E)
 
+str_purchase_spc_eld        :Con compartimento de equipaje reformable a cargas express.
 str_purchase_spc_el_eld     :Con compartimento de equipaje reformable a cargas express o pasajeros.
 str_purchase_spc_fictional  :Ficticio.
 
@@ -608,6 +609,7 @@ str_purchase_emu_Mat36ELD3  :Con compartimento de equipaje reformable a cargas e
 str_purchase_emu_ICE3M      :EMU Multisistema, {YELLOW}+86% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}También conocido como: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :EMU Multisistema, {YELLOW}+139% de potencia {BLACK}sobre vías electrificadas de 25 kV.
 str_purchase_spc_emu_V250   :EMU Multisistema, {YELLOW}+83% de potencia {BLACK}sobre vías electrificadas de 25 kV.
+str_purchase_spc_emu_gen9_HST :EMU Multisistema, {YELLOW}+68% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 str_purchase_spc_emu_Future_DD :EMU Multisistema, {YELLOW}+118% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 str_purchase_emu_CargoDD        :EMU Multisistema, {YELLOW}+100% de potencia {BLACK}sobre vías electrificadas de 25 kV.{}Ficticia.
 
