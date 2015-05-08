@@ -209,9 +209,9 @@ str_cargo_subtype_nedtrain          :Librea NedTrain
 str_cargo_subtype_NS                :Librea NS
 str_cargo_subtype_NS_tank           :Librea NS (locomotora cisterna)
 str_cargo_subtype_NS_whiteroof      :Librea NS, con techo blanco
-str_cargo_subtype_NSCargo           :Librea NS Cargo
-str_cargo_subtype_NSCargo_Crates        :Librea NS Cargo (cajas)
-str_cargo_subtype_NSCargo_Containers :Librea NS Cargo (contenedores)
+str_cargo_subtype_NSCargo           :Librea de carga NS
+str_cargo_subtype_NSCargo_Crates        :Librea de carga NS (cajas)
+str_cargo_subtype_NSCargo_Containers :Librea de carga NS (contenedores)
 str_cargo_subtype_Rail4Chem_green   :Librea Rail4Chem (verde)
 str_cargo_subtype_Rail4Chem_red     :Librea Rail4Chem (rojo)
 str_cargo_subtype_Rail4Chem_grey_yellow :Librea Rail4Chem (gris/amarillo)
@@ -219,7 +219,7 @@ str_cargo_subtype_Railion           :Librea Railion (rebrand)
 str_cargo_subtype_Railion_regular   :Librea Railion
 str_cargo_subtype_Railion_red       :Librea Railion (rojo)
 str_cargo_subtype_Railpro           :Librea Railpro
-str_cargo_subtype_rff                           :Librea RFF Cargo
+str_cargo_subtype_rff                           :Librea de carga RFF
 str_cargo_subtype_rts_black                     :Librea RTS (negra)
 str_cargo_subtype_rts_orange            :Librea RTS (blanca/naranja)
 str_cargo_subtype_rurtalbahn_black      :Librea Rurtalbahn (negra)
@@ -244,7 +244,7 @@ str_cargo_subtype_grey_pigs         :Librea gris (Cerdos)
 
 str_cargo_subtype_transformer :: > Librea de carga Transformer
 str_cargo_subtype_house             :Librea Casa del transporte
-str_cargo_subtype_train             :Librea tren de carga
+str_cargo_subtype_train             :Librea Tren de carga
 
 #steam
 str_steam_Arend         :HSM "Arend" (Vapor)
@@ -565,6 +565,7 @@ str_purchase_spc_eld        :Con compartimento de equipaje reformable a cargas e
 str_purchase_spc_el_eld     :Con compartimento de equipaje reformable a cargas express o pasajeros.
 str_purchase_spc_fictional  :Ficticio.
 
+str_purchase_steam_NCS1     :Comprado en/desde 1892 como locomotora cisterna: {YELLOW}peso -15%, potencia +48%, TE +73%, costes de funcionamiento +7%.{}{BLACK}Anteriormente conocido como: {SILVER} NCS 1-12, 31-39 (locomotora ténder), NCS 81-89 (locomotora cisterna), SS 571-579 (locomotora cisterna).
 str_purchase_steam_NCS21    :Anteriormente conocido como: {SILVER} NCS 21-30, después SS 481-490.
 str_purchase_steam_NCS41    :Anteriormente conocido como: {SILVER} NCS 41-50, después SS 151-160.
 str_purchase_steam_HSM83    :Anteriormente conocido como: {SILVER} HSM 83-88, 101-115.
