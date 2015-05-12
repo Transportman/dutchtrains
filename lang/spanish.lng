@@ -626,3 +626,4 @@ str_purchase_coaches_ZHESM_B :Posteriormente conocido como: {SILVER} NS B9900.{}
 str_purchase_coaches_Mat24  :Para usar con el vagón motorizado Mat '24.
 str_purchase_coaches_DDAR   :Para usar con el vagón motorizado mDDM o el NID.
 str_purchase_coaches_PlanW  :Para usar con las locomotoras eléctricas NS en servicio nacional y el NMBS HLE 25.5 en su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
+str_purchase_coaches_IRC    :Para usar con las locomotoras eléctricas NS en servicio nacional, NMBS HLE 11 en su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo) y el NS Hispeed 186 en su servicio Fyra (alta velocidad entre los Países Bajos y Bélgica).
