@@ -441,6 +441,7 @@ str_wagons_Ubcs_bollenwagen_t       :Vagón silo Ubcs "Spherewagon"
 str_wagons_gen6_refrigerator        :Vagón frigorífico medio
 str_wagons_gen7_refrigerator        :Vagón frigorífico grande
 str_wagons_Takkls_VAM               :Vagón de fertilizantes Takkls
+str_wagons_gen7_cartransporter      :Transportador de coches
 str_wagons_gen7_containercarrier    :Transportador de Contenedores
 str_wagons_gen9_containercarrier    :Transportador de Contenedores
 str_wagons_gen7_superheavy_flatcar  :Vagón plano superpesado
