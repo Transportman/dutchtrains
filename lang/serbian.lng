@@ -153,13 +153,13 @@ str_cargo_subtype_randstadrail      : > RandstadRail livreja
 str_cargo_subtype_renewal           : > Renewal livreja
 str_cargo_subtype_ns_sprinter           :> NS Sprinter livreja
 str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (prosinac 22, 1993 - danas)
-str_cargo_subtype_strandsprinter_beachballs : > "Strandsprinter" livreja sa loptama za plažu
+str_cargo_subtype_strandsprinter_beachballs: > "Strandsprinter" livreja sa loptama za plažu
 str_cargo_subtype_strandsprinter    : > "Strandsprinter" livreja
 str_cargo_subtype_TGV                           :> Thalys livreja
 str_cargo_subtype_TGV_PBKA          : > PBKA livreja
 str_cargo_subtype_TGV_PBA           : > PBA livreja
 str_cargo_subtype_valleilijn_yellow_blue    : > Valleilijn žuto-plava livreja
-str_cargo_subtype_valleilijn_blue_yellownose : > Valleilijn plava livreja sa žutim nosom
+str_cargo_subtype_valleilijn_blue_yellownose: > Valleilijn plava livreja sa žutim nosom
 str_cargo_subtype_valleilijn_blue           : > Valleilijn plava livreja (izmišljena)
 str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" livreja
 str_cargo_subtype_zilverrail        : > Zilverrail livreja (listopad 24-27, 2005)
@@ -237,7 +237,7 @@ str_cargo_subtype_brown_pigs        : > Smeđa (svinje) livreja
 str_cargo_subtype_grey_cows         : > Siva (krave) livreja
 str_cargo_subtype_grey_pigs         : > Siva (svinje) livreja
 
-str_cargo_subtype_transformer : > Livreja tereta transformatora
+str_cargo_subtype_transformer: > Livreja tereta transformatora
 str_cargo_subtype_house             : > Livreja tereta kuće
 str_cargo_subtype_train             : > Livreja tereta vlaka
 str_cargo_subtype_tractor           : > Livreja tereta traktora
@@ -443,7 +443,7 @@ str_wagons_gen9_containercarrier    :Nosač kontejnera
 str_wagons_gen7_superheavy_flatcar  :Plato-vagon za iznimno teške terete
 
 #coaches
-str_coaches_HIJSM_4_8_10 :Vagon HSM 1
+str_coaches_HIJSM_4_8_10:Vagon HSM 1
 str_coaches_HSM_C_755   :Vagon HSM C
 str_coaches_NCS_B_119   :Vagon NCS B
 str_coaches_SS_C_218    :Vagon SS C 1
@@ -453,7 +453,7 @@ str_coaches_RTM_BD_438  :Vagon RTM BD
 str_coaches_Mat24       :Vagon Mat '24
 str_coaches_ZHESM_B     :Vagon ZHESM B
 str_coaches_Ovaleramen  :Vagon "Ovaleramen"
-str_coaches_Ovaleramen_t :Vagon "Oval windows"
+str_coaches_Ovaleramen_t:Vagon "Oval windows"
 str_coaches_Bolkoprijtuigen     :Vagon "Bolkoprijtuigen"
 str_coaches_Bolkoprijtuigen_t   :Vagon  "Bulgehead carriages"
 str_coaches_PlanD       :Vagon Plan D
@@ -575,25 +575,25 @@ str_purchase_steam_NCS71    :Obnovljena 1925: {YELLOW}+5% težine, -4% TE{}{BLAC
 
 str_purchase_diesel_NS2000  :Prethodno poznata kao: {SILVER} Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Prethodno poznata kao: {SILVER} SM 151-155.
-str_purchase_diesel_ACTS5800 :Prethodno poznata kao: {SILVER} BR Class 58.
-str_purchase_diesel_ACTS6700 :Prethodno poznata kao: {SILVER} NMBS HLD 62.
+str_purchase_diesel_ACTS5800:Prethodno poznata kao: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700:Prethodno poznata kao: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Prethodno poznata kao: {SILVER} DB BR 232.
 
-str_purchase_electric_NS1100 :Obnovljena 1979: {YELLOW}+4% težine, +1/8 dužine.
-str_purchase_electric_NS1500 :Prethodno poznata kao: {SILVER} BR Class EM2.
-str_purchase_electric_mDDM_NID :Za korištenje sa vagonom na kat DDM/NID
+str_purchase_electric_NS1100:Obnovljena 1979: {YELLOW}+4% težine, +1/8 dužine.
+str_purchase_electric_NS1500:Prethodno poznata kao: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID:Za korištenje sa vagonom na kat DDM/NID
 str_purchase_electric_HLE11 :Za korištenje sa ICR vagonom za Benelux uslugu.
 str_purchase_electric_HLE25 :Za korištenje sa vagonom Plan W za Benelux uslugu.
-str_purchase_electric_TRAXXF140MS2 :Za korištenje sa ICR vagonom za Benelux uslugu. Modificirani TRAXX F140 MS2.{}Višesistemska lokomotiva, {YELLOW}+87% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
-str_purchase_spc_electric_ES64F4 :Višesistemska lokomotiva, {YELLOW}+42% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_electric_TRAXXF140MS2:Za korištenje sa ICR vagonom za Benelux uslugu. Modificirani TRAXX F140 MS2.{}Višesistemska lokomotiva, {YELLOW}+87% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_spc_electric_ES64F4:Višesistemska lokomotiva, {YELLOW}+42% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
 str_purchase_spc_NS1600P    :Višesistemska lokomotiva, {YELLOW}+70% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
-str_purchase_spc_electric_gen9_HS001 :Višesistemska lokomotiva, {YELLOW}+65% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
-str_purchase_spc_electric_gen9_HS002 :Višesistemska lokomotiva, {YELLOW}+197% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
-str_purchase_electric_TRAXXF140MS2_no_track :Za korištenje sa ICR vagonom za Benelux uslugu. Modificirani TRAXX F140 MS2.{}Višesistemska lokomotiva.
-str_purchase_spc_electric_ES64F4_no_track :Višesistemska lokomotiva.
-str_purchase_spc_NS1600P_no_track :Višesistemska lokomotiva.
-str_purchase_spc_electric_gen9_HS001_no_track :Višesistemska lokomotiva.{}Izmišljena.
-str_purchase_spc_electric_gen9_HS002_no_track :Višesistemska lokomotiva.{}Izmišljena.
+str_purchase_spc_electric_gen9_HS001:Višesistemska lokomotiva, {YELLOW}+65% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_spc_electric_gen9_HS002:Višesistemska lokomotiva, {YELLOW}+197% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_electric_TRAXXF140MS2_no_track:Za korištenje sa ICR vagonom za Benelux uslugu. Modificirani TRAXX F140 MS2.{}Višesistemska lokomotiva.
+str_purchase_spc_electric_ES64F4_no_track:Višesistemska lokomotiva.
+str_purchase_spc_NS1600P_no_track:Višesistemska lokomotiva.
+str_purchase_spc_electric_gen9_HS001_no_track:Višesistemska lokomotiva.{}Izmišljena.
+str_purchase_spc_electric_gen9_HS002_no_track:Višesistemska lokomotiva.{}Izmišljena.
 
 str_purchase_dmu_omBC1901   :Kupljena od 1929: {YELLOW}+41% težine, +233% snage, +7% brzine, +23% tekući troškovi.
 
@@ -603,18 +603,18 @@ str_purchase_emu_Mat36ELD3  :Sa odjeljkom za prtljagu koji se može prenamijenit
 str_purchase_emu_ICE3M      :Višesistemska EMU, {YELLOW}+86% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Također poznata kao: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :Višesistemska EMU, {YELLOW}+139% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
 str_purchase_spc_emu_V250   :Višesistemska EMU, {YELLOW}+83% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
-str_purchase_spc_emu_gen9_HST :Višesistemska EMU, {YELLOW}+68% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
-str_purchase_spc_emu_Future_DD :Višesistemska EMU, {YELLOW}+118% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_spc_emu_gen9_HST:Višesistemska EMU, {YELLOW}+68% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_spc_emu_Future_DD:Višesistemska EMU, {YELLOW}+118% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
 str_purchase_emu_CargoDD        :Višesistemska EMU, {YELLOW}+100% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
 
-str_purchase_emu_ICE3M_no_track :Višesistemska EMU.{}Također poznata kao: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track :Višesistemska EMU.
-str_purchase_spc_emu_V250_no_track :Višesistemska EMU.
-str_purchase_spc_emu_gen9_HST_no_track :Višesistemska EMU.{}Izmišljena.
-str_purchase_spc_emu_Future_DD_no_track :Višesistemska EMU.{}Izmišljena.
-str_purchase_emu_CargoDD_no_track :Višesistemska EMU.{}Izmišljena.
+str_purchase_emu_ICE3M_no_track:Višesistemska EMU.{}Također poznata kao: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track:Višesistemska EMU.
+str_purchase_spc_emu_V250_no_track:Višesistemska EMU.
+str_purchase_spc_emu_gen9_HST_no_track:Višesistemska EMU.{}Izmišljena.
+str_purchase_spc_emu_Future_DD_no_track:Višesistemska EMU.{}Izmišljena.
+str_purchase_emu_CargoDD_no_track:Višesistemska EMU.{}Izmišljena.
 
-str_purchase_coaches_ZHESM_B :Kasnije poznata kao: {SILVER} NS B9900.{}{BLACK}Za korištenje sa motornim vagonom ZHESM mBC.
+str_purchase_coaches_ZHESM_B:Kasnije poznata kao: {SILVER} NS B9900.{}{BLACK}Za korištenje sa motornim vagonom ZHESM mBC.
 str_purchase_coaches_Mat24  :Za korištenje sa motornim vagonima Mat '24.
 str_purchase_coaches_DDAR   :Za korištenje sa motornim vagonima mDDM or NID.
 str_purchase_coaches_PlanW  :Za korištenje sa električnim NS lokomotivama za nacionalni prijevoz i NMBS HLE 25.5 za Benelux uslugu.

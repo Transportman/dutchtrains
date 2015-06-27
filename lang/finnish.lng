@@ -157,13 +157,13 @@ str_cargo_subtype_renewal           :> Saneerausväritys
 str_cargo_subtype_rnet              :> R-net -väritys
 str_cargo_subtype_ns_sprinter           :> NS Sprinter -väritys
 str_cargo_subtype_sr10              :> Sr10 Royal ICR -väritys (22. joulukuuta 1993 - )
-str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter"-väritys rantapalloilla
+str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter"-väritys rantapalloilla
 str_cargo_subtype_strandsprinter    :> "Strandsprinter"-väritys
 str_cargo_subtype_TGV                           :> Thalys-väritys
 str_cargo_subtype_TGV_PBKA          :> PBKA-väritys
 str_cargo_subtype_TGV_PBA           :> PBA-väritys
 str_cargo_subtype_valleilijn_yellow_blue    :> Keltainen ja sininen Valleilijn-väritys
-str_cargo_subtype_valleilijn_blue_yellownose :> Sininen Valleilijn-väritys keltaisella keulalla
+str_cargo_subtype_valleilijn_blue_yellownose:> Sininen Valleilijn-väritys keltaisella keulalla
 str_cargo_subtype_valleilijn_blue           :> Sininen Valleilijn-väritys (kuvitteellinen)
 str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker" -väritys
 str_cargo_subtype_zilverrail        :> Zilverrail-väritys (24.-27. lokakuuta 2005)
@@ -241,7 +241,7 @@ str_cargo_subtype_brown_pigs        :> Ruskea (siat) väritys
 str_cargo_subtype_grey_cows         :> Harmaa (lehmät) väritys
 str_cargo_subtype_grey_pigs         :> Harmaa (siat) väritys
 
-str_cargo_subtype_transformer :: > Transformer cargo -väritys
+str_cargo_subtype_transformer:: > Transformer cargo -väritys
 str_cargo_subtype_house             :> Talonkuljetusväritys
 str_cargo_subtype_train             :> Junarahtiväritys
 str_cargo_subtype_tractor           :> Traktorinkuljetusväritys
@@ -447,7 +447,7 @@ str_wagons_gen9_containercarrier    :Konttivaunu
 str_wagons_gen7_superheavy_flatcar  :Superraskas avovaunu
 
 #coaches
-str_coaches_HIJSM_4_8_10 :HSM 1 matkustajavaunu
+str_coaches_HIJSM_4_8_10:HSM 1 matkustajavaunu
 str_coaches_HSM_C_755   :HSM C matkustajavaunu
 str_coaches_NCS_B_119   :NCS B matkustajavaunu
 str_coaches_SS_C_218    :SS C 1 matkustajavaunu
@@ -457,7 +457,7 @@ str_coaches_RTM_BD_438  :RTM BD matkustajavaunu
 str_coaches_Mat24       :Mat '24 matkustajavaunu
 str_coaches_ZHESM_B     :ZHESM B matkustajavaunu
 str_coaches_Ovaleramen  :"Ovaleramen" matkustajavaunu
-str_coaches_Ovaleramen_t :"Soikeat ikkunat" matkustajavaunu
+str_coaches_Ovaleramen_t:"Soikeat ikkunat" matkustajavaunu
 str_coaches_Bolkoprijtuigen     :"Bolkoprijtuigen" matkustajavaunu
 str_coaches_Bolkoprijtuigen_t   :"Kohokeula" matkustajavaunu
 str_coaches_PlanD       :Plan D matkustajavaunu
@@ -516,7 +516,7 @@ str_purchase_axl_spc            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}{S
 str_purchase_axl_ltm            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
 str_purchase_axl_ltm_spc        :{BLACK}Akselipaino: {YELLOW}{0:STRING}{}BLACK}Lastausaika: {YELLOW}{2:COMMA} päivä{P 2 "" ä}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Pituus: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
-str_purchase_svc_axl_len_ltm_spc :{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Pituus: {YELLOW}{2:STRING}{}{BLACK}Lastausaika: {YELLOW}{4:COMMA} päivä{P "" ä}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_len_ltm_spc:{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Pituus: {YELLOW}{2:STRING}{}{BLACK}Lastausaika: {YELLOW}{4:COMMA} päivä{P "" ä}{}{BLACK}{3:STRING}
 str_purchase_svc_axl_ltm_spc    :{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Lastausaika: {YELLOW}{3:COMMA} päivä{P "" ä}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :matkustajaliikenne
@@ -584,25 +584,25 @@ str_purchase_steam_NCS71    :Saneerattu 1925: {YELLOW}+5% painoa, -4% vetovoimaa
 
 str_purchase_diesel_NS2000  :Aikaisemmin tunnettu nimellä: {SILVER} Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Aikaisemmin tunnettu nimellä: {SILVER} SM 151-155.
-str_purchase_diesel_ACTS5800 :Aikaisemmin tunnettu nimellä: {SILVER} BR Class 58.
-str_purchase_diesel_ACTS6700 :Aikaisemmin tunnettu nimellä: {SILVER} NMBS HLD 62.
+str_purchase_diesel_ACTS5800:Aikaisemmin tunnettu nimellä: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700:Aikaisemmin tunnettu nimellä: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Aikaisemmin tunnettu nimellä: {SILVER} DB BR 232.
 
-str_purchase_electric_NS1100 :Saneerattu 1979: {YELLOW}+4% paino, +1/8 pituus.
-str_purchase_electric_NS1500 :Aikaisemmin tunnettu nimellä: {SILVER} BR Class EM2.
-str_purchase_electric_mDDM_NID :Käytettäväksi DDM/NID kaksikerroksisten matkustajavaunujen kanssa.
+str_purchase_electric_NS1100:Saneerattu 1979: {YELLOW}+4% paino, +1/8 pituus.
+str_purchase_electric_NS1500:Aikaisemmin tunnettu nimellä: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID:Käytettäväksi DDM/NID kaksikerroksisten matkustajavaunujen kanssa.
 str_purchase_electric_HLE11 :Käytettäväksi ICR-matkustajavaunujen kanssa Benelux-vuoroilla
 str_purchase_electric_HLE25 :Käytettäväksi Plan W matkustajavaunun kanssa Benelux-vuoroilla.
-str_purchase_electric_TRAXXF140MS2 :Käytettäväksi ICR-matkustajavaunujen kanssa Benelux-vuoroilla. Muokattu TRAXX F140 MS2.{}Monijärjestelmäveturi, {YELLOW}+87% voimaa {BLACK}25 kV ~ sähköradalla.
-str_purchase_spc_electric_ES64F4 :Monijärjestelmäveturi, {YELLOW}+42% voimaa {BLACK}25 kV ~ sähköradalla.
+str_purchase_electric_TRAXXF140MS2:Käytettäväksi ICR-matkustajavaunujen kanssa Benelux-vuoroilla. Muokattu TRAXX F140 MS2.{}Monijärjestelmäveturi, {YELLOW}+87% voimaa {BLACK}25 kV ~ sähköradalla.
+str_purchase_spc_electric_ES64F4:Monijärjestelmäveturi, {YELLOW}+42% voimaa {BLACK}25 kV ~ sähköradalla.
 str_purchase_spc_NS1600P    :Monijärjestelmäveturi, {YELLOW}+70% voimaa {BLACK}25 kV ~ sähköradalla.
-str_purchase_spc_electric_gen9_HS001 :Monijärjestelmäveturi, {YELLOW}+65% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
-str_purchase_spc_electric_gen9_HS002 :Monijärjestelmäveturi, {YELLOW}+197% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
-str_purchase_electric_TRAXXF140MS2_no_track :Käytettäväksi ICR-matkustajavaunujen kanssa Benelux-vuoroilla. Muokattu TRAXX F140 MS2.{}Monijärjestelmäveturi.
-str_purchase_spc_electric_ES64F4_no_track :Monijärjestelmäveturi.
-str_purchase_spc_NS1600P_no_track :Monijärjestelmäveturi.
-str_purchase_spc_electric_gen9_HS001_no_track :Monijärjestelmäveturi.{}Kuvitteellinen.
-str_purchase_spc_electric_gen9_HS002_no_track :Monijärjestelmäveturi.{}Kuvitteellinen.
+str_purchase_spc_electric_gen9_HS001:Monijärjestelmäveturi, {YELLOW}+65% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
+str_purchase_spc_electric_gen9_HS002:Monijärjestelmäveturi, {YELLOW}+197% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
+str_purchase_electric_TRAXXF140MS2_no_track:Käytettäväksi ICR-matkustajavaunujen kanssa Benelux-vuoroilla. Muokattu TRAXX F140 MS2.{}Monijärjestelmäveturi.
+str_purchase_spc_electric_ES64F4_no_track:Monijärjestelmäveturi.
+str_purchase_spc_NS1600P_no_track:Monijärjestelmäveturi.
+str_purchase_spc_electric_gen9_HS001_no_track:Monijärjestelmäveturi.{}Kuvitteellinen.
+str_purchase_spc_electric_gen9_HS002_no_track:Monijärjestelmäveturi.{}Kuvitteellinen.
 
 str_purchase_dmu_omBC1901   :1929 jälkeen ostettuna: {YELLOW}+41% painoa, 233% voimaa, +7% nopeutta, +23% käyttökustannuksia.
 
@@ -612,18 +612,18 @@ str_purchase_emu_Mat36ELD3  :Mukana matkatavaraosasto, joka voidaan sovittaa pik
 str_purchase_emu_ICE3M      :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+86% voimaa {BLACK}25 kV ~ sähköradalla.{}Tunnetaan myös nimellä {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+139% voimaa {BLACK}25 kV ~ sähköradalla.
 str_purchase_spc_emu_V250   :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+83% teho {BLACK}25 kV:n ~ sähköistetyllä radalla.
-str_purchase_spc_emu_gen9_HST :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+68% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
-str_purchase_spc_emu_Future_DD :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+118% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
+str_purchase_spc_emu_gen9_HST:Monijärjestelmäsähkömoottorivaunu, {YELLOW}+68% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
+str_purchase_spc_emu_Future_DD:Monijärjestelmäsähkömoottorivaunu, {YELLOW}+118% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
 str_purchase_emu_CargoDD        :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+100% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
 
-str_purchase_emu_ICE3M_no_track :Monijärjestelmäsähkömoottorivaunu.{}Tunnetaan myös nimellä {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track :Monijärjestelmäsähkömoottorivaunu.
-str_purchase_spc_emu_V250_no_track :Monijärjestelmäsähkömoottorivaunu.
-str_purchase_spc_emu_gen9_HST_no_track :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
-str_purchase_spc_emu_Future_DD_no_track :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
-str_purchase_emu_CargoDD_no_track :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+str_purchase_emu_ICE3M_no_track:Monijärjestelmäsähkömoottorivaunu.{}Tunnetaan myös nimellä {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track:Monijärjestelmäsähkömoottorivaunu.
+str_purchase_spc_emu_V250_no_track:Monijärjestelmäsähkömoottorivaunu.
+str_purchase_spc_emu_gen9_HST_no_track:Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+str_purchase_spc_emu_Future_DD_no_track:Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+str_purchase_emu_CargoDD_no_track:Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
 
-str_purchase_coaches_ZHESM_B :Myöhemmin tunnetaan nimellä: {SILVER} NS B9900.{}{BLACK}Käytettäväksi ZHESM mBC moottorivaunun kanssa.
+str_purchase_coaches_ZHESM_B:Myöhemmin tunnetaan nimellä: {SILVER} NS B9900.{}{BLACK}Käytettäväksi ZHESM mBC moottorivaunun kanssa.
 str_purchase_coaches_Mat24  :Käytettäväksi moottorivaunutyypin Mat '24 kanssa.
 str_purchase_coaches_DDAR   :Käytettäväksi moottorivaunutyyppien mDDM tai NID kanssa.
 str_purchase_coaches_PlanW  :Käytettäväksi NS:n sähköjunien kanssa valtiollisilla vuoroilla ja NMBS HLE 25.5:n kanssa Benelux-vuoroilla.

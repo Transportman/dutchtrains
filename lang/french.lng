@@ -158,13 +158,13 @@ str_cargo_subtype_renewal           : > Livrée Modernisée
 str_cargo_subtype_rnet              :> Livrée R-net
 str_cargo_subtype_ns_sprinter           :> Livrée NS Sprinter
 str_cargo_subtype_sr10              :> Livrée Sr10 Royal ICR (22 déc. 1993 - présent)
-str_cargo_subtype_strandsprinter_beachballs : > Livrée "Strandsprinter" avec ballons de plage
+str_cargo_subtype_strandsprinter_beachballs: > Livrée "Strandsprinter" avec ballons de plage
 str_cargo_subtype_strandsprinter    : > Livrée "Strandsprinter"
 str_cargo_subtype_TGV                           :> Livrée Thalys
 str_cargo_subtype_TGV_PBKA          :> Livrée PBKA
 str_cargo_subtype_TGV_PBA           :> Livrée PBA
 str_cargo_subtype_valleilijn_yellow_blue    :> Livrée Valleilijn jaune/bleu
-str_cargo_subtype_valleilijn_blue_yellownose :> Livrée Valleilijn bleue avec nez jaune
+str_cargo_subtype_valleilijn_blue_yellownose:> Livrée Valleilijn bleue avec nez jaune
 str_cargo_subtype_valleilijn_blue           : > Livrée Valleilijn bleue (fictive)
 str_cargo_subtype_wadkikker         :> Livrée NoordNet "Wadkikker"
 str_cargo_subtype_zilverrail        : > Livrée Zilverrail (24-27 oct. 2005)
@@ -242,7 +242,7 @@ str_cargo_subtype_brown_pigs        : > Livrée brune (cochons)
 str_cargo_subtype_grey_cows         :> Livrée grise (bovins)
 str_cargo_subtype_grey_pigs         :> Livrée grise (cochons)
 
-str_cargo_subtype_transformer :      : > Livrée Transformer cargo
+str_cargo_subtype_transformer:      : > Livrée Transformer cargo
 str_cargo_subtype_house             :> Livrée House cargo
 str_cargo_subtype_train             : > Livrée Train cargo
 str_cargo_subtype_tractor           :> Livrée Tractor cargo
@@ -448,7 +448,7 @@ str_wagons_gen9_containercarrier    :Wagon porte-containers
 str_wagons_gen7_superheavy_flatcar  :Wagon plat (charges extra-lourdes)
 
 #coaches
-str_coaches_HIJSM_4_8_10 :Voiture HSM 1
+str_coaches_HIJSM_4_8_10:Voiture HSM 1
 str_coaches_HSM_C_755   :Voiture HSM C
 str_coaches_NCS_B_119   :Voiture NCS B
 str_coaches_SS_C_218    :Voiture SS C 1
@@ -458,7 +458,7 @@ str_coaches_RTM_BD_438  :Voiture RTM BD
 str_coaches_Mat24       :Voiture Mat '24
 str_coaches_ZHESM_B     :Voiture ZHESM B
 str_coaches_Ovaleramen  :Voiture "Ovaleramen"
-str_coaches_Ovaleramen_t :Voiture "Fenêtres ovales"
+str_coaches_Ovaleramen_t:Voiture "Fenêtres ovales"
 str_coaches_Bolkoprijtuigen     :Voiture "Bolkoprijtuigen"
 str_coaches_Bolkoprijtuigen_t   :Voiture "Toit bombé"
 str_coaches_PlanD       :Voiture Plan D
@@ -517,7 +517,7 @@ str_purchase_axl_spc            :{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING
 str_purchase_axl_ltm            :{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{COMMA} jour{P "" s}
 str_purchase_axl_ltm_spc        :{BLACK}Charge par essieu{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{2:COMMA} jour{P "" s}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}Longueur{NBSP}: {YELLOW}{STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{COMMA} jour{P "" s}
-str_purchase_svc_axl_len_ltm_spc :{BLACK}Service{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{1:STRING}{}{BLACK}Longueur{NBSP}: {YELLOW}{2:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{4:COMMA} jour{P "" s}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_len_ltm_spc:{BLACK}Service{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{1:STRING}{}{BLACK}Longueur{NBSP}: {YELLOW}{2:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{4:COMMA} jour{P "" s}{}{BLACK}{3:STRING}
 str_purchase_svc_axl_ltm_spc    :{BLACK}Service{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{1:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{3:COMMA} jour{P "" s}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :passagers
@@ -585,25 +585,25 @@ str_purchase_steam_NCS71    :Rénovation 1925{NBSP}: {YELLOW}poids +5%, eff. tra
 
 str_purchase_diesel_NS2000  :Ancienne immatriculation{NBSP}: {SILVER} Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Ancienne immatriculation{NBSP}: {SILVER} SM 151-155.
-str_purchase_diesel_ACTS5800 :Ancienne immatriculation{NBSP}: {SILVER} BR Classe 58
-str_purchase_diesel_ACTS6700 :Ancienne immatriculation{NBSP}: {SILVER} NMBS HLD 62.
+str_purchase_diesel_ACTS5800:Ancienne immatriculation{NBSP}: {SILVER} BR Classe 58
+str_purchase_diesel_ACTS6700:Ancienne immatriculation{NBSP}: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Ancienne immatriculation{NBSP}: {SILVER} DB BR 232.
 
-str_purchase_electric_NS1100 :Rénovation 1979{NBSP}: {YELLOW}poids +4%, longueur +1/8.
-str_purchase_electric_NS1500 :Ancienne immatriculation{NBSP}: {SILVER} BR Classe EM2.
-str_purchase_electric_mDDM_NID :À utiliser avec la voiture 2 niveaux DDM/NID.
+str_purchase_electric_NS1100:Rénovation 1979{NBSP}: {YELLOW}poids +4%, longueur +1/8.
+str_purchase_electric_NS1500:Ancienne immatriculation{NBSP}: {SILVER} BR Classe EM2.
+str_purchase_electric_mDDM_NID:À utiliser avec la voiture 2 niveaux DDM/NID.
 str_purchase_electric_HLE11 :À utiliser avec la Voiture ICR pour un service Benelux.
 str_purchase_electric_HLE25 :À utiliser avec la Voiture Plan W pour un service Benelux.
-str_purchase_electric_TRAXXF140MS2 :À utiliser avec la Voiture ICR pour un service Benelux. TRAXX F140 MS2 modifiée.{}Locomotive multi-tension, {YELLOW}puissance +87% {BLACK}sur voie électrifiée 25 kV AC.
-str_purchase_spc_electric_ES64F4 :Locomotive multi-tension, {YELLOW}puissance +42% {BLACK}sur voie électrifiée 25 kV AC.
+str_purchase_electric_TRAXXF140MS2:À utiliser avec la Voiture ICR pour un service Benelux. TRAXX F140 MS2 modifiée.{}Locomotive multi-tension, {YELLOW}puissance +87% {BLACK}sur voie électrifiée 25 kV AC.
+str_purchase_spc_electric_ES64F4:Locomotive multi-tension, {YELLOW}puissance +42% {BLACK}sur voie électrifiée 25 kV AC.
 str_purchase_spc_NS1600P    :Locomotive multi-tension, {YELLOW}puissance +70% {BLACK}sur voie électrifiée 25 kV AC.
-str_purchase_spc_electric_gen9_HS001 :Locomotive multi-tension, {YELLOW}puissance +65% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
-str_purchase_spc_electric_gen9_HS002 :Locomotive multi-tension, {YELLOW}puissance +197% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
-str_purchase_electric_TRAXXF140MS2_no_track :À utiliser avec la Voiture ICR pour un service Benelux. TRAXX F140 MS2 modifiée.{}Locomotive multi-tensions.
-str_purchase_spc_electric_ES64F4_no_track :Locomotive multi-tension.
-str_purchase_spc_NS1600P_no_track :Locomotive multi-tension.
-str_purchase_spc_electric_gen9_HS001_no_track :Locomotive multi-tension.{}Fictive.
-str_purchase_spc_electric_gen9_HS002_no_track :Locomotive multi-tension.{}Fictive.
+str_purchase_spc_electric_gen9_HS001:Locomotive multi-tension, {YELLOW}puissance +65% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
+str_purchase_spc_electric_gen9_HS002:Locomotive multi-tension, {YELLOW}puissance +197% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
+str_purchase_electric_TRAXXF140MS2_no_track:À utiliser avec la Voiture ICR pour un service Benelux. TRAXX F140 MS2 modifiée.{}Locomotive multi-tensions.
+str_purchase_spc_electric_ES64F4_no_track:Locomotive multi-tension.
+str_purchase_spc_NS1600P_no_track:Locomotive multi-tension.
+str_purchase_spc_electric_gen9_HS001_no_track:Locomotive multi-tension.{}Fictive.
+str_purchase_spc_electric_gen9_HS002_no_track:Locomotive multi-tension.{}Fictive.
 
 str_purchase_dmu_omBC1901   :Achat à partir de 1929: {YELLOW}poids +41%, puissance +233%, vitesse +7%, coût d'entretien +23%.
 
@@ -613,18 +613,18 @@ str_purchase_emu_Mat36ELD3  :Avec compartiment à bagages réaménageable pour m
 str_purchase_emu_ICE3M      :Rame électrique multi-tension, {YELLOW}puissance +86% {BLACK}sur voie électrifiée 25 kV AC.{}Autre immatriculation{NBSP}: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :Rame électrique multi-tension, {YELLOW}puissance +139% {BLACK}sur voie électrifiée 25 kV AC.
 str_purchase_spc_emu_V250   :Locomotive multi-tension, {YELLOW}puissance +83% {BLACK}sur voie électrifiée 25 kV AC.
-str_purchase_spc_emu_gen9_HST :Locomotive multi-tension, {YELLOW}puissance +68% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
-str_purchase_spc_emu_Future_DD :Rame électrique multi-tension, {YELLOW}puissance +118% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
+str_purchase_spc_emu_gen9_HST:Locomotive multi-tension, {YELLOW}puissance +68% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
+str_purchase_spc_emu_Future_DD:Rame électrique multi-tension, {YELLOW}puissance +118% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
 str_purchase_emu_CargoDD        :Rame électrique multi-tension, {YELLOW}puissance +100% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
 
-str_purchase_emu_ICE3M_no_track :Rame électrique multi-tension.{}Ancienne immatriculation{NBSP}: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track :Rame électrique multi-tension.
-str_purchase_spc_emu_V250_no_track :Rame électrique multi-tension.
-str_purchase_spc_emu_gen9_HST_no_track :Rame électrique multi-tension.{}Fictive.
-str_purchase_spc_emu_Future_DD_no_track :Rame électrique multi-tension.{}Fictive.
-str_purchase_emu_CargoDD_no_track :Rame électrique multi-tension.{}Fictive.
+str_purchase_emu_ICE3M_no_track:Rame électrique multi-tension.{}Ancienne immatriculation{NBSP}: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track:Rame électrique multi-tension.
+str_purchase_spc_emu_V250_no_track:Rame électrique multi-tension.
+str_purchase_spc_emu_gen9_HST_no_track:Rame électrique multi-tension.{}Fictive.
+str_purchase_spc_emu_Future_DD_no_track:Rame électrique multi-tension.{}Fictive.
+str_purchase_emu_CargoDD_no_track:Rame électrique multi-tension.{}Fictive.
 
-str_purchase_coaches_ZHESM_B :Nouvelle immatriculation{NBSP}: {SILVER} NS B9900.{}{BLACK}Utiliser avec l'autorail ZHESM mBC.
+str_purchase_coaches_ZHESM_B:Nouvelle immatriculation{NBSP}: {SILVER} NS B9900.{}{BLACK}Utiliser avec l'autorail ZHESM mBC.
 str_purchase_coaches_Mat24  :À utiliser avec la voiture motorisée Mat '24
 str_purchase_coaches_DDAR   :À utiliser avec la voiture motorisée mDDM ou NID.
 str_purchase_coaches_PlanW  :À utiliser avec les NS électriques pour un service national et la NBMS HLE 25.5 pour un service Benelux.

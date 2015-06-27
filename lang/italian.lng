@@ -159,13 +159,13 @@ str_cargo_subtype_renewal           :> livrea rinnovata
 str_cargo_subtype_rnet              :> livrea R-net
 str_cargo_subtype_ns_sprinter           :> livrea NS Sprinter
 str_cargo_subtype_sr10              :> livrea reale Sr10 ICR (dal 22/12/1993 in avanti)
-str_cargo_subtype_strandsprinter_beachballs :> livrea "Strandsprinter" con palloni da spiaggia
+str_cargo_subtype_strandsprinter_beachballs:> livrea "Strandsprinter" con palloni da spiaggia
 str_cargo_subtype_strandsprinter    :> livrea "Strandsprinter"
 str_cargo_subtype_TGV                           :> livrea Thalys
 str_cargo_subtype_TGV_PBKA          :> livrea PBKA
 str_cargo_subtype_TGV_PBA           :> livrea PBA
 str_cargo_subtype_valleilijn_yellow_blue    :> livrea Valleilijn gialla/blu
-str_cargo_subtype_valleilijn_blue_yellownose :> livrea Valleilijn blu con naso giallo
+str_cargo_subtype_valleilijn_blue_yellownose:> livrea Valleilijn blu con naso giallo
 str_cargo_subtype_valleilijn_blue           :> livrea Valleilijn blu (immaginaria)
 str_cargo_subtype_wadkikker         :> livrea NoordNet "Wadkikker"
 str_cargo_subtype_zilverrail        :> livrea Zilverrail (Oct 24-27, 2005)
@@ -243,7 +243,7 @@ str_cargo_subtype_brown_pigs        :> livrea marrone (maiali)
 str_cargo_subtype_grey_cows         :> livrea grigia (mucche)
 str_cargo_subtype_grey_pigs         :> livrea grigia (maiali)
 
-str_cargo_subtype_transformer :: > livrea Transformer cargo
+str_cargo_subtype_transformer:: > livrea Transformer cargo
 str_cargo_subtype_house             :> livrea House cargo
 str_cargo_subtype_train             :> livrea Train cargo
 str_cargo_subtype_tractor           :> livrea Tractor cargo
@@ -449,7 +449,7 @@ str_wagons_gen9_containercarrier    :Carro porta-container
 str_wagons_gen7_superheavy_flatcar  :Carro pianale per carichi pesanti
 
 #coaches
-str_coaches_HIJSM_4_8_10 :Carrozza HSM 1
+str_coaches_HIJSM_4_8_10:Carrozza HSM 1
 str_coaches_HSM_C_755   :Carrozza HSM C
 str_coaches_NCS_B_119   :Carrozza NCS B
 str_coaches_SS_C_218    :Carrozza SS C 1
@@ -459,7 +459,7 @@ str_coaches_RTM_BD_438  :Carrozza RTM BD
 str_coaches_Mat24       :Carrozza Mat '24
 str_coaches_ZHESM_B     :Carrozza ZHESM B
 str_coaches_Ovaleramen  :Carrozza "Ovaleramen"
-str_coaches_Ovaleramen_t :Carrozza "Finestre ovali"
+str_coaches_Ovaleramen_t:Carrozza "Finestre ovali"
 str_coaches_Bolkoprijtuigen     :Carrozza "Bolkoprijtuigen"
 str_coaches_Bolkoprijtuigen_t   :Carrozza "Testa gonfia"
 str_coaches_PlanD       :Carrozza Plan D
@@ -518,7 +518,7 @@ str_purchase_axl_spc            :{BLACK}Peso assiale: {YELLOW}{STRING}{}{BLACK}{
 str_purchase_axl_ltm            :{BLACK}Peso assiale: {YELLOW}{STRING}{}{BLACK}Velocità di carico: {YELLOW}{COMMA} giorn{P o i}
 str_purchase_axl_ltm_spc        :{BLACK}Peso assiale: {YELLOW}{0:STRING}{}{BLACK}Velocità di carico: {YELLOW}{2:COMMA} giorn{P o i}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Servizio: {YELLOW}{STRING}{}{BLACK}Peso assiale {YELLOW}{STRING}{}{BLACK}Lunghezza: {YELLOW}{STRING}{}{BLACK}Velocità di carico: {YELLOW}{COMMA} giorn{P o i}
-str_purchase_svc_axl_len_ltm_spc :{BLACK}Servizio: {YELLOW}{0:STRING}{}{BLACK}Peso assiale: {YELLOW}{1:STRING}{}{BLACK}Lunghezza: {YELLOW}{2:STRING}{}{BLACK}Velocità di carico: {YELLOW}{4:COMMA} giorn{P o i}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_len_ltm_spc:{BLACK}Servizio: {YELLOW}{0:STRING}{}{BLACK}Peso assiale: {YELLOW}{1:STRING}{}{BLACK}Lunghezza: {YELLOW}{2:STRING}{}{BLACK}Velocità di carico: {YELLOW}{4:COMMA} giorn{P o i}{}{BLACK}{3:STRING}
 str_purchase_svc_axl_ltm_spc    :{BLACK}Servizio: {YELLOW}{0:STRING}{}{BLACK}Peso assiale: {YELLOW}{1:STRING}{}{BLACK}Velocità di carico: {YELLOW}{3:COMMA} giorn{P o i}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :viaggiatori
@@ -586,25 +586,25 @@ str_purchase_steam_NCS71    :Riqualificazione 1925: {YELLOW}+5% peso, -4% sforzo
 
 str_purchase_diesel_NS2000  :Denominazione precedente: {SILVER} Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Denominazione precedente: {SILVER} SM 151-155.
-str_purchase_diesel_ACTS5800 :Denominazione precedente: {SILVER} BR Gruppo 58.
-str_purchase_diesel_ACTS6700 :Denominazione precedente: {SILVER} NMBS HLD 62.
+str_purchase_diesel_ACTS5800:Denominazione precedente: {SILVER} BR Gruppo 58.
+str_purchase_diesel_ACTS6700:Denominazione precedente: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Denominazione precedente: {SILVER} DB BR 232.
 
-str_purchase_electric_NS1100 :Riqualificata nel 1979: {YELLOW}+4% peso, +1/8 lunghezza.
-str_purchase_electric_NS1500 :Denominazione precedente: {SILVER} BR Gruppo EM2.
-str_purchase_electric_mDDM_NID :Da usare con carrozze a due piani DDM/NID.
+str_purchase_electric_NS1100:Riqualificata nel 1979: {YELLOW}+4% peso, +1/8 lunghezza.
+str_purchase_electric_NS1500:Denominazione precedente: {SILVER} BR Gruppo EM2.
+str_purchase_electric_mDDM_NID:Da usare con carrozze a due piani DDM/NID.
 str_purchase_electric_HLE11 :Da usare con carrozze ICR per servizi Benelux.
 str_purchase_electric_HLE25 :Da usare con carrozze Plan W per servizi Benelux.
-str_purchase_electric_TRAXXF140MS2 :Da usare con carrozze ICR per servizi Benelux. TRAXX F140 MS2 modificata.{}Locomotiva multifase, {YELLOW}+87% potenza {BLACK}su linee elettrificate a 25 kV.
-str_purchase_spc_electric_ES64F4 :Locomotiva multifase, {YELLOW}+42% potenza {BLACK}su linee elettrificate a 25 kV.
+str_purchase_electric_TRAXXF140MS2:Da usare con carrozze ICR per servizi Benelux. TRAXX F140 MS2 modificata.{}Locomotiva multifase, {YELLOW}+87% potenza {BLACK}su linee elettrificate a 25 kV.
+str_purchase_spc_electric_ES64F4:Locomotiva multifase, {YELLOW}+42% potenza {BLACK}su linee elettrificate a 25 kV.
 str_purchase_spc_NS1600P    :Locomotiva multufase, {YELLOW}+70% potenza {BLACK}su linee elettrificate a 25 kV.
-str_purchase_spc_electric_gen9_HS001 :Locomotiva multifase, {YELLOW}+65% potenza {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
-str_purchase_spc_electric_gen9_HS002 :Locomotiva multifase, {YELLOW}+197% potenza {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
-str_purchase_electric_TRAXXF140MS2_no_track :Da usare con carrozze ICR per servizi Benelux. TRAXX F140 MS2 modificata.{}Locomotiva multifase.
-str_purchase_spc_electric_ES64F4_no_track :Locomotiva multifase.
-str_purchase_spc_NS1600P_no_track :Locomotiva multifase.
-str_purchase_spc_electric_gen9_HS001_no_track :Locomotiva multifase.{}Di fantasia.
-str_purchase_spc_electric_gen9_HS002_no_track :Locomotiva multifase.{}Di fantasia.
+str_purchase_spc_electric_gen9_HS001:Locomotiva multifase, {YELLOW}+65% potenza {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
+str_purchase_spc_electric_gen9_HS002:Locomotiva multifase, {YELLOW}+197% potenza {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
+str_purchase_electric_TRAXXF140MS2_no_track:Da usare con carrozze ICR per servizi Benelux. TRAXX F140 MS2 modificata.{}Locomotiva multifase.
+str_purchase_spc_electric_ES64F4_no_track:Locomotiva multifase.
+str_purchase_spc_NS1600P_no_track:Locomotiva multifase.
+str_purchase_spc_electric_gen9_HS001_no_track:Locomotiva multifase.{}Di fantasia.
+str_purchase_spc_electric_gen9_HS002_no_track:Locomotiva multifase.{}Di fantasia.
 
 str_purchase_dmu_omBC1901   :Acquistata nuova dal 1929 in poi: {YELLOW}+41% peso, +233% potenza, +7% velocitá, +23% costi d'esercizio.
 
@@ -614,18 +614,18 @@ str_purchase_emu_Mat36ELD3  :Con vano bagagli riadattabile per merci leggere o p
 str_purchase_emu_ICE3M      :Elettrotreno multifase, {YELLOW}+86% potenza {BLACK}su linee elettrificate a 25 kV.{}Denominazione alternativa: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :Elettrotreno multifase, {YELLOW}+139% potenza {BLACK}su linee elettrificate a 25 kV.
 str_purchase_spc_emu_V250   :Elettrotreno multifase, {YELLOW}+83% potenza {BLACK}su linee elettrificate a 25 kV.
-str_purchase_spc_emu_gen9_HST :Elettrotreno multifase, {YELLOW}+68% potenza {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
-str_purchase_spc_emu_Future_DD :Elettrotreno multifase, {YELLOW}+118% potenza  {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
+str_purchase_spc_emu_gen9_HST:Elettrotreno multifase, {YELLOW}+68% potenza {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
+str_purchase_spc_emu_Future_DD:Elettrotreno multifase, {YELLOW}+118% potenza  {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
 str_purchase_emu_CargoDD        :Elettrotreno multisistema, {YELLOW}+100% potenza {BLACK}su linee elettrificate a 25 kV.{}Treno di fantasia.
 
-str_purchase_emu_ICE3M_no_track :Elettrotreno multifase.{}Denominazione alternativa: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track :Elettrotreno multifase.
-str_purchase_spc_emu_V250_no_track :Elettrotreno multifase.
-str_purchase_spc_emu_gen9_HST_no_track :Elettrotreno multifase.{}Di fantasia.
-str_purchase_spc_emu_Future_DD_no_track :Elettrotreno multifase.{}Di fantasia.
-str_purchase_emu_CargoDD_no_track :Elettrotreno multifase.{}Di fantasia.
+str_purchase_emu_ICE3M_no_track:Elettrotreno multifase.{}Denominazione alternativa: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track:Elettrotreno multifase.
+str_purchase_spc_emu_V250_no_track:Elettrotreno multifase.
+str_purchase_spc_emu_gen9_HST_no_track:Elettrotreno multifase.{}Di fantasia.
+str_purchase_spc_emu_Future_DD_no_track:Elettrotreno multifase.{}Di fantasia.
+str_purchase_emu_CargoDD_no_track:Elettrotreno multifase.{}Di fantasia.
 
-str_purchase_coaches_ZHESM_B :Denominazione successiva {SILVER} NS B9900.{}{BLACK}Da usare con una carrozza motorizzata ZHESM mBC.
+str_purchase_coaches_ZHESM_B:Denominazione successiva {SILVER} NS B9900.{}{BLACK}Da usare con una carrozza motorizzata ZHESM mBC.
 str_purchase_coaches_Mat24  :Da usare con una carrozza motorizzata Mat '24.
 str_purchase_coaches_DDAR   :Necessita di una carrozza motorizzata mDDM o NID.
 str_purchase_coaches_PlanW  :Da usare con locomotive NS elettriche per servizi nazionali e NMBS HLE 25.5 per servizi Benelux.

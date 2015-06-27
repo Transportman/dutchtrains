@@ -49,7 +49,7 @@ str_cargo_subtype_freedom           : > Seragam merdeka
 str_cargo_subtype_groningen         : > Seragam Groningen Mendini
 str_cargo_subtype_hispeed           : > Seragam NS Hispeed
 str_cargo_subtype_nid               : > Seragam NID
-str_cargo_subtype_strandsprinter_beachballs : > Seragam "Strandsprinter" sama bola pantai
+str_cargo_subtype_strandsprinter_beachballs: > Seragam "Strandsprinter" sama bola pantai
 str_cargo_subtype_strandsprinter    : > Seragam "Strandsprinter"
 str_cargo_subtype_TGV_PBA           : > Seragam PBA
 str_cargo_subtype_zilverrail        : > Seragam Zilverrail (Oct 24-27, 2005)
@@ -71,7 +71,7 @@ str_cargo_subtype_Syntus            : > Seragam Syntus
 str_cargo_subtype_brown_cows        : > Seragam warna coklat (sapi)
 str_cargo_subtype_grey_cows         : > Seragam warna abu-abu (sapi)
 
-str_cargo_subtype_transformer :: > Seragam kargo transformator
+str_cargo_subtype_transformer:: > Seragam kargo transformator
 
 #steam
 str_steam_Arend         :HSM "Arend" (Uap)
@@ -154,9 +154,9 @@ str_purchase_steam_HSM126   :Sebelum disebut sebagai: {SILVER} HSM 126-135.
 str_purchase_steam_HSM501   :Sebelum disebut sebagai: {SILVER} HSM 501-535.
 str_purchase_steam_SS17     :Dimembaharui tahun 1913: {YELLOW}+20% daya, +19% daya traksi, +7% biaya operasi.{}{BLACK}Sebelum disebut sebagai: {SILVER} SS 17-20, 161-205, 212.
 
-str_purchase_diesel_ACTS6700 :Sebelum disebut sebagai: {SILVER} NMBS HLD 62.
+str_purchase_diesel_ACTS6700:Sebelum disebut sebagai: {SILVER} NMBS HLD 62.
 
-str_purchase_electric_NS1100 :Dimembaharui tahun 1979: {YELLOW}+4% berat, +1/8 panjang.
+str_purchase_electric_NS1100:Dimembaharui tahun 1979: {YELLOW}+4% berat, +1/8 panjang.
 
 
 

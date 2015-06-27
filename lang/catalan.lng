@@ -158,13 +158,13 @@ str_cargo_subtype_renewal           :> Renewal
 str_cargo_subtype_rnet              :> R-net
 str_cargo_subtype_ns_sprinter           :> NS Sprinter
 str_cargo_subtype_sr10              :> Sr10 Royal ICR (des del 22 desembre del 1993)
-str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter" amb pilotes de platja
+str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter" amb pilotes de platja
 str_cargo_subtype_strandsprinter    :> "Strandsprinter"
 str_cargo_subtype_TGV                           :> Thalys
 str_cargo_subtype_TGV_PBKA          :> PBKA
 str_cargo_subtype_TGV_PBA           :> PBA
 str_cargo_subtype_valleilijn_yellow_blue    :>Valleilijn groc/blau
-str_cargo_subtype_valleilijn_blue_yellownose :> Valleilijn color blau amb morro groc
+str_cargo_subtype_valleilijn_blue_yellownose:> Valleilijn color blau amb morro groc
 str_cargo_subtype_valleilijn_blue           :> Valleilijn blau (fictici)
 str_cargo_subtype_wadkikker         :> NoordNet "Wadkikker"
 str_cargo_subtype_zilverrail        :> Zilverrail (24-27 Oct, 2005)
@@ -242,7 +242,7 @@ str_cargo_subtype_brown_pigs        :> Color marró (Pigs)
 str_cargo_subtype_grey_cows         :> Color gris (Cows)
 str_cargo_subtype_grey_pigs         :> Color gris (Pigs)
 
-str_cargo_subtype_transformer :> Càrrega Transformer
+str_cargo_subtype_transformer:> Càrrega Transformer
 str_cargo_subtype_house             :> Càrrega House
 str_cargo_subtype_train             :> Càrrega de tren
 str_cargo_subtype_tractor           :> Càrrega de tractors
@@ -448,7 +448,7 @@ str_wagons_gen9_containercarrier    :Transportador de Contenidors
 str_wagons_gen7_superheavy_flatcar  :Vagó Plataforma Molt Pesat
 
 #coaches
-str_coaches_HIJSM_4_8_10 :Vagó HSM 1
+str_coaches_HIJSM_4_8_10:Vagó HSM 1
 str_coaches_HSM_C_755   :Vagó HSM C
 str_coaches_NCS_B_119   :Vagó NCS B
 str_coaches_SS_C_218    :Vagó SS C 1
@@ -458,7 +458,7 @@ str_coaches_RTM_BD_438  :Vagó RTM BD
 str_coaches_Mat24       :Vagó Mat '24
 str_coaches_ZHESM_B     :Vagó ZHESM B
 str_coaches_Ovaleramen  :Vagó "Ovaleramen"
-str_coaches_Ovaleramen_t :Vagó "Oval windows"
+str_coaches_Ovaleramen_t:Vagó "Oval windows"
 str_coaches_Bolkoprijtuigen     :Vagó "Bolkoprijtuigen"
 str_coaches_Bolkoprijtuigen_t   :Vagó "Bulgehead carriages"
 str_coaches_PlanD       :Vagó Plan D
@@ -517,7 +517,7 @@ str_purchase_axl_spc            :{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{
 str_purchase_axl_ltm            :{BLACK}Pes Permès per eix: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{COMMA} di{P a es}
 str_purchase_axl_ltm_spc        :{BLACK}Pes Permès per Eix: {YELLOW}{0:STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{2:COMMA} di{P a es}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Servei: {YELLOW}{STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{STRING}{}{BLACK}Llargada: {YELLOW}{STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{COMMA} di{P a es}
-str_purchase_svc_axl_len_ltm_spc :{BLACK}Servei: {YELLOW}{0:STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{1:STRING}{}{BLACK}Llargada: {YELLOW}{2:STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{4:COMMA} di{P a es}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_len_ltm_spc:{BLACK}Servei: {YELLOW}{0:STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{1:STRING}{}{BLACK}Llargada: {YELLOW}{2:STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{4:COMMA} di{P a es}{}{BLACK}{3:STRING}
 str_purchase_svc_axl_ltm_spc    :{BLACK}Servei: {YELLOW}{0:STRING}{}{BLACK}Pes Permès per Eix: {YELLOW}{1:STRING}{}{BLACK}Temps de Càrrega: {YELLOW}{3:COMMA} di{P a es}{}{BLACK}{2:STRING}
 
 str_purchase_svc_p          :passatgers
@@ -585,25 +585,25 @@ str_purchase_steam_NCS71    :Remodelat el 1925: {YELLOW}+5% pes, -4% esforç de 
 
 str_purchase_diesel_NS2000  :Abans coneguda com a: {SILVER}Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Abans coneguda com a: {SILVER}SM 151-155.
-str_purchase_diesel_ACTS5800 :Abans coneguda com a: {SILVER}BR Classe 58.
-str_purchase_diesel_ACTS6700 :Abans coneguda com a: {SILVER}NMBS HLD 62.
+str_purchase_diesel_ACTS5800:Abans coneguda com a: {SILVER}BR Classe 58.
+str_purchase_diesel_ACTS6700:Abans coneguda com a: {SILVER}NMBS HLD 62.
 str_purchase_diesel_RN232   :Abans coneguda com a: {SILVER}DB BR 232.
 
-str_purchase_electric_NS1100 :Remodelat el 1979: {YELLOW}+5% pes, llargada +1/8.
-str_purchase_electric_NS1500 :Abans coneguda com a: {SILVER}BR Classe EM2.
-str_purchase_electric_mDDM_NID :Per a utilitzar amb Vagons de Dos Pisos DDM/NID.
+str_purchase_electric_NS1100:Remodelat el 1979: {YELLOW}+5% pes, llargada +1/8.
+str_purchase_electric_NS1500:Abans coneguda com a: {SILVER}BR Classe EM2.
+str_purchase_electric_mDDM_NID:Per a utilitzar amb Vagons de Dos Pisos DDM/NID.
 str_purchase_electric_HLE11 :Per a emprar amb el Vagó ICR per a servei en Benelux.
 str_purchase_electric_HLE25 :Per a emprar amb el Vagó Plan W per a servei en Benelux.
-str_purchase_electric_TRAXXF140MS2 :Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema, {YELLOW}+87% potència {BLACK}en via electrificada de 25 kV.
-str_purchase_spc_electric_ES64F4 :Locomotora multisistema, {YELLOW}+42% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_electric_TRAXXF140MS2:Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema, {YELLOW}+87% potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_electric_ES64F4:Locomotora multisistema, {YELLOW}+42% de potència {BLACK}en via electrificada de 25 kV.
 str_purchase_spc_NS1600P    :Locomotora multisistema, {YELLOW}+70% de potència {BLACK}en via electrificada de 25 kV.
-str_purchase_spc_electric_gen9_HS001 :Locomotora multisistema, {YELLOW}+65% de potència {BLACK}en via electrificada de 25 kV.
-str_purchase_spc_electric_gen9_HS002 :Locomotora multisistema, {YELLOW}+97% de potència {BLACK}en via electrificada de 25 kV.
-str_purchase_electric_TRAXXF140MS2_no_track :Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema.
-str_purchase_spc_electric_ES64F4_no_track :Locomotora multisistema.
-str_purchase_spc_NS1600P_no_track :Locomotora multisistema.
-str_purchase_spc_electric_gen9_HS001_no_track :Locomotora multisistema.{}Fictícia.
-str_purchase_spc_electric_gen9_HS002_no_track :Locomotora multisistema.{}Fictícia.
+str_purchase_spc_electric_gen9_HS001:Locomotora multisistema, {YELLOW}+65% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_electric_gen9_HS002:Locomotora multisistema, {YELLOW}+97% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_electric_TRAXXF140MS2_no_track:Per a emprar amb el Vagó ICR per a servei en Benelux. Model modificat TRAXX F140 MS2.{}Locomotora multisistema.
+str_purchase_spc_electric_ES64F4_no_track:Locomotora multisistema.
+str_purchase_spc_NS1600P_no_track:Locomotora multisistema.
+str_purchase_spc_electric_gen9_HS001_no_track:Locomotora multisistema.{}Fictícia.
+str_purchase_spc_electric_gen9_HS002_no_track:Locomotora multisistema.{}Fictícia.
 
 str_purchase_dmu_omBC1901   :Des de 1929: {YELLOW}+41% pes, +233% potència, +7% velocitat, +23% cost de circulació.
 
@@ -613,18 +613,18 @@ str_purchase_emu_Mat36ELD3  :Amb compartiment per a equipatge remodelable a càr
 str_purchase_emu_ICE3M      :EMU multisistema, {YELLOW}+86% de potència {BLACK}en via electrificada de 25 kV.{}També coneguda com a: {SILVER}DB BR 406.
 str_purchase_spc_emu_TGV    :EMU multisistema, {YELLOW}+139% de potència {BLACK}en via electrificada de 25 kV.
 str_purchase_spc_emu_V250   :EMU multisistema, {YELLOW}+83% de potència {BLACK}en via electrificada de 25 kV.
-str_purchase_spc_emu_gen9_HST :EMU multisistema, {YELLOW}+68% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
-str_purchase_spc_emu_Future_DD :EMU multisistema, {YELLOW}+118% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
+str_purchase_spc_emu_gen9_HST:EMU multisistema, {YELLOW}+68% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
+str_purchase_spc_emu_Future_DD:EMU multisistema, {YELLOW}+118% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
 str_purchase_emu_CargoDD        :EMU multisistema, {YELLOW}+100% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
 
-str_purchase_emu_ICE3M_no_track :EMU multisistema.{}També coneguda com a: {SILVER}DB BR 406.
-str_purchase_spc_emu_TGV_no_track :EMU multisistema.
-str_purchase_spc_emu_V250_no_track :EMU multisistema.
-str_purchase_spc_emu_gen9_HST_no_track :EMU multisistema.{}Fictícia.
-str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Fictícia.
-str_purchase_emu_CargoDD_no_track :EMU multisistema.{}Fictícia.
+str_purchase_emu_ICE3M_no_track:EMU multisistema.{}També coneguda com a: {SILVER}DB BR 406.
+str_purchase_spc_emu_TGV_no_track:EMU multisistema.
+str_purchase_spc_emu_V250_no_track:EMU multisistema.
+str_purchase_spc_emu_gen9_HST_no_track:EMU multisistema.{}Fictícia.
+str_purchase_spc_emu_Future_DD_no_track:EMU multisistema.{}Fictícia.
+str_purchase_emu_CargoDD_no_track:EMU multisistema.{}Fictícia.
 
-str_purchase_coaches_ZHESM_B :Després coneguda com a: {SILVER}NS B9900.{}{BLACK}Per a emprar amb el vagó motor ZHESM mBC.
+str_purchase_coaches_ZHESM_B:Després coneguda com a: {SILVER}NS B9900.{}{BLACK}Per a emprar amb el vagó motor ZHESM mBC.
 str_purchase_coaches_Mat24  :Per a emprar amb el vagó motor Mat '24.
 str_purchase_coaches_DDAR   :Per a emprar amb el vagó motor mDDM o el NID.
 str_purchase_coaches_PlanW  :Per a emprar amb les locomotores elèctriques NS per a serveis nacionals i NMBS HLE 25.5 per a serveis en Benelux.

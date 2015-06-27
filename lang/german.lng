@@ -58,7 +58,7 @@ str_cargo_subtype_ddm1              : > DDM-1 Lackierung
 str_cargo_subtype_fyra              :> Fyra Lackierung
 str_cargo_subtype_original          : > Orginallackierung
 str_cargo_subtype_ns_sprinter           :> NS Sprinter Lackierung
-str_cargo_subtype_strandsprinter_beachballs :> "Strandsprinter" Lackierung mit Wasserbällen
+str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter" Lackierung mit Wasserbällen
 str_cargo_subtype_TGV_PBKA          :> PBKA Lackierung
 str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" Lackierung
 str_cargo_subtype_zilverrail        : > Zilverrail Lackierung (24. - 27. Okt. 2005)
@@ -226,15 +226,15 @@ str_purchase_steam_HSM501   :Vormals bekannt als: {SILVER} HSM 501-535.
 str_purchase_steam_SS651    :Vormals bekannt als: {SILVER} SS 651-680.
 
 str_purchase_diesel_NS2000  :Vormals bekannt als: {SILVER} Whitcomb 65-DE-19A.
-str_purchase_diesel_ACTS5800 :Vormals bekannt als: {SILVER} BR Class 58.
-str_purchase_diesel_ACTS6700 :Vormals bekannt als: {SILVER} NMBS HLD 62.
+str_purchase_diesel_ACTS5800:Vormals bekannt als: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700:Vormals bekannt als: {SILVER} NMBS HLD 62.
 
-str_purchase_electric_mDDM_NID :mit Doppelstockwagen DDM/NID zu benutzen.
+str_purchase_electric_mDDM_NID:mit Doppelstockwagen DDM/NID zu benutzen.
 
 
 str_purchase_emu_ICE3M      :Mehrsystem-Elektrotriebzug, {YELLOW}+86% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.{}Auch bekannt als: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :Mehrsystem-Elektrotriebzug, {YELLOW}+139% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.
 
-str_purchase_emu_ICE3M_no_track :Mehrsystem-Elektrotriebwagen.{}Auch bekannt als: {SILVER} DB BR 406.
+str_purchase_emu_ICE3M_no_track:Mehrsystem-Elektrotriebwagen.{}Auch bekannt als: {SILVER} DB BR 406.
 
-str_purchase_coaches_ZHESM_B :Später bekannt als: {SILVER} NS B9900.{}{BLACK}Zusammen mit Antriebswagen ZHESM mBC nutzen.
+str_purchase_coaches_ZHESM_B:Später bekannt als: {SILVER} NS B9900.{}{BLACK}Zusammen mit Antriebswagen ZHESM mBC nutzen.
