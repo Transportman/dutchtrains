@@ -245,6 +245,7 @@ str_cargo_subtype_grey_pigs         :Librea gris (Cerdos)
 str_cargo_subtype_transformer:: > Librea de carga Transformer
 str_cargo_subtype_house             :Librea Casa del transporte
 str_cargo_subtype_train             :Librea Tren de carga
+str_cargo_subtype_tractor           : > Librea Tractor de carga
 
 #steam
 str_steam_Arend         :HSM "Arend" (Vapor)
@@ -628,3 +629,4 @@ str_purchase_coaches_Mat24  :Para usar con el vagón motorizado Mat '24.
 str_purchase_coaches_DDAR   :Para usar con el vagón motorizado mDDM o el NID.
 str_purchase_coaches_PlanW  :Para usar con las locomotoras eléctricas NS en servicio nacional y el NMBS HLE 25.5 en su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo).
 str_purchase_coaches_IRC    :Para usar con las locomotoras eléctricas NS en servicio nacional, NMBS HLE 11 en su servicio en Benelux (BElgium NEtherlands LUXembourg o Bélgica, Países Bajos y Luxemburgo) y el NS Hispeed 186 en su servicio Fyra (alta velocidad entre los Países Bajos y Bélgica).
+str_purchase_wagons_gen10_CargoDD       :Para usar con el Transportador de Carga Futurista.{}Ficticia.
