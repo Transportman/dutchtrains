@@ -1,5 +1,34 @@
 Dutch Trainset Changelog
 ========================
+2.1.0 (2015/09/19)
+------------------
+- Feature: increase vehicle life (closes #7010)
+- Feature: loading speed parameter (issue #7009)
+- Feature: RET type B R-net livery (issue #3917, closes #7018)
+- Feature: variable and increased loading (issue #7009)
+- Change: define plural type for Dutch
+- Change: introduce ZHESM and Mat'24 coaches 2 years before matching engine to account for game randomisation
+- Change: text order for some passenger coaches purchase text, requires OpenTTD r26713 (issue #7009)
+- Fix (r713): use of duplicate ID
+- Fix (r890): when committing, don't forget to remove debug text from string
+- Fix (r891): corrected loading time display for metro (issue #7009)
+- Fix (r905): inconsistent identifier
+- Fix (r925): semicolons missed
+- Fix: allow livery refit of second-in-chain for Metro (issue #7018)
+- Fix: DD-AR coach capacity
+- Fix: ICR misalignment (closes #7297)
+- Update: Translations
+    ca_ES by juanjo
+    de_DE by Auge
+    es_ES by SilverSurferZzZ
+    fi_FI by Arexander
+    fr_FR by arikover
+    hr_HR by Voyager1
+    id_ID by UseYourIllusion
+    it_IT by Snail
+    it_IT by Voyager1
+    nl_NL by foobar
+
 
 2.0.0 (2014/08/02)
 ------------------

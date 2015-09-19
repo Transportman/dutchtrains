@@ -292,12 +292,13 @@ Templating of graphics:
 
 Translations:
 - ca_ES: by juanjo
-- de_DE: by planetmaker
-- de_DE: by Jogio
+- de_DE: by planetmaker, Jogio, Auge
 - es_ES: by SilverSurferZzZ
-- fi_FI: by juzza1
-- fi_FI: by Arexander
+- fi_FI: by juzza1, Arexander
+- fr_FR: by arikover
 - hr_HR: by Voyager1
+- id_ID: by UseYourIllusion
+- it_IT: by Snail, Voyager1
 - nl_NL: by foobar
 
 Makefile system:
