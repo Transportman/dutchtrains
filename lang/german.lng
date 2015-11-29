@@ -37,46 +37,78 @@ str_cargo_subtype_blackyellow_Containers        :> Schwarz-gelbe Lackierung (Con
 str_cargo_subtype_blue              :> Blaue Lackierung
 str_cargo_subtype_blue_greyish      :> Grau-blaue Lackierung
 str_cargo_subtype_blue_red          : > Blaue Lackierung mit roten Streifen
+str_cargo_subtype_blue_yellow       :> Blaue Lackierung mit gelben Streifen
 str_cargo_subtype_blue_lightyellow  :Blaue Lackierung mit dünnen gelben Streifen
+str_cargo_subtype_blue_darkyellow   :> Blaue Lackierung mit dunklen gelben Streifen
 str_cargo_subtype_blue_white        : > Blau-weiße Lackierung
+str_cargo_subtype_brown_light       :> Hellbraune Lackierung
+str_cargo_subtype_brown_dark        :> Dunkelbraune Lackierung
 str_cargo_subtype_green             : > Grüne Lackierung
 str_cargo_subtype_green_red         :> Grüne Lackierung mit roten Streifen
 str_cargo_subtype_green_yellow      :> Grüne Lackierung mit gelben Streifen
 str_cargo_subtype_green_white       :> Grün-weiße Lackierung
-str_cargo_subtype_grey_dark         : > dunkelgraue Lackierung
+str_cargo_subtype_grey              :> Graue Lackierung
+str_cargo_subtype_grey_dark         : > Dunkelgraue Lackierung
+str_cargo_subtype_red               :> Rote Lackierung
 str_cargo_subtype_red_greydoors     : > Rote Lackierung mit grauen Türen
+str_cargo_subtype_red_light         :> Hellrote Lackierung
 str_cargo_subtype_olive_greyroof    :> Olive Lackierung mit dunklem Dach
 str_cargo_subtype_silver_blue       : > Silber-blaue Lackierung
 str_cargo_subtype_silver_green      :> Silber-grüne Lackierung
+str_cargo_subtype_silver_red        :> Silber-rote Lackierung
 str_cargo_subtype_turquoise         :Türkise Lackierung
 str_cargo_subtype_yellow_blue       : > Gelbe Lackierung mit blauen Streifen
+str_cargo_subtype_yellow_blue_ic    :> Gelb-blaue Intercity-Lackierung
 str_cargo_subtype_white             :> Weiße Lackierung
 str_cargo_subtype_white_blue        :> Weiß-blaue Lackierung
 
 
+str_cargo_subtype_ddar              :> DDM-2/3-Lackierung
 str_cargo_subtype_ddm1              : > DDM-1 Lackierung
-str_cargo_subtype_fyra              :> Fyra Lackierung
+str_cargo_subtype_fyra              :> Fyra-Lackierung
+str_cargo_subtype_fyra_red          :> rote Fyra-Lackierung
+str_cargo_subtype_icplus            :> IC+-Lackierung (28. Mai 1995–Juni 2002)
+str_cargo_subtype_hispeed           :> NS-Hispeed-Lackierung
+str_cargo_subtype_ns_ic_cab         :NS-InterCity-Lackierung (Steuerwagen)
 str_cargo_subtype_original          : > Orginallackierung
+str_cargo_subtype_randstadrail      :> RandstadRail-Lackierung
 str_cargo_subtype_ns_sprinter           :> NS Sprinter Lackierung
-str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter" Lackierung mit Wasserbällen
+str_cargo_subtype_strandsprinter_beachballs:> „Strandsprinter“-Lackierung mit Wasserbällen
+str_cargo_subtype_strandsprinter    :„Strandsprinter“-Lackierung
 str_cargo_subtype_TGV_PBKA          :> PBKA Lackierung
-str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" Lackierung
-str_cargo_subtype_zilverrail        : > Zilverrail Lackierung (24. - 27. Okt. 2005)
+str_cargo_subtype_TGV_PBA           :> PBA-Lackierung
+str_cargo_subtype_wadkikker         : > NoordNet-„Wadkikker“-Lackierung
+str_cargo_subtype_zilverrail        : > Zilverrail-Lackierung (24.–27. Okt. 2005)
+str_cargo_subtype_klm                           :> KLM-Lackierung
 str_cargo_subtype_randstad                      :> Randstad Lackierung
 
+str_cargo_subtype_ACTS              :ACTS-Lackierung
+str_cargo_subtype_ACTS_blue_yellow  :> ACTS-Lackierung (gelb-blau)
+str_cargo_subtype_Captrain          :> Captrain-Lackierung
+str_cargo_subtype_Crossrail         :> Crossrail-Lackierung
 str_cargo_subtype_ERS_Containers        :> ERS-Lackierung (Container)
 str_cargo_subtype_EETC              : > Euro Express Treincharter Lackierung
 str_cargo_subtype_HerikRail         : > Herik Schienen-Lackierung
-str_cargo_subtype_NCS_tank          :> NCS Lackierung (Tenderlokomotive)
+str_cargo_subtype_HGK               :> HGK-Lackierung
+str_cargo_subtype_HUSA              :> HUSA-Lackierung
+str_cargo_subtype_Locon             :> Locon-Lackierung
+str_cargo_subtype_NCS_tender        :> NCS-Lackierung (Tenderlokomotive)
+str_cargo_subtype_NCS_tank          :> NCS-Lackierung (Tenderlokomotive)
 str_cargo_subtype_NS                : > NS Lackierung
+str_cargo_subtype_NS_tank           :> NS-Lackierung (Tenderlokomotive)
+str_cargo_subtype_NS_whiteroof      :> NS-Lackierung mit weißem Dach
 str_cargo_subtype_Rail4Chem_green   : > Lackierung Rail4Chem (grün)
+str_cargo_subtype_Railion_red       :> Railion-Lackierung (rot)
+str_cargo_subtype_Railpro           :> Railpro-Lackierung
+str_cargo_subtype_rts_black                     :> RTS-Lackierung (schwarz)
+str_cargo_subtype_Veolia_black      :> Veolia-Lackierung (schwarz)
 
 
 str_cargo_subtype_tractor           : > Lackierung der Traktoren-Fracht
 
 #steam
-str_steam_Arend         :HSM "Arend" (Dampf)
-str_steam_Arend_t       :HSM "Eagle" (Dampf)
+str_steam_Arend         :HSM „Arend“ (Dampf)
+str_steam_Arend_t       :HSM „Adler“ (Dampf)
 str_steam_HSM126        :NS 1100 (Dampf)
 str_steam_NCS1          :NS 7200 (Dampf)
 str_steam_NCS21         :NS 1500 (Dampf)
@@ -84,86 +116,110 @@ str_steam_NCS41         :NS 7000 (Dampf)
 str_steam_NRS11         :NRS 11-16 (Dampf)
 str_steam_HSM1          :HSM 1-15, 26-30 (Dampf)
 str_steam_HSM83         :NS 3100 (Dampf)
-str_steam_HSM501        :NS 2100 "Blikken Tinus" (Dampf)
-str_steam_HSM501_t      :NS 2100 Serie "Tin Tinus" (Dampf)
+str_steam_HSM501        :NS 2100 „Blikken Tinus“ (Dampf)
+str_steam_HSM501_t      :NS 2100 Serie „Tin Tinus“ (Dampf)
 str_steam_HSM601        :NS 3200 (Dampf)
 str_steam_HSM701        :NS 5500 (Dampf)
 str_steam_SS9           :NS 700 (Dampf)
 str_steam_SS17          :NS 2900 (Dampf)
-str_steam_SS517         :NS 6900 "Bello" (Dampf)
+str_steam_SS517         :NS 6900 „Bello“ (Dampf)
 str_steam_SS651         :NS 8100 (Dampf)
-str_steam_SS785         :NS 3700 "Jumbo" (Dampf)
-str_steam_SS785_t       :NS 3700 "Jumbo" (Dampf)
+str_steam_SS785         :NS 3700 „Jumbo“ (Dampf)
+str_steam_SS785_t       :NS 3700 „Jumbo“ (Dampf)
 str_steam_NS3850        :NS 3850 (Dampf)
 str_steam_NS3900        :NS 3900 (Dampf)
-str_steam_NBDS30        :NS 3500 "Blauwe Brabanders" (Dampf)
-str_steam_NBDS30_t      :NS 3500 "Blue Brabanders" (Dampf)
-str_steam_NCS71         :NS 3600 "Zeppelin" (Dampf)
-str_steam_NCS71_t       :NS 3600 "Zeppelin" (Dampf)
+str_steam_NBDS30        :NS 3500 „Blauwe Brabanders“ (Dampf)
+str_steam_NBDS30_t      :NS 3500 „Blauwe Brabanders“ (Dampf)
+str_steam_NCS71         :NS 3600 „Zeppelin“ (Dampf)
+str_steam_NCS71_t       :NS 3600 „Zeppelin“ (Dampf)
 str_steam_NS4600        :NS 4600 (Dampf)
 str_steam_NS4700        :NS 4700 (Dampf)
 str_steam_NS5000II      :NS 5000-II (Dampf)
 str_steam_NS6200        :NS 6200 (Dampf)
-str_steam_NS6300        :NS 6300 "De Beul" (Dampf)
-str_steam_NS6300_t      :NS 6300 "The Headsman" (Dampf)
+str_steam_NS6300        :NS 6300 „De Beul“ (Dampf)
+str_steam_NS6300_t      :NS 6300 „The Headsman“ (Dampf)
 
 #diesel
-str_diesel_NS400_t      :NS 400 "Big Billy" (Diesel)
+str_diesel_NS400_t      :NS 400 „Big Billy“ (Diesel)
 str_diesel_NS450        :NS 450 (Diesel)
-str_diesel_NS600_t      :NS 600 "Boxie" (Diesel)
+str_diesel_NS600_t      :NS 600 „Boxie“ (Diesel)
 str_diesel_NS2000       :NS 2000 (Diesel)
 str_diesel_NS2200       :NS 2200 (Diesel)
 str_diesel_NS2400       :NS 2400 (Diesel)
-str_diesel_NS2801       :NS 2801 "Kreupele Marietje" (Diesel)
-str_diesel_NS2801_t     :NS 2801 "Little Cripple Mary" (Diesel)
-str_diesel_RN232        :RN 232 "Ludmilla" (Diesel)
+str_diesel_NS2801       :NS 2801 „Kreupele Marietje“ (Diesel)
+str_diesel_NS2801_t     :NS 2801 „Little Cripple Mary“ (Diesel)
+str_diesel_NS6400       :NS 6400 (Diesel)
+str_diesel_ACTS5800     :ACTS 5800 (Diesel)
+str_diesel_ACTS6700     :ACTS 6700 (Diesel)
+str_diesel_RN232        :RN 232 „Ludmilla“ (Diesel)
+str_diesel_G1206        :MaK G 1206 (Diesel)
 
 #electric
+str_electric_NS1000     :NS 1000 (Elektrisch)
+str_electric_NS1100     :NS 1100 (Elektrisch)
 str_electric_NS1700     :NS 1700 (Elektrisch)
+str_electric_NID_t      :Neuer Doppelstock-Intercity (Elektrisch)
 str_electric_mDDM       :mDDM (Elektrisch)
 str_electric_NS1600P    :NS 1600P (Elektrisch)
 str_electric_HLE11      :NMBS HLE 11 (Elektrisch)
 str_electric_TRAXXF140MS2   :NS Hispeed 186 (Elektrisch)
 str_electric_gen9_HS001 :HS-1 (Elektrisch)
+str_electric_gen9_HS002 :HS-2 (Elektrisch)
 
 #dmu
-str_dmu_omC901_t        :omC 901-916 "Onkel Cees" (Diesel)
+str_dmu_omC901_t        :omC 901-916 „Onkel Cees“ (Diesel)
 str_dmu_omBC1901        :omBC 1901-1910 (Diesel)
-str_dmu_DE1_t           :DE1 Plan X "Blauer Engel" (Diesel)
-str_dmu_DE2             :DE2 Plan X "Blauer Engel" (Diesel)
-str_dmu_DE2_t           :DE2 Plan X "Blauer Engel" (Diesel)
-str_dmu_NS20            :NS20 "Kamel" (Diesel)
-str_dmu_DH1_t           :DH1 "Mudflat Walker" (Diesel)
+str_dmu_DE5             :DE5 „Dieselvijf“ (Diesel)
+str_dmu_DE1_t           :DE1 Plan X „Blauer Engel“ (Diesel)
+str_dmu_DE2             :DE2 Plan X „Blauer Engel“ (Diesel)
+str_dmu_DE2_t           :DE2 Plan X „Blauer Engel“ (Diesel)
+str_dmu_NS20            :NS20 „Kamel“ (Diesel)
+str_dmu_DE3_t           :DE3 Plan U „Roter Teufel“ (Diesel)
+str_dmu_DH1_t           :DH1 „Mudflat Walker“ (Diesel)
 str_dmu_Lint41H         :Lint 41/H (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
+str_dmu_V200D4                  :V200-D4 (Diesel)
+str_dmu_V200D6                  :V200-D6 (Diesel)
 
 #emu
-str_emu_Mat24_t         :Mat '24 "Blocks set" (Elektrisch)
+str_emu_ZHESM_mBC       :ZHESM mBC (Elektrisch)
+str_emu_Mat24_t         :Mat '24 „Blocks set“ (Elektrisch)
+str_emu_Mat36ELD3       :Mat '36 EI3/EID3 (Elektrisch)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Elektrisch)
 str_emu_Mat40ELD2       :Mat '40 ElD2 (Elektrisch)
 str_emu_Mat46ELD4       :Mat '46 ElD4 (Elektrisch)
-str_emu_Mat54ELD2_t     :Mat '54 ElD2 Plan F/G/M/Q "Doghead" (Elektrisch)
+str_emu_Mat54ELD2_t     :Mat '54 ElD2 Plan F/G/M/Q „Hundekopf“ (Elektrisch)
+str_emu_Mat54ELD4_t     :Mat '54 EID4 Plan F/G/P „Hundekopf“ (Elektrisch)
 str_emu_Mat64PlanV      :Mat '64 Plan V (Elektrisch)
-str_emu_ICM3            :ICM-III Plan Z "Koploper" (Elektrisch)
-str_emu_IRMIII_t        :IRM-III "Bison" (Elektrisch)
-str_emu_IRMIV           :IRM-IV/VIRM-IV "Bizon" (Elektrisch)
-str_emu_IRMIV_t         :IRM-IV/VIRM-IV "Bison" (Elektrisch)
-str_emu_IRMVI           :VIRM-VI "Bizon" (Elektrisch)
-str_emu_IRMVI_t         :VIRM-VI "Bison" (Elektrisch)
+str_emu_SGM2            :SGM-II Plan Y „Sprinter“ (Elektrisch)
+str_emu_ICM3            :ICM-III Plan Z „Kopfläufer“ (Elektrisch)
+str_emu_ICM3_t          :ICM-III Plan Z „Kopfläufer“ (Elektrisch)
+str_emu_IRMIII_t        :IRM-III „Bison“ (Elektrisch)
+str_emu_IRMIV           :IRM-IV/VIRM-IV „Bison“ (Elektrisch)
+str_emu_IRMIV_t         :IRM-IV/VIRM-IV „Bison“ (Elektrisch)
+str_emu_IRMVI           :VIRM-VI „Bison“ (Elektrisch)
+str_emu_IRMVI_t         :VIRM-VI „Bison“ (Elektrisch)
+str_emu_mP              :Plan mP (Elektrisch)
 str_emu_TGV             :TGV Thalys PBKA/PBA (Elektrisch)
-str_emu_V250_t          :Fyra V250 "Albatross" (Elektrisch)
+str_emu_V250_t          :Fyra V250 „Albatros“ (Elektrisch)
+str_emu_gen9_HST        :P8000 (Elektrisch)
 str_emu_GTW26           :GTW 2/6 (Elektrisch)
 str_emu_GTW28           :GTW 2/8 (Elektrisch)
 str_emu_Protos          :Protos (Elektrisch)
-str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Elektrisch)
+str_emu_SLTIV           :SLT-IV „Sprinter Lighttrain“ (Elektrisch)
+str_emu_V200E8                  :V200-E8 (Elektrisch)
 
 #wagons
 str_wagons_GTUW_openwagon           :offener Wagen GTUW
+str_wagons_Es_openwagon             :Offener Wagen Es
 str_wagons_Eass_openwagon           :offener Wagen Eass
 str_wagons_Fccpps_selfdischarger    :Selbstentlader Fccpps
 str_wagons_Tads_selfdischarger      :Selbstentlader Tads
+str_wagons_gen0stakewagon           :Kleiner Rungenwagen
 str_wagons_gen2_stake               :Rungenwagen
 str_wagons_gen4_stake               :Rungenwagen
+str_wagons_gen6_stake               :Rungenwagen
+str_wagons_gen0tanker               :Kleiner Tankwagen
 str_wagons_Uh_tanker                :Kesselwagen Uh
 str_wagons_gen0livestockwagon       :kleiner Viehwagen
 str_wagons_gen4_silo                :kleiner Silowagen
@@ -174,24 +230,34 @@ str_wagons_gen7_containercarrier    :Containerwagen
 str_wagons_gen9_containercarrier    :Containerwagen (L)
 
 #coaches
+str_coaches_HIJSM_4_8_10:Personenwagen HSM 1
 str_coaches_NCS_B_119   :Personenwagen NCS B
 str_coaches_SS_ABd_7516 :Wagen SS ABd
 str_coaches_RTM_BD_438  :Wagen RTM BD
 str_coaches_Mat24       :Wagen Mat '24
 str_coaches_ZHESM_B     :Personenwagen ZHESM B
+str_coaches_Ovaleramen  :Wagen „Ovaleramen“
+str_coaches_Bolkoprijtuigen     :Personenwagen „Bolkoprijtuigen“
+str_coaches_PlanD       :Personenwagen Plan D
+str_coaches_PlanW       :Personenwagen Plan W
+str_coaches_ICR         :Personenwagen ICR
 str_coaches_ICK         :Personenwagen ICK
 str_coaches_Avmz        :Wagen Avmz
-str_coaches_ICL         :Wagen ICL
+str_coaches_ICL         :Personenwagen ICL
 str_coaches_gen9_IC_DD  :Doppelstockwagen HS-DD
 
 #baggage and mail wagons
 str_coaches_SS_DII      :Gepäckwagen SS D-II
 str_coaches_SS_E_129    :Gepäckwagen SS E
+str_coaches_StalenDV    :Gepäckwagen D-V
+str_coaches_Pd7011      :Postwagen Pd
+str_coaches_Pec         :Postwagen Pec
 str_coaches_PlanL       :Postwagen Plan L
 
 #metro
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_RET_typeM     :RET Typ M MG2 (Metro)
+str_metro_Future_MTR1   :Futuristische Metro 1
 
 #PURCHASE MENU TEXTS
 
@@ -205,6 +271,7 @@ str_purchase_svc_axl_ltm_spc    :{BLACK}Service: {YELLOW}{0:STRING}{}{BLACK}Achs
 
 str_purchase_svc_p          :Passagiere
 str_purchase_svc_hphf       :Hochgeschwindigkeits-Passagiertransport oder schwere Fracht
+str_purchase_svc_flp        :Güter oder Personennahverkehr
 str_purchase_svc_lfep       :leichte Fracht oder Passagierexpress
 str_purchase_svc_s          :rangieren
 str_purchase_svc_m          :Post
@@ -212,29 +279,42 @@ str_purchase_svc_x          :executive
 
 str_purchase_len_1_04       :1 Einheit (0.4)
 str_purchase_len_1_05       :1 Einheit (0.5)
-str_purchase_len_2_12       :2 Einheiten (1.2)
+str_purchase_len_2_12       :Zwei Einheiten (1,2)
 str_purchase_len_3_15       :3 Einheiten (1.5)
-str_purchase_len_4_20       :4 Einheiten (2.0)
+str_purchase_len_4_20       :Vier Einheiten (2,0)
 str_purchase_len_5_24       :5 Einheiten (2.4)
+str_purchase_len_6_20       :Sechs Einheiten (2,0)
 
+str_purchase_axl_B          :niedrig (Klasse B)
+str_purchase_axl_D          :hoch (Klasse D)
 
 str_purchase_spc_fictional  :Fiktional.
 
 str_purchase_steam_NCS41    :Vormals bekannt als: {SILVER} NCS 41-50, later SS 151-160.
 str_purchase_steam_HSM126   :Vormals bekannt als: {SILVER} HSM 126-135.
-str_purchase_steam_HSM501   :Vormals bekannt als: {SILVER} HSM 501-535.
+str_purchase_steam_HSM501   :Vormals bekannt als: {SILVER} HSM 501–535.
 str_purchase_steam_SS651    :Vormals bekannt als: {SILVER} SS 651-680.
 
 str_purchase_diesel_NS2000  :Vormals bekannt als: {SILVER} Whitcomb 65-DE-19A.
-str_purchase_diesel_ACTS5800:Vormals bekannt als: {SILVER} BR Class 58.
+str_purchase_diesel_SM151   :Vormals bekannt als: {SILVER} SM 151–155
+str_purchase_diesel_ACTS5800:Vormals bekannt als: {SILVER} BR-Klasse 58.
 str_purchase_diesel_ACTS6700:Vormals bekannt als: {SILVER} NMBS HLD 62.
+str_purchase_diesel_RN232   :Vormals bekannt als: {SILVER} DB-Baureihe 232
 
 str_purchase_electric_mDDM_NID:mit Doppelstockwagen DDM/NID zu benutzen.
+str_purchase_spc_NS1600P_no_track:Mehrsystemlokomotive
+str_purchase_spc_electric_gen9_HS001_no_track:Mehrsystemlokomotive.{}Fiktional.
 
 
+str_purchase_emu_Mat24      :mit Wagen Mat '24 zu benutzen.
 str_purchase_emu_ICE3M      :Mehrsystem-Elektrotriebzug, {YELLOW}+86% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.{}Auch bekannt als: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    :Mehrsystem-Elektrotriebzug, {YELLOW}+139% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.
 
 str_purchase_emu_ICE3M_no_track:Mehrsystem-Elektrotriebwagen.{}Auch bekannt als: {SILVER} DB BR 406.
+str_purchase_spc_emu_gen9_HST_no_track:Mehrsystemtriebzug.{}Fiktional.
+str_purchase_spc_emu_Future_DD_no_track:Mehrsystemtriebzug.{}Fiktional
+str_purchase_emu_CargoDD_no_track:Mehrsystemtriebzug.{}Fiktional
 
 str_purchase_coaches_ZHESM_B:Später bekannt als: {SILVER} NS B9900.{}{BLACK}Zusammen mit Antriebswagen ZHESM mBC nutzen.
+str_purchase_coaches_Mat24  :Mit Motorwagen Mat '24 zu benutzen.
+str_purchase_coaches_DDAR   :Mit Motorwagen mDDM oder NID zu benutzen.
