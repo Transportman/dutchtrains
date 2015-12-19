@@ -184,6 +184,7 @@ str_dmu_V200D6                  :V200-D6 (Diesel)
 #emu
 str_emu_ZHESM_mBC       :ZHESM mBC (Elektrisch)
 str_emu_Mat24_t         :Mat '24 „Blocks set“ (Elektrisch)
+str_emu_Mat36EL2        :Mat '36 El2 (Elektrisch)
 str_emu_Mat36ELD3       :Mat '36 EI3/EID3 (Elektrisch)
 str_emu_Mat36ELD4       :Mat '36 ElD4 (Elektrisch)
 str_emu_Mat40ELD2       :Mat '40 ElD2 (Elektrisch)
