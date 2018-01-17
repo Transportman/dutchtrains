@@ -1,0 +1,128 @@
+##grflangid 0x55
+##plural 0
+##gender m f
+
+#Main grf title and description
+STR_GRF_NAME                    :{TITLE}
+STR_GRF_DESCRIPTION             :{SILVER}Dutch Trains para OpenTTD{}{BLACK}Primer vehículo: 1839.{}{}(c)Dutch Trainset Team{}Licencia: GPLv2 o posterior.{}Ver archivo Léeme para detalles
+STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
+
+#parameter strings
+STR_PARAM_VEHICLE_NAMES             :Usar los sobrenombres en inglés de los vehículos
+STR_PARAM_VEHICLE_NAMES_DESC        :Activar esta opción para traducir los sobrenombres de los vehículos al inglés. De lo contrario, los sobrenombres estarán en neerlandés.
+
+STR_PARAM_DISABLE_ORIGINAL          :Incluir locomotoras y vagones originales
+STR_PARAM_DISABLE_ORIGINAL_DESC     :El set desactiva de forma predeterminada las locomotoras y vagones originales de ferrocarril, monorriel y maglev. Este parámetro permite seguir usándolos en el juego, salvo si otro NewGRF desactiva los vehículos originales, en cuyo caso este parámetro no tendrá efecto.
+STR_PARAM_DISABLE_ORIGINAL_000      :ninguno (por defecto)
+STR_PARAM_DISABLE_ORIGINAL_100      :solo ferrocarril
+STR_PARAM_DISABLE_ORIGINAL_010      :solo monorriel
+STR_PARAM_DISABLE_ORIGINAL_110      :ferrocarril y monorriel
+STR_PARAM_DISABLE_ORIGINAL_001      :solo maglev
+STR_PARAM_DISABLE_ORIGINAL_101      :ferrocarril y maglev
+STR_PARAM_DISABLE_ORIGINAL_011      :monorriel y maglev
+STR_PARAM_DISABLE_ORIGINAL_111      :todos
+
+STR_PARAM_PURCHASE_COST             :Multiplicador de costos de compra
+STR_PARAM_PURCHASE_COST_DESC        :Incrementar o disminuir los costos de compra de los vehículos del set. Modificar este parámetro dejará desbalanceados los costos de los vehículos originales.
+STR_PARAM_RUNNING_COST              :Multiplicador de costos operativos
+STR_PARAM_RUNNING_COST_DESC         :Incrementar o disminuir los costos operativos de los vehículos del set. Modificar este parámetro dejará desbalanceados los costos de los vehículos originales.
+
+STR_PARAM_DIVIDE_16                 :1/16
+STR_PARAM_DIVIDE_8                  :1/8
+STR_PARAM_DIVIDE_4                  :1/4
+STR_PARAM_DIVIDE_2                  :1/2
+STR_PARAM_NORMAL                    :1 vez (predeterminada)
+STR_PARAM_TIMES_2                   :2 veces
+STR_PARAM_TIMES_4                   :4 veces
+STR_PARAM_TIMES_8                   :8 veces
+STR_PARAM_TIMES_16                  :16 veces
+
+STR_PARAM_TRACK_POWER                           :Potencia multisistema
+STR_PARAM_TRACK_POWER_DESC                      :De forma predeterminada, la potencia de los trenes multisistema depende de las vías férreas sobre las que corren cuando se carga un set compatible de vías. Este parámetro permite deshabilitar lo anterior para usar siempre la potencia más alta.
+STR_PARAM_TRACK_POWER_OFF                       :Siempre la potencia más alta
+STR_PARAM_TRACK_POWER_ON                        :Dependiendo de las vías cuando se carga un set compatible (predeterminado)
+
+STR_PARAM_LOADING_SPEED             :Velocidad de carga
+STR_PARAM_LOADING_SPEED_DESC        :Establecer la velocidad a la que los trenes y vagones toman su carga.
+STR_PARAM_LOADING_SPEED_SLOW        :Lenta
+STR_PARAM_LOADING_SPEED_MEDIUM      :Media (predeterminada)
+STR_PARAM_LOADING_SPEED_FAST        :Rápida
+
+#cargo subtype livery strings
+
+
+str_cargo_subtype_Jules             : > "Jules"
+
+str_cargo_subtype_ddm1              : > Cromática de DDM-1
+str_cargo_subtype_ICE                           : > Cromática de ICE
+
+str_cargo_subtype_ACTS              : > Cromática de ACTS
+str_cargo_subtype_ACTS_blue_yellow  : > Cromática de ACTS (azul y amarillo)
+str_cargo_subtype_ACTS_grey_green   : > Cromática de ACTS (gris y verde)
+str_cargo_subtype_Arriva            : > Cromática de Arriva
+str_cargo_subtype_Arriva_spurt      : > Cromática de Arriva "Spurt"
+str_cargo_subtype_Arriva_vechtdallijnen : > Cromática de Arriva "Vechtdallijnen"
+str_cargo_subtype_Breng             : > Cromática de Breng
+str_cargo_subtype_Captrain          : > Cromática de Captrain
+str_cargo_subtype_Crossrail         : > Cromática de Crossrail
+str_cargo_subtype_DBSchenker        : > Cromática de DB Schenker
+str_cargo_subtype_DBSchenker_Crates     : > Cromática de DB Schenker (cajones)
+str_cargo_subtype_DBSchenker_Containers : > Cromática de DB Schenker (contenedores)
+str_cargo_subtype_DLC               : > Cromática de DLC
+str_cargo_subtype_ERS               : > Cromática de ERS
+str_cargo_subtype_ERS_Crates            : > Cromática de (cajones)
+str_cargo_subtype_ERS_Containers        : > Cromática de ERS (contenedores)
+str_cargo_subtype_EETC              : > Cromática de Euro Express Treincharter
+str_cargo_subtype_HerikRail         : > Cromática de Herik Rail
+str_cargo_subtype_HGK               : > Cromática de HGK
+str_cargo_subtype_HSM               : > Cromática de HISM
+str_cargo_subtype_HUSA              : > Cromática de HUSA
+str_cargo_subtype_HUSA_Crates           : > Cromática de HUSA (cajas)
+str_cargo_subtype_HUSA_Containers       : > Cromática de HUSA (contenedores)
+str_cargo_subtype_Locon             : > Cromática de Locon
+str_cargo_subtype_NBDS              : > Cromática de NBDS
+str_cargo_subtype_NCS               : > Cromática de NCSM
+str_cargo_subtype_NCS_tender        : > Cromática de NCS (locomotora con ténder)
+str_cargo_subtype_NCS_tank          : > Cromática de NCS (locomotora de vapor)
+str_cargo_subtype_NS                : > Cromática de NS
+str_cargo_subtype_NS_tank           : > Cromática de NS (locomotora de vapor)
+str_cargo_subtype_NS_whiteroof      : > Cromática de NS con techo blanco
+str_cargo_subtype_NSCargo           : > Cromática de NS Cargo
+str_cargo_subtype_NSCargo_Crates        : > Cromática de NS Cargo (cajones)
+str_cargo_subtype_NSCargo_Containers : > Cromática de NS Cargo (contenedores)
+str_cargo_subtype_Rail4Chem_red     : > Cromática de Rail4Chem (rojo)
+
+
+
+#steam
+
+#diesel
+
+#electric
+
+#dmu
+
+#emu
+
+#wagons
+
+#coaches
+
+#baggage and mail wagons
+
+#metro
+
+#PURCHASE MENU TEXTS
+
+
+
+
+
+
+
+
+
+
+
+
+
