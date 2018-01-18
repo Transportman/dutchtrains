@@ -49,12 +49,69 @@ STR_PARAM_LOADING_SPEED_MEDIUM      :Media (predeterminada)
 STR_PARAM_LOADING_SPEED_FAST        :Rápida
 
 #cargo subtype livery strings
+str_cargo_subtype_auto              : > Cromática según el año
 
+str_cargo_subtype_bordeaux          : > Cromática vino
+str_cargo_subtype_bordeaux_white            : > Cromática vino con blanco
+str_cargo_subtype_bordeaux_white_blue       : > Cromática vino con azul o blanco
+str_cargo_subtype_bordeaux_white_yellow     : > Cromática vino con amarillo o blanco
+str_cargo_subtype_black             : > Cromática negra
+str_cargo_subtype_blackyellow_Crates            : > Cromática de negra y amarilla (cajones)
+str_cargo_subtype_blackyellow_Containers        : > Cromática negra y amarilla (contenedores)
+str_cargo_subtype_blue              : > Cromática azul
+str_cargo_subtype_blue_greyish      : > Cromática azul grisácea
+str_cargo_subtype_blue_banners      : > Cromática azul con publicidad
+str_cargo_subtype_blue_red          : > Cromática con rayas rojas
+str_cargo_subtype_blue_red_silverroof       : > Cromática con rayas rojas y techo plateado
+str_cargo_subtype_blue_red_yellowmoustache  : > Cromática con rayas rojas y escudo amarillo
+str_cargo_subtype_blue_yellow       : > Cromática con rayas amarillas
+str_cargo_subtype_blue_lightyellow  : > Cromática con rayas amarillo claro
+str_cargo_subtype_blue_darkyellow   : > Cromática con rayas amarillo fuerte
+str_cargo_subtype_blue_white        : > Cromática azul y blanco
+str_cargo_subtype_brown             : > Cromática café
+str_cargo_subtype_brown_yellowfront : > Cromática café con frente amarillo
+str_cargo_subtype_brown_other       : > Cromática café (otro)
+str_cargo_subtype_brown_light       : > Cromática café claro
+str_cargo_subtype_brown_dark        : > Cromática café oscuro
+str_cargo_subtype_brown_greenish    : > Cromática café verduzco
+str_cargo_subtype_brown_reddish     : > Cromática café rojizo
+str_cargo_subtype_green             : > Cromática verde
+str_cargo_subtype_green_lightroof   : > Cromática verde con techo claro
+str_cargo_subtype_green_darkroof    : > Cromática verde con techo oscuro
+str_cargo_subtype_green_moustache   : > Cromática verde con escudo
+str_cargo_subtype_green_red         : > Cromática verde con rayas rojas
+str_cargo_subtype_green_yellow      : > Cromática verde con rayas ramarillas
+str_cargo_subtype_green_yellow_blue : > Cromática verde con rayas amarillas y publicidad azul
+str_cargo_subtype_green_white       : > Cromática verde y blanco
+str_cargo_subtype_green_lightyellow : > Cromática verde y amarillo claro
 
+str_cargo_subtype_blue_crashnose    : > Cromática azul con topes
+str_cargo_subtype_accident_brown    : > Cromática café (tren accidentado)
+str_cargo_subtype_accident_yellow   : > Cromática amarilla (tren accidentado)
 str_cargo_subtype_Jules             : > "Jules"
 
+str_cargo_subtype_benelux           : > Cromática de Benelux
+str_cargo_subtype_benelux_cab       : > Cromática de Benelux (cabina de control)
+str_cargo_subtype_benelux_plandcab  : > Cabina de control Plan D
+str_cargo_subtype_citypendel        : > Cromática de Citypendel
+str_cargo_subtype_ddar              : > Cromática de DDM-2/3
+str_cargo_subtype_ddar_cab          : > Cromática de DDM-2/3 (cabina de control)
 str_cargo_subtype_ddm1              : > Cromática de DDM-1
+str_cargo_subtype_ddm1_cab          : > Cromática de DDM-1 (cabina de control)
+str_cargo_subtype_football          : > Cromática de la Copa Mundial de Fútbol
+str_cargo_subtype_freedom           : > Cromática de Freedom
+str_cargo_subtype_fyra              : > Cromática de Fyra
+str_cargo_subtype_fyra_red          : > Cromática de Fyra (rojo)
+str_cargo_subtype_fyra_white        : > Cromática de Fyra (blanco)
 str_cargo_subtype_ICE                           : > Cromática de ICE
+str_cargo_subtype_TGV                           : > Cromática de Thalys
+str_cargo_subtype_TGV_PBKA          : > Cromática de PBKA
+str_cargo_subtype_TGV_PBA           : > Cromática de PBA
+str_cargo_subtype_aegon                         : > Cromática de Aegon
+str_cargo_subtype_delagelanden1         : > Cromática de De Lage Landen 1
+str_cargo_subtype_delagelanden2         : > Cromática de De Lage Landen 2
+str_cargo_subtype_algemeendagblad1      : > Cromática de Algemeen Dagblad 1
+str_cargo_subtype_algemeendagblad2      : > Cromática de Algemeen Dagblad 2
 
 str_cargo_subtype_ACTS              : > Cromática de ACTS
 str_cargo_subtype_ACTS_blue_yellow  : > Cromática de ACTS (azul y amarillo)
@@ -90,8 +147,27 @@ str_cargo_subtype_NS_whiteroof      : > Cromática de NS con techo blanco
 str_cargo_subtype_NSCargo           : > Cromática de NS Cargo
 str_cargo_subtype_NSCargo_Crates        : > Cromática de NS Cargo (cajones)
 str_cargo_subtype_NSCargo_Containers : > Cromática de NS Cargo (contenedores)
+str_cargo_subtype_Rail4Chem_green   : > Cromática de Rail4Chem (verde)
 str_cargo_subtype_Rail4Chem_red     : > Cromática de Rail4Chem (rojo)
+str_cargo_subtype_Rail4Chem_grey_yellow : > Cromática de Rail4Chem (gris y amarillo)
+str_cargo_subtype_Railion           : > Cromática de Railion (imagen renovada)
+str_cargo_subtype_Railion_regular   : > Cromática de Railion
+str_cargo_subtype_Railion_red       : > Cromática de Railion (rojo)
+str_cargo_subtype_Railpro           : > Cromática de Railpro
+str_cargo_subtype_SS                : > Cromática de Staatsspoorwegen
+str_cargo_subtype_SS_tank           : > Cromática de SS (locomotora de vapor)
+str_cargo_subtype_SS_NS             : > Cromática de Staatsspoorwegen / NS
+str_cargo_subtype_Strukton          : > Cromática de Strukton
+str_cargo_subtype_Syntus            : > Cromática de Syntus
+str_cargo_subtype_Twents            : > Cromática de Twents
+str_cargo_subtype_Veolia            : > Cromática de Veolia
+str_cargo_subtype_Veolia_velios     : > Cromática de Veolia "Velios"
+str_cargo_subtype_Veolia_white_red  : > Cromática de Veolia (blanco y rojo)
+str_cargo_subtype_Veolia_black      : > Cromática de Veolia (negro)
+str_cargo_subtype_VOSlogistics      : > Cromática de VOS Logistics
 
+str_cargo_subtype_brown_cows        : > Cromática café (vacas)
+str_cargo_subtype_brown_pigs        : > Cromática café (puercos)
 
 
 #steam
