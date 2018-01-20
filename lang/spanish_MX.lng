@@ -50,6 +50,7 @@ STR_PARAM_LOADING_SPEED_FAST        :Rápida
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Cromática según el año
+str_cargo_subtype_matching          : > Cromática igual que la locomotora
 
 str_cargo_subtype_bordeaux          : > Cromática vino
 str_cargo_subtype_bordeaux_white            : > Cromática vino con blanco
@@ -60,6 +61,7 @@ str_cargo_subtype_blackyellow_Crates            : > Cromática de negra y amaril
 str_cargo_subtype_blackyellow_Containers        : > Cromática negra y amarilla (contenedores)
 str_cargo_subtype_blue              : > Cromática azul
 str_cargo_subtype_blue_greyish      : > Cromática azul grisácea
+str_cargo_subtype_lighterblue       : > Cromática azul más claro
 str_cargo_subtype_blue_banners      : > Cromática azul con publicidad
 str_cargo_subtype_blue_red          : > Cromática con rayas rojas
 str_cargo_subtype_blue_red_silverroof       : > Cromática con rayas rojas y techo plateado
@@ -84,8 +86,12 @@ str_cargo_subtype_green_yellow      : > Cromática verde con rayas ramarillas
 str_cargo_subtype_green_yellow_blue : > Cromática verde con rayas amarillas y publicidad azul
 str_cargo_subtype_green_white       : > Cromática verde y blanco
 str_cargo_subtype_green_lightyellow : > Cromática verde y amarillo claro
+str_cargo_subtype_grey              : > Cromática gris
+str_cargo_subtype_grey_dark         : > Cromática gris oscuro
+str_cargo_subtype_grey_light        : > Cromática gris claro
 
 str_cargo_subtype_blue_crashnose    : > Cromática azul con topes
+str_cargo_subtype_grey_crashnose    : > Cromática gris (con topes)
 str_cargo_subtype_accident_brown    : > Cromática café (tren accidentado)
 str_cargo_subtype_accident_yellow   : > Cromática amarilla (tren accidentado)
 str_cargo_subtype_Jules             : > "Jules"
@@ -103,10 +109,26 @@ str_cargo_subtype_freedom           : > Cromática de Freedom
 str_cargo_subtype_fyra              : > Cromática de Fyra
 str_cargo_subtype_fyra_red          : > Cromática de Fyra (rojo)
 str_cargo_subtype_fyra_white        : > Cromática de Fyra (blanco)
+str_cargo_subtype_groningen         : > Cromática de Groningen Mendini
 str_cargo_subtype_ICE                           : > Cromática de ICE
+str_cargo_subtype_icplus            : > Cromática de IC+ (mayo 1995 - junio 2002)
+str_cargo_subtype_kennemerstrand    : > Cromática de Lovers Rail "Kennemerstrand Expres"
+str_cargo_subtype_keukenhof         : > Cromática de Lovers Rail "Keukenhof Expres"
+str_cargo_subtype_kinderboeken      : > Cromática de Semana de Libros Infantiles
+str_cargo_subtype_lll                           : > Lage Landen Lijn
+str_cargo_subtype_hispeed           : > Cromática de NS Highspeed
+str_cargo_subtype_hispeed_cab       : > Cromática de NS Highspeed (cabina de control)
+str_cargo_subtype_maashopper        : > Cromática de Veolia "Masshopper" blanco y rojo
+str_cargo_subtype_nid               : > Cromática de NID
+str_cargo_subtype_nid_cab           : > Cromática de NID (cabina de control)
+str_cargo_subtype_ns_ic             : > Cromática de NS InterCity
+str_cargo_subtype_ns_ic_cab         : > Cromática de NS InterCity (cabina de control)
+str_cargo_subtype_ns_sprinter           : > Cromática de NS Sprinter
 str_cargo_subtype_TGV                           : > Cromática de Thalys
 str_cargo_subtype_TGV_PBKA          : > Cromática de PBKA
 str_cargo_subtype_TGV_PBA           : > Cromática de PBA
+str_cargo_subtype_klm                           : > Cromática de KLM
+str_cargo_subtype_martinair                     : > Cromática de Martinair
 str_cargo_subtype_aegon                         : > Cromática de Aegon
 str_cargo_subtype_delagelanden1         : > Cromática de De Lage Landen 1
 str_cargo_subtype_delagelanden2         : > Cromática de De Lage Landen 2
@@ -141,6 +163,7 @@ str_cargo_subtype_NBDS              : > Cromática de NBDS
 str_cargo_subtype_NCS               : > Cromática de NCSM
 str_cargo_subtype_NCS_tender        : > Cromática de NCS (locomotora con ténder)
 str_cargo_subtype_NCS_tank          : > Cromática de NCS (locomotora de vapor)
+str_cargo_subtype_nedtrain          : > Cromática de NedTrain
 str_cargo_subtype_NS                : > Cromática de NS
 str_cargo_subtype_NS_tank           : > Cromática de NS (locomotora de vapor)
 str_cargo_subtype_NS_whiteroof      : > Cromática de NS con techo blanco
@@ -168,7 +191,10 @@ str_cargo_subtype_VOSlogistics      : > Cromática de VOS Logistics
 
 str_cargo_subtype_brown_cows        : > Cromática café (vacas)
 str_cargo_subtype_brown_pigs        : > Cromática café (puercos)
+str_cargo_subtype_grey_cows         : > Cromática gris (vacas)
+str_cargo_subtype_grey_pigs         : > Cromática gris (puercos)
 
+str_cargo_subtype_house             : > Cromática de carga particular
 
 #steam
 
@@ -190,6 +216,32 @@ str_cargo_subtype_brown_pigs        : > Cromática café (puercos)
 
 #PURCHASE MENU TEXTS
 
+str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
+str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
+
+str_purchase_axl_ltm            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
+str_purchase_axl_ltm_spc        :{BLACK}Peso por eje: {YELLOW}{0:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{2:COMMA} día{P 2 "" s}{}{BLACK}{1:STRING}
+
+
+str_purchase_len_1_04       :1 unidad (0.4)
+str_purchase_len_1_05       :1 unidad (0.5)
+str_purchase_len_2_10       :2 unidades (1.0)
+str_purchase_len_2_12       :2 unidades (1.2)
+str_purchase_len_3_15       :3 unidades (1.5)
+str_purchase_len_3_17       :3 unidades (1.7)
+str_purchase_len_4_14       :4 unidades (1.4)
+str_purchase_len_4_20       :4 unidades (2.0)
+str_purchase_len_5_24       :5 unidades (2.4)
+str_purchase_len_6_20       :6 unidades (2.0)
+str_purchase_len_6_30       :6 unidades (3.0)
+str_purchase_len_8_40       :8 unidades (4.0)
+str_purchase_len_10_50      :10 unidades (5.0)
+
+str_purchase_axl_A          :muy ligero (clase A)
+str_purchase_axl_B          :ligero (clase B)
+str_purchase_axl_C          :medio (clase C)
+str_purchase_axl_D          :pesado (claseD)
+str_purchase_axl_E          :muy pesado (clase E)
 
 
 
@@ -198,7 +250,7 @@ str_cargo_subtype_brown_pigs        : > Cromática café (puercos)
 
 
 
-
-
-
-
+str_purchase_coaches_Mat24  :Para uso con vagón motorizado Mat '24.
+str_purchase_coaches_DDAR   :Para uso con vagón motorizado mDDM o NID.
+str_purchase_coaches_PlanW  :Para uso con locomotoras eléctricas de NS para servicio nacional y NMBS HLE 25.5 para servicio de Benelux.
+str_purchase_coaches_IRC    :Para uso con locomotoras eléctricas de NS para servicio nacional, NMBS HLE 11 para servicio de Benelux y NH Hispeed 186 como servicio de Fyra.
