@@ -4,12 +4,12 @@
 
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
-STR_GRF_DESCRIPTION             :{SILVER}Dutch Trains para OpenTTD{}{BLACK}Primer vehículo: 1839.{}{}(c)Dutch Trainset Team{}Licencia: GPLv2 o posterior.{}Ver archivo Léeme para detalles
+STR_GRF_DESCRIPTION             :{SILVER}Dutch Trains (trenes holandeses) para OpenTTD{}{BLACK}Primer vehículo: 1839.{}{}(c)El equipo de Dutch Trainset{}Licencia: GPLv2 o superior.{}Consulta el archivo Léeme para más detalles.
 STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 #parameter strings
-STR_PARAM_VEHICLE_NAMES             :Usar los sobrenombres en inglés de los vehículos
-STR_PARAM_VEHICLE_NAMES_DESC        :Activar esta opción para traducir los sobrenombres de los vehículos al inglés. De lo contrario, los sobrenombres estarán en neerlandés.
+STR_PARAM_VEHICLE_NAMES             :Traducir los sobrenombres de los vehículos
+STR_PARAM_VEHICLE_NAMES_DESC        :Traducir los sobrenombres de los vehículos del neerlandés al español.
 
 STR_PARAM_DISABLE_ORIGINAL          :Incluir locomotoras y vagones originales
 STR_PARAM_DISABLE_ORIGINAL_DESC     :El set desactiva de forma predeterminada las locomotoras y vagones originales de ferrocarril, monorriel y maglev. Este parámetro permite seguir usándolos en el juego, salvo si otro NewGRF desactiva los vehículos originales, en cuyo caso este parámetro no tendrá efecto.
@@ -50,6 +50,8 @@ STR_PARAM_LOADING_SPEED_FAST        :Rápida
 
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Cromática según el año
+str_cargo_subtype_purchase          : > Cromática del año de construcción
+str_cargo_subtype_random            : > Cromática al azar
 str_cargo_subtype_matching          : > Cromática igual que la locomotora
 
 str_cargo_subtype_bordeaux          : > Cromática vino
@@ -89,6 +91,29 @@ str_cargo_subtype_green_lightyellow : > Cromática verde y amarillo claro
 str_cargo_subtype_grey              : > Cromática gris
 str_cargo_subtype_grey_dark         : > Cromática gris oscuro
 str_cargo_subtype_grey_light        : > Cromática gris claro
+str_cargo_subtype_purple            : > Cromática púrpura
+str_cargo_subtype_red               : > Cromática roja
+str_cargo_subtype_red_greydoors     : > Cromática roja con puertas grises
+str_cargo_subtype_red_light         : > Cromática rojo claro
+str_cargo_subtype_red_pinkish       : > Cromática rosa fuerte
+str_cargo_subtype_red_blue          : > Cromática roja y azul
+str_cargo_subtype_red_yellow        : > Cromática roja con rayas amarillas
+str_cargo_subtype_red_yellow_blue   : > Cromática roja con rayas amarillas y publicidad azul
+str_cargo_subtype_olive_silverroof  : > Cromática oliva con techo claro
+str_cargo_subtype_olive_greyroof    : > Cromática oliva con techo oscuro
+str_cargo_subtype_salmon            : > Cromática salmón
+str_cargo_subtype_silver_blue       : > Cromática plata y azul
+str_cargo_subtype_silver_green      : > Cromática plata y verde
+str_cargo_subtype_silver_red        : > Cromática plata y rojo
+str_cargo_subtype_turquoise         : > Cromática turquesa
+str_cargo_subtype_yellow            : > Cromática amarilla
+str_cargo_subtype_yellow_blue       : > Cromática amarilla con publicidad azul
+str_cargo_subtype_yellow_blue_ic    : > Cromática de InterCity amarillo y azul
+str_cargo_subtype_yellow_red        : > Cromática amarilla y roja
+str_cargo_subtype_white             : > Cromática blanca
+str_cargo_subtype_white_blue        : > Cromática blanca y azul
+str_cargo_subtype_white_red         : > Cromática blanca y roja
+str_cargo_subtype_white_yellow      : > Cromática blanca y amarilla
 
 str_cargo_subtype_blue_crashnose    : > Cromática azul con topes
 str_cargo_subtype_grey_crashnose    : > Cromática gris (con topes)
@@ -123,13 +148,30 @@ str_cargo_subtype_nid               : > Cromática de NID
 str_cargo_subtype_nid_cab           : > Cromática de NID (cabina de control)
 str_cargo_subtype_ns_ic             : > Cromática de NS InterCity
 str_cargo_subtype_ns_ic_cab         : > Cromática de NS InterCity (cabina de control)
+str_cargo_subtype_olympic           : > Cromática olímpica
+str_cargo_subtype_original          : > Cromática original
+str_cargo_subtype_ovchip            : > Cromática de OV Chipkaart
+str_cargo_subtype_overnightexpress  : > Cromática de Overnight Express
+str_cargo_subtype_prototype         : > Cromática prototipo
+str_cargo_subtype_randstadrail      : > Cromática de RandstadRail
+str_cargo_subtype_renewal           : > Cromática de renovación
+str_cargo_subtype_rnet              : > Cromática de R-net
 str_cargo_subtype_ns_sprinter           : > Cromática de NS Sprinter
+str_cargo_subtype_sr10              : > Cromática de Sr10 Royal ICR (22 dic 1993 - actual)
+str_cargo_subtype_strandsprinter_beachballs: > Cromática "Strandsprinter" con pelotas de playa
+str_cargo_subtype_strandsprinter    : > Cromática "Strandsprinter"
 str_cargo_subtype_TGV                           : > Cromática de Thalys
 str_cargo_subtype_TGV_PBKA          : > Cromática de PBKA
 str_cargo_subtype_TGV_PBA           : > Cromática de PBA
+str_cargo_subtype_valleilijn_yellow_blue    : > Cromática de Valleilijn amarillo y azul
+str_cargo_subtype_valleilijn_blue_yellownose: > Cromática azul de Valleilijn con nariz amarilla
+str_cargo_subtype_valleilijn_blue           : > Cromática azul de Valleilijn (ficticia)
+str_cargo_subtype_wadkikker         : > Cromática de NoordNet "Wadkikker"
+str_cargo_subtype_zilverrail        : > Cromática de Zilverrail (24-27 oct 2005)
 str_cargo_subtype_klm                           : > Cromática de KLM
 str_cargo_subtype_martinair                     : > Cromática de Martinair
 str_cargo_subtype_aegon                         : > Cromática de Aegon
+str_cargo_subtype_randstad                      : > Cromática de Randstad
 str_cargo_subtype_delagelanden1         : > Cromática de De Lage Landen 1
 str_cargo_subtype_delagelanden2         : > Cromática de De Lage Landen 2
 str_cargo_subtype_algemeendagblad1      : > Cromática de Algemeen Dagblad 1
@@ -177,6 +219,12 @@ str_cargo_subtype_Railion           : > Cromática de Railion (imagen renovada)
 str_cargo_subtype_Railion_regular   : > Cromática de Railion
 str_cargo_subtype_Railion_red       : > Cromática de Railion (rojo)
 str_cargo_subtype_Railpro           : > Cromática de Railpro
+str_cargo_subtype_rff                           : > Cromática de RFF Cargo
+str_cargo_subtype_rts_black                     : > Cromática de RTS (negro)
+str_cargo_subtype_rts_orange            : > Cromática de RTS (naranja y blanco)
+str_cargo_subtype_rurtalbahn_black      : > Cromática de Rurtalbahn (negro)
+str_cargo_subtype_rurtalbahn_blue       : > Cromática de Rurtalbahn (azul)
+str_cargo_subtype_staatsmijnen      : > Cromática de Staatsmijnen
 str_cargo_subtype_SS                : > Cromática de Staatsspoorwegen
 str_cargo_subtype_SS_tank           : > Cromática de SS (locomotora de vapor)
 str_cargo_subtype_SS_NS             : > Cromática de Staatsspoorwegen / NS
@@ -194,11 +242,18 @@ str_cargo_subtype_brown_pigs        : > Cromática café (puercos)
 str_cargo_subtype_grey_cows         : > Cromática gris (vacas)
 str_cargo_subtype_grey_pigs         : > Cromática gris (puercos)
 
+str_cargo_subtype_transformer:      : > Cromática de carga de Transformer
 str_cargo_subtype_house             : > Cromática de carga particular
+str_cargo_subtype_train             : > Cromática de carga de tren
+str_cargo_subtype_tractor           : > Cromática de carga de tractor
 
 #steam
 
 #diesel
+str_diesel_NS100        :NS 100 "Oersik" (gasolina)
+str_diesel_NS100_t      :NS 100 "Ciervo" (gasolina)
+str_diesel_NS200_t      :NS 200 "Billy" (diésel)
+str_diesel_NS2000       :NS 2000 (diésel)
 
 #electric
 
@@ -209,6 +264,11 @@ str_cargo_subtype_house             : > Cromática de carga particular
 #wagons
 
 #coaches
+str_coaches_Ovaleramen  :Coche de pasajeros "Ovaleramen"
+str_coaches_Ovaleramen_t:Coche de pasajeros "Ventanas ovaladas"
+str_coaches_Bolkoprijtuigen     :Coche de pasajeros "Bolkoprijtuigen"
+str_coaches_Bolkoprijtuigen_t   :Coche de pasajeros "Cabezota"
+str_coaches_Avmz        :Coche de pasajeros Avmz
 
 #baggage and mail wagons
 
@@ -216,12 +276,42 @@ str_cargo_subtype_house             : > Cromática de carga particular
 
 #PURCHASE MENU TEXTS
 
+str_purchase_svc                :{BLACK}Servicio: {YELLOW}{STRING}
+str_purchase_svc_axl            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso de eje: {YELLOW}{STRING}
+str_purchase_svc_len            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}
+str_purchase_svc_spc            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}{STRING}
+str_purchase_svc_axl_spc        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso de eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
 str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_axl_ltm            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
 str_purchase_axl_ltm_spc        :{BLACK}Peso por eje: {YELLOW}{0:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{2:COMMA} día{P 2 "" s}{}{BLACK}{1:STRING}
+str_purchase_svc_axl_len_ltm    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso de eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
+str_purchase_svc_axl_len_ltm_spc:{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Peso de eje: {YELLOW}{1:STRING}{}{BLACK}Longitud: {YELLOW}{2:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{4:COMMA} día{P "" s}{}{BLACK}{3:STRING}
+str_purchase_svc_axl_ltm_spc    :{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Peso de eje: {YELLOW}{1:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{3:COMMA} día{P "" s}{}{BLACK}{2:STRING}
 
+str_purchase_svc_p          :pasajeros
+str_purchase_svc_lp         :pasajeros local
+str_purchase_svc_ep         :pasajeros exprés
+str_purchase_svc_ip         :pasajeros interurbano
+str_purchase_svc_hp         :pasajeros de alta velocidad
+str_purchase_svc_Ip         :pasajeros internacional
+str_purchase_svc_elp        :exprés y pasajeros local
+str_purchase_svc_eip        :exprés y pasajeros interurbano
+str_purchase_svc_eiphf      :exprés y pasajeros interurbano o carga pesada
+str_purchase_svc_iphf       :pasajeros interurbano o carga pesada
+str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
+str_purchase_svc_eplf       :pasajeros exprés o carga ligera
+str_purchase_svc_flp        :carga o pasajeros local
+str_purchase_svc_lfep       :carga ligera o pasajeros exprés
+str_purchase_svc_f          :carga
+str_purchase_svc_lf         :carga ligera
+str_purchase_svc_hf         :carga pesada
+str_purchase_svc_s          :maniobras
+str_purchase_svc_slf        :maniobras o carga ligera
+str_purchase_svc_m          :correo
+str_purchase_svc_M          :metro
+str_purchase_svc_x          :ejecutivo
 
 str_purchase_len_1_04       :1 unidad (0.4)
 str_purchase_len_1_05       :1 unidad (0.5)
@@ -243,13 +333,38 @@ str_purchase_axl_C          :medio (clase C)
 str_purchase_axl_D          :pesado (claseD)
 str_purchase_axl_E          :muy pesado (clase E)
 
+str_purchase_spc_eld        :Con compartimiento de equipaje reformable a cargamentos exprés.
+str_purchase_spc_el_eld     :Con compartimiento de equipaje reformable a cargamentos exprés o pasajeros.
+str_purchase_spc_fictional  :Ficticia.
 
 
+str_purchase_diesel_NS2000  :Nombre anterior: {SILVER} Whitcomb 65-DE-19A.
+str_purchase_diesel_SM151   :Nombre anterior: {SILVER} SM 151-155.
+str_purchase_diesel_ACTS5800:Nombre anterior: {SILVER} BR Class 58.
+str_purchase_diesel_ACTS6700:Nombre anterior: {SILVER} NMBS HLD 62.
+str_purchase_diesel_RN232   :Nombre anterior: {SILVER} DB BR 232.
+
+str_purchase_spc_electric_ES64F4:Locomotora multisistema, {YELLOW}+42% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_NS1600P    :Locomotora multisistema, {YELLOW}+70% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_electric_gen9_HS001:Locomotora multisistema, {YELLOW}+65% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_electric_gen9_HS002:Locomotora multisistema, {YELLOW}+197% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_electric_ES64F4_no_track:Locomotora multisistema.
+str_purchase_spc_NS1600P_no_track:Locomotora multisistema.
+str_purchase_spc_electric_gen9_HS001_no_track:Locomotora multisistema.{}Ficticia.
+str_purchase_spc_electric_gen9_HS002_no_track:Locomotora multisistema.{}Ficticia.
 
 
+str_purchase_spc_emu_TGV    :EMU multisistema, {YELLOW}+139% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_emu_V250   :EMU multisistema, {YELLOW}+83% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_emu_gen9_HST:EMU multisistema, {YELLOW}+68% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_emu_Future_DD:EMU multisistema, {YELLOW}+118% de potencia {BLACK}en vías electrificadas de 25 kV.{}Ficticia.
 
+str_purchase_spc_emu_TGV_no_track:EMU multisistema.
+str_purchase_spc_emu_V250_no_track:EMU multisistema.
+str_purchase_spc_emu_gen9_HST_no_track:EMU multisistema.{}Ficticia.
+str_purchase_spc_emu_Future_DD_no_track:EMU multisistema.{}Ficticia.
 
-
+str_purchase_coaches_ZHESM_B:Nombre posterior: {SILVER} NS B9900.{}{BLACK}Para uso con vagón motorizado ZHESM mBC.
 str_purchase_coaches_Mat24  :Para uso con vagón motorizado Mat '24.
 str_purchase_coaches_DDAR   :Para uso con vagón motorizado mDDM o NID.
 str_purchase_coaches_PlanW  :Para uso con locomotoras eléctricas de NS para servicio nacional y NMBS HLE 25.5 para servicio de Benelux.
