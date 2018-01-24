@@ -344,25 +344,36 @@ str_purchase_diesel_ACTS5800:Nombre anterior: {SILVER} BR Class 58.
 str_purchase_diesel_ACTS6700:Nombre anterior: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Nombre anterior: {SILVER} DB BR 232.
 
+str_purchase_electric_NS1100:Renovación de 1979: {YELLOW}+4% de peso, +1/8 de longitud.
+str_purchase_electric_NS1500:Nombre anterior: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID:Para uso con vagón de doble piso DDM/NID.
+str_purchase_electric_HLE11 :Para uso con vagón ICR para servicio de Benelux.
+str_purchase_electric_HLE25 :Para uso con vagón Plan W para servicio de Benelux.
+str_purchase_electric_TRAXXF140MS2:Para uso con vagón ICR para servicio Benelux. TRAXX F140 MS2 modificada.{}Locomotora multisistema, {YELLOW}+87% de potencia {BLACK}en vías electrificadas de 25 kV.
 str_purchase_spc_electric_ES64F4:Locomotora multisistema, {YELLOW}+42% de potencia {BLACK}en vías electrificadas de 25 kV.
 str_purchase_spc_NS1600P    :Locomotora multisistema, {YELLOW}+70% de potencia {BLACK}en vías electrificadas de 25 kV.
 str_purchase_spc_electric_gen9_HS001:Locomotora multisistema, {YELLOW}+65% de potencia {BLACK}en vías electrificadas de 25 kV.
 str_purchase_spc_electric_gen9_HS002:Locomotora multisistema, {YELLOW}+197% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_electric_TRAXXF140MS2_no_track:Para uso con vagón ICR para servicio Benelux. TRAXX F140 MS2 modificada.{}Locomotora multisistema.
 str_purchase_spc_electric_ES64F4_no_track:Locomotora multisistema.
 str_purchase_spc_NS1600P_no_track:Locomotora multisistema.
 str_purchase_spc_electric_gen9_HS001_no_track:Locomotora multisistema.{}Ficticia.
 str_purchase_spc_electric_gen9_HS002_no_track:Locomotora multisistema.{}Ficticia.
 
+str_purchase_dmu_omBC1901   :Compra desde 1929: {YELLOW}+41% de peso, +233% de potencia, +7% de velocidad, +23% de costo por operación.
 
 str_purchase_spc_emu_TGV    :EMU multisistema, {YELLOW}+139% de potencia {BLACK}en vías electrificadas de 25 kV.
 str_purchase_spc_emu_V250   :EMU multisistema, {YELLOW}+83% de potencia {BLACK}en vías electrificadas de 25 kV.
 str_purchase_spc_emu_gen9_HST:EMU multisistema, {YELLOW}+68% de potencia {BLACK}en vías electrificadas de 25 kV.
 str_purchase_spc_emu_Future_DD:EMU multisistema, {YELLOW}+118% de potencia {BLACK}en vías electrificadas de 25 kV.{}Ficticia.
+str_purchase_emu_CargoDD        :EMU multisistema, {YELLOW}+110% de potencia {BLACK}en vías electrificadas de 25 kV.{}Ficticia.
 
+str_purchase_emu_ICE3M_no_track:EMU multisistema.{}También llamada: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track:EMU multisistema.
 str_purchase_spc_emu_V250_no_track:EMU multisistema.
 str_purchase_spc_emu_gen9_HST_no_track:EMU multisistema.{}Ficticia.
 str_purchase_spc_emu_Future_DD_no_track:EMU multisistema.{}Ficticia.
+str_purchase_emu_CargoDD_no_track:EMU multisistema.{}Ficticia.
 
 str_purchase_coaches_ZHESM_B:Nombre posterior: {SILVER} NS B9900.{}{BLACK}Para uso con vagón motorizado ZHESM mBC.
 str_purchase_coaches_Mat24  :Para uso con vagón motorizado Mat '24.
