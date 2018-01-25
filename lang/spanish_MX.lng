@@ -337,6 +337,13 @@ str_purchase_spc_eld        :Con compartimiento de equipaje reformable a cargame
 str_purchase_spc_el_eld     :Con compartimiento de equipaje reformable a cargamentos exprés o pasajeros.
 str_purchase_spc_fictional  :Ficticia.
 
+str_purchase_steam_NCS21    :Nombre anterior: {SILVER} NCS 21-30, luego SS 481-490.
+str_purchase_steam_NCS41    :Nombre anterior: {SILVER} NCS 41-50, luego SS 151-160.
+str_purchase_steam_HSM83    :Nombre anterior: {SILVER} HSM 83-88, 101-115.
+str_purchase_steam_HSM126   :Nombre anterior: {SILVER} HSM 126-135.
+str_purchase_steam_HSM501   :Nombre anterior: {SILVER} HSM 501-535.
+str_purchase_steam_HSM601   :Nombre anterior: {SILVER} HSM 601-647.
+str_purchase_steam_HSM701   :Nombre anterior: {SILVER} HSM 701-755.
 
 str_purchase_diesel_NS2000  :Nombre anterior: {SILVER} Whitcomb 65-DE-19A.
 str_purchase_diesel_SM151   :Nombre anterior: {SILVER} SM 151-155.
