@@ -264,13 +264,18 @@ str_diesel_NS2000       :NS 2000 (diésel)
 #wagons
 
 #coaches
+str_coaches_HIJSM_4_8_10:Coche de pasajeros HSM 1
 str_coaches_Ovaleramen  :Coche de pasajeros "Ovaleramen"
 str_coaches_Ovaleramen_t:Coche de pasajeros "Ventanas ovaladas"
 str_coaches_Bolkoprijtuigen     :Coche de pasajeros "Bolkoprijtuigen"
 str_coaches_Bolkoprijtuigen_t   :Coche de pasajeros "Cabezota"
 str_coaches_Avmz        :Coche de pasajeros Avmz
+str_coaches_DDAR        :Vagón de doble piso DDM/NID
+str_coaches_Couchette   :Coche cama Couchette Bcm
+str_coaches_Citynightline   :Coche cama CityNightLine
 
 #baggage and mail wagons
+str_coaches_Dm          :Vagón de equipaje Dm
 
 #metro
 
