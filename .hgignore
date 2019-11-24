@@ -8,6 +8,7 @@ syntax: glob
 *.grf.cache*
 *.md5
 *.scm
+.nmlcache
 custom_tags.txt
 docs/readme.txt
 Makefile.fordist
