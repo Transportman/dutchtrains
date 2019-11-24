@@ -1,0 +1,81 @@
+/*
+ *  Copyright (C) 2012-2019 Erato
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_ICNGVIII_purchase, "gfx/purchase/emu/ICNG.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+//NS
+spriteset(spriteset_emu_ICNGVIII_front, "gfx/emu/ICNG.png") {
+	template_2cc_88(1,1)
+}
+
+spriteset(spriteset_emu_ICNGVIII_middle1, "gfx/emu/ICNG.png") {
+	template_2cc_88(1,27)
+}
+
+spriteset(spriteset_emu_ICNGVIII_middle2, "gfx/emu/ICNG.png") {
+	template_2cc_88(1,105)
+}
+
+spriteset(spriteset_emu_ICNGVIII_middle3, "gfx/emu/ICNG.png") {
+	template_2cc_88(1,131)
+}
+
+spriteset(spriteset_emu_ICNGVIII_middle4, "gfx/emu/ICNG.png") {
+	template_2cc_88(1,157)
+}
+
+spriteset(spriteset_emu_ICNGVIII_middle5, "gfx/emu/ICNG.png") {
+	template_2cc_88(1,183)
+}
+
+spriteset(spriteset_emu_ICNGVIII_middle6, "gfx/emu/ICNG.png") {
+	template_2cc_88(1,209)
+}
+
+spriteset(spriteset_emu_ICNGVIII_back, "gfx/emu/ICNG.png") {
+	template_2cc_88(1,235)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_position, (position_in_vehid_chain % 8)) { 
+	0: spriteset_emu_ICNGVIII_front;
+	1: spriteset_emu_ICNGVIII_middle1;
+	2: spriteset_emu_ICNGVIII_middle2;
+	3: spriteset_emu_ICNGVIII_middle3;
+	4: spriteset_emu_ICNGVIII_middle4;
+	5: spriteset_emu_ICNGVIII_middle5;
+	6: spriteset_emu_ICNGVIII_middle6;
+	spriteset_emu_ICNGVIII_back;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_articulated, extra_callback_info1) {
+    1..7: return item_emu_ICNGVIII; //use same vehicle for all parts
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_visual_effect_and_powered, (position_in_vehid_chain % 8)) {
+    1..2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+	7..8: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

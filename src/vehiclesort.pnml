@@ -144,12 +144,22 @@ sort(FEAT_TRAINS, [
     item_emu_SLTVI,
 	item_electric_NID,
     item_emu_V250,
+	item_emu_FLIRT3II,
+	item_emu_FLIRT3III,
+	item_emu_FLIRT3IV,
+	item_emu_SNGIII,
+	item_emu_SNGIV,
+	item_emu_ICNGV,
+	item_emu_ICNGVIII,
     item_emu_gen9_HST,
 	item_emu_V200E6,
 	item_emu_V200E8,
 	item_emu_Future_DD,
 	item_emu_CargoDD,
     
+	//battery
+    item_battery_WINK,
+	
     //coaches
     item_coaches_HIJSM_4_8_10,
     item_coaches_SS_C_218,

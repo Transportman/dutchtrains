@@ -52,6 +52,10 @@ if (param_vehicle_names == 1) {
     item(FEAT_TRAINS, item_emu_IRMIII) { property { name: string(str_emu_IRMIII_t); } }
     item(FEAT_TRAINS, item_emu_IRMIV) { property { name: string(str_emu_IRMIV_t); } }
     item(FEAT_TRAINS, item_emu_IRMVI) { property { name: string(str_emu_IRMVI_t); } }
+    item(FEAT_TRAINS, item_emu_SNGIII) { property { name: string(str_emu_SNGIII_t); } }
+    item(FEAT_TRAINS, item_emu_SNGIV) { property { name: string(str_emu_SNGIV_t); } }
+    item(FEAT_TRAINS, item_emu_ICNGV) { property { name: string(str_emu_ICNGV_t); } }
+    item(FEAT_TRAINS, item_emu_ICNGVIII) { property { name: string(str_emu_ICNGVIII_t); } }
     
     //coaches
     item(FEAT_TRAINS, item_coaches_Ovaleramen) { property { name: string(str_coaches_Ovaleramen_t); } }

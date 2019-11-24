@@ -223,3 +223,11 @@ item(FEAT_TRAINS, item_emu_V200E6, 328) {}
 item(FEAT_TRAINS, item_emu_V200E8, 329) {}
 item(FEAT_TRAINS, item_emu_CargoDD, 330) {}
 item(FEAT_TRAINS, item_wagons_Tads_selfdischarger, 331) {}
+item(FEAT_TRAINS, item_emu_FLIRT3II, 332) {}
+item(FEAT_TRAINS, item_emu_FLIRT3III, 333) {}
+item(FEAT_TRAINS, item_emu_FLIRT3IV, 334) {}
+item(FEAT_TRAINS, item_emu_ICNGV, 335) {}
+item(FEAT_TRAINS, item_emu_ICNGVIII, 336) {}
+item(FEAT_TRAINS, item_emu_SNGIII, 337) {}
+item(FEAT_TRAINS, item_emu_SNGIV, 338) {}
+item(FEAT_TRAINS, item_battery_WINK, 339) {}

@@ -1,0 +1,63 @@
+/*
+ *  Copyright (C) 2012-2019 Erato
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_SNGIII_purchase, "gfx/purchase/emu/SNG.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+//NS
+spriteset(spriteset_emu_SNGIII_front, "gfx/emu/SNG.png") {
+	template_2cc_88(1,1)
+}
+
+spriteset(spriteset_emu_SNGIII_middle, "gfx/emu/SNG.png") {
+	template_2cc_68(1,32)
+}
+
+spriteset(spriteset_emu_SNGIII_back, "gfx/emu/SNG.png") {
+	template_2cc_88(1,96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_position, (position_in_vehid_chain % 3)) { 
+	0: spriteset_emu_SNGIII_front;
+	1: spriteset_emu_SNGIII_middle;
+	spriteset_emu_SNGIII_back;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_articulated, extra_callback_info1) {
+    1..2: return item_emu_SNGIII; //use same vehicle for all parts
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+/*
+* Length
+*/
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_length, (position_in_vehid_chain % 3)) { 
+	1: 6;
+	8;
+}

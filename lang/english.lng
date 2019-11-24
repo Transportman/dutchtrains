@@ -182,8 +182,10 @@ str_cargo_subtype_ACTS_grey_green   : > ACTS (grey/green) livery
 str_cargo_subtype_Arriva            : > Arriva livery
 str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" livery
 str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" livery
+str_cargo_subtype_Arriva_drielanden	: > Arriva Drielandentrein livery
 str_cargo_subtype_Breng             : > Breng livery
 str_cargo_subtype_Captrain          : > Captrain livery
+str_cargo_subtype_Connexxion_valleilijn		: > Connexxion Valleilijn livery
 str_cargo_subtype_Crossrail         : > Crossrail livery
 str_cargo_subtype_DBSchenker        : > DB Schenker livery
 str_cargo_subtype_DBSchenker_Crates	: > DB Schenker livery (crates)
@@ -200,6 +202,7 @@ str_cargo_subtype_HUSA              : > HUSA livery
 str_cargo_subtype_HUSA_Crates		: > HUSA livery (crates)
 str_cargo_subtype_HUSA_Containers	: > HUSA livery (containers)
 str_cargo_subtype_Locon             : > Locon livery
+str_cargo_subtype_Keolis_blauwnet	: > Keolis Blauwnet livery
 str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livery
 str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livery
 str_cargo_subtype_NCS_tender        : > NCS livery (tender locomotive)
@@ -405,6 +408,20 @@ str_emu_Future_DD		:Future DD (Electric)
 str_emu_V200E6			:V200-E6 (Electric)
 str_emu_V200E8			:V200-E8 (Electric)
 str_emu_CargoDD			:Cargo EMU (Electric)
+str_emu_FLIRT3II		:FLIRT3-II (Electric)
+str_emu_FLIRT3III		:FLIRT3-III (Electric)
+str_emu_FLIRT3IV		:FLIRT3-IV (Electric)
+str_emu_SNGIII			:SNG-III "Sprinter Nieuwe Generatie" (Electric)
+str_emu_SNGIII_t		:SNG-III "Sprinter New Generation" (Electric)
+str_emu_SNGIV			:SNG-IV "Sprinter Nieuwe Generatie" (Electric)
+str_emu_SNGIV_t			:SNG-IV "Sprinter New Generation" (Electric)
+str_emu_ICNGV			:ICNG-V "Intercity Nieuwe Generatie" (Electric)
+str_emu_ICNGV_t			:ICNG-V "Intercity New Generation" (Electric)
+str_emu_ICNGVIII		:ICNG-VIII "Intercity Nieuwe Generatie" (Electric)
+str_emu_ICNGVIII_t		:ICNG-VIII "Intercity New Generation" (Electric)
+
+#battery
+str_battery_WINK		:WINK (Battery)
 
 #wagons
 str_wagons_gen0boxcar               :Boxcar Small
@@ -546,11 +563,15 @@ str_purchase_len_1_04       :1 unit (0.4)
 str_purchase_len_1_05       :1 unit (0.5)
 str_purchase_len_2_10       :2 units (1.0)
 str_purchase_len_2_12       :2 units (1.2)
+str_purchase_len_3_12       :3 units (1.2)
+str_purchase_len_3_14       :3 units (1.4)
 str_purchase_len_3_15       :3 units (1.5)
 str_purchase_len_3_17       :3 units (1.7)
 str_purchase_len_4_14       :4 units (1.4)
+str_purchase_len_4_18       :4 units (1.8)
 str_purchase_len_4_20       :4 units (2.0)
 str_purchase_len_5_24       :5 units (2.4)
+str_purchase_len_5_25       :5 units (2.5)
 str_purchase_len_6_20       :6 units (2.0)
 str_purchase_len_6_30       :6 units (3.0)
 str_purchase_len_8_40       :8 units (4.0)
@@ -606,22 +627,27 @@ str_purchase_spc_electric_gen9_HS002_no_track:Multisystem locomotive.{}Fictional
 
 str_purchase_dmu_omBC1901   :Purchased from 1929: {YELLOW}+41% weight, +233% power, +7% speed, +23% running cost.
 
-str_purchase_emu_ZHESM_mBC  :Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900.{}{BLACK}For use with Carriage ZHESM B.
-str_purchase_emu_Mat24      :For use with Carriage Mat '24.
-str_purchase_emu_Mat36ELD3  :With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8.
-str_purchase_emu_ICE3M      :Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV ~ electrified track.{}Also known as: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV    :Multisystem EMU, {YELLOW}+139% power {BLACK}on 25 kV ~ electrified track.
-str_purchase_spc_emu_V250   :Multisystem EMU, {YELLOW}+83% power {BLACK}on 25 kV ~ electrified track.
-str_purchase_spc_emu_gen9_HST:Multisystem EMU, {YELLOW}+68% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
-str_purchase_spc_emu_Future_DD:Multisystem EMU, {YELLOW}+118% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
-str_purchase_emu_CargoDD	:Multisystem EMU, {YELLOW}+100% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_emu_ZHESM_mBC  	:Refurbished 1926: {YELLOW}+150% power, +100% TE{}{BLACK}Later known as: {SILVER} NS mBC9900.{}{BLACK}For use with Carriage ZHESM B.
+str_purchase_emu_Mat24      	:For use with Carriage Mat '24.
+str_purchase_emu_Mat36ELD3  	:With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8.
+str_purchase_emu_ICE3M      	:Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV ~ electrified track.{}Also known as: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV    	:Multisystem EMU, {YELLOW}+139% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_emu_V250   	:Multisystem EMU, {YELLOW}+83% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_emu_gen9_HST	:Multisystem EMU, {YELLOW}+68% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_spc_emu_Future_DD	:Multisystem EMU, {YELLOW}+118% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_emu_CargoDD		:Multisystem EMU, {YELLOW}+100% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_spc_ICNGV			:Multisystem locomotive.
+str_purchase_spc_ICNGVIII		:Multisystem locomotive.
 
-str_purchase_emu_ICE3M_no_track:Multisystem EMU.{}Also known as: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track:Multisystem EMU.
-str_purchase_spc_emu_V250_no_track:Multisystem EMU.
-str_purchase_spc_emu_gen9_HST_no_track:Multisystem EMU.{}Fictional.
-str_purchase_spc_emu_Future_DD_no_track:Multisystem EMU.{}Fictional.
-str_purchase_emu_CargoDD_no_track:Multisystem EMU.{}Fictional.
+str_purchase_emu_ICE3M_no_track			:Multisystem EMU.{}Also known as: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track		:Multisystem EMU.
+str_purchase_spc_emu_V250_no_track		:Multisystem EMU.
+str_purchase_spc_emu_gen9_HST_no_track	:Multisystem EMU.{}Fictional.
+str_purchase_spc_emu_Future_DD_no_track	:Multisystem EMU.{}Fictional.
+str_purchase_emu_CargoDD_no_track		:Multisystem EMU.{}Fictional.
+
+str_purchase_spc_battery_WINK			:Battery-powered EMU, {YELLOW}+30% power {BLACK} on 1500 V = electrified track.
+str_purchase_spc_battery_WINK_no_track	:Battery-powered EMU.
 
 str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900.{}{BLACK}For use with motorcar ZHESM mBC.
 str_purchase_coaches_Mat24  :For use with motorcar Mat '24.

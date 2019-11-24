@@ -279,6 +279,24 @@
 #include "src/emu/V200E8_item.pnml"
 #include "src/emu/CargoDD_graphics.pnml"
 #include "src/emu/CargoDD_item.pnml"
+#include "src/emu/FLIRT3II_graphics.pnml"
+#include "src/emu/FLIRT3II_item.pnml"
+#include "src/emu/FLIRT3III_graphics.pnml"
+#include "src/emu/FLIRT3III_item.pnml"
+#include "src/emu/FLIRT3IV_graphics.pnml"
+#include "src/emu/FLIRT3IV_item.pnml"
+#include "src/emu/SNGIII_graphics.pnml"
+#include "src/emu/SNGIII_item.pnml"
+#include "src/emu/SNGIV_graphics.pnml"
+#include "src/emu/SNGIV_item.pnml"
+#include "src/emu/ICNGV_graphics.pnml"
+#include "src/emu/ICNGV_item.pnml"
+#include "src/emu/ICNGVIII_graphics.pnml"
+#include "src/emu/ICNGVIII_item.pnml"
+
+//battery
+#include "src/battery/WINK_graphics.pnml"
+#include "src/battery/WINK_item.pnml"
 
 //coaches
 #include "src/coaches/SS_C_218_graphics.pnml"

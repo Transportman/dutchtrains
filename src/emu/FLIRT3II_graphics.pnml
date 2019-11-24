@@ -1,0 +1,89 @@
+/*
+ *  Copyright (C) 2012-2019 Erato
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_FLIRT3II_purchase, "gfx/purchase/emu/FLIRT3II_RNET.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+//RNET
+spriteset(spriteset_emu_FLIRT3II_RNET_front, "gfx/emu/FLIRT3_RNET.png") {
+	template_2cc_88(1,1)
+}
+
+spriteset(spriteset_emu_FLIRT3II_RNET_back, "gfx/emu/FLIRT3_RNET.png") {
+	template_2cc_88(1,32)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3II_RNET_position, (position_in_vehid_chain % 2)) { 
+	0: spriteset_emu_FLIRT3II_RNET_front;
+	spriteset_emu_FLIRT3II_RNET_back;
+}
+
+//Arriva
+spriteset(spriteset_emu_FLIRT3II_Arriva_front, "gfx/emu/FLIRT3_Arriva.png") {
+	template_2cc_88(1,1)
+}
+
+spriteset(spriteset_emu_FLIRT3II_Arriva_back, "gfx/emu/FLIRT3_Arriva.png") {
+	template_2cc_88(1,96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3II_Arriva_position, position_in_articulated_veh) { 
+	0: spriteset_emu_FLIRT3II_Arriva_front;
+	spriteset_emu_FLIRT3II_Arriva_back;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_FLIRT3II_randomlivery) {
+	1: switch_emu_FLIRT3II_Arriva_position;
+	1: switch_emu_FLIRT3II_RNET_position;
+}
+
+//Livery Switch Sets
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3II_livery, cargo_subtype){
+    0: 	switch_emu_FLIRT3II_randomlivery;
+	1:	switch_emu_FLIRT3II_RNET_position;
+    2:	switch_emu_FLIRT3II_Arriva_position;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3II_subtype_text, cargo_subtype){
+	0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_rnet);
+    2: return string(str_cargo_subtype_Arriva);
+	return CB_RESULT_NO_TEXT;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch (FEAT_TRAINS, SELF, switch_emu_FLIRT3II_articulated, extra_callback_info1) {
+    1: return item_emu_FLIRT3II; //use same vehicle for all parts
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3II_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

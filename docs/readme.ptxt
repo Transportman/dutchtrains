@@ -30,7 +30,7 @@ Dutch Trains for OpenTTD
 -------
 
 Dutch Trains for OpenTTD. It all starts with Arend in 1839 and continues 
-to the V250 Albatross and beyond. The set gives you the steam engines, 
+to the ICNG and beyond. The set gives you the steam engines, 
 diesel and electric engines, diesel and electric multiple units and 
 metros that once were or still are common in the Netherlands. With many 
 liveries to choose from.
@@ -279,6 +279,8 @@ Graphics (see individual graphic files in the source for details):
 - STT Transport
 - Voyager One
 - Wile E. Coyote
+- Yoshi
+- Erato
 
 Code:
 - FooBar (Jasper Vries)

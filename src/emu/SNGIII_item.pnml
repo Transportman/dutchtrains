@@ -1,0 +1,63 @@
+/*
+ *  Copyright (C) 2012-2019 Erato
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* ITEM
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_additional_text, [
+        STORE_TEMP((param_loading_speed == 0) ? 14 : (param_loading_speed == 2) ? 4 : 7, 256) //days
+        //                                      ^ slow                      fast ^   ^ medium
+        ]) {
+    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_3_14));
+}
+
+item(FEAT_TRAINS, item_emu_SNGIII) {
+	property {
+		name:	string(str_emu_SNGIII);
+			//Constants
+		model_life:	VEHICLE_NEVER_EXPIRES;
+		introduction_date:	date(2019,01,01);
+		vehicle_life: 30;
+		loading_speed: (param_loading_speed == 0) ? 24 : (param_loading_speed == 2) ? 96 : 48;
+        //                                          ^ slow                      fast ^   ^ medium
+		cost_factor: 56;
+        running_cost_factor: 46;
+        speed: 160 km/h;
+        power: 1500 kW;
+        cargo_capacity: 53;
+        weight: 110 ton;
+        tractive_effort_coefficient: 0.18;
+        air_drag_coefficient: 0;
+		
+		climates_available: ALL_CLIMATES;
+		sprite_id: SPRITE_ID_NEW_TRAIN;
+		length: 8;
+		dual_headed: 0;
+		
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        refit_cost: 0;
+        track_type: DC_B;
+		ai_special_flag: AI_FLAG_PASSENGER;
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+	}
+	graphics {
+        cargo_capacity: return 53;
+        purchase: spriteset_emu_SNGIII_purchase;
+        additional_text: switch_emu_SNGIII_additional_text;
+        articulated_part: switch_emu_SNGIII_articulated;
+        visual_effect_and_powered: switch_emu_SNGIII_visual_effect_and_powered;
+        length: switch_emu_SNGIII_length;
+        switch_emu_SNGIII_position;
+	}
+}
