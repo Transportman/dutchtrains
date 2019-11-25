@@ -402,6 +402,8 @@ str_emu_V200E6                  :V200-E6 (Električni)
 str_emu_V200E8                  :V200-E8 (Električni)
 str_emu_CargoDD                 :Teretni EMU (Električni)
 
+#battery
+
 #wagons
 str_wagons_gen0boxcar               :Mali zatvoreni vagon
 str_wagons_gen2_boxcar              :Zatvoreni vagon
@@ -597,22 +599,23 @@ str_purchase_spc_electric_gen9_HS002_no_track:Višesistemska lokomotiva.{}Izmiš
 
 str_purchase_dmu_omBC1901   :Kupljena od 1929: {YELLOW}+41% težine, +233% snage, +7% brzine, +23% tekući troškovi.
 
-str_purchase_emu_ZHESM_mBC  :Obnovljena 1926: {YELLOW}+150% snage, +100% TE{}{BLACK}Kasnije poznata kao: {SILVER} NS mBC9900.{}{BLACK}Za korištenje sa vagonom ZHESM B.
-str_purchase_emu_Mat24      :Za korištenje sa vagonima Mat '24.
-str_purchase_emu_Mat36ELD3  :Sa odjeljkom za prtljagu koji se može prenamijeniti za ekspresne terete ili putnike.{}Kupljena od 1942: {YELLOW}-26% težine, -50% snage, -45% TE, -20% tekući troškovi, -21% kapaciteta, dužina -1/8.
-str_purchase_emu_ICE3M      :Višesistemska EMU, {YELLOW}+86% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Također poznata kao: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV    :Višesistemska EMU, {YELLOW}+139% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
-str_purchase_spc_emu_V250   :Višesistemska EMU, {YELLOW}+83% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
-str_purchase_spc_emu_gen9_HST:Višesistemska EMU, {YELLOW}+68% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
-str_purchase_spc_emu_Future_DD:Višesistemska EMU, {YELLOW}+118% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
-str_purchase_emu_CargoDD        :Višesistemska EMU, {YELLOW}+100% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_emu_ZHESM_mBC      :Obnovljena 1926: {YELLOW}+150% snage, +100% TE{}{BLACK}Kasnije poznata kao: {SILVER} NS mBC9900.{}{BLACK}Za korištenje sa vagonom ZHESM B.
+str_purchase_emu_Mat24          :Za korištenje sa vagonima Mat '24.
+str_purchase_emu_Mat36ELD3      :Sa odjeljkom za prtljagu koji se može prenamijeniti za ekspresne terete ili putnike.{}Kupljena od 1942: {YELLOW}-26% težine, -50% snage, -45% TE, -20% tekući troškovi, -21% kapaciteta, dužina -1/8.
+str_purchase_emu_ICE3M          :Višesistemska EMU, {YELLOW}+86% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Također poznata kao: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV        :Višesistemska EMU, {YELLOW}+139% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_spc_emu_V250       :Višesistemska EMU, {YELLOW}+83% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.
+str_purchase_spc_emu_gen9_HST   :Višesistemska EMU, {YELLOW}+68% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_spc_emu_Future_DD  :Višesistemska EMU, {YELLOW}+118% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_emu_CargoDD                :Višesistemska EMU, {YELLOW}+100% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
 
-str_purchase_emu_ICE3M_no_track:Višesistemska EMU.{}Također poznata kao: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track:Višesistemska EMU.
-str_purchase_spc_emu_V250_no_track:Višesistemska EMU.
-str_purchase_spc_emu_gen9_HST_no_track:Višesistemska EMU.{}Izmišljena.
-str_purchase_spc_emu_Future_DD_no_track:Višesistemska EMU.{}Izmišljena.
-str_purchase_emu_CargoDD_no_track:Višesistemska EMU.{}Izmišljena.
+str_purchase_emu_ICE3M_no_track                 :Višesistemska EMU.{}Također poznata kao: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track               :Višesistemska EMU.
+str_purchase_spc_emu_V250_no_track              :Višesistemska EMU.
+str_purchase_spc_emu_gen9_HST_no_track  :Višesistemska EMU.{}Izmišljena.
+str_purchase_spc_emu_Future_DD_no_track :Višesistemska EMU.{}Izmišljena.
+str_purchase_emu_CargoDD_no_track               :Višesistemska EMU.{}Izmišljena.
+
 
 str_purchase_coaches_ZHESM_B:Kasnije poznata kao: {SILVER} NS B9900.{}{BLACK}Za korištenje sa motornim vagonom ZHESM mBC.
 str_purchase_coaches_Mat24  :Za korištenje sa motornim vagonima Mat '24.

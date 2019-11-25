@@ -261,6 +261,8 @@ str_diesel_NS2000       :NS 2000 (diésel)
 
 #emu
 
+#battery
+
 #wagons
 
 #coaches
@@ -374,18 +376,19 @@ str_purchase_spc_electric_gen9_HS002_no_track:Locomotora multisistema.{}Ficticia
 
 str_purchase_dmu_omBC1901   :Compra desde 1929: {YELLOW}+41% de peso, +233% de potencia, +7% de velocidad, +23% de costo por operación.
 
-str_purchase_spc_emu_TGV    :EMU multisistema, {YELLOW}+139% de potencia {BLACK}en vías electrificadas de 25 kV.
-str_purchase_spc_emu_V250   :EMU multisistema, {YELLOW}+83% de potencia {BLACK}en vías electrificadas de 25 kV.
-str_purchase_spc_emu_gen9_HST:EMU multisistema, {YELLOW}+68% de potencia {BLACK}en vías electrificadas de 25 kV.
-str_purchase_spc_emu_Future_DD:EMU multisistema, {YELLOW}+118% de potencia {BLACK}en vías electrificadas de 25 kV.{}Ficticia.
-str_purchase_emu_CargoDD        :EMU multisistema, {YELLOW}+110% de potencia {BLACK}en vías electrificadas de 25 kV.{}Ficticia.
+str_purchase_spc_emu_TGV        :EMU multisistema, {YELLOW}+139% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_emu_V250       :EMU multisistema, {YELLOW}+83% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_emu_gen9_HST   :EMU multisistema, {YELLOW}+68% de potencia {BLACK}en vías electrificadas de 25 kV.
+str_purchase_spc_emu_Future_DD  :EMU multisistema, {YELLOW}+118% de potencia {BLACK}en vías electrificadas de 25 kV.{}Ficticia.
+str_purchase_emu_CargoDD                :EMU multisistema, {YELLOW}+110% de potencia {BLACK}en vías electrificadas de 25 kV.{}Ficticia.
 
-str_purchase_emu_ICE3M_no_track:EMU multisistema.{}También llamada: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track:EMU multisistema.
-str_purchase_spc_emu_V250_no_track:EMU multisistema.
-str_purchase_spc_emu_gen9_HST_no_track:EMU multisistema.{}Ficticia.
-str_purchase_spc_emu_Future_DD_no_track:EMU multisistema.{}Ficticia.
-str_purchase_emu_CargoDD_no_track:EMU multisistema.{}Ficticia.
+str_purchase_emu_ICE3M_no_track                 :EMU multisistema.{}También llamada: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track               :EMU multisistema.
+str_purchase_spc_emu_V250_no_track              :EMU multisistema.
+str_purchase_spc_emu_gen9_HST_no_track  :EMU multisistema.{}Ficticia.
+str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Ficticia.
+str_purchase_emu_CargoDD_no_track               :EMU multisistema.{}Ficticia.
+
 
 str_purchase_coaches_ZHESM_B:Nombre posterior: {SILVER} NS B9900.{}{BLACK}Para uso con vagón motorizado ZHESM mBC.
 str_purchase_coaches_Mat24  :Para uso con vagón motorizado Mat '24.

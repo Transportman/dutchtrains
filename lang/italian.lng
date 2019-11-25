@@ -408,6 +408,8 @@ str_emu_V200E6                  :V200-E6 (Elettrica)
 str_emu_V200E8                  :V200-E8 (Elettrica)
 str_emu_CargoDD                 :Cargo EMU (Elettrica)
 
+#battery
+
 #wagons
 str_wagons_gen0boxcar               :Piccolo carro chiuso
 str_wagons_gen2_boxcar              :Carro chiuso
@@ -608,22 +610,23 @@ str_purchase_spc_electric_gen9_HS002_no_track:Locomotiva multifase.{}Di fantasia
 
 str_purchase_dmu_omBC1901   :Acquistata nuova dal 1929 in poi: {YELLOW}+41% peso, +233% potenza, +7% velocitá, +23% costi d'esercizio.
 
-str_purchase_emu_ZHESM_mBC  :Riqualificata nel 1926: {YELLOW}+150% potenza , +100% sforzo di trazione{}{BLACK}Denominazione precedente: {SILVER} NS mBC9900.{}{BLACK}Da usare con carrozze ZHESM B.
-str_purchase_emu_Mat24      :Da usare con carrozze Mat '24.
-str_purchase_emu_Mat36ELD3  :Con vano bagagli riadattabile per merci leggere o passeggeri.{}Se acquistata nuova dal 1942 in poi: {YELLOW}-26% peso, -50% potenza, -45% sforzo di trazione, -20% costi d'esercizio, -21% capacità, -1/8 lunghezza.
-str_purchase_emu_ICE3M      :Elettrotreno multifase, {YELLOW}+86% potenza {BLACK}su linee elettrificate a 25 kV.{}Denominazione alternativa: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV    :Elettrotreno multifase, {YELLOW}+139% potenza {BLACK}su linee elettrificate a 25 kV.
-str_purchase_spc_emu_V250   :Elettrotreno multifase, {YELLOW}+83% potenza {BLACK}su linee elettrificate a 25 kV.
-str_purchase_spc_emu_gen9_HST:Elettrotreno multifase, {YELLOW}+68% potenza {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
-str_purchase_spc_emu_Future_DD:Elettrotreno multifase, {YELLOW}+118% potenza  {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
-str_purchase_emu_CargoDD        :Elettrotreno multisistema, {YELLOW}+100% potenza {BLACK}su linee elettrificate a 25 kV.{}Treno di fantasia.
+str_purchase_emu_ZHESM_mBC      :Riqualificata nel 1926: {YELLOW}+150% potenza , +100% sforzo di trazione{}{BLACK}Denominazione precedente: {SILVER} NS mBC9900.{}{BLACK}Da usare con carrozze ZHESM B.
+str_purchase_emu_Mat24          :Da usare con carrozze Mat '24.
+str_purchase_emu_Mat36ELD3      :Con vano bagagli riadattabile per merci leggere o passeggeri.{}Se acquistata nuova dal 1942 in poi: {YELLOW}-26% peso, -50% potenza, -45% sforzo di trazione, -20% costi d'esercizio, -21% capacità, -1/8 lunghezza.
+str_purchase_emu_ICE3M          :Elettrotreno multifase, {YELLOW}+86% potenza {BLACK}su linee elettrificate a 25 kV.{}Denominazione alternativa: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV        :Elettrotreno multifase, {YELLOW}+139% potenza {BLACK}su linee elettrificate a 25 kV.
+str_purchase_spc_emu_V250       :Elettrotreno multifase, {YELLOW}+83% potenza {BLACK}su linee elettrificate a 25 kV.
+str_purchase_spc_emu_gen9_HST   :Elettrotreno multifase, {YELLOW}+68% potenza {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
+str_purchase_spc_emu_Future_DD  :Elettrotreno multifase, {YELLOW}+118% potenza  {BLACK}su linee elettrificate a 25 kV.{}Di fantasia.
+str_purchase_emu_CargoDD                :Elettrotreno multisistema, {YELLOW}+100% potenza {BLACK}su linee elettrificate a 25 kV.{}Treno di fantasia.
 
-str_purchase_emu_ICE3M_no_track:Elettrotreno multifase.{}Denominazione alternativa: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track:Elettrotreno multifase.
-str_purchase_spc_emu_V250_no_track:Elettrotreno multifase.
-str_purchase_spc_emu_gen9_HST_no_track:Elettrotreno multifase.{}Di fantasia.
-str_purchase_spc_emu_Future_DD_no_track:Elettrotreno multifase.{}Di fantasia.
-str_purchase_emu_CargoDD_no_track:Elettrotreno multifase.{}Di fantasia.
+str_purchase_emu_ICE3M_no_track                 :Elettrotreno multifase.{}Denominazione alternativa: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track               :Elettrotreno multifase.
+str_purchase_spc_emu_V250_no_track              :Elettrotreno multifase.
+str_purchase_spc_emu_gen9_HST_no_track  :Elettrotreno multifase.{}Di fantasia.
+str_purchase_spc_emu_Future_DD_no_track :Elettrotreno multifase.{}Di fantasia.
+str_purchase_emu_CargoDD_no_track               :Elettrotreno multifase.{}Di fantasia.
+
 
 str_purchase_coaches_ZHESM_B:Denominazione successiva {SILVER} NS B9900.{}{BLACK}Da usare con una carrozza motorizzata ZHESM mBC.
 str_purchase_coaches_Mat24  :Da usare con una carrozza motorizzata Mat '24.

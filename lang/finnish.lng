@@ -406,6 +406,8 @@ str_emu_V200E6                  :V200-E6 (Sähkömoottoriveturi)
 str_emu_V200E8                  :V200-E8 (Sähkömoottorivaunu)
 str_emu_CargoDD                 :Cargo EMU (Sähkömoottorivaunu)
 
+#battery
+
 #wagons
 str_wagons_gen0boxcar               :Katettu tavaravaunu (Pieni)
 str_wagons_gen2_boxcar              :Katettu tavaravaunu
@@ -606,22 +608,23 @@ str_purchase_spc_electric_gen9_HS002_no_track:Monijärjestelmäveturi.{}Kuvittee
 
 str_purchase_dmu_omBC1901   :1929 jälkeen ostettuna: {YELLOW}+41% painoa, 233% voimaa, +7% nopeutta, +23% käyttökustannuksia.
 
-str_purchase_emu_ZHESM_mBC  :Saneerattu 1926: {YELLOW}+150% voimaa, +100% vetovoimaa{}{BLACK}Myöhemmin tunnetaan nimellä: {SILVER}NS mBC9900.{}{BLACK}Käytettäväksi ZHESM B matkustajavaunujen kanssa.
-str_purchase_emu_Mat24      :Käytettäväksi Mat '24 matkustajavaunun kanssa.
-str_purchase_emu_Mat36ELD3  :Mukana matkatavaraosasto, joka voidaan sovittaa pikarahdille tai matkustajille.{}Vuodesta 1942 lähtien: {YELLOW}-26% paino, -50% teho, -45% vetovoima, -20% käyttökulut, -21% kapasiteetti, pituus -1/8.
-str_purchase_emu_ICE3M      :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+86% voimaa {BLACK}25 kV ~ sähköradalla.{}Tunnetaan myös nimellä {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV    :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+139% voimaa {BLACK}25 kV ~ sähköradalla.
-str_purchase_spc_emu_V250   :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+83% teho {BLACK}25 kV:n ~ sähköistetyllä radalla.
-str_purchase_spc_emu_gen9_HST:Monijärjestelmäsähkömoottorivaunu, {YELLOW}+68% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
-str_purchase_spc_emu_Future_DD:Monijärjestelmäsähkömoottorivaunu, {YELLOW}+118% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
-str_purchase_emu_CargoDD        :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+100% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
+str_purchase_emu_ZHESM_mBC      :Saneerattu 1926: {YELLOW}+150% voimaa, +100% vetovoimaa{}{BLACK}Myöhemmin tunnetaan nimellä: {SILVER}NS mBC9900.{}{BLACK}Käytettäväksi ZHESM B matkustajavaunujen kanssa.
+str_purchase_emu_Mat24          :Käytettäväksi Mat '24 matkustajavaunun kanssa.
+str_purchase_emu_Mat36ELD3      :Mukana matkatavaraosasto, joka voidaan sovittaa pikarahdille tai matkustajille.{}Vuodesta 1942 lähtien: {YELLOW}-26% paino, -50% teho, -45% vetovoima, -20% käyttökulut, -21% kapasiteetti, pituus -1/8.
+str_purchase_emu_ICE3M          :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+86% voimaa {BLACK}25 kV ~ sähköradalla.{}Tunnetaan myös nimellä {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV        :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+139% voimaa {BLACK}25 kV ~ sähköradalla.
+str_purchase_spc_emu_V250       :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+83% teho {BLACK}25 kV:n ~ sähköistetyllä radalla.
+str_purchase_spc_emu_gen9_HST   :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+68% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
+str_purchase_spc_emu_Future_DD  :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+118% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
+str_purchase_emu_CargoDD                :Monijärjestelmäsähkömoottorivaunu, {YELLOW}+100% voimaa {BLACK}25 kV ~ sähköradalla.{}Kuvitteellinen.
 
-str_purchase_emu_ICE3M_no_track:Monijärjestelmäsähkömoottorivaunu.{}Tunnetaan myös nimellä {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track:Monijärjestelmäsähkömoottorivaunu.
-str_purchase_spc_emu_V250_no_track:Monijärjestelmäsähkömoottorivaunu.
-str_purchase_spc_emu_gen9_HST_no_track:Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
-str_purchase_spc_emu_Future_DD_no_track:Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
-str_purchase_emu_CargoDD_no_track:Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+str_purchase_emu_ICE3M_no_track                 :Monijärjestelmäsähkömoottorivaunu.{}Tunnetaan myös nimellä {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track               :Monijärjestelmäsähkömoottorivaunu.
+str_purchase_spc_emu_V250_no_track              :Monijärjestelmäsähkömoottorivaunu.
+str_purchase_spc_emu_gen9_HST_no_track  :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+str_purchase_spc_emu_Future_DD_no_track :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+str_purchase_emu_CargoDD_no_track               :Monijärjestelmäsähkömoottorivaunu.{}Kuvitteellinen.
+
 
 str_purchase_coaches_ZHESM_B:Myöhemmin tunnetaan nimellä: {SILVER} NS B9900.{}{BLACK}Käytettäväksi ZHESM mBC moottorivaunun kanssa.
 str_purchase_coaches_Mat24  :Käytettäväksi moottorivaunutyypin Mat '24 kanssa.

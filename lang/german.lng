@@ -210,6 +210,8 @@ str_emu_Protos          :Protos (Elektrisch)
 str_emu_SLTIV           :SLT-IV „Sprinter Lighttrain“ (Elektrisch)
 str_emu_V200E8                  :V200-E8 (Elektrisch)
 
+#battery
+
 #wagons
 str_wagons_GTUW_openwagon           :offener Wagen GTUW
 str_wagons_Es_openwagon             :Offener Wagen Es
@@ -307,14 +309,15 @@ str_purchase_spc_NS1600P_no_track:Mehrsystemlokomotive
 str_purchase_spc_electric_gen9_HS001_no_track:Mehrsystemlokomotive.{}Fiktional.
 
 
-str_purchase_emu_Mat24      :mit Wagen Mat '24 zu benutzen.
-str_purchase_emu_ICE3M      :Mehrsystem-Elektrotriebzug, {YELLOW}+86% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.{}Auch bekannt als: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV    :Mehrsystem-Elektrotriebzug, {YELLOW}+139% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.
+str_purchase_emu_Mat24          :mit Wagen Mat '24 zu benutzen.
+str_purchase_emu_ICE3M          :Mehrsystem-Elektrotriebzug, {YELLOW}+86% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.{}Auch bekannt als: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV        :Mehrsystem-Elektrotriebzug, {YELLOW}+139% Leistung {BLACK}bei 25 kV ~ elektrifizierten Gleisen.
 
-str_purchase_emu_ICE3M_no_track:Mehrsystem-Elektrotriebwagen.{}Auch bekannt als: {SILVER} DB BR 406.
-str_purchase_spc_emu_gen9_HST_no_track:Mehrsystemtriebzug.{}Fiktional.
-str_purchase_spc_emu_Future_DD_no_track:Mehrsystemtriebzug.{}Fiktional
-str_purchase_emu_CargoDD_no_track:Mehrsystemtriebzug.{}Fiktional
+str_purchase_emu_ICE3M_no_track                 :Mehrsystem-Elektrotriebwagen.{}Auch bekannt als: {SILVER} DB BR 406.
+str_purchase_spc_emu_gen9_HST_no_track  :Mehrsystemtriebzug.{}Fiktional.
+str_purchase_spc_emu_Future_DD_no_track :Mehrsystemtriebzug.{}Fiktional
+str_purchase_emu_CargoDD_no_track               :Mehrsystemtriebzug.{}Fiktional
+
 
 str_purchase_coaches_ZHESM_B:Später bekannt als: {SILVER} NS B9900.{}{BLACK}Zusammen mit Antriebswagen ZHESM mBC nutzen.
 str_purchase_coaches_Mat24  :Mit Motorwagen Mat '24 zu benutzen.

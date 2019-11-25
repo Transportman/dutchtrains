@@ -407,6 +407,8 @@ str_emu_V200E6                  :V200-E6 (Électrique)
 str_emu_V200E8                  :V200-E8 (Électrique)
 str_emu_CargoDD                 :Rame marchandises (Électrique)
 
+#battery
+
 #wagons
 str_wagons_gen0boxcar               :Fourgon (petit)
 str_wagons_gen2_boxcar              :Fourgon
@@ -607,22 +609,23 @@ str_purchase_spc_electric_gen9_HS002_no_track:Locomotive multi-tension.{}Fictive
 
 str_purchase_dmu_omBC1901   :Achat à partir de 1929: {YELLOW}poids +41%, puissance +233%, vitesse +7%, coût d'entretien +23%.
 
-str_purchase_emu_ZHESM_mBC  :Rénovation 1926{NBSP}: {YELLOW}puissance +150%, eff. trac. +100%{}{BLACK}Immatriculé ensuite{NBSP}: {SILVER} NS mBC9900.{}{BLACK}À utiliser avec le voiture ZHESM B.
-str_purchase_emu_Mat24      :À utiliser avec la voiture Mat '24.
-str_purchase_emu_Mat36ELD3  :Avec compartiment à bagages réaménageable pour marchandises express ou passagers.{}Achat après 1942{NBSP}: {YELLOW}poids -26%, puissance -50%, eff. trac. -45%, coût ent. -20%, capacité -21%, longueur -1/8.
-str_purchase_emu_ICE3M      :Rame électrique multi-tension, {YELLOW}puissance +86% {BLACK}sur voie électrifiée 25 kV AC.{}Autre immatriculation{NBSP}: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV    :Rame électrique multi-tension, {YELLOW}puissance +139% {BLACK}sur voie électrifiée 25 kV AC.
-str_purchase_spc_emu_V250   :Locomotive multi-tension, {YELLOW}puissance +83% {BLACK}sur voie électrifiée 25 kV AC.
-str_purchase_spc_emu_gen9_HST:Locomotive multi-tension, {YELLOW}puissance +68% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
-str_purchase_spc_emu_Future_DD:Rame électrique multi-tension, {YELLOW}puissance +118% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
-str_purchase_emu_CargoDD        :Rame électrique multi-tension, {YELLOW}puissance +100% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
+str_purchase_emu_ZHESM_mBC      :Rénovation 1926{NBSP}: {YELLOW}puissance +150%, eff. trac. +100%{}{BLACK}Immatriculé ensuite{NBSP}: {SILVER} NS mBC9900.{}{BLACK}À utiliser avec le voiture ZHESM B.
+str_purchase_emu_Mat24          :À utiliser avec la voiture Mat '24.
+str_purchase_emu_Mat36ELD3      :Avec compartiment à bagages réaménageable pour marchandises express ou passagers.{}Achat après 1942{NBSP}: {YELLOW}poids -26%, puissance -50%, eff. trac. -45%, coût ent. -20%, capacité -21%, longueur -1/8.
+str_purchase_emu_ICE3M          :Rame électrique multi-tension, {YELLOW}puissance +86% {BLACK}sur voie électrifiée 25 kV AC.{}Autre immatriculation{NBSP}: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV        :Rame électrique multi-tension, {YELLOW}puissance +139% {BLACK}sur voie électrifiée 25 kV AC.
+str_purchase_spc_emu_V250       :Locomotive multi-tension, {YELLOW}puissance +83% {BLACK}sur voie électrifiée 25 kV AC.
+str_purchase_spc_emu_gen9_HST   :Locomotive multi-tension, {YELLOW}puissance +68% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
+str_purchase_spc_emu_Future_DD  :Rame électrique multi-tension, {YELLOW}puissance +118% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
+str_purchase_emu_CargoDD                :Rame électrique multi-tension, {YELLOW}puissance +100% {BLACK}sur voie électrifiée 25 kV AC.{}Fictive.
 
-str_purchase_emu_ICE3M_no_track:Rame électrique multi-tension.{}Ancienne immatriculation{NBSP}: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV_no_track:Rame électrique multi-tension.
-str_purchase_spc_emu_V250_no_track:Rame électrique multi-tension.
-str_purchase_spc_emu_gen9_HST_no_track:Rame électrique multi-tension.{}Fictive.
-str_purchase_spc_emu_Future_DD_no_track:Rame électrique multi-tension.{}Fictive.
-str_purchase_emu_CargoDD_no_track:Rame électrique multi-tension.{}Fictive.
+str_purchase_emu_ICE3M_no_track                 :Rame électrique multi-tension.{}Ancienne immatriculation{NBSP}: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV_no_track               :Rame électrique multi-tension.
+str_purchase_spc_emu_V250_no_track              :Rame électrique multi-tension.
+str_purchase_spc_emu_gen9_HST_no_track  :Rame électrique multi-tension.{}Fictive.
+str_purchase_spc_emu_Future_DD_no_track :Rame électrique multi-tension.{}Fictive.
+str_purchase_emu_CargoDD_no_track               :Rame électrique multi-tension.{}Fictive.
+
 
 str_purchase_coaches_ZHESM_B:Nouvelle immatriculation{NBSP}: {SILVER} NS B9900.{}{BLACK}Utiliser avec l'autorail ZHESM mBC.
 str_purchase_coaches_Mat24  :À utiliser avec la voiture motorisée Mat '24

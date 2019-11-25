@@ -407,6 +407,8 @@ str_emu_V200E6                  :V200-E6 (Elèctrica)
 str_emu_V200E8                  :V200-E8 (Elèctrica)
 str_emu_CargoDD                 :EMU de càrrega (Elèctrica)
 
+#battery
+
 #wagons
 str_wagons_gen0boxcar               :Furgó petit
 str_wagons_gen2_boxcar              :Furgó
@@ -607,22 +609,23 @@ str_purchase_spc_electric_gen9_HS002_no_track:Locomotora multisistema.{}Fictíci
 
 str_purchase_dmu_omBC1901   :Des de 1929: {YELLOW}+41% pes, +233% potència, +7% velocitat, +23% cost de circulació.
 
-str_purchase_emu_ZHESM_mBC  :Remodelat el 1926: {YELLOW}+150% potència, +100% esforç de tracció{}{BLACK}Després coneguda com a: {SILVER}NS mBC9900.{}{BLACK}Per a emprar amb el Vagó ZHESM B.
-str_purchase_emu_Mat24      :Per a emprar amb el vagó motor Mat '24.
-str_purchase_emu_Mat36ELD3  :Amb compartiment per a equipatge remodelable a càrregues exprés o passatgers.{}Des de 1942: {YELLOW}-26% pes, -50% potència, -45% esforç de tracció, -20% cost de cicrulació, -21% capacitat, llargada -1/8.
-str_purchase_emu_ICE3M      :EMU multisistema, {YELLOW}+86% de potència {BLACK}en via electrificada de 25 kV.{}També coneguda com a: {SILVER}DB BR 406.
-str_purchase_spc_emu_TGV    :EMU multisistema, {YELLOW}+139% de potència {BLACK}en via electrificada de 25 kV.
-str_purchase_spc_emu_V250   :EMU multisistema, {YELLOW}+83% de potència {BLACK}en via electrificada de 25 kV.
-str_purchase_spc_emu_gen9_HST:EMU multisistema, {YELLOW}+68% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
-str_purchase_spc_emu_Future_DD:EMU multisistema, {YELLOW}+118% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
-str_purchase_emu_CargoDD        :EMU multisistema, {YELLOW}+100% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
+str_purchase_emu_ZHESM_mBC      :Remodelat el 1926: {YELLOW}+150% potència, +100% esforç de tracció{}{BLACK}Després coneguda com a: {SILVER}NS mBC9900.{}{BLACK}Per a emprar amb el Vagó ZHESM B.
+str_purchase_emu_Mat24          :Per a emprar amb el vagó motor Mat '24.
+str_purchase_emu_Mat36ELD3      :Amb compartiment per a equipatge remodelable a càrregues exprés o passatgers.{}Des de 1942: {YELLOW}-26% pes, -50% potència, -45% esforç de tracció, -20% cost de cicrulació, -21% capacitat, llargada -1/8.
+str_purchase_emu_ICE3M          :EMU multisistema, {YELLOW}+86% de potència {BLACK}en via electrificada de 25 kV.{}També coneguda com a: {SILVER}DB BR 406.
+str_purchase_spc_emu_TGV        :EMU multisistema, {YELLOW}+139% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_emu_V250       :EMU multisistema, {YELLOW}+83% de potència {BLACK}en via electrificada de 25 kV.
+str_purchase_spc_emu_gen9_HST   :EMU multisistema, {YELLOW}+68% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
+str_purchase_spc_emu_Future_DD  :EMU multisistema, {YELLOW}+118% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
+str_purchase_emu_CargoDD                :EMU multisistema, {YELLOW}+100% de potència {BLACK}en via electrificada de 25 kV.{}Fictícia.
 
-str_purchase_emu_ICE3M_no_track:EMU multisistema.{}També coneguda com a: {SILVER}DB BR 406.
-str_purchase_spc_emu_TGV_no_track:EMU multisistema.
-str_purchase_spc_emu_V250_no_track:EMU multisistema.
-str_purchase_spc_emu_gen9_HST_no_track:EMU multisistema.{}Fictícia.
-str_purchase_spc_emu_Future_DD_no_track:EMU multisistema.{}Fictícia.
-str_purchase_emu_CargoDD_no_track:EMU multisistema.{}Fictícia.
+str_purchase_emu_ICE3M_no_track                 :EMU multisistema.{}També coneguda com a: {SILVER}DB BR 406.
+str_purchase_spc_emu_TGV_no_track               :EMU multisistema.
+str_purchase_spc_emu_V250_no_track              :EMU multisistema.
+str_purchase_spc_emu_gen9_HST_no_track  :EMU multisistema.{}Fictícia.
+str_purchase_spc_emu_Future_DD_no_track :EMU multisistema.{}Fictícia.
+str_purchase_emu_CargoDD_no_track               :EMU multisistema.{}Fictícia.
+
 
 str_purchase_coaches_ZHESM_B:Després coneguda com a: {SILVER}NS B9900.{}{BLACK}Per a emprar amb el vagó motor ZHESM mBC.
 str_purchase_coaches_Mat24  :Per a emprar amb el vagó motor Mat '24.

@@ -111,6 +111,8 @@ str_emu_ICM3_t          :CM-III Plan Z "Jalan Kepala" (Listrik)
 str_emu_mP              :Plan mP (Listrik)
 str_emu_SLTIV           :SLT-IV "Sprinter Lighttrain" (Listrik)
 
+#battery
+
 #wagons
 str_wagons_gen0openwagonsmall       :Gerbong Terbuka (XS)
 str_wagons_gen0livestockwagon       :Gerbong Ternak (XS)
@@ -157,6 +159,7 @@ str_purchase_steam_SS17     :Dimembaharui tahun 1913: {YELLOW}+20% daya, +19% da
 str_purchase_diesel_ACTS6700:Sebelum disebut sebagai: {SILVER} NMBS HLD 62.
 
 str_purchase_electric_NS1100:Dimembaharui tahun 1979: {YELLOW}+4% berat, +1/8 panjang.
+
 
 
 
