@@ -182,8 +182,10 @@ str_cargo_subtype_ACTS_grey_green   : > ACTS-kleurstelling (grijs/groen)
 str_cargo_subtype_Arriva            : > Arriva-kleurstelling
 str_cargo_subtype_Arriva_spurt      : > Arriva 'Spurt'-kleurstelling
 str_cargo_subtype_Arriva_vechtdallijnen : > Arriva 'Vechtdallijnen'-kleurstelling
+str_cargo_subtype_Arriva_drielanden     : > Arriva Drielandentrein-kleurstelling
 str_cargo_subtype_Breng             : > Breng-kleurstelling
 str_cargo_subtype_Captrain          : > Captrain-kleurstelling
+str_cargo_subtype_Connexxion_valleilijn         : > Connexxion Valleilijn-kleurstelling
 str_cargo_subtype_Crossrail         : > Crossrail-kleurstelling
 str_cargo_subtype_DBSchenker        : > DB Schenker-kleurstelling
 str_cargo_subtype_DBSchenker_Crates     : > DB Schenker-kleurstelling (kratten)
@@ -200,6 +202,7 @@ str_cargo_subtype_HUSA              : > HUSA-kleurstelling
 str_cargo_subtype_HUSA_Crates           : > HUSA-kleurstelling (kratten)
 str_cargo_subtype_HUSA_Containers       : > HUSA-kleurstelling (containers)
 str_cargo_subtype_Locon             : > Locon-kleurstelling
+str_cargo_subtype_Keolis_blauwnet       : > Keolis Blauwnet-kleurstelling
 str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij-kleurstelling
 str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij-kleurstelling
 str_cargo_subtype_NCS_tender        : > NCS-kleurstelling (locomotief met tender)
@@ -281,20 +284,20 @@ str_steam_NS6300_t      :NS 6300 'The Executioner' (Stoom)
 
 #diesel
 str_diesel_NS100        :NS 100 'Oersik' (Benzine)
-str_diesel_NS100_t      :NS 100 'Buck' (Benzine)
+str_diesel_NS100_t      :NS 100 'Oersik' (Benzine)
 str_diesel_NS200        :NS 200 'Sik' (Diesel)
-str_diesel_NS200_t      :NS 200 'Billy' (Diesel)
+str_diesel_NS200_t      :NS 200 'Sik' (Diesel)
 str_diesel_NS400        :NS 400 'Grote sik' (Diesel)
-str_diesel_NS400_t      :NS 400 'Big Billy' (Diesel)
+str_diesel_NS400_t      :NS 400 'Grote sik' (Diesel)
 str_diesel_NS450        :NS 450 (Diesel)
 str_diesel_NS600        :NS 600 'Bakkie' (Diesel)
-str_diesel_NS600_t      :NS 600 'Boxie' (Diesel)
+str_diesel_NS600_t      :NS 600 'Bakkie' (Diesel)
 str_diesel_NS2000       :NS 2000 (Diesel)
 str_diesel_NS2200       :NS 2200 (Diesel)
 str_diesel_NS2400       :NS 2400 (Diesel)
 str_diesel_NS2600       :NS 2600 'Beelen' (Diesel)
 str_diesel_NS2801       :NS 2801 'Kreupele Marietje' (Diesel)
-str_diesel_NS2801_t     :NS 2801 'Little Cripple Mary' (Diesel)
+str_diesel_NS2801_t     :NS 2801 'Kreupele Marietje' (Diesel)
 str_diesel_SM151        :NS 2900 (Diesel)
 str_diesel_NS6400       :NS 6400 (Diesel)
 str_diesel_ACTS5800     :ACTS 5800 (Diesel)
@@ -307,49 +310,49 @@ str_diesel_G2000        :Vossloh G 2000 (Diesel)
 str_diesel_HLR77        :NMBS HLR 77 (Diesel)
 
 #electric
-str_electric_NS1000     :NS 1000 (Elektrisch)
-str_electric_NS1100     :NS 1100 (Elektrisch)
-str_electric_NS1200     :NS 1200 (Elektrisch)
-str_electric_NS1300     :NS 1300 (Elektrisch)
-str_electric_NS1500     :NS 1500 (Elektrisch)
-str_electric_NS1600     :NS 1600/1800 (Elektrisch)
-str_electric_NS1700     :NS 1700 (Elektrisch)
-str_electric_NID        :Nieuwe Intercity Dubbeldekker (Elektrisch)
-str_electric_NID_t      :New Intercity Doubledecker (Elektrisch)
-str_electric_mDDM       :mDDM (Elektrisch)
-str_electric_NS1600P    :NS 1600P (Elektrisch)
-str_electric_HLE11      :NMBS HLE 11 (Elektrisch)
-str_electric_HLE25      :NMBS HLE 25.5 (Elektrisch)
-str_electric_TRAXXF140MS2   :NS Hispeed 186 (Elektrisch)
-str_electric_ES64F4     :EuroSprinter ES64F4 (Elektrisch)
-str_electric_gen9_HS001 :HS-1 (Elektrisch)
-str_electric_gen9_HS002 :HS-2 (Elektrisch)
+str_electric_NS1000     :NS 1000 (elektrisch)
+str_electric_NS1100     :NS 1100 (elektrisch)
+str_electric_NS1200     :NS 1200 (elektrisch)
+str_electric_NS1300     :NS 1300 (elektrisch)
+str_electric_NS1500     :NS 1500 (elektrisch)
+str_electric_NS1600     :NS 1600/1800 (elektrisch)
+str_electric_NS1700     :NS 1700 (elektrisch)
+str_electric_NID        :Nieuwe intercity-dubbeldekker (elektrisch)
+str_electric_NID_t      :Nieuwe intercity-dubbeldekker (elektrisch)
+str_electric_mDDM       :mDDM (elektrisch)
+str_electric_NS1600P    :NS 1600P (elektrisch)
+str_electric_HLE11      :NMBS HLE 11 (elektrisch)
+str_electric_HLE25      :NMBS HLE 25.5 (elektrisch)
+str_electric_TRAXXF140MS2   :NS Hispeed 186 (elektrisch)
+str_electric_ES64F4     :EuroSprinter ES64F4 (elektrisch)
+str_electric_gen9_HS001 :HS-1 (elektrisch)
+str_electric_gen9_HS002 :HS-2 (elektrisch)
 
 #dmu
 str_dmu_omC901          :omC 901-916 'Ome Cees' (Diesel)
-str_dmu_omC901_t        :omC 901-916 'Uncle Cornel' (Diesel)
+str_dmu_omC901_t        :omC 901-916 'Ome Cees' (Diesel)
 str_dmu_omC1921         :omC 1921-1931 (Diesel)
 str_dmu_omBC1901        :omBC 1901-1910 (Diesel)
 str_dmu_omBC2901        :omBC 2901-2908 (Diesel)
 str_dmu_Mat34           :Mat '34 'Dieseldrie' (Diesel)
-str_dmu_Mat34_t         :Mat '34 'Diesel Three' (Diesel)
+str_dmu_Mat34_t         :Mat '34 'Dieseldrie' (Diesel)
 str_dmu_DE5             :DE5 'Dieselvijf' (Diesel)
-str_dmu_DE5_t           :DE5 'Diesel Five' (Diesel)
+str_dmu_DE5_t           :DE5 'Dieselvijf' (Diesel)
 str_dmu_DE1             :DE1 Plan X 'Blauwe engel' (Diesel)
-str_dmu_DE1_t           :DE1 Plan X 'Blue Angel' (Diesel)
+str_dmu_DE1_t           :DE1 Plan X 'Blauwe engel' (Diesel)
 str_dmu_DE2             :DE2 Plan X 'Blauwe engel' (Diesel)
-str_dmu_DE2_t           :DE2 Plan X 'Blue Angel' (Diesel)
+str_dmu_DE2_t           :DE2 Plan X 'Blauwe engel' (Diesel)
 str_dmu_NS20            :NS20 'Kameel' (Diesel)
-str_dmu_NS20_t          :NS20 'Camel' (Diesel)
+str_dmu_NS20_t          :NS20 'Kameel' (Diesel)
 str_dmu_DE4             :DE4 'Trans Europ Express' (Diesel)
 str_dmu_DE3             :DE3 Plan U 'Rode duivel' (Diesel)
-str_dmu_DE3_t           :DE3 Plan U 'Red Devil' (Diesel)
+str_dmu_DE3_t           :DE3 Plan U 'Rode duivel' (Diesel)
 str_dmu_DH1             :DH1 'Wadloper' (Diesel)
-str_dmu_DH1_t           :DH1 'Mudflat Walker' (Diesel)
+str_dmu_DH1_t           :DH1 'Wadloper' (Diesel)
 str_dmu_DH2             :DH2 'Wadloper' (Diesel)
-str_dmu_DH2_t           :DH2 'Mudflat Walker' (Diesel)
+str_dmu_DH2_t           :DH2 'Wadloper' (Diesel)
 str_dmu_DM90            :DM '90 'Buffel' (Diesel)
-str_dmu_DM90_t          :DM '90 'Buffalo' (Diesel)
+str_dmu_DM90_t          :DM '90 'Buffel' (Diesel)
 str_dmu_Lint41H         :Lint 41/H (Diesel)
 str_dmu_GTW26           :GTW 2/6 (Diesel)
 str_dmu_GTW28           :GTW 2/8 (Diesel)
@@ -357,56 +360,68 @@ str_dmu_V200D4                  :V200-D4 (Diesel)
 str_dmu_V200D6                  :V200-D6 (Diesel)
 
 #emu
-str_emu_ZHESM_mBC       :ZHESM mBC (Elektrisch)
-str_emu_Mat24           :Mat '24 'Blokkendoos' (Elektrisch)
-str_emu_Mat24_t         :Mat '24 'Blocks Set' (Elektrisch)
-str_emu_Mat24mP         :Mat '24 mP (Elektrisch)
-str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (Elektrisch)
-str_emu_Mat36EL2        :Mat '36 El2 (Elektrisch)
-str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (Elektrisch)
-str_emu_Mat36ELD4       :Mat '36 ElD4 (Elektrisch)
-str_emu_Mat40ELD2       :Mat '40 ElD2 (Elektrisch)
-str_emu_Mat40ELD5       :Mat '40 ElD5 (Elektrisch)
-str_emu_Mat46ELD2       :Mat '46 ElD2 (Elektrisch)
-str_emu_Mat46ELD4       :Mat '46 ElD4 (Elektrisch)
-str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q 'Hondekop' (Elektrisch)
-str_emu_Mat54ELD2_t     :Mat '54 ElD2 Plan F/G/M/Q 'Doghead' (Elektrisch)
-str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P 'Hondekop' (Elektrisch)
-str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P 'Doghead' (Elektrisch)
-str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux 'Hondekop' (Elektrisch)
-str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux 'Doghead' (Elektrisch)
-str_emu_Mat64PlanV      :Mat '64 Plan V (Elektrisch)
-str_emu_Mat64PlanT      :Mat '64 Plan T (Elektrisch)
-str_emu_SGM2            :SGM-II Plan Y 'Sprinter' (Elektrisch)
-str_emu_SGM3            :SGM-III Plan Y 'Sprinter' (Elektrisch)
-str_emu_ICM3            :ICM-III Plan Z 'Koploper' (Elektrisch)
-str_emu_ICM3_t          :ICM-III Plan Z 'Headwalker' (Elektrisch)
-str_emu_ICM4            :ICM-IV Plan Z 'Koploper' (Elektrisch)
-str_emu_ICM4_t          :ICM-IV Plan Z 'Headwalker' (Elektrisch)
-str_emu_SM90            :SM '90 'Railhopper' (Elektrisch)
-str_emu_IRMIII          :IRM-III 'Bizon' (Elektrisch)
-str_emu_IRMIII_t        :IRM-III 'Bison' (Elektrisch)
-str_emu_IRMIV           :IRM-IV/VIRM-IV 'Bizon' (Elektrisch)
-str_emu_IRMIV_t         :IRM-IV/VIRM-IV 'Bison' (Elektrisch)
-str_emu_IRMVI           :VIRM-VI 'Bizon' (Elektrisch)
-str_emu_IRMVI_t         :VIRM-VI 'Bison' (Elektrisch)
-str_emu_mP              :Plan mP (Elektrisch)
-str_emu_TGV             :TGV Thalys PBKA/PBA (Elektrisch)
-str_emu_ICE3M           :ICE 3M (Elektrisch)
-str_emu_V250            :Fyra V250 'Albatros' (Elektrisch)
-str_emu_V250_t          :Fyra V250 'Albatross' (Elektrisch)
-str_emu_gen9_HST        :P8000 (Elektrisch)
-str_emu_GTW26           :GTW 2/6 (Elektrisch)
-str_emu_GTW28           :GTW 2/8 (Elektrisch)
-str_emu_Protos          :Protos (Elektrisch)
-str_emu_SLTIV           :SLT-IV 'Sprinter Lighttrain' (Elektrisch)
-str_emu_SLTVI           :SLT-VI 'Sprinter Lighttrain' (Elektrisch)
-str_emu_Future_DD               :Futuristische DD (Electrisch)
-str_emu_V200E6                  :V200-E6 (Electrisch)
-str_emu_V200E8                  :V200-E8 (Electrisch)
-str_emu_CargoDD                 :Goederentreinstel (Electrisch)
+str_emu_ZHESM_mBC       :ZHESM mBC (elektrisch)
+str_emu_Mat24           :Mat '24 'Blokkendoos' (elektrisch)
+str_emu_Mat24_t         :Mat '24 'Blokkendoos' (elektrisch)
+str_emu_Mat24mP         :Mat '24 mP (elektrisch)
+str_emu_Mat35ELD2       :Mat '35 El2/ElD2 (elektrisch)
+str_emu_Mat36EL2        :Mat '36 El2 (elektrisch)
+str_emu_Mat36ELD3       :Mat '36 El3/ElD3 (elektrisch)
+str_emu_Mat36ELD4       :Mat '36 ElD4 (elektrisch)
+str_emu_Mat40ELD2       :Mat '40 ElD2 (elektrisch)
+str_emu_Mat40ELD5       :Mat '40 ElD5 (elektrisch)
+str_emu_Mat46ELD2       :Mat '46 ElD2 (elektrisch)
+str_emu_Mat46ELD4       :Mat '46 ElD4 (elektrisch)
+str_emu_Mat54ELD2       :Mat '54 ElD2 Plan F/G/M/Q 'Hondekop' (elektrisch)
+str_emu_Mat54ELD2_t     :Mat '54 ElD2 Plan F/G/M/Q 'Hondekop' (elektrisch)
+str_emu_Mat54ELD4       :Mat '54 ElD4 Plan F/G/P 'Hondekop' (elektrisch)
+str_emu_Mat54ELD4_t     :Mat '54 ElD4 Plan F/G/P 'Hondekop' (elektrisch)
+str_emu_Mat56ELD2       :Mat '56 ElD2 Benelux 'Hondekop' (elektrisch)
+str_emu_Mat56ELD2_t     :Mat '56 ElD2 Benelux 'Hondekop' (elektrisch)
+str_emu_Mat64PlanV      :Mat '64 Plan V (elektrisch)
+str_emu_Mat64PlanT      :Mat '64 Plan T (elektrisch)
+str_emu_SGM2            :SGM-II Plan Y 'Sprinter' (elektrisch)
+str_emu_SGM3            :SGM-III Plan Y 'Sprinter' (elektrisch)
+str_emu_ICM3            :ICM-III Plan Z 'Koploper' (elektrisch)
+str_emu_ICM3_t          :ICM-III Plan Z 'Koploper' (elektrisch)
+str_emu_ICM4            :ICM-IV Plan Z 'Koploper' (elektrisch)
+str_emu_ICM4_t          :ICM-IV Plan Z 'Koploper' (elektrisch)
+str_emu_SM90            :SM '90 'Railhopper' (elektrisch)
+str_emu_IRMIII          :IRM-III 'Bizon' (elektrisch)
+str_emu_IRMIII_t        :IRM-III 'Bizon' (elektrisch)
+str_emu_IRMIV           :IRM-IV/VIRM-IV 'Bizon' (elektrisch)
+str_emu_IRMIV_t         :IRM-IV/VIRM-IV 'Bizon' (elektrisch)
+str_emu_IRMVI           :VIRM-VI 'Bizon' (elektrisch)
+str_emu_IRMVI_t         :VIRM-VI 'Bizon' (elektrisch)
+str_emu_mP              :Plan mP (elektrisch)
+str_emu_TGV             :TGV Thalys PBKA/PBA (elektrisch)
+str_emu_ICE3M           :ICE 3M (elektrisch)
+str_emu_V250            :Fyra V250 'Albatros' (elektrisch)
+str_emu_V250_t          :Fyra V250 'Albatros' (elektrisch)
+str_emu_gen9_HST        :P8000 (elektrisch)
+str_emu_GTW26           :GTW 2/6 (elektrisch)
+str_emu_GTW28           :GTW 2/8 (elektrisch)
+str_emu_Protos          :Protos (elektrisch)
+str_emu_SLTIV           :SLT-IV 'Sprinter Lighttrain' (elektrisch)
+str_emu_SLTVI           :SLT-VI 'Sprinter Lighttrain' (elektrisch)
+str_emu_Future_DD               :Futuristische DD (elektrisch)
+str_emu_V200E6                  :V200-E6 (elektrisch)
+str_emu_V200E8                  :V200-E8 (elektrisch)
+str_emu_CargoDD                 :Goederentreinstel (elektrisch)
+str_emu_FLIRT3II                :FLIRT3-II (elektrisch)
+str_emu_FLIRT3III               :FLIRT3-III (elektrisch)
+str_emu_FLIRT3IV                :FLIRT3-IV (elektrisch)
+str_emu_SNGIII                  :SNG-III 'Nieuwe generatie sprinter' (elektrisch)
+str_emu_SNGIII_t                :SNG-III 'Nieuwe generatie sprinter' (elektrisch)
+str_emu_SNGIV                   :SNG-IV 'Nieuwe generatie sprinter' (elektrisch)
+str_emu_SNGIV_t                 :SNG-IV 'Nieuwe generatie sprinter' (elektrisch)
+str_emu_ICNGV                   :ICNG-V 'Nieuwe generatie intercity' (elektrisch)
+str_emu_ICNGV_t                 :ICNG-V 'Nieuwe generatie intercity' (elektrisch)
+str_emu_ICNGVIII                :ICNG-VIII 'Nieuwe generatie intercity' (elektrisch)
+str_emu_ICNGVIII_t              :ICNG-VIII 'Nieuwe generatie intercity' (elektrisch)
 
 #battery
+str_battery_WINK                :WINK (accu)
 
 #wagons
 str_wagons_gen0boxcar               :Gesloten wagen klein
@@ -459,9 +474,9 @@ str_coaches_RTM_BD_438  :Rijtuig RTM BD
 str_coaches_Mat24       :Rijtuig Mat '24
 str_coaches_ZHESM_B     :Rijtuig ZHESM B
 str_coaches_Ovaleramen  :Rijtuig 'Ovale ramen'
-str_coaches_Ovaleramen_t:Rijtuig 'Oval windows'
+str_coaches_Ovaleramen_t:Rijtuig 'Ovale ramen'
 str_coaches_Bolkoprijtuigen     :Rijtuig 'Bolkoprijtuigen'
-str_coaches_Bolkoprijtuigen_t   :Rijtuig 'Bulgehead carriages'
+str_coaches_Bolkoprijtuigen_t   :Rijtuig 'Bolkoprijtuigen'
 str_coaches_PlanD       :Rijtuig Plan D
 str_coaches_PlanE       :Rijtuig Plan E
 str_coaches_PlanK       :Rijtuig Plan K
@@ -495,7 +510,7 @@ str_coaches_PlanL       :Postrijtuig Plan L
 
 #metro
 str_metro_GVB_M1M2      :GVB M1-M2 'Zilvermeeuw' (Metro)
-str_metro_GVB_M1M2_t    :GVB M1-M2 'Herring Gull' (Metro)
+str_metro_GVB_M1M2_t    :GVB M1-M2 'Zilvermeeuw' (Metro)
 str_metro_GVB_M4S3      :GVB M4/S3 (Metro)
 str_metro_GVB_S1S2      :GVB S1-S2 (Metro)
 str_metro_GVB_M5M6      :GVB M5-M6 (Metro)
@@ -548,11 +563,15 @@ str_purchase_len_1_04       :1 bak (0.4)
 str_purchase_len_1_05       :1 bak (0.5)
 str_purchase_len_2_10       :2 bakken (1.0)
 str_purchase_len_2_12       :2 bakken (1.2)
+str_purchase_len_3_12       :3 bakken (1.2)
+str_purchase_len_3_14       :3 bakken (1.4)
 str_purchase_len_3_15       :3 bakken (1.5)
 str_purchase_len_3_17       :3 bakken (1.7)
 str_purchase_len_4_14       :4 bakken (1.4)
+str_purchase_len_4_18       :4 bakken (1.8)
 str_purchase_len_4_20       :4 bakken (2.0)
 str_purchase_len_5_24       :5 bakken (2.4)
+str_purchase_len_5_25       :5 bakken (2.5)
 str_purchase_len_6_20       :6 bakken (2.0)
 str_purchase_len_6_30       :6 bakken (3.0)
 str_purchase_len_8_40       :8 bakken (4.0)
@@ -568,7 +587,7 @@ str_purchase_spc_eld        :Met bagagecompartiment ombouwbaar tot expresvracht.
 str_purchase_spc_el_eld     :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.
 str_purchase_spc_fictional  :Fictief.
 
-str_purchase_steam_NCS1     :Gekocht vanaf 1892 als tanklocomotief: {YELLOW}-15% gewicht, +48% kracht, +73% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} NCS 1-12, 31-39 (locomotief met tender), NCS 81-89 (tanklocomotief), SS 571-579 (tanklocomotief).
+str_purchase_steam_NCS1     :Gekocht vanaf 1892 als tanklocomotief: {YELLOW}-15% gewicht, +48% vermogen, +73% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} NCS 1-12, 31-39 (locomotief met tender), NCS 81-89 (tanklocomotief), SS 571-579 (tanklocomotief).
 str_purchase_steam_NCS21    :Voorheen bekend als: {SILVER} NCS 21-30, later SS 481-490.
 str_purchase_steam_NCS41    :Voorheen bekend als: {SILVER} NCS 41-50, later SS 151-160.
 str_purchase_steam_HSM83    :Voorheen bekend als: {SILVER} HSM 83-88, 101-115.
@@ -576,12 +595,12 @@ str_purchase_steam_HSM126   :Voorheen bekend als: {SILVER} HSM 126-135.
 str_purchase_steam_HSM501   :Voorheen bekend als: {SILVER} HSM 501-535.
 str_purchase_steam_HSM601   :Voorheen bekend als: {SILVER} HSM 601-647.
 str_purchase_steam_HSM701   :Voorheen bekend als: {SILVER} HSM 701-755.
-str_purchase_steam_SS9      :Gekocht vanaf 1892: {YELLOW}+4% gewicht, +21% kracht, +64% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} SS 9-16, 21-78, NBDS 1-5.
-str_purchase_steam_SS17     :Gereviseerd 1913: {YELLOW}+20% kracht, +19% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} SS 17-20, 161-205, 212.
+str_purchase_steam_SS9      :Gekocht vanaf 1892: {YELLOW}+4% gewicht, +21% vermogen, +64% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} SS 9-16, 21-78, NBDS 1-5.
+str_purchase_steam_SS17     :Gereviseerd 1913: {YELLOW}+20% vermogen, +19% trekkracht, +7% onderhoudskosten.{}{BLACK}Voorheen bekend als: {SILVER} SS 17-20, 161-205, 212.
 str_purchase_steam_SS517    :Voorheen bekend als: {SILVER} SS 517-527, NBDS 25-26.
 str_purchase_steam_SS651    :Voorheen bekend als: {SILVER} SS 651-680.
 str_purchase_steam_SS785    :Voorheen bekend als: {SILVER} SS 685-778, 785-799.
-str_purchase_steam_NBDS30   :Gereviseerd 1940: {YELLOW}-50% snelheid, +11% kracht{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36.
+str_purchase_steam_NBDS30   :Gereviseerd 1940: {YELLOW}-50% snelheid, +11% vermogen{}{BLACK}Voorheen bekend als: {SILVER} NBDS 30-36.
 str_purchase_steam_NCS71    :Gereviseerd 1925: {YELLOW}+5% gewicht, -4% trekkracht{}{BLACK}Gereviseerd 1935: {YELLOW}+22% snelheid, +12% gewicht{}{BLACK}Voorheen bekend als: {SILVER} NCS 71-78, SS 971-978.
 
 str_purchase_diesel_NS2000  :Voorheen bekend als: {SILVER} Whitcomb 65-DE-19A.
@@ -595,28 +614,30 @@ str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2.
 str_purchase_electric_mDDM_NID:Voor gebruik met dubbeldekkerrijtuig DDM/NID.
 str_purchase_electric_HLE11 :Voor gebruik met Rijtuig ICR voor Beneluxtrein.
 str_purchase_electric_HLE25 :Voor gebruik met Rijtuig Plan W voor Beneluxtrein.
-str_purchase_electric_TRAXXF140MS2:Voor gebruik met Rijtuig ICR voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief, {YELLOW}+87% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
-str_purchase_spc_electric_ES64F4:Meersysteemlocomotief, {YELLOW}+42% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
-str_purchase_spc_NS1600P    :Meersysteemlocomotief, {YELLOW}+70% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
-str_purchase_spc_electric_gen9_HS001:Meersysteemlocomotief, {YELLOW}+65% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
-str_purchase_spc_electric_gen9_HS002:Meersysteemlocomotief, {YELLOW}+197% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_electric_TRAXXF140MS2:Voor gebruik met ICR-rijtuig voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief, {YELLOW}+87% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.
+str_purchase_spc_electric_ES64F4:Meersysteemlocomotief, {YELLOW}+42% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.
+str_purchase_spc_NS1600P    :Meersysteemlocomotief, {YELLOW}+70% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.
+str_purchase_spc_electric_gen9_HS001:Meersysteemlocomotief, {YELLOW}+65% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.{}Fictief.
+str_purchase_spc_electric_gen9_HS002:Meersysteemlocomotief, {YELLOW}+197% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.{}Fictief.
 str_purchase_electric_TRAXXF140MS2_no_track:Voor gebruik met Rijtuig ICR voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief.
 str_purchase_spc_electric_ES64F4_no_track:Meersysteemlocomotief.
 str_purchase_spc_NS1600P_no_track:Meersysteemlocomotief.
 str_purchase_spc_electric_gen9_HS001_no_track:Meersysteemlocomotief.{}Fictief.
 str_purchase_spc_electric_gen9_HS002_no_track:Meersysteemlocomotief.{}Fictief.
 
-str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% kracht, +7% snelheid, +23% onderhoudskosten.
+str_purchase_dmu_omBC1901   :Gekocht vanaf 1929: {YELLOW}+41% gewicht, +233% vermogen, +7% snelheid, +23% onderhoudskosten.
 
-str_purchase_emu_ZHESM_mBC      :Gereviseerd 1926: {YELLOW}+150% kracht, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900.{}{BLACK}Voor gebruik met Rijtuig ZHESM B.
+str_purchase_emu_ZHESM_mBC      :Gereviseerd 1926: {YELLOW}+150% vermogen, +100% trekkracht{}{BLACK}Later bekend als: {SILVER} NS mBC9900.{}{BLACK}Voor gebruik met Rijtuig ZHESM B.
 str_purchase_emu_Mat24          :Voor gebruik met Rijtuig Mat '24.
-str_purchase_emu_Mat36ELD3      :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.{}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% kracht, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8.
-str_purchase_emu_ICE3M          :Meersysteemtreinstel, {YELLOW}+86% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Ook bekend als: {SILVER} DB BR 406.
-str_purchase_spc_emu_TGV        :Meersysteemtreinstel, {YELLOW}+139% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
-str_purchase_spc_emu_V250       :Meersysteemtreinstel, {YELLOW}+83% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.
-str_purchase_spc_emu_gen9_HST   :Meersysteemtreinstel, {YELLOW}+68% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
-str_purchase_spc_emu_Future_DD  :Meersysteemtreinstel, {YELLOW}+118% kracht {BLACK} op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
-str_purchase_emu_CargoDD                :Meersysteemtreinstel, {YELLOW}+100% kracht {BLACK}op 25 kV ~ geëlectrificeerde sporen.{}Fictief.
+str_purchase_emu_Mat36ELD3      :Met bagagecompartiment ombouwbaar tot expresvracht of reizigers.{}Gekocht vanaf 1942: {YELLOW}-26% gewicht, -50% vermogen, -45% trekkracht, -20% onderhoudskosten, -21% capaciteit, lengte -1/8.
+str_purchase_emu_ICE3M          :Meersysteemtreinstel, {YELLOW}+86% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.{}Ook bekend als: {SILVER} DB BR 406.
+str_purchase_spc_emu_TGV        :Meersysteemtreinstel, {YELLOW}+139% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.
+str_purchase_spc_emu_V250       :Meersysteemtreinstel, {YELLOW}+83% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.
+str_purchase_spc_emu_gen9_HST   :Meersysteemtreinstel, {YELLOW}+68% vermogen {BLACK}op 25 kV ~ geëlektrificeerde spoor.{}Fictief.
+str_purchase_spc_emu_Future_DD  :Meersysteemtreinstel, {YELLOW}+118% vermogen {BLACK} op 25 kV ~ geëlektrificeerd spoor.{}Fictief.
+str_purchase_emu_CargoDD                :Meersysteemtreinstel, {YELLOW}+100% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.{}Fictief.
+str_purchase_spc_ICNGV                  :Meersysteemlocomotief.
+str_purchase_spc_ICNGVIII               :Meersysteemlocomotief.
 
 str_purchase_emu_ICE3M_no_track                 :Meersysteemtreinstel.{}Ook bekend als: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track               :Meersysteemtreinstel.
@@ -625,10 +646,12 @@ str_purchase_spc_emu_gen9_HST_no_track  :Meersysteemtreinstel.{}Fictief.
 str_purchase_spc_emu_Future_DD_no_track :Meersysteemtreinstel.{}Fictief.
 str_purchase_emu_CargoDD_no_track               :Meersysteemtreinstel.{}Fictief.
 
+str_purchase_spc_battery_WINK                   :Accu-aangedreven treinstel, {YELLOW}+30% vermogen {BLACK} op 1500 V = geëlektrificeerd spoor.
+str_purchase_spc_battery_WINK_no_track  :Accu-aangedreven treinstel.
 
 str_purchase_coaches_ZHESM_B:Later bekend als: {SILVER} NS B9900.{}{BLACK}Voor gebruik met motorwagen ZHESM mBC.
 str_purchase_coaches_Mat24  :Voor gebruik met motorwagen Mat '24.
 str_purchase_coaches_DDAR   :Voor gebruik met motorwagen mDDM of NID.
-str_purchase_coaches_PlanW  :Voor gebruik met electrische NS-locomotieven voor nationale treindienst en NMBS HLE 25.5 voor Beneluxtrein.
-str_purchase_coaches_IRC    :Voor gebruik met electrische NS-locomotieven voor nationale treindienst, NMBS HLE 11 voor Beneluxtrein en NS Hispeed 186 als Fyra.
+str_purchase_coaches_PlanW  :Voor gebruik met elektrische NS-locomotieven voor nationale treindienst en NMBS HLE 25.5 voor Beneluxtrein.
+str_purchase_coaches_IRC    :Voor gebruik met elektrische NS-locomotieven voor nationale treindienst, NMBS HLE 11 voor Beneluxtrein en NS Hispeed 186 als Fyra.
 str_purchase_wagons_gen10_CargoDD       :Voor gebruik met Futuristic Cargo Mover.{}Fictief.
