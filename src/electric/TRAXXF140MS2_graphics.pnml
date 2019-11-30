@@ -39,11 +39,23 @@ spriteset(spriteset_electric_TRAXXF140MS2_green, "gfx/electric/TRAXXF140MS2.png"
 	template_2cc_88(1, 64)
 }
 
+//green/silver
+spriteset(spriteset_electric_TRAXXF140MS2_NS, "gfx/electric/TRAXXF140MS2.png") {
+	template_2cc_88(1, 96)
+}
+
 /*
 * LIVERY SELECTION
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all) {
+	3: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    2: spriteset_electric_TRAXXF140MS2_silver;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2011) {
 	3: spriteset_electric_TRAXXF140MS2_green;
     3: spriteset_electric_TRAXXF140MS2_red;
     2: spriteset_electric_TRAXXF140MS2_silver;
@@ -56,12 +68,14 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_fyra) {
 
 switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_randomlivery, build_year) {
 	0..2010: spriteset_electric_TRAXXF140MS2_green;
+    2011..2014: switch_electric_TRAXXF140MS2_random_2011;
     switch_electric_TRAXXF140MS2_random_all;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_purchaselivery, build_year) {
 	0..2010: spriteset_electric_TRAXXF140MS2_green;
-    switch_electric_TRAXXF140MS2_random_fyra;
+    2011..2014: switch_electric_TRAXXF140MS2_random_fyra;
+	spriteset_electric_TRAXXF140MS2_NS; 
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_livery, cargo_subtype) {
@@ -69,6 +83,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_livery, cargo_subtype) {
     2: spriteset_electric_TRAXXF140MS2_green;
     3: spriteset_electric_TRAXXF140MS2_red;
     4: spriteset_electric_TRAXXF140MS2_silver;
+	5: spriteset_electric_TRAXXF140MS2_NS;
     switch_electric_TRAXXF140MS2_randomlivery;
 }
 
@@ -79,6 +94,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_subtype_text, cargo_subty
     2: return string(str_cargo_subtype_benelux);
     3: return string(str_cargo_subtype_fyra_red);
     4: return string(str_cargo_subtype_fyra_white);
+    5: return string(str_cargo_subtype_ns_ic);
     return CB_RESULT_NO_TEXT;
 }
 
