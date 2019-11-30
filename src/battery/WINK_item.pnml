@@ -13,7 +13,7 @@
 switch(FEAT_TRAINS, SELF, switch_battery_WINK_additional_text_tpo, [
         STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
         STORE_TEMP(string(str_purchase_len_3_12) | string(str_purchase_spc_battery_WINK) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 14 : (param_loading_speed == 2) ? 4 : 7, 258)
+        STORE_TEMP((param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 2 : 3, 258)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
     return string(str_purchase_svc_axl_len_ltm_spc);
@@ -22,7 +22,7 @@ switch(FEAT_TRAINS, SELF, switch_battery_WINK_additional_text_tpo, [
 switch(FEAT_TRAINS, SELF, switch_battery_WINK_additional_text_ntp, [
         STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
         STORE_TEMP(string(str_purchase_len_3_12) | string(str_purchase_spc_battery_WINK_no_track) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 14 : (param_loading_speed == 2) ? 4 : 7, 258)
+        STORE_TEMP((param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 2 : 3, 258)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
     return string(str_purchase_svc_axl_len_ltm_spc);
