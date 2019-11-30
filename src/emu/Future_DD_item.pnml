@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_emu_Future_DD) {
     property {
         name: string(str_emu_Future_DD);
         
-        introduction_date: date(2040,1,1);
+        introduction_date: date(2055,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 30;
         loading_speed: (param_loading_speed == 0) ? 64 : (param_loading_speed == 2) ? 255 : 128;
