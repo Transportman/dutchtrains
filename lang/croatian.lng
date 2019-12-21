@@ -184,8 +184,10 @@ str_cargo_subtype_ACTS_grey_green   : > ACTS (sivo-zelena) livreja
 str_cargo_subtype_Arriva            : > Arriva livreja
 str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" livreja
 str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" livreja
+str_cargo_subtype_Arriva_drielanden     : > Arriva Drielandentrein livreja
 str_cargo_subtype_Breng             : > Breng livreja
 str_cargo_subtype_Captrain          : > Captrain livreja
+str_cargo_subtype_Connexxion_valleilijn         : > Connexxion Valleilijn livreja
 str_cargo_subtype_Crossrail         : > Crossrail livreja
 str_cargo_subtype_DBSchenker        : > DB Schenker livreja
 str_cargo_subtype_DBSchenker_Crates     :> DB Schenker livreja (kutije)
@@ -202,6 +204,7 @@ str_cargo_subtype_HUSA              : > HUSA livreja
 str_cargo_subtype_HUSA_Crates           : > HUSA livreja (kutije)
 str_cargo_subtype_HUSA_Containers       :> HUSA livreja (kontejneri)
 str_cargo_subtype_Locon             : > Locon livreja
+str_cargo_subtype_Keolis_blauwnet       : > Keolis Blauwnet livreja
 str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livreja
 str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livreja
 str_cargo_subtype_NCS_tender        : > NCS livreja (tender lokomotiva)
@@ -407,8 +410,20 @@ str_emu_Future_DD               :Futuristički DD (Električni)
 str_emu_V200E6                  :V200-E6 (Električni)
 str_emu_V200E8                  :V200-E8 (Električni)
 str_emu_CargoDD                 :Teretni EMU (Električni)
+str_emu_FLIRT3II                :FLIRT3-II (Električni)
+str_emu_FLIRT3III               :FLIRT3-III (Električni)
+str_emu_FLIRT3IV                :FLIRT3-IV (Električni)
+str_emu_SNGIII                  :SNG-III "Sprinter Nova Generacija" (Električni)
+str_emu_SNGIII_t                :SNG-III "Sprinter Nova Generacija" (Električni)
+str_emu_SNGIV                   :SNG-IV "Sprinter Nova Generacija" (Električni)
+str_emu_SNGIV_t                 :SNG-IV "Sprinter Nova Generacija" (Električni)
+str_emu_ICNGV                   :ICNG-V "Intercity Nova Generacija" (Električni)
+str_emu_ICNGV_t                 :ICNG-V "Intercity Nova Generacija" (Električni)
+str_emu_ICNGVIII                :ICNG-VIII "Intercity Nova Generacija" (Električni)
+str_emu_ICNGVIII_t              :ICNG-VIII "Intercity Nova Generacija" (Električni)
 
 #battery
+str_battery_WINK                :WINK (baterija)
 
 #wagons
 str_wagons_gen0boxcar               :Mali zatvoreni vagon
@@ -550,11 +565,15 @@ str_purchase_len_1_04       :1 jedinica (0.4)
 str_purchase_len_1_05       :1 jedinica (0.5)
 str_purchase_len_2_10       :2 jedinice (1.0)
 str_purchase_len_2_12       :2 jedinice (1.2)
+str_purchase_len_3_12       :3 jedinice (1.2)
+str_purchase_len_3_14       :3 jedinice (1.4)
 str_purchase_len_3_15       :3 jedinice (1.5)
 str_purchase_len_3_17       :3 jedinice (1.7)
 str_purchase_len_4_14       :4 jedinice (1.4)
+str_purchase_len_4_18       :4 jedinice (1.8)
 str_purchase_len_4_20       :4 jedinice (2.0)
 str_purchase_len_5_24       :5 jedinica (2.4)
+str_purchase_len_5_25       :5 jedinice (2.5)
 str_purchase_len_6_20       :6 jedinica (2.0)
 str_purchase_len_6_30       :6 jedinica (3.0)
 str_purchase_len_8_40       :8 jedinica (4.0)
@@ -619,6 +638,8 @@ str_purchase_spc_emu_V250       :Višesistemska EMU, {YELLOW}+83% snage {BLACK}n
 str_purchase_spc_emu_gen9_HST   :Višesistemska EMU, {YELLOW}+68% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
 str_purchase_spc_emu_Future_DD  :Višesistemska EMU, {YELLOW}+118% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
 str_purchase_emu_CargoDD                :Višesistemska EMU, {YELLOW}+100% snage {BLACK}na 25 kV ~ elektrificiranoj pruzi.{}Izmišljena.
+str_purchase_spc_ICNGV                  :Višesistemska lokomotiva.
+str_purchase_spc_ICNGVIII               :Višesistemska lokomotiva.
 
 str_purchase_emu_ICE3M_no_track                 :Višesistemska EMU.{}Također poznata kao: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track               :Višesistemska EMU.
@@ -627,6 +648,8 @@ str_purchase_spc_emu_gen9_HST_no_track  :Višesistemska EMU.{}Izmišljena.
 str_purchase_spc_emu_Future_DD_no_track :Višesistemska EMU.{}Izmišljena.
 str_purchase_emu_CargoDD_no_track               :Višesistemska EMU.{}Izmišljena.
 
+str_purchase_spc_battery_WINK                   :Baterijska EMU, {YELLOW}+30% snage {BLACK} na 1500 V = elektrificiranoj pruzi.
+str_purchase_spc_battery_WINK_no_track  :Baterijska EMU.
 
 str_purchase_coaches_ZHESM_B:Kasnije poznata kao: {SILVER} NS B9900.{}{BLACK}Za korištenje sa motornim vagonom ZHESM mBC.
 str_purchase_coaches_Mat24  :Za korištenje sa motornim vagonima Mat '24.
