@@ -12,7 +12,7 @@
 
 switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_additional_text, [
         STORE_TEMP(string(str_purchase_svc_ip) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_spc_ICNGV) << 16, 257),
+        STORE_TEMP(string(str_purchase_len_8_30) | string(str_purchase_spc_ICNGV) << 16, 257),
         STORE_TEMP((param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 2 : 2, 258)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
@@ -39,7 +39,7 @@ item(FEAT_TRAINS, item_emu_ICNGVIII) {
 		
 		climates_available: ALL_CLIMATES;
 		sprite_id: SPRITE_ID_NEW_TRAIN;
-		length: 8;
+		length: 6;
 		dual_headed: 0;
 		
         reliability_decay: 20;
