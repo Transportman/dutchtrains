@@ -217,8 +217,8 @@ item(FEAT_TRAINS, item_steam_SS17, 322) {}
 item(FEAT_TRAINS, item_steam_HSM1, 323) {}
 item(FEAT_TRAINS, item_metro_Future_MTR1, 324) {}
 item(FEAT_TRAINS, item_emu_Future_DD, 325) {}
-item(FEAT_TRAINS, item_emu_V200D4, 326) {}
-item(FEAT_TRAINS, item_emu_V200D6, 327) {}
+item(FEAT_TRAINS, item_dmu_V200D4, 326) {}
+item(FEAT_TRAINS, item_dmu_V200D6, 327) {}
 item(FEAT_TRAINS, item_emu_V200E6, 328) {}
 item(FEAT_TRAINS, item_emu_V200E8, 329) {}
 item(FEAT_TRAINS, item_emu_CargoDD, 330) {}
