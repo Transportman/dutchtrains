@@ -104,6 +104,7 @@ sort(FEAT_TRAINS, [
     item_electric_HLE11,
     item_electric_ES64F4,
     item_electric_TRAXXF140MS2,
+	item_electric_Vectron,
     item_electric_NS1600P,
     item_electric_gen9_HS001,
     item_electric_gen9_HS002,

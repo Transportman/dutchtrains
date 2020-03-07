@@ -231,3 +231,4 @@ item(FEAT_TRAINS, item_emu_ICNGVIII, 336) {}
 item(FEAT_TRAINS, item_emu_SNGIII, 337) {}
 item(FEAT_TRAINS, item_emu_SNGIV, 338) {}
 item(FEAT_TRAINS, item_battery_WINK, 339) {}
+item(FEAT_TRAINS, item_electric_Vectron, 340) {}

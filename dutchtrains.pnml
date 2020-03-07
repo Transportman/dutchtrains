@@ -161,6 +161,8 @@
 #include "src/electric/NID_item.pnml"
 #include "src/electric/mDDM_graphics.pnml"
 #include "src/electric/mDDM_item.pnml"
+#include "src/electric/Vectron_graphics.pnml"
+#include "src/electric/Vectron_item.pnml"
 
 //dmu
 #include "src/dmu/Mat34_graphics.pnml"

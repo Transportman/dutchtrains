@@ -1,0 +1,186 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_electric_Vectron_purchase_ELL, "gfx/purchase/electric/Vectron_ELL.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_Vectron_purchase_MRCE, "gfx/purchase/electric/Vectron_MRCE.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_electric_Vectron_purchase_DBSchenker, "gfx/purchase/electric/Vectron_DBSchenker.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_electric_Vectron_purchase, current_year) {
+	0..2014: spriteset_electric_Vectron_purchase_ELL;
+    2015..2016:	spriteset_electric_Vectron_purchase_MRCE;
+	spriteset_electric_Vectron_purchase_DBSchenker;
+}
+
+/*
+* VEHICLE
+*/
+
+//Vectron
+spriteset(spriteset_electric_Vectron_Vectron, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 0)
+}
+//BLS
+spriteset(spriteset_electric_Vectron_BLS, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 30)
+}
+//ELL
+spriteset(spriteset_electric_Vectron_ELL, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 60)
+}
+
+//DBSchenker
+spriteset(spriteset_electric_Vectron_DBSchenker, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 90)
+}
+
+//PKP
+spriteset(spriteset_electric_Vectron_PKP, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 120)
+}
+
+//HUPAC
+spriteset(spriteset_electric_Vectron_HUPAC, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 150)
+}
+
+//Captrain
+spriteset(spriteset_electric_Vectron_Captrain, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 180)
+}
+
+//MRCE
+spriteset(spriteset_electric_Vectron_MRCE, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 210)
+}
+
+//SBB
+spriteset(spriteset_electric_Vectron_SBB, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 240)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_all) {
+	5: spriteset_electric_Vectron_DBSchenker;
+	5: spriteset_electric_Vectron_ELL;
+	4: spriteset_electric_Vectron_MRCE;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+	2: spriteset_electric_Vectron_SBB;
+	2: spriteset_electric_Vectron_Captrain;
+	1: spriteset_electric_Vectron_HUPAC;
+	1: spriteset_electric_Vectron_Vectron;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_2015) {
+	5: spriteset_electric_Vectron_ELL;
+	2: spriteset_electric_Vectron_MRCE;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_2016) {
+	5: spriteset_electric_Vectron_ELL;
+	3: spriteset_electric_Vectron_MRCE;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_2017) {
+	5: spriteset_electric_Vectron_DBSchenker;
+	5: spriteset_electric_Vectron_ELL;
+	4: spriteset_electric_Vectron_MRCE;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+	2: spriteset_electric_Vectron_SBB;
+	1: spriteset_electric_Vectron_HUPAC;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_randomlivery, build_year) {
+	0..2014: spriteset_electric_Vectron_ELL;
+    2015: switch_electric_Vectron_random_2015;
+	2016: switch_electric_Vectron_random_2016; 
+	2017: switch_electric_Vectron_random_2017;
+	switch_electric_Vectron_random_all;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_purchaselivery, build_year) {
+	0..2014: spriteset_electric_Vectron_ELL;
+	2015..2016: spriteset_electric_Vectron_MRCE;
+	spriteset_electric_Vectron_DBSchenker;
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_livery, cargo_subtype) {
+	1: switch_electric_Vectron_purchaselivery;
+    2: spriteset_electric_Vectron_Vectron;
+    3: spriteset_electric_Vectron_BLS;
+    4: spriteset_electric_Vectron_ELL;
+	5: spriteset_electric_Vectron_DBSchenker;
+	6: spriteset_electric_Vectron_PKP;
+	7: spriteset_electric_Vectron_HUPAC;
+	8: spriteset_electric_Vectron_Captrain;
+	9: spriteset_electric_Vectron_MRCE;
+	10: spriteset_electric_Vectron_SBB;
+    switch_electric_Vectron_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_Vectron);
+    3: return string(str_cargo_subtype_BLS);
+    4: return string(str_cargo_subtype_ELL);
+    5: return string(str_cargo_subtype_DBSchenker);
+    6: return string(str_cargo_subtype_PKP);
+    7: return string(str_cargo_subtype_HUPAC);
+    8: return string(str_cargo_subtype_Captrain);
+    9: return string(str_cargo_subtype_MRCE);
+    10: return string(str_cargo_subtype_SBB);
+    return CB_RESULT_NO_TEXT;
+}
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_power, current_railtype) {
+    SAAA: return 6400;
+    SABA: return 6400;
+    SACA: return 6400;
+    SADA: return 6400;
+    SAEA: return 6400;
+    SBAA: return 6400;
+    SBBA: return 6400;
+    SBCA: return 6400;
+    SBDA: return 6400;
+    SBEA: return 6400;
+    SAAa: return 6400;
+    SABa: return 6400;
+    SACa: return 6400;
+    SADa: return 6400;
+    SAEa: return 6400;
+    SBAa: return 6400;
+    SBBa: return 6400;
+    SBCa: return 6400;
+    SBDa: return 6400;
+    SBEa: return 6400;
+    return 3500;
+}

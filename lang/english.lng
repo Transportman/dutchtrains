@@ -184,6 +184,7 @@ str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" livery
 str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" livery
 str_cargo_subtype_Arriva_drielanden	: > Arriva Drielandentrein livery
 str_cargo_subtype_Breng             : > Breng livery
+str_cargo_subtype_BLS				: > BLS Cargo livery
 str_cargo_subtype_Captrain          : > Captrain livery
 str_cargo_subtype_Connexxion_valleilijn		: > Connexxion Valleilijn livery
 str_cargo_subtype_Crossrail         : > Crossrail livery
@@ -191,6 +192,7 @@ str_cargo_subtype_DBSchenker        : > DB Schenker livery
 str_cargo_subtype_DBSchenker_Crates	: > DB Schenker livery (crates)
 str_cargo_subtype_DBSchenker_Containers : > DB Schenker livery (containers)
 str_cargo_subtype_DLC               : > DLC livery
+str_cargo_subtype_ELL				: > ELL livery
 str_cargo_subtype_ERS               : > ERS livery
 str_cargo_subtype_ERS_Crates		: > ERS livery (crates)
 str_cargo_subtype_ERS_Containers	: > ERS livery (containers)
@@ -198,11 +200,13 @@ str_cargo_subtype_EETC              : > Euro Express Treincharter livery
 str_cargo_subtype_HerikRail         : > Herik Rail livery
 str_cargo_subtype_HGK               : > HGK livery
 str_cargo_subtype_HSM               : > Hollandsche IJzeren Spoorweg-Maatschappij livery
+str_cargo_subtype_HUPAC				: > HUPAC livery
 str_cargo_subtype_HUSA              : > HUSA livery
 str_cargo_subtype_HUSA_Crates		: > HUSA livery (crates)
 str_cargo_subtype_HUSA_Containers	: > HUSA livery (containers)
-str_cargo_subtype_Locon             : > Locon livery
 str_cargo_subtype_Keolis_blauwnet	: > Keolis Blauwnet livery
+str_cargo_subtype_Locon             : > Locon livery
+str_cargo_subtype_MRCE				: > MRCE livery
 str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livery
 str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livery
 str_cargo_subtype_NCS_tender        : > NCS livery (tender locomotive)
@@ -214,6 +218,7 @@ str_cargo_subtype_NS_whiteroof      : > NS livery w/ white roof
 str_cargo_subtype_NSCargo           : > NS Cargo livery
 str_cargo_subtype_NSCargo_Crates	: > NS Cargo livery (crates)
 str_cargo_subtype_NSCargo_Containers : > NS Cargo livery (containers)
+str_cargo_subtype_PKP				: > PKP livery
 str_cargo_subtype_Rail4Chem_green   : > Rail4Chem (green) livery
 str_cargo_subtype_Rail4Chem_red     : > Rail4Chem (red) livery
 str_cargo_subtype_Rail4Chem_grey_yellow : > Rail4Chem (grey/yellow) livery
@@ -230,9 +235,11 @@ str_cargo_subtype_staatsmijnen      : > Staatsmijnen livery
 str_cargo_subtype_SS                : > Staatsspoorwegen livery
 str_cargo_subtype_SS_tank           : > SS livery (tank locomotive)
 str_cargo_subtype_SS_NS             : > Staatsspoorwegen / NS livery
+str_cargo_subtype_SBB				: > SBB Cargo International livery
 str_cargo_subtype_Strukton          : > Strukton livery
 str_cargo_subtype_Syntus            : > Syntus livery
 str_cargo_subtype_Twents            : > Twents livery
+str_cargo_subtype_Vectron			: > Vectron MS livery
 str_cargo_subtype_Veolia            : > Veolia livery
 str_cargo_subtype_Veolia_velios     : > Veolia "Velios" livery
 str_cargo_subtype_Veolia_white_red  : > Veolia (white/red) livery
@@ -327,6 +334,7 @@ str_electric_TRAXXF140MS2   :NS Hispeed 186 (Electric)
 str_electric_ES64F4     :EuroSprinter ES64F4 (Electric)
 str_electric_gen9_HS001 :HS-1 (Electric)
 str_electric_gen9_HS002 :HS-2 (Electric)
+str_electric_Vectron	:Vectron (Electric)
 
 #dmu
 str_dmu_omC901          :omC 901-916 "Ome Cees" (Diesel)
@@ -611,21 +619,24 @@ str_purchase_diesel_ACTS5800:Previously known as: {SILVER} BR Class 58.
 str_purchase_diesel_ACTS6700:Previously known as: {SILVER} NMBS HLD 62.
 str_purchase_diesel_RN232   :Previously known as: {SILVER} DB BR 232.
 
-str_purchase_electric_NS1100:Refurbished 1979: {YELLOW}+4% weight, +1/8 length.
-str_purchase_electric_NS1500:Previously known as: {SILVER} BR Class EM2.
-str_purchase_electric_mDDM_NID:For use with Double-decker Carriage DDM/NID.
-str_purchase_electric_HLE11 :For use with Carriage ICR for Benelux service.
-str_purchase_electric_HLE25 :For use with Carriage Plan W for Benelux service.
-str_purchase_electric_TRAXXF140MS2:For use with Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive, {YELLOW}+87% power {BLACK}on 25 kV ~ electrified track.
-str_purchase_spc_electric_ES64F4:Multisystem locomotive, {YELLOW}+42% power {BLACK}on 25 kV ~ electrified track.
-str_purchase_spc_NS1600P    :Multisystem locomotive, {YELLOW}+70% power {BLACK}on 25 kV ~ electrified track.
-str_purchase_spc_electric_gen9_HS001:Multisystem locomotive, {YELLOW}+65% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
-str_purchase_spc_electric_gen9_HS002:Multisystem locomotive, {YELLOW}+197% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
-str_purchase_electric_TRAXXF140MS2_no_track:For use Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive.
-str_purchase_spc_electric_ES64F4_no_track:Multisystem locomotive.
-str_purchase_spc_NS1600P_no_track:Multisystem locomotive.
-str_purchase_spc_electric_gen9_HS001_no_track:Multisystem locomotive.{}Fictional.
-str_purchase_spc_electric_gen9_HS002_no_track:Multisystem locomotive.{}Fictional.
+str_purchase_electric_NS1100			:Refurbished 1979: {YELLOW}+4% weight, +1/8 length.
+str_purchase_electric_NS1500			:Previously known as: {SILVER} BR Class EM2.
+str_purchase_electric_mDDM_NID			:For use with Double-decker Carriage DDM/NID.
+str_purchase_electric_HLE11 			:For use with Carriage ICR for Benelux service.
+str_purchase_electric_HLE25 			:For use with Carriage Plan W for Benelux service.
+str_purchase_electric_TRAXXF140MS2		:For use with Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive, {YELLOW}+87% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_electric_ES64F4		:Multisystem locomotive, {YELLOW}+42% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_NS1600P    			:Multisystem locomotive, {YELLOW}+70% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_electric_gen9_HS001	:Multisystem locomotive, {YELLOW}+65% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_spc_electric_gen9_HS002	:Multisystem locomotive, {YELLOW}+197% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
+str_purchase_electric_Vectron			:Multisystem locomotive, {YELLOW}+83% power {BLACK}on 25 kV ~ electrified track.
+
+str_purchase_electric_TRAXXF140MS2_no_track		:For use Carriage ICR for Benelux service. Modified TRAXX F140 MS2.{}Multisystem locomotive.
+str_purchase_spc_electric_ES64F4_no_track		:Multisystem locomotive.
+str_purchase_spc_NS1600P_no_track				:Multisystem locomotive.
+str_purchase_spc_electric_gen9_HS001_no_track	:Multisystem locomotive.{}Fictional.
+str_purchase_spc_electric_gen9_HS002_no_track	:Multisystem locomotive.{}Fictional.
+str_purchase_electric_Vectron_no_track			:Multisystem locomotive.
 
 str_purchase_dmu_omBC1901   :Purchased from 1929: {YELLOW}+41% weight, +233% power, +7% speed, +23% running cost.
 
