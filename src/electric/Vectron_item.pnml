@@ -54,7 +54,7 @@ item(FEAT_TRAINS, item_electric_Vectron) {
 			cargo_subtype_text: switch_electric_Vectron_subtype_text;
 			additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_electric_Vectron));
 			power: switch_electric_Vectron_power;
-			purchase_power: return 3500;
+			purchase_power: return 6034;
 			switch_electric_Vectron_livery;
 		}	
 	} else {
@@ -63,8 +63,8 @@ item(FEAT_TRAINS, item_electric_Vectron) {
 			cargo_capacity: return 0;
 			cargo_subtype_text: switch_electric_Vectron_subtype_text;
 			additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_electric_Vectron_no_track));
-			power: 6400;
-			purchase_power: return 6400;
+			power: 8582;
+			purchase_power: return 8582;
 			switch_electric_Vectron_livery;
 		}
 	}	

@@ -162,25 +162,25 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_subtype_text, cargo_subtype) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_electric_Vectron_power, current_railtype) {
-    SAAA: return 6400;
-    SABA: return 6400;
-    SACA: return 6400;
-    SADA: return 6400;
-    SAEA: return 6400;
-    SBAA: return 6400;
-    SBBA: return 6400;
-    SBCA: return 6400;
-    SBDA: return 6400;
-    SBEA: return 6400;
-    SAAa: return 6400;
-    SABa: return 6400;
-    SACa: return 6400;
-    SADa: return 6400;
-    SAEa: return 6400;
-    SBAa: return 6400;
-    SBBa: return 6400;
-    SBCa: return 6400;
-    SBDa: return 6400;
-    SBEa: return 6400;
-    return 3500;
+    SAAA: return 8582;
+    SABA: return 8582;
+    SACA: return 8582;
+    SADA: return 8582;
+    SAEA: return 8582;
+    SBAA: return 8582;
+    SBBA: return 8582;
+    SBCA: return 8582;
+    SBDA: return 8582;
+    SBEA: return 8582;
+    SAAa: return 8582;
+    SABa: return 8582;
+    SACa: return 8582;
+    SADa: return 8582;
+    SAEa: return 8582;
+    SBAa: return 8582;
+    SBBa: return 8582;
+    SBCa: return 8582;
+    SBDa: return 8582;
+    SBEa: return 8582;
+    return 6034;
 }
