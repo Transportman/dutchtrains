@@ -182,5 +182,5 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_power, current_railtype) {
     SBCa: return 8582;
     SBDa: return 8582;
     SBEa: return 8582;
-    return 6034;
+    return 4691;
 }
