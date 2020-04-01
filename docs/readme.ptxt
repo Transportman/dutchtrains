@@ -295,14 +295,15 @@ Templating of graphics:
 
 Translations:
 - ca_ES: by juanjo
-- de_DE: by planetmaker, Jogio, Auge
+- de_DE: by planetmaker, Jogio, Auge, S-Transport
 - es_ES: by SilverSurferZzZ
+- es_MX: by absay
 - fi_FI: by juzza1, Arexander
 - fr_FR: by arikover
 - hr_HR: by Voyager1
 - id_ID: by UseYourIllusion
 - it_IT: by Snail, Voyager1
-- nl_NL: by foobar
+- nl_NL: by foobar, janwillem
 
 Makefile system:
 - planetmaker (Ingo von Borstel)

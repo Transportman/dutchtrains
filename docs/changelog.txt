@@ -1,5 +1,27 @@
 Dutch Trainset Changelog
 ========================
+2.2.0 (2020/04/01)
+------------------
+- Change r990: Increase introduction date for futuristic vehicles by 15 years (closes #8659)
+- Change r999 & r1000: Update min_compatible_version
+- Change: Add nmlcache to .hgignore
+- Docs: prepare for release
+- Feature: New vehicles introduced from 2015-2021(Graphics by Yoshi and Erato)
+- Feature: NS IC livery for TRAXX (graphics by Densha)(closes #8661)
+- Feature: Vectron locomotive (graphics by Alon, research+code by Erato)
+- Fix #8665: V200 diesels did not have ID set properly
+- Fix (r990): Change WINK engine class to allow running on non electrified track
+- Fix (r990): Wrong purchase length text for ICNG VIII
+- Fix r1002: Vectron power not correct because of different power units
+- Fix r1003: Vectron low power is not the same as the ES64F4 used for copying
+- Fix r990: ICNG length reduced (Graphics by Erato)
+- Fix r990: Update loading times in purchase menu (closes #8660)
+- Update: Translations
+    de_DE by S-Transport
+    es_MX by absay
+    hr_HR Voyager1
+    nl_NL janwillem
+
 2.1.0 (2015/09/19)
 ------------------
 - Feature: increase vehicle life (closes #7010)
