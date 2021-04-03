@@ -18,40 +18,123 @@ spriteset(spriteset_emu_ICE3M_purchase, "gfx/purchase/emu/ICE3.png") {
 * VEHICLE
 */
 
-spriteset(spriteset_emu_ICE3M_front, "gfx/emu/ICE3.png") {
+spriteset(spriteset_emu_ICE3M_red_front, "gfx/emu/ICE3.png") {
 	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_ICE3M_middle_1, "gfx/emu/ICE3.png") {
-	template_2cc_88(1, 32)
+spriteset(spriteset_emu_ICE3M_red_middle_1, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 27)
 }
-spriteset(spriteset_emu_ICE3M_middle_2, "gfx/emu/ICE3.png") {
-	template_2cc_88(1, 64)
+spriteset(spriteset_emu_ICE3M_red_middle_2, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 53)
 }
-spriteset(spriteset_emu_ICE3M_middle_3, "gfx/emu/ICE3.png") {
-	template_2cc_88(1, 96)
+spriteset(spriteset_emu_ICE3M_red_middle_3, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 79)
 }
-spriteset(spriteset_emu_ICE3M_middle_4, "gfx/emu/ICE3.png") {
-	template_2cc_88(1, 127)
+spriteset(spriteset_emu_ICE3M_red_middle_4, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 105)
 }
-spriteset(spriteset_emu_ICE3M_middle_5, "gfx/emu/ICE3.png") {
-	template_2cc_88(1, 159)
+spriteset(spriteset_emu_ICE3M_red_middle_5, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 131)
 }
-spriteset(spriteset_emu_ICE3M_middle_6, "gfx/emu/ICE3.png") {
-	template_2cc_88(1, 191)
-}
-spriteset(spriteset_emu_ICE3M_back, "gfx/emu/ICE3.png") {
-	template_2cc_88(1, 223)
+spriteset(spriteset_emu_ICE3M_red_back, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 157)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_position, (position_in_vehid_chain % 8)) {
-	1: spriteset_emu_ICE3M_middle_1;
-    2: spriteset_emu_ICE3M_middle_2;
-    3: spriteset_emu_ICE3M_middle_3;
-    4: spriteset_emu_ICE3M_middle_4;
-    5: spriteset_emu_ICE3M_middle_5;
-    6: spriteset_emu_ICE3M_middle_6;
-    7: spriteset_emu_ICE3M_back;
-    spriteset_emu_ICE3M_front;
+//Green, shares middle parts with red
+spriteset(spriteset_emu_ICE3M_green_front, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 183)
+}
+spriteset(spriteset_emu_ICE3M_green_back, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 209)
+}
+
+//Blue
+spriteset(spriteset_emu_ICE3M_blue_front, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 235)
+}
+spriteset(spriteset_emu_ICE3M_blue_middle_1, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 261)
+}
+spriteset(spriteset_emu_ICE3M_blue_middle_2, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 287)
+}
+spriteset(spriteset_emu_ICE3M_blue_middle_3, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 313)
+}
+spriteset(spriteset_emu_ICE3M_blue_middle_4, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 339)
+}
+spriteset(spriteset_emu_ICE3M_blue_middle_5, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 365)
+}
+spriteset(spriteset_emu_ICE3M_blue_back, "gfx/emu/ICE3.png") {
+	template_2cc_88(1, 391)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_red_position, (position_in_vehid_chain % 8)) {
+	1: spriteset_emu_ICE3M_red_middle_1;
+    2: spriteset_emu_ICE3M_red_middle_3;
+    3: spriteset_emu_ICE3M_red_middle_5;
+    4: spriteset_emu_ICE3M_red_middle_1;
+    5: spriteset_emu_ICE3M_red_middle_4;
+    6: spriteset_emu_ICE3M_red_middle_2;
+    7: spriteset_emu_ICE3M_red_back;
+    spriteset_emu_ICE3M_red_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_green_position, (position_in_vehid_chain % 8)) {
+	1: spriteset_emu_ICE3M_red_middle_1;
+    2: spriteset_emu_ICE3M_red_middle_3;
+    3: spriteset_emu_ICE3M_red_middle_5;
+    4: spriteset_emu_ICE3M_red_middle_1;
+    5: spriteset_emu_ICE3M_red_middle_4;
+    6: spriteset_emu_ICE3M_red_middle_2;
+    7: spriteset_emu_ICE3M_green_back;
+    spriteset_emu_ICE3M_green_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_blue_position, (position_in_vehid_chain % 8)) {
+	1: spriteset_emu_ICE3M_blue_middle_1;
+    2: spriteset_emu_ICE3M_blue_middle_3;
+    3: spriteset_emu_ICE3M_blue_middle_5;
+    4: spriteset_emu_ICE3M_blue_middle_1;
+    5: spriteset_emu_ICE3M_blue_middle_4;
+    6: spriteset_emu_ICE3M_blue_middle_2;
+    7: spriteset_emu_ICE3M_blue_back;
+    spriteset_emu_ICE3M_blue_front;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICE3M_randomlivery_2018) {
+	2: switch_emu_ICE3M_red_position;
+	1: switch_emu_ICE3M_green_position;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICE3M_randomlivery_2019) {
+	10: switch_emu_ICE3M_red_position;
+	5: switch_emu_ICE3M_green_position;
+	1: switch_emu_ICE3M_blue_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_randomlivery, build_year) {
+	0..2017: switch_emu_ICE3M_red_position;
+	2018: switch_emu_ICE3M_randomlivery_2018;
+    switch_emu_ICE3M_randomlivery_2019;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_livery, cargo_subtype) {
+    1: switch_emu_ICE3M_red_position;
+    2: switch_emu_ICE3M_green_position;
+    3: switch_emu_ICE3M_blue_position;
+    switch_emu_ICE3M_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3M_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_red);
+	2: return string(str_cargo_subtype_green);
+    3: return string(str_cargo_subtype_blue);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*
