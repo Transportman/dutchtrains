@@ -295,6 +295,8 @@
 #include "src/emu/ICNGV_item.pnml"
 #include "src/emu/ICNGVIII_graphics.pnml"
 #include "src/emu/ICNGVIII_item.pnml"
+#include "src/emu/Eurostar_e320_graphics.pnml"
+#include "src/emu/Eurostar_e320_item.pnml"
 
 //battery
 #include "src/battery/WINK_graphics.pnml"

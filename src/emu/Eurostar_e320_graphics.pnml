@@ -1,0 +1,88 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_Eurostar_e320_purchase, "gfx/purchase/emu/Eurostar_e320.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_emu_Eurostar_e320_front, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_Eurostar_e320_middle_1, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 27)
+}
+spriteset(spriteset_emu_Eurostar_e320_middle_2, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 53)
+}
+spriteset(spriteset_emu_Eurostar_e320_middle_3, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 79)
+}
+spriteset(spriteset_emu_Eurostar_e320_middle_4, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 105)
+}
+spriteset(spriteset_emu_Eurostar_e320_middle_5, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 131)
+}
+spriteset(spriteset_emu_Eurostar_e320_middle_6, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 157)
+}
+spriteset(spriteset_emu_Eurostar_e320_middle_7, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 183)
+}
+spriteset(spriteset_emu_Eurostar_e320_middle_8, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 209)
+}
+spriteset(spriteset_emu_Eurostar_e320_back, "gfx/emu/Eurostar_e320.png") {
+	template_2cc_88(1, 235)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_position, (position_in_vehid_chain % 8)) {
+	1: spriteset_emu_Eurostar_e320_middle_3;
+	2: spriteset_emu_Eurostar_e320_middle_5;
+	3: spriteset_emu_Eurostar_e320_middle_1;
+	4: spriteset_emu_Eurostar_e320_middle_1;
+	5: spriteset_emu_Eurostar_e320_middle_5;
+	6: spriteset_emu_Eurostar_e320_middle_3;
+	7: spriteset_emu_Eurostar_e320_middle_7;
+	8: spriteset_emu_Eurostar_e320_middle_8;
+	9: spriteset_emu_Eurostar_e320_middle_4;
+	10: spriteset_emu_Eurostar_e320_middle_6;
+	11: spriteset_emu_Eurostar_e320_middle_2;
+	12: spriteset_emu_Eurostar_e320_middle_3;
+	13: spriteset_emu_Eurostar_e320_middle_6;
+	14: spriteset_emu_Eurostar_e320_middle_4;
+    15: spriteset_emu_Eurostar_e320_back;
+    spriteset_emu_Eurostar_e320_front;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_articulated, extra_callback_info1) {
+    1..15: return item_emu_Eurostar_e320;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_visual_effect_and_powered, (position_in_vehid_chain % 8)) {
+    4: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    11: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}

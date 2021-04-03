@@ -150,6 +150,7 @@ sort(FEAT_TRAINS, [
 	item_emu_FLIRT3IV,
 	item_emu_SNGIII,
 	item_emu_SNGIV,
+	item_emu_Eurostar_e320,
 	item_emu_ICNGV,
 	item_emu_ICNGVIII,
     item_emu_gen9_HST,

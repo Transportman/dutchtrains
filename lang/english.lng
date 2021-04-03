@@ -430,6 +430,7 @@ str_emu_ICNGV			:ICNG-V "Intercity Nieuwe Generatie" (Electric)
 str_emu_ICNGV_t			:ICNG-V "Intercity New Generation" (Electric)
 str_emu_ICNGVIII		:ICNG-VIII "Intercity Nieuwe Generatie" (Electric)
 str_emu_ICNGVIII_t		:ICNG-VIII "Intercity New Generation" (Electric)
+str_emu_Eurostar_e320	:Eurostar e320 (Electric)
 
 #battery
 str_battery_WINK		:WINK (Battery)
@@ -589,6 +590,7 @@ str_purchase_len_6_30       :6 units (3.0)
 str_purchase_len_8_30		:8 units (3.0)
 str_purchase_len_8_40       :8 units (4.0)
 str_purchase_len_10_50      :10 units (5.0)
+str_purchase_len_16_80      :16 units (8.0)
 
 str_purchase_axl_A          :very low (class A)
 str_purchase_axl_B          :low (class B)
@@ -654,6 +656,7 @@ str_purchase_spc_emu_Future_DD	:Multisystem EMU, {YELLOW}+118% power {BLACK}on 2
 str_purchase_emu_CargoDD		:Multisystem EMU, {YELLOW}+100% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
 str_purchase_spc_ICNGV			:Multisystem locomotive.
 str_purchase_spc_ICNGVIII		:Multisystem locomotive.
+str_purchase_spc_emu_Eurostar_e320	:Multisystem locomotive.
 
 str_purchase_emu_ICE3M_no_track			:Multisystem EMU.{}Also known as: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track		:Multisystem EMU.
