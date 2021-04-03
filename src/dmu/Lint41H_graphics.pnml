@@ -13,13 +13,21 @@
 spriteset(spriteset_dmu_Lint41H_purchase_syntus, "gfx/purchase/dmu/Lint41H_syntus.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_dmu_Lint41H_purchase_twents, "gfx/purchase/dmu/Lint41H_twents.png") {
+spriteset(spriteset_dmu_Lint41H_purchase_Syntus_twents, "gfx/purchase/dmu/Lint41H_Syntus_twents.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_Lint41H_purchase_Keolis_twents, "gfx/purchase/dmu/Lint41H_Keolis_twents.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_dmu_Lint41H_purchase_Keolis_blauwnet, "gfx/purchase/dmu/Lint41H_Keolis_blauwnet.png") {
 	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_purchase, current_year) {
 	0..2006: spriteset_dmu_Lint41H_purchase_syntus;
-    spriteset_dmu_Lint41H_purchase_twents;
+    2007..2012: spriteset_dmu_Lint41H_purchase_Syntus_twents;
+    2013..2017: spriteset_dmu_Lint41H_purchase_Keolis_twents;
+    spriteset_dmu_Lint41H_purchase_Keolis_blauwnet;
 }
 
 /*
