@@ -31,14 +31,49 @@ spriteset(spriteset_dmu_Lint41H_Syntus_front, "gfx/dmu/Lint41H.png") {
 	template_2cc_88(1, 1)
 }
 spriteset(spriteset_dmu_Lint41H_Syntus_back, "gfx/dmu/Lint41H.png") {
-	template_2cc_88(1, 32)
+	template_2cc_88(1, 26)
 }
-//Twents
-spriteset(spriteset_dmu_Lint41H_Twents_front, "gfx/dmu/Lint41H.png") {
-	template_2cc_88(1, 64)
+//Syntus twents
+spriteset(spriteset_dmu_Lint41H_Syntus_twents_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 51)
 }
-spriteset(spriteset_dmu_Lint41H_Twents_back, "gfx/dmu/Lint41H.png") {
-	template_2cc_88(1, 96)
+spriteset(spriteset_dmu_Lint41H_Syntus_twents_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 76)
+}
+//Keolis twents
+spriteset(spriteset_dmu_Lint41H_Keolis_twents_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 101)
+}
+spriteset(spriteset_dmu_Lint41H_Keolis_twents_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 126)
+}
+//Keolis blauwnet
+spriteset(spriteset_dmu_Lint41H_Keolis_blauwnet_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 151)
+}
+spriteset(spriteset_dmu_Lint41H_Keolis_blauwnet_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 176)
+}
+//Arriva blauwnet
+spriteset(spriteset_dmu_Lint41H_Arriva_blauwnet_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(250, 1)
+}
+spriteset(spriteset_dmu_Lint41H_Arriva_blauwnet_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(250, 26)
+}
+//Veolia
+spriteset(spriteset_dmu_Lint41H_Veolia_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(250, 51)
+}
+spriteset(spriteset_dmu_Lint41H_Veolia_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(250, 76)
+}
+//Arriva Limburg
+spriteset(spriteset_dmu_Lint41H_Arriva_Limburg_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(250, 101)
+}
+spriteset(spriteset_dmu_Lint41H_Arriva_Limburg_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(250, 126)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_vehid_chain % 2)) {
@@ -46,28 +81,80 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_vehid
     spriteset_dmu_Lint41H_Syntus_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Twents, (position_in_vehid_chain % 2)) {
-	1: spriteset_dmu_Lint41H_Twents_back;
-    spriteset_dmu_Lint41H_Twents_front;
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Syntus_twents, (position_in_vehid_chain % 2)) {
+	1: spriteset_dmu_Lint41H_Syntus_twents_back;
+    spriteset_dmu_Lint41H_Syntus_twents_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Keolis_twents, (position_in_vehid_chain % 2)) {
+	1: spriteset_dmu_Lint41H_Keolis_twents_back;
+    spriteset_dmu_Lint41H_Keolis_twents_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Keolis_blauwnet, (position_in_vehid_chain % 2)) {
+	1: spriteset_dmu_Lint41H_Keolis_blauwnet_back;
+    spriteset_dmu_Lint41H_Keolis_blauwnet_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Arriva_blauwnet, (position_in_vehid_chain % 2)) {
+	1: spriteset_dmu_Lint41H_Arriva_blauwnet_back;
+    spriteset_dmu_Lint41H_Arriva_blauwnet_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Veolia, (position_in_vehid_chain % 2)) {
+	1: spriteset_dmu_Lint41H_Veolia_back;
+    spriteset_dmu_Lint41H_Veolia_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Arriva_Limburg, (position_in_vehid_chain % 2)) {
+	1: spriteset_dmu_Lint41H_Arriva_Limburg_back;
+    spriteset_dmu_Lint41H_Arriva_Limburg_front;
 }
 
 /*
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_syntus_twents) {
-	1: switch_dmu_Lint41H_position_syntus;
-    1: switch_dmu_Lint41H_position_Twents;
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_2013) {
+	10: switch_dmu_Lint41H_position_Keolis_twents;
+    5: switch_dmu_Lint41H_position_Arriva_blauwnet;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_2014) {
+	10: switch_dmu_Lint41H_position_Keolis_twents;
+	10: switch_dmu_Lint41H_position_Veolia;
+    5: switch_dmu_Lint41H_position_Arriva_blauwnet;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_2017) {
+	10: switch_dmu_Lint41H_position_Keolis_blauwnet;
+	10: switch_dmu_Lint41H_position_Veolia;
+    5: switch_dmu_Lint41H_position_Arriva_blauwnet;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_2018) {
+	10: switch_dmu_Lint41H_position_Keolis_blauwnet;
+	10: switch_dmu_Lint41H_position_Arriva_Limburg;
+    5: switch_dmu_Lint41H_position_Arriva_blauwnet;
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_randomlivery, build_year) {
 	0..2006: switch_dmu_Lint41H_position_syntus;
-    switch_dmu_Lint41H_randomlivery_syntus_twents;
+	2007..2012: switch_dmu_Lint41H_position_Syntus_twents;
+	2013: switch_dmu_Lint41H_randomlivery_2013;
+	2014..2016: switch_dmu_Lint41H_randomlivery_2014;
+	2017: switch_dmu_Lint41H_randomlivery_2017;
+    switch_dmu_Lint41H_randomlivery_2018;
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_livery, cargo_subtype) {
     1: switch_dmu_Lint41H_position_syntus;
-    2: switch_dmu_Lint41H_position_Twents;
+    2: switch_dmu_Lint41H_position_Syntus_twents;
+    3: switch_dmu_Lint41H_position_Keolis_twents;
+    4: switch_dmu_Lint41H_position_Keolis_blauwnet;
+    5: switch_dmu_Lint41H_position_Arriva_blauwnet;
+    6: switch_dmu_Lint41H_position_Veolia;
+    7: switch_dmu_Lint41H_position_Arriva_Limburg;
     switch_dmu_Lint41H_randomlivery;
 }
 
@@ -75,7 +162,12 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_livery, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_random);
     1: return string(str_cargo_subtype_Syntus);
-    2: return string(str_cargo_subtype_Twents);
+	2: return string(str_cargo_subtype_Syntus_twents);
+    3: return string(str_cargo_subtype_Keolis_twents);
+    4: return string(str_cargo_subtype_Keolis_blauwnet);
+    5: return string(str_cargo_subtype_Arriva_blauwnet);
+    6: return string(str_cargo_subtype_Veolia);
+    7: return string(str_cargo_subtype_Arriva_Limburg);
     return CB_RESULT_NO_TEXT;
 }
 
