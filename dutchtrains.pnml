@@ -357,6 +357,10 @@
 #include "src/coaches/Mat24_item.pnml"
 #include "src/coaches/ZHESM_B_graphics.pnml"
 #include "src/coaches/ZHESM_B_item.pnml"
+#include "src/coaches/Nightjet_graphics.pnml"
+#include "src/coaches/Nightjet_item.pnml"
+#include "src/coaches/Bpmmz_graphics.pnml"
+#include "src/coaches/Bpmmz_item.pnml"
 
 //baggage and mail wagons
 #include "src/coaches/SS_E_129_graphics.pnml"
