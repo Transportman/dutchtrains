@@ -179,6 +179,7 @@ sort(FEAT_TRAINS, [
     item_coaches_PlanK,
     item_coaches_PlanW,
     item_coaches_ICR,
+    item_coaches_Bpmmz,
     item_coaches_M2,
     item_coaches_K4,
     item_coaches_ICK,

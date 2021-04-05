@@ -190,6 +190,8 @@ str_cargo_subtype_BLS				: > BLS Cargo livery
 str_cargo_subtype_Captrain          : > Captrain livery
 str_cargo_subtype_Connexxion_valleilijn		: > Connexxion Valleilijn livery
 str_cargo_subtype_Crossrail         : > Crossrail livery
+str_cargo_subtype_DB				: > DB livery
+str_cargo_subtype_DB_Bistro			: > DB Bistro livery
 str_cargo_subtype_DBSchenker        : > DB Schenker livery
 str_cargo_subtype_DBSchenker_Crates	: > DB Schenker livery (crates)
 str_cargo_subtype_DBSchenker_Containers : > DB Schenker livery (containers)
@@ -476,6 +478,7 @@ str_wagons_gen9_containercarrier    :Container Carrier
 str_wagons_gen7_superheavy_flatcar  :Superheavy Flatcar
 
 #coaches
+str_coaches_Bpmmz       :Carriage Bpmmz
 str_coaches_HIJSM_4_8_10:Carriage HSM 1
 str_coaches_HSM_C_755   :Carriage HSM C
 str_coaches_NCS_B_119   :Carriage NCS B

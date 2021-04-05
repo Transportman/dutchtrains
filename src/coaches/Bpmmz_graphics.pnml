@@ -1,0 +1,56 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_Bpmmz_purchase, "gfx/purchase/coaches/Bpmmz.png") {
+	template_purchase(0, 0)
+}
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_Bpmmz, "gfx/coaches/Bpmmz.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_Bpmmz_bistro1, "gfx/coaches/Bpmmz.png") {
+	template_2cc_88(1, 27)
+}
+spriteset(spriteset_coaches_Bpmmz_bistro2, "gfx/coaches/Bpmmz.png") {
+	template_2cc_88(1, 53)
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, SELF, switch_coaches_Bpmmz_Bistro_randomlivery) {
+	1: spriteset_coaches_Bpmmz_bistro1;
+	1: spriteset_coaches_Bpmmz_bistro2;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_coaches_Bpmmz_randomlivery) {
+	16: spriteset_coaches_Bpmmz;
+    2: switch_coaches_Bpmmz_Bistro_randomlivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_Bpmmz_livery, cargo_subtype) {
+	1: spriteset_coaches_Bpmmz;
+    2: switch_coaches_Bpmmz_Bistro_randomlivery;
+    switch_coaches_Bpmmz_randomlivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Bpmmz_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_random);
+    2: return string(str_cargo_subtype_DB);
+    3: return string(str_cargo_subtype_DB_Bistro);
+    return CB_RESULT_NO_TEXT;
+}
