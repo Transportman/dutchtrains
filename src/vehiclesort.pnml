@@ -192,6 +192,7 @@ sort(FEAT_TRAINS, [
     item_coaches_Couchette,
     item_coaches_MUs,
     item_coaches_Citynightline,
+	item_coaches_Nightjet,
     
     //baggage/mail wagons
     item_coaches_SS_DII,

@@ -233,3 +233,4 @@ item(FEAT_TRAINS, item_emu_SNGIV, 338) {}
 item(FEAT_TRAINS, item_battery_WINK, 339) {}
 item(FEAT_TRAINS, item_electric_Vectron, 340) {}
 item(FEAT_TRAINS, item_emu_Eurostar_e320, 341) {}
+item(FEAT_TRAINS, item_coaches_Nightjet, 342) {}
