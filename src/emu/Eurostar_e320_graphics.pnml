@@ -86,3 +86,31 @@ switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_visual_effect_and_powered, (p
     11: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_power, current_railtype) {
+    SAAA: return 21456;
+    SABA: return 21456;
+    SACA: return 21456;
+    SADA: return 21456;
+    SAEA: return 21456;
+    SBAA: return 21456;
+    SBBA: return 21456;
+    SBCA: return 21456;
+    SBDA: return 21456;
+    SBEA: return 21456;
+    SAAa: return 11532;
+    SABa: return 11532;
+    SACa: return 11532;
+    SADa: return 11532;
+    SAEa: return 11532;
+    SBAa: return 11532;
+    SBBa: return 11532;
+    SBCa: return 11532;
+    SBDa: return 11532;
+    SBEa: return 11532;
+    return 11532;
+}
