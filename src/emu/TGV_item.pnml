@@ -67,11 +67,12 @@ item(FEAT_TRAINS, item_emu_TGV) {
 	if ( TRACK_POWER_ON ) {
 		graphics {
 			cargo_capacity: return 38;
-			purchase: spriteset_emu_TGV_purchase;
+			purchase: switch_emu_TGV_purchase;
 			articulated_part: switch_emu_TGV_articulated;
 			cargo_subtype_text: switch_emu_TGV_subtype_text;
 			additional_text: switch_emu_TGV_additional_text_tpo;
 			visual_effect_and_powered: switch_emu_TGV_visual_effect_and_powered;
+			length: switch_emu_TGV_length;
 			power: switch_emu_TGV_power;
 			purchase_power: return 4935;
 			switch_emu_TGV_livery;
@@ -79,11 +80,12 @@ item(FEAT_TRAINS, item_emu_TGV) {
 	} else {
 		graphics {
 			cargo_capacity: return 38;
-			purchase: spriteset_emu_TGV_purchase;
+			purchase: switch_emu_TGV_purchase;
 			articulated_part: switch_emu_TGV_articulated;
 			cargo_subtype_text: switch_emu_TGV_subtype_text;
 			additional_text: switch_emu_TGV_additional_text_ntp;
 			visual_effect_and_powered: switch_emu_TGV_visual_effect_and_powered;
+			length: switch_emu_TGV_length;
 			power: return 11801;
 			purchase_power: return 11801;
 			switch_emu_TGV_livery;

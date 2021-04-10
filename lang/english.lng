@@ -160,8 +160,15 @@ str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (Dec 22, 1993 - cu
 str_cargo_subtype_strandsprinter_beachballs: > "Strandsprinter" livery w/ beachballs
 str_cargo_subtype_strandsprinter    : > "Strandsprinter" livery
 str_cargo_subtype_TGV				: > Thalys livery
-str_cargo_subtype_TGV_PBKA          : > PBKA livery
-str_cargo_subtype_TGV_PBA           : > PBA livery
+str_cargo_subtype_TGV_PBKA_Original         : > Original PBKA livery
+str_cargo_subtype_TGV_PBKA_2008Revision     : > 2008 revision PBKA livery
+str_cargo_subtype_TGV_PBKA_2017Revision     : > 2017 revision PBKA livery
+str_cargo_subtype_TGV_PBKA_2021Revision     : > 2021 revision PBKA livery
+str_cargo_subtype_TGV_PBA_Original          : > Original PBA livery
+str_cargo_subtype_TGV_PBA_2008Revision      : > 2008 revision PBA livery
+str_cargo_subtype_TGV_PBA_2017Revision      : > 2017 revision PBA livery
+str_cargo_subtype_TGV_PBA_2021Revision      : > 2021 revision PBA livery
+str_cargo_subtype_IZY                       : > IZY livery
 str_cargo_subtype_valleilijn_yellow_blue    : >Valleilijn yellow/blue livery
 str_cargo_subtype_valleilijn_blue_yellownose: >Valleilijn blue livery w/ yellow nose
 str_cargo_subtype_valleilijn_blue           : >Valleilijn blue livery (fictional)
@@ -407,7 +414,7 @@ str_emu_IRMIV_t         :IRM-IV/VIRM-IV "Bison" (Electric)
 str_emu_IRMVI           :VIRM-VI "Bizon" (Electric)
 str_emu_IRMVI_t         :VIRM-VI "Bison" (Electric)
 str_emu_mP              :Plan mP (Electric)
-str_emu_TGV             :TGV Thalys PBKA/PBA (Electric)
+str_emu_TGV             :TGV Thalys (Electric)
 str_emu_ICE3M           :ICE 3M (Electric)
 str_emu_V250            :Fyra V250 "Albatros" (Electric)
 str_emu_V250_t          :Fyra V250 "Albatross" (Electric)
@@ -593,6 +600,7 @@ str_purchase_len_6_20       :6 units (2.0)
 str_purchase_len_6_30       :6 units (3.0)
 str_purchase_len_8_30		:8 units (3.0)
 str_purchase_len_8_40       :8 units (4.0)
+str_purchase_len_10_43      :10 units (4.3)
 str_purchase_len_10_50      :10 units (5.0)
 str_purchase_len_16_80      :16 units (8.0)
 

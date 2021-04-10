@@ -10,76 +10,326 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_TGV_purchase, "gfx/purchase/emu/TGV.png") {
+spriteset(spriteset_emu_TGV_Original_purchase, "gfx/purchase/emu/TGV_Original.png") {
 	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_TGV_2008Revision_purchase, "gfx/purchase/emu/TGV_2008Revision.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_TGV_2017Revision_purchase, "gfx/purchase/emu/TGV_2017Revision.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_TGV_2021Revision_purchase, "gfx/purchase/emu/TGV_2021Revision.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, PARENT, switch_emu_TGV_purchase, current_year) {
+      0..2007:		spriteset_emu_TGV_Original_purchase;
+      2008..2016:	spriteset_emu_TGV_2008Revision_purchase;
+      2017..2020:	spriteset_emu_TGV_2017Revision_purchase;
+      spriteset_emu_TGV_2021Revision_purchase;
 }
 
 /*
 * VEHICLE
 */
+// PBKA front/back
+spriteset(spriteset_emu_TGV_PBKA_Original_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 261)
+}
+spriteset(spriteset_emu_TGV_PBKA_Original_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 287)
+}
+spriteset(spriteset_emu_TGV_PBKA_2008Revision_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 313)
+}
+spriteset(spriteset_emu_TGV_PBKA_2008Revision_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 339)
+}
+spriteset(spriteset_emu_TGV_PBKA_2017Revision_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 365)
+}
+spriteset(spriteset_emu_TGV_PBKA_2017Revision_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 391)
+}
+spriteset(spriteset_emu_TGV_PBKA_2021Revision_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 417)
+}
+spriteset(spriteset_emu_TGV_PBKA_2021Revision_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 443)
+}
+//PBA front/back
+spriteset(spriteset_emu_TGV_PBA_Original_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_TGV_PBA_Original_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 27)
+}
+spriteset(spriteset_emu_TGV_PBA_2008Revision_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 53)
+}
+spriteset(spriteset_emu_TGV_PBA_2008Revision_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 79)
+}
+spriteset(spriteset_emu_TGV_PBA_2017Revision_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 105)
+}
+spriteset(spriteset_emu_TGV_PBA_2017Revision_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 131)
+}
+spriteset(spriteset_emu_TGV_PBA_2021Revision_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 157)
+}
+spriteset(spriteset_emu_TGV_PBA_2021Revision_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 183)
+}
+//First/last coach sprites
+spriteset(spriteset_emu_TGV_Original_firstcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 807)
+}
+spriteset(spriteset_emu_TGV_Original_lastcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 781)
+}
+spriteset(spriteset_emu_TGV_2008Revision_firstcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 859)
+}
+spriteset(spriteset_emu_TGV_2008Revision_lastcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 833)
+}
+spriteset(spriteset_emu_TGV_2017Revision_firstcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 911)
+}
+spriteset(spriteset_emu_TGV_2017Revision_lastcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 885)
+}
+spriteset(spriteset_emu_TGV_2021Revision_firstcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 963)
+}
+spriteset(spriteset_emu_TGV_2021Revision_lastcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 937)
+}
+//Middle Original
+spriteset(spriteset_emu_TGV_Original_middlecoach1, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 469)
+}
+spriteset(spriteset_emu_TGV_Original_middlecoach2, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 495)
+}
+spriteset(spriteset_emu_TGV_Original_middlecoach3, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 521)
+}
+//Middle 2017 revision
+spriteset(spriteset_emu_TGV_2017Revision_middlecoach1, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 521)
+}
+spriteset(spriteset_emu_TGV_2017Revision_middlecoach2, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 547)
+}
+spriteset(spriteset_emu_TGV_2017Revision_middlecoach3, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 573)
+}
+//Middle 2021 revision
+spriteset(spriteset_emu_TGV_2021Revision_middlecoach1, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 573)
+}
+spriteset(spriteset_emu_TGV_2021Revision_middlecoach2, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 599)
+}
+spriteset(spriteset_emu_TGV_2021Revision_middlecoach3, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 625)
+}
+//IZY
+spriteset(spriteset_emu_TGV_IZY_front, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 209)
+}
+spriteset(spriteset_emu_TGV_IZY_back, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 235)
+}
+spriteset(spriteset_emu_TGV_IZY_firstcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 1015)
+}
+spriteset(spriteset_emu_TGV_IZY_lastcoach, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 989)
+}
+spriteset(spriteset_emu_TGV_IZY_middlecoach1, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 963)
+}
+spriteset(spriteset_emu_TGV_IZY_middlecoach2, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 937)
+}
+spriteset(spriteset_emu_TGV_IZY_middlecoach3, "gfx/emu/TGV.png") {
+	template_2cc_88(1, 911)
+}
 
-spriteset(spriteset_emu_TGV_PBKA_front, "gfx/emu/TGV.png") {
-	template_2cc_88(0, 0)
+//PBKA Original
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_Original_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_Original_firstcoach;
+    2..3: spriteset_emu_TGV_Original_middlecoach1;
+    4: spriteset_emu_TGV_Original_middlecoach3;
+    5..7: spriteset_emu_TGV_Original_middlecoach2;
+    8: spriteset_emu_TGV_Original_lastcoach; 
+    9: spriteset_emu_TGV_PBKA_Original_back;
+    spriteset_emu_TGV_PBKA_Original_front;
 }
-spriteset(spriteset_emu_TGV_PBKA_back, "gfx/emu/TGV.png") {
-	template_2cc_88(0, 30)
+//PBKA 2008 Revision
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2008Revision_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_2008Revision_firstcoach;
+    2..3: spriteset_emu_TGV_Original_middlecoach1;
+    4: spriteset_emu_TGV_Original_middlecoach3;
+    5..7: spriteset_emu_TGV_Original_middlecoach2;
+    8: spriteset_emu_TGV_2008Revision_lastcoach; 
+    9: spriteset_emu_TGV_PBKA_2008Revision_back;
+    spriteset_emu_TGV_PBKA_2008Revision_front;
 }
-spriteset(spriteset_emu_TGV_firstcoach, "gfx/emu/TGV.png") {
-	template_2cc_88(0, 60)
+//PBKA 2017 Revision
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2017Revision_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_2017Revision_firstcoach;
+    2..3: spriteset_emu_TGV_2017Revision_middlecoach1;
+    4: spriteset_emu_TGV_2017Revision_middlecoach3;
+    5..7: spriteset_emu_TGV_2017Revision_middlecoach2;
+    8: spriteset_emu_TGV_2017Revision_lastcoach; 
+    9: spriteset_emu_TGV_PBKA_2017Revision_back;
+    spriteset_emu_TGV_PBKA_2017Revision_front;
 }
-spriteset(spriteset_emu_TGV_lastcoach, "gfx/emu/TGV.png") {
-	template_2cc_88(0, 90)
-}
-spriteset(spriteset_emu_TGV_middlecoach, "gfx/emu/TGV.png") {
-	template_2cc_88(0, 120)
-}
-spriteset(spriteset_emu_TGV_PBA_front, "gfx/emu/TGV.png") {
-	template_2cc_88(0, 180)
-}
-spriteset(spriteset_emu_TGV_PBA_back, "gfx/emu/TGV.png") {
-	template_2cc_88(0, 210)
+//PBKA 2021 Revision
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2021Revision_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_2021Revision_firstcoach;
+    2..3: spriteset_emu_TGV_2021Revision_middlecoach1;
+    4: spriteset_emu_TGV_2021Revision_middlecoach3;
+    5..7: spriteset_emu_TGV_2017Revision_middlecoach2;
+    8: spriteset_emu_TGV_2021Revision_lastcoach; 
+    9: spriteset_emu_TGV_PBKA_2021Revision_back;
+    spriteset_emu_TGV_PBKA_2021Revision_front;
 }
 
-//PBKA
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_position, (position_in_vehid_chain % 10)) {
-	1: spriteset_emu_TGV_firstcoach;
-    2..7: spriteset_emu_TGV_middlecoach;
-    8: spriteset_emu_TGV_lastcoach; 
-    9: spriteset_emu_TGV_PBKA_back;
-    spriteset_emu_TGV_PBKA_front;
+
+//PBA Original
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_Original_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_Original_firstcoach;
+    2..3: spriteset_emu_TGV_Original_middlecoach1;
+    4: spriteset_emu_TGV_Original_middlecoach3;
+    5..7: spriteset_emu_TGV_Original_middlecoach2;
+    8: spriteset_emu_TGV_Original_lastcoach; 
+    9: spriteset_emu_TGV_PBA_Original_back;
+    spriteset_emu_TGV_PBA_Original_front;
+}
+//PBA 2008 Revision
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2008Revision_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_2008Revision_firstcoach;
+    2..3: spriteset_emu_TGV_Original_middlecoach1;
+    4: spriteset_emu_TGV_Original_middlecoach3;
+    5..7: spriteset_emu_TGV_Original_middlecoach2;
+    8: spriteset_emu_TGV_2008Revision_lastcoach; 
+    9: spriteset_emu_TGV_PBA_2008Revision_back;
+    spriteset_emu_TGV_PBA_2008Revision_front;
+}
+//PBA 2017 Revision
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2017Revision_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_2017Revision_firstcoach;
+    2..3: spriteset_emu_TGV_2017Revision_middlecoach1;
+    4: spriteset_emu_TGV_2017Revision_middlecoach3;
+    5..7: spriteset_emu_TGV_2017Revision_middlecoach2;
+    8: spriteset_emu_TGV_2017Revision_lastcoach; 
+    9: spriteset_emu_TGV_PBA_2017Revision_back;
+    spriteset_emu_TGV_PBA_2017Revision_front;
+}
+//PBA 2021 Revision
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2021Revision_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_2021Revision_firstcoach;
+    2..3: spriteset_emu_TGV_2021Revision_middlecoach1;
+    4: spriteset_emu_TGV_2021Revision_middlecoach3;
+    5..7: spriteset_emu_TGV_2017Revision_middlecoach2;
+    8: spriteset_emu_TGV_2021Revision_lastcoach; 
+    9: spriteset_emu_TGV_PBA_2021Revision_back;
+    spriteset_emu_TGV_PBA_2021Revision_front;
 }
 
-//PBA
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_position, (position_in_vehid_chain % 10)) {
-	1: spriteset_emu_TGV_firstcoach;
-    2..7: spriteset_emu_TGV_middlecoach;
-    8: spriteset_emu_TGV_lastcoach; 
-    9: spriteset_emu_TGV_PBA_back;
-    spriteset_emu_TGV_PBA_front;
+//IZY
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_IZY_position, (position_in_vehid_chain % 10)) {
+	1: spriteset_emu_TGV_IZY_firstcoach;
+    2..3: spriteset_emu_TGV_IZY_middlecoach1;
+    4: spriteset_emu_TGV_IZY_middlecoach3;
+    5..7: spriteset_emu_TGV_2017Revision_middlecoach2;
+    8: spriteset_emu_TGV_IZY_lastcoach; 
+    9: spriteset_emu_TGV_IZY_back;
+    spriteset_emu_TGV_IZY_front;
 }
-
 
 /*
 * LIVERY SELECTION
 */
 
-random_switch(FEAT_TRAINS, PARENT, switch_emu_TGV_randomlivery) {
-	17: switch_emu_TGV_PBKA_position;
-    10: switch_emu_TGV_PBA_position;
+random_switch(FEAT_TRAINS, PARENT, switch_emu_TGV_Original_randomlivery) {
+	17: switch_emu_TGV_PBKA_Original_position;
+    10: switch_emu_TGV_PBA_Original_position;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_TGV_2008Revision_randomlivery) {
+	17: switch_emu_TGV_PBKA_2008Revision_position;
+    10: switch_emu_TGV_PBA_2008Revision_position;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_TGV_2017Revision_randomlivery) {
+	17: switch_emu_TGV_PBKA_2017Revision_position;
+    10: switch_emu_TGV_PBA_2017Revision_position;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_TGV_2021Revision_randomlivery) {
+	17: switch_emu_TGV_PBKA_2021Revision_position;
+    10: switch_emu_TGV_PBA_2021Revision_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_autolivery, date_of_last_service) {
+      0..2007:		switch_emu_TGV_Original_randomlivery;
+      2008..2016:	switch_emu_TGV_2008Revision_randomlivery;
+      2017..2020:	switch_emu_TGV_2017Revision_randomlivery;
+      switch_emu_TGV_2021Revision_randomlivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_purchaselivery, build_year) {
+      0..2007:		switch_emu_TGV_Original_randomlivery;
+      2008..2016:	switch_emu_TGV_2008Revision_randomlivery;
+      2017..2020:	switch_emu_TGV_2017Revision_randomlivery;
+      switch_emu_TGV_2021Revision_randomlivery;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_TGV_livery, cargo_subtype) {
-	1: switch_emu_TGV_PBKA_position;
-    2: switch_emu_TGV_PBA_position;
-    switch_emu_TGV_randomlivery;
+	1: switch_emu_TGV_purchaselivery;
+    2: switch_emu_TGV_PBKA_Original_position;
+    3: switch_emu_TGV_PBKA_2008Revision_position;
+    4: switch_emu_TGV_PBKA_2017Revision_position;
+    5: switch_emu_TGV_PBKA_2021Revision_position;
+    6: switch_emu_TGV_PBA_Original_position;
+    7: switch_emu_TGV_PBA_2008Revision_position;
+    8: switch_emu_TGV_PBA_2017Revision_position;
+    9: switch_emu_TGV_PBA_2021Revision_position;
+    10: switch_emu_TGV_IZY_position;
+    switch_emu_TGV_autolivery;
 }
 
 // CARGO SUBTYPE CALLBACK
 switch(FEAT_TRAINS, SELF, switch_emu_TGV_subtype_text, cargo_subtype) {
-    0: return string(str_cargo_subtype_random);
-	1: return string(str_cargo_subtype_TGV_PBKA);
-    2: return string(str_cargo_subtype_TGV_PBA);
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+	2: return string(str_cargo_subtype_TGV_PBKA_Original);
+	3: return string(str_cargo_subtype_TGV_PBKA_2008Revision);
+	4: return string(str_cargo_subtype_TGV_PBKA_2017Revision);
+	5: return string(str_cargo_subtype_TGV_PBKA_2021Revision);
+	6: return string(str_cargo_subtype_TGV_PBA_Original);
+	7: return string(str_cargo_subtype_TGV_PBA_2008Revision);
+	8: return string(str_cargo_subtype_TGV_PBA_2017Revision);
+	9: return string(str_cargo_subtype_TGV_PBA_2021Revision);
+	10: return string(str_cargo_subtype_IZY);
     return CB_RESULT_NO_TEXT;
+}
+/*
+* LENGTH CALLBACK
+*/
+
+switch (FEAT_TRAINS, SELF, switch_emu_TGV_length, position_in_articulated_veh) { 
+      0..1: 8;
+      8..9: 8;
+	  6;
 }
 
 /*
