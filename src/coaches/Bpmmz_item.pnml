@@ -11,7 +11,7 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_coaches_Bpmmz_additional_text, [
-        STORE_TEMP((param_loading_speed == 0) ? 15 : (param_loading_speed == 2) ? 4 : 8, 256) //days
+        STORE_TEMP((param_loading_speed == 0) ? 10 : (param_loading_speed == 2) ? 3 : 5, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
     return string(str_purchase_axl_ltm, string(str_purchase_axl_B));
@@ -25,7 +25,7 @@ item(FEAT_TRAINS, item_coaches_Bpmmz) {
         model_life: 33;
         retire_early: 23;
         vehicle_life: 15;
-        loading_speed: (param_loading_speed == 0) ? 6 : (param_loading_speed == 2) ? 24 : 12;
+        loading_speed: (param_loading_speed == 0) ? 10 : (param_loading_speed == 2) ? 40 : 20;
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 119;
         running_cost_factor: 4;
