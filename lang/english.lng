@@ -7,7 +7,7 @@ STR_GRF_DESCRIPTION		:{SILVER}Dutch Trains for OpenTTD {}{BLACK}First vehicle: 1
 STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 # Errors
-STR_ERROR_OLD_VERSION   :Cannot be loaded with the old version active
+STR_ERROR_OLD_VERSION   :This version of Dutch Trains cannot be loaded with the old version
 
 #parameter strings
 STR_PARAM_VEHICLE_NAMES             :Use English vehicle nicknames
@@ -665,16 +665,17 @@ str_purchase_emu_Mat24      	:For use with Carriage Mat '24.
 str_purchase_emu_Mat36ELD3  	:With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8.
 str_purchase_emu_ICE3M      	:Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV ~ electrified track.{}Also known as: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV    	:Multisystem EMU, {YELLOW}+139% power {BLACK}on 25 kV ~ electrified track.
+str_purchase_spc_emu_Eurostar_e320 :Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_emu_V250   	:Multisystem EMU, {YELLOW}+83% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_emu_gen9_HST	:Multisystem EMU, {YELLOW}+68% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
 str_purchase_spc_emu_Future_DD	:Multisystem EMU, {YELLOW}+118% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
 str_purchase_emu_CargoDD		:Multisystem EMU, {YELLOW}+100% power {BLACK}on 25 kV ~ electrified track.{}Fictional.
 str_purchase_spc_ICNGV			:Multisystem locomotive.
 str_purchase_spc_ICNGVIII		:Multisystem locomotive.
-str_purchase_spc_emu_Eurostar_e320	:Multisystem locomotive.
 
 str_purchase_emu_ICE3M_no_track			:Multisystem EMU.{}Also known as: {SILVER} DB BR 406.
 str_purchase_spc_emu_TGV_no_track		:Multisystem EMU.
+str_purchase_spc_emu_Eurostar_e320_no_track :Multisystem EMU.
 str_purchase_spc_emu_V250_no_track		:Multisystem EMU.
 str_purchase_spc_emu_gen9_HST_no_track	:Multisystem EMU.{}Fictional.
 str_purchase_spc_emu_Future_DD_no_track	:Multisystem EMU.{}Fictional.
