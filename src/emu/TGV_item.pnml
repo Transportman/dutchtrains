@@ -12,7 +12,7 @@
 
 switch(FEAT_TRAINS, SELF, switch_emu_TGV_additional_text_tpo, [
         STORE_TEMP(string(str_purchase_svc_Ip) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_10_50) | string(str_purchase_spc_emu_TGV) << 16, 257),
+        STORE_TEMP(string(str_purchase_len_10_43) | string(str_purchase_spc_emu_TGV) << 16, 257),
         STORE_TEMP((param_loading_speed == 0) ? 26 : (param_loading_speed == 2) ? 7 : 13, 258)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
@@ -21,7 +21,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_additional_text_tpo, [
 
 switch(FEAT_TRAINS, SELF, switch_emu_TGV_additional_text_ntp, [
         STORE_TEMP(string(str_purchase_svc_Ip) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_10_50) | string(str_purchase_spc_emu_TGV_no_track) << 16, 257),
+        STORE_TEMP(string(str_purchase_len_10_43) | string(str_purchase_spc_emu_TGV_no_track) << 16, 257),
         STORE_TEMP((param_loading_speed == 0) ? 26 : (param_loading_speed == 2) ? 7 : 13, 258)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
