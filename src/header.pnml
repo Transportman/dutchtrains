@@ -128,6 +128,12 @@ else {
     }
 }
 
+//Block loading with the old set
+if (grf_current_status("\FB\FB\06\01") | grf_future_status("\FB\FB\06\01")) {
+    //requires OpenTTD
+    error(FATAL, string(STR_ERROR_OLD_VERSION));
+}
+
 //set base cost multiplier for this set
 basecost {
 	PR_BUILD_VEHICLE_TRAIN:   -1 + param_purchase_cost - 4;

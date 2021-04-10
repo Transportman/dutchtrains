@@ -6,6 +6,9 @@ STR_GRF_NAME			:{TITLE}
 STR_GRF_DESCRIPTION		:{SILVER}Dutch Trains for OpenTTD {}{BLACK}First vehicle: 1839.{}{}(c)Dutch Trainset Team {}License: GPLv2 or higher. {}See readme for details.
 STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
+# Errors
+STR_ERROR_OLD_VERSION   :Cannot be loaded with the old version active
+
 #parameter strings
 STR_PARAM_VEHICLE_NAMES             :Use English vehicle nicknames
 STR_PARAM_VEHICLE_NAMES_DESC        :Enable this to have the vehicle nicknames translated to English. When disabled, the vehicle nicknames will be in Dutch.
