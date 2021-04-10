@@ -152,13 +152,13 @@ spriteset(spriteset_emu_TGV_IZY_lastcoach, "gfx/emu/TGV.png") {
 	template_2cc_88(1, 989)
 }
 spriteset(spriteset_emu_TGV_IZY_middlecoach1, "gfx/emu/TGV.png") {
-	template_2cc_88(1, 963)
+	template_2cc_88(1, 703)
 }
 spriteset(spriteset_emu_TGV_IZY_middlecoach2, "gfx/emu/TGV.png") {
-	template_2cc_88(1, 937)
+	template_2cc_88(1, 729)
 }
 spriteset(spriteset_emu_TGV_IZY_middlecoach3, "gfx/emu/TGV.png") {
-	template_2cc_88(1, 911)
+	template_2cc_88(1, 755)
 }
 
 //PBKA Original
@@ -249,7 +249,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_IZY_position, (position_in_articulated_
 	1: spriteset_emu_TGV_IZY_firstcoach;
     2..3: spriteset_emu_TGV_IZY_middlecoach1;
     4: spriteset_emu_TGV_IZY_middlecoach3;
-    5..7: spriteset_emu_TGV_2017Revision_middlecoach2;
+    5..7: spriteset_emu_TGV_IZY_middlecoach2;
     8: spriteset_emu_TGV_IZY_lastcoach; 
     9: spriteset_emu_TGV_IZY_back;
     spriteset_emu_TGV_IZY_front;
