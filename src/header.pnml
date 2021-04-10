@@ -8,12 +8,12 @@
 
 // define the newgrf
 grf {
-	grfid:	"\FB\FB\06\01";
+	grfid:	"TM\02\01";
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESCRIPTION);
     url:    string(STR_GRF_URL);
 	version:		REPO_REVISION;
-	min_compatible_version:	7295;
+	min_compatible_version:	7765;
     param {
         param_vehicle_names {
             type:   bool;
@@ -122,9 +122,9 @@ if (ttd_platform != PLATFORM_OPENTTD) {
 }
 else {
     //check for OpenTTD version
-    if (openttd_version < version_openttd(1, 2, 0, 23971)) {
+    if (openttd_version < version_openttd(1, 4, 0)) {
         //requires OpenTTD version
-        error(FATAL, REQUIRES_OPENTTD, "1.2.0-RC1 / r23971");
+        error(FATAL, REQUIRES_OPENTTD, "1.4.0");
     }
 }
 
