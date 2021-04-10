@@ -11,7 +11,7 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_coaches_Nightjet_additional_text, [
-        STORE_TEMP((param_loading_speed == 0) ? 15 : (param_loading_speed == 2) ? 4 : 8, 256) //days
+        STORE_TEMP((param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 4 : 6, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
     return string(str_purchase_axl_ltm, string(str_purchase_axl_B));
