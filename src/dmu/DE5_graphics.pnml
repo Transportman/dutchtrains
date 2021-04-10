@@ -54,7 +54,7 @@ spriteset(spriteset_dmu_DE5_greenred_middle_3, "gfx/dmu/DE5.png") {
 spriteset(spriteset_dmu_DE5_greenred_back, "gfx/dmu/DE5.png") {
 	template_2cc_88(1, 128)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_greenred, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_greenred, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE5_greenred_middle_1;
     2: spriteset_dmu_DE5_greenred_middle_2;
     3: spriteset_dmu_DE5_greenred_middle_3;
@@ -78,7 +78,7 @@ spriteset(spriteset_dmu_DE5_bluered_middle_3, "gfx/dmu/DE5.png") {
 spriteset(spriteset_dmu_DE5_bluered_back, "gfx/dmu/DE5.png") {
 	template_2cc_88(1, 288)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_bluered, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_bluered, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE5_bluered_middle_1;
     2: spriteset_dmu_DE5_bluered_middle_2;
     3: spriteset_dmu_DE5_bluered_middle_3;
@@ -102,7 +102,7 @@ spriteset(spriteset_dmu_DE5_blueredmoustache_middle_3, "gfx/dmu/DE5.png") {
 spriteset(spriteset_dmu_DE5_blueredmoustache_back, "gfx/dmu/DE5.png") {
 	template_2cc_88(1, 448)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_blueredmoustache, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_blueredmoustache, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE5_blueredmoustache_middle_1;
     2: spriteset_dmu_DE5_blueredmoustache_middle_2;
     3: spriteset_dmu_DE5_blueredmoustache_middle_3;
@@ -126,7 +126,7 @@ spriteset(spriteset_dmu_DE5_blueyellow_middle_3, "gfx/dmu/DE5.png") {
 spriteset(spriteset_dmu_DE5_blueyellow_back, "gfx/dmu/DE5.png") {
 	template_2cc_88(1, 608)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_blueyellow, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_blueyellow, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE5_blueyellow_middle_1;
     2: spriteset_dmu_DE5_blueyellow_middle_2;
     3: spriteset_dmu_DE5_blueyellow_middle_3;
@@ -150,7 +150,7 @@ spriteset(spriteset_dmu_DE5_redyellow_middle_3, "gfx/dmu/DE5.png") {
 spriteset(spriteset_dmu_DE5_redyellow_back, "gfx/dmu/DE5.png") {
 	template_2cc_88(1, 768)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_redyellow, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_redyellow, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE5_redyellow_middle_1;
     2: spriteset_dmu_DE5_redyellow_middle_2;
     3: spriteset_dmu_DE5_redyellow_middle_3;
@@ -174,7 +174,7 @@ spriteset(spriteset_dmu_DE5_redyellowblue_middle_3, "gfx/dmu/DE5.png") {
 spriteset(spriteset_dmu_DE5_redyellowblue_back, "gfx/dmu/DE5.png") {
 	template_2cc_88(1, 928)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_redyellowblue, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_position_redyellowblue, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE5_redyellowblue_middle_1;
     2: spriteset_dmu_DE5_redyellowblue_middle_2;
     3: spriteset_dmu_DE5_redyellowblue_middle_3;
@@ -270,7 +270,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_articulated, extra_callback_info1) {
 * SHORTEN VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_length, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_length, (position_in_articulated_veh)) {
     1..2: return 7;
     return 8;
 }
@@ -279,7 +279,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE5_length, (position_in_vehid_chain % 5)) 
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE5_visual_effect_and_powered, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE5_visual_effect_and_powered, (position_in_articulated_veh)) {
     3: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

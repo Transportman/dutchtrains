@@ -34,7 +34,7 @@ spriteset(spriteset_dmu_DH2_orig_back, "gfx/dmu/DH2.png") {
 	template_2cc_88(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen1, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen1, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DH2_orig_back;
     spriteset_dmu_DH2_orig_front;
 }
@@ -47,7 +47,7 @@ spriteset(spriteset_dmu_DH2_renew_back, "gfx/dmu/DH2.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen2, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_gen2, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DH2_renew_back;
     spriteset_dmu_DH2_renew_front;
 }
@@ -60,7 +60,7 @@ spriteset(spriteset_dmu_DH2_wadkikker_back, "gfx/dmu/DH2.png") {
 	template_2cc_88(1, 224)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_wadkikker, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_wadkikker, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DH2_wadkikker_back;
     spriteset_dmu_DH2_wadkikker_front;
 }
@@ -73,7 +73,7 @@ spriteset(spriteset_dmu_DH2_maashopper_back, "gfx/dmu/DH2.png") {
 	template_2cc_88(1, 160)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_maashopper, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_position_maashopper, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DH2_maashopper_back;
     spriteset_dmu_DH2_maashopper_front;
 }
@@ -139,7 +139,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DH2_articulated, extra_callback_info1) {
 /*
 * VISUAL EFFECT AND POWERED CALLBACK
 */
-switch(FEAT_TRAINS, SELF, switch_dmu_DH2_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DH2_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 1, DISABLE_WAGON_POWER);
 }

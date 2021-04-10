@@ -47,7 +47,7 @@ spriteset(spriteset_dmu_GTW_spurt_powerpack_emu, "gfx/dmu/GTW.png") {
 	template_2cc_38(1, 128)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_spurt, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_spurt, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_spurt_powerpack_dmu;
     2: spriteset_dmu_GTW_spurt_middle;
     3: spriteset_dmu_GTW_spurt_back;
@@ -77,13 +77,13 @@ spriteset(spriteset_dmu_GTW_velios_powerpack2_emu, "gfx/dmu/GTW.png") {
 	template_2cc_38(1, 608)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_velios, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_velios, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_velios_powerpack_dmu;
     2: spriteset_dmu_GTW_velios_middle;
     3: spriteset_dmu_GTW_velios_back;
     spriteset_dmu_GTW_velios_front;
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_velios2, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_velios2, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_velios_powerpack2_dmu;
     2: spriteset_dmu_GTW_velios_middle;
     3: spriteset_dmu_GTW_velios_back;
@@ -104,7 +104,7 @@ spriteset(spriteset_dmu_GTW_breng_powerpack_dmu, "gfx/dmu/GTW.png") {
 	template_2cc_38(1, 416)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_breng, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_breng, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_breng_powerpack_dmu;
     2: spriteset_dmu_GTW_breng_middle;
     3: spriteset_dmu_GTW_breng_back;
@@ -180,7 +180,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_articulated, extra_callback_info1) {
 * SHORTEN VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_length, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_length, (position_in_articulated_veh)) {
     1: return 3;
     2: return 7;
     return 8;
@@ -190,7 +190,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_length, (position_in_vehid_chain % 4)
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -3, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

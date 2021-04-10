@@ -34,7 +34,7 @@ spriteset(spriteset_emu_gen9_HST_back, "gfx/emu/gen9_HST.png") {
 	template_2cc_88(0, 120)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_position, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_gen9_HST_middle_2;
     2..5: spriteset_emu_gen9_HST_middle_1;
     6: spriteset_emu_gen9_HST_middle_3;
@@ -55,7 +55,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_articulated, extra_callback_info1)
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_visual_effect_and_powered, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     6: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);

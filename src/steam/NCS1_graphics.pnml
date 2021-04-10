@@ -67,7 +67,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_animation, (motion_counter)) {
     spriteset_steam_NCS1_ani_1;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_NCS1_position, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_NCS1_position, (position_in_articulated_veh)) {
 	1: spriteset_steam_NCS1_tender;
     switch_steam_NCS1_animation;
 }
@@ -97,7 +97,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NCS81_animation, (motion_counter)) {
     spriteset_steam_NCS81_ani_1;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_NCS81_position, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_NCS81_position, (position_in_articulated_veh)) {
 	1: spriteset_steam_NCS1_faketender;
     switch_steam_NCS81_animation;
 }
@@ -127,7 +127,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_SS571_animation, (motion_counter)) {
     spriteset_steam_SS571_ani_1;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_SS571_position, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_SS571_position, (position_in_articulated_veh)) {
 	1: spriteset_steam_NCS1_faketender;
     switch_steam_SS571_animation;
 }
@@ -157,7 +157,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NS7200_animation, (motion_counter)) {
     spriteset_steam_NS7200_ani_1;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_NS7200_position, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_NS7200_position, (position_in_articulated_veh)) {
 	1: spriteset_steam_NCS1_faketender;
     switch_steam_NS7200_animation;
 }
@@ -216,11 +216,11 @@ switch(FEAT_TRAINS, SELF, switch_steam_NCS1_articulated, extra_callback_info1) {
 * VEHICLE LENGTH CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_steam_NCS1_length_tender, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_NCS1_length_tender, (position_in_articulated_veh)) {
     1: return 3;
     return 6;
 }
-switch(FEAT_TRAINS, SELF, switch_steam_NCS1_length_tank, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_NCS1_length_tank, (position_in_articulated_veh)) {
     1: return 1;
     return 5;
 }
@@ -301,7 +301,7 @@ switch(FEAT_TRAINS, PARENT, switch_steam_NCS1_running_cost_factor, cargo_subtype
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_steam_NCS1_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_steam_NCS1_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
 }

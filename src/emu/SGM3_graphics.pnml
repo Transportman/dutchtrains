@@ -37,7 +37,7 @@ spriteset(spriteset_emu_SGM3_sgm_back, "gfx/emu/SGM3.png") {
 	template_2cc_88(1, 64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM3_sgm, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_sgm, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM3_sgm_middle;
 	2: spriteset_emu_SGM3_sgm_back;
     spriteset_emu_SGM3_sgm_front;
@@ -54,7 +54,7 @@ spriteset(spriteset_emu_SGM3_sgmm_back, "gfx/emu/SGM3.png") {
 	template_2cc_88(1, 160)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM3_sgmm, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_sgmm, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM3_sgmm_middle;
 	2: spriteset_emu_SGM3_sgmm_back;
     spriteset_emu_SGM3_sgmm_front;
@@ -119,7 +119,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_SGM3_capacity, cargo_subtype) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM3_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM3_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

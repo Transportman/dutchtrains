@@ -16,13 +16,13 @@
 * VEHICLE
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_1, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_1, (position_in_articulated_veh)) {
 	1: spriteset_emu_IRM_middle_nopanto;
 	2: spriteset_emu_IRM_back_pantodown;
     spriteset_emu_IRM_front_pantoup;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_2, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_2, (position_in_articulated_veh)) {
 	1: spriteset_emu_IRM_middle_nopanto;
 	2: spriteset_emu_IRM_back_pantoup;
     spriteset_emu_IRM_front_pantodown;
@@ -46,7 +46,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_articulated, extra_callback_info1) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

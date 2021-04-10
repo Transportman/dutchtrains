@@ -40,7 +40,7 @@ switch(FEAT_TRAINS, SELF, switch_battery_WINK_middle_railtype, current_railtype)
 	spriteset_battery_WINK_middle;
 }
 
-switch(FEAT_TRAINS, SELF, switch_battery_WINK_position, (position_in_vehid_chain % 3)) { 
+switch(FEAT_TRAINS, SELF, switch_battery_WINK_position, (position_in_articulated_veh)) { 
 	0: spriteset_battery_WINK_front;
 	1: switch_battery_WINK_middle_railtype;
 	spriteset_battery_WINK_back;
@@ -64,7 +64,7 @@ switch(FEAT_TRAINS, SELF, switch_battery_WINK_visual_effect_and_powered_railtype
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_battery_WINK_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_battery_WINK_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: switch_battery_WINK_visual_effect_and_powered_railtype;
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
@@ -72,7 +72,7 @@ switch(FEAT_TRAINS, SELF, switch_battery_WINK_visual_effect_and_powered, (positi
 /*
 * Length
 */
-switch(FEAT_TRAINS, SELF, switch_battery_WINK_length, (position_in_vehid_chain % 3)) { 
+switch(FEAT_TRAINS, SELF, switch_battery_WINK_length, (position_in_articulated_veh)) { 
 	1: 3;
 	8;
 }

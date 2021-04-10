@@ -33,7 +33,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_GTW28_purchase, current_year) {
 //spurt
 //graphics from GTW 2/8 dmu
 
-switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_spurt, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_spurt, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_spurt_powerpack_emu;
     2: spriteset_dmu_GTW_spurt_middle;
     3: spriteset_dmu_GTW_spurt_back;
@@ -43,7 +43,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_spurt, (position_in_vehid_ch
 //velios
 //graphics from GTW 2/8 dmu
 
-switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_velios2, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_velios2, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_velios_powerpack2_emu;
     2: spriteset_dmu_GTW_velios_middle;
     3: spriteset_dmu_GTW_velios_back;
@@ -53,7 +53,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_velios2, (position_in_vehid_
 //vechtdallijnen
 //graphics from GTW 2/8 dmu
 
-switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_vechtdallijnen, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_position_vechtdallijnen, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_vechtdallijnen_powerpack_emu;
     2: spriteset_dmu_GTW_vechtdallijnen_middle;
     3: spriteset_dmu_GTW_vechtdallijnen_back;
@@ -111,7 +111,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_GTW28_articulated, extra_callback_info1) {
 * SHORTEN VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_GTW28_length, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_length, (position_in_articulated_veh)) {
     1: return 3;
     2: return 7;
     return 8;
@@ -121,7 +121,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_GTW28_length, (position_in_vehid_chain % 4)
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_GTW28_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_GTW28_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

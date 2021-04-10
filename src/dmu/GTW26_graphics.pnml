@@ -33,7 +33,7 @@ switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_purchase, current_year) {
 //spurt
 //graphics from GTW 2/8
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_spurt, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_spurt, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_spurt_powerpack_dmu;
     2: spriteset_dmu_GTW_spurt_back;
     spriteset_dmu_GTW_spurt_front;
@@ -42,13 +42,13 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_spurt, (position_in_vehid_ch
 //velios
 //graphics from GTW 2/8
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_velios_powerpack_dmu;
     2: spriteset_dmu_GTW_velios_back;
     spriteset_dmu_GTW_velios_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios2, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios2, (position_in_articulated_veh)) {
 	1: spriteset_dmu_GTW_velios_powerpack2_dmu;
     2: spriteset_dmu_GTW_velios_back;
     spriteset_dmu_GTW_velios_front;
@@ -100,7 +100,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_articulated, extra_callback_info1) {
 * SHORTEN VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_length, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_length, (position_in_articulated_veh)) {
     1: return 3;
     return 8;
 }
@@ -109,7 +109,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_length, (position_in_vehid_chain % 3)
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -3, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

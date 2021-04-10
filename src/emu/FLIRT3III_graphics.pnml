@@ -30,7 +30,7 @@ spriteset(spritest_FLIRT3III_Arriva_back, "gfx/emu/FLIRT3_Arriva.png") {
 	template_2cc_88(1,64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_Arriva_position, (position_in_vehid_chain % 3)) { 
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_Arriva_position, (position_in_articulated_veh)) { 
 	0: spritest_FLIRT3III_Arriva_front;
 	1: spritest_FLIRT3III_Arriva_middle;
 	spritest_FLIRT3III_Arriva_back;
@@ -49,7 +49,7 @@ spriteset(spritest_FLIRT3III_Blauwnet_back, "gfx/emu/FLIRT3_blauwnet.png") {
 	template_2cc_88(1,95)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_Blauwnet_position, (position_in_vehid_chain % 3)) { 
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_Blauwnet_position, (position_in_articulated_veh)) { 
 	0: spritest_FLIRT3III_Blauwnet_front;
 	1: spritest_FLIRT3III_Blauwnet_middle;
 	spritest_FLIRT3III_Blauwnet_back;
@@ -68,7 +68,7 @@ spriteset(spritest_FLIRT3III_Connexxion_back, "gfx/emu/FLIRT3_connexxion.png") {
 	template_2cc_88(1,64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_Connexxion_position, (position_in_vehid_chain % 3)) { 
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_Connexxion_position, (position_in_articulated_veh)) { 
 	0: spritest_FLIRT3III_Connexxion_front;
 	1: spritest_FLIRT3III_Connexxion_middle;
 	spritest_FLIRT3III_Connexxion_back;
@@ -87,7 +87,7 @@ spriteset(spritest_FLIRT3III_drielanden_back, "gfx/emu/FLIRT3_drielanden.png") {
 	template_2cc_88(1,64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_drielanden_position, (position_in_vehid_chain % 3)) { 
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_drielanden_position, (position_in_articulated_veh)) { 
 	0: spritest_FLIRT3III_drielanden_front;
 	1: spritest_FLIRT3III_drielanden_middle;
 	spritest_FLIRT3III_drielanden_back;
@@ -106,7 +106,7 @@ spriteset(spriteset_emu_FLIRT3III_NS_back, "gfx/emu/FLIRT3_NS.png") {
 	template_2cc_88(1,96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_NS_position, (position_in_vehid_chain % 3)) { 
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_NS_position, (position_in_articulated_veh)) { 
 	0: spriteset_emu_FLIRT3III_NS_front;
 	1: spriteset_emu_FLIRT3III_NS_middle;
 	spriteset_emu_FLIRT3III_NS_back;
@@ -168,7 +168,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_articulated, extra_callback_info1
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
@@ -176,7 +176,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_visual_effect_and_powered, (posit
 /*
 * Length
 */
-switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_length, (position_in_vehid_chain % 3)) { 
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_length, (position_in_articulated_veh)) { 
 	1: 6;
 	8;
 }

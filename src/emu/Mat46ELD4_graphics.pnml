@@ -48,7 +48,7 @@ spriteset(spriteset_emu_Mat46ELD4_greyroof_back, "gfx/emu/Mat46ELD4.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greyroof, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greyroof, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat46ELD4_greyroof_middle_1;
 	2: spriteset_emu_Mat46ELD4_greyroof_middle_2;
     spriteset_emu_Mat46ELD4_greyroof_front;
@@ -68,7 +68,7 @@ spriteset(spriteset_emu_Mat46ELD4_green_back, "gfx/emu/Mat46ELD4.png") {
 	template_2cc_88(1, 224)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_green, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_green, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat46ELD4_green_middle_1;
 	2: spriteset_emu_Mat46ELD4_green_middle_2;
     spriteset_emu_Mat46ELD4_green_front;
@@ -88,7 +88,7 @@ spriteset(spriteset_emu_Mat46ELD4_greenyellow_back, "gfx/emu/Mat46ELD4.png") {
 	template_2cc_88(1, 352)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greenyellow, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greenyellow, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat46ELD4_greenyellow_middle_1;
 	2: spriteset_emu_Mat46ELD4_greenyellow_middle_2;
     spriteset_emu_Mat46ELD4_greenyellow_front;
@@ -108,7 +108,7 @@ spriteset(spriteset_emu_Mat46ELD4_greenyellowblue_back, "gfx/emu/Mat46ELD4.png")
 	template_2cc_88(1, 480)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greenyellowblue, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_greenyellowblue, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat46ELD4_greenyellowblue_middle_1;
 	2: spriteset_emu_Mat46ELD4_greenyellowblue_middle_2;
     spriteset_emu_Mat46ELD4_greenyellowblue_front;
@@ -200,7 +200,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4D_capacity, cargo_classes) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat46ELD4_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

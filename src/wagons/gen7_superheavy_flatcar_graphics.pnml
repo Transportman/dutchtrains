@@ -81,7 +81,7 @@ switch(FEAT_TRAINS, SELF, switch_wagons_gen7_superheavy_flatcar_middle, cargo_su
     switch_wagons_gen7_superheavy_flatcar_randomlivery;
 }
 
-switch(FEAT_TRAINS, SELF, switch_wagons_gen7_superheavy_flatcar_livery, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_wagons_gen7_superheavy_flatcar_livery, (position_in_articulated_veh)) {
     0: spriteset_wagons_gen7_superheavy_flatcar_front;
     2: spriteset_wagons_gen7_superheavy_flatcar_back;
     switch_wagons_gen7_superheavy_flatcar_middle;

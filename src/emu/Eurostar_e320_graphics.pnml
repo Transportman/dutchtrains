@@ -49,7 +49,7 @@ spriteset(spriteset_emu_Eurostar_e320_back, "gfx/emu/Eurostar_e320.png") {
 	template_2cc_88(1, 235)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_position, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_Eurostar_e320_middle_3;
 	2: spriteset_emu_Eurostar_e320_middle_5;
 	3: spriteset_emu_Eurostar_e320_middle_1;
@@ -81,7 +81,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_articulated, extra_callback_i
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_visual_effect_and_powered, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_visual_effect_and_powered, (position_in_articulated_veh)) {
     4: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     11: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);

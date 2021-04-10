@@ -52,7 +52,7 @@ spriteset(spriteset_emu_Mat54ELD4_greenred_back, "gfx/emu/Mat54ELD4.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_greenred, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_greenred, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat54ELD4_greenred_middle_1;
 	2: spriteset_emu_Mat54ELD4_greenred_middle_2;
     spriteset_emu_Mat54ELD4_greenred_front;
@@ -71,7 +71,7 @@ spriteset(spriteset_emu_Mat54ELD4_greenyellow_back, "gfx/emu/Mat54ELD4.png") {
 	template_2cc_88(1, 224)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_greenyellow, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_greenyellow, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat54ELD4_greenyellow_middle_1;
 	2: spriteset_emu_Mat54ELD4_greenyellow_middle_2;
     spriteset_emu_Mat54ELD4_greenyellow_front;
@@ -90,7 +90,7 @@ spriteset(spriteset_emu_Mat54ELD4_greenyellowblue_back, "gfx/emu/Mat54ELD4.png")
 	template_2cc_88(1, 352)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_greenyellowblue, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_greenyellowblue, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat54ELD4_greenyellowblue_middle_1;
 	2: spriteset_emu_Mat54ELD4_greenyellowblue_middle_2;
     spriteset_emu_Mat54ELD4_greenyellowblue_front;
@@ -109,7 +109,7 @@ spriteset(spriteset_emu_Mat54ELD4_yellow_back, "gfx/emu/Mat54ELD4.png") {
 	template_2cc_88(1, 480)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_yellow, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_yellow, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat54ELD4_yellow_middle_1;
 	2: spriteset_emu_Mat54ELD4_yellow_middle_2;
     spriteset_emu_Mat54ELD4_yellow_front;
@@ -128,7 +128,7 @@ spriteset(spriteset_emu_Mat54ELD4_yellowblue_back, "gfx/emu/Mat54ELD4.png") {
 	template_2cc_88(1, 608)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_yellowblue, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_yellowblue, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat54ELD4_yellowblue_middle_1;
 	2: spriteset_emu_Mat54ELD4_yellowblue_middle_2;
     spriteset_emu_Mat54ELD4_yellowblue_front;
@@ -147,7 +147,7 @@ spriteset(spriteset_emu_Mat54ELD4_yellowblueic_back, "gfx/emu/Mat54ELD4.png") {
 	template_2cc_88(1, 736)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_yellowblueic, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_yellowblueic, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat54ELD4_yellowblueic_middle_1;
 	2: spriteset_emu_Mat54ELD4_yellowblueic_middle_2;
     spriteset_emu_Mat54ELD4_yellowblueic_front;
@@ -167,7 +167,7 @@ spriteset(spriteset_emu_Mat54ELD4_freedom_back, "gfx/emu/Mat54ELD4.png") {
 	template_2cc_88(1, 864)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_freedom, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_freedom, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat54ELD4_freedom_middle_1;
 	2: spriteset_emu_Mat54ELD4_freedom_middle_2;
     spriteset_emu_Mat54ELD4_freedom_front;
@@ -336,7 +336,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4D_capacity, cargo_classes) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat54ELD4_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

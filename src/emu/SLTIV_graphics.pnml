@@ -35,7 +35,7 @@ spriteset(spriteset_emu_SLTIV_back, "gfx/emu/SLT.png") {
 	template_2cc_68(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_position, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_position, (position_in_articulated_veh)) {
 	0: spriteset_emu_SLTIV_front;
     2: spriteset_emu_SLTIV_panto;
     3: spriteset_emu_SLTIV_back;
@@ -55,7 +55,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_articulated, extra_callback_info1) {
 * SHORTEN VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_length, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_length, (position_in_articulated_veh)) {
     0: return 6;
     3: return 6;
     return 5;
@@ -65,7 +65,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_length, (position_in_vehid_chain % 4)
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SLTIV_visual_effect_and_powered, (position_in_articulated_veh)) {
     2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

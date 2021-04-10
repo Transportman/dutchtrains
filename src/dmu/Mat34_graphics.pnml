@@ -48,7 +48,7 @@ spriteset(spriteset_dmu_Mat34_greyred_middle, "gfx/dmu/Mat34.png") {
 spriteset(spriteset_dmu_Mat34_greyred_back, "gfx/dmu/Mat34.png") {
 	template_2cc_88(1, 64)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greyred, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greyred, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Mat34_greyred_middle;
     2: spriteset_dmu_Mat34_greyred_back;
     spriteset_dmu_Mat34_greyred_front;
@@ -64,7 +64,7 @@ spriteset(spriteset_dmu_Mat34_greenredlightroof_middle, "gfx/dmu/Mat34.png") {
 spriteset(spriteset_dmu_Mat34_greenredlightroof_back, "gfx/dmu/Mat34.png") {
 	template_2cc_88(1, 160)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greenredlightroof, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greenredlightroof, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Mat34_greenredlightroof_middle;
     2: spriteset_dmu_Mat34_greenredlightroof_back;
     spriteset_dmu_Mat34_greenredlightroof_front;
@@ -80,7 +80,7 @@ spriteset(spriteset_dmu_Mat34_greenreddarkroof_middle, "gfx/dmu/Mat34.png") {
 spriteset(spriteset_dmu_Mat34_greenreddarkroof_back, "gfx/dmu/Mat34.png") {
 	template_2cc_88(1, 256)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greenreddarkroof, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_greenreddarkroof, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Mat34_greenreddarkroof_middle;
     2: spriteset_dmu_Mat34_greenreddarkroof_back;
     spriteset_dmu_Mat34_greenreddarkroof_front;
@@ -96,7 +96,7 @@ spriteset(spriteset_dmu_Mat34_bluered_middle, "gfx/dmu/Mat34.png") {
 spriteset(spriteset_dmu_Mat34_bluered_back, "gfx/dmu/Mat34.png") {
 	template_2cc_88(1, 352)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_bluered, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_bluered, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Mat34_bluered_middle;
     2: spriteset_dmu_Mat34_bluered_back;
     spriteset_dmu_Mat34_bluered_front;
@@ -112,7 +112,7 @@ spriteset(spriteset_dmu_Mat34_blueyellow_middle, "gfx/dmu/Mat34.png") {
 spriteset(spriteset_dmu_Mat34_blueyellow_back, "gfx/dmu/Mat34.png") {
 	template_2cc_88(1, 448)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_blueyellow, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_position_blueyellow, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Mat34_blueyellow_middle;
     2: spriteset_dmu_Mat34_blueyellow_back;
     spriteset_dmu_Mat34_blueyellow_front;
@@ -173,7 +173,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_articulated, extra_callback_info1) {
 * SHORTEN VEHICLE CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_length, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_length, (position_in_articulated_veh)) {
     1: return 7;
     return 8;
 }
@@ -182,7 +182,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_length, (position_in_vehid_chain % 3)
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Mat34_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

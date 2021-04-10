@@ -162,7 +162,7 @@ spriteset(spriteset_emu_TGV_IZY_middlecoach3, "gfx/emu/TGV.png") {
 }
 
 //PBKA Original
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_Original_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_Original_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_Original_firstcoach;
     2..3: spriteset_emu_TGV_Original_middlecoach1;
     4: spriteset_emu_TGV_Original_middlecoach3;
@@ -172,7 +172,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_Original_position, (position_in_ve
     spriteset_emu_TGV_PBKA_Original_front;
 }
 //PBKA 2008 Revision
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2008Revision_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2008Revision_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_2008Revision_firstcoach;
     2..3: spriteset_emu_TGV_Original_middlecoach1;
     4: spriteset_emu_TGV_Original_middlecoach3;
@@ -182,7 +182,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2008Revision_position, (position_i
     spriteset_emu_TGV_PBKA_2008Revision_front;
 }
 //PBKA 2017 Revision
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2017Revision_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2017Revision_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_2017Revision_firstcoach;
     2..3: spriteset_emu_TGV_2017Revision_middlecoach1;
     4: spriteset_emu_TGV_2017Revision_middlecoach3;
@@ -192,7 +192,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2017Revision_position, (position_i
     spriteset_emu_TGV_PBKA_2017Revision_front;
 }
 //PBKA 2021 Revision
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2021Revision_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2021Revision_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_2021Revision_firstcoach;
     2..3: spriteset_emu_TGV_2021Revision_middlecoach1;
     4: spriteset_emu_TGV_2021Revision_middlecoach3;
@@ -204,7 +204,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2021Revision_position, (position_i
 
 
 //PBA Original
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_Original_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_Original_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_Original_firstcoach;
     2..3: spriteset_emu_TGV_Original_middlecoach1;
     4: spriteset_emu_TGV_Original_middlecoach3;
@@ -214,7 +214,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_Original_position, (position_in_veh
     spriteset_emu_TGV_PBA_Original_front;
 }
 //PBA 2008 Revision
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2008Revision_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2008Revision_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_2008Revision_firstcoach;
     2..3: spriteset_emu_TGV_Original_middlecoach1;
     4: spriteset_emu_TGV_Original_middlecoach3;
@@ -224,7 +224,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2008Revision_position, (position_in
     spriteset_emu_TGV_PBA_2008Revision_front;
 }
 //PBA 2017 Revision
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2017Revision_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2017Revision_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_2017Revision_firstcoach;
     2..3: spriteset_emu_TGV_2017Revision_middlecoach1;
     4: spriteset_emu_TGV_2017Revision_middlecoach3;
@@ -234,7 +234,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2017Revision_position, (position_in
     spriteset_emu_TGV_PBA_2017Revision_front;
 }
 //PBA 2021 Revision
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2021Revision_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2021Revision_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_2021Revision_firstcoach;
     2..3: spriteset_emu_TGV_2021Revision_middlecoach1;
     4: spriteset_emu_TGV_2021Revision_middlecoach3;
@@ -245,7 +245,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2021Revision_position, (position_in
 }
 
 //IZY
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_IZY_position, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_IZY_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_TGV_IZY_firstcoach;
     2..3: spriteset_emu_TGV_IZY_middlecoach1;
     4: spriteset_emu_TGV_IZY_middlecoach3;
@@ -345,7 +345,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_articulated, extra_callback_info1) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_TGV_visual_effect_and_powered, (position_in_vehid_chain % 10)) {
+switch(FEAT_TRAINS, SELF, switch_emu_TGV_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

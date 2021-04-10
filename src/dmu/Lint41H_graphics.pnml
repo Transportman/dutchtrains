@@ -84,37 +84,37 @@ spriteset(spriteset_dmu_Lint41H_Arriva_Limburg_back, "gfx/dmu/Lint41H.png") {
 	template_2cc_88(250, 126)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Syntus_back;
     spriteset_dmu_Lint41H_Syntus_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Syntus_twents, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Syntus_twents, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Syntus_twents_back;
     spriteset_dmu_Lint41H_Syntus_twents_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Keolis_twents, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Keolis_twents, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Keolis_twents_back;
     spriteset_dmu_Lint41H_Keolis_twents_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Keolis_blauwnet, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Keolis_blauwnet, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Keolis_blauwnet_back;
     spriteset_dmu_Lint41H_Keolis_blauwnet_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Arriva_blauwnet, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Arriva_blauwnet, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Arriva_blauwnet_back;
     spriteset_dmu_Lint41H_Arriva_blauwnet_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Veolia, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Veolia, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Veolia_back;
     spriteset_dmu_Lint41H_Veolia_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Arriva_Limburg, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Arriva_Limburg, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Arriva_Limburg_back;
     spriteset_dmu_Lint41H_Arriva_Limburg_front;
 }

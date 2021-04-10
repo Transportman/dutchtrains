@@ -40,7 +40,7 @@ spriteset(spriteset_emu_Mat64PlanT_green_back, "gfx/emu/PlanT.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_green, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_green, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat64PlanT_green_middle_1;
 	2: spriteset_emu_Mat64PlanT_green_middle_2;
     spriteset_emu_Mat64PlanT_green_front;
@@ -63,12 +63,12 @@ spriteset(spriteset_emu_Mat64PlanT_yellow_middle_1_noD, "gfx/emu/PlanT.png") {
 	template_2cc_88(1, 288)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_yellow_D, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_yellow_D, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat64PlanT_yellow_middle_1;
 	2: spriteset_emu_Mat64PlanT_yellow_middle_2;
     spriteset_emu_Mat64PlanT_yellow_front;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_yellow_noD, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_yellow_noD, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat64PlanT_yellow_middle_1_noD;
 	2: spriteset_emu_Mat64PlanT_yellow_middle_2;
     spriteset_emu_Mat64PlanT_yellow_front;
@@ -92,7 +92,7 @@ spriteset(spriteset_emu_Mat64PlanT_freedom_back, "gfx/emu/PlanT.png") {
 	template_2cc_88(1, 480)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_freedom, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_freedom, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat64PlanT_freedom_middle_1;
 	2: spriteset_emu_Mat64PlanT_freedom_middle_2;
     spriteset_emu_Mat64PlanT_freedom_front;
@@ -184,7 +184,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanTD_capacity, cargo_classes) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat64PlanT_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);

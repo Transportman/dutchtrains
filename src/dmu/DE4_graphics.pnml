@@ -31,7 +31,7 @@ spriteset(spriteset_dmu_DE4_back, "gfx/dmu/DE4.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE4_position_red, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE4_position_red, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE4_middle_1;
     2: spriteset_dmu_DE4_middle_2;
     3: spriteset_dmu_DE4_back;
@@ -51,7 +51,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_DE4_articulated, extra_callback_info1) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DE4_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE4_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

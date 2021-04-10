@@ -37,7 +37,7 @@ spriteset(spriteset_emu_Mat36EL2_silverroof_back, "gfx/emu/Mat36EL2.png") {
 	template_2cc_88(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL2_silverroof, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL2_silverroof, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat36EL2_silverroof_back;
     spriteset_emu_Mat36EL2_silverroof_front;
 }
@@ -50,7 +50,7 @@ spriteset(spriteset_emu_Mat36EL2_greyroof_back, "gfx/emu/Mat36EL2.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL2_greyroof, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL2_greyroof, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat36EL2_greyroof_back;
     spriteset_emu_Mat36EL2_greyroof_front;
 }
@@ -63,7 +63,7 @@ spriteset(spriteset_emu_Mat36EL2_green_back, "gfx/emu/Mat36EL2.png") {
 	template_2cc_88(1, 160)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL2_green, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_Mat36EL2_green, (position_in_articulated_veh)) {
 	1: spriteset_emu_Mat36EL2_green_back;
     spriteset_emu_Mat36EL2_green_front;
 }

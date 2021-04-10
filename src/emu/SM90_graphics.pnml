@@ -26,7 +26,7 @@ spriteset(spriteset_emu_SM90_back, "gfx/emu/SM90.png") {
 	template_2cc_88(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SM90_position, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SM90_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_SM90_back;
     spriteset_emu_SM90_front;
 }
@@ -44,7 +44,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_SM90_articulated, extra_callback_info1) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_SM90_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SM90_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

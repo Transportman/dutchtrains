@@ -43,19 +43,19 @@ spriteset(spriteset_electric_gen9_HS002_fyra_white_back, "gfx/electric/gen9_HS00
 	template_2cc_88(1, 224)
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_ic, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_ic, (position_in_articulated_veh)) {
 	1: spriteset_electric_gen9_HS002_ic_back;
     spriteset_electric_gen9_HS002_ic_front;
 }
-switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_black, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_black, (position_in_articulated_veh)) {
 	1: spriteset_electric_gen9_HS002_black_back;
     spriteset_electric_gen9_HS002_black_front;
 }
-switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_fyra_red, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_fyra_red, (position_in_articulated_veh)) {
 	1: spriteset_electric_gen9_HS002_fyra_red_back;
     spriteset_electric_gen9_HS002_fyra_red_front;
 }
-switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_fyra_white, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS002_position_fyra_white, (position_in_articulated_veh)) {
 	1: spriteset_electric_gen9_HS002_fyra_white_back;
     spriteset_electric_gen9_HS002_fyra_white_front;
 }

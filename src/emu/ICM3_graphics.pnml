@@ -35,7 +35,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_0_position_back, position_in_consist_f
 	0: spriteset_emu_ICM_0_back;
     spriteset_emu_ICM_0_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_0_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_0_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_0_middle;
     2: switch_emu_ICM3_0_position_back;
     switch_emu_ICM3_0_position_front;
@@ -50,7 +50,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_12_position_back, position_in_consist_
 	0: spriteset_emu_ICM_1234_back;
     spriteset_emu_ICM_1234_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_12_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_12_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_1234_middle;
     2: switch_emu_ICM3_12_position_back;
     switch_emu_ICM3_12_position_front;
@@ -65,7 +65,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_football_position_back, position_in_co
 	0: spriteset_emu_ICM_football_back;
     spriteset_emu_ICM_football_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_football_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_football_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_football_middle;
     2: switch_emu_ICM3_football_position_back;
     switch_emu_ICM3_football_position_front;
@@ -80,7 +80,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_kinderboeken_position_back, position_i
 	0: spriteset_emu_ICM_kinderboeken_back;
     spriteset_emu_ICM_kinderboeken_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_kinderboeken_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_kinderboeken_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_kinderboeken_middle;
     2: switch_emu_ICM3_kinderboeken_position_back;
     switch_emu_ICM3_kinderboeken_position_front;
@@ -95,7 +95,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_groningen_position_back, position_in_c
 	0: spriteset_emu_ICM_groningen_back;
     spriteset_emu_ICM_groningen_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_groningen_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_groningen_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_groningen_middle;
     2: switch_emu_ICM3_groningen_position_back;
     switch_emu_ICM3_groningen_position_front;
@@ -110,7 +110,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_martinair_position_back, position_in_c
 	0: spriteset_emu_ICM_martinair_back;
     spriteset_emu_ICM_martinair_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_martinair_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_martinair_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_martinair_middle;
     2: switch_emu_ICM3_martinair_position_back;
     switch_emu_ICM3_martinair_position_front;
@@ -125,7 +125,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_klm_position_back, position_in_consist
 	0: spriteset_emu_ICM_klm_back;
     spriteset_emu_ICM_klm_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_klm_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_klm_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_klm_middle;
     2: switch_emu_ICM3_klm_position_back;
     switch_emu_ICM3_klm_position_front;
@@ -140,7 +140,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden1_position_back, position_
 	0: spriteset_emu_ICM_delagelanden1_back;
     spriteset_emu_ICM_delagelanden1_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden1_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden1_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_delagelanden1_middle;
     2: switch_emu_ICM3_delagelanden1_position_back;
     switch_emu_ICM3_delagelanden1_position_front;
@@ -155,7 +155,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden2_position_back, position_
 	0: spriteset_emu_ICM_delagelanden2_back;
     spriteset_emu_ICM_delagelanden2_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden2_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_delagelanden2_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_delagelanden2_middle;
     2: switch_emu_ICM3_delagelanden2_position_back;
     switch_emu_ICM3_delagelanden2_position_front;
@@ -170,7 +170,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_randstad_position_back, position_in_co
 	0: spriteset_emu_ICM_randstad_back;
     spriteset_emu_ICM_randstad_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_randstad_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_randstad_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_randstad_middle;
     2: switch_emu_ICM3_randstad_position_back;
     switch_emu_ICM3_randstad_position_front;
@@ -185,14 +185,14 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_aegon_position_back, position_in_consi
 	0: spriteset_emu_ICM_aegon_back;
     spriteset_emu_ICM_aegon_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_aegon_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_aegon_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_aegon_middle;
     2: switch_emu_ICM3_aegon_position_back;
     switch_emu_ICM3_aegon_position_front;
 }
 
 //renewal
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_renewal_position, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_renewal_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_ICM_renewal_middle;
     2: spriteset_emu_ICM_renewal_back;
     spriteset_emu_ICM_renewal_front;
@@ -293,7 +293,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM3_articulated, extra_callback_info1) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_ICM3_visual_effect_and_powered, (position_in_vehid_chain % 3)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM3_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

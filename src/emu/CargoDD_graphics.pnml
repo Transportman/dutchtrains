@@ -46,7 +46,7 @@ spritegroup spritegroup_emu_CargoDD_NSCargo_Crates_middle {
     loaded:  [spriteset_emu_CargoDD_NSCargo_Crates_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_NSCargo_Crates, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_NSCargo_Crates, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_NSCargo_Crates_front;
     7: spriteset_emu_CargoDD_NSCargo_Crates_back;
     spritegroup_emu_CargoDD_NSCargo_Crates_middle;
@@ -80,7 +80,7 @@ spritegroup spritegroup_emu_CargoDD_NSCargo_Containers_middle {
     loaded:  [spriteset_emu_CargoDD_NSCargo_Containers_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_NSCargo_Containers, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_NSCargo_Containers, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_NSCargo_Containers_front;
     7: spriteset_emu_CargoDD_NSCargo_Containers_back;
     spritegroup_emu_CargoDD_NSCargo_Containers_middle;
@@ -114,7 +114,7 @@ spritegroup spritegroup_emu_CargoDD_DBSchenker_Crates_middle {
     loaded:  [spriteset_emu_CargoDD_DBSchenker_Crates_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_DBSchenker_Crates, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_DBSchenker_Crates, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_DBSchenker_Crates_front;
     7: spriteset_emu_CargoDD_DBSchenker_Crates_back;
     spritegroup_emu_CargoDD_DBSchenker_Crates_middle;
@@ -148,7 +148,7 @@ spritegroup spritegroup_emu_CargoDD_DBSchenker_Containers_middle {
     loaded:  [spriteset_emu_CargoDD_DBSchenker_Containers_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_DBSchenker_Containers, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_DBSchenker_Containers, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_DBSchenker_Containers_front;
     7: spriteset_emu_CargoDD_DBSchenker_Containers_back;
     spritegroup_emu_CargoDD_DBSchenker_Containers_middle;
@@ -182,7 +182,7 @@ spritegroup spritegroup_emu_CargoDD_blackyellow_Crates_middle {
     loaded:  [spriteset_emu_CargoDD_blackyellow_Crates_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_blackyellow_Crates, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_blackyellow_Crates, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_blackyellow_Crates_front;
     7: spriteset_emu_CargoDD_blackyellow_Crates_back;
     spritegroup_emu_CargoDD_blackyellow_Crates_middle;
@@ -216,7 +216,7 @@ spritegroup spritegroup_emu_CargoDD_blackyellow_Containers_middle {
     loaded:  [spriteset_emu_CargoDD_blackyellow_Containers_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_blackyellow_Containers, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_blackyellow_Containers, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_blackyellow_Containers_front;
     7: spriteset_emu_CargoDD_blackyellow_Containers_back;
     spritegroup_emu_CargoDD_blackyellow_Containers_middle;
@@ -250,7 +250,7 @@ spritegroup spritegroup_emu_CargoDD_ERS_Crates_middle {
     loaded:  [spriteset_emu_CargoDD_ERS_Crates_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_ERS_Crates, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_ERS_Crates, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_ERS_Crates_front;
     7: spriteset_emu_CargoDD_ERS_Crates_back;
     spritegroup_emu_CargoDD_ERS_Crates_middle;
@@ -284,7 +284,7 @@ spritegroup spritegroup_emu_CargoDD_ERS_Containers_middle {
     loaded:  [spriteset_emu_CargoDD_ERS_Containers_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_ERS_Containers, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_ERS_Containers, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_ERS_Containers_front;
     7: spriteset_emu_CargoDD_ERS_Containers_back;
     spritegroup_emu_CargoDD_ERS_Containers_middle;
@@ -318,7 +318,7 @@ spritegroup spritegroup_emu_CargoDD_HUSA_Crates_middle {
     loaded:  [spriteset_emu_CargoDD_HUSA_Crates_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_HUSA_Crates, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_HUSA_Crates, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_HUSA_Crates_front;
     7: spriteset_emu_CargoDD_HUSA_Crates_back;
     spritegroup_emu_CargoDD_HUSA_Crates_middle;
@@ -352,7 +352,7 @@ spritegroup spritegroup_emu_CargoDD_HUSA_Containers_middle {
     loaded:  [spriteset_emu_CargoDD_HUSA_Containers_middle_closed];
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_HUSA_Containers, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_position_HUSA_Containers, (position_in_articulated_veh)) {
 	0: spriteset_emu_CargoDD_HUSA_Containers_front;
     7: spriteset_emu_CargoDD_HUSA_Containers_back;
     spritegroup_emu_CargoDD_HUSA_Containers_middle;
@@ -418,7 +418,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_articulated, extra_callback_info1) 
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_visual_effect_and_powered, (position_in_vehid_chain % 8)) {
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

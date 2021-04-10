@@ -38,7 +38,7 @@ spriteset(spriteset_emu_SGM2_sgm_back, "gfx/emu/SGM2.png") {
 	template_2cc_88(1, 160)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM2_sgm, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_sgm, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM2_sgm_back;
     spriteset_emu_SGM2_sgm_front;
 }
@@ -51,7 +51,7 @@ spriteset(spriteset_emu_SGM2_sgmm_back, "gfx/emu/SGM2.png") {
 	template_2cc_88(1, 352)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM2_sgmm, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_sgmm, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM2_sgmm_back;
     spriteset_emu_SGM2_sgmm_front;
 }
@@ -64,7 +64,7 @@ spriteset(spriteset_emu_SGM2_citypendel_back, "gfx/emu/SGM2.png") {
 	template_2cc_88(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM2_citypendel, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_citypendel, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM2_citypendel_back;
     spriteset_emu_SGM2_citypendel_front;
 }
@@ -77,7 +77,7 @@ spriteset(spriteset_emu_SGM2_strandsprinter_back, "gfx/emu/SGM2.png") {
 	template_2cc_88(1, 288)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM2_strandsprinter, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_strandsprinter, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM2_strandsprinter_back;
     spriteset_emu_SGM2_strandsprinter_front;
 }
@@ -90,7 +90,7 @@ spriteset(spriteset_emu_SGM2_strandsprinter2_back, "gfx/emu/SGM2.png") {
 	template_2cc_88(1, 224)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM2_strandsprinter2, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_strandsprinter2, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM2_strandsprinter2_back;
     spriteset_emu_SGM2_strandsprinter2_front;
 }
@@ -103,7 +103,7 @@ spriteset(spriteset_emu_SGM2_algemeendagblad1_back, "gfx/emu/SGM2.png") {
 	template_2cc_88(1, 416)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM2_algemeendagblad1, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_algemeendagblad1, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM2_algemeendagblad1_back;
     spriteset_emu_SGM2_algemeendagblad1_front;
 }
@@ -116,7 +116,7 @@ spriteset(spriteset_emu_SGM2_algemeendagblad2_back, "gfx/emu/SGM2.png") {
 	template_2cc_88(1, 480)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM2_algemeendagblad2, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_algemeendagblad2, (position_in_articulated_veh)) {
 	1: spriteset_emu_SGM2_algemeendagblad2_back;
     spriteset_emu_SGM2_algemeendagblad2_front;
 }
@@ -201,7 +201,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_SGM2_capacity, cargo_subtype) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_SGM2_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_emu_SGM2_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

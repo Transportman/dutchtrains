@@ -27,13 +27,13 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_purchase, current_year) {
 */
 
 //irm livery
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_1, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_1, (position_in_articulated_veh)) {
 	0: spriteset_emu_IRM_front_pantoup;
 	3: spriteset_emu_IRM_back_pantodown;
     spriteset_emu_IRM_middle_nopanto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_2, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_position_2, (position_in_articulated_veh)) {
 	0: spriteset_emu_IRM_front_pantodown;
 	3: spriteset_emu_IRM_back_pantoup;
     spriteset_emu_IRM_middle_nopanto;
@@ -45,14 +45,14 @@ random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_irm_livery) {
 }
 
 //virm livery
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_virm_position_1, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_virm_position_1, (position_in_articulated_veh)) {
 	0: spriteset_emu_IRM_front_nopanto;
     1: spriteset_emu_IRM_middle_panto;
 	3: spriteset_emu_IRM_back_nopanto;
     spriteset_emu_IRM_middle_nopanto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_virm_position_2, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_virm_position_2, (position_in_articulated_veh)) {
 	0: spriteset_emu_IRM_front_nopanto;
     2: spriteset_emu_IRM_middle_panto;
 	3: spriteset_emu_IRM_back_nopanto;
@@ -65,14 +65,14 @@ random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_virm_livery) {
 }
 
 //olympic livery
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_olympic_position_1, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_olympic_position_1, (position_in_articulated_veh)) {
 	0: spriteset_emu_IRM_olympic_front_nopanto;
     1: spriteset_emu_IRM_olympic_middle_panto;
 	3: spriteset_emu_IRM_olympic_back_nopanto;
     spriteset_emu_IRM_olympic_middle_nopanto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_olympic_position_2, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_olympic_position_2, (position_in_articulated_veh)) {
 	0: spriteset_emu_IRM_olympic_front_nopanto;
     2: spriteset_emu_IRM_olympic_middle_panto;
 	3: spriteset_emu_IRM_olympic_back_nopanto;
@@ -85,14 +85,14 @@ random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIV_olympic_livery) {
 }
 
 //ovchip livery
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_1, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_1, (position_in_articulated_veh)) {
 	0: spriteset_emu_IRM_ovchip_front_nopanto;
     1: spriteset_emu_IRM_ovchip_middle_panto;
 	3: spriteset_emu_IRM_ovchip_back_nopanto;
     spriteset_emu_IRM_ovchip_middle_nopanto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_2, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_ovchip_position_2, (position_in_articulated_veh)) {
 	0: spriteset_emu_IRM_ovchip_front_nopanto;
     2: spriteset_emu_IRM_ovchip_middle_panto;
 	3: spriteset_emu_IRM_ovchip_back_nopanto;
@@ -191,7 +191,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_weight, build_year) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_visual_effect_and_powered, (position_in_articulated_veh)) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

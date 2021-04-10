@@ -55,7 +55,7 @@ spriteset(switch_dmu_DE2_position_blueredsilverroof_front, "gfx/dmu/DE2.png") {
 spriteset(switch_dmu_DE2_position_blueredsilverroof_back, "gfx/dmu/DE2.png") {
 	template_2cc_88(1, 32)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_blueredsilverroof, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_blueredsilverroof, (position_in_articulated_veh)) {
 	1: switch_dmu_DE2_position_blueredsilverroof_back;
     switch_dmu_DE2_position_blueredsilverroof_front;
 }
@@ -66,7 +66,7 @@ spriteset(switch_dmu_DE2_position_bluered_front, "gfx/dmu/DE2.png") {
 spriteset(switch_dmu_DE2_position_bluered_back, "gfx/dmu/DE2.png") {
 	template_2cc_88(1, 96)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_bluered, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_bluered, (position_in_articulated_veh)) {
 	1: switch_dmu_DE2_position_bluered_back;
     switch_dmu_DE2_position_bluered_front;
 }
@@ -77,7 +77,7 @@ spriteset(switch_dmu_DE2_position_blueredmoustache_front, "gfx/dmu/DE2.png") {
 spriteset(switch_dmu_DE2_position_blueredmoustache_back, "gfx/dmu/DE2.png") {
 	template_2cc_88(1, 160)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_blueredmoustache, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_blueredmoustache, (position_in_articulated_veh)) {
 	1: switch_dmu_DE2_position_blueredmoustache_back;
     switch_dmu_DE2_position_blueredmoustache_front;
 }
@@ -88,7 +88,7 @@ spriteset(spriteset_dmu_DE2_blueyellow_front, "gfx/dmu/DE2.png") {
 spriteset(spriteset_dmu_DE2_blueyellow_back, "gfx/dmu/DE2.png") {
 	template_2cc_88(1, 224)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_blueyellow, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_blueyellow, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE2_blueyellow_back;
     spriteset_dmu_DE2_blueyellow_front;
 }
@@ -99,7 +99,7 @@ spriteset(switch_dmu_DE2_position_redyellow_front, "gfx/dmu/DE2.png") {
 spriteset(switch_dmu_DE2_position_redyellow_back, "gfx/dmu/DE2.png") {
 	template_2cc_88(1, 288)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_redyellow, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_redyellow, (position_in_articulated_veh)) {
 	1: switch_dmu_DE2_position_redyellow_back;
     switch_dmu_DE2_position_redyellow_front;
 }
@@ -110,7 +110,7 @@ spriteset(switch_dmu_DE2_position_redyellowblue_front, "gfx/dmu/DE2.png") {
 spriteset(switch_dmu_DE2_position_redyellowblue_back, "gfx/dmu/DE2.png") {
 	template_2cc_88(1, 352)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_redyellowblue, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_redyellowblue, (position_in_articulated_veh)) {
 	1: switch_dmu_DE2_position_redyellowblue_back;
     switch_dmu_DE2_position_redyellowblue_front;
 }
@@ -121,7 +121,7 @@ spriteset(spriteset_dmu_DE2_yellowblue_front, "gfx/dmu/DE2.png") {
 spriteset(spriteset_dmu_DE2_yellowblue_back, "gfx/dmu/DE2.png") {
 	template_2cc_88(1, 416)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_yellowblue, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_yellowblue, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE2_yellowblue_back;
     spriteset_dmu_DE2_yellowblue_front;
 }
@@ -132,7 +132,7 @@ spriteset(spriteset_dmu_DE2_yellow_front, "gfx/dmu/DE2.png") {
 spriteset(spriteset_dmu_DE2_yellow_back, "gfx/dmu/DE2.png") {
 	template_2cc_88(1, 480)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_yellow, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DE2_position_yellow, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DE2_yellow_back;
     spriteset_dmu_DE2_yellow_front;
 }

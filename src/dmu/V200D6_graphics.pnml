@@ -29,7 +29,7 @@ spriteset(spriteset_dmu_V200D6_IC_back, "gfx/dmu/V200D.png") {
 	template_2cc_88(1, 64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_IC_position, (position_in_vehid_chain % 6)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_IC_position, (position_in_articulated_veh)) {
 	0: spriteset_dmu_V200D6_IC_front;
     5: spriteset_dmu_V200D6_IC_back;
     spriteset_dmu_V200D6_IC_middle;
@@ -46,7 +46,7 @@ spriteset(spriteset_dmu_V200D6_Sprinter_back, "gfx/dmu/V200D.png") {
 	template_2cc_88(1, 160)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_Sprinter_position, (position_in_vehid_chain % 6)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_Sprinter_position, (position_in_articulated_veh)) {
 	0: spriteset_dmu_V200D6_Sprinter_front;
     5: spriteset_dmu_V200D6_Sprinter_back;
     spriteset_dmu_V200D6_Sprinter_middle;
@@ -63,7 +63,7 @@ spriteset(spriteset_dmu_V200D6_Veolia_back, "gfx/dmu/V200D.png") {
 	template_2cc_88(1, 256)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_Veolia_position, (position_in_vehid_chain % 6)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_Veolia_position, (position_in_articulated_veh)) {
 	0: spriteset_dmu_V200D6_Veolia_front;
     5: spriteset_dmu_V200D6_Veolia_back;
     spriteset_dmu_V200D6_Veolia_middle;
@@ -80,7 +80,7 @@ spriteset(spriteset_dmu_V200D6_Arriva_back, "gfx/dmu/V200D.png") {
 	template_2cc_88(1, 352)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_Arriva_position, (position_in_vehid_chain % 6)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_Arriva_position, (position_in_articulated_veh)) {
 	0: spriteset_dmu_V200D6_Arriva_front;
     5: spriteset_dmu_V200D6_Arriva_back;
     spriteset_dmu_V200D6_Arriva_middle;
@@ -97,7 +97,7 @@ spriteset(spriteset_dmu_V200D6_blackyellow_back, "gfx/dmu/V200D.png") {
 	template_2cc_88(1, 448)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_blackyellow_position, (position_in_vehid_chain % 6)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_blackyellow_position, (position_in_articulated_veh)) {
 	0: spriteset_dmu_V200D6_blackyellow_front;
     5: spriteset_dmu_V200D6_blackyellow_back;
     spriteset_dmu_V200D6_blackyellow_middle;
@@ -114,7 +114,7 @@ spriteset(spriteset_dmu_V200D6_LLL_back, "gfx/dmu/V200D.png") {
 	template_2cc_88(1, 544)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_LLL_position, (position_in_vehid_chain % 6)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_LLL_position, (position_in_articulated_veh)) {
 	0: spriteset_dmu_V200D6_LLL_front; 
     5: spriteset_dmu_V200D6_LLL_back;
     spriteset_dmu_V200D6_LLL_middle;
@@ -169,7 +169,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_articulated, extra_callback_info1) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_visual_effect_and_powered, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_V200D6_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

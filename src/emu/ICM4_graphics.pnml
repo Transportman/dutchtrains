@@ -250,7 +250,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM4_34_position_back, position_in_consist_
 	0: spriteset_emu_ICM_1234_back;
     spriteset_emu_ICM_1234_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM4_34_position, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_34_position, (position_in_articulated_veh)) {
 	1..2: spriteset_emu_ICM_1234_middle;
     3: switch_emu_ICM4_34_position_back;
     switch_emu_ICM4_34_position_front;
@@ -265,14 +265,14 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM4_olympic_position_back, position_in_con
 	0: spriteset_emu_ICM_olympic_back;
     spriteset_emu_ICM_olympic_back_open;
 }
-switch(FEAT_TRAINS, SELF, switch_emu_ICM4_olympic_position, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_olympic_position, (position_in_articulated_veh)) {
 	1..2: spriteset_emu_ICM_olympic_middle;
     3: switch_emu_ICM4_olympic_position_back;
     switch_emu_ICM4_olympic_position_front;
 }
 
 //renewal
-switch(FEAT_TRAINS, SELF, switch_emu_ICM4_renewal_position, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_renewal_position, (position_in_articulated_veh)) {
 	1..2: spriteset_emu_ICM_renewal_middle;
     3: spriteset_emu_ICM_renewal_back;
     spriteset_emu_ICM_renewal_front;
@@ -337,7 +337,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM4_articulated, extra_callback_info1) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_ICM4_visual_effect_and_powered, (position_in_vehid_chain % 4)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICM4_visual_effect_and_powered, (position_in_articulated_veh)) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

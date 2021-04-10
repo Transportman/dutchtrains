@@ -34,7 +34,7 @@ spriteset(spriteset_dmu_DM90_ns_back, "gfx/dmu/DM90.png") {
 	template_2cc_88(1, 32)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DM90_ns_back;
     spriteset_dmu_DM90_ns_front;
 }
@@ -47,7 +47,7 @@ spriteset(spriteset_dmu_DM90_ns_whiteroof_back, "gfx/dmu/DM90.png") {
 	template_2cc_88(1, 160)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns_whiteroof, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_ns_whiteroof, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DM90_ns_whiteroof_back;
     spriteset_dmu_DM90_ns_whiteroof_front;
 }
@@ -60,7 +60,7 @@ spriteset(spriteset_dmu_DM90_syntus_back, "gfx/dmu/DM90.png") {
 	template_2cc_88(1, 96)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_syntus, (position_in_vehid_chain % 2)) {
+switch(FEAT_TRAINS, SELF, switch_dmu_DM90_position_syntus, (position_in_articulated_veh)) {
 	1: spriteset_dmu_DM90_syntus_back;
     spriteset_dmu_DM90_syntus_front;
 }

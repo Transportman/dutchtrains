@@ -38,7 +38,7 @@ spriteset(spriteset_emu_ICNGV_back, "gfx/emu/ICNG.png") {
 	template_2cc_88(1,235)
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_position, (position_in_vehid_chain % 5)) { 
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_position, (position_in_articulated_veh)) { 
 	0: spriteset_emu_ICNGV_front;
 	1: spriteset_emu_ICNGV_middle1;
 	2: spriteset_emu_ICNGV_middle2;
@@ -59,7 +59,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_articulated, extra_callback_info1) {
 * VISUAL EFFECT AND POWERED CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_visual_effect_and_powered, (position_in_vehid_chain % 5)) {
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_visual_effect_and_powered, (position_in_articulated_veh)) {
     1..2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
 	4..5: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
