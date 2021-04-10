@@ -38,7 +38,7 @@ liveries to choose from.
 {{GRF_TITLE}}
 MD5Hash:  {{GRF_MD5}}
 Version:  {{REPO_REVISION}}
-GRF ID:   FBFB0601
+GRF ID:   "TM\02\01"
 
 
 
@@ -48,7 +48,7 @@ GRF ID:   FBFB0601
 
 2.1 Requirements
 ----------------
-- OpenTTD 1.2.0-RC1 or nightly r23971, or higher.
+- OpenTTD 1.4.0, or higher.
 - OpenTTD 1.4.2-RC2 or nightly r26713, or higher is recommended.
 - Not compatible with TTDPatch
 
