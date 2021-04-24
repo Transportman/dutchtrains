@@ -7,7 +7,7 @@ STR_GRF_DESCRIPTION		:{SILVER}Dutch Trains for OpenTTD {}{BLACK}First vehicle: 1
 STR_GRF_URL             :http://www.tt-forums.net/viewtopic.php?t=59353
 
 # Errors
-STR_ERROR_OLD_VERSION   :This version of Dutch Trains cannot be loaded with the old version
+STR_ERROR_OLD_VERSION   :This version of Dutch Trains cannot be loaded with the old non-XL version
 
 #parameter strings
 STR_PARAM_VEHICLE_NAMES             :Use English vehicle nicknames
