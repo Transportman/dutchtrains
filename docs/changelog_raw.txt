@@ -1,44 +1,21 @@
-- Change r990: Increase introduction date for futuristic vehicles by 15 years (closes #8659)
-- Change r999 & r1000: Update min_compatible_version
-- Change: Add nmlcache to .hgignore
+- Change error text
+- Change: Change NewGRFID to allow new uploads
+- Change: Do not allow loading with old set
+- Codechange: Use position_in_articulated_veh instead of position_in_vehid_chain
+- Doc: Update readme
 - Docs: prepare for release
-- Feature: New vehicles introduced from 2015-2021(Graphics by Yoshi and Erato)
-- Feature: NS IC livery for TRAXX (graphics by Densha)(closes #8661)
-- Feature: Vectron locomotive (graphics by Alon, research+code by Erato)
-- Fix #8665: V200 diesels did not have ID set properly
-- Fix (r990): Change WINK engine class to allow running on non electrified track
-- Fix (r990): Wrong purchase length text for ICNG VIII
-- Fix r1002: Vectron power not correct because of different power units
-- Fix r1003: Vectron low power is not the same as the ES64F4 used for copying
-- Fix r990: ICNG length reduced (Graphics by Erato)
-- Fix r990: Update loading times in purchase menu (closes #8660)
-- Release: 2.1.0
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-- Update: Translations
-de_DE: 1 change by S-Transport
-de_DE: 125 changes by S-Transport
-es_MX: 11 changes by absay
-es_MX: 118 changes by absay
-es_MX: 5 changes by absay
-es_MX: 52 changes by absay
-es_MX: 7 changes by absay
-es_MX: 75 changes by absay
-es_MX: 76 changes by absay
-hr_HR: 23 changes by Voyager1
-nl_NL: 126 changes by janwillem
-nl_NL: 135 changes by janwillem
-nl_NL: 98 changes by janwillem
+- Feature: Bpmmz coaches (Graphics+Code by Erato)
+- Feature: Eurostar e320 (Graphics+Code by Erato)
+- Feature: Eurostar multipower and property fixes
+- Feature: New ICE3 liveries (Graphics+Code by Erato)
+- Feature: New Lint liveries (Graphics+Code by Erato)
+- Feature: New Lint purchase sprites (Graphics by Erato)
+- Feature: New Thalys liveries (Graphics+Code by Erato)
+- Feature: Nightjet coach (Graphics+Code by Erato)
+- Fix r1011 & r1012: Actually include new coaches
+- Fix r1011: Nightjet loading speed text
+- Fix r1012: Bpmmz loading speed text
+- Fix r1015: IZY graphics were not loaded correctly
+- Fix r1015: Thalys length in purchase menu was old value
+- Fix r1017: Check for old version was not working correct
+- Release: 2.2.0

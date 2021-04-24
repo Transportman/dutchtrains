@@ -1,5 +1,25 @@
 Dutch Trainset Changelog
 ========================
+3.0.0-XL (2021/04/12)
+---------------------
+- Change: Change NewGRFID to allow new uploads
+- Change: Do not allow loading with old set
+- Codechange: Use position_in_articulated_veh instead of position_in_vehid_chain
+- Feature: Bpmmz coaches (Graphics+Code by Erato)
+- Feature: Eurostar e320 (Graphics+Code by Erato)
+- Feature: Eurostar multipower and property fixes
+- Feature: New ICE3 liveries (Graphics+Code by Erato)
+- Feature: New Lint liveries (Graphics+Code by Erato)
+- Feature: New Lint purchase sprites (Graphics by Erato)
+- Feature: New Thalys liveries (Graphics+Code by Erato)
+- Feature: Nightjet coach (Graphics+Code by Erato)
+- Fix r1011 & r1012: Actually include new coaches
+- Fix r1011: Nightjet loading speed text
+- Fix r1012: Bpmmz loading speed text
+- Fix r1015: IZY graphics were not loaded correctly
+- Fix r1015: Thalys length in purchase menu was old value
+- Fix r1017: Check for old version was not working correct
+
 2.2.0 (2020/04/01)
 ------------------
 - Change r990: Increase introduction date for futuristic vehicles by 15 years (closes #8659)
