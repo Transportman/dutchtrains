@@ -1,5 +1,9 @@
 Dutch Trainset Changelog
 ========================
+3.0.1-XL (2021/05/23)
+---------------------
+Fix r1015: Use correct templates for TGV coaches
+
 3.0.0-XL (2021/04/12)
 ---------------------
 - Change: Change NewGRFID to allow new uploads
