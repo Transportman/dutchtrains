@@ -83,6 +83,13 @@ spriteset(spriteset_dmu_Lint41H_Arriva_Limburg_front, "gfx/dmu/Lint41H.png") {
 spriteset(spriteset_dmu_Lint41H_Arriva_Limburg_back, "gfx/dmu/Lint41H.png") {
 	template_2cc_88(250, 126)
 }
+//RRReis
+spriteset(spriteset_dmu_Lint41H_RRReis_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(250, 151)
+}
+spriteset(spriteset_dmu_Lint41H_RRReis_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(250, 176)
+}
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Syntus_back;
@@ -117,6 +124,11 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Veolia, (position_in_artic
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Arriva_Limburg, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Arriva_Limburg_back;
     spriteset_dmu_Lint41H_Arriva_Limburg_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_RRReis, (position_in_articulated_veh)) {
+	1: spriteset_dmu_Lint41H_RRReis_back;
+    spriteset_dmu_Lint41H_RRReis_front;
 }
 
 /*
@@ -163,6 +175,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_livery, cargo_subtype) {
     5: switch_dmu_Lint41H_position_Arriva_blauwnet;
     6: switch_dmu_Lint41H_position_Veolia;
     7: switch_dmu_Lint41H_position_Arriva_Limburg;
+    8: switch_dmu_Lint41H_position_RRReis;
     switch_dmu_Lint41H_randomlivery;
 }
 
@@ -176,6 +189,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_subtype_text, cargo_subtype) {
     5: return string(str_cargo_subtype_Arriva_blauwnet);
     6: return string(str_cargo_subtype_Veolia);
     7: return string(str_cargo_subtype_Arriva_Limburg);
+    8: return string(str_cargo_subtype_rrreis);
     return CB_RESULT_NO_TEXT;
 }
 

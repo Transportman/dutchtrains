@@ -9,8 +9,9 @@ Dutch Trainset Changelog
 - Feature: NS Flow livery for ICNG (Graphics by Erato)
 - Feature: NS Flow livery for Vectron (Graphics by Erato)
 - Feature: NS Flow purchase sprite for Vectron (Graphics by Erato)
-- Feature: New PROTOS sprites (Graphics by Erato)
-- Feature: Sleeper and couchettes as liveries for Nightjet
+- Feature: New Protos sprites (Graphics by Erato)
+- Feature: Sleeper and couchettes as liveries for Nightjet (Graphics by Erato)
+- Feature: RRReis liveries for Protos/LINT/FLIRT (Graphics by Erato)
 - Fix: ICNG purchase sprite still showed long sprite
 - Fix: NS livery not default for TRAXX purchase sprite
 - Fix: Sprites for Thalys carriages set incorrectly

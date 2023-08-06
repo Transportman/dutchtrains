@@ -10,7 +10,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_Protos_purchase, "gfx/purchase/emu/PROTOS.png") {
+spriteset(spriteset_emu_Protos_purchase, "gfx/purchase/emu/Protos.png") {
 	template_purchase(0, 0)
 }
 
@@ -18,10 +18,10 @@ spriteset(spriteset_emu_Protos_purchase, "gfx/purchase/emu/PROTOS.png") {
 * VEHICLE
 */
 //Valleilijn
-spriteset(spriteset_emu_Protos_front, "gfx/emu/PROTOS.png") {
+spriteset(spriteset_emu_Protos_front, "gfx/emu/Protos.png") {
 	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_Protos_back, "gfx/emu/PROTOS.png") {
+spriteset(spriteset_emu_Protos_back, "gfx/emu/Protos.png") {
 	template_2cc_88(1, 32)
 }
 
@@ -30,10 +30,10 @@ switch(FEAT_TRAINS, SELF, switch_emu_Protos_position, (position_in_articulated_v
     spriteset_emu_Protos_front;
 }
 //RRReis
-spriteset(spriteset_emu_Protos_RRReis_front, "gfx/emu/PROTOS.png") {
+spriteset(spriteset_emu_Protos_RRReis_front, "gfx/emu/Protos.png") {
 	template_2cc_88(1, 63)
 }
-spriteset(spriteset_emu_Protos_RRReis_back, "gfx/emu/PROTOS.png") {
+spriteset(spriteset_emu_Protos_RRReis_back, "gfx/emu/Protos.png") {
 	template_2cc_88(1, 94)
 }
 
