@@ -39,7 +39,7 @@ item(FEAT_TRAINS, item_emu_ICE3M) {
         //                                          ^ slow                      fast ^   ^ medium
         cost_factor: 183;
         running_cost_factor: 93;
-        speed: 220 km/h;
+        speed: 320 km/h;
         power: 8000 kW;
         cargo_capacity: 53;
         weight: 435 ton;
