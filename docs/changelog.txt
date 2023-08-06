@@ -7,6 +7,7 @@ Dutch Trainset Changelog
 - Codechange: Resolve animated pixel warnings
 - Feature: MRCE Eurosprinter liveries (Graphics by Erato)
 - Feature: NS Flow livery for ICNG (Graphics by Erato)
+- Feature: NS Flow livery for Vectron (Graphics by Erato)
 - Feature: New PROTOS sprites (Graphics by Erato)
 - Fix: ICNG purchase sprite still showed long sprite
 - Fix: NS livery not default for TRAXX purchase sprite
