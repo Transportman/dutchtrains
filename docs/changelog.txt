@@ -6,6 +6,7 @@ Dutch Trainset Changelog
 - Change: Increase introduction date ICNG to 2023
 - Codechange: Resolve animated pixel warnings
 - Feature: New Eurosprinter liveries (Graphics by Erato)
+- Fix: ICNG purchase sprite still showed long sprite
 
 3.0.1-XL (2021/05/23)
 ---------------------
