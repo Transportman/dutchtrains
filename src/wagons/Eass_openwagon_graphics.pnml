@@ -20,16 +20,16 @@ spriteset(spriteset_wagons_Eass_openwagon_purchase, "gfx/purchase/wagons/Eass_op
 
 //brown
 spriteset(spriteset_wagons_Eass_openwagon_1_empty, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(0, 0)
+	template_2cc_78_anim(0, 0)
 }
 spriteset(spriteset_wagons_Eass_openwagon_1_13, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(0, 30)
+	template_2cc_78_anim(0, 30)
 }
 spriteset(spriteset_wagons_Eass_openwagon_1_23, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(0, 60)
+	template_2cc_78_anim(0, 60)
 }
 spriteset(spriteset_wagons_Eass_openwagon_1_33, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(0, 90)
+	template_2cc_78_anim(0, 90)
 }
 
 spritegroup spritegroup_wagons_Eass_openwagon_1 {
@@ -39,16 +39,16 @@ spritegroup spritegroup_wagons_Eass_openwagon_1 {
 
 //greyish blue
 spriteset(spriteset_wagons_Eass_openwagon_2_empty, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(200, 0)
+	template_2cc_78_anim(200, 0)
 }
 spriteset(spriteset_wagons_Eass_openwagon_2_13, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(200, 30)
+	template_2cc_78_anim(200, 30)
 }
 spriteset(spriteset_wagons_Eass_openwagon_2_23, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(200, 60)
+	template_2cc_78_anim(200, 60)
 }
 spriteset(spriteset_wagons_Eass_openwagon_2_33, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(200, 90)
+	template_2cc_78_anim(200, 90)
 }
 
 spritegroup spritegroup_wagons_Eass_openwagon_2 {
@@ -58,16 +58,16 @@ spritegroup spritegroup_wagons_Eass_openwagon_2 {
 
 //blue
 spriteset(spriteset_wagons_Eass_openwagon_3_empty, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(400, 0)
+	template_2cc_78_anim(400, 0)
 }
 spriteset(spriteset_wagons_Eass_openwagon_3_13, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(400, 30)
+	template_2cc_78_anim(400, 30)
 }
 spriteset(spriteset_wagons_Eass_openwagon_3_23, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(400, 60)
+	template_2cc_78_anim(400, 60)
 }
 spriteset(spriteset_wagons_Eass_openwagon_3_33, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(400, 90)
+	template_2cc_78_anim(400, 90)
 }
 
 spritegroup spritegroup_wagons_Eass_openwagon_3 {
@@ -77,16 +77,16 @@ spritegroup spritegroup_wagons_Eass_openwagon_3 {
 
 //dark blue
 spriteset(spriteset_wagons_Eass_openwagon_4_empty, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(600, 0)
+	template_2cc_78_anim(600, 0)
 }
 spriteset(spriteset_wagons_Eass_openwagon_4_13, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(600, 30)
+	template_2cc_78_anim(600, 30)
 }
 spriteset(spriteset_wagons_Eass_openwagon_4_23, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(600, 60)
+	template_2cc_78_anim(600, 60)
 }
 spriteset(spriteset_wagons_Eass_openwagon_4_33, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(600, 90)
+	template_2cc_78_anim(600, 90)
 }
 
 spritegroup spritegroup_wagons_Eass_openwagon_4 {
@@ -96,16 +96,16 @@ spritegroup spritegroup_wagons_Eass_openwagon_4 {
 
 //grey
 spriteset(spriteset_wagons_Eass_openwagon_5_empty, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(800, 0)
+	template_2cc_78_anim(800, 0)
 }
 spriteset(spriteset_wagons_Eass_openwagon_5_13, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(800, 30)
+	template_2cc_78_anim(800, 30)
 }
 spriteset(spriteset_wagons_Eass_openwagon_5_23, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(800, 60)
+	template_2cc_78_anim(800, 60)
 }
 spriteset(spriteset_wagons_Eass_openwagon_5_33, "gfx/wagons/Eass_openwagon.png") {
-	template_2cc_78(800, 90)
+	template_2cc_78_anim(800, 90)
 }
 
 spritegroup spritegroup_wagons_Eass_openwagon_5 {

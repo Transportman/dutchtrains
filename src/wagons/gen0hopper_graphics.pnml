@@ -20,35 +20,35 @@ spriteset(spriteset_wagons_gen0hopper_purchase, "gfx/purchase/wagons/gen0_hopper
 
 //open
 spriteset(spriteset_wagons_gen0hopper_empty_1, "gfx/wagons/gen0_hopper.png") {
-	template_2cc_58(1, 1)
+	template_2cc_58_anim(1, 1)
 }
 spriteset(spriteset_wagons_gen0hopper_half_1, "gfx/wagons/gen0_hopper.png") {
-	template_2cc_58(1, 32)
+	template_2cc_58_anim(1, 32)
 }
 spriteset(spriteset_wagons_gen0hopper_full_1, "gfx/wagons/gen0_hopper.png") {
-	template_2cc_58(1, 64)
+	template_2cc_58_anim(1, 64)
 }
 spriteset(spriteset_wagons_gen0hopper_empty_2, "gfx/wagons/gen0_hopper.png") {
-	template_2cc_58(1, 96)
+	template_2cc_58_anim(1, 96)
 }
 spriteset(spriteset_wagons_gen0hopper_half_2, "gfx/wagons/gen0_hopper.png") {
-	template_2cc_58(1, 128)
+	template_2cc_58_anim(1, 128)
 }
 spriteset(spriteset_wagons_gen0hopper_full_2, "gfx/wagons/gen0_hopper.png") {
-	template_2cc_58(1, 160)
+	template_2cc_58_anim(1, 160)
 }
 //with tarpaulin
 spriteset(spriteset_wagons_gen0hopper_half_tarp_1, "gfx/wagons/gen0_hoppertarp.png") {
-	template_2cc_58(1, 32)
+	template_2cc_58_anim(1, 32)
 }
 spriteset(spriteset_wagons_gen0hopper_full_tarp_1, "gfx/wagons/gen0_hoppertarp.png") {
-	template_2cc_58(1, 64)
+	template_2cc_58_anim(1, 64)
 }
 spriteset(spriteset_wagons_gen0hopper_half_tarp_2, "gfx/wagons/gen0_hoppertarp.png") {
-	template_2cc_58(1, 128)
+	template_2cc_58_anim(1, 128)
 }
 spriteset(spriteset_wagons_gen0hopper_full_tarp_2, "gfx/wagons/gen0_hoppertarp.png") {
-	template_2cc_58(1, 160)
+	template_2cc_58_anim(1, 160)
 }
 
 //open

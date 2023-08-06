@@ -20,13 +20,13 @@ spriteset(spriteset_wagons_Fccpps_selfdischarger_purchase, "gfx/purchase/wagons/
 
 //darker blue
 spriteset(spriteset_wagons_Fccpps_selfdischarger_1_empty, "gfx/wagons/Fccpps_selfdischarger.png") {
-	template_2cc_58(0, 0)
+	template_2cc_58_anim(0, 0)
 }
 spriteset(spriteset_wagons_Fccpps_selfdischarger_1_half, "gfx/wagons/Fccpps_selfdischarger.png") {
-	template_2cc_58(0, 30)
+	template_2cc_58_anim(0, 30)
 }
 spriteset(spriteset_wagons_Fccpps_selfdischarger_1_full, "gfx/wagons/Fccpps_selfdischarger.png") {
-	template_2cc_58(0, 60)
+	template_2cc_58_anim(0, 60)
 }
 
 spritegroup spritegroup_wagons_Fccpps_selfdischarger_1 {
@@ -36,13 +36,13 @@ spritegroup spritegroup_wagons_Fccpps_selfdischarger_1 {
 
 //lighter blue
 spriteset(spriteset_wagons_Fccpps_selfdischarger_2_empty, "gfx/wagons/Fccpps_selfdischarger.png") {
-	template_2cc_58(0, 90)
+	template_2cc_58_anim(0, 90)
 }
 spriteset(spriteset_wagons_Fccpps_selfdischarger_2_half, "gfx/wagons/Fccpps_selfdischarger.png") {
-	template_2cc_58(0, 120)
+	template_2cc_58_anim(0, 120)
 }
 spriteset(spriteset_wagons_Fccpps_selfdischarger_2_full, "gfx/wagons/Fccpps_selfdischarger.png") {
-	template_2cc_58(0, 150)
+	template_2cc_58_anim(0, 150)
 }
 
 spritegroup spritegroup_wagons_Fccpps_selfdischarger_2 {
