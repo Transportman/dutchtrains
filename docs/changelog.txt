@@ -2,7 +2,8 @@ Dutch Trainset Changelog
 ========================
 3.1.0-XL (2023/??/??)
 ---------------------
-- Codechange: Resolved animated pixel warnings
+- Change: Rename NID to DDZ
+- Codechange: Resolve animated pixel warnings
 - Feature: New Eurosprinter liveries (Graphics by Erato)
 
 3.0.1-XL (2021/05/23)
