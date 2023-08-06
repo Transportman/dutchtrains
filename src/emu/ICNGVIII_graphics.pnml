@@ -49,7 +49,40 @@ spriteset(spriteset_emu_ICNGVIII_middle6, "gfx/emu/ICNG.png") {
 spriteset(spriteset_emu_ICNGVIII_back, "gfx/emu/ICNG.png") {
 	template_2cc_88(1,235)
 }
+//NS Flow
+spriteset(spriteset_emu_ICNGVIII_FLOW_front, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,1)
+}
 
+spriteset(spriteset_emu_ICNGVIII_FLOW_middle1, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,27)
+}
+
+spriteset(spriteset_emu_ICNGVIII_FLOW_middle2, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,105)
+}
+
+spriteset(spriteset_emu_ICNGVIII_FLOW_middle3, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,131)
+}
+
+spriteset(spriteset_emu_ICNGVIII_FLOW_middle4, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,157)
+}
+
+spriteset(spriteset_emu_ICNGVIII_FLOW_middle5, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,183)
+}
+
+spriteset(spriteset_emu_ICNGVIII_FLOW_middle6, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,209)
+}
+
+spriteset(spriteset_emu_ICNGVIII_FLOW_back, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,235)
+}
+
+//NS
 switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_position, (position_in_articulated_veh)) { 
 	0: spriteset_emu_ICNGVIII_front;
 	1: spriteset_emu_ICNGVIII_middle1;
@@ -60,7 +93,52 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_position, (position_in_articulated
 	6: spriteset_emu_ICNGVIII_middle6;
 	spriteset_emu_ICNGVIII_back;
 }
+//NS Flow
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_FLOW_position, (position_in_articulated_veh)) { 
+	0: spriteset_emu_ICNGVIII_FLOW_front;
+	1: spriteset_emu_ICNGVIII_FLOW_middle1;
+	2: spriteset_emu_ICNGVIII_FLOW_middle2;
+	3: spriteset_emu_ICNGVIII_FLOW_middle3;
+	4: spriteset_emu_ICNGVIII_FLOW_middle4;
+	5: spriteset_emu_ICNGVIII_FLOW_middle5;
+	6: spriteset_emu_ICNGVIII_FLOW_middle6;
+	spriteset_emu_ICNGVIII_FLOW_back;
+}
 
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICNGVIII_randomlivery) {
+	30: switch_emu_ICNGVIII_position;
+    20: switch_emu_ICNGVIII_FLOW_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_autolivery, date_of_last_service) {
+      0..2023:		switch_emu_ICNGVIII_position;
+      switch_emu_ICNGVIII_randomlivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_purchaselivery, build_year) {
+      0..2023:		switch_emu_ICNGVIII_position;
+      switch_emu_ICNGVIII_randomlivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_livery, cargo_subtype) {
+	1: switch_emu_ICNGVIII_purchaselivery;
+    2: switch_emu_ICNGVIII_position;
+    3: switch_emu_ICNGVIII_FLOW_position;
+    switch_emu_ICNGVIII_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGVIII_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+	2: return string(str_cargo_subtype_ns_ic);
+	3: return string(str_cargo_subtype_ns_flow);
+    return CB_RESULT_NO_TEXT;
+}
 /*
 * ARTICULATED VEHICLE CALLBACK
 */

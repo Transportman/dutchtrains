@@ -37,7 +37,28 @@ spriteset(spriteset_emu_ICNGV_middle3, "gfx/emu/ICNG.png") {
 spriteset(spriteset_emu_ICNGV_back, "gfx/emu/ICNG.png") {
 	template_2cc_88(1,235)
 }
+//NS Flow
+spriteset(spriteset_emu_ICNGV_FLOW_front, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,1)
+}
 
+spriteset(spriteset_emu_ICNGV_FLOW_middle1, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,27)
+}
+
+spriteset(spriteset_emu_ICNGV_FLOW_middle2, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,53)
+}
+
+spriteset(spriteset_emu_ICNGV_FLOW_middle3, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,79)
+}
+
+spriteset(spriteset_emu_ICNGV_FLOW_back, "gfx/emu/ICNGB.png") {
+	template_2cc_88(1,235)
+}
+
+//NS
 switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_position, (position_in_articulated_veh)) { 
 	0: spriteset_emu_ICNGV_front;
 	1: spriteset_emu_ICNGV_middle1;
@@ -45,7 +66,49 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_position, (position_in_articulated_ve
 	3: spriteset_emu_ICNGV_middle3;
 	spriteset_emu_ICNGV_back;
 }
+//NS Flow
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_FLOW_position, (position_in_articulated_veh)) { 
+	0: spriteset_emu_ICNGV_FLOW_front;
+	1: spriteset_emu_ICNGV_FLOW_middle1;
+	2: spriteset_emu_ICNGV_FLOW_middle2;
+	3: spriteset_emu_ICNGV_FLOW_middle3;
+	spriteset_emu_ICNGV_FLOW_back;
+}
 
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_ICNGV_randomlivery) {
+	17: switch_emu_ICNGV_position;
+    3: switch_emu_ICNGV_position; //Flow actually only exists for ICNG-8
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_autolivery, date_of_last_service) {
+      0..2023:		switch_emu_ICNGV_position;
+      switch_emu_ICNGV_randomlivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_purchaselivery, build_year) {
+      0..2023:		switch_emu_ICNGV_position;
+      switch_emu_ICNGV_randomlivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_livery, cargo_subtype) {
+	1: switch_emu_ICNGV_purchaselivery;
+    2: switch_emu_ICNGV_position;
+    3: switch_emu_ICNGV_FLOW_position;
+    switch_emu_ICNGV_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+	2: return string(str_cargo_subtype_ns_ic);
+	3: return string(str_cargo_subtype_ns_flow);
+    return CB_RESULT_NO_TEXT;
+}
 /*
 * ARTICULATED VEHICLE CALLBACK
 */

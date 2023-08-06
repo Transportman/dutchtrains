@@ -57,8 +57,9 @@ item(FEAT_TRAINS, item_emu_ICNGVIII) {
         cargo_capacity: return 52;
         purchase: spriteset_emu_ICNGVIII_purchase;
         additional_text: switch_emu_ICNGVIII_additional_text;
+		cargo_subtype_text: switch_emu_ICNGVIII_subtype_text;
         articulated_part: switch_emu_ICNGVIII_articulated;
         visual_effect_and_powered: switch_emu_ICNGVIII_visual_effect_and_powered;
-        switch_emu_ICNGVIII_position;
+        switch_emu_ICNGVIII_livery;
 	}
 }

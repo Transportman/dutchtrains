@@ -150,6 +150,7 @@ str_cargo_subtype_nid               : > DDZ livery
 str_cargo_subtype_nid_cab           : > DDZ livery (cab control)
 str_cargo_subtype_ns_ic             : > NS InterCity livery
 str_cargo_subtype_ns_ic_cab         : > NS InterCity livery (cab control)
+str_cargo_subtype_ns_flow           : > NS Flow livery
 str_cargo_subtype_olympic           : > Olympic livery
 str_cargo_subtype_original          : > Original livery
 str_cargo_subtype_ovchip            : > OV Chipkaart livery
