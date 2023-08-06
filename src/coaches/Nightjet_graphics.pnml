@@ -21,3 +21,28 @@ spriteset(spriteset_coaches_Nightjet_purchase, "gfx/purchase/coaches/Nightjet.pn
 spriteset(spriteset_coaches_Nightjet, "gfx/coaches/Nightjet.png") {
 	template_2cc_88(1, 1)
 }
+spriteset(spriteset_coaches_Nightjet_schlafwagen, "gfx/coaches/Nightjet.png") {
+	template_2cc_88(1, 27)
+}
+random_switch(FEAT_TRAINS, SELF, switch_coaches_Nightjet_random) {
+	5: spriteset_coaches_Nightjet;
+	2: spriteset_coaches_Nightjet_schlafwagen;
+}
+
+/*
+* LIVERY SELECTION
+*/
+//Livery Switch Sets
+switch(FEAT_TRAINS, SELF, switch_coaches_Nightjet_livery, cargo_subtype){
+    0: 	switch_coaches_Nightjet_random;
+	1:	spriteset_coaches_Nightjet;
+    2:	spriteset_coaches_Nightjet_schlafwagen;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_coaches_Nightjet_subtype_text, cargo_subtype){
+	0: return string(str_cargo_subtype_random);
+    1: return string(str_cargo_subtype_couchette);
+    2: return string(str_cargo_subtype_sleeper);
+	return CB_RESULT_NO_TEXT;
+}

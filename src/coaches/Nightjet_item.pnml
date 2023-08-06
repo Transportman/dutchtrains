@@ -57,7 +57,8 @@ item(FEAT_TRAINS, item_coaches_Nightjet) {
     graphics {
         additional_text: switch_coaches_Nightjet_additional_text;
         purchase: spriteset_coaches_Nightjet_purchase;
+		cargo_subtype_text: switch_coaches_Nightjet_subtype_text;
         colour_mapping: PALETTE_USE_DEFAULT;
-		spriteset_coaches_Nightjet;
+		switch_coaches_Nightjet_livery;
     }
 }

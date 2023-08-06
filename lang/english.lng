@@ -273,6 +273,9 @@ str_cargo_subtype_house             : > House cargo livery
 str_cargo_subtype_train             : > Train cargo livery
 str_cargo_subtype_tractor           : > Tractor cargo livery
 
+str_cargo_subtype_couchette         : > Couchette carriage livery
+str_cargo_subtype_sleeper           : > Sleeper carriage livery
+
 #steam
 str_steam_Arend         :HSM "Arend" (Steam)
 str_steam_Arend_t       :HSM "Eagle" (Steam)
