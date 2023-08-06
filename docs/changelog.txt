@@ -3,6 +3,7 @@ Dutch Trainset Changelog
 3.1.0-XL (2023/??/??)
 ---------------------
 - Change: Rename NID to DDZ
+- Change: Increase introduction date ICNG to 2023
 - Codechange: Resolve animated pixel warnings
 - Feature: New Eurosprinter liveries (Graphics by Erato)
 

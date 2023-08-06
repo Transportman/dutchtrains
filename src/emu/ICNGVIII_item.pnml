@@ -24,7 +24,7 @@ item(FEAT_TRAINS, item_emu_ICNGVIII) {
 	property {
 		name:	string(str_emu_ICNGVIII);
 		model_life:	VEHICLE_NEVER_EXPIRES;
-		introduction_date:	date(2021,01,01);
+		introduction_date:	date(2023,01,01);
 		vehicle_life: 30;
 		loading_speed: (param_loading_speed == 0) ? 28 : (param_loading_speed == 2) ? 112 : 56;
         //                                          ^ slow                      fast ^   ^ medium
