@@ -1,8 +1,13 @@
 Dutch Trainset Changelog
 ========================
+3.1.0-XL (2023/??/??)
+---------------------
+- Codechange: Resolved animated pixel warnings
+- Feature: New Eurosprinter liveries (Graphics by Erato)
+
 3.0.1-XL (2021/05/23)
 ---------------------
-Fix r1015: Use correct templates for TGV coaches
+- Fix r1015: Use correct templates for TGV coaches
 
 3.0.0-XL (2021/04/12)
 ---------------------
