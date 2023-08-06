@@ -162,8 +162,6 @@ str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (prosinac 22, 1993
 str_cargo_subtype_strandsprinter_beachballs: > "Strandsprinter" livreja sa loptama za plažu
 str_cargo_subtype_strandsprinter    : > "Strandsprinter" livreja
 str_cargo_subtype_TGV                           :> Thalys livreja
-str_cargo_subtype_TGV_PBKA          : > PBKA livreja
-str_cargo_subtype_TGV_PBA           : > PBA livreja
 str_cargo_subtype_valleilijn_yellow_blue    : > Valleilijn žuto-plava livreja
 str_cargo_subtype_valleilijn_blue_yellownose: > Valleilijn plava livreja sa žutim nosom
 str_cargo_subtype_valleilijn_blue           : > Valleilijn plava livreja (izmišljena)
@@ -234,7 +232,6 @@ str_cargo_subtype_SS_tank           : > SS livreja (tank lokomotiva)
 str_cargo_subtype_SS_NS             : > Staatsspoorwegen / NS livreja
 str_cargo_subtype_Strukton          : > Strukton livreja
 str_cargo_subtype_Syntus            : > Syntus livreja
-str_cargo_subtype_Twents            : > Twents livreja
 str_cargo_subtype_Veolia            : > Veolia livreja
 str_cargo_subtype_Veolia_velios     : > Veolia "Velios" livreja
 str_cargo_subtype_Veolia_white_red  : > Veolia (bijelo-crvena) livreja

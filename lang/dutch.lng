@@ -160,8 +160,6 @@ str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR-kleurstelling (22 d
 str_cargo_subtype_strandsprinter_beachballs: > 'Strandsprinter'-kleurstelling met strandballen
 str_cargo_subtype_strandsprinter    : > 'Strandsprinter'-kleurstelling
 str_cargo_subtype_TGV                           : > Thalys-kleurstelling
-str_cargo_subtype_TGV_PBKA          : > PBKA-kleurstelling
-str_cargo_subtype_TGV_PBA           : > PBA-kleurstelling
 str_cargo_subtype_valleilijn_yellow_blue    : >Valleilijn geel/blauwe kleurstelling
 str_cargo_subtype_valleilijn_blue_yellownose: >Valleilijn blauwe kleurstelling met gele neus
 str_cargo_subtype_valleilijn_blue           : >Valleilijn blauwe kleurstelling (fictief)
@@ -232,7 +230,6 @@ str_cargo_subtype_SS_tank           : > Staatsspoorwegen-kleurstelling (tankloco
 str_cargo_subtype_SS_NS             : > Staatsspoorwegen-/NS-kleurstelling
 str_cargo_subtype_Strukton          : > Strukton-kleurstelling
 str_cargo_subtype_Syntus            : > Syntus-kleurstelling
-str_cargo_subtype_Twents            : > Twents-kleurstelling
 str_cargo_subtype_Veolia            : > Veolia-kleurstelling
 str_cargo_subtype_Veolia_velios     : > Veolia 'Velios'-kleurstelling
 str_cargo_subtype_Veolia_white_red  : > Veolia-kleurstelling (wit/rood)

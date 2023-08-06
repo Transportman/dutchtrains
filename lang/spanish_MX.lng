@@ -161,8 +161,6 @@ str_cargo_subtype_sr10              : > Cromática de Sr10 Royal ICR (22 dic 199
 str_cargo_subtype_strandsprinter_beachballs: > Cromática "Strandsprinter" con pelotas de playa
 str_cargo_subtype_strandsprinter    : > Cromática "Strandsprinter"
 str_cargo_subtype_TGV                           : > Cromática de Thalys
-str_cargo_subtype_TGV_PBKA          : > Cromática de PBKA
-str_cargo_subtype_TGV_PBA           : > Cromática de PBA
 str_cargo_subtype_valleilijn_yellow_blue    : > Cromática de Valleilijn amarillo y azul
 str_cargo_subtype_valleilijn_blue_yellownose: > Cromática azul de Valleilijn con nariz amarilla
 str_cargo_subtype_valleilijn_blue           : > Cromática azul de Valleilijn (ficticia)
@@ -230,7 +228,6 @@ str_cargo_subtype_SS_tank           : > Cromática de SS (locomotora de vapor)
 str_cargo_subtype_SS_NS             : > Cromática de Staatsspoorwegen / NS
 str_cargo_subtype_Strukton          : > Cromática de Strukton
 str_cargo_subtype_Syntus            : > Cromática de Syntus
-str_cargo_subtype_Twents            : > Cromática de Twents
 str_cargo_subtype_Veolia            : > Cromática de Veolia
 str_cargo_subtype_Veolia_velios     : > Cromática de Veolia "Velios"
 str_cargo_subtype_Veolia_white_red  : > Cromática de Veolia (blanco y rojo)

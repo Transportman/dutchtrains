@@ -51,7 +51,6 @@ str_cargo_subtype_hispeed           : > Seragam NS Hispeed
 str_cargo_subtype_nid               : > Seragam NID
 str_cargo_subtype_strandsprinter_beachballs: > Seragam "Strandsprinter" sama bola pantai
 str_cargo_subtype_strandsprinter    : > Seragam "Strandsprinter"
-str_cargo_subtype_TGV_PBA           : > Seragam PBA
 str_cargo_subtype_zilverrail        : > Seragam Zilverrail (Oct 24-27, 2005)
 
 str_cargo_subtype_ACTS              : > Seragam ACTS

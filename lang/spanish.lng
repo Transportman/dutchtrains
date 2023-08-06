@@ -161,8 +161,6 @@ str_cargo_subtype_sr10              :Librea Sr10 Royal ICR  (22 Diciembre 1993 -
 str_cargo_subtype_strandsprinter_beachballs:Librea "Strandsprinter", con pelotas de playa
 str_cargo_subtype_strandsprinter    :Librea "Strandsprinter"
 str_cargo_subtype_TGV                           :Librea Thalys
-str_cargo_subtype_TGV_PBKA          :Librea PBKA
-str_cargo_subtype_TGV_PBA           :Librea PBA
 str_cargo_subtype_valleilijn_yellow_blue    :Librea azul/amarillo Valleilijn
 str_cargo_subtype_valleilijn_blue_yellownose:Librea azul Valleilijn, con parachoques amarillo
 str_cargo_subtype_valleilijn_blue           :Librea Valleilijn azul (ficticia)
@@ -230,7 +228,6 @@ str_cargo_subtype_SS_tank           :Librea SS (locomotora cisterna)
 str_cargo_subtype_SS_NS             :Librea Staatsspoorwegen / NS
 str_cargo_subtype_Strukton          :Librea Strukton
 str_cargo_subtype_Syntus            :Librea Syntus
-str_cargo_subtype_Twents            :Librea Twents
 str_cargo_subtype_Veolia            :Librea Veolia
 str_cargo_subtype_Veolia_velios     :Librea Veolia "Velios"
 str_cargo_subtype_Veolia_white_red  :Librea Veolia (blanco/rojo)

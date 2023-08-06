@@ -161,8 +161,6 @@ str_cargo_subtype_sr10              :> Livrée Sr10 Royal ICR (22 déc. 1993 - p
 str_cargo_subtype_strandsprinter_beachballs: > Livrée "Strandsprinter" avec ballons de plage
 str_cargo_subtype_strandsprinter    : > Livrée "Strandsprinter"
 str_cargo_subtype_TGV                           :> Livrée Thalys
-str_cargo_subtype_TGV_PBKA          :> Livrée PBKA
-str_cargo_subtype_TGV_PBA           :> Livrée PBA
 str_cargo_subtype_valleilijn_yellow_blue    :> Livrée Valleilijn jaune/bleu
 str_cargo_subtype_valleilijn_blue_yellownose:> Livrée Valleilijn bleue avec nez jaune
 str_cargo_subtype_valleilijn_blue           : > Livrée Valleilijn bleue (fictive)
@@ -230,7 +228,6 @@ str_cargo_subtype_SS_tank           : &gt; SS livery (locomotive-tender)
 str_cargo_subtype_SS_NS             :> Livrée Staatsspoorwegen / NS
 str_cargo_subtype_Strukton          : > Livrée Strukton
 str_cargo_subtype_Syntus            :> Livrée Syntus
-str_cargo_subtype_Twents            :> Livrée Twents
 str_cargo_subtype_Veolia            :> Livrée Véolia
 str_cargo_subtype_Veolia_velios     :> Livrée Véolia "Velios"
 str_cargo_subtype_Veolia_white_red  :> Livrée Véolia (blanc/rouge)

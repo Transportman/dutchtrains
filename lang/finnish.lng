@@ -160,8 +160,6 @@ str_cargo_subtype_sr10              :> Sr10 Royal ICR -väritys (22. joulukuuta 
 str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter"-väritys rantapalloilla
 str_cargo_subtype_strandsprinter    :> "Strandsprinter"-väritys
 str_cargo_subtype_TGV                           :> Thalys-väritys
-str_cargo_subtype_TGV_PBKA          :> PBKA-väritys
-str_cargo_subtype_TGV_PBA           :> PBA-väritys
 str_cargo_subtype_valleilijn_yellow_blue    :> Keltainen ja sininen Valleilijn-väritys
 str_cargo_subtype_valleilijn_blue_yellownose:> Sininen Valleilijn-väritys keltaisella keulalla
 str_cargo_subtype_valleilijn_blue           :> Sininen Valleilijn-väritys (kuvitteellinen)
@@ -229,7 +227,6 @@ str_cargo_subtype_SS_tank           :> SS-väritys (tankkiveturi)
 str_cargo_subtype_SS_NS             :> Staatsspoorwegen- / NS-väritys
 str_cargo_subtype_Strukton          :> Strukton-väritys
 str_cargo_subtype_Syntus            :> Syntus-väritys
-str_cargo_subtype_Twents            :> Twents-väritys
 str_cargo_subtype_Veolia            :> Veolia-väritys
 str_cargo_subtype_Veolia_velios     :> Veolia "Velios" -väritys
 str_cargo_subtype_Veolia_white_red  :> Veolia-väritys (valkoinen ja punainen)
