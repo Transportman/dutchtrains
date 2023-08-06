@@ -13,78 +13,107 @@
 spriteset(spriteset_dmu_GTW26_purchase_arriva, "gfx/purchase/dmu/GTW26_arriva.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_dmu_GTW26_purchase_veolia, "gfx/purchase/dmu/GTW26_veolia.png") {
-	template_purchase(0, 0)
-}
-spriteset(spriteset_dmu_GTW26_purchase_veolia2, "gfx/purchase/dmu/GTW26_veolia2.png") {
+spriteset(spriteset_dmu_GTW26_purchase_noord, "gfx/purchase/dmu/GTW26_noord.png") {
 	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_purchase, current_year) {
-	0..2006: spriteset_dmu_GTW26_purchase_arriva;
-	2007..2007: spriteset_dmu_GTW26_purchase_veolia;
-    spriteset_dmu_GTW26_purchase_veolia2;
+	0..2020: spriteset_dmu_GTW26_purchase_arriva;
+    spriteset_dmu_GTW26_purchase_noord;
 }
 
 /*
 * VEHICLE
 */
-
-//spurt
 //graphics from GTW 2/8
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_spurt, (position_in_articulated_veh)) {
-	1: spriteset_dmu_GTW_spurt_powerpack_dmu;
-    2: spriteset_dmu_GTW_spurt_back;
-    spriteset_dmu_GTW_spurt_front;
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW26_Arriva, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Arriva1;
+      1:       spriteset_dmu_GTW28_Arriva3;
+      spriteset_dmu_GTW28_Arriva4;
 }
-
-//velios
-//graphics from GTW 2/8
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios, (position_in_articulated_veh)) {
-	1: spriteset_dmu_GTW_velios_powerpack_dmu;
-    2: spriteset_dmu_GTW_velios_back;
-    spriteset_dmu_GTW_velios_front;
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW26_Spurt, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Spurt1;
+      1:       spriteset_dmu_GTW28_Spurt3;
+      spriteset_dmu_GTW28_Spurt4;
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_position_velios2, (position_in_articulated_veh)) {
-	1: spriteset_dmu_GTW_velios_powerpack2_dmu;
-    2: spriteset_dmu_GTW_velios_back;
-    spriteset_dmu_GTW_velios_front;
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW26_Limburg, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Limburg1;
+      1:       spriteset_dmu_GTW28_Limburg3;
+      spriteset_dmu_GTW28_Limburg4;
 }
-
-/*
-* LIVERY SELECTION
-*/
-
-switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_velios, date_of_last_service) {
-	0..date(2007,12,31): switch_dmu_GTW26_position_velios;
-    switch_dmu_GTW26_position_velios2;
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW26_Noord, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Noord1;
+      1:       spriteset_dmu_GTW28_Noord3;
+      spriteset_dmu_GTW28_Noord4;
 }
-
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery_arriva_veolia) {
-	1: switch_dmu_GTW26_position_spurt;
-    1: switch_dmu_GTW26_velios;
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW26_Veolia, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Veolia1;
+      1:       spriteset_dmu_GTW28_Veolia3;
+      spriteset_dmu_GTW28_Veolia4;
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_randomlivery, build_year) {
-	0..2006: switch_dmu_GTW26_position_spurt;
-    switch_dmu_GTW26_randomlivery_arriva_veolia;
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW26_Veolia_portret, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Veolia1;
+      1:       spriteset_dmu_GTW28_Veolia_portret3;
+      spriteset_dmu_GTW28_Veolia4;
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_livery, cargo_subtype) {
-    1: switch_dmu_GTW26_position_spurt;
-    2: switch_dmu_GTW26_velios;
-    switch_dmu_GTW26_randomlivery;
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW26_RRReis, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_RRReis1;
+      1:       spriteset_dmu_GTW28_RRReis3;
+      spriteset_dmu_GTW28_RRReis4;
 }
-
-// CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_subtype_text, cargo_subtype) {
-    0: return string(str_cargo_subtype_random);
-    1: return string(str_cargo_subtype_Arriva_spurt);
-    2: return string(str_cargo_subtype_Veolia_velios);
-    return CB_RESULT_NO_TEXT;
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery_2006) {
+	10: switch_dmu_GTW26_Arriva;
+	10: switch_dmu_GTW26_Spurt;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery_2007) {
+	10: switch_dmu_GTW26_Arriva;
+	10: switch_dmu_GTW26_Spurt;
+	5: switch_dmu_GTW26_Veolia;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery_2008) {
+	10: switch_dmu_GTW26_Arriva;
+	10: switch_dmu_GTW26_Spurt;
+	5: switch_dmu_GTW26_Veolia_portret;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery_2017) {
+	10: switch_dmu_GTW26_Arriva;
+	10: switch_dmu_GTW26_Spurt;
+	5: switch_dmu_GTW26_Limburg;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW26_randomlivery_2021) {
+	10: switch_dmu_GTW26_Noord;
+	10: switch_dmu_GTW26_Spurt;
+	5: switch_dmu_GTW26_Limburg;
+}
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW26_randomlivery, current_year) { 
+      0..2006:			switch_dmu_GTW26_randomlivery_2006;
+      2007:				switch_dmu_GTW26_randomlivery_2007;
+      2008..2016:		switch_dmu_GTW26_randomlivery_2008;
+      2017..2020:		switch_dmu_GTW26_randomlivery_2017;
+      switch_dmu_GTW26_randomlivery_2021;
+}
+//Livery Switch Sets
+switch(FEAT_TRAINS,SELF,switch_dmu_GTW26_livery,cargo_subtype){
+    0: 	switch_dmu_GTW26_randomlivery;
+	1:	switch_dmu_GTW26_Arriva;
+    2:	switch_dmu_GTW26_Spurt;
+    3:	switch_dmu_GTW26_Limburg;
+    4:	switch_dmu_GTW26_Noord;
+    5:	switch_dmu_GTW26_Veolia;
+    6:	switch_dmu_GTW26_Veolia_portret;
+    7:	switch_dmu_GTW26_RRReis;
+}
+//Livery Switch Text
+switch(FEAT_TRAINS,SELF,switch_dmu_GTW26_subtype_text,cargo_subtype){
+	0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_Arriva);
+    2: return string(str_cargo_subtype_Arriva_spurt);
+    3: return string(str_cargo_subtype_Arriva_Limburg);
+    4: return string(str_cargo_subtype_Arriva_Noord);
+    5: return string(str_cargo_subtype_Veolia);
+    6: return string(str_cargo_subtype_Veolia_portrait);
+    7: return string(str_cargo_subtype_rrreis);
+       return CB_RESULT_NO_TEXT;
 }
 
 /*
@@ -102,7 +131,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_articulated, extra_callback_info1) {
 
 switch(FEAT_TRAINS, SELF, switch_dmu_GTW26_length, (position_in_articulated_veh)) {
     1: return 3;
-    return 8;
+    return 6;
 }
 
 /*

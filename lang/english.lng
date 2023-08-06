@@ -194,9 +194,12 @@ str_cargo_subtype_Arriva            : > Arriva livery
 str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" livery
 str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" livery
 str_cargo_subtype_Arriva_drielanden	: > Arriva Drielandentrein livery
+str_cargo_subtype_Arriva_mml		: > Arriva Merwedelingelijn livery
 str_cargo_subtype_Arriva_blauwnet   : > Arriva Blauwnet livery
 str_cargo_subtype_Arriva_Limburg    : > Arriva Limburg livery
+str_cargo_subtype_Arriva_Noord      : > Arriva Noord livery
 str_cargo_subtype_Breng             : > Breng livery
+str_cargo_subtype_Breng_portret     : > Breng portrait livery
 str_cargo_subtype_BLS				: > BLS Cargo livery
 str_cargo_subtype_Captrain          : > Captrain livery
 str_cargo_subtype_Connexxion_valleilijn		: > Connexxion Valleilijn livery
@@ -258,6 +261,7 @@ str_cargo_subtype_Syntus            : > Syntus livery
 str_cargo_subtype_Syntus_twents     : > Syntus Twents livery
 str_cargo_subtype_Vectron			: > Vectron MS livery
 str_cargo_subtype_Veolia            : > Veolia livery
+str_cargo_subtype_Veolia_portrait   : > Veolia portrait livery
 str_cargo_subtype_Veolia_velios     : > Veolia "Velios" livery
 str_cargo_subtype_Veolia_white_red  : > Veolia (white/red) livery
 str_cargo_subtype_Veolia_black      : > Veolia (black) livery
