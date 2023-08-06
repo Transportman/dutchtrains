@@ -245,6 +245,7 @@ str_cargo_subtype_Railpro           : > Railpro livery
 str_cargo_subtype_rff				: > RFF Cargo livery
 str_cargo_subtype_rts_black			: > RTS (black) livery
 str_cargo_subtype_rts_orange		: > RTS (orange/white) livery
+str_cargo_subtype_rrreis            : > RRReis livery
 str_cargo_subtype_rurtalbahn_black	: > Rurtalbahn (black) livery
 str_cargo_subtype_rurtalbahn_blue	: > Rurtalbahn (blue) livery
 str_cargo_subtype_staatsmijnen      : > Staatsmijnen livery

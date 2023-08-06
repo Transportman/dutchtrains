@@ -10,18 +10,18 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_Protos_purchase, "gfx/purchase/emu/Protos.png") {
+spriteset(spriteset_emu_Protos_purchase, "gfx/purchase/emu/PROTOS.png") {
 	template_purchase(0, 0)
 }
 
 /*
 * VEHICLE
 */
-
-spriteset(spriteset_emu_Protos_front, "gfx/emu/Protos.png") {
+//Valleilijn
+spriteset(spriteset_emu_Protos_front, "gfx/emu/PROTOS.png") {
 	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_Protos_back, "gfx/emu/Protos.png") {
+spriteset(spriteset_emu_Protos_back, "gfx/emu/PROTOS.png") {
 	template_2cc_88(1, 32)
 }
 
@@ -29,7 +29,36 @@ switch(FEAT_TRAINS, SELF, switch_emu_Protos_position, (position_in_articulated_v
 	1: spriteset_emu_Protos_back;
     spriteset_emu_Protos_front;
 }
+//RRReis
+spriteset(spriteset_emu_Protos_RRReis_front, "gfx/emu/PROTOS.png") {
+	template_2cc_88(1, 63)
+}
+spriteset(spriteset_emu_Protos_RRReis_back, "gfx/emu/PROTOS.png") {
+	template_2cc_88(1, 94)
+}
 
+switch(FEAT_TRAINS, SELF, switch_emu_Protos_RRReis_position, (position_in_articulated_veh)) {
+	1: spriteset_emu_Protos_RRReis_back;
+    spriteset_emu_Protos_RRReis_front;
+}
+
+/*
+* LIVERY SELECTION
+*/
+//Livery Switch Sets
+switch(FEAT_TRAINS, SELF, switch_emu_PROTOS_livery, cargo_subtype){
+    0: 	switch_emu_Protos_position;//Will do time-based when it's put in service
+	1:	switch_emu_Protos_position;
+    2:	switch_emu_Protos_RRReis_position;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_PROTOS_subtype_text, cargo_subtype){
+	0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_Connexxion_valleilijn);
+    2: return string(str_cargo_subtype_rrreis);
+	return CB_RESULT_NO_TEXT;
+}
 /*
 * ARTICULATED VEHICLE CALLBACK
 */
