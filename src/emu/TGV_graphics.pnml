@@ -116,7 +116,7 @@ spriteset(spriteset_emu_TGV_Original_middlecoach2, "gfx/emu/TGV.png") {
 	template_2cc_68(1, 495)
 }
 spriteset(spriteset_emu_TGV_Original_middlecoach3, "gfx/emu/TGV.png") {
-	template_2cc_68(1, 521)
+	template_2cc_68(1, 625)
 }
 //Middle 2017 revision
 spriteset(spriteset_emu_TGV_2017Revision_middlecoach1, "gfx/emu/TGV.png") {
@@ -126,7 +126,7 @@ spriteset(spriteset_emu_TGV_2017Revision_middlecoach2, "gfx/emu/TGV.png") {
 	template_2cc_68(1, 547)
 }
 spriteset(spriteset_emu_TGV_2017Revision_middlecoach3, "gfx/emu/TGV.png") {
-	template_2cc_68(1, 573)
+	template_2cc_68(1, 651)
 }
 //Middle 2021 revision
 spriteset(spriteset_emu_TGV_2021Revision_middlecoach1, "gfx/emu/TGV.png") {
@@ -136,7 +136,7 @@ spriteset(spriteset_emu_TGV_2021Revision_middlecoach2, "gfx/emu/TGV.png") {
 	template_2cc_68(1, 599)
 }
 spriteset(spriteset_emu_TGV_2021Revision_middlecoach3, "gfx/emu/TGV.png") {
-	template_2cc_68(1, 625)
+	template_2cc_68(1, 677)
 }
 //IZY
 spriteset(spriteset_emu_TGV_IZY_front, "gfx/emu/TGV.png") {
@@ -196,7 +196,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBKA_2021Revision_position, (position_i
 	1: spriteset_emu_TGV_2021Revision_firstcoach;
     2..3: spriteset_emu_TGV_2021Revision_middlecoach1;
     4: spriteset_emu_TGV_2021Revision_middlecoach3;
-    5..7: spriteset_emu_TGV_2017Revision_middlecoach2;
+    5..7: spriteset_emu_TGV_2021Revision_middlecoach2;
     8: spriteset_emu_TGV_2021Revision_lastcoach; 
     9: spriteset_emu_TGV_PBKA_2021Revision_back;
     spriteset_emu_TGV_PBKA_2021Revision_front;

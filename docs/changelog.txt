@@ -9,6 +9,7 @@ Dutch Trainset Changelog
 - Feature: NS Flow livery for ICNG (Graphics by Erato)
 - Fix: ICNG purchase sprite still showed long sprite
 - Fix: NS livery not default for TRAXX purchase sprite
+- Fix: Sprites for Thalys carriages set incorrectly
 
 3.0.1-XL (2021/05/23)
 ---------------------
