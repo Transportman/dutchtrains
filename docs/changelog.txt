@@ -12,6 +12,7 @@ Dutch Trainset Changelog
 - Feature: New Protos sprites (Graphics by Erato)
 - Feature: Sleeper and couchettes as liveries for Nightjet (Graphics by Erato)
 - Feature: RRReis liveries for Protos/LINT/FLIRT (Graphics by Erato)
+- Feature: GreenCityTrip coach (Graphics by Erato)
 - Fix: ICNG purchase sprite still showed long sprite
 - Fix: NS livery not default for TRAXX purchase sprite
 - Fix: Sprites for Thalys carriages set incorrectly
