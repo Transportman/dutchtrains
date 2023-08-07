@@ -13,158 +13,248 @@
 spriteset(spriteset_dmu_GTW28_purchase_arriva, "gfx/purchase/dmu/GTW28_arriva.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_dmu_GTW28_purchase_veolia, "gfx/purchase/dmu/GTW28_veolia.png") {
-	template_purchase(0, 0)
-}
-spriteset(spriteset_dmu_GTW28_purchase_breng, "gfx/purchase/dmu/GTW28_breng.png") {
+spriteset(spriteset_dmu_GTW28_purchase_noord, "gfx/purchase/dmu/GTW28_noord.png") {
 	template_purchase(0, 0)
 }
 
 switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_purchase, current_year) {
-	0..2006: spriteset_dmu_GTW28_purchase_arriva;
-    2007..2012: spriteset_dmu_GTW28_purchase_veolia;
-    spriteset_dmu_GTW28_purchase_breng;
+	0..2020: spriteset_dmu_GTW28_purchase_arriva;
+    spriteset_dmu_GTW28_purchase_noord;
 }
 
 /*
 * VEHICLE
 */
-
-//spurt
-spriteset(spriteset_dmu_GTW_spurt_front, "gfx/dmu/GTW.png") {
-	template_2cc_88(1, 1)
+//Noord old
+spriteset (spriteset_dmu_GTW28_Arriva1, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*0)
 }
-spriteset(spriteset_dmu_GTW_spurt_back, "gfx/dmu/GTW.png") {
-	template_2cc_88(1, 32)
+spriteset (spriteset_dmu_GTW28_Arriva2, "gfx/dmu/GTW.png") {
+	template_2cc_58(1,1+25*1)
 }
-spriteset(spriteset_dmu_GTW_spurt_middle, "gfx/dmu/GTW.png") {
-	template_2cc_78(1, 64)
+spriteset (spriteset_dmu_GTW28_Arriva3, "gfx/dmu/GTW.png") {
+	template_2cc_38(1,1+25*2)
 }
-spriteset(spriteset_dmu_GTW_spurt_powerpack_dmu, "gfx/dmu/GTW.png") {
-	template_2cc_38(1, 96)
+spriteset (spriteset_dmu_GTW28_Arriva4, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*3)
 }
-spriteset(spriteset_dmu_GTW_spurt_powerpack_emu, "gfx/dmu/GTW.png") {
-	template_2cc_38(1, 128)
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Arriva, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Arriva1;
+      1:       spriteset_dmu_GTW28_Arriva2;
+      2:       spriteset_dmu_GTW28_Arriva3;
+      spriteset_dmu_GTW28_Arriva4;
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_spurt, (position_in_articulated_veh)) {
-	1: spriteset_dmu_GTW_spurt_powerpack_dmu;
-    2: spriteset_dmu_GTW_spurt_middle;
-    3: spriteset_dmu_GTW_spurt_back;
-    spriteset_dmu_GTW_spurt_front;
+//Oost
+spriteset (spriteset_dmu_GTW28_Spurt1, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*8)
 }
-
-//velios
-spriteset(spriteset_dmu_GTW_velios_front, "gfx/dmu/GTW.png") {
-	template_2cc_88(1, 160)
+spriteset (spriteset_dmu_GTW28_Spurt2, "gfx/dmu/GTW.png") {
+	template_2cc_58(1,1+25*9)
 }
-spriteset(spriteset_dmu_GTW_velios_back, "gfx/dmu/GTW.png") {
-	template_2cc_88(1, 192)
+spriteset (spriteset_dmu_GTW28_Spurt3, "gfx/dmu/GTW.png") {
+	template_2cc_38(1,1+25*10)
 }
-spriteset(spriteset_dmu_GTW_velios_middle, "gfx/dmu/GTW.png") {
-	template_2cc_78(1, 224)
+spriteset (spriteset_dmu_GTW28_Spurt4, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*11)
 }
-spriteset(spriteset_dmu_GTW_velios_powerpack_dmu, "gfx/dmu/GTW.png") {
-	template_2cc_38(1, 256)
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Spurt, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Spurt1;
+      1:       spriteset_dmu_GTW28_Spurt2;
+      2:       spriteset_dmu_GTW28_Spurt3;
+      spriteset_dmu_GTW28_Spurt4;
 }
-/* spriteset(spriteset_dmu_GTW_velios_powerpack_emu, "gfx/dmu/GTW.png") {
-	template_2cc_38(1, 288)
-} */
-spriteset(spriteset_dmu_GTW_velios_powerpack2_dmu, "gfx/dmu/GTW.png") {
-	template_2cc_38(1, 576)
+//Limburg
+spriteset (spriteset_dmu_GTW28_Limburg1, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*12)
 }
-spriteset(spriteset_dmu_GTW_velios_powerpack2_emu, "gfx/dmu/GTW.png") {
-	template_2cc_38(1, 608)
+spriteset (spriteset_dmu_GTW28_Limburg2, "gfx/dmu/GTW.png") {
+	template_2cc_58(1,1+25*13)
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_velios, (position_in_articulated_veh)) {
-	1: spriteset_dmu_GTW_velios_powerpack_dmu;
-    2: spriteset_dmu_GTW_velios_middle;
-    3: spriteset_dmu_GTW_velios_back;
-    spriteset_dmu_GTW_velios_front;
+spriteset (spriteset_dmu_GTW28_Limburg3, "gfx/dmu/GTW.png") {
+	template_2cc_38(1,1+25*14)
 }
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_velios2, (position_in_articulated_veh)) {
-	1: spriteset_dmu_GTW_velios_powerpack2_dmu;
-    2: spriteset_dmu_GTW_velios_middle;
-    3: spriteset_dmu_GTW_velios_back;
-    spriteset_dmu_GTW_velios_front;
+spriteset (spriteset_dmu_GTW28_Limburg4, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*15)
 }
-
-//breng
-spriteset(spriteset_dmu_GTW_breng_front, "gfx/dmu/GTW.png") {
-	template_2cc_88(1, 320)
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Limburg, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Limburg1;
+      1:       spriteset_dmu_GTW28_Limburg2;
+      2:       spriteset_dmu_GTW28_Limburg3;
+      spriteset_dmu_GTW28_Limburg4;
 }
-spriteset(spriteset_dmu_GTW_breng_back, "gfx/dmu/GTW.png") {
-	template_2cc_88(1, 352)
+//Noord
+spriteset (spriteset_dmu_GTW28_Noord1, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*24)
 }
-spriteset(spriteset_dmu_GTW_breng_middle, "gfx/dmu/GTW.png") {
-	template_2cc_78(1, 384)
+spriteset (spriteset_dmu_GTW28_Noord2, "gfx/dmu/GTW.png") {
+	template_2cc_58(1,1+25*25)
 }
-spriteset(spriteset_dmu_GTW_breng_powerpack_dmu, "gfx/dmu/GTW.png") {
-	template_2cc_38(1, 416)
+spriteset (spriteset_dmu_GTW28_Noord3, "gfx/dmu/GTW.png") {
+	template_2cc_38(1,1+25*26)
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_position_breng, (position_in_articulated_veh)) {
-	1: spriteset_dmu_GTW_breng_powerpack_dmu;
-    2: spriteset_dmu_GTW_breng_middle;
-    3: spriteset_dmu_GTW_breng_back;
-    spriteset_dmu_GTW_breng_front;
+spriteset (spriteset_dmu_GTW28_Noord4, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*27)
 }
-
-//vechtdallijnen (Arriva)
-spriteset(spriteset_dmu_GTW_vechtdallijnen_front, "gfx/dmu/GTW.png") {
-	template_2cc_88(1, 448)
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Noord, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Noord1;
+      1:       spriteset_dmu_GTW28_Noord2;
+      2:       spriteset_dmu_GTW28_Noord3;
+      spriteset_dmu_GTW28_Noord4;
 }
-spriteset(spriteset_dmu_GTW_vechtdallijnen_back, "gfx/dmu/GTW.png") {
-	template_2cc_88(1, 480)
+//Veolia
+spriteset (spriteset_dmu_GTW28_Veolia1, "gfx/dmu/GTW.png") {
+	template_2cc_68(250,1+25*5)
 }
-spriteset(spriteset_dmu_GTW_vechtdallijnen_middle, "gfx/dmu/GTW.png") {
-	template_2cc_78(1, 512)
+spriteset (spriteset_dmu_GTW28_Veolia2, "gfx/dmu/GTW.png") {
+	template_2cc_58(250,1+25*6)
 }
-spriteset(spriteset_dmu_GTW_vechtdallijnen_powerpack_emu, "gfx/dmu/GTW.png") {
-	template_2cc_38(1, 544)
+spriteset (spriteset_dmu_GTW28_Veolia3, "gfx/dmu/GTW.png") {
+	template_2cc_38(250,1+25*7)
+}
+spriteset (spriteset_dmu_GTW28_Veolia4, "gfx/dmu/GTW.png") {
+	template_2cc_68(250,1+25*8)
+}
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Veolia, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Veolia1;
+      1:       spriteset_dmu_GTW28_Veolia2;
+      2:       spriteset_dmu_GTW28_Veolia3;
+      spriteset_dmu_GTW28_Veolia4;
+}
+//Veolia portrait
+spriteset (spriteset_dmu_GTW28_Veolia_portret3, "gfx/dmu/GTW.png") {
+	template_2cc_38(250,1+25*9)
+}
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Veolia_portret, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Veolia1;
+      1:       spriteset_dmu_GTW28_Veolia2;
+      2:       spriteset_dmu_GTW28_Veolia_portret3;
+      spriteset_dmu_GTW28_Veolia4;
+}
+//Breng
+spriteset (spriteset_dmu_GTW28_Breng1, "gfx/dmu/GTW.png") {
+	template_2cc_68(250,1+25*0)
+}
+spriteset (spriteset_dmu_GTW28_Breng2, "gfx/dmu/GTW.png") {
+	template_2cc_58(250,1+25*1)
+}
+spriteset (spriteset_dmu_GTW28_Breng3, "gfx/dmu/GTW.png") {
+	template_2cc_38(250,1+25*2)
+}
+spriteset (spriteset_dmu_GTW28_Breng4, "gfx/dmu/GTW.png") {
+	template_2cc_68(250,1+25*3)
+}
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Breng, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Breng1;
+      1:       spriteset_dmu_GTW28_Breng2;
+      2:       spriteset_dmu_GTW28_Breng3;
+      spriteset_dmu_GTW28_Breng4;
+}
+//Breng Portrait
+spriteset (spriteset_dmu_GTW28_Breng_portret3, "gfx/dmu/GTW.png") {
+	template_2cc_38(250,1+25*4)
+}
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Breng_portret, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Breng1;
+      1:       spriteset_dmu_GTW28_Breng2;
+      2:       spriteset_dmu_GTW28_Breng_portret3;
+      spriteset_dmu_GTW28_Breng4;
+}
+//RRReis Portrait
+spriteset (spriteset_dmu_GTW28_RRReis1, "gfx/dmu/GTW.png") {
+	template_2cc_68(250,1+25*20)
+}
+spriteset (spriteset_dmu_GTW28_RRReis2, "gfx/dmu/GTW.png") {
+	template_2cc_58(250,1+25*21)
+}
+spriteset (spriteset_dmu_GTW28_RRReis3, "gfx/dmu/GTW.png") {
+	template_2cc_38(250,1+25*22)
+}
+spriteset (spriteset_dmu_GTW28_RRReis4, "gfx/dmu/GTW.png") {
+	template_2cc_68(250,1+25*23)
+}
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_RRReis, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_RRReis1;
+      1:       spriteset_dmu_GTW28_RRReis2;
+      2:       spriteset_dmu_GTW28_RRReis3;
+      spriteset_dmu_GTW28_RRReis4;
 }
 
 /*
 * LIVERY SELECTION
 */
-
-switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_velios, date_of_last_service) {
-	0..date(2007,12,31): switch_dmu_GTW28_position_velios;
-    switch_dmu_GTW28_position_velios2;
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2006) {
+	10: switch_dmu_GTW28_Arriva;
+	10: switch_dmu_GTW28_Spurt;
 }
-
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_arriva_veolia_breng) {
-	1: switch_dmu_GTW28_position_spurt;
-    1: switch_dmu_GTW28_velios;
-    1: switch_dmu_GTW28_position_breng;
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2007) {
+	10: switch_dmu_GTW28_Arriva;
+	10: switch_dmu_GTW28_Spurt;
+	5: switch_dmu_GTW28_Veolia;
 }
-
-random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_arriva_veolia) {
-	1: switch_dmu_GTW28_position_spurt;
-    1: switch_dmu_GTW28_velios;
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2008) {
+	10: switch_dmu_GTW28_Arriva;
+	10: switch_dmu_GTW28_Spurt;
+	5: switch_dmu_GTW28_Veolia_portret;
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_randomlivery, build_year) {
-	0..2006: switch_dmu_GTW28_position_spurt;
-    2007..2012: switch_dmu_GTW28_randomlivery_arriva_veolia;
-    switch_dmu_GTW28_randomlivery_arriva_veolia_breng;
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2012) {
+	10: switch_dmu_GTW28_Arriva;
+	10: switch_dmu_GTW28_Spurt;
+	5: switch_dmu_GTW28_Veolia_portret;
+	5: switch_dmu_GTW28_Breng;
 }
-
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_livery, cargo_subtype) {
-    1: switch_dmu_GTW28_position_spurt;
-    2: switch_dmu_GTW28_velios;
-    3: switch_dmu_GTW28_position_breng;
-    switch_dmu_GTW28_randomlivery;
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2013) {
+	10: switch_dmu_GTW28_Arriva;
+	10: switch_dmu_GTW28_Spurt;
+	5: switch_dmu_GTW28_Veolia_portret;
+	5: switch_dmu_GTW28_Breng_portret;
 }
-
-// CARGO SUBTYPE CALLBACK
-switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_subtype_text, cargo_subtype) {
-    0: return string(str_cargo_subtype_random);
-    1: return string(str_cargo_subtype_Arriva_spurt);
-    2: return string(str_cargo_subtype_Veolia_velios);
-    3: return string(str_cargo_subtype_Breng);
-    return CB_RESULT_NO_TEXT;
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2017) {
+	10: switch_dmu_GTW28_Arriva;
+	10: switch_dmu_GTW28_Spurt;
+	5: switch_dmu_GTW28_Limburg;
+	5: switch_dmu_GTW28_Breng_portret;
+}
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2021) {
+	10: switch_dmu_GTW28_Noord;
+	10: switch_dmu_GTW28_Spurt;
+	5: switch_dmu_GTW28_Limburg;
+	5: switch_dmu_GTW28_Breng_portret;
+}
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_randomlivery, current_year) { 
+      0..2006:			switch_dmu_GTW28_randomlivery_2006;
+      2007:				switch_dmu_GTW28_randomlivery_2007;
+      2008..2011:		switch_dmu_GTW28_randomlivery_2008;
+      2012:				switch_dmu_GTW28_randomlivery_2012;
+      2013..2016:		switch_dmu_GTW28_randomlivery_2013;
+      2017..2020:		switch_dmu_GTW28_randomlivery_2017;
+      switch_dmu_GTW28_randomlivery_2021;
+}
+//Livery Switch Sets
+switch(FEAT_TRAINS,SELF,switch_dmu_GTW28_livery,cargo_subtype){
+    0: 	switch_dmu_GTW28_randomlivery;
+	1:	switch_dmu_GTW28_Arriva;
+    2:	switch_dmu_GTW28_Spurt;
+    3:	switch_dmu_GTW28_Limburg;
+    4:	switch_dmu_GTW28_Noord;
+    5:	switch_dmu_GTW28_Veolia;
+    6:	switch_dmu_GTW28_Veolia_portret;
+    7:	switch_dmu_GTW28_Breng;
+    8:	switch_dmu_GTW28_Breng_portret;
+    9:	switch_dmu_GTW28_RRReis;
+}
+//Livery Switch Text
+switch(FEAT_TRAINS,SELF,switch_dmu_GTW28_subtype_text,cargo_subtype){
+	0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_Arriva);
+    2: return string(str_cargo_subtype_Arriva_spurt);
+    3: return string(str_cargo_subtype_Arriva_Limburg);
+    4: return string(str_cargo_subtype_Arriva_Noord);
+    5: return string(str_cargo_subtype_Veolia);
+    6: return string(str_cargo_subtype_Veolia_portrait);
+    7: return string(str_cargo_subtype_Breng);
+    8: return string(str_cargo_subtype_Breng_portret);
+    9: return string(str_cargo_subtype_rrreis);
+       return CB_RESULT_NO_TEXT;
 }
 
 /*
@@ -181,9 +271,9 @@ switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_articulated, extra_callback_info1) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_dmu_GTW28_length, (position_in_articulated_veh)) {
-    1: return 3;
-    2: return 7;
-    return 8;
+    1: return 5;
+    2: return 3;
+    return 6;
 }
 
 /*

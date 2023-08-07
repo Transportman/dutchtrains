@@ -10,16 +10,16 @@
 * ITEM
 */
 
-switch(FEAT_TRAINS, SELF, switch_coaches_Nightjet_additional_text, [
+switch(FEAT_TRAINS, SELF, switch_coaches_Greencitytrip_additional_text, [
         STORE_TEMP((param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 4 : 6, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
     return string(str_purchase_axl_ltm, string(str_purchase_axl_B));
 }
 
-item(FEAT_TRAINS, item_coaches_Nightjet) {
+item(FEAT_TRAINS, item_coaches_Greencitytrip) {
     property {
-        name: string(str_coaches_Nightjet);
+        name: string(str_coaches_Greencitytrip);
         
         introduction_date: date(2021,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -55,10 +55,9 @@ item(FEAT_TRAINS, item_coaches_Nightjet) {
         bitmask_vehicle_info: bitmask(0);
 	}
     graphics {
-        additional_text: switch_coaches_Nightjet_additional_text;
-        purchase: spriteset_coaches_Nightjet_purchase;
-		cargo_subtype_text: switch_coaches_Nightjet_subtype_text;
+        additional_text: switch_coaches_Greencitytrip_additional_text;
+        purchase: spriteset_coaches_Greencitytrip_purchase;
         colour_mapping: PALETTE_USE_DEFAULT;
-		switch_coaches_Nightjet_livery;
+		spriteset_coaches_Greencitytrip;
     }
 }

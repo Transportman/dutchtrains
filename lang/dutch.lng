@@ -143,8 +143,8 @@ str_cargo_subtype_lll                           : > Lage Landen Lijn
 str_cargo_subtype_hispeed           : > NS Hispeed-kleurstelling
 str_cargo_subtype_hispeed_cab       : > NS Hispeed-kleurstelling (stuurstand)
 str_cargo_subtype_maashopper        : > Veolia-kleurstelling wit/rood 'Maashopper'
-str_cargo_subtype_nid               : > NID-kleurstelling
-str_cargo_subtype_nid_cab           : > NID-kleurstelling (stuurstand)
+str_cargo_subtype_nid               : > DDZ-kleurstelling
+str_cargo_subtype_nid_cab           : > DDZ-kleurstelling (stuurstand)
 str_cargo_subtype_ns_ic             : > NS InterCity-kleurstelling
 str_cargo_subtype_ns_ic_cab         : > NS InterCity-kleurstelling (stuurstand)
 str_cargo_subtype_olympic           : > Olympische kleurstelling
@@ -160,8 +160,6 @@ str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR-kleurstelling (22 d
 str_cargo_subtype_strandsprinter_beachballs: > 'Strandsprinter'-kleurstelling met strandballen
 str_cargo_subtype_strandsprinter    : > 'Strandsprinter'-kleurstelling
 str_cargo_subtype_TGV                           : > Thalys-kleurstelling
-str_cargo_subtype_TGV_PBKA          : > PBKA-kleurstelling
-str_cargo_subtype_TGV_PBA           : > PBA-kleurstelling
 str_cargo_subtype_valleilijn_yellow_blue    : >Valleilijn geel/blauwe kleurstelling
 str_cargo_subtype_valleilijn_blue_yellownose: >Valleilijn blauwe kleurstelling met gele neus
 str_cargo_subtype_valleilijn_blue           : >Valleilijn blauwe kleurstelling (fictief)
@@ -232,7 +230,6 @@ str_cargo_subtype_SS_tank           : > Staatsspoorwegen-kleurstelling (tankloco
 str_cargo_subtype_SS_NS             : > Staatsspoorwegen-/NS-kleurstelling
 str_cargo_subtype_Strukton          : > Strukton-kleurstelling
 str_cargo_subtype_Syntus            : > Syntus-kleurstelling
-str_cargo_subtype_Twents            : > Twents-kleurstelling
 str_cargo_subtype_Veolia            : > Veolia-kleurstelling
 str_cargo_subtype_Veolia_velios     : > Veolia 'Velios'-kleurstelling
 str_cargo_subtype_Veolia_white_red  : > Veolia-kleurstelling (wit/rood)
@@ -317,8 +314,8 @@ str_electric_NS1300     :NS 1300 (elektrisch)
 str_electric_NS1500     :NS 1500 (elektrisch)
 str_electric_NS1600     :NS 1600/1800 (elektrisch)
 str_electric_NS1700     :NS 1700 (elektrisch)
-str_electric_NID        :Nieuwe intercity-dubbeldekker (elektrisch)
-str_electric_NID_t      :Nieuwe intercity-dubbeldekker (elektrisch)
+str_electric_NID        :DDZ "Dubbeldekker Zonering" (elektrisch)
+str_electric_NID_t      :DDZ "Dubbeldekker Zonering" (elektrisch)
 str_electric_mDDM       :mDDM (elektrisch)
 str_electric_NS1600P    :NS 1600P (elektrisch)
 str_electric_HLE11      :NMBS HLE 11 (elektrisch)
@@ -487,7 +484,7 @@ str_coaches_Avmz        :Rijtuig Avmz
 str_coaches_ICL         :Rijtuig ICL
 str_coaches_M2          :Rijtuig NMBS M2
 str_coaches_K4          :Rijtuig NMBS K4
-str_coaches_DDAR        :Dubbeldekkerrijtuig DDM/NID
+str_coaches_DDAR        :Dubbeldekkerrijtuig DDM/DDZ
 str_coaches_gen9_IC_DD  :Dubbeldekkerrijtuig HS-DD
 str_coaches_PlanN       :Slaaprijtuig Plan N
 str_coaches_Couchette   :Slaaprijtuig Couchette Bcm
@@ -611,7 +608,7 @@ str_purchase_diesel_RN232   :Voorheen bekend als: {SILVER} DB BR 232.
 
 str_purchase_electric_NS1100:Gereviseerd 1979: {YELLOW}+4% gewicht, +1/8 lengte.
 str_purchase_electric_NS1500:Voorheen bekend als: {SILVER} BR Class EM2.
-str_purchase_electric_mDDM_NID:Voor gebruik met dubbeldekkerrijtuig DDM/NID.
+str_purchase_electric_mDDM_NID:Voor gebruik met dubbeldekkerrijtuig DDM/DDZ.
 str_purchase_electric_HLE11 :Voor gebruik met Rijtuig ICR voor Beneluxtrein.
 str_purchase_electric_HLE25 :Voor gebruik met Rijtuig Plan W voor Beneluxtrein.
 str_purchase_electric_TRAXXF140MS2:Voor gebruik met ICR-rijtuig voor Beneluxtrein. Aangepaste TRAXX F140 MS2.{}Meersysteemlocomotief, {YELLOW}+87% vermogen {BLACK}op 25 kV ~ geëlektrificeerd spoor.
@@ -651,7 +648,7 @@ str_purchase_spc_battery_WINK_no_track  :Accu-aangedreven treinstel.
 
 str_purchase_coaches_ZHESM_B:Later bekend als: {SILVER} NS B9900.{}{BLACK}Voor gebruik met motorwagen ZHESM mBC.
 str_purchase_coaches_Mat24  :Voor gebruik met motorwagen Mat '24.
-str_purchase_coaches_DDAR   :Voor gebruik met motorwagen mDDM of NID.
+str_purchase_coaches_DDAR   :Voor gebruik met motorwagen mDDM of DDZ.
 str_purchase_coaches_PlanW  :Voor gebruik met elektrische NS-locomotieven voor nationale treindienst en NMBS HLE 25.5 voor Beneluxtrein.
 str_purchase_coaches_IRC    :Voor gebruik met elektrische NS-locomotieven voor nationale treindienst, NMBS HLE 11 voor Beneluxtrein en NS Hispeed 186 als Fyra.
 str_purchase_wagons_gen10_CargoDD       :Voor gebruik met Futuristic Cargo Mover.{}Fictief.

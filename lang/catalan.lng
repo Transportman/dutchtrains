@@ -161,8 +161,6 @@ str_cargo_subtype_sr10              :> Sr10 Royal ICR (des del 22 desembre del 1
 str_cargo_subtype_strandsprinter_beachballs:> "Strandsprinter" amb pilotes de platja
 str_cargo_subtype_strandsprinter    :> "Strandsprinter"
 str_cargo_subtype_TGV                           :> Thalys
-str_cargo_subtype_TGV_PBKA          :> PBKA
-str_cargo_subtype_TGV_PBA           :> PBA
 str_cargo_subtype_valleilijn_yellow_blue    :>Valleilijn groc/blau
 str_cargo_subtype_valleilijn_blue_yellownose:> Valleilijn color blau amb morro groc
 str_cargo_subtype_valleilijn_blue           :> Valleilijn blau (fictici)
@@ -230,7 +228,6 @@ str_cargo_subtype_SS_tank           :> SS (locomotora cisterna)
 str_cargo_subtype_SS_NS             :> Staatsspoorwegen / NS
 str_cargo_subtype_Strukton          :> Strukton
 str_cargo_subtype_Syntus            :> Syntus
-str_cargo_subtype_Twents            :> Twents
 str_cargo_subtype_Veolia            :> Veolia
 str_cargo_subtype_Veolia_velios     :> Veolia "Velios"
 str_cargo_subtype_Veolia_white_red  :> Veolia (blanc/vermell)

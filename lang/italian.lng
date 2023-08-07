@@ -162,8 +162,6 @@ str_cargo_subtype_sr10              :> livrea reale Sr10 ICR (dal 22/12/1993 in 
 str_cargo_subtype_strandsprinter_beachballs:> livrea "Strandsprinter" con palloni da spiaggia
 str_cargo_subtype_strandsprinter    :> livrea "Strandsprinter"
 str_cargo_subtype_TGV                           :> livrea Thalys
-str_cargo_subtype_TGV_PBKA          :> livrea PBKA
-str_cargo_subtype_TGV_PBA           :> livrea PBA
 str_cargo_subtype_valleilijn_yellow_blue    :> livrea Valleilijn gialla/blu
 str_cargo_subtype_valleilijn_blue_yellownose:> livrea Valleilijn blu con naso giallo
 str_cargo_subtype_valleilijn_blue           :> livrea Valleilijn blu (immaginaria)
@@ -231,7 +229,6 @@ str_cargo_subtype_SS_tank           :> livrea SS (locotender)
 str_cargo_subtype_SS_NS             :> livrea Staatsspoorwegen / NS
 str_cargo_subtype_Strukton          :> livrea Strukton
 str_cargo_subtype_Syntus            :> livrea Syntus
-str_cargo_subtype_Twents            :> Livrea Twents
 str_cargo_subtype_Veolia            :> livrea Veolia
 str_cargo_subtype_Veolia_velios     :> livrea Veolia "Velios"
 str_cargo_subtype_Veolia_white_red  :> livrea Veolia (bianco/rosso)

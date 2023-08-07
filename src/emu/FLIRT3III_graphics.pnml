@@ -111,6 +111,24 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_NS_position, (position_in_articul
 	1: spriteset_emu_FLIRT3III_NS_middle;
 	spriteset_emu_FLIRT3III_NS_back;
 }
+//RRReis
+spriteset(spriteset_emu_FLIRT3III_RRReis_front, "gfx/emu/FLIRT3_RRREIS.png") {
+	template_2cc_88(1,1)
+}
+
+spriteset(spriteset_emu_FLIRT3III_RRReis_middle, "gfx/emu/FLIRT3_RRREIS.png") {
+	template_2cc_68(1,32)
+}
+
+spriteset(spriteset_emu_FLIRT3III_RRReis_back, "gfx/emu/FLIRT3_RRREIS.png") {
+	template_2cc_88(1,95)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_RRReis_position, (position_in_articulated_veh)) { 
+	0: spriteset_emu_FLIRT3III_RRReis_front;
+	1: spriteset_emu_FLIRT3III_RRReis_middle;
+	spriteset_emu_FLIRT3III_RRReis_back;
+}
 
 /*
 * LIVERY SELECTION
@@ -142,6 +160,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_livery, cargo_subtype){
     3:	switch_emu_FLIRT3III_Blauwnet_position;
     4:	switch_emu_FLIRT3III_Connexxion_position;
     5:	switch_emu_FLIRT3III_drielanden_position;
+    6:	switch_emu_FLIRT3III_RRReis_position;
 }
 
 // CARGO SUBTYPE CALLBACK
@@ -152,6 +171,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3III_subtype_text, cargo_subtype){
     3: return string(str_cargo_subtype_Keolis_blauwnet);
     4: return string(str_cargo_subtype_Connexxion_valleilijn);
 	5: return string(str_cargo_subtype_Arriva_drielanden);
+	6: return string(str_cargo_subtype_rrreis);
 	return CB_RESULT_NO_TEXT;
 }
 

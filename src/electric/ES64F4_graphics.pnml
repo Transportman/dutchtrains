@@ -42,9 +42,13 @@ spriteset(spriteset_electric_ES64F4_ers, "gfx/electric/ES64F4.png") {
 spriteset(spriteset_electric_ES64F4_dbs, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 64)
 }
-//db schenker
+//locon
 spriteset(spriteset_electric_ES64F4_locon, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 96)
+}
+//MRCE
+spriteset(spriteset_electric_ES64F4_mrce, "gfx/electric/ES64F4.png") {
+	template_2cc_88(1, 128)
 }
 
 /*
@@ -56,11 +60,13 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_random_all) {
     1: spriteset_electric_ES64F4_ers;
     1: spriteset_electric_ES64F4_husa;
     1: spriteset_electric_ES64F4_locon;
+    1: spriteset_electric_ES64F4_mrce;
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_random_dbsers) {
 	1: spriteset_electric_ES64F4_dbs;
     1: spriteset_electric_ES64F4_ers;
+    1: spriteset_electric_ES64F4_mrce;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_randomlivery, build_year) {
@@ -74,6 +80,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_livery, cargo_subtype) {
     2: spriteset_electric_ES64F4_ers;
     3: spriteset_electric_ES64F4_husa;
     4: spriteset_electric_ES64F4_locon;
+    5: spriteset_electric_ES64F4_mrce;
     switch_electric_ES64F4_randomlivery;
 }
 
@@ -84,6 +91,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_subtype_text, cargo_subtype) {
     2: return string(str_cargo_subtype_ERS);
     3: return string(str_cargo_subtype_HUSA);
     4: return string(str_cargo_subtype_Locon);
+    5: return string(str_cargo_subtype_MRCE);
     return CB_RESULT_NO_TEXT;
 }
 

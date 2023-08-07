@@ -19,11 +19,15 @@ spriteset(spriteset_electric_Vectron_purchase_MRCE, "gfx/purchase/electric/Vectr
 spriteset(spriteset_electric_Vectron_purchase_DBSchenker, "gfx/purchase/electric/Vectron_DBSchenker.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_electric_Vectron_purchase_NS, "gfx/purchase/electric/Vectron_NS.png") {
+	template_purchase(0, 0)
+}
 
 switch(FEAT_TRAINS, PARENT, switch_electric_Vectron_purchase, current_year) {
 	0..2014: spriteset_electric_Vectron_purchase_ELL;
     2015..2016:	spriteset_electric_Vectron_purchase_MRCE;
-	spriteset_electric_Vectron_purchase_DBSchenker;
+	2017..2019: spriteset_electric_Vectron_purchase_DBSchenker;
+	spriteset_electric_Vectron_purchase_NS;
 }
 
 /*
@@ -73,11 +77,29 @@ spriteset(spriteset_electric_Vectron_SBB, "gfx/electric/Vectron.png") {
 	template_2cc_88(1, 240)
 }
 
+//SBB
+spriteset(spriteset_electric_Vectron_NS, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 270)
+}
+
 /*
 * LIVERY SELECTION
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_all) {
+	5: spriteset_electric_Vectron_DBSchenker;
+	5: spriteset_electric_Vectron_ELL;
+	4: spriteset_electric_Vectron_MRCE;
+	3: spriteset_electric_Vectron_NS;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+	2: spriteset_electric_Vectron_SBB;
+	2: spriteset_electric_Vectron_Captrain;
+	1: spriteset_electric_Vectron_HUPAC;
+	1: spriteset_electric_Vectron_Vectron;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_2018) {
 	5: spriteset_electric_Vectron_DBSchenker;
 	5: spriteset_electric_Vectron_ELL;
 	4: spriteset_electric_Vectron_MRCE;
@@ -118,13 +140,15 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_randomlivery, build_year) {
     2015: switch_electric_Vectron_random_2015;
 	2016: switch_electric_Vectron_random_2016; 
 	2017: switch_electric_Vectron_random_2017;
+	2018..2019: switch_electric_Vectron_random_2018;
 	switch_electric_Vectron_random_all;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_Vectron_purchaselivery, build_year) {
 	0..2014: spriteset_electric_Vectron_ELL;
 	2015..2016: spriteset_electric_Vectron_MRCE;
-	spriteset_electric_Vectron_DBSchenker;
+	2017..2019: spriteset_electric_Vectron_DBSchenker;
+	spriteset_electric_Vectron_NS;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_Vectron_livery, cargo_subtype) {
@@ -138,6 +162,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_livery, cargo_subtype) {
 	8: spriteset_electric_Vectron_Captrain;
 	9: spriteset_electric_Vectron_MRCE;
 	10: spriteset_electric_Vectron_SBB;
+	11: spriteset_electric_Vectron_NS;
     switch_electric_Vectron_randomlivery;
 }
 
@@ -154,6 +179,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_subtype_text, cargo_subtype) {
     8: return string(str_cargo_subtype_Captrain);
     9: return string(str_cargo_subtype_MRCE);
     10: return string(str_cargo_subtype_SBB);
+    11: return string(str_cargo_subtype_ns_flow);
     return CB_RESULT_NO_TEXT;
 }
 

@@ -25,7 +25,7 @@ item(FEAT_TRAINS, item_emu_ICNGV) {
 		name:	string(str_emu_ICNGV);
 		//Constants
 		model_life:	VEHICLE_NEVER_EXPIRES;
-		introduction_date:	date(2021,01,01);
+		introduction_date:	date(2023,01,01);
 		vehicle_life: 30;
 		loading_speed: (param_loading_speed == 0) ? 28 : (param_loading_speed == 2) ? 112 : 56;
         //                                          ^ slow                      fast ^   ^ medium
@@ -58,8 +58,9 @@ item(FEAT_TRAINS, item_emu_ICNGV) {
         cargo_capacity: return 52;
         purchase: spriteset_emu_ICNGV_purchase;
         additional_text: switch_emu_ICNGV_additional_text;
+		cargo_subtype_text: switch_emu_ICNGV_subtype_text;
         articulated_part: switch_emu_ICNGV_articulated;
         visual_effect_and_powered: switch_emu_ICNGV_visual_effect_and_powered;
-        switch_emu_ICNGV_position;
+        switch_emu_ICNGV_livery;
 	}
 }

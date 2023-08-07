@@ -113,3 +113,105 @@ template template_2cc_18(x, y) {
     [x+120, y, 32, 16, -16, -12]
     [x+153, y, 22, 20,  -6, -19]
 }
+
+/*
+ * The templates below are the same as the ones above, however these
+ * have the ANIM tag such that they may be used for bulk cargo replacement 
+ * which in the Dutch Trainset makes use of animated colours.
+*/
+
+template template_2cc_88_anim(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, ANIM]
+    [x    , y,  8, 24,  -3, -12, ANIM]
+    [x+9  , y, 22, 20, -14, -12, ANIM]
+    [x+32 , y, 32, 16, -16, -12, ANIM]
+    [x+65 , y, 22, 20,  -6, -12, ANIM]
+    [x+88 , y,  8, 24,  -3, -12, ANIM]
+    [x+97 , y, 22, 20, -14, -12, ANIM]
+    [x+120, y, 32, 16, -16, -12, ANIM]
+    [x+153, y, 22, 20,  -6, -12, ANIM]
+}
+
+template template_2cc_78_anim(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, ANIM]
+    [x    , y,  8, 24,  -3, -14, ANIM]
+    [x+9  , y, 22, 20, -14, -13, ANIM]
+    [x+32 , y, 32, 16, -16, -12, ANIM]
+    [x+65 , y, 22, 20,  -6, -12, ANIM]
+    [x+88 , y,  8, 24,  -3, -12, ANIM]
+    [x+97 , y, 22, 20, -14, -12, ANIM]
+    [x+120, y, 32, 16, -16, -12, ANIM]
+    [x+153, y, 22, 20,  -6, -13, ANIM]
+}
+
+template template_2cc_68_anim(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, ANIM]
+    [x    , y,  8, 24,  -3, -16, ANIM]
+    [x+9  , y, 22, 20, -14, -14, ANIM]
+    [x+32 , y, 32, 16, -16, -12, ANIM]
+    [x+65 , y, 22, 20,  -6, -12, ANIM]
+    [x+88 , y,  8, 24,  -3, -12, ANIM]
+    [x+97 , y, 22, 20, -14, -12, ANIM]
+    [x+120, y, 32, 16, -16, -12, ANIM]
+    [x+153, y, 22, 20,  -6, -14, ANIM]
+}
+
+template template_2cc_58_anim(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, ANIM]
+    [x    , y,  8, 24,  -3, -18, ANIM]
+    [x+9  , y, 22, 20, -14, -15, ANIM]
+    [x+32 , y, 32, 16, -16, -12, ANIM]
+    [x+65 , y, 22, 20,  -6, -12, ANIM]
+    [x+88 , y,  8, 24,  -3, -12, ANIM]
+    [x+97 , y, 22, 20, -14, -12, ANIM]
+    [x+120, y, 32, 16, -16, -12, ANIM]
+    [x+153, y, 22, 20,  -6, -15, ANIM]
+}
+
+template template_2cc_48_anim(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, ANIM]
+    [x    , y,  8, 24,  -3, -20, ANIM]
+    [x+9  , y, 22, 20, -14, -16, ANIM]
+    [x+32 , y, 32, 16, -16, -12, ANIM]
+    [x+65 , y, 22, 20,  -6, -12, ANIM]
+    [x+88 , y,  8, 24,  -3, -12, ANIM]
+    [x+97 , y, 22, 20, -14, -12, ANIM]
+    [x+120, y, 32, 16, -16, -12, ANIM]
+    [x+153, y, 22, 20,  -6, -16, ANIM]
+}
+
+template template_2cc_38_anim(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, ANIM]
+    [x    , y,  8, 24,  -3, -22, ANIM]
+    [x+9  , y, 22, 20, -14, -17, ANIM]
+    [x+32 , y, 32, 16, -16, -12, ANIM]
+    [x+65 , y, 22, 20,  -6, -12, ANIM]
+    [x+88 , y,  8, 24,  -3, -12, ANIM]
+    [x+97 , y, 22, 20, -14, -12, ANIM]
+    [x+120, y, 32, 16, -16, -12, ANIM]
+    [x+153, y, 22, 20,  -6, -17, ANIM]
+}
+
+template template_2cc_28_anim(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, ANIM]
+    [x    , y,  8, 24,  -3, -24, ANIM]
+    [x+9  , y, 22, 20, -14, -18, ANIM]
+    [x+32 , y, 32, 16, -16, -12, ANIM]
+    [x+65 , y, 22, 20,  -6, -12, ANIM]
+    [x+88 , y,  8, 24,  -3, -12, ANIM]
+    [x+97 , y, 22, 20, -14, -12, ANIM]
+    [x+120, y, 32, 16, -16, -12, ANIM]
+    [x+153, y, 22, 20,  -6, -18, ANIM]
+}
+
+template template_2cc_18_anim(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, ANIM]
+    [x    , y,  8, 24,  -3, -26, ANIM]
+    [x+9  , y, 22, 20, -14, -19, ANIM]
+    [x+32 , y, 32, 16, -16, -12, ANIM]
+    [x+65 , y, 22, 20,  -6, -12, ANIM]
+    [x+88 , y,  8, 24,  -3, -12, ANIM]
+    [x+97 , y, 22, 20, -14, -12, ANIM]
+    [x+120, y, 32, 16, -16, -12, ANIM]
+    [x+153, y, 22, 20,  -6, -19, ANIM]
+}

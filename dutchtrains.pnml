@@ -361,6 +361,8 @@
 #include "src/coaches/Nightjet_item.pnml"
 #include "src/coaches/Bpmmz_graphics.pnml"
 #include "src/coaches/Bpmmz_item.pnml"
+#include "src/coaches/Greencitytrip_graphics.pnml"
+#include "src/coaches/Greencitytrip_item.pnml"
 
 //baggage and mail wagons
 #include "src/coaches/SS_E_129_graphics.pnml"

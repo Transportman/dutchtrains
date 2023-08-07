@@ -16,10 +16,14 @@ spriteset(spriteset_electric_TRAXXF140MS2_purchase_green, "gfx/purchase/electric
 spriteset(spriteset_electric_TRAXXF140MS2_purchase_red, "gfx/purchase/electric/TRAXXF140MS2_red.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_electric_TRAXXF140MS2_purchase_NS, "gfx/purchase/electric/TRAXXF140MS2_NS.png") {
+	template_purchase(0, 0)
+}
 
 switch(FEAT_TRAINS, PARENT, switch_electric_TRAXXF140MS2_purchase, current_year) {
 	0..2010: spriteset_electric_TRAXXF140MS2_purchase_green;
-    spriteset_electric_TRAXXF140MS2_purchase_red;
+    2011..2014: spriteset_electric_TRAXXF140MS2_purchase_red;
+    spriteset_electric_TRAXXF140MS2_purchase_NS;
 }
 
 /*
