@@ -100,3 +100,13 @@ switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2, sw_reversal_check_pu
 	
 switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull, sw_reversal_check_push_pull_1() && sw_reversal_check_push_pull_2()) {return;}
 
+
+switch (FEAT_TRAINS, SELF, par_reversed, [STORE_TEMP(-position_in_consist, 0x10F), var[0x61, 0, 0x000000FF, 0xFF]]) {return;}
+
+switch (FEAT_TRAINS, SELF, build_date_push_pull, par_reversed()*[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]+!(par_reversed())*var[0x49, 0, 0xFFFFFFFF]) {return;}
+
+switch (FEAT_TRAINS, SELF, service_date_push_pull, par_reversed()*[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x4B]]+!(par_reversed())*var[0x4B, 0, 0xFFFFFFFF]) {return;}
+
+switch (FEAT_TRAINS, SELF, livery_push_pull, par_reversed()*[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]+!(par_reversed())*var[0xF2, 0, 0x0000FFFF]) {return;}
+
+

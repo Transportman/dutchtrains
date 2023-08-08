@@ -64,6 +64,7 @@ item(FEAT_TRAINS, item_coaches_DDAR) {
         purchase: switch_coaches_DDAR_purchase;
         cargo_subtype_text: switch_coaches_DDAR_subtype_text;
         cargo_capacity: switch_coaches_DDAR_capacity;
+        colour_mapping: PALETTE_USE_DEFAULT;
         switch_coaches_DDAR_livery;
     }
 }

@@ -58,6 +58,7 @@ item(FEAT_TRAINS, item_electric_NS1500) {
         cargo_subtype_text: switch_electric_NS1500_subtype_text;
         additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_iphf), string(str_purchase_axl_C), string(str_purchase_electric_NS1500));
         cargo_capacity: return 0;
+        colour_mapping: PALETTE_USE_DEFAULT;		
         switch_electric_NS1500_livery;
     }
 }

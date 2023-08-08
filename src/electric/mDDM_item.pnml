@@ -65,6 +65,7 @@ item(FEAT_TRAINS, item_electric_mDDM) {
     graphics {
         purchase: spriteset_electric_mDDM_purchase;
         additional_text: switch_electric_mDDM_additional_text;
+        colour_mapping: PALETTE_USE_DEFAULT;
         switch_electric_mDDM;
     }
 }

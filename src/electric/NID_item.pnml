@@ -64,6 +64,7 @@ item(FEAT_TRAINS, item_electric_NID) {
     graphics {
         purchase: spriteset_electric_NID_purchase;
         additional_text: switch_electric_NID_additional_text;
+        colour_mapping: PALETTE_USE_DEFAULT;
         switch_electric_NID;
     }
 }

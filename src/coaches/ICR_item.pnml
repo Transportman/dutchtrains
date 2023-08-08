@@ -64,6 +64,7 @@ item(FEAT_TRAINS, item_coaches_ICR) {
         additional_text: switch_coaches_ICR_additional_text;
         purchase: switch_coaches_ICR_purchase;
         cargo_subtype_text: switch_coaches_ICR_subtype_text;
+        colour_mapping: PALETTE_USE_DEFAULT;
         switch_coaches_ICR_livery;
     }
 }

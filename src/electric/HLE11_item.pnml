@@ -55,6 +55,7 @@ item(FEAT_TRAINS, item_electric_HLE11) {
 	}
     graphics {
         purchase: spriteset_electric_HLE11_purchase;
+        colour_mapping: PALETTE_USE_DEFAULT;
         additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_C), string(str_purchase_electric_HLE11));
         switch_electric_HLE11;
     }
