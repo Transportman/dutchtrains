@@ -21,3 +21,7 @@ spriteset(spriteset_electric_HLE25_5_purchase, "gfx/purchase/electric/HLE25_5.pn
 spriteset(spriteset_electric_HLE25_5, "gfx/electric/HLE25_5.png") {
 	template_2cc_88(1, 1)
 }
+
+spriteset(spriteset_REV_electric_HLE25_5, "gfx/electric/HLE25_5.png") {
+	template_2cc_88r(1, 1)
+}

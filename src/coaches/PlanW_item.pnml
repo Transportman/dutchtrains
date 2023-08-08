@@ -18,6 +18,11 @@ switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_additional_text, [
     return string(str_purchase_axl_ltm_spc);
 }
 
+switch(FEAT_TRAINS, PARENT, switch_coaches_PlanW_livery, vehicle_is_reversed && sw_reversal_check_loc_car(item_electric_HLE25,item_coaches_PlanW)){
+	0: switch_for_coaches_PlanW_livery;
+	1: sw_REV_id_check;
+}
+
 item(FEAT_TRAINS, item_coaches_PlanW) {
     property {
         name: string(str_coaches_PlanW);

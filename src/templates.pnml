@@ -30,6 +30,18 @@ template template_2cc_88(x, y) {
     [x+153, y, 22, 20,  -6, -12]
 }
 
+template template_2cc_88r(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y]
+    [x+88 , y,  8, 24,  -3, -12]
+    [x+97 , y, 22, 20, -14, -12]
+    [x+120, y, 32, 16, -16, -12]
+    [x+153, y, 22, 20,  -6, -12]
+    [x    , y,  8, 24,  -3, -12]
+    [x+9  , y, 22, 20, -14, -12]
+    [x+32 , y, 32, 16, -16, -12]
+    [x+65 , y, 22, 20,  -6, -12]
+}
+
 template template_2cc_78(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -14]

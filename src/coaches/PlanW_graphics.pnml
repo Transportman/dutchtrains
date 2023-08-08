@@ -50,6 +50,23 @@ spriteset(spriteset_coaches_PlanD_benelux_cab, "gfx/coaches/PlanD.png") {
 	template_2cc_88(1, 64)
 }
 
+
+spriteset(spriteset_REV_coaches_PlanW_blue, "gfx/coaches/PlanW.png") {
+	template_2cc_88r(1, 1)
+}
+spriteset(spriteset_REV_coaches_PlanW_blue_banners, "gfx/coaches/PlanW.png") {
+	template_2cc_88r(1, 32)
+}
+spriteset(spriteset_REV_coaches_PlanW_benelux, "gfx/coaches/PlanW.png") {
+	template_2cc_88r(1, 64)
+}
+spriteset(spriteset_REV_coaches_PlanW_yellow_blue, "gfx/coaches/PlanW.png") {
+	template_2cc_88r(1, 96)
+}
+spriteset(spriteset_REV_coaches_PlanD_benelux_cab, "gfx/coaches/PlanD.png") {
+	template_2cc_88(1, 96)
+}
+
 /*
 * LIVERY SELECTION
 */
@@ -76,7 +93,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_purchaselivery, build_year) {
     spriteset_coaches_PlanW_yellow_blue;
 }
 
-switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_for_coaches_PlanW_livery, cargo_subtype) {
 	1: switch_coaches_PlanW_purchaselivery;
     2: spriteset_coaches_PlanW_blue;
     3: spriteset_coaches_PlanW_blue_banners;
@@ -85,6 +102,39 @@ switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_livery, cargo_subtype) {
     6: spriteset_coaches_PlanW_yellow_blue;
     switch_coaches_PlanW_autolivery;
 }
+
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_PlanW_beneluxcab, position_in_consist) {
+	0: spriteset_REV_coaches_PlanD_benelux_cab;
+	spriteset_REV_coaches_PlanW_benelux;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_REV_coaches_PlanW_autolivery_national, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x4B]]){
+	0..date(1969,12,31): spriteset_REV_coaches_PlanW_blue;
+	date(1970,1,1)..date(1981,12,31): spriteset_REV_coaches_PlanW_blue_banners;
+    spriteset_REV_coaches_PlanW_yellow_blue;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_REV_coaches_PlanW_autolivery, vehicle_type_id) {
+    item_electric_HLE25: switch_REV_coaches_PlanW_beneluxcab;
+    switch_REV_coaches_PlanW_autolivery_national;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_PlanW_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
+	0..1969: spriteset_REV_coaches_PlanW_blue;
+	1970..1981: spriteset_REV_coaches_PlanW_blue_banners;
+    spriteset_REV_coaches_PlanW_yellow_blue;
+}
+
+switch(FEAT_TRAINS, SELF, switch_rev_coaches_PlanW_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+	1: switch_REV_coaches_PlanW_purchaselivery;
+    2: spriteset_REV_coaches_PlanW_blue;
+    3: spriteset_REV_coaches_PlanW_blue_banners;
+    4: spriteset_REV_coaches_PlanW_benelux;
+    5: spriteset_REV_coaches_PlanD_benelux_cab;
+    6: spriteset_REV_coaches_PlanW_yellow_blue;
+    switch_REV_coaches_PlanW_autolivery;
+}
+
 
 // CARGO SUBTYPE CALLBACK
 switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_subtype_text, cargo_subtype) {

@@ -44,6 +44,24 @@ spriteset(spriteset_coaches_DDAR_DDM1_cab, "gfx/coaches/DDM1.png") {
 	template_2cc_88(1, 64)
 }
 
+spriteset(spriteset_REV_coaches_DDAR_NID, "gfx/electric/NID.png") {
+	template_2cc_88r(1, 32)
+}
+spriteset(spriteset_REV_coaches_DDAR_NID_cab, "gfx/electric/NID.png") {
+	template_2cc_88r(1, 64)
+}
+
+spriteset(spriteset_REV_coaches_DDAR_DDAR, "gfx/electric/mDDM.png") {
+	template_2cc_88r(1, 32)
+}
+spriteset(spriteset_REV_coaches_DDAR_DDAR_cab, "gfx/electric/mDDM.png") {
+	template_2cc_88r(1, 64)
+}
+
+spriteset(spriteset_REV_coaches_DDAR_DDM1_cab, "gfx/coaches/DDM1.png") {
+	template_2cc_88r(1, 64)
+}
+
 switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_NID_position, position_in_consist_from_end) {
 	0: spriteset_coaches_DDAR_NID_cab;
     spriteset_coaches_DDAR_NID;
@@ -59,6 +77,21 @@ switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_DDM1_position, position_in_consist
     spriteset_coaches_DDAR_DDAR;
 }
 
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_DDAR_NID_position, position_in_consist) {
+	0: spriteset_REV_coaches_DDAR_NID_cab;
+    spriteset_REV_coaches_DDAR_NID;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_DDAR_DDAR_position, position_in_consist) {
+	0: spriteset_REV_coaches_DDAR_DDAR_cab;
+    spriteset_REV_coaches_DDAR_DDAR;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_DDAR_DDM1_position, position_in_consist) {
+	0: spriteset_REV_coaches_DDAR_DDM1_cab;
+    spriteset_REV_coaches_DDAR_DDAR;
+}
+
 /*
 * LIVERY SELECTION
 */
@@ -69,7 +102,13 @@ switch(FEAT_TRAINS, PARENT, switch_coaches_DDAR_matchinglivery, vehicle_type_id)
     switch_coaches_DDAR_DDAR_position;
 }
 
-switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_livery, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, switch_REV_coaches_DDAR_matchinglivery, vehicle_type_id) {
+    item_electric_NID: switch_REV_coaches_DDAR_NID_position;
+    item_electric_NS1600: switch_REV_coaches_DDAR_DDM1_position;
+    switch_REV_coaches_DDAR_DDAR_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_for_DDAR_livery, cargo_subtype) {
 	1: spriteset_coaches_DDAR_DDAR;
 	2: spriteset_coaches_DDAR_DDM1_cab;
 	3: spriteset_coaches_DDAR_DDAR;
@@ -77,6 +116,16 @@ switch(FEAT_TRAINS, SELF, switch_coaches_DDAR_livery, cargo_subtype) {
     5: spriteset_coaches_DDAR_NID;
     6: spriteset_coaches_DDAR_NID_cab;
     switch_coaches_DDAR_matchinglivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_rev_DDAR_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+	1: spriteset_REV_coaches_DDAR_DDAR;
+	2: spriteset_REV_coaches_DDAR_DDM1_cab;
+	3: spriteset_REV_coaches_DDAR_DDAR;
+    4: spriteset_REV_coaches_DDAR_DDAR_cab;
+    5: spriteset_REV_coaches_DDAR_NID;
+    6: spriteset_REV_coaches_DDAR_NID_cab;
+    switch_REV_coaches_DDAR_matchinglivery;
 }
 
 // CARGO SUBTYPE CALLBACK
