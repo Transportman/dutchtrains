@@ -10,7 +10,7 @@
 * ITEM
 */
 
-switch(FEAT_TRAINS, PARENT, switch_electric_HLE25_5, vehicle_is_reversed && sw_reversal_check_loc_car(item_electric_HLE25,item_coaches_PlanW)){
+switch(FEAT_TRAINS, PARENT, switch_electric_HLE25_5, vehicle_is_reversed && sw_reversal_check_push_pull()){
 	0: spriteset_electric_HLE25_5;
 	1: sw_REV_id_check;
 }

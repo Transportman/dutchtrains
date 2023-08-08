@@ -18,7 +18,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_ICR_additional_text, [
     return string(str_purchase_axl_ltm_spc);
 }
 
-switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_livery, vehicle_is_reversed && sw_reversal_check_icr()){
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_livery, vehicle_is_reversed && sw_reversal_check_push_pull()){
 	0: switch_for_coaches_ICR_livery;
 	1: sw_REV_id_check;
 }

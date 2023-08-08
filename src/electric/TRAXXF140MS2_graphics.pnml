@@ -119,7 +119,7 @@ switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_purchaselivery, [STOR
 	spriteset_electric_TRAXXF140MS2_NS; 
 }
 
-switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
 	1: switch_REV_electric_TRAXXF140MS2_purchaselivery;
     2: spriteset_electric_TRAXXF140MS2_green;
     3: spriteset_electric_TRAXXF140MS2_red;
@@ -135,6 +135,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_subtype_text, cargo_subty
     2: return string(str_cargo_subtype_benelux);
     3: return string(str_cargo_subtype_fyra_red);
     4: return string(str_cargo_subtype_fyra_white);
+    5: return string(str_cargo_subtype_ns_ic);
     return CB_RESULT_NO_TEXT;
 }
 

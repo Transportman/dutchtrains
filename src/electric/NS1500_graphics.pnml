@@ -47,11 +47,28 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1500_purchaselivery, build_year) {
     spriteset_electric_NS1500_grey;
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1500_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_for_electric_NS1500_livery, cargo_subtype) {
 	1: switch_electric_NS1500_purchaselivery;
     2: spriteset_electric_NS1500_black;
     3: spriteset_electric_NS1500_grey;
     switch_electric_NS1500_autolivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1500_autolivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x4B]]) {
+	0..date(1971,12,31): spriteset_electric_NS1500_black;
+    spriteset_electric_NS1500_grey;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1500_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
+	0..1971: spriteset_electric_NS1500_black;
+    spriteset_electric_NS1500_grey;
+}
+
+switch(FEAT_TRAINS, SELF, switch_rev_electric_NS1500_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
+	1: switch_REV_electric_NS1500_purchaselivery;
+    2: spriteset_electric_NS1500_black;
+    3: spriteset_electric_NS1500_grey;
+    switch_REV_electric_NS1500_autolivery;
 }
 
 // CARGO SUBTYPE CALLBACK

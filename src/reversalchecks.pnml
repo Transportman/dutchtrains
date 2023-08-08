@@ -1,5 +1,102 @@
-switch (FEAT_TRAINS, PARENT, sw_reversal_check_loc_car, loc_id, car_id, count_veh_id(loc_id)+count_veh_id(car_id)==num_vehs_in_consist) {return;}
+switch (FEAT_TRAINS, PARENT, sw_first_veh_type_id_check, [STORE_TEMP(-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {return;}
 switch (FEAT_TRAINS, PARENT, sw_last_veh_type_id_check, [STORE_TEMP(num_vehs_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {return;}
+switch (FEAT_TRAINS, PARENT, sw_first_veh_livery_check, [STORE_TEMP(-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {return;}
 switch (FEAT_TRAINS, PARENT, sw_last_veh_livery_check, [STORE_TEMP(num_vehs_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {return;}
-switch (FEAT_TRAINS, PARENT, sw_reversal_check_icr, (sw_reversal_check_loc_car(item_electric_HLE11,item_coaches_ICR) ||  sw_reversal_check_loc_car(item_electric_TRAXXF140MS2,item_coaches_ICR)) && ((sw_last_veh_type_id_check()==item_coaches_ICR && ((sw_last_veh_livery_check()==0 || sw_last_veh_livery_check()==2) || (sw_last_veh_livery_check()==4 || sw_last_veh_livery_check()==6))) || sw_last_veh_type_id_check() != item_coaches_ICR)) {return;}
-switch (FEAT_TRAINS, PARENT, sw_reversal_check_ddar, (vehicle_type_id == 179||vehicle_type_id == 210||vehicle_type_id == 207)&&(count_veh_id(179)+count_veh_id(210)+count_veh_id(207)+count_veh_id(208)==num_vehs_in_consist)) {return;}
+switch (FEAT_TRAINS, PARENT, sw_first_veh_year_check, [STORE_TEMP(-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {return;}
+switch (FEAT_TRAINS, PARENT, sw_last_veh_year_check, [STORE_TEMP(num_vehs_in_consist-1, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {return;}
+
+/*In order for reversing/push-pull the following must be true:
+	1. All vehicles in the consist must be part of the push-pull group.
+		-item_electric_NS1200
+		-item_electric_NS1500
+		-item_electric_NS1600
+		-item_electric_NS1700
+		-item_electric_HLE11
+		-item_electric_HLE25
+		-item_electric_TRAXXF140MS2
+		-item_electric_NID
+		-item_electric_mDDM
+		-item_coaches_DDAR
+		-item_coaches_ICR
+		-item_coaches_PlanW
+*/
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_1, count_veh_id(item_electric_NS1200)+
+	count_veh_id(item_electric_NS1500)+
+	count_veh_id(item_electric_NS1600)+
+	count_veh_id(item_electric_NS1700)+
+	count_veh_id(item_electric_HLE11)+
+	count_veh_id(item_electric_HLE25)+
+	count_veh_id(item_electric_TRAXXF140MS2)+
+	count_veh_id(item_electric_NID)+
+	count_veh_id(item_electric_mDDM)+
+	count_veh_id(item_coaches_DDAR)+
+	count_veh_id(item_coaches_ICR)+
+	count_veh_id(item_coaches_PlanW)
+	==num_vehs_in_consist) {return;}
+	
+/*
+	2a. The rear-most car must be a cab car
+	
+		2a i. For item_coaches_DDAR this means one of 2 things
+			-subcargo_type == 0 and rear-most car is item_coaches_DDAR
+			-Rear-most car has subcargo_type == 2 || 4 || 6 and is item_coaches_DDAR
+*/
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2ai,sw_last_veh_type_id_check()==item_coaches_DDAR && (sw_last_veh_livery_check() == 0 || sw_last_veh_livery_check() == 2 || sw_last_veh_livery_check() == 4 || sw_last_veh_livery_check() == 6)) {return;}
+
+/*			
+		2a ii. For item_coaches_ICR this means 
+			-subcargo_type == 0 and rear-most car is item_coaches_ICR and...
+				-is built after 1986 with item_electric_HLE11 leading
+				-has item_electric_TRAXXF140MS2 built before 2010 with cargo_subtype==1 leading
+					-coach is built in range 2009..2012
+				-has item_electric_TRAXXF140MS2 with cargo_subtype==2 leading
+					-coach is built in range 2009..2012
+				-does not have item_electric_TRAXXF140MS2 with cargo_subtype==0 leading
+				-is built after 2005 with a any other loco leading
+			-Rear-most car has subcargo_type == 2 || 4 || 6 and is item_coaches_ICR
+*/
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_a, sw_first_veh_type_id_check() == item_electric_HLE11 && sw_last_veh_year_check() > 1986) {return;}
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_b,sw_first_veh_type_id_check() == item_electric_TRAXXF140MS2 && sw_first_veh_livery_check() == 1 && sw_first_veh_year_check() <= 2010 && sw_last_veh_year_check() >= 2009 && sw_last_veh_year_check() <= 2012) {return;}
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_c,sw_first_veh_type_id_check() == item_electric_TRAXXF140MS2 && sw_first_veh_livery_check() == 1 && sw_last_veh_year_check() >= 2009 && sw_last_veh_year_check() <= 2012) {return;}
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_d,(sw_last_veh_livery_check() == 2 || sw_last_veh_livery_check() == 4 || sw_last_veh_livery_check() == 6)) {return;}
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_e,(sw_last_veh_livery_check() == 0 && sw_first_veh_type_id_check() != item_electric_HLE11 && sw_first_veh_type_id_check() != item_electric_TRAXXF140MS2)) {return;}
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii,(sw_last_veh_livery_check() == 0 && (sw_reversal_check_push_pull_2aii_e() || sw_reversal_check_push_pull_2aii_a() || sw_reversal_check_push_pull_2aii_b() || sw_reversal_check_push_pull_2aii_c()) && !(sw_first_veh_type_id_check() == item_electric_TRAXXF140MS2 && sw_first_veh_livery_check() == 0) || sw_reversal_check_push_pull_2aii_d())) {return;}
+
+/*
+		2a iii. For item_coaches_PlanW this means
+			-leading vehicle is item_electric_HLE25 && subcargo_type==0 and rear-most car is item_coaches_PlanW
+			-Rear-most car has subcargo_type == 5 and is item_coaches_PlanW
+*/
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aiii,sw_last_veh_type_id_check()==item_coaches_PlanW && ((sw_last_veh_livery_check() == 0 && sw_first_veh_type_id_check() == item_electric_HLE25) || sw_last_veh_livery_check() == 5)) {return;}
+
+
+/*
+	OR
+	
+	2b. The rear-most car must be a locomotive
+*/
+
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2b, count_veh_id(item_electric_NS1200)+
+	sw_last_veh_type_id_check()==item_electric_NS1500 ||
+	sw_last_veh_type_id_check()==item_electric_NS1600 ||
+	sw_last_veh_type_id_check()==item_electric_NS1700 ||
+	sw_last_veh_type_id_check()==item_electric_HLE11 ||
+	sw_last_veh_type_id_check()==item_electric_HLE25 ||
+	sw_last_veh_type_id_check()==item_electric_TRAXXF140MS2 ||
+	sw_last_veh_type_id_check()==item_electric_NID ||
+	sw_last_veh_type_id_check()==item_electric_mDDM
+	) {return;}
+	
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2, sw_reversal_check_push_pull_2ai() || sw_reversal_check_push_pull_2aii() || sw_reversal_check_push_pull_2aiii() || sw_reversal_check_push_pull_2b()) {return;}
+	
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull, sw_reversal_check_push_pull_1() && sw_reversal_check_push_pull_2()) {return;}
+

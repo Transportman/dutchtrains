@@ -278,11 +278,11 @@ switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_cab_availability, [STOR
     switch_REV_coaches_ICR_hispeed_position;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_REV_coaches_ICR_traxx_buildyear, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
+switch(FEAT_TRAINS, PARENT, switch_REV_coaches_ICR_traxx_buildyear, build_year){
     0..2010: switch_REV_coaches_ICR_hispeed_cab_availability;
     switch_REV_coaches_ICR_fyra_position;
 }
-switch(FEAT_TRAINS, PARENT, switch_REV_coaches_ICR_traxx_matchinglivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+switch(FEAT_TRAINS, PARENT, switch_REV_coaches_ICR_traxx_matchinglivery, cargo_subtype){
     1: switch_REV_coaches_ICR_traxx_buildyear;
     2: switch_REV_coaches_ICR_hispeed_cab_availability;
     switch_REV_coaches_ICR_fyra_position;

@@ -10,7 +10,7 @@
 * ITEM
 */
 
-switch(FEAT_TRAINS, PARENT, switch_electric_NS1600_yellow, vehicle_is_reversed && sw_reversal_check_ddar()){
+switch(FEAT_TRAINS, PARENT, switch_electric_NS1600_yellow, vehicle_is_reversed && sw_reversal_check_push_pull()){
 	0: spriteset_electric_NS1600_yellow;
 	1: sw_REV_id_check;
 }
