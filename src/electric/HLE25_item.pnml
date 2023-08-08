@@ -10,6 +10,11 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, PARENT, switch_electric_HLE25_5, vehicle_is_reversed && sw_reversal_check_loc_car(item_electric_HLE25,item_coaches_PlanW)){
+	0: spriteset_electric_HLE25_5;
+	1: sw_REV_id_check;
+}
+
 item(FEAT_TRAINS, item_electric_HLE25) {
     property {
         name: string(str_electric_HLE25);
@@ -51,6 +56,7 @@ item(FEAT_TRAINS, item_electric_HLE25) {
     graphics {
         purchase: spriteset_electric_HLE25_5_purchase;
         additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_Ip), string(str_purchase_axl_C), string(str_purchase_electric_HLE25));
-        spriteset_electric_HLE25_5;
+        colour_mapping: PALETTE_USE_DEFAULT;
+        switch_electric_HLE25_5;
     }
 }

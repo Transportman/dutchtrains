@@ -21,3 +21,7 @@ spriteset(spriteset_electric_NID_purchase, "gfx/purchase/electric/NID.png") {
 spriteset(spriteset_electric_NID, "gfx/electric/NID.png") {
 	template_2cc_88(1, 1)
 }
+
+spriteset(spriteset_REV_electric_NID, "gfx/electric/NID.png") {
+	template_2cc_88r(1, 1)
+}

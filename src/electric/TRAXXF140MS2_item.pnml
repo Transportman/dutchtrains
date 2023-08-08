@@ -10,6 +10,11 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, PARENT, switch_electric_TRAXXF140MS2_livery, vehicle_is_reversed && sw_reversal_check_icr()){
+	0: switch_for_electric_TRAXXF140MS2_livery;
+	1: sw_REV_id_check;
+}
+
 item(FEAT_TRAINS, item_electric_TRAXXF140MS2) {
     property {
         name: string(str_electric_TRAXXF140MS2);

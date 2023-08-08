@@ -1,0 +1,5 @@
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_loc_car, loc_id, car_id, count_veh_id(loc_id)+count_veh_id(car_id)==num_vehs_in_consist) {return;}
+switch (FEAT_TRAINS, PARENT, sw_last_veh_type_id_check, [STORE_TEMP(num_vehs_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {return;}
+switch (FEAT_TRAINS, PARENT, sw_last_veh_livery_check, [STORE_TEMP(num_vehs_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {return;}
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_icr, (sw_reversal_check_loc_car(item_electric_HLE11,item_coaches_ICR) ||  sw_reversal_check_loc_car(item_electric_TRAXXF140MS2,item_coaches_ICR)) && ((sw_last_veh_type_id_check()==item_coaches_ICR && ((sw_last_veh_livery_check()==0 || sw_last_veh_livery_check()==2) || (sw_last_veh_livery_check()==4 || sw_last_veh_livery_check()==6))) || sw_last_veh_type_id_check() != item_coaches_ICR)) {return;}
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_ddar, (vehicle_type_id == 179||vehicle_type_id == 210||vehicle_type_id == 207)&&(count_veh_id(179)+count_veh_id(210)+count_veh_id(207)+count_veh_id(208)==num_vehs_in_consist)) {return;}

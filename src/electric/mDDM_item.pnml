@@ -18,6 +18,11 @@ switch(FEAT_TRAINS, SELF, switch_electric_mDDM_additional_text, [
     return string(str_purchase_svc_axl_ltm_spc);
 }
 
+switch(FEAT_TRAINS, PARENT, switch_electric_mDDM, vehicle_is_reversed && sw_reversal_check_ddar()){
+	0: spriteset_electric_mDDM;
+	1: sw_REV_id_check;
+}
+
 item(FEAT_TRAINS, item_electric_mDDM) {
     property {
         name: string(str_electric_mDDM);
@@ -60,6 +65,6 @@ item(FEAT_TRAINS, item_electric_mDDM) {
     graphics {
         purchase: spriteset_electric_mDDM_purchase;
         additional_text: switch_electric_mDDM_additional_text;
-        spriteset_electric_mDDM;
+        switch_electric_mDDM;
     }
 }

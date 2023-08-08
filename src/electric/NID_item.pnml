@@ -10,6 +10,11 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, PARENT, switch_electric_NID, vehicle_is_reversed && sw_reversal_check_ddar()){
+	0: spriteset_electric_NID;
+	1: sw_REV_id_check;
+}
+
 switch(FEAT_TRAINS, SELF, switch_electric_NID_additional_text, [
         STORE_TEMP(string(str_purchase_svc_ip) | string(str_purchase_axl_B) << 16, 256),
         STORE_TEMP(string(str_purchase_electric_mDDM_NID) | (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 2 : 4 << 16, 257)
@@ -59,6 +64,6 @@ item(FEAT_TRAINS, item_electric_NID) {
     graphics {
         purchase: spriteset_electric_NID_purchase;
         additional_text: switch_electric_NID_additional_text;
-        spriteset_electric_NID;
+        switch_electric_NID;
     }
 }

@@ -10,6 +10,11 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, PARENT, switch_electric_NS1600_yellow, vehicle_is_reversed && sw_reversal_check_ddar()){
+	0: spriteset_electric_NS1600_yellow;
+	1: sw_REV_id_check;
+}
+
 item(FEAT_TRAINS, item_electric_NS1700) {
     property {
         name: string(str_electric_NS1700);
@@ -50,6 +55,6 @@ item(FEAT_TRAINS, item_electric_NS1700) {
     graphics {
         purchase: spriteset_electric_NS1600_purchase;
         additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_ip), string(str_purchase_axl_C));
-        spriteset_electric_NS1600_yellow;
+        switch_electric_NS1600_yellow;
     }
 }
