@@ -238,7 +238,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_TGV_PBA_2021Revision_position, (position_in
 	1: spriteset_emu_TGV_2021Revision_firstcoach;
     2..3: spriteset_emu_TGV_2021Revision_middlecoach1;
     4: spriteset_emu_TGV_2021Revision_middlecoach3;
-    5..7: spriteset_emu_TGV_2017Revision_middlecoach2;
+    5..7: spriteset_emu_TGV_2021Revision_middlecoach2;
     8: spriteset_emu_TGV_2021Revision_lastcoach; 
     9: spriteset_emu_TGV_PBA_2021Revision_back;
     spriteset_emu_TGV_PBA_2021Revision_front;
