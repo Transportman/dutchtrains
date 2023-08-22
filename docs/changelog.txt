@@ -16,6 +16,7 @@ Dutch Trainset Changelog
 - Feature: RRReis liveries for Protos/LINT/FLIRT (Graphics by Erato)
 - Feature: GreenCityTrip coach (Graphics by Erato)
 - Feature: New GTW sprites (Graphics by Erato)
+- Feature: Parameter to disable futuristic trains
 - Fix: ICNG purchase sprite still showed long sprite
 - Fix: NS livery not default for TRAXX purchase sprite
 - Fix: Sprites for Thalys carriages set incorrectly

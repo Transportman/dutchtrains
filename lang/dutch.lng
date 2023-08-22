@@ -47,6 +47,9 @@ STR_PARAM_LOADING_SPEED_SLOW        :Langzaam
 STR_PARAM_LOADING_SPEED_MEDIUM      :Gemiddeld (standaard)
 STR_PARAM_LOADING_SPEED_FAST        :Snel
 
+STR_PARAM_FICTIONAL					:Fictieve treinen
+STR_PARAM_FICTIONAL_DESC			:Schakel dit in om fictieve treinen te kunnen kopen.
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Jaar-afhankelijke kleurstelling
 str_cargo_subtype_purchase          : > Aankoop-afhankelijke kleurstelling
