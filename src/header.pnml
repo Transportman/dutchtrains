@@ -113,6 +113,14 @@ grf {
 			};
         }
     }
+    param {
+        param_fictional {
+            type:   bool;
+            name:   string(STR_PARAM_FICTIONAL);
+            desc:   string(STR_PARAM_FICTIONAL_DESC);
+            def_value: 1;
+        }
+    }
 }
 
 //check for OpenTTD and version

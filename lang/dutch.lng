@@ -47,6 +47,9 @@ STR_PARAM_LOADING_SPEED_SLOW        :Langzaam
 STR_PARAM_LOADING_SPEED_MEDIUM      :Gemiddeld (standaard)
 STR_PARAM_LOADING_SPEED_FAST        :Snel
 
+STR_PARAM_FICTIONAL					:Fictieve treinen
+STR_PARAM_FICTIONAL_DESC			:Schakel dit in om fictieve treinen te kunnen kopen.
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Jaar-afhankelijke kleurstelling
 str_cargo_subtype_purchase          : > Aankoop-afhankelijke kleurstelling
@@ -156,7 +159,7 @@ str_cargo_subtype_randstadrail      : > RandstadRail-kleurstelling
 str_cargo_subtype_renewal           : > Gemoderniseerde kleurstelling
 str_cargo_subtype_rnet              : > R-net-kleurstelling
 str_cargo_subtype_ns_sprinter           : > NS Sprinter-kleurstelling
-str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR-kleurstelling (22 dec 1993 - nu)
+str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR-kleurstelling (22 dec 1993 - 22 jun 2023)
 str_cargo_subtype_strandsprinter_beachballs: > 'Strandsprinter'-kleurstelling met strandballen
 str_cargo_subtype_strandsprinter    : > 'Strandsprinter'-kleurstelling
 str_cargo_subtype_TGV                           : > Thalys-kleurstelling

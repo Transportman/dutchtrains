@@ -50,6 +50,9 @@ STR_PARAM_LOADING_SPEED_SLOW        :Slow
 STR_PARAM_LOADING_SPEED_MEDIUM      :Medium (default)
 STR_PARAM_LOADING_SPEED_FAST        :Fast
 
+STR_PARAM_FICTIONAL					:Fictional trains
+STR_PARAM_FICTIONAL_DESC			:Enable this to allow for the purchase of fictional trains.
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Year-dependent livery
 str_cargo_subtype_purchase          : > Construction year livery
@@ -160,7 +163,7 @@ str_cargo_subtype_randstadrail      : > RandstadRail livery
 str_cargo_subtype_renewal           : > Renewal livery
 str_cargo_subtype_rnet              : > R-net livery
 str_cargo_subtype_ns_sprinter		: > NS Sprinter livery
-str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (Dec 22, 1993 - current)
+str_cargo_subtype_sr10              : > Sr10 Royal ICR livery (Dec 22, 1993 - 22 jun 2023)
 str_cargo_subtype_strandsprinter_beachballs: > "Strandsprinter" livery w/ beachballs
 str_cargo_subtype_strandsprinter    : > "Strandsprinter" livery
 str_cargo_subtype_TGV				: > Thalys livery
