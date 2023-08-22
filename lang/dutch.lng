@@ -156,7 +156,7 @@ str_cargo_subtype_randstadrail      : > RandstadRail-kleurstelling
 str_cargo_subtype_renewal           : > Gemoderniseerde kleurstelling
 str_cargo_subtype_rnet              : > R-net-kleurstelling
 str_cargo_subtype_ns_sprinter           : > NS Sprinter-kleurstelling
-str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR-kleurstelling (22 dec 1993 - nu)
+str_cargo_subtype_sr10              : > Sr10 Koninklijke ICR-kleurstelling (22 dec 1993 - 22 jun 2023)
 str_cargo_subtype_strandsprinter_beachballs: > 'Strandsprinter'-kleurstelling met strandballen
 str_cargo_subtype_strandsprinter    : > 'Strandsprinter'-kleurstelling
 str_cargo_subtype_TGV                           : > Thalys-kleurstelling

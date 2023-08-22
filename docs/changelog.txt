@@ -5,6 +5,7 @@ Dutch Trainset Changelog
 - Change: Rename NID to DDZ
 - Change: Increase introduction date ICNG to 2023
 - Change: Increase max speed ICE3 to 320km/h
+- Change: Royal carriage retired, livery name changed to reflect this
 - Codechange: Resolve animated pixel warnings
 - Feature: MRCE Eurosprinter liveries (Graphics by Erato)
 - Feature: NS Flow livery for ICNG (Graphics by Erato)
