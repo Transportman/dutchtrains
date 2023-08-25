@@ -1,0 +1,16 @@
+//item\(FEAT_TRAINS, (//item_[^,]+), \d+\) \{\}
+
+switch(FEAT_TRAINS,SELF,sw_REV_id_check,[STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+	item_electric_NS1200 : switch_rev_electric_NS1200_livery;
+	item_electric_NS1500 : switch_rev_electric_NS1500_livery;
+	item_electric_NS1600 : switch_rev_electric_NS1600_livery;
+	item_electric_NS1700 : spriteset_REV_electric_NS1600_yellow;
+	item_electric_HLE11 : spriteset_REV_electric_HLE11;
+	item_electric_HLE25 : spriteset_REV_electric_HLE25_5;
+	item_electric_TRAXXF140MS2 : switch_rev_electric_TRAXXF140MS2_livery;
+	item_electric_NID : spriteset_REV_electric_NID;
+	item_coaches_DDAR : switch_coaches_rev_DDAR_livery;
+	item_coaches_ICR : switch_REV_coaches_ICR_livery;
+	item_electric_mDDM : spriteset_REV_electric_mDDM;
+	item_coaches_PlanW : switch_rev_coaches_PlanW_livery;
+}
