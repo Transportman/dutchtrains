@@ -46,6 +46,9 @@ spriteset(spriteset_electric_NS1300_grey, "gfx/electric/NS1300.png") {
 spriteset(spriteset_electric_NS1300_yellow, "gfx/electric/NS1300.png") {
 	template_2cc_88(1, 96)
 }
+spriteset(spriteset_electric_NS1300_red, "gfx/electric/NS1300.png") {
+	template_2cc_88(1, 128)
+}
 
 /*
 * LIVERY SELECTION
@@ -71,6 +74,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1300_livery, cargo_subtype) {
     3: spriteset_electric_NS1300_blue;
     4: spriteset_electric_NS1300_grey;
     5: spriteset_electric_NS1300_yellow;
+    6: spriteset_electric_NS1300_red;
     switch_electric_NS1300_autolivery;
 }
 
@@ -82,5 +86,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1300_subtype_text, cargo_subtype) {
     3: return string(str_cargo_subtype_blue);
     4: return string(str_cargo_subtype_grey);
     5: return string(str_cargo_subtype_yellow);
+    6: return string(str_cargo_subtype_red);
     return CB_RESULT_NO_TEXT;
 }
