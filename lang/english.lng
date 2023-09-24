@@ -176,9 +176,10 @@ str_cargo_subtype_TGV_PBA_2008Revision      : > 2008 revision PBA livery
 str_cargo_subtype_TGV_PBA_2017Revision      : > 2017 revision PBA livery
 str_cargo_subtype_TGV_PBA_2021Revision      : > 2021 revision PBA livery
 str_cargo_subtype_IZY                       : > IZY livery
-str_cargo_subtype_valleilijn_yellow_blue    : >Valleilijn yellow/blue livery
-str_cargo_subtype_valleilijn_blue_yellownose: >Valleilijn blue livery w/ yellow nose
-str_cargo_subtype_valleilijn_blue           : >Valleilijn blue livery (fictional)
+str_cargo_subtype_valleilijn_yellow_blue    : > Valleilijn yellow/blue livery
+str_cargo_subtype_valleilijn_blue_yellownose: > Valleilijn blue livery w/ yellow nose
+str_cargo_subtype_valleilijn_blue           : > Valleilijn blue livery (fictional)
+str_cargo_subtype_karel             : > De Karel
 str_cargo_subtype_wadkikker         : > NoordNet "Wadkikker" livery
 str_cargo_subtype_zilverrail        : > Zilverrail livery (Oct 24-27, 2005)
 str_cargo_subtype_klm				: > KLM livery
