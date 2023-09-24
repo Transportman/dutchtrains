@@ -68,6 +68,9 @@ spriteset(spriteset_electric_NS1200_VOSlogistics, "gfx/electric/NS1200.png") {
 spriteset(spriteset_electric_NS1200_EETC, "gfx/electric/NS1200.png") {
 	template_2cc_88(1, 192)
 }
+spriteset(spriteset_electric_NS1200_DinnerTrain, "gfx/electric/NS1200.png") {
+	template_2cc_88(1, 224)
+}
 
 /*
 * LIVERY SELECTION
@@ -137,6 +140,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery, cargo_subtype) {
     6: spriteset_electric_NS1200_ACTS;
     7: spriteset_electric_NS1200_VOSlogistics;
     8: spriteset_electric_NS1200_EETC;
+    9: spriteset_electric_NS1200_DinnerTrain;
     switch_electric_NS1200_autolivery;
 }
 
@@ -151,5 +155,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1200_subtype_text, cargo_subtype) {
     6: return string(str_cargo_subtype_ACTS);
     7: return string(str_cargo_subtype_VOSlogistics);
     8: return string(str_cargo_subtype_EETC);
+    9: return string(str_cargo_subtype_DinnerTrain);
     return CB_RESULT_NO_TEXT;
 }
