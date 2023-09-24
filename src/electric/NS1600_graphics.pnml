@@ -55,6 +55,10 @@ spriteset(spriteset_electric_NS1600_DBSchenker, "gfx/electric/NS1600.png") {
 spriteset(spriteset_electric_NS1600_LOCON, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 128)
 }
+//Dinner Train
+spriteset(spriteset_electric_NS1600_DinnerTrain, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 160)
+}
 
 /*
 * LIVERY SELECTION
@@ -98,6 +102,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, cargo_subtype) {
     4: spriteset_electric_NS1600_HUSA;
     5: spriteset_electric_NS1600_DBSchenker;
     6: spriteset_electric_NS1600_LOCON;
+    7: spriteset_electric_NS1600_DinnerTrain;
     switch_electric_NS1600_autolivery;
 }
 
@@ -110,5 +115,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1600_subtype_text, cargo_subtype) {
     4: return string(str_cargo_subtype_HUSA);
     5: return string(str_cargo_subtype_DBSchenker);
     6: return string(str_cargo_subtype_Locon);
+    7: return string(str_cargo_subtype_DinnerTrain);
     return CB_RESULT_NO_TEXT;
 }
