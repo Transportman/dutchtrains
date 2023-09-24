@@ -20,6 +20,7 @@ Dutch Trainset Changelog
 - Feature: De Karel livery for Plan V (Graphics by Erato)
 - Feature: Red livery for NS 1300 (Graphics by Emperor Jake)
 - Feature: Locon livery for NS 1600 (Graphics by Emperor Jake)
+- Feature: TEE livery for NS 1100 (Graphics by Emperor Jake)
 - Feature: Parameter to disable futuristic trains
 - Fix: ICNG purchase sprite still showed long sprite
 - Fix: NS livery not default for TRAXX purchase sprite

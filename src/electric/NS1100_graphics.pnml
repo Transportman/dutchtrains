@@ -49,6 +49,9 @@ spriteset(spriteset_electric_NS1100_blue_crashnose, "gfx/electric/NS1100.png") {
 spriteset(spriteset_electric_NS1100_grey_crashnose, "gfx/electric/NS1100.png") {
 	template_2cc_78(1, 128)
 }
+spriteset(spriteset_electric_NS1100_tee, "gfx/electric/NS1100.png") {
+	template_2cc_68(1, 160)
+}
 
 /*
 * LIVERY SELECTION
@@ -94,6 +97,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1100_livery, cargo_subtype) {
     4: spriteset_electric_NS1100_grey;
     5: spriteset_electric_NS1100_blue_crashnose;
     6: spriteset_electric_NS1100_grey_crashnose;
+    7: spriteset_electric_NS1100_tee;
     switch_electric_NS1100_autolivery;
 }
 
@@ -106,6 +110,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1100_subtype_text, cargo_subtype) {
     4: return string(str_cargo_subtype_grey);
     5: return string(str_cargo_subtype_blue_crashnose);
     6: return string(str_cargo_subtype_grey_crashnose);
+    7: return string(str_cargo_subtype_TEE);
     return CB_RESULT_NO_TEXT;
 }
 
@@ -153,6 +158,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1100_length, cargo_subtype) {
     4: return 6;
     5: return 7;
     6: return 7;
+    7: return 6;
     switch_electric_NS1100_autolivery_length;
 }
 

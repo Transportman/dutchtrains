@@ -229,6 +229,7 @@ str_cargo_subtype_HUSA_Containers	: > HUSA livery (containers)
 str_cargo_subtype_Keolis_blauwnet	: > Keolis Blauwnet livery
 str_cargo_subtype_Keolis_twents     : > Keolis Twents livery
 str_cargo_subtype_Locon             : > Locon livery
+str_cargo_subtype_TEE               : > Trans Europ Express livery
 str_cargo_subtype_MRCE				: > MRCE livery
 str_cargo_subtype_NBDS              : > Noord-Brabantsch-Duitsche Spoorweg-Maatschappij livery
 str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatschappij livery
