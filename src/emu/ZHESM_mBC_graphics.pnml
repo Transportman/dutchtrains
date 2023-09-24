@@ -42,33 +42,48 @@ spriteset(spriteset_emu_ZHESM_green_yellow_singlepanto, "gfx/emu/ZHESM.png") {
 spriteset(spriteset_emu_ZHESM_green, "gfx/emu/ZHESM.png") {
 	template_2cc_88(1, 128)
 }
+spriteset(spriteset_emu_ZHESM_green_yellow_singlepanto_back, "gfx/emu/ZHESM.png") {
+	template_2cc_88(1, 256)
+}
+spriteset(spriteset_emu_ZHESM_green_back, "gfx/emu/ZHESM.png") {
+	template_2cc_88(1, 288)
+}
 
 /*
 * LIVERY SELECTION
 */
 
+switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_green_back, position_in_consist) {
+    0: spriteset_emu_ZHESM_green;
+    spriteset_emu_ZHESM_green_back;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_yellow_back, position_in_consist) {
+    0: spriteset_emu_ZHESM_green_yellow_singlepanto;
+    spriteset_emu_ZHESM_green_yellow_singlepanto_back;
+}
+
 random_switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_random_newpanto) {
 	1: spriteset_emu_ZHESM_green_yellow_newpanto;
-    1: spriteset_emu_ZHESM_green_yellow_singlepanto;
+    1: switch_emu_ZHESM_yellow_back;
 }
 
 switch(FEAT_TRAINS, PARENT, switch_emu_ZHESM_autolivery, date_of_last_service) {
 	0..date(1925,12,31): spriteset_emu_ZHESM_green_yellow_oldpanto;
     date(1926,1,1)..date(1926,12,31): switch_emu_ZHESM_random_newpanto;
-    spriteset_emu_ZHESM_green;
+    switch_emu_ZHESM_green_back;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_purchaselivery, build_year) {
 	0..1925: spriteset_emu_ZHESM_green_yellow_oldpanto;
     1926..1926: switch_emu_ZHESM_random_newpanto;
-    spriteset_emu_ZHESM_green;
+    switch_emu_ZHESM_green_back;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_ZHESM_livery, cargo_subtype) {
 	1: switch_emu_ZHESM_purchaselivery;
     2: spriteset_emu_ZHESM_green_yellow_oldpanto;
     3: switch_emu_ZHESM_random_newpanto;
-    4: spriteset_emu_ZHESM_green;
+    4: switch_emu_ZHESM_green_back;
     switch_emu_ZHESM_autolivery;
 }
 
