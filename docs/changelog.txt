@@ -19,7 +19,7 @@ Dutch Trainset Changelog
 - Feature: New GTW sprites (Graphics by Erato)
 - Feature: De Karel livery for Plan V (Graphics by Erato)
 - Feature: Dinner Train livery for NS 1200 (Graphics by Erato)
-- Feature: Red livery for NS 1300 (Graphics by Emperor Jake)
+- Feature: New liveries for NS 1300 (Graphics by Emperor Jake)
 - Feature: New liveries for NS 1600 (Graphics by Emperor Jake and Erato)
 - Feature: TEE livery for NS 1100 (Graphics by Emperor Jake)
 - Feature: Parameter to disable futuristic trains
