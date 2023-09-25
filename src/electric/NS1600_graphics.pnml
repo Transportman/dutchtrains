@@ -59,6 +59,42 @@ spriteset(spriteset_electric_NS1600_LOCON, "gfx/electric/NS1600.png") {
 spriteset(spriteset_electric_NS1600_DinnerTrain, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 160)
 }
+//Rotterdam Rail Feeding
+spriteset(spriteset_electric_NS1600_RRF, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 193)
+}
+//Rail Force One (orange)
+spriteset(spriteset_electric_NS1600_RF1O, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 224)
+}
+//Rail Force One (grey)
+spriteset(spriteset_electric_NS1600_RF1G, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 256)
+}
+//Rail Force One (NL)
+spriteset(spriteset_electric_NS1600_RF1NL, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 288)
+}
+//HSL
+spriteset(spriteset_electric_NS1600_HSL, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 320)
+}
+//RailAdventure
+spriteset(spriteset_electric_NS1600_RailAdventure, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 351)
+}
+//Railogix
+spriteset(spriteset_electric_NS1600_Railogix, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 383)
+}
+//Captrain
+spriteset(spriteset_electric_NS1600_Captrain, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 415)
+}
+//Volker
+spriteset(spriteset_electric_NS1600_Volker, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 447)
+}
 
 /*
 * LIVERY SELECTION
@@ -103,6 +139,15 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, cargo_subtype) {
     5: spriteset_electric_NS1600_DBSchenker;
     6: spriteset_electric_NS1600_LOCON;
     7: spriteset_electric_NS1600_DinnerTrain;
+    8: spriteset_electric_NS1600_RRF;
+    9: spriteset_electric_NS1600_RF1G;
+    10: spriteset_electric_NS1600_RF1O;
+    11: spriteset_electric_NS1600_RF1NL;
+    12: spriteset_electric_NS1600_HSL;
+    13: spriteset_electric_NS1600_RailAdventure;
+    14: spriteset_electric_NS1600_Railogix;
+    15: spriteset_electric_NS1600_Captrain;
+    16: spriteset_electric_NS1600_Volker;
     switch_electric_NS1600_autolivery;
 }
 
@@ -116,5 +161,14 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1600_subtype_text, cargo_subtype) {
     5: return string(str_cargo_subtype_DBSchenker);
     6: return string(str_cargo_subtype_Locon);
     7: return string(str_cargo_subtype_DinnerTrain);
+    8: return string(str_cargo_subtype_rrf);
+    9: return string(str_cargo_subtype_RF1Grey);
+    10: return string(str_cargo_subtype_RF1Orange);
+    11: return string(str_cargo_subtype_RF1NL);
+    12: return string(str_cargo_subtype_HSL);
+    13: return string(str_cargo_subtype_RailAdventure);
+    14: return string(str_cargo_subtype_Railogix);
+    15: return string(str_cargo_subtype_Captrain);
+    16: return string(str_cargo_subtype_Volker);
     return CB_RESULT_NO_TEXT;
 }
