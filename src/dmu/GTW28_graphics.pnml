@@ -178,6 +178,25 @@ switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_RRReis, position_in_articulated_veh)
       2:       spriteset_dmu_GTW28_RRReis3;
       spriteset_dmu_GTW28_RRReis4;
 }
+//Blauwnet
+spriteset (spriteset_dmu_GTW28_Blauwnet1, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*30)
+}
+spriteset (spriteset_dmu_GTW28_Blauwnet2, "gfx/dmu/GTW.png") {
+	template_2cc_58(1,1+25*31)
+}
+spriteset (spriteset_dmu_GTW28_Blauwnet3, "gfx/dmu/GTW.png") {
+	template_2cc_38(1,1+25*32)
+}
+spriteset (spriteset_dmu_GTW28_Blauwnet4, "gfx/dmu/GTW.png") {
+	template_2cc_68(1,1+25*33)
+}
+switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_Blauwnet, position_in_articulated_veh) { 
+      0:       spriteset_dmu_GTW28_Blauwnet1;
+      1:       spriteset_dmu_GTW28_Blauwnet2;
+      2:       spriteset_dmu_GTW28_Blauwnet3;
+      spriteset_dmu_GTW28_Blauwnet4;
+}
 
 /*
 * LIVERY SELECTION
@@ -220,6 +239,13 @@ random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2021) {
 	5: switch_dmu_GTW28_Limburg;
 	5: switch_dmu_GTW28_Breng_portret;
 }
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_GTW28_randomlivery_2024) {
+	10: switch_dmu_GTW28_Noord;
+	10: switch_dmu_GTW28_Spurt;
+	5: switch_dmu_GTW28_Limburg;
+	5: switch_dmu_GTW28_Breng_portret;
+	5: switch_dmu_GTW28_Blauwnet;
+}
 switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_randomlivery, current_year) { 
       0..2006:			switch_dmu_GTW28_randomlivery_2006;
       2007:				switch_dmu_GTW28_randomlivery_2007;
@@ -227,7 +253,8 @@ switch (FEAT_TRAINS, SELF, switch_dmu_GTW28_randomlivery, current_year) {
       2012:				switch_dmu_GTW28_randomlivery_2012;
       2013..2016:		switch_dmu_GTW28_randomlivery_2013;
       2017..2020:		switch_dmu_GTW28_randomlivery_2017;
-      switch_dmu_GTW28_randomlivery_2021;
+      2021..2023:		switch_dmu_GTW28_randomlivery_2021;
+      switch_dmu_GTW28_randomlivery_2024;
 }
 //Livery Switch Sets
 switch(FEAT_TRAINS,SELF,switch_dmu_GTW28_livery,cargo_subtype){
@@ -240,7 +267,8 @@ switch(FEAT_TRAINS,SELF,switch_dmu_GTW28_livery,cargo_subtype){
     6:	switch_dmu_GTW28_Veolia_portret;
     7:	switch_dmu_GTW28_Breng;
     8:	switch_dmu_GTW28_Breng_portret;
-    9:	switch_dmu_GTW28_RRReis;
+    9:	switch_dmu_GTW28_Blauwnet;
+    10:	switch_dmu_GTW28_RRReis;
 }
 //Livery Switch Text
 switch(FEAT_TRAINS,SELF,switch_dmu_GTW28_subtype_text,cargo_subtype){
@@ -253,7 +281,8 @@ switch(FEAT_TRAINS,SELF,switch_dmu_GTW28_subtype_text,cargo_subtype){
     6: return string(str_cargo_subtype_Veolia_portrait);
     7: return string(str_cargo_subtype_Breng);
     8: return string(str_cargo_subtype_Breng_portret);
-    9: return string(str_cargo_subtype_rrreis);
+    9: return string(str_cargo_subtype_Arriva_blauwnet);
+    10: return string(str_cargo_subtype_rrreis);
        return CB_RESULT_NO_TEXT;
 }
 
