@@ -2,7 +2,7 @@ switch (FEAT_TRAINS, PARENT, sw_first_veh_type_id_check, [STORE_TEMP(-position_i
 switch (FEAT_TRAINS, PARENT, sw_last_veh_type_id_check, [STORE_TEMP(num_vehs_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {return;}
 switch (FEAT_TRAINS, PARENT, sw_first_veh_livery_check, [STORE_TEMP(-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {return;}
 switch (FEAT_TRAINS, PARENT, sw_last_veh_livery_check, [STORE_TEMP(num_vehs_in_consist-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {return;}
-switch (FEAT_TRAINS, PARENT, sw_first_veh_year_check, [STORE_TEMP(-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {return;}
+//switch (FEAT_TRAINS, PARENT, sw_first_veh_year_check, [STORE_TEMP(-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {return;}
 switch (FEAT_TRAINS, PARENT, sw_last_veh_year_check, [STORE_TEMP(num_vehs_in_consist-1, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {return;}
 
 /*In order for reversing/push-pull the following must be true:
@@ -51,26 +51,25 @@ switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2ai,sw_last_veh_type_id
 		2a ii. For item_coaches_ICR this means 
 			-subcargo_type == 0 and rear-most car is item_coaches_ICR and...
 				-is built after 1986 with item_electric_HLE11 leading
-				-has item_electric_TRAXXF140MS2 built before 2010 with cargo_subtype==1 leading
+				-has item_electric_TRAXXF140MS2 with cargo_subtype==3 or 4 leading
 					-coach is built in range 2009..2012
-				-has item_electric_TRAXXF140MS2 with cargo_subtype==2 leading
-					-coach is built in range 2009..2012
-				-does not have item_electric_TRAXXF140MS2 with cargo_subtype==0 leading
+				-has item_electric_TRAXXF140MS2 with cargo_subtype!=3 or 4 leading
+					-coach is not built in range 2013..2014
 				-is built after 2005 with a any other loco leading
 			-Rear-most car has subcargo_type == 2 || 4 || 6 and is item_coaches_ICR
 */
 
 switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_a, sw_first_veh_type_id_check() == item_electric_HLE11 && sw_last_veh_year_check() > 1986) {return;}
 
-switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_b,sw_first_veh_type_id_check() == item_electric_TRAXXF140MS2 && sw_first_veh_livery_check() == 1 && sw_first_veh_year_check() <= 2010 && sw_last_veh_year_check() >= 2009 && sw_last_veh_year_check() <= 2012) {return;}
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_b,sw_first_veh_type_id_check() == item_electric_TRAXXF140MS2 && (sw_first_veh_livery_check() == 4 || sw_first_veh_livery_check() == 3) &&sw_last_veh_year_check() >= 2009 && sw_last_veh_year_check() <= 2012) {return;}
 
-switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_c,sw_first_veh_type_id_check() == item_electric_TRAXXF140MS2 && sw_first_veh_livery_check() == 1 && sw_last_veh_year_check() >= 2009 && sw_last_veh_year_check() <= 2012) {return;}
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_c,sw_first_veh_type_id_check() == item_electric_TRAXXF140MS2 && (sw_first_veh_livery_check() != 4 && sw_first_veh_livery_check() != 3) &&sw_last_veh_year_check() >= 2009 && sw_last_veh_year_check() != 2013 && sw_last_veh_year_check() != 2014) {return;}
 
 switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_d,(sw_last_veh_livery_check() == 2 || sw_last_veh_livery_check() == 4 || sw_last_veh_livery_check() == 6)) {return;}
 
 switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii_e,(sw_last_veh_livery_check() == 0 && sw_first_veh_type_id_check() != item_electric_HLE11 && sw_first_veh_type_id_check() != item_electric_TRAXXF140MS2)) {return;}
 
-switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii,(sw_last_veh_livery_check() == 0 && (sw_reversal_check_push_pull_2aii_e() || sw_reversal_check_push_pull_2aii_a() || sw_reversal_check_push_pull_2aii_b() || sw_reversal_check_push_pull_2aii_c()) && !(sw_first_veh_type_id_check() == item_electric_TRAXXF140MS2 && sw_first_veh_livery_check() == 0) || sw_reversal_check_push_pull_2aii_d())) {return;}
+switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2aii,(sw_last_veh_livery_check() == 0 && (sw_reversal_check_push_pull_2aii_e() || sw_reversal_check_push_pull_2aii_a() || sw_reversal_check_push_pull_2aii_b() || sw_reversal_check_push_pull_2aii_c()) || sw_reversal_check_push_pull_2aii_d())) {return;}
 
 /*
 		2a iii. For item_coaches_PlanW this means

@@ -6,6 +6,7 @@ Dutch Trainset Changelog
 - Change: Increase introduction date ICNG to 2023
 - Change: Increase max speed ICE3 to 320km/h
 - Change: Royal carriage retired, livery name changed to reflect this
+- Change: ICR no longer defaults to Fyra from 2014
 - Change: ZHESM panto at back when not frontmost vehicle in consist
 - Change: Improved Bpmmz coach sprites
 - Codechange: Resolve animated pixel warnings
