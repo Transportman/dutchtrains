@@ -16,6 +16,7 @@ switch (FEAT_TRAINS, PARENT, sw_last_veh_year_check, [STORE_TEMP(num_vehs_in_con
 		-item_electric_TRAXXF140MS2
 		-item_electric_NID
 		-item_electric_mDDM
+		-item_electric_Vectron
 		-item_coaches_DDAR
 		-item_coaches_ICR
 		-item_coaches_PlanW
@@ -30,6 +31,7 @@ switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_1, count_veh_id(item_el
 	count_veh_id(item_electric_TRAXXF140MS2)+
 	count_veh_id(item_electric_NID)+
 	count_veh_id(item_electric_mDDM)+
+	count_veh_id(item_electric_Vectron)+
 	count_veh_id(item_coaches_DDAR)+
 	count_veh_id(item_coaches_ICR)+
 	count_veh_id(item_coaches_PlanW)
@@ -93,7 +95,8 @@ switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2b, count_veh_id(item_e
 	sw_last_veh_type_id_check()==item_electric_HLE25 ||
 	sw_last_veh_type_id_check()==item_electric_TRAXXF140MS2 ||
 	sw_last_veh_type_id_check()==item_electric_NID ||
-	sw_last_veh_type_id_check()==item_electric_mDDM
+	sw_last_veh_type_id_check()==item_electric_mDDM ||
+	sw_last_veh_type_id_check()==item_electric_Vectron
 	) {return;}
 	
 switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_2, sw_reversal_check_push_pull_2ai() || sw_reversal_check_push_pull_2aii() || sw_reversal_check_push_pull_2aiii() || sw_reversal_check_push_pull_2b()) {return;}

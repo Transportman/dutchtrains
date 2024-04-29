@@ -210,6 +210,7 @@ switch(FEAT_TRAINS, SELF, switch_rev_electric_NS1200_livery, [STORE_TEMP(positio
     6: spriteset_electric_NS1200_ACTS;
     7: spriteset_electric_NS1200_VOSlogistics;
     8: spriteset_electric_NS1200_EETC;
+    9: spriteset_electric_NS1200_DinnerTrain;
     switch_REV_electric_NS1200_autolivery;
 }
 

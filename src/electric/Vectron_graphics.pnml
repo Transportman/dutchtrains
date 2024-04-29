@@ -151,7 +151,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_purchaselivery, build_year) {
 	spriteset_electric_Vectron_NS;
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_Vectron_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_for_electric_Vectron_livery, cargo_subtype) {
 	1: switch_electric_Vectron_purchaselivery;
     2: spriteset_electric_Vectron_Vectron;
     3: spriteset_electric_Vectron_BLS;
@@ -164,6 +164,38 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_livery, cargo_subtype) {
 	10: spriteset_electric_Vectron_SBB;
 	11: spriteset_electric_Vectron_NS;
     switch_electric_Vectron_randomlivery;
+}
+//Reverse
+
+switch(FEAT_TRAINS, SELF, switch_rev_electric_Vectron_randomlivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
+	0..2014: spriteset_electric_Vectron_ELL;
+    2015: switch_electric_Vectron_random_2015;
+	2016: switch_electric_Vectron_random_2016; 
+	2017: switch_electric_Vectron_random_2017;
+	2018..2019: switch_electric_Vectron_random_2018;
+	switch_electric_Vectron_random_all;
+}
+
+switch(FEAT_TRAINS, SELF, switch_rev_electric_Vectron_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
+	0..2014: spriteset_electric_Vectron_ELL;
+	2015..2016: spriteset_electric_Vectron_MRCE;
+	2017..2019: spriteset_electric_Vectron_DBSchenker;
+	spriteset_electric_Vectron_NS;
+}
+
+switch(FEAT_TRAINS, SELF, switch_rev_electric_Vectron_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
+	1: switch_rev_electric_Vectron_purchaselivery;
+    2: spriteset_electric_Vectron_Vectron;
+    3: spriteset_electric_Vectron_BLS;
+    4: spriteset_electric_Vectron_ELL;
+	5: spriteset_electric_Vectron_DBSchenker;
+	6: spriteset_electric_Vectron_PKP;
+	7: spriteset_electric_Vectron_HUPAC;
+	8: spriteset_electric_Vectron_Captrain;
+	9: spriteset_electric_Vectron_MRCE;
+	10: spriteset_electric_Vectron_SBB;
+	11: spriteset_electric_Vectron_NS;
+    switch_rev_electric_Vectron_randomlivery;
 }
 
 // CARGO SUBTYPE CALLBACK

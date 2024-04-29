@@ -9,6 +9,7 @@ switch(FEAT_TRAINS,SELF,sw_REV_id_check,[STORE_TEMP(position_in_consist_from_end
 	item_electric_HLE25 : spriteset_REV_electric_HLE25_5;
 	item_electric_TRAXXF140MS2 : switch_rev_electric_TRAXXF140MS2_livery;
 	item_electric_NID : spriteset_REV_electric_NID;
+	item_electric_Vectron : switch_rev_electric_Vectron_livery;
 	item_coaches_DDAR : switch_coaches_rev_DDAR_livery;
 	item_coaches_ICR : switch_REV_coaches_ICR_livery;
 	item_electric_mDDM : spriteset_REV_electric_mDDM;
