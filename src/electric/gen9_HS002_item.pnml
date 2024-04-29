@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_electric_gen9_HS002) {
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
         
-        climates_available: param_fictional;
+        climates_available: availability(param_fictional);
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 8;

@@ -123,6 +123,9 @@ configuration file:
   1: Medium (default)
   2: Fast
   
+7th parameter: Fictional trains
+  0: Fictional trains disabled 
+  1: Fictional trains available (default)
   
 2.4 Usage
 ---------
