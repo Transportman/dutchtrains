@@ -10,6 +10,11 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, PARENT, switch_electric_NS1500_livery, vehicle_is_reversed && sw_reversal_check_push_pull()){
+	0: switch_for_electric_NS1500_livery;
+	1: sw_REV_id_check;
+}
+
 item(FEAT_TRAINS, item_electric_NS1500) {
     property {
         name: string(str_electric_NS1500);
@@ -53,6 +58,7 @@ item(FEAT_TRAINS, item_electric_NS1500) {
         cargo_subtype_text: switch_electric_NS1500_subtype_text;
         additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_iphf), string(str_purchase_axl_C), string(str_purchase_electric_NS1500));
         cargo_capacity: return 0;
+        colour_mapping: PALETTE_USE_DEFAULT;		
         switch_electric_NS1500_livery;
     }
 }

@@ -39,6 +39,11 @@ switch(FEAT_TRAINS, PARENT, switch_electric_NS1600_purchase, current_year) {
 spriteset(spriteset_electric_NS1600_yellow, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 1)
 }
+
+//yellow
+spriteset(spriteset_REV_electric_NS1600_yellow, "gfx/electric/NS1600.png") {
+	template_2cc_88(1, 128)
+}
 //red
 spriteset(spriteset_electric_NS1600_NSCargo, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 32)
@@ -131,7 +136,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1600_purchaselivery, build_year) {
     switch_electric_NS1600_livery_NS_LOCON;
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_for_electric_NS1600_livery, cargo_subtype) {
 	1: switch_electric_NS1600_purchaselivery;
     2: spriteset_electric_NS1600_yellow;
     3: spriteset_electric_NS1600_NSCargo;
@@ -149,6 +154,29 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, cargo_subtype) {
     15: spriteset_electric_NS1600_Captrain;
     16: spriteset_electric_NS1600_Volker;
     switch_electric_NS1600_autolivery;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1600_autolivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x4B]]) {
+	0..date(1998,12,31): spriteset_electric_NS1600_yellow;
+    date(1999,1,1)..date(2003,12,31): switch_electric_NS1600_livery_NS_NSC;
+    date(2004,1,1)..date(2010,12,31): spriteset_electric_NS1600_yellow;
+    switch_electric_NS1600_livery_NS_HUSA;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1600_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
+	0..1998: spriteset_electric_NS1600_yellow;
+    1999..2003: switch_electric_NS1600_livery_NS_NSC;
+    2004..2010: spriteset_electric_NS1600_yellow;
+    switch_electric_NS1600_livery_NS_HUSA;
+}
+
+switch(FEAT_TRAINS, SELF, switch_rev_electric_NS1600_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
+	1: switch_REV_electric_NS1600_purchaselivery;
+    2: spriteset_electric_NS1600_yellow;
+    3: spriteset_electric_NS1600_NSCargo;
+    4: spriteset_electric_NS1600_HUSA;
+    5: spriteset_electric_NS1600_DBSchenker;
+    switch_REV_electric_NS1600_autolivery;
 }
 
 // CARGO SUBTYPE CALLBACK

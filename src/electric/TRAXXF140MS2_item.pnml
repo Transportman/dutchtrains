@@ -10,6 +10,11 @@
 * ITEM
 */
 
+switch(FEAT_TRAINS, PARENT, switch_electric_TRAXXF140MS2_livery, vehicle_is_reversed && sw_reversal_check_push_pull()){
+	0: switch_for_electric_TRAXXF140MS2_livery;
+	1: sw_REV_id_check;
+}
+
 item(FEAT_TRAINS, item_electric_TRAXXF140MS2) {
     property {
         name: string(str_electric_TRAXXF140MS2);
@@ -55,6 +60,7 @@ item(FEAT_TRAINS, item_electric_TRAXXF140MS2) {
 			additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_electric_TRAXXF140MS2));
 			power: switch_electric_TRAXXF140MS2_power;
 			purchase_power: return 4023;
+			colour_mapping: PALETTE_USE_DEFAULT;
 			switch_electric_TRAXXF140MS2_livery;
 		}	
 	} else {
@@ -65,6 +71,7 @@ item(FEAT_TRAINS, item_electric_TRAXXF140MS2) {
 			additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hp), string(str_purchase_axl_C), string(str_purchase_electric_TRAXXF140MS2_no_track));
 			power: 7509;
 			purchase_power: return 7509;
+			colour_mapping: PALETTE_USE_DEFAULT;
 			switch_electric_TRAXXF140MS2_livery;
 		}
 	}	

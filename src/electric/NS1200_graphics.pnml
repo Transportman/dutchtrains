@@ -131,7 +131,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1200_purchaselivery, build_year) {
     spriteset_electric_NS1200_EETC;
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_for_electric_NS1200_livery, cargo_subtype) {
 	1: switch_electric_NS1200_purchaselivery;
     2: spriteset_electric_NS1200_turqoise;
     3: spriteset_electric_NS1200_brown;
@@ -142,6 +142,75 @@ switch(FEAT_TRAINS, SELF, switch_electric_NS1200_livery, cargo_subtype) {
     8: spriteset_electric_NS1200_EETC;
     9: spriteset_electric_NS1200_DinnerTrain;
     switch_electric_NS1200_autolivery;
+}
+
+
+
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_NS1200_randomlivery_actsvos) {
+	1: spriteset_electric_NS1200_VOSlogistics;
+    4: spriteset_electric_NS1200_ACTS;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1200_livery_ACTS_EETC, (bitmask_consist_info & bitmask(0))) {
+    bitmask(0): spriteset_electric_NS1200_EETC; //if passenger carriage attached
+    spriteset_electric_NS1200_ACTS;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1200_livery_cargo_EETC, (bitmask_consist_info & bitmask(0))) {
+    bitmask(0): spriteset_electric_NS1200_EETC; //if passenger carriage attached
+    switch_REV_electric_NS1200_randomlivery_actsvos;
+}
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1200_livery_grey_cargo, (bitmask_consist_info & bitmask(0))) {
+    bitmask(0): spriteset_electric_NS1200_grey; //if passenger carriage attached
+    switch_REV_electric_NS1200_randomlivery_actsvos;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1200_livery_cargopassenger, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) { //service 2011+
+	0..2002: switch_REV_electric_NS1200_livery_cargo_EETC; //cargo, or EETC depending on wagons attached
+    2003..2010: switch_REV_electric_NS1200_livery_ACTS_EETC; //ACTS, or EETC depending on wagons attached
+    spriteset_electric_NS1200_EETC ;//EETC
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1200_livery_passengercargo, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){ //service 1999-2010
+	0..1998: switch_REV_electric_NS1200_livery_grey_cargo; //ns-grey, or cargo depending on wagons attached
+    1999..2002: switch_REV_electric_NS1200_randomlivery_actsvos; //cargo, randomized
+    spriteset_electric_NS1200_ACTS; //ACTS
+}
+
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_NS1200_randomlivery_turqoisebrown) {
+	14: spriteset_electric_NS1200_turqoise;
+    11: spriteset_electric_NS1200_brown;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1200_autolivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x4B]]) {
+	0..date(1952,12,31): spriteset_electric_NS1200_turqoise;
+    date(1953,1,1)..date(1954,12,31): switch_REV_electric_NS1200_randomlivery_turqoisebrown;
+    date(1955,1,1)..date(1969,12,31): spriteset_electric_NS1200_blue;
+    date(1970,1,1)..date(1998,12,31): spriteset_electric_NS1200_grey;
+    date(1999,1,1)..date(2010,12,31): switch_REV_electric_NS1200_livery_passengercargo;
+    switch_REV_electric_NS1200_livery_cargopassenger;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1200_purchaselivery,  [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
+	0..1952: spriteset_electric_NS1200_turqoise;
+    1953..1954: switch_REV_electric_NS1200_randomlivery_turqoisebrown;
+    1955..1969: spriteset_electric_NS1200_blue;
+    1970..1998: spriteset_electric_NS1200_grey;
+    1999..2002: switch_REV_electric_NS1200_randomlivery_actsvos;
+    2003..2010: spriteset_electric_NS1200_ACTS;
+    spriteset_electric_NS1200_EETC;
+}
+
+switch(FEAT_TRAINS, SELF, switch_rev_electric_NS1200_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
+	1: switch_REV_electric_NS1200_purchaselivery;
+    2: spriteset_electric_NS1200_turqoise;
+    3: spriteset_electric_NS1200_brown;
+    4: spriteset_electric_NS1200_blue;
+    5: spriteset_electric_NS1200_grey;
+    6: spriteset_electric_NS1200_ACTS;
+    7: spriteset_electric_NS1200_VOSlogistics;
+    8: spriteset_electric_NS1200_EETC;
+    switch_REV_electric_NS1200_autolivery;
 }
 
 // CARGO SUBTYPE CALLBACK

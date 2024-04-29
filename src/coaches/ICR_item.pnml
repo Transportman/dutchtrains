@@ -18,6 +18,11 @@ switch(FEAT_TRAINS, SELF, switch_coaches_ICR_additional_text, [
     return string(str_purchase_axl_ltm_spc);
 }
 
+switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_livery, vehicle_is_reversed && sw_reversal_check_push_pull()){
+	0: switch_for_coaches_ICR_livery;
+	1: sw_REV_id_check;
+}
+
 item(FEAT_TRAINS, item_coaches_ICR) {
     property {
         name: string(str_coaches_ICR);
@@ -59,6 +64,7 @@ item(FEAT_TRAINS, item_coaches_ICR) {
         additional_text: switch_coaches_ICR_additional_text;
         purchase: switch_coaches_ICR_purchase;
         cargo_subtype_text: switch_coaches_ICR_subtype_text;
+        colour_mapping: PALETTE_USE_DEFAULT;
         switch_coaches_ICR_livery;
     }
 }
