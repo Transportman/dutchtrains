@@ -209,7 +209,8 @@ str_cargo_subtype_Captrain          : > Captrain livery
 str_cargo_subtype_Connexxion_valleilijn		: > Connexxion Valleilijn livery
 str_cargo_subtype_Crossrail         : > Crossrail livery
 str_cargo_subtype_DB				: > DB livery
-str_cargo_subtype_DB_Bistro			: > DB Bistro livery
+str_cargo_subtype_DB_1st			: > DB livery 1st class
+str_cargo_subtype_DB_Bistro			: > DB livery Bordbistro
 str_cargo_subtype_DBSchenker        : > DB Schenker livery
 str_cargo_subtype_DBSchenker_Crates	: > DB Schenker livery (crates)
 str_cargo_subtype_DBSchenker_Containers : > DB Schenker livery (containers)
@@ -710,7 +711,7 @@ str_purchase_spc_battery_WINK_no_track	:Battery-powered EMU.
 
 str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900.{}{BLACK}For use with motorcar ZHESM mBC.
 str_purchase_coaches_Mat24  :For use with motorcar Mat '24.
-str_purchase_coaches_DDAR   :For use with motorcar mDDM or DDZ.
+str_purchase_coaches_DDAR   :For use with motorcar mDDM or DDZ, or NS 1700 locomotive.
 str_purchase_coaches_PlanW  :For use with electric NS locomotives for national service and NMBS HLE 25.5 for Benelux service.
 str_purchase_coaches_IRC    :For use with electric NS locomotives for national service, NMBS HLE 11 for Benelux service and NS Hispeed 186 as Fyra service.
 str_purchase_wagons_gen10_CargoDD	:For use with Futuristic Cargo Mover.{}Fictional.

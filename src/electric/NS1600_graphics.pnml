@@ -40,9 +40,9 @@ spriteset(spriteset_electric_NS1600_yellow, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 1)
 }
 
-//yellow
+//yellow, reversed
 spriteset(spriteset_REV_electric_NS1600_yellow, "gfx/electric/NS1600.png") {
-	template_2cc_88(1, 128)
+	template_2cc_88(1, 479)
 }
 //red
 spriteset(spriteset_electric_NS1600_NSCargo, "gfx/electric/NS1600.png") {

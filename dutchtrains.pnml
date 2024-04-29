@@ -343,15 +343,11 @@
 #include "src/emu/IRMIII_graphics.pnml"
 #include "src/emu/IRMIV_graphics.pnml"
 
-#include "src/IRM_reversal.pnml"
-
 #include "src/emu/IRMVI_item.pnml"
 #include "src/emu/IRMIII_item.pnml"
 #include "src/emu/IRMIV_item.pnml"
 #include "src/emu/ICM4_graphics.pnml"
 #include "src/emu/ICM3_graphics.pnml"
-
-#include "src/ICM_reversal.pnml"
 
 #include "src/emu/ICM4_item.pnml"
 #include "src/emu/ICM3_item.pnml"
