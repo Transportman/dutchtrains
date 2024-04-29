@@ -50,6 +50,22 @@ spriteset(spriteset_electric_ES64F4_locon, "gfx/electric/ES64F4.png") {
 spriteset(spriteset_electric_ES64F4_mrce, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 128)
 }
+//ers
+spriteset(spriteset_electric_ES64F4_dispo, "gfx/electric/ES64F4.png") {
+	template_2cc_88(1, 159)
+}
+//db schenker
+spriteset(spriteset_electric_ES64F4_distri, "gfx/electric/ES64F4.png") {
+	template_2cc_88(1, 190)
+}
+//locon
+spriteset(spriteset_electric_ES64F4_rrf, "gfx/electric/ES64F4.png") {
+	template_2cc_88(1, 222)
+}
+//MRCE
+spriteset(spriteset_electric_ES64F4_veolia, "gfx/electric/ES64F4.png") {
+	template_2cc_88(1, 254)
+}
 
 /*
 * LIVERY SELECTION
@@ -61,6 +77,10 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_random_all) {
     1: spriteset_electric_ES64F4_husa;
     1: spriteset_electric_ES64F4_locon;
     1: spriteset_electric_ES64F4_mrce;
+    1: spriteset_electric_ES64F4_dispo;
+    1: spriteset_electric_ES64F4_distri;
+    1: spriteset_electric_ES64F4_rrf;
+    1: spriteset_electric_ES64F4_veolia;
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_random_dbsers) {
@@ -81,6 +101,10 @@ switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_livery, cargo_subtype) {
     3: spriteset_electric_ES64F4_husa;
     4: spriteset_electric_ES64F4_locon;
     5: spriteset_electric_ES64F4_mrce;
+    6: spriteset_electric_ES64F4_dispo;
+    7: spriteset_electric_ES64F4_distri;
+    8: spriteset_electric_ES64F4_rrf;
+    9: spriteset_electric_ES64F4_veolia;
     switch_electric_ES64F4_randomlivery;
 }
 
@@ -92,6 +116,10 @@ switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_subtype_text, cargo_subtype) {
     3: return string(str_cargo_subtype_HUSA);
     4: return string(str_cargo_subtype_Locon);
     5: return string(str_cargo_subtype_MRCE);
+    6: return string(str_cargo_subtype_Dispolok);
+    7: return string(str_cargo_subtype_Distrirail);
+    8: return string(str_cargo_subtype_rff);
+    9: return string(str_cargo_subtype_Veolia);
     return CB_RESULT_NO_TEXT;
 }
 
