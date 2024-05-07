@@ -4,7 +4,6 @@ syntax: glob
 # And the description file and the grs which are generated automatically
 # This has to be adopted to the newgrf filename
 *.nml
-*.grf
 *.grf.cache*
 *.md5
 *.scm
