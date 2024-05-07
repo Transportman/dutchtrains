@@ -21,7 +21,7 @@ item(FEAT_TRAINS, item_wagons_Fccpps_selfdischarger) {
     property {
         name: string(str_wagons_Fccpps_selfdischarger);
         
-        introduction_date: date(1983,1,1);
+        introduction_date: date(1986,1,1);
         model_life: 158;
         retire_early: 83;
         vehicle_life: 75;
