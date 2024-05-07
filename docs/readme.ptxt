@@ -292,6 +292,8 @@ Code:
 
 Development support:
 - Transportman
+- Erato
+- Gwyd
 
 Templating of graphics:
 - Mahoo76
@@ -366,7 +368,7 @@ an email to foobar at jaspervries.nl.
 ---------
 
 Dutch Trainset - Dutch Trains for OpenTTD
-Copyright (C) 2003-2014 Dutch Trainset Team
+Copyright (C) 2003-2024 Dutch Trainset Team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
