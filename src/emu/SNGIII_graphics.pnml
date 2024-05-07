@@ -35,6 +35,53 @@ switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_position, (position_in_articulated_v
 	1: spriteset_emu_SNGIII_middle;
 	spriteset_emu_SNGIII_back;
 }
+//NS
+spriteset(spriteset_emu_SNGIII_RNET_front, "gfx/emu/SNG_RNET.png") {
+	template_2cc_88(1,1)
+}
+
+spriteset(spriteset_emu_SNGIII_RNET_middle, "gfx/emu/SNG_RNET.png") {
+	template_2cc_68(1,32)
+}
+
+spriteset(spriteset_emu_SNGIII_RNET_back, "gfx/emu/SNG_RNET.png") {
+	template_2cc_88(1,64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_RNET_position, (position_in_articulated_veh)) { 
+	0: spriteset_emu_SNGIII_RNET_front;
+	1: spriteset_emu_SNGIII_RNET_middle;
+	spriteset_emu_SNGIII_RNET_back;
+}
+
+/*
+* LIVERY SELECTION
+*/
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_SNGIII_randomlivery_2028) {
+	1: switch_emu_SNGIII_RNET_position;
+	10: switch_emu_SNGIII_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_randomlivery, current_year) { 
+	0..2027: switch_emu_SNGIII_position;
+	switch_emu_SNGIII_randomlivery_2028;
+}
+
+//Livery Switch Sets
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_livery, cargo_subtype){
+    0: 	switch_emu_SNGIII_randomlivery;
+	1:	switch_emu_SNGIII_position;
+    2:	switch_emu_SNGIII_RNET_position;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_subtype_text, cargo_subtype){
+	0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_NS);
+    2: return string(str_cargo_subtype_rnet);
+	return CB_RESULT_NO_TEXT;
+}
 
 /*
 * ARTICULATED VEHICLE CALLBACK

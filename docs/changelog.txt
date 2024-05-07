@@ -3,6 +3,8 @@ Dutch Trainset Changelog
 3.2.0-XL (2024/??/??)
 ---------------------
 - Change: Introduction date Fccpps changed to 1986
+- Change: R-net liveries improved
+- Feature: R-net livery for SNG (Graphics by Erato)
 
 3.1.0-XL (2024/04/29)
 ---------------------

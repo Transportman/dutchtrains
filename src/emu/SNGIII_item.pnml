@@ -55,9 +55,10 @@ item(FEAT_TRAINS, item_emu_SNGIII) {
         cargo_capacity: return 53;
         purchase: spriteset_emu_SNGIII_purchase;
         additional_text: switch_emu_SNGIII_additional_text;
+		cargo_subtype_text: switch_emu_SNGIII_subtype_text;
         articulated_part: switch_emu_SNGIII_articulated;
         visual_effect_and_powered: switch_emu_SNGIII_visual_effect_and_powered;
         length: switch_emu_SNGIII_length;
-        switch_emu_SNGIII_position;
+        switch_emu_SNGIII_livery;
 	}
 }
