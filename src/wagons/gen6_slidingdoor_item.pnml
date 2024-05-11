@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_wagons_gen6_slidingdoor) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: unelectrified_D;
+        axleweight(unelectrified_D);
 		ai_special_flag: AI_FLAG_CARGO;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;

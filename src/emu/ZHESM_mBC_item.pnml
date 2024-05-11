@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_emu_ZHESM_mBC) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;
-        track_type: DC_C;
+        axleweightDC_C;
 		ai_special_flag: AI_FLAG_PASSENGER;
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;

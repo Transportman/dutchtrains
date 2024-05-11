@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_diesel_G400B) {
         //cargo_age_period: 0;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: unelectrified_C;
+        axleweight(unelectrified_C);
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;

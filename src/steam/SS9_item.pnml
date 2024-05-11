@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_steam_SS9) {
         //cargo_age_period: 185;
         misc_flags: 0;
         refit_cost: 0;
-        track_type: unelectrified_A;
+        axleweight(unelectrified_A);
 		ai_special_flag: 0;
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;

@@ -8,6 +8,11 @@
 
 //Allow for the disabling of fictional trains
 #define availability(PARAMETER) PARAMETER ? ALL_CLIMATES : NO_CLIMATE
+//Allow for disabling of axle weights and voltages
+#define axleweight(PARAMETER) track_type: param_axle ? PARAMETER : unelectrified_C
+#define axleweightDC_B track_type: param_voltage ? DC_B : dual_B
+#define axleweightDC_C track_type: param_axle ? (param_voltage ? DC_C : dual_C) : (param_voltage ? DC_B : dual_B)
+#define axleweightAC(PARAMETER) track_type: param_axle ? PARAMETER : dual_B
 
 // define the newgrf
 grf {
@@ -122,6 +127,22 @@ grf {
             name:   string(STR_PARAM_FICTIONAL);
             desc:   string(STR_PARAM_FICTIONAL_DESC);
             def_value: 1;
+        }
+    }
+    param {
+        param_axle {
+            type:   bool;
+            name:   string(STR_PARAM_AXLE);
+            desc:   string(STR_PARAM_AXLE_DESC);
+            def_value: 0;
+        }
+    }
+    param {
+        param_voltage {
+            type:   bool;
+            name:   string(STR_PARAM_VOLTAGE);
+            desc:   string(STR_PARAM_VOLTAGE_DESC);
+            def_value: 0;
         }
     }
 }

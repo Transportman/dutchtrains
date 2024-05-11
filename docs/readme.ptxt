@@ -127,6 +127,14 @@ configuration file:
   0: Fictional trains disabled 
   1: Fictional trains available (default)
   
+8th parameter: Axle limits
+  0: Axle limits disabled (default)
+  1: Axle limits enabled
+  
+9th parameter: Voltage differentiation
+  0: Voltage not differentiated (default)
+  1: Both 25kV and 1.5kV considered
+  
 2.4 Usage
 ---------
 Starting date

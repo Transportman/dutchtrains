@@ -53,6 +53,12 @@ STR_PARAM_LOADING_SPEED_FAST        :Fast
 STR_PARAM_FICTIONAL					:Fictional trains
 STR_PARAM_FICTIONAL_DESC			:Enable this to allow for the purchase of fictional trains.
 
+STR_PARAM_AXLE						:Axle weight classes
+STR_PARAM_AXLE_DESC					:Enable this to allow tracksets to bar trains with certain axle weight classes from certain tracks.
+
+STR_PARAM_VOLTAGE					:Voltage differentiation
+STR_PARAM_VOLTAGE_DESC				:Enable this to allow tracksets to bar trains that cannot run on 25kV AC from certain tracks.
+
 #cargo subtype livery strings
 str_cargo_subtype_auto              : > Year-dependent livery
 str_cargo_subtype_purchase          : > Construction year livery
