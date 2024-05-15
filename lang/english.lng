@@ -552,7 +552,7 @@ str_coaches_PlanN       :Sleeper Carriage Plan N
 str_coaches_Couchette   :Sleeper Carriage Couchette Bcm
 str_coaches_Citynightline   :Sleeper Carriage CityNightLine
 str_coaches_MUs         :Sleeper Carriage MUs
-str_coaches_Nightjet    :Sleeper Carriage Nightjet
+str_coaches_Nightjet    :Sleeper Carriage Nightjet Bvcmz
 str_coaches_Greencitytrip   :Sleeper Carriage GreenCityTrip
 
 #baggage and mail wagons
