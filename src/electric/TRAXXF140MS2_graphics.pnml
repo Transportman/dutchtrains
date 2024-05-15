@@ -51,8 +51,11 @@ spriteset(spriteset_electric_TRAXXF140MS2_NS, "gfx/electric/TRAXXF140MS2.png") {
 	template_2cc_88(1, 96)
 }
 //nmbs
-spriteset(spriteset_electric_TRAXXF140MS2_NMBS, "gfx/electric/TRAXXF140MS2.png") {
+spriteset(spriteset_electric_TRAXXF140MS2_NMBS_Fenix, "gfx/electric/TRAXXF140MS2.png") {
 	template_2cc_88(1, 128)
+}
+spriteset(spriteset_electric_TRAXXF140MS2_NMBS, "gfx/electric/TRAXXF140MS2.png") {
+	template_2cc_88(1, 192)
 }
 
 spriteset(spriteset_electric_TRAXXF140MS2_Akiem, "gfx/electric/TRAXXF140MS2.png") {
@@ -66,6 +69,7 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2024) {
     3: spriteset_electric_TRAXXF140MS2_red;
     2: spriteset_electric_TRAXXF140MS2_silver;
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_NS;
 	8: spriteset_electric_TRAXXF140MS2_Akiem;
 }
@@ -74,6 +78,7 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2022) {
     3: spriteset_electric_TRAXXF140MS2_red;
     2: spriteset_electric_TRAXXF140MS2_silver;
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_NS;
 }
 random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2015) {
@@ -85,10 +90,12 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2015) {
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2024) {
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_Akiem;
 }
 random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2022) {
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_NS;
 }
 random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2015) {
@@ -130,7 +137,8 @@ switch(FEAT_TRAINS, SELF, switch_for_electric_TRAXXF140MS2_livery, cargo_subtype
     4: spriteset_electric_TRAXXF140MS2_silver;
 	5: spriteset_electric_TRAXXF140MS2_NS;
 	6: spriteset_electric_TRAXXF140MS2_NMBS;
-	7: spriteset_electric_TRAXXF140MS2_Akiem;
+	7: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
     switch_electric_TRAXXF140MS2_randomlivery;
 }
 
@@ -139,6 +147,7 @@ random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_i
     3: spriteset_electric_TRAXXF140MS2_red;
     2: spriteset_electric_TRAXXF140MS2_silver;
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_NS;
 	8: spriteset_electric_TRAXXF140MS2_Akiem;
 }
@@ -147,6 +156,7 @@ random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_i
     3: spriteset_electric_TRAXXF140MS2_red;
     2: spriteset_electric_TRAXXF140MS2_silver;
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_NS;
 }
 random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_all_2015) {
@@ -157,10 +167,12 @@ random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_i
 }
 random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_2024) {
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_Akiem;
 }
 random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_2022) {
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_NS;
 }
 random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_2015) {
@@ -202,7 +214,8 @@ switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, [STORE_TEMP(p
     4: spriteset_electric_TRAXXF140MS2_silver;
 	5: spriteset_electric_TRAXXF140MS2_NS;
 	6: spriteset_electric_TRAXXF140MS2_NMBS;
-	7: spriteset_electric_TRAXXF140MS2_Akiem;
+	7: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
     switch_REV_electric_TRAXXF140MS2_randomlivery;
 }
 
@@ -215,7 +228,8 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_subtype_text, cargo_subty
     4: return string(str_cargo_subtype_fyra_white);
     5: return string(str_cargo_subtype_ns_ic);
     6: return string(str_cargo_subtype_nmbs);
-    7: return string(str_cargo_subtype_Akiem);
+    7: return string(str_cargo_subtype_nmbs_feniks);
+    8: return string(str_cargo_subtype_Akiem);
     return CB_RESULT_NO_TEXT;
 }
 

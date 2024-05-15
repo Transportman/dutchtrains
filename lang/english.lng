@@ -158,6 +158,7 @@ str_cargo_subtype_maashopper        : > Veolia white/red "Maashopper" livery
 str_cargo_subtype_nid               : > DDZ livery
 str_cargo_subtype_nid_cab           : > DDZ livery (cab control)
 str_cargo_subtype_nmbs              : > NMBS livery
+str_cargo_subtype_nmbs_feniks       : > NMBS livery "De Feniks"
 str_cargo_subtype_ns_ic             : > NS InterCity livery
 str_cargo_subtype_ns_ic_cab         : > NS InterCity livery (cab control)
 str_cargo_subtype_ns_flow           : > NS Flow livery
