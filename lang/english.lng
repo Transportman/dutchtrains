@@ -157,6 +157,7 @@ str_cargo_subtype_hispeed_cab       : > NS Hispeed livery (cab control)
 str_cargo_subtype_maashopper        : > Veolia white/red "Maashopper" livery
 str_cargo_subtype_nid               : > DDZ livery
 str_cargo_subtype_nid_cab           : > DDZ livery (cab control)
+str_cargo_subtype_nmbs              : > NMBS livery
 str_cargo_subtype_ns_ic             : > NS InterCity livery
 str_cargo_subtype_ns_ic_cab         : > NS InterCity livery (cab control)
 str_cargo_subtype_ns_flow           : > NS Flow livery
@@ -200,6 +201,7 @@ str_cargo_subtype_algemeendagblad2	: > Algemeen Dagblad livery 2
 str_cargo_subtype_ACTS              : > ACTS livery
 str_cargo_subtype_ACTS_blue_yellow  : > ACTS (blue/yellow) livery
 str_cargo_subtype_ACTS_grey_green   : > ACTS (grey/green) livery
+str_cargo_subtype_Akiem 		    : > Akiem livery
 str_cargo_subtype_Arriva            : > Arriva livery
 str_cargo_subtype_Arriva_spurt      : > Arriva "Spurt" livery
 str_cargo_subtype_Arriva_vechtdallijnen : > Arriva "Vechtdallijnen" livery

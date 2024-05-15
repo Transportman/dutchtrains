@@ -19,11 +19,15 @@ spriteset(spriteset_electric_TRAXXF140MS2_purchase_red, "gfx/purchase/electric/T
 spriteset(spriteset_electric_TRAXXF140MS2_purchase_NS, "gfx/purchase/electric/TRAXXF140MS2_NS.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_electric_TRAXXF140MS2_purchase_Akiem, "gfx/purchase/electric/TRAXXF140MS2_Akiem.png") {
+	template_purchase(0, 0)
+}
 
 switch(FEAT_TRAINS, PARENT, switch_electric_TRAXXF140MS2_purchase, current_year) {
 	0..2010: spriteset_electric_TRAXXF140MS2_purchase_green;
     2011..2014: spriteset_electric_TRAXXF140MS2_purchase_red;
-    spriteset_electric_TRAXXF140MS2_purchase_NS;
+    2015..2023: spriteset_electric_TRAXXF140MS2_purchase_NS;
+    spriteset_electric_TRAXXF140MS2_purchase_Akiem;
 }
 
 /*
@@ -46,14 +50,49 @@ spriteset(spriteset_electric_TRAXXF140MS2_green, "gfx/electric/TRAXXF140MS2.png"
 spriteset(spriteset_electric_TRAXXF140MS2_NS, "gfx/electric/TRAXXF140MS2.png") {
 	template_2cc_88(1, 96)
 }
+//nmbs
+spriteset(spriteset_electric_TRAXXF140MS2_NMBS, "gfx/electric/TRAXXF140MS2.png") {
+	template_2cc_88(1, 128)
+}
+
+spriteset(spriteset_electric_TRAXXF140MS2_Akiem, "gfx/electric/TRAXXF140MS2.png") {
+	template_2cc_88(1, 160)
+}
 /*
 * LIVERY SELECTION
 */
-
-random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all) {
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2024) {
 	3: spriteset_electric_TRAXXF140MS2_green;
     3: spriteset_electric_TRAXXF140MS2_red;
     2: spriteset_electric_TRAXXF140MS2_silver;
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
+}
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2022) {
+	3: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    2: spriteset_electric_TRAXXF140MS2_silver;
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+}
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2015) {
+	3: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    2: spriteset_electric_TRAXXF140MS2_silver;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+}
+
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2024) {
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
+}
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2022) {
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+}
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2015) {
+	3: spriteset_electric_TRAXXF140MS2_green;
 	8: spriteset_electric_TRAXXF140MS2_NS;
 }
 
@@ -71,13 +110,17 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_fyra) {
 switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_randomlivery, build_year) {
 	0..2010: spriteset_electric_TRAXXF140MS2_green;
     2011..2014: switch_electric_TRAXXF140MS2_random_2011;
-    switch_electric_TRAXXF140MS2_random_all;
+    2015..2021: switch_electric_TRAXXF140MS2_random_all_2015;
+    2022..2023: switch_electric_TRAXXF140MS2_random_all_2022;
+    switch_electric_TRAXXF140MS2_random_all_2024;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_purchaselivery, build_year) {
 	0..2010: spriteset_electric_TRAXXF140MS2_green;
     2011..2014: switch_electric_TRAXXF140MS2_random_fyra;
-	spriteset_electric_TRAXXF140MS2_NS; 
+    2015..2021: switch_electric_TRAXXF140MS2_random_2015;
+    2022..2023: switch_electric_TRAXXF140MS2_random_2022;
+    switch_electric_TRAXXF140MS2_random_2024;
 }
 
 switch(FEAT_TRAINS, SELF, switch_for_electric_TRAXXF140MS2_livery, cargo_subtype) {
@@ -86,13 +129,42 @@ switch(FEAT_TRAINS, SELF, switch_for_electric_TRAXXF140MS2_livery, cargo_subtype
     3: spriteset_electric_TRAXXF140MS2_red;
     4: spriteset_electric_TRAXXF140MS2_silver;
 	5: spriteset_electric_TRAXXF140MS2_NS;
+	6: spriteset_electric_TRAXXF140MS2_NMBS;
+	7: spriteset_electric_TRAXXF140MS2_Akiem;
     switch_electric_TRAXXF140MS2_randomlivery;
 }
 
-random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_all) {
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_all_2024) {
 	3: spriteset_electric_TRAXXF140MS2_green;
     3: spriteset_electric_TRAXXF140MS2_red;
     2: spriteset_electric_TRAXXF140MS2_silver;
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
+}
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_all_2022) {
+	3: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    2: spriteset_electric_TRAXXF140MS2_silver;
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+}
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_all_2015) {
+	3: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    2: spriteset_electric_TRAXXF140MS2_silver;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+}
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_2024) {
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
+}
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_2022) {
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	8: spriteset_electric_TRAXXF140MS2_NS;
+}
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_2015) {
+	3: spriteset_electric_TRAXXF140MS2_green;
 	8: spriteset_electric_TRAXXF140MS2_NS;
 }
 
@@ -110,13 +182,17 @@ random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_i
 switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_randomlivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
 	0..2010: spriteset_electric_TRAXXF140MS2_green;
     2011..2014: switch_REV_electric_TRAXXF140MS2_random_2011;
-    switch_REV_electric_TRAXXF140MS2_random_all;
+    2015..2021: switch_REV_electric_TRAXXF140MS2_random_all_2015;
+    2022..2023: switch_REV_electric_TRAXXF140MS2_random_all_2022;
+    switch_REV_electric_TRAXXF140MS2_random_all_2024;
 }
 
 switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
 	0..2010: spriteset_electric_TRAXXF140MS2_green;
     2011..2014: switch_REV_electric_TRAXXF140MS2_random_fyra;
-	spriteset_electric_TRAXXF140MS2_NS; 
+    2015..2021: switch_REV_electric_TRAXXF140MS2_random_2015;
+    2022..2023: switch_REV_electric_TRAXXF140MS2_random_2022;
+    switch_REV_electric_TRAXXF140MS2_random_2024;
 }
 
 switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
@@ -125,6 +201,8 @@ switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, [STORE_TEMP(p
     3: spriteset_electric_TRAXXF140MS2_red;
     4: spriteset_electric_TRAXXF140MS2_silver;
 	5: spriteset_electric_TRAXXF140MS2_NS;
+	6: spriteset_electric_TRAXXF140MS2_NMBS;
+	7: spriteset_electric_TRAXXF140MS2_Akiem;
     switch_REV_electric_TRAXXF140MS2_randomlivery;
 }
 
@@ -136,6 +214,8 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_subtype_text, cargo_subty
     3: return string(str_cargo_subtype_fyra_red);
     4: return string(str_cargo_subtype_fyra_white);
     5: return string(str_cargo_subtype_ns_ic);
+    6: return string(str_cargo_subtype_nmbs);
+    7: return string(str_cargo_subtype_Akiem);
     return CB_RESULT_NO_TEXT;
 }
 
