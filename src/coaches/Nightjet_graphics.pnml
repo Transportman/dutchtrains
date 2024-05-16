@@ -24,9 +24,17 @@ spriteset(spriteset_coaches_Nightjet, "gfx/coaches/Nightjet.png") {
 spriteset(spriteset_coaches_Nightjet_schlafwagen, "gfx/coaches/Nightjet.png") {
 	template_2cc_88(1, 27)
 }
+spriteset(spriteset_coaches_Nightjet_SBB, "gfx/coaches/Nightjet.png") {
+	template_2cc_88(1, 53)
+}
+spriteset(spriteset_coaches_Nightjet_OBB, "gfx/coaches/Nightjet.png") {
+	template_2cc_88(1, 79)
+}
 random_switch(FEAT_TRAINS, SELF, switch_coaches_Nightjet_random) {
 	5: spriteset_coaches_Nightjet;
 	2: spriteset_coaches_Nightjet_schlafwagen;
+	1: spriteset_coaches_Nightjet_OBB;
+	1: spriteset_coaches_Nightjet_SBB;
 }
 
 /*
@@ -37,6 +45,8 @@ switch(FEAT_TRAINS, SELF, switch_coaches_Nightjet_livery, cargo_subtype){
     0: 	switch_coaches_Nightjet_random;
 	1:	spriteset_coaches_Nightjet;
     2:	spriteset_coaches_Nightjet_schlafwagen;
+    3:	spriteset_coaches_Nightjet_OBB;
+    4:	spriteset_coaches_Nightjet_SBB;
 }
 
 // CARGO SUBTYPE CALLBACK
@@ -44,5 +54,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_Nightjet_subtype_text, cargo_subtype){
 	0: return string(str_cargo_subtype_random);
     1: return string(str_cargo_subtype_couchette);
     2: return string(str_cargo_subtype_sleeper);
+    3: return string(str_cargo_subtype_nightjetobb);
+    4: return string(str_cargo_subtype_nightjetsbb);
 	return CB_RESULT_NO_TEXT;
 }

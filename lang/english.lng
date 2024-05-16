@@ -217,9 +217,9 @@ str_cargo_subtype_BLS				: > BLS Cargo livery
 str_cargo_subtype_Captrain          : > Captrain livery
 str_cargo_subtype_Connexxion_valleilijn		: > Connexxion Valleilijn livery
 str_cargo_subtype_Crossrail         : > Crossrail livery
-str_cargo_subtype_DB				: > DB livery
-str_cargo_subtype_DB_1st			: > DB livery 1st class
-str_cargo_subtype_DB_Bistro			: > DB livery Bordbistro
+str_cargo_subtype_DB				: > DB livery (Bpmmz)
+str_cargo_subtype_DB_1st			: > DB livery 1st class (ARkimmbz)
+str_cargo_subtype_DB_Bistro			: > DB livery Bordbistro (Avmmz)
 str_cargo_subtype_DBSchenker        : > DB Schenker livery
 str_cargo_subtype_DBSchenker_Crates	: > DB Schenker livery (crates)
 str_cargo_subtype_DBSchenker_Containers : > DB Schenker livery (containers)
@@ -250,6 +250,8 @@ str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatscha
 str_cargo_subtype_NCS_tender        : > NCS livery (tender locomotive)
 str_cargo_subtype_NCS_tank          : > NCS livery (tank locomotive)
 str_cargo_subtype_nedtrain          : > NedTrain livery
+str_cargo_subtype_nightjetobb       : > OBB livery (Bmz)
+str_cargo_subtype_nightjetsbb       : > SBB livery (Bpm)
 str_cargo_subtype_NS                : > NS livery
 str_cargo_subtype_NS_tank           : > NS livery (tank locomotive)
 str_cargo_subtype_NS_whiteroof      : > NS livery w/ white roof
@@ -303,8 +305,8 @@ str_cargo_subtype_house             : > House cargo livery
 str_cargo_subtype_train             : > Train cargo livery
 str_cargo_subtype_tractor           : > Tractor cargo livery
 
-str_cargo_subtype_couchette         : > Couchette carriage livery
-str_cargo_subtype_sleeper           : > Sleeper carriage livery
+str_cargo_subtype_couchette         : > Nightjet livery couchette 
+str_cargo_subtype_sleeper           : > Nightjet livery sleeper
 
 #steam
 str_steam_Arend         :HSM "Arend" (Steam)
@@ -553,7 +555,7 @@ str_coaches_PlanN       :Sleeper Carriage Plan N
 str_coaches_Couchette   :Sleeper Carriage Couchette Bcm
 str_coaches_Citynightline   :Sleeper Carriage CityNightLine
 str_coaches_MUs         :Sleeper Carriage MUs
-str_coaches_Nightjet    :Sleeper Carriage Nightjet Bvcmz
+str_coaches_Nightjet    :Sleeper Carriage Nightjet Bmz
 str_coaches_Greencitytrip   :Sleeper Carriage GreenCityTrip
 
 #baggage and mail wagons

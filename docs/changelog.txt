@@ -9,6 +9,7 @@ Dutch Trainset Changelog
 - Feature: R-net livery for SNG (Graphics by Erato)
 - Feature: Parameter to ignore tracktype related limitations
 - Feature: New liveries for TRAXX (Graphics by Erato)
+- Feature: OBB and SBB coach livery for Nightjet coaches (Graphics by Erato)
 
 3.1.0-XL (2024/04/29)
 ---------------------
