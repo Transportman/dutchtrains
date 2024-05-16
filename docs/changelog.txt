@@ -4,7 +4,7 @@ Dutch Trainset Changelog
 ---------------------
 - Change: Introduction date Fccpps changed to 1986
 - Change: R-net liveries improved
-- Change: Bpmmz & Nightjet coach sprites more in line with existing coaches
+- Change: Bpmmz, Nightjet & GreenCityTrip coach sprites more in line with existing coaches
 - Change: Tweaked ICE3 sprites
 - Feature: R-net livery for SNG (Graphics by Erato)
 - Feature: Parameter to ignore tracktype related limitations

@@ -223,7 +223,7 @@ str_cargo_subtype_DB_Bistro			: > DB livery Bordbistro (Avmmz)
 str_cargo_subtype_DBSchenker        : > DB Schenker livery
 str_cargo_subtype_DBSchenker_Crates	: > DB Schenker livery (crates)
 str_cargo_subtype_DBSchenker_Containers : > DB Schenker livery (containers)
-str_cargo_subtype_DinnerTrain		: > Dinner Train livery
+str_cargo_subtype_DinnerTrain		: > Train Charter Services livery
 str_cargo_subtype_Dispolok			: > Dispolok livery
 str_cargo_subtype_Distrirail		: > Distrirail livery
 str_cargo_subtype_DLC               : > DLC livery
