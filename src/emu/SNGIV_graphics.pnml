@@ -13,6 +13,13 @@
 spriteset(spriteset_emu_SNGIV_purchase, "gfx/purchase/emu/SNG.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_emu_SNGIV_yellow_purchase, "gfx/purchase/emu/SNG_yellow.png") {
+	template_purchase(0, 0)
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_SNGIV_purchase, current_year) {
+	0..2021: spriteset_emu_SNGIV_purchase;
+    spriteset_emu_SNGIV_yellow_purchase;
+}
 
 /*
 * VEHICLE
@@ -40,7 +47,49 @@ switch(FEAT_TRAINS, SELF, switch_emu_SNGIV_position, (position_in_articulated_ve
 	2: spriteset_emu_SNGIV_middle;
 	spriteset_emu_SNGIV_back;
 }
+//NS
+spriteset(spriteset_emu_SNGIV_yellow_front, "gfx/emu/SNG_yellow.png") {
+	template_2cc_88(1,1)
+}
 
+spriteset(spriteset_emu_SNGIV_yellow_middle_pantograph, "gfx/emu/SNG_yellow.png") {
+	template_2cc_68(1,32)
+}
+
+spriteset(spriteset_emu_SNGIV_yellow_middle, "gfx/emu/SNG_yellow.png") {
+	template_2cc_68(1,64)
+}
+
+spriteset(spriteset_emu_SNGIV_yellow_back, "gfx/emu/SNG_yellow.png") {
+	template_2cc_88(1,96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIV_yellow_position, (position_in_articulated_veh)) { 
+	0: spriteset_emu_SNGIV_yellow_front;
+	1: spriteset_emu_SNGIV_yellow_middle_pantograph;
+	2: spriteset_emu_SNGIV_yellow_middle;
+	spriteset_emu_SNGIV_yellow_back;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIV_randomlivery, current_year) { 
+	0..2021: switch_emu_SNGIV_position;
+	switch_emu_SNGIV_yellow_position;
+}
+
+//Livery Switch Sets
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIV_livery, cargo_subtype){
+    0: 	switch_emu_SNGIV_randomlivery;
+	1:	switch_emu_SNGIV_position;
+    2:	switch_emu_SNGIV_yellow_position;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIV_subtype_text, cargo_subtype){
+	0: return string(str_cargo_subtype_auto);
+    1: return string(str_cargo_subtype_ns_sprinter);
+    2: return string(str_cargo_subtype_ns_sprinter_yellow);
+	return CB_RESULT_NO_TEXT;
+}
 
 /*
 * ARTICULATED VEHICLE CALLBACK

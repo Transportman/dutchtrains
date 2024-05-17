@@ -53,7 +53,7 @@ item(FEAT_TRAINS, item_emu_FLIRT3III) {
 	}
 	graphics {
         cargo_capacity: return 53;
-        purchase: spriteset_emu_FLIRT3III_purchase;
+        purchase: switch_emu_FLIRT3III_purchase;
         additional_text: switch_emu_FLIRT3III_additional_text;
 		cargo_subtype_text: switch_emu_FLIRT3III_subtype_text;
         articulated_part: switch_emu_FLIRT3III_articulated;

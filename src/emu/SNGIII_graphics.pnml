@@ -13,6 +13,13 @@
 spriteset(spriteset_emu_SNGIII_purchase, "gfx/purchase/emu/SNG.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_emu_SNGIII_yellow_purchase, "gfx/purchase/emu/SNG_yellow.png") {
+	template_purchase(0, 0)
+}
+switch(FEAT_TRAINS, PARENT, switch_emu_SNGIII_purchase, current_year) {
+	0..2021: spriteset_emu_SNGIII_purchase;
+    spriteset_emu_SNGIII_yellow_purchase;
+}
 
 /*
 * VEHICLE
@@ -53,6 +60,24 @@ switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_RNET_position, (position_in_articula
 	1: spriteset_emu_SNGIII_RNET_middle;
 	spriteset_emu_SNGIII_RNET_back;
 }
+//NS_yellow
+spriteset(spriteset_emu_SNGIII_NS_yellow_front, "gfx/emu/SNG_yellow.png") {
+	template_2cc_88(1,1)
+}
+
+spriteset(spriteset_emu_SNGIII_NS_yellow_middle, "gfx/emu/SNG_yellow.png") {
+	template_2cc_68(1,32)
+}
+
+spriteset(spriteset_emu_SNGIII_NS_yellow_back, "gfx/emu/SNG_yellow.png") {
+	template_2cc_88(1,64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_NS_yellow_position, (position_in_articulated_veh)) { 
+	0: spriteset_emu_SNGIII_NS_yellow_front;
+	1: spriteset_emu_SNGIII_NS_yellow_middle;
+	spriteset_emu_SNGIII_NS_yellow_back;
+}
 
 /*
 * LIVERY SELECTION
@@ -60,11 +85,12 @@ switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_RNET_position, (position_in_articula
 
 random_switch(FEAT_TRAINS, PARENT, switch_emu_SNGIII_randomlivery_2028) {
 	1: switch_emu_SNGIII_RNET_position;
-	10: switch_emu_SNGIII_position;
+	10: switch_emu_SNGIII_NS_yellow_position;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_randomlivery, current_year) { 
-	0..2027: switch_emu_SNGIII_position;
+	0..2021: switch_emu_SNGIII_position;
+	2022..2027: switch_emu_SNGIII_NS_yellow_position;
 	switch_emu_SNGIII_randomlivery_2028;
 }
 
@@ -73,13 +99,15 @@ switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_livery, cargo_subtype){
     0: 	switch_emu_SNGIII_randomlivery;
 	1:	switch_emu_SNGIII_position;
     2:	switch_emu_SNGIII_RNET_position;
+    3:	switch_emu_SNGIII_NS_yellow_position;
 }
 
 // CARGO SUBTYPE CALLBACK
 switch(FEAT_TRAINS, SELF, switch_emu_SNGIII_subtype_text, cargo_subtype){
 	0: return string(str_cargo_subtype_auto);
-    1: return string(str_cargo_subtype_NS);
+    1: return string(str_cargo_subtype_ns_sprinter);
     2: return string(str_cargo_subtype_rnet);
+    3: return string(str_cargo_subtype_ns_sprinter_yellow);
 	return CB_RESULT_NO_TEXT;
 }
 
