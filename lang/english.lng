@@ -457,6 +457,7 @@ str_emu_IRMVI_t         :VIRM-VI "Bison" (Electric)
 str_emu_mP              :Plan mP (Electric)
 str_emu_TGV             :TGV Thalys (Electric)
 str_emu_ICE3M           :ICE 3M (Electric)
+str_emu_ICE3neo         :ICE 3neo (Electric)
 str_emu_V250            :Fyra V250 "Albatros" (Electric)
 str_emu_V250_t          :Fyra V250 "Albatross" (Electric)
 str_emu_gen9_HST        :P8000 (Electric)
@@ -703,6 +704,7 @@ str_purchase_emu_ZHESM_mBC  	:Refurbished 1926: {YELLOW}+150% power, +100% TE{}{
 str_purchase_emu_Mat24      	:For use with Carriage Mat '24.
 str_purchase_emu_Mat36ELD3  	:With baggage compartment refittable to express cargoes or passengers.{}Purchased from 1942: {YELLOW}-26% weight, -50% power, -45% TE, -20% running cost, -21% capacity, length -1/8.
 str_purchase_emu_ICE3M      	:Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV ~ electrified track.{}Also known as: {SILVER} DB BR 406.
+str_purchase_emu_ICE3neo      	:Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV ~ electrified track.{}Also known as: {SILVER} DB BR 408.
 str_purchase_spc_emu_TGV    	:Multisystem EMU, {YELLOW}+139% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_emu_Eurostar_e320 :Multisystem EMU, {YELLOW}+86% power {BLACK}on 25 kV ~ electrified track.
 str_purchase_spc_emu_V250   	:Multisystem EMU, {YELLOW}+83% power {BLACK}on 25 kV ~ electrified track.
@@ -713,6 +715,7 @@ str_purchase_spc_ICNGV			:Multisystem locomotive.
 str_purchase_spc_ICNGVIII		:Multisystem locomotive.
 
 str_purchase_emu_ICE3M_no_track			:Multisystem EMU.{}Also known as: {SILVER} DB BR 406.
+str_purchase_emu_ICE3neo_no_track		:Multisystem EMU.{}Also known as: {SILVER} DB BR 408.
 str_purchase_spc_emu_TGV_no_track		:Multisystem EMU.
 str_purchase_spc_emu_Eurostar_e320_no_track :Multisystem EMU.
 str_purchase_spc_emu_V250_no_track		:Multisystem EMU.

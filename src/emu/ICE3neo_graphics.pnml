@@ -1,0 +1,101 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_emu_ICE3neo_purchase, "gfx/purchase/emu/ICE3neo.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_emu_ICE3neo_red_front, "gfx/emu/ICE3neo.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_emu_ICE3neo_red_middle_1, "gfx/emu/ICE3neo.png") {
+	template_2cc_88(1, 27)
+}
+spriteset(spriteset_emu_ICE3neo_red_middle_2, "gfx/emu/ICE3neo.png") {
+	template_2cc_88(1, 53)
+}
+spriteset(spriteset_emu_ICE3neo_red_middle_3, "gfx/emu/ICE3neo.png") {
+	template_2cc_88(1, 79)
+}
+spriteset(spriteset_emu_ICE3neo_red_middle_4, "gfx/emu/ICE3neo.png") {
+	template_2cc_88(1, 105)
+}
+spriteset(spriteset_emu_ICE3neo_red_middle_5, "gfx/emu/ICE3neo.png") {
+	template_2cc_88(1, 131)
+}
+spriteset(spriteset_emu_ICE3neo_red_middle_6, "gfx/emu/ICE3neo.png") {
+	template_2cc_88(1, 157)
+}
+spriteset(spriteset_emu_ICE3neo_red_back, "gfx/emu/ICE3neo.png") {
+	template_2cc_88(1, 183)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3neo_red_position, (position_in_articulated_veh)) {
+	1: spriteset_emu_ICE3neo_red_middle_1;
+    2: spriteset_emu_ICE3neo_red_middle_2;
+    3: spriteset_emu_ICE3neo_red_middle_3;
+    4: spriteset_emu_ICE3neo_red_middle_4;
+    5: spriteset_emu_ICE3neo_red_middle_5;
+    6: spriteset_emu_ICE3neo_red_middle_6;
+    7: spriteset_emu_ICE3neo_red_back;
+    spriteset_emu_ICE3neo_red_front;
+}
+
+/*
+* ARTICULATED VEHICLE CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3neo_articulated, extra_callback_info1) {
+    1..7: return item_emu_ICE3neo;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/*
+* VISUAL EFFECT AND POWERED CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3neo_visual_effect_and_powered, (position_in_articulated_veh)) {
+    6: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+/*
+* POWER CALLBACK
+*/
+
+switch(FEAT_TRAINS, SELF, switch_emu_ICE3neo_power, current_railtype) {
+    SAAA: return 10728;
+    SABA: return 10728;
+    SACA: return 10728;
+    SADA: return 10728;
+    SAEA: return 10728;
+    SBAA: return 10728;
+    SBBA: return 10728;
+    SBCA: return 10728;
+    SBDA: return 10728;
+    SBEA: return 10728;
+    SAAa: return 10728;
+    SABa: return 10728;
+    SACa: return 10728;
+    SADa: return 10728;
+    SAEa: return 10728;
+    SBAa: return 10728;
+    SBBa: return 10728;
+    SBCa: return 10728;
+    SBDa: return 10728;
+    SBEa: return 10728;
+    return 5766;
+}

@@ -397,6 +397,8 @@
 #include "src/emu/ICNGVIII_item.pnml"
 #include "src/emu/Eurostar_e320_graphics.pnml"
 #include "src/emu/Eurostar_e320_item.pnml"
+#include "src/emu/ICE3neo_graphics.pnml"
+#include "src/emu/ICE3neo_item.pnml"
 
 //wagons
 #include "src/wagons/gen0hopper_graphics.pnml"

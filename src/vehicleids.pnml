@@ -236,3 +236,4 @@ item(FEAT_TRAINS, item_emu_Eurostar_e320, 341) {}
 item(FEAT_TRAINS, item_coaches_Nightjet, 342) {}
 item(FEAT_TRAINS, item_coaches_Bpmmz, 343) {}
 item(FEAT_TRAINS, item_coaches_Greencitytrip, 344) {}
+item(FEAT_TRAINS, item_emu_ICE3neo, 345) {}
