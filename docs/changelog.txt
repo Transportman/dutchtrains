@@ -6,6 +6,7 @@ Dutch Trainset Changelog
 - Change: R-net liveries improved
 - Change: Bpmmz, Nightjet & GreenCityTrip coach sprites more in line with existing coaches
 - Change: Tweaked ICE3 sprites
+- Change: Changed e320 sprite to be more in line with ICE3neo (Graphics by Erato)
 - Feature: ICE3neo (Graphics+Code by Erato)
 - Feature: R-net livery for SNG (Graphics by Erato)
 - Feature: Parameter to ignore tracktype related limitations

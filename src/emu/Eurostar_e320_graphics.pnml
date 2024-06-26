@@ -50,20 +50,20 @@ spriteset(spriteset_emu_Eurostar_e320_back, "gfx/emu/Eurostar_e320.png") {
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_Eurostar_e320_position, (position_in_articulated_veh)) {
-	1: spriteset_emu_Eurostar_e320_middle_3;
-	2: spriteset_emu_Eurostar_e320_middle_5;
+	1: spriteset_emu_Eurostar_e320_middle_1;
+	2: spriteset_emu_Eurostar_e320_middle_2;
 	3: spriteset_emu_Eurostar_e320_middle_1;
-	4: spriteset_emu_Eurostar_e320_middle_1;
-	5: spriteset_emu_Eurostar_e320_middle_5;
-	6: spriteset_emu_Eurostar_e320_middle_3;
-	7: spriteset_emu_Eurostar_e320_middle_7;
+	4: spriteset_emu_Eurostar_e320_middle_3;
+	5: spriteset_emu_Eurostar_e320_middle_2;
+	6: spriteset_emu_Eurostar_e320_middle_1;
+	7: spriteset_emu_Eurostar_e320_middle_4;
 	8: spriteset_emu_Eurostar_e320_middle_8;
-	9: spriteset_emu_Eurostar_e320_middle_4;
+	9: spriteset_emu_Eurostar_e320_middle_5;
 	10: spriteset_emu_Eurostar_e320_middle_6;
-	11: spriteset_emu_Eurostar_e320_middle_2;
-	12: spriteset_emu_Eurostar_e320_middle_3;
+	11: spriteset_emu_Eurostar_e320_middle_7;
+	12: spriteset_emu_Eurostar_e320_middle_5;
 	13: spriteset_emu_Eurostar_e320_middle_6;
-	14: spriteset_emu_Eurostar_e320_middle_4;
+	14: spriteset_emu_Eurostar_e320_middle_5;
     15: spriteset_emu_Eurostar_e320_back;
     spriteset_emu_Eurostar_e320_front;
 }
