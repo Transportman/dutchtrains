@@ -61,9 +61,22 @@ spriteset(spriteset_electric_TRAXXF140MS2_NMBS, "gfx/electric/TRAXXF140MS2.png")
 spriteset(spriteset_electric_TRAXXF140MS2_Akiem, "gfx/electric/TRAXXF140MS2.png") {
 	template_2cc_88(1, 160)
 }
+spriteset(spriteset_electric_TRAXXF140MS2_Eurocity, "gfx/electric/TRAXXF140MS2.png") {
+	template_2cc_88(1, 224)
+}
 /*
 * LIVERY SELECTION
 */
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2025) {
+	3: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    2: spriteset_electric_TRAXXF140MS2_silver;
+	2: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
+	3: spriteset_electric_TRAXXF140MS2_NS;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
+	8: spriteset_electric_TRAXXF140MS2_Eurocity;
+}
 random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2024) {
 	3: spriteset_electric_TRAXXF140MS2_green;
     3: spriteset_electric_TRAXXF140MS2_red;
@@ -88,6 +101,12 @@ random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_all_2015) {
 	8: spriteset_electric_TRAXXF140MS2_NS;
 }
 
+random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2025) {
+	4: spriteset_electric_TRAXXF140MS2_Eurocity;
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
+}
 random_switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_random_2024) {
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
 	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
@@ -119,7 +138,8 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_randomlivery, build_year)
     2011..2014: switch_electric_TRAXXF140MS2_random_2011;
     2015..2021: switch_electric_TRAXXF140MS2_random_all_2015;
     2022..2023: switch_electric_TRAXXF140MS2_random_all_2022;
-    switch_electric_TRAXXF140MS2_random_all_2024;
+    2024: switch_electric_TRAXXF140MS2_random_all_2024;
+    switch_electric_TRAXXF140MS2_random_all_2025;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_purchaselivery, build_year) {
@@ -127,7 +147,8 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_purchaselivery, build_yea
     2011..2014: switch_electric_TRAXXF140MS2_random_fyra;
     2015..2021: switch_electric_TRAXXF140MS2_random_2015;
     2022..2023: switch_electric_TRAXXF140MS2_random_2022;
-    switch_electric_TRAXXF140MS2_random_2024;
+    2024: switch_electric_TRAXXF140MS2_random_2024;
+    switch_electric_TRAXXF140MS2_random_2025;
 }
 
 switch(FEAT_TRAINS, SELF, switch_for_electric_TRAXXF140MS2_livery, cargo_subtype) {
@@ -139,9 +160,20 @@ switch(FEAT_TRAINS, SELF, switch_for_electric_TRAXXF140MS2_livery, cargo_subtype
 	6: spriteset_electric_TRAXXF140MS2_NMBS;
 	7: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_Akiem;
+	9: spriteset_electric_TRAXXF140MS2_Eurocity;
     switch_electric_TRAXXF140MS2_randomlivery;
 }
 
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_all_2025) {
+	3: spriteset_electric_TRAXXF140MS2_green;
+    3: spriteset_electric_TRAXXF140MS2_red;
+    2: spriteset_electric_TRAXXF140MS2_silver;
+	2: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
+	3: spriteset_electric_TRAXXF140MS2_NS;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
+	8: spriteset_electric_TRAXXF140MS2_Eurocity;
+}
 random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_all_2024) {
 	3: spriteset_electric_TRAXXF140MS2_green;
     3: spriteset_electric_TRAXXF140MS2_red;
@@ -164,6 +196,12 @@ random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_i
     3: spriteset_electric_TRAXXF140MS2_red;
     2: spriteset_electric_TRAXXF140MS2_silver;
 	8: spriteset_electric_TRAXXF140MS2_NS;
+}
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_2025) {
+	4: spriteset_electric_TRAXXF140MS2_Eurocity;
+	3: spriteset_electric_TRAXXF140MS2_NMBS;
+	1: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
+	8: spriteset_electric_TRAXXF140MS2_Akiem;
 }
 random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_REV_electric_TRAXXF140MS2_random_2024) {
 	3: spriteset_electric_TRAXXF140MS2_NMBS;
@@ -196,7 +234,8 @@ switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_randomlivery, [STORE_
     2011..2014: switch_REV_electric_TRAXXF140MS2_random_2011;
     2015..2021: switch_REV_electric_TRAXXF140MS2_random_all_2015;
     2022..2023: switch_REV_electric_TRAXXF140MS2_random_all_2022;
-    switch_REV_electric_TRAXXF140MS2_random_all_2024;
+    2024: switch_REV_electric_TRAXXF140MS2_random_all_2024;
+    switch_REV_electric_TRAXXF140MS2_random_all_2025;
 }
 
 switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
@@ -204,7 +243,8 @@ switch(FEAT_TRAINS, SELF, switch_REV_electric_TRAXXF140MS2_purchaselivery, [STOR
     2011..2014: switch_REV_electric_TRAXXF140MS2_random_fyra;
     2015..2021: switch_REV_electric_TRAXXF140MS2_random_2015;
     2022..2023: switch_REV_electric_TRAXXF140MS2_random_2022;
-    switch_REV_electric_TRAXXF140MS2_random_2024;
+    2024: switch_REV_electric_TRAXXF140MS2_random_2024;
+    switch_REV_electric_TRAXXF140MS2_random_2025;
 }
 
 switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
@@ -216,6 +256,7 @@ switch(FEAT_TRAINS, SELF, switch_rev_electric_TRAXXF140MS2_livery, [STORE_TEMP(p
 	6: spriteset_electric_TRAXXF140MS2_NMBS;
 	7: spriteset_electric_TRAXXF140MS2_NMBS_Fenix;
 	8: spriteset_electric_TRAXXF140MS2_Akiem;
+	9: spriteset_electric_TRAXXF140MS2_Eurocity;
     switch_REV_electric_TRAXXF140MS2_randomlivery;
 }
 
@@ -230,6 +271,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_TRAXXF140MS2_subtype_text, cargo_subty
     6: return string(str_cargo_subtype_nmbs);
     7: return string(str_cargo_subtype_nmbs_feniks);
     8: return string(str_cargo_subtype_Akiem);
+    9: return string(str_cargo_subtype_nmbs_eurocity);
     return CB_RESULT_NO_TEXT;
 }
 
