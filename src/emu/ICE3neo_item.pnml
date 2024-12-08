@@ -69,22 +69,24 @@ item(FEAT_TRAINS, item_emu_ICE3neo) {
 			cargo_capacity: return 53;
 			purchase: spriteset_emu_ICE3neo_purchase;
 			articulated_part: switch_emu_ICE3neo_articulated;
+			cargo_subtype_text: switch_emu_ICE3neo_subtype_text;
 			additional_text: switch_emu_ICE3neo_additional_text_tpo;
 			visual_effect_and_powered: switch_emu_ICE3neo_visual_effect_and_powered;
 			power: switch_emu_ICE3neo_power;
 			purchase_power: return 5766;
-			switch_emu_ICE3neo_red_position;
+			switch_emu_ICE3neo_livery;
 		}	
 	} else {
 		graphics {
 			cargo_capacity: return 53;
 			purchase: spriteset_emu_ICE3neo_purchase;
 			articulated_part: switch_emu_ICE3neo_articulated;
+			cargo_subtype_text: switch_emu_ICE3neo_subtype_text;
 			additional_text: switch_emu_ICE3neo_additional_text_ntp;
 			visual_effect_and_powered: switch_emu_ICE3neo_visual_effect_and_powered;
 			power: 10728;
 			purchase_power: return 10728;
-			switch_emu_ICE3neo_red_position;
+			switch_emu_ICE3neo_livery;
 		}
 	}	
 }
