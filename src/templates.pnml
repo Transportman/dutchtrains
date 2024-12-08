@@ -227,3 +227,104 @@ template template_2cc_18_anim(x, y) {
     [x+120, y, 32, 16, -16, -12, ANIM]
     [x+153, y, 22, 20,  -6, -19, ANIM]
 }
+
+/*
+ * The templates below are the same as the ones above, however these
+ * have the WHITE tag such that they may use pure white pixels
+*/
+
+template template_2cc_88_white(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, WHITE]
+    [x    , y,  8, 24,  -3, -12, WHITE]
+    [x+9  , y, 22, 20, -14, -12, WHITE]
+    [x+32 , y, 32, 16, -16, -12, WHITE]
+    [x+65 , y, 22, 20,  -6, -12, WHITE]
+    [x+88 , y,  8, 24,  -3, -12, WHITE]
+    [x+97 , y, 22, 20, -14, -12, WHITE]
+    [x+120, y, 32, 16, -16, -12, WHITE]
+    [x+153, y, 22, 20,  -6, -12, WHITE]
+}
+
+template template_2cc_78_white(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, WHITE]
+    [x    , y,  8, 24,  -3, -14, WHITE]
+    [x+9  , y, 22, 20, -14, -13, WHITE]
+    [x+32 , y, 32, 16, -16, -12, WHITE]
+    [x+65 , y, 22, 20,  -6, -12, WHITE]
+    [x+88 , y,  8, 24,  -3, -12, WHITE]
+    [x+97 , y, 22, 20, -14, -12, WHITE]
+    [x+120, y, 32, 16, -16, -12, WHITE]
+    [x+153, y, 22, 20,  -6, -13, WHITE]
+}
+
+template template_2cc_68_white(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, WHITE]
+    [x    , y,  8, 24,  -3, -16, WHITE]
+    [x+9  , y, 22, 20, -14, -14, WHITE]
+    [x+32 , y, 32, 16, -16, -12, WHITE]
+    [x+65 , y, 22, 20,  -6, -12, WHITE]
+    [x+88 , y,  8, 24,  -3, -12, WHITE]
+    [x+97 , y, 22, 20, -14, -12, WHITE]
+    [x+120, y, 32, 16, -16, -12, WHITE]
+    [x+153, y, 22, 20,  -6, -14, WHITE]
+}
+
+template template_2cc_58_white(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, WHITE]
+    [x    , y,  8, 24,  -3, -18, WHITE]
+    [x+9  , y, 22, 20, -14, -15, WHITE]
+    [x+32 , y, 32, 16, -16, -12, WHITE]
+    [x+65 , y, 22, 20,  -6, -12, WHITE]
+    [x+88 , y,  8, 24,  -3, -12, WHITE]
+    [x+97 , y, 22, 20, -14, -12, WHITE]
+    [x+120, y, 32, 16, -16, -12, WHITE]
+    [x+153, y, 22, 20,  -6, -15, WHITE]
+}
+
+template template_2cc_48_white(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, WHITE]
+    [x    , y,  8, 24,  -3, -20, WHITE]
+    [x+9  , y, 22, 20, -14, -16, WHITE]
+    [x+32 , y, 32, 16, -16, -12, WHITE]
+    [x+65 , y, 22, 20,  -6, -12, WHITE]
+    [x+88 , y,  8, 24,  -3, -12, WHITE]
+    [x+97 , y, 22, 20, -14, -12, WHITE]
+    [x+120, y, 32, 16, -16, -12, WHITE]
+    [x+153, y, 22, 20,  -6, -16, WHITE]
+}
+
+template template_2cc_38_white(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, WHITE]
+    [x    , y,  8, 24,  -3, -22, WHITE]
+    [x+9  , y, 22, 20, -14, -17, WHITE]
+    [x+32 , y, 32, 16, -16, -12, WHITE]
+    [x+65 , y, 22, 20,  -6, -12, WHITE]
+    [x+88 , y,  8, 24,  -3, -12, WHITE]
+    [x+97 , y, 22, 20, -14, -12, WHITE]
+    [x+120, y, 32, 16, -16, -12, WHITE]
+    [x+153, y, 22, 20,  -6, -17, WHITE]
+}
+
+template template_2cc_28_white(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, WHITE]
+    [x    , y,  8, 24,  -3, -24, WHITE]
+    [x+9  , y, 22, 20, -14, -18, WHITE]
+    [x+32 , y, 32, 16, -16, -12, WHITE]
+    [x+65 , y, 22, 20,  -6, -12, WHITE]
+    [x+88 , y,  8, 24,  -3, -12, WHITE]
+    [x+97 , y, 22, 20, -14, -12, WHITE]
+    [x+120, y, 32, 16, -16, -12, WHITE]
+    [x+153, y, 22, 20,  -6, -18, WHITE]
+}
+
+template template_2cc_18_white(x, y) {
+    //[left_x, upper_y, width, height, offset_x, offset_y, WHITE]
+    [x    , y,  8, 24,  -3, -26, WHITE]
+    [x+9  , y, 22, 20, -14, -19, WHITE]
+    [x+32 , y, 32, 16, -16, -12, WHITE]
+    [x+65 , y, 22, 20,  -6, -12, WHITE]
+    [x+88 , y,  8, 24,  -3, -12, WHITE]
+    [x+97 , y, 22, 20, -14, -12, WHITE]
+    [x+120, y, 32, 16, -16, -12, WHITE]
+    [x+153, y, 22, 20,  -6, -19, WHITE]
+}

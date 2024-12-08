@@ -284,6 +284,7 @@ str_cargo_subtype_SS                : > Staatsspoorwegen livery
 str_cargo_subtype_SS_tank           : > SS livery (tank locomotive)
 str_cargo_subtype_SS_NS             : > Staatsspoorwegen / NS livery
 str_cargo_subtype_SBB				: > SBB Cargo International livery
+str_cargo_subtype_START	            : > Start livery
 str_cargo_subtype_Strukton          : > Strukton livery
 str_cargo_subtype_Syntus            : > Syntus livery
 str_cargo_subtype_Syntus_twents     : > Syntus Twents livery

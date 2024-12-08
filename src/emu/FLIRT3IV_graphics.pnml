@@ -110,6 +110,29 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3IV_RRReis_position, (position_in_arti
 	2: spriteset_emu_FLIRT3IV_RRReis_middle;
 	spriteset_emu_FLIRT3IV_RRReis_back;
 }
+//START
+spriteset(spriteset_emu_FLIRT3IV_START_front, "gfx/emu/FLIRT3_start.png") {
+	template_2cc_88_white(1,1)
+}
+
+spriteset(spriteset_emu_FLIRT3IV_START_middle_1, "gfx/emu/FLIRT3_start.png") {
+	template_2cc_68_white(1,32)
+}
+
+spriteset(spriteset_emu_FLIRT3IV_START_middle_2, "gfx/emu/FLIRT3_start.png") {
+	template_2cc_68_white(1,64)
+}
+
+spriteset(spriteset_emu_FLIRT3IV_START_back, "gfx/emu/FLIRT3_start.png") {
+	template_2cc_88_white(1,96)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3IV_START_position, (position_in_articulated_veh)) { 
+	0: spriteset_emu_FLIRT3IV_START_front;
+	1: spriteset_emu_FLIRT3IV_START_middle_1;
+	2: spriteset_emu_FLIRT3IV_START_middle_2;
+	spriteset_emu_FLIRT3IV_START_back;
+}
 
 /*
 * LIVERY SELECTION
@@ -132,6 +155,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3IV_livery, cargo_subtype){
 	2:	switch_emu_FLIRT3IV_Blauwnet_position;
 	3:	switch_emu_FLIRT3IV_RRReis_position;
 	4:	switch_emu_FLIRT3IV_NS_yellow_position;
+	5:	switch_emu_FLIRT3IV_START_position;
 }
 
 // CARGO SUBTYPE CALLBACK
@@ -141,6 +165,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3IV_subtype_text, cargo_subtype){
     2: return string(str_cargo_subtype_Keolis_blauwnet);
     3: return string(str_cargo_subtype_rrreis);
     4: return string(str_cargo_subtype_ns_sprinter_yellow);
+    5: return string(str_cargo_subtype_START);
 	return CB_RESULT_NO_TEXT;
 }
 
