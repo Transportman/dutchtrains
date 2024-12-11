@@ -1,0 +1,63 @@
+/*
+ *  Copyright (C) 2012 Jasper Vries
+ *  This file is part of The Dutch Trainset 2
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+/*
+* PURCHASE
+*/
+
+spriteset(spriteset_coaches_I11_purchase, "gfx/purchase/coaches/I11.png") {
+	template_purchase(0, 0)
+}
+
+/*
+* VEHICLE
+*/
+
+spriteset(spriteset_coaches_I11, "gfx/coaches/I11.png") {
+	template_2cc_88(1, 1)
+}
+spriteset(spriteset_coaches_I11_cab, "gfx/coaches/I11.png") {
+	template_2cc_88(1, 53)
+}
+switch(FEAT_TRAINS, SELF, switch_coaches_I11_cab_position, position_in_vehid_chain_from_end) {
+	0: spriteset_coaches_I11_cab;
+    spriteset_coaches_I11;
+}
+
+switch(FEAT_TRAINS, SELF, switch_for_coaches_I11_livery, cargo_subtype) {
+	1: spriteset_coaches_I11;
+	2: spriteset_coaches_I11_cab;
+    switch_coaches_I11_cab_position;
+}
+
+//Reversed logic
+
+spriteset(spriteset_REV_coaches_I11, "gfx/coaches/I11.png") {
+	template_2cc_88r(1, 1)
+}
+spriteset(spriteset_REV_coaches_I11_cab, "gfx/coaches/I11.png") {
+	template_2cc_88r(1, 53)
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_I11_cab_position, position_in_vehid_chain) {
+	0: spriteset_REV_coaches_I11_cab;
+    spriteset_REV_coaches_I11;
+}
+
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_I11_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+	1: spriteset_REV_coaches_I11;
+	2: spriteset_REV_coaches_I11_cab;
+    switch_REV_coaches_I11_cab_position;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_I11_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_matching);
+    1: return string(str_cargo_subtype_nmbs_eurocity);
+    2: return string(str_cargo_subtype_nmbs_eurocity_cab);
+    return CB_RESULT_NO_TEXT;
+}

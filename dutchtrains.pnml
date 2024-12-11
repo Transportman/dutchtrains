@@ -212,6 +212,7 @@
 #include "src/electric/NID_graphics.pnml"
 #include "src/electric/mDDM_graphics.pnml"
 #include "src/coaches/ICR_graphics.pnml"
+#include "src/coaches/I11_graphics.pnml"
 #include "src/coaches/DDAR_graphics.pnml"
 #include "src/coaches/PlanW_graphics.pnml"
 
@@ -234,6 +235,7 @@
 #include "src/electric/mDDM_item.pnml"
 #include "src/coaches/DDAR_item.pnml"
 #include "src/coaches/ICR_item.pnml"
+#include "src/coaches/I11_item.pnml"
 #include "src/coaches/PlanW_item.pnml"
 
 //baggage and mail wagons

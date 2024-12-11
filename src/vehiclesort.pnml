@@ -186,6 +186,7 @@ sort(FEAT_TRAINS, [
     item_coaches_ICK,
     item_coaches_Avmz,
     item_coaches_ICL,
+    item_coaches_I11,
     //doubledecker coaches
     item_coaches_DDAR,
     item_coaches_gen9_IC_DD,

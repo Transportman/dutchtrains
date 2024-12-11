@@ -11,6 +11,7 @@ Dutch Trainset Changelog
 - Feature: R-net livery for SNG (Graphics by Erato)
 - Feature: Parameter to ignore tracktype related limitations
 - Feature: New liveries for TRAXX (Graphics by Erato)
+- Feature: I11 coaches for NMBS Eurocity (Graphics by Erato)
 - Feature: OBB and SBB coach livery for Nightjet coaches (Graphics by Erato)
 - Feature: Yellow front liveries for FLIRT and SNG (Graphics by Erato)
 - Feature: START Livery FLIRT (Graphics by Erato)

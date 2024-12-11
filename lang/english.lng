@@ -160,8 +160,9 @@ str_cargo_subtype_nid_cab           : > DDZ livery (cab control)
 str_cargo_subtype_nmbs              : > NMBS livery
 str_cargo_subtype_nmbs_feniks       : > NMBS livery "De Feniks"
 str_cargo_subtype_nmbs_eurocity     : > NMBS Eurocity livery
-str_cargo_subtype_ns_ic             : > NS InterCity livery
-str_cargo_subtype_ns_ic_cab         : > NS InterCity livery (cab control)
+str_cargo_subtype_nmbs_eurocity_cab : > NMBS Eurocity livery (cab control)
+str_cargo_subtype_ns_ic             : > NS Intercity livery
+str_cargo_subtype_ns_ic_cab         : > NS Intercity livery (cab control)
 str_cargo_subtype_ns_flow           : > NS Flow livery
 str_cargo_subtype_olympic           : > Olympic livery
 str_cargo_subtype_original          : > Original livery
@@ -548,6 +549,7 @@ str_coaches_PlanE       :Carriage Plan E
 str_coaches_PlanK       :Carriage Plan K
 str_coaches_PlanW       :Carriage Plan W
 str_coaches_ICR         :Carriage ICR
+str_coaches_I11         :Carriage NMBS I11
 str_coaches_ICK         :Carriage ICK
 str_coaches_Avmz        :Carriage Avmz
 str_coaches_ICL         :Carriage ICL
@@ -732,5 +734,6 @@ str_purchase_coaches_ZHESM_B:Later known as: {SILVER} NS B9900.{}{BLACK}For use 
 str_purchase_coaches_Mat24  :For use with motorcar Mat '24.
 str_purchase_coaches_DDAR   :For use with motorcar mDDM or DDZ, or NS 1700 locomotive.
 str_purchase_coaches_PlanW  :For use with electric NS locomotives for national service and NMBS HLE 25.5 for Benelux service.
-str_purchase_coaches_IRC    :For use with electric NS locomotives for national service, NMBS HLE 11 for Benelux service and NS Hispeed 186 as Fyra service.
+str_purchase_coaches_IRC    :For use with electric NS locomotives for national service, NMBS HLE 11 for Benelux service and NS 186 as Fyra service.
+str_purchase_coaches_I11    :For use with 186 in NMBS livery as Eurocity service.
 str_purchase_wagons_gen10_CargoDD	:For use with Futuristic Cargo Mover.{}Fictional.
