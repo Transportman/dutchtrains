@@ -46,7 +46,7 @@ spriteset(spriteset_coaches_ICR_blue, "gfx/coaches/ICR.png") {
 spriteset(spriteset_coaches_ICR_blue_cab, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 32)
 }
-switch(FEAT_TRAINS, SELF, switch_coaches_ICR_blue_cab_position, position_in_consist_from_end) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_blue_cab_position, position_in_vehid_chain_from_end) {
 	0: spriteset_coaches_ICR_blue_cab;
     spriteset_coaches_ICR_blue;
 }
@@ -57,7 +57,7 @@ spriteset(spriteset_coaches_ICR_benelux, "gfx/coaches/ICR.png") {
 spriteset(spriteset_coaches_ICR_benelux_cab, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 96)
 }
-switch(FEAT_TRAINS, SELF, switch_coaches_ICR_benelux_cab_position, position_in_consist_from_end) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_benelux_cab_position, position_in_vehid_chain_from_end) {
 	0: spriteset_coaches_ICR_benelux_cab;
     spriteset_coaches_ICR_benelux;
 }
@@ -86,7 +86,7 @@ spriteset(spriteset_coaches_ICR_hispeed_7, "gfx/coaches/ICR.png") {
 spriteset(spriteset_coaches_ICR_hispeed_cab, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 352)
 }
-switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_position, (position_in_consist_from_end % 7)) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_position, (position_in_vehid_chain_from_end % 7)) {
 	1: spriteset_coaches_ICR_hispeed_6;
 	2: spriteset_coaches_ICR_hispeed_5;
 	3: spriteset_coaches_ICR_hispeed_4;
@@ -95,7 +95,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_position, (position_in_cons
 	6: spriteset_coaches_ICR_hispeed_1;
 	spriteset_coaches_ICR_hispeed_7;
 }
-switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_cab_position, position_in_consist_from_end) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_cab_position, position_in_vehid_chain_from_end) {
 	0: spriteset_coaches_ICR_hispeed_cab;
     switch_coaches_ICR_hispeed_position;
 }
@@ -106,7 +106,7 @@ spriteset(spriteset_coaches_ICR_fyra_3, "gfx/coaches/ICR.png") {
 spriteset(spriteset_coaches_ICR_fyra_5, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 512)
 }
-switch(FEAT_TRAINS, SELF, switch_coaches_ICR_fyra_position, (position_in_consist_from_end % 7)) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_fyra_position, (position_in_vehid_chain_from_end % 7)) {
 	1: spriteset_coaches_ICR_hispeed_6;
 	2: spriteset_coaches_ICR_fyra_5;
 	3: spriteset_coaches_ICR_hispeed_4;
@@ -237,15 +237,15 @@ spriteset(spriteset_REV_coaches_ICR_icplus, "gfx/coaches/ICR.png") {
 }
 
 
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_blue_cab_position, position_in_consist) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_blue_cab_position, position_in_vehid_chain) {
 	0: spriteset_REV_coaches_ICR_blue_cab;
     spriteset_REV_coaches_ICR_blue;
 }
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_benelux_cab_position, position_in_consist) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_benelux_cab_position, position_in_vehid_chain) {
 	0: spriteset_REV_coaches_ICR_benelux_cab;
     spriteset_REV_coaches_ICR_benelux;
 }
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_position, (position_in_consist % 7)) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_position, (position_in_vehid_chain % 7)) {
 	1: spriteset_REV_coaches_ICR_hispeed_6;
 	2: spriteset_REV_coaches_ICR_hispeed_5;
 	3: spriteset_REV_coaches_ICR_hispeed_4;
@@ -254,11 +254,11 @@ switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_position, (position_in_
 	6: spriteset_REV_coaches_ICR_hispeed_1;
 	spriteset_REV_coaches_ICR_hispeed_7;
 }
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_cab_position, position_in_consist) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_cab_position, position_in_vehid_chain) {
 	0: spriteset_REV_coaches_ICR_hispeed_cab;
     switch_REV_coaches_ICR_hispeed_position;
 }
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_fyra_position, (position_in_consist % 7)) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_fyra_position, (position_in_vehid_chain % 7)) {
 	1: spriteset_REV_coaches_ICR_hispeed_6;
 	2: spriteset_REV_coaches_ICR_fyra_5;
 	3: spriteset_REV_coaches_ICR_hispeed_4;

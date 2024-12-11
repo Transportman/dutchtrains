@@ -15,6 +15,7 @@ Dutch Trainset Changelog
 - Feature: OBB and SBB coach livery for Nightjet coaches (Graphics by Erato)
 - Feature: Yellow front liveries for FLIRT and SNG (Graphics by Erato)
 - Feature: START Livery FLIRT (Graphics by Erato)
+- Fix: ICR doesn't end in cab when sandwiched between 186s
 
 3.1.0-XL (2024/04/29)
 ---------------------
