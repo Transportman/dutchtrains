@@ -513,7 +513,7 @@ str_purchase_axl                :{BLACK}Akselipaino: {YELLOW}{STRING}
 str_purchase_axl_spc            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_axl_ltm            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
-str_purchase_axl_ltm_spc        :{BLACK}Akselipaino: {YELLOW}{0:STRING}{}BLACK}Lastausaika: {YELLOW}{2:COMMA} päivä{P 2 "" ä}{}{BLACK}{1:STRING}
+str_purchase_axl_ltm_spc        :{BLACK}Akselipaino: {YELLOW}{0:STRING}{}BLACK}Lastausaika: {YELLOW}{2:COMMA} päivä{P "" ä}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Pituus: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
 str_purchase_svc_axl_len_ltm_spc:{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Pituus: {YELLOW}{2:STRING}{}{BLACK}Lastausaika: {YELLOW}{4:COMMA} päivä{P "" ä}{}{BLACK}{3:STRING}
 str_purchase_svc_axl_ltm_spc    :{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Lastausaika: {YELLOW}{3:COMMA} päivä{P "" ä}{}{BLACK}{2:STRING}

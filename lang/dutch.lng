@@ -531,7 +531,7 @@ str_purchase_axl                :{BLACK}Asdruk: {YELLOW}{STRING}
 str_purchase_axl_spc            :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}{STRING}
 
 str_purchase_axl_ltm            :{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{COMMA} dag{P "" en}
-str_purchase_axl_ltm_spc        :{BLACK}Asdruk: {YELLOW}{0:STRING}{}{BLACK}Laadtijd: {YELLOW}{2:COMMA} dag{P 2 "" en}{}{BLACK}{1:STRING}
+str_purchase_axl_ltm_spc        :{BLACK}Asdruk: {YELLOW}{0:STRING}{}{BLACK}Laadtijd: {YELLOW}{2:COMMA} dag{P "" en}{}{BLACK}{1:STRING}
 str_purchase_svc_axl_len_ltm    :{BLACK}Dienst: {YELLOW}{STRING}{}{BLACK}Asdruk: {YELLOW}{STRING}{}{BLACK}Lengte: {YELLOW}{STRING}{}{BLACK}Laadtijd: {YELLOW}{COMMA} dag{P "" en}
 str_purchase_svc_axl_len_ltm_spc:{BLACK}Dienst: {YELLOW}{0:STRING}{}{BLACK}Asdruk: {YELLOW}{1:STRING}{}{BLACK}Lengte: {YELLOW}{2:STRING}{}{BLACK}Laadtijd: {YELLOW}{4:COMMA} dag{P "" en}{}{BLACK}{3:STRING}
 str_purchase_svc_axl_ltm_spc    :{BLACK}Dienst: {YELLOW}{0:STRING}{}{BLACK}Asdruk: {YELLOW}{1:STRING}{}{BLACK}Laadtijd: {YELLOW}{3:COMMA} dag{P "" en}{}{BLACK}{2:STRING}
