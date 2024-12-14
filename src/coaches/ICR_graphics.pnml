@@ -237,15 +237,15 @@ spriteset(spriteset_REV_coaches_ICR_icplus, "gfx/coaches/ICR.png") {
 }
 
 
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_blue_cab_position, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_blue_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FF00, 0x41]]) {
 	0: spriteset_REV_coaches_ICR_blue_cab;
     spriteset_REV_coaches_ICR_blue;
 }
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_benelux_cab_position, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_benelux_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FF00, 0x41]]) {
 	0: spriteset_REV_coaches_ICR_benelux_cab;
     spriteset_REV_coaches_ICR_benelux;
 }
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_position, (position_in_vehid_chain % 7)) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_position, ([STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), getbits((var[0x61, 0x00, 0x0000FF00, 0x41]) % 7,0x08,0xF)] )) {
 	1: spriteset_REV_coaches_ICR_hispeed_6;
 	2: spriteset_REV_coaches_ICR_hispeed_5;
 	3: spriteset_REV_coaches_ICR_hispeed_4;
@@ -254,11 +254,11 @@ switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_position, (position_in_
 	6: spriteset_REV_coaches_ICR_hispeed_1;
 	spriteset_REV_coaches_ICR_hispeed_7;
 }
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_cab_position, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FF00, 0x41]]) {
 	0: spriteset_REV_coaches_ICR_hispeed_cab;
     switch_REV_coaches_ICR_hispeed_position;
 }
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_fyra_position, (position_in_vehid_chain % 7)) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_fyra_position, ([STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), getbits((var[0x61, 0x00, 0x0000FF00, 0x41]) % 7,0x08,0xF)] )) {
 	1: spriteset_REV_coaches_ICR_hispeed_6;
 	2: spriteset_REV_coaches_ICR_fyra_5;
 	3: spriteset_REV_coaches_ICR_hispeed_4;

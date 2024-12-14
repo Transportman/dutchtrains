@@ -44,7 +44,7 @@ spriteset(spriteset_REV_coaches_I11_cab, "gfx/coaches/I11.png") {
 	template_2cc_88r(1, 53)
 }
 
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_I11_cab_position, position_in_vehid_chain) {
+switch(FEAT_TRAINS, SELF, switch_REV_coaches_I11_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FF00, 0x41]]) {
 	0: spriteset_REV_coaches_I11_cab;
     spriteset_REV_coaches_I11;
 }
