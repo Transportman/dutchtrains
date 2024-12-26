@@ -1,9 +1,13 @@
 Dutch Trainset Changelog
 ========================
-3.2.1-XL (2025/12/14)
+3.3.0-XL (2025/??/??)
+---------------------
+- Fix: Height of ICNG changes when train reverses
+
+3.2.1-XL (2024/12/14)
 ---------------------
 - Fix: ICR ends in 2 cabs when not sandwiched and reversed
-- Fix: incorrect plural parameter in lang files (#6)
+- Fix: Incorrect plural parameter in lang files (#6)
 
 3.2.0-XL (2024/12/11)
 ---------------------

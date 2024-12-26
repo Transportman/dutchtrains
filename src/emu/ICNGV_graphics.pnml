@@ -19,43 +19,43 @@ spriteset(spriteset_emu_ICNGV_purchase, "gfx/purchase/emu/ICNG.png") {
 */
 //NS
 spriteset(spriteset_emu_ICNGV_front, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,1)
+	template_2cc_68(1,1)
 }
 
 spriteset(spriteset_emu_ICNGV_middle1, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,27)
+	template_2cc_68(1,27)
 }
 
 spriteset(spriteset_emu_ICNGV_middle2, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,53)
+	template_2cc_68(1,53)
 }
 
 spriteset(spriteset_emu_ICNGV_middle3, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,79)
+	template_2cc_68(1,79)
 }
 
 spriteset(spriteset_emu_ICNGV_back, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,235)
+	template_2cc_68(1,235)
 }
 //NS Flow
 spriteset(spriteset_emu_ICNGV_FLOW_front, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,1)
+	template_2cc_68(1,1)
 }
 
 spriteset(spriteset_emu_ICNGV_FLOW_middle1, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,27)
+	template_2cc_68(1,27)
 }
 
 spriteset(spriteset_emu_ICNGV_FLOW_middle2, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,53)
+	template_2cc_68(1,53)
 }
 
 spriteset(spriteset_emu_ICNGV_FLOW_middle3, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,79)
+	template_2cc_68(1,79)
 }
 
 spriteset(spriteset_emu_ICNGV_FLOW_back, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,235)
+	template_2cc_68(1,235)
 }
 
 //NS

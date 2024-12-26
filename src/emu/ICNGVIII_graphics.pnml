@@ -19,67 +19,67 @@ spriteset(spriteset_emu_ICNGVIII_purchase, "gfx/purchase/emu/ICNG.png") {
 */
 //NS
 spriteset(spriteset_emu_ICNGVIII_front, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,1)
+	template_2cc_68(1,1)
 }
 
 spriteset(spriteset_emu_ICNGVIII_middle1, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,27)
+	template_2cc_68(1,27)
 }
 
 spriteset(spriteset_emu_ICNGVIII_middle2, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,105)
+	template_2cc_68(1,105)
 }
 
 spriteset(spriteset_emu_ICNGVIII_middle3, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,131)
+	template_2cc_68(1,131)
 }
 
 spriteset(spriteset_emu_ICNGVIII_middle4, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,157)
+	template_2cc_68(1,157)
 }
 
 spriteset(spriteset_emu_ICNGVIII_middle5, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,183)
+	template_2cc_68(1,183)
 }
 
 spriteset(spriteset_emu_ICNGVIII_middle6, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,209)
+	template_2cc_68(1,209)
 }
 
 spriteset(spriteset_emu_ICNGVIII_back, "gfx/emu/ICNG.png") {
-	template_2cc_88(1,235)
+	template_2cc_68(1,235)
 }
 //NS Flow
 spriteset(spriteset_emu_ICNGVIII_FLOW_front, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,1)
+	template_2cc_68(1,1)
 }
 
 spriteset(spriteset_emu_ICNGVIII_FLOW_middle1, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,27)
+	template_2cc_68(1,27)
 }
 
 spriteset(spriteset_emu_ICNGVIII_FLOW_middle2, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,105)
+	template_2cc_68(1,105)
 }
 
 spriteset(spriteset_emu_ICNGVIII_FLOW_middle3, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,131)
+	template_2cc_68(1,131)
 }
 
 spriteset(spriteset_emu_ICNGVIII_FLOW_middle4, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,157)
+	template_2cc_68(1,157)
 }
 
 spriteset(spriteset_emu_ICNGVIII_FLOW_middle5, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,183)
+	template_2cc_68(1,183)
 }
 
 spriteset(spriteset_emu_ICNGVIII_FLOW_middle6, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,209)
+	template_2cc_68(1,209)
 }
 
 spriteset(spriteset_emu_ICNGVIII_FLOW_back, "gfx/emu/ICNGB.png") {
-	template_2cc_88(1,235)
+	template_2cc_68(1,235)
 }
 
 //NS
