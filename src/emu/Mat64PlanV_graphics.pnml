@@ -69,12 +69,9 @@ spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_yellownose_back_noD, "gfx/emu
 
 //valleilijn blue
 spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_front, "gfx/emu/PlanV.png") {
-	template_2cc_88(1, 256)
+	template_2cc_88(1, 512)
 }
 spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_back, "gfx/emu/PlanV.png") {
-	template_2cc_88(1, 288)
-}
-spriteset(spriteset_emu_Mat64PlanV_valleilijn_blue_back_noD, "gfx/emu/PlanV.png") {
 	template_2cc_88(1, 544)
 }
 
@@ -152,7 +149,7 @@ switch(FEAT_TRAINS, PARENT, switch_emu_Mat64PlanVD_livery_noD, cargo_subtype) {
     3: spriteset_emu_Mat64PlanV_yellow_back_noD;
     4: spriteset_emu_Mat64PlanV_valleilijn_yellow_blue_back_noD;
     5: spriteset_emu_Mat64PlanV_valleilijn_blue_yellownose_back_noD;
-    6: spriteset_emu_Mat64PlanV_valleilijn_blue_back_noD;
+    6: spriteset_emu_Mat64PlanV_valleilijn_blue_back;
     7: spriteset_emu_Mat64PlanV_karel_back;
     switch_emu_Mat64PlanVD_autolivery_noD;
 }
