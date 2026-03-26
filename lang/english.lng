@@ -214,6 +214,7 @@ str_cargo_subtype_Arriva_mml		: > Arriva Merwedelingelijn livery
 str_cargo_subtype_Arriva_blauwnet   : > Arriva Blauwnet livery
 str_cargo_subtype_Arriva_Limburg    : > Arriva Limburg livery
 str_cargo_subtype_Arriva_Noord      : > Arriva Noord livery
+str_cargo_subtype_Bentheim          : > Bentheimer Eisenbahn livery
 str_cargo_subtype_Breng             : > Breng livery
 str_cargo_subtype_Breng_portret     : > Breng portrait livery
 str_cargo_subtype_BLS				: > BLS Cargo livery

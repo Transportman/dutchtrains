@@ -1,9 +1,10 @@
 Dutch Trainset Changelog
 ========================
-3.3.0-XL (2025/??/??)
+3.3.0-XL (2026/??/??)
 ---------------------
 - Fix: Height of ICNG changes when train reverses
 - Feature: RRReis/Valleilijn livery for Mat 64 (Graphics by Erato)
+- Feature: Bentheimer Eisenbahn livery for Lint (Graphics by Erato)
 
 3.2.1-XL (2024/12/14)
 ---------------------

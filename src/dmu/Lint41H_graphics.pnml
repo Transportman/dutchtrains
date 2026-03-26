@@ -90,6 +90,13 @@ spriteset(spriteset_dmu_Lint41H_RRReis_front, "gfx/dmu/Lint41H.png") {
 spriteset(spriteset_dmu_Lint41H_RRReis_back, "gfx/dmu/Lint41H.png") {
 	template_2cc_88(250, 176)
 }
+//Bentheimer Eisenbahn
+spriteset(spriteset_dmu_Lint41H_Bentheim_front, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 201)
+}
+spriteset(spriteset_dmu_Lint41H_Bentheim_back, "gfx/dmu/Lint41H.png") {
+	template_2cc_88(1, 226)
+}
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_syntus, (position_in_articulated_veh)) {
 	1: spriteset_dmu_Lint41H_Syntus_back;
@@ -131,6 +138,11 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_RRReis, (position_in_artic
     spriteset_dmu_Lint41H_RRReis_front;
 }
 
+switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_position_Bentheim, (position_in_articulated_veh)) {
+	1: spriteset_dmu_Lint41H_Bentheim_back;
+    spriteset_dmu_Lint41H_Bentheim_front;
+}
+
 /*
 * LIVERY SELECTION
 */
@@ -158,13 +170,21 @@ random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_2018) {
     5: switch_dmu_Lint41H_position_Arriva_blauwnet;
 }
 
+random_switch(FEAT_TRAINS, PARENT, switch_dmu_Lint41H_randomlivery_2027) {
+	10: switch_dmu_Lint41H_position_Keolis_blauwnet;
+	10: switch_dmu_Lint41H_position_Arriva_Limburg;
+    5: switch_dmu_Lint41H_position_Arriva_blauwnet;
+    2: switch_dmu_Lint41H_position_Bentheim;
+}
+
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_randomlivery, build_year) {
 	0..2006: switch_dmu_Lint41H_position_syntus;
 	2007..2012: switch_dmu_Lint41H_position_Syntus_twents;
 	2013: switch_dmu_Lint41H_randomlivery_2013;
 	2014..2016: switch_dmu_Lint41H_randomlivery_2014;
 	2017: switch_dmu_Lint41H_randomlivery_2017;
-    switch_dmu_Lint41H_randomlivery_2018;
+    2018..2027: switch_dmu_Lint41H_randomlivery_2018;
+    switch_dmu_Lint41H_randomlivery_2027;
 }
 
 switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_livery, cargo_subtype) {
@@ -176,6 +196,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_livery, cargo_subtype) {
     6: switch_dmu_Lint41H_position_Veolia;
     7: switch_dmu_Lint41H_position_Arriva_Limburg;
     8: switch_dmu_Lint41H_position_RRReis;
+    9: switch_dmu_Lint41H_position_Bentheim;
     switch_dmu_Lint41H_randomlivery;
 }
 
@@ -190,6 +211,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Lint41H_subtype_text, cargo_subtype) {
     6: return string(str_cargo_subtype_Veolia);
     7: return string(str_cargo_subtype_Arriva_Limburg);
     8: return string(str_cargo_subtype_rrreis);
+    9: return string(str_cargo_subtype_Bentheim);
     return CB_RESULT_NO_TEXT;
 }
 
