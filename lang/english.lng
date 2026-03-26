@@ -236,6 +236,7 @@ str_cargo_subtype_ERS               : > ERS livery
 str_cargo_subtype_ERS_Crates		: > ERS livery (crates)
 str_cargo_subtype_ERS_Containers	: > ERS livery (containers)
 str_cargo_subtype_EETC              : > Euro Express Treincharter livery
+str_cargo_subtype_GoVolta           : > GoVolta livery
 str_cargo_subtype_HerikRail         : > Herik Rail livery
 str_cargo_subtype_HGK               : > HGK livery
 str_cargo_subtype_HSL               : > HSL livery
@@ -551,6 +552,7 @@ str_coaches_PlanK       :Carriage Plan K
 str_coaches_PlanW       :Carriage Plan W
 str_coaches_ICR         :Carriage ICR
 str_coaches_I11         :Carriage NMBS I11
+str_coaches_I10         :Carriage GoVolta I10
 str_coaches_ICK         :Carriage ICK
 str_coaches_Avmz        :Carriage Avmz
 str_coaches_ICL         :Carriage ICL
