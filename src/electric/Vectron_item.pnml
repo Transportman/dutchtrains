@@ -23,9 +23,9 @@ item(FEAT_TRAINS, item_electric_Vectron) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 30;
         loading_speed: 5;
-        cost_factor: 69;
-        running_cost_factor: 60;
-        speed: 160 km/h;
+        cost_factor: 72;
+        running_cost_factor: 63;
+        speed: 200 km/h;
         power: 6400 kW;
         cargo_capacity: 1;
         weight: 87 ton;
