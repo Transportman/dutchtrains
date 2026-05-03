@@ -166,14 +166,62 @@ switch(FEAT_TRAINS, SELF, switch_for_electric_Vectron_livery, cargo_subtype) {
     switch_electric_Vectron_randomlivery;
 }
 //Reverse
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_all) {
+	5: spriteset_electric_Vectron_DBSchenker;
+	5: spriteset_electric_Vectron_ELL;
+	4: spriteset_electric_Vectron_MRCE;
+	3: spriteset_electric_Vectron_NS;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+	2: spriteset_electric_Vectron_SBB;
+	2: spriteset_electric_Vectron_Captrain;
+	1: spriteset_electric_Vectron_HUPAC;
+	1: spriteset_electric_Vectron_Vectron;
+}
+
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_2018) {
+	5: spriteset_electric_Vectron_DBSchenker;
+	5: spriteset_electric_Vectron_ELL;
+	4: spriteset_electric_Vectron_MRCE;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+	2: spriteset_electric_Vectron_SBB;
+	2: spriteset_electric_Vectron_Captrain;
+	1: spriteset_electric_Vectron_HUPAC;
+	1: spriteset_electric_Vectron_Vectron;
+}
+
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_2015) {
+	5: spriteset_electric_Vectron_ELL;
+	2: spriteset_electric_Vectron_MRCE;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+}
+
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_2016) {
+	5: spriteset_electric_Vectron_ELL;
+	3: spriteset_electric_Vectron_MRCE;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+}
+
+random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_2017) {
+	5: spriteset_electric_Vectron_DBSchenker;
+	5: spriteset_electric_Vectron_ELL;
+	4: spriteset_electric_Vectron_MRCE;
+	2: spriteset_electric_Vectron_PKP;
+	2: spriteset_electric_Vectron_BLS;
+	2: spriteset_electric_Vectron_SBB;
+	1: spriteset_electric_Vectron_HUPAC;
+}
 
 switch(FEAT_TRAINS, SELF, switch_rev_electric_Vectron_randomlivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
 	0..2014: spriteset_electric_Vectron_ELL;
-    2015: switch_electric_Vectron_random_2015;
-	2016: switch_electric_Vectron_random_2016; 
-	2017: switch_electric_Vectron_random_2017;
-	2018..2019: switch_electric_Vectron_random_2018;
-	switch_electric_Vectron_random_all;
+    2015: switch_rev_electric_Vectron_random_2015;
+	2016: switch_rev_electric_Vectron_random_2016; 
+	2017: switch_rev_electric_Vectron_random_2017;
+	2018..2019: switch_rev_electric_Vectron_random_2018;
+	switch_rev_electric_Vectron_random_all;
 }
 
 switch(FEAT_TRAINS, SELF, switch_rev_electric_Vectron_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
