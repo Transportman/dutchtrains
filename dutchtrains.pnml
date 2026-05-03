@@ -217,6 +217,7 @@
 #include "src/coaches/I11_graphics.pnml"
 #include "src/coaches/DDAR_graphics.pnml"
 #include "src/coaches/PlanW_graphics.pnml"
+#include "src/coaches/NJNG_graphics.pnml"
 
 //checks for reversing validity
 #include "src/pp_reversalchecks.pnml"
@@ -239,6 +240,7 @@
 #include "src/coaches/ICR_item.pnml"
 #include "src/coaches/I11_item.pnml"
 #include "src/coaches/PlanW_item.pnml"
+#include "src/coaches/NJNG_item.pnml"
 
 //baggage and mail wagons
 #include "src/coaches/SS_E_129_graphics.pnml"

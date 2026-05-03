@@ -255,6 +255,10 @@ str_cargo_subtype_NCS               : > Nederlandsche Centraal-Spoorweg-Maatscha
 str_cargo_subtype_NCS_tender        : > NCS livery (tender locomotive)
 str_cargo_subtype_NCS_tank          : > NCS livery (tank locomotive)
 str_cargo_subtype_nedtrain          : > NedTrain livery
+str_cargo_subtype_NJNG_WLAmz        : > Sleeping car (WLAmz)
+str_cargo_subtype_NJNG_Bcmz         : > Capsule car (Bcmz)
+str_cargo_subtype_NJNG_ABbmpvz      : > Accessible car (ABbmpvz)
+str_cargo_subtype_NJNG_Bfmpz        : > Cab car (Bfmpz)
 str_cargo_subtype_nightjetobb       : > OBB livery (Bmz)
 str_cargo_subtype_nightjetsbb       : > SBB livery (Bpm)
 str_cargo_subtype_NS                : > NS livery
@@ -565,6 +569,7 @@ str_coaches_Couchette   :Sleeper Carriage Couchette Bcm
 str_coaches_Citynightline   :Sleeper Carriage CityNightLine
 str_coaches_MUs         :Sleeper Carriage MUs
 str_coaches_Nightjet    :Sleeper Carriage Nightjet Bmz
+str_coaches_NJNG        :Sleeper Carriage Nightjet New Generation
 str_coaches_Greencitytrip   :Sleeper Carriage GreenCityTrip
 
 #baggage and mail wagons
@@ -739,4 +744,5 @@ str_purchase_coaches_DDAR   :For use with motorcar mDDM or DDZ, or NS 1700 locom
 str_purchase_coaches_PlanW  :For use with electric NS locomotives for national service and NMBS HLE 25.5 for Benelux service.
 str_purchase_coaches_IRC    :For use with electric NS locomotives for national service, NMBS HLE 11 for Benelux service and NS 186 as Fyra service.
 str_purchase_coaches_I11    :For use with 186 in NMBS livery as Eurocity service.
+str_purchase_coaches_NJNG    :For use with Vectron in NS Flow livery as Nightjet service.
 str_purchase_wagons_gen10_CargoDD	:For use with Futuristic Cargo Mover.{}Fictional.

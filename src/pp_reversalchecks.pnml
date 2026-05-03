@@ -21,6 +21,7 @@ switch (FEAT_TRAINS, PARENT, sw_last_veh_year_check, [STORE_TEMP(num_vehs_in_con
 		-item_coaches_ICR
 		-item_coaches_I11
 		-item_coaches_PlanW
+		-item_coaches_NJNG
 */
 
 switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_1, count_veh_id(item_electric_NS1200)+
@@ -36,7 +37,8 @@ switch (FEAT_TRAINS, PARENT, sw_reversal_check_push_pull_1, count_veh_id(item_el
 	count_veh_id(item_coaches_DDAR)+
 	count_veh_id(item_coaches_ICR)+
 	count_veh_id(item_coaches_I11)+
-	count_veh_id(item_coaches_PlanW)
+	count_veh_id(item_coaches_PlanW)+
+	count_veh_id(item_coaches_NJNG)
 	==num_vehs_in_consist) {return;}
 	
 /*

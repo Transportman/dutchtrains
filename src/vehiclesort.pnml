@@ -198,6 +198,7 @@ sort(FEAT_TRAINS, [
     item_coaches_Citynightline,
 	item_coaches_Nightjet,
 	item_coaches_Greencitytrip,
+	item_coaches_NJNG,
     
     //baggage/mail wagons
     item_coaches_SS_DII,
