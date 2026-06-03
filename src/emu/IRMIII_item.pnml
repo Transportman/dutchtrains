@@ -60,6 +60,6 @@ item(FEAT_TRAINS, item_emu_IRMIII) {
         additional_text: switch_emu_IRMIII_additional_text;
         articulated_part: switch_emu_IRMIII_articulated;
         visual_effect_and_powered: switch_emu_IRMIII_visual_effect_and_powered;
-        switch_emu_IRMIII_livery;
+        switch_emu_IRMIII_position;
     }
 }

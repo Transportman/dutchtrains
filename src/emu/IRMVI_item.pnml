@@ -55,7 +55,8 @@ item(FEAT_TRAINS, item_emu_IRMVI) {
 	}
     graphics {
         cargo_capacity: return 100;
-        purchase: spriteset_emu_IRMVI_purchase;
+        purchase: switch_emu_IRMVI_purchase;
+        cargo_subtype_text: switch_emu_IRMVI_subtype_text;
         additional_text: switch_emu_IRMVI_additional_text;
         articulated_part: switch_emu_IRMVI_articulated;
         visual_effect_and_powered: switch_emu_IRMVI_visual_effect_and_powered;

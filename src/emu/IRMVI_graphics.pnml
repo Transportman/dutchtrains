@@ -10,38 +10,51 @@
 * PURCHASE
 */
 
-spriteset(spriteset_emu_IRMVI_purchase, "gfx/purchase/emu/VIRM_VI.png") {
+spriteset(spriteset_emu_IRMVI_virm_purchase, "gfx/purchase/emu/VIRM_VI.png") {
 	template_purchase(0, 0)
 }
+spriteset(spriteset_emu_IRMVI_virmm_purchase, "gfx/purchase/emu/VIRM_VI_virmm.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_emu_IRMVI_flow_purchase, "gfx/purchase/emu/VIRM_VI_flow.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_purchase, current_year) {
+    0..2016: spriteset_emu_IRMVI_virm_purchase;
+    2017..2021: spriteset_emu_IRMVI_virmm_purchase;
+    spriteset_emu_IRMVI_flow_purchase;
+}
+
 
 /*
 * VEHICLE
 */
 
 //IRM
-spriteset(spriteset_emu_IRM_front_pantoup, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_front_pantoup, "gfx/emu/VIRM.png") {
 	template_2cc_88(1, 1)
 }
-spriteset(spriteset_emu_IRM_front_pantodown, "gfx/emu/IRM.png") {
+spriteset(spriteset_emu_IRM_front_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 63)
+}
+spriteset(spriteset_emu_IRM_front_yellow, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 125)
+}
+spriteset(spriteset_emu_IRM_back_pantodown, "gfx/emu/VIRM.png") {
 	template_2cc_88(1, 32)
 }
-spriteset(spriteset_emu_IRM_front_nopanto, "gfx/emu/IRM.png") {
-	template_2cc_88(1, 64)
+spriteset(spriteset_emu_IRM_back_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 156)
 }
-spriteset(spriteset_emu_IRM_back_pantoup, "gfx/emu/IRM.png") {
-	template_2cc_88(1, 96)
+spriteset(spriteset_emu_IRM_back_yellow, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 94)
 }
-spriteset(spriteset_emu_IRM_back_pantodown, "gfx/emu/IRM.png") {
-	template_2cc_88(1, 128)
+spriteset(spriteset_emu_IRM_middle_panto, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 187)
 }
-spriteset(spriteset_emu_IRM_back_nopanto, "gfx/emu/IRM.png") {
-	template_2cc_88(1, 160)
-}
-spriteset(spriteset_emu_IRM_middle_panto, "gfx/emu/IRM.png") {
-	template_2cc_88(1, 192)
-}
-spriteset(spriteset_emu_IRM_middle_nopanto, "gfx/emu/IRM.png") {
-	template_2cc_88(1, 256)
+spriteset(spriteset_emu_IRM_middle_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 218)
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_1, (position_in_articulated_veh)) {
@@ -58,61 +71,224 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_position_2, (position_in_articulated_
     spriteset_emu_IRM_middle_nopanto;
 }
 
-random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_livery) {
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_virm_livery) {
 	1: switch_emu_IRMVI_position_1;
 	1: switch_emu_IRMVI_position_2;
 }
 
+//IRM gele fronten
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_yellow_position_1, (position_in_articulated_veh)) {
+	0: spriteset_emu_IRM_front_yellow;
+    2: spriteset_emu_IRM_middle_panto;
+	5: spriteset_emu_IRM_back_yellow;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_yellow_position_2, (position_in_articulated_veh)) {
+	0: spriteset_emu_IRM_front_yellow;
+    3: spriteset_emu_IRM_middle_panto;
+	5: spriteset_emu_IRM_back_yellow;
+    spriteset_emu_IRM_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_virm_yellow_livery) {
+	1: switch_emu_IRMVI_yellow_position_1;
+	1: switch_emu_IRMVI_yellow_position_2;
+}
+
+//VIRMm
+spriteset(spriteset_emu_IRM_virmm_front, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 249)
+}
+spriteset(spriteset_emu_IRM_virmm_front_yellow, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 311)
+}
+spriteset(spriteset_emu_IRM_virmm_back, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 280)
+}
+spriteset(spriteset_emu_IRM_virmm_back_yellow, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 342)
+}
+spriteset(spriteset_emu_IRM_virmm_middle_panto, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 373)
+}
+spriteset(spriteset_emu_IRM_virmm_middle_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 404)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_virmm_position_1, (position_in_articulated_veh)) {
+	0: spriteset_emu_IRM_virmm_front;
+    2: spriteset_emu_IRM_virmm_middle_panto;
+	5: spriteset_emu_IRM_virmm_back;
+    spriteset_emu_IRM_virmm_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_virmm_position_2, (position_in_articulated_veh)) {
+	0: spriteset_emu_IRM_virmm_front;
+    3: spriteset_emu_IRM_virmm_middle_panto;
+	5: spriteset_emu_IRM_virmm_back;
+    spriteset_emu_IRM_virmm_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_virmm_livery) {
+	1: switch_emu_IRMVI_virmm_position_1;
+	1: switch_emu_IRMVI_virmm_position_2;
+}
+
+//VIRMm gele fronten
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_virmm_yellow_position_1, (position_in_articulated_veh)) {
+	0: spriteset_emu_IRM_virmm_front_yellow;
+    2: spriteset_emu_IRM_virmm_middle_panto;
+	5: spriteset_emu_IRM_virmm_back_yellow;
+    spriteset_emu_IRM_virmm_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_virmm_yellow_position_2, (position_in_articulated_veh)) {
+	0: spriteset_emu_IRM_virmm_front_yellow;
+    3: spriteset_emu_IRM_virmm_middle_panto;
+	5: spriteset_emu_IRM_virmm_back_yellow;
+    spriteset_emu_IRM_virmm_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_virmm_yellow_livery) {
+	1: switch_emu_IRMVI_virmm_yellow_position_1;
+	1: switch_emu_IRMVI_virmm_yellow_position_2;
+}
+
+//Flow VIRMm
+spriteset(spriteset_emu_IRM_flow_front, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 435)
+}
+spriteset(spriteset_emu_IRM_flow_back, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 466)
+}
+spriteset(spriteset_emu_IRM_flow_middle_panto, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 497)
+}
+spriteset(spriteset_emu_IRM_flow_middle_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(1, 528)
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_flow_position_1, (position_in_articulated_veh)) {
+	0: spriteset_emu_IRM_flow_front;
+    2: spriteset_emu_IRM_flow_middle_panto;
+	5: spriteset_emu_IRM_flow_back;
+    spriteset_emu_IRM_flow_middle_nopanto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_flow_position_2, (position_in_articulated_veh)) {
+	0: spriteset_emu_IRM_flow_front;
+    3: spriteset_emu_IRM_flow_middle_panto;
+	5: spriteset_emu_IRM_flow_back;
+    spriteset_emu_IRM_flow_middle_nopanto;
+}
+
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_flow_livery) {
+	1: switch_emu_IRMVI_flow_position_1;
+	1: switch_emu_IRMVI_flow_position_2;
+}
+
+//Groene trein
+spriteset(spriteset_emu_IRM_groen_front, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 1)
+}
+spriteset(spriteset_emu_IRM_groen_back, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 32)
+}
+spriteset(spriteset_emu_IRM_groen_middle_panto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 63)
+}
+spriteset(spriteset_emu_IRM_groen_middle_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 94)
+}
+
 //olypmic
-spriteset(spriteset_emu_IRM_olympic_front_pantoup, "gfx/emu/IRM_olympic.png") {
-	template_2cc_88(1, 1)
+spriteset(spriteset_emu_IRM_olympic_front_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 249)
 }
-spriteset(spriteset_emu_IRM_olympic_front_pantodown, "gfx/emu/IRM_olympic.png") {
-	template_2cc_88(1, 32)
+spriteset(spriteset_emu_IRM_olympic_back_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 280)
 }
-spriteset(spriteset_emu_IRM_olympic_front_nopanto, "gfx/emu/IRM_olympic.png") {
-	template_2cc_88(1, 64)
+spriteset(spriteset_emu_IRM_olympic_middle_panto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 311)
 }
-spriteset(spriteset_emu_IRM_olympic_back_pantoup, "gfx/emu/IRM_olympic.png") {
-	template_2cc_88(1, 96)
-}
-spriteset(spriteset_emu_IRM_olympic_back_pantodown, "gfx/emu/IRM_olympic.png") {
-	template_2cc_88(1, 128)
-}
-spriteset(spriteset_emu_IRM_olympic_back_nopanto, "gfx/emu/IRM_olympic.png") {
-	template_2cc_88(1, 160)
-}
-spriteset(spriteset_emu_IRM_olympic_middle_panto, "gfx/emu/IRM_olympic.png") {
-	template_2cc_88(1, 192)
-}
-spriteset(spriteset_emu_IRM_olympic_middle_nopanto, "gfx/emu/IRM_olympic.png") {
-	template_2cc_88(1, 256)
+spriteset(spriteset_emu_IRM_olympic_middle_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 342)
 }
 
 //ovchip
-spriteset(spriteset_emu_IRM_ovchip_front_pantoup, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 1)
+spriteset(spriteset_emu_IRM_ovchip_front_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 125)
 }
-spriteset(spriteset_emu_IRM_ovchip_front_pantodown, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 32)
+spriteset(spriteset_emu_IRM_ovchip_back_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 156)
 }
-spriteset(spriteset_emu_IRM_ovchip_front_nopanto, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 64)
+spriteset(spriteset_emu_IRM_ovchip_middle_panto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 187)
 }
-spriteset(spriteset_emu_IRM_ovchip_back_pantoup, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 96)
+spriteset(spriteset_emu_IRM_ovchip_middle_nopanto, "gfx/emu/VIRM.png") {
+	template_2cc_88(250, 218)
 }
-spriteset(spriteset_emu_IRM_ovchip_back_pantodown, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 128)
+
+/*
+* LIVERY SELECTION
+*/
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_randompurchase_ic_virmm) {
+    30: switch_emu_IRMVI_virm_livery;
+    15: switch_emu_IRMVI_virmm_livery;
 }
-spriteset(spriteset_emu_IRM_ovchip_back_nopanto, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 160)
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_randompurchase_ic_flow) {
+    15: switch_emu_IRMVI_virm_livery;
+    15: switch_emu_IRMVI_virmm_livery;
+    15: switch_emu_IRMVI_flow_livery;
 }
-spriteset(spriteset_emu_IRM_ovchip_middle_panto, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 192)
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_randompurchase_ic_flow_yellow) {
+    7: switch_emu_IRMVI_virm_livery;
+    7: switch_emu_IRMVI_virmm_livery;
+    15: switch_emu_IRMVI_flow_livery;
+    8: switch_emu_IRMVI_virm_yellow_livery;
+    8: switch_emu_IRMVI_virmm_yellow_livery;
 }
-spriteset(spriteset_emu_IRM_ovchip_middle_nopanto, "gfx/emu/IRM_ovchip.png") {
-	template_2cc_88(1, 256)
+random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMVI_randompurchase_ic_yellow) {
+    15: switch_emu_IRMVI_flow_livery;
+    15: switch_emu_IRMVI_virm_yellow_livery;
+    15: switch_emu_IRMVI_virmm_yellow_livery;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_purchaselivery, build_year) {
+    0..2015: switch_emu_IRMVI_virm_livery;
+    2016..2020: switch_emu_IRMVI_randompurchase_ic_virmm;
+    2021: switch_emu_IRMVI_randompurchase_ic_flow;
+    2022..2025: switch_emu_IRMVI_randompurchase_ic_flow_yellow;
+    switch_emu_IRMVI_randompurchase_ic_yellow;
+}
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_autolivery, date_of_last_service) {
+    0..2015: switch_emu_IRMVI_virm_livery;
+    2016..2020: switch_emu_IRMVI_randompurchase_ic_virmm;
+    2021: switch_emu_IRMVI_randompurchase_ic_flow;
+    2022..2025: switch_emu_IRMVI_randompurchase_ic_flow_yellow;
+    switch_emu_IRMVI_randompurchase_ic_yellow;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_livery, cargo_subtype) {
+	1: switch_emu_IRMVI_purchaselivery;
+    2: switch_emu_IRMVI_virm_livery;
+    3: switch_emu_IRMVI_virm_yellow_livery;
+    4: switch_emu_IRMVI_virmm_livery;
+    5: switch_emu_IRMVI_virmm_yellow_livery;
+    6: switch_emu_IRMVI_flow_livery;
+    switch_emu_IRMVI_autolivery;
+}
+
+// CARGO SUBTYPE CALLBACK
+switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_subtype_text, cargo_subtype) {
+    0: return string(str_cargo_subtype_auto);
+	1: return string(str_cargo_subtype_purchase);
+    2: return string(str_cargo_subtype_virm);
+    3: return string(str_cargo_subtype_virm_yellow);
+    4: return string(str_cargo_subtype_virmm);
+    5: return string(str_cargo_subtype_virmm_yellow);
+    6: return string(str_cargo_subtype_ns_flow);
+    return CB_RESULT_NO_TEXT;
 }
 
 /*

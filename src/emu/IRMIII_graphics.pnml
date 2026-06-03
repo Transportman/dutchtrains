@@ -16,21 +16,10 @@
 * VEHICLE
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_1, (position_in_articulated_veh)) {
+switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position, (position_in_articulated_veh)) {
 	1: spriteset_emu_IRM_middle_nopanto;
 	2: spriteset_emu_IRM_back_pantodown;
     spriteset_emu_IRM_front_pantoup;
-}
-
-switch(FEAT_TRAINS, SELF, switch_emu_IRMIII_position_2, (position_in_articulated_veh)) {
-	1: spriteset_emu_IRM_middle_nopanto;
-	2: spriteset_emu_IRM_back_pantoup;
-    spriteset_emu_IRM_front_pantodown;
-}
-
-random_switch(FEAT_TRAINS, PARENT, switch_emu_IRMIII_livery) {
-	1: switch_emu_IRMIII_position_1;
-	1: switch_emu_IRMIII_position_2;
 }
 
 /*
