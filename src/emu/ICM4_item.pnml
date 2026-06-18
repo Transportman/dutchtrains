@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_ICM4_additional_text, [
         STORE_TEMP((param_loading_speed == 0) ? 10 : (param_loading_speed == 2) ? 3 : 5, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_ip), string(str_purchase_axl_B), string(str_purchase_len_4_20));
+    return string(str_purchase_len_ltm, string(str_purchase_len_4_20));
 }
 
 item(FEAT_TRAINS, item_emu_ICM4) {
@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_emu_ICM4) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/electric/dc", "role/express_passenger", "axleweight/B"];
 	}
     graphics {
         cargo_capacity: return 63;

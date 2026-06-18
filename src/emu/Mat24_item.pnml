@@ -11,12 +11,11 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_Mat24_additional_text, [
-        STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_C) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_1_05) | string(str_purchase_emu_Mat24) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 258)
+        STORE_TEMP(string(str_purchase_len_1_05) | string(str_purchase_emu_Mat24) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm_spc);
+    return string(str_purchase_len_ltm_spc);
 }
 
 item(FEAT_TRAINS, item_emu_Mat24) {
@@ -55,6 +54,7 @@ item(FEAT_TRAINS, item_emu_Mat24) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/electric/dc", "role/passenger", "axleweight/C"];
 	}
     graphics {
         cargo_capacity: return 40;

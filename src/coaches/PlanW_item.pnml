@@ -11,11 +11,11 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_coaches_PlanW_additional_text, [
-        STORE_TEMP(string(str_purchase_axl_B) | string(str_purchase_coaches_PlanW) << 16, 256),
-        STORE_TEMP((param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 3 : 6, 257)
+        STORE_TEMP((param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 3 : 6, 256),
+        STORE_TEMP(string(str_purchase_coaches_PlanW), 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_axl_ltm_spc);
+    return string(str_purchase_ltm_spc);
 }
 
 switch(FEAT_TRAINS, PARENT, switch_coaches_PlanW_livery, vehicle_is_reversed && sw_reversal_check_push_pull()){
@@ -59,6 +59,7 @@ item(FEAT_TRAINS, item_coaches_PlanW) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: bitmask(0);
+		badges: ["flag/NL", "flag/BE", "axleweight/B"];
 	}
     graphics {
         cargo_capacity: return 88;

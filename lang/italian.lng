@@ -505,43 +505,11 @@ str_metro_RET_typeR     :RET Tipo R RSG3 (Metro)
 str_metro_Future_MTR1   :Metro futuristico 1
 
 #PURCHASE MENU TEXTS
-
-str_purchase_svc                :{BLACK}Servizio: {YELLOW}{STRING}
-str_purchase_svc_axl            :{BLACK}Servizio: {YELLOW}{STRING}{}{BLACK}Peso assiale: {YELLOW}{STRING}
-str_purchase_svc_len            :{BLACK}Servizio: {YELLOW}{STRING}{}{BLACK}Lunghezza: {YELLOW}{STRING}
-str_purchase_svc_spc            :{BLACK}Servizio: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_spc        :{BLACK}Servizio: {YELLOW}{STRING}{}{BLACK}Peso assiale: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_axl                :{BLACK}Peso assiale: {YELLOW}{STRING}
-str_purchase_axl_spc            :{BLACK}Peso assiale: {YELLOW}{STRING}{}{BLACK}{STRING}
-
-str_purchase_axl_ltm            :{BLACK}Peso assiale: {YELLOW}{STRING}{}{BLACK}Velocità di carico: {YELLOW}{COMMA} giorn{P o i}
-str_purchase_axl_ltm_spc        :{BLACK}Peso assiale: {YELLOW}{0:STRING}{}{BLACK}Velocità di carico: {YELLOW}{2:COMMA} giorn{P o i}{}{BLACK}{1:STRING}
-str_purchase_svc_axl_len_ltm    :{BLACK}Servizio: {YELLOW}{STRING}{}{BLACK}Peso assiale {YELLOW}{STRING}{}{BLACK}Lunghezza: {YELLOW}{STRING}{}{BLACK}Velocità di carico: {YELLOW}{COMMA} giorn{P o i}
-str_purchase_svc_axl_len_ltm_spc:{BLACK}Servizio: {YELLOW}{0:STRING}{}{BLACK}Peso assiale: {YELLOW}{1:STRING}{}{BLACK}Lunghezza: {YELLOW}{2:STRING}{}{BLACK}Velocità di carico: {YELLOW}{4:COMMA} giorn{P o i}{}{BLACK}{3:STRING}
-str_purchase_svc_axl_ltm_spc    :{BLACK}Servizio: {YELLOW}{0:STRING}{}{BLACK}Peso assiale: {YELLOW}{1:STRING}{}{BLACK}Velocità di carico: {YELLOW}{3:COMMA} giorn{P o i}{}{BLACK}{2:STRING}
-
-str_purchase_svc_p          :viaggiatori
-str_purchase_svc_lp         :viaggiatori (locale)
-str_purchase_svc_ep         :viaggiatori (espresso)
-str_purchase_svc_ip         :viaggiatori (intercity)
-str_purchase_svc_hp         :viaggiatori (alta velocità)
-str_purchase_svc_Ip         :passeggeri internazionale
-str_purchase_svc_elp        :viaggiatori (espresso e locale)
-str_purchase_svc_eip        :viaggiatori (espresso e intercity)
-str_purchase_svc_eiphf      :viaggiatori (espresso e intercity) o merci pesanti
-str_purchase_svc_iphf       :viaggiatori (intercity) o merci pesanti
-str_purchase_svc_hphf       :viaggiatori (alta velocità) o merci pesanti
-str_purchase_svc_eplf       :viaggiatori (espresso) o merci leggere
-str_purchase_svc_flp        :merci o viaggiatori (locale)
-str_purchase_svc_lfep       :merci leggere o viaggiatori (espresso)
-str_purchase_svc_f          :merci
-str_purchase_svc_lf         :merci leggere
-str_purchase_svc_hf         :merci pesanti
-str_purchase_svc_s          :manovra
-str_purchase_svc_slf        :manovra o merci leggere
-str_purchase_svc_m          :posta
-str_purchase_svc_M          :suburbano
-str_purchase_svc_x          :alta qualità
+str_purchase_spc            	:{BLACK}{STRING}
+str_purchase_ltm        	    :{BLACK}Velocità di carico: {YELLOW}{COMMA} giorn{P o i}
+str_purchase_len_ltm    		:{BLACK}Lunghezza: {YELLOW}{STRING}{}{BLACK}Velocità di carico: {YELLOW}{COMMA} giorn{P o i}
+str_purchase_ltm_spc    		:{BLACK}Velocità di carico: {YELLOW}{COMMA} giorn{P o i}{}{BLACK}{STRING}
+str_purchase_len_ltm_spc		:{BLACK}Lunghezza: {YELLOW}{0:STRING}{}{BLACK}Velocità di carico: {YELLOW}{2:COMMA} giorn{P o i}{}{BLACK}{1:STRING}
 
 str_purchase_len_1_04       :1 unità (0.4)
 str_purchase_len_1_05       :1 unità (0.5)
@@ -556,12 +524,6 @@ str_purchase_len_6_20       :6 unità (2.0)
 str_purchase_len_6_30       :6 unità (3.0)
 str_purchase_len_8_40       :8 unità (4.0)
 str_purchase_len_10_50      :10 unità (5.0)
-
-str_purchase_axl_A          :molto basso (classe A)
-str_purchase_axl_B          :basso (classe B)
-str_purchase_axl_C          :medio (classe C)
-str_purchase_axl_D          :alto (classe D)
-str_purchase_axl_E          :molto alto (classe E)
 
 str_purchase_spc_eld        :Con vano bagagli riadattabile a merci leggere.
 str_purchase_spc_el_eld     :Con vano bagagli riadattabile a merci leggere o passeggeri.

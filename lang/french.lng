@@ -504,43 +504,11 @@ str_metro_RET_typeR     :RET Type R RSG3 (Métro)
 str_metro_Future_MTR1   :Métro futuriste 1
 
 #PURCHASE MENU TEXTS
-
-str_purchase_svc                :{BLACK}Service{NBSP}: {YELLOW}{STRING}
-str_purchase_svc_axl            :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}
-str_purchase_svc_len            :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}Longueur{NBSP}: {YELLOW}{STRING}
-str_purchase_svc_spc            :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_spc        :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_axl                :{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}
-str_purchase_axl_spc            :{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}{STRING}
-
-str_purchase_axl_ltm            :{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{COMMA} jour{P "" s}
-str_purchase_axl_ltm_spc        :{BLACK}Charge par essieu{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{2:COMMA} jour{P "" s}{}{BLACK}{1:STRING}
-str_purchase_svc_axl_len_ltm    :{BLACK}Service{NBSP}: {YELLOW}{STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{STRING}{}{BLACK}Longueur{NBSP}: {YELLOW}{STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{COMMA} jour{P "" s}
-str_purchase_svc_axl_len_ltm_spc:{BLACK}Service{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{1:STRING}{}{BLACK}Longueur{NBSP}: {YELLOW}{2:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{4:COMMA} jour{P "" s}{}{BLACK}{3:STRING}
-str_purchase_svc_axl_ltm_spc    :{BLACK}Service{NBSP}: {YELLOW}{0:STRING}{}{BLACK}Charge par essieu{NBSP}: {YELLOW}{1:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{3:COMMA} jour{P "" s}{}{BLACK}{2:STRING}
-
-str_purchase_svc_p          :passagers
-str_purchase_svc_lp         :passagers local
-str_purchase_svc_ep         :passagers express
-str_purchase_svc_ip         :passagers intercités
-str_purchase_svc_hp         :passagers grande vitesse
-str_purchase_svc_Ip         :passager international
-str_purchase_svc_elp        :passagers express et local
-str_purchase_svc_eip        :passagers express et intercités
-str_purchase_svc_eiphf      :passagers express et intercités, ou fret lourd
-str_purchase_svc_iphf       :passagers intercités ou fret lourd
-str_purchase_svc_hphf       :passagers grande vitesse ou fret lourd
-str_purchase_svc_eplf       :passagers express ou fret léger
-str_purchase_svc_flp        :fret ou passagers local
-str_purchase_svc_lfep       :fret léger ou passagers express
-str_purchase_svc_f          :fret
-str_purchase_svc_lf         :fret léger
-str_purchase_svc_hf         :fret lourd
-str_purchase_svc_s          :triage
-str_purchase_svc_slf        :triage ou fret léger
-str_purchase_svc_m          :postal
-str_purchase_svc_M          :métro
-str_purchase_svc_x          :directorial
+str_purchase_spc            	:{BLACK}{STRING}
+str_purchase_ltm        	    :{BLACK}Temps de chargement{NBSP}: {YELLOW}{COMMA} jour{P "" s}
+str_purchase_len_ltm    		:{BLACK}Longueur: {YELLOW}{STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{COMMA} jour{P "" s}
+str_purchase_ltm_spc    		:{BLACK}Temps de chargement{NBSP}: {YELLOW}{COMMA} jour{P "" s}{}{BLACK}{STRING}
+str_purchase_len_ltm_spc		:{BLACK}Longueur: {YELLOW}{0:STRING}{}{BLACK}Temps de chargement{NBSP}: {YELLOW}{2:COMMA} jour{P "" s}{}{BLACK}{1:STRING}
 
 str_purchase_len_1_04       :1 unité (0,4)
 str_purchase_len_1_05       :1 unité (0,5)
@@ -555,12 +523,6 @@ str_purchase_len_6_20       :6 unités (2,0)
 str_purchase_len_6_30       :6 unités (3,0)
 str_purchase_len_8_40       :8 unités (4.0)
 str_purchase_len_10_50      :10 unités (5,0)
-
-str_purchase_axl_A          :très basse (classe A)
-str_purchase_axl_B          :basse (classe B)
-str_purchase_axl_C          :moyenne (classe C)
-str_purchase_axl_D          :haute (classe D)
-str_purchase_axl_E          :très haute (classe E)
 
 str_purchase_spc_eld        :Avec compartiment à bagages réaménageable pour marchandises express.
 str_purchase_spc_el_eld     :Avec compartiment à bagages réaménageable pour marchandises express ou passagers.

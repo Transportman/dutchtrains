@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_omC1921_additional_text, [
         STORE_TEMP((param_loading_speed == 0) ? 10 : (param_loading_speed == 2) ? 3 : 5, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_lp), string(str_purchase_axl_B), string(str_purchase_len_1_05));
+    return string(str_purchase_len_ltm, string(str_purchase_len_1_05));
 }
 
 item(FEAT_TRAINS, item_dmu_omC1921) {
@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_dmu_omC1921) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/diesel", "role/passenger", "axleweight/B"];
 	}
     graphics {
         cargo_capacity: return 72;

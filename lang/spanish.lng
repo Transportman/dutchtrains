@@ -504,43 +504,11 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_metro_Future_MTR1   :Metro1 Futuro
 
 #PURCHASE MENU TEXTS
-
-str_purchase_svc                :{BLACK}Servicio: {YELLOW}{STRING}
-str_purchase_svc_axl            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por eje: {YELLOW}{STRING}
-str_purchase_svc_len            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}
-str_purchase_svc_spc            :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_spc        :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_axl                :{BLACK}Peso por eje: {YELLOW}{STRING}
-str_purchase_axl_spc            :{BLACK}Peso por eje: {YELLOW}{STRING}{}{BLACK}{STRING}
-
-str_purchase_axl_ltm            :{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
-str_purchase_axl_ltm_spc        :{BLACK}Peso por Eje: {YELLOW}{0:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{2:COMMA} día{P "" s}{}{BLACK}{1:STRING}
-str_purchase_svc_axl_len_ltm    :{BLACK}Servicio: {YELLOW}{STRING}{}{BLACK}Peso por Eje: {YELLOW}{STRING}{}{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
-str_purchase_svc_axl_len_ltm_spc:{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Peso por Eje: {YELLOW}{1:STRING}{}{BLACK}Longitud: {YELLOW}{2:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{4:COMMA} día{P "" s}{}{BLACK}{3:STRING}
-str_purchase_svc_axl_ltm_spc    :{BLACK}Servicio: {YELLOW}{0:STRING}{}{BLACK}Peso por Eje: {YELLOW}{1:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{3:COMMA} día{P "" s}{}{BLACK}{2:STRING}
-
-str_purchase_svc_p          :pasajeros
-str_purchase_svc_lp         :pasajeros local
-str_purchase_svc_ep         :pasajeros express
-str_purchase_svc_ip         :pasajeros InterCity
-str_purchase_svc_hp         :pasajeros de alta velocidad
-str_purchase_svc_Ip         :pasajeros internacional
-str_purchase_svc_elp        :pasajeros local y express
-str_purchase_svc_eip        :pasajeros express e InterCity
-str_purchase_svc_eiphf      :pasajeros express e InterCity o carga pesada
-str_purchase_svc_iphf       :pasajeros InterCity o carga pesada
-str_purchase_svc_hphf       :pasajeros de alta velocidad o carga pesada
-str_purchase_svc_eplf       :pasajeros express o carga ligera
-str_purchase_svc_flp        :carga o pasajeros local
-str_purchase_svc_lfep       :carga ligera o pasajeros express
-str_purchase_svc_f          :carga
-str_purchase_svc_lf         :carga ligera
-str_purchase_svc_hf         :carga pesada
-str_purchase_svc_s          :maniobras
-str_purchase_svc_slf        :maniobras o carga ligera
-str_purchase_svc_m          :correo
-str_purchase_svc_M          :metro
-str_purchase_svc_x          :ejecutivo
+str_purchase_spc            	:{BLACK}{STRING}
+str_purchase_ltm        	    :{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
+str_purchase_len_ltm    		:{BLACK}Longitud: {YELLOW}{STRING}{}{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}
+str_purchase_ltm_spc    		:{BLACK}Tiempo de carga: {YELLOW}{COMMA} día{P "" s}{}{BLACK}{STRING}
+str_purchase_len_ltm_spc		:{BLACK}Longitud: {YELLOW}{0:STRING}{}{BLACK}Tiempo de carga: {YELLOW}{2:COMMA} día{P "" s}{}{BLACK}{1:STRING}
 
 str_purchase_len_1_04       :1 unidad (0.4)
 str_purchase_len_1_05       :1 unidad (0.5)
@@ -555,12 +523,6 @@ str_purchase_len_6_20       :6 unidades (2.0)
 str_purchase_len_6_30       :6 unidades (3.0)
 str_purchase_len_8_40       :8 unidades (4.0)
 str_purchase_len_10_50      :10 unidades (5.0)
-
-str_purchase_axl_A          :Muy bajo (clase A)
-str_purchase_axl_B          :Bajo (clase B)
-str_purchase_axl_C          :Medio (clase C)
-str_purchase_axl_D          :Alto (clase D)
-str_purchase_axl_E          :Muy alto (clase E)
 
 str_purchase_spc_eld        :Con compartimento de equipaje reformable a cargas express.
 str_purchase_spc_el_eld     :Con compartimento de equipaje reformable a cargas express o pasajeros.

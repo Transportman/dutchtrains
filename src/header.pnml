@@ -9,10 +9,11 @@
 //Allow for the disabling of fictional trains
 #define availability(PARAMETER) PARAMETER ? ALL_CLIMATES : NO_CLIMATE
 //Allow for disabling of axle weights and voltages
-#define axleweight(PARAMETER) track_type: param_axle ? PARAMETER : unelectrified_C
-#define axleweightDC_B track_type: param_voltage ? DC_B : dual_B
-#define axleweightDC_C track_type: param_axle ? (param_voltage ? DC_C : dual_C) : (param_voltage ? DC_B : dual_B)
-#define axleweightAC(PARAMETER) track_type: param_axle ? PARAMETER : dual_B
+//NOTICE: NO LONGER INCLUDES TERNARY STATEMENTS. TERNARY STATEMENTS IN TRACKTYPES NO LONGER WORK AS OF NML 0.9.0
+#define axleweight(PARAMETER) track_type: PARAMETER
+#define axleweightDC_B track_type: [DC_B, dual_B]
+#define axleweightDC_C track_type: [DC_C, dual_C]
+#define axleweightAC(PARAMETER) track_type: PARAMETER
 
 // define the newgrf
 grf {
@@ -130,7 +131,7 @@ grf {
         }
     }
     param {
-        param_axle {
+        param_axle { //With NML 0.9.0 this no longer works
             type:   bool;
             name:   string(STR_PARAM_AXLE);
             desc:   string(STR_PARAM_AXLE_DESC);

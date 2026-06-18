@@ -47,11 +47,11 @@ item(FEAT_TRAINS, item_diesel_NS2200) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/diesel", "role/express_passenger", "role/freight", "axleweight/C"];
 	}
     graphics {
         purchase: switch_diesel_NS2200_purchase;
         cargo_subtype_text: switch_diesel_NS2200_subtype_text;
-        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_lfep), string(str_purchase_axl_C));
         cargo_capacity: return 0;
         switch_diesel_NS2200_livery;
     }

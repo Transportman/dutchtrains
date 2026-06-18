@@ -132,22 +132,7 @@ str_metro_RET_typeT     :RET Type T SG2 (Metro)
 str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
 
 #PURCHASE MENU TEXTS
-
-str_purchase_svc_spc            :{BLACK}Servis: {YELLOW}{STRING}{}{BLACK}{STRING}
-
-
-str_purchase_svc_p          :penumpang
-str_purchase_svc_lp         :penumpang lokal
-str_purchase_svc_iphf       :penumpang intercity atau barang berat
-str_purchase_svc_hphf       :penumpang kecepatan tinggi atau barang berat
-str_purchase_svc_eplf       :penumpang cepat atau barang ringan
-str_purchase_svc_hf         :barang berat
-str_purchase_svc_slf        :langsir atau barang ringan
-
 str_purchase_len_6_30       :6 satuan (3.0)
-
-str_purchase_axl_A          :rendah sekali (kelas A)
-str_purchase_axl_C          :medium (kelas C)
 
 
 str_purchase_steam_HSM83    :Sebelum disebut sebagai: {SILVER} HSM 83-88, 101-115.

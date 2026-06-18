@@ -111,19 +111,19 @@ switch(FEAT_TRAINS, SELF, switch_emu_FLIRT3IV_RRReis_position, (position_in_arti
 	spriteset_emu_FLIRT3IV_RRReis_back;
 }
 //START
-spriteset(spriteset_emu_FLIRT3IV_START_front, "gfx/emu/FLIRT3_start.png") {
+spriteset(spriteset_emu_FLIRT3IV_START_front, "gfx/emu/FLIRT3_st.png") {
 	template_2cc_88_white(1,1)
 }
 
-spriteset(spriteset_emu_FLIRT3IV_START_middle_1, "gfx/emu/FLIRT3_start.png") {
+spriteset(spriteset_emu_FLIRT3IV_START_middle_1, "gfx/emu/FLIRT3_st.png") {
 	template_2cc_68_white(1,32)
 }
 
-spriteset(spriteset_emu_FLIRT3IV_START_middle_2, "gfx/emu/FLIRT3_start.png") {
+spriteset(spriteset_emu_FLIRT3IV_START_middle_2, "gfx/emu/FLIRT3_st.png") {
 	template_2cc_68_white(1,64)
 }
 
-spriteset(spriteset_emu_FLIRT3IV_START_back, "gfx/emu/FLIRT3_start.png") {
+spriteset(spriteset_emu_FLIRT3IV_START_back, "gfx/emu/FLIRT3_st.png") {
 	template_2cc_88_white(1,96)
 }
 

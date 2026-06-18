@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_metro_RET_typeB_additional_text, [
         STORE_TEMP((param_loading_speed == 0) ? 11 : (param_loading_speed == 2) ? 3 : 6, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_M), string(str_purchase_axl_B), string(str_purchase_len_2_10));
+    return string(str_purchase_len_ltm, string(str_purchase_len_2_10));
 }
 
 item(FEAT_TRAINS, item_metro_RET_typeB) {
@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_metro_RET_typeB) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/third_rail", "role/metro", "axleweight/B"];
 	}
     graphics {
         cargo_capacity: return 113;

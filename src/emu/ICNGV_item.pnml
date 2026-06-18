@@ -12,12 +12,11 @@
 
 
 switch(FEAT_TRAINS, SELF, switch_emu_ICNGV_additional_text, [
-        STORE_TEMP(string(str_purchase_svc_ip) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_5_19) | string(str_purchase_spc_ICNGV) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 2 : 2, 258)
+        STORE_TEMP(string(str_purchase_len_5_19) | string(str_purchase_spc_ICNGV) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 2 : 2, 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm_spc);
+    return string(str_purchase_len_ltm_spc);
 }
 
 item(FEAT_TRAINS, item_emu_ICNGV) {
@@ -53,6 +52,7 @@ item(FEAT_TRAINS, item_emu_ICNGV) {
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+		badges: ["flag/NL", "power/electric/multi", "role/express_passenger", "axleweight/B"];
 	}
 	graphics {
         cargo_capacity: return 52;

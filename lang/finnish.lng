@@ -503,43 +503,11 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_metro_Future_MTR1   :Tulevaisuuden metro 1
 
 #PURCHASE MENU TEXTS
-
-str_purchase_svc                :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}
-str_purchase_svc_axl            :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}
-str_purchase_svc_len            :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Pituus: {YELLOW}{STRING}
-str_purchase_svc_spc            :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_spc        :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_axl                :{BLACK}Akselipaino: {YELLOW}{STRING}
-str_purchase_axl_spc            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}{STRING}
-
-str_purchase_axl_ltm            :{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
-str_purchase_axl_ltm_spc        :{BLACK}Akselipaino: {YELLOW}{0:STRING}{}BLACK}Lastausaika: {YELLOW}{2:COMMA} päivä{P "" ä}{}{BLACK}{1:STRING}
-str_purchase_svc_axl_len_ltm    :{BLACK}Käyttötarkoitus: {YELLOW}{STRING}{}{BLACK}Akselipaino: {YELLOW}{STRING}{}{BLACK}Pituus: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
-str_purchase_svc_axl_len_ltm_spc:{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Pituus: {YELLOW}{2:STRING}{}{BLACK}Lastausaika: {YELLOW}{4:COMMA} päivä{P "" ä}{}{BLACK}{3:STRING}
-str_purchase_svc_axl_ltm_spc    :{BLACK}Käyttötarkoitus: {YELLOW}{0:STRING}{}{BLACK}Akselipaino: {YELLOW}{1:STRING}{}{BLACK}Lastausaika: {YELLOW}{3:COMMA} päivä{P "" ä}{}{BLACK}{2:STRING}
-
-str_purchase_svc_p          :matkustajaliikenne
-str_purchase_svc_lp         :paikallismatkustajaliikenne
-str_purchase_svc_ep         :pikamatkustajaliikenne
-str_purchase_svc_ip         :InterCity-matkustajaliikenne
-str_purchase_svc_hp         :suurinopeuksinen matkustajaliikenne
-str_purchase_svc_Ip         :kansainvälinen matkustajaliikenne
-str_purchase_svc_elp        :pika- ja paikallismatkustajaliikenne
-str_purchase_svc_eip        :pika- ja InterCity-matkustajaliikenne
-str_purchase_svc_eiphf      :pikamatkustaja- ja InterCity- tai raskas tavaraliikenne
-str_purchase_svc_iphf       :InterCity- tai raskas tavaraliikenne
-str_purchase_svc_hphf       :suurinopeuksinen matkustaja- tai raskas tavaraliikenne
-str_purchase_svc_eplf       :pikamatkustaja- tai kevyt tavaraliikenne
-str_purchase_svc_flp        :tavara- tai paikallismatkustajaliikenne
-str_purchase_svc_lfep       :kevyt rahti- tai pikamatkustajaliikenne
-str_purchase_svc_f          :tavaraliikenne
-str_purchase_svc_lf         :kevyt rahtiliikenne
-str_purchase_svc_hf         :raskas tavaraliikenne
-str_purchase_svc_s          :vaihtotyö
-str_purchase_svc_slf        :vaihtotyö tai kevyt tavaraliikenne
-str_purchase_svc_m          :posti
-str_purchase_svc_M          :metro
-str_purchase_svc_x          :yksityiskäyttö
+str_purchase_spc            	:{BLACK}{STRING}
+str_purchase_ltm        	    :{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
+str_purchase_len_ltm    		:{BLACK}Pituus: {YELLOW}{STRING}{}{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}
+str_purchase_ltm_spc    		:{BLACK}Lastausaika: {YELLOW}{COMMA} päivä{P "" ä}{}{BLACK}{STRING}
+str_purchase_len_ltm_spc		:{BLACK}Pituus: {YELLOW}{0:STRING}{}{BLACK}Lastausaika: {YELLOW}{2:COMMA} päivä{P "" ä}{}{BLACK}{1:STRING}
 
 str_purchase_len_1_04       :1 yksikkö (0,4)
 str_purchase_len_1_05       :1 yksikkö (0,5)
@@ -554,12 +522,6 @@ str_purchase_len_6_20       :6 yksikköä (2,0)
 str_purchase_len_6_30       :6 yksikköä (3,0)
 str_purchase_len_8_40       :8 yksikköä (4,0)
 str_purchase_len_10_50      :10 yksikköä (5,0)
-
-str_purchase_axl_A          :hyvin matala (A-luokka)
-str_purchase_axl_B          :matala (B-luokka)
-str_purchase_axl_C          :keskikokoinen (C-luokka)
-str_purchase_axl_D          :korkea (D-luokka)
-str_purchase_axl_E          :hyvin korkea (E-luokka)
 
 str_purchase_spc_eld        :Mukana matkatavaraosasto, joka voidaan sovittaa pikarahdille.
 str_purchase_spc_el_eld     :Mukana matkatavaraosasto, joka voidaan sovittaa pikarahdille tai matkustajille.

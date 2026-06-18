@@ -11,21 +11,19 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_additional_text_tpo, [
-        STORE_TEMP(string(str_purchase_svc_hf) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_emu_CargoDD) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 258)
+        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_emu_CargoDD) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm_spc);
+    return string(str_purchase_len_ltm_spc);
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_additional_text_ntp, [
-        STORE_TEMP(string(str_purchase_svc_hf) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_emu_CargoDD_no_track) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 258)
+        STORE_TEMP(string(str_purchase_len_8_40) | string(str_purchase_emu_CargoDD_no_track) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 9 : (param_loading_speed == 2) ? 3 : 5, 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm_spc);
+    return string(str_purchase_len_ltm_spc);
 }
 
 item(FEAT_TRAINS, item_emu_CargoDD) {
@@ -64,6 +62,7 @@ item(FEAT_TRAINS, item_emu_CargoDD) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/electric/multi", "role/heavy_freight", "axleweight/B"];
 	}
 	if ( TRACK_POWER_ON ) {
 		graphics {

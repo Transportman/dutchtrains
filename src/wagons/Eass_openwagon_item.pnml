@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_wagons_Eass_additional_text, [
         STORE_TEMP((param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 3 : 5, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_axl_ltm, string(str_purchase_axl_C));
+    return string(str_purchase_ltm);
 }
 
 item(FEAT_TRAINS, item_wagons_Eass_openwagon) {
@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_wagons_Eass_openwagon) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "flag/europe", "axleweight/C"];
 	}
     graphics {
         purchase: spriteset_wagons_Eass_openwagon_purchase;

@@ -5,11 +5,15 @@ Dutch Trainset Changelog
 - Fix: Height of ICNG changes when train reverses
 - Fix: Livery of Vectron changes when train reverses
 - Change: Increase max speed Vectron to 200km/h
+- Change: Track type implementation in accordance to new specs
+- Change: Axle limit parameter deprecated, now active by default
+- Change: Greencitytrip sleeper car now Bvcmz
 - Feature: Nightjet New Generation (Graphics by Erato)
 - Feature: RRReis/Valleilijn livery for Mat 64 (Graphics by Erato)
 - Feature: Bentheimer Eisenbahn livery for Lint (Graphics by Erato)
 - Feature: GoVolta I10 coaches (Graphics by Erato)
 - Feature: New VIRM sprites (Graphics by Erato)
+- Feature: Badge implementation
 
 3.2.1-XL (2024/12/14)
 ---------------------

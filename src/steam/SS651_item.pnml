@@ -47,11 +47,12 @@ item(FEAT_TRAINS, item_steam_SS651) {
         length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/steam", "role/shunting", "axleweight/C"];
 	}
     graphics {
         purchase: switch_steam_SS651_livery_purchase;
         cargo_subtype_text: switch_steam_SS651_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_s), string(str_purchase_axl_C), string(str_purchase_steam_SS651));
+        additional_text: return string(str_purchase_spc, string(str_purchase_steam_SS651));
         cargo_capacity: return 0;
         switch_steam_SS651_livery;
     }

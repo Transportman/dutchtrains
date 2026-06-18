@@ -47,10 +47,10 @@ item(FEAT_TRAINS, item_steam_NS6200) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/steam", "role/passenger", "role/freight", "axleweight/C"];
 	}
     graphics {
         purchase: spriteset_steam_NS6200_purchase;
-        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_flp), string(str_purchase_axl_C));
         switch_steam_NS6200_animation;
     }
 }

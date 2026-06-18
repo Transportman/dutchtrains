@@ -1,0 +1,350 @@
+badgetable {
+     "flag",
+     "flag/NL",
+     "flag/BE",
+     "flag/DE",
+     "flag/LU",
+     "flag/GB",
+     "flag/AT",
+     "flag/CH",
+     "flag/FR",
+     "flag/IT",
+     "flag/CZ",
+     "flag/DK",
+     "flag/europe",
+     "power",
+     "power/steam",
+     "power/diesel",
+     "power/electric",
+     "power/electric/dc",
+     "power/electric/multi",
+     "power/battery",
+	 "power/third_rail",
+	 "role",
+	 "role/metro",//metro
+	 "role/passenger",//local
+	 "role/express_passenger",//intercity
+	 "role/very_high_speed",//high speed
+	 "role/international",//international
+	 "role/freight",
+	 "role/mail",
+	 "role/shunting",
+	 "role/light_freight",
+	 "role/heavy_freight",
+	 "role/executive",
+	 "role/driving_cab",
+	 "axleweight",
+	 "axleweight/A",
+	 "axleweight/B",
+	 "axleweight/C",
+	 "axleweight/D",
+	 "axleweight/E"
+}
+
+//Countries
+item (FEAT_BADGES, item_badge_flag) {//flag
+    property {
+        label: "flag";
+        name: string(str_badge_flag);
+    }
+}
+
+item (FEAT_BADGES, item_badge_NL) {//NL
+    property {
+        label: "flag/NL";
+        name: string(str_badge_NL);
+    }
+}
+
+item (FEAT_BADGES, item_badge_BE) {//BE
+    property {
+        label: "flag/BE";
+        name: string(str_badge_BE);
+    }
+}
+
+item (FEAT_BADGES, item_badge_LU) {//LU
+    property {
+        label: "flag/LU";
+        name: string(str_badge_LU);
+    }
+}
+
+item (FEAT_BADGES, item_badge_DE) {//DE
+    property {
+        label: "flag/DE";
+        name: string(str_badge_DE);
+    }
+}
+
+item (FEAT_BADGES, item_badge_CH) {//CH
+    property {
+        label: "flag/CH";
+        name: string(str_badge_CH);
+    }
+}
+
+item (FEAT_BADGES, item_badge_AT) {//AT
+    property {
+        label: "flag/AT";
+        name: string(str_badge_AT);
+    }
+}
+
+item (FEAT_BADGES, item_badge_FR) {//FR
+    property {
+        label: "flag/FR";
+        name: string(str_badge_FR);
+    }
+}
+
+item (FEAT_BADGES, item_badge_GB) {//GB
+    property {
+        label: "flag/GB";
+        name: string(str_badge_GB);
+    }
+}
+
+item (FEAT_BADGES, item_badge_IT) {//IT
+    property {
+        label: "flag/IT";
+        name: string(str_badge_IT);
+    }
+}
+
+item (FEAT_BADGES, item_badge_CZ) {//CZ
+    property {
+        label: "flag/CZ";
+        name: string(str_badge_CZ);
+    }
+}
+
+item (FEAT_BADGES, item_badge_DK) {//DK
+    property {
+        label: "flag/DK";
+        name: string(str_badge_DK);
+    }
+}
+
+item (FEAT_BADGES, item_badge_europe) {//europe
+    property {
+        label: "flag/europe";
+        name: string(str_badge_europe);
+    }
+}
+
+//Roles
+item (FEAT_BADGES, item_badge_role) {//role
+    property {
+        label: "role";
+        name: string(str_badge_role);
+    }
+}
+
+item (FEAT_BADGES, item_badge_metro) {//metro
+    property {
+        label: "role/metro";
+        name: string(str_badge_role_metro);
+    }
+}
+
+item (FEAT_BADGES, item_badge_passenger) {//Local/regional pax
+    property {
+        label: "role/passenger";
+        name: string(str_badge_role_pax);
+    }
+}
+
+item (FEAT_BADGES, item_badge_express_passenger) {//Intercity/express pax
+    property {
+        label: "role/express_passenger";
+        name: string(str_badge_role_express_pax);
+    }
+}
+
+item (FEAT_BADGES, item_badge_very_high_speed) {//high speed pax
+    property {
+        label: "role/very_high_speed";
+        name: string(str_badge_role_hs_pax);
+    }
+}
+
+item (FEAT_BADGES, item_badge_international) {//international pax
+    property {
+        label: "role/international";
+        name: string(str_badge_role_int_pax);
+    }
+}
+
+item (FEAT_BADGES, item_badge_freight) {//freight
+    property {
+        label: "role/freight";
+        name: string(str_badge_role_freight);
+    }
+}
+
+item (FEAT_BADGES, item_badge_light_freight) {//light freight
+    property {
+        label: "role/light_freight";
+        name: string(str_badge_role_light_freight);
+    }
+}
+
+item (FEAT_BADGES, item_badge_heavy_freight) {//heavy freight
+    property {
+        label: "role/heavy_freight";
+        name: string(str_badge_role_heavy_freight);
+    }
+}
+
+item (FEAT_BADGES, item_badge_shunting) {//shunting
+    property {
+        label: "role/shunting";
+        name: string(str_badge_role_shunting);
+    }
+}
+
+item (FEAT_BADGES, item_badge_mail) {//mail
+    property {
+        label: "role/mail";
+        name: string(str_badge_role_mail);
+    }
+}
+
+item (FEAT_BADGES, item_badge_executive) {//executive
+    property {
+        label: "role/executive";
+        name: string(str_badge_role_executive);
+    }
+}
+
+//power
+spriteset(spriteset_badge_metro, "gfx/purchase/badges/metro.png") {
+	[0, 0, 12, 12, 0, 0]
+}
+spriteset(spriteset_badge_steam, "gfx/purchase/badges/steam.png") {
+	[0, 0, 12, 12, 0, 0]
+}
+spriteset(spriteset_badge_diesel, "gfx/purchase/badges/diesel.png") {
+	[0, 0, 12, 12, 0, 0]
+}
+spriteset(spriteset_badge_dc, "gfx/purchase/badges/dc.png") {
+	[0, 0, 12, 12, 0, 0]
+}
+spriteset(spriteset_badge_multi, "gfx/purchase/badges/multi.png") {
+	[0, 0, 12, 12, 0, 0]
+}
+spriteset(spriteset_badge_battery, "gfx/purchase/badges/battery.png") {
+	[0, 0, 12, 12, 0, 0]
+}
+
+item (FEAT_BADGES, item_badge_power) {//third rail
+    property {
+        label: "power";
+        name: string(str_badge_power);
+    }
+}
+
+item (FEAT_BADGES, item_badge_steam) {//DC
+    property {
+        label: "power/steam";
+        name: string(str_badge_power_steam);
+    }
+    graphics {
+        default: spriteset_badge_steam;
+    }
+}
+
+item (FEAT_BADGES, item_badge_diesel) {//DC
+    property {
+        label: "power/diesel";
+        name: string(str_badge_power_diesel);
+    }
+    graphics {
+        default: spriteset_badge_diesel;
+    }
+}
+
+item (FEAT_BADGES, item_badge_dc) {//DC
+    property {
+        label: "power/electric/dc";
+        name: string(str_badge_power_dc);
+    }
+    graphics {
+        default: spriteset_badge_dc;
+    }
+}
+
+item (FEAT_BADGES, item_badge_third_rail) {//third rail
+    property {
+        label: "power/third_rail";
+        name: string(str_badge_power_third_rail);
+    }
+    graphics {
+        default: spriteset_badge_metro;
+    }
+}
+
+item (FEAT_BADGES, item_badge_multi) {//Multisystem
+    property {
+        label: "power/electric/multi";
+        name: string(str_badge_power_multi);
+    }
+    graphics {
+        default: spriteset_badge_multi;
+    }
+}
+
+item (FEAT_BADGES, item_badge_battery) {//Battery
+    property {
+        label: "power/battery";
+        name: string(str_badge_power_battery);
+    }
+    graphics {
+        default: spriteset_badge_battery;
+    }
+}
+
+//Axle weights
+item (FEAT_BADGES, item_badge_axleweight) {//axleweight
+    property {
+        label: "axleweight";
+        name: string(str_badge_axleweight);
+    }
+}
+
+item (FEAT_BADGES, item_badge_axleA) {//Class A
+    property {
+        label: "axleweight/A";
+        name: string(str_badge_axleA);
+    }
+}
+
+item (FEAT_BADGES, item_badge_axleB) {//Class B
+    property {
+        label: "axleweight/B";
+        name: string(str_badge_axleB);
+    }
+}
+
+item (FEAT_BADGES, item_badge_axleC) {//Class C
+    property {
+        label: "axleweight/C";
+        name: string(str_badge_axleC);
+    }
+}
+
+item (FEAT_BADGES, item_badge_axleD) {//Class D
+    property {
+        label: "axleweight/D";
+        name: string(str_badge_axleD);
+    }
+}
+
+item (FEAT_BADGES, item_badge_axleE) {//Class E
+    property {
+        label: "axleweight/E";
+        name: string(str_badge_axleE);
+    }
+}
+

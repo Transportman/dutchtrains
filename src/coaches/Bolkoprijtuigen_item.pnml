@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_Bolkoprijtuigen_additional_text, [
         STORE_TEMP((param_loading_speed == 0) ? 19 : (param_loading_speed == 2) ? 5 : 10, 256)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_axl_ltm, string(str_purchase_axl_B));
+    return string(str_purchase_ltm);
 }
 
 item(FEAT_TRAINS, item_coaches_Bolkoprijtuigen) {
@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_coaches_Bolkoprijtuigen) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: bitmask(0);
+		badges: ["flag/NL", "axleweight/B"];
 	}
     graphics {
         cargo_capacity: return 70;

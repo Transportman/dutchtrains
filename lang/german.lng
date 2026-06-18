@@ -261,22 +261,11 @@ str_metro_RET_typeM     :RET Typ M MG2 (Metro)
 str_metro_Future_MTR1   :Futuristische Metro 1
 
 #PURCHASE MENU TEXTS
-
-str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Achsgewicht: {YELLOW}{STRING}
-str_purchase_svc_axl_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Achsgewicht: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_axl                :{BLACK}Achsgewicht: {YELLOW}{STRING}
-
-str_purchase_axl_ltm            :{BLACK}Achsgewicht: {YELLOW}{STRING}{}{BLACK}Ladezeit: {YELLOW}{COMMA} Tag{P "" e}
-str_purchase_svc_axl_len_ltm    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Achsgewicht: {YELLOW}{STRING}{}{BLACK}Länge: {YELLOW}{STRING}{}{BLACK}Ladezeit: {YELLOW}{COMMA} Tag{P "" e}
-str_purchase_svc_axl_ltm_spc    :{BLACK}Service: {YELLOW}{0:STRING}{}{BLACK}Achsgewicht: {YELLOW}{1:STRING}{}{BLACK}Ladezeit: {YELLOW}{3:COMMA} Tag{P "" e}{}{BLACK}{2:STRING}
-
-str_purchase_svc_p          :Passagiere
-str_purchase_svc_hphf       :Hochgeschwindigkeits-Passagiertransport oder schwere Fracht
-str_purchase_svc_flp        :Güter oder Personennahverkehr
-str_purchase_svc_lfep       :leichte Fracht oder Passagierexpress
-str_purchase_svc_s          :rangieren
-str_purchase_svc_m          :Post
-str_purchase_svc_x          :executive
+str_purchase_spc            	:{BLACK}{STRING}
+str_purchase_ltm        	    :{BLACK}Ladezeit: {YELLOW}{COMMA} Tag{P "" e}
+str_purchase_len_ltm    		:{BLACK}Ladezeit: {YELLOW}{STRING}{}{BLACK}Ladezeit: {YELLOW}{COMMA} Tag{P "" e}
+str_purchase_ltm_spc    		:{BLACK}Ladezeit: {YELLOW}{COMMA} Tag{P "" e}{}{BLACK}{STRING}
+str_purchase_len_ltm_spc		:{BLACK}Ladezeit: {YELLOW}{0:STRING}{}{BLACK}Ladezeit: {YELLOW}{2:COMMA} Tag{P "" e}{}{BLACK}{1:STRING}
 
 str_purchase_len_1_04       :1 Einheit (0.4)
 str_purchase_len_1_05       :1 Einheit (0.5)
@@ -285,9 +274,6 @@ str_purchase_len_3_15       :3 Einheiten (1.5)
 str_purchase_len_4_20       :Vier Einheiten (2,0)
 str_purchase_len_5_24       :5 Einheiten (2.4)
 str_purchase_len_6_20       :Sechs Einheiten (2,0)
-
-str_purchase_axl_B          :niedrig (Klasse B)
-str_purchase_axl_D          :hoch (Klasse D)
 
 str_purchase_spc_fictional  :Fiktional.
 

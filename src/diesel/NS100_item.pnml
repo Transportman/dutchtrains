@@ -47,10 +47,10 @@ item(FEAT_TRAINS, item_diesel_NS100) {
         length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/diesel", "role/shunting", "axleweight/A"];
 	}
     graphics {
         purchase: spriteset_diesel_NS100_purchase;
-        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_s), string(str_purchase_axl_A));
         spriteset_diesel_NS100;
     }
 }

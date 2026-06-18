@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_wagons_gen0boxcar_additional_text, [
         STORE_TEMP((param_loading_speed == 0) ? 3 : (param_loading_speed == 2) ? 1 : 2, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_axl_ltm, string(str_purchase_axl_A));
+    return string(str_purchase_ltm);
 }
 
 item(FEAT_TRAINS, item_wagons_gen0boxcar) {
@@ -54,6 +54,7 @@ item(FEAT_TRAINS, item_wagons_gen0boxcar) {
         length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "flag/europe", "axleweight/A"];
 	}
     graphics {
         purchase: spriteset_wagons_gen0boxcar_purchase;

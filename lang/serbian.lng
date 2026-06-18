@@ -499,39 +499,6 @@ str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_metro_Future_MTR1   :Futuristički Metro1
 
 #PURCHASE MENU TEXTS
-
-str_purchase_svc                :{BLACK}Usluga: {YELLOW}{STRING}
-str_purchase_svc_axl            :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}
-str_purchase_svc_len            :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Dužina: {YELLOW}{STRING}
-str_purchase_svc_spc            :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_spc        :{BLACK}Usluga: {YELLOW}{STRING}{}{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_axl                :{BLACK}Osovinska težina: {YELLOW}{STRING}
-str_purchase_axl_spc            :{BLACK}Osovinska težina: {YELLOW}{STRING}{}{BLACK}{STRING}
-
-
-str_purchase_svc_p          :putnički prijevoz
-str_purchase_svc_lp         :lokalni putnički prijevoz
-str_purchase_svc_ep         :ekspresni putnički prijevoz
-str_purchase_svc_ip         :međugradski putnički prijevoz
-str_purchase_svc_hp         :putnički prijevoz velikih brzina
-str_purchase_svc_Ip         :međunarodni putnički prijevoz
-str_purchase_svc_elp        :ekspresni i lokalni putnički prijevoz
-str_purchase_svc_eip        :ekspresni i međugradski putnički prijevoz
-str_purchase_svc_eiphf      :ekspresni i međugradski putnički prijevoz ili prijevoz teškog tereta
-str_purchase_svc_iphf       :međugradski putnički prijevoz ili prijevoz teškog tereta
-str_purchase_svc_hphf       :putnički prijevoz velikih brzina ili prijevoz teškog tereta
-str_purchase_svc_eplf       :ekspresni putnički prijevoz ili prijevoz lakog tereta
-str_purchase_svc_flp        :teretni prijevoz ili lokalni putnički prijevoz
-str_purchase_svc_lfep       :prijevoz lakog tereta ili ekspresni putnički prijevoz
-str_purchase_svc_f          :teretni prijevoz
-str_purchase_svc_lf         :prijevoz lakog tereta
-str_purchase_svc_hf         :prijevoz teškog tereta
-str_purchase_svc_s          :manevriranje
-str_purchase_svc_slf        :manevriranje ili prijevoz lakog tereta
-str_purchase_svc_m          :poštanski prijevoz
-str_purchase_svc_M          :metro
-str_purchase_svc_x          :izvršni
-
 str_purchase_len_1_04       :1 jedinica (0.4)
 str_purchase_len_1_05       :1 jedinica (0.5)
 str_purchase_len_2_10       :2 jedinice (1.0)
@@ -545,12 +512,6 @@ str_purchase_len_6_20       :6 jedinica (2.0)
 str_purchase_len_6_30       :6 jedinica (3.0)
 str_purchase_len_8_40       :8 jedinica (4.0)
 str_purchase_len_10_50      :10 jedinica (5.0)
-
-str_purchase_axl_A          :vrlo niska (A klasa)
-str_purchase_axl_B          :niska (B klasa)
-str_purchase_axl_C          :srednja (C klasa)
-str_purchase_axl_D          :visoka (D klasa)
-str_purchase_axl_E          :vrlo visoka (E klasa)
 
 str_purchase_spc_eld        :Sa odjeljkom za prtljagu koji se može prenamijeniti za ekspresne terete.
 str_purchase_spc_el_eld     :Sa odjeljkom za prtljagu koji se može prenamijeniti za ekspresne terete ili putnike.

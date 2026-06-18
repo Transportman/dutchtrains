@@ -46,11 +46,12 @@ item(FEAT_TRAINS, item_diesel_ACTS5800) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/diesel", "role/heavy_freight", "axleweight/C"];
 	}
     graphics {
         purchase: switch_diesel_ACTS5800_purchase;
         cargo_subtype_text: switch_diesel_ACTS5800_subtype_text;
-        additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hf), string(str_purchase_axl_C), string(str_purchase_diesel_ACTS5800));
+        additional_text: return string(str_purchase_spc, string(str_purchase_diesel_ACTS5800));
         cargo_capacity: return 0;
         switch_diesel_ACTS5800_livery;
     }

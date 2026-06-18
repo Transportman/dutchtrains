@@ -47,10 +47,10 @@ item(FEAT_TRAINS, item_diesel_NS2801) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/diesel", "role/heavy_freight", "axleweight/C"];
 	}
     graphics {
         purchase: spriteset_diesel_NS2801_purchase;
-        additional_text: return string(str_purchase_svc_axl, string(str_purchase_svc_hf), string(str_purchase_axl_C));
         spriteset_diesel_NS2801;
     }
 }

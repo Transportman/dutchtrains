@@ -46,6 +46,7 @@ item(FEAT_TRAINS, item_electric_gen9_HS002) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/electric/multi", "role/heavy_freight", "role/express_passenger", "axleweight/E"];
 	}
 	if ( TRACK_POWER_ON ) {
 		graphics {
@@ -53,7 +54,7 @@ item(FEAT_TRAINS, item_electric_gen9_HS002) {
 			cargo_capacity: return 0;
 			articulated_part: switch_electric_gen9_HS002_articulated;
 			cargo_subtype_text: switch_electric_gen9_HS002_subtype_text;
-			additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hphf), string(str_purchase_axl_E), string(str_purchase_spc_electric_gen9_HS002));
+			additional_text: return string(str_purchase_spc, string(str_purchase_spc_electric_gen9_HS002));
 			power: switch_electric_gen9_HS002_power;
 			purchase_power: return 6050;
 			switch_electric_gen9_HS002_livery;
@@ -64,7 +65,7 @@ item(FEAT_TRAINS, item_electric_gen9_HS002) {
 			cargo_capacity: return 0;
 			articulated_part: switch_electric_gen9_HS002_articulated;
 			cargo_subtype_text: switch_electric_gen9_HS002_subtype_text;
-			additional_text: return string(str_purchase_svc_axl_spc, string(str_purchase_svc_hphf), string(str_purchase_axl_E), string(str_purchase_spc_electric_gen9_HS002_no_track));
+			additional_text: return string(str_purchase_spc, string(str_purchase_spc_electric_gen9_HS002_no_track));
 			power: 18000;
 			purchase_power: return 18000;
 			switch_electric_gen9_HS002_livery;

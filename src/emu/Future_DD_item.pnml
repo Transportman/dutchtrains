@@ -11,21 +11,19 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_additional_text_tpo, [
-        STORE_TEMP(string(str_purchase_svc_Ip) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_10_50) | string(str_purchase_spc_emu_Future_DD) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 4 : 8, 258)
+        STORE_TEMP(string(str_purchase_len_10_50) | string(str_purchase_spc_emu_Future_DD) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 4 : 8, 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm_spc);
+    return string(str_purchase_len_ltm_spc);
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_Future_DD_additional_text_ntp, [
-        STORE_TEMP(string(str_purchase_svc_Ip) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_10_50) | string(str_purchase_spc_emu_Future_DD_no_track) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 4 : 8, 258)
+        STORE_TEMP(string(str_purchase_len_10_50) | string(str_purchase_spc_emu_Future_DD_no_track) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 16 : (param_loading_speed == 2) ? 4 : 8, 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm_spc);
+    return string(str_purchase_len_ltm_spc);
 }
 
 item(FEAT_TRAINS, item_emu_Future_DD) {
@@ -63,6 +61,7 @@ item(FEAT_TRAINS, item_emu_Future_DD) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/electric/multi", "role/very_high_speed", "role/international", "axleweight/B"];
 	}
 	if ( TRACK_POWER_ON ) {
 		graphics {

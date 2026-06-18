@@ -574,7 +574,7 @@ str_coaches_Citynightline   :Sleeper Carriage CityNightLine
 str_coaches_MUs         :Sleeper Carriage MUs
 str_coaches_Nightjet    :Sleeper Carriage Nightjet Bmz
 str_coaches_NJNG        :Sleeper Carriage Nightjet New Generation
-str_coaches_Greencitytrip   :Sleeper Carriage GreenCityTrip
+str_coaches_Greencitytrip   :Sleeper Carriage Couchette Bvcmz
 
 #baggage and mail wagons
 str_coaches_SS_DII      :Baggage Wagon SS D-II
@@ -602,44 +602,57 @@ str_metro_RET_typeB     :RET Type B MG2/1 (Metro)
 str_metro_RET_typeR     :RET Type R RSG3 (Metro)
 str_metro_Future_MTR1	:Futuristic Metro1
 
+#badge strings
+str_badge_role					:Service
+str_badge_role_metro			:Metro passengers
+str_badge_role_pax				:Local/regional passengers
+str_badge_role_express_pax		:Express/intercity passengers
+str_badge_role_hs_pax			:High speed passengers
+str_badge_role_int_pax			:International passengers
+
+str_badge_role_freight			:Freight
+str_badge_role_light_freight	:Light freight
+str_badge_role_heavy_freight	:Heavy freight
+
+str_badge_role_shunting			:Shunting
+str_badge_role_executive		:Executive
+str_badge_role_mail				:Mail
+
+str_badge_axleweight			:Axle weight
+str_badge_axleA					:(Class A) Very low 
+str_badge_axleB					:(Class B) Low
+str_badge_axleC					:(Class C) Medium
+str_badge_axleD					:(Class D) High
+str_badge_axleE					:(Class E) Very high
+
+str_badge_power					:Propulsion
+str_badge_power_steam			:Steam
+str_badge_power_diesel			:Diesel
+str_badge_power_dc				:Electric (DC)
+str_badge_power_third_rail		:Electric (Third rail)
+str_badge_power_multi			:Electric (AC/DC)
+str_badge_power_battery			:Battery
+
+str_badge_flag					:Region
+str_badge_NL					:Netherlands
+str_badge_BE					:Belgium
+str_badge_LU					:Luxembourg
+str_badge_DE					:Germany
+str_badge_AT					:Austria
+str_badge_CH					:Switzerland
+str_badge_FR					:France
+str_badge_GB					:UK
+str_badge_IT					:Italy
+str_badge_CZ					:Czechia
+str_badge_DK					:Denmark
+str_badge_europe				:Europe
+
 #PURCHASE MENU TEXTS
-
-str_purchase_svc                :{BLACK}Service: {YELLOW}{STRING}
-str_purchase_svc_axl            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}
-str_purchase_svc_len            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}
-str_purchase_svc_spc            :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_svc_axl_spc        :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
-str_purchase_axl                :{BLACK}Axle Weight: {YELLOW}{STRING}
-str_purchase_axl_spc            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}{STRING}
-
-str_purchase_axl_ltm            :{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
-str_purchase_axl_ltm_spc        :{BLACK}Axle Weight: {YELLOW}{0:STRING}{}{BLACK}Loading Time: {YELLOW}{2:COMMA} day{P "" s}{}{BLACK}{1:STRING}
-str_purchase_svc_axl_len_ltm    :{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Axle Weight: {YELLOW}{STRING}{}{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
-str_purchase_svc_axl_len_ltm_spc:{BLACK}Service: {YELLOW}{0:STRING}{}{BLACK}Axle Weight: {YELLOW}{1:STRING}{}{BLACK}Length: {YELLOW}{2:STRING}{}{BLACK}Loading Time: {YELLOW}{4:COMMA} day{P "" s}{}{BLACK}{3:STRING}
-str_purchase_svc_axl_ltm_spc    :{BLACK}Service: {YELLOW}{0:STRING}{}{BLACK}Axle Weight: {YELLOW}{1:STRING}{}{BLACK}Loading Time: {YELLOW}{3:COMMA} day{P "" s}{}{BLACK}{2:STRING}
-
-str_purchase_svc_p          :passengers
-str_purchase_svc_lp         :local passengers
-str_purchase_svc_ep         :express passengers
-str_purchase_svc_ip         :intercity passengers
-str_purchase_svc_hp         :high speed passengers
-str_purchase_svc_Ip         :international passengers
-str_purchase_svc_elp        :express and local passengers
-str_purchase_svc_eip        :express and intercity passengers
-str_purchase_svc_eiphf      :express and intercity passengers or heavy freight
-str_purchase_svc_iphf       :intercity passengers or heavy freight
-str_purchase_svc_hphf       :high speed passengers or heavy freight
-str_purchase_svc_eplf       :express passengers or light freight
-str_purchase_svc_flp        :freight or local passengers
-str_purchase_svc_lfep       :light freight or express passengers
-str_purchase_svc_f          :freight
-str_purchase_svc_lf         :light freight
-str_purchase_svc_hf         :heavy freight
-str_purchase_svc_s          :shunting
-str_purchase_svc_slf        :shunting or light freight
-str_purchase_svc_m          :mail
-str_purchase_svc_M          :metro
-str_purchase_svc_x          :executive
+str_purchase_spc            	:{BLACK}{STRING}
+str_purchase_ltm        	    :{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
+str_purchase_len_ltm    		:{BLACK}Length: {YELLOW}{STRING}{}{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}
+str_purchase_ltm_spc    		:{BLACK}Loading Time: {YELLOW}{COMMA} day{P "" s}{}{BLACK}{STRING}
+str_purchase_len_ltm_spc		:{BLACK}Length: {YELLOW}{0:STRING}{}{BLACK}Loading Time: {YELLOW}{2:COMMA} day{P "" s}{}{BLACK}{1:STRING}
 
 str_purchase_len_1_04       :1 unit (0.4)
 str_purchase_len_1_05       :1 unit (0.5)
@@ -662,12 +675,6 @@ str_purchase_len_8_40       :8 units (4.0)
 str_purchase_len_10_43      :10 units (4.3)
 str_purchase_len_10_50      :10 units (5.0)
 str_purchase_len_16_80      :16 units (8.0)
-
-str_purchase_axl_A          :very low (class A)
-str_purchase_axl_B          :low (class B)
-str_purchase_axl_C          :medium (class C)
-str_purchase_axl_D          :high (class D)
-str_purchase_axl_E          :very high (class E)
 
 str_purchase_spc_eld        :With baggage compartment refittable to express cargoes.
 str_purchase_spc_el_eld     :With baggage compartment refittable to express cargoes or passengers.

@@ -11,21 +11,19 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_battery_WINK_additional_text_tpo, [
-        STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_3_12) | string(str_purchase_spc_battery_WINK) << 16, 257),
+        STORE_TEMP(string(str_purchase_len_3_12) | string(str_purchase_spc_battery_WINK) << 16, 256),
         STORE_TEMP((param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 2 : 3, 258)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm_spc);
+    return string(str_purchase_len_ltm_spc);
 }
 
 switch(FEAT_TRAINS, SELF, switch_battery_WINK_additional_text_ntp, [
-        STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_len_3_12) | string(str_purchase_spc_battery_WINK_no_track) << 16, 257),
+        STORE_TEMP(string(str_purchase_len_3_12) | string(str_purchase_spc_battery_WINK_no_track) << 16, 256),
         STORE_TEMP((param_loading_speed == 0) ? 4 : (param_loading_speed == 2) ? 2 : 3, 258)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm_spc);
+    return string(str_purchase_len_ltm_spc);
 }
 
 switch(FEAT_TRAINS, SELF, switch_battery_WINK_additional_text, param_track_power) {
@@ -65,6 +63,7 @@ item(FEAT_TRAINS, item_battery_WINK) {
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+		badges: ["flag/NL", "power/battery", "role/passenger", "axleweight/B"];
 	}
 	graphics {
         cargo_capacity: return 68;

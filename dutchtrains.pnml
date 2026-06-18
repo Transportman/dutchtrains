@@ -29,6 +29,8 @@
 #include "src/railtypetable.pnml"
 //recolour sprites for cargo
 #include "src/recoloursprites.pnml"
+//badge support
+#include "src/badges.pnml"
 
 /*
 * VEHICLES

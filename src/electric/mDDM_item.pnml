@@ -11,11 +11,11 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_electric_mDDM_additional_text, [
-        STORE_TEMP(string(str_purchase_svc_lp) | string(str_purchase_axl_B) << 16, 256),
-        STORE_TEMP(string(str_purchase_electric_mDDM_NID) | (param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 2 : 4 << 16, 257)
+        STORE_TEMP((param_loading_speed == 0) ? 8 : (param_loading_speed == 2) ? 2 : 4, 256),
+        STORE_TEMP(string(str_purchase_electric_mDDM_NID), 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_ltm_spc);
+    return string(str_purchase_ltm_spc);
 }
 
 switch(FEAT_TRAINS, PARENT, switch_electric_mDDM, vehicle_is_reversed && sw_reversal_check_push_pull()){
@@ -61,6 +61,7 @@ item(FEAT_TRAINS, item_electric_mDDM) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/electric/dc", "role/passenger", "axleweight/B"];
 	}
     graphics {
         purchase: spriteset_electric_mDDM_purchase;

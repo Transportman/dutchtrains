@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_additional_text, [
         STORE_TEMP((param_loading_speed == 0) ? 14 : (param_loading_speed == 2) ? 4 : 7, 256) //days
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
-    return string(str_purchase_svc_axl_len_ltm, string(str_purchase_svc_ip), string(str_purchase_axl_C), string(str_purchase_len_6_30));
+    return string(str_purchase_len_ltm, string(str_purchase_len_6_30));
 }
 
 item(FEAT_TRAINS, item_emu_IRMVI) {
@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_emu_IRMVI) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+		badges: ["flag/NL", "power/electric/dc", "role/express_passenger", "axleweight/C"];
 	}
     graphics {
         cargo_capacity: return 100;
