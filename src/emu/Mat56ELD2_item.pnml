@@ -11,8 +11,8 @@
 */
 
 switch(FEAT_TRAINS, SELF, switch_emu_Mat56ELD2_additional_text, [
-        STORE_TEMP(string(str_purchase_len_2_10) | string(str_purchase_spc_eld) << 16, 257),
-        STORE_TEMP((param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 3 : 6, 258)
+        STORE_TEMP(string(str_purchase_len_2_10) | string(str_purchase_spc_eld) << 16, 256),
+        STORE_TEMP((param_loading_speed == 0) ? 12 : (param_loading_speed == 2) ? 3 : 6, 257)
         //                                      ^ slow                      fast ^   ^ medium
         ]) {
     return string(str_purchase_len_ltm_spc);
