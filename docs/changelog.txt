@@ -1,6 +1,6 @@
 Dutch Trainset Changelog
 ========================
-3.3.0-XL (2026/??/??)
+3.3.0-XL (2026/06/19)
 ---------------------
 - Fix: Height of ICNG changes when train reverses
 - Fix: Livery of Vectron changes when train reverses
@@ -8,9 +8,11 @@ Dutch Trainset Changelog
 - Change: Increase max speed Vectron to 200km/h
 - Change: Track type implementation in accordance to new specs
 - Change: Axle limit parameter deprecated, now active by default
+- Change: Voltage parameter deprecated, now active by default
 - Change: Greencitytrip sleeper coach now Bvcmz
 - Change: Removed voltage and axle load parameters
 - Change: ICNG power lowered
+- Change: Reversed length order in purchase window
 - Feature: Nightjet New Generation (Graphics by Erato)
 - Feature: RRReis/Valleilijn livery for Mat 64 (Graphics by Erato)
 - Feature: Bentheimer Eisenbahn livery for Lint (Graphics by Erato)
