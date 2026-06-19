@@ -127,14 +127,6 @@ configuration file:
   0: Fictional trains disabled 
   1: Fictional trains available (default)
   
-8th parameter: Axle limits
-  0: Axle limits disabled (default)
-  1: Axle limits enabled
-  
-9th parameter: Voltage differentiation
-  0: Voltage not differentiated (default)
-  1: Both 25kV and 1.5kV considered
-  
 2.4 Usage
 ---------
 Starting date
@@ -302,6 +294,7 @@ Development support:
 - Transportman
 - Erato
 - Gwyd
+- Brickblock1
 
 Templating of graphics:
 - Mahoo76
@@ -376,7 +369,7 @@ an email to foobar at jaspervries.nl.
 ---------
 
 Dutch Trainset - Dutch Trains for OpenTTD
-Copyright (C) 2003-2024 Dutch Trainset Team
+Copyright (C) 2003-2026 Dutch Trainset Team
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

@@ -65,26 +65,7 @@ switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_visual_effect_and_powered, (positi
 * POWER CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_power, current_railtype) {
-    SAAA: return 8000;
-    SABA: return 8000;
-    SACA: return 8000;
-    SADA: return 8000;
-    SAEA: return 8000;
-    SBAA: return 8000;
-    SBBA: return 8000;
-    SBCA: return 8000;
-    SBDA: return 8000;
-    SBEA: return 8000;
-    SAAa: return 8000;
-    SABa: return 8000;
-    SACa: return 8000;
-    SADa: return 8000;
-    SAEa: return 8000;
-    SBAa: return 8000;
-    SBBa: return 8000;
-    SBCa: return 8000;
-    SBDa: return 8000;
-    SBEa: return 8000;
-    return 4750;
+switch(FEAT_TRAINS, SELF, switch_emu_gen9_HST_power, (railtype_available("SAAA") || railtype_available("SAAa")) ? (tile_powers_railtype("SAAA") || tile_powers_railtype("SAAa")) : (tile_powers_railtype("SAAE") || tile_powers_railtype("ELRL"))) {
+	1: return 8000;
+	return 4750;
 }

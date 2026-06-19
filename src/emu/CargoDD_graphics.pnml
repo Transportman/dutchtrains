@@ -427,26 +427,8 @@ switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_visual_effect_and_powered, (positio
 * POWER CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_power, current_railtype) {
-    SAAA: return 20000;
-    SABA: return 20000;
-    SACA: return 20000;
-    SADA: return 20000;
-    SAEA: return 20000;
-    SBAA: return 20000;
-    SBBA: return 20000;
-    SBCA: return 20000;
-    SBDA: return 20000;
-    SBEA: return 20000;
-    SAAa: return 15000;
-    SABa: return 15000;
-    SACa: return 15000;
-    SADa: return 15000;
-    SAEa: return 15000;
-    SBAa: return 15000;
-    SBBa: return 15000;
-    SBCa: return 15000;
-    SBDa: return 15000;
-    SBEa: return 15000;
-    return 10000;
+switch(FEAT_TRAINS, SELF, switch_emu_CargoDD_power, (railtype_available("SAAA") || railtype_available("SAAa")) ? (tile_powers_railtype("SAAa") ? 2 : (tile_powers_railtype("SAAA") ? 1 : 0)) : (tile_powers_railtype("SAAE") || tile_powers_railtype("ELRL"))) {
+	1: return 20000;
+	2: return 15000;
+	return 10000;
 }

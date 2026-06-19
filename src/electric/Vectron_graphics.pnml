@@ -267,26 +267,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_subtype_text, cargo_subtype) {
 * POWER CALLBACK
 */
 
-switch(FEAT_TRAINS, SELF, switch_electric_Vectron_power, current_railtype) {
-    SAAA: return 8582;
-    SABA: return 8582;
-    SACA: return 8582;
-    SADA: return 8582;
-    SAEA: return 8582;
-    SBAA: return 8582;
-    SBBA: return 8582;
-    SBCA: return 8582;
-    SBDA: return 8582;
-    SBEA: return 8582;
-    SAAa: return 8582;
-    SABa: return 8582;
-    SACa: return 8582;
-    SADa: return 8582;
-    SAEa: return 8582;
-    SBAa: return 8582;
-    SBBa: return 8582;
-    SBCa: return 8582;
-    SBDa: return 8582;
-    SBEa: return 8582;
-    return 4691;
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_power, (railtype_available("SAAA") || railtype_available("SAAa")) ? (tile_powers_railtype("SAAA") || tile_powers_railtype("SAAa")) : (tile_powers_railtype("SAAE") || tile_powers_railtype("ELRL"))) {
+	1: return 8582;
+	return 4691;
 }

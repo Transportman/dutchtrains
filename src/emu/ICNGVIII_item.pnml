@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_ICNGVIII) {
 		cost_factor: 252;
         running_cost_factor: 59;
         speed: 200 km/h;
-        power: 4000 kW;
+        power: 3520 kW;
         cargo_capacity: 52;
         weight: 332 ton;
         tractive_effort_coefficient: 0.18;
