@@ -41,6 +41,7 @@ item(FEAT_TRAINS, item_emu_ICNGV) {
 		sprite_id: SPRITE_ID_NEW_TRAIN;
 		length: 6;
 		dual_headed: 0;
+		variant_group: item_emu_ICNGVIII;
 		
         reliability_decay: 20;
         refittable_cargo_classes: bitmask(CC_PASSENGERS);

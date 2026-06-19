@@ -17,6 +17,7 @@ Dutch Trainset Changelog
 - Feature: GoVolta I10 coaches (Graphics by Erato)
 - Feature: New VIRM sprites (Graphics by Erato)
 - Feature: Badge implementation
+- Feature: Variants implementation
 
 3.2.1-XL (2024/12/14)
 ---------------------

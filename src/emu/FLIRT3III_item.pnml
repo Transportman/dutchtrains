@@ -39,6 +39,7 @@ item(FEAT_TRAINS, item_emu_FLIRT3III) {
 		sprite_id: SPRITE_ID_NEW_TRAIN;
 		length: 8;
 		dual_headed: 0;
+		variant_group: item_emu_FLIRT3IV;
 		
         reliability_decay: 20;
         refittable_cargo_classes: bitmask(CC_PASSENGERS);

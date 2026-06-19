@@ -35,6 +35,7 @@ item(FEAT_TRAINS, item_emu_Mat36EL2) {
         weight: 79 ton;
         tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
+		variant_group: item_emu_Mat36ELD4;
         
         reliability_decay: 20;
         CARGODEF_PASSENGERS
