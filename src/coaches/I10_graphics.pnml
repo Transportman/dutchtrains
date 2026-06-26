@@ -28,10 +28,10 @@ spriteset(spriteset_coaches_I10_govolta, "gfx/coaches/I10.png") {
 * LIVERY SELECTION
 */
 switch(FEAT_TRAINS, SELF, switch_coaches_I10_livery, cargo_subtype) {
+	0: spriteset_coaches_I10_govolta;
 	1: spriteset_coaches_I10_govolta;
     2: spriteset_coaches_I10_govolta;
     3: spriteset_coaches_I10_nmbs;
-    4: spriteset_coaches_I10_govolta;
     spriteset_coaches_I10_govolta;
 }
 
@@ -39,7 +39,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_I10_livery, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_coaches_I10_subtype_text, cargo_subtype) {
     0: return string(str_cargo_subtype_auto);
     1: return string(str_cargo_subtype_purchase);
-    2: return string(str_cargo_subtype_nmbs);
-    3: return string(str_cargo_subtype_GoVolta);
+    2: return string(str_cargo_subtype_GoVolta);
+    3: return string(str_cargo_subtype_nmbs);
     return CB_RESULT_NO_TEXT;
 }

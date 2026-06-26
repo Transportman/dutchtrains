@@ -1,5 +1,10 @@
 Dutch Trainset Changelog
 ========================
+3.X.X-XL (2026/XX/XX)
+---------------------
+- Fix: I10 livery text incorrect
+
+
 3.3.0-XL (2026/06/19)
 ---------------------
 - Fix: Height of ICNG changes when train reverses
