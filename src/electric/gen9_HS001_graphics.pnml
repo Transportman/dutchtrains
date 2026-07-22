@@ -34,20 +34,56 @@ spriteset(spriteset_electric_gen9_HS001_black, "gfx/electric/gen9_HS001.png") {
 	template_2cc_88(1, 128)
 }
 
+spriteset(spriteset_REV_electric_gen9_HS001_yellow, "gfx/electric/gen9_HS001.png") {
+	template_2cc_88r(1, 1)
+}
+spriteset(spriteset_REV_electric_gen9_HS001_ic, "gfx/electric/gen9_HS001.png") {
+	template_2cc_88r(1, 32)
+}
+spriteset(spriteset_REV_electric_gen9_HS001_fyra_red, "gfx/electric/gen9_HS001.png") {
+	template_2cc_88r(1, 64)
+}
+spriteset(spriteset_REV_electric_gen9_HS001_fyra_white, "gfx/electric/gen9_HS001.png") {
+	template_2cc_88r(1, 96)
+}
+spriteset(spriteset_REV_electric_gen9_HS001_black, "gfx/electric/gen9_HS001.png") {
+	template_2cc_88r(1, 128)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_yellow_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_gen9_HS001_yellow;	//Rear lights
+	1: spriteset_REV_electric_gen9_HS001_yellow;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_ic_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_gen9_HS001_ic;	//Rear lights
+	1: spriteset_REV_electric_gen9_HS001_ic;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_fyra_red_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_gen9_HS001_fyra_red;	//Rear lights
+	1: spriteset_REV_electric_gen9_HS001_fyra_red;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_fyra_white_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_gen9_HS001_fyra_white;	//Rear lights
+	1: spriteset_REV_electric_gen9_HS001_fyra_white;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_black_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_gen9_HS001_black;	//Rear lights
+	1: spriteset_REV_electric_gen9_HS001_black;//Front lights
+}
+
 random_switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_random) {
-	1: spriteset_electric_gen9_HS001_yellow;
-    1: spriteset_electric_gen9_HS001_ic;
-    1: spriteset_electric_gen9_HS001_fyra_red;
-    1: spriteset_electric_gen9_HS001_fyra_white;
-	1: spriteset_electric_gen9_HS001_black;
+	1: switch_electric_gen9_HS001_yellow_reversed;
+    1: switch_electric_gen9_HS001_ic_reversed;
+    1: switch_electric_gen9_HS001_fyra_red_reversed;
+    1: switch_electric_gen9_HS001_fyra_white_reversed;
+	1: switch_electric_gen9_HS001_black_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_gen9_HS001_livery, cargo_subtype) {
-	1: spriteset_electric_gen9_HS001_yellow;
-    2: spriteset_electric_gen9_HS001_ic;
-    3: spriteset_electric_gen9_HS001_fyra_red;
-    4: spriteset_electric_gen9_HS001_fyra_white;
-	5: spriteset_electric_gen9_HS001_black;
+	1: switch_electric_gen9_HS001_yellow_reversed;
+    2: switch_electric_gen9_HS001_ic_reversed;
+    3: switch_electric_gen9_HS001_fyra_red_reversed;
+    4: switch_electric_gen9_HS001_fyra_white_reversed;
+	5: switch_electric_gen9_HS001_black_reversed;
     switch_electric_gen9_HS001_random;
 }
 

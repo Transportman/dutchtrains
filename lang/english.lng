@@ -616,6 +616,7 @@ str_badge_role_heavy_freight	:Heavy freight
 
 str_badge_role_shunting			:Shunting
 str_badge_role_executive		:Executive
+str_badge_role_driving_cab		:Cab for push-pull operation
 str_badge_role_mail				:Mail
 
 str_badge_axleweight			:Axle weight

@@ -218,6 +218,13 @@ item (FEAT_BADGES, item_badge_executive) {//executive
     }
 }
 
+item (FEAT_BADGES, item_badge_driving_cab) {//driving_cab
+    property {
+        label: "role/driving_cab";
+        name: string(str_badge_role_driving_cab);
+    }
+}
+
 //power
 spriteset(spriteset_badge_metro, "gfx/purchase/badges/metro.png") {
 	[0, 0, 12, 12, 0, 0]

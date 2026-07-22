@@ -23,5 +23,9 @@ spriteset(spriteset_electric_mDDM, "gfx/electric/mDDM.png") {
 }
 
 spriteset(spriteset_REV_electric_mDDM, "gfx/electric/mDDM.png") {
-	template_2cc_88r(1, 1)
+	template_2cc_88r(1, 212)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_mDDM, train_is_driving_backwards) {
+	0: spriteset_electric_mDDM;	//Rear lights
+	1: spriteset_REV_electric_mDDM;//Front lights
 }

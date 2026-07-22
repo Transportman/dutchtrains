@@ -34,37 +34,100 @@ switch(FEAT_TRAINS, PARENT, switch_electric_ES64F4_purchase, current_year) {
 spriteset(spriteset_electric_ES64F4_husa, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 1)
 }
+spriteset(spriteset_REV_electric_ES64F4_husa, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 1)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_husa_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_husa;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_husa;//Front lights
+}
 //ers
 spriteset(spriteset_electric_ES64F4_ers, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 32)
+}
+spriteset(spriteset_REV_electric_ES64F4_ers, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 32)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_ers_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_ers;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_ers;//Front lights
 }
 //db schenker
 spriteset(spriteset_electric_ES64F4_dbs, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 64)
 }
+spriteset(spriteset_REV_electric_ES64F4_dbs, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 64)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_dbs_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_dbs;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_dbs;//Front lights
+}
 //locon
 spriteset(spriteset_electric_ES64F4_locon, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 96)
+}
+spriteset(spriteset_REV_electric_ES64F4_locon, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 96)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_locon_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_locon;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_locon;//Front lights
 }
 //MRCE
 spriteset(spriteset_electric_ES64F4_mrce, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 128)
 }
+spriteset(spriteset_REV_electric_ES64F4_mrce, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 128)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_mrce_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_mrce;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_mrce;//Front lights
+}
 //ers
 spriteset(spriteset_electric_ES64F4_dispo, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 159)
+}
+spriteset(spriteset_REV_electric_ES64F4_dispo, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 159)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_dispo_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_dispo;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_dispo;//Front lights
 }
 //db schenker
 spriteset(spriteset_electric_ES64F4_distri, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 190)
 }
+spriteset(spriteset_REV_electric_ES64F4_distri, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 190)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_distri_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_distri;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_distri;//Front lights
+}
 //locon
 spriteset(spriteset_electric_ES64F4_rrf, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 222)
 }
+spriteset(spriteset_REV_electric_ES64F4_rrf, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 222)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_rrf_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_rrf;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_rrf;//Front lights
+}
 //MRCE
 spriteset(spriteset_electric_ES64F4_veolia, "gfx/electric/ES64F4.png") {
 	template_2cc_88(1, 254)
+}
+spriteset(spriteset_REV_electric_ES64F4_veolia, "gfx/electric/ES64F4.png") {
+	template_2cc_88r(1, 254)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_veolia_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_ES64F4_veolia;	//Rear lights
+	1: spriteset_REV_electric_ES64F4_veolia;//Front lights
 }
 
 /*
@@ -72,39 +135,39 @@ spriteset(spriteset_electric_ES64F4_veolia, "gfx/electric/ES64F4.png") {
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_random_all) {
-	1: spriteset_electric_ES64F4_dbs;
-    1: spriteset_electric_ES64F4_ers;
-    1: spriteset_electric_ES64F4_husa;
-    1: spriteset_electric_ES64F4_locon;
-    1: spriteset_electric_ES64F4_mrce;
-    1: spriteset_electric_ES64F4_dispo;
-    1: spriteset_electric_ES64F4_distri;
-    1: spriteset_electric_ES64F4_rrf;
-    1: spriteset_electric_ES64F4_veolia;
+	1: switch_electric_ES64F4_dbs_reversed;
+    1: switch_electric_ES64F4_ers_reversed;
+    1: switch_electric_ES64F4_husa_reversed;
+    1: switch_electric_ES64F4_locon_reversed;
+    1: switch_electric_ES64F4_mrce_reversed;
+    1: switch_electric_ES64F4_dispo_reversed;
+    1: switch_electric_ES64F4_distri_reversed;
+    1: switch_electric_ES64F4_rrf_reversed;
+    1: switch_electric_ES64F4_veolia_reversed;
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_random_dbsers) {
-	1: spriteset_electric_ES64F4_dbs;
-    1: spriteset_electric_ES64F4_ers;
-    1: spriteset_electric_ES64F4_mrce;
+	1: switch_electric_ES64F4_dbs_reversed;
+    1: switch_electric_ES64F4_ers_reversed;
+    1: switch_electric_ES64F4_mrce_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_randomlivery, build_year) {
-	0..2005: spriteset_electric_ES64F4_dbs;
+	0..2005: switch_electric_ES64F4_dbs_reversed;
     2006-2010: switch_electric_ES64F4_random_dbsers;
     switch_electric_ES64F4_random_all;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_ES64F4_livery, cargo_subtype) {
-    1: spriteset_electric_ES64F4_dbs;
-    2: spriteset_electric_ES64F4_ers;
-    3: spriteset_electric_ES64F4_husa;
-    4: spriteset_electric_ES64F4_locon;
-    5: spriteset_electric_ES64F4_mrce;
-    6: spriteset_electric_ES64F4_dispo;
-    7: spriteset_electric_ES64F4_distri;
-    8: spriteset_electric_ES64F4_rrf;
-    9: spriteset_electric_ES64F4_veolia;
+    1: switch_electric_ES64F4_dbs_reversed;
+    2: switch_electric_ES64F4_ers_reversed;
+    3: switch_electric_ES64F4_husa_reversed;
+    4: switch_electric_ES64F4_locon_reversed;
+    5: switch_electric_ES64F4_mrce_reversed;
+    6: switch_electric_ES64F4_dispo_reversed;
+    7: switch_electric_ES64F4_distri_reversed;
+    8: switch_electric_ES64F4_rrf_reversed;
+    9: switch_electric_ES64F4_veolia_reversed;
     switch_electric_ES64F4_randomlivery;
 }
 

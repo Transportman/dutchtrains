@@ -46,8 +46,16 @@ spriteset(spriteset_coaches_ICR_blue, "gfx/coaches/ICR.png") {
 spriteset(spriteset_coaches_ICR_blue_cab, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 32)
 }
+spriteset(spriteset_REV_coaches_ICR_blue_cab, "gfx/coaches/ICR.png") {
+	template_2cc_88r(1, 736)
+}
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_blue_cab_reversed, train_is_driving_backwards) {
+	0: spriteset_coaches_ICR_blue_cab;	//Rear lights
+	1: spriteset_REV_coaches_ICR_blue_cab;//Front lights
+}
+
 switch(FEAT_TRAINS, SELF, switch_coaches_ICR_blue_cab_position, position_in_vehid_chain_from_end) {
-	0: spriteset_coaches_ICR_blue_cab;
+	0: switch_coaches_ICR_blue_cab_reversed;
     spriteset_coaches_ICR_blue;
 }
 
@@ -57,8 +65,15 @@ spriteset(spriteset_coaches_ICR_benelux, "gfx/coaches/ICR.png") {
 spriteset(spriteset_coaches_ICR_benelux_cab, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 96)
 }
+spriteset(spriteset_REV_coaches_ICR_benelux_cab, "gfx/coaches/ICR.png") {
+	template_2cc_88r(1, 768)
+}
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_benelux_cab_reversed, train_is_driving_backwards) {
+	0: spriteset_coaches_ICR_benelux_cab;	//Rear lights
+	1: spriteset_REV_coaches_ICR_benelux_cab;//Front lights
+}
 switch(FEAT_TRAINS, SELF, switch_coaches_ICR_benelux_cab_position, position_in_vehid_chain_from_end) {
-	0: spriteset_coaches_ICR_benelux_cab;
+	0: switch_coaches_ICR_benelux_cab_reversed;
     spriteset_coaches_ICR_benelux;
 }
 
@@ -86,6 +101,13 @@ spriteset(spriteset_coaches_ICR_hispeed_7, "gfx/coaches/ICR.png") {
 spriteset(spriteset_coaches_ICR_hispeed_cab, "gfx/coaches/ICR.png") {
 	template_2cc_88(1, 352)
 }
+spriteset(spriteset_REV_coaches_ICR_hispeed_cab, "gfx/coaches/ICR.png") {
+	template_2cc_88r(1, 800)
+}
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_cab_reversed, train_is_driving_backwards) {
+	0: spriteset_coaches_ICR_hispeed_cab;	//Rear lights
+	1: spriteset_REV_coaches_ICR_hispeed_cab;//Front lights
+}
 switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_position, (position_in_vehid_chain_from_end % 7)) {
 	1: spriteset_coaches_ICR_hispeed_6;
 	2: spriteset_coaches_ICR_hispeed_5;
@@ -96,7 +118,7 @@ switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_position, (position_in_vehi
 	spriteset_coaches_ICR_hispeed_7;
 }
 switch(FEAT_TRAINS, SELF, switch_coaches_ICR_hispeed_cab_position, position_in_vehid_chain_from_end) {
-	0: spriteset_coaches_ICR_hispeed_cab;
+	0: switch_coaches_ICR_hispeed_cab_reversed;
     switch_coaches_ICR_hispeed_position;
 }
 
@@ -162,154 +184,18 @@ switch(FEAT_TRAINS, PARENT, switch_coaches_ICR_matchinglivery, vehicle_type_id) 
     switch_coaches_ICR_blue_cab_availability;
 }
 
-switch(FEAT_TRAINS, SELF, switch_for_coaches_ICR_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_coaches_ICR_livery, cargo_subtype) {
 	1: spriteset_coaches_ICR_blue;
-	2: spriteset_coaches_ICR_blue_cab;
+	2: switch_coaches_ICR_blue_cab_reversed;
     3: spriteset_coaches_ICR_benelux;
-    4: spriteset_coaches_ICR_benelux_cab;
+    4: switch_coaches_ICR_benelux_cab_reversed;
     5: switch_coaches_ICR_hispeed_position;
-    6: spriteset_coaches_ICR_hispeed_cab;
+    6: switch_coaches_ICR_hispeed_cab_reversed;
     7: switch_coaches_ICR_fyra_position;
     8: spriteset_coaches_ICR_Sr10;
     9: spriteset_coaches_ICR_zilverrail;
     10: spriteset_coaches_ICR_icplus;
     switch_coaches_ICR_matchinglivery;
-}
-
-//Reversed logic
-
-spriteset(spriteset_REV_coaches_ICR_blue, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 1)
-}
-spriteset(spriteset_REV_coaches_ICR_blue_cab, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 32)
-}
-
-spriteset(spriteset_REV_coaches_ICR_benelux, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 64)
-}
-spriteset(spriteset_REV_coaches_ICR_benelux_cab, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 96)
-}
-
-spriteset(spriteset_REV_coaches_ICR_hispeed_1, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 128)
-}
-spriteset(spriteset_REV_coaches_ICR_hispeed_2, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 160)
-}
-spriteset(spriteset_REV_coaches_ICR_hispeed_3, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 192)
-}
-spriteset(spriteset_REV_coaches_ICR_hispeed_4, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 224)
-}
-spriteset(spriteset_REV_coaches_ICR_hispeed_5, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 256)
-}
-spriteset(spriteset_REV_coaches_ICR_hispeed_6, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 288)
-}
-spriteset(spriteset_REV_coaches_ICR_hispeed_7, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 320)
-}
-spriteset(spriteset_REV_coaches_ICR_hispeed_cab, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 352)
-}
-
-spriteset(spriteset_REV_coaches_ICR_fyra_3, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 448)
-}
-spriteset(spriteset_REV_coaches_ICR_fyra_5, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 512)
-}
-
-spriteset(spriteset_REV_coaches_ICR_Sr10, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 608)
-}
-
-spriteset(spriteset_REV_coaches_ICR_zilverrail, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 640)
-}
-
-spriteset(spriteset_REV_coaches_ICR_icplus, "gfx/coaches/ICR.png") {
-	template_2cc_88r(1, 672)
-}
-
-
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_blue_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FF00, 0x41]]) {
-	0: spriteset_REV_coaches_ICR_blue_cab;
-    spriteset_REV_coaches_ICR_blue;
-}
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_benelux_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FF00, 0x41]]) {
-	0: spriteset_REV_coaches_ICR_benelux_cab;
-    spriteset_REV_coaches_ICR_benelux;
-}
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_position, ([STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), getbits((var[0x61, 0x00, 0x0000FF00, 0x41]) % 7,0x08,0xF)] )) {
-	1: spriteset_REV_coaches_ICR_hispeed_6;
-	2: spriteset_REV_coaches_ICR_hispeed_5;
-	3: spriteset_REV_coaches_ICR_hispeed_4;
-	4: spriteset_REV_coaches_ICR_hispeed_3;
-	5: spriteset_REV_coaches_ICR_hispeed_2;
-	6: spriteset_REV_coaches_ICR_hispeed_1;
-	spriteset_REV_coaches_ICR_hispeed_7;
-}
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FF00, 0x41]]) {
-	0: spriteset_REV_coaches_ICR_hispeed_cab;
-    switch_REV_coaches_ICR_hispeed_position;
-}
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_fyra_position, ([STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), getbits((var[0x61, 0x00, 0x0000FF00, 0x41]) % 7,0x08,0xF)] )) {
-	1: spriteset_REV_coaches_ICR_hispeed_6;
-	2: spriteset_REV_coaches_ICR_fyra_5;
-	3: spriteset_REV_coaches_ICR_hispeed_4;
-	4: spriteset_REV_coaches_ICR_fyra_3;
-	5: spriteset_REV_coaches_ICR_hispeed_2;
-	6: spriteset_REV_coaches_ICR_hispeed_1;
-	spriteset_REV_coaches_ICR_hispeed_7;
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_blue_cab_availability, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
-    0..2005: spriteset_REV_coaches_ICR_blue;
-    switch_REV_coaches_ICR_blue_cab_position;
-}
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_benelux_cab_availability, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
-    0..1986: spriteset_REV_coaches_ICR_benelux;
-    switch_REV_coaches_ICR_benelux_cab_position;
-}
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_hispeed_cab_availability, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
-    2009..2012: switch_REV_coaches_ICR_hispeed_cab_position;
-    switch_REV_coaches_ICR_hispeed_position;
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_traxx_buildyear, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]){
-    0..2012: switch_REV_coaches_ICR_hispeed_cab_position;
-	2013: switch_REV_coaches_ICR_hispeed_position;
-	2014: spriteset_REV_coaches_ICR_blue;
-	switch_REV_coaches_ICR_blue_cab_availability;
-}
-switch(FEAT_TRAINS, PARENT, switch_REV_coaches_ICR_traxx_matchinglivery, cargo_subtype){
-    3..4: switch_REV_coaches_ICR_hispeed_cab_availability;
-    switch_REV_coaches_ICR_traxx_buildyear;
-}
-
-switch(FEAT_TRAINS, PARENT, switch_REV_coaches_ICR_matchinglivery, vehicle_type_id) {
-    item_electric_HLE11: switch_REV_coaches_ICR_benelux_cab_availability;
-    item_electric_TRAXXF140MS2: switch_REV_coaches_ICR_traxx_matchinglivery;
-    switch_REV_coaches_ICR_blue_cab_availability;
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_ICR_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-	1: spriteset_REV_coaches_ICR_blue;
-	2: spriteset_REV_coaches_ICR_blue_cab;
-    3: spriteset_REV_coaches_ICR_benelux;
-    4: spriteset_REV_coaches_ICR_benelux_cab;
-    5: switch_REV_coaches_ICR_hispeed_position;
-    6: spriteset_REV_coaches_ICR_hispeed_cab;
-    7: switch_REV_coaches_ICR_fyra_position;
-    8: spriteset_REV_coaches_ICR_Sr10;
-    9: spriteset_REV_coaches_ICR_zilverrail;
-    10: spriteset_REV_coaches_ICR_icplus;
-    switch_REV_coaches_ICR_matchinglivery;
 }
 
 // CARGO SUBTYPE CALLBACK

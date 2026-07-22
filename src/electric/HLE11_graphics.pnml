@@ -25,3 +25,8 @@ spriteset(spriteset_electric_HLE11, "gfx/electric/HLE11.png") {
 spriteset(spriteset_REV_electric_HLE11, "gfx/electric/HLE11.png") {
 	template_2cc_88r(1, 1)
 }
+switch(FEAT_TRAINS, SELF, switch_electric_HLE11, train_is_driving_backwards) {
+	0: spriteset_electric_HLE11;	//Rear lights
+	1: spriteset_REV_electric_HLE11;//Front lights
+}
+

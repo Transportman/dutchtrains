@@ -21,6 +21,13 @@ spriteset(spriteset_electric_NS1600P_purchase, "gfx/purchase/electric/NS1600P.pn
 spriteset(spriteset_electric_NS1600P, "gfx/electric/NS1600P.png") {
 	template_2cc_88(1, 1)
 }
+spriteset(spriteset_REV_electric_NS1600P, "gfx/electric/NS1600P.png") {
+	template_2cc_88r(1, 1)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600P, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600P;	//Rear lights
+	1: spriteset_REV_electric_NS1600P;//Front lights
+}
 
 /*
 * POWER CALLBACK

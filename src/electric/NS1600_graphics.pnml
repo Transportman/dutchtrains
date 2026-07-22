@@ -39,66 +39,166 @@ switch(FEAT_TRAINS, PARENT, switch_electric_NS1600_purchase, current_year) {
 spriteset(spriteset_electric_NS1600_yellow, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 1)
 }
-
-//yellow, reversed
 spriteset(spriteset_REV_electric_NS1600_yellow, "gfx/electric/NS1600.png") {
-	template_2cc_88(1, 479)
+	template_2cc_88r(1, 1)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_yellow_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_yellow;	//Rear lights
+	1: spriteset_REV_electric_NS1600_yellow;//Front lights
 }
 //red
 spriteset(spriteset_electric_NS1600_NSCargo, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 32)
 }
+spriteset(spriteset_REV_electric_NS1600_NSCargo, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 32)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_NSCargo_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_NSCargo;	//Rear lights
+	1: spriteset_REV_electric_NS1600_NSCargo;//Front lights
+}
 //husa
 spriteset(spriteset_electric_NS1600_HUSA, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 64)
+}
+spriteset(spriteset_REV_electric_NS1600_HUSA, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 64)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_HUSA_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_HUSA;	//Rear lights
+	1: spriteset_REV_electric_NS1600_HUSA;//Front lights
 }
 //db schenker
 spriteset(spriteset_electric_NS1600_DBSchenker, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 96)
 }
+spriteset(spriteset_REV_electric_NS1600_DBSchenker, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 96)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_DBSchenker_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_DBSchenker;	//Rear lights
+	1: spriteset_REV_electric_NS1600_DBSchenker;//Front lights
+}
 //Locon
 spriteset(spriteset_electric_NS1600_LOCON, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 128)
+}
+spriteset(spriteset_REV_electric_NS1600_LOCON, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 128)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_LOCON_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_LOCON;	//Rear lights
+	1: spriteset_REV_electric_NS1600_LOCON;//Front lights
 }
 //Dinner Train
 spriteset(spriteset_electric_NS1600_DinnerTrain, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 160)
 }
+spriteset(spriteset_REV_electric_NS1600_DinnerTrain, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 160)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_DinnerTrain_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_DinnerTrain;	//Rear lights
+	1: spriteset_REV_electric_NS1600_DinnerTrain;//Front lights
+}
 //Rotterdam Rail Feeding
 spriteset(spriteset_electric_NS1600_RRF, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 193)
+}
+spriteset(spriteset_REV_electric_NS1600_RRF, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 193)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_RRF_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_RRF;	//Rear lights
+	1: spriteset_REV_electric_NS1600_RRF;//Front lights
 }
 //Rail Force One (orange)
 spriteset(spriteset_electric_NS1600_RF1O, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 224)
 }
+spriteset(spriteset_REV_electric_NS1600_RF1O, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 224)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_RF1O_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_RF1O;	//Rear lights
+	1: spriteset_REV_electric_NS1600_RF1O;//Front lights
+}
 //Rail Force One (grey)
 spriteset(spriteset_electric_NS1600_RF1G, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 256)
+}
+spriteset(spriteset_REV_electric_NS1600_RF1G, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 256)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_RF1G_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_RF1G;	//Rear lights
+	1: spriteset_REV_electric_NS1600_RF1G;//Front lights
 }
 //Rail Force One (NL)
 spriteset(spriteset_electric_NS1600_RF1NL, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 288)
 }
+spriteset(spriteset_REV_electric_NS1600_RF1NL, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 288)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_RF1NL_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_RF1NL;	//Rear lights
+	1: spriteset_REV_electric_NS1600_RF1NL;//Front lights
+}
 //HSL
 spriteset(spriteset_electric_NS1600_HSL, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 320)
+}
+spriteset(spriteset_REV_electric_NS1600_HSL, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 320)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_HSL_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_HSL;	//Rear lights
+	1: spriteset_REV_electric_NS1600_HSL;//Front lights
 }
 //RailAdventure
 spriteset(spriteset_electric_NS1600_RailAdventure, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 351)
 }
+spriteset(spriteset_REV_electric_NS1600_RailAdventure, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 351)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_RailAdventure_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_RailAdventure;	//Rear lights
+	1: spriteset_REV_electric_NS1600_RailAdventure;//Front lights
+}
 //Railogix
 spriteset(spriteset_electric_NS1600_Railogix, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 383)
+}
+spriteset(spriteset_REV_electric_NS1600_Railogix, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 383)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_Railogix_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_Railogix;	//Rear lights
+	1: spriteset_REV_electric_NS1600_Railogix;//Front lights
 }
 //Captrain
 spriteset(spriteset_electric_NS1600_Captrain, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 415)
 }
+spriteset(spriteset_REV_electric_NS1600_Captrain, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 415)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_Captrain_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_Captrain;	//Rear lights
+	1: spriteset_REV_electric_NS1600_Captrain;//Front lights
+}
 //Volker
 spriteset(spriteset_electric_NS1600_Volker, "gfx/electric/NS1600.png") {
 	template_2cc_88(1, 447)
+}
+spriteset(spriteset_REV_electric_NS1600_Volker, "gfx/electric/NS1600.png") {
+	template_2cc_88r(1, 447)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_Volker_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1600_Volker;	//Rear lights
+	1: spriteset_REV_electric_NS1600_Volker;//Front lights
 }
 
 /*
@@ -106,90 +206,54 @@ spriteset(spriteset_electric_NS1600_Volker, "gfx/electric/NS1600.png") {
 */
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery_NS_NSC, (bitmask_consist_info & bitmask(0))) {
-    bitmask(0): spriteset_electric_NS1600_yellow; //if passenger carriage attached
-    spriteset_electric_NS1600_NSCargo;
+    bitmask(0): switch_electric_NS1600_yellow_reversed; //if passenger carriage attached
+    switch_electric_NS1600_NSCargo_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery_NS_HUSA, (bitmask_consist_info & bitmask(0))) {
-    bitmask(0): spriteset_electric_NS1600_yellow; //if passenger carriage attached
-    spriteset_electric_NS1600_HUSA;
+    bitmask(0): switch_electric_NS1600_yellow_reversed; //if passenger carriage attached
+    switch_electric_NS1600_HUSA_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery_NS_LOCON, (bitmask_consist_info & bitmask(0))) {
-    bitmask(0): spriteset_electric_NS1600_yellow; //if passenger carriage attached
-    spriteset_electric_NS1600_LOCON;
+    bitmask(0): switch_electric_NS1600_yellow_reversed; //if passenger carriage attached
+    switch_electric_NS1600_LOCON_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1600_autolivery, date_of_last_service) {
-	0..date(1998,12,31): spriteset_electric_NS1600_yellow;
+	0..date(1998,12,31): switch_electric_NS1600_yellow_reversed;
     date(1999,1,1)..date(2003,12,31): switch_electric_NS1600_livery_NS_NSC;
-    date(2004,1,1)..date(2010,12,31): spriteset_electric_NS1600_yellow;
+    date(2004,1,1)..date(2010,12,31): switch_electric_NS1600_yellow_reversed;
     date(2011,1,1)..date(2015,12,31): switch_electric_NS1600_livery_NS_HUSA;
     switch_electric_NS1600_livery_NS_LOCON;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1600_purchaselivery, build_year) {
-	0..1998: spriteset_electric_NS1600_yellow;
+	0..1998: switch_electric_NS1600_yellow_reversed;
     1999..2003: switch_electric_NS1600_livery_NS_NSC;
-    2004..2010: spriteset_electric_NS1600_yellow;
+    2004..2010: switch_electric_NS1600_yellow_reversed;
     2011..2015: switch_electric_NS1600_livery_NS_HUSA;
     switch_electric_NS1600_livery_NS_LOCON;
 }
 
-switch(FEAT_TRAINS, SELF, switch_for_electric_NS1600_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_electric_NS1600_livery, cargo_subtype) {
 	1: switch_electric_NS1600_purchaselivery;
-    2: spriteset_electric_NS1600_yellow;
-    3: spriteset_electric_NS1600_NSCargo;
-    4: spriteset_electric_NS1600_HUSA;
-    5: spriteset_electric_NS1600_DBSchenker;
-    6: spriteset_electric_NS1600_LOCON;
-    7: spriteset_electric_NS1600_DinnerTrain;
-    8: spriteset_electric_NS1600_RRF;
-    9: spriteset_electric_NS1600_RF1G;
-    10: spriteset_electric_NS1600_RF1O;
-    11: spriteset_electric_NS1600_RF1NL;
-    12: spriteset_electric_NS1600_HSL;
-    13: spriteset_electric_NS1600_RailAdventure;
-    14: spriteset_electric_NS1600_Railogix;
-    15: spriteset_electric_NS1600_Captrain;
-    16: spriteset_electric_NS1600_Volker;
+    2: switch_electric_NS1600_yellow_reversed;
+    3: switch_electric_NS1600_NSCargo_reversed;
+    4: switch_electric_NS1600_HUSA_reversed;
+    5: switch_electric_NS1600_DBSchenker_reversed;
+    6: switch_electric_NS1600_LOCON_reversed;
+    7: switch_electric_NS1600_DinnerTrain_reversed;
+    8: switch_electric_NS1600_RRF_reversed;
+    9: switch_electric_NS1600_RF1G_reversed;
+    10: switch_electric_NS1600_RF1O_reversed;
+    11: switch_electric_NS1600_RF1NL_reversed;
+    12: switch_electric_NS1600_HSL_reversed;
+    13: switch_electric_NS1600_RailAdventure_reversed;
+    14: switch_electric_NS1600_Railogix_reversed;
+    15: switch_electric_NS1600_Captrain_reversed;
+    16: switch_electric_NS1600_Volker_reversed;
     switch_electric_NS1600_autolivery;
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1600_autolivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x4B]]) {
-	0..date(1998,12,31): spriteset_electric_NS1600_yellow;
-    date(1999,1,1)..date(2003,12,31): switch_electric_NS1600_livery_NS_NSC;
-    date(2004,1,1)..date(2010,12,31): spriteset_electric_NS1600_yellow;
-    date(2011,1,1)..date(2015,12,31): switch_electric_NS1600_livery_NS_HUSA;
-    switch_electric_NS1600_livery_NS_LOCON;
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_electric_NS1600_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
-	0..1998: spriteset_electric_NS1600_yellow;
-    1999..2003: switch_electric_NS1600_livery_NS_NSC;
-    2004..2010: spriteset_electric_NS1600_yellow;
-    2011..2015: switch_electric_NS1600_livery_NS_HUSA;
-    switch_electric_NS1600_livery_NS_LOCON;
-}
-
-switch(FEAT_TRAINS, SELF, switch_rev_electric_NS1600_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
-	1: switch_REV_electric_NS1600_purchaselivery;
-    2: spriteset_electric_NS1600_yellow;
-    3: spriteset_electric_NS1600_NSCargo;
-    4: spriteset_electric_NS1600_HUSA;
-    5: spriteset_electric_NS1600_DBSchenker;
-    6: spriteset_electric_NS1600_LOCON;
-    7: spriteset_electric_NS1600_DinnerTrain;
-    8: spriteset_electric_NS1600_RRF;
-    9: spriteset_electric_NS1600_RF1G;
-    10: spriteset_electric_NS1600_RF1O;
-    11: spriteset_electric_NS1600_RF1NL;
-    12: spriteset_electric_NS1600_HSL;
-    13: spriteset_electric_NS1600_RailAdventure;
-    14: spriteset_electric_NS1600_Railogix;
-    15: spriteset_electric_NS1600_Captrain;
-    16: spriteset_electric_NS1600_Volker;
-    switch_REV_electric_NS1600_autolivery;
 }
 
 // CARGO SUBTYPE CALLBACK

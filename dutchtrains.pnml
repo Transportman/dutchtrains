@@ -221,11 +221,6 @@
 #include "src/coaches/PlanW_graphics.pnml"
 #include "src/coaches/NJNG_graphics.pnml"
 
-//checks for reversing validity
-#include "src/pp_reversalchecks.pnml"
-//reversal switches
-#include "src/pp_reversesprites.pnml"
-
 //push-pull items
 #include "src/electric/NS1200_item.pnml"
 #include "src/electric/NS1300_item.pnml"

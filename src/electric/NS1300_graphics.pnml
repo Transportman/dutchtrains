@@ -53,32 +53,76 @@ spriteset(spriteset_electric_NS1300_hsl, "gfx/electric/NS1300.png") {
 	template_2cc_88(1, 160)
 }
 
+spriteset(spriteset_REV_electric_NS1300_turqoise, "gfx/electric/NS1300.png") {
+	template_2cc_88r(1, 1)
+}
+spriteset(spriteset_REV_electric_NS1300_blue, "gfx/electric/NS1300.png") {
+	template_2cc_88r(1, 32)
+}
+spriteset(spriteset_REV_electric_NS1300_grey, "gfx/electric/NS1300.png") {
+	template_2cc_88r(1, 64)
+}
+spriteset(spriteset_REV_electric_NS1300_yellow, "gfx/electric/NS1300.png") {
+	template_2cc_88r(1, 96)
+}
+spriteset(spriteset_REV_electric_NS1300_red, "gfx/electric/NS1300.png") {
+	template_2cc_88r(1, 128)
+}
+spriteset(spriteset_REV_electric_NS1300_hsl, "gfx/electric/NS1300.png") {
+	template_2cc_88r(1, 160)
+}
+
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_turqoise_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1300_turqoise;	//Rear lights
+	1: spriteset_REV_electric_NS1300_turqoise;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_blue_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1300_blue;	//Rear lights
+	1: spriteset_REV_electric_NS1300_blue;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_grey_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1300_grey;	//Rear lights
+	1: spriteset_REV_electric_NS1300_grey;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_yellow_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1300_yellow;	//Rear lights
+	1: spriteset_REV_electric_NS1300_yellow;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_red_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1300_red;	//Rear lights
+	1: spriteset_REV_electric_NS1300_red;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_NS1300_hsl_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_NS1300_hsl;	//Rear lights
+	1: spriteset_REV_electric_NS1300_hsl;//Front lights
+}
+
 /*
 * LIVERY SELECTION
 */
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1300_autolivery, date_of_last_service) {
-	0..date(1955,12,31): spriteset_electric_NS1300_turqoise;
-    date(1956,1,1)..date(1971,12,31): spriteset_electric_NS1300_blue;
-    date(1972,1,1)..date(1984,12,31): spriteset_electric_NS1300_grey;
-    spriteset_electric_NS1300_yellow;
+	0..date(1955,12,31): switch_electric_NS1300_turqoise_reversed;
+    date(1956,1,1)..date(1971,12,31): switch_electric_NS1300_blue_reversed;
+    date(1972,1,1)..date(1984,12,31): switch_electric_NS1300_grey_reversed;
+    switch_electric_NS1300_yellow_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1300_purchaselivery, build_year) {
-	0..1955: spriteset_electric_NS1300_turqoise;
-    1956..1971: spriteset_electric_NS1300_blue;
-    1972..1984: spriteset_electric_NS1300_grey;
-    spriteset_electric_NS1300_yellow;
+	0..1955: switch_electric_NS1300_turqoise_reversed;
+    1956..1971: switch_electric_NS1300_blue_reversed;
+    1972..1984: switch_electric_NS1300_grey_reversed;
+    switch_electric_NS1300_yellow_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_NS1300_livery, cargo_subtype) {
 	1: switch_electric_NS1300_purchaselivery;
-    2: spriteset_electric_NS1300_turqoise;
-    3: spriteset_electric_NS1300_blue;
-    4: spriteset_electric_NS1300_grey;
-    5: spriteset_electric_NS1300_yellow;
-    6: spriteset_electric_NS1300_red;
-    7: spriteset_electric_NS1300_hsl;
+    2: switch_electric_NS1300_turqoise_reversed;
+    3: switch_electric_NS1300_blue_reversed;
+    4: switch_electric_NS1300_grey_reversed;
+    5: switch_electric_NS1300_yellow_reversed;
+    6: switch_electric_NS1300_red_reversed;
+    7: switch_electric_NS1300_hsl_reversed;
     switch_electric_NS1300_autolivery;
 }
 

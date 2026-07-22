@@ -30,49 +30,28 @@ spriteset(spriteset_coaches_NJNG_ABbmpvz, "gfx/coaches/NJNG.png") {
 spriteset(spriteset_coaches_NJNG_Bfmpz, "gfx/coaches/NJNG.png") {
 	template_2cc_88(1, 105)
 }
-switch(FEAT_TRAINS, SELF, switch_coaches_NJNG_cab_position, (position_in_vehid_chain_from_end % 7)) {
-	0: spriteset_coaches_NJNG_Bfmpz;
+spriteset(spriteset_REV_coaches_NJNG_Bfmpz, "gfx/coaches/NJNG.png") {
+	template_2cc_88r(1, 79)
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_NJNG_cab_reversed, train_is_driving_backwards) {//(vehicle_is_flipped ^ vehicle_is_reversed)) { //why does this not work?
+	0: spriteset_coaches_NJNG_Bfmpz;	//Rear lights
+	1: spriteset_REV_coaches_NJNG_Bfmpz;//Front lights
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_NJNG_position, (position_in_vehid_chain_from_end % 7)) {
+	0: switch_coaches_NJNG_cab_reversed;
 	1: spriteset_coaches_NJNG_ABbmpvz;
 	2..4: spriteset_coaches_NJNG_Bcmz;
     spriteset_coaches_NJNG_WLAmz;
 }
 
-switch(FEAT_TRAINS, SELF, switch_for_coaches_NJNG_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_coaches_NJNG_livery, cargo_subtype) {
 	1: spriteset_coaches_NJNG_WLAmz;
 	2: spriteset_coaches_NJNG_Bcmz;
 	3: spriteset_coaches_NJNG_ABbmpvz;
-	4: spriteset_coaches_NJNG_Bfmpz;
-    switch_coaches_NJNG_cab_position;
-}
-
-//Reversed logic
-
-spriteset(spriteset_REV_coaches_NJNG_WLAmz, "gfx/coaches/NJNG.png") {
-	template_2cc_88r(1, 1)
-}
-spriteset(spriteset_REV_coaches_NJNG_Bcmz, "gfx/coaches/NJNG.png") {
-	template_2cc_88r(1, 27)
-}
-spriteset(spriteset_REV_coaches_NJNG_ABbmpvz, "gfx/coaches/NJNG.png") {
-	template_2cc_88r(1, 53)
-}
-spriteset(spriteset_REV_coaches_NJNG_Bfmpz, "gfx/coaches/NJNG.png") {
-	template_2cc_88(1, 79)
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_NJNG_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), getbits((var[0x61, 0x00, 0x0000FF00, 0x41]) % 7,0x08,0xF)] ) {
-	0: spriteset_REV_coaches_NJNG_Bfmpz;
-	1: spriteset_REV_coaches_NJNG_ABbmpvz;
-	2..4: spriteset_REV_coaches_NJNG_Bcmz;
-    spriteset_REV_coaches_NJNG_WLAmz;
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_NJNG_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-	1: spriteset_REV_coaches_NJNG_WLAmz;
-	2: spriteset_REV_coaches_NJNG_Bcmz;
-	3: spriteset_REV_coaches_NJNG_ABbmpvz;
-	4: spriteset_REV_coaches_NJNG_Bfmpz;
-    switch_REV_coaches_NJNG_cab_position;
+	4: switch_coaches_NJNG_cab_reversed;
+    switch_coaches_NJNG_position;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_NJNG_subtype_text, cargo_subtype) {

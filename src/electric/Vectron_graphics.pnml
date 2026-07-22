@@ -77,9 +77,97 @@ spriteset(spriteset_electric_Vectron_SBB, "gfx/electric/Vectron.png") {
 	template_2cc_88(1, 240)
 }
 
-//SBB
+//NS
 spriteset(spriteset_electric_Vectron_NS, "gfx/electric/Vectron.png") {
 	template_2cc_88(1, 270)
+}
+//Reversed
+//Vectron
+spriteset(spriteset_REV_electric_Vectron_Vectron, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 0)
+}
+//BLS
+spriteset(spriteset_REV_electric_Vectron_BLS, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 30)
+}
+//ELL
+spriteset(spriteset_REV_electric_Vectron_ELL, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 60)
+}
+
+//DBSchenker
+spriteset(spriteset_REV_electric_Vectron_DBSchenker, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 90)
+}
+
+//PKP
+spriteset(spriteset_REV_electric_Vectron_PKP, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 120)
+}
+
+//HUPAC
+spriteset(spriteset_REV_electric_Vectron_HUPAC, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 150)
+}
+
+//Captrain
+spriteset(spriteset_REV_electric_Vectron_Captrain, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 180)
+}
+
+//MRCE
+spriteset(spriteset_REV_electric_Vectron_MRCE, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 210)
+}
+
+//SBB
+spriteset(spriteset_REV_electric_Vectron_SBB, "gfx/electric/Vectron.png") {
+	template_2cc_88r(1, 240)
+}
+
+//NS
+spriteset(spriteset_REV_electric_Vectron_NS, "gfx/electric/Vectron.png") {
+	template_2cc_88(1, 300)
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_Vectron_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_Vectron;	//Rear lights
+	1: spriteset_REV_electric_Vectron_Vectron;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_BLS_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_BLS;	//Rear lights
+	1: spriteset_REV_electric_Vectron_BLS;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_ELL_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_ELL;	//Rear lights
+	1: spriteset_REV_electric_Vectron_ELL;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_DBSchenker_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_DBSchenker;	//Rear lights
+	1: spriteset_REV_electric_Vectron_DBSchenker;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_PKP_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_PKP;	//Rear lights
+	1: spriteset_REV_electric_Vectron_PKP;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_HUPAC_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_HUPAC;	//Rear lights
+	1: spriteset_REV_electric_Vectron_HUPAC;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_Captrain_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_Captrain;	//Rear lights
+	1: spriteset_REV_electric_Vectron_Captrain;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_MRCE_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_MRCE;	//Rear lights
+	1: spriteset_REV_electric_Vectron_MRCE;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_SBB_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_SBB;	//Rear lights
+	1: spriteset_REV_electric_Vectron_SBB;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_NS_reversed, train_is_driving_backwards) {
+	0: spriteset_electric_Vectron_NS;	//Rear lights
+	1: spriteset_REV_electric_Vectron_NS;//Front lights
 }
 
 /*
@@ -87,56 +175,56 @@ spriteset(spriteset_electric_Vectron_NS, "gfx/electric/Vectron.png") {
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_all) {
-	5: spriteset_electric_Vectron_DBSchenker;
-	5: spriteset_electric_Vectron_ELL;
-	4: spriteset_electric_Vectron_MRCE;
-	3: spriteset_electric_Vectron_NS;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
-	2: spriteset_electric_Vectron_SBB;
-	2: spriteset_electric_Vectron_Captrain;
-	1: spriteset_electric_Vectron_HUPAC;
-	1: spriteset_electric_Vectron_Vectron;
+	5: switch_electric_Vectron_DBSchenker_reversed;
+	5: switch_electric_Vectron_ELL_reversed;
+	4: switch_electric_Vectron_MRCE_reversed;
+	3: switch_electric_Vectron_NS_reversed;
+	2: switch_electric_Vectron_PKP_reversed;
+	2: switch_electric_Vectron_BLS_reversed;
+	2: switch_electric_Vectron_SBB_reversed;
+	2: switch_electric_Vectron_Captrain_reversed;
+	1: switch_electric_Vectron_HUPAC_reversed;
+	1: switch_electric_Vectron_Vectron_reversed;
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_2018) {
-	5: spriteset_electric_Vectron_DBSchenker;
-	5: spriteset_electric_Vectron_ELL;
-	4: spriteset_electric_Vectron_MRCE;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
-	2: spriteset_electric_Vectron_SBB;
-	2: spriteset_electric_Vectron_Captrain;
-	1: spriteset_electric_Vectron_HUPAC;
-	1: spriteset_electric_Vectron_Vectron;
+	5: switch_electric_Vectron_DBSchenker_reversed;
+	5: switch_electric_Vectron_ELL_reversed;
+	4: switch_electric_Vectron_MRCE_reversed;
+	2: switch_electric_Vectron_PKP_reversed;
+	2: switch_electric_Vectron_BLS_reversed;
+	2: switch_electric_Vectron_SBB_reversed;
+	2: switch_electric_Vectron_Captrain_reversed;
+	1: switch_electric_Vectron_HUPAC_reversed;
+	1: switch_electric_Vectron_Vectron_reversed;
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_2015) {
-	5: spriteset_electric_Vectron_ELL;
-	2: spriteset_electric_Vectron_MRCE;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
+	5: switch_electric_Vectron_ELL_reversed;
+	2: switch_electric_Vectron_MRCE_reversed;
+	2: switch_electric_Vectron_PKP_reversed;
+	2: switch_electric_Vectron_BLS_reversed;
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_2016) {
-	5: spriteset_electric_Vectron_ELL;
-	3: spriteset_electric_Vectron_MRCE;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
+	5: switch_electric_Vectron_ELL_reversed;
+	3: switch_electric_Vectron_MRCE_reversed;
+	2: switch_electric_Vectron_PKP_reversed;
+	2: switch_electric_Vectron_BLS_reversed;
 }
 
 random_switch(FEAT_TRAINS, SELF, switch_electric_Vectron_random_2017) {
-	5: spriteset_electric_Vectron_DBSchenker;
-	5: spriteset_electric_Vectron_ELL;
-	4: spriteset_electric_Vectron_MRCE;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
-	2: spriteset_electric_Vectron_SBB;
-	1: spriteset_electric_Vectron_HUPAC;
+	5: switch_electric_Vectron_DBSchenker_reversed;
+	5: switch_electric_Vectron_ELL_reversed;
+	4: switch_electric_Vectron_MRCE_reversed;
+	2: switch_electric_Vectron_PKP_reversed;
+	2: switch_electric_Vectron_BLS_reversed;
+	2: switch_electric_Vectron_SBB_reversed;
+	1: switch_electric_Vectron_HUPAC_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_Vectron_randomlivery, build_year) {
-	0..2014: spriteset_electric_Vectron_ELL;
+	0..2014: switch_electric_Vectron_ELL_reversed;
     2015: switch_electric_Vectron_random_2015;
 	2016: switch_electric_Vectron_random_2016; 
 	2017: switch_electric_Vectron_random_2017;
@@ -145,105 +233,25 @@ switch(FEAT_TRAINS, SELF, switch_electric_Vectron_randomlivery, build_year) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_electric_Vectron_purchaselivery, build_year) {
-	0..2014: spriteset_electric_Vectron_ELL;
-	2015..2016: spriteset_electric_Vectron_MRCE;
-	2017..2019: spriteset_electric_Vectron_DBSchenker;
-	spriteset_electric_Vectron_NS;
+	0..2014: switch_electric_Vectron_ELL_reversed;
+	2015..2016: switch_electric_Vectron_MRCE_reversed;
+	2017..2019: switch_electric_Vectron_DBSchenker_reversed;
+	switch_electric_Vectron_NS_reversed;
 }
 
-switch(FEAT_TRAINS, SELF, switch_for_electric_Vectron_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_electric_Vectron_livery, cargo_subtype) {
 	1: switch_electric_Vectron_purchaselivery;
-    2: spriteset_electric_Vectron_Vectron;
-    3: spriteset_electric_Vectron_BLS;
-    4: spriteset_electric_Vectron_ELL;
-	5: spriteset_electric_Vectron_DBSchenker;
-	6: spriteset_electric_Vectron_PKP;
-	7: spriteset_electric_Vectron_HUPAC;
-	8: spriteset_electric_Vectron_Captrain;
-	9: spriteset_electric_Vectron_MRCE;
-	10: spriteset_electric_Vectron_SBB;
-	11: spriteset_electric_Vectron_NS;
+    2: switch_electric_Vectron_Vectron_reversed;
+    3: switch_electric_Vectron_BLS_reversed;
+    4: switch_electric_Vectron_ELL_reversed;
+	5: switch_electric_Vectron_DBSchenker_reversed;
+	6: switch_electric_Vectron_PKP_reversed;
+	7: switch_electric_Vectron_HUPAC_reversed;
+	8: switch_electric_Vectron_Captrain_reversed;
+	9: switch_electric_Vectron_MRCE_reversed;
+	10: switch_electric_Vectron_SBB_reversed;
+	11: switch_electric_Vectron_NS_reversed;
     switch_electric_Vectron_randomlivery;
-}
-//Reverse
-random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_all) {
-	5: spriteset_electric_Vectron_DBSchenker;
-	5: spriteset_electric_Vectron_ELL;
-	4: spriteset_electric_Vectron_MRCE;
-	3: spriteset_electric_Vectron_NS;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
-	2: spriteset_electric_Vectron_SBB;
-	2: spriteset_electric_Vectron_Captrain;
-	1: spriteset_electric_Vectron_HUPAC;
-	1: spriteset_electric_Vectron_Vectron;
-}
-
-random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_2018) {
-	5: spriteset_electric_Vectron_DBSchenker;
-	5: spriteset_electric_Vectron_ELL;
-	4: spriteset_electric_Vectron_MRCE;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
-	2: spriteset_electric_Vectron_SBB;
-	2: spriteset_electric_Vectron_Captrain;
-	1: spriteset_electric_Vectron_HUPAC;
-	1: spriteset_electric_Vectron_Vectron;
-}
-
-random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_2015) {
-	5: spriteset_electric_Vectron_ELL;
-	2: spriteset_electric_Vectron_MRCE;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
-}
-
-random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_2016) {
-	5: spriteset_electric_Vectron_ELL;
-	3: spriteset_electric_Vectron_MRCE;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
-}
-
-random_switch(FEAT_TRAINS, BACKWARD_SELF(position_in_consist_from_end-position_in_consist), switch_rev_electric_Vectron_random_2017) {
-	5: spriteset_electric_Vectron_DBSchenker;
-	5: spriteset_electric_Vectron_ELL;
-	4: spriteset_electric_Vectron_MRCE;
-	2: spriteset_electric_Vectron_PKP;
-	2: spriteset_electric_Vectron_BLS;
-	2: spriteset_electric_Vectron_SBB;
-	1: spriteset_electric_Vectron_HUPAC;
-}
-
-switch(FEAT_TRAINS, SELF, switch_rev_electric_Vectron_randomlivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
-	0..2014: spriteset_electric_Vectron_ELL;
-    2015: switch_rev_electric_Vectron_random_2015;
-	2016: switch_rev_electric_Vectron_random_2016; 
-	2017: switch_rev_electric_Vectron_random_2017;
-	2018..2019: switch_rev_electric_Vectron_random_2018;
-	switch_rev_electric_Vectron_random_all;
-}
-
-switch(FEAT_TRAINS, SELF, switch_rev_electric_Vectron_purchaselivery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0xFFFFFFFF, 0x49]]) {
-	0..2014: spriteset_electric_Vectron_ELL;
-	2015..2016: spriteset_electric_Vectron_MRCE;
-	2017..2019: spriteset_electric_Vectron_DBSchenker;
-	spriteset_electric_Vectron_NS;
-}
-
-switch(FEAT_TRAINS, SELF, switch_rev_electric_Vectron_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]) {
-	1: switch_rev_electric_Vectron_purchaselivery;
-    2: spriteset_electric_Vectron_Vectron;
-    3: spriteset_electric_Vectron_BLS;
-    4: spriteset_electric_Vectron_ELL;
-	5: spriteset_electric_Vectron_DBSchenker;
-	6: spriteset_electric_Vectron_PKP;
-	7: spriteset_electric_Vectron_HUPAC;
-	8: spriteset_electric_Vectron_Captrain;
-	9: spriteset_electric_Vectron_MRCE;
-	10: spriteset_electric_Vectron_SBB;
-	11: spriteset_electric_Vectron_NS;
-    switch_rev_electric_Vectron_randomlivery;
 }
 
 // CARGO SUBTYPE CALLBACK

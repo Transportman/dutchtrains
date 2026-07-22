@@ -3,7 +3,8 @@ Dutch Trainset Changelog
 3.X.X-XL (2026/XX/XX)
 ---------------------
 - Fix: I10 livery text incorrect
-
+- Fix: Can't set different liveries for multiple HS-2 locs in same consist
+- Change: Push-pull implementation changed to implementation added in OpenTTD 16
 
 3.3.0-XL (2026/06/19)
 ---------------------

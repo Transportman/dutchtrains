@@ -24,35 +24,25 @@ spriteset(spriteset_coaches_I11, "gfx/coaches/I11.png") {
 spriteset(spriteset_coaches_I11_cab, "gfx/coaches/I11.png") {
 	template_2cc_88(1, 53)
 }
+spriteset(spriteset_coaches_REV_I11_cab, "gfx/coaches/I11.png") {
+	template_2cc_88r(1, 27)
+}
+
+switch(FEAT_TRAINS, SELF, switch_coaches_I11_cab_reversed, train_is_driving_backwards) {
+	0: spriteset_coaches_I11_cab;	//Rear lights
+	1: spriteset_coaches_REV_I11_cab;//Front lights
+}
+
+
 switch(FEAT_TRAINS, SELF, switch_coaches_I11_cab_position, position_in_vehid_chain_from_end) {
-	0: spriteset_coaches_I11_cab;
+	0: switch_coaches_I11_cab_reversed;
     spriteset_coaches_I11;
 }
 
-switch(FEAT_TRAINS, SELF, switch_for_coaches_I11_livery, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_coaches_I11_livery, cargo_subtype) {
 	1: spriteset_coaches_I11;
-	2: spriteset_coaches_I11_cab;
+	2: switch_coaches_I11_cab_reversed;
     switch_coaches_I11_cab_position;
-}
-
-//Reversed logic
-
-spriteset(spriteset_REV_coaches_I11, "gfx/coaches/I11.png") {
-	template_2cc_88r(1, 1)
-}
-spriteset(spriteset_REV_coaches_I11_cab, "gfx/coaches/I11.png") {
-	template_2cc_88r(1, 53)
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_I11_cab_position, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FF00, 0x41]]) {
-	0: spriteset_REV_coaches_I11_cab;
-    spriteset_REV_coaches_I11;
-}
-
-switch(FEAT_TRAINS, SELF, switch_REV_coaches_I11_livery, [STORE_TEMP(position_in_consist_from_end-position_in_consist, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-	1: spriteset_REV_coaches_I11;
-	2: spriteset_REV_coaches_I11_cab;
-    switch_REV_coaches_I11_cab_position;
 }
 
 switch(FEAT_TRAINS, SELF, switch_coaches_I11_subtype_text, cargo_subtype) {
