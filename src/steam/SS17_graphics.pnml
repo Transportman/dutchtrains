@@ -45,7 +45,7 @@ spriteset(spriteset_steam_SS17_tender, "gfx/steam/SS17.png") {
 	template_2cc_48(1, 128)
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_SS17_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_SS17_animation, (motion_counter%16)) {
     2..3:   spriteset_steam_SS17_ani_2;
     4..5:   spriteset_steam_SS17_ani_3;
     6..7:   spriteset_steam_SS17_ani_4;
@@ -79,7 +79,7 @@ spriteset(spriteset_steam_NS2900_tender, "gfx/steam/SS17.png") {
 	template_2cc_48(1, 288)
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_NS2900_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NS2900_animation, (motion_counter%16)) {
     2..3:   spriteset_steam_NS2900_ani_2;
     4..5:   spriteset_steam_NS2900_ani_3;
     6..7:   spriteset_steam_NS2900_ani_4;

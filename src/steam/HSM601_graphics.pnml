@@ -36,7 +36,7 @@ spriteset(spriteset_steam_HSM601_tender, "gfx/steam/HSM601.png") {
 	template_2cc_48(1, 128)
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_HSM601_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_HSM601_animation, (motion_counter%16)) {
     2..3:   spriteset_steam_HSM601_ani_2;
     4..5:   spriteset_steam_HSM601_ani_3;
     6..7:   spriteset_steam_HSM601_ani_4;

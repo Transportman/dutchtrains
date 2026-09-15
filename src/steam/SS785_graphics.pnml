@@ -51,7 +51,7 @@ spriteset(spriteset_steam_SS785_tender, "gfx/steam/SS785.png") {
 	template_2cc_48(1, 192)
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_SS785_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_SS785_animation, (motion_counter%16)) {
     2:      spriteset_steam_SS785_ani_2;
     3:      spriteset_steam_SS785_ani_3;
     4..5:   spriteset_steam_SS785_ani_4;
@@ -94,7 +94,7 @@ spriteset(spriteset_steam_NS3700_tender, "gfx/steam/NS3700.png") {
 	template_2cc_48(1, 192)
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_NS3700_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NS3700_animation, (motion_counter%16)) {
     2:      spriteset_steam_NS3700_ani_2;
     3:      spriteset_steam_NS3700_ani_3;
     4..5:   spriteset_steam_NS3700_ani_4;

@@ -36,7 +36,7 @@ spriteset(spriteset_steam_NS4600_tender, "gfx/steam/NS4600.png") {
 	template_2cc_48(0, 120)
 }
 
-switch(FEAT_TRAINS, PARENT, switch_steam_NS4600_animation, (motion_counter)) {
+switch(FEAT_TRAINS, PARENT, switch_steam_NS4600_animation, (motion_counter%16)) {
     2..3:   spriteset_steam_NS4600_ani_2;
     4..5:   spriteset_steam_NS4600_ani_3;
     6..7:   spriteset_steam_NS4600_ani_4;
