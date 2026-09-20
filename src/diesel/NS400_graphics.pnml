@@ -21,3 +21,10 @@ spriteset(spriteset_diesel_NS400_purchase, "gfx/purchase/diesel/NS400.png") {
 spriteset(spriteset_diesel_NS400, "gfx/diesel/NS400.png") {
 	template_2cc_48(1, 1)
 }
+spriteset(spriteset_REV_diesel_NS400, "gfx/diesel/NS400.png") {
+	template_2cc_48(1, 32)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_NS400_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_NS400;	//Rear lights
+	1: spriteset_REV_diesel_NS400;//Front lights
+}

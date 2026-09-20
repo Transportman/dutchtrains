@@ -39,33 +39,54 @@ spriteset(spriteset_diesel_NS200_yellow, "gfx/diesel/NS200.png") {
 spriteset(spriteset_diesel_NS200_red, "gfx/diesel/NS200.png") {
 	template_2cc_48(1, 64)
 }
+spriteset(spriteset_REV_diesel_NS200_green, "gfx/diesel/NS200.png") {
+	template_2cc_48(1, 96)
+}
+spriteset(spriteset_REV_diesel_NS200_yellow, "gfx/diesel/NS200.png") {
+	template_2cc_48(1, 127)
+}
+spriteset(spriteset_REV_diesel_NS200_red, "gfx/diesel/NS200.png") {
+	template_2cc_48(1, 159)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_NS200_green_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_NS200_green;	//Rear lights
+	1: spriteset_REV_diesel_NS200_green;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_NS200_yellow_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_NS200_yellow;	//Rear lights
+	1: spriteset_REV_diesel_NS200_yellow;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_NS200_red_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_NS200_red;	//Rear lights
+	1: spriteset_REV_diesel_NS200_red;//Front lights
+}
 
 /*
 * LIVERY SELECTION
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_diesel_NS200_randomlivery_yellow_red) {
-	14: spriteset_diesel_NS200_yellow;
-    2: spriteset_diesel_NS200_red;
+	14: switch_diesel_NS200_yellow_reversed;
+    2: switch_diesel_NS200_red_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_NS200_autolivery, date_of_last_service) {
-	0..date(1970,12,31): spriteset_diesel_NS200_green;
-    date(1971,1,1)..date(1998,12,31): spriteset_diesel_NS200_yellow;
+	0..date(1970,12,31): switch_diesel_NS200_green_reversed;
+    date(1971,1,1)..date(1998,12,31): switch_diesel_NS200_yellow_reversed;
     switch_diesel_NS200_randomlivery_yellow_red;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_NS200_purchaselivery, build_year) {
-	0..1970: spriteset_diesel_NS200_green;
-    1971..1998: spriteset_diesel_NS200_yellow;
+	0..1970: switch_diesel_NS200_green_reversed;
+    1971..1998: switch_diesel_NS200_yellow_reversed;
     switch_diesel_NS200_randomlivery_yellow_red;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_NS200_livery, cargo_subtype) {
 	1: switch_diesel_NS200_purchaselivery;
-    2: spriteset_diesel_NS200_green;
-    3: spriteset_diesel_NS200_yellow;
-    4: spriteset_diesel_NS200_red;
+    2: switch_diesel_NS200_green_reversed;
+    3: switch_diesel_NS200_yellow_reversed;
+    4: switch_diesel_NS200_red_reversed;
     switch_diesel_NS200_autolivery;
 }
 

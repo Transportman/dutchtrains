@@ -51,6 +51,6 @@ item(FEAT_TRAINS, item_diesel_NS2801) {
 	}
     graphics {
         purchase: spriteset_diesel_NS2801_purchase;
-        spriteset_diesel_NS2801;
+        switch_diesel_NS2801_reversed;
     }
 }

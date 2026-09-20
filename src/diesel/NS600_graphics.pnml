@@ -33,6 +33,12 @@ spriteset(spriteset_diesel_NS600_yellow, "gfx/diesel/NS600.png") {
 	template_2cc_58(1, 32)
 }
 
+spriteset(spriteset_REV_diesel_NS600_green, "gfx/diesel/NS600.png") {
+	template_2cc_58r(1, 1)
+}
+spriteset(spriteset_REV_diesel_NS600_yellow, "gfx/diesel/NS600.png") {
+	template_2cc_58r(1, 32)
+}
 /*
 * LIVERY SELECTION
 */

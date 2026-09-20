@@ -27,11 +27,32 @@ spriteset(spriteset_diesel_G400B_green, "gfx/diesel/G400B.png") {
 spriteset(spriteset_diesel_G400B_yellow, "gfx/diesel/G400B.png") {
 	template_2cc_58(1, 64)
 }
+spriteset(spriteset_REV_diesel_G400B_NedTrain, "gfx/diesel/G400B.png") {
+	template_2cc_58(1, 96)
+}
+spriteset(spriteset_REV_diesel_G400B_green, "gfx/diesel/G400B.png") {
+	template_2cc_58(1, 128)
+}
+spriteset(spriteset_REV_diesel_G400B_yellow, "gfx/diesel/G400B.png") {
+	template_2cc_58(1, 160)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G400B_NedTrain_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G400B_NedTrain;	//Rear lights
+	1: spriteset_REV_diesel_G400B_NedTrain;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G400B_green_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G400B_green;	//Rear lights
+	1: spriteset_REV_diesel_G400B_green;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G400B_yellow_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G400B_yellow;	//Rear lights
+	1: spriteset_REV_diesel_G400B_yellow;//Front lights
+}
 
 switch(FEAT_TRAINS, SELF, switch_diesel_G400B_livery, cargo_subtype) {
-	1: spriteset_diesel_G400B_green;
-    2: spriteset_diesel_G400B_yellow;
-    spriteset_diesel_G400B_NedTrain;
+	1: switch_diesel_G400B_green_reversed;
+    2: switch_diesel_G400B_yellow_reversed;
+    switch_diesel_G400B_NedTrain_reversed;
 }
 
 /*

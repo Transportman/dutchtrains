@@ -21,3 +21,11 @@ spriteset(spriteset_diesel_RN232_purchase, "gfx/purchase/diesel/RN232.png") {
 spriteset(spriteset_diesel_RN232, "gfx/diesel/RN232.png") {
 	template_2cc_88(1, 1)
 }
+
+spriteset(spriteset_REV_diesel_RN232, "gfx/diesel/RN232.png") {
+	template_2cc_88r(1, 1)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_RN232_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_RN232;	//Rear lights
+	1: spriteset_REV_diesel_RN232;//Front lights
+}

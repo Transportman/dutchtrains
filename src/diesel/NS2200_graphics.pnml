@@ -47,35 +47,65 @@ spriteset(spriteset_diesel_NS2200_strukton, "gfx/diesel/NS2200.png") {
 	template_2cc_68(1, 96)
 }
 
+spriteset(spriteset_REV_diesel_NS2200_brown, "gfx/diesel/NS2200.png") {
+	template_2cc_68(1, 128)
+}
+spriteset(spriteset_REV_diesel_NS2200_yellow, "gfx/diesel/NS2200.png") {
+	template_2cc_68(1, 160)
+}
+spriteset(spriteset_REV_diesel_NS2200_nscargo, "gfx/diesel/NS2200.png") {
+	template_2cc_68(1, 192)
+}
+spriteset(spriteset_REV_diesel_NS2200_strukton, "gfx/diesel/NS2200.png") {
+	template_2cc_68(1, 224)
+}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_brown_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_NS2200_brown;	//Rear lights
+	1: spriteset_REV_diesel_NS2200_brown;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_yellow_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_NS2200_yellow;	//Rear lights
+	1: spriteset_REV_diesel_NS2200_yellow;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_nscargo_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_NS2200_nscargo;	//Rear lights
+	1: spriteset_REV_diesel_NS2200_nscargo;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_strukton_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_NS2200_strukton;	//Rear lights
+	1: spriteset_REV_diesel_NS2200_strukton;//Front lights
+}
+
 /*
 * LIVERY SELECTION
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_randomlivery_yellow_red) {
-	127: spriteset_diesel_NS2200_yellow;
-    1: spriteset_diesel_NS2200_nscargo;
+	127: switch_diesel_NS2200_yellow_reversed;
+    1: switch_diesel_NS2200_nscargo_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_autolivery, date_of_last_service) {
-	0..date(1970,12,31): spriteset_diesel_NS2200_brown;
-    date(1971,1,1)..date(1995,12,31): spriteset_diesel_NS2200_yellow;
+	0..date(1970,12,31): switch_diesel_NS2200_brown_reversed;
+    date(1971,1,1)..date(1995,12,31): switch_diesel_NS2200_yellow_reversed;
     date(1996,1,1)..date(2003,12,31): switch_diesel_NS2200_randomlivery_yellow_red;
-    spriteset_diesel_NS2200_strukton;
+    switch_diesel_NS2200_strukton_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_purchaselivery, build_year) {
-	0..1970: spriteset_diesel_NS2200_brown;
-    1971..1995: spriteset_diesel_NS2200_yellow;
+	0..1970: switch_diesel_NS2200_brown_reversed;
+    1971..1995: switch_diesel_NS2200_yellow_reversed;
     1996..2003: switch_diesel_NS2200_randomlivery_yellow_red;
-    spriteset_diesel_NS2200_strukton;
+    switch_diesel_NS2200_strukton_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_NS2200_livery, cargo_subtype) {
 	1: switch_diesel_NS2200_purchaselivery;
-    2: spriteset_diesel_NS2200_brown;
-    3: spriteset_diesel_NS2200_yellow;
-    4: spriteset_diesel_NS2200_nscargo;
-    5: spriteset_diesel_NS2200_strukton;
+    2: switch_diesel_NS2200_brown_reversed;
+    3: switch_diesel_NS2200_yellow_reversed;
+    4: switch_diesel_NS2200_nscargo_reversed;
+    5: switch_diesel_NS2200_strukton_reversed;
     switch_diesel_NS2200_autolivery;
 }
 

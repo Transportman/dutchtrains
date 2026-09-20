@@ -33,24 +33,39 @@ spriteset(spriteset_diesel_ACTS5800_black, "gfx/diesel/ACTS5800.png") {
 	template_2cc_88(1, 32)
 }
 
+spriteset(spriteset_REV_diesel_ACTS5800_blue, "gfx/diesel/ACTS5800.png") {
+	template_2cc_88r(1, 1)
+}
+spriteset(spriteset_REV_diesel_ACTS5800_black, "gfx/diesel/ACTS5800.png") {
+	template_2cc_88r(1, 32)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_ACTS5800_blue_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_ACTS5800_blue;	//Rear lights
+	1: spriteset_REV_diesel_ACTS5800_blue;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_ACTS5800_black_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_ACTS5800_black;	//Rear lights
+	1: spriteset_REV_diesel_ACTS5800_black;//Front lights
+}
+
 /*
 * LIVERY SELECTION
 */
 
 switch(FEAT_TRAINS, SELF, switch_diesel_ACTS5800_autolivery, date_of_last_service) {
-	0..date(2003,12,31): spriteset_diesel_ACTS5800_black;
-    spriteset_diesel_ACTS5800_blue;
+	0..date(2003,12,31): switch_diesel_ACTS5800_black_reversed;
+    switch_diesel_ACTS5800_blue_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_ACTS5800_purchaselivery, build_year) {
-	0..2003: spriteset_diesel_ACTS5800_black;
-    spriteset_diesel_ACTS5800_blue;
+	0..2003: switch_diesel_ACTS5800_black_reversed;
+    switch_diesel_ACTS5800_blue_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_ACTS5800_livery, cargo_subtype) {
 	1: switch_diesel_ACTS5800_purchaselivery;
-    2: spriteset_diesel_ACTS5800_blue;
-    3: spriteset_diesel_ACTS5800_black;
+    2: switch_diesel_ACTS5800_blue_reversed;
+    3: switch_diesel_ACTS5800_black_reversed;
     switch_diesel_ACTS5800_autolivery;
 }
 

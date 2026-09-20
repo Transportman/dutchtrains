@@ -46,32 +46,96 @@ spriteset(spriteset_diesel_G1206_HUSA, "gfx/diesel/G1206.png") {
 	template_2cc_78(1, 256)
 }
 
+spriteset(spriteset_REV_diesel_G1206_Veolia, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 1)
+}
+spriteset(spriteset_REV_diesel_G1206_ERS, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 32)
+}
+spriteset(spriteset_REV_diesel_G1206_Rail4Chem, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 64)
+}
+spriteset(spriteset_REV_diesel_G1206_Veolia_2, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 96)
+}
+spriteset(spriteset_REV_diesel_G1206_ACTS, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 128)
+}
+spriteset(spriteset_REV_diesel_G1206_Strukton, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 160)
+}
+spriteset(spriteset_REV_diesel_G1206_ACTS_2, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 192)
+}
+spriteset(spriteset_REV_diesel_G1206_Rail4Chem_2, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 224)
+}
+spriteset(spriteset_REV_diesel_G1206_HUSA, "gfx/diesel/G1206.png") {
+	template_2cc_78r(400, 256)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_Veolia_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_Veolia;	//Rear lights
+	1: spriteset_REV_diesel_G1206_Veolia;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_ERS_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_ERS;	//Rear lights
+	1: spriteset_REV_diesel_G1206_ERS;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_Rail4Chem_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_Rail4Chem;	//Rear lights
+	1: spriteset_REV_diesel_G1206_Rail4Chem;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_Veolia_2_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_Veolia_2;	//Rear lights
+	1: spriteset_REV_diesel_G1206_Veolia_2;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_ACTS_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_ACTS;	//Rear lights
+	1: spriteset_REV_diesel_G1206_ACTS;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_Strukton_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_Strukton;	//Rear lights
+	1: spriteset_REV_diesel_G1206_Strukton;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_ACTS_2_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_ACTS_2;	//Rear lights
+	1: spriteset_REV_diesel_G1206_ACTS_2;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_Rail4Chem_2_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_Rail4Chem_2;	//Rear lights
+	1: spriteset_REV_diesel_G1206_Rail4Chem_2;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G1206_HUSA_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G1206_HUSA;	//Rear lights
+	1: spriteset_REV_diesel_G1206_HUSA;//Front lights
+}
+
 /*
 * LIVERY SELECTION
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_diesel_G1206_random) {
-	1: spriteset_diesel_G1206_ACTS;
-    1: spriteset_diesel_G1206_ACTS_2;
-    1: spriteset_diesel_G1206_ERS;
-    1: spriteset_diesel_G1206_HUSA;
-    1: spriteset_diesel_G1206_Rail4Chem;
-    1: spriteset_diesel_G1206_Rail4Chem_2;
-    1: spriteset_diesel_G1206_Strukton;
-    1: spriteset_diesel_G1206_Veolia;
-    1: spriteset_diesel_G1206_Veolia_2;
+	1: switch_diesel_G1206_ACTS_reversed;
+    1: switch_diesel_G1206_ACTS_2_reversed;
+    1: switch_diesel_G1206_ERS_reversed;
+    1: switch_diesel_G1206_HUSA_reversed;
+    1: switch_diesel_G1206_Rail4Chem_reversed;
+    1: switch_diesel_G1206_Rail4Chem_2_reversed;
+    1: switch_diesel_G1206_Strukton_reversed;
+    1: switch_diesel_G1206_Veolia_reversed;
+    1: switch_diesel_G1206_Veolia_2_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_G1206_livery, cargo_subtype) {
-	1: spriteset_diesel_G1206_ACTS;
-    2: spriteset_diesel_G1206_ACTS_2;
-    3: spriteset_diesel_G1206_ERS;
-    4: spriteset_diesel_G1206_HUSA;
-    5: spriteset_diesel_G1206_Rail4Chem;
-    6: spriteset_diesel_G1206_Rail4Chem_2;
-    7: spriteset_diesel_G1206_Strukton;
-    8: spriteset_diesel_G1206_Veolia;
-    9: spriteset_diesel_G1206_Veolia_2;
+	1: switch_diesel_G1206_ACTS_reversed;
+    2: switch_diesel_G1206_ACTS_2_reversed;
+    3: switch_diesel_G1206_ERS_reversed;
+    4: switch_diesel_G1206_HUSA_reversed;
+    5: switch_diesel_G1206_Rail4Chem_reversed;
+    6: switch_diesel_G1206_Rail4Chem_2_reversed;
+    7: switch_diesel_G1206_Strukton_reversed;
+    8: switch_diesel_G1206_Veolia_reversed;
+    9: switch_diesel_G1206_Veolia_2_reversed;
     switch_diesel_G1206_random;
 }
 

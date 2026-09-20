@@ -44,30 +44,87 @@ spriteset(spriteset_diesel_G2000_rts_orange, "gfx/diesel/G2000.png") {
 	template_2cc_78(1, 224)
 }
 
+spriteset(spriteset_REV_diesel_G2000_Rail4Chem, "gfx/diesel/G2000.png") {
+	template_2cc_78r(1, 1)
+}
+spriteset(spriteset_REV_diesel_G2000_Railion, "gfx/diesel/G2000.png") {
+	template_2cc_78r(1, 32)
+}
+spriteset(spriteset_REV_diesel_G2000_ERS, "gfx/diesel/G2000.png") {
+	template_2cc_78r(1, 64)
+}
+spriteset(spriteset_REV_diesel_G2000_rurtalbahn_black, "gfx/diesel/G2000.png") {
+	template_2cc_78r(1, 96)
+}
+spriteset(spriteset_REV_diesel_G2000_rurtalbahn_blue, "gfx/diesel/G2000.png") {
+	template_2cc_78r(1, 128)
+}
+spriteset(spriteset_REV_diesel_G2000_rff, "gfx/diesel/G2000.png") {
+	template_2cc_78r(1, 160)
+}
+spriteset(spriteset_REV_diesel_G2000_rts_black, "gfx/diesel/G2000.png") {
+	template_2cc_78r(1, 192)
+}
+spriteset(spriteset_REV_diesel_G2000_rts_orange, "gfx/diesel/G2000.png") {
+	template_2cc_78r(1, 224)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_Rail4Chem_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G2000_Rail4Chem;	//Rear lights
+	1: spriteset_REV_diesel_G2000_Rail4Chem;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_Railion_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G2000_Railion;	//Rear lights
+	1: spriteset_REV_diesel_G2000_Railion;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_ERS_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G2000_ERS;	//Rear lights
+	1: spriteset_REV_diesel_G2000_ERS;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_rurtalbahn_black_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G2000_rurtalbahn_black;	//Rear lights
+	1: spriteset_REV_diesel_G2000_rurtalbahn_black;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_rurtalbahn_blue_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G2000_rurtalbahn_blue;	//Rear lights
+	1: spriteset_REV_diesel_G2000_rurtalbahn_blue;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_rff_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G2000_rff;	//Rear lights
+	1: spriteset_REV_diesel_G2000_rff;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_rts_black_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G2000_rts_black;	//Rear lights
+	1: spriteset_REV_diesel_G2000_rts_black;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_G2000_rts_orange_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_G2000_rts_orange;	//Rear lights
+	1: spriteset_REV_diesel_G2000_rts_orange;//Front lights
+}
+
 /*
 * LIVERY SELECTION
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_diesel_G2000_randomlivery) {
-	1: spriteset_diesel_G2000_Rail4Chem;
-    1: spriteset_diesel_G2000_Railion;
-    1: spriteset_diesel_G2000_ERS;
-    1: spriteset_diesel_G2000_rurtalbahn_black;
-    1: spriteset_diesel_G2000_rurtalbahn_blue;
-    1: spriteset_diesel_G2000_rff;
-    1: spriteset_diesel_G2000_rts_black;
-    1: spriteset_diesel_G2000_rts_orange;
+	1: switch_diesel_G2000_Rail4Chem_reversed;
+    1: switch_diesel_G2000_Railion_reversed;
+    1: switch_diesel_G2000_ERS_reversed;
+    1: switch_diesel_G2000_rurtalbahn_black_reversed;
+    1: switch_diesel_G2000_rurtalbahn_blue_reversed;
+    1: switch_diesel_G2000_rff_reversed;
+    1: switch_diesel_G2000_rts_black_reversed;
+    1: switch_diesel_G2000_rts_orange_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_G2000_livery, cargo_subtype) {
-	1: spriteset_diesel_G2000_Rail4Chem;
-    2: spriteset_diesel_G2000_Railion;
-    3: spriteset_diesel_G2000_ERS;
-    4: spriteset_diesel_G2000_rurtalbahn_black;
-    5: spriteset_diesel_G2000_rurtalbahn_blue;
-    6: spriteset_diesel_G2000_rff;
-    7: spriteset_diesel_G2000_rts_black;
-    8: spriteset_diesel_G2000_rts_orange;
+	1: switch_diesel_G2000_Rail4Chem_reversed;
+    2: switch_diesel_G2000_Railion_reversed;
+    3: switch_diesel_G2000_ERS_reversed;
+    4: switch_diesel_G2000_rurtalbahn_black_reversed;
+    5: switch_diesel_G2000_rurtalbahn_blue_reversed;
+    6: switch_diesel_G2000_rff_reversed;
+    7: switch_diesel_G2000_rts_black_reversed;
+    8: switch_diesel_G2000_rts_orange_reversed;
     switch_diesel_G2000_randomlivery;
 }
 

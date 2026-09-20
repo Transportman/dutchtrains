@@ -49,34 +49,104 @@ spriteset(spriteset_diesel_Class66_HGK, "gfx/diesel/Class66.png") {
 	template_2cc_88(1, 288)
 }
 
+spriteset(spriteset_REV_diesel_Class66_Veolia, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 1)
+}
+spriteset(spriteset_REV_diesel_Class66_ACTS, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 32)
+}
+spriteset(spriteset_REV_diesel_Class66_ACTS_2, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 64)
+}
+spriteset(spriteset_REV_diesel_Class66_DLC, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 96)
+}
+spriteset(spriteset_REV_diesel_Class66_Rail4Chem, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 128)
+}
+spriteset(spriteset_REV_diesel_Class66_Rail4Chem_2, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 160)
+}
+spriteset(spriteset_REV_diesel_Class66_ERS, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 192)
+}
+spriteset(spriteset_REV_diesel_Class66_Captrain, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 224)
+}
+spriteset(spriteset_REV_diesel_Class66_Crossrail, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 256)
+}
+spriteset(spriteset_REV_diesel_Class66_HGK, "gfx/diesel/Class66.png") {
+	template_2cc_88r(1, 288)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_Veolia_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_Veolia;	//Rear lights
+	1: spriteset_REV_diesel_Class66_Veolia;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_ACTS_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_ACTS;	//Rear lights
+	1: spriteset_REV_diesel_Class66_ACTS;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_ACTS_2_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_ACTS_2;	//Rear lights
+	1: spriteset_REV_diesel_Class66_ACTS_2;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_DLC_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_DLC;	//Rear lights
+	1: spriteset_REV_diesel_Class66_DLC;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_Rail4Chem_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_Rail4Chem;	//Rear lights
+	1: spriteset_REV_diesel_Class66_Rail4Chem;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_Rail4Chem_2_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_Rail4Chem_2;	//Rear lights
+	1: spriteset_REV_diesel_Class66_Rail4Chem_2;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_ERS_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_ERS;	//Rear lights
+	1: spriteset_REV_diesel_Class66_ERS;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_Captrain_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_Captrain;	//Rear lights
+	1: spriteset_REV_diesel_Class66_Captrain;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_Crossrail_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_Crossrail;	//Rear lights
+	1: spriteset_REV_diesel_Class66_Crossrail;//Front lights
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_Class66_HGK_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_Class66_HGK;	//Rear lights
+	1: spriteset_REV_diesel_Class66_HGK;//Front lights
+}
 /*
 * LIVERY SELECTION
 */
 
 random_switch(FEAT_TRAINS, SELF, switch_diesel_Class66_random) {
-	1: spriteset_diesel_Class66_ACTS;
-    1: spriteset_diesel_Class66_ACTS_2;
-    1: spriteset_diesel_Class66_Captrain;
-    1: spriteset_diesel_Class66_Crossrail;
-    1: spriteset_diesel_Class66_DLC;
-    1: spriteset_diesel_Class66_ERS;
-    1: spriteset_diesel_Class66_HGK;
-    1: spriteset_diesel_Class66_Rail4Chem;
-    1: spriteset_diesel_Class66_Rail4Chem_2;
-    1: spriteset_diesel_Class66_Veolia;
+	1: switch_diesel_Class66_ACTS_reversed;
+    1: switch_diesel_Class66_ACTS_2_reversed;
+    1: switch_diesel_Class66_Captrain_reversed;
+    1: switch_diesel_Class66_Crossrail_reversed;
+    1: switch_diesel_Class66_DLC_reversed;
+    1: switch_diesel_Class66_ERS_reversed;
+    1: switch_diesel_Class66_HGK_reversed;
+    1: switch_diesel_Class66_Rail4Chem_reversed;
+    1: switch_diesel_Class66_Rail4Chem_2_reversed;
+    1: switch_diesel_Class66_Veolia_reversed;
 }
 
 switch(FEAT_TRAINS, SELF, switch_diesel_Class66_livery, cargo_subtype) {
-	1: spriteset_diesel_Class66_ACTS;
-    2: spriteset_diesel_Class66_ACTS_2;
-    3: spriteset_diesel_Class66_Captrain;
-    4: spriteset_diesel_Class66_Crossrail;
-    5: spriteset_diesel_Class66_DLC;
-    6: spriteset_diesel_Class66_ERS;
-    7: spriteset_diesel_Class66_HGK;
-    8: spriteset_diesel_Class66_Rail4Chem;
-    9: spriteset_diesel_Class66_Rail4Chem_2;
-    10: spriteset_diesel_Class66_Veolia;
+	1: switch_diesel_Class66_ACTS_reversed;
+    2: switch_diesel_Class66_ACTS_2_reversed;
+    3: switch_diesel_Class66_Captrain_reversed;
+    4: switch_diesel_Class66_Crossrail_reversed;
+    5: switch_diesel_Class66_DLC_reversed;
+    6: switch_diesel_Class66_ERS_reversed;
+    7: switch_diesel_Class66_HGK_reversed;
+    8: switch_diesel_Class66_Rail4Chem_reversed;
+    9: switch_diesel_Class66_Rail4Chem_2_reversed;
+    10: switch_diesel_Class66_Veolia_reversed;
     switch_diesel_Class66_random;
 }
 

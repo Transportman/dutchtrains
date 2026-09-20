@@ -40,6 +40,7 @@ spriteset(spriteset_diesel_NS2400_grey, "gfx/diesel/NS2400.png") {
 	template_2cc_78(1, 64)
 }
 
+
 /*
 * LIVERY SELECTION
 */

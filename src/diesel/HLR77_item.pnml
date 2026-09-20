@@ -50,6 +50,6 @@ item(FEAT_TRAINS, item_diesel_HLR77) {
 	}
     graphics {
         purchase: spriteset_diesel_HLR77_purchase;
-        spriteset_diesel_HLR77;
+        switch_diesel_HLR77_reversed;
     }
 }

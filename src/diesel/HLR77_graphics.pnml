@@ -21,3 +21,10 @@ spriteset(spriteset_diesel_HLR77_purchase, "gfx/purchase/diesel/HLR77.png") {
 spriteset(spriteset_diesel_HLR77, "gfx/diesel/HLR77.png") {
 	template_2cc_88(1, 1)
 }
+spriteset(spriteset_REV_diesel_HLR77, "gfx/diesel/HLR77.png") {
+	template_2cc_88r(1, 32)
+}
+switch(FEAT_TRAINS, SELF, switch_diesel_HLR77_reversed, train_is_driving_backwards) {
+	0: spriteset_diesel_HLR77;	//Rear lights
+	1: spriteset_REV_diesel_HLR77;//Front lights
+}
