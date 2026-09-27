@@ -262,10 +262,10 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_purchaselivery, build_year) {
     switch_emu_IRMVI_randompurchase_ic_yellow;
 }
 switch(FEAT_TRAINS, SELF, switch_emu_IRMVI_autolivery, date_of_last_service) {
-    0..2015: switch_emu_IRMVI_virm_livery;
-    2016..2020: switch_emu_IRMVI_randompurchase_ic_virmm;
-    2021: switch_emu_IRMVI_randompurchase_ic_flow;
-    2022..2025: switch_emu_IRMVI_randompurchase_ic_flow_yellow;
+    0..date(2015,12,31): switch_emu_IRMVI_virm_livery;
+    date(2016,12,31)..date(2020,12,31): switch_emu_IRMVI_randompurchase_ic_virmm;
+    date(2021,12,31): switch_emu_IRMVI_randompurchase_ic_flow;
+    date(2022,12,31)..date(2025,12,31): switch_emu_IRMVI_randompurchase_ic_flow_yellow;
     switch_emu_IRMVI_randompurchase_ic_yellow;
 }
 

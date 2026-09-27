@@ -280,9 +280,9 @@ random_switch(FEAT_TRAINS, PARENT, switch_emu_TGV_2021Revision_randomlivery) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_TGV_autolivery, date_of_last_service) {
-      0..2007:		switch_emu_TGV_Original_randomlivery;
-      2008..2016:	switch_emu_TGV_2008Revision_randomlivery;
-      2017..2020:	switch_emu_TGV_2017Revision_randomlivery;
+      0..date(2007,12,31):		switch_emu_TGV_Original_randomlivery;
+      date(2008,12,31)..date(2016,12,31):	switch_emu_TGV_2008Revision_randomlivery;
+      date(2017,12,31)..date(20date(20,12,31):	switch_emu_TGV_2017Revision_randomlivery;
       switch_emu_TGV_2021Revision_randomlivery;
 }
 

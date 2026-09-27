@@ -253,14 +253,14 @@ switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_purchaselivery, build_year) {
     switch_emu_IRMIV_randompurchase_ic_yellow;
 }
 switch(FEAT_TRAINS, SELF, switch_emu_IRMIV_autolivery, date_of_last_service) {
-    0..2001: switch_emu_IRMIV_position;
-    2002..2004: switch_emu_IRMIV_virm_livery;
-    2010..2011: switch_emu_IRMIV_randompurchase_ic_olympic_ovchip;
-    2011..2013: switch_emu_IRMIV_randompurchase_ic_olympic;
-    2014..2015: switch_emu_IRMIV_randompurchase_ic_groen;
-    2016..2020: switch_emu_IRMIV_randompurchase_ic_virmm;
-    2021: switch_emu_IRMIV_randompurchase_ic_flow;
-    2022..2025: switch_emu_IRMIV_randompurchase_ic_groen_yellow;
+    0..date(2001,12,31): switch_emu_IRMIV_position;
+    date(2002,12,31)..date(2004,12,31): switch_emu_IRMIV_virm_livery;
+    date(2010,12,31)..date(2011,12,31): switch_emu_IRMIV_randompurchase_ic_olympic_ovchip;
+    date(2011,12,31)..date(2013,12,31): switch_emu_IRMIV_randompurchase_ic_olympic;
+    date(2014,12,31)..date(2015,12,31): switch_emu_IRMIV_randompurchase_ic_groen;
+    date(2016,12,31)..date(20date(20,12,31): switch_emu_IRMIV_randompurchase_ic_virmm;
+    date(2021,12,31): switch_emu_IRMIV_randompurchase_ic_flow;
+    date(2022,12,31)..date(2025,12,31): switch_emu_IRMIV_randompurchase_ic_groen_yellow;
     switch_emu_IRMIV_randompurchase_ic_yellow;
 }
 
